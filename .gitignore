@@ -1,0 +1,12 @@
+**/build/
+**/bin/
+/.svn/
+.classpath
+.project
+**/.settings/
+target
+.gradle
+
+**/.vagrant/
+*.retry
+.gradletasknamecache

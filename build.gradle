@@ -1,0 +1,31 @@
+plugins {
+	id "groovy"
+}
+
+project.ext.groovyVersion='2.5.7'
+
+wrapper {
+	gradleVersion = '5.4.1'
+}
+
+test {
+	useJUnitPlatform {
+		// includeEngines("junit-jupiter", "junit-vintage")
+		// excludeEngines("custom-engine")
+
+		// includeTags("fast")
+		excludeTags("slow")
+	}
+	testLogging { events "passed", "skipped", "failed" } //Pring simple test results also to console
+}
+
+dependencies {
+
+	compile "org.codehaus.groovy:groovy:$groovyVersion"
+	compile "org.codehaus.groovy:groovy-xml:$groovyVersion"
+	compile "org.codehaus.groovy:groovy-json:$groovyVersion"
+
+
+	testImplementation "org.junit.jupiter:junit-jupiter:5.5.0"
+	testCompile "org.codehaus.groovy:groovy:$groovyVersion"
+}
