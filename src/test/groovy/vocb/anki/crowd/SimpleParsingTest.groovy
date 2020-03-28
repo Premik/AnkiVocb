@@ -1,4 +1,4 @@
-package vocb
+package vocb.anki.crowd
 
 import org.junit.jupiter.api.Test
 
@@ -18,9 +18,9 @@ class SimpleParsing {
 	}
 
 	@Test
-	void reparseFields() {
+	void simpleFields() {
 		p.parse(smallDeck)
-		assert p.crowdankiUuuid == "0f934964-70f8-11ea-a10e-d8cb8a536b75"
+		assert p.crowdankiUuuid == "0f93612e-70f8-11ea-a10e-d8cb8a536b75"
 		assert p.notes
 		assert p.notes[0].__type__ == 'Note'
 	}
@@ -40,7 +40,8 @@ class SimpleParsing {
 	@Test
 	void bldNote() {
 		NoteFields nf = new NoteFields([enWord:"enw", enSoundRef:"rf"] )
-		String js= p.buildNote(nf,  "123")
-		assert js == '''{"__type__":"Note","fields":["enw","rf",null],"guid":"vsocbenw","note_model_uuid":"123","tags":["ankiVocb"]}'''
+		NoteModel m = new NoteModel([uuid:"123", fieldsCount:4 ])
+		String js= p.buildNote(nf,  m )
+		assert js == '''{"__type__":"Note","fields":["enw","[sound:rf]","",""],"guid":"vsocb_enw","note_model_uuid":"123","tags":["ankiVocb"]}'''
 	}
 }

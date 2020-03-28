@@ -9,15 +9,30 @@ public class NoteFields {
 
 
 	public List<String> toFields() {
-		return [enWord, enSoundRef, czWord]
+		return [enWord, "[sound:$enSoundRef]" , czWord]
 	}
 
 	public String getGuid() {
-		return "vsocb$enWord"
+		return "vsocb_$enWord"
 	}
 
 	@Override
 	public String toString() {
 		return "[enWord=" + enWord +  ", czWord=" + czWord + "]";
 	}
+}
+
+public class NoteModel {
+
+	String uuid
+	int fieldsCount
+
+
+	@Override
+	public String toString() {
+		return "NoteModel [uuid=" + uuid + ", fieldsCount=" + fieldsCount + "]";
+	}
+
+
+
 }

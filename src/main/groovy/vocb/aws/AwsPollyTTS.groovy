@@ -7,6 +7,9 @@ import vocb.Helper
 public class AwsCliPollyTTS {
 
 	Process synth(String text, String engine='standard', String voiceId="Emma", String outFile="/tmp/work/1.mp3") {
+		assert engine
+		assert voiceId
+		assert outFile
 		List<String> cmd =[
 			'aws',
 			'polly',
@@ -26,12 +29,7 @@ public class AwsCliPollyTTS {
 		cmd.execute()
 	}
 
-	void printProcOut(Process proc) {
-		StringBuffer b = new StringBuffer()
-		proc.consumeProcessErrorStream(b)
-		println(proc.text)
-		System.err.println( b)
-	}
+
 
 	static void main(String... args) {
 		AwsCliPollyTTS tts = new AwsCliPollyTTS()
