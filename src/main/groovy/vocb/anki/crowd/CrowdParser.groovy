@@ -24,7 +24,7 @@ public class CrowdParser {
 
 	public NoteModel[] getNoteModels() {
 		return jsonRoot.note_models.collect {m->
-			new NoteModel([uuid:m.uuid, fieldsCount:m.flds.size() ])
+			new NoteModel([uuid:m.crowdanki_uuid, fieldsCount:m.flds.size() ])
 		}
 	}
 

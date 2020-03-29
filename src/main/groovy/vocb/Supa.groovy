@@ -12,7 +12,7 @@ import vocb.aws.AwsTranslate
 
 public class Supa {
 
-	File ankiCrowdExportPath = new File("/tmp/work/cust")
+	File ankiCrowdExportPath = new File("/tmp/work/Supa1")
 	File deckPath = new File(ankiCrowdExportPath, 'deck.json')
 
 	WordNormalizer n = new WordNormalizer()
@@ -52,11 +52,14 @@ public class Supa {
 		List<String> words = new ArrayList(n.tokens(supa)).sort()
 		Map<String, Object> indx = parser.indexNotesByFirstField()
 
-		words = words.findAll { !indx.containsKey(it) }.take(1)
+		words = words.findAll { !indx.containsKey(it) }.take(100)
+		NoteModel[] modls = parser.noteModels
+		assert modls : "No note model found. Plase export at least one note"
 		NoteModel mod =  parser.noteModels[0]
 		println mod
 
 		int i =0
+
 		words.each {
 			NoteFields nf = makeNoteFields(it)
 			JsonBuilder b = parser.buildNote(nf, mod)
@@ -64,6 +67,7 @@ public class Supa {
 			i++
 			if (i%10 == 0) {
 				parser.saveTo(deckPath)
+				println "$i(${words.size()})"
 			}
 		}
 		parser.saveTo(deckPath)
