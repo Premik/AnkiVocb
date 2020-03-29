@@ -24,6 +24,7 @@ dependencies {
 	compile "org.codehaus.groovy:groovy:$groovyVersion"
 	compile "org.codehaus.groovy:groovy-xml:$groovyVersion"
 	compile "org.codehaus.groovy:groovy-json:$groovyVersion"
+	compile "com.xlson.groovycsv:groovycsv:1.3"
 
 
 	testImplementation "org.junit.jupiter:junit-jupiter:5.5.0"
