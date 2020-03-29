@@ -2,6 +2,7 @@ package vocb;
 
 import java.util.concurrent.TimeUnit
 
+import corp.WordNormalizer
 import groovy.json.JsonBuilder
 import vocb.anki.crowd.CrowdParser
 import vocb.anki.crowd.MediaMan
@@ -49,7 +50,7 @@ public class Supa {
 		parseDeck()
 
 		String supa = getClass().getResource('/Supaplex.txt').text
-		List<String> words = new ArrayList(n.tokens(supa)).sort()
+		List<String> words = new ArrayList(n.uniqueueTokens(supa)).sort()
 		Map<String, Object> indx = parser.indexNotesByFirstField()
 
 		words = words.findAll { !indx.containsKey(it) }.take(100)

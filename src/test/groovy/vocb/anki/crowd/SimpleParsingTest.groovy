@@ -20,7 +20,8 @@ class SimpleParsing {
 	@Test
 	void simpleFields() {
 		p.parse(smallDeck)
-		assert p.crowdankiUuuid == "0f93612e-70f8-11ea-a10e-d8cb8a536b75"
+		assert p.noteModels
+		assert p.noteModels[0].uuid == "0f93612e-70f8-11ea-a10e-d8cb8a536b75"
 		assert p.notes
 		assert p.notes[0].__type__ == 'Note'
 	}
@@ -42,6 +43,6 @@ class SimpleParsing {
 		NoteFields nf = new NoteFields([enWord:"enw", enSoundRef:"rf"] )
 		NoteModel m = new NoteModel([uuid:"123", fieldsCount:4 ])
 		String js= p.buildNote(nf,  m )
-		assert js == '''{"__type__":"Note","fields":["enw","[sound:rf]","",""],"guid":"vsocb_enw","note_model_uuid":"123","tags":["ankiVocb"]}'''
+		assert js == '''{"__type__":"Note","fields":["enw","[sound:rf]","",""],"guid":"vocb_enw","note_model_uuid":"123","tags":["ankiVocb"]}'''
 	}
 }
