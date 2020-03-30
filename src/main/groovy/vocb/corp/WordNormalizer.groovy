@@ -1,4 +1,4 @@
-package corp
+package vocb.corp
 
 import java.util.function.Function
 import java.util.regex.Pattern
@@ -9,11 +9,11 @@ import java.util.stream.Stream
 public class WordNormalizer {
 
 	int minLenght = 2
-	int maxLenght = 10
+	int maxLenght = 15
 
 	//Treat non-letter or non-digit as a space. Except underscore and hyphen.
-	@Lazy Pattern spacesPattern = {~ /[^\p{L}\d-_]+/ }()
-	@Lazy Pattern niceWordPatter = {~ /\p{Lu}+/ }() //No digits in words etc
+	@Lazy Pattern spacesPattern = {~ /[^\p{L}]+/ }()
+	@Lazy Pattern niceWordPatter = {~ /^[\p{L}]+/ }() //No digits in words etc
 
 	public Set<String> uniqueueTokens(CharSequence input) {
 		tokens(input).collect(Collectors.toSet())
@@ -21,9 +21,13 @@ public class WordNormalizer {
 
 	public Stream<String> tokens(CharSequence input) {
 		spacesPattern.splitAsStream(input)
-				.filter {String s -> (s=~ niceWordPatter).size() > 0 }
+				//.filter {String s -> (s=~ niceWordPatter).size() > 0 }
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
 				.map {String s ->s.toLowerCase()}
+	}
+
+	public Stream<String> tokens(Stream<CharSequence> listOfString) {
+		return listOfString.flatMap(this.&tokens)
 	}
 
 

@@ -39,6 +39,17 @@ class SimpleParsing {
 	}
 
 	@Test
+	void allFields() {
+		p.parse(smallDeck)
+		Set<String> s = p.notesAllFieldValues()
+		assert s
+		assert s.size() > 1
+		assert s.contains('a12')
+	}
+
+
+
+	@Test
 	void bldNote() {
 		NoteFields nf = new NoteFields([enWord:"enw", enSoundRef:"rf"] )
 		NoteModel m = new NoteModel([uuid:"123", fieldsCount:4 ])

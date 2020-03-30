@@ -2,7 +2,6 @@ package vocb;
 
 import java.util.concurrent.TimeUnit
 
-import corp.WordNormalizer
 import groovy.json.JsonBuilder
 import vocb.anki.crowd.CrowdParser
 import vocb.anki.crowd.MediaMan
@@ -10,6 +9,7 @@ import vocb.anki.crowd.NoteFields
 import vocb.anki.crowd.NoteModel
 import vocb.aws.AwsCliPollyTTS
 import vocb.aws.AwsTranslate
+import vocb.corp.WordNormalizer
 
 public class Supa {
 

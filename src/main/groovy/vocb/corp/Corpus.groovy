@@ -1,4 +1,4 @@
-package corp
+package vocb.corp
 
 import java.nio.charset.StandardCharsets
 import java.util.regex.Pattern
