@@ -3,8 +3,6 @@ package vocb;
 import java.util.concurrent.TimeUnit
 import java.util.stream.Collectors
 
-import org.junit.jupiter.engine.discovery.predicates.IsPotentialTestContainer
-
 import groovy.json.JsonBuilder
 import vocb.anki.ProfileSupport
 import vocb.anki.crowd.CrowdParser
@@ -24,7 +22,8 @@ public class App {
 
 	WordNormalizer normalizer = new WordNormalizer()
 	AwsTranslate trn = new AwsTranslate()
-	AwsCliPollyTTS tts = new AwsCliPollyTTS()
+	AwsCliPollyTTS enTts = new AwsCliPollyTTS()
+	LocalTTS ttsCz = new LocalTTS()
 	CrowdParser parser = new CrowdParser ()
 	ProfileSupport profileSupport  = new ProfileSupport()
 
@@ -90,10 +89,9 @@ public class App {
 		File enSnd = mm.fileForWord(enWord)
 		if (!enSnd.exists()) {
 			//Process p=  tts.synth(enWord, "standard", "Emma", enSnd.canonicalPath)
-			Process p=  tts.synth(enWord, "neural", "Emma", enSnd.canonicalPath)
+			Process p=  enTts.synth(enWord, "neural", "Emma", enSnd.canonicalPath)
 			Helper.printProcOut(p)
 			p.waitFor(5, TimeUnit.SECONDS)
-
 		}
 		assert enSnd.exists()
 		if (!parser.hasMedia(enSnd.name)) {

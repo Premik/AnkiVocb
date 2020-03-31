@@ -1,4 +1,4 @@
-package vocb.anki.crowd
+package vocb.corp
 
 import java.util.stream.Collectors
 

@@ -1,4 +1,4 @@
-package vocb.anki.crowd
+package vocb
 
 import org.junit.jupiter.api.Test
 
@@ -30,9 +30,12 @@ class HelperTest {
 		assert j.items[2]
 		assert j.items[2].a
 		assert j.items[2].a == aClone.a
+	}
 
-
-
-
+	@Test
+	void padList() {
+		assert Helper.padList([1, 2, 3], 0, 1) == [1, 2, 3]
+		assert Helper.padList([1, 2, 3], 0, 5) == [1, 2, 3, 0, 0]
+		assert Helper.padList([1, 2, 3], 0, 1, true) == [1]
 	}
 }

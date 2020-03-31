@@ -41,7 +41,7 @@ public class ProfileSupport {
 			ret =sql.rows("select flds from notes")
 					.collect { GroovyRowResult r -> r.flds}
 					.collectMany { String fGrp->
-						fGrp.split("[]") as List
+						fGrp.tokenize(0x1f)
 					}
 		}
 		return ret
