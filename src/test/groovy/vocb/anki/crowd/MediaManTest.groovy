@@ -28,5 +28,6 @@ class MediaManTest {
 		String word="Příšerně žlutý !@#"
 		String fn = mm.fileForWord(word)
 		assert fn.contains("Priser")
+		assert !fn.contains("!@#")
 	}
 }
