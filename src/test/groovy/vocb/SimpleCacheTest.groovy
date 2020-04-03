@@ -13,7 +13,7 @@ class SimpleCacheTest {
 
 	@Test
 	void baisc() {
-		assert cache.subPathForKey("foobar") as String == "/tmp/test/3/foobar"
+		assert cache.subPathForKey("foobar") as String == "/tmp/test/3/foobar-b45e718d"
 	}
 
 	@Test

@@ -47,12 +47,5 @@ public class Helper {
 		if (!trim && lst.size() >=len) return lst
 		return (lst + [pad]*len).take(len)
 	}
-
-	public static void withUrlGetResponse(Map hdrs=[:], URL u, Closure<BufferedInputStream> c) {
-		BufferedInputStream b = u.newInputStream(
-				/**/connectTimeout: 5000,
-				/**/readTimeout: 10000,
-				/**/requestProperties: ['Connection': 'close'] + hdrs)
-		b.withCloseable(c)
-	}
+	
 }
