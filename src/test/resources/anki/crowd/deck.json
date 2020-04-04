@@ -1,0 +1,2344 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "4059232c-75c4-11ea-b899-d8cb8a536b75",
+    "deck_config_uuid": "f327b900-7100-11ea-a10e-d8cb8a536b75",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "f327b900-7100-11ea-a10e-d8cb8a536b75",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 20,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 111,
+    "extendRev": 50,
+    "media_files": [
+        "1 na krabici.png",
+        "2 on the box.png",
+        "23 zrcadlo.png",
+        "24 a mirror.png",
+        "31 křeslo.png",
+        "32 an armchair.png",
+        "35 pohovka.png",
+        "36 a sofa.png",
+        "37 světlo.png",
+        "38 a light.png",
+        "41 sporák.png",
+        "42 a cooker.png",
+        "51 záchod.png",
+        "52 a toilet.png",
+        "53 vana.png",
+        "54 a bath.png",
+        "65 schody.png",
+        "66 a stairs.png",
+        "7 v krabici.png",
+        "8 in the box.png",
+        "85 židle.png",
+        "86 a chair.png",
+        "I am.mp3",
+        "bird.mp3",
+        "bread.mp3",
+        "breakfast.mp3",
+        "bus.mp3",
+        "chair.mp3",
+        "follow.mp3",
+        "googletts-2dc312f8-5bdb9343-625b2646-d7770f59-930cf8ed.mp3",
+        "googletts-2fe19f66-d6c1d75e-73009e00-2eeca59a-7327960d.mp3",
+        "googletts-33c8301d-eb744f64-8fbccbbf-f14d29cf-6148b7ce.mp3",
+        "googletts-342d8acc-efebc586-ee0099d5-92a6d0e7-16dc4439.mp3",
+        "googletts-3b4dbbe1-caae9a34-f9c0cdac-b1225b1f-6a9d8bf6.mp3",
+        "googletts-3bb61b75-ffda50d0-cbf452c7-788c87e2-96014d17.mp3",
+        "googletts-3d4828ad-20b7d408-71071ced-60585729-3fc5c49c.mp3",
+        "googletts-3f760508-25491cf5-a1beab2a-f194e9cb-989bbdeb.mp3",
+        "googletts-5532eb36-f278e2e2-a38d7524-b3677c31-a4875c8d.mp3",
+        "googletts-5db357a7-933ba044-9d53b08e-4b730994-d426ea14.mp3",
+        "googletts-5f5b720b-b49d9c2d-80f4b3a5-53efa5d6-7e6e3dce.mp3",
+        "googletts-61d4c0d7-35eb7454-018f9123-a1760f87-b252c476.mp3",
+        "googletts-61ee6c4b-3308aa1f-6e5611c7-d1f7613b-e6233b29.mp3",
+        "googletts-668e831c-e4191b76-fce13fff-44afae3b-8e129492.mp3",
+        "googletts-68ed8d8a-9c83fc44-f87416d2-3bcb1375-a5fe5413.mp3",
+        "googletts-737eb7e4-6c953391-4fe78751-7b233cfd-e4fca0ef.mp3",
+        "googletts-77d989c1-e39f5dbe-9a9c3faa-cf673684-dc0e91f3.mp3",
+        "googletts-79a0b172-fe69c0f8-0f0e1ee5-fe0bf2c2-f0fb6e28.mp3",
+        "googletts-7ee87010-5f73358a-45dc9ea2-13c0e3d1-445b707f.mp3",
+        "googletts-848ab5d8-4d743252-ac334112-cb85022a-4cbd0eb4.mp3",
+        "googletts-8c19d0d5-92723848-bb1f2a05-be51a4cf-920bdec2.mp3",
+        "googletts-9a00a82e-636b0087-13c482a2-23bab1d1-a0adbf5f.mp3",
+        "googletts-9bf45178-7b31be5a-6d11f2d9-1ce75189-5e46b5b4.mp3",
+        "googletts-acfcd124-e4f48a72-a1c17d38-8dc7c633-f83c4d24.mp3",
+        "googletts-cc1c8d18-3f02796e-9c5a5290-07eae54b-bd888e90.mp3",
+        "googletts-ce93b548-ca5f9c8e-4f620f24-0b3a4c6f-4cbaf2d2.mp3",
+        "googletts-d0cdcbc3-d85b5366-e44c1012-651d1ff9-134ee506.mp3",
+        "googletts-d71f9bf4-69e18174-ff493af6-d17ef664-3a810330.mp3",
+        "googletts-d8f7ca72-a9e3e1a9-4dd315a6-0909df5e-b2f9265f.mp3",
+        "googletts-d9752288-fe2374e1-c4781e1b-90729eac-d0d2699f.mp3",
+        "googletts-decf2aea-81108ffd-4599e9f4-eb909acb-23bcbbe1.mp3",
+        "googletts-f234a982-45696f54-21fc4767-aee3adf8-ae3c0646.mp3",
+        "googletts-f92c66b0-7c93b3e9-7c36171e-8ab9ad26-cd8667c7.mp3",
+        "hair.mp3",
+        "morning.mp3",
+        "mouth.mp3",
+        "paste-102361955565569.jpg",
+        "paste-103921028694017.jpg",
+        "paste-104711302676481.jpg",
+        "paste-105458626985985.jpg",
+        "paste-107013405147137.jpg",
+        "paste-108563888340993.jpg",
+        "paste-109336982454273.jpg",
+        "paste-110122961469441.jpg",
+        "paste-112566797860865.jpg",
+        "paste-114121576022017.jpg",
+        "paste-114894670135297.jpg",
+        "paste-115672059215873.jpg",
+        "paste-117222542409729.jpg",
+        "paste-120319213830145.jpg",
+        "paste-121955596369921.jpg",
+        "paste-123480309760001.jpg",
+        "paste-125073742626817.jpg",
+        "paste-125851131707393.jpg",
+        "paste-126649995624449.jpg",
+        "paste-127453154508801.jpg",
+        "paste-128226248622081.jpg",
+        "paste-129781026783233.jpg",
+        "paste-131331509977089.jpg",
+        "paste-132108899057665.jpg",
+        "paste-134436771332097.jpg",
+        "paste-135991549493249.jpg",
+        "paste-136764643606529.jpg",
+        "paste-13700945674241.jpg",
+        "paste-138336601636865.jpg",
+        "paste-139113990717441.jpg",
+        "paste-140664473911297.jpg",
+        "paste-142223547039745.jpg",
+        "paste-14568529068033.jpg",
+        "paste-146089017606145.jpg",
+        "paste-149224343732225.jpg",
+        "paste-14937896255489.jpg",
+        "paste-150753352089601.jpg",
+        "paste-152303835283457.jpg",
+        "paste-15341623181313.jpg",
+        "paste-156216550490113.jpg",
+        "paste-159300337008641.jpg",
+        "paste-16131897163777.jpg",
+        "paste-165450730176513.jpg",
+        "paste-17690970292225.jpg",
+        "paste-17879948853249.jpg",
+        "paste-19250043420673.jpg",
+        "paste-20031727468545.jpg",
+        "paste-20873541058561.jpg",
+        "paste-22436909154305 (1).jpg",
+        "paste-23308787515393.jpg",
+        "paste-23987392348161.jpg",
+        "paste-24872155611137.jpg",
+        "paste-26482768347137.jpg",
+        "paste-27109833572353.jpg",
+        "paste-27268747362305.jpg",
+        "paste-27887222652929.jpg",
+        "paste-28046136442881.jpg",
+        "paste-29613799505921.jpg",
+        "paste-30386893619201.jpg",
+        "paste-31164282699777.jpg",
+        "paste-31911607009281.jpg",
+        "paste-32555852103681.jpg",
+        "paste-33638183862273.jpg",
+        "paste-34961033789441.jpg",
+        "paste-35807142346753.jpg",
+        "paste-37512244363265.jpg",
+        "paste-38212324032513.jpg",
+        "paste-39054137622529.jpg",
+        "paste-39771397160961.jpg",
+        "paste-39861591474177.jpg",
+        "paste-40638980554753.jpg",
+        "paste-41373419962369.jpg",
+        "paste-43761421778945.jpg",
+        "paste-44461501448193.jpg",
+        "paste-46011984642049.jpg",
+        "paste-46106473922561.jpg",
+        "paste-47605417508865.jpg",
+        "paste-48399986458625.jpg",
+        "paste-48580375085057.jpg",
+        "paste-51226074939393.jpg",
+        "paste-52488795324417.jpg",
+        "paste-53266184404993.jpg",
+        "paste-54039278518273.jpg",
+        "paste-54816667598849.jpg",
+        "paste-55594056679425.jpg",
+        "paste-56367150792705.jpg",
+        "paste-56663503536129.jpg",
+        "paste-58213986729985.jpg",
+        "paste-58991375810561.jpg",
+        "paste-60009283059713.jpg",
+        "paste-61572651155457.jpg",
+        "paste-62431644614657.jpg",
+        "paste-63088774610945.jpg",
+        "paste-63870458658817.jpg",
+        "paste-64768106823681.jpg",
+        "paste-68251325300737.jpg",
+        "paste-73293616906241.jpg",
+        "paste-74079595921409.jpg",
+        "paste-76424648065025.jpg",
+        "paste-77975131258881.jpg",
+        "paste-78769700208641.jpg",
+        "paste-80607946211329.jpg",
+        "paste-81084687581185.jpg",
+        "paste-82158429405185.jpg",
+        "paste-8272107012097 (2).jpg",
+        "paste-82944408420353.jpg",
+        "paste-84941568212993.jpg",
+        "paste-86028194938881.jpg",
+        "paste-9096740732929.jpg",
+        "paste-91384019156993.jpg",
+        "paste-92157113270273.jpg",
+        "paste-96924526968833.jpg",
+        "paste-98470715195393.jpg",
+        "paste-99248104275969.jpg",
+        "rec1395603936.mp3",
+        "rec1395604712.mp3",
+        "rec1395606025.mp3",
+        "rec1395606044.mp3",
+        "rec1395606074.mp3",
+        "rec1395723095.mp3",
+        "rec1395723107.mp3",
+        "rec1395723129.mp3",
+        "rec1395723140.mp3",
+        "rec1395723182.mp3",
+        "rec1395723206.mp3",
+        "rec1395723216.mp3",
+        "rec1395723357.mp3",
+        "rec1395723368.mp3",
+        "rec1395723379.mp3",
+        "rec1395723437.mp3",
+        "rec1395723464.mp3",
+        "rec1395723475.mp3",
+        "rec1395723496.mp3",
+        "rec1395723562.mp3",
+        "rec1395723571.mp3",
+        "rec1395723589.mp3",
+        "rec1395723749.mp3",
+        "rec1395723768.mp3",
+        "rec1395723807.mp3",
+        "rec1395723817.mp3",
+        "rec1395846446.mp3",
+        "rec1395846463.mp3",
+        "rec1395846490.mp3",
+        "rec1395846508.mp3",
+        "rec1395846553.mp3",
+        "rec1395846561.mp3",
+        "rec1395846572.mp3",
+        "rec1395846583.mp3",
+        "rec1395846611.mp3",
+        "rec1395846624.mp3",
+        "rec1395846633.mp3",
+        "rec1395846642.mp3",
+        "rec1395846651.mp3",
+        "rec1395846660.mp3",
+        "rec1395846677.mp3",
+        "rec1395846729.mp3",
+        "rec1395846740.mp3",
+        "rec1395858342.mp3",
+        "rec1395858360.mp3",
+        "rec1395858403.mp3",
+        "rec1395858538.mp3",
+        "rec1395858549.mp3",
+        "rec1395858572.mp3",
+        "rec1395858599.mp3",
+        "rec1395858632.mp3",
+        "rec1395858656.mp3",
+        "rec1395858720.mp3",
+        "rec1395858729.mp3",
+        "rec1395858750.mp3",
+        "rec1395858760.mp3",
+        "rec1395858809.mp3",
+        "rec1395858816.mp3",
+        "rec1395858833.mp3",
+        "rec1395858851.mp3",
+        "rec1395858897.mp3",
+        "rec1395858934.mp3",
+        "rec1395858946.mp3",
+        "rec1395858976.mp3",
+        "rec1395858992.mp3",
+        "rec1395859000.mp3",
+        "rec1395859020.mp3",
+        "rec1395859052.mp3",
+        "rec1395859079.mp3",
+        "rec1395862670.mp3",
+        "rec1395862695.mp3",
+        "rec1395896412.mp3",
+        "rec1395896484.mp3",
+        "rec1395896497.mp3",
+        "rec1395896531.mp3",
+        "rec1395896600.mp3",
+        "rec1395896644.mp3",
+        "rec1395896658.mp3",
+        "rec1395896725.mp3",
+        "rec1395896766.mp3",
+        "rec1395896791.mp3",
+        "rec1395896800.mp3",
+        "rec1395896824.mp3",
+        "rec1395896985.mp3",
+        "rec1395896993.mp3",
+        "rec1395897024.mp3",
+        "rec1395897053.mp3",
+        "rec1395897061.mp3",
+        "rec1395897068.mp3",
+        "rec1395897084.mp3",
+        "rec1395897092.mp3",
+        "rec1395897108.mp3",
+        "rec1395897129.mp3",
+        "rec1395897152.mp3",
+        "rec1395897159.mp3",
+        "rec1395897167.mp3",
+        "rec1395897182.mp3",
+        "rec1395897190.mp3",
+        "rec1395897204.mp3",
+        "rec1395897221.mp3",
+        "shirt.mp3",
+        "son.jpg",
+        "sqaure.mp3",
+        "star.mp3",
+        "teacher.jpg",
+        "water.mp3"
+    ],
+    "name": "J1",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Basic (and reversed card)-4431f",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        0
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "Arial",
+                    "bqfmt": "",
+                    "bsize": 12,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}",
+                    "bafmt": "",
+                    "bfont": "Arial",
+                    "bqfmt": "",
+                    "bsize": 12,
+                    "did": null,
+                    "name": "Card 2",
+                    "ord": 1,
+                    "qfmt": "{{Back}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "css": ".card {\n font-family: verdana, arial, helvetica, sans-serif;\n font-size: 24px;\n text-align: center;\n background-color: white;\n}\n\nimg { \n\tdisplay: block; max-width: 70%; max-height: none; margin-left: auto; margin: 5px auto 5px;\n}\n\n.mobile .card img {max-width: 80%; max-height: none;}",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Obrázek - Strana 1",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Zvuk - Strana 1",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Obrázek - Strana 2",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Zvuk - Strana 2",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Použití ve větě - Strana 2",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Použití ve větě, Zvuk - Strana 2",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Vylepšená kartička - Lukáš B.",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div>{{Obrázek - Strana 2}}</div>\n<div>{{Zvuk - Strana 2}}</div>\n<div>{{Použití ve větě - Strana 2}}</div>\n<div>{{Použití ve větě, Zvuk - Strana 2}}</div>\n",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div>{{Obrázek - Strana 1}}</div>\n<div>{{Zvuk - Strana 1}}</div>\n\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "FrontSnd",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "2Trun1Snd",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        2
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}\n{{FrontSnd}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}\n{{FrontSnd}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Card 2",
+                    "ord": 1,
+                    "qfmt": "{{Back}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-78769700208641.jpg\"><div>Pes</div>",
+                "dog[sound:rec1395897061.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Q[X&E#%N_P",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-135991549493249.jpg\"><div>Kočka</div>",
+                "cat[sound:rec1395897204.mp3]"
+            ],
+            "flags": 0,
+            "guid": "yNMR%xL3Q8",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-73293616906241.jpg\"><div>Ryba</div>",
+                "fish[sound:rec1395859052.mp3]"
+            ],
+            "flags": 0,
+            "guid": "pmMRd[u]KQ",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-17690970292225.jpg\"><div>Pták.</div>",
+                "bird[sound:bird.mp3]"
+            ],
+            "flags": 0,
+            "guid": "l0^c*TIIVj",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-74079595921409.jpg\"><div>Had</div>",
+                "snake[sound:rec1395606025.mp3]"
+            ],
+            "flags": 0,
+            "guid": "EW=;M^-kJg",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-13700945674241.jpg\"><div>Prase</div>",
+                "pig[sound:rec1395846651.mp3]"
+            ],
+            "flags": 0,
+            "guid": "PiC+|KCVIK",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-41373419962369.jpg\"><div>Mýš</div>",
+                "mouse[sound:rec1395723140.mp3]"
+            ],
+            "flags": 0,
+            "guid": "K,,zZ](6c`",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-126649995624449.jpg\"><div>Vlak</div>",
+                "train[sound:rec1395858750.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Ot=9>auFf[",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-56663503536129.jpg\"><div>Auto</div>",
+                "car[sound:rec1395897182.mp3]"
+            ],
+            "flags": 0,
+            "guid": "OtZ5SZTyLj",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-123480309760001.jpg\"><div>Autobus</div>",
+                "bus[sound:bus.mp3]"
+            ],
+            "flags": 0,
+            "guid": "O/.b}:5|x>",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-140664473911297.jpg\"><div>Dům, domek</div>",
+                "house[sound:rec1395896725.mp3]"
+            ],
+            "flags": 0,
+            "guid": "C)F7plWjy{",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-37512244363265.jpg\"><img src=\"paste-39054137622529.jpg\"><div>Ulice.&nbsp;</div>",
+                "street[sound:rec1395897129.mp3]"
+            ],
+            "flags": 0,
+            "guid": "BGm0~4DSW9",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-55594056679425.jpg\"><div>Klobouk</div>",
+                "hat[sound:rec1395846583.mp3]"
+            ],
+            "flags": 0,
+            "guid": "zR^K9TIkEw",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-102361955565569.jpg\"><div>Košile</div>",
+                "shirt[sound:shirt.mp3]"
+            ],
+            "flags": 0,
+            "guid": "bG@rQ&3J?U",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-32555852103681.jpg\"><div>Kalhoty</div>",
+                "pants[sound:rec1395858946.mp3]"
+            ],
+            "flags": 0,
+            "guid": "h/O#W^o4[<",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-33638183862273.jpg\"><div>Kapsa</div>",
+                "pocket[sound:rec1395897167.mp3]"
+            ],
+            "flags": 0,
+            "guid": "wvn,NA)T$3",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"son.jpg\"><div>Syn</div>",
+                "son[sound:rec1395897068.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Dxmg4X@-Kg",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-38212324032513.jpg\"><div>Kafe.</div>",
+                "coffee[sound:rec1395858833.mp3]"
+            ],
+            "flags": 0,
+            "guid": "te00B%QRWK",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-46106473922561.jpg\"><div>Šťáva. Džus.</div>",
+                "juice[sound:rec1395896800.mp3]"
+            ],
+            "flags": 0,
+            "guid": "C97;6*#OVp",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-138336601636865.jpg\"><div>Voda</div>",
+                "water[sound:water.mp3]"
+            ],
+            "flags": 0,
+            "guid": "kqpzwlA1i|",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-54039278518273.jpg\"><div>Mléko</div>",
+                "milk[sound:rec1395858599.mp3]"
+            ],
+            "flags": 0,
+            "guid": "m>n,MJH:G>",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-46011984642049.jpg\"><div>Vejce</div>",
+                "eggs[sound:rec1395897084.mp3]"
+            ],
+            "flags": 0,
+            "guid": "me;auyeKCI",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-47605417508865.jpg\"><div>Sýr</div>",
+                "cheese[sound:rec1395858992.mp3]"
+            ],
+            "flags": 0,
+            "guid": "exbw!**czD",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-76424648065025.jpg\"><div>Chleba</div>",
+                "bread&nbsp;[sound:bread.mp3]"
+            ],
+            "flags": 0,
+            "guid": "yZ$;o*-z21",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-92157113270273.jpg\"><div>Polévka</div>",
+                "soup[sound:rec1395896993.mp3]"
+            ],
+            "flags": 0,
+            "guid": "C@J%ggJui>",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-82158429405185.jpg\"><div>Kuře</div>",
+                "chicken[sound:rec1395846642.mp3]"
+            ],
+            "flags": 0,
+            "guid": "BjKf7M}/BY",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-136764643606529.jpg\"><div>Jablko</div>",
+                "apple[sound:rec1395897024.mp3]"
+            ],
+            "flags": 0,
+            "guid": "E;qXWox@8F",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-159300337008641.jpg\"><div>Banán</div>",
+                "banana[sound:rec1395723182.mp3]"
+            ],
+            "flags": 0,
+            "guid": "n>#OWL<X.N",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-28046136442881.jpg\"><div>Pomeranč. Oranžový.</div>",
+                "orange[sound:rec1395859020.mp3]"
+            ],
+            "flags": 0,
+            "guid": "tmuTd#eYa6",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-156216550490113.jpg\"><div>Citrón</div>",
+                "lemon[sound:rec1395723562.mp3]"
+            ],
+            "flags": 0,
+            "guid": "dd`SNroo>a",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-63088774610945.jpg\"><div>Kukuřice</div>",
+                "corn[sound:rec1395896658.mp3]"
+            ],
+            "flags": 0,
+            "guid": "KZS[a/p|nO",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-27109833572353.jpg\"><div>Rýže</div>",
+                "rice[sound:rec1395723107.mp3]"
+            ],
+            "flags": 0,
+            "guid": "y-p;2$<3C_",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-98470715195393.jpg\"><div>Lžička</div>",
+                "spoon[sound:rec1395723571.mp3]"
+            ],
+            "flags": 0,
+            "guid": "b.P(j~a2ur",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-115672059215873.jpg\"><div>Talíř</div>",
+                "plate[sound:rec1395858403.mp3]"
+            ],
+            "flags": 0,
+            "guid": "smWm)5h=[B",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-103921028694017.jpg\"><div>Šálek, pohár, hrnek</div>",
+                "cup[sound:rec1395858549.mp3]"
+            ],
+            "flags": 0,
+            "guid": "wIbruM5-TA",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-24872155611137.jpg\">07.00-10.00<div>Snídaně</div>",
+                "breakfast [sound:breakfast.mp3]"
+            ],
+            "flags": 0,
+            "guid": "vuNqF+rxg`",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-27887222652929.jpg\"><div>Stůl</div>",
+                "table[sound:rec1395723095.mp3]"
+            ],
+            "flags": 0,
+            "guid": "d4k}_sZ!Q3",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-68251325300737.jpg\"><div>Židle</div>",
+                "chair&nbsp;[sound:chair.mp3]"
+            ],
+            "flags": 0,
+            "guid": "H9vwh@<JgH",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-99248104275969.jpg\"><div>Hodiny</div>",
+                "clock[sound:rec1395723437.mp3]"
+            ],
+            "flags": 0,
+            "guid": "l&]8p!=38Z",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-84941568212993.jpg\"><div>Postel</div>",
+                "bed[sound:rec1395897159.mp3]"
+            ],
+            "flags": 0,
+            "guid": "EQ6Ij`sQc8",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-91384019156993.jpg\"><div>Lampa</div>",
+                "lamp[sound:rec1395858656.mp3]"
+            ],
+            "flags": 0,
+            "guid": "yJ4?SQ<HTw",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-128226248622081.jpg\"><div>Okno</div>",
+                "window[sound:rec1395723807.mp3]"
+            ],
+            "flags": 0,
+            "guid": "c[LWRG2tFc",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-108563888340993.jpg\"><div>Dveře</div>",
+                "door[sound:rec1395603936.mp3]"
+            ],
+            "flags": 0,
+            "guid": "y048K]&dq4",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-139113990717441.jpg\"><div>Koupelna</div>",
+                "bathroom[sound:rec1395723357.mp3]"
+            ],
+            "flags": 0,
+            "guid": "nUp}d|V(k]",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-150753352089601.jpg\"><div>Prupiska. Pero.</div>",
+                "pen[sound:rec1395858816.mp3]"
+            ],
+            "flags": 0,
+            "guid": "r~XO#qjQ~)",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-52488795324417.jpg\"><div>Počítač</div>",
+                "computer[sound:rec1395723216.mp3]"
+            ],
+            "flags": 0,
+            "guid": "l,Xm`gKk%P",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-81084687581185.jpg\"><div>Kniha</div>",
+                "book[sound:rec1395723749.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Mtqf$)T3TP",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-56367150792705.jpg\"><div>Klíč, klávesa</div>",
+                "key[sound:rec1395723589.mp3]"
+            ],
+            "flags": 0,
+            "guid": "sm}..hn5e",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-39861591474177.jpg\"><div>Hlava</div>",
+                "head[sound:rec1395846572.mp3]"
+            ],
+            "flags": 0,
+            "guid": "c!6m:8_RJ",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-23308787515393.jpg\"><div>Chlup, Vlas,Srst</div>",
+                "hair[sound:hair.mp3]"
+            ],
+            "flags": 0,
+            "guid": "O,n4FErfdT",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-129781026783233.jpg\"><div>Oko</div>",
+                "eye[sound:rec1395846677.mp3]"
+            ],
+            "flags": 0,
+            "guid": "p&6f5R4]0@",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-107013405147137.jpg\"><div>Ústa, Pusa</div>",
+                "mouth&nbsp;[sound:mouth.mp3]"
+            ],
+            "flags": 0,
+            "guid": "g%75h5zlRf",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-44461501448193.jpg\"><div>Nos. Příď</div>",
+                "nose[sound:rec1395896412.mp3]"
+            ],
+            "flags": 0,
+            "guid": "D`fXgdYF!G",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-31164282699777.jpg\"><img src=\"paste-31911607009281.jpg\"><div>Záda. Zpět.</div>",
+                "back[sound:rec1395723817.mp3]"
+            ],
+            "flags": 0,
+            "guid": "L^9qXs@eMH",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-63870458658817.jpg\"><div>Prst</div>",
+                "finger[sound:rec1395846463.mp3]"
+            ],
+            "flags": 0,
+            "guid": "AZ?i`K,a:C",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-125073742626817.jpg\"><div>Noha</div>",
+                "leg[sound:rec1395846561.mp3]"
+            ],
+            "flags": 0,
+            "guid": "fpqbq+X7}H",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-48399986458625.jpg\"><div>Chodidlo, Noha</div>",
+                "foot[sound:rec1395858934.mp3]"
+            ],
+            "flags": 0,
+            "guid": "d!$hxZ?11u",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-15341623181313.jpg\"><div>Mozek</div>",
+                "brain[sound:rec1395896985.mp3]"
+            ],
+            "flags": 0,
+            "guid": "yul$|v|,e1",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-54816667598849.jpg\"><div>Sníh</div>",
+                "snow[sound:rec1395858632.mp3]"
+            ],
+            "flags": 0,
+            "guid": "J6GOI*bXXC",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-20873541058561.jpg\"><div>Strom</div>",
+                "tree[sound:rec1395723379.mp3]"
+            ],
+            "flags": 0,
+            "guid": "z][Wi*u[dl",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-35807142346753.jpg\"><div>Slunce</div>",
+                "sun[sound:rec1395846446.mp3]"
+            ],
+            "flags": 0,
+            "guid": "c`uhkTu{?W",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-39771397160961.jpg\"><div>Les.</div>",
+                "forest[sound:rec1395897053.mp3]"
+            ],
+            "flags": 0,
+            "guid": "mvRYM?92Y}",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-61572651155457.jpg\"><div>Květina</div>",
+                "flower[sound:rec1395896484.mp3]<div><br /></div>"
+            ],
+            "flags": 0,
+            "guid": "e)@QhNm^0t",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-80607946211329.jpg\"><div>Hvězda</div>",
+                "star&nbsp;[sound:star.mp3]"
+            ],
+            "flags": 0,
+            "guid": "K[zb*;*T0s",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-14568529068033.jpg\"><div>Ráno.</div>",
+                "morning&nbsp;[sound:morning.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Byg7`)iCcA",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"teacher.jpg\"><div>Učitel, učitelka</div>",
+                "Teacher[sound:rec1395858897.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Aj`-KQ9:`@",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-30386893619201.jpg\"><div>Doktor</div>",
+                "doctor[sound:rec1395896531.mp3]"
+            ],
+            "flags": 0,
+            "guid": "z74`Fr8Y$!",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-19250043420673.jpg\"><div>Sklenice. Sklo.</div>",
+                "glass[sound:rec1395606074.mp3]"
+            ],
+            "flags": 0,
+            "guid": "AQ:u,If[4`",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-149224343732225.jpg\"><div>Dřevo.&nbsp;</div>",
+                "wood[sound:rec1395897092.mp3]"
+            ],
+            "flags": 0,
+            "guid": "NjSIQyU<dq",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-114894670135297.jpg\"><div>Čtverec</div>",
+                "square[sound:sqaure.mp3]"
+            ],
+            "flags": 0,
+            "guid": "R^X6P;`*<",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-9096740732929.jpg\"><div>Mýč, balón</div>",
+                "ball[sound:rec1395862670.mp3]"
+            ],
+            "flags": 0,
+            "guid": "p`Glm3gd1L",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-8272107012097 (2).jpg\"><div>Hra</div>",
+                "game[sound:rec1395846490.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Kx<W*@]O2l",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-60009283059713.jpg\"><div>Pistol</div>",
+                "gun[sound:rec1395858342.mp3]"
+            ],
+            "flags": 0,
+            "guid": "i#Qe-A|bMw",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-110122961469441.jpg\"><div>V levo, doleva</div>",
+                "left[sound:rec1395859079.mp3]"
+            ],
+            "flags": 0,
+            "guid": "LuQ_5`]+_D",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-17879948853249.jpg\"><div>V pravo. Správně.</div>",
+                "right[sound:rec1395858538.mp3]"
+            ],
+            "flags": 0,
+            "guid": "cyrzGal~mn",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-121955596369921.jpg\"><div>Kabelka, taška</div>",
+                "bag[sound:rec1395846508.mp3]"
+            ],
+            "flags": 0,
+            "guid": "CgaG:+uJ6X",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-114121576022017.jpg\"><div>Krabice</div>",
+                "box[sound:rec1395858976.mp3]"
+            ],
+            "flags": 0,
+            "guid": "H<<lKZ9<.z",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-96924526968833.jpg\"><div>Mapa</div>",
+                "map[sound:rec1395862695.mp3]"
+            ],
+            "flags": 0,
+            "guid": "jG>gV1=lBa",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-23987392348161.jpg\"><div>Světlo. Světlý.</div>",
+                "light[sound:rec1395858729.mp3]"
+            ],
+            "flags": 0,
+            "guid": "gl4!6,0WmI",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-16131897163777.jpg\"><div>Jaro.</div>",
+                "Spring[sound:rec1395858360.mp3]"
+            ],
+            "flags": 0,
+            "guid": "z3dW(..#>#",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-27268747362305.jpg\"><div>Pracovat. Práce</div>",
+                "work[sound:rec1395723368.mp3]"
+            ],
+            "flags": 0,
+            "guid": "l72AAV)L5v",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-131331509977089.jpg\"><div>Jít, jet</div>",
+                "go[sound:rec1395896497.mp3]"
+            ],
+            "flags": 0,
+            "guid": "t;HK^*[z:z",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-29613799505921.jpg\"><div>Chodit. Procházka.</div>",
+                "walk[sound:rec1395897221.mp3]"
+            ],
+            "flags": 0,
+            "guid": "tvI4pPu8ZX",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-77975131258881.jpg\"><div>Bežet, utíkat</div>",
+                "run[sound:rec1395896824.mp3]"
+            ],
+            "flags": 0,
+            "guid": "s1hA^:8HFr",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-120319213830145.jpg\"><div>Následovat</div>",
+                "follow[sound:follow.mp3]"
+            ],
+            "flags": 0,
+            "guid": "sk#Hqsl[8Q",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-142223547039745.jpg\"><div>Přemýšlet, Myslet.</div>",
+                "think[sound:rec1395846553.mp3]"
+            ],
+            "flags": 0,
+            "guid": "D4RJ~#=uy!",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-132108899057665.jpg\"><div>Jíst, sníst</div>",
+                "eat[sound:rec1395858572.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Dk#91>rhAK",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-109336982454273.jpg\"><div>Říct, řekni</div>",
+                "say[sound:rec1395896600.mp3]"
+            ],
+            "flags": 0,
+            "guid": "zfc($1Zof4",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-112566797860865.jpg\"><div>Pít, napít</div>",
+                "drink[sound:rec1395723768.mp3]"
+            ],
+            "flags": 0,
+            "guid": "nF;#2b{Xi}",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-53266184404993.jpg\"><div>Vůně, zápach</div>",
+                "smell[sound:rec1395723129.mp3]"
+            ],
+            "flags": 0,
+            "guid": "swx^/Txt,R",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-20031727468545.jpg\"><div>Vidět.</div>",
+                "see[sound:rec1395846624.mp3]"
+            ],
+            "flags": 0,
+            "guid": "wrR8YaAv2J",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-62431644614657.jpg\"><div>Dotek. Dotknout se</div>",
+                "touch[sound:rec1395897108.mp3]"
+            ],
+            "flags": 0,
+            "guid": "wkrH%h@:$M",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-82944408420353.jpg\"><div>Slyšet</div>",
+                "hear[sound:rec1395606044.mp3]"
+            ],
+            "flags": 0,
+            "guid": "FpZ06Yss?H",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-22436909154305 (1).jpg\"><div>Vybuchnout. Explodovat</div>",
+                "explode[sound:rec1395846633.mp3]"
+            ],
+            "flags": 0,
+            "guid": "B(&|7b*`P%",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-134436771332097.jpg\"><div>Sednout si</div>",
+                "sit[sound:rec1395897152.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Dd`J3-9+HO",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-146089017606145.jpg\"><div>Stoupnout si. Postavit se.</div>",
+                "stand[sound:rec1395846740.mp3]"
+            ],
+            "flags": 0,
+            "guid": "wGMc*;L^Be",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-64768106823681.jpg\"><div>Probudit se</div>",
+                "wake up[sound:rec1395846660.mp3]"
+            ],
+            "flags": 0,
+            "guid": "hh#dI-xGGL",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-104711302676481.jpg\">1, 2, 3....<img src=\"paste-105458626985985.jpg\"><div>Počítat</div>",
+                "count[sound:rec1395723475.mp3]"
+            ],
+            "flags": 0,
+            "guid": "nDTU@<ju-h",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-117222542409729.jpg\"><div>Vyhrát, zvýtězit</div>",
+                "win[sound:rec1395896766.mp3]"
+            ],
+            "flags": 0,
+            "guid": "bq1(iW^s8E",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-14937896255489.jpg\"><div>Vařit. Péct.</div>",
+                "cook[sound:rec1395858809.mp3]"
+            ],
+            "flags": 0,
+            "guid": "C,nM`E;K=0",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-127453154508801.jpg\"><div>Otevřít</div>",
+                "open[sound:rec1395859000.mp3]"
+            ],
+            "flags": 0,
+            "guid": "e.KZ2V*b6x",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-43761421778945.jpg\"><div>Zavřít</div>",
+                "close[sound:rec1395723206.mp3]"
+            ],
+            "flags": 0,
+            "guid": "I+x:~doX^p",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-165450730176513.jpg\"><div>Dlouhý</div><div>Krátký</div>",
+                "long<div>short[sound:rec1395723464.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "yjzg@#_~.h",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-40638980554753.jpg\"><div>Vysoký</div><div>Krátký</div>",
+                "tall<div>short[sound:rec1395604712.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "shy%w7^ubY",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-48580375085057.jpg\"><div>Velký</div><div>Malý</div>",
+                "big<div>small[sound:rec1395858720.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "{Espw=L,N",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-51226074939393.jpg\"><div>Pomalu</div><div>Rychle</div>",
+                "&nbsp;slow<div>fast[sound:rec1395846611.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "c|j!#D#vo^",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-86028194938881.jpg\"><div>Studený</div><div>Horký</div>",
+                "cold<div>hot[sound:rec1395858760.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "C/BIM9K8:5",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-58991375810561.jpg\"><div>starý</div><div>nový</div>",
+                "old<div>new[sound:rec1395896791.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "BP4;9SJQDH",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-152303835283457.jpg\"><div>Dobře, dobrý.&nbsp;</div><div>Špatně špatný.</div>",
+                "good<div>bad[sound:rec1395896644.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "dOI~NQTBC6",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-26482768347137.jpg\"><div>Nemocný</div><div>Zdravý</div>",
+                "&nbsp;sick<div>healthy[sound:rec1395846729.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "u5}v-}3qo!",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-58213986729985.jpg\"><div>Veselý</div><div>Smutný</div>",
+                "happy<div>sad[sound:rec1395723496.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "AxkrjG3yE_",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-125851131707393.jpg\"><div>Krásná.</div><div>Škaredá</div>",
+                "beautiful<div>ugly[sound:rec1395897190.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "dacoH/!X)3",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"paste-34961033789441.jpg\"><div>Zlý</div><div>Hodný</div>",
+                "mean<div>nice[sound:rec1395858851.mp3]</div>"
+            ],
+            "flags": 0,
+            "guid": "qeYKFOJ0Gi",
+            "note_model_uuid": "6b1e6d5a-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"1 na krabici.png\">",
+                "[sound:googletts-61d4c0d7-35eb7454-018f9123-a1760f87-b252c476.mp3]",
+                "<img src=\"2 on the box.png\">",
+                "[sound:googletts-3f760508-25491cf5-a1beab2a-f194e9cb-989bbdeb.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">Dinosaur\nis on the box.&nbsp;</span><br>",
+                "[sound:googletts-3b4dbbe1-caae9a34-f9c0cdac-b1225b1f-6a9d8bf6.mp3]"
+            ],
+            "flags": 0,
+            "guid": "DP>ZRqG>Po",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"7 v krabici.png\">",
+                "[sound:googletts-8c19d0d5-92723848-bb1f2a05-be51a4cf-920bdec2.mp3]",
+                "<img src=\"8 in the box.png\">",
+                "[sound:googletts-5db357a7-933ba044-9d53b08e-4b730994-d426ea14.mp3]<br>",
+                "<span style=\"color: rgb(14, 16, 26);\">Dinosaur is in the box.&nbsp;</span><br>",
+                "[sound:googletts-d8f7ca72-a9e3e1a9-4dd315a6-0909df5e-b2f9265f.mp3]"
+            ],
+            "flags": 0,
+            "guid": "P,FuJK3z?I",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"23 zrcadlo.png\">",
+                "[sound:googletts-decf2aea-81108ffd-4599e9f4-eb909acb-23bcbbe1.mp3]",
+                "<img src=\"24 a mirror.png\">",
+                "[sound:googletts-77d989c1-e39f5dbe-9a9c3faa-cf673684-dc0e91f3.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">I see a\nmonster in the&nbsp;mirror.&nbsp;</span><br>",
+                "[sound:googletts-79a0b172-fe69c0f8-0f0e1ee5-fe0bf2c2-f0fb6e28.mp3]"
+            ],
+            "flags": 0,
+            "guid": "LzaJze0-^C",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"31 křeslo.png\">",
+                "[sound:googletts-848ab5d8-4d743252-ac334112-cb85022a-4cbd0eb4.mp3]",
+                "<img src=\"32 an armchair.png\">",
+                "[sound:googletts-668e831c-e4191b76-fce13fff-44afae3b-8e129492.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">I like\nyour&nbsp;armchair<b>.</b>&nbsp;</span><br>",
+                "[sound:googletts-9a00a82e-636b0087-13c482a2-23bab1d1-a0adbf5f.mp3]"
+            ],
+            "flags": 0,
+            "guid": "GJ<2}a}kry",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"35 pohovka.png\">",
+                "[sound:googletts-3bb61b75-ffda50d0-cbf452c7-788c87e2-96014d17.mp3]",
+                "<img src=\"36 a sofa.png\">",
+                "[sound:googletts-d71f9bf4-69e18174-ff493af6-d17ef664-3a810330.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">My\nfamily sits on the&nbsp;sofa&nbsp;every evening.&nbsp;</span><br>",
+                "[sound:googletts-acfcd124-e4f48a72-a1c17d38-8dc7c633-f83c4d24.mp3]"
+            ],
+            "flags": 0,
+            "guid": "fR4n|*C4LO",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"37 světlo.png\">",
+                "[sound:googletts-f92c66b0-7c93b3e9-7c36171e-8ab9ad26-cd8667c7.mp3]",
+                "<img src=\"38 a light.png\">",
+                "[sound:googletts-d0cdcbc3-d85b5366-e44c1012-651d1ff9-134ee506.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">I see\nthe light.&nbsp;</span><br>",
+                "[sound:googletts-2dc312f8-5bdb9343-625b2646-d7770f59-930cf8ed.mp3]"
+            ],
+            "flags": 0,
+            "guid": "QBNlT.2-`g",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"41 sporák.png\">",
+                "[sound:googletts-5f5b720b-b49d9c2d-80f4b3a5-53efa5d6-7e6e3dce.mp3]",
+                "<img src=\"42 a cooker.png\">",
+                "[sound:googletts-7ee87010-5f73358a-45dc9ea2-13c0e3d1-445b707f.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">I have\ngot a new&nbsp;cooker.&nbsp;</span><br>",
+                "[sound:googletts-68ed8d8a-9c83fc44-f87416d2-3bcb1375-a5fe5413.mp3]"
+            ],
+            "flags": 0,
+            "guid": "w6.4LJ^h0{",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"51 záchod.png\">",
+                "[sound:googletts-2fe19f66-d6c1d75e-73009e00-2eeca59a-7327960d.mp3]",
+                "<img src=\"52 a toilet.png\">",
+                "[sound:googletts-342d8acc-efebc586-ee0099d5-92a6d0e7-16dc4439.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">Where's the&nbsp;toilet?&nbsp;</span><br>",
+                "[sound:googletts-d9752288-fe2374e1-c4781e1b-90729eac-d0d2699f.mp3]"
+            ],
+            "flags": 0,
+            "guid": "N60EQ(RS5q",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"53 vana.png\">",
+                "[sound:googletts-9bf45178-7b31be5a-6d11f2d9-1ce75189-5e46b5b4.mp3]",
+                "<img src=\"54 a bath.png\">",
+                "[sound:googletts-ce93b548-ca5f9c8e-4f620f24-0b3a4c6f-4cbaf2d2.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">I'm relaxing in a&nbsp;bath.&nbsp;</span><br>",
+                "[sound:googletts-61ee6c4b-3308aa1f-6e5611c7-d1f7613b-e6233b29.mp3]"
+            ],
+            "flags": 0,
+            "guid": "w4*]g49K5&",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"65 schody.png\">",
+                "[sound:googletts-33c8301d-eb744f64-8fbccbbf-f14d29cf-6148b7ce.mp3]",
+                "<img src=\"66 a stairs.png\">",
+                "[sound:googletts-737eb7e4-6c953391-4fe78751-7b233cfd-e4fca0ef.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">He's on\nthe&nbsp;stairs.&nbsp;</span><br>",
+                "[sound:googletts-f234a982-45696f54-21fc4767-aee3adf8-ae3c0646.mp3]"
+            ],
+            "flags": 0,
+            "guid": "D2lv/<t}]J",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<img src=\"85 židle.png\">",
+                "[sound:googletts-5532eb36-f278e2e2-a38d7524-b3677c31-a4875c8d.mp3]",
+                "<img src=\"86 a chair.png\">",
+                "[sound:googletts-3d4828ad-20b7d408-71071ced-60585729-3fc5c49c.mp3]",
+                "<span style=\"color: rgb(14, 16, 26);\">I have\ngot a good&nbsp;chair.&nbsp;</span><br>",
+                "[sound:googletts-cc1c8d18-3f02796e-9c5a5290-07eae54b-bd888e90.mp3]"
+            ],
+            "flags": 0,
+            "guid": "Ox{c33pKef",
+            "note_model_uuid": "6b1fc560-7101-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "On je",
+                ""
+            ],
+            "flags": 0,
+            "guid": "hyPr#^Wm(!",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Já jsem[sound:I am.mp3]",
+                ""
+            ],
+            "flags": 0,
+            "guid": "kIh-P87y(|",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Ona je",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Ll@uCV>DLU",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "My jsme",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Ecz8mzVII*",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Ty jsi",
+                ""
+            ],
+            "flags": 0,
+            "guid": "d046-87L];",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Já",
+                ""
+            ],
+            "flags": 0,
+            "guid": "K.=.Ktkeq]",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Ty<div>Vy</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "BLU?Y:8T2[",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "On",
+                ""
+            ],
+            "flags": 0,
+            "guid": "i%W#_uV}zB",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Ona",
+                ""
+            ],
+            "flags": 0,
+            "guid": "F%:ciC?slc",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "To",
+                ""
+            ],
+            "flags": 0,
+            "guid": "FOw4q+lF]r",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "My",
+                ""
+            ],
+            "flags": 0,
+            "guid": "c!,xL`6$4$",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Oni",
+                ""
+            ],
+            "flags": 0,
+            "guid": "K>rQpi5,0.",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Co?",
+                ""
+            ],
+            "flags": 0,
+            "guid": "KMbJC)ty$B",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": [
+                "marked"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Proč?",
+                ""
+            ],
+            "flags": 0,
+            "guid": "H+3zn!,]Pg",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Kde?",
+                ""
+            ],
+            "flags": 0,
+            "guid": "h)a4D|rL-@",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Kdy?",
+                ""
+            ],
+            "flags": 0,
+            "guid": "y]3>0^s,V{",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "",
+                "Mě",
+                ""
+            ],
+            "flags": 0,
+            "guid": "I:UJ?p,kQ&",
+            "note_model_uuid": "f327c7a6-7100-11ea-a10e-d8cb8a536b75",
+            "tags": []
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-package vocb.aws;
+package vocb.aws
 
 import java.util.concurrent.TimeUnit
 
@@ -25,15 +25,13 @@ public class AwsTranslate {
 		if (p.exitValue() != 0)  {
 			Helper.printProcOut(p)
 			throw new IllegalArgumentException("Error code ${p.exitValue()}.")
-		}
+h		}
 		return Helper.parseJson(p.text)?.TranslatedText
-
 	}
 
 
 
 	static void main(String... args) {
 		println new AwsTranslate().trn("Foo bar.")
-
 	}
 }

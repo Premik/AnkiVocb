@@ -1,4 +1,4 @@
-package vocb;
+package vocb
 
 import java.text.Normalizer
 
@@ -27,7 +27,7 @@ public class Helper {
 		//https://stackoverflow.com/questions/3322152/is-there-a-way-to-get-rid-of-accents-and-convert-a-whole-string-to-regular-lette
 		//Normalizer.normalize(word, Normalizer.Form.NFKD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "_")
 		String norm = Normalizer.normalize(word, Normalizer.Form.NFKD)
-		String noPunc = norm.replaceAll(/\p{InCombiningDiacriticalMarks}+/, "").replaceAll("[!@#.&\\\\/:*?\"<>'|=]", "");
+		String noPunc = norm.replaceAll(/\p{InCombiningDiacriticalMarks}+/, "").replaceAll("[!@#.&\\\\/:*?\"<>'|=]", "")
 		if (!appendHash) return noPunc
 		return "$noPunc-${Integer.toHexString(word.hashCode())}"
 	}
@@ -47,5 +47,10 @@ public class Helper {
 		if (!trim && lst.size() >=len) return lst
 		return (lst + [pad]*len).take(len)
 	}
-	
+
+	public static Tuple2<String, String> splitFileNameExt(String filename) {
+		if (!filename.contains(".")) return [filename, ""] //No ext
+		int dot = filename.lastIndexOf('.')
+		return [filename.take(dot),filename.substring(dot+ 1)]
+	}
 }

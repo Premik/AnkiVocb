@@ -225,10 +225,12 @@ public class ImageSelector   {
 
 		ImageSelector s = new ImageSelector()
 		s.open()
+		
+		int searchResults=32
+		HttpHelper hh = new HttpHelper()
+		BingWebSearch bs = new BingWebSearch(httpHelper: hh)
 		s.runSearch = { String newQ->
-			int searchResults=32
-			HttpHelper hh = new HttpHelper()
-			BingWebSearch bs = new BingWebSearch(httpHelper: hh)
+			
 			s.loadSearchResult(bs.thumbnailSearch(newQ, searchResults), hh)
 		}
 		s.runSearch("test")

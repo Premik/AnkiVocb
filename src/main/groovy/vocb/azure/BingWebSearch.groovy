@@ -66,8 +66,7 @@ public class BingWebSearch {
 	}
 	
 	SearchData thumbnailSearch(String q, int count=3) {
-		return thumbnailSearch(new SearchData(q:q, count:count))
-		
+		return thumbnailSearch(new SearchData(q:q, count:count))		
 	}
 
 
