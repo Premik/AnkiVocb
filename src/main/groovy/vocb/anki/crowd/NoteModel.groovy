@@ -17,7 +17,7 @@ public class NoteModel  {
 	List<FieldModel> flds = []
 	String latexPost
 	String latexPre
-	String name = "encz-0.0.1"
+	String name = "anikvob"
 	List req
 	int sortf
 	List<String> tags
@@ -46,14 +46,23 @@ public class NoteModel  {
 	}
 
 	String getFielValue(Note note, String name) {
-		note.assertIsComplete()
+		note.assertIsComplete() 		
 		return note[getFieldIndex(name)]
 	}
+	
+	String setFielValue(Note note, String name, String value) {
+		note.assertIsComplete()
+		note[getFieldIndex(name)] = value
+	}
 
-	String getFieldIndex(String name) {
+	int getFieldIndex(String name, boolean mustExists=true) {
 		assert name
 		assertIsComplete()
-		return flds.findIndexOf {it.name = name }
+		int i = flds.findIndexOf {it.name = name }
+		if (mustExists) {
+		assert i >-1 : "Field $name not found. Fields: $flds"
+		}
+		return i 
 	}
 
 	public void assertIsComplete() {
@@ -67,7 +76,7 @@ public class NoteModel  {
 		assert flds*.assertIsComplete()
 
 		if (!crowdanki_uuid) {
-			crowdanki_uuid = "ankivoc-0.0.1-$name"
+			crowdanki_uuid = "ankivocb-0.0.1-$name"
 		}
 	}
 }
