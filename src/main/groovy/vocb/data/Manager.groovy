@@ -77,13 +77,17 @@ public class Manager {
 	public String resolveMedia(String mediaName, String mediaExt, Closure whenNotFound) {
 		String mediaLink = word2MediaLink(mediaName, mediaExt)
 		if (linkedMediaExists(mediaLink)) return mediaLink
-		whenNotFound(p)
+		whenNotFound(mediaLinkPath(mediaLink))
 		return mediaLink
+	}
+	
+	public Path mediaLinkPath(String mediaLink) {
+		mediaPath.resolve(mediaLink).toAbsolutePath()
 	}
 	
 	public boolean linkedMediaExists(String mediaLink) {
 		if (!mediaLink) return false
-		Files.exists(mediaPath.resolve(mediaLink).toAbsolutePath())		
+		Files.exists(mediaLinkPath(mediaLink))		
 	}
 
 	public String save(Path path= conceptsPath) {
