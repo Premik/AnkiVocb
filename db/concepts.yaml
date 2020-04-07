@@ -1,0 +1,21 @@
+version: 0.0.1
+concepts: 
+- terms: 
+  - term: apple
+    lang: en
+  
+  - term: jablko
+    lang: cs
+    tts: jablko.mp3
+  origins: 
+  - top500
+- terms: 
+  - term: a
+    lang: en
+  state: ignore
+  origins: []
+- terms: 
+  - term: the
+    lang: en
+  state: ignore
+  origins: []
