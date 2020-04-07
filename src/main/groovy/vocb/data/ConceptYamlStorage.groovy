@@ -65,7 +65,12 @@ public class ConceptYamlStorage {
 		
 		StringBuilder sb = new StringBuilder()
 		//sb.append("terms: ").append(Helper.indentNextLines(terms,2))
-		sb.append("terms: ").append(terms)
+		//sb.append("#"*16 + "\n")
+		sb.append("terms: ")
+		if (terms.length() > 0) {
+			sb.append("\n")
+		}
+		sb.append(terms)
 		
 		appendYamlHash("state", c.state, sb)
 		appendYamlHash("img", c.img,sb)
