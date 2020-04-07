@@ -1,25 +1,21 @@
 version: 0.0.1
-
-concepts:
+concepts: 
 - terms: 
   - term: apple
     lang: en
-    tts:
+
   - term: jablko
     lang: cs
-    tts:
   state: populate
-  img:
-  freq:  
-  origins:
-  - top500   
-
+  origins: 
+  - top500
 - terms: 
   - term: a
     lang: en
   state: ignore
-  
+  origins: []
 - terms: 
   - term: the
-    lang: en    
+    lang: en
   state: ignore
+  origins: []

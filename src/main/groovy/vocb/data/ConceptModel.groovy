@@ -1,17 +1,20 @@
-package vocb.data;
+package vocb.data
 
-import groovy.transform.Canonical;
+import java.util.regex.Pattern
+
+import groovy.transform.Canonical
 import groovy.transform.ToString
 
 public enum State {
-   populate, done, ignore
-   
+	populate, done, ignore
 }
 @Canonical
 @ToString(excludes='concepts')
 public class ConceptDb {
-	String version
+	String version = "0.0.1"
 	List<Concept> concepts = []
+	
+	
 }
 
 @Canonical
