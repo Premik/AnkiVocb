@@ -68,6 +68,10 @@ public class ImageSelector   {
 			
 		}
 	}
+	
+	void setTitle(String title) {
+		frame?.title=title
+	}
 
 	JFrame createFrame() {
 		frame=new JFrame()
