@@ -12,7 +12,7 @@ import vocb.ui.ImageSelector
 
 public class BingImageAppender {
 
-	ImageSelector imgSelector = new ImageSelector()
+	ImageSelector imgSelector 
 
 	int searchResults=32
 	HttpHelper httpHelper = new HttpHelper()
@@ -21,36 +21,48 @@ public class BingImageAppender {
 	Manager dbMan = new Manager()
 
 	void init() {
+		imgSelector = new ImageSelector()
+		imgSelector.open()
 		imgSelector.runSearch = { String newQ->
-			imgSelector.loadSearchResult(bingSearch.thumbnailSearch(newQ, searchResults), httpHelper)
+			imgSelector.loadSearchResult(bingSearch.thumbnailSearch(newQ, searchResults), httpHelper)			
 		}
+		
 	}
 
 	void run() {
 		dbMan.autoSave {
-			List<Concept> noImgs = dbMan.db.concepts.findAll {(!it.img) && it.terms}
+			List<Concept> noImgs = dbMan.db.concepts.findAll {
+				(!it.img) && it.terms && it.state!="ignore"
+			}
 			if (noImgs.size() <1) {
 				println "All concepts have an image"
 				return
 			}
 			int i =0
-			init()
-			imgSelector.open()
+			
+			
 
 			for ( Concept c in noImgs) {
-				def trm = c.terms[0].term
+				i++
+				init()
+				String trm = c.terms[0].term
 				imgSelector.runSearch(trm)
 				imgSelector.title = "Pick the image. ($i/${noImgs.size()}) "
 				imgSelector.runAsModal()
 				int selIndx = imgSelector.searchData.selected
-				if (selIndx<=-1) break
-					Path selectedImg = httpHelper.cache.subPathForKey(imgSelector.searchData.results[selIndx])
+				if (selIndx<=-1) {
+					println "cancelled"
+					break
+				}
+				Path selectedImg = httpHelper.cache.subPathForKey(imgSelector.searchData.results[selIndx].toString())
 				assert Files.exists(selectedImg)
 				Path resizedP = ImgTrn.resizeImage(selectedImg, 320, 200)
 				dbMan.resolveMedia(trm, "jpeg") { Path dbPath->
 					Files.move(resizedP, dbPath)
 					println "Stored $dbPath"
-				}
+				}				
+				c.img =  dbMan.termd2MediaLink(trm, "jpeg")
+				dbMan.save()
 			}
 		}
 	}
