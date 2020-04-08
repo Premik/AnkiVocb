@@ -4,6 +4,7 @@ import java.text.Normalizer
 
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
+import static vocb.Helper.utf8
 
 public class HttpHelper {
 
@@ -11,7 +12,7 @@ public class HttpHelper {
 
 	Map connectionProps = [
 		/**/connectTimeout: 5000,
-		/**/readTimeout: 10000		
+		/**/readTimeout: 10000
 	]
 
 
@@ -21,21 +22,46 @@ public class HttpHelper {
 		b.withCloseable(c)
 	}
 
+	public void withUrlPostResponse(Map hdrs=[:], URL u, String payload, Closure<InputStream> c) {
+		assert u
+		println u
+		HttpURLConnection conn = u.openConnection()
+		conn.with {
+			requestMethod = "POST"
+			doOutput = true
+			connectTimeout = connectionProps.connectTimeout
+			readTimeout = connectionProps.readTimeout
+			hdrs + ["Content-Type": "application/json"].each {
+				String k, v->
+				setRequestProperty(k, v.toString())
+			}
+
+			outputStream.write(payload.getBytes(utf8))
+			//println inputStream.text
+			assert responseCode >=200 && responseCode< 300 : "Http error $responseCode $errorStream.text"
+		}
+		
+		c(conn.inputStream)
+	}
+
 	void withDownloadResponse(Map hdrs=[:],URL url, Closure c) {
 		assert url
 		String key = url.toString()
 		if (cache.isCached(key)) {
 			println "Cache hit for $key"
-			cache.subPathForKey(key).withInputStream { BufferedInputStream rsp->
+			cache.subPathForKey(key).withInputStream {
+				BufferedInputStream rsp->
 				c(rsp)
 			}
 			return
 		}
-		withUrlGetResponse(hdrs, url) {BufferedInputStream res->
+		withUrlGetResponse(hdrs, url) {
+			BufferedInputStream res->
 			println url
 			cache.subPathForKey(key) << res
 		}
-		cache.subPathForKey(key).withInputStream {BufferedInputStream imgStr->
+		cache.subPathForKey(key).withInputStream {
+			BufferedInputStream imgStr->
 			c(imgStr)
 		}
 	}
