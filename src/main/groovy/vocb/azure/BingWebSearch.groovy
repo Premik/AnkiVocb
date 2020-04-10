@@ -8,7 +8,7 @@ public class BingWebSearch {
 
 	// http -v  https://api.cognitive.microsoft.com/bing/v7.0/images/search\?q\=sailing+dinghies\&mkt\=en-us\&answerCount\=3 Ocp-Apim-Subscription-Key:$AZURE_KEY
 
-	@Lazy(soft=true) AzureEnv azEnv
+	AzureEnv azEnv = new AzureEnv()
 	@Lazy(soft=true) HttpHelper httpHelper
 	@Lazy JsonSlurper jsonSlurper
 	
@@ -18,7 +18,7 @@ public class BingWebSearch {
 		assert url
 		Object ret
 		println "Searching $url"
-		httpHelper.withDownloadResponse(azEnv.httpHeaders, url) { BufferedInputStream res->
+		httpHelper.withDownloadResponse(azEnv.imgSearchHttpHeaders, url) { BufferedInputStream res->
 			ret = jsonSlurper.parse(res)
 		}
 		return ret
@@ -54,7 +54,7 @@ public class BingWebSearch {
 		//println bs.buildSearchUrl("test")
 		//println bs.getHttpHeaders()
 		//Object res= bs.search(bs.buildSearchUrl("test"))
-		println bs.thumbnailSearch(new SearchData(q:"test3"))
+		println bs.thumbnailSearch(new SearchData(q:"test4"))
 
 	}
 }

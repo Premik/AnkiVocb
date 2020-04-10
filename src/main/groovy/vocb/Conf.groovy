@@ -10,7 +10,16 @@ class ConfHelper {
 	public static final List<String> resExplicitExtensions = ['.conf']
 	private static String windowsHomePath = "${getenv('HOMEDRIVE')}${getenv('HOMEPATH')}"
 
-	public static final ConfigObject cfg = new ConfigObject()
+
+	private static ConfigObject mergedCfg
+
+	@Lazy  public static ConfigObject cfg = {
+		if (mergedCfg == null) {
+			mergedCfg = new ConfigObject()
+			loadAll()
+		}
+		return mergedCfg
+	}()
 
 	public static String ensureEndSlash(String s) {
 		if (s.endsWith(File.separator)) return s
@@ -49,17 +58,16 @@ class ConfHelper {
 	}
 
 	public static ConfigObject loadConfig(String configName, Map binding = null) {
-		String cfgStr = resolveRes( configName)		
+		String cfgStr = resolveRes( configName)
 		if (cfgStr == null) return null
-		if (binding == null) binding = cfg
+		if (binding == null) binding = mergedCfg
 		return ConfHelper.parseString(cfgStr, binding)
 	}
 
 	public  static ConfigObject loadAndMergeConfig(String configName, Map binding = null) {
 		ConfigObject c = loadConfig(configName, binding)
 		if (!c) return c
-
-		cfg.merge(c)
+		if (mergedCfg != null) mergedCfg.merge(c)
 		return c
 	}
 
@@ -100,14 +108,14 @@ class ConfHelper {
 	}
 
 
-	public static StringBuilder prettyPrintCfg(obj=cfg, int level = 0, StringBuilder sb = new StringBuilder()) {
+	public static StringBuilder prettyPrintCfg(obj=mergedCfg, int level = 0, StringBuilder sb = new StringBuilder()) {
 		//https://stackoverflow.com/questions/7898068/pretty-print-for-a-groovy-configobject
 		Closure indent = { lev -> sb.append("  " * lev) }
 		if(obj instanceof Map){
 			sb.append("{\n")
 			obj.each{ String name, value ->
 				if(name.contains('.')) return // skip keys like "a.b.c", which are redundant
-				indent(level+1).append(name)
+					indent(level+1).append(name)
 				(value instanceof Map) ? sb.append(" ") : sb.append(" = ")
 				prettyPrintCfg(value, level+1, sb)
 				sb.append("\n")
@@ -132,17 +140,16 @@ class ConfHelper {
 	}
 
 
-	public static loadAll() {		
+	public static loadAll() {
 		assert loadAndMergeConfig("ankivocb-default") : "Failed to load the inbuilt default config"
-		ConfigObject c=  loadAndMergeConfig("ankivocb")		
+		ConfigObject c=  loadAndMergeConfig("ankivocb")
 		if (!c) System.print("Couldn't find the custom ankivocb.conf file. Using the default.\n")
-
-
 	}
+
 
 	public static void main(String[] args) {
 		println getLookupFolders()
-		loadAll()
+		println cfg.azure
 		println prettyPrintCfg()
 	}
 
