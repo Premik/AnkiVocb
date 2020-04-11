@@ -7,7 +7,7 @@ import vocb.Helper
 
 class ParsingTest {
 
-	String smallDeck = getClass().getResource('/anki/crowd/deckSmall.json').text
+	String smallDeck = getClass().getResource('/vocb/crowd/deckSmall.json').text
 	CrowdParser p = new CrowdParser()
 
 	@Test
