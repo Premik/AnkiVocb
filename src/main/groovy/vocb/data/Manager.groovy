@@ -96,6 +96,7 @@ public class Manager {
 		assert path : "Not opened"
 		String yaml = storage.dbToYaml(db)
 		path.write(yaml)
+		println "Saved $path"
 		return yaml
 	}
 }

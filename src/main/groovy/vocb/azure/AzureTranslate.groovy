@@ -38,7 +38,7 @@ public class AzureTranslate {
 	static void main(String... args) {
 		AzureTranslate bs = new AzureTranslate(httpHelper: new HttpHelper() )
 
-		println Helper.jsonToString(bs.trnJsonrunTrn("clip"))
+		println Helper.jsonToString(bs.trnJsonrunTrn("and"))
 
 	}
 }
