@@ -1,0 +1,159 @@
+{
+    "normalizedSource": "kitty",
+    "displaySource": "kitty",
+    "translations": [
+        {
+            "normalizedTarget": "kitty",
+            "displayTarget": "Kitty",
+            "posTag": "NOUN",
+            "confidence": 0.3493,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "kitty",
+                    "displayText": "kitty",
+                    "numExamples": 5,
+                    "frequencyCount": 229
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "koťátko",
+            "displayTarget": "koťátko",
+            "posTag": "NOUN",
+            "confidence": 0.167,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "kitty",
+                    "displayText": "kitty",
+                    "numExamples": 5,
+                    "frequencyCount": 51
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "čiči",
+            "displayTarget": "čiči",
+            "posTag": "NOUN",
+            "confidence": 0.1496,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "kitty",
+                    "displayText": "kitty",
+                    "numExamples": 3,
+                    "frequencyCount": 22
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "kočička",
+            "displayTarget": "kočička",
+            "posTag": "NOUN",
+            "confidence": 0.1163,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "kitty",
+                    "displayText": "kitty",
+                    "numExamples": 5,
+                    "frequencyCount": 62
+                },
+                {
+                    "normalizedText": "puss",
+                    "displayText": "puss",
+                    "numExamples": 5,
+                    "frequencyCount": 23
+                },
+                {
+                    "normalizedText": "cutie",
+                    "displayText": "cutie",
+                    "numExamples": 1,
+                    "frequencyCount": 8
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "okotit",
+            "displayTarget": "okotit",
+            "posTag": "NOUN",
+            "confidence": 0.1056,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "kitten",
+                    "displayText": "kitten",
+                    "numExamples": 5,
+                    "frequencyCount": 74
+                },
+                {
+                    "normalizedText": "kitty",
+                    "displayText": "kitty",
+                    "numExamples": 5,
+                    "frequencyCount": 20
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "číčo",
+            "displayTarget": "číčo",
+            "posTag": "NOUN",
+            "confidence": 0.073,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "kitty",
+                    "displayText": "kitty",
+                    "numExamples": 2,
+                    "frequencyCount": 3
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "kotě",
+            "displayTarget": "kotě",
+            "posTag": "NOUN",
+            "confidence": 0.0391,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "kitten",
+                    "displayText": "kitten",
+                    "numExamples": 5,
+                    "frequencyCount": 162
+                },
+                {
+                    "normalizedText": "baby",
+                    "displayText": "baby",
+                    "numExamples": 15,
+                    "frequencyCount": 108
+                },
+                {
+                    "normalizedText": "babe",
+                    "displayText": "babe",
+                    "numExamples": 5,
+                    "frequencyCount": 44
+                },
+                {
+                    "normalizedText": "kitty",
+                    "displayText": "kitty",
+                    "numExamples": 2,
+                    "frequencyCount": 7
+                },
+                {
+                    "normalizedText": "chick",
+                    "displayText": "chick",
+                    "numExamples": 1,
+                    "frequencyCount": 4
+                },
+                {
+                    "normalizedText": "toots",
+                    "displayText": "Toots",
+                    "numExamples": 1,
+                    "frequencyCount": 3
+                }
+            ]
+        }
+    ]
+}
