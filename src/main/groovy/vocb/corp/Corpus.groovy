@@ -1,11 +1,15 @@
 package vocb.corp
 
+import static vocb.Helper.utf8
+
 import java.nio.charset.StandardCharsets
 import java.util.regex.Pattern
 
 import com.xlson.groovycsv.CsvParser
 
-import static vocb.Helper.utf8
+import groovy.xml.XmlSlurper
+import groovy.xml.slurpersupport.GPathResult
+
 
 public class Corpus {
 
@@ -39,8 +43,10 @@ public class Corpus {
 				return
 			}
 			def wordMatcher = line =~  wordPatter
-			if (!wordMatcher) return //Ignore lemming
-				String w = wordMatcher[0]
+			if (!wordMatcher) {return} //Ignore lemming
+			String w = wordMatcher[0]
+			//println w
+
 			if (limit > 1 || limit==0) {
 				wordFreq[w.toLowerCase()] = new Double(1-groupIndex/120d) //Magic factor to get similar Disp as wordfreq
 				if (limit != 0) {
@@ -67,13 +73,37 @@ public class Corpus {
 
 		println "Imported ${phrases.size()} phrases"
 	}
+	//https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/1-10000
+
+	void importWikiWordList(InputStream input, int limit = 0) {
+		//SAXParser parser = new SAXParser()
+		//def parser =new org.ccil.cowan.tagsoup.Parser()
+		//def page = new XmlSlurper(parser).parse(input)
+		def page = new XmlSlurper().parse(input)
+		GPathResult content = page.body.'**'.find {it.@id == 'bodyContent'}
+		content.'**'.each { GPathResult table ->
+			if (table.name() != 'table') {return}
+
+			table.tbody.tr.eachWithIndex { GPathResult row, int i ->
+				if (i == 0) {return}
+				String w = row.td[1].a.toString().trim()
+				String r = row.td[2].toString().trim()
+
+				wordFreq[w.toLowerCase()] = new Double(r)
+			}
+		}
+		println "Imported ${wordFreq.size()} words."
+
+
+	}
 
 	void importCsvCorpus(Map parserArgs = [:], InputStream str) {
 		importCsvCorpus(parserArgs, new InputStreamReader(str, StandardCharsets.UTF_8))
 	}
 
 	void loadInbuild() {
-		import12WordFreq(getClass().getResource('/2+2+3frq.txt').openStream())
+		//import12WordFreq(getClass().getResource('/2+2+3frq.txt').openStream())
+		importWikiWordList(Corpus.class.getResource('/Wiktionary_Frequency lists_PG_2006_04_1-10000.html').openStream())
 		import12Phrases(getClass().getResource('/6of12.txt').openStream())
 	}
 
@@ -82,7 +112,9 @@ public class Corpus {
 		Corpus n = new Corpus()
 		//n.importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())
 		//n.import12WordFreq(getClass().getResource('/2+2+3frq.txt').openStream())
-		n.import12Phrases(getClass().getResource('/6of12.txt').openStream())
+		//n.importWikiWordList(Corpus.class.getResource('/Wiktionary_Frequency lists_PG_2006_04_1-10000.html').openStream())
+
+		n.loadInbuild()
 
 
 	}
