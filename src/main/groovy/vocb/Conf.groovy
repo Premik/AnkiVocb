@@ -8,7 +8,8 @@ class ConfHelper {
 	public static ConfHelper instance = new ConfHelper()
 	@Lazy public static ConfigObject cfg = instance.config
 
-	public  final List<String> resExplicitExtensions = ['.conf']
+	public  final List<String> resExplicitExtensions = ['.conf', '.html']
+	public  final List<String> cpFolders = ['', 'data', 'conf', 'wiki', 'vocb', 'vocb/data', 'vocb/conf', 'vocb/wiki']
 	private  String windowsHomePath = "${getenv('HOMEDRIVE')}${getenv('HOMEPATH')}"
 
 
@@ -90,16 +91,12 @@ class ConfHelper {
 			Thread.currentThread().contextClassLoader,
 			ClassLoader.systemClassLoader,
 		].findAll {it}.collect { ClassLoader cl ->
-			return [
-				"conf/$resName",
-				"data/$resName",
-				"/$resName",
-				"vocb/conf/$resName",
-				"vocb/data/$resName",
-				"vocb/$resName",
-			].collect{				
-				cl.getResourceAsStream(it)
+			cpFolders.collectMany {["$it/$resName", "/$it/$resName"]}
+			.collect{ String cpPath ->
+				//println cpPath				
+				cl.getResourceAsStream(cpPath)
 				}.find {it}
+				
 		}.find {it}
 		return is
 	}
