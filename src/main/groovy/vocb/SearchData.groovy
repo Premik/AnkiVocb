@@ -9,6 +9,5 @@ public class SearchData {
 	String imageType="Clipart"
 	String license="Public"
 	List<URL> results=[]
-	boolean clipArt = true
 	int selected=-1
 }
