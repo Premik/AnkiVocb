@@ -8,8 +8,7 @@ concepts:
   - term: jablko
     lang: cs
   state: populate
-  origins: 
-  - top500
+  origins: ["top500"]
 - terms: 
 
   - term: a

@@ -17,12 +17,12 @@ public class CsTSSAppender {
 	Manager dbMan = new Manager()
 
 	void run() {
-		dbMan.autoSave {
-			dbMan.withTermsByLang("cs") {Concept c, Term t->
-				if (!dbMan.linkedMediaExists(t.tts) ) {
-					t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
-						ttsCz.synth(t.term, "violka", p.toString() )
-					}
+		dbMan.load()
+		dbMan.withTermsByLang("cs") {Concept c, Term t->
+			if (!dbMan.linkedMediaExists(t.tts) ) {
+				t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
+					ttsCz.synth(t.term, "violka", p.toString() )
+					dbMan.save()
 				}
 			}
 		}

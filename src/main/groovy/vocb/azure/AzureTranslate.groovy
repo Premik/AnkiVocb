@@ -38,7 +38,8 @@ public class AzureTranslate {
 	static void main(String... args) {
 		AzureTranslate bs = new AzureTranslate(httpHelper: new HttpHelper() )
 
-		println Helper.jsonToString(bs.trnJsonrunTrn("and"))
+		println Helper.jsonToString(bs.trnJsonrunTrn("prefix"))
+		//println Helper.jsonToString(bs.trnJsonrunTrn("Well done"))
 
 	}
 }

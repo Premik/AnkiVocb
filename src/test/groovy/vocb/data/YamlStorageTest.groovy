@@ -78,6 +78,13 @@ class YamlStorageTest {
 
 		assert  st.listToYaml(["aa", "bbb", "ccc"]) == y
 	}
+	
+	@Test
+	void singleStringListToYaml() {
+		assert  st.listToYaml(["aa"]) == "[aa]"
+	}
+	
+	
 
 	@Test
 	void objListToYaml() {

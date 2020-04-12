@@ -89,6 +89,11 @@ public class ConceptYamlStorage {
 
 	public CharSequence listToYaml(List<CharSequence> st) {
 		if (!st) return "[]"
+		if (st.size() <2 && !st.any {it?.contains('\n') && it?.length()> 20}) {
+			//Put short simple lists on one line
+			return "[${st.join(', ')}]"
+			
+		} 
 		"\n" + st.collect(this.&toYamlListItem).join("\n")
 	}
 
