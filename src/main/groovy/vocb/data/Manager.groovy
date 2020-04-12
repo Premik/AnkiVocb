@@ -31,8 +31,8 @@ public class Manager {
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
 		db.concepts.each { Concept c->
-			String firstTerm = c.terms[0]?.term
-			if (firstTerm) conceptByFirstTerm[firstTerm] = c
+			
+			if (c.firstTerm) conceptByFirstTerm[c.firstTerm] = c
 		}
 	}
 

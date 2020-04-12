@@ -25,6 +25,8 @@ public class Concept {
 	String img
 	Double freq
 	List<String> origins = []
+	
+	public String getFirstTerm() {terms[0]?.term}
 }
 
 @Canonical

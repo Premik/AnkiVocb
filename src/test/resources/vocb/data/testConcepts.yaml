@@ -1,23 +1,20 @@
 version: 0.0.1
 concepts: 
+##  apple   #################################################################
 - terms: 
-
   - term: apple
     lang: en
-
   - term: jablko
     lang: cs
   state: populate
   origins: ["top500"]
+##  a   #####################################################################
 - terms: 
-
   - term: a
     lang: en
   state: ignore
-  origins: []
+##  the   ###################################################################
 - terms: 
-
   - term: the
     lang: en
   state: ignore
-  origins: []

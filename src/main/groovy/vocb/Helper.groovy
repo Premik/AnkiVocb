@@ -107,8 +107,9 @@ public class Helper {
 		]
 	}
 
-	public static String indent(String s, int indent=1, String indChr=" " ) {
-		s.replaceAll(/(?m)^/, indChr*indent)
+	public static String indent(String s, int indent=1, String indChr=" ", String ignorePfxs='#|$' ) {
+		String pfRx = //
+		s.replaceAll(/(?m)^(?!$ignorePfxs)/, indChr*indent)
 	}
 
 	public static String indentNextLines(String s, int indent=1, int ingnoreFirstLines=1, String indChr=" " ) {
