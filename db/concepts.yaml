@@ -1,174 +1,173 @@
 version: 0.0.1
 concepts: 
+##  apple   #################################################################
 - terms: 
-  
   - term: apple
     lang: en
     tts: apple.mp3
-  
   - term: jablko
     lang: cs
     tts: jablko.mp3
   img: apple.jpeg
-  origins: 
-  - top500
+  origins: ["top500"]
+##  kitty   #################################################################
 - terms: 
-  
   - term: kitty
     lang: en
     tts: kitty.mp3
-  
   - term: koťátko
     lang: cs
     tts: kotatko.mp3
   img: kitty.jpeg
-  origins: []
+##  a   #####################################################################
 - terms: 
-  
   - term: a
     lang: en
   state: ignore
-  origins: []
+##  the   ###################################################################
 - terms: 
-  
   - term: the
     lang: en
   state: ignore
-  origins: []
+##  of   ####################################################################
 - terms: 
-  
   - term: of
     lang: en
     tts: of.mp3
   freq: 22146974.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  and   ###################################################################
 - terms: 
-  
   - term: and
     lang: en
     tts: and.mp3
   freq: 20342628.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  to   ####################################################################
 - terms: 
-  
   - term: to
     lang: en
     tts: to.mp3
   freq: 14906506.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  was   ###################################################################
 - terms: 
-  
   - term: was
     lang: en
     tts: was.mp3
   freq: 10078245.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  in   ####################################################################
 - terms: 
-  
   - term: in
     lang: en
   freq: 8715316.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  is   ####################################################################
 - terms: 
-  
   - term: is
     lang: en
   freq: 7557477.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  it   ####################################################################
 - terms: 
-  
   - term: it
     lang: en
   freq: 5965293.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  for   ###################################################################
 - terms: 
-  
   - term: for
     lang: en
   freq: 3556287.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  true   ##################################################################
 - terms: 
-  
-  - term: on
+  - term: true
     lang: en
   freq: 2675121.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  do   ####################################################################
 - terms: 
-  
   - term: do
     lang: en
   freq: 2126875.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  but   ###################################################################
 - terms: 
-  
   - term: but
     lang: en
   freq: 1957586.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  all   ###################################################################
 - terms: 
-  
   - term: all
     lang: en
   freq: 1940329.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  them   ##################################################################
 - terms: 
-  
   - term: them
     lang: en
   freq: 1593893.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  you   ###################################################################
 - terms: 
-  
   - term: you
     lang: en
   freq: 1540817.58700
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  one   ###################################################################
 - terms: 
-  
   - term: one
     lang: en
   freq: 1439082.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  false   #################################################################
 - terms: 
-  
-  - term: no
+  - term: false
     lang: en
   freq: 1123368.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  time   ##################################################################
 - terms: 
-  
   - term: time
     lang: en
   freq: 1107169.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  out   ###################################################################
 - terms: 
-  
   - term: out
     lang: en
   freq: 1058897.00000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  know   ##################################################################
 - terms: 
-  
   - term: know
     lang: en
   freq: 984073.50000
-  origins: 
-  - Supaplex
+  origins: ["Supaplex"]
+##  true   ##################################################################
+- terms: 
+  - term: true
+    lang: en
+  freq: 2675121.50000
+  origins: ["Supaplex"]
+##  false   #################################################################
+- terms: 
+  - term: false
+    lang: en
+  freq: 1123368.00000
+  origins: ["Supaplex"]
+##  on   ####################################################################
+- terms: 
+  - term: on
+    lang: en
+  freq: 2675121.50000
+  origins: ["Supaplex"]
+##  no   ####################################################################
+- terms: 
+  - term: no
+    lang: en
+  freq: 1123368.00000
+  origins: ["Supaplex"]
