@@ -6,9 +6,13 @@ import java.awt.Dimension
 import java.awt.EventQueue
 import java.awt.FlowLayout
 import java.awt.Font
-import java.awt.GridLayout
+import java.awt.GridBagConstraints
+import java.awt.GridBagLayout
+import java.awt.Insets
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
+import java.awt.event.ItemEvent
+import java.awt.event.ItemListener
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
 import java.awt.event.WindowAdapter
@@ -16,10 +20,15 @@ import java.awt.event.WindowEvent
 import java.awt.geom.AffineTransform
 import java.awt.image.AffineTransformOp
 import java.awt.image.BufferedImage
+import java.util.concurrent.Semaphore
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.atomic.AtomicInteger
 
 import javax.imageio.ImageIO
 import javax.swing.BoxLayout
 import javax.swing.ImageIcon
+import javax.swing.JButton
+import javax.swing.JCheckBox
 import javax.swing.JFrame
 import javax.swing.JLabel
 import javax.swing.JPanel
@@ -34,11 +43,17 @@ import vocb.HttpHelper
 import vocb.SearchData
 import vocb.azure.BingWebSearch
 
+
 public class ImageSelector   {
 
 	private static Object lock = new Object()
+	//private Semaphore searchSemaphore = new Semaphore(1, true)
+	private static Object searchLock= new Object()
+	private AtomicInteger searchCounter = new AtomicInteger(0)
+
 	JFrame frame
 	JTextField searchTextField
+	JCheckBox chckbxClipart
 	JPanel gridPanel
 
 	SearchData searchData
@@ -62,14 +77,12 @@ public class ImageSelector   {
 			println selected
 			searchData.selected = selected
 			frame.visible = false
-			synchronized (lock) {			
+			synchronized (lock) {
 				lock.notify()
 			}
-			
-			
 		}
 	}
-	
+
 	void setTitle(String title) {
 		frame?.title=title
 	}
@@ -90,27 +103,93 @@ public class ImageSelector   {
 	JPanel buildSearchPanel(Component container = frame.contentPane) {
 		JPanel topPanel = new JPanel()
 		container.add(topPanel)
-		topPanel.setLayout(new GridLayout(0, 1, 0, 0))
+		GridBagLayout topPanelLayout = new GridBagLayout()
+		topPanelLayout.with {
+			columnWidths = [30, 30, 30, 30, 0, 0, 108]
+			rowHeights = [30, 30]
+			columnWeights = [
+				1.0,
+				0.0,
+				0.0,
+				0.0,
+				0.0,
+				0.0,
+				0.0
+			]
+			rowWeights = [1.0, 0.0]
+		}
+		topPanel.setLayout(topPanelLayout)
+
+		//topPanel.setLayout(new GridLayout(0, 1, 0, 0))
 
 
 		searchTextField = new JTextField()
-		searchTextField.font = new Font("Monospaced", Font.BOLD, 20)
-		topPanel.add(searchTextField)
-
-
-		searchTextField.with {
-			border = new MatteBorder(10, 3, 10, 3, (Color) UIManager.getColor("Button.background"))
-			toolTipText = "Search string"
-			preferredSize = new Dimension(20, 20)
-			//text = "Enter search string"
-			addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					JTextField f= e.source
-					runSearch(f.text)
-				}
-			})
-
+		GridBagConstraints gbc_searchTextField = new GridBagConstraints()
+		gbc_searchTextField.with {
+			insets = new Insets(0, 0, 5, 5)
+			weightx = 0.6
+			fill = GridBagConstraints.BOTH
+			gridx = 0
+			gridy = 0
 		}
+		topPanel.add(searchTextField, gbc_searchTextField)
+		searchTextField.with {
+			border = new MatteBorder(10, 10, 10, 10, (Color) UIManager.getColor("Button.background"))
+			font = new Font("Monospaced", Font.BOLD, 20)
+			//preferredSize = new Dimension(20, 20)
+			toolTipText = "Search string"
+			addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent e) {
+							JTextField f= e.source
+							runSearch(f.text)
+						}
+					})
+		}
+
+		JButton searchMoreButton = new JButton("Search More")
+		searchMoreButton.with {
+			addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent e) {
+							searchData.count=128
+							runSearch(searchTextField.text)
+						}
+					})
+			icon = UIManager.getIcon("FileChooser.listViewIcon")
+			toolTipText = "Search again with more results enabled"
+		}
+		GridBagConstraints gbc_searchMoreButton = new GridBagConstraints()
+		gbc_searchMoreButton.with {
+			insets = new Insets(0, 0, 5, 5)
+			gridx = 1
+			gridy = 0
+		}
+		topPanel.add(searchMoreButton, gbc_searchMoreButton)
+
+		chckbxClipart = new JCheckBox("ClipArt")
+		chckbxClipart.with {
+			addItemListener(new ItemListener() {
+
+						@Override
+						public void itemStateChanged(ItemEvent e) {
+							searchData.clipArt = chckbxClipart.selected
+							runSearch(searchTextField.text)
+
+						}
+					})
+			toolTipText = "Search with ClipArt filter enabled"
+		}
+		GridBagConstraints gbc_chckbxClipart = new GridBagConstraints()
+		gbc_chckbxClipart.with {
+			insets = new Insets(0, 0, 5, 5)
+			gridx = 2
+			gridy = 0
+		}
+		topPanel.add(chckbxClipart, gbc_chckbxClipart)
+
+
+
+
+
 
 	}
 
@@ -172,21 +251,32 @@ public class ImageSelector   {
 	}
 
 	public loadSearchResult(SearchData s, HttpHelper hh) {
-		assert s
+		println searchCounter.getAndIncrement()
+		//assert s
 		searchData = s
 		println "Loading ${s.results.size()} thumbnails"
 		searchTextField.text = s.q
-		gridPanel.removeAll()
-		precreateImageLabels(s.results.size())
-		Thread.start {
-			Component[] components = gridPanel.components
-			s.results.eachWithIndex { URL u, int i->
-				//Thread.sleep(10)
-				EventQueue.invokeAndWait {
-					hh.withDownloadResponse(u) {BufferedInputStream res->
-						loadImage(res, components[i])
+		chckbxClipart.selected = searchData.clipArt
 
+		Thread.start {
+			synchronized (searchLock) {
+				final int  myCounter = searchCounter.get()
+				print "me"
+				println myCounter 
+				gridPanel.removeAll()
+				precreateImageLabels(s.results.size())
+				println "Found: ${s.results.size()}"
+
+				Component[] components = gridPanel.components
+				s.results.eachWithIndex { URL u, int i->
+					if (myCounter != searchCounter.get()) return
+					//Thread.sleep(1000)
+					EventQueue.invokeAndWait {
+						hh.withDownloadResponse(u) {BufferedInputStream res->
+							loadImage(res, components[i])
+						}
 					}
+
 				}
 
 			}
@@ -198,23 +288,23 @@ public class ImageSelector   {
 	public void runAsModal() {
 		frame.addWindowListener(new WindowAdapter() {
 
-			public void windowClosing(WindowEvent arg0) {
-				println "Closing"
-				synchronized (lock) {
-					frame.setVisible(false)
-					lock.notify()
-				}
-			}
-		})
+					public void windowClosing(WindowEvent arg0) {
+						println "Closing"
+						synchronized (lock) {
+							frame.setVisible(false)
+							lock.notify()
+						}
+					}
+				})
 
 		Thread t =Thread.start {
 			synchronized(lock) {
 				while (frame.isVisible())
-				try {
-					lock.wait()
-				} catch (InterruptedException e) {
-					e.printStackTrace()
-				}
+					try {
+						lock.wait()
+					} catch (InterruptedException e) {
+						e.printStackTrace()
+					}
 				println "frame not visible. Disposing"
 				frame.dispose()
 			}
@@ -227,16 +317,14 @@ public class ImageSelector   {
 
 
 	public static void main(String[] args) {
-
-
 		ImageSelector s = new ImageSelector()
 		s.open()
-		
-		int searchResults=32
+
+		int searchResults=4
 		HttpHelper hh = new HttpHelper()
 		BingWebSearch bs = new BingWebSearch(httpHelper: hh)
 		s.runSearch = { String newQ->
-			
+
 			s.loadSearchResult(bs.thumbnailSearch(newQ, searchResults), hh)
 		}
 		s.runSearch("test")
