@@ -112,7 +112,7 @@ class ConfHelper {
 	}
 
 
-	public  StringBuilder prettyPrintCfg(obj=mergedCfg, int level = 0, StringBuilder sb = new StringBuilder()) {
+	public  StringBuilder prettyPrintCfg(obj=config, int level = 0, StringBuilder sb = new StringBuilder()) {
 		//https://stackoverflow.com/questions/7898068/pretty-print-for-a-groovy-configobject
 		Closure indent = { lev -> sb.append("  " * lev) }
 		if(obj instanceof Map){
@@ -153,6 +153,7 @@ class ConfHelper {
 
 	public static void main(String[] args) {
 		println ConfHelper.instance.lookupFolders
+		println ConfHelper.instance.prettyPrintCfg()
 	}
 
 
