@@ -1,8 +1,7 @@
 package vocb.data
 
-import java.util.regex.Pattern
-
 import groovy.transform.Canonical
+import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
 public enum State {
@@ -13,20 +12,20 @@ public enum State {
 public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
-	
-	
 }
 
-@Canonical
+@EqualsAndHashCode
+@ToString
 public class Concept {
-	List<Term> terms
+	LinkedHashMap<String, Term> terms = [:]
 	//State state
 	String state
 	String img
-	Double freq
-	List<String> origins = []
-	
-	public String getFirstTerm() {terms[0]?.term}
+	BigDecimal freq
+	Set<String> origins = [] as HashSet
+
+	public String getFirstTerm() {terms.values()[0]?.term}
+	public List<Term> termsByLang(String lng) { terms?.values()?.findAll {it.lang == lng }}
 }
 
 @Canonical

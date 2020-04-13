@@ -42,8 +42,8 @@ public class Manager {
 	void withTerms(Closure cl) {
 		db.concepts.each { Concept c->
 			if (c.state != "ignore") {
-				c.terms.collect { 
-					cl(c, it)
+				c.terms.collect { String key, Term t->
+					cl(c, t)
 				}
 			}
 		}

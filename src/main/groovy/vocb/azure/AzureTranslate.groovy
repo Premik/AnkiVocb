@@ -24,7 +24,7 @@ public class AzureTranslate {
 
 		JsonBuilder jsonBuilder = new JsonBuilder()
 		def rq= jsonBuilder ([[ "Text": text]])
-		
+
 		URL trnUrl = azEnv.translateUrl(srcLang, destLang)
 		httpHelper.withUrlPostResponse(azEnv.dictLookupHttpHeaders, trnUrl, Helper.jsonToString(rq)) {InputStream inp ->
 			ret = jsonSlurper.parse(inp, utf8)
@@ -32,6 +32,15 @@ public class AzureTranslate {
 		}
 		assert ret?.size() : "Blank response"
 		return ret[0]
+	}
+
+	public List<String> extractTopTrns(Map lookupResponse, double minConfidence=0.08, int maxCount=4) {
+		assert lookupResponse
+		lookupResponse.translations
+				.findAll {it.confidence > minConfidence}
+				.sort {b,a -> a.confidence <=> b.confidence }
+				.take(maxCount)
+				.collect {it.normalizedTarget}
 	}
 
 
