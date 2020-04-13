@@ -42,7 +42,7 @@ concepts:
   - term: and
     lang: en
     tts: and.mp3
-  img:
+  img: and.jpeg
   freq: 20342628.50000
   origins: ["Supaplex"]
 ##  to   ####################################################################
@@ -50,6 +50,7 @@ concepts:
   - term: to
     lang: en
     tts: to.mp3
+  state: ignoreImage
   freq: 14906506.00000
   origins: ["Supaplex"]
 ##  was   ###################################################################
@@ -57,54 +58,63 @@ concepts:
   - term: was
     lang: en
     tts: was.mp3
+  state: ignoreImage
   freq: 10078245.00000
   origins: ["Supaplex"]
 ##  in   ####################################################################
 - terms: 
   - term: in
     lang: en
+  img: in.jpeg
   freq: 8715316.00000
   origins: ["Supaplex"]
 ##  is   ####################################################################
 - terms: 
   - term: is
     lang: en
+  state: ignoreImage
   freq: 7557477.00000
   origins: ["Supaplex"]
 ##  it   ####################################################################
 - terms: 
   - term: it
     lang: en
+  state: ignoreImage
   freq: 5965293.50000
   origins: ["Supaplex"]
 ##  for   ###################################################################
 - terms: 
   - term: for
     lang: en
+  state: ignoreImage
   freq: 3556287.50000
   origins: ["Supaplex"]
 ##  true   ##################################################################
 - terms: 
   - term: true
     lang: en
+  img: true.jpeg
   freq: 2675121.50000
   origins: ["Supaplex"]
 ##  do   ####################################################################
 - terms: 
   - term: do
     lang: en
+  state: ignoreImage
   freq: 2126875.50000
   origins: ["Supaplex"]
 ##  but   ###################################################################
 - terms: 
   - term: but
     lang: en
+  state: ignoreImage
   freq: 1957586.00000
   origins: ["Supaplex"]
 ##  all   ###################################################################
 - terms: 
   - term: all
     lang: en
+  img: all.jpeg
   freq: 1940329.50000
   origins: ["Supaplex"]
 ##  them   ##################################################################
