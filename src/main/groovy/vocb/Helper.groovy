@@ -49,8 +49,8 @@ public class Helper {
 			return null
 		}
 	}
-	
-	
+
+
 	public static String prettyFormatXml(String src) {
 		//Based on groovy.xml.XmlUtils but omnits xml declr
 		Source source = new StreamSource(new StringReader(src))
@@ -58,19 +58,19 @@ public class Helper {
 		//return XmlUtil.serialize(xmlStr)
 
 
-		TransformerFactory factory = TransformerFactory.newInstance();
+		TransformerFactory factory = TransformerFactory.newInstance()
 		//println factory
 		//factory.setAttribute("indent-number", 2);
-		Transformer transformer = factory.newTransformer();
-		transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-		transformer.setOutputProperty(OutputKeys.METHOD, "xml");
-		transformer.setOutputProperty(OutputKeys.MEDIA_TYPE, "text/xml");
-		transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+		Transformer transformer = factory.newTransformer()
+		transformer.setOutputProperty(OutputKeys.INDENT, "yes")
+		transformer.setOutputProperty(OutputKeys.METHOD, "xml")
+		transformer.setOutputProperty(OutputKeys.MEDIA_TYPE, "text/xml")
+		transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes")
 
 
-		Writer wrt = new StringBuilderWriter();
-		transformer.transform(source, new StreamResult(wrt));
-		return wrt.toString();
+		Writer wrt = new StringBuilderWriter()
+		transformer.transform(source, new StreamResult(wrt))
+		return wrt.toString()
 
 
 	}
@@ -112,7 +112,7 @@ public class Helper {
 
 	public static String indent(String s, int indent=1, String indChr=" ", String ignorePfxs='#|$' ) {
 		String pfRx = //
-		s.replaceAll(/(?m)^(?!$ignorePfxs)/, indChr*indent)
+				s.replaceAll(/(?m)^(?!$ignorePfxs)/, indChr*indent)
 	}
 
 	public static String indentNextLines(String s, int indent=1, int ingnoreFirstLines=1, String indChr=" " ) {
@@ -154,30 +154,32 @@ public class Helper {
 		String afterDelimiter = toSplit.substring(offset + delimiter.length())
 		return new Tuple2<String, String>(beforeDelimiter, afterDelimiter)
 	}
-	
+
 	public static BigDecimal roundDecimal(BigDecimal d, int n=2) {
 		if (d == null) return null
-		return d.setScale(n, BigDecimal.ROUND_HALF_UP);
+		return d.setScale(n, BigDecimal.ROUND_HALF_UP)
 	}
-	
+
 	public static String expandTemplate(String templText, ctx=[:]) {
 		if (!templText) return ""
-		Writable templ = templEngine.createTemplate(templText).make(ctx.cfg)
+		Writable templ = templEngine.createTemplate(templText).make(ctx)
 		String ret = templ.toString()
 	}
-	
+
 	public static Process runCommand(String templatedCmd, ctx=[:], int maxWaitSeconds=5) {
 		String cmd = expandTemplate(templatedCmd, ctx)
 		assert cmd : "No templated cmld provided"
-		Process p = templatedCmd.execute()
-		p.waitFor(maxWaitSeconds, TimeUnit.SECONDS)
-		if (p.exitValue() != 0)  {
-			Helper.printProcOut(p)
-			throw new IllegalArgumentException("Error code ${p.exitValue()}.")
+		println "Running $cmd"
+		Process p = cmd.execute()
+		if (p.waitFor(maxWaitSeconds, TimeUnit.SECONDS)) {
+			if (p.exitValue() != 0)  {
+				Helper.printProcOut(p)
+				throw new IllegalArgumentException("Error code ${p.exitValue()}.")
+			}
 		}
+
 		return p
 	}
-	
 }
 
 

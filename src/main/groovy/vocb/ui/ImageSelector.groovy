@@ -59,7 +59,7 @@ public class ImageSelector   {
 	JCheckBox chckbxClipart
 	JPanel gridPanel
 
-	SearchData searchData
+	SearchData searchData = new SearchData()
 	Closure runSearch
 	Closure runEditor
 
@@ -79,13 +79,14 @@ public class ImageSelector   {
 			JLabel l= e.source
 			int selected = l.name as Integer
 			searchData.selected = selected
-			if (SwingUtilities.isLeftMouseButton(e)) {
-				
+			if (SwingUtilities.isLeftMouseButton(e)) {				
 				closeFrame()
 				return
 			}
 			if (SwingUtilities.isRightMouseButton(e)) {
 				runEditor(searchData)
+				//searchData.selected = -1
+				closeFrame()
 			}
 			
 		}
@@ -312,7 +313,7 @@ public class ImageSelector   {
 		final int myCounter = searchCounter.incrementAndGet()
 		//assert s
 		searchData = s
-		println "Loading ${s.results.size()} thumbnails"
+		println "Loading ${s.results.size()} thumbnails. For '$s.q' search"
 		searchTextField.text = s.q
 		chckbxClipart.selected = searchData.imageType == 'Clipart'
 
@@ -322,7 +323,7 @@ public class ImageSelector   {
 				print "me"
 				println myCounter
 				if (myCounter != searchCounter.get()) {
-					println "Search cannceled"
+					println "Search cancelled"
 					return
 				}
 				gridPanel.removeAll()
@@ -332,7 +333,7 @@ public class ImageSelector   {
 				Component[] components = gridPanel.components
 				s.results.eachWithIndex { URL u, int i->
 					if (myCounter != searchCounter.get()) {
-						println "Search cannceled"
+						println "Search cancelled"
 						return
 
 					}

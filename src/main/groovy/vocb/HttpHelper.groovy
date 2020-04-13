@@ -59,7 +59,7 @@ public class HttpHelper {
 		}
 		withUrlGetResponse(hdrs, url) { BufferedInputStream res->
 			println url
-			cache.subPathForKey(key) << res
+			cache.subPathForKey(key).toFile() << res
 		}
 		cache.subPathForKey(key).withInputStream { BufferedInputStream imgStr->
 			c(imgStr)

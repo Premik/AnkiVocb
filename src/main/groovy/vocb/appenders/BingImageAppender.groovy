@@ -30,21 +30,21 @@ public class BingImageAppender {
 		imgSelector = new ImageSelector()
 		imgSelector.with {
 			open()
-			runSearch = { String newQ->
-				loadSearchResult(bingSearch.thumbnailSearch(newQ, searchResults), httpHelper)
+			runSearch = { SearchData sd->
+				loadSearchResult(bingSearch.thumbnailSearch(sd), httpHelper)
 			}
 			runEditor = { SearchData sd->
 				URL selectedUrl = sd.results[sd.selected]
 				Path p = pathForSelected(sd)
 				String editorCmd = ConfHelper.cfg?.ui?.editor
 				assert editorCmd : "No editor configured in the ankivocb.conf/ui/editor path"
-				Helper.runCommand(editorCmd, [path:p, searchData:sd], 1)				
+				Helper.runCommand(editorCmd, [path:p, searchData:sd], 1)
 			}
 		}
 	}
-	
+
 	Path pathForSelected(SearchData sd) {
-		if (!sd || sd.selected<0) return null		
+		if (!sd || sd.selected<0) return null
 		httpHelper.cache.subPathForKey(sd.results[sd.selected].toString())
 	}
 
@@ -62,19 +62,24 @@ public class BingImageAppender {
 
 
 
+
+		SearchData sd
 		for ( Concept c in noImgs) {
+			sd =new SearchData(count:16)
 			i++
 			init()
 			String trm = c.terms[0].term
 			imgSelector.with {
-				runSearch(trm)
+				sd.q = trm
+				runSearch(sd)
 				title = "Pick the image. ($i/${noImgs.size()}) "
 				runAsModal()
 			}
-			SearchData sd = imgSelector.searchData
+			sd = imgSelector.searchData
 			if (sd.useBlank) {
 				c.state = "ignoreImage"
 				dbMan.save()
+				continue
 			}
 
 			if (sd.selected<=-1) {
