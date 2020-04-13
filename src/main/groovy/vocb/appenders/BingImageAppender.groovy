@@ -33,13 +33,6 @@ public class BingImageAppender {
 			runSearch = { SearchData sd->
 				loadSearchResult(bingSearch.thumbnailSearch(sd), httpHelper)
 			}
-			runEditor = { SearchData sd->
-				URL selectedUrl = sd.results[sd.selected]
-				Path p = pathForSelected(sd)
-				String editorCmd = ConfHelper.cfg?.ui?.editor
-				assert editorCmd : "No editor configured in the ankivocb.conf/ui/editor path"
-				Helper.runCommand(editorCmd, [path:p, searchData:sd], 1)
-			}
 		}
 	}
 
@@ -87,15 +80,27 @@ public class BingImageAppender {
 				break
 			}
 
+
 			Path selectedImg = pathForSelected(sd)
 			assert Files.exists(selectedImg)
 			Path resizedP = ImgTrn.resizeImage(selectedImg, 320, 200)
+			c.img =  dbMan.termd2MediaLink(trm, "jpeg")
+			dbMan.save()
+
+			
 			dbMan.resolveMedia(trm, "jpeg") { Path dbPath->
 				Files.move(resizedP, dbPath)
 				println "Stored $dbPath"
+				
 			}
-			c.img =  dbMan.termd2MediaLink(trm, "jpeg")
-			dbMan.save()
+			if (sd.runEditor) {
+				String editorCmd = ConfHelper.cfg?.ui?.editor
+				assert editorCmd : "No editor configured in the ankivocb.conf/ui/editor path"
+				
+				Helper.runCommand(editorCmd, [path:dbMan.mediaLinkPath(c.img), searchData:sd], 1)
+			}
+			
+			
 		}
 	}
 

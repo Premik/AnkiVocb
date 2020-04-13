@@ -11,4 +11,5 @@ public class SearchData {
 	List<URL> results=[]
 	int selected=-1
 	boolean useBlank=false
+	boolean runEditor=false
 }
