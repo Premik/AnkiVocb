@@ -39,24 +39,14 @@ public class App {
 		new MediaMan(ankiCrowdExportPath)
 	}()
 
-	@Lazy Corpus corp = {
-		Corpus c =new Corpus()
-		c.loadInbuild()
-		return c
-	}()
-
+	
 	@Lazy Set<String> knownWords = {
 		ensureProfileExists()
 		List<String> fields = profileSupport.listAllFields(profile)
 		normalizer.tokens(fields.stream()).collect(Collectors.toSet())
 	}()
 
-	boolean isCommonWord(String w) {
-		Double dis = corp.wordFreq[w]
-		if (!dis) return false
-		return dis>=commonWordThreashold
-	}
-
+	
 	boolean isUnknownWord(String w) {
 		return !knownWords.contains(w)
 	}
@@ -143,10 +133,6 @@ public class App {
 
 	public static void main(String[] args) {
 		App a = new App([profile:'Honzik'])
-
-		println "'NotPopularWord' : ${a.isCommonWord('NotPopularWord')}, ${a.isUnknownWord('NotPopularWord')}"
-		println "'some' : ${a.isCommonWord('some')}, ${a.isUnknownWord('some')}"
-		println "'text' : ${a.isCommonWord('text')}, ${a.isUnknownWord('text')}"
-		println a.findPopularUnknownWordsIn("NotPopularWord some text ")
+	
 	}
 }
