@@ -13,7 +13,7 @@ class DomainTest {
 
 	@Test
 	void modelComplete() {
-		testModel.assertIsComplete()
+		testModel.assureIsComplete()
 		println testModel
 	}
 }

@@ -8,14 +8,14 @@ public enum State {
 	populate, done, ignore
 }
 @Canonical
-@ToString(excludes='concepts')
+@ToString(excludes='concepts', includePackage=false)
 public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
 }
 
 @EqualsAndHashCode
-@ToString
+@ToString(includePackage=false, ignoreNulls=true)
 public class Concept {
 	LinkedHashMap<String, Term> terms = [:]
 	//State state
@@ -29,6 +29,7 @@ public class Concept {
 }
 
 @Canonical
+@ToString(includePackage=false, ignoreNulls=true)
 public class Term {
 	String term
 	String lang

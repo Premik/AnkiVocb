@@ -52,7 +52,7 @@ public class Note {
 
 	public void assertIsComplete() {
 		assert model : "Note has no model set"
-		model.assertIsComplete()
+		model.assureIsComplete()
 		note_model_uuid = model.crowdanki_uuid
 		assert model.flds.size() == fields.length : "Model fields doesn't match the note"
 	}

@@ -41,7 +41,7 @@ class ParsingTest {
 	void reparseModels() {
 		p.parse(smallDeck)
 		NoteModel[] models = p.noteModels
-		assert models*.assertIsComplete()
+		assert models*.assureIsComplete()
 		p.noteModels = models
 		//p.saveTo(new File("/tmp/work/m.json"))
 		Map newJson = Helper.parseJson(p.toJsonString())
@@ -67,7 +67,7 @@ class ParsingTest {
 		NoteModel m = p.noteModels[0]
 		assert m.crowdanki_uuid == "0f93612e-70f8-11ea-a10e-d8cb8a536b75"
 		assert m.flds
-		m.assertIsComplete()
+		m.assureIsComplete()
 	}
 
 	@Test

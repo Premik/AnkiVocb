@@ -12,7 +12,7 @@ public class NoteModel  {
 
 
 	String __type__ = "Note"
-	String crowdanki_uuid	
+	String crowdanki_uuid
 	String css	
 	List<FieldModel> flds = []
 	String latexPost
@@ -27,7 +27,7 @@ public class NoteModel  {
 	
 
 	private String[] getFieldNames() {
-		assertIsComplete()
+		assureIsComplete()
 		flds.collect {it.name}
 	}
 	
@@ -57,7 +57,7 @@ public class NoteModel  {
 
 	int getFieldIndex(String name, boolean mustExists=true) {
 		assert name
-		assertIsComplete()
+		assureIsComplete()
 		int i = flds.findIndexOf {it.name = name }
 		if (mustExists) {
 		assert i >-1 : "Field $name not found. Fields: $flds"
@@ -65,7 +65,7 @@ public class NoteModel  {
 		return i 
 	}
 
-	public void assertIsComplete() {
+	public void assureIsComplete() {
 		assert name
 		assert flds
 		
