@@ -7,6 +7,10 @@ concepts:
     tts: apple.mp3
   - term: jablko
     lang: cs
+  examples: 
+  - term: Apple helps clean teeth.
+    lang: en
+  - term: Jablko pomáhá čistit zuby.
   img: apple.jpeg
   freq: 13506.05000
   origins: ["top500"]
@@ -18,6 +22,11 @@ concepts:
   - term: koťátko
     lang: cs
   - term: kočička
+    lang: cs
+  examples: 
+  - term: Kitty needs some attention.
+    lang: en
+  - term: Koťátko potřebuje trochu pozornosti.
     lang: cs
   img: kitty.jpeg
   freq: 278.47900
@@ -39,6 +48,11 @@ concepts:
   - term: z
     lang: cs
     tts: z.mp3
+  examples: 
+  - term: Take one of these.
+    lang: en
+  - term: Vezměte si jednu z těchto.
+    lang: cs
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex"]
@@ -50,6 +64,11 @@ concepts:
   - term: a
     lang: cs
     tts: a.mp3
+  examples: 
+  - term: Cat and dog.
+    lang: en
+  - term: Kočka a pes.
+    lang: cs
   img: and.jpeg
   freq: 20342628.50000
   origins: ["Supaplex"]
@@ -64,6 +83,11 @@ concepts:
   - term: aby
     lang: cs
     tts: aby.mp3
+  examples: 
+  - term: Go to the bedroom.
+    lang: en
+  - term: Jdi do ložnice.
+    lang: cs
   state: ignoreImage
   freq: 14906506.00000
   origins: ["Supaplex"]
@@ -78,6 +102,11 @@ concepts:
   - term: byla
     lang: cs
     tts: byla.mp3
+  examples: 
+  - term: He was a true friend.
+    lang: en
+  - term: Byl to věrný přítel.
+    lang: cs
   state: ignoreImage
   freq: 10078245.00000
   origins: ["Supaplex"]
@@ -92,6 +121,11 @@ concepts:
   - term: ve
     lang: cs
     tts: ve.mp3
+  examples: 
+  - term: Not in my city.
+    lang: en
+  - term: Ne v mém městě.
+    lang: cs
   img: in.jpeg
   freq: 8715316.00000
   origins: ["Supaplex"]
@@ -103,6 +137,11 @@ concepts:
   - term: je
     lang: cs
     tts: je.mp3
+  examples: 
+  - term: He is an excellent speaker.
+    lang: en
+  - term: On je výborný řečník.
+    lang: cs
   state: ignoreImage
   freq: 7557477.00000
   origins: ["Supaplex"]
@@ -114,6 +153,11 @@ concepts:
   - term: to
     lang: cs
     tts: to.mp3
+  examples: 
+  - term: That is it.
+    lang: en
+  - term: To je ono.
+    lang: cs
   state: ignoreImage
   freq: 5965293.50000
   origins: ["Supaplex"]
@@ -125,6 +169,11 @@ concepts:
   - term: pro
     lang: cs
     tts: pro.mp3
+  examples: 
+  - term: For all the people.
+    lang: en
+  - term: Pro všechny lidi.
+    lang: cs
   state: ignoreImage
   freq: 3556287.50000
   origins: ["Supaplex"]
@@ -136,6 +185,11 @@ concepts:
   - term: pravda
     lang: cs
     tts: pravda.mp3
+  examples: 
+  - term: Then it's true.
+    lang: en
+  - term: Pak je to pravda.
+    lang: cs
   img: true.jpeg
   freq: 2675121.50000
   origins: ["Supaplex"]
@@ -150,6 +204,11 @@ concepts:
   - term: dělat
     lang: cs
     tts: delat.mp3
+  examples: 
+  - term: We had to do it.
+    lang: en
+  - term: Museli jsme to udělat.
+    lang: cs
   state: ignoreImage
   freq: 2126875.50000
   origins: ["Supaplex"]
@@ -161,6 +220,11 @@ concepts:
   - term: ale
     lang: cs
     tts: ale.mp3
+  examples:   
+  - term: But it is not their fault.
+    lang: en
+  - term: Ale není to jejich vina.
+    lang: cs
   state: ignoreImage
   freq: 1957586.00000
   origins: ["Supaplex"]
@@ -173,6 +237,11 @@ concepts:
     lang: cs
     tts: vsichni.mp3
   - term: vše
+  examples: 
+  - term: You all got eyes.
+    lang: en
+  - term: Máte snad všichni oči.
+    lang: cs
   img: all.jpeg
   freq: 1940329.50000
   origins: ["Supaplex"]
@@ -187,6 +256,11 @@ concepts:
   - term: ně
     lang: cs
     tts: ne.mp3
+  examples: 
+  - term: Tell them all.
+    lang: en
+  - term: Řekni jim vše.
+    lang: cs
   img: them.jpeg
   freq: 1593893.50000
   origins: ["Supaplex"]
@@ -201,6 +275,11 @@ concepts:
   - term: vás
     lang: cs
     tts: vas.mp3
+  examples: 
+  - term: Was it really you?
+    lang: en
+  - term: Byl jsi to opravdu ty?
+    lang: cs
   img: you.jpeg
   freq: 1540817.58700
   origins: ["Supaplex"]
@@ -215,6 +294,11 @@ concepts:
   - term: jednu
     lang: cs
     tts: jednu.mp3
+  examples: 
+  - term: You must select only one shape.
+    lang: en
+  - term: Musíš vybrat jen jeden tvar.
+    lang: cs
   img: one.jpeg
   freq: 1439082.50000
   origins: ["Supaplex"]
@@ -229,6 +313,12 @@ concepts:
   - term: falešné
     lang: cs
     tts: falesne.mp3
+  examples: 
+  - term: False sense of happiness.
+    lang: en
+  - term: Falešný pocit štěstí.
+    lang: cs
+  
   img: false.jpeg
   freq: 1123368.00000
   origins: ["Supaplex"]
@@ -243,6 +333,11 @@ concepts:
   - term: doba
     lang: cs
     tts: doba.mp3
+  examples: 
+  - term: Time to go.
+    lang: en
+  - term: Čas jít.
+    lang: cs
   img: time.jpeg
   freq: 1107169.00000
   origins: ["Supaplex"]
@@ -257,6 +352,11 @@ concepts:
   - term: pryč
     lang: cs
     tts: pryc.mp3
+  examples: 
+  - term: Get the dog out of here!
+    lang: en
+  - term: Odveďte toho psa ven!
+    lang: cs
   img: out.jpeg
   freq: 1058897.00000
   origins: ["Supaplex"]
@@ -268,6 +368,11 @@ concepts:
     lang: cs
     tts: vedet.mp3
   - term: znát
+    lang: cs
+  examples: 
+  - term: How would they know?
+    lang: en
+  - term: Jak by to mohli vědět?
     lang: cs
   img: know.jpeg
   freq: 984073.50000
