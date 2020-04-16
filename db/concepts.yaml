@@ -4,20 +4,14 @@ concepts:
 - terms: 
   - term: apple
     lang: en
-    tts: apple.mp3
-  - term: jablko
-    lang: cs
-    tts: jablko.mp3
+    tts: apple.mp3 
   img: apple.jpeg
   origins: ["top500"]
 ##  kitty   #################################################################
 - terms: 
   - term: kitty
     lang: en
-    tts: kitty.mp3
-  - term: koťátko
-    lang: cs
-    tts: kotatko.mp3
+    tts: kitty.mp3  
   img: kitty.jpeg
 ##  a   #####################################################################
 - terms: 
