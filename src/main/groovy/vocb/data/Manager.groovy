@@ -39,18 +39,23 @@ public class Manager {
 		}
 	}
 
-	void withTerms(Closure cl) {
+	void withTerms(boolean includeExamples=false, Closure cl) {
 		db.concepts.each { Concept c->
 			if (c.state != "ignore") {
 				c.terms.collect { String key, Term t->
 					cl(c, t)
 				}
+				if (includeExamples) {
+					c.examples.collect { String key, Term t->
+						cl(c, t)
+					}
+				}
 			}
 		}
 	}
 	
-	void withTermsByLang(String lang, Closure cl) {
-		withTerms { Concept c, Term t->
+	void withTermsByLang(String lang, boolean includeExamples=false, Closure cl) {
+		withTerms(includeExamples) { Concept c, Term t->
 			if (t.lang == lang) cl(c , t)
 		}
 	}

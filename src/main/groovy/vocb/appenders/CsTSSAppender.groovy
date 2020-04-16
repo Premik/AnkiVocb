@@ -18,11 +18,15 @@ public class CsTSSAppender {
 
 	void run() {
 		dbMan.load()
-		dbMan.withTermsByLang("cs") {Concept c, Term t->
-			if (!dbMan.linkedMediaExists(t.tts) ) {
-				t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
-					ttsCz.synth(t.term, "violka", p.toString() )
-					dbMan.save()
+		int i = 0;
+		dbMan.withTermsByLang("cs", true) {Concept c, Term t->
+			i++;
+			if (i < 10) {
+				if (!dbMan.linkedMediaExists(t.tts) ) {
+					t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
+						ttsCz.synth(t.term, "violka", p.toString() )
+						dbMan.save()
+					}
 				}
 			}
 		}
