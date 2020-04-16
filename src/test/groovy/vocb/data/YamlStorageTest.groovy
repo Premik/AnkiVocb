@@ -146,7 +146,7 @@ class YamlStorageTest {
 	}
 
 	@Test
-	void dbToYaml() {
+	void fullParse() {
 		ConceptDb db
 		testConceptsUrl.withReader {
 			db = st.parseDb(it)
@@ -154,6 +154,23 @@ class YamlStorageTest {
 		//new File("/tmp/work/db.yaml") << st.dbToYaml(db)
 		//println st.dbToYaml(db)
 		TestUtils.compareString(st.dbToYaml(db), testConceptsUrl.text)
+
+		//Concept c = db.firstTermIndex["apple"]
+		//assert c
+		//assert c.terms[0] == "apple"
+	}
+	
+	@Test
+	void fullParseWithExamples() {
+		URL ys = getClass().getResource('/vocb/data/withExample.yaml')
+		assert ys
+		ConceptDb db
+		ys.withReader {
+			db = st.parseDb(it)
+		}
+		//new File("/tmp/work/db.yaml") << st.dbToYaml(db)
+		//println st.dbToYaml(db)
+		TestUtils.compareString(st.dbToYaml(db), ys.text)
 
 		//Concept c = db.firstTermIndex["apple"]
 		//assert c

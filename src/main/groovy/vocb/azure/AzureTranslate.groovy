@@ -61,13 +61,15 @@ public class AzureTranslate {
 		return ret[0]
 	}
 
-	public List<Tuple2<String, String>> extractExamples(Map exampleResponse) {
-		assert lookupResponse
-		lookupResponse.examples.collect {
-			[
-				"$it.sourcePrefix $it.sourceTerm $it.sourceSuffix",
-				"$it.targetPrefix $it.targetTerm $it.targetSuffix"
-			]
+	public List<Tuple2<String, String>> extractExamples(Map exampleResponse, int maxCount=20) {
+		assert exampleResponse
+		exampleResponse.examples
+		.take(maxCount)
+		.collect {
+			new Tuple2(
+				"$it.sourcePrefix$it.sourceTerm$it.sourceSuffix",
+				"$it.targetPrefix$it.targetTerm$it.targetSuffix"
+			)
 		}
 
 	}
