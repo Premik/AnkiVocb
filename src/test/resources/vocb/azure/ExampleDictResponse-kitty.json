@@ -1,0 +1,46 @@
+{
+	"normalizedSource": "kitty",
+	"normalizedTarget": "koťátko",
+	"examples": [
+		{
+			"sourcePrefix": "",
+			"sourceTerm": "Kitty",
+			"sourceSuffix": " needs some attention.",
+			"targetPrefix": "",
+			"targetTerm": "Koťátko",
+			"targetSuffix": " potřebuje trochu pozornosti."
+		},
+		{
+			"sourcePrefix": "Welcome to the ",
+			"sourceTerm": "kitty",
+			"sourceSuffix": " biscuit factory!",
+			"targetPrefix": "Vítejte na ",
+			"targetTerm": "koťátko",
+			"targetSuffix": " sušenka továrna!"
+		},
+		{
+			"sourcePrefix": "... will be staying home with my ",
+			"sourceTerm": "kitty",
+			"sourceSuffix": ".",
+			"targetPrefix": "... bude zůstávat doma s mým ",
+			"targetTerm": "koťátko",
+			"targetSuffix": "."
+		},
+		{
+			"sourcePrefix": "... has got almost every entity in its ",
+			"sourceTerm": "kitty",
+			"sourceSuffix": ".",
+			"targetPrefix": "... má skoro každý subjekt ve své ",
+			"targetTerm": "koťátko",
+			"targetSuffix": "."
+		},
+		{
+			"sourcePrefix": "... has got almost every entity in its ",
+			"sourceTerm": "kitty",
+			"sourceSuffix": ".",
+			"targetPrefix": "... má téměř každý subjekt ve své ",
+			"targetTerm": "koťátko",
+			"targetSuffix": "."
+		}
+	]
+}
