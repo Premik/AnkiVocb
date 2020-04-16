@@ -1,17 +1,59 @@
 .card {
- font-family: arial;
- font-size: 20px;
+ font-family: Helvetica;
+ font-size: 30px;
  text-align: center;
  color: black;
  background-color: white;
 }
 
-.hintPane button {
-  display: block;
-  width: 100%;
+.card img {
+  opacity: 0.90;
+  margin: 10px;
 }
 
-#hint {
-color: green;
+.buttonRounded {
+  border: none;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+
 }
+
+
+#hintButton {
+  background-image: url('lightBulb.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  float: right;
+}
+  
+  
+
+#hint {
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+}
+
+.rounded {
+  border: 1px 1px 1px 0px black;
+  background-color: #18adaae8;
+  border-radius: 7px;
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+
+.shadow {
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.foreign {
+  font-weight:bold
+}
+
+
 
