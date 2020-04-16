@@ -50,8 +50,8 @@ public class EnTSSAppender {
 			String enWord = c.firstTerm
 			
 			String tts = enTts.SSMLEmphSubstr(enSample.term, enWord )
-			if (!dbMan.linkedMediaExists(tts) ) {
-				enSample.tts = dbMan.resolveMedia(tts, "mp3") { Path path ->
+			if (!dbMan.linkedMediaExists(enSample.term) ) {
+				enSample.tts = dbMan.resolveMedia(enSample.term, "mp3") { Path path ->
 					Process p=  enTts.synth(tts, "neural", someVoice, "ssml", path.toString())
 					Helper.printProcOut(p)
 					p.waitFor(10, TimeUnit.SECONDS)

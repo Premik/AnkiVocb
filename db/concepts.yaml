@@ -25,11 +25,13 @@ concepts:
     tts: kotatko.mp3
   - term: kočička
     lang: cs
+    tts: kocicka.mp3
   examples: 
   - term: Kitty needs some attention.
     lang: en
   - term: Koťátko potřebuje trochu pozornosti.
     lang: cs
+    tts: Kotatko potrebuje trochu pozornosti.mp3
   img: kitty.jpeg
   freq: 278.47900
 ##  a   #####################################################################
@@ -55,6 +57,7 @@ concepts:
     lang: en
   - term: Vezměte si jednu z těchto.
     lang: cs
+    tts: Vezmete si jednu z techto.mp3
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex"]
