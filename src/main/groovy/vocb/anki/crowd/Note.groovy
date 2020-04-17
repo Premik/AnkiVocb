@@ -13,11 +13,12 @@ includes=['fields']
 public class Note {
 	
 	String __type__ = "Note"
-	String[] fields = new String[5]
+	String[] fields
 	 
 
 	String data=""
 	int flags = 0
+	String guid
 	List<String> tags = ["ankiVocb"]
 
 	String note_model_uuid
@@ -46,15 +47,43 @@ public class Note {
 		return Helper.padList(fls, "", model.fieldsCount, true)
 	}
 
-	public String getGuid() {
-		return "vocb_$enWord"
-	}
 
 	public void assertIsComplete() {
 		assert model : "Note has no model set"
 		model.assureIsComplete()
 		note_model_uuid = model.crowdanki_uuid
-		assert model.flds.size() == fields.length : "Model fields doesn't match the note"
+		guid = guid?: "vocb_$enWord"
+		//assert model.flds.size() == fields.length : "Model fields doesn't match the note"
+		int modelSz = model.flds.size()
+		if (modelSz != fields.size()) {
+			//Fields don't match the model. Resize
+			String[] newFields = new String[modelSz]
+			String[] cropped = fields.take(modelSz)
+			for (int i=0;i<cropped.length;i++) {
+				newFields[i] = cropped[i]
+			}
+			fields = newFields
+		}
+	}
+	
+	def propertyMissing(String name, value) {
+		assertIsComplete()
+		model.setFielValue(this, name, value)
+	}
+
+	def propertyMissing(String name) {
+		assertIsComplete()
+		model.getFielValue(this, name)
+	}
+	
+	Object getAt(Integer index) {
+		assertIsComplete()
+		fields[index]
+	}
+	
+	void setAt(Integer index, value) {
+		assertIsComplete()
+		fields[index] = value
 	}
 	
 	

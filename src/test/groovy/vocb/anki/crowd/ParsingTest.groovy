@@ -8,7 +8,7 @@ import vocb.Helper
 class ParsingTest {
 
 	String smallDeck = getClass().getResource('/vocb/crowd/deckSmall.json').text
-	CrowdParser p = new CrowdParser()
+	CrowdParser p = new CrowdParser(json:smallDeck)
 
 	@Test
 	void reparse() {
@@ -39,7 +39,6 @@ class ParsingTest {
 
 	@Test
 	void reparseModels() {
-		p.parse(smallDeck)
 		NoteModel[] models = p.noteModels
 		assert models*.assureIsComplete()
 		p.noteModels = models
@@ -53,7 +52,6 @@ class ParsingTest {
 
 	@Test
 	void modelsParse() {
-		p.parse(smallDeck)
 		NoteModel[] mods = p.noteModels
 		assert mods
 		assert mods.size() == 3
@@ -63,7 +61,6 @@ class ParsingTest {
 
 	@Test
 	void fieldModel() {
-		p.parse(smallDeck)
 		NoteModel m = p.noteModels[0]
 		assert m.crowdanki_uuid == "0f93612e-70f8-11ea-a10e-d8cb8a536b75"
 		assert m.flds
@@ -72,7 +69,6 @@ class ParsingTest {
 
 	@Test
 	void indexByFirstField() {
-		p.parse(smallDeck)
 		Map<String, Object> idx = p.indexNotesByFirstField()
 		assert idx
 		assert idx.size() > 1
@@ -84,7 +80,6 @@ class ParsingTest {
 
 	@Test
 	void allFields() {
-		p.parse(smallDeck)
 		Set<String> s = p.notesAllFieldValues()
 		assert s
 		assert s.size() > 1

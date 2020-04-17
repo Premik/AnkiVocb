@@ -4,12 +4,49 @@ import vocb.Helper
 
 public class CrowdParser {
 
-	Map jsonRoot
+	String json
 
+	@Lazy Map jsonRoot = {
+		Map j =Helper.parseJson(json)
+		assert j : "Failed to parse the input json:\n '${json?.take(1000)}'"
+		return j
+	}()
 
-	public void parse(String json) {
-		jsonRoot = Helper.parseJson(json)
+	@Lazy NoteModel[] noteModels = {
+		jsonRoot.note_models.collect { Map mJson->
+			new NoteModel(mJson)
+		}
+	}()
+	
+	List<Note> getAllNotes()  {		
+		def findModel = { String guid ->
+			noteModels.find { NoteModel m -> m.crowdanki_uuid == guid}
+		}
+
+		jsonRoot.notes.collect {Map jsonMap ->
+			Note n = new Note(jsonMap)
+			n.model = findModel(n.note_model_uuid)
+			return n
+		}
 	}
+	
+	Set<String> notesAllFieldValues() {
+		assert jsonRoot : "Run parse() first"
+		Set<String> ret = new HashSet<String>()
+		jsonRoot.notes.each { def n ->
+			ret.addAll(n.fields)
+		}
+		return ret
+	}
+
+
+	public NoteModel getAnkivocbModel() {
+		noteModels.find { NoteModel m ->
+			m.name.toLowerCase().startsWith("ankivocb")
+		}
+	}
+
+
 
 	public String toJsonString() {
 		Helper.jsonToString(jsonRoot)
@@ -20,40 +57,14 @@ public class CrowdParser {
 	}
 
 
-	public NoteModel[] getNoteModels() {
-		assert jsonRoot : "Run parse() first"
-		return jsonRoot.note_models.collect { Map mJson->
-			new NoteModel(mJson)
-		}
-	}
-
-	public NoteModel getAnkivocbModel() {
-		noteModels.find { NoteModel m ->
-			m.name.toLowerCase().startsWith("ankivocb")
-		}
-	}
-
 	public void setNoteModels(List<NoteModel> cols) {
-		assert jsonRoot : "Run parse() first"
-		if (!cols) return
-			jsonRoot.note_models = Helper.parseJson(Helper.jsonToString(cols))
-	}
-
-	public List<Note> getAllNotes() {
-		NoteModel[] mods = noteModels
-		def findModel = { String guid ->
-			mods.find { NoteModel m ->
-				m.crowdanki_uuid == guid				
-			}
+		if (!cols) {
+			return
 		}
- 
-		jsonRoot.notes.collect {Map jsonMap ->
-			Note n = new Note(jsonMap)
-			n.model = findModel(n.note_model_uuid)
-			return n			
-		} 
+		jsonRoot.note_models = Helper.parseJson(Helper.jsonToString(cols))
 	}
 
+	
 	Map<String, Object> indexNotesByFirstField() {
 		assert jsonRoot : "Run parse() first"
 		Map<String, Object> ret = new HashMap<String, Object>()
@@ -65,14 +76,7 @@ public class CrowdParser {
 		return ret
 	}
 
-	Set<String> notesAllFieldValues() {
-		assert jsonRoot : "Run parse() first"
-		Set<String> ret = new HashSet<String>()
-		jsonRoot.notes.each { def n ->
-			ret.addAll(n.fields)
-		}
-		return ret
-	}
+	
 
 
 	public void appendMedia(String mediaKey) {

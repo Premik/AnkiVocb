@@ -46,11 +46,13 @@ public class NoteModel  {
 	}
 
 	String getFielValue(Note note, String name) {
+		assert name
 		note.assertIsComplete() 		
 		return note[getFieldIndex(name)]
 	}
 	
 	String setFielValue(Note note, String name, String value) {
+		assert name
 		note.assertIsComplete()
 		note[getFieldIndex(name)] = value
 	}

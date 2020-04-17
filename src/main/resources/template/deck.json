@@ -1,0 +1,230 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "aca40470-8082-11ea-b853-d8cb8a536b75",
+    "deck_config_uuid": "0f934c16-70f8-11ea-a10e-d8cb8a536b75",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "0f934c16-70f8-11ea-a10e-d8cb8a536b75",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 20,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [],
+    "name": "ankivocbTemplate",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "ankivocb-8082-11ea-b853-d8cb8a536b75",
+            "css": ".card {\n font-family: Helvetica;\n font-size: 30px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.card img {\n  opacity: 0.90;\n  margin: 10px;\n}\n\n.buttonRounded {\n  border: none;\n  padding: 30px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  border-radius: 50%;\n\n}\n\n\n#hintButton {\n  background-image: url('lightBulb.png');\n  background-repeat: no-repeat;\n  background-color: #8adbdb;\n  background-position: center; \n  /*float: right;*/\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n  \n\n#hint {\n  font-family: 'Courier New', Courier, monospace;\n  color: green;\n}\n\n.rounded {\n  border: 1px 1px 1px 0px black;\n  background-color: #76bdbde8;\n  border-radius: 7px;\n  color: #fff;\n  position: relative;\n  left: 0;\n}\n\n.shadow {\n  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);\n}\n\n.foreign {\n  font-weight:bold\n}\n\n\n\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "img",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "freq",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "foreign",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "foreignTTS",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "foreignExample",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "foreignExampleTTS",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "native",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "nativeTTS",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "nativeAlt",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "nativeAltTTS",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "nativeExample",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "nativeExampleTTS",
+                    "ord": 11,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "ankivocb-en2cs-1",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        2,
+                        3,
+                        6
+                    ]
+                ]
+            ],
+            "sortf": 2,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"rounded shadow\">\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<div><img src=\"{{img}}\"></div>\n\n\t\t\t\t<div class=\"question\">{{foreign}}</div>\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t\t<hr>\n\n\n\t\t\t\t<div class=\"answer\">{{native}}</div>\n\t\t\t\t[sound:{{nativeTTS}}]\n\n\t\t\t\t{{#nativeAlt}}\n\t\t\t\t<div class=\"answer\">{{nativeAlt}}</div>\n\t\t\t\t[sound:{{nativeTTSAlt}}]\n\t\t\t\t{{/nativeAlt}}\n\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t{{#foreignExample}}\n\t\t\t\t<hr>\n\t\t\t\t<div class=\"answer\">{{foreignExample}}</div>\n\t\t\t\t[sound:{{foreignExampleTTS}}]\n\t\t\t\t{{/foreignExample}}\n\t\t\t\t\n\n\t\t\t</div>\n\n\t\t\t",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "<div class=\"rounded shadow\">\n\t\t\t\t\t<button id=\"hintButton\" class=\"buttonRounded\" onclick=\"showHint()\" type=\"button\">HINT</button>\n\t\t\t\t\n\t\t\t\t<div><img src=\"{{img}}\"></div>\n\n\t\t\t\t<div class=\"question\">{{foreign}}</div>\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t\n\n\t\t\t\t<div class=\"hintPane\">\t\t\t\t\t\n\t\t\t\t\t\t<div id=\"hint\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\n\t\t\t\t\n\n\t\t\t</div>\n\n\t\t\t<script>\n\t\t\t\tfunction coverWord(w) {\n\t\t\t\t\tvar placeholder = '-';\n\t\t\t\t\tvar chrs = Array.from(w)\n\t\t\t\t\tvar end = chrs.length;\n\t\t\t\t\tvar start = 0;\n\t\t\t\t\tif (chrs.length > 1) start++;\n\t\t\t\t\tif (chrs.length > 5) end--;\n\t\t\t\t\tif (chrs.length > 8) start++;\n\n\t\t\t\t\tfor (var i = start; i < end; i++) {\n\t\t\t\t\t\tchrs[i] = placeholder;\n\t\t\t\t\t}\n\t\t\t\t\treturn chrs.join(\"\");\n\t\t\t\t}\n\t\t\t\tfunction showHint() {\n\t\t\t\t\tvar hint = document.getElementById(\"hint\");\n\t\t\t\t\thint.innerText = coverWord(\"{{native}}\");\n\t\t\t\t\tdocument.getElementById(\"hintButton\").style.display = \"none\";\n\t\t\t\t}\n\t\t\t</script>"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "img",
+                "freq",
+                "foreign",
+                "foreignTTS",
+                "foreignExample",
+                "foreignExampleTTS",
+                "native",
+                "nativeTTS",
+                "nativeAlt",
+                "nativeTTS",
+                "nativeExample",
+                "nativeExampleTTS"
+            ],
+            "flags": 0,
+            "guid": "ankivobFullModel1",
+            "note_model_uuid": "ankivocb-8082-11ea-b853-d8cb8a536b75",
+            "tags": []
+        }
+    ]
+}
