@@ -47,6 +47,8 @@ public class EnTSSAppender {
 			
 			Term enSample = c.examples.values()[0]
 			if (enSample.lang != 'en' || enSample.tts) continue
+			i++
+			if (i > 5) break
 			String enWord = c.firstTerm
 			
 			String tts = enTts.SSMLEmphSubstr(enSample.term, enWord )
@@ -58,7 +60,7 @@ public class EnTSSAppender {
 					dbMan.save()
 				}
 			}
-			break
+			
 									
 		}
 		
