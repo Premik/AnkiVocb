@@ -1,5 +1,6 @@
 package vocb.anki.crowd
 
+import groovy.transform.AutoClone
 import groovy.transform.ToString
 import vocb.Helper
 
@@ -11,15 +12,15 @@ includePackage=false,
 includes=['fields']
 )
 public class Note {
-	
+
 	String __type__ = "Note"
 	String[] fields
-	 
+
 
 	String data=""
 	int flags = 0
 	String guid
-	List<String> tags = ["ankiVocb"]
+	LinkedHashSet<String> tags = [] as LinkedHashSet
 
 	String note_model_uuid
 	NoteModel model
@@ -47,25 +48,30 @@ public class Note {
 		return Helper.padList(fls, "", model.fieldsCount, true)
 	}
 
+	public void hasTagWithPrefix(String prefix) {
+		tags.find {it.toLowerCase().startsWith((prefix?:"").toLowerCase())}
+	}
+
 
 	public void assertIsComplete() {
 		assert model : "Note has no model set"
 		model.assureIsComplete()
 		note_model_uuid = model.crowdanki_uuid
-		guid = guid?: "vocb_$enWord"
+
 		//assert model.flds.size() == fields.length : "Model fields doesn't match the note"
 		int modelSz = model.flds.size()
-		if (modelSz != fields.size()) {
+		if (modelSz != fields?.size()) {
 			//Fields don't match the model. Resize
 			String[] newFields = new String[modelSz]
-			String[] cropped = fields.take(modelSz)
-			for (int i=0;i<cropped.length;i++) {
-				newFields[i] = cropped[i]
+			List<String> cropped = fields?.take(modelSz)?: []
+			for (int i=0;i<modelSz;i++) {
+				newFields[i] = cropped[i]?:""
 			}
 			fields = newFields
-		}
+		}		
 	}
-	
+
+
 	def propertyMissing(String name, value) {
 		assertIsComplete()
 		model.setFielValue(this, name, value)
@@ -75,16 +81,18 @@ public class Note {
 		assertIsComplete()
 		model.getFielValue(this, name)
 	}
-	
+
 	Object getAt(Integer index) {
 		assertIsComplete()
 		fields[index]
 	}
-	
-	void setAt(Integer index, value) {
+
+	void putAt(Integer index, value) {
 		assertIsComplete()
 		fields[index] = value
 	}
-	
-	
+
+
+
+
 }

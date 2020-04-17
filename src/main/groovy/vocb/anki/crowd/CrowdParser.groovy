@@ -1,10 +1,16 @@
 package vocb.anki.crowd
 
+import groovy.json.JsonGenerator
+import groovy.json.JsonOutput
 import vocb.Helper
 
 public class CrowdParser {
 
 	String json
+
+	JsonGenerator noteGenerator = new JsonGenerator.Options()
+	.excludeFieldsByName("model")	
+	.build()
 
 	@Lazy Map jsonRoot = {
 		Map j =Helper.parseJson(json)
@@ -17,8 +23,8 @@ public class CrowdParser {
 			new NoteModel(mJson)
 		}
 	}()
-	
-	List<Note> getAllNotes()  {		
+
+	List<Note> getAllNotes()  {
 		def findModel = { String guid ->
 			noteModels.find { NoteModel m -> m.crowdanki_uuid == guid}
 		}
@@ -29,7 +35,7 @@ public class CrowdParser {
 			return n
 		}
 	}
-	
+
 	Set<String> notesAllFieldValues() {
 		assert jsonRoot : "Run parse() first"
 		Set<String> ret = new HashSet<String>()
@@ -49,7 +55,7 @@ public class CrowdParser {
 
 
 	public String toJsonString() {
-		Helper.jsonToString(jsonRoot)
+		  JsonOutput.prettyPrint(noteGenerator.toJson(jsonRoot))
 	}
 
 	public void saveTo(File deckJson) {
@@ -64,7 +70,7 @@ public class CrowdParser {
 		jsonRoot.note_models = Helper.parseJson(Helper.jsonToString(cols))
 	}
 
-	
+
 	Map<String, Object> indexNotesByFirstField() {
 		assert jsonRoot : "Run parse() first"
 		Map<String, Object> ret = new HashMap<String, Object>()
@@ -76,7 +82,7 @@ public class CrowdParser {
 		return ret
 	}
 
-	
+
 
 
 	public void appendMedia(String mediaKey) {

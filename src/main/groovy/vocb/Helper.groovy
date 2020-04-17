@@ -95,6 +95,10 @@ public class Helper {
 	public static Object cloneJson(Object jsonResult) {
 		return new JsonSlurper().parseText(JsonOutput.toJson(jsonResult))
 	}
+	
+	public static Object objectToJson(Object domainObject) {
+		return parseJson(jsonToString(domainObject))
+	}
 
 	public  static <T> List<T> padList(List<T> lst, T pad, int len, boolean trim=false) {
 		if (!trim && lst.size() >=len) return lst
