@@ -1,14 +1,18 @@
 package vocb.anki.crowd;
 
-import vocb.Helper
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
 
 class VocbModel {
 
-	String version = "ankivocb 1"
+	String version = "ankivocb1"
+	boolean ignoreMissingMedia = false
 	URL crowdJsonUrl = getClass().getResource('/template/deck.json')
+	Path destCrowdRootFolder
+	Closure<Path> resolveMediaLink
 
 	@Lazy CrowdParser parser = new CrowdParser(json:crowdJsonUrl.text)
-
 
 	@Lazy NoteModel noteModel = {
 		NoteModel n = parser.ankivocbModel
@@ -27,7 +31,7 @@ class VocbModel {
 		n.tags.remove("ankiVocb") //Legacy tag
 		if (!n.hasTagWithPrefix("ankivocb")) {
 			n.tags.add(version)
-		}		
+		}
 		n.guid = "avcb_${n.foreign?:n.hashCode() }"
 	}
 
@@ -36,15 +40,47 @@ class VocbModel {
 		notes.each {assureNote(it)}
 		parser.jsonRoot.notes = notes
 	}
-	
-	void syncMedia() {
-		
+
+	void assureCrowdDest() {
+		assert destCrowdRootFolder
+		assert Files.isDirectory(destCrowdRootFolder)
+		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
+		corwdMediaPath.toFile().mkdirs()
 	}
 
-	void saveTo(File f) {
-		f.parentFile?.mkdirs()
+	void syncMedia() {
+		assureCrowdDest()
+		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
+		assert resolveMediaLink : "Set a closure to resolve the mediaLink to file path"
+		notes.collectMany { Note n->
+			[
+				n.img,
+				n.foreignTTS,
+				n.foreignExampleTTS,
+				n.nativeTTS,
+				n.nativeTTS,
+				n.nativeExampleTTS
+			].findAll()
+		}.each { String mediaLink->
+			Path crowdPath = corwdMediaPath.resolve(mediaLink)
+			if (!Files.exists(crowdPath)) {
+				println "$mediaLink: copy"
+				Path sourcePath =resolveMediaLink(mediaLink)
+				assert ignoreMissingMedia ||  Files.exists(sourcePath)
+				if (Files.exists(sourcePath)) {
+					Files.copy(sourcePath, crowdPath)
+				}
+				
+			}
+		}
+	}
+
+	void save() {
+		assureCrowdDest()
 		syncNoteFields()
-		parser.saveTo(f)
+		syncMedia()
+		Path deckJson = destCrowdRootFolder.resolve("${destCrowdRootFolder.fileName}.json")
+		parser.saveTo(deckJson.toFile())
 	}
 
 	Note updateNoteHaving(String foreignTerm) {
@@ -54,19 +90,24 @@ class VocbModel {
 			n = new Note(model:noteModel)
 			notes.add(n)
 			syncNoteFields()
+			//syncMedia(Paths.get( "/tmp/work"))
 		}
 		return n
 
 	}
 
 	static void main(String... args) {
-		new VocbModel().tap {
-			updateNoteHaving("newWord").tap {
-				img = "newWordImg"
-			}
-			saveTo(new File("/tmp/work/test/test.json"))
-			//syncNoteFields()
-		}
+		new VocbModel(
+				destCrowdRootFolder: Paths.get("/tmp/work/test"),
+				ignoreMissingMedia : true,
+				resolveMediaLink: {String mediaLink ->
+					Paths.get("/data/src/AnkiVocb/db/media").resolve(mediaLink)
+				}).tap {
+					updateNoteHaving("newWord").tap {
+						img = "newWordImg"
+					}
+					save()
+				}
 		println "done"
 
 	}
