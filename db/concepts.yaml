@@ -11,6 +11,7 @@ concepts:
   examples: 
   - term: Apple helps clean teeth.
     lang: en
+    tts: Apple helps clean teeth.mp3
   - term: Jablko pomáhá čistit zuby.
   img: apple.jpeg
   freq: 13506.05000
@@ -29,6 +30,7 @@ concepts:
   examples: 
   - term: Kitty needs some attention.
     lang: en
+    tts: Kitty needs some attention.mp3
   - term: Koťátko potřebuje trochu pozornosti.
     lang: cs
     tts: Kotatko potrebuje trochu pozornosti.mp3
@@ -55,6 +57,7 @@ concepts:
   examples: 
   - term: Take one of these.
     lang: en
+    tts: Take one of these.mp3
   - term: Vezměte si jednu z těchto.
     lang: cs
     tts: Vezmete si jednu z techto.mp3
@@ -72,8 +75,10 @@ concepts:
   examples: 
   - term: Cat and dog.
     lang: en
+    tts: Cat and dog.mp3
   - term: Kočka a pes.
     lang: cs
+    tts: Kocka a pes.mp3
   img: and.jpeg
   freq: 20342628.50000
   origins: ["Supaplex"]
@@ -91,8 +96,10 @@ concepts:
   examples: 
   - term: Go to the bedroom.
     lang: en
+    tts: Go to the bedroom.mp3
   - term: Jdi do ložnice.
     lang: cs
+    tts: Jdi do loznice.mp3
   state: ignoreImage
   freq: 14906506.00000
   origins: ["Supaplex"]
@@ -110,8 +117,10 @@ concepts:
   examples: 
   - term: He was a true friend.
     lang: en
+    tts: He was a true friend.mp3
   - term: Byl to věrný přítel.
     lang: cs
+    tts: Byl to verny pritel.mp3
   state: ignoreImage
   freq: 10078245.00000
   origins: ["Supaplex"]
@@ -129,8 +138,10 @@ concepts:
   examples: 
   - term: Not in my city.
     lang: en
+    tts: Not in my city.mp3
   - term: Ne v mém městě.
     lang: cs
+    tts: Ne v mem meste.mp3
   img: in.jpeg
   freq: 8715316.00000
   origins: ["Supaplex"]
@@ -145,8 +156,10 @@ concepts:
   examples: 
   - term: He is an excellent speaker.
     lang: en
+    tts: He is an excellent speaker.mp3
   - term: On je výborný řečník.
     lang: cs
+    tts: On je vyborny recnik.mp3
   state: ignoreImage
   freq: 7557477.00000
   origins: ["Supaplex"]
@@ -161,8 +174,10 @@ concepts:
   examples: 
   - term: That is it.
     lang: en
+    tts: That is it.mp3
   - term: To je ono.
     lang: cs
+    tts: To je ono.mp3
   state: ignoreImage
   freq: 5965293.50000
   origins: ["Supaplex"]
@@ -177,8 +192,10 @@ concepts:
   examples: 
   - term: For all the people.
     lang: en
+    tts: For all the people.mp3
   - term: Pro všechny lidi.
     lang: cs
+    tts: Pro vsechny lidi.mp3
   state: ignoreImage
   freq: 3556287.50000
   origins: ["Supaplex"]
@@ -193,8 +210,10 @@ concepts:
   examples: 
   - term: Then it's true.
     lang: en
+    tts: Then its true.mp3
   - term: Pak je to pravda.
     lang: cs
+    tts: Pak je to pravda.mp3
   img: true.jpeg
   freq: 2675121.50000
   origins: ["Supaplex"]
@@ -212,8 +231,10 @@ concepts:
   examples: 
   - term: We had to do it.
     lang: en
+    tts: We had to do it.mp3
   - term: Museli jsme to udělat.
     lang: cs
+    tts: Museli jsme to udelat.mp3
   state: ignoreImage
   freq: 2126875.50000
   origins: ["Supaplex"]
@@ -228,8 +249,10 @@ concepts:
   examples: 
   - term: But it is not their fault.
     lang: en
+    tts: But it is not their fault.mp3
   - term: Ale není to jejich vina.
     lang: cs
+    tts: Ale neni to jejich vina.mp3
   state: ignoreImage
   freq: 1957586.00000
   origins: ["Supaplex"]
@@ -245,8 +268,10 @@ concepts:
   examples: 
   - term: You all got eyes.
     lang: en
+    tts: You all got eyes.mp3
   - term: Máte snad všichni oči.
     lang: cs
+    tts: Mate snad vsichni oci.mp3
   img: all.jpeg
   freq: 1940329.50000
   origins: ["Supaplex"]
@@ -266,6 +291,7 @@ concepts:
     lang: en
   - term: Řekni jim vše.
     lang: cs
+    tts: Rekni jim vse.mp3
   img: them.jpeg
   freq: 1593893.50000
   origins: ["Supaplex"]
@@ -285,6 +311,7 @@ concepts:
     lang: en
   - term: Byl jsi to opravdu ty?
     lang: cs
+    tts: Byl jsi to opravdu ty.mp3
   img: you.jpeg
   freq: 1540817.58700
   origins: ["Supaplex"]
@@ -304,6 +331,7 @@ concepts:
     lang: en
   - term: Musíš vybrat jen jeden tvar.
     lang: cs
+    tts: Musis vybrat jen jeden tvar.mp3
   img: one.jpeg
   freq: 1439082.50000
   origins: ["Supaplex"]
@@ -323,6 +351,7 @@ concepts:
     lang: en
   - term: Falešný pocit štěstí.
     lang: cs
+    tts: Falesny pocit stesti.mp3
   img: false.jpeg
   freq: 1123368.00000
   origins: ["Supaplex"]
@@ -342,6 +371,7 @@ concepts:
     lang: en
   - term: Čas jít.
     lang: cs
+    tts: Cas jit.mp3
   img: time.jpeg
   freq: 1107169.00000
   origins: ["Supaplex"]
@@ -361,6 +391,7 @@ concepts:
     lang: en
   - term: Odveďte toho psa ven!
     lang: cs
+    tts: Odvedte toho psa ven.mp3
   img: out.jpeg
   freq: 1058897.00000
   origins: ["Supaplex"]
@@ -373,6 +404,7 @@ concepts:
     tts: vedet.mp3
   - term: znát
     lang: cs
+    tts: znat.mp3
   examples: 
   - term: How would they know?
     lang: en
