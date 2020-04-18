@@ -1257,7 +1257,7 @@ concepts:
   img: she.jpeg
   freq: 747484.30000
   origins: ["corpus"]
-##  very   ################################################################## ▃ 35%
+##  very   ################################################################## ▅ 60%
 - terms: 
   - term: very
     lang: en
@@ -1265,9 +1265,10 @@ concepts:
     lang: cs
   - term: velice
     lang: cs
+  state: ignoreImage
   freq: 747094.50000
   origins: ["corpus"]
-##  think   ################################################################# ▃ 35%
+##  think   ################################################################# ▅ 60%
 - terms: 
   - term: think
     lang: en
@@ -1275,6 +1276,7 @@ concepts:
     lang: cs
   - term: přemýšlet
     lang: cs
+  img: think.jpeg
   freq: 744283.50000
   origins: ["corpus"]
 ##  upon   ##################################################################
@@ -1286,7 +1288,7 @@ concepts:
   state: ignore
   freq: 740814.00000
   origins: ["corpus"]
-##  only   ################################################################## ▃ 35%
+##  only   ################################################################## ▅ 60%
 - terms: 
   - term: only
     lang: en
@@ -1296,9 +1298,10 @@ concepts:
     lang: cs
   - term: jenom
     lang: cs
+  state: ignoreImage
   freq: 718033.50000
   origins: ["corpus"]
-##  people   ################################################################ ▃ 35%
+##  people   ################################################################ ▅ 60%
 - terms: 
   - term: people
     lang: en
@@ -1306,9 +1309,10 @@ concepts:
     lang: cs
   - term: osoby
     lang: cs
+  img: people.jpeg
   freq: 696604.50000
   origins: ["corpus"]
-##  went   ################################################################## ▃ 35%
+##  went   ################################################################## ▅ 60%
 - terms: 
   - term: went
     lang: en
@@ -1316,9 +1320,10 @@ concepts:
     lang: cs
   - term: šli
     lang: cs
+  state: ignoreImage
   freq: 690186.00000
   origins: ["corpus"]
-##  great   ################################################################# ▃ 35%
+##  great   ################################################################# ▅ 60%
 - terms: 
   - term: great
     lang: en
@@ -1326,9 +1331,10 @@ concepts:
     lang: cs
   - term: velké
     lang: cs
+  img: great.jpeg
   freq: 672584.00000
   origins: ["corpus"]
-##  now   ################################################################### ▃ 35%
+##  now   ################################################################### ▅ 60%
 - terms: 
   - term: now
     lang: en
@@ -1336,9 +1342,10 @@ concepts:
     lang: cs
   - term: teď
     lang: cs
+  img: now.jpeg
   freq: 668424.50000
   origins: ["corpus"]
-##  take   ################################################################## ▃ 35%
+##  take   ################################################################## ▅ 60%
 - terms: 
   - term: take
     lang: en
@@ -1346,9 +1353,10 @@ concepts:
     lang: cs
   - term: brát
     lang: cs
+  img: take.jpeg
   freq: 663615.50000
   origins: ["corpus"]
-##  little   ################################################################ ▃ 35%
+##  little   ################################################################ ▅ 60%
 - terms: 
   - term: little
     lang: en
@@ -1356,25 +1364,28 @@ concepts:
     lang: cs
   - term: malé
     lang: cs
+  img: little.jpeg
   freq: 659529.00000
   origins: ["corpus"]
-##  day   ################################################################### ▃ 35%
+##  day   ################################################################### ▅ 60%
 - terms: 
   - term: day
     lang: en
   - term: den
     lang: cs
+  img: day.jpeg
   freq: 657552.00000
   origins: ["corpus"]
-##  eyes   ################################################################## ▃ 35%
+##  eyes   ################################################################## ▅ 60%
 - terms: 
   - term: eyes
     lang: en
   - term: oči
     lang: cs
+  img: eyes.jpeg
   freq: 647788.00000
   origins: ["corpus"]
-##  like   ################################################################## ▃ 35%
+##  like   ################################################################## ▅ 60%
 - terms: 
   - term: like
     lang: en
@@ -1382,9 +1393,10 @@ concepts:
     lang: cs
   - term: rád
     lang: cs
+  img: like.jpeg
   freq: 646931.50000
   origins: ["corpus"]
-##  must   ################################################################## ▃ 35%
+##  must   ################################################################## ▅ 60%
 - terms: 
   - term: must
     lang: en
@@ -1392,9 +1404,10 @@ concepts:
     lang: cs
   - term: muset
     lang: cs
+  state: ignoreImage
   freq: 639579.50000
   origins: ["corpus"]
-##  over   ################################################################## ▃ 35%
+##  over   ################################################################## ▅ 60%
 - terms: 
   - term: over
     lang: en
@@ -1402,9 +1415,10 @@ concepts:
     lang: cs
   - term: přes
     lang: cs
+  img: over.jpeg
   freq: 632459.50000
   origins: ["corpus"]
-##  those   ################################################################# ▃ 35%
+##  those   ################################################################# ▅ 60%
 - terms: 
   - term: those
     lang: en
@@ -1412,17 +1426,19 @@ concepts:
     lang: cs
   - term: těmi
     lang: cs
+  state: ignoreImage
   freq: 628314.00000
   origins: ["corpus"]
-##  such   ################################################################## ▃ 35%
+##  such   ################################################################## ▅ 60%
 - terms: 
   - term: such
     lang: en
   - term: takové
     lang: cs
+  state: ignoreImage
   freq: 627941.00000
   origins: ["corpus"]
-##  can   ################################################################### ▃ 35%
+##  can   ################################################################### ▅ 60%
 - terms: 
   - term: can
     lang: en
@@ -1430,9 +1446,10 @@ concepts:
     lang: cs
   - term: mohou
     lang: cs
+  img: can.jpeg
   freq: 610396.00000
   origins: ["corpus"]
-##  what   ################################################################## ▃ 35%
+##  what   ################################################################## ▅ 60%
 - terms: 
   - term: what
     lang: en
@@ -1440,9 +1457,10 @@ concepts:
     lang: cs
   - term: jaké
     lang: cs
+  img: what.jpeg
   freq: 606801.75000
   origins: ["corpus"]
-##  before   ################################################################ ▃ 35%
+##  before   ################################################################ ▅ 60%
 - terms: 
   - term: before
     lang: en
@@ -1450,33 +1468,37 @@ concepts:
     lang: cs
   - term: dříve
     lang: cs
+  img: before.jpeg
   freq: 586348.50000
   origins: ["corpus"]
-##  mr   #################################################################### ▃ 35%
+##  mr   #################################################################### ▅ 60%
 - terms: 
   - term: mr
     lang: en
   - term: pan
     lang: cs
+  img: mr.jpeg
   freq: 581487.00000
   origins: ["corpus"]
-##  never   ################################################################# ▃ 35%
+##  never   ################################################################# ▅ 60%
 - terms: 
   - term: never
     lang: en
   - term: nikdy
     lang: cs
+  img: never.jpeg
   freq: 581128.50000
   origins: ["corpus"]
-##  life   ################################################################## ▃ 35%
+##  life   ################################################################## ▅ 60%
 - terms: 
   - term: life
     lang: en
   - term: život
     lang: cs
+  img: life.jpeg
   freq: 579285.00000
   origins: ["corpus"]
-##  much   ################################################################## ▃ 35%
+##  much   ################################################################## ▅ 60%
 - terms: 
   - term: much
     lang: en
@@ -1484,17 +1506,19 @@ concepts:
     lang: cs
   - term: moc
     lang: cs
+  state: ignoreImage
   freq: 573925.50000
   origins: ["corpus"]
-##  things   ################################################################ ▃ 35%
+##  things   ################################################################ ▅ 60%
 - terms: 
   - term: things
     lang: en
   - term: věci
     lang: cs
+  img: things.jpeg
   freq: 567559.00000
   origins: ["corpus"]
-##  many   ################################################################## ▃ 35%
+##  many   ################################################################## ▅ 60%
 - terms: 
   - term: many
     lang: en
@@ -1502,9 +1526,10 @@ concepts:
     lang: cs
   - term: mnozí
     lang: cs
+  img: many.jpeg
   freq: 564758.00000
   origins: ["corpus"]
-##  old   ################################################################### ▃ 35%
+##  old   ################################################################### ▅ 60%
 - terms: 
   - term: old
     lang: en
@@ -1512,9 +1537,10 @@ concepts:
     lang: cs
   - term: starý
     lang: cs
+  img: old.jpeg
   freq: 562247.00000
   origins: ["corpus"]
-##  after   ################################################################# ▃ 35%
+##  after   ################################################################# ▅ 60%
 - terms: 
   - term: after
     lang: en
@@ -1522,9 +1548,10 @@ concepts:
     lang: cs
   - term: poté
     lang: cs
+  state: ignoreImage
   freq: 560432.00000
   origins: ["corpus"]
-##  years   ################################################################# ▃ 35%
+##  years   ################################################################# ▅ 60%
 - terms: 
   - term: years
     lang: en
@@ -1532,9 +1559,10 @@ concepts:
     lang: cs
   - term: léta
     lang: cs
+  img: years.jpeg
   freq: 547420.00000
   origins: ["corpus"]
-##  most   ################################################################## ▃ 35%
+##  most   ################################################################## ▅ 60%
 - terms: 
   - term: most
     lang: en
@@ -1542,9 +1570,10 @@ concepts:
     lang: cs
   - term: nejvíc
     lang: cs
+  state: ignoreImage
   freq: 543388.50000
   origins: ["corpus"]
-##  also   ################################################################## ▃ 35%
+##  also   ################################################################## ▅ 60%
 - terms: 
   - term: also
     lang: en
@@ -1552,17 +1581,19 @@ concepts:
     lang: cs
   - term: taky
     lang: cs
+  state: ignoreImage
   freq: 536324.00000
   origins: ["corpus"]
-##  year   ################################################################## ▃ 35%
+##  year   ################################################################## ▅ 60%
 - terms: 
   - term: year
     lang: en
   - term: rok
     lang: cs
+  img: year.jpeg
   freq: 532499.50000
   origins: ["corpus"]
-##  saw   ################################################################### ▃ 35%
+##  saw   ################################################################### ▅ 60%
 - terms: 
   - term: saw
     lang: en
@@ -1570,9 +1601,10 @@ concepts:
     lang: cs
   - term: pila
     lang: cs
+  img: saw.jpeg
   freq: 520922.00000
   origins: ["corpus"]
-##  too   ################################################################### ▃ 35%
+##  too   ################################################################### ▅ 60%
 - terms: 
   - term: too
     lang: en
@@ -1580,9 +1612,10 @@ concepts:
     lang: cs
   - term: taky
     lang: cs
+  state: ignoreImage
   freq: 519626.00000
   origins: ["corpus"]
-##  down   ################################################################## ▃ 35%
+##  down   ################################################################## ▅ 60%
 - terms: 
   - term: down
     lang: en
@@ -1590,9 +1623,10 @@ concepts:
     lang: cs
   - term: dole
     lang: cs
+  img: down.jpeg
   freq: 514720.50000
   origins: ["corpus"]
-##  work   ################################################################## ▃ 35%
+##  work   ################################################################## ▅ 60%
 - terms: 
   - term: work
     lang: en
@@ -1600,9 +1634,10 @@ concepts:
     lang: cs
   - term: fungovat
     lang: cs
+  img: work.jpeg
   freq: 508678.00000
   origins: ["corpus"]
-##  took   ################################################################## ▃ 35%
+##  took   ################################################################## ▅ 60%
 - terms: 
   - term: took
     lang: en
@@ -1610,17 +1645,19 @@ concepts:
     lang: cs
   - term: trvalo
     lang: cs
+  state: ignoreImage
   freq: 501669.00000
   origins: ["corpus"]
-##  might   ################################################################# ▃ 35%
+##  might   ################################################################# ▅ 60%
 - terms: 
   - term: might
     lang: en
   - term: by mohlo
     lang: cs
+  img: might.jpeg
   freq: 498257.00000
   origins: ["corpus"]
-##  first   ################################################################# ▃ 35%
+##  first   ################################################################# ▅ 60%
 - terms: 
   - term: first
     lang: en
@@ -1628,17 +1665,19 @@ concepts:
     lang: cs
   - term: poprvé
     lang: cs
+  img: first.jpeg
   freq: 497764.00000
   origins: ["corpus"]
-##  without   ############################################################### ▃ 35%
+##  without   ############################################################### ▅ 60%
 - terms: 
   - term: without
     lang: en
   - term: bez
     lang: cs
+  img: without.jpeg
   freq: 496066.00000
   origins: ["corpus"]
-##  good   ################################################################## ▃ 35%
+##  good   ################################################################## ▅ 60%
 - terms: 
   - term: good
     lang: en
@@ -1646,9 +1685,10 @@ concepts:
     lang: cs
   - term: dobrý
     lang: cs
+  img: good.jpeg
   freq: 490930.50000
   origins: ["corpus"]
-##  himself   ############################################################### ▃ 35%
+##  himself   ############################################################### ▅ 60%
 - terms: 
   - term: himself
     lang: en
@@ -1656,9 +1696,10 @@ concepts:
     lang: cs
   - term: sebe
     lang: cs
+  state: ignoreImage
   freq: 486383.00000
   origins: ["corpus"]
-##  own   ################################################################### ▃ 35%
+##  own   ################################################################### ▅ 60%
 - terms: 
   - term: own
     lang: en
@@ -1666,6 +1707,7 @@ concepts:
     lang: cs
   - term: vlastnit
     lang: cs
+  state: ignoreImage
   freq: 478353.50000
   origins: ["corpus"]
 ##  again   ################################################################# ▃ 35%
