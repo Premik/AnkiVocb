@@ -15,6 +15,7 @@ public class ExampleAppender {
 	AzureTranslate trn = new AzureTranslate(httpHelper: new HttpHelper() )
 
 	Manager dbMan = new Manager()
+	int sleep=500
 
 	void run() {
 
@@ -35,7 +36,8 @@ public class ExampleAppender {
 				c.examples.put(t[1], new Term(t[1], "cs"))
 			}
 						
-			if (i>5) break
+			Thread.sleep(sleep)
+			if (i>10) break
 			i++
 		}
 		dbMan.save()

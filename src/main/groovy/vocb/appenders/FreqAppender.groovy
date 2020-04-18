@@ -13,6 +13,8 @@ public class FreqAppender {
 
 
 	Manager dbMan = new Manager()
+	int sleep =500
+	
 
 	void run() {
 		dbMan.load()
