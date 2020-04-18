@@ -98,4 +98,14 @@ public class Manager {
 		println "Saved $path"
 		return yaml
 	}
+	
+	public static void main(String[] args) {
+		Manager dbMan = new Manager()
+		dbMan.load()		
+		dbMan.save() 
+
+		println "Resaved "
+	}
+	
+	
 }
