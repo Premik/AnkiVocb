@@ -63,7 +63,7 @@ public class ConceptYamlStorage {
 				"concepts: " +concepts
 	}
 
-	void appendBanner(String label, BigDecimal progress, StringBuilder sb, int width=80) {
+	void appendBanner(String label, BigDecimal progress, StringBuilder sb, int width=70) {
 		if (!label) return
 			sb.append("##  ")
 		sb.append(label)
