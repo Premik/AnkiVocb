@@ -127,7 +127,7 @@ class YamlStorageTest {
 	@Test
 	void conceptToYaml() {
 		String y="""\
-        ##  apple   #################################################################
+        ##  apple   ################################################################# ▁ 10%
 		terms: 
 		- term: apple
 		  lang: en

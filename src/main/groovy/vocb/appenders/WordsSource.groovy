@@ -20,7 +20,7 @@ public class WordsSource {
 
 	Manager dbMan = new Manager()
 
-	void run(String text) {
+	void run(String text, int limit=20) {
 		assert sourceName
 		List<String> words = new ArrayList(wn.uniqueueTokens(text))
 				.findAll {String s -> corp.wordFreq[s] > minFreq }
@@ -30,7 +30,7 @@ public class WordsSource {
 
 
 		dbMan.load()
-		words.take(20).each { String w->
+		words.take(limit).each { String w->
 
 
 			Term t = new Term(w, "en")
@@ -56,7 +56,7 @@ public class WordsSource {
 		String[] top = wf.keySet().sort { String a, String b->
 			wf[b] <=> wf[a]
 		}.take(limit)
-		run(top.join(" "))
+		run(top.join(" "), limit)
 		
 	}
 
@@ -65,7 +65,7 @@ public class WordsSource {
 		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
 		 a.run(supa)*/
 		WordsSource a = new WordsSource()
-		a.fromCorups(100)
+		a.fromCorups(200)
 
 
 		println "Done"
