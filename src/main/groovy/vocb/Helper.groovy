@@ -95,7 +95,7 @@ public class Helper {
 	public static Object cloneJson(Object jsonResult) {
 		return new JsonSlurper().parseText(JsonOutput.toJson(jsonResult))
 	}
-	
+
 	public static Object objectToJson(Object domainObject) {
 		return parseJson(jsonToString(domainObject))
 	}
@@ -184,6 +184,24 @@ public class Helper {
 		}
 
 		return p
+	}
+	//https://stackoverflow.com/questions/16656651/does-java-have-a-clamp-function
+	public static <T extends Comparable<T>> T clamp(T val, T min, T max) {
+		if (val.compareTo(min) < 0) return min;
+		else if (val.compareTo(max) > 0) return max;
+		else return val;
+	}
+	
+	public static <T extends Comparable<T>> T clamp01(T val) {
+		return clamp(val, 0, 1)
+	}
+
+
+
+	public static String progressBar(BigDecimal p) {
+		List<String> m = "▁▂▃▄▅▆▇█" as List
+		m[clamp( p* m.size(), 0, m.size()-1)]
+
 	}
 }
 
