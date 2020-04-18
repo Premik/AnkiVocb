@@ -419,7 +419,7 @@ concepts:
   img: know.jpeg
   freq: 984073.50000
   origins: ["Supaplex"]
-##  be   #################################################################### ▆ 63%
+##  be   #################################################################### █ 88%
 - terms: 
   - term: be
     lang: en
@@ -430,9 +430,10 @@ concepts:
     lang: en
   - term: Musí tu někdo být piáno.
     lang: cs
+  state: ignoreImage
   freq: 9104176.00000
   origins: ["corpus"]
-##  had   ################################################################### ▆ 63%
+##  had   ################################################################### █ 88%
 - terms: 
   - term: had
     lang: en
@@ -443,9 +444,10 @@ concepts:
     lang: en
   - term: Tys to číslo měl.
     lang: cs
+  state: ignoreImage
   freq: 6139336.00000
   origins: ["corpus"]
-##  he   #################################################################### ▆ 63%
+##  he   #################################################################### █ 88%
 - terms: 
   - term: he
     lang: en
@@ -456,9 +458,10 @@ concepts:
     lang: en
   - term: A on tě viděl?
     lang: cs
+  img: he.jpeg
   freq: 5653229.50000
   origins: ["corpus"]
-##  with   ################################################################## ▆ 63%
+##  with   ################################################################## █ 88%
 - terms: 
   - term: with
     lang: en
@@ -473,9 +476,10 @@ concepts:
     lang: en
   - term: Počkejte tu s ostatními.
     lang: cs
+  state: ignoreImage
   freq: 5204263.00000
   origins: ["corpus"]
-##  his   ################################################################### ▆ 63%
+##  his   ################################################################### █ 88%
 - terms: 
   - term: his
     lang: en
@@ -490,9 +494,10 @@ concepts:
     lang: en
   - term: Ta hra je jeho život.
     lang: cs
+  state: ignoreImage
   freq: 4409709.00000
   origins: ["corpus"]
-##  have   ################################################################## ▅ 61%
+##  have   ################################################################## ▇ 86%
 - terms: 
   - term: have
     lang: en
@@ -505,9 +510,10 @@ concepts:
     lang: en
   - term: Musíte mít povolení od doktora.
     lang: cs
+  state: ignoreImage
   freq: 4325227.50000
   origins: ["corpus"]
-##  as   #################################################################### ▅ 61%
+##  as   #################################################################### ▇ 86%
 - terms: 
   - term: as
     lang: en
@@ -520,9 +526,10 @@ concepts:
     lang: en
   - term: Učili jsme se ve třídě jako obvykle.
     lang: cs
+  state: ignoreImage
   freq: 3659513.00000
   origins: ["corpus"]
-##  at   #################################################################### ▅ 61%
+##  at   #################################################################### ▇ 86%
 - terms: 
   - term: at
     lang: en
@@ -535,9 +542,10 @@ concepts:
     lang: en
   - term: Koukni se na můj obličej.
     lang: cs
+  img: at.jpeg
   freq: 3429739.50000
   origins: ["corpus"]
-##  were   ################################################################## ▅ 61%
+##  were   ################################################################## ▇ 86%
 - terms: 
   - term: were
     lang: en
@@ -550,9 +558,10 @@ concepts:
     lang: en
   - term: Byly tu tři další.
     lang: cs
+  state: ignoreImage
   freq: 3323884.00000
   origins: ["corpus"]
-##  are   ################################################################### ▅ 61%
+##  are   ################################################################### ▇ 86%
 - terms: 
   - term: are
     lang: en
@@ -565,9 +574,10 @@ concepts:
     lang: en
   - term: Obchody jsou plné zboží.
     lang: cs
+  state: ignoreImage
   freq: 3224178.00000
   origins: ["corpus"]
-##  not   ################################################################### ▅ 61%
+##  not   ################################################################### ▇ 86%
 - terms: 
   - term: not
     lang: en
@@ -580,9 +590,10 @@ concepts:
     lang: en
   - term: Ne každý s vámi souhlasí.
     lang: cs
+  img: not.jpeg
   freq: 2876549.00000
   origins: ["corpus"]
-##  from   ################################################################## ▅ 61%
+##  from   ################################################################## ▇ 86%
 - terms: 
   - term: from
     lang: en
@@ -595,9 +606,10 @@ concepts:
     lang: en
   - term: Výpis z knihy.
     lang: cs
+  state: ignoreImage
   freq: 2872012.50000
   origins: ["corpus"]
-##  or   #################################################################### ▆ 63%
+##  or   #################################################################### █ 88%
 - terms: 
   - term: or
     lang: en
@@ -608,9 +620,10 @@ concepts:
     lang: en
   - term: Šálek čaje nebo kávy.
     lang: cs
+  img: or.jpeg
   freq: 2803803.50000
   origins: ["corpus"]
-##  her   ################################################################### ▅ 56%
+##  her   ################################################################### ▇ 81%
 - terms: 
   - term: her
     lang: en
@@ -622,6 +635,7 @@ concepts:
     lang: en
   - term: To je její kufr.
     lang: cs
+  state: ignoreImage
   freq: 2800225.50000
   origins: ["corpus"]
 ##  an   ####################################################################
@@ -633,7 +647,7 @@ concepts:
   state: ignore
   freq: 2641417.00000
   origins: ["corpus"]
-##  said   ################################################################## ▅ 61%
+##  said   ################################################################## ▇ 86%
 - terms: 
   - term: said
     lang: en
@@ -646,9 +660,10 @@ concepts:
     lang: en
   - term: Řekl jsem, zůstaň tady!
     lang: cs
+  img: said.jpeg
   freq: 2637136.00000
   origins: ["corpus"]
-##  which   ################################################################# ▅ 56%
+##  which   ################################################################# ▇ 81%
 - terms: 
   - term: which
     lang: en
@@ -660,9 +675,10 @@ concepts:
     lang: en
   - term: Tak který z nich je nejlepší?
     lang: cs
+  state: ignoreImage
   freq: 2633444.00000
   origins: ["corpus"]
-##  by   #################################################################### ▅ 61%
+##  by   #################################################################### ▇ 86%
 - terms: 
   - term: by
     lang: en
@@ -675,9 +691,10 @@ concepts:
     lang: en
   - term: Hrajeme podle pravidel.
     lang: cs
+  state: ignoreImage
   freq: 2546805.00000
   origins: ["corpus"]
-##  been   ################################################################## ▅ 61%
+##  been   ################################################################## ▇ 86%
 - terms: 
   - term: been
     lang: en
@@ -690,9 +707,10 @@ concepts:
     lang: en
   - term: Byl jste někdy ženatý?
     lang: cs
+  state: ignoreImage
   freq: 2357654.00000
   origins: ["corpus"]
-##  him   ################################################################### ▅ 61%
+##  him   ################################################################### ▇ 86%
 - terms: 
   - term: him
     lang: en
@@ -705,9 +723,10 @@ concepts:
     lang: en
   - term: Víte jak ho najít?
     lang: cs
+  state: ignoreImage
   freq: 2324852.00000
   origins: ["corpus"]
-##  my   #################################################################### ▅ 61%
+##  my   #################################################################### ▇ 86%
 - terms: 
   - term: my
     lang: en
@@ -720,6 +739,7 @@ concepts:
     lang: en
   - term: Můj pokoj je v pohodě.
     lang: cs
+  img: my.jpeg
   freq: 2098760.00000
   origins: ["corpus"]
 ##  this   ################################################################## ▅ 61%
@@ -804,7 +824,7 @@ concepts:
     lang: cs
   freq: 1602329.00000
   origins: ["corpus"]
-##  so   #################################################################### ▆ 63%
+##  so   #################################################################### ▅ 61%
 - terms: 
   - term: so
     lang: en
@@ -816,10 +836,10 @@ concepts:
   - term: So let me go.
     lang: en
   - term: Tak mě nechte jít.
-    lang: cs 
+    lang: cs
   freq: 1497187.00000
   origins: ["corpus"]
-##  if   #################################################################### ▆ 63%
+##  if   #################################################################### ▅ 61%
 - terms: 
   - term: if
     lang: en
@@ -827,14 +847,14 @@ concepts:
     lang: cs
   - term: jestliže
     lang: cs
-  examples:  
+  examples: 
   - term: If so, you cannot proceed..
     lang: en
   - term: Pokud ano, nemůžeš pokračovat..
     lang: cs
   freq: 1442322.00000
   origins: ["corpus"]
-##  say   ################################################################### ▆ 63%
+##  say   ################################################################### ▅ 61%
 - terms: 
   - term: say
     lang: en
@@ -846,10 +866,10 @@ concepts:
   - term: And what do the birds say?
     lang: en
   - term: A co říkají ptáci?
-    lang: cs  
+    lang: cs
   freq: 1351631.00000
   origins: ["corpus"]
-##  made   ################################################################## ▆ 63%
+##  made   ################################################################## ▅ 61%
 - terms: 
   - term: made
     lang: en
@@ -857,11 +877,11 @@ concepts:
     lang: cs
   - term: udělal
     lang: cs
-  examples:  
+  examples: 
   - term: It could be made of gold and diamonds.
     lang: en
   - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
-    lang: cs 
+    lang: cs
   freq: 1188501.00000
   origins: ["corpus"]
 ##  into   ################################################################## ▆ 63%
@@ -870,15 +890,14 @@ concepts:
     lang: en
   - term: do
     lang: cs
-  examples:   
+  examples: 
   - term: Run into the nearest town.
     lang: en
   - term: Utíkej do nejbližšího města?
     lang: cs
-  
   freq: 1186067.50000
   origins: ["corpus"]
-##  did   ################################################################### ▆ 63%
+##  did   ################################################################### ▅ 61%
 - terms: 
   - term: did
     lang: en
@@ -886,14 +905,14 @@ concepts:
     lang: cs
   - term: udělala
     lang: cs
-  examples:   
+  examples: 
   - term: So you did do it?
     lang: en
   - term: Takže jsi to udělal?
     lang: cs
   freq: 1185720.00000
   origins: ["corpus"]
-##  will   ################################################################## ▆ 63%
+##  will   ################################################################## ▅ 61%
 - terms: 
   - term: will
     lang: en
@@ -901,11 +920,11 @@ concepts:
     lang: cs
   - term: vůle
     lang: cs
-  examples:    
+  examples: 
   - term: That will be the worst part.
     lang: en
   - term: To bude nejhorší část.
-    lang: cs  
+    lang: cs
   freq: 1172186.50000
   origins: ["corpus"]
 ##  more   ################################################################## ▆ 63%
@@ -914,14 +933,14 @@ concepts:
     lang: en
   - term: více
     lang: cs
-  examples:  
+  examples: 
   - term: Read more of these books.
     lang: en
   - term: Číst více z těchto knih
-    lang: cs  
+    lang: cs
   freq: 1159978.50000
   origins: ["corpus"]
-##  your   ################################################################## ▆ 63%
+##  your   ################################################################## ▅ 57%
 - terms: 
   - term: your
     lang: en
@@ -929,10 +948,10 @@ concepts:
     lang: cs
   - term: tvůj
     lang: cs
-  examples:  
+  examples: 
   - term: Your order is ready for processing.
     lang: en
-  - term: Vaše objednávka je připravena ke zpracování.    
+  - term: Vaše objednávka je připravena ke zpracování.
   freq: 1159087.50000
   origins: ["corpus"]
 ##  when   ################################################################## ▃ 35%

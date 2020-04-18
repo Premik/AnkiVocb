@@ -1,8 +1,5 @@
 package vocb.appenders
 
-import java.math.BigDecimal
-
-import groovyjarjarantlr4.v4.runtime.tree.Trees
 import vocb.Helper
 import vocb.corp.Corpus
 import vocb.corp.WordNormalizer
@@ -65,7 +62,7 @@ public class WordsSource {
 		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
 		 a.run(supa)*/
 		WordsSource a = new WordsSource()
-		a.fromCorups(200)
+		a.fromCorups(500)
 
 
 		println "Done"
