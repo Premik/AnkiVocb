@@ -3,6 +3,8 @@ package vocb
 import java.nio.charset.StandardCharsets
 import java.text.Normalizer
 import java.util.concurrent.TimeUnit
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 import javax.xml.transform.OutputKeys
 import javax.xml.transform.Source
@@ -160,6 +162,32 @@ public class Helper {
 		return new Tuple3<String, String, String>(beforeDelimiter, middle, afterDelimiter)
 	}
 
+
+	public static Tuple3<String, String, String> splitByRex(String toSplit, Pattern delimiter) {
+		if (!toSplit || !delimiter) {
+			return null
+		}
+		String[] matches = toSplit.findAll(delimiter)
+		if (!matches) return null
+		assert matches.size() == 1 : "Found multiple matches of the '$delimiter'. ${matches}"
+		return splitBy(toSplit, matches[0])
+	}
+
+	public static Tuple3<String, String, String> splitByWord(String toSplit, String word) {
+		if (!toSplit || !word) {
+			return null
+		}
+
+		String del = /\s.,;?!:"'/
+		Pattern rx = ~/(?i)([$del]+)(${Pattern.quote(word)})([$del]+)/
+
+		def (a,b,c) = splitByRex(toSplit, rx)
+		def (b1,b2,b3) = splitBy(b, word) //Don't include the special characters to the middle word but to the borders
+		return [a+b1, b2, b3+c]
+	}
+
+
+
 	public static BigDecimal roundDecimal(BigDecimal d, int n=2) {
 		if (d == null) return null
 		return d.setScale(n, BigDecimal.ROUND_HALF_UP)
@@ -182,7 +210,6 @@ public class Helper {
 				throw new IllegalArgumentException("Error code ${p.exitValue()}.")
 			}
 		}
-
 		return p
 	}
 	//https://stackoverflow.com/questions/16656651/does-java-have-a-clamp-function
@@ -191,11 +218,10 @@ public class Helper {
 		else if (val.compareTo(max) > 0) return max;
 		else return val;
 	}
-	
+
 	public static <T extends Comparable<T>> T clamp01(T val) {
 		return clamp(val, 0, 1)
 	}
-
 
 
 	public static String progressBar(BigDecimal p) {

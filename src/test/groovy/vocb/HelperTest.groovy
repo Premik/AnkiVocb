@@ -1,5 +1,7 @@
 package vocb
 
+import static org.junit.Assert.*
+
 import org.junit.jupiter.api.Test
 
 import vocb.Helper
@@ -50,4 +52,36 @@ class HelperTest {
 
 		assert Helper.indentNextLines(s, 2) == s2
 	}
+	
+
+	
+	@Test
+	void testSplitBy() {
+		assert Helper.splitBy("abc", "b") == ["a", "b", "c"] as Tuple3
+		assert Helper.splitBy("aabbcc", "bb") == ["aa", "bb", "cc"] as Tuple3
+		assert Helper.splitBy("a b c", "b") == ["a ", "b", " c"] as Tuple3
+		def s = Helper.splitBy("The quick brown fox jumps over the lazy dog.", "brown fox") 
+		assert s == ["The quick ", "brown fox", " jumps over the lazy dog."] as Tuple3
+	}
+	
+	@Test
+	void testSplitByCorner() {
+		assert Helper.splitBy("a", "a") == ["", "a", ""] as Tuple3		
+		assert Helper.splitBy("...a", "a") == ["...", "a", ""] as Tuple3
+	}
+	
+	
+	@Test
+	void testRx() {
+		assert Helper.splitByRex("Hello world.", ~"world") == ["Hello ", "world", "."] as Tuple3		
+		assert Helper.splitByRex("Hello world.", ~/\s*world[\.]*/) == ["Hello", " world.", ""] as Tuple3
+	}
+	
+	@Test
+	void splitByWord() {
+		assert Helper.splitByWord("Hello world.", "world") == ["Hello ", "world", "."] as Tuple3	
+		assert Helper.splitByWord("in class as usual.", "as") == ["in class ", "as", " usual."] as Tuple3
+		
+	}
+	
 }
