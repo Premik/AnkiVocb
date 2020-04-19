@@ -59,6 +59,7 @@ public class AwsCliPollyTTS {
 		assert normalMod
 		assert highlMod
 		final def (String a, String w, String b) =  Helper.splitByWord(text, substr)
+		assert w : "Failed to split '$text' by '$substr'"
 		String innerSSML = SSMLWrapInner(w.trim(), highlMod)
 		SSMLWrap(a.trim() + innerSSML + b.trim(), normalMod)
 

@@ -68,6 +68,9 @@ class HelperTest {
 	void testSplitByCorner() {
 		assert Helper.splitBy("a", "a") == ["", "a", ""] as Tuple3		
 		assert Helper.splitBy("...a", "a") == ["...", "a", ""] as Tuple3
+		assert Helper.splitByWord("Hello world.", "hello") == ["", "Hello", " world."] as Tuple3
+		assert Helper.splitByWord("Who does not like noodles?", "who") == ["", "Who", " does not like noodles?"] as Tuple3
+		
 	}
 	
 	
@@ -80,8 +83,7 @@ class HelperTest {
 	@Test
 	void splitByWord() {
 		assert Helper.splitByWord("Hello world.", "world") == ["Hello ", "world", "."] as Tuple3	
-		assert Helper.splitByWord("in class as usual.", "as") == ["in class ", "as", " usual."] as Tuple3
-		
+		assert Helper.splitByWord("in class as usual.", "as") == ["in class ", "as", " usual."] as Tuple3		
 	}
 	
 }
