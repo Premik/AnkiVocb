@@ -73,7 +73,7 @@ public class ConceptYamlStorage {
 			sb.append("##  ")
 		sb.append(label)
 		sb.append('   ' + '#'*(70-label.length()))
-		if (progress < 0.90) {
+		if (progress < 0.99) {
 			sb.append(" ${Helper.progressBar(progress)}")
 			sb.append(" ${Helper.roundDecimal(progress*100,0)}%")
 		}
