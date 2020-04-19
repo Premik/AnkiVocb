@@ -44,15 +44,15 @@ class ModelTest {
 		    lang: cs
 		  state: ignoreImage
 		  freq: 9104176.00000
-		  origins: ["corpus"]
-		'''.stripIndent()
+		  origins: ["corpus"]'''.stripIndent()
 		assert j
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			assert c.completeness > 0.7
+			assert c.completeness < 0.9
 		}
 	}
-	
+
 	@Test
 	void compltNoThere() {
 		def j = new YamlSlurper().parseText '''\
@@ -70,11 +70,44 @@ class ModelTest {
 		    tts: Salek caje nebo kavy.mp3
 		  img: or.jpeg
 		  freq: 2803803.50000
-		  origins: ["corpus"]
-		'''.stripIndent()
+		  origins: ["corpus"]'''.stripIndent()
 		assert j
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
+			assert c.completeness < 0.99
+			assert c.completeness > 0.40
+		}
+	}
+
+	@Test
+	void complt() {
+		def j = new YamlSlurper().parseText( '''\
+		    terms:
+			- term: their
+			  lang: en
+			  tts: their.mp3
+			- term: jejich
+			  lang: cs
+			  tts: jejich.mp3
+			- term: své
+			examples:
+			- term: But it is not their fault.
+			  lang: en
+			  tts: But it is not their fault.mp3
+			- term: Ale není to jejich vina.
+			  lang: cs
+			  tts: Ale neni to jejich vina.mp3
+			state: ignoreImage
+			freq: 1951647.00000
+			origins: ["corpus"]'''.stripIndent())
+
+		assert j
+		
+		
+		new ConceptYamlStorage().tap {
+			Concept c = parseConcept(j)
+			println c
+			assert c.completeness > 0.5
 			assert c.completeness < 0.99
 		}
 	}

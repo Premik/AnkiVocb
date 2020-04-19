@@ -16,6 +16,7 @@ public class ExampleAppender {
 
 	Manager dbMan = new Manager()
 	int sleep=500
+	int limit = 5
 
 	void run() {
 
@@ -27,20 +28,25 @@ public class ExampleAppender {
 		int i =0
 		for (Concept c in noEx) {
 			String enWord = c.firstTerm
-			String czWord = c.terms.values().find {it.lang == "cs"}.term
+			String[] czWords = c.terms.values().findAll {it.lang == "cs"}*.term
 			
-			Map trnJson = trn.exampleJsonRun(enWord, czWord)
-			println trn.extractExamples(trnJson)
-			trn.extractExamples(trnJson).each {Tuple2<String, String> t ->
+			List<Tuple2<String, String>> xtractedSamples = czWords.collect { String czWord ->
+				Map trnJson = trn.exampleJsonRun(enWord, czWord)
+			    return trn.extractExamples(trnJson)
+			}.collectMany {it}
+			 
+			xtractedSamples.each {Tuple2<String, String> t ->
 				c.examples.put(t[0], new Term(t[0], "en"))
 				c.examples.put(t[1], new Term(t[1], "cs"))
 			}
 						
+			dbMan.save()
 			Thread.sleep(sleep)
-			if (i>10) break
+			if (i>limit) break
 			i++
 		}
 		dbMan.save()
+		
 	}
 
 

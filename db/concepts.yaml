@@ -911,7 +911,7 @@ concepts:
   state: ignoreImage
   freq: 1745473.00000
   origins: ["corpus"]
-##  would   ################################################################# ▆ 63%
+##  would   ################################################################# █ 97%
 - terms: 
   - term: would
     lang: en
@@ -922,6 +922,11 @@ concepts:
   - term: bych
     lang: cs
     tts: bych.mp3
+  examples: 
+  - term: I would never do that again.
+    lang: en
+  - term: Já už bych to nikdy neudělal.
+    lang: cs
   state: ignoreImage
   freq: 1663186.50000
   origins: ["corpus"]
@@ -1123,7 +1128,7 @@ concepts:
   img: your.jpeg
   freq: 1159087.50000
   origins: ["corpus"]
-##  when   ################################################################## ▆ 63%
+##  when   ################################################################## █ 97%
 - terms: 
   - term: when
     lang: en
@@ -1134,6 +1139,11 @@ concepts:
   - term: kdy
     lang: cs
     tts: kdy.mp3
+  examples: 
+  - term: When does this rule apply?
+    lang: en
+  - term: Kdy platí toto pravidlo?
+    lang: cs
   img: when.jpeg
   freq: 1124132.50000
   origins: ["corpus"]
@@ -1151,7 +1161,7 @@ concepts:
   state: ignoreImage
   freq: 1094521.00000
   origins: ["corpus"]
-##  some   ################################################################## ▆ 63%
+##  some   ################################################################## █ 97%
 - terms: 
   - term: some
     lang: en
@@ -1162,10 +1172,15 @@ concepts:
   - term: nějaké
     lang: cs
     tts: nejake.mp3
+  examples: 
+  - term: They have some really cool tricks.
+    lang: en
+  - term: Mají některé opravdu skvělé triky.
+    lang: cs
   img: some.jpeg
   freq: 1075480.00000
   origins: ["corpus"]
-##  our   ################################################################### ▆ 63%
+##  our   ################################################################### █ 97%
 - terms: 
   - term: our
     lang: en
@@ -1176,10 +1191,15 @@ concepts:
   - term: náš
     lang: cs
     tts: nas.mp3
+  examples: 
+  - term: Those are our cars, right?
+    lang: en
+  - term: To jsou naše auta, že?
+    lang: cs
   state: ignoreImage
   freq: 1011790.00000
   origins: ["corpus"]
-##  man   ################################################################### ▅ 61%
+##  man   ################################################################### █ 91%
 - terms: 
   - term: man
     lang: en
@@ -1188,10 +1208,15 @@ concepts:
     lang: cs
     tts: muz.mp3
   - term: člověk
+  examples: 
+  - term: He's a grown man.
+    lang: en
+  - term: Už je to dospělý muž.
+    lang: cs
   img: man.jpeg
   freq: 991438.50000
   origins: ["corpus"]
-##  go   #################################################################### ▆ 63%
+##  go   #################################################################### █ 97%
 - terms: 
   - term: go
     lang: en
@@ -1202,10 +1227,15 @@ concepts:
   - term: jdi
     lang: cs
     tts: jdi.mp3
+  examples: 
+  - term: So let me go.
+    lang: en
+  - term: Tak mě nechte jít.
+    lang: cs
   img: go.jpeg
   freq: 983790.50000
   origins: ["corpus"]
-##  its   ################################################################### ▆ 63%
+##  its   ################################################################### █ 97%
 - terms: 
   - term: its
     lang: en
@@ -1216,10 +1246,15 @@ concepts:
   - term: své
     lang: cs
     tts: sve.mp3
+  examples: 
+  - term: What are its advantages?
+    lang: en
+  - term: Jaké to má výhody?
+    lang: cs
   state: ignoreImage
   freq: 956494.50000
   origins: ["corpus"]
-##  up   #################################################################### ▆ 63%
+##  up   ####################################################################
 - terms: 
   - term: up
     lang: en
@@ -1227,10 +1262,15 @@ concepts:
   - term: nahoru
     lang: cs
     tts: nahoru.mp3
+  examples: 
+  - term: Now bring them up.
+    lang: en
+  - term: Teď je přines nahoru.
+    lang: cs
   img: up.jpeg
   freq: 939235.50000
   origins: ["corpus"]
-##  they   ################################################################## ▆ 63%
+##  they   ##################################################################
 - terms: 
   - term: they
     lang: en
@@ -1238,10 +1278,15 @@ concepts:
   - term: oni
     lang: cs
     tts: oni.mp3
+  examples: 
+  - term: They can help us.
+    lang: en
+  - term: Oni nám mohou pomoct.
+    lang: cs
   img: they.jpeg
   freq: 937391.63000
   origins: ["corpus"]
-##  men   ################################################################### ▆ 63%
+##  men   ###################################################################
 - terms: 
   - term: men
     lang: en
@@ -1249,10 +1294,15 @@ concepts:
   - term: muži
     lang: cs
     tts: muzi.mp3
+  examples: 
+  - term: Men and women are very different.
+    lang: en
+  - term: Muži a ženy jsou velmi odlišné.
+    lang: cs
   img: men.jpeg
   freq: 923053.00000
   origins: ["corpus"]
-##  we   #################################################################### ▆ 63%
+##  we   ####################################################################
 - terms: 
   - term: we
     lang: en
@@ -1260,10 +1310,15 @@ concepts:
   - term: my
     lang: cs
     tts: my.mp3
+  examples: 
+  - term: We want the money back!
+    lang: en
+  - term: My chceme peníze nazpět!
+    lang: cs
   img: we.jpeg
   freq: 915268.50000
   origins: ["corpus"]
-##  then   ################################################################## ▆ 63%
+##  then   ################################################################## █ 97%
 - terms: 
   - term: then
     lang: en
@@ -1274,10 +1329,15 @@ concepts:
   - term: potom
     lang: cs
     tts: potom.mp3
+  examples: 
+  - term: And then we went on our way.
+    lang: en
+  - term: A pak jsme šli svojí cestou.
+    lang: cs
   img: then.jpeg
   freq: 899806.50000
   origins: ["corpus"]
-##  see   ################################################################### ▆ 63%
+##  see   ###################################################################
 - terms: 
   - term: see
     lang: en
@@ -1285,10 +1345,15 @@ concepts:
   - term: vidět
     lang: cs
     tts: videt.mp3
+  examples: 
+  - term: I need to see you right now.
+    lang: en
+  - term: Musím tě vidět hned teď.
+    lang: cs
   img: see.jpeg
   freq: 873965.50000
   origins: ["corpus"]
-##  came   ################################################################## ▆ 63%
+##  came   ################################################################## █ 97%
 - terms: 
   - term: came
     lang: en
@@ -1299,10 +1364,15 @@ concepts:
   - term: přišla
     lang: cs
     tts: prisla.mp3
+  examples: 
+  - term: You came to visit me?
+    lang: en
+  - term: Přišel jsi na návštěvu?
+    lang: cs
   state: ignoreImage
   freq: 873144.00000
   origins: ["corpus"]
-##  may   ################################################################### ▆ 63%
+##  may   ################################################################### █ 97%
 - terms: 
   - term: may
     lang: en
@@ -1313,10 +1383,15 @@ concepts:
   - term: mohou
     lang: cs
     tts: mohou.mp3
+  examples: 
+  - term: Earlier versions may be different.
+    lang: en
+  - term: Dřívější verze se mohou lišit.
+    lang: cs
   state: ignoreImage
   freq: 862605.50000
   origins: ["corpus"]
-##  any   ################################################################### ▆ 63%
+##  any   ################################################################### █ 97%
 - terms: 
   - term: any
     lang: en
@@ -1327,10 +1402,15 @@ concepts:
   - term: libovolné
     lang: cs
     tts: libovolne.mp3
+  examples: 
+  - term: Add any additional tables.
+    lang: en
+  - term: Přidejte libovolné další tabulky.
+    lang: cs
   img: any.jpeg
   freq: 835359.00000
   origins: ["corpus"]
-##  make   ################################################################## ▆ 63%
+##  make   ################################################################## █ 97%
 - terms: 
   - term: make
     lang: en
@@ -1341,10 +1421,15 @@ concepts:
   - term: provést
     lang: cs
     tts: provest.mp3
+  examples: 
+  - term: Would you like to make this change?
+    lang: en
+  - term: Chcete tuto změnu provést?
+    lang: cs
   img: make.jpeg
   freq: 832384.00000
   origins: ["corpus"]
-##  about   ################################################################# ▆ 63%
+##  about   ################################################################# █ 97%
 - terms: 
   - term: about
     lang: en
@@ -1355,10 +1440,15 @@ concepts:
   - term: přibližně
     lang: cs
     tts: priblizne.mp3
+  examples: 
+  - term: Nobody cares about me anymore.
+    lang: en
+  - term: Nikdo se už o mě nezajímá.
+    lang: cs
   img: about.jpeg
   freq: 811618.50000
   origins: ["corpus"]
-##  two   ################################################################### ▆ 63%
+##  two   ################################################################### █ 97%
 - terms: 
   - term: two
     lang: en
@@ -1369,10 +1459,15 @@ concepts:
   - term: dvě
     lang: cs
     tts: dve.mp3
+  examples: 
+  - term: You two what are you doing?
+    lang: en
+  - term: Vy dva, co tady děláte?
+    lang: cs
   img: two.jpeg
   freq: 802196.50000
   origins: ["corpus"]
-##  these   ################################################################# ▅ 61%
+##  these   ################################################################# █ 91%
 - terms: 
   - term: these
     lang: en
@@ -1381,10 +1476,15 @@ concepts:
     lang: cs
     tts: tyto.mp3
   - term: těchto
+  examples: 
+  - term: What do these messages mean?
+    lang: en
+  - term: Co tyto zprávy znamenají?
+    lang: cs
   state: ignoreImage
   freq: 802187.00000
   origins: ["corpus"]
-##  than   ################################################################## ▆ 63%
+##  than   ##################################################################
 - terms: 
   - term: than
     lang: en
@@ -1392,6 +1492,11 @@ concepts:
   - term: než
     lang: cs
     tts: nez.mp3
+  examples: 
+  - term: This is better than steak.
+    lang: en
+  - term: Je to lepší než steak.
+    lang: cs
   img: than.jpeg
   freq: 782249.00000
   origins: ["corpus"]
