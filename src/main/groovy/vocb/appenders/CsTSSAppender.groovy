@@ -37,7 +37,7 @@ public class CsTSSAppender {
 
 
 	public static void main(String[] args) {
-		CsTSSAppender a = new CsTSSAppender()
+		CsTSSAppender a = new CsTSSAppender(limit:100)
 		a.run()
 		println "Done"
 	}
