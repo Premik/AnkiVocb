@@ -538,112 +538,131 @@ concepts:
   state: ignoreImage
   freq: 3659513.00000
   origins: ["corpus"]
-##  at   #################################################################### ▇ 86%
+##  at   ####################################################################
 - terms: 
   - term: at
     lang: en
   - term: na
     lang: cs
+    tts: na.mp3
   - term: v
     lang: cs
+    tts: v.mp3
   examples: 
   - term: Look at my face.
     lang: en
   - term: Koukni se na můj obličej.
     lang: cs
+    tts: Koukni se na muj oblicej.mp3
   img: at.jpeg
   freq: 3429739.50000
   origins: ["corpus"]
-##  were   ################################################################## ▇ 86%
+##  were   ##################################################################
 - terms: 
   - term: were
     lang: en
   - term: byly
     lang: cs
+    tts: byly.mp3
   - term: byli
     lang: cs
+    tts: byli.mp3
   examples: 
   - term: There were three more.
     lang: en
   - term: Byly tu tři další.
     lang: cs
+    tts: Byly tu tri dalsi.mp3
   state: ignoreImage
   freq: 3323884.00000
   origins: ["corpus"]
-##  are   ################################################################### ▇ 86%
+##  are   ###################################################################
 - terms: 
   - term: are
     lang: en
   - term: jsou
     lang: cs
+    tts: jsou.mp3
   - term: jsi
     lang: cs
+    tts: jsi.mp3
   examples: 
   - term: Stores are full of goods.
     lang: en
   - term: Obchody jsou plné zboží.
     lang: cs
+    tts: Obchody jsou plne zbozi.mp3
   state: ignoreImage
   freq: 3224178.00000
   origins: ["corpus"]
-##  not   ################################################################### ▇ 86%
+##  not   ###################################################################
 - terms: 
   - term: not
     lang: en
   - term: ne
     lang: cs
+    tts: ne.mp3
   - term: není
     lang: cs
+    tts: neni.mp3
   examples: 
   - term: Not everyone will agree with you.
     lang: en
   - term: Ne každý s vámi souhlasí.
     lang: cs
+    tts: Ne kazdy s vami souhlasi.mp3
   img: not.jpeg
   freq: 2876549.00000
   origins: ["corpus"]
-##  from   ################################################################## ▇ 86%
+##  from   ##################################################################
 - terms: 
   - term: from
     lang: en
   - term: z
     lang: cs
+    tts: z.mp3
   - term: od
     lang: cs
+    tts: od.mp3
   examples: 
   - term: An extract from a book.
     lang: en
   - term: Výpis z knihy.
     lang: cs
+    tts: Vypis z knihy.mp3
   state: ignoreImage
   freq: 2872012.50000
   origins: ["corpus"]
-##  or   #################################################################### █ 88%
+##  or   ####################################################################
 - terms: 
   - term: or
     lang: en
   - term: nebo
     lang: cs
+    tts: nebo.mp3
   examples: 
   - term: A cup of tea or coffee.
     lang: en
   - term: Šálek čaje nebo kávy.
     lang: cs
+    tts: Salek caje nebo kavy.mp3
   img: or.jpeg
   freq: 2803803.50000
   origins: ["corpus"]
-##  her   ################################################################### ▇ 81%
+##  her   ################################################################### █ 88%
 - terms: 
   - term: her
     lang: en
   - term: její
     lang: cs
+    tts: jeji.mp3
   - term: ji
   examples: 
   - term: That's her suitcase.
     lang: en
   - term: To je její kufr.
     lang: cs
+    tts: To je jeji kufr.mp3
   state: ignoreImage
   freq: 2800225.50000
   origins: ["corpus"]
@@ -656,197 +675,231 @@ concepts:
   state: ignore
   freq: 2641417.00000
   origins: ["corpus"]
-##  said   ################################################################## ▇ 86%
+##  said   ##################################################################
 - terms: 
   - term: said
     lang: en
   - term: řekl
     lang: cs
+    tts: rekl.mp3
   - term: říkal
     lang: cs
+    tts: rikal.mp3
   examples: 
   - term: I said stay here!
     lang: en
   - term: Řekl jsem, zůstaň tady!
     lang: cs
+    tts: Rekl jsem, zustan tady.mp3
   img: said.jpeg
   freq: 2637136.00000
   origins: ["corpus"]
-##  which   ################################################################# ▇ 81%
+##  which   ################################################################# █ 88%
 - terms: 
   - term: which
     lang: en
   - term: který
     lang: cs
+    tts: ktery.mp3
   - term: které
   examples: 
   - term: So which one is the best?
     lang: en
   - term: Tak který z nich je nejlepší?
     lang: cs
+    tts: Tak ktery z nich je nejlepsi.mp3
   state: ignoreImage
   freq: 2633444.00000
   origins: ["corpus"]
-##  by   #################################################################### ▇ 86%
+##  by   ####################################################################
 - terms: 
   - term: by
     lang: en
   - term: podle
     lang: cs
+    tts: podle.mp3
   - term: od
     lang: cs
+    tts: od.mp3
   examples: 
   - term: We play by the rules.
     lang: en
   - term: Hrajeme podle pravidel.
     lang: cs
+    tts: Hrajeme podle pravidel.mp3
   state: ignoreImage
   freq: 2546805.00000
   origins: ["corpus"]
-##  been   ################################################################## ▇ 86%
+##  been   ##################################################################
 - terms: 
   - term: been
     lang: en
   - term: byl
     lang: cs
+    tts: byl.mp3
   - term: býval
     lang: cs
+    tts: byval.mp3
   examples: 
   - term: Have you ever been married?
     lang: en
   - term: Byl jste někdy ženatý?
     lang: cs
+    tts: Byl jste nekdy zenaty.mp3
   state: ignoreImage
   freq: 2357654.00000
   origins: ["corpus"]
-##  him   ################################################################### ▇ 86%
+##  him   ###################################################################
 - terms: 
   - term: him
     lang: en
   - term: ho
     lang: cs
+    tts: ho.mp3
   - term: mu
     lang: cs
+    tts: mu.mp3
   examples: 
   - term: Do you know how to find him?
     lang: en
   - term: Víte jak ho najít?
     lang: cs
+    tts: Vite jak ho najit.mp3
   state: ignoreImage
   freq: 2324852.00000
   origins: ["corpus"]
-##  my   #################################################################### ▇ 86%
+##  my   ####################################################################
 - terms: 
   - term: my
     lang: en
   - term: můj
     lang: cs
+    tts: muj.mp3
   - term: moje
     lang: cs
+    tts: moje.mp3
   examples: 
   - term: My room is fine.
     lang: en
   - term: Můj pokoj je v pohodě.
     lang: cs
+    tts: Muj pokoj je v pohode.mp3
   img: my.jpeg
   freq: 2098760.00000
   origins: ["corpus"]
-##  this   ################################################################## ▇ 86%
+##  this   ##################################################################
 - terms: 
   - term: this
     lang: en
   - term: tento
     lang: cs
+    tts: tento.mp3
   - term: toto
     lang: cs
+    tts: toto.mp3
   examples: 
   - term: I wrote three new chapters this week.
     lang: en
   - term: Tento týden jsem napsal tři nové kapitoly.
     lang: cs
+    tts: Tento tyden jsem napsal tri nove kapitoly.mp3
   img: this.jpeg
   freq: 2010471.00000
   origins: ["corpus"]
-##  their   ################################################################# ▇ 81%
+##  their   ################################################################# █ 88%
 - terms: 
   - term: their
     lang: en
   - term: jejich
     lang: cs
+    tts: jejich.mp3
   - term: své
   examples: 
   - term: But it is not their fault.
     lang: en
   - term: Ale není to jejich vina.
     lang: cs
+    tts: Ale neni to jejich vina.mp3
   state: ignoreImage
   freq: 1951647.00000
   origins: ["corpus"]
-##  me   #################################################################### ▇ 86%
+##  me   ####################################################################
 - terms: 
   - term: me
     lang: en
   - term: mě
     lang: cs
+    tts: me.mp3
   - term: mi
     lang: cs
+    tts: mi.mp3
   examples: 
   - term: Let me help you.
     lang: en
   - term: Nech mě, ať ti pomůžu.
     lang: cs
+    tts: Nech me, at ti pomuzu.mp3
   img: me.jpeg
   freq: 1868378.50000
   origins: ["corpus"]
-##  who   ################################################################### ▇ 86%
+##  who   ###################################################################
 - terms: 
   - term: who
     lang: en
   - term: kdo
     lang: cs
+    tts: kdo.mp3
   - term: který
     lang: cs
+    tts: ktery.mp3
   examples: 
   - term: Who does not like noodles?
     lang: en
   - term: Kdo nemá rád nudle?
     lang: cs
+    tts: Kdo nema rad nudle.mp3
   state: ignoreImage
   freq: 1745473.00000
   origins: ["corpus"]
-##  would   ################################################################# ▅ 60%
+##  would   ################################################################# ▅ 62%
 - terms: 
   - term: would
     lang: en
   - term: bychom
     lang: cs
+    tts: bychom.mp3
   - term: bych
     lang: cs
+    tts: bych.mp3
   state: ignoreImage
   freq: 1663186.50000
   origins: ["corpus"]
-##  has   ################################################################### █ 88%
+##  has   ###################################################################
 - terms: 
   - term: has
     lang: en
   - term: má
     lang: cs
+    tts: ma.mp3
   examples: 
   - term: He's got a lot of energy.
     lang: en
   - term: Má hrozně moc energie.
     lang: cs
+    tts: Ma hrozne moc energie.mp3
   state: ignoreImage
   freq: 1602329.00000
   origins: ["corpus"]
-##  so   #################################################################### ▇ 86%
+##  so   ####################################################################
 - terms: 
   - term: so
     lang: en
   - term: tak
     lang: cs
+    tts: tak.mp3
   - term: takže
     lang: cs
+    tts: takze.mp3
   examples: 
   - term: So let me go.
     lang: en
