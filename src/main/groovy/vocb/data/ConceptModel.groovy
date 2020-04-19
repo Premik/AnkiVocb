@@ -14,7 +14,7 @@ public class ConceptDb {
 }
 
 @EqualsAndHashCode
-@ToString(includePackage=false, ignoreNulls=true)
+@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
 public class Concept {
 	LinkedHashMap<String, Term> terms = [:]
 	//State state
@@ -43,7 +43,7 @@ public class Concept {
 }
 
 @Canonical
-@ToString(includePackage=false, ignoreNulls=true)
+@ToString(includePackage=false, ignoreNulls=true, excludes='completeness')
 public class Term {
 	String term
 	String lang
