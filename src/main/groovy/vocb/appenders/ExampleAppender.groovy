@@ -20,6 +20,7 @@ public class ExampleAppender {
 	Manager dbMan = new Manager()
 	int sleep=500
 	int limit = 5
+	int maxLength = 40
 
 	void run() {
 
@@ -52,7 +53,11 @@ public class ExampleAppender {
 						a[0].length() <=> b[0].length()
 					}
 
-			xtractedSamples.each {Tuple2<String, String> t ->
+			xtractedSamples
+			.collect { Tuple2<String, String> t->
+				t[0].length() < maxLength 				
+			}			
+			.each {Tuple2<String, String> t ->
 				c.examples.put(t[0], new Term(t[0], "en"))
 				c.examples.put(t[1], new Term(t[1], "cs"))
 			}			
