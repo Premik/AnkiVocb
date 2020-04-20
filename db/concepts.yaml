@@ -1119,7 +1119,7 @@ concepts:
   img: more.jpeg
   freq: 1159978.50000
   origins: ["corpus"]
-##  your   ################################################################## █ 95%
+##  your   ##################################################################
 - terms: 
   - term: your
     lang: en
@@ -1135,6 +1135,8 @@ concepts:
     lang: en
     tts: Your order is ready for processing.mp3
   - term: Vaše objednávka je připravena ke zpracování.
+    lang: cs
+    tts: Vase objednavka je pripravena ke zpracovani.mp3
   img: your.jpeg
   freq: 1159087.50000
   origins: ["corpus"]
@@ -2223,7 +2225,7 @@ concepts:
   img: old.jpeg
   freq: 562247.00000
   origins: ["corpus"]
-##  after   ################################################################# █ 97%
+##  after   #################################################################
 - terms: 
   - term: after
     lang: en
@@ -2240,6 +2242,7 @@ concepts:
     tts: He wrote a book a few years after mine.mp3
   - term: Napsal knihu pár let poté mojí.
     lang: cs
+    tts: Napsal knihu par let pote moji.mp3
   state: ignoreImage
   freq: 560432.00000
   origins: ["corpus"]
@@ -2406,7 +2409,7 @@ concepts:
   img: work.jpeg
   freq: 508678.00000
   origins: ["corpus"]
-##  took   ################################################################## █ 97%
+##  took   ##################################################################
 - terms: 
   - term: took
     lang: en
@@ -2423,6 +2426,7 @@ concepts:
     tts: He took her hands.mp3
   - term: Vzal ji za ruku.
     lang: cs
+    tts: Vzal ji za ruku.mp3
   state: ignoreImage
   freq: 501669.00000
   origins: ["corpus"]
@@ -2437,7 +2441,7 @@ concepts:
   img: might.jpeg
   freq: 498257.00000
   origins: ["corpus"]
-##  first   ################################################################# █ 97%
+##  first   #################################################################
 - terms: 
   - term: first
     lang: en
@@ -2454,10 +2458,11 @@ concepts:
     tts: His first big mistake.mp3
   - term: Jeho první velká chyba.
     lang: cs
+    tts: Jeho prvni velka chyba.mp3
   img: first.jpeg
   freq: 497764.00000
   origins: ["corpus"]
-##  without   ############################################################### █ 97%
+##  without   ###############################################################
 - terms: 
   - term: without
     lang: en
@@ -2471,10 +2476,11 @@ concepts:
     tts: She will do without us easily.mp3
   - term: Snadno si bez nás poradí.
     lang: cs
+    tts: Snadno si bez nas poradi.mp3
   img: without.jpeg
   freq: 496066.00000
   origins: ["corpus"]
-##  good   ################################################################## █ 97%
+##  good   ##################################################################
 - terms: 
   - term: good
     lang: en
@@ -2491,10 +2497,11 @@ concepts:
     tts: That was a good start.mp3
   - term: To byl dobrý začátek.
     lang: cs
+    tts: To byl dobry zacatek.mp3
   img: good.jpeg
   freq: 490930.50000
   origins: ["corpus"]
-##  himself   ############################################################### █ 97%
+##  himself   ###############################################################
 - terms: 
   - term: himself
     lang: en
@@ -2511,10 +2518,11 @@ concepts:
     tts: He told me himself.mp3
   - term: Sám mi to řekl.
     lang: cs
+    tts: Sam mi to rekl.mp3
   state: ignoreImage
   freq: 486383.00000
   origins: ["corpus"]
-##  own   ################################################################### █ 97%
+##  own   ###################################################################
 - terms: 
   - term: own
     lang: en
@@ -2531,10 +2539,11 @@ concepts:
     tts: Proceed at your own risks.mp3
   - term: Pokračujte na vlastní nebezpečí.
     lang: cs
+    tts: Pokracujte na vlastni nebezpeci.mp3
   state: ignoreImage
   freq: 478353.50000
   origins: ["corpus"]
-##  again   ################################################################# █ 97%
+##  again   #################################################################
 - terms: 
   - term: again
     lang: en
@@ -2551,10 +2560,11 @@ concepts:
     tts: You did it again.mp3
   - term: Udělal jsi to znovu?
     lang: cs
+    tts: Udelal jsi to znovu.mp3
   img: again.jpeg
   freq: 476062.50000
   origins: ["corpus"]
-##  give   ################################################################## █ 97%
+##  give   ##################################################################
 - terms: 
   - term: give
     lang: en
@@ -2571,10 +2581,11 @@ concepts:
     tts: Give me that ring.mp3
   - term: Dej mi ten prsten.
     lang: cs
+    tts: Dej mi ten prsten.mp3
   img: give.jpeg
   freq: 469253.00000
   origins: ["corpus"]
-##  new   ################################################################### █ 97%
+##  new   ###################################################################
 - terms: 
   - term: new
     lang: en
@@ -2591,10 +2602,11 @@ concepts:
     tts: This is your new brother.mp3
   - term: Tohle je tvůj nový bratr.
     lang: cs
+    tts: Tohle je tvuj novy bratr.mp3
   img: new.jpeg
   freq: 467016.50000
   origins: ["corpus"]
-##  every   ################################################################# █ 97%
+##  every   #################################################################
 - terms: 
   - term: every
     lang: en
@@ -2611,10 +2623,11 @@ concepts:
     tts: Every single day was busy.mp3
   - term: Každý den byl rušný.
     lang: cs
+    tts: Kazdy den byl rusny.mp3
   state: ignoreImage
   freq: 458591.50000
   origins: ["corpus"]
-##  same   ################################################################## █ 97%
+##  same   ##################################################################
 - terms: 
   - term: same
     lang: en
@@ -2631,6 +2644,7 @@ concepts:
     tts: I feel the same.mp3
   - term: Já to cítím stejně.
     lang: cs
+    tts: Ja to citim stejne.mp3
   img: same.jpeg
   freq: 456106.00000
   origins: ["corpus"]
