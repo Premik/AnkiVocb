@@ -32,13 +32,14 @@ public class Concept {
 		BigDecimal exCp = examples.values()*.completeness*.div(terms.size()).sum()?:0
 		BigDecimal[] grp =	[
 			Math.min(terms.size(), 2)/2,
-			0.5+ Math.min(examples.size(), 2)/2,
-			0.1+termsCp,
-			0.5+exCp,
+			0.01+ Math.min(examples.size(), 2)/2,
+			0.01+termsCp,
+			0.01+exCp,
 		].collect( Helper.&clamp01 )
-		BigDecimal grpSum = grp.inject(1.0) {prod, v->prod*v }
+		//BigDecimal grpSum = grp.inject(1.0) {prod, v->prod*v }
+		BigDecimal grpSum = grp.sum() / grp.size()
 		BigDecimal fldSum = [state =="ignoreImage" ? "1" : img, freq].findAll().size()/2.0
-		(grpSum + fldSum)/2
+		(grpSum*2 + fldSum)/3
 	}
 }
 

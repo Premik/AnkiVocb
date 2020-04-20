@@ -1147,7 +1147,7 @@ concepts:
   img: when.jpeg
   freq: 1124132.50000
   origins: ["corpus"]
-##  could   ################################################################# ▆ 63%
+##  could   ################################################################# █ 97%
 - terms: 
   - term: could
     lang: en
@@ -1158,6 +1158,11 @@ concepts:
   - term: mohla by
     lang: cs
     tts: mohla by.mp3
+  examples: 
+  - term: Who could that be?
+    lang: en
+  - term: Kdo to mohl být?
+    lang: cs
   state: ignoreImage
   freq: 1094521.00000
   origins: ["corpus"]
@@ -1500,7 +1505,7 @@ concepts:
   img: than.jpeg
   freq: 782249.00000
   origins: ["corpus"]
-##  get   ################################################################### ▆ 63%
+##  get   ###################################################################
 - terms: 
   - term: get
     lang: en
@@ -1511,10 +1516,15 @@ concepts:
   - term: obdržet
     lang: cs
     tts: obdrzet.mp3
+  examples:   
+  - term: Maybe we can get out!
+    lang: en
+  - term: Možná se můžem dostat ven!
+    lang: cs  
   img: get.jpeg
   freq: 778635.00000
   origins: ["corpus"]
-##  other   ################################################################# ▅ 61%
+##  other   ################################################################# █ 94%
 - terms: 
   - term: other
     lang: en
@@ -1523,10 +1533,16 @@ concepts:
     lang: cs
     tts: jine.mp3
   - term: další
+  examples: 
+  - term: Are there other variants?
+    lang: en
+  - term: Existují i jiné varianty?
+    lang: cs
+  
   img: other.jpeg
   freq: 773847.50000
   origins: ["corpus"]
-##  us   #################################################################### ▅ 61%
+##  us   #################################################################### █ 94%
 - terms: 
   - term: us
     lang: en
@@ -1535,10 +1551,16 @@ concepts:
     lang: cs
     tts: nas.mp3
   - term: nám
+  examples:  
+  - term: Hurry before he finds us.
+    lang: en
+  - term: Spěchej, než nás najde.
+    lang: cs
+  
   state: ignoreImage
   freq: 761415.00000
   origins: ["corpus"]
-##  should   ################################################################ ▆ 63%
+##  should   ################################################################
 - terms: 
   - term: should
     lang: en
@@ -1549,10 +1571,16 @@ concepts:
   - term: měli byste
     lang: cs
     tts: meli byste.mp3
+  examples: 
+  - term: What should we do?
+    lang: en
+  - term: Co bychom měli dělat?
+    lang: cs
+  
   state: ignoreImage
   freq: 751209.50000
   origins: ["corpus"]
-##  come   ################################################################## ▆ 63%
+##  come   ##################################################################
 - terms: 
   - term: come
     lang: en
@@ -1563,6 +1591,12 @@ concepts:
   - term: pojď
     lang: cs
     tts: pojd.mp3
+  examples: 
+  - term: Come and try it.
+    lang: en
+  - term: Pojď a zkus to.
+    lang: cs
+  
   img: come.jpeg
   freq: 750630.50000
   origins: ["corpus"]
@@ -1575,7 +1609,7 @@ concepts:
   state: ignore
   freq: 748992.00000
   origins: ["corpus"]
-##  she   ################################################################### ▆ 63%
+##  she   ###################################################################
 - terms: 
   - term: she
     lang: en
@@ -1583,10 +1617,71 @@ concepts:
   - term: ona
     lang: cs
     tts: ona.mp3
+  examples: 
+  - term: She's alone now.
+    lang: en
+  - term: Ona je teď sama.
+    lang: cs
+  - term: Which one is she?
+    lang: en
+  - term: Který z nich je ona?
+    lang: cs
+  - term: She comes with me.
+    lang: en
+  - term: Ona jede se mnou.
+    lang: cs
+  - term: She can sense this!
+    lang: en
+  - term: Ona může to smysl!
+    lang: cs
+  - term: She's just a friend.
+    lang: en
+  - term: Ona je jen kamarádka.
+    lang: cs
+  - term: She's no fun anymore.
+    lang: en
+  - term: Ona už není zábavná.
+    lang: cs
+  - term: She's a professional agent.
+    lang: en
+  - term: Ona je profesionální agent.
+    lang: cs
+  - term: She's made you a parachute.
+    lang: en
+  - term: Ona ti udělala padák.
+    lang: cs
+  - term: Then she will come visit me?
+    lang: en
+  - term: A ona přijde mne navštívit?
+    lang: cs
+  - term: She's talking about my mother.
+    lang: en
+  - term: Ona mluví o mé matce.
+    lang: cs
+  - term: Why does she get the cool reap?
+    lang: en
+  - term: Proč má ona tu super práci?
+    lang: cs
+  - term: She used to tell me everything.
+    lang: en
+  - term: Ona mi říkala všechno.
+    lang: cs
+  - term: She's good at that, always was.
+    lang: en
+  - term: Ona je v tom dobrá, vždycky byla.
+    lang: cs
+  - term: She's just really high, you know?
+    lang: en
+  - term: Ona je prostě v náladě, víte?
+    lang: cs
+  - term: She was the secret of my technique.
+    lang: en
+  - term: Ona byla tajemstvím mé techniky.
+    lang: cs
   img: she.jpeg
   freq: 747484.30000
   origins: ["corpus"]
-##  very   ################################################################## ▆ 63%
+##  very   ##################################################################
 - terms: 
   - term: very
     lang: en
@@ -1597,6 +1692,127 @@ concepts:
   - term: velice
     lang: cs
     tts: velice.mp3
+  examples: 
+  - term: That's very funny.
+    lang: en
+  - term: To je velice zábavné.
+    lang: cs
+  - term: Very wide and long.
+    lang: en
+  - term: Velmi široká a dlouhá.
+    lang: cs
+  - term: This is very unusual.
+    lang: en
+  - term: Tohle je velice neobvyklé.
+    lang: cs
+  - term: That was very touching.
+    lang: en
+  - term: Bylo to velice dojemné.
+    lang: cs
+  - term: You must be very proud.
+    lang: en
+  - term: Musíš na něj být velice pyšný.
+    lang: cs
+  - term: The night was very dark.
+    lang: en
+  - term: Večer byl velice tmavý.
+    lang: cs
+  - term: His voice was very quiet.
+    lang: en
+  - term: Měl velice tichý hlas.
+    lang: cs
+  - term: He was in a very good mood.
+    lang: en
+  - term: Byl ve velice dobré náladě.
+    lang: cs
+  - term: Very interesting scare tactic.
+    lang: en
+  - term: Velmi zajímavá odstrašující taktika.
+    lang: cs
+  - term: Everything is very intelligent.
+    lang: en
+  - term: Vše je velmi inteligentní.
+    lang: cs
+  - term: That might be very interesting.
+    lang: en
+  - term: Může to být velice zajímavé setkání.
+    lang: cs
+  - term: The administration is very nice!
+    lang: en
+  - term: Administrace je velmi pěkné!
+    lang: cs
+  - term: The whole area was very unstable.
+    lang: en
+  - term: Celá oblast je velice nestabilní.
+    lang: cs
+  - term: Your situation is very difficult.
+    lang: en
+  - term: Vaše situace je velice těžká.
+    lang: cs
+  - term: You had a very positive response.
+    lang: en
+  - term: Máte velice pozitivní odezvu.
+    lang: cs
+  - term: All life is very important to us.
+    lang: en
+  - term: Každý život je pro nás velice důležitý.
+    lang: cs
+  - term: Not only that, but he is very lonely.
+    lang: en
+  - term: A nejen to, je také velice osamělý.
+    lang: cs
+  - term: This software seems very dangerous ye!
+    lang: en
+  - term: Tento software se zdá být velmi nebezpečný tě!
+    lang: cs
+  - term: This always gets them very angry indeed!
+    lang: en
+  - term: Tento vždycky je opravdu velmi rozzlobený!
+    lang: cs
+  - term: He's a very important man in our office.
+    lang: en
+  - term: Je na našem oddělení velice důležitý.
+    lang: cs
+  - term: Your body temperature will be very great.
+    lang: en
+  - term: Budeš mít velmi vysokou tělesnou teplotu.
+    lang: cs
+  - term: These analyzes are very reliable and safe.
+    lang: en
+  - term: Tyto analyzuje jsou velmi spolehlivé a bezpečné.
+    lang: cs
+  - term: The article is very professionally written.
+    lang: en
+  - term: Článek je velmi profesionálně písemné.
+    lang: cs
+  - term: Itching is very strong, sometimes intolerable.
+    lang: en
+  - term: Svědění je velmi silná, někdy nemůžu vystát.
+    lang: cs
+  - term: This is a very interesting psychological testing.
+    lang: en
+  - term: to je velmi zajímavé psychologické testy.
+    lang: cs
+  - term: For example, networking boards are very expensive.
+    lang: en
+  - term: Například síťové desky jsou velmi nákladné.
+    lang: cs
+  - term: Simple to configure and at the same time very useful.
+    lang: en
+  - term: Jednoduché nastavení a zároveň velmi užitečný.
+    lang: cs
+  - term: Its formula with herbs and vitamins is very effective.
+    lang: en
+  - term: Jeho formule s bylinkami a vitamíny, je velmi efektivní.
+    lang: cs
+  - term: Insurance is a necessity and often very difficult to understand.
+    lang: en
+  - term: Pojištění je nutností a často velmi obtížně rozumět.
+    lang: cs
+  - term: Government intervention is justified only in a very limited sense.
+    lang: en
+  - term: Vládní intervence je oprávněná jen ve velice omezeném smyslu.
+    lang: cs
   state: ignoreImage
   freq: 747094.50000
   origins: ["corpus"]

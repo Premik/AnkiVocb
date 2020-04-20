@@ -1,8 +1,10 @@
 package vocb.appenders
 
-import groovy.transform.CompileStatic
+import java.util.stream.Collectors
+
 import vocb.HttpHelper
 import vocb.azure.AzureTranslate
+import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
@@ -13,6 +15,7 @@ public class ExampleAppender {
 
 
 	AzureTranslate trn = new AzureTranslate(httpHelper: new HttpHelper() )
+	WordNormalizer wn = new WordNormalizer()
 
 	Manager dbMan = new Manager()
 	int sleep=500
@@ -23,30 +26,42 @@ public class ExampleAppender {
 		dbMan.load()
 		List<Concept> noEx = dbMan.db.concepts.findAll {
 			it.terms && it.state!="ignore" && (!it.examples) && it.firstTerm
+		}.findAll { Concept c ->
+			wn.tokens(c.firstTerm).count() <= 2  //Only single or two words phrases
 		}
 
 		int i =0
 		for (Concept c in noEx) {
 			String enWord = c.firstTerm
-			String[] czWords = c.terms.values().findAll {it.lang == "cs"}*.term
-			
-			List<Tuple2<String, String>> xtractedSamples = czWords.collect { String czWord ->
-				Map trnJson = trn.exampleJsonRun(enWord, czWord)
-			    return trn.extractExamples(trnJson)
-			}.collectMany {it}
-			 
+			String[] czWords = c.terms.values()
+					.findAll {it.lang == "cs"}
+					*.term
+					.findAll()
+					.collectMany {String term-> //Any word of the two-words phrase
+						wn.tokens(term).collect(Collectors.toList())
+					}.unique()
+					//println czWords
+
+			List<Tuple2<String, String>> xtractedSamples = czWords // Each alt translation
+					.collect { String czWord ->
+						Map trnJson = trn.exampleJsonRun(enWord, czWord)
+						return trn.extractExamples(trnJson)
+					}
+					.collectMany {it}
+					.sort {Tuple2<String, String> a, Tuple2<String, String> b ->
+						a[0].length() <=> b[0].length()
+					}
+
 			xtractedSamples.each {Tuple2<String, String> t ->
 				c.examples.put(t[0], new Term(t[0], "en"))
 				c.examples.put(t[1], new Term(t[1], "cs"))
-			}
-						
+			}			
 			dbMan.save()
 			Thread.sleep(sleep)
 			if (i>limit) break
-			i++
+				i++
 		}
 		dbMan.save()
-		
 	}
 
 

@@ -29,7 +29,9 @@ public class WordNormalizer {
 	public Stream<String> tokens(Stream<CharSequence> listOfString) {
 		return listOfString.flatMap(this.&tokens)
 	}
-
+	
+	
+	
 
 
 	static void main(String... args) {
