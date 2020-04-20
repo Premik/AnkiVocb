@@ -22,7 +22,7 @@ public class CsTSSAppender {
 		int i = 0;
 		dbMan.withTermsByLang("cs", true) {Concept c, Term t->
 			if (c.terms.size() >3 || c.examples.size()>2) {
-				println "Ignoring: $c"
+				//println "Ignoring: $c"
 				return
 			}
 			if (!dbMan.linkedMediaExists(t.tts) && i <limit ) {
