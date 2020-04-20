@@ -1501,7 +1501,7 @@ concepts:
   img: about.jpeg
   freq: 811618.50000
   origins: ["corpus"]
-##  two   ################################################################### █ 97%
+##  two   ###################################################################
 - terms: 
   - term: two
     lang: en
@@ -1515,6 +1515,7 @@ concepts:
   examples: 
   - term: You two, what are you doing?
     lang: en
+    tts: You two, what are you doing.mp3
   - term: Vy dva, co tady děláte?
     lang: cs
     tts: Vy dva, co tady delate.mp3
@@ -1638,7 +1639,7 @@ concepts:
   state: ignoreImage
   freq: 751209.50000
   origins: ["corpus"]
-##  come   ################################################################## █ 97%
+##  come   ##################################################################
 - terms: 
   - term: come
     lang: en
@@ -1652,6 +1653,7 @@ concepts:
   examples: 
   - term: Come and try it.
     lang: en
+    tts: Come and try it.mp3
   - term: Pojď a zkus to.
     lang: cs
     tts: Pojd a zkus to.mp3
@@ -1667,7 +1669,7 @@ concepts:
   state: ignore
   freq: 748992.00000
   origins: ["corpus"]
-##  she   ################################################################### █ 97%
+##  she   ###################################################################
 - terms: 
   - term: she
     lang: en
@@ -1678,13 +1680,14 @@ concepts:
   examples: 
   - term: She comes with me.
     lang: en
+    tts: She comes with me.mp3
   - term: Ona jede se mnou.
     lang: cs
     tts: Ona jede se mnou.mp3
   img: she.jpeg
   freq: 747484.30000
   origins: ["corpus"]
-##  very   ################################################################## █ 97%
+##  very   ##################################################################
 - terms: 
   - term: very
     lang: en
@@ -1698,13 +1701,14 @@ concepts:
   examples: 
   - term: That's very funny.
     lang: en
+    tts: Thats very funny.mp3
   - term: To je velice zábavné.
     lang: cs
     tts: To je velice zabavne.mp3
   state: ignoreImage
   freq: 747094.50000
   origins: ["corpus"]
-##  think   ################################################################# █ 97%
+##  think   #################################################################
 - terms: 
   - term: think
     lang: en
@@ -1718,6 +1722,7 @@ concepts:
   examples: 
   - term: Just let me think.
     lang: en
+    tts: Just let me think.mp3
   - term: Jenom mě nech přemýšlet.
     lang: cs
     tts: Jenom me nech premyslet.mp3
@@ -1733,7 +1738,7 @@ concepts:
   state: ignore
   freq: 740814.00000
   origins: ["corpus"]
-##  only   ################################################################## █ 97%
+##  only   ##################################################################
 - terms: 
   - term: only
     lang: en
@@ -1747,13 +1752,14 @@ concepts:
   examples: 
   - term: She's only eight months.
     lang: en
+    tts: Shes only eight months.mp3
   - term: Je jí jenom osm měsíců.
     lang: cs
     tts: Je ji jenom osm mesicu.mp3
   state: ignoreImage
   freq: 718033.50000
   origins: ["corpus"]
-##  people   ################################################################ █ 97%
+##  people   ################################################################
 - terms: 
   - term: people
     lang: en
@@ -1767,13 +1773,14 @@ concepts:
   examples: 
   - term: There's people down there.
     lang: en
+    tts: Theres people down there.mp3
   - term: Tam dole jsou lidé.
     lang: cs
     tts: Tam dole jsou lide.mp3
   img: people.jpeg
   freq: 696604.50000
   origins: ["corpus"]
-##  went   ################################################################## █ 97%
+##  went   ##################################################################
 - terms: 
   - term: went
     lang: en
@@ -1787,13 +1794,14 @@ concepts:
   examples: 
   - term: I went to the hospital.
     lang: en
+    tts: I went to the hospital.mp3
   - term: Šel jsem do nemocnice.
     lang: cs
     tts: Sel jsem do nemocnice.mp3
   state: ignoreImage
   freq: 690186.00000
   origins: ["corpus"]
-##  great   ################################################################# █ 97%
+##  great   #################################################################
 - terms: 
   - term: great
     lang: en
@@ -1807,6 +1815,7 @@ concepts:
   examples: 
   - term: I think it's great.
     lang: en
+    tts: I think its great.mp3
   - term: Myslím, že to bude skvělé.
     lang: cs
     tts: Myslim, ze to bude skvele.mp3
