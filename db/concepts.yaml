@@ -2178,7 +2178,11 @@ concepts:
   - term: poté
     lang: cs
     tts: pote.mp3
- 
+  examples: 
+  - term: He wrote a book a few years after mine.
+    lang: en
+  - term: Napsal knihu, pár let poté mojí.
+    lang: cs
   state: ignoreImage
   freq: 560432.00000
   origins: ["corpus"]
@@ -2194,73 +2198,9 @@ concepts:
     lang: cs
     tts: leta.mp3
   examples: 
-  - term: I did, for four years.
-    lang: en
-  - term: Věřila jsem ti čtyři roky.
-    lang: cs
   - term: I waited years for it.
     lang: en
   - term: Léta jsem na to čekal.
-    lang: cs
-  - term: He's done it for years.
-    lang: en
-  - term: Dělá to už léta.
-    lang: cs
-  - term: I'd known her for years.
-    lang: en
-  - term: Znal jsem ji léta.
-    lang: cs
-  - term: Is four years a long time?
-    lang: en
-  - term: Je to dlouho čtyři roky?
-    lang: cs
-  - term: Unchanged after two years.
-    lang: en
-  - term: Za ty dva roky se nezměnil.
-    lang: cs
-  - term: My parents did it for years.
-    lang: en
-  - term: Mí rodiče to tak dělali léta.
-    lang: cs
-  - term: We tried actually, for years.
-    lang: en
-  - term: Vlastně jsme se o něj léta pokoušeli.
-    lang: cs
-  - term: Were those years really yours?
-    lang: en
-  - term: Byla všechna ta léta opravdu vaše?
-    lang: cs
-  - term: I thought it would take years.
-    lang: en
-  - term: Myslela jsem, že to bude trvat léta.
-    lang: cs
-  - term: We lived with him for two years.
-    lang: en
-  - term: Žili jsme s ním 2 roky.
-    lang: cs
-  - term: Those men were with me for years.
-    lang: en
-  - term: Ti muži byly v mé jednotce roky.
-    lang: cs
-  - term: You were with him for three years.
-    lang: en
-  - term: Byla jste s ním tři roky.
-    lang: cs
-  - term: He's looking at two years minimum.
-    lang: en
-  - term: Hrozí mu nejméně dva roky.
-    lang: cs
-  - term: I worked downtown for three years.
-    lang: en
-  - term: V centru jsem byl tři roky.
-    lang: cs
-  - term: He remembers those vanished years.
-    lang: en
-  - term: Vzpomíná na ty ztracená léta.
-    lang: cs
-  - term: Waste all those years of training.
-    lang: en
-  - term: Takhle zahodit všechna ta léta tréninku.
     lang: cs
   img: years.jpeg
   freq: 547420.00000
@@ -2277,33 +2217,9 @@ concepts:
     lang: cs
     tts: nejvic.mp3
   examples: 
-  - term: Works like the most!
-    lang: en
-  - term: Funguje to stejně jako většina!
-    lang: cs
   - term: Most of them were dark.
     lang: en
   - term: Většina z nich byla temná.
-    lang: cs
-  - term: I want you most of all.
-    lang: en
-  - term: Tebe chci nejvíc ze všech.
-    lang: cs
-  - term: And most of all, is it real?
-    lang: en
-  - term: A ze všeho nejvíc, je to reálné?
-    lang: cs
-  - term: What's the most you ever got?
-    lang: en
-  - term: Kolik jsi kdy nejvíc vzal?
-    lang: cs
-  - term: Where there's the most firing.
-    lang: en
-  - term: Tam se bude střílet nejvíc.
-    lang: cs
-  - term: Who has won the most of contests?
-    lang: en
-  - term: Kdo vyhrál nejvíc soutěží ?
     lang: cs
   state: ignoreImage
   freq: 543388.50000
@@ -2320,18 +2236,6 @@ concepts:
     lang: cs
     tts: taky.mp3
   examples: 
-  - term: Also called bit rate.
-    lang: en
-  - term: Označuje se také jako přenosová rychlost.
-    lang: cs
-  - term: Also thanks to you lar.
-    lang: en
-  - term: Také díky vám lar.
-    lang: cs
-  - term: We also focus on prevention.
-    lang: en
-  - term: Zaměřujeme se také na prevenci.
-    lang: cs
   - term: You can also create a new menu.
     lang: en
   - term: Můžete také vytvořit novou nabídku.
@@ -2339,7 +2243,7 @@ concepts:
   state: ignoreImage
   freq: 536324.00000
   origins: ["corpus"]
-##  year   ################################################################## █ 95%
+##  year   ################################################################## █ 92%
 - terms: 
   - term: year
     lang: en
@@ -2348,42 +2252,9 @@ concepts:
     lang: cs
     tts: rok.mp3
   examples: 
-  - term: See ya next year.
-    lang: en
-  - term: Uvidíme se příští rok.
-    lang: cs
-  - term: He's another year older.
-    lang: en
-  - term: Je zas o rok starší.
-    lang: cs
   - term: Only wait a year or two.
     lang: en
   - term: Jen počkej takhle za rok nebo za dva.
-    lang: cs
-  - term: They can stay for a year.
-    lang: en
-  - term: Mohou zůstat ještě rok.
-    lang: cs
-  - term: You guys had a great year.
-    lang: en
-  - term: Měli jste skvělý rok.
-    lang: cs
-  - term: Evidently they do it each year.
-    lang: en
-  - term: Zřejmě se to každý rok.
-    lang: cs
-  - term: Add the year to the date string.
-    lang: en
-  - term: Přidat rok do řetězce data.
-    lang: cs
-  - term: Statistics for the previous year.
-    lang: en
-  - term: Statistiky za předcházející rok.
-    lang: cs
-  - term: Each year is better than the last.
-    lang: en
-  - term: Každý rok je to lepší než minulý.
-    lang: cs
   img: year.jpeg
   freq: 532499.50000
   origins: ["corpus"]
@@ -2401,79 +2272,7 @@ concepts:
   examples: 
   - term: I saw it too.
     lang: en
-  - term: Já ho taky viděl.
-    lang: cs
-  - term: And he saw you?
-    lang: en
-  - term: A on tě viděl?
-    lang: cs
-  - term: I saw the cheque.
-    lang: en
-  - term: Viděl jsem ten šek.
-    lang: cs
-  - term: Maybe you saw her?
-    lang: en
-  - term: Možná jste ji viděl?
-    lang: cs
-  - term: I saw you walk in.
-    lang: en
-  - term: Viděl jsem tě vejít.
-    lang: cs
-  - term: You saw that implant.
-    lang: en
-  - term: Viděl jsi ten implantát.
-    lang: cs
-  - term: I saw me as he saw me.
-    lang: en
-  - term: Já viděla jak on mě viděl.
-    lang: cs
-  - term: Sounds like a power saw.
-    lang: en
-  - term: Znělo to jako motorová pila.
-    lang: cs
-  - term: I saw the first two acts.
-    lang: en
-  - term: Viděl jsem první dvě jednání.
-    lang: cs
-  - term: I saw them in the mirror.
-    lang: en
-  - term: Viděl jsem je v zrcadle.
-    lang: cs
-  - term: I saw you and got scared.
-    lang: en
-  - term: Viděl jsem tě a být strach.
-    lang: cs
-  - term: I saw a huge amount of ...
-    lang: en
-  - term: JÁ pila jeden ohromný činit of ...
-    lang: cs
-  - term: What do you mean, you saw us?
-    lang: en
-  - term: Jak to myslíš,že si nás viděl?
-    lang: cs
-  - term: His breath sounded like a saw.
-    lang: en
-  - term: Jeho dech zněl jako pila.
-    lang: cs
-  - term: I saw what happened last night.
-    lang: en
-  - term: Viděl jsem, co se stalo včera večer.
-    lang: cs
-  - term: I just saw it with my own eyes.
-    lang: en
-  - term: Viděl jsem to právě na vlastní oči.
-    lang: cs
-  - term: You can bet it was a chain saw.
-    lang: en
-  - term: Určitě to byla motorová pila.
-    lang: cs
-  - term: The saw chain starts immediately.
-    lang: en
-  - term: Řetězová pila se okamžitě spustí.
-    lang: cs
-  - term: There was only a saw mill before.
-    lang: en
-  - term: Před tím zde stávala pouze pila.
+  - term: Já to taky viděl.
     lang: cs
   img: saw.jpeg
   freq: 520922.00000
@@ -2490,89 +2289,9 @@ concepts:
     lang: cs
     tts: taky.mp3
   examples: 
-  - term: I see it too.
-    lang: en
-  - term: Já to taky vidím.
-    lang: cs
-  - term: It's cold too.
-    lang: en
-  - term: Taky je tu zima.
-    lang: cs
-  - term: I liked her too!
-    lang: en
-  - term: Já ji měl taky rád!
-    lang: cs
-  - term: Was he here too?
-    lang: en
-  - term: On tu byl taky?
-    lang: cs
-  - term: Is fire alive too?
-    lang: en
-  - term: Je oheň taky živý?
-    lang: cs
-  - term: I got punched too.
-    lang: en
-  - term: Taky jsem dostal ránu.
-    lang: cs
-  - term: We know people too.
-    lang: en
-  - term: My máme taky známý.
-    lang: cs
-  - term: We care about you too.
-    lang: en
-  - term: Nám na tobě taky záleží.
-    lang: cs
   - term: My fingers are too big.
     lang: en
   - term: Moje prsty jsou příliš velké.
-    lang: cs
-  - term: I make too good a target.
-    lang: en
-  - term: Sám jsem až příliš dobrý terč.
-    lang: cs
-  - term: And bring me a plate too.
-    lang: en
-  - term: A přines mi taky talíř.
-    lang: cs
-  - term: It's too radical for them!
-    lang: en
-  - term: Je to pro ně příliš radikální!
-    lang: cs
-  - term: Maybe you should wait too.
-    lang: en
-  - term: Možná, že bys měl taky počkat.
-    lang: cs
-  - term: He saved my life too once.
-    lang: en
-  - term: Taky mi jednou zachránil život.
-    lang: cs
-  - term: And get one for yourself too.
-    lang: en
-  - term: A sám si taky jedno vem.
-    lang: cs
-  - term: The category name is too long.
-    lang: en
-  - term: Název kategorie je příliš dlouhý.
-    lang: cs
-  - term: Your name comes from mine, too.
-    lang: en
-  - term: Tvé jméno ostatně z mého pochází taky.
-    lang: cs
-  - term: Too close means you get touched.
-    lang: en
-  - term: Příliš blízko znamená, dostanete se dotkl.
-    lang: cs
-  - term: Is it just too ordinary for you?
-    lang: en
-  - term: Je pro tebe příliš obyčejný?
-    lang: cs
-  - term: I put my home number on there too.
-    lang: en
-  - term: Nechám vám taky svoje číslo domů.
-    lang: cs
-  - term: This should be your happiness too.
-    lang: en
-  - term: Mělo by to být taky tvoje štěstí.
     lang: cs
   state: ignoreImage
   freq: 519626.00000
@@ -2589,81 +2308,9 @@ concepts:
     lang: cs
     tts: dole.mp3
   examples: 
-  - term: Move one line down.
-    lang: en
-  - term: Přesunutí o jeden řádek dolů
-    lang: cs
-  - term: Pull down that wall!
-    lang: en
-  - term: Dolů s tou zdí!
-    lang: cs
-  - term: All clear down here.
-    lang: en
-  - term: Dole je vše čisté.
-    lang: cs
-  - term: Right down the middle.
-    lang: en
-  - term: Vpravo dolů na střed.
-    lang: cs
-  - term: Yes down at the beach.
-    lang: en
-  - term: Ano, dole na pláži.
-    lang: cs
-  - term: It's just down the hall.
-    lang: en
-  - term: Je to dole v hale.
-    lang: cs
-  - term: I should sleep down here.
-    lang: en
-  - term: Měl bych spát dole.
-    lang: cs
-  - term: There's people down there.
-    lang: en
-  - term: Tam dole jsou lidé.
-    lang: cs
-  - term: It was very dark down here.
-    lang: en
-  - term: Dole byla mimořádná tma.
-    lang: cs
-  - term: Fifty yards right down there.
-    lang: en
-  - term: Přímo tam dole, asi padesát metrů.
-    lang: cs
-  - term: There's something down there.
-    lang: en
-  - term: Tam dole něco je.
-    lang: cs
   - term: What are you doing down here?
     lang: en
   - term: Co děláš tady dole?
-    lang: cs
-  - term: This key moves the block down.
-    lang: en
-  - term: Tato klávesa přesune blok dolů.
-    lang: cs
-  - term: I thought you were coming down.
-    lang: en
-  - term: Myslel jsem, že jsi šel dolů.
-    lang: cs
-  - term: He's down the hall to the right.
-    lang: en
-  - term: Je dole v hale napravo.
-    lang: cs
-  - term: We need a medical team down here!
-    lang: en
-  - term: Potřebujeme lékařský tým sem dolů!
-    lang: cs
-  - term: Move the selection down one item.
-    lang: en
-  - term: Přesun výběru o jednu položku dolů
-    lang: cs
-  - term: And my family are all down there.
-    lang: en
-  - term: Moje rodina je tam dole.
-    lang: cs
-  - term: Just come down to the supermarket.
-    lang: en
-  - term: Jen pojďte dolů do supermarketu.
     lang: cs
   img: down.jpeg
   freq: 514720.50000
@@ -2680,55 +2327,9 @@ concepts:
     lang: cs
     tts: fungovat.mp3
   examples: 
-  - term: The work was good.
-    lang: en
-  - term: Byla to dobrá práce.
-    lang: cs
-  - term: Work in this place!
-    lang: en
-  - term: Práce na tomto místě!
-    lang: cs
   - term: This will never work.
     lang: en
   - term: To nebude nikdy fungovat.
-    lang: cs
-  - term: Toto nebude nikdy fungovat.
-    lang: cs
-  - term: I got to work for you.
-    lang: en
-  - term: I dostal se do práce pro vás.
-    lang: cs
-  - term: It's just got to work.
-    lang: en
-  - term: To prostě musí fungovat!
-    lang: cs
-  - term: This will be my work now.
-    lang: en
-  - term: Tohle teď bude moje práce.
-    lang: cs
-  - term: Rotten to be out of work.
-    lang: en
-  - term: Je hrozný být bez práce.
-    lang: cs
-  - term: Do you think it will work?
-    lang: en
-  - term: Myslíš, že to bude fungovat?
-    lang: cs
-  - term: It's just not going to work.
-    lang: en
-  - term: To už nikdy nebude fungovat.
-    lang: cs
-  - term: This is never going to work.
-    lang: en
-  - term: Tohle nikdy nebude fungovat.
-    lang: cs
-  - term: The risk is that it won't work.
-    lang: en
-  - term: Riziko je v tom, že to nemusí fungovat.
-    lang: cs
-  - term: But they will not work for long.
-    lang: en
-  - term: Nebudou však fungovat dlouho.
     lang: cs
   img: work.jpeg
   freq: 508678.00000
@@ -2748,70 +2349,6 @@ concepts:
   - term: He took her hands.
     lang: en
   - term: Vzal ji za ruku.
-    lang: cs
-  - term: It took me awhile.
-    lang: en
-  - term: Chvíli mi to trvalo.
-    lang: cs
-  - term: I took her with me.
-    lang: en
-  - term: Vzal jsem ji s sebou.
-    lang: cs
-  - term: It took two minutes.
-    lang: en
-  - term: Trvalo to dvě minuty.
-    lang: cs
-  - term: Took you long enough.
-    lang: en
-  - term: Trvalo ti to dlouho.
-    lang: cs
-  - term: Two years it took me.
-    lang: en
-  - term: Trvalo mi to dva roky.
-    lang: cs
-  - term: What took you so long?
-    lang: en
-  - term: Co Vám tak dlouho trvalo?
-    lang: cs
-  - term: It took me quite a while.
-    lang: en
-  - term: To mi nějakou dobu trvalo.
-    lang: cs
-  - term: It only took three months.
-    lang: en
-  - term: Trvalo to jen tři měsíce.
-    lang: cs
-  - term: I took one last assignment.
-    lang: en
-  - term: Vzal jsem poslední úkol.
-    lang: cs
-  - term: It only took her a few minutes.
-    lang: en
-  - term: Trvalo to jen několik minut.
-    lang: cs
-  - term: You know how long that took me?
-    lang: en
-  - term: Víš, jak dlouho mi to trvalo?
-    lang: cs
-  - term: It took me a long time to forget.
-    lang: en
-  - term: Dlouho mi trvalo zapomenout na to.
-    lang: cs
-  - term: You took this kid under your wing.
-    lang: en
-  - term: Vzal jsi ho pod svou ochranu.
-    lang: cs
-  - term: He took her with him off the roof.
-    lang: en
-  - term: Vzal ji sebou na střechu.
-    lang: cs
-  - term: He took the clip in his left hand.
-    lang: en
-  - term: Vzal zásobník do levé ruky.
-    lang: cs
-  - term: He took the piano, or someone did.
-    lang: en
-  - term: Vzal piano nebo někdo jiný.
     lang: cs
   state: ignoreImage
   freq: 501669.00000
@@ -3123,7 +2660,7 @@ concepts:
     lang: cs
   - term: He was teaching us and himself.
     lang: en
-  - term: - Učil nás i sebe.
+  - term: Učil nás i sebe.
     lang: cs
   - term: He probably called them himself.
     lang: en
@@ -3353,7 +2890,7 @@ concepts:
   img: give.jpeg
   freq: 469253.00000
   origins: ["corpus"]
-##  new   ################################################################### ▆ 67%
+##  new   ################################################################### █ 95%
 - terms: 
   - term: new
     lang: en
@@ -3364,10 +2901,67 @@ concepts:
   - term: nový
     lang: cs
     tts: novy.mp3
+  examples: 
+  - term: There's a new billboard.
+    lang: en
+  - term: Je tam nový billboard.
+    lang: cs
+  - term: This is your new brother.
+    lang: en
+  - term: Tohle je tvůj nový bratr.
+    lang: cs
+  - term: And a brand new template!
+    lang: en
+  - term: A jeden zbrusu nový míra!
+    lang: cs
+  - term: A new life, new identity.
+    lang: en
+  - term: Nový život, nová identita.
+    lang: cs
+  - term: Restructuring is nothing new.
+    lang: en
+  - term: Jev restrukturalizací není nový.
+    lang: cs
+  - term: Spinning a new program thread.
+    lang: en
+  - term: Vytváří se nové programové vlákno.
+    lang: cs
+  - term: But who will the new team boss?
+    lang: en
+  - term: Ale kdo je v týmu nový šéf?
+    lang: cs
+  - term: Please request a new certificate.
+    lang: en
+  - term: Požádejte o nový certifikát.
+    lang: cs
+  - term: Click to create a new aggregation.
+    lang: en
+  - term: Klepnutím vytvoříte nové agregace.
+    lang: cs
+  - term: Have a good time, make new friends.
+    lang: en
+  - term: Bavit, potkat nové přátele.
+    lang: cs
+  - term: The new information cannot be saved.
+    lang: en
+  - term: Nové informace nelze uložit.
+    lang: cs
+  - term: When will a new voucher be allocated?
+    lang: en
+  - term: Kdy bude přidělen nový doklad?
+    lang: cs
+  - term: Startup of a new driver host process.
+    lang: en
+  - term: Spouští se nový hostitelský proces ovladačů.
+    lang: cs
+  - term: Save your new rule by saving the model.
+    lang: en
+  - term: Uložte nové pravidlo uložením modelu.
+    lang: cs
   img: new.jpeg
   freq: 467016.50000
   origins: ["corpus"]
-##  every   ################################################################# ▆ 67%
+##  every   ################################################################# █ 95%
 - terms: 
   - term: every
     lang: en
@@ -3378,10 +2972,67 @@ concepts:
   - term: každé
     lang: cs
     tts: kazde.mp3
+  examples: 
+  - term: I called every hospital.
+    lang: en
+  - term: Volala jsem do každé nemocnice.
+    lang: cs
+  - term: Every single day was busy.
+    lang: en
+  - term: Každý den byl rušný.
+    lang: cs
+  - term: Give colour to every cheek.
+    lang: en
+  - term: Dej barvu každé tváři.
+    lang: cs
+  - term: I walk around here every day.
+    lang: en
+  - term: Chodím tady každý den.
+    lang: cs
+  - term: And do you do this every day?
+    lang: en
+  - term: A to děláte každý den?
+    lang: cs
+  - term: I told them to stop every day.
+    lang: en
+  - term: Říkal jsem jim každý den, ať přestanou.
+    lang: cs
+  - term: We have these parties every week.
+    lang: en
+  - term: Máme tyto párty každý víkend.
+    lang: cs
+  - term: That's what happens every holiday!
+    lang: en
+  - term: To se stane každé svátky!
+    lang: cs
+  - term: Your every wish will be fulfilled.
+    lang: en
+  - term: Každé přání se ti vyplní.
+    lang: cs
+  - term: I do interviews every three weeks.
+    lang: en
+  - term: Každé tři týdny dělám interview.
+    lang: cs
+  - term: This rule will be applied to every .
+    lang: en
+  - term: Toto pravidlo bude použito u každé položky .
+    lang: cs
+  - term: I try to get him some meat every week.
+    lang: en
+  - term: Maso se mu snažím dávat každý týden.
+    lang: cs
+  - term: You can use reports in every area in .
+    lang: en
+  - term: Sestavy můžete používat v každé oblasti aplikace .
+    lang: cs
+  - term: I heard, through the door, every word.
+    lang: en
+  - term: Slyšel jsem, skrze dveře, každé slovo.
+    lang: cs
   state: ignoreImage
   freq: 458591.50000
   origins: ["corpus"]
-##  same   ################################################################## ▆ 67%
+##  same   ################################################################## █ 95%
 - terms: 
   - term: same
     lang: en
@@ -3392,10 +3043,63 @@ concepts:
   - term: stejně
     lang: cs
     tts: stejne.mp3
+  examples: 
+  - term: I feel the same.
+    lang: en
+  - term: Já to cítím stejně.
+    lang: cs
+  - term: It's the same dye.
+    lang: en
+  - term: Je to úplně stejné barvení.
+    lang: cs
+  - term: I felt the same way.
+    lang: en
+  - term: Já se cítil stejně.
+    lang: cs
+  - term: The dog looks the same.
+    lang: en
+  - term: Ten pes vypadá stejně.
+    lang: cs
+  - term: Both the ends is the same.
+    lang: en
+  - term: Obě strany jsou stejné.
+    lang: cs
+  - term: Probably works the same here.
+    lang: en
+  - term: Tady to zřejmě chodí stejně.
+    lang: cs
+  - term: We must live in the same area.
+    lang: en
+  - term: Musíme bydlet ve stejné čtvrti.
+    lang: cs
+  - term: Are we still on that same road?
+    lang: en
+  - term: Jsme pořád na stejné silnici?
+    lang: cs
+  - term: You look the same when it happens.
+    lang: en
+  - term: Budeš vypadat stejně, až se to stane.
+    lang: cs
+  - term: These steps work the same way in .
+    lang: en
+  - term: Tento postup funguje u klienta stejně.
+    lang: cs
+  - term: I might ask you the same question.
+    lang: en
+  - term: Můžu se tě zeptat úplně stejně.
+    lang: cs
+  - term: You want to make everything the same?
+    lang: en
+  - term: Chcete, aby to všude vypadalo stejně?
+    lang: cs
+  - term: In fact, she was nearly the same shape.
+    lang: en
+  - term: Abychom řekli pravdu, vypadala skoro stejně špatně jako vévoda.
+    lang: cs
   img: same.jpeg
   freq: 456106.00000
   origins: ["corpus"]
-##  shall   ################################################################# ▆ 67%
+##  shall   ################################################################# █ 95%
 - terms: 
   - term: shall
     lang: en
@@ -3406,10 +3110,31 @@ concepts:
   - term: se
     lang: cs
     tts: se.mp3
+  examples: 
+  - term: I shall see in time.
+    lang: en
+  - term: Postarám se v čase.
+    lang: cs
+  - term: The list shall be updated.
+    lang: en
+  - term: Tento seznam se aktualizuje.
+    lang: cs
+  - term: I shall have it looked into.
+    lang: en
+  - term: Měl bych se na to podívat.
+    lang: cs
+  - term: The refund shall be fixed each month.
+    lang: en
+  - term: Tato náhrada se stanoví každý měsíc.
+    lang: cs
+  - term: Inventories shall be regularly updated.
+    lang: en
+  - term: Inventury se pravidelně aktualizují.
+    lang: cs
   state: ignoreImage
   freq: 449921.50000
   origins: ["corpus"]
-##  seemed   ################################################################ ▆ 67%
+##  seemed   ################################################################ █ 95%
 - terms: 
   - term: seemed
     lang: en
@@ -3420,6 +3145,55 @@ concepts:
   - term: vypadalo
     lang: cs
     tts: vypadalo.mp3
+  examples: 
+  - term: It seemed so real.
+    lang: en
+  - term: Vypadalo to tak skutečně.
+    lang: cs
+  - term: It seemed almost a game.
+    lang: en
+  - term: Vypadalo to téměř jako hra.
+    lang: cs
+  - term: It seemed that no one ...
+    lang: en
+  - term: Vypadalo to, že nikdo ...
+    lang: cs
+  - term: It just seemed odd at first.
+    lang: en
+  - term: Mně se to prostě nejdřív zdálo divné.
+    lang: cs
+  - term: It seemed to him quite plain.
+    lang: en
+  - term: Zdálo se mu to docela jasné.
+    lang: cs
+  - term: This seemed like a good fit ...
+    lang: en
+  - term: Vypadalo to jako dobrou volbou ...
+    lang: cs
+  - term: It had seemed a good idea, then.
+    lang: en
+  - term: Vypadalo to jako dobrý nápad, tenkrát.
+    lang: cs
+  - term: It seemed like a place where ...
+    lang: en
+  - term: Vypadalo to jako místo, kde ...
+    lang: cs
+  - term: He seemed to be wrestling with ...
+    lang: en
+  - term: Zdálo se, že zápasí s ...
+    lang: cs
+  - term: A new city seemed like a good start.
+    lang: en
+  - term: A nové město vypadalo jako dobrý začátek.
+    lang: cs
+  - term: It sort of seemed that way, didn't it?
+    lang: en
+  - term: Vypadalo to tak, že ano?
+    lang: cs
+  - term: It seemed unlikely to work, but it did!
+    lang: en
+  - term: Zdálo se nepravděpodobné, do práce, ale to udělal!
+    lang: cs
   state: ignoreImage
   freq: 447884.00000
   origins: ["corpus"]
