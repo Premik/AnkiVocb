@@ -23,6 +23,9 @@
 
 }
 
+#rootContainer {
+  min-height: 500px;
+}
 
 #hintButton {
   background-image: url('lightBulb.png');
