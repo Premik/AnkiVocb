@@ -29,16 +29,24 @@ public class Manager {
 	Path dbPath
 
 	Map<String, Concept> conceptByFirstTerm = [:]
+	
+	Map<String, Set<Concept>> conceptsByTerm = [:]
 
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
+		conceptsByTerm = [:].withDefault {[]}
 		db.concepts.each { Concept c->
 			String ft = c.firstTerm
 			if (conceptByFirstTerm.containsKey(ft)) {
 				System.err.println("Warninig: duplicate word '$ft'")
-			}			
+			}						
 			if (ft) conceptByFirstTerm[ft] = c
+			c.terms.each { Term t->
+				conceptsByTerm[t.term] += t
+			}
+			
 		}
+		
 	}
 
 	void withTerms(boolean includeExamples=false, Closure cl) {
