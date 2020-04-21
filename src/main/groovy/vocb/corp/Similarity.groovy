@@ -1,6 +1,7 @@
 package vocb.corp
 
 import groovy.transform.Memoized
+import vocb.data.Concept
 
 
 public class Similarity {
@@ -48,10 +49,11 @@ public class Similarity {
 
 	@Memoized
 	BigDecimal similarSubstrings(CharSequence a, CharSequence b) {
-		assert a
-		assert b
+		if (!a || !b) return 0
 		int len = Math.min(a.length() ,b.length())
-		(len..1).collect {similarWithLen(a, b, it)*it }.sum()
+		BigDecimal s = (len..1).collect {similarWithLen(a, b, it)*it }.sum()
+		int lenDif = Math.abs(a.length() - b.length())
+		return s - lenDif
 	}
 
 	Set<String> commonSubstringsOf(CharSequence a, CharSequence b) {
@@ -59,12 +61,14 @@ public class Similarity {
 		Set<String> bSet = allSubstringsOf(b)
 		return aSet.intersect(bSet)
 	}
+		
 
 	static void main(String... args) {
 		Similarity n = new Similarity()
 		Corpus c=  Corpus.buildDef()
 		String word ="when"
 		println n.similarSubstrings("you", "yours")
+		
 		String[] sorted = c.topX(10000).sort {String a, String b ->
 			n.similarSubstrings(word, b) <=> n.similarSubstrings(word, a)
 		}

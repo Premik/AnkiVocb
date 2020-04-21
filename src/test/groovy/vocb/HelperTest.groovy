@@ -4,7 +4,9 @@ import static org.junit.Assert.*
 
 import org.junit.jupiter.api.Test
 
+import groovy.transform.CompileStatic
 import vocb.Helper
+
 
 class HelperTest {
 
@@ -52,38 +54,63 @@ class HelperTest {
 
 		assert Helper.indentNextLines(s, 2) == s2
 	}
-	
 
-	
+
+
 	@Test
 	void testSplitBy() {
 		assert Helper.splitBy("abc", "b") == ["a", "b", "c"] as Tuple3
 		assert Helper.splitBy("aabbcc", "bb") == ["aa", "bb", "cc"] as Tuple3
 		assert Helper.splitBy("a b c", "b") == ["a ", "b", " c"] as Tuple3
-		def s = Helper.splitBy("The quick brown fox jumps over the lazy dog.", "brown fox") 
-		assert s == ["The quick ", "brown fox", " jumps over the lazy dog."] as Tuple3
+		def s = Helper.splitBy("The quick brown fox jumps over the lazy dog.", "brown fox")
+		assert s == [
+			"The quick ",
+			"brown fox",
+			" jumps over the lazy dog."] as Tuple3
 	}
-	
+
 	@Test
 	void testSplitByCorner() {
-		assert Helper.splitBy("a", "a") == ["", "a", ""] as Tuple3		
+		assert Helper.splitBy("a", "a") == ["", "a", ""] as Tuple3
 		assert Helper.splitBy("...a", "a") == ["...", "a", ""] as Tuple3
 		assert Helper.splitByWord("Hello world.", "hello") == ["", "Hello", " world."] as Tuple3
-		assert Helper.splitByWord("Who does not like noodles?", "who") == ["", "Who", " does not like noodles?"] as Tuple3
-		
+		assert Helper.splitByWord("Who does not like noodles?", "who") == [
+			"",
+			"Who",
+			" does not like noodles?"] as Tuple3
 	}
-	
-	
+
+
 	@Test
 	void testRx() {
-		assert Helper.splitByRex("Hello world.", ~"world") == ["Hello ", "world", "."] as Tuple3		
+		assert Helper.splitByRex("Hello world.", ~"world") == ["Hello ", "world", "."] as Tuple3
 		assert Helper.splitByRex("Hello world.", ~/\s*world[\.]*/) == ["Hello", " world.", ""] as Tuple3
+	}
+
+	@Test
+	void splitByWord() {
+		assert Helper.splitByWord("Hello world.", "world") == ["Hello ", "world", "."] as Tuple3
+		assert Helper.splitByWord("in class as usual.", "as") == [
+			"in class ",
+			"as",
+			" usual."] as Tuple3
+	}
+
+	@Test
+	void splitEachPair() {
+		String ret = ""
+		Helper.withEachPairInDistance([1, 2, 3], 1) { Integer i, Integer a, Integer b ->
+			ret+= "$i: $a-$b "
+		}
+		assert ret == "0: 1-2 1: 2-3 "
 	}
 	
 	@Test
-	void splitByWord() {
-		assert Helper.splitByWord("Hello world.", "world") == ["Hello ", "world", "."] as Tuple3	
-		assert Helper.splitByWord("in class as usual.", "as") == ["in class ", "as", " usual."] as Tuple3		
+	void withAllPairs() {
+		def pairs = []
+		Helper.withAllPairs(["a", "b", "c"]) {Integer i, String a, String b ->
+			pairs.add( [a,b] )
+		}
+		assert pairs ==  [['a', 'c'], ['a', 'b'], ['b', 'c']]
 	}
-	
 }

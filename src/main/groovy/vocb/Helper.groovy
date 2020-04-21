@@ -3,7 +3,6 @@ package vocb
 import java.nio.charset.StandardCharsets
 import java.text.Normalizer
 import java.util.concurrent.TimeUnit
-import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 import javax.xml.transform.OutputKeys
@@ -18,6 +17,9 @@ import org.apache.groovy.io.StringBuilderWriter
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import groovy.text.GStringTemplateEngine
+import groovy.transform.stc.ClosureParams
+import groovy.transform.stc.FirstParam
+import groovy.transform.stc.FromString
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 
@@ -230,7 +232,26 @@ public class Helper {
 	public static String progressBar(BigDecimal p) {
 		List<String> m = "▁▂▃▄▅▆▇█" as List
 		m[clamp( p* m.size(), 0, m.size()-1)]
+	}
 
+	public static <T> void withEachPairInDistance(List<T> coll, int atDistance=1,
+			@ClosureParams(value= FromString, options=["int,T,T"] )  Closure c) {
+		assert atDistance > 0
+		assert atDistance < coll.size()
+		for (int i=0;i<coll.size()-atDistance;i++) {
+			c(i, coll[i], coll[i+atDistance])
+		}
+	}
+
+	public static <T> void withAllPairs(List<T> coll, int limit=coll.size()-1,@ClosureParams(value= FromString, options=["int,T,T"] )  Closure c) {
+		for (int i=limit-1;i>0;i--) {
+			withEachPairInDistance(coll, i, c)
+		}
+	}
+	
+	public static BigDecimal lerp(BigDecimal point1, BigDecimal point2, BigDecimal alpha)
+	{
+		point1 + alpha * (point2 - point1)
 	}
 }
 
