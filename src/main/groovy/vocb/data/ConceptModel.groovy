@@ -41,6 +41,8 @@ public class Concept {
 		BigDecimal fldSum = [state =="ignoreImage" ? "1" : img, freq].findAll().size()/2.0
 		(grpSum*2 + fldSum)/3
 	}
+	
+	
 }
 
 @Canonical

@@ -68,7 +68,7 @@ public class Data2Crowd {
 			n.'native' = cst1?.term
 			nativeTTS= cst1?.tts
 			nativeAlt= cst2?.term
-			nativeTTS= cst2?.tts
+			nativeAltTTS= cst2?.tts
 			nativeExample= csx?.term
 			nativeExampleTTS = csx?.tts
 			(1..5).each {tags.remove('🟊'*it)}
@@ -140,7 +140,7 @@ public class Data2Crowd {
 	}
 
 
-	void exportToCrowd(int limit=5) {
+	void exportToCrowd(int limit=10) {
 		vocbModel.notes.clear()
 		(0..limit).each {
 			mapConcept(dbMan.db.concepts[it])
@@ -151,9 +151,9 @@ public class Data2Crowd {
 
 	public static void main(String[] args) {
 		Data2Crowd a = new Data2Crowd()
-		//a.exportToCrowd()
-		println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
-		println a.optimizeOrder().take(40).collect {it.firstTerm}
+		a.exportToCrowd()
+		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
+		//println a.optimizeOrder().take(40).collect {it.firstTerm}
 
 		//println a.similarConcepts(a.dbMan.db.concepts[0], a.dbMan.db.concepts[1])
 

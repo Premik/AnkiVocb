@@ -14,14 +14,17 @@
 	border-radius: .25rem;
 }
 
+
 .container {
-	width: 1140px;
+	/*width: 1140px;*/	
+	min-width: 200px;
     max-width: 100%;    
-    padding-right: 15px;
-    padding-left: 15px;        
-    position: relative;
+    /*padding-right: 15px;
+    padding-left: 15px;        */
+	padding-right: 150px;
+    padding-left: 150px;
+	position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;    
+    
 }
