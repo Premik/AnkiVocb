@@ -8143,7 +8143,7 @@ concepts:
   img: wanted.jpeg
   freq: 140608.00000
   origins: ["corpus"]
-##  return   ################################################################ ▆ 67%
+##  return   ################################################################ █ 95%
 - terms: 
   - term: return
     lang: en
@@ -8154,6 +8154,13 @@ concepts:
   - term: vrátit
     lang: cs
     tts: vratit.mp3
+  examples: 
+
+  - term: I was going to return it.
+    lang: en
+  - term: Chtěla jsem to vrátit.
+    lang: cs
+ 
   img: return.jpeg
   freq: 140295.50000
   origins: ["corpus"]
@@ -8178,7 +8185,7 @@ concepts:
   img: need.jpeg
   freq: 139916.00000
   origins: ["corpus"]
-##  dear   ################################################################## ▆ 67%
+##  dear   ################################################################## █ 95%
 - terms: 
   - term: dear
     lang: en
@@ -8189,10 +8196,17 @@ concepts:
   - term: drahá
     lang: cs
     tts: draha.mp3
+  examples: 
+
+  - term: How do you feel, dear?
+    lang: en
+  - term: Jak se cítíš, drahá?
+    lang: cs
+  
   img: dear.jpeg
   freq: 139827.00000
   origins: ["corpus"]
-##  dead   ################################################################## ▆ 67%
+##  dead   ################################################################## █ 95%
 - terms: 
   - term: dead
     lang: en
@@ -8203,6 +8217,13 @@ concepts:
   - term: mrtvé
     lang: cs
     tts: mrtve.mp3
+  examples: 
+ 
+  - term: A dead body lies there.
+    lang: en
+  - term: Leží tam mrtvé tělo.
+    lang: cs
+ 
   img: dead.jpeg
   freq: 139580.00000
   origins: ["corpus"]
@@ -8225,7 +8246,7 @@ concepts:
   state: ignoreImage
   freq: 139167.00000
   origins: ["corpus"]
-##  real   ################################################################## ▆ 67%
+##  real   ################################################################## █ 95%
 - terms: 
   - term: real
     lang: en
@@ -8236,6 +8257,12 @@ concepts:
   - term: skutečné
     lang: cs
     tts: skutecne.mp3
+  examples: 
+  - term: It felt so real.
+    lang: en
+  - term: Bylo to tak skutečné.
+    lang: cs
+  
   state: ignoreImage
   freq: 139116.50000
   origins: ["corpus"]
@@ -8255,7 +8282,7 @@ concepts:
   img: case.jpeg
   freq: 138689.50000
   origins: ["corpus"]
-##  student   ############################################################### ▆ 67%
+##  student   ############################################################### █ 95%
 - terms: 
   - term: student
     lang: cs
@@ -8263,10 +8290,16 @@ concepts:
   - term: žák
     lang: cs
     tts: zak.mp3
+  examples: 
+  - term: He was a good student.
+    lang: en
+  - term: Byl to dobrý žák.
+    lang: cs
+  
   img: student.jpeg
   freq: 138627.05000
   origins: ["corpus"]
-##  thousand   ############################################################## ▆ 67%
+##  thousand   ############################################################## █ 95%
 - terms: 
   - term: thousand
     lang: en
@@ -8274,6 +8307,13 @@ concepts:
   - term: tisíc
     lang: cs
     tts: tisic.mp3
+  examples: 
+ 
+  - term: Only nine thousand a month.
+    lang: en
+  - term: Jen devět tisíc za měsíc.
+    lang: cs
+ 
   img: thousand.jpeg
   freq: 138465.00000
   origins: ["corpus"]
@@ -8319,7 +8359,7 @@ concepts:
   img: change.jpeg
   freq: 137970.00000
   origins: ["corpus"]
-##  high   ################################################################## ▆ 67%
+##  high   ################################################################## █ 95%
 - terms: 
   - term: high
     lang: en
@@ -8327,10 +8367,17 @@ concepts:
   - term: vysoké
     lang: cs
     tts: vysoke.mp3
+  examples: 
+
+  - term: That also means no high fees.
+    lang: en
+  - term: To také znamená žádné vysoké poplatky.
+    lang: cs
+ 
   img: high.jpeg
   freq: 137721.50000
   origins: ["corpus"]
-##  interest   ############################################################## ▆ 67%
+##  interest   ############################################################## █ 95%
 - terms: 
   - term: interest
     lang: en
@@ -8341,10 +8388,17 @@ concepts:
   - term: zájem
     lang: cs
     tts: zajem.mp3
+  examples: 
+
+  - term: We appreciate your interest.
+    lang: en
+  - term: Ceníme si vášeho zájemu.
+    lang: cs
+ 
   img: interest.jpeg
   freq: 137310.50000
   origins: ["corpus"]
-##  therefore   ############################################################# ▆ 67%
+##  therefore   ############################################################# █ 95%
 - terms: 
   - term: therefore
     lang: en
@@ -8355,6 +8409,12 @@ concepts:
   - term: tedy
     lang: cs
     tts: tedy.mp3
+  examples: 
+  - term: This claim is therefore rejected.
+    lang: en
+  - term: Toto tvrzení se proto zamítá.
+    lang: cs
+  
   state: ignoreImage
   freq: 137061.50000
   origins: ["corpus"]
@@ -8379,7 +8439,7 @@ concepts:
   img: write.jpeg
   freq: 137054.50000
   origins: ["corpus"]
-##  english   ############################################################### ▆ 67%
+##  english   ############################################################### █ 95%
 - terms: 
   - term: english
     lang: en
@@ -8387,10 +8447,16 @@ concepts:
   - term: anglicky
     lang: cs
     tts: anglicky.mp3
+  examples: 
+  - term: English only from now on.
+    lang: en
+  - term: Odteď už jen anglicky.
+    lang: cs
+ 
   img: english.jpeg
   freq: 136965.50000
   origins: ["corpus"]
-##  tried   ################################################################# ▆ 67%
+##  tried   ################################################################# █ 95%
 - terms: 
   - term: tried
     lang: en
@@ -8401,6 +8467,99 @@ concepts:
   - term: zkusil
     lang: cs
     tts: zkusil.mp3
+  examples: 
+  - term: I tried it once.
+    lang: en
+  - term: Jednou jsem to zkusil.
+    lang: cs
+  - term: Have you tried it?
+    lang: en
+  - term: Zkusil jsi to někdy?
+    lang: cs
+  - term: I tried that once.
+    lang: en
+  - term: To jsem jednou zkusil.
+    lang: cs
+  - term: Have you tried that?
+    lang: en
+  - term: Už jste to zkoušeli?
+    lang: cs
+  - term: Have you ever tried?
+    lang: en
+  - term: We tried to move them.
+    lang: en
+  - term: Zkoušeli jsme je přemístit.
+    lang: cs
+  - term: We already tried that.
+    lang: en
+  - term: Už jsme to zkoušeli.
+    lang: cs
+  - term: Have you tried living?
+    lang: en
+  - term: Zkusil jste někdy žít?
+    lang: cs
+  - term: I tried contact lenses.
+    lang: en
+  - term: Zkusil jsem kontaktní čočky.
+    lang: cs
+  - term: I tried this one place.
+    lang: en
+  - term: Zkusil jsem to tady.
+    lang: cs
+  - term: I have already tried it.
+    lang: en
+  - term: Už jsem to zkusil.
+    lang: cs
+  - term: Downloaded and tried it.
+    lang: en
+  - term: Staženo a to zkusil.
+    lang: cs
+  - term: I tried everything else.
+    lang: en
+  - term: Všechno ostatní jsem už zkusil.
+    lang: cs
+  - term: We tried everything else.
+    lang: en
+  - term: Zkoušeli jsme všechno ostatní.
+    lang: cs
+  - term: He tried to take it back.
+    lang: en
+  - term: Zkusil ji vzít zpátky.
+    lang: cs
+  - term: Have you tried this recipe?
+    lang: en
+  - term: Zkoušeli jste tento recept?
+    lang: cs
+  - term: Have you guys tried it yet?
+    lang: en
+  - term: Have you ever tried to quit?
+    lang: en
+  - term: Už jste někdy zkoušeli přestat kouřit?
+    lang: cs
+  - term: We tried that once, remember?
+    lang: en
+  - term: To jsme už zkoušeli, pamatuješ?
+    lang: cs
+  - term: One guy tried that on me once.
+    lang: en
+  - term: Jeden chlap to jednou zkusil.
+    lang: cs
+  - term: Have you tried to get them out?
+    lang: en
+  - term: Zkoušeli jste je dostat ven?
+    lang: cs
+  - term: Have you ever tried this concept?
+    lang: en
+  - term: Zkoušeli jste někdy tento pojem?
+    lang: cs
+  - term: I tried that already, but it hurts.
+    lang: en
+  - term: Už jsem to zkusil, ale bolí to!
+    lang: cs
+  - term: Have you tried all hailing frequencies?
+    lang: en
+  - term: Zkoušeli jste všechny frekvence?
+    lang: cs
   state: ignoreImage
   freq: 136507.00000
   origins: ["corpus"]
@@ -8434,7 +8593,7 @@ concepts:
   img: lived.jpeg
   freq: 135512.00000
   origins: ["corpus"]
-##  show   ################################################################## ▆ 67%
+##  show   ################################################################## █ 95%
 - terms: 
   - term: show
     lang: en
@@ -8445,6 +8604,53 @@ concepts:
   - term: podívaná
     lang: cs
     tts: podivana.mp3
+  examples: 
+  - term: I want to show you this.
+    lang: en
+  - term: Chci ti ukázat tohle.
+    lang: cs
+  - term: I have to show it to you.
+    lang: en
+  - term: Musela bych ti ho ukázat.
+    lang: cs
+  - term: You want to show the flag.
+    lang: en
+  - term: Vy chcete ukázat vlajku?
+    lang: cs
+  - term: We must show our strength.
+    lang: en
+  - term: Musíme ukázat naší sílu.
+    lang: cs
+  - term: I could show you the spot.
+    lang: en
+  - term: můžu ti to místo ukázat.
+    lang: cs
+  - term: You must show him the way!
+    lang: en
+  - term: Musíš mu ukázat cestu.
+    lang: cs
+  - term: I got to show you something.
+    lang: en
+  - term: Něco ti musím ukázat.
+    lang: cs
+  - term: I have to show you something.
+    lang: en
+  - term: I have something to show you.
+    lang: en
+  - term: Musím ti něco ukázat.
+    lang: cs
+  - term: I want to show you something.
+    lang: en
+  - term: Chtěl bych ti něco ukázat.
+    lang: cs
+  - term: Those tapes could show up anywhere.
+    lang: en
+  - term: Ty pásku se můžou ukázat kdykoliv.
+    lang: cs
+  - term: This is what you wanted to show me?
+    lang: en
+  - term: Tohle jste mi chtěl ukázat?
+    lang: cs
   img: show.jpeg
   freq: 135451.00000
   origins: ["corpus"]
@@ -8469,7 +8675,7 @@ concepts:
   img: sure.jpeg
   freq: 135369.50000
   origins: ["corpus"]
-##  everything   ############################################################ ▆ 67%
+##  everything   ############################################################ █ 95%
 - terms: 
   - term: everything
     lang: en
@@ -8477,10 +8683,51 @@ concepts:
   - term: všechno
     lang: cs
     tts: vsechno.mp3
+  examples: 
+  - term: It's not everything.
+    lang: en
+  - term: Ale to není všechno.
+    lang: cs
+  - term: I can explain everything.
+    lang: en
+  - term: Já to můžu všechno vysvětlit.
+    lang: cs
+  - term: So yes, everything's okay.
+    lang: en
+  - term: Jo, všechno v pohodě.
+    lang: cs
+  - term: Everything's going to be fine.
+    lang: en
+  - term: Všechno bude v pořádku.
+    lang: cs
+  - term: I want you to report everything.
+    lang: en
+  - term: Chci, abys mi všechno hlásil.
+    lang: cs
+  - term: Everything about this case is rum.
+    lang: en
+  - term: V tomhle případě je nějak divné všechno.
+    lang: cs
+  - term: Does everything have to be about you?
+    lang: en
+  - term: Musí být všechno jen o tobě?
+    lang: cs
+  - term: Nearly everything in here was broken.
+    lang: en
+  - term: Skoro všechno v místnosti bylo rozbité.
+    lang: cs
+  - term: At first, everything went as planned.
+    lang: en
+  - term: Ze začátku šlo všechno podle plánu.
+    lang: cs
+  - term: This is what makes you do everything.
+    lang: en
+  - term: Tohle tě nutí dělat to všechno.
+    lang: cs
   img: everything.jpeg
   freq: 134993.00000
   origins: ["corpus"]
-##  known   ################################################################# ▆ 67%
+##  known   ################################################################# █ 95%
 - terms: 
   - term: known
     lang: en
@@ -8488,6 +8735,31 @@ concepts:
   - term: známý
     lang: cs
     tts: znamy.mp3
+  examples: 
+  - term: This is a known fact.
+    lang: en
+  - term: To je známý fakt.
+    lang: cs
+  - term: Before known like guru.
+    lang: en
+  - term: původně známý jako Guru!
+    lang: cs
+  - term: Also known as the virus that ...
+    lang: en
+  - term: Také známý jako virus, který ...
+    lang: cs
+  - term: Also known as the human skeleton.
+    lang: en
+  - term: Známý také jako lidská kostra.
+    lang: cs
+  - term: Beginning to become known, though.
+    lang: en
+  - term: Začal být známý, myslím.
+    lang: cs
+  - term: Known as managing money and multiply.
+    lang: en
+  - term: Známý jako správu peněz a množit.
+    lang: cs
   state: ignoreImage
   freq: 134231.50000
   origins: ["corpus"]
@@ -8500,7 +8772,7 @@ concepts:
   state: ignore
   freq: 134048.00000
   origins: ["corpus"]
-##  land   ################################################################## ▆ 67%
+##  land   ################################################################## █ 95%
 - terms: 
   - term: land
     lang: en
@@ -8511,10 +8783,27 @@ concepts:
   - term: přistát
     lang: cs
     tts: pristat.mp3
+  examples: 
+  - term: To land here again.
+    lang: en
+  - term: A znovu přistát zde.
+    lang: cs
+  - term: Request permission to land.
+    lang: en
+  - term: Žádám o povolení přistát.
+    lang: cs
+  - term: Remember that you need to land safely.
+    lang: en
+  - term: Pamatujte, že musíte bezpečně přistát.
+    lang: cs
+  - term: You're instructed to land immediately.
+    lang: en
+  - term: Máš rozkaz okamžitě přistát.
+    lang: cs
   img: land.jpeg
   freq: 133539.00000
   origins: ["corpus"]
-##  placed   ################################################################ ▆ 67%
+##  placed   ################################################################ █ 95%
 - terms: 
   - term: placed
     lang: en
@@ -8522,10 +8811,25 @@ concepts:
   - term: umístěny
     lang: cs
     tts: umisteny.mp3
+  examples: 
+  - term: Placed next to the bed ...
+    lang: en
+  - term: Umístěny vedle na posteli, ...
+    lang: cs
+  - term: Blanks are always placed last.
+    lang: en
+  - term: Prázdné buňky jsou vždy umístěny jako poslední.
+    lang: cs
+  - term: Prázdné hodnoty jsou vždy umístěny jako poslední.
+    lang: cs
+  - term: Upgrade your placed transformers.
+    lang: en
+  - term: Aktualizujte si umístěny transformátory.
+    lang: cs
   img: placed.jpeg
   freq: 133084.00000
   origins: ["corpus"]
-##  fire   ################################################################## ▆ 67%
+##  fire   ################################################################## █ 95%
 - terms: 
   - term: fire
     lang: en
@@ -8536,10 +8840,99 @@ concepts:
   - term: střílet
     lang: cs
     tts: strilet.mp3
+  examples: 
+  - term: That's wild fire.
+    lang: en
+  - term: To je přírodní oheň.
+    lang: cs
+  - term: And this is fire.
+    lang: en
+  - term: A to je oheň.
+    lang: cs
+  - term: Is fire alive too?
+    lang: en
+  - term: Je oheň taky živý?
+    lang: cs
+  - term: Fire on my order only!
+    lang: en
+  - term: Střílet jen na můj povel!
+    lang: cs
+  - term: I take fire from water.
+    lang: en
+  - term: Beru oheň z vody.
+    lang: cs
+  - term: He probably set that fire.
+    lang: en
+  - term: Ten oheň pravděpodobně založil on.
+    lang: cs
+  - term: So the fire was deliberate.
+    lang: en
+  - term: Takže oheň byl založen úmyslně.
+    lang: cs
+  - term: Wind and fire come together.
+    lang: en
+  - term: Vítr a oheň přišli.
+    lang: cs
+  - term: Who gave you orders to fire?
+    lang: en
+  - term: Kdo vám dal rozkaz střílet?
+    lang: cs
+  - term: ... them to hold their fire.
+    lang: en
+  - term: ... jim, aby přestali střílet.
+    lang: cs
+  - term: ... know which one to fire at.
+    lang: en
+  - term: ... vědět, kam dřív střílet.
+    lang: cs
+  - term: I can only manipulate the fire.
+    lang: en
+  - term: Dokážu oheň jen ovládat.
+    lang: cs
+  - term: Raise your hands or we'll fire.
+    lang: en
+  - term: Ruce vzhůru nebo budeme střílet.
+    lang: cs
+  - term: And they really don't like fire.
+    lang: en
+  - term: a vůbec nemají rádi oheň.
+    lang: cs
+  - term: There was a fire and everything.
+    lang: en
+  - term: Byl tam oheň a tak.
+    lang: cs
+  - term: Fire is bright and fire is clean.
+    lang: en
+  - term: Oheň je jasný a oheň je čistý.
+    lang: cs
+  - term: That fire really finished it off!
+    lang: en
+  - term: Ten oheň tomu opravdu dal!
+    lang: cs
+  - term: You fire through here, all right?
+    lang: en
+  - term: Tudy budeš střílet, jasný?
+    lang: cs
+  - term: You notice it's a very small fire.
+    lang: en
+  - term: Vidíte je to opravdu malý oheň.
+    lang: cs
+  - term: We are to fire on our own ship, ...
+    lang: en
+  - term: Budeme střílet na vlastní loď, ...
+    lang: cs
+  - term: They opened fire without any warning.
+    lang: en
+  - term: Začali střílet bez varování.
+    lang: cs
+  - term: Should we fire everything at them now?
+    lang: en
+  - term: Máme teď na ně střílet vším, co máme?
+    lang: cs
   img: fire.jpeg
   freq: 133021.00000
   origins: ["corpus"]
-##  letters   ############################################################### ▆ 67%
+##  letters   ############################################################### █ 95%
 - terms: 
   - term: letters
     lang: en
@@ -8550,6 +8943,13 @@ concepts:
   - term: písmena
     lang: cs
     tts: pismena.mp3
+  examples: 
+
+  - term: Those letters are mine.
+    lang: en
+  - term: To jsou moje dopisy.
+    lang: cs
+ 
   img: letters.jpeg
   freq: 132785.00000
   origins: ["corpus"]
