@@ -19,7 +19,8 @@
 
 	<main class="container">
 		<div id="qa_box" class="card card2">
-			<!-- --------------------------------------------------------------------------   -->
+			<div id="qa">
+			<!-- --------------------------------------------------------------------------   -->			
 			<div class="wrapper rounded shadow">
 				<div class="foreign foreignTerm">
 					<span>{{foreign}}</span>[sound:{{foreignTTS}}]
@@ -45,20 +46,46 @@
 				</div>
 				<!-- {{/nativeAlt}} -->
 
-				<!-- {{#foreignExample}} -->
-				<div class="foreign foreignExample">
-					<span>{{foreignExample}}</span> [sound:{{foreignExampleTTS}}]
-				</div>
-				<!-- {{/foreignExample}} -->
-
 				<!-- {{#nativeExample}} -->
 				<div class="native nativeExample">
 					<span>{{nativeExample}}</span> [sound:{{nativeExampleTTS}}]
 				</div>
 				<!-- {{/nativeExample}} -->
 
+				<!-- {{#foreignExample}} -->
+				<div class="foreign foreignExample">
+					<span>{{foreignExample}}</span> [sound:{{foreignExampleTTS}}]
+				</div>
+				<!-- {{/foreignExample}} -->
+
+				
+
 			</div>
+
+			<script>
+				function coverWord(w) {
+					var placeholder = '-';
+					var chrs = Array.from(w)
+					var end = chrs.length;
+					var start = 0;
+					if (chrs.length > 1) start++;
+					if (chrs.length > 5) end--;
+					if (chrs.length > 8) start++;
+
+					for (var i = start; i < end; i++) {
+						chrs[i] = placeholder;
+					}
+					return chrs.join("");
+				}
+				function showHint() {
+					var hint = document.getElementById("hint");
+					hint.innerText = coverWord("{{native}}");
+					document.getElementById("hintButton").style.display = "none";
+				}
+			</script>
+
 			<!-- --------------------------------------------------------------------------   -->
+		</div>
 		</div>
 		<br>
 		</div>

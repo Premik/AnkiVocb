@@ -1,64 +1,12 @@
 
 
-
-
 .shadow {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.8), 0 7px 20px 0 rgba(0,0,0,0.4);
+ -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
+ -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
+ -o-box-shadow: 5px 6px 5px 0px  rgba(0,0,0,0.68);
+ box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
 }
 
-.foreign {
-  background-image: url("ukFlagBlur.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.native {
-  background-image: url("csFlagBlur.png");
-  background-size: 100% 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-
-
-.card {
-  background-color: #76bdbde8;
-  color: #fff;
-  font-family: Helvetica;
- font-size: 1.2em;
- font-weight: bold;
- /*line-height: 40px;*/
- text-align: center;
- text-shadow: 2px 2px 3px  #121f1fee, -1px 0 10px #00ffffc9;
- 
- /*opacity: 0.9;
- filter: alpha(opacity=9);*/
- 
-}
-
-.rounded {
-  /*border: 1px 1px 1px 0px black;  */
-  border-radius: 12px;    
-}
-
-.img img {
-  /*max-width: 320px; 
-  min-width: 200px;*/
-  height: 200px;
-  
- 
-}
-
-.imgIgnore {   
-  /* you need to match the shadow color to your background or image border for the desired effect*/
-  box-shadow: 0 0 8px 8px  #bd76a5e8 inset;  
-  /*background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 100% 150px;
-  
-  height: 80%;
-  height: 150px; */
-}
 
 .wrapper {
   padding: 10px;
@@ -68,7 +16,18 @@
    justify-content: space-between;
   align-items: center; */
   align-items: center;
-
+  background-color: #76bdbde8;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 1.3em;
+  font-weight: bold;
+  /*line-height: 40px;*/
+  text-align: center;
+  text-shadow: 2px 2px 3px  #121f1fee, -1px 0 10px #00ffffc9;
+  
+  /*opacity: 0.9;
+  filter: alpha(opacity=9);*/
+  
  
 }
 
@@ -84,6 +43,38 @@
   
   /*vertical-align: middle;*/
 }
+
+
+.foreign {
+  background-image: url("ukFlagBlur.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.native {
+  background-image: url("csFlagBlur.png");
+  background-size: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.native1, .native2, .foreignTerm {
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+
+
+
+.rounded {
+  /* border: 1px 1px 1px 0px black;  */
+  border-radius: 18px;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border: 0px solid #000000;   
+}
+
 
 /*
 .native1, .native2 {  
