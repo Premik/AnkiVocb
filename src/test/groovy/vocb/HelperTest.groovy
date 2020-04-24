@@ -95,6 +95,13 @@ class HelperTest {
 			"as",
 			" usual."] as Tuple3
 	}
+	
+	@Test
+	void splitByWordStrange() {
+		def (a,b,c) =  Helper.splitByWord("Film was shot using hand-held camera.", "held")
+		assert b == "held"
+		
+	}
 
 	@Test
 	void splitEachPair() {
