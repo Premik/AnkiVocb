@@ -7127,7 +7127,7 @@ concepts:
   img: state.jpeg
   freq: 162829.50000
   origins: ["corpus"]
-##  government   ############################################################ █ 91%
+##  government   ############################################################ █ 95%
 - terms: 
   - term: government
     lang: en
@@ -7140,7 +7140,6 @@ concepts:
     lang: en
   - term: Vláda nemá na vybranou!
     lang: cs
-
   img: government.jpeg
   freq: 162694.50000
   origins: ["corpus"]
@@ -7619,66 +7618,12 @@ concepts:
     lang: cs
     tts: opravdu.mp3
   examples: 
-  - term: He is awesome indeed.
+
+  - term: A very good plan indeed.
     lang: en
-  - term: On je opravdu děsivý.
+  - term: Opravdu moc dobrý plán.
     lang: cs
-  - term: A rare visitor indeed.
-    lang: en
-  - term: Vzácný host, vskutku.
-    lang: cs
-  - term: The air is indeed clean.
-    lang: en
-  - term: Vzduch je vskutku čistý.
-    lang: cs
-  - term: A very good play indeed.
-    lang: en
-  - term: Opravdu moc dobrá hra.
-    lang: cs
-  - term: There is a risk, indeed?
-    lang: en
-  - term: Existuje riziko, opravdu?
-    lang: cs
-  - term: It was very close indeed.
-    lang: en
-  - term: Leo byl opravdu velice blízko.
-    lang: cs
-  - term: And a stellar life, indeed.
-    lang: en
-  - term: Hvězdný život, vskutku.
-    lang: cs
-  - term: Indeed that is out of the air.
-    lang: en
-  - term: To je vskutku z větru.
-    lang: cs
-  - term: The recipes are indeed divine!
-    lang: en
-  - term: Recepty jsou opravdu božské!
-    lang: cs
-  - term: That is very encouraging indeed.
-    lang: en
-  - term: To je opravdu velmi povzbudivé.
-    lang: cs
-  - term: Indeed, the topic of some scattered.
-    lang: en
-  - term: Vskutku, téma některých rozptýlené.
-    lang: cs
-  - term: Mm, this cheese is very good indeed.
-    lang: en
-  - term: Mm, ten sýr je vskutku moc dobrý.
-    lang: cs
-  - term: Indeed, blogging is more than a fad.
-    lang: en
-  - term: Vskutku, blogování je více než móda.
-    lang: cs
-  - term: Indeed, his father has many qualities.
-    lang: en
-  - term: Vskutku, jeho otec měl mnohé přednosti.
-    lang: cs
-  - term: Fantastic work and very worthy indeed.
-    lang: en
-  - term: Fantastickou práci a opravdu velmi hodný.
-    lang: cs
+  
   state: ignoreImage
   freq: 150986.50000
   origins: ["corpus"]
@@ -7693,7 +7638,7 @@ concepts:
   img: party.jpeg
   freq: 148515.00000
   origins: ["corpus"]
-##  round   ################################################################# ▆ 67%
+##  round   ################################################################# █ 95%
 - terms: 
   - term: round
     lang: en
@@ -7704,10 +7649,17 @@ concepts:
   - term: zaokrouhlit
     lang: cs
     tts: zaokrouhlit.mp3
+  examples: 
+
+  - term: That's a nice round number.
+    lang: en
+  - term: To je pěkně kulaté číslo.
+    lang: cs
+  
   img: round.jpeg
   freq: 148447.00000
   origins: ["corpus"]
-##  idea   ################################################################## ▆ 67%
+##  idea   ################################################################## █ 95%
 - terms: 
   - term: idea
     lang: en
@@ -7715,10 +7667,17 @@ concepts:
   - term: nápad
     lang: cs
     tts: napad.mp3
+  examples: 
+
+  - term: That's just an idea.
+    lang: en
+  - term: To je jen nápad.
+    lang: cs
+ 
   img: idea.jpeg
   freq: 148188.00000
   origins: ["corpus"]
-##  information   ########################################################### ▆ 67%
+##  information   ########################################################### █ 95%
 - terms: 
   - term: information
     lang: en
@@ -7729,10 +7688,16 @@ concepts:
   - term: údaje
     lang: cs
     tts: udaje.mp3
+  examples: 
+
+  - term: Fill in please the following information!
+    lang: en
+  - term: Vyplňte prosím následující údaje!
+    lang: cs
   img: information.jpeg
   freq: 147869.50000
   origins: ["corpus"]
-##  above   ################################################################# ▆ 67%
+##  above   ################################################################# █ 95%
 - terms: 
   - term: above
     lang: en
@@ -7743,10 +7708,16 @@ concepts:
   - term: nad
     lang: cs
     tts: nad.mp3
+  examples: 
+  - term: It can't be seen from directly above.
+    lang: en
+  - term: Přímo zhora to není vidět.
+    lang: cs
+  
   img: above.jpeg
   freq: 147753.50000
   origins: ["corpus"]
-##  alone   ################################################################# ▆ 67%
+##  alone   ################################################################# █ 95%
 - terms: 
   - term: alone
     lang: en
@@ -7757,10 +7728,16 @@ concepts:
   - term: o samotě
     lang: cs
     tts: o samote.mp3
+  examples: 
+  - term: He is alone now.
+    lang: en
+  - term: Je teď tak sám.
+    lang: cs
+ 
   img: alone.jpeg
   freq: 147639.50000
   origins: ["corpus"]
-##  possible   ############################################################## ▆ 67%
+##  possible   ############################################################## █ 95%
 - terms: 
   - term: possible
     lang: en
@@ -7768,6 +7745,12 @@ concepts:
   - term: možné
     lang: cs
     tts: mozne.mp3
+  examples: 
+  - term: But it is possible.
+    lang: en
+  - term: Ale možné to je.
+    lang: cs
+  
   img: possible.jpeg
   freq: 147091.50000
   origins: ["corpus"]
@@ -7776,13 +7759,12 @@ concepts:
   - term: service
     lang: en
     tts: service.mp3
-  - term: služa
-    lang: cs
-    tts: sluza.mp3
+  - term: služba
+    lang: cs    
   img: service.jpeg
   freq: 146302.50000
   origins: ["corpus"]
-##  lay   ################################################################### ▆ 67%
+##  lay   ################################################################### █ 95%
 - terms: 
   - term: lay
     lang: en
@@ -7793,10 +7775,16 @@ concepts:
   - term: položit
     lang: cs
     tts: polozit.mp3
+  examples:   
+  - term: Hens lay white eggs.
+    lang: en
+  - term: Slepice kladou bílá vejce.
+    lang: cs
+  
   img: lay.jpeg
   freq: 146055.50000
   origins: ["corpus"]
-##  meet   ################################################################## ▆ 67%
+##  meet   ################################################################## █ 95%
 - terms: 
   - term: meet
     lang: en
@@ -7804,10 +7792,16 @@ concepts:
   - term: setkat
     lang: cs
     tts: setkat.mp3
+  examples: 
+  - term: Nice to meet you.
+    lang: en
+  - term: Je hezké se s tebou setkat.
+    lang: cs
+  
   img: meet.jpeg
   freq: 145712.00000
   origins: ["corpus"]
-##  art   ################################################################### ▆ 67%
+##  art   ################################################################### █ 95%
 - terms: 
   - term: art
     lang: en
@@ -7818,10 +7812,17 @@ concepts:
   - term: umělecké
     lang: cs
     tts: umelecke.mp3
+  examples: 
+
+  - term: You want to talk about art?
+    lang: en
+  - term: Chcete mluvit o umění?
+    lang: cs
+ 
   img: art.jpeg
   freq: 145697.50000
   origins: ["corpus"]
-##  london   ################################################################ ▆ 67%
+##  london   ################################################################ █ 95%
 - terms: 
   - term: london
     lang: en
@@ -7829,10 +7830,16 @@ concepts:
   - term: londýn
     lang: cs
     tts: londyn.mp3
+  examples: 
+  - term: I know London very well.
+    lang: en
+  - term: Znám Londýn velmi dobře.
+    lang: cs
+ 
   img: london.jpeg
   freq: 145606.00000
   origins: ["corpus"]
-##  laid   ################################################################## ▆ 67%
+##  laid   ################################################################## █ 95%
 - terms: 
   - term: laid
     lang: en
@@ -7843,10 +7850,16 @@ concepts:
   - term: stanovena
     lang: cs
     tts: stanovena.mp3
+  examples: 
+  - term: The hen laid an egg.
+    lang: en
+  - term: Slepice snesla vejce.
+    lang: cs
+  
   img: laid.jpeg
   freq: 145490.00000
   origins: ["corpus"]
-##  led   ################################################################### ▆ 67%
+##  led   ################################################################### █ 95%
 - terms: 
   - term: led
     lang: cs
@@ -7857,6 +7870,12 @@ concepts:
   - term: přivedla
     lang: cs
     tts: privedla.mp3
+  examples: 
+  - term: You led me here.
+    lang: en
+  - term: Tys mě sem přivedla.
+    lang: cs
+
   img: led.jpeg
   freq: 145393.00000
   origins: ["corpus"]
@@ -7871,7 +7890,7 @@ concepts:
   state: ignore
   freq: 145244.00000
   origins: ["corpus"]
-##  group   ################################################################# ▆ 67%
+##  group   ################################################################# █ 95%
 - terms: 
   - term: group
     lang: en
@@ -7882,10 +7901,16 @@ concepts:
   - term: seskupit
     lang: cs
     tts: seskupit.mp3
+  examples: 
+  - term: Group by size.
+    lang: en
+  - term: Seskupit podle velikosti.
+    lang: cs
+  
   img: group.jpeg
   freq: 145209.00000
   origins: ["corpus"]
-##  doing   ################################################################# ▆ 67%
+##  doing   ################################################################# █ 95%
 - terms: 
   - term: doing
     lang: en
@@ -7896,10 +7921,16 @@ concepts:
   - term: činnost
     lang: cs
     tts: cinnost.mp3
+  examples: 
+
+  - term: What do you think he's doing?
+    lang: en
+  - term: Co myslíš, že dělá?
+    lang: cs 
   img: doing.jpeg
   freq: 145131.00000
   origins: ["corpus"]
-##  bad   ################################################################### ▆ 67%
+##  bad   ################################################################### █ 95%
 - terms: 
   - term: bad
     lang: en
@@ -7910,10 +7941,16 @@ concepts:
   - term: chybný
     lang: cs
     tts: chybny.mp3
+  examples: 
+  - term: It's not so bad.
+    lang: en
+  - term: Tak špatné to není.
+    lang: cs
+ 
   img: bad.jpeg
   freq: 143899.50000
   origins: ["corpus"]
-##  help   ################################################################## ▆ 67%
+##  help   ################################################################## █ 95%
 - terms: 
   - term: help
     lang: en
@@ -7924,10 +7961,16 @@ concepts:
   - term: pomoci
     lang: cs
     tts: pomoci.mp3
+  examples: 
+  - term: Let me help you.
+    lang: en
+  - term: Dovolte mi, abych Vám pomohl.
+    lang: cs
+ 
   img: help.jpeg
   freq: 143716.50000
   origins: ["corpus"]
-##  opened   ################################################################ ▆ 67%
+##  opened   ################################################################ █ 95%
 - terms: 
   - term: opened
     lang: en
@@ -7938,10 +7981,16 @@ concepts:
   - term: otevřel
     lang: cs
     tts: otevrel.mp3
+  examples: 
+  - term: An opened suitcase on the bed.
+    lang: en
+  - term: Otevřený kufr na posteli.
+    lang: cs
+ 
   img: opened.jpeg
   freq: 143625.00000
   origins: ["corpus"]
-##  ground   ################################################################ ▆ 67%
+##  ground   ################################################################ █ 95%
 - terms: 
   - term: ground
     lang: en
@@ -7952,10 +8001,16 @@ concepts:
   - term: zem
     lang: cs
     tts: zem.mp3
+  examples: 
+  - term: I hit the ground.
+    lang: en
+  - term: Dopadl jsem na zem.
+    lang: cs
+ 
   img: ground.jpeg
   freq: 143541.00000
   origins: ["corpus"]
-##  second   ################################################################ ▆ 67%
+##  second   ################################################################ █ 95%
 - terms: 
   - term: second
     lang: en
@@ -7966,10 +8021,17 @@ concepts:
   - term: sekunda
     lang: cs
     tts: sekunda.mp3
+  examples: 
+
+  - term: The second step is not required.
+    lang: en
+  - term: Druhý krok není vyžadován.
+    lang: cs
+ 
   img: second.jpeg
   freq: 143161.00000
   origins: ["corpus"]
-##  call   ################################################################## ▆ 67%
+##  call   ################################################################## █ 95%
 - terms: 
   - term: call
     lang: en
@@ -7980,10 +8042,17 @@ concepts:
   - term: hovor
     lang: cs
     tts: hovor.mp3
+  examples: 
+  
+  - term: I was afraid to call.
+    lang: en
+  - term: Bála jsem se zavolat.
+    lang: cs
+ 
   img: call.jpeg
   freq: 143102.00000
   origins: ["corpus"]
-##  town   ################################################################## ▆ 67%
+##  town   ################################################################## █ 95%
 - terms: 
   - term: town
     lang: en
@@ -7991,10 +8060,17 @@ concepts:
   - term: město
     lang: cs
     tts: mesto.mp3
+  examples: 
+
+  - term: It's a very small town.
+    lang: en
+  - term: Tohle je velmi malé město.
+    lang: cs
+  
   img: town.jpeg
   freq: 142754.00000
   origins: ["corpus"]
-##  near   ################################################################## ▆ 67%
+##  near   ################################################################## █ 95%
 - terms: 
   - term: near
     lang: en
@@ -8002,10 +8078,16 @@ concepts:
   - term: poblíž
     lang: cs
     tts: pobliz.mp3
+  examples: 
+  - term: It was near a beach.
+    lang: en
+  - term: Bylo to poblíž pláže.
+    lang: cs
+ 
   img: near.jpeg
   freq: 142483.50000
   origins: ["corpus"]
-##  strong   ################################################################ ▆ 67%
+##  strong   ################################################################ █ 95%
 - terms: 
   - term: strong
     lang: en
@@ -8016,10 +8098,17 @@ concepts:
   - term: pevné
     lang: cs
     tts: pevne.mp3
+  examples: 
+
+  - term: It was strong, whatever it was.
+    lang: en
+  - term: Bylo to silné, ať to bylo cokoliv.
+    lang: cs
+  
   img: strong.jpeg
   freq: 141950.50000
   origins: ["corpus"]
-##  along   ################################################################# ▆ 67%
+##  along   ################################################################# █ 95%
 - terms: 
   - term: along
     lang: en
@@ -8027,10 +8116,16 @@ concepts:
   - term: podél
     lang: cs
     tts: podel.mp3
+  examples: 
+
+  - term: We continued along the main road.
+    lang: en
+  - term: Pokračovali jsme po hlavní silnici.
+    lang: cs
   img: along.jpeg
   freq: 141819.00000
   origins: ["corpus"]
-##  public   ################################################################ ▆ 67%
+##  public   ################################################################ █ 95%
 - terms: 
   - term: public
     lang: en
@@ -8041,6 +8136,13 @@ concepts:
   - term: veřejnost
     lang: cs
     tts: verejnost.mp3
+  examples: 
+
+  - term: Be alert while using public transport.
+    lang: en
+  - term: Buď ostražitý při používání veřejné dopravy.
+    lang: cs
+  
   img: public.jpeg
   freq: 141621.00000
   origins: ["corpus"]
