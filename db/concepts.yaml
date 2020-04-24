@@ -7618,12 +7618,10 @@ concepts:
     lang: cs
     tts: opravdu.mp3
   examples: 
-
   - term: A very good plan indeed.
     lang: en
   - term: Opravdu moc dobrý plán.
     lang: cs
-  
   state: ignoreImage
   freq: 150986.50000
   origins: ["corpus"]
@@ -7650,12 +7648,10 @@ concepts:
     lang: cs
     tts: zaokrouhlit.mp3
   examples: 
-
   - term: That's a nice round number.
     lang: en
   - term: To je pěkně kulaté číslo.
     lang: cs
-  
   img: round.jpeg
   freq: 148447.00000
   origins: ["corpus"]
@@ -7668,12 +7664,10 @@ concepts:
     lang: cs
     tts: napad.mp3
   examples: 
-
   - term: That's just an idea.
     lang: en
   - term: To je jen nápad.
     lang: cs
- 
   img: idea.jpeg
   freq: 148188.00000
   origins: ["corpus"]
@@ -7689,7 +7683,6 @@ concepts:
     lang: cs
     tts: udaje.mp3
   examples: 
-
   - term: Fill in please the following information!
     lang: en
   - term: Vyplňte prosím následující údaje!
@@ -7713,7 +7706,6 @@ concepts:
     lang: en
   - term: Přímo zhora to není vidět.
     lang: cs
-  
   img: above.jpeg
   freq: 147753.50000
   origins: ["corpus"]
@@ -7733,7 +7725,6 @@ concepts:
     lang: en
   - term: Je teď tak sám.
     lang: cs
- 
   img: alone.jpeg
   freq: 147639.50000
   origins: ["corpus"]
@@ -7750,17 +7741,16 @@ concepts:
     lang: en
   - term: Ale možné to je.
     lang: cs
-  
   img: possible.jpeg
   freq: 147091.50000
   origins: ["corpus"]
-##  service   ############################################################### ▆ 67%
+##  service   ############################################################### ▆ 64%
 - terms: 
   - term: service
     lang: en
     tts: service.mp3
   - term: služba
-    lang: cs    
+    lang: cs
   img: service.jpeg
   freq: 146302.50000
   origins: ["corpus"]
@@ -7775,12 +7765,11 @@ concepts:
   - term: položit
     lang: cs
     tts: polozit.mp3
-  examples:   
+  examples: 
   - term: Hens lay white eggs.
     lang: en
   - term: Slepice kladou bílá vejce.
     lang: cs
-  
   img: lay.jpeg
   freq: 146055.50000
   origins: ["corpus"]
@@ -7797,7 +7786,6 @@ concepts:
     lang: en
   - term: Je hezké se s tebou setkat.
     lang: cs
-  
   img: meet.jpeg
   freq: 145712.00000
   origins: ["corpus"]
@@ -7813,12 +7801,10 @@ concepts:
     lang: cs
     tts: umelecke.mp3
   examples: 
-
   - term: You want to talk about art?
     lang: en
   - term: Chcete mluvit o umění?
     lang: cs
- 
   img: art.jpeg
   freq: 145697.50000
   origins: ["corpus"]
@@ -7835,7 +7821,6 @@ concepts:
     lang: en
   - term: Znám Londýn velmi dobře.
     lang: cs
- 
   img: london.jpeg
   freq: 145606.00000
   origins: ["corpus"]
@@ -7855,7 +7840,6 @@ concepts:
     lang: en
   - term: Slepice snesla vejce.
     lang: cs
-  
   img: laid.jpeg
   freq: 145490.00000
   origins: ["corpus"]
@@ -7875,7 +7859,6 @@ concepts:
     lang: en
   - term: Tys mě sem přivedla.
     lang: cs
-
   img: led.jpeg
   freq: 145393.00000
   origins: ["corpus"]
@@ -7906,7 +7889,6 @@ concepts:
     lang: en
   - term: Seskupit podle velikosti.
     lang: cs
-  
   img: group.jpeg
   freq: 145209.00000
   origins: ["corpus"]
@@ -7922,11 +7904,10 @@ concepts:
     lang: cs
     tts: cinnost.mp3
   examples: 
-
   - term: What do you think he's doing?
     lang: en
   - term: Co myslíš, že dělá?
-    lang: cs 
+    lang: cs
   img: doing.jpeg
   freq: 145131.00000
   origins: ["corpus"]
@@ -7946,7 +7927,6 @@ concepts:
     lang: en
   - term: Tak špatné to není.
     lang: cs
- 
   img: bad.jpeg
   freq: 143899.50000
   origins: ["corpus"]
@@ -7966,7 +7946,6 @@ concepts:
     lang: en
   - term: Dovolte mi, abych Vám pomohl.
     lang: cs
- 
   img: help.jpeg
   freq: 143716.50000
   origins: ["corpus"]
@@ -7986,7 +7965,6 @@ concepts:
     lang: en
   - term: Otevřený kufr na posteli.
     lang: cs
- 
   img: opened.jpeg
   freq: 143625.00000
   origins: ["corpus"]
@@ -8006,7 +7984,6 @@ concepts:
     lang: en
   - term: Dopadl jsem na zem.
     lang: cs
- 
   img: ground.jpeg
   freq: 143541.00000
   origins: ["corpus"]
@@ -8022,12 +7999,10 @@ concepts:
     lang: cs
     tts: sekunda.mp3
   examples: 
-
   - term: The second step is not required.
     lang: en
   - term: Druhý krok není vyžadován.
     lang: cs
- 
   img: second.jpeg
   freq: 143161.00000
   origins: ["corpus"]
@@ -8043,12 +8018,10 @@ concepts:
     lang: cs
     tts: hovor.mp3
   examples: 
-  
   - term: I was afraid to call.
     lang: en
   - term: Bála jsem se zavolat.
     lang: cs
- 
   img: call.jpeg
   freq: 143102.00000
   origins: ["corpus"]
@@ -8061,12 +8034,10 @@ concepts:
     lang: cs
     tts: mesto.mp3
   examples: 
-
   - term: It's a very small town.
     lang: en
   - term: Tohle je velmi malé město.
     lang: cs
-  
   img: town.jpeg
   freq: 142754.00000
   origins: ["corpus"]
@@ -8083,7 +8054,6 @@ concepts:
     lang: en
   - term: Bylo to poblíž pláže.
     lang: cs
- 
   img: near.jpeg
   freq: 142483.50000
   origins: ["corpus"]
@@ -8099,12 +8069,10 @@ concepts:
     lang: cs
     tts: pevne.mp3
   examples: 
-
   - term: It was strong, whatever it was.
     lang: en
   - term: Bylo to silné, ať to bylo cokoliv.
     lang: cs
-  
   img: strong.jpeg
   freq: 141950.50000
   origins: ["corpus"]
@@ -8117,7 +8085,6 @@ concepts:
     lang: cs
     tts: podel.mp3
   examples: 
-
   - term: We continued along the main road.
     lang: en
   - term: Pokračovali jsme po hlavní silnici.
@@ -8137,12 +8104,10 @@ concepts:
     lang: cs
     tts: verejnost.mp3
   examples: 
-
   - term: Be alert while using public transport.
     lang: en
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
-  
   img: public.jpeg
   freq: 141621.00000
   origins: ["corpus"]
