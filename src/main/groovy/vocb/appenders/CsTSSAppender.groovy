@@ -29,12 +29,21 @@ public class CsTSSAppender {
 
 				return
 			}
-
 			
-			t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
+			Closure synthIt = { Path p ->
 				ttsCz.synth(t.term, "violka", p.toString() )
 				i++;
 				dbMan.save()
+			}
+
+			
+			if (!t.tts) {
+				t.tts = dbMan.resolveMedia(t.term, "mp3", synthIt)
+			} else { //has medialink 
+				//but doesn't exist
+				if (!dbMan.linkedMediaExists(t.tts)) {
+					synthIt(dbMan.mediaLinkPath(t.tts))
+				}
 			}
 			
 		}
