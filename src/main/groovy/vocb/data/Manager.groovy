@@ -153,7 +153,7 @@ public class Manager {
 		println "Not used:"
 		mediaPath.toFile().eachFile { File f->
 			if ( !grp.containsKey(f.name)) {
-				println "rm -f ${f}"
+				println "rm -f '${f}'"
 
 			}
 		}
@@ -166,8 +166,14 @@ public class Manager {
 			}
 		}
 		println "${'-'*80}"
-
-
+	}
+	
+	void printCsText() {
+		db.concepts.each {Concept c ->
+			(c.termsByLang("cs") + c.exsamplesByLang("cs")).each {
+				println it.term
+			}
+		}
 	}
 
 
@@ -176,6 +182,7 @@ public class Manager {
 		Manager dbMan = new Manager()
 		dbMan.load()
 		dbMan.findBrokenMedia()
+		
 		//dbMan.save()
 		//println "${Helper.roundDecimal(dbMan.completeness*100, 0)}% completed"
 

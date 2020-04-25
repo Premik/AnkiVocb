@@ -345,7 +345,7 @@ concepts:
 ##  false   #################################################################
 - terms: 
   - term: "false"
-    lang: cs
+    lang: en
     tts: false.mp3
   - term: nepravdivý
     lang: cs
@@ -1671,9 +1671,7 @@ concepts:
 ##  def   ###################################################################
 - terms: 
   - term: def
-    lang: cs
-  - term: definition
-    lang: cs
+    lang: en
   state: ignore
   freq: 748992.00000
   origins: ["corpus"]
@@ -3782,7 +3780,7 @@ concepts:
 ##  gutenberg   #############################################################
 - terms: 
   - term: gutenberg
-    lang: cs
+    lang: en
   state: ignore
   freq: 328324.00000
   origins: ["corpus"]
@@ -4821,9 +4819,9 @@ concepts:
   - term: I almost lost you.
     lang: en
     tts: I almost lost you.mp3
-  - term: Skoro jsem tě stratil.
+  - term: Skoro jsem tě ztratil.
     lang: cs
-    tts: Skoro jsem te stratil.mp3
+    tts: Skoro jsem te ztratil.mp3
   img: almost.jpeg
   freq: 247268.50000
   origins: ["corpus"]
@@ -4835,9 +4833,6 @@ concepts:
   - term: král
     lang: cs
     tts: kral.mp3
-  - term: kinga
-    lang: cs
-    tts: kinga.mp3
   examples: 
   - term: Long live the king!
     lang: en
@@ -5208,7 +5203,7 @@ concepts:
 ##  er   ####################################################################
 - terms: 
   - term: er
-    lang: cs
+    lang: en
   state: ignore
   freq: 230485.00000
   origins: ["corpus"]
@@ -5359,7 +5354,7 @@ concepts:
 ##  john   ##################################################################
 - terms: 
   - term: john
-    lang: cs
+    lang: en
     tts: john.mp3
   - term: Jenkík
     lang: cs
@@ -5941,9 +5936,7 @@ concepts:
 ##  sn   ####################################################################
 - terms: 
   - term: sn
-    lang: cs
-  - term: s.č
-    lang: cs
+    lang: en
   state: ignore
   freq: 198498.00000
   origins: ["corpus"]
@@ -7851,7 +7844,7 @@ concepts:
   - term: It can't be seen from directly above.
     lang: en
     tts: It cant be seen from directly above.mp3
-  - term: Přímo zhora to není vidět.
+  - term: Přímo shora to není vidět.
     lang: cs
     tts: Primo zhora to neni videt.mp3
   img: above.jpeg
@@ -9222,7 +9215,7 @@ concepts:
 ##  office   ################################################################
 - terms: 
   - term: office
-    lang: cs
+    lang: en
     tts: office.mp3
   - term: kancelář
     lang: cs
@@ -9345,7 +9338,7 @@ concepts:
 ##  blockquote   ############################################################
 - terms: 
   - term: blockquote
-    lang: cs
+    lang: en
   state: ignore
   freq: 123703.00000
   origins: ["corpus"]
@@ -9478,7 +9471,7 @@ concepts:
 ##  drew   ##################################################################
 - terms: 
   - term: drew
-    lang: cs
+    lang: en
     tts: drew.mp3
   - term: kreslil
     lang: cs
