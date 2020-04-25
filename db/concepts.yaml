@@ -6453,10 +6453,11 @@ concepts:
     lang: cs
     tts: syn.mp3
   examples: 
-  - term: He's not your son, he's mine.
+  - term: He's not your son. He's mine.
     lang: en
-  - term: On není tvůj syn, je můj.
-    lang: cs  
+  - term: On není tvůj syn. Je můj.
+    lang: cs
+    tts: On neni tvuj syn Je muj.mp3
   img: son.jpeg
   freq: 179061.00000
   origins: ["corpus"]
@@ -7271,18 +7272,18 @@ concepts:
   - term: order
     lang: en
     tts: order.mp3
-  - term: objednáva
+  - term: objednávka
     lang: cs
-    tts: objednava.mp3
+    tts: objednavka.mp3
   - term: pořadí
     lang: cs
     tts: poradi.mp3
   examples: 
-  - term: Not necessarily in that order.
+  - term: You can order by phone.
     lang: en
-  - term: Né nutně v tomhle pořadí.
+  - term: Můžete si objednat telefonicky.
     lang: cs
-   
+    tts: Muzete si objednat telefonicky.mp3
   img: order.jpeg
   freq: 160771.50000
   origins: ["corpus"]
@@ -8486,7 +8487,7 @@ concepts:
   img: high.jpeg
   freq: 137721.50000
   origins: ["corpus"]
-##  interest   ############################################################## █ 97%
+##  interest   ############################################################## █ 92%
 - terms: 
   - term: interest
     lang: en
@@ -8501,7 +8502,6 @@ concepts:
   - term: We appreciate your interest.
     lang: en
   - term: Ceníme si vašeho zájemu.
-    
   img: interest.jpeg
   freq: 137310.50000
   origins: ["corpus"]
@@ -8940,7 +8940,7 @@ concepts:
     lang: en
   - term: Dějiny jsou komplikované.
     lang: cs
-    
+    tts: Dejiny jsou komplikovane.mp3
   img: history.jpeg
   freq: 128431.00000
   origins: ["corpus"]

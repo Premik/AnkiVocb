@@ -54,15 +54,22 @@ public class WordsSource {
 			wf[b] <=> wf[a]
 		}.take(limit)
 		run(top.join(" "), limit)
-		
+	}
+	
+	void fromOwnSamples(int limit=100) {
+		sourceName = "conceptDbSamples"
+		dbMan.db.concepts.ex
 	}
 
 	public static void main(String[] args) {
 		/*WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)
 		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
 		 a.run(supa)*/
-		WordsSource a = new WordsSource()
-		a.fromCorups(500)
+		new WordsSource().tap {			
+			fromOwnSamples(5)			
+		}
+		//a.fromCorups(500)
+		
 
 
 		println "Done"
