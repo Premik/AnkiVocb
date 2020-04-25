@@ -171,4 +171,35 @@ class ModelTest {
 			assert c.completeness > 0.98
 		}
 	}
+
+	@Test
+	void notComplFull2() {
+		def j = new YamlSlurper().parseText( '''\
+	  terms: 
+	  - term: already
+	    lang: en
+	    tts: already.mp3
+	  - term: již
+	    lang: cs
+	    tts: jiz.mp3
+	  - term: už
+	    lang: cs
+	    tts: uz.mp3
+	  examples: 
+	  - term: I already regret it.
+	    lang: en
+	    tts: I already regret it.mp3
+	  - term: Už teď toho lituji.
+	  state: ignoreImage
+	  freq: 189941.00000
+	  origins: ["corpus"]'''.stripIndent())
+
+		assert j
+
+		new ConceptYamlStorage().tap {
+			Concept c = parseConcept(j)
+			println c
+			assert c.completeness > 0.98
+		}
+	}
 }

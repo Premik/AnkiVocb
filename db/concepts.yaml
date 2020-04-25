@@ -4707,15 +4707,14 @@ concepts:
   img: word.jpeg
   freq: 251288.00000
   origins: ["corpus"]
-##  moment   ################################################################ █ 96%
+##  moment   ################################################################
 - terms: 
   - term: moment
     lang: en
     tts: moment.mp3
-  - term: chilka
+  - term: chvilka
     lang: cs
-    tts: chilka.mp3
-  - term: momentu
+    tts: chvilka.mp3
   examples: 
   - term: I'll always remember that moment.
     lang: en
@@ -5131,7 +5130,7 @@ concepts:
   state: ignoreImage
   freq: 235474.00000
   origins: ["corpus"]
-##  power   ################################################################# █ 97%
+##  power   #################################################################
 - terms: 
   - term: power
     lang: en
@@ -5143,11 +5142,12 @@ concepts:
     lang: cs
     tts: vykon.mp3
   examples: 
+  - term: Shields at full power.
+    lang: en
+    tts: Shields at full power.mp3
   - term: Štíty na plný výkon.
     lang: cs
     tts: Stity na plny vykon.mp3
-  - term: Shields at full power.
-    lang: en
   img: power.jpeg
   freq: 233800.00000
   origins: ["corpus"]
@@ -5500,12 +5500,14 @@ concepts:
   img: looking.jpeg
   freq: 218510.00000
   origins: ["corpus"]
-##  use   ################################################################### █ 96%
+##  use   ###################################################################
 - terms: 
   - term: use
     lang: en
     tts: use.mp3
   - term: použít
+    lang: cs
+    tts: pouzit.mp3
   - term: využít
     lang: cs
     tts: vyuzit.mp3
@@ -6185,7 +6187,7 @@ concepts:
   img: read.jpeg
   freq: 190020.50000
   origins: ["corpus"]
-##  already   ############################################################### █ 95%
+##  already   ###############################################################
 - terms: 
   - term: already
     lang: en
@@ -6201,6 +6203,8 @@ concepts:
     lang: en
     tts: I already regret it.mp3
   - term: Už teď toho lituji.
+    lang: cs
+    tts: Uz ted toho lituji.mp3
   state: ignoreImage
   freq: 189941.00000
   origins: ["corpus"]
@@ -6468,7 +6472,7 @@ concepts:
   img: son.jpeg
   freq: 179061.00000
   origins: ["corpus"]
-##  several   ############################################################### █ 97%
+##  several   ###############################################################
 - terms: 
   - term: several
     lang: en
@@ -6477,11 +6481,12 @@ concepts:
     lang: cs
     tts: nekolik.mp3
   examples: 
+  - term: This process can take several minutes.
+    lang: en
+    tts: This process can take several minutes.mp3
   - term: Tento proces může trvat několik minut.
     lang: cs
     tts: Tento proces muze trvat nekolik minut.mp3
-  - term: This process can take several minutes.
-    lang: en
   img: several.jpeg
   freq: 178618.00000
   origins: ["corpus"]
@@ -7065,7 +7070,7 @@ concepts:
   img: book.jpeg
   freq: 166876.00000
   origins: ["corpus"]
-##  thus   ################################################################## ▇ 83%
+##  thus   ##################################################################
 - terms: 
   - term: thus
     lang: en
@@ -7083,6 +7088,7 @@ concepts:
   - term: Mluvil, čímž dokazoval, že je stále naživu.
     lang: cs
     tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
+  state: ignoreImage
   freq: 166130.00000
   origins: ["corpus"]
 ##  reached   ###############################################################
@@ -7420,22 +7426,24 @@ concepts:
   img: half.jpeg
   freq: 157947.50000
   origins: ["corpus"]
-##  within   ################################################################ █ 91%
+##  within   ################################################################
 - terms: 
   - term: within
     lang: en
     tts: within.mp3
   - term: v rámci
-    lang: uvnitř
+    lang: cs
+    tts: v ramci.mp3
   - term: uvnitř
     lang: cs
-  - term: v
-    lang: cs
+    tts: uvnitr.mp3
   examples: 
   - term: It was within two meters of the house.
     lang: en
+    tts: It was within two meters of the house.mp3
   - term: Bylo to do dvou metrů od domu.
     lang: cs
+    tts: Bylo to do dvou metru od domu.mp3
   img: within.jpeg
   freq: 156154.00000
   origins: ["corpus"]
@@ -7627,7 +7635,7 @@ concepts:
   img: week.jpeg
   freq: 152726.00000
   origins: ["corpus"]
-##  point   ################################################################# █ 93%
+##  point   #################################################################
 - terms: 
   - term: point
     lang: en
@@ -7637,31 +7645,14 @@ concepts:
     tts: bod.mp3
   - term: ukázat
     lang: cs
+    tts: ukazat.mp3
   examples: 
-  - term: Point to a data point.
+  - term: Entry point must be visible.
     lang: en
-  - term: Umístěte kurzor na datový bod.
+    tts: Entry point must be visible.mp3
+  - term: Vstupní bod musí být viditelný.
     lang: cs
-  - term: Entry point must be static.
-    lang: en
-  - term: Vstupní bod musí být statický.
-    lang: cs
-  - term: Connection point for child node.
-    lang: en
-  - term: Spojovací bod pro podřízený uzel
-    lang: cs
-  - term: A clickable point on the control.
-    lang: en
-  - term: Klepnout na ovládací bod.
-    lang: cs
-  - term: Point instances cannot be labeled.
-    lang: en
-  - term: Bod instance nemůže být označen.
-    lang: cs
-  - term: Click a curve point on a selected path.
-    lang: en
-  - term: Klepněte na bod křivky na vybrané cestě.
-    lang: cs
+    tts: Vstupni bod musi byt viditelny.mp3
   img: point.jpeg
   freq: 152624.50000
   origins: ["corpus"]
@@ -8590,7 +8581,7 @@ concepts:
   img: high.jpeg
   freq: 137721.50000
   origins: ["corpus"]
-##  interest   ############################################################## █ 95%
+##  interest   ##############################################################
 - terms: 
   - term: interest
     lang: en
@@ -8606,6 +8597,8 @@ concepts:
     lang: en
     tts: We appreciate your interest.mp3
   - term: Ceníme si vašeho zájemu.
+    lang: cs
+    tts: Cenime si vaseho zajemu.mp3
   img: interest.jpeg
   freq: 137310.50000
   origins: ["corpus"]
@@ -8888,7 +8881,7 @@ concepts:
   img: letters.jpeg
   freq: 132785.00000
   origins: ["corpus"]
-##  greater   ############################################################### █ 96%
+##  greater   ###############################################################
 - terms: 
   - term: greater
     lang: en
@@ -8897,6 +8890,8 @@ concepts:
     lang: cs
     tts: vetsi.mp3
   - term: vyšší
+    lang: cs
+    tts: vyssi.mp3
   examples: 
   - term: Value must be zero or greater.
     lang: en
@@ -9329,7 +9324,7 @@ concepts:
   img: early.jpeg
   freq: 124036.00000
   origins: ["corpus"]
-##  persons   ############################################################### █ 95%
+##  persons   ###############################################################
 - terms: 
   - term: persons
     lang: en
@@ -9338,14 +9333,12 @@ concepts:
     lang: cs
     tts: osoby.mp3
   examples: 
-  - term: The persons concerned must consent.
+  - term: Keep other persons at safe distance!
     lang: en
-  - term: Dotčené osoby s tím musí souhlasit.
+    tts: Keep other persons at safe distance.mp3
+  - term: Udržujte ostatní osoby v bezpečné vzdálenosti!
     lang: cs
-  - term: Keep other persons in a safe distance!
-    lang: en
-  - term: Ostatní osoby držte v bezpečné vzdálenosti!
-    lang: cs
+    tts: Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
   img: persons.jpeg
   freq: 123820.00000
   origins: ["corpus"]
@@ -9614,10 +9607,11 @@ concepts:
   img: behind.jpeg
   freq: 121776.00000
   origins: ["corpus"]
-##  cause   ################################################################# █ 98%
+##  cause   #################################################################
 - terms: 
   - term: cause
     lang: en
+    tts: cause.mp3
   - term: způsobit
     lang: cs
     tts: zpusobit.mp3
