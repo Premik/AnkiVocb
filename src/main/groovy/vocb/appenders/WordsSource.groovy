@@ -58,7 +58,10 @@ public class WordsSource {
 	
 	void fromOwnSamples(int limit=100) {
 		sourceName = "conceptDbSamples"
-		dbMan.db.concepts.ex
+		List<String> enSamples = dbMan.db.concepts.collect {Concept c->
+			c.examples.values().findAll {it.lang = "en"}		
+		}
+		
 	}
 
 	public static void main(String[] args) {

@@ -21,7 +21,10 @@
 		<div id="qa_box" class="card card2">
 			<div id="qa">
 			<!-- --------------------------------------------------------------------------   -->			
+
+			<button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
 			<div class="wrapper rounded shadow">
+
 				<div class="foreign foreignTerm">
 					<span>{{foreign}}</span>[sound:{{foreignTTS}}]
 				</div>
@@ -29,7 +32,7 @@
 				<!-- 
 				<figure class="img"><div style="background-image: url('apple.jpeg')"></div></figure>
 				-->
-				<figure class="img"><img class="shadow" src="apple.jpeg"></span></figure>
+				<figure class="img"><img class="shadow" src="{{img}}"></span></figure>
 
 				<!--	<figure class="img"><img src="lightBulb.png"></figure>
 				<figure class="img"><img src="air.png"></figure>
@@ -39,6 +42,15 @@
 				<div class="native native1 hintCover">
 					{{native}}[sound:{{nativeTTS}}]
 				</div>
+
+				
+
+				<div class="hintPane">					
+						<div id="hint" class="native">
+						</div>
+					</div>
+				<hr>
+
 			
 
 				<!-- {{#nativeAlt}} -->
