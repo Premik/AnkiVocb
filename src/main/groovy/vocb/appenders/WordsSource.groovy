@@ -2,6 +2,7 @@ package vocb.appenders
 
 import vocb.Helper
 import vocb.corp.Corpus
+import vocb.corp.Similarity
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
@@ -13,6 +14,7 @@ public class WordsSource {
 	WordNormalizer wn = new WordNormalizer()
 	BigDecimal minFreq = 0
 	@Lazy Corpus corp = Corpus.buildDef()
+	Similarity sim = new Similarity()
 
 
 	@Lazy Manager dbMan = {
@@ -48,7 +50,6 @@ public class WordsSource {
 						c.origins = []
 					}
 					c.origins.add(sourceName)
-					
 				}
 				continue
 			}
@@ -65,10 +66,7 @@ public class WordsSource {
 
 	void fromCorups(int limit=100) {
 		sourceName = "corpus"
-		Map<String, BigDecimal> wf = corp.wordFreq
-		String[] top = wf.keySet().sort { String a, String b->
-			wf[b] <=> wf[a]
-		}.take(limit)
+		String[] top = corp.sortedByFreq.take(limit)
 		fromText(top.join(" "), limit)
 	}
 
@@ -77,16 +75,46 @@ public class WordsSource {
 		fromText(dbMan.allTextWithLang("en").join("\n"), limit)
 	}
 
+	void decomposition() {
+		sourceName = "decomp"
+		dbMan.db
+		dbMan.db.concepts.stream()
+				.flatMap{ Concept c ->
+					c.termsByLang("en").collect {it.term}.stream()
+				}
+				.flatMap { String s->
+					wn.tokens(s) //Phrases by words
+				}
+				.flatMap { String s->
+					sim.allSubstringsOf(s).stream() //Decompose
+				}
+				.filter {String s->
+					s.length() > 2  //Longer than 2 letter words candidates
+				}
+				.filter {String s->
+					(corp.wordFreq[s]?:0) > minFreq //Reasonable words
+				}.filter {String s->
+					!dbMan.conceptsByTerm.containsKey(s) //Ignore already known words
+				}.collect()
+				.toSet()
+				.sort{ String a, String b -> 
+					corp.wordFreq[b] <=> corp.wordFreq[a]
+				}
+				.each {
+					println "${it} ${corp.wordFreq[it]}"
+				}
+	}
+
 	public static void main(String[] args) {
 		/*WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)
 		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
 		 a.run(supa)*/
 		new WordsSource().tap {
-			fromOwnSamples(100)
+			//fromOwnSamples(100)
+			minFreq = 40000
+			decomposition()
 		}
 		//a.fromCorups(500)
-
-
 
 		println "Done"
 	}
