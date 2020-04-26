@@ -8,7 +8,7 @@
 ## vocb
 
 - Zkontrolovat i cs slova pomoci korpusu (preklepy)
-- Pridat slova z examples
+- Dekompozice slov
 - Pridat dvojslova (primarne korpus + examples?)
 
 ## Trizeni

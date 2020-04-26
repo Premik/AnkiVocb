@@ -2083,7 +2083,7 @@ concepts:
     tts: pred.mp3
   - term: dříve
     lang: cs
-    tts: drive.mp3
+    tts: drive-cs.mp3
   examples: 
   - term: Read the instructions before use.
     lang: en
@@ -7505,8 +7505,7 @@ concepts:
 ##  la   ####################################################################
 - terms: 
   - term: la
-    lang: cs
-    tts: la.mp3
+    lang: en
   state: ignore
   freq: 154457.00000
   origins: ["corpus"]
@@ -9623,7 +9622,7 @@ concepts:
   state: ignoreImage
   freq: 121764.50000
   origins: ["corpus", "conceptDbSamples"]
-##  six   ################################################################### ▅ 50%
+##  six   ################################################################### ▆ 67%
 - terms: 
   - term: six
     lang: en
@@ -9631,9 +9630,10 @@ concepts:
   - term: šest
     lang: cs
     tts: sest.mp3
+  img: six.jpeg
   freq: 121091.50000
   origins: ["conceptDbSamples"]
-##  fine   ################################################################## ▅ 50%
+##  fine   ################################################################## ▆ 67%
 - terms: 
   - term: fine
     lang: en
@@ -9644,9 +9644,10 @@ concepts:
   - term: jemný
     lang: cs
     tts: jemny.mp3
+  state: ignoreImage
   freq: 119116.50000
   origins: ["conceptDbSamples"]
-##  million   ############################################################### ▅ 50%
+##  million   ############################################################### ▆ 67%
 - terms: 
   - term: million
     lang: en
@@ -9654,9 +9655,10 @@ concepts:
   - term: milion
     lang: cs
     tts: milion.mp3
+  img: million.jpeg
   freq: 118823.90000
   origins: ["conceptDbSamples"]
-##  bed   ################################################################### ▅ 50%
+##  bed   ################################################################### ▆ 67%
 - terms: 
   - term: bed
     lang: en
@@ -9664,9 +9666,10 @@ concepts:
   - term: postel
     lang: cs
     tts: postel.mp3
+  img: bed.jpeg
   freq: 118469.50000
   origins: ["conceptDbSamples"]
-##  wrote   ################################################################# ▅ 50%
+##  wrote   ################################################################# ▆ 67%
 - terms: 
   - term: wrote
     lang: en
@@ -9674,9 +9677,10 @@ concepts:
   - term: napsal
     lang: cs
     tts: napsal.mp3
+  img: wrote.jpeg
   freq: 118114.00000
   origins: ["conceptDbSamples"]
-##  road   ################################################################## ▅ 50%
+##  road   ################################################################## ▆ 67%
 - terms: 
   - term: road
     lang: en
@@ -9687,9 +9691,10 @@ concepts:
   - term: cesta
     lang: cs
     tts: cesta.mp3
+  img: road.jpeg
   freq: 117982.00000
   origins: ["conceptDbSamples"]
-##  lost   ################################################################## ▅ 50%
+##  lost   ################################################################## ▆ 67%
 - terms: 
   - term: lost
     lang: en
@@ -9700,9 +9705,10 @@ concepts:
   - term: prohrál
     lang: cs
     tts: prohral.mp3
+  img: lost.jpeg
   freq: 117075.00000
   origins: ["conceptDbSamples"]
-##  months   ################################################################ ▅ 50%
+##  months   ################################################################ ▆ 67%
 - terms: 
   - term: months
     lang: en
@@ -9710,9 +9716,10 @@ concepts:
   - term: měsíce
     lang: cs
     tts: mesice.mp3
+  img: months.jpeg
   freq: 116955.00000
   origins: ["conceptDbSamples"]
-##  ready   ################################################################# ▅ 50%
+##  ready   ################################################################# ▆ 67%
 - terms: 
   - term: ready
     lang: en
@@ -9720,9 +9727,10 @@ concepts:
   - term: připraven
     lang: cs
     tts: pripraven.mp3
+  img: ready.jpeg
   freq: 116349.50000
   origins: ["conceptDbSamples"]
-##  following   ############################################################# ▅ 50%
+##  following   ############################################################# ▆ 67%
 - terms: 
   - term: following
     lang: en
@@ -9730,9 +9738,10 @@ concepts:
   - term: následující
     lang: cs
     tts: nasledujici.mp3
+  img: following.jpeg
   freq: 116148.00000
   origins: ["conceptDbSamples"]
-##  ten   ################################################################### ▅ 50%
+##  ten   ################################################################### ▆ 67%
 - terms: 
   - term: ten
     lang: en
@@ -9740,9 +9749,10 @@ concepts:
   - term: deset
     lang: cs
     tts: deset.mp3
+  img: ten.jpeg
   freq: 115719.50000
   origins: ["conceptDbSamples"]
-##  mean   ################################################################## ▅ 50%
+##  mean   ################################################################## ▆ 67%
 - terms: 
   - term: mean
     lang: en
@@ -9753,9 +9763,10 @@ concepts:
   - term: střední
     lang: cs
     tts: stredni.mp3
+  img: mean.jpeg
   freq: 115545.50000
   origins: ["conceptDbSamples"]
-##  question   ############################################################## ▅ 50%
+##  question   ############################################################## ▆ 67%
 - terms: 
   - term: question
     lang: en
@@ -9766,9 +9777,10 @@ concepts:
   - term: dotaz
     lang: cs
     tts: dotaz.mp3
+  img: question.jpeg
   freq: 115524.00000
   origins: ["conceptDbSamples"]
-##  human   ################################################################# ▅ 50%
+##  human   ################################################################# ▆ 67%
 - terms: 
   - term: human
     lang: en
@@ -9779,9 +9791,10 @@ concepts:
   - term: člověk
     lang: cs
     tts: clovek.mp3
+  img: human.jpeg
   freq: 114381.00000
   origins: ["conceptDbSamples"]
-##  states   ################################################################ ▅ 50%
+##  states   ################################################################ ▆ 67%
 - terms: 
   - term: states
     lang: en
@@ -9792,9 +9805,10 @@ concepts:
   - term: stavy
     lang: cs
     tts: stavy.mp3
+  img: states.jpeg
   freq: 113807.00000
   origins: ["conceptDbSamples"]
-##  yes   ################################################################### ▅ 50%
+##  yes   ################################################################### ▆ 67%
 - terms: 
   - term: "yes"
     lang: en
@@ -9802,9 +9816,10 @@ concepts:
   - term: ano
     lang: cs
     tts: ano.mp3
+  img: yes.jpeg
   freq: 113547.65000
   origins: ["conceptDbSamples"]
-##  feel   ################################################################## ▅ 50%
+##  feel   ################################################################## ▆ 67%
 - terms: 
   - term: feel
     lang: en
@@ -9815,9 +9830,10 @@ concepts:
   - term: pocit
     lang: cs
     tts: pocit.mp3
+  img: feel.jpeg
   freq: 111647.50000
   origins: ["conceptDbSamples"]
-##  parts   ################################################################# ▅ 50%
+##  parts   ################################################################# ▆ 67%
 - terms: 
   - term: parts
     lang: en
@@ -9828,9 +9844,10 @@ concepts:
   - term: části
     lang: cs
     tts: casti.mp3
+  img: parts.jpeg
   freq: 111194.00000
   origins: ["conceptDbSamples"]
-##  talk   ################################################################## ▅ 50%
+##  talk   ################################################################## ▆ 67%
 - terms: 
   - term: talk
     lang: en
@@ -9841,9 +9858,10 @@ concepts:
   - term: hovořit
     lang: cs
     tts: hovorit.mp3
+  img: talk.jpeg
   freq: 111072.00000
   origins: ["conceptDbSamples"]
-##  fear   ################################################################## ▅ 50%
+##  fear   ################################################################## ▆ 67%
 - terms: 
   - term: fear
     lang: en
@@ -9854,9 +9872,10 @@ concepts:
   - term: obava
     lang: cs
     tts: obava.mp3
+  img: fear.jpeg
   freq: 109036.00000
   origins: ["conceptDbSamples"]
-##  live   ################################################################## ▅ 50%
+##  live   ################################################################## ▆ 67%
 - terms: 
   - term: live
     lang: en
@@ -9867,9 +9886,10 @@ concepts:
   - term: žijí
     lang: cs
     tts: ziji.mp3
+  img: live.jpeg
   freq: 108511.50000
   origins: ["conceptDbSamples"]
-##  learn   ################################################################# ▅ 50%
+##  learn   ################################################################# ▆ 67%
 - terms: 
   - term: learn
     lang: en
@@ -9880,9 +9900,10 @@ concepts:
   - term: učit
     lang: cs
     tts: ucit.mp3
+  img: learn.jpeg
   freq: 107429.85000
   origins: ["conceptDbSamples"]
-##  happy   ################################################################# ▅ 50%
+##  happy   ################################################################# ▆ 67%
 - terms: 
   - term: happy
     lang: en
@@ -9893,9 +9914,10 @@ concepts:
   - term: spokojeni
     lang: cs
     tts: spokojeni.mp3
+  img: happy.jpeg
   freq: 106887.00000
   origins: ["conceptDbSamples"]
-##  stopped   ############################################################### ▅ 50%
+##  stopped   ############################################################### ▆ 67%
 - terms: 
   - term: stopped
     lang: en
@@ -9906,9 +9928,10 @@ concepts:
   - term: přestal
     lang: cs
     tts: prestal.mp3
+  img: stopped.jpeg
   freq: 106661.00000
   origins: ["conceptDbSamples"]
-##  suddenly   ############################################################## ▅ 50%
+##  suddenly   ############################################################## ▆ 67%
 - terms: 
   - term: suddenly
     lang: en
@@ -9919,9 +9942,10 @@ concepts:
   - term: najednou
     lang: cs
     tts: najednou.mp3
+  state: ignoreImage
   freq: 104116.00000
   origins: ["conceptDbSamples"]
-##  red   ################################################################### ▅ 50%
+##  red   ################################################################### ▆ 67%
 - terms: 
   - term: red
     lang: en
@@ -9932,9 +9956,10 @@ concepts:
   - term: červená
     lang: cs
     tts: cervena.mp3
+  img: red.jpeg
   freq: 103902.50000
   origins: ["conceptDbSamples"]
-##  dark   ################################################################## ▅ 50%
+##  dark   ################################################################## ▆ 67%
 - terms: 
   - term: dark
     lang: en
@@ -9945,9 +9970,10 @@ concepts:
   - term: temné
     lang: cs
     tts: temne.mp3
+  img: dark.jpeg
   freq: 102590.50000
   origins: ["conceptDbSamples"]
-##  sense   ################################################################# ▅ 50%
+##  sense   ################################################################# ▆ 67%
 - terms: 
   - term: sense
     lang: en
@@ -9955,9 +9981,10 @@ concepts:
   - term: smysl
     lang: cs
     tts: smysl.mp3
+  img: sense.jpeg
   freq: 101208.00000
   origins: ["conceptDbSamples"]
-##  attention   ############################################################# ▅ 50%
+##  attention   ############################################################# ▆ 67%
 - terms: 
   - term: attention
     lang: en
@@ -9968,9 +9995,10 @@ concepts:
   - term: upozornění
     lang: cs
     tts: upozorneni.mp3
+  img: attention.jpeg
   freq: 99764.00000
   origins: ["conceptDbSamples"]
-##  wait   ################################################################## ▅ 50%
+##  wait   ################################################################## ▆ 67%
 - terms: 
   - term: wait
     lang: en
@@ -9981,9 +10009,10 @@ concepts:
   - term: čekat
     lang: cs
     tts: cekat.mp3
+  img: wait.jpeg
   freq: 98993.45000
   origins: ["conceptDbSamples"]
-##  where   ################################################################# ▅ 50%
+##  where   ################################################################# ▆ 67%
 - terms: 
   - term: where
     lang: en
@@ -9994,9 +10023,10 @@ concepts:
   - term: kam
     lang: cs
     tts: kam.mp3
+  img: where.jpeg
   freq: 98596.79500
   origins: ["conceptDbSamples"]
-##  job   ################################################################### ▅ 50%
+##  job   ################################################################### ▆ 67%
 - terms: 
   - term: job
     lang: en
@@ -10007,9 +10037,10 @@ concepts:
   - term: práce
     lang: cs
     tts: prace.mp3
+  img: job.jpeg
   freq: 95596.85000
   origins: ["conceptDbSamples"]
-##  trying   ################################################################ ▅ 50%
+##  trying   ################################################################ ▆ 67%
 - terms: 
   - term: trying
     lang: en
@@ -10020,9 +10051,10 @@ concepts:
   - term: pokouší
     lang: cs
     tts: pokousi.mp3
+  img: trying.jpeg
   freq: 94706.70000
   origins: ["conceptDbSamples"]
-##  strange   ############################################################### ▅ 50%
+##  strange   ############################################################### ▆ 67%
 - terms: 
   - term: strange
     lang: en
@@ -10033,9 +10065,10 @@ concepts:
   - term: zvláštní
     lang: cs
     tts: zvlastni.mp3
+  img: strange.jpeg
   freq: 93945.50000
   origins: ["conceptDbSamples"]
-##  car   ################################################################### ▅ 50%
+##  car   ################################################################### ▆ 67%
 - terms: 
   - term: car
     lang: en
@@ -10043,9 +10076,10 @@ concepts:
   - term: auto
     lang: cs
     tts: auto.mp3
+  img: car.jpeg
   freq: 90131.05000
   origins: ["conceptDbSamples"]
-##  play   ################################################################## ▅ 50%
+##  play   ################################################################## ▆ 67%
 - terms: 
   - term: play
     lang: en
@@ -10056,9 +10090,10 @@ concepts:
   - term: přehrát
     lang: cs
     tts: prehrat.mp3
+  img: play.jpeg
   freq: 89945.00000
   origins: ["conceptDbSamples"]
-##  save   ################################################################## ▅ 50%
+##  save   ################################################################## ▆ 67%
 - terms: 
   - term: save
     lang: en
@@ -10069,9 +10104,10 @@ concepts:
   - term: zachránit
     lang: cs
     tts: zachranit.mp3
+  img: save.jpeg
   freq: 89433.00000
   origins: ["conceptDbSamples"]
-##  add   ################################################################### ▅ 50%
+##  add   ################################################################### ▆ 67%
 - terms: 
   - term: add
     lang: en
@@ -10079,9 +10115,10 @@ concepts:
   - term: přidat
     lang: cs
     tts: pridat.mp3
+  img: add.jpeg
   freq: 89244.75000
   origins: ["conceptDbSamples"]
-##  continued   ############################################################# ▅ 50%
+##  continued   ############################################################# ▆ 67%
 - terms: 
   - term: continued
     lang: en
@@ -10089,9 +10126,10 @@ concepts:
   - term: pokračoval
     lang: cs
     tts: pokracoval.mp3
+  img: continued.jpeg
   freq: 89244.00000
   origins: ["conceptDbSamples"]
-##  run   ################################################################### ▅ 50%
+##  run   ################################################################### ▆ 67%
 - terms: 
   - term: run
     lang: en
@@ -10102,9 +10140,10 @@ concepts:
   - term: běžet
     lang: cs
     tts: bezet.mp3
+  img: run.jpeg
   freq: 88006.50000
   origins: ["conceptDbSamples"]
-##  single   ################################################################ ▅ 50%
+##  single   ################################################################ ▆ 67%
 - terms: 
   - term: single
     lang: en
@@ -10112,9 +10151,10 @@ concepts:
   - term: jediný
     lang: cs
     tts: jediny.mp3
+  img: single.jpeg
   freq: 87988.50000
   origins: ["conceptDbSamples"]
-##  late   ################################################################## ▅ 50%
+##  late   ################################################################## ▆ 67%
 - terms: 
   - term: late
     lang: en
@@ -10125,9 +10165,10 @@ concepts:
   - term: pozdě
     lang: cs
     tts: pozde.mp3
+  img: late.jpeg
   freq: 87283.50000
   origins: ["conceptDbSamples"]
-##  america   ############################################################### ▅ 50%
+##  america   ############################################################### ▆ 67%
 - terms: 
   - term: america
     lang: en
@@ -10135,9 +10176,10 @@ concepts:
   - term: amerika
     lang: cs
     tts: amerika.mp3
+  img: america.jpeg
   freq: 87195.60000
   origins: ["conceptDbSamples"]
-##  agree   ################################################################# ▅ 50%
+##  agree   ################################################################# ▆ 67%
 - terms: 
   - term: agree
     lang: en
@@ -10148,9 +10190,10 @@ concepts:
   - term: shodují
     lang: cs
     tts: shoduji.mp3
+  img: agree.jpeg
   freq: 86583.45000
   origins: ["conceptDbSamples"]
-##  talking   ############################################################### ▅ 50%
+##  talking   ############################################################### ▆ 67%
 - terms: 
   - term: talking
     lang: en
@@ -10161,9 +10204,10 @@ concepts:
   - term: hovoří
     lang: cs
     tts: hovori.mp3
+  img: talking.jpeg
   freq: 85391.10000
   origins: ["conceptDbSamples"]
-##  gold   ################################################################## ▅ 50%
+##  gold   ################################################################## ▆ 67%
 - terms: 
   - term: gold
     lang: en
@@ -10171,9 +10215,10 @@ concepts:
   - term: zlato
     lang: cs
     tts: zlato.mp3
+  img: gold.jpeg
   freq: 85222.00000
   origins: ["conceptDbSamples"]
-##  class   ################################################################# ▅ 50%
+##  class   ################################################################# ▆ 67%
 - terms: 
   - term: class
     lang: en
@@ -10181,9 +10226,10 @@ concepts:
   - term: třída
     lang: cs
     tts: trida.mp3
+  img: class.jpeg
   freq: 84748.25000
   origins: ["conceptDbSamples"]
-##  neither   ############################################################### ▅ 50%
+##  neither   ############################################################### ▆ 67%
 - terms: 
   - term: neither
     lang: en
@@ -10191,9 +10237,10 @@ concepts:
   - term: ani
     lang: cs
     tts: ani.mp3
+  state: ignoreImage
   freq: 84393.50000
   origins: ["conceptDbSamples"]
-##  mine   ################################################################## ▅ 50%
+##  mine   ################################################################## ▆ 67%
 - terms: 
   - term: mine
     lang: en
@@ -10204,9 +10251,10 @@ concepts:
   - term: moje
     lang: cs
     tts: moje.mp3
+  img: mine.jpeg
   freq: 83382.00000
   origins: ["conceptDbSamples"]
-##  copies   ################################################################ ▅ 50%
+##  copies   ################################################################ ▆ 67%
 - terms: 
   - term: copies
     lang: en
@@ -10217,9 +10265,10 @@ concepts:
   - term: výtisky
     lang: cs
     tts: vytisky.mp3
+  img: copies.jpeg
   freq: 81479.70000
   origins: ["conceptDbSamples"]
-##  whatever   ############################################################## ▅ 50%
+##  whatever   ############################################################## ▆ 67%
 - terms: 
   - term: whatever
     lang: en
@@ -10230,9 +10279,10 @@ concepts:
   - term: jakékoli
     lang: cs
     tts: jakekoli.mp3
+  state: ignoreImage
   freq: 80374.50000
   origins: ["conceptDbSamples"]
-##  distance   ############################################################## ▅ 50%
+##  distance   ############################################################## ▆ 67%
 - terms: 
   - term: distance
     lang: en
@@ -10243,9 +10293,10 @@ concepts:
   - term: dálka
     lang: cs
     tts: dalka.mp3
+  img: distance.jpeg
   freq: 80213.00000
   origins: ["conceptDbSamples"]
-##  situation   ############################################################# ▅ 50%
+##  situation   ############################################################# ▆ 67%
 - terms: 
   - term: situation
     lang: en
@@ -10253,9 +10304,10 @@ concepts:
   - term: situace
     lang: cs
     tts: situace.mp3
+  img: situation.jpeg
   freq: 76627.20000
   origins: ["conceptDbSamples"]
-##  finally   ############################################################### ▅ 50%
+##  finally   ############################################################### ▆ 67%
 - terms: 
   - term: finally
     lang: en
@@ -10266,9 +10318,10 @@ concepts:
   - term: nakonec
     lang: cs
     tts: nakonec.mp3
+  state: ignoreImage
   freq: 75984.75000
   origins: ["conceptDbSamples"]
-##  doctor   ################################################################ ▅ 50%
+##  doctor   ################################################################ ▆ 67%
 - terms: 
   - term: doctor
     lang: en
@@ -10279,9 +10332,10 @@ concepts:
   - term: doktor
     lang: cs
     tts: doktor.mp3
+  img: doctor.jpeg
   freq: 73863.95000
   origins: ["conceptDbSamples"]
-##  visit   ################################################################# ▅ 50%
+##  visit   ################################################################# ▆ 67%
 - terms: 
   - term: visit
     lang: en
@@ -10289,9 +10343,10 @@ concepts:
   - term: návštěva
     lang: cs
     tts: navsteva.mp3
+  img: visit.jpeg
   freq: 72403.50000
   origins: ["conceptDbSamples"]
-##  afraid   ################################################################ ▅ 50%
+##  afraid   ################################################################ ▆ 67%
 - terms: 
   - term: afraid
     lang: en
@@ -10302,9 +10357,10 @@ concepts:
   - term: polekaný
     lang: cs
     tts: polekany.mp3
+  img: afraid.jpeg
   freq: 72097.00000
   origins: ["conceptDbSamples"]
-##  using   ################################################################# ▅ 50%
+##  using   ################################################################# ▆ 67%
 - terms: 
   - term: using
     lang: en
@@ -10315,9 +10371,10 @@ concepts:
   - term: s využitím
     lang: cs
     tts: s vyuzitim.mp3
+  img: using.jpeg
   freq: 71751.90000
   origins: ["conceptDbSamples"]
-##  green   ################################################################# ▅ 50%
+##  green   ################################################################# ▆ 67%
 - terms: 
   - term: green
     lang: en
@@ -10328,9 +10385,10 @@ concepts:
   - term: zelená
     lang: cs
     tts: zelena.mp3
+  img: green.jpeg
   freq: 71603.50000
   origins: ["conceptDbSamples"]
-##  create   ################################################################ ▅ 50%
+##  create   ################################################################ ▆ 67%
 - terms: 
   - term: create
     lang: en
@@ -10338,9 +10396,10 @@ concepts:
   - term: vytvořit
     lang: cs
     tts: vytvorit.mp3
+  img: create.jpeg
   freq: 71339.15000
   origins: ["conceptDbSamples"]
-##  easily   ################################################################ ▅ 50%
+##  easily   ################################################################ ▆ 67%
 - terms: 
   - term: easily
     lang: en
@@ -10351,9 +10410,10 @@ concepts:
   - term: jednoduše
     lang: cs
     tts: jednoduse.mp3
+  img: easily.jpeg
   freq: 69383.50000
   origins: ["conceptDbSamples"]
-##  plan   ################################################################## ▅ 50%
+##  plan   ################################################################## ▆ 67%
 - terms: 
   - term: plan
     lang: en
@@ -10364,9 +10424,10 @@ concepts:
   - term: záměr
     lang: cs
     tts: zamer.mp3
+  img: plan.jpeg
   freq: 67949.45000
   origins: ["conceptDbSamples"]
-##  fresh   ################################################################# ▅ 50%
+##  fresh   ################################################################# ▆ 67%
 - terms: 
   - term: fresh
     lang: en
@@ -10377,9 +10438,10 @@ concepts:
   - term: svěží
     lang: cs
     tts: svezi.mp3
+  img: fresh.jpeg
   freq: 67814.20000
   origins: ["conceptDbSamples"]
-##  lies   ################################################################## ▅ 50%
+##  lies   ################################################################## ▆ 67%
 - terms: 
   - term: lies
     lang: en
@@ -10390,9 +10452,10 @@ concepts:
   - term: spočívá
     lang: cs
     tts: spociva.mp3
+  img: lies.jpeg
   freq: 67551.00000
   origins: ["conceptDbSamples"]
-##  eight   ################################################################# ▅ 50%
+##  eight   ################################################################# ▆ 67%
 - terms: 
   - term: eight
     lang: en
@@ -10400,9 +10463,10 @@ concepts:
   - term: osm
     lang: cs
     tts: osm.mp3
+  img: eight.jpeg
   freq: 67362.45000
   origins: ["conceptDbSamples"]
-##  explain   ############################################################### ▅ 50%
+##  explain   ############################################################### ▆ 67%
 - terms: 
   - term: explain
     lang: en
@@ -10413,9 +10477,10 @@ concepts:
   - term: objasnit
     lang: cs
     tts: objasnit.mp3
+  img: explain.jpeg
   freq: 66041.10000
   origins: ["conceptDbSamples"]
-##  meeting   ############################################################### ▅ 50%
+##  meeting   ############################################################### ▆ 67%
 - terms: 
   - term: meeting
     lang: en
@@ -10426,9 +10491,10 @@ concepts:
   - term: setkání
     lang: cs
     tts: setkani.mp3
+  img: meeting.jpeg
   freq: 65939.15000
   origins: ["conceptDbSamples"]
-##  fingers   ############################################################### ▅ 50%
+##  fingers   ############################################################### ▆ 67%
 - terms: 
   - term: fingers
     lang: en
@@ -10436,9 +10502,10 @@ concepts:
   - term: prsty
     lang: cs
     tts: prsty.mp3
+  img: fingers.jpeg
   freq: 65564.40000
   origins: ["conceptDbSamples"]
-##  step   ################################################################## ▅ 50%
+##  step   ################################################################## ▆ 67%
 - terms: 
   - term: step
     lang: en
@@ -10446,9 +10513,10 @@ concepts:
   - term: krok
     lang: cs
     tts: krok.mp3
+  img: step.jpeg
   freq: 65474.00000
   origins: ["conceptDbSamples"]
-##  boat   ################################################################## ▅ 50%
+##  boat   ################################################################## ▆ 67%
 - terms: 
   - term: boat
     lang: en
@@ -10459,9 +10527,10 @@ concepts:
   - term: člun
     lang: cs
     tts: clun.mp3
+  img: boat.jpeg
   freq: 65417.75000
   origins: ["conceptDbSamples"]
-##  married   ############################################################### ▅ 50%
+##  married   ############################################################### ▆ 67%
 - terms: 
   - term: married
     lang: en
@@ -10472,9 +10541,10 @@ concepts:
   - term: vdaná
     lang: cs
     tts: vdana.mp3
+  img: married.jpeg
   freq: 65385.50000
   origins: ["conceptDbSamples"]
-##  garden   ################################################################ ▅ 50%
+##  garden   ################################################################ ▆ 67%
 - terms: 
   - term: garden
     lang: en
@@ -10482,9 +10552,10 @@ concepts:
   - term: zahrada
     lang: cs
     tts: zahrada.mp3
+  img: garden.jpeg
   freq: 65096.30000
   origins: ["conceptDbSamples"]
-##  secret   ################################################################ ▅ 50%
+##  secret   ################################################################ ▆ 67%
 - terms: 
   - term: secret
     lang: en
@@ -10495,9 +10566,10 @@ concepts:
   - term: tajemství
     lang: cs
     tts: tajemstvi.mp3
+  img: secret.jpeg
   freq: 64491.50000
   origins: ["conceptDbSamples"]
-##  enter   ################################################################# ▅ 50%
+##  enter   ################################################################# ▆ 67%
 - terms: 
   - term: enter
     lang: en
@@ -10508,9 +10580,10 @@ concepts:
   - term: vstoupit
     lang: cs
     tts: vstoupit.mp3
+  img: enter.jpeg
   freq: 64435.45000
   origins: ["conceptDbSamples"]
-##  sell   ################################################################## ▅ 50%
+##  sell   ################################################################## ▆ 67%
 - terms: 
   - term: sell
     lang: en
@@ -10518,9 +10591,10 @@ concepts:
   - term: prodat
     lang: cs
     tts: prodat.mp3
+  img: sell.jpeg
   freq: 64174.45000
   origins: ["conceptDbSamples"]
-##  dog   ################################################################### ▅ 50%
+##  dog   ################################################################### ▆ 67%
 - terms: 
   - term: dog
     lang: en
@@ -10528,9 +10602,10 @@ concepts:
   - term: pes
     lang: cs
     tts: pes.mp3
+  img: dog.jpeg
   freq: 64110.75000
   origins: ["conceptDbSamples"]
-##  maybe   ################################################################# ▅ 50%
+##  maybe   ################################################################# ▆ 67%
 - terms: 
   - term: maybe
     lang: en
@@ -10538,9 +10613,10 @@ concepts:
   - term: možná
     lang: cs
     tts: mozna.mp3
+  img: maybe.jpeg
   freq: 64096.10000
   origins: ["conceptDbSamples"]
-##  foreign   ############################################################### ▅ 50%
+##  foreign   ############################################################### ▆ 67%
 - terms: 
   - term: foreign
     lang: en
@@ -10551,9 +10627,10 @@ concepts:
   - term: cizí
     lang: cs
     tts: cizi.mp3
+  img: foreign.jpeg
   freq: 64074.75000
   origins: ["conceptDbSamples"]
-##  birds   ################################################################# ▅ 50%
+##  birds   ################################################################# ▆ 67%
 - terms: 
   - term: birds
     lang: en
@@ -10564,9 +10641,10 @@ concepts:
   - term: ptactvo
     lang: cs
     tts: ptactvo.mp3
+  img: birds.jpeg
   freq: 63162.60000
   origins: ["conceptDbSamples"]
-##  waited   ################################################################ ▅ 50%
+##  waited   ################################################################ ▆ 67%
 - terms: 
   - term: waited
     lang: en
@@ -10577,9 +10655,10 @@ concepts:
   - term: vyčkávala
     lang: cs
     tts: vyckavala.mp3
+  img: waited.jpeg
   freq: 62808.10000
   origins: ["conceptDbSamples"]
-##  walk   ################################################################## ▅ 50%
+##  walk   ################################################################## ▆ 67%
 - terms: 
   - term: walk
     lang: en
@@ -10590,9 +10669,10 @@ concepts:
   - term: projít
     lang: cs
     tts: projit.mp3
+  img: walk.jpeg
   freq: 61245.00000
   origins: ["conceptDbSamples"]
-##  enemies   ############################################################### ▅ 50%
+##  enemies   ############################################################### ▆ 67%
 - terms: 
   - term: enemies
     lang: en
@@ -10600,9 +10680,10 @@ concepts:
   - term: nepřátele
     lang: cs
     tts: nepratele.mp3
+  img: enemies.jpeg
   freq: 60982.20000
   origins: ["conceptDbSamples"]
-##  anyone   ################################################################ ▅ 50%
+##  anyone   ################################################################ ▆ 67%
 - terms: 
   - term: anyone
     lang: en
@@ -10613,9 +10694,10 @@ concepts:
   - term: kohokoliv
     lang: cs
     tts: kohokoliv.mp3
+  img: anyone.jpeg
   freq: 60607.90000
   origins: ["conceptDbSamples"]
-##  usual   ################################################################# ▅ 50%
+##  usual   ################################################################# ▆ 67%
 - terms: 
   - term: usual
     lang: en
@@ -10626,9 +10708,10 @@ concepts:
   - term: běžné
     lang: cs
     tts: bezne.mp3
+  state: ignoreImage
   freq: 59858.50000
   origins: ["conceptDbSamples"]
-##  main   ################################################################## ▅ 50%
+##  main   ################################################################## ▆ 67%
 - terms: 
   - term: main
     lang: en
@@ -10636,9 +10719,10 @@ concepts:
   - term: hlavní
     lang: cs
     tts: hlavni.mp3
+  img: main.jpeg
   freq: 59778.50000
   origins: ["conceptDbSamples"]
-##  someone   ############################################################### ▅ 50%
+##  someone   ############################################################### ▆ 67%
 - terms: 
   - term: someone
     lang: en
@@ -10649,9 +10733,10 @@ concepts:
   - term: někoho
     lang: cs
     tts: nekoho.mp3
+  state: ignoreImage
   freq: 59644.10000
   origins: ["conceptDbSamples"]
-##  please   ################################################################ ▅ 50%
+##  please   ################################################################ ▆ 67%
 - terms: 
   - term: please
     lang: en
@@ -10662,9 +10747,10 @@ concepts:
   - term: potěšit
     lang: cs
     tts: potesit.mp3
+  img: please.jpeg
   freq: 58839.50000
   origins: ["conceptDbSamples"]
-##  shot   ################################################################## ▅ 50%
+##  shot   ################################################################## ▆ 67%
 - terms: 
   - term: shot
     lang: cs
@@ -10675,9 +10761,10 @@ concepts:
   - term: záběr
     lang: cs
     tts: zaber.mp3
+  img: shot.jpeg
   freq: 58465.05000
   origins: ["conceptDbSamples"]
-##  stay   ################################################################## ▅ 50%
+##  stay   ################################################################## ▆ 67%
 - terms: 
   - term: stay
     lang: en
@@ -10688,9 +10775,10 @@ concepts:
   - term: pobyt
     lang: cs
     tts: pobyt.mp3
+  state: ignoreImage
   freq: 57836.50000
   origins: ["conceptDbSamples"]
-##  grown   ################################################################# ▅ 50%
+##  grown   ################################################################# ▆ 67%
 - terms: 
   - term: grown
     lang: en
@@ -10701,9 +10789,10 @@ concepts:
   - term: vypěstovány
     lang: cs
     tts: vypestovany.mp3
+  img: grown.jpeg
   freq: 57772.60000
   origins: ["conceptDbSamples"]
-##  safe   ################################################################## ▅ 50%
+##  safe   ################################################################## ▆ 67%
 - terms: 
   - term: safe
     lang: en
@@ -10714,9 +10803,10 @@ concepts:
   - term: trezor
     lang: cs
     tts: trezor.mp3
+  img: safe.jpeg
   freq: 57432.25000
   origins: ["conceptDbSamples"]
-##  worth   ################################################################# ▅ 50%
+##  worth   ################################################################# ▆ 67%
 - terms: 
   - term: worth
     lang: en
@@ -10727,9 +10817,10 @@ concepts:
   - term: hodnota
     lang: cs
     tts: hodnota.mp3
+  img: worth.jpeg
   freq: 57291.50000
   origins: ["conceptDbSamples"]
-##  pull   ################################################################## ▅ 50%
+##  pull   ################################################################## ▆ 67%
 - terms: 
   - term: pull
     lang: en
@@ -10740,9 +10831,10 @@ concepts:
   - term: tahat
     lang: cs
     tts: tahat.mp3
+  img: pull.jpeg
   freq: 57029.25000
   origins: ["conceptDbSamples"]
-##  clearly   ############################################################### ▅ 50%
+##  clearly   ############################################################### ▆ 67%
 - terms: 
   - term: clearly
     lang: en
@@ -10753,9 +10845,10 @@ concepts:
   - term: zřejmé
     lang: cs
     tts: zrejme.mp3
+  img: clearly.jpeg
   freq: 56615.20000
   origins: ["conceptDbSamples"]
-##  energy   ################################################################ ▅ 50%
+##  energy   ################################################################ ▆ 67%
 - terms: 
   - term: energy
     lang: en
@@ -10763,9 +10856,10 @@ concepts:
   - term: energie
     lang: cs
     tts: energie.mp3
+  img: energy.jpeg
   freq: 55273.45000
   origins: ["conceptDbSamples"]
-##  directly   ############################################################## ▅ 50%
+##  directly   ############################################################## ▆ 67%
 - terms: 
   - term: directly
     lang: en
@@ -10776,9 +10870,10 @@ concepts:
   - term: bezprostředně
     lang: cs
     tts: bezprostredne.mp3
+  img: directly.jpeg
   freq: 55211.70000
   origins: ["conceptDbSamples"]
-##  song   ################################################################## ▅ 50%
+##  song   ################################################################## ▆ 67%
 - terms: 
   - term: song
     lang: en
@@ -10789,9 +10884,10 @@ concepts:
   - term: skladba
     lang: cs
     tts: skladba.mp3
+  img: song.jpeg
   freq: 54221.30000
   origins: ["conceptDbSamples"]
-##  choice   ################################################################ ▅ 50%
+##  choice   ################################################################ ▆ 67%
 - terms: 
   - term: choice
     lang: en
@@ -10802,9 +10898,10 @@ concepts:
   - term: výběr
     lang: cs
     tts: vyber.mp3
+  img: choice.jpeg
   freq: 54079.15000
   origins: ["conceptDbSamples"]
-##  size   ################################################################## ▅ 50%
+##  size   ################################################################## ▆ 67%
 - terms: 
   - term: size
     lang: en
@@ -10815,9 +10912,10 @@ concepts:
   - term: rozměry
     lang: cs
     tts: rozmery.mp3
+  img: size.jpeg
   freq: 53495.50000
   origins: ["conceptDbSamples"]
-##  rules   ################################################################# ▅ 50%
+##  rules   ################################################################# ▆ 67%
 - terms: 
   - term: rules
     lang: en
@@ -10828,9 +10926,10 @@ concepts:
   - term: předpisy
     lang: cs
     tts: predpisy.mp3
+  img: rules.jpeg
   freq: 53386.50000
   origins: ["conceptDbSamples"]
-##  value   ################################################################# ▅ 50%
+##  value   ################################################################# ▆ 67%
 - terms: 
   - term: value
     lang: en
@@ -10838,9 +10937,10 @@ concepts:
   - term: hodnota
     lang: cs
     tts: hodnota.mp3
+  img: value.jpeg
   freq: 52616.40000
   origins: ["conceptDbSamples"]
-##  teeth   ################################################################# ▅ 50%
+##  teeth   ################################################################# ▆ 67%
 - terms: 
   - term: teeth
     lang: en
@@ -10851,9 +10951,10 @@ concepts:
   - term: chrup
     lang: cs
     tts: chrup.mp3
+  img: teeth.jpeg
   freq: 52449.00000
   origins: ["conceptDbSamples"]
-##  permission   ############################################################ ▅ 50%
+##  permission   ############################################################ ▆ 67%
 - terms: 
   - term: permission
     lang: en
@@ -10864,9 +10965,10 @@ concepts:
   - term: povolení
     lang: cs
     tts: povoleni.mp3
+  img: permission.jpeg
   freq: 52344.50000
   origins: ["conceptDbSamples"]
-##  won   ################################################################### ▅ 50%
+##  won   ################################################################### ▆ 67%
 - terms: 
   - term: won
     lang: en
@@ -10877,6 +10979,7 @@ concepts:
   - term: zvítězil
     lang: cs
     tts: zvitezil.mp3
+  img: won.jpeg
   freq: 51798.70000
   origins: ["conceptDbSamples"]
 ##  nice   ################################################################## ▅ 50%
@@ -11250,7 +11353,7 @@ concepts:
     tts: drivejsi.mp3
   - term: dříve
     lang: cs
-    tts: drive.mp3
+    tts: drive-cs.mp3
   freq: 40843.10000
   origins: ["conceptDbSamples"]
 ##  nobody   ################################################################ ▅ 50%
@@ -11618,7 +11721,7 @@ concepts:
     tts: letat.mp3
   - term: let
     lang: cs
-    tts: let.mp3
+    tts: let-cs.mp3
   freq: 28502.95000
   origins: ["conceptDbSamples"]
 ##  visible   ############################################################### ▅ 50%
