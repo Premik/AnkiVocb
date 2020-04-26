@@ -12027,14 +12027,7 @@ concepts:
     lang: en
   - term: fazole
     lang: cs
-  - term: bobů
-    lang: cs
-  - term: beana
-    lang: cs
-  - term: beane
-    lang: cs
-  - term: luštěniny
-    lang: cs
+  
   freq: 8738.49500
   origins: ["conceptDbSamples"]
 ##  hello   ################################################################# ▄ 45%
@@ -12045,25 +12038,16 @@ concepts:
     lang: cs
   - term: ahoj
     lang: cs
-  - term: haló
-    lang: cs
-  - term: zdravím
-    lang: cs
-  - term: nazdar
-    lang: cs
+  
   freq: 8621.20050
   origins: ["conceptDbSamples"]
 ##  transport   ############################################################# ▄ 45%
 - terms: 
   - term: transport
     lang: en
-  - term: dopravy
-    lang: cs
-  - term: přepravu
-    lang: cs
-  - term: transportní
-    lang: cs
-  - term: přenosu
+  - term: doprava
+    lang: cs  
+  - term: přenos
     lang: cs
   freq: 8144.60000
   origins: ["conceptDbSamples"]
@@ -12073,14 +12057,10 @@ concepts:
     lang: en
   - term: uvolněné
     lang: cs
-  - term: pohodovou
-    lang: cs
-  - term: zmírněny
-    lang: cs
+  
   - term: odpočinkový
     lang: cs
-  - term: obveselit
-    lang: cs
+  
   freq: 7812.45000
   origins: ["conceptDbSamples"]
 ##  jungle   ################################################################ ▄ 45%
@@ -12096,13 +12076,7 @@ concepts:
   - term: proving
     lang: en
   - term: prokazující
-    lang: cs
-  - term: dokazování
-    lang: cs
-  - term: prověrka
-    lang: cs
-  - term: ukázala
-    lang: cs
+    lang: cs  
   - term: které prokazují
     lang: cs
   freq: 7603.59000
@@ -12115,8 +12089,7 @@ concepts:
     lang: cs
   - term: sportovní
     lang: cs
-  - term: lehhoatletický
-    lang: cs
+  
   freq: 7581.47000
   origins: ["conceptDbSamples"]
 ##  values   ################################################################ ▄ 45%
@@ -12135,12 +12108,7 @@ concepts:
     lang: cs
   - term: dítě
     lang: cs
-  - term: chlapče
-    lang: cs
-  - term: děcko
-    lang: cs
-  - term: kide
-    lang: cs
+  
   freq: 6770.47000
   origins: ["conceptDbSamples"]
 ##  hen   ################################################################### ▄ 45%
@@ -12149,10 +12117,7 @@ concepts:
     lang: en
   - term: slepice
     lang: cs
-  - term: nosnici
-    lang: cs
-  - term: slepic
-    lang: cs
+  
   freq: 6569.58000
   origins: ["conceptDbSamples"]
 ##  liar   ################################################################## ▄ 45%
@@ -12179,30 +12144,24 @@ concepts:
     lang: en
   - term: počítá
     lang: cs
-  - term: počty
-    lang: cs
   - term: spočítá
     lang: cs
-  - term: započítává
-    lang: cs
-  - term: hrabat
-    lang: cs
+  
   freq: 5730.18000
   origins: ["conceptDbSamples"]
 ##  ll   #################################################################### ▄ 45%
 - terms: 
   - term: ll
-    lang: cs
-  - term: chny
-    lang: cs
-  - term: vš
-    lang: cs
+    lang: en
+  state: ignore
   freq: 5632.08000
   origins: ["conceptDbSamples"]
 ##  arrogant   ############################################################## ▄ 45%
 - terms: 
   - term: arrogant
     lang: en
+  - term: nadutý
+    lang: cs
   - term: arogantní
     lang: cs
   freq: 4196.96000
@@ -12214,11 +12173,7 @@ concepts:
   - term: biftek
     lang: cs
   - term: řízek
-    lang: cs
-  - term: stejk
-    lang: cs
-  - term: plátek
-    lang: cs
+    lang: cs  
   freq: 4027.81500
   origins: ["conceptDbSamples"]
 ##  drivers   ############################################################### ▄ 45%
@@ -12229,8 +12184,7 @@ concepts:
     lang: cs
   - term: řidiči
     lang: cs
-  - term: jezdci
-    lang: cs
+  
   freq: 3781.62000
   origins: ["conceptDbSamples"]
 ##  filter   ################################################################ ▄ 45%
@@ -12241,8 +12195,7 @@ concepts:
     lang: cs
   - term: filtrovat
     lang: cs
-  - term: zfiltruje
-    lang: cs
+  
   freq: 3768.36500
   origins: ["conceptDbSamples"]
 ##  kids   ################################################################## ▄ 45%
@@ -12253,12 +12206,7 @@ concepts:
     lang: cs
   - term: děcka
     lang: cs
-  - term: kozinky
-    lang: cs
-  - term: dětmi
-    lang: cs
-  - term: dětem
-    lang: cs
+  
   freq: 3525.29000
   origins: ["conceptDbSamples"]
 ##  zero   ################################################################## ▄ 45%
@@ -12267,26 +12215,13 @@ concepts:
     lang: en
   - term: nula
     lang: cs
-  - term: nulové
-    lang: cs
-  - term: nulu
-    lang: cs
-  - term: nule
-    lang: cs
-  - term: nuly
-    lang: cs
+  
   freq: 2789.54000
   origins: ["conceptDbSamples"]
 ##  relaxing   ############################################################## ▄ 45%
 - terms: 
   - term: relaxing
-    lang: en
-  - term: relaxační
-    lang: cs
-  - term: relaxaci
-    lang: cs
-  - term: pohodovou
-    lang: cs
+    lang: en    
   - term: uvolňující
     lang: cs
   - term: odpočinkové
@@ -12306,11 +12241,8 @@ concepts:
   - term: variants
     lang: en
   - term: varianty
-    lang: cs
-  - term: lišící se
-    lang: cs
-  - term: okruhů
-    lang: cs
+    lang: cs  
+  
   freq: 778.47600
   origins: ["conceptDbSamples"]
 ##  suitcase   ############################################################## ▄ 45%
@@ -12319,12 +12251,7 @@ concepts:
     lang: en
   - term: kufr
     lang: cs
-  - term: kufru
-    lang: cs
-  - term: kufrem
-    lang: cs
-  - term: kufřík
-    lang: cs
+  
   freq: 655.85000
   origins: ["conceptDbSamples"]
 ##  pointless   ############################################################# ▄ 45%
@@ -12343,8 +12270,7 @@ concepts:
     lang: en
   - term: nudle
     lang: cs
-  - term: těstoviny
-    lang: cs
+  
   freq: 345.72500
   origins: ["conceptDbSamples"]
 ##  sat   ################################################################### ▄ 45%
@@ -12353,28 +12279,18 @@ concepts:
     lang: en
   - term: seděl
     lang: cs
-  - term: so
-    lang: cs
   - term: posadil
     lang: cs
-  - term: sedl
-    lang: cs
-  - term: usedl
-    lang: cs
+  
   freq: 166.13800
   origins: ["conceptDbSamples"]
 ##  beers   ################################################################# ▄ 45%
 - terms: 
   - term: beers
     lang: en
-  - term: piv
-    lang: cs
   - term: piva
     lang: cs
-  - term: pivo
-    lang: cs
-  - term: pivem
-    lang: cs
+  
   freq: 159.01800
   origins: ["conceptDbSamples"]
 ##  seafood   ############################################################### ▄ 45%
@@ -12384,8 +12300,6 @@ concepts:
   - term: mořské plody
     lang: cs
   - term: plody moře
-    lang: cs
-  - term: rybí
-    lang: cs
+    lang: cs  
   freq: 27.68970
   origins: ["conceptDbSamples"]
