@@ -9623,19 +9623,21 @@ concepts:
   state: ignoreImage
   freq: 121764.50000
   origins: ["corpus", "conceptDbSamples"]
-##  six   ################################################################### ▄ 48%
+##  six   ################################################################### ▅ 50%
 - terms: 
   - term: six
     lang: en
+    tts: six.mp3
   - term: šest
     lang: cs
     tts: sest.mp3
   freq: 121091.50000
   origins: ["conceptDbSamples"]
-##  fine   ################################################################## ▄ 49%
+##  fine   ################################################################## ▅ 50%
 - terms: 
   - term: fine
     lang: en
+    tts: fine.mp3
   - term: pořádku
     lang: cs
     tts: poradku.mp3
@@ -9644,37 +9646,41 @@ concepts:
     tts: jemny.mp3
   freq: 119116.50000
   origins: ["conceptDbSamples"]
-##  million   ############################################################### ▄ 48%
+##  million   ############################################################### ▅ 50%
 - terms: 
   - term: million
     lang: en
+    tts: million.mp3
   - term: milion
     lang: cs
     tts: milion.mp3
   freq: 118823.90000
   origins: ["conceptDbSamples"]
-##  bed   ################################################################### ▄ 48%
+##  bed   ################################################################### ▅ 50%
 - terms: 
   - term: bed
     lang: en
+    tts: bed.mp3
   - term: postel
     lang: cs
     tts: postel.mp3
   freq: 118469.50000
   origins: ["conceptDbSamples"]
-##  wrote   ################################################################# ▄ 48%
+##  wrote   ################################################################# ▅ 50%
 - terms: 
   - term: wrote
     lang: en
+    tts: wrote.mp3
   - term: napsal
     lang: cs
     tts: napsal.mp3
   freq: 118114.00000
   origins: ["conceptDbSamples"]
-##  road   ################################################################## ▄ 49%
+##  road   ################################################################## ▅ 50%
 - terms: 
   - term: road
     lang: en
+    tts: road.mp3
   - term: silnice
     lang: cs
     tts: silnice.mp3
@@ -9683,10 +9689,11 @@ concepts:
     tts: cesta.mp3
   freq: 117982.00000
   origins: ["conceptDbSamples"]
-##  lost   ################################################################## ▄ 49%
+##  lost   ################################################################## ▅ 50%
 - terms: 
   - term: lost
     lang: en
+    tts: lost.mp3
   - term: ztratil
     lang: cs
     tts: ztratil.mp3
@@ -9695,46 +9702,51 @@ concepts:
     tts: prohral.mp3
   freq: 117075.00000
   origins: ["conceptDbSamples"]
-##  months   ################################################################ ▄ 48%
+##  months   ################################################################ ▅ 50%
 - terms: 
   - term: months
     lang: en
+    tts: months.mp3
   - term: měsíce
     lang: cs
     tts: mesice.mp3
   freq: 116955.00000
   origins: ["conceptDbSamples"]
-##  ready   ################################################################# ▄ 48%
+##  ready   ################################################################# ▅ 50%
 - terms: 
   - term: ready
     lang: en
+    tts: ready.mp3
   - term: připraven
     lang: cs
     tts: pripraven.mp3
   freq: 116349.50000
   origins: ["conceptDbSamples"]
-##  following   ############################################################# ▄ 48%
+##  following   ############################################################# ▅ 50%
 - terms: 
   - term: following
     lang: en
+    tts: following.mp3
   - term: následující
     lang: cs
     tts: nasledujici.mp3
   freq: 116148.00000
   origins: ["conceptDbSamples"]
-##  ten   ################################################################### ▄ 48%
+##  ten   ################################################################### ▅ 50%
 - terms: 
   - term: ten
     lang: en
+    tts: ten.mp3
   - term: deset
     lang: cs
     tts: deset.mp3
   freq: 115719.50000
   origins: ["conceptDbSamples"]
-##  mean   ################################################################## ▄ 49%
+##  mean   ################################################################## ▅ 50%
 - terms: 
   - term: mean
     lang: en
+    tts: mean.mp3
   - term: znamená
     lang: cs
     tts: znamena.mp3
@@ -9743,10 +9755,11 @@ concepts:
     tts: stredni.mp3
   freq: 115545.50000
   origins: ["conceptDbSamples"]
-##  question   ############################################################## ▄ 49%
+##  question   ############################################################## ▅ 50%
 - terms: 
   - term: question
     lang: en
+    tts: question.mp3
   - term: otázka
     lang: cs
     tts: otazka.mp3
@@ -9755,10 +9768,11 @@ concepts:
     tts: dotaz.mp3
   freq: 115524.00000
   origins: ["conceptDbSamples"]
-##  human   ################################################################# ▄ 49%
+##  human   ################################################################# ▅ 50%
 - terms: 
   - term: human
     lang: en
+    tts: human.mp3
   - term: lidské
     lang: cs
     tts: lidske.mp3
@@ -9767,10 +9781,11 @@ concepts:
     tts: clovek.mp3
   freq: 114381.00000
   origins: ["conceptDbSamples"]
-##  states   ################################################################ ▄ 49%
+##  states   ################################################################ ▅ 50%
 - terms: 
   - term: states
     lang: en
+    tts: states.mp3
   - term: státy
     lang: cs
     tts: staty.mp3
@@ -9779,19 +9794,21 @@ concepts:
     tts: stavy.mp3
   freq: 113807.00000
   origins: ["conceptDbSamples"]
-##  yes   ################################################################### ▄ 48%
+##  yes   ################################################################### ▅ 50%
 - terms: 
   - term: "yes"
     lang: en
+    tts: yes.mp3
   - term: ano
     lang: cs
     tts: ano.mp3
   freq: 113547.65000
   origins: ["conceptDbSamples"]
-##  feel   ################################################################## ▄ 49%
+##  feel   ################################################################## ▅ 50%
 - terms: 
   - term: feel
     lang: en
+    tts: feel.mp3
   - term: cítit
     lang: cs
     tts: citit.mp3
@@ -9800,10 +9817,11 @@ concepts:
     tts: pocit.mp3
   freq: 111647.50000
   origins: ["conceptDbSamples"]
-##  parts   ################################################################# ▄ 49%
+##  parts   ################################################################# ▅ 50%
 - terms: 
   - term: parts
     lang: en
+    tts: parts.mp3
   - term: díly
     lang: cs
     tts: dily.mp3
@@ -9812,10 +9830,11 @@ concepts:
     tts: casti.mp3
   freq: 111194.00000
   origins: ["conceptDbSamples"]
-##  talk   ################################################################## ▄ 49%
+##  talk   ################################################################## ▅ 50%
 - terms: 
   - term: talk
     lang: en
+    tts: talk.mp3
   - term: mluvit
     lang: cs
     tts: mluvit.mp3
@@ -9824,10 +9843,11 @@ concepts:
     tts: hovorit.mp3
   freq: 111072.00000
   origins: ["conceptDbSamples"]
-##  fear   ################################################################## ▄ 49%
+##  fear   ################################################################## ▅ 50%
 - terms: 
   - term: fear
     lang: en
+    tts: fear.mp3
   - term: strach
     lang: cs
     tts: strach.mp3
@@ -9849,10 +9869,11 @@ concepts:
     tts: ziji.mp3
   freq: 108511.50000
   origins: ["conceptDbSamples"]
-##  learn   ################################################################# ▄ 49%
+##  learn   ################################################################# ▅ 50%
 - terms: 
   - term: learn
     lang: en
+    tts: learn.mp3
   - term: naučit
     lang: cs
     tts: naucit.mp3
@@ -9861,10 +9882,11 @@ concepts:
     tts: ucit.mp3
   freq: 107429.85000
   origins: ["conceptDbSamples"]
-##  happy   ################################################################# ▄ 49%
+##  happy   ################################################################# ▅ 50%
 - terms: 
   - term: happy
     lang: en
+    tts: happy.mp3
   - term: šťastný
     lang: cs
     tts: stastny.mp3
@@ -9873,10 +9895,11 @@ concepts:
     tts: spokojeni.mp3
   freq: 106887.00000
   origins: ["conceptDbSamples"]
-##  stopped   ############################################################### ▄ 49%
+##  stopped   ############################################################### ▅ 50%
 - terms: 
   - term: stopped
     lang: en
+    tts: stopped.mp3
   - term: zastavil
     lang: cs
     tts: zastavil.mp3
@@ -9885,10 +9908,11 @@ concepts:
     tts: prestal.mp3
   freq: 106661.00000
   origins: ["conceptDbSamples"]
-##  suddenly   ############################################################## ▄ 49%
+##  suddenly   ############################################################## ▅ 50%
 - terms: 
   - term: suddenly
     lang: en
+    tts: suddenly.mp3
   - term: náhle
     lang: cs
     tts: nahle.mp3
@@ -9897,10 +9921,11 @@ concepts:
     tts: najednou.mp3
   freq: 104116.00000
   origins: ["conceptDbSamples"]
-##  red   ################################################################### ▄ 49%
+##  red   ################################################################### ▅ 50%
 - terms: 
   - term: red
     lang: en
+    tts: red.mp3
   - term: červené
     lang: cs
     tts: cervene.mp3
@@ -9909,10 +9934,11 @@ concepts:
     tts: cervena.mp3
   freq: 103902.50000
   origins: ["conceptDbSamples"]
-##  dark   ################################################################## ▄ 49%
+##  dark   ################################################################## ▅ 50%
 - terms: 
   - term: dark
     lang: en
+    tts: dark.mp3
   - term: tmavý
     lang: cs
     tts: tmavy.mp3
@@ -9921,19 +9947,21 @@ concepts:
     tts: temne.mp3
   freq: 102590.50000
   origins: ["conceptDbSamples"]
-##  sense   ################################################################# ▄ 48%
+##  sense   ################################################################# ▅ 50%
 - terms: 
   - term: sense
     lang: en
+    tts: sense.mp3
   - term: smysl
     lang: cs
     tts: smysl.mp3
   freq: 101208.00000
   origins: ["conceptDbSamples"]
-##  attention   ############################################################# ▄ 49%
+##  attention   ############################################################# ▅ 50%
 - terms: 
   - term: attention
     lang: en
+    tts: attention.mp3
   - term: pozornost
     lang: cs
     tts: pozornost.mp3
@@ -9942,10 +9970,11 @@ concepts:
     tts: upozorneni.mp3
   freq: 99764.00000
   origins: ["conceptDbSamples"]
-##  wait   ################################################################## ▄ 49%
+##  wait   ################################################################## ▅ 50%
 - terms: 
   - term: wait
     lang: en
+    tts: wait.mp3
   - term: počkejte
     lang: cs
     tts: pockejte.mp3
@@ -9954,10 +9983,11 @@ concepts:
     tts: cekat.mp3
   freq: 98993.45000
   origins: ["conceptDbSamples"]
-##  where   ################################################################# ▄ 49%
+##  where   ################################################################# ▅ 50%
 - terms: 
   - term: where
     lang: en
+    tts: where.mp3
   - term: kde
     lang: cs
     tts: kde.mp3
@@ -9966,10 +9996,11 @@ concepts:
     tts: kam.mp3
   freq: 98596.79500
   origins: ["conceptDbSamples"]
-##  job   ################################################################### ▄ 49%
+##  job   ################################################################### ▅ 50%
 - terms: 
   - term: job
     lang: en
+    tts: job.mp3
   - term: úloha
     lang: cs
     tts: uloha.mp3
@@ -9978,10 +10009,11 @@ concepts:
     tts: prace.mp3
   freq: 95596.85000
   origins: ["conceptDbSamples"]
-##  trying   ################################################################ ▄ 49%
+##  trying   ################################################################ ▅ 50%
 - terms: 
   - term: trying
     lang: en
+    tts: trying.mp3
   - term: zkouším
     lang: cs
     tts: zkousim.mp3
@@ -9990,10 +10022,11 @@ concepts:
     tts: pokousi.mp3
   freq: 94706.70000
   origins: ["conceptDbSamples"]
-##  strange   ############################################################### ▄ 49%
+##  strange   ############################################################### ▅ 50%
 - terms: 
   - term: strange
     lang: en
+    tts: strange.mp3
   - term: podivné
     lang: cs
     tts: podivne.mp3
@@ -10002,19 +10035,21 @@ concepts:
     tts: zvlastni.mp3
   freq: 93945.50000
   origins: ["conceptDbSamples"]
-##  car   ################################################################### ▄ 48%
+##  car   ################################################################### ▅ 50%
 - terms: 
   - term: car
     lang: en
+    tts: car.mp3
   - term: auto
     lang: cs
     tts: auto.mp3
   freq: 90131.05000
   origins: ["conceptDbSamples"]
-##  play   ################################################################## ▄ 49%
+##  play   ################################################################## ▅ 50%
 - terms: 
   - term: play
     lang: en
+    tts: play.mp3
   - term: hrát
     lang: cs
     tts: hrat.mp3
@@ -10023,10 +10058,11 @@ concepts:
     tts: prehrat.mp3
   freq: 89945.00000
   origins: ["conceptDbSamples"]
-##  save   ################################################################## ▄ 49%
+##  save   ################################################################## ▅ 50%
 - terms: 
   - term: save
     lang: en
+    tts: save.mp3
   - term: uložit
     lang: cs
     tts: ulozit.mp3
@@ -10035,28 +10071,31 @@ concepts:
     tts: zachranit.mp3
   freq: 89433.00000
   origins: ["conceptDbSamples"]
-##  add   ################################################################### ▄ 48%
+##  add   ################################################################### ▅ 50%
 - terms: 
   - term: add
     lang: en
+    tts: add.mp3
   - term: přidat
     lang: cs
     tts: pridat.mp3
   freq: 89244.75000
   origins: ["conceptDbSamples"]
-##  continued   ############################################################# ▄ 48%
+##  continued   ############################################################# ▅ 50%
 - terms: 
   - term: continued
     lang: en
+    tts: continued.mp3
   - term: pokračoval
     lang: cs
     tts: pokracoval.mp3
   freq: 89244.00000
   origins: ["conceptDbSamples"]
-##  run   ################################################################### ▄ 49%
+##  run   ################################################################### ▅ 50%
 - terms: 
   - term: run
     lang: en
+    tts: run.mp3
   - term: spustit
     lang: cs
     tts: spustit.mp3
@@ -10065,19 +10104,21 @@ concepts:
     tts: bezet.mp3
   freq: 88006.50000
   origins: ["conceptDbSamples"]
-##  single   ################################################################ ▄ 48%
+##  single   ################################################################ ▅ 50%
 - terms: 
   - term: single
     lang: en
+    tts: single.mp3
   - term: jediný
     lang: cs
     tts: jediny.mp3
   freq: 87988.50000
   origins: ["conceptDbSamples"]
-##  late   ################################################################## ▄ 49%
+##  late   ################################################################## ▅ 50%
 - terms: 
   - term: late
     lang: en
+    tts: late.mp3
   - term: pozdní
     lang: cs
     tts: pozdni.mp3
@@ -10086,19 +10127,21 @@ concepts:
     tts: pozde.mp3
   freq: 87283.50000
   origins: ["conceptDbSamples"]
-##  america   ############################################################### ▄ 48%
+##  america   ############################################################### ▅ 50%
 - terms: 
   - term: america
     lang: en
+    tts: america.mp3
   - term: amerika
     lang: cs
     tts: amerika.mp3
   freq: 87195.60000
   origins: ["conceptDbSamples"]
-##  agree   ################################################################# ▄ 49%
+##  agree   ################################################################# ▅ 50%
 - terms: 
   - term: agree
     lang: en
+    tts: agree.mp3
   - term: souhlasit
     lang: cs
     tts: souhlasit.mp3
@@ -10107,10 +10150,11 @@ concepts:
     tts: shoduji.mp3
   freq: 86583.45000
   origins: ["conceptDbSamples"]
-##  talking   ############################################################### ▄ 49%
+##  talking   ############################################################### ▅ 50%
 - terms: 
   - term: talking
     lang: en
+    tts: talking.mp3
   - term: povídání
     lang: cs
     tts: povidani.mp3
@@ -10119,37 +10163,41 @@ concepts:
     tts: hovori.mp3
   freq: 85391.10000
   origins: ["conceptDbSamples"]
-##  gold   ################################################################## ▄ 48%
+##  gold   ################################################################## ▅ 50%
 - terms: 
   - term: gold
     lang: en
+    tts: gold.mp3
   - term: zlato
     lang: cs
     tts: zlato.mp3
   freq: 85222.00000
   origins: ["conceptDbSamples"]
-##  class   ################################################################# ▄ 48%
+##  class   ################################################################# ▅ 50%
 - terms: 
   - term: class
     lang: en
+    tts: class.mp3
   - term: třída
     lang: cs
     tts: trida.mp3
   freq: 84748.25000
   origins: ["conceptDbSamples"]
-##  neither   ############################################################### ▄ 48%
+##  neither   ############################################################### ▅ 50%
 - terms: 
   - term: neither
     lang: en
+    tts: neither.mp3
   - term: ani
     lang: cs
     tts: ani.mp3
   freq: 84393.50000
   origins: ["conceptDbSamples"]
-##  mine   ################################################################## ▄ 49%
+##  mine   ################################################################## ▅ 50%
 - terms: 
   - term: mine
     lang: en
+    tts: mine.mp3
   - term: důl
     lang: cs
     tts: dul.mp3
@@ -10158,10 +10206,11 @@ concepts:
     tts: moje.mp3
   freq: 83382.00000
   origins: ["conceptDbSamples"]
-##  copies   ################################################################ ▄ 49%
+##  copies   ################################################################ ▅ 50%
 - terms: 
   - term: copies
     lang: en
+    tts: copies.mp3
   - term: kopie
     lang: cs
     tts: kopie.mp3
@@ -10170,10 +10219,11 @@ concepts:
     tts: vytisky.mp3
   freq: 81479.70000
   origins: ["conceptDbSamples"]
-##  whatever   ############################################################## ▄ 49%
+##  whatever   ############################################################## ▅ 50%
 - terms: 
   - term: whatever
     lang: en
+    tts: whatever.mp3
   - term: cokoliv
     lang: cs
     tts: cokoliv.mp3
@@ -10182,10 +10232,11 @@ concepts:
     tts: jakekoli.mp3
   freq: 80374.50000
   origins: ["conceptDbSamples"]
-##  distance   ############################################################## ▄ 49%
+##  distance   ############################################################## ▅ 50%
 - terms: 
   - term: distance
     lang: en
+    tts: distance.mp3
   - term: vzdálenost
     lang: cs
     tts: vzdalenost.mp3
@@ -10194,19 +10245,21 @@ concepts:
     tts: dalka.mp3
   freq: 80213.00000
   origins: ["conceptDbSamples"]
-##  situation   ############################################################# ▄ 48%
+##  situation   ############################################################# ▅ 50%
 - terms: 
   - term: situation
     lang: en
+    tts: situation.mp3
   - term: situace
     lang: cs
     tts: situace.mp3
   freq: 76627.20000
   origins: ["conceptDbSamples"]
-##  finally   ############################################################### ▄ 49%
+##  finally   ############################################################### ▅ 50%
 - terms: 
   - term: finally
     lang: en
+    tts: finally.mp3
   - term: konečně
     lang: cs
     tts: konecne.mp3
@@ -10215,10 +10268,11 @@ concepts:
     tts: nakonec.mp3
   freq: 75984.75000
   origins: ["conceptDbSamples"]
-##  doctor   ################################################################ ▄ 49%
+##  doctor   ################################################################ ▅ 50%
 - terms: 
   - term: doctor
     lang: en
+    tts: doctor.mp3
   - term: lékař
     lang: cs
     tts: lekar.mp3
@@ -10227,19 +10281,21 @@ concepts:
     tts: doktor.mp3
   freq: 73863.95000
   origins: ["conceptDbSamples"]
-##  visit   ################################################################# ▄ 48%
+##  visit   ################################################################# ▅ 50%
 - terms: 
   - term: visit
     lang: en
+    tts: visit.mp3
   - term: návštěva
     lang: cs
     tts: navsteva.mp3
   freq: 72403.50000
   origins: ["conceptDbSamples"]
-##  afraid   ################################################################ ▄ 49%
+##  afraid   ################################################################ ▅ 50%
 - terms: 
   - term: afraid
     lang: en
+    tts: afraid.mp3
   - term: strach
     lang: cs
     tts: strach.mp3
@@ -10248,10 +10304,11 @@ concepts:
     tts: polekany.mp3
   freq: 72097.00000
   origins: ["conceptDbSamples"]
-##  using   ################################################################# ▄ 49%
+##  using   ################################################################# ▅ 50%
 - terms: 
   - term: using
     lang: en
+    tts: using.mp3
   - term: pomocí
     lang: cs
     tts: pomoci.mp3
@@ -10260,10 +10317,11 @@ concepts:
     tts: s vyuzitim.mp3
   freq: 71751.90000
   origins: ["conceptDbSamples"]
-##  green   ################################################################# ▄ 49%
+##  green   ################################################################# ▅ 50%
 - terms: 
   - term: green
     lang: en
+    tts: green.mp3
   - term: zelené
     lang: cs
     tts: zelene.mp3
@@ -10272,19 +10330,21 @@ concepts:
     tts: zelena.mp3
   freq: 71603.50000
   origins: ["conceptDbSamples"]
-##  create   ################################################################ ▄ 48%
+##  create   ################################################################ ▅ 50%
 - terms: 
   - term: create
     lang: en
+    tts: create.mp3
   - term: vytvořit
     lang: cs
     tts: vytvorit.mp3
   freq: 71339.15000
   origins: ["conceptDbSamples"]
-##  easily   ################################################################ ▄ 49%
+##  easily   ################################################################ ▅ 50%
 - terms: 
   - term: easily
     lang: en
+    tts: easily.mp3
   - term: snadno
     lang: cs
     tts: snadno.mp3
@@ -10293,10 +10353,11 @@ concepts:
     tts: jednoduse.mp3
   freq: 69383.50000
   origins: ["conceptDbSamples"]
-##  plan   ################################################################## ▄ 49%
+##  plan   ################################################################## ▅ 50%
 - terms: 
   - term: plan
     lang: en
+    tts: plan.mp3
   - term: plánovat
     lang: cs
     tts: planovat.mp3
@@ -10305,10 +10366,11 @@ concepts:
     tts: zamer.mp3
   freq: 67949.45000
   origins: ["conceptDbSamples"]
-##  fresh   ################################################################# ▄ 49%
+##  fresh   ################################################################# ▅ 50%
 - terms: 
   - term: fresh
     lang: en
+    tts: fresh.mp3
   - term: čerstvé
     lang: cs
     tts: cerstve.mp3
@@ -10317,10 +10379,11 @@ concepts:
     tts: svezi.mp3
   freq: 67814.20000
   origins: ["conceptDbSamples"]
-##  lies   ################################################################## ▄ 49%
+##  lies   ################################################################## ▅ 50%
 - terms: 
   - term: lies
     lang: en
+    tts: lies.mp3
   - term: leží
     lang: cs
     tts: lezi.mp3
@@ -10329,19 +10392,21 @@ concepts:
     tts: spociva.mp3
   freq: 67551.00000
   origins: ["conceptDbSamples"]
-##  eight   ################################################################# ▄ 48%
+##  eight   ################################################################# ▅ 50%
 - terms: 
   - term: eight
     lang: en
+    tts: eight.mp3
   - term: osm
     lang: cs
     tts: osm.mp3
   freq: 67362.45000
   origins: ["conceptDbSamples"]
-##  explain   ############################################################### ▄ 49%
+##  explain   ############################################################### ▅ 50%
 - terms: 
   - term: explain
     lang: en
+    tts: explain.mp3
   - term: vysvětlit
     lang: cs
     tts: vysvetlit.mp3
@@ -10350,10 +10415,11 @@ concepts:
     tts: objasnit.mp3
   freq: 66041.10000
   origins: ["conceptDbSamples"]
-##  meeting   ############################################################### ▄ 49%
+##  meeting   ############################################################### ▅ 50%
 - terms: 
   - term: meeting
     lang: en
+    tts: meeting.mp3
   - term: schůzka
     lang: cs
     tts: schuzka.mp3
@@ -10362,28 +10428,31 @@ concepts:
     tts: setkani.mp3
   freq: 65939.15000
   origins: ["conceptDbSamples"]
-##  fingers   ############################################################### ▄ 48%
+##  fingers   ############################################################### ▅ 50%
 - terms: 
   - term: fingers
     lang: en
+    tts: fingers.mp3
   - term: prsty
     lang: cs
     tts: prsty.mp3
   freq: 65564.40000
   origins: ["conceptDbSamples"]
-##  step   ################################################################## ▄ 48%
+##  step   ################################################################## ▅ 50%
 - terms: 
   - term: step
     lang: en
+    tts: step.mp3
   - term: krok
     lang: cs
     tts: krok.mp3
   freq: 65474.00000
   origins: ["conceptDbSamples"]
-##  boat   ################################################################## ▄ 49%
+##  boat   ################################################################## ▅ 50%
 - terms: 
   - term: boat
     lang: en
+    tts: boat.mp3
   - term: loď
     lang: cs
     tts: lod.mp3
@@ -10392,10 +10461,11 @@ concepts:
     tts: clun.mp3
   freq: 65417.75000
   origins: ["conceptDbSamples"]
-##  married   ############################################################### ▄ 49%
+##  married   ############################################################### ▅ 50%
 - terms: 
   - term: married
     lang: en
+    tts: married.mp3
   - term: ženatý
     lang: cs
     tts: zenaty.mp3
@@ -10404,19 +10474,21 @@ concepts:
     tts: vdana.mp3
   freq: 65385.50000
   origins: ["conceptDbSamples"]
-##  garden   ################################################################ ▄ 48%
+##  garden   ################################################################ ▅ 50%
 - terms: 
   - term: garden
     lang: en
+    tts: garden.mp3
   - term: zahrada
     lang: cs
     tts: zahrada.mp3
   freq: 65096.30000
   origins: ["conceptDbSamples"]
-##  secret   ################################################################ ▄ 49%
+##  secret   ################################################################ ▅ 50%
 - terms: 
   - term: secret
     lang: en
+    tts: secret.mp3
   - term: tajné
     lang: cs
     tts: tajne.mp3
@@ -10425,10 +10497,11 @@ concepts:
     tts: tajemstvi.mp3
   freq: 64491.50000
   origins: ["conceptDbSamples"]
-##  enter   ################################################################# ▄ 49%
+##  enter   ################################################################# ▅ 50%
 - terms: 
   - term: enter
     lang: en
+    tts: enter.mp3
   - term: zadejte
     lang: cs
     tts: zadejte.mp3
@@ -10437,37 +10510,41 @@ concepts:
     tts: vstoupit.mp3
   freq: 64435.45000
   origins: ["conceptDbSamples"]
-##  sell   ################################################################## ▄ 48%
+##  sell   ################################################################## ▅ 50%
 - terms: 
   - term: sell
     lang: en
+    tts: sell.mp3
   - term: prodat
     lang: cs
     tts: prodat.mp3
   freq: 64174.45000
   origins: ["conceptDbSamples"]
-##  dog   ################################################################### ▄ 48%
+##  dog   ################################################################### ▅ 50%
 - terms: 
   - term: dog
     lang: en
+    tts: dog.mp3
   - term: pes
     lang: cs
     tts: pes.mp3
   freq: 64110.75000
   origins: ["conceptDbSamples"]
-##  maybe   ################################################################# ▄ 48%
+##  maybe   ################################################################# ▅ 50%
 - terms: 
   - term: maybe
     lang: en
+    tts: maybe.mp3
   - term: možná
     lang: cs
     tts: mozna.mp3
   freq: 64096.10000
   origins: ["conceptDbSamples"]
-##  foreign   ############################################################### ▄ 49%
+##  foreign   ############################################################### ▅ 50%
 - terms: 
   - term: foreign
     lang: en
+    tts: foreign.mp3
   - term: zahraniční
     lang: cs
     tts: zahranicni.mp3
@@ -10476,10 +10553,11 @@ concepts:
     tts: cizi.mp3
   freq: 64074.75000
   origins: ["conceptDbSamples"]
-##  birds   ################################################################# ▄ 49%
+##  birds   ################################################################# ▅ 50%
 - terms: 
   - term: birds
     lang: en
+    tts: birds.mp3
   - term: ptáci
     lang: cs
     tts: ptaci.mp3
@@ -10488,10 +10566,11 @@ concepts:
     tts: ptactvo.mp3
   freq: 63162.60000
   origins: ["conceptDbSamples"]
-##  waited   ################################################################ ▄ 49%
+##  waited   ################################################################ ▅ 50%
 - terms: 
   - term: waited
     lang: en
+    tts: waited.mp3
   - term: čekal
     lang: cs
     tts: cekal.mp3
@@ -10500,10 +10579,11 @@ concepts:
     tts: vyckavala.mp3
   freq: 62808.10000
   origins: ["conceptDbSamples"]
-##  walk   ################################################################## ▄ 49%
+##  walk   ################################################################## ▅ 50%
 - terms: 
   - term: walk
     lang: en
+    tts: walk.mp3
   - term: procházka
     lang: cs
     tts: prochazka.mp3
@@ -10512,19 +10592,21 @@ concepts:
     tts: projit.mp3
   freq: 61245.00000
   origins: ["conceptDbSamples"]
-##  enemies   ############################################################### ▄ 48%
+##  enemies   ############################################################### ▅ 50%
 - terms: 
   - term: enemies
     lang: en
+    tts: enemies.mp3
   - term: nepřátele
     lang: cs
     tts: nepratele.mp3
   freq: 60982.20000
   origins: ["conceptDbSamples"]
-##  anyone   ################################################################ ▄ 49%
+##  anyone   ################################################################ ▅ 50%
 - terms: 
   - term: anyone
     lang: en
+    tts: anyone.mp3
   - term: kdokoli
     lang: cs
     tts: kdokoli.mp3
@@ -10533,10 +10615,11 @@ concepts:
     tts: kohokoliv.mp3
   freq: 60607.90000
   origins: ["conceptDbSamples"]
-##  usual   ################################################################# ▄ 49%
+##  usual   ################################################################# ▅ 50%
 - terms: 
   - term: usual
     lang: en
+    tts: usual.mp3
   - term: obvykle
     lang: cs
     tts: obvykle.mp3
@@ -10545,19 +10628,21 @@ concepts:
     tts: bezne.mp3
   freq: 59858.50000
   origins: ["conceptDbSamples"]
-##  main   ################################################################## ▄ 48%
+##  main   ################################################################## ▅ 50%
 - terms: 
   - term: main
     lang: en
+    tts: main.mp3
   - term: hlavní
     lang: cs
     tts: hlavni.mp3
   freq: 59778.50000
   origins: ["conceptDbSamples"]
-##  someone   ############################################################### ▄ 49%
+##  someone   ############################################################### ▅ 50%
 - terms: 
   - term: someone
     lang: en
+    tts: someone.mp3
   - term: někdo
     lang: cs
     tts: nekdo.mp3
@@ -10566,10 +10651,11 @@ concepts:
     tts: nekoho.mp3
   freq: 59644.10000
   origins: ["conceptDbSamples"]
-##  please   ################################################################ ▄ 49%
+##  please   ################################################################ ▅ 50%
 - terms: 
   - term: please
     lang: en
+    tts: please.mp3
   - term: prosím
     lang: cs
     tts: prosim.mp3
@@ -10591,10 +10677,11 @@ concepts:
     tts: zaber.mp3
   freq: 58465.05000
   origins: ["conceptDbSamples"]
-##  stay   ################################################################## ▄ 49%
+##  stay   ################################################################## ▅ 50%
 - terms: 
   - term: stay
     lang: en
+    tts: stay.mp3
   - term: zůstat
     lang: cs
     tts: zustat.mp3
@@ -10603,10 +10690,11 @@ concepts:
     tts: pobyt.mp3
   freq: 57836.50000
   origins: ["conceptDbSamples"]
-##  grown   ################################################################# ▄ 49%
+##  grown   ################################################################# ▅ 50%
 - terms: 
   - term: grown
     lang: en
+    tts: grown.mp3
   - term: dospělý
     lang: cs
     tts: dospely.mp3
@@ -10615,10 +10703,11 @@ concepts:
     tts: vypestovany.mp3
   freq: 57772.60000
   origins: ["conceptDbSamples"]
-##  safe   ################################################################## ▄ 49%
+##  safe   ################################################################## ▅ 50%
 - terms: 
   - term: safe
     lang: en
+    tts: safe.mp3
   - term: bezpečné
     lang: cs
     tts: bezpecne.mp3
@@ -10627,10 +10716,11 @@ concepts:
     tts: trezor.mp3
   freq: 57432.25000
   origins: ["conceptDbSamples"]
-##  worth   ################################################################# ▄ 49%
+##  worth   ################################################################# ▅ 50%
 - terms: 
   - term: worth
     lang: en
+    tts: worth.mp3
   - term: stojí za
     lang: cs
     tts: stoji za.mp3
@@ -10639,10 +10729,11 @@ concepts:
     tts: hodnota.mp3
   freq: 57291.50000
   origins: ["conceptDbSamples"]
-##  pull   ################################################################## ▄ 49%
+##  pull   ################################################################## ▅ 50%
 - terms: 
   - term: pull
     lang: en
+    tts: pull.mp3
   - term: vytáhnout
     lang: cs
     tts: vytahnout.mp3
@@ -10651,10 +10742,11 @@ concepts:
     tts: tahat.mp3
   freq: 57029.25000
   origins: ["conceptDbSamples"]
-##  clearly   ############################################################### ▄ 49%
+##  clearly   ############################################################### ▅ 50%
 - terms: 
   - term: clearly
     lang: en
+    tts: clearly.mp3
   - term: zřetelně
     lang: cs
     tts: zretelne.mp3
@@ -10663,19 +10755,21 @@ concepts:
     tts: zrejme.mp3
   freq: 56615.20000
   origins: ["conceptDbSamples"]
-##  energy   ################################################################ ▄ 48%
+##  energy   ################################################################ ▅ 50%
 - terms: 
   - term: energy
     lang: en
+    tts: energy.mp3
   - term: energie
     lang: cs
     tts: energie.mp3
   freq: 55273.45000
   origins: ["conceptDbSamples"]
-##  directly   ############################################################## ▄ 49%
+##  directly   ############################################################## ▅ 50%
 - terms: 
   - term: directly
     lang: en
+    tts: directly.mp3
   - term: přímo
     lang: cs
     tts: primo.mp3
@@ -10684,10 +10778,11 @@ concepts:
     tts: bezprostredne.mp3
   freq: 55211.70000
   origins: ["conceptDbSamples"]
-##  song   ################################################################## ▄ 49%
+##  song   ################################################################## ▅ 50%
 - terms: 
   - term: song
     lang: en
+    tts: song.mp3
   - term: píseň
     lang: cs
     tts: pisen.mp3
@@ -10696,10 +10791,11 @@ concepts:
     tts: skladba.mp3
   freq: 54221.30000
   origins: ["conceptDbSamples"]
-##  choice   ################################################################ ▄ 49%
+##  choice   ################################################################ ▅ 50%
 - terms: 
   - term: choice
     lang: en
+    tts: choice.mp3
   - term: volba
     lang: cs
     tts: volba.mp3
@@ -10708,10 +10804,11 @@ concepts:
     tts: vyber.mp3
   freq: 54079.15000
   origins: ["conceptDbSamples"]
-##  size   ################################################################## ▄ 49%
+##  size   ################################################################## ▅ 50%
 - terms: 
   - term: size
     lang: en
+    tts: size.mp3
   - term: velikost
     lang: cs
     tts: velikost.mp3
@@ -10720,10 +10817,11 @@ concepts:
     tts: rozmery.mp3
   freq: 53495.50000
   origins: ["conceptDbSamples"]
-##  rules   ################################################################# ▄ 49%
+##  rules   ################################################################# ▅ 50%
 - terms: 
   - term: rules
     lang: en
+    tts: rules.mp3
   - term: pravidla
     lang: cs
     tts: pravidla.mp3
@@ -10732,19 +10830,21 @@ concepts:
     tts: predpisy.mp3
   freq: 53386.50000
   origins: ["conceptDbSamples"]
-##  value   ################################################################# ▄ 48%
+##  value   ################################################################# ▅ 50%
 - terms: 
   - term: value
     lang: en
+    tts: value.mp3
   - term: hodnota
     lang: cs
     tts: hodnota.mp3
   freq: 52616.40000
   origins: ["conceptDbSamples"]
-##  teeth   ################################################################# ▄ 49%
+##  teeth   ################################################################# ▅ 50%
 - terms: 
   - term: teeth
     lang: en
+    tts: teeth.mp3
   - term: zuby
     lang: cs
     tts: zuby.mp3
@@ -10753,10 +10853,11 @@ concepts:
     tts: chrup.mp3
   freq: 52449.00000
   origins: ["conceptDbSamples"]
-##  permission   ############################################################ ▄ 49%
+##  permission   ############################################################ ▅ 50%
 - terms: 
   - term: permission
     lang: en
+    tts: permission.mp3
   - term: oprávnění
     lang: cs
     tts: opravneni.mp3
@@ -10765,10 +10866,11 @@ concepts:
     tts: povoleni.mp3
   freq: 52344.50000
   origins: ["conceptDbSamples"]
-##  won   ################################################################### ▄ 49%
+##  won   ################################################################### ▅ 50%
 - terms: 
   - term: won
     lang: en
+    tts: won.mp3
   - term: vyhrál
     lang: cs
     tts: vyhral.mp3
@@ -10777,10 +10879,11 @@ concepts:
     tts: zvitezil.mp3
   freq: 51798.70000
   origins: ["conceptDbSamples"]
-##  nice   ################################################################## ▄ 49%
+##  nice   ################################################################## ▅ 50%
 - terms: 
   - term: nice
     lang: en
+    tts: nice.mp3
   - term: pěkné
     lang: cs
     tts: pekne.mp3
@@ -10789,10 +10892,11 @@ concepts:
     tts: prijemne.mp3
   freq: 50915.20000
   origins: ["conceptDbSamples"]
-##  start   ################################################################# ▄ 49%
+##  start   ################################################################# ▅ 50%
 - terms: 
   - term: start
     lang: en
+    tts: start.mp3
   - term: začátek
     lang: cs
     tts: zacatek.mp3
@@ -10801,10 +10905,11 @@ concepts:
     tts: zahajeni.mp3
   freq: 50331.95000
   origins: ["conceptDbSamples"]
-##  marry   ################################################################# ▄ 49%
+##  marry   ################################################################# ▅ 50%
 - terms: 
   - term: marry
     lang: en
+    tts: marry.mp3
   - term: oženit
     lang: cs
     tts: ozenit.mp3
@@ -10813,19 +10918,21 @@ concepts:
     tts: provdat.mp3
   freq: 49835.45000
   origins: ["conceptDbSamples"]
-##  fees   ################################################################## ▄ 48%
+##  fees   ################################################################## ▅ 50%
 - terms: 
   - term: fees
     lang: en
+    tts: fees.mp3
   - term: poplatky
     lang: cs
     tts: poplatky.mp3
   freq: 49820.10000
   origins: ["conceptDbSamples"]
-##  fill   ################################################################## ▄ 49%
+##  fill   ################################################################## ▅ 50%
 - terms: 
   - term: fill
     lang: en
+    tts: fill.mp3
   - term: vyplnit
     lang: cs
     tts: vyplnit.mp3
@@ -10834,10 +10941,11 @@ concepts:
     tts: naplnte.mp3
   freq: 49413.45000
   origins: ["conceptDbSamples"]
-##  cup   ################################################################### ▄ 49%
+##  cup   ################################################################### ▅ 50%
 - terms: 
   - term: cup
     lang: en
+    tts: cup.mp3
   - term: pohár
     lang: cs
     tts: pohar.mp3
@@ -10846,10 +10954,11 @@ concepts:
     tts: salek.mp3
   freq: 49370.15000
   origins: ["conceptDbSamples"]
-##  worst   ################################################################# ▄ 49%
+##  worst   ################################################################# ▅ 50%
 - terms: 
   - term: worst
     lang: en
+    tts: worst.mp3
   - term: nejhorší
     lang: cs
     tts: nejhorsi.mp3
@@ -10872,10 +10981,11 @@ concepts:
     tts: data-cs.mp3
   freq: 48658.45000
   origins: ["conceptDbSamples"]
-##  additional   ############################################################ ▄ 49%
+##  additional   ############################################################ ▅ 50%
 - terms: 
   - term: additional
     lang: en
+    tts: additional.mp3
   - term: dodatečné
     lang: cs
     tts: dodatecne.mp3
@@ -10884,10 +10994,11 @@ concepts:
     tts: pridavne.mp3
   freq: 47705.70000
   origins: ["conceptDbSamples"]
-##  needs   ################################################################# ▄ 49%
+##  needs   ################################################################# ▅ 50%
 - terms: 
   - term: needs
     lang: en
+    tts: needs.mp3
   - term: potřebuje
     lang: cs
     tts: potrebuje.mp3
@@ -10896,19 +11007,21 @@ concepts:
     tts: potreby.mp3
   freq: 47619.10000
   origins: ["conceptDbSamples"]
-##  happiness   ############################################################# ▄ 48%
+##  happiness   ############################################################# ▅ 50%
 - terms: 
   - term: happiness
     lang: en
+    tts: happiness.mp3
   - term: štěstí
     lang: cs
     tts: stesti.mp3
   freq: 47520.50000
   origins: ["conceptDbSamples"]
-##  stop   ################################################################## ▄ 49%
+##  stop   ################################################################## ▅ 50%
 - terms: 
   - term: stop
     lang: en
+    tts: stop.mp3
   - term: zastavit
     lang: cs
     tts: zastavit.mp3
@@ -10917,10 +11030,11 @@ concepts:
     tts: stuj.mp3
   freq: 46709.35000
   origins: ["conceptDbSamples"]
-##  thinks   ################################################################ ▄ 49%
+##  thinks   ################################################################ ▅ 50%
 - terms: 
   - term: thinks
     lang: en
+    tts: thinks.mp3
   - term: myslí
     lang: cs
     tts: mysli.mp3
@@ -10929,19 +11043,21 @@ concepts:
     tts: premysli.mp3
   freq: 46053.50000
   origins: ["conceptDbSamples"]
-##  medium   ################################################################ ▄ 48%
+##  medium   ################################################################ ▅ 50%
 - terms: 
   - term: medium
     lang: en
+    tts: medium.mp3
   - term: střední
     lang: cs
     tts: stredni.mp3
   freq: 45868.70000
   origins: ["conceptDbSamples"]
-##  everyone   ############################################################## ▄ 49%
+##  everyone   ############################################################## ▅ 50%
 - terms: 
   - term: everyone
     lang: en
+    tts: everyone.mp3
   - term: všichni
     lang: cs
     tts: vsichni.mp3
@@ -10950,28 +11066,31 @@ concepts:
     tts: kazdy.mp3
   freq: 45742.40000
   origins: ["conceptDbSamples"]
-##  goods   ################################################################# ▄ 48%
+##  goods   ################################################################# ▅ 50%
 - terms: 
   - term: goods
     lang: en
+    tts: goods.mp3
   - term: zboží
     lang: cs
     tts: zbozi.mp3
   freq: 45735.40000
   origins: ["conceptDbSamples"]
-##  closed   ################################################################ ▄ 48%
+##  closed   ################################################################ ▅ 50%
 - terms: 
   - term: closed
     lang: en
+    tts: closed.mp3
   - term: uzavřené
     lang: cs
     tts: uzavrene.mp3
   freq: 45657.15000
   origins: ["conceptDbSamples"]
-##  claim   ################################################################# ▄ 49%
+##  claim   ################################################################# ▅ 50%
 - terms: 
   - term: claim
     lang: en
+    tts: claim.mp3
   - term: tvrzení
     lang: cs
     tts: tvrzeni.mp3
@@ -10980,19 +11099,21 @@ concepts:
     tts: narok.mp3
   freq: 44928.50000
   origins: ["conceptDbSamples"]
-##  rule   ################################################################## ▄ 48%
+##  rule   ################################################################## ▅ 50%
 - terms: 
   - term: rule
     lang: en
+    tts: rule.mp3
   - term: pravidlo
     lang: cs
     tts: pravidlo.mp3
   freq: 44844.25000
   origins: ["conceptDbSamples"]
-##  required   ############################################################## ▄ 49%
+##  required   ############################################################## ▅ 50%
 - terms: 
   - term: required
     lang: en
+    tts: required.mp3
   - term: požadované
     lang: cs
     tts: pozadovane.mp3
@@ -11001,10 +11122,11 @@ concepts:
     tts: vyzadovano.mp3
   freq: 44600.85000
   origins: ["conceptDbSamples"]
-##  asking   ################################################################ ▄ 49%
+##  asking   ################################################################ ▅ 50%
 - terms: 
   - term: asking
     lang: en
+    tts: asking.mp3
   - term: žádají
     lang: cs
     tts: zadaji.mp3
@@ -11013,19 +11135,21 @@ concepts:
     tts: pta se.mp3
   freq: 44097.80000
   origins: ["conceptDbSamples"]
-##  nine   ################################################################## ▄ 48%
+##  nine   ################################################################## ▅ 50%
 - terms: 
   - term: nine
     lang: en
+    tts: nine.mp3
   - term: devět
     lang: cs
     tts: devet.mp3
   freq: 43944.95000
   origins: ["conceptDbSamples"]
-##  apply   ################################################################# ▄ 49%
+##  apply   ################################################################# ▅ 50%
 - terms: 
   - term: apply
     lang: en
+    tts: apply.mp3
   - term: použít
     lang: cs
     tts: pouzit.mp3
@@ -11034,10 +11158,11 @@ concepts:
     tts: aplikovat.mp3
   freq: 43667.25000
   origins: ["conceptDbSamples"]
-##  excellent   ############################################################# ▄ 49%
+##  excellent   ############################################################# ▅ 50%
 - terms: 
   - term: excellent
     lang: en
+    tts: excellent.mp3
   - term: vynikající
     lang: cs
     tts: vynikajici.mp3
@@ -11046,19 +11171,21 @@ concepts:
     tts: vyborny.mp3
   freq: 43273.45000
   origins: ["conceptDbSamples"]
-##  brain   ################################################################# ▄ 48%
+##  brain   ################################################################# ▅ 50%
 - terms: 
   - term: brain
     lang: en
+    tts: brain.mp3
   - term: mozek
     lang: cs
     tts: mozek.mp3
   freq: 42478.85000
   origins: ["conceptDbSamples"]
-##  alive   ################################################################# ▄ 49%
+##  alive   ################################################################# ▅ 50%
 - terms: 
   - term: alive
     lang: en
+    tts: alive.mp3
   - term: naživu
     lang: cs
     tts: nazivu.mp3
@@ -11067,19 +11194,21 @@ concepts:
     tts: zaziva.mp3
   freq: 41908.25000
   origins: ["conceptDbSamples"]
-##  dangerous   ############################################################# ▄ 48%
+##  dangerous   ############################################################# ▅ 50%
 - terms: 
   - term: dangerous
     lang: en
+    tts: dangerous.mp3
   - term: nebezpečné
     lang: cs
     tts: nebezpecne.mp3
   freq: 41231.15000
   origins: ["conceptDbSamples"]
-##  working   ############################################################### ▄ 49%
+##  working   ############################################################### ▅ 50%
 - terms: 
   - term: working
     lang: en
+    tts: working.mp3
   - term: pracovní
     lang: cs
     tts: pracovni.mp3
@@ -11088,10 +11217,11 @@ concepts:
     tts: fungujici.mp3
   freq: 41121.15000
   origins: ["conceptDbSamples"]
-##  drive   ################################################################# ▄ 49%
+##  drive   ################################################################# ▅ 50%
 - terms: 
   - term: drive
     lang: en
+    tts: drive.mp3
   - term: řídit
     lang: cs
     tts: ridit.mp3
@@ -11100,19 +11230,21 @@ concepts:
     tts: pohon.mp3
   freq: 40999.60000
   origins: ["conceptDbSamples"]
-##  brother   ############################################################### ▄ 48%
+##  brother   ############################################################### ▅ 50%
 - terms: 
   - term: brother
     lang: en
+    tts: brother.mp3
   - term: bratr
     lang: cs
     tts: bratr.mp3
   freq: 40977.45000
   origins: ["conceptDbSamples"]
-##  earlier   ############################################################### ▄ 49%
+##  earlier   ############################################################### ▅ 50%
 - terms: 
   - term: earlier
     lang: en
+    tts: earlier.mp3
   - term: dřívější
     lang: cs
     tts: drivejsi.mp3
@@ -11121,10 +11253,11 @@ concepts:
     tts: drive.mp3
   freq: 40843.10000
   origins: ["conceptDbSamples"]
-##  nobody   ################################################################ ▄ 49%
+##  nobody   ################################################################ ▅ 50%
 - terms: 
   - term: nobody
     lang: en
+    tts: nobody.mp3
   - term: nikdo
     lang: cs
     tts: nikdo.mp3
@@ -11133,73 +11266,81 @@ concepts:
     tts: nikoho.mp3
   freq: 40420.30000
   origins: ["conceptDbSamples"]
-##  hospital   ############################################################## ▄ 48%
+##  hospital   ############################################################## ▅ 50%
 - terms: 
   - term: hospital
     lang: en
+    tts: hospital.mp3
   - term: nemocnice
     lang: cs
     tts: nemocnice.mp3
   freq: 40282.20000
   origins: ["conceptDbSamples"]
-##  tired   ################################################################# ▄ 48%
+##  tired   ################################################################# ▅ 50%
 - terms: 
   - term: tired
     lang: en
+    tts: tired.mp3
   - term: unavený
     lang: cs
     tts: unaveny.mp3
   freq: 39561.35000
   origins: ["conceptDbSamples"]
-##  successful   ############################################################ ▄ 48%
+##  successful   ############################################################ ▅ 50%
 - terms: 
   - term: successful
     lang: en
+    tts: successful.mp3
   - term: úspěšné
     lang: cs
     tts: uspesne.mp3
   freq: 39535.10000
   origins: ["conceptDbSamples"]
-##  empty   ################################################################# ▄ 48%
+##  empty   ################################################################# ▅ 50%
 - terms: 
   - term: empty
     lang: en
+    tts: empty.mp3
   - term: prázdné
     lang: cs
     tts: prazdne.mp3
   freq: 38692.60000
   origins: ["conceptDbSamples"]
-##  list   ################################################################## ▄ 48%
+##  list   ################################################################## ▅ 50%
 - terms: 
   - term: list
     lang: en
+    tts: list.mp3
   - term: seznam
     lang: cs
     tts: seznam.mp3
   freq: 37150.75000
   origins: ["conceptDbSamples"]
-##  yesterday   ############################################################# ▄ 48%
+##  yesterday   ############################################################# ▅ 50%
 - terms: 
   - term: yesterday
     lang: en
+    tts: yesterday.mp3
   - term: včera
     lang: cs
     tts: vcera.mp3
   freq: 37019.50000
   origins: ["conceptDbSamples"]
-##  phone   ################################################################# ▄ 48%
+##  phone   ################################################################# ▅ 50%
 - terms: 
   - term: phone
     lang: en
+    tts: phone.mp3
   - term: telefon
     lang: cs
     tts: telefon.mp3
   freq: 36947.43500
   origins: ["conceptDbSamples"]
-##  mistake   ############################################################### ▄ 49%
+##  mistake   ############################################################### ▅ 50%
 - terms: 
   - term: mistake
     lang: en
+    tts: mistake.mp3
   - term: omyl
     lang: cs
     tts: omyl.mp3
@@ -11208,10 +11349,11 @@ concepts:
     tts: chyba.mp3
   freq: 36424.35000
   origins: ["conceptDbSamples"]
-##  busy   ################################################################## ▄ 49%
+##  busy   ################################################################## ▅ 50%
 - terms: 
   - term: busy
     lang: en
+    tts: busy.mp3
   - term: zaneprázdněn
     lang: cs
     tts: zaneprazdnen.mp3
@@ -11230,10 +11372,11 @@ concepts:
     tts: folie.mp3
   freq: 35325.20000
   origins: ["conceptDbSamples"]
-##  remarkable   ############################################################ ▄ 49%
+##  remarkable   ############################################################ ▅ 50%
 - terms: 
   - term: remarkable
     lang: en
+    tts: remarkable.mp3
   - term: pozoruhodné
     lang: cs
     tts: pozoruhodne.mp3
@@ -11242,28 +11385,31 @@ concepts:
     tts: mimoradny.mp3
   freq: 35244.40000
   origins: ["conceptDbSamples"]
-##  movie   ################################################################# ▄ 48%
+##  movie   ################################################################# ▅ 50%
 - terms: 
   - term: movie
     lang: en
+    tts: movie.mp3
   - term: film
     lang: cs
     tts: film-cs.mp3
   freq: 35083.52900
   origins: ["conceptDbSamples"]
-##  nose   ################################################################## ▄ 48%
+##  nose   ################################################################## ▅ 50%
 - terms: 
   - term: nose
     lang: en
+    tts: nose.mp3
   - term: nos
     lang: cs
     tts: nos.mp3
   freq: 34998.90000
   origins: ["conceptDbSamples"]
-##  hide   ################################################################## ▄ 49%
+##  hide   ################################################################## ▅ 50%
 - terms: 
   - term: hide
     lang: en
+    tts: hide.mp3
   - term: skrýt
     lang: cs
     tts: skryt.mp3
@@ -11272,19 +11418,21 @@ concepts:
     tts: schovat.mp3
   freq: 34760.90000
   origins: ["conceptDbSamples"]
-##  explanation   ########################################################### ▄ 48%
+##  explanation   ########################################################### ▅ 50%
 - terms: 
   - term: explanation
     lang: en
+    tts: explanation.mp3
   - term: vysvětlení
     lang: cs
     tts: vysvetleni.mp3
   freq: 34381.15000
   origins: ["conceptDbSamples"]
-##  tea   ################################################################### ▄ 48%
+##  tea   ################################################################### ▅ 50%
 - terms: 
   - term: tea
     lang: en
+    tts: tea.mp3
   - term: čaj
     lang: cs
     tts: caj.mp3
@@ -11300,10 +11448,11 @@ concepts:
     tts: zkouska.mp3
   freq: 33664.05000
   origins: ["conceptDbSamples"]
-##  ring   ################################################################## ▄ 49%
+##  ring   ################################################################## ▅ 50%
 - terms: 
   - term: ring
     lang: en
+    tts: ring.mp3
   - term: prsten
     lang: cs
     tts: prsten.mp3
@@ -11312,10 +11461,11 @@ concepts:
     tts: krouzek.mp3
   freq: 33378.70000
   origins: ["conceptDbSamples"]
-##  fault   ################################################################# ▄ 49%
+##  fault   ################################################################# ▅ 50%
 - terms: 
   - term: fault
     lang: en
+    tts: fault.mp3
   - term: vina
     lang: cs
     tts: vina.mp3
@@ -11324,10 +11474,11 @@ concepts:
     tts: porucha.mp3
   freq: 33363.20000
   origins: ["conceptDbSamples"]
-##  clean   ################################################################# ▄ 49%
+##  clean   ################################################################# ▅ 50%
 - terms: 
   - term: clean
     lang: en
+    tts: clean.mp3
   - term: čisté
     lang: cs
     tts: ciste.mp3
@@ -11336,10 +11487,11 @@ concepts:
     tts: vycistit.mp3
   freq: 33343.65000
   origins: ["conceptDbSamples"]
-##  shape   ################################################################# ▄ 49%
+##  shape   ################################################################# ▅ 50%
 - terms: 
   - term: shape
     lang: en
+    tts: shape.mp3
   - term: obrazec
     lang: cs
     tts: obrazec.mp3
@@ -11348,10 +11500,11 @@ concepts:
     tts: tvar.mp3
   freq: 33284.95000
   origins: ["conceptDbSamples"]
-##  eggs   ################################################################## ▄ 49%
+##  eggs   ################################################################## ▅ 50%
 - terms: 
   - term: eggs
     lang: en
+    tts: eggs.mp3
   - term: vejce
     lang: cs
     tts: vejce.mp3
@@ -11360,19 +11513,21 @@ concepts:
     tts: vajicka.mp3
   freq: 33059.90000
   origins: ["conceptDbSamples"]
-##  smaller   ############################################################### ▄ 48%
+##  smaller   ############################################################### ▅ 50%
 - terms: 
   - term: smaller
     lang: en
+    tts: smaller.mp3
   - term: menší
     lang: cs
     tts: mensi.mp3
   freq: 32668.30000
   origins: ["conceptDbSamples"]
-##  finds   ################################################################# ▄ 49%
+##  finds   ################################################################# ▅ 50%
 - terms: 
   - term: finds
     lang: en
+    tts: finds.mp3
   - term: najde
     lang: cs
     tts: najde.mp3
@@ -11381,10 +11536,11 @@ concepts:
     tts: vyhleda.mp3
   freq: 31934.90000
   origins: ["conceptDbSamples"]
-##  unable   ################################################################ ▄ 49%
+##  unable   ################################################################ ▅ 50%
 - terms: 
   - term: unable
     lang: en
+    tts: unable.mp3
   - term: neschopný
     lang: cs
     tts: neschopny.mp3
@@ -11393,10 +11549,11 @@ concepts:
     tts: nemuze.mp3
   freq: 31745.05000
   origins: ["conceptDbSamples"]
-##  stayed   ################################################################ ▄ 49%
+##  stayed   ################################################################ ▅ 50%
 - terms: 
   - term: stayed
     lang: en
+    tts: stayed.mp3
   - term: zůstal
     lang: cs
     tts: zustal.mp3
@@ -11405,10 +11562,11 @@ concepts:
     tts: pobyval.mp3
   freq: 31165.90000
   origins: ["conceptDbSamples"]
-##  scale   ################################################################# ▄ 49%
+##  scale   ################################################################# ▅ 50%
 - terms: 
   - term: scale
     lang: en
+    tts: scale.mp3
   - term: měřítko
     lang: cs
     tts: meritko.mp3
@@ -11417,10 +11575,11 @@ concepts:
     tts: rozsahu.mp3
   freq: 30427.90000
   origins: ["conceptDbSamples"]
-##  process   ############################################################### ▄ 49%
+##  process   ############################################################### ▅ 50%
 - terms: 
   - term: process
     lang: en
+    tts: process.mp3
   - term: proces
     lang: cs
     tts: proces.mp3
@@ -11429,28 +11588,31 @@ concepts:
     tts: postup.mp3
   freq: 30250.70000
   origins: ["conceptDbSamples"]
-##  nearest   ############################################################### ▄ 48%
+##  nearest   ############################################################### ▅ 50%
 - terms: 
   - term: nearest
     lang: en
+    tts: nearest.mp3
   - term: nejbližší
     lang: cs
     tts: nejblizsi.mp3
   freq: 29094.70000
   origins: ["conceptDbSamples"]
-##  coffee   ################################################################ ▄ 48%
+##  coffee   ################################################################ ▅ 50%
 - terms: 
   - term: coffee
     lang: en
+    tts: coffee.mp3
   - term: káva
     lang: cs
     tts: kava.mp3
   freq: 29061.35000
   origins: ["conceptDbSamples"]
-##  fly   ################################################################### ▄ 49%
+##  fly   ################################################################### ▅ 50%
 - terms: 
   - term: fly
     lang: en
+    tts: fly.mp3
   - term: létat
     lang: cs
     tts: letat.mp3
@@ -11459,28 +11621,31 @@ concepts:
     tts: let.mp3
   freq: 28502.95000
   origins: ["conceptDbSamples"]
-##  visible   ############################################################### ▄ 48%
+##  visible   ############################################################### ▅ 50%
 - terms: 
   - term: visible
     lang: en
+    tts: visible.mp3
   - term: viditelné
     lang: cs
     tts: viditelne.mp3
   freq: 28287.60000
   origins: ["conceptDbSamples"]
-##  library   ############################################################### ▄ 48%
+##  library   ############################################################### ▅ 50%
 - terms: 
   - term: library
     lang: en
+    tts: library.mp3
   - term: knihovna
     lang: cs
     tts: knihovna.mp3
   freq: 28114.95000
   origins: ["conceptDbSamples"]
-##  catch   ################################################################# ▄ 49%
+##  catch   ################################################################# ▅ 50%
 - terms: 
   - term: catch
     lang: en
+    tts: catch.mp3
   - term: chytit
     lang: cs
     tts: chytit.mp3
@@ -11489,10 +11654,11 @@ concepts:
     tts: ulovek.mp3
   freq: 28047.90000
   origins: ["conceptDbSamples"]
-##  instructions   ########################################################## ▄ 49%
+##  instructions   ########################################################## ▅ 50%
 - terms: 
   - term: instructions
     lang: en
+    tts: instructions.mp3
   - term: pokyny
     lang: cs
     tts: pokyny.mp3
@@ -11501,37 +11667,41 @@ concepts:
     tts: instrukce.mp3
   freq: 26838.40000
   origins: ["conceptDbSamples"]
-##  cool   ################################################################## ▄ 48%
+##  cool   ################################################################## ▅ 50%
 - terms: 
   - term: cool
     lang: en
+    tts: cool.mp3
   - term: chladné
     lang: cs
     tts: chladne.mp3
   freq: 26142.55000
   origins: ["conceptDbSamples"]
-##  cat   ################################################################### ▄ 48%
+##  cat   ################################################################### ▅ 50%
 - terms: 
   - term: cat
     lang: en
+    tts: cat.mp3
   - term: kočka
     lang: cs
     tts: kocka.mp3
   freq: 25867.60000
   origins: ["conceptDbSamples"]
-##  repeat   ################################################################ ▄ 48%
+##  repeat   ################################################################ ▅ 50%
 - terms: 
   - term: repeat
     lang: en
+    tts: repeat.mp3
   - term: opakovat
     lang: cs
     tts: opakovat.mp3
   freq: 25063.25000
   origins: ["conceptDbSamples"]
-##  advantages   ############################################################ ▄ 49%
+##  advantages   ############################################################ ▅ 50%
 - terms: 
   - term: advantages
     lang: en
+    tts: advantages.mp3
   - term: výhody
     lang: cs
     tts: vyhody.mp3
@@ -11540,10 +11710,11 @@ concepts:
     tts: prednosti.mp3
   freq: 24802.80000
   origins: ["conceptDbSamples"]
-##  win   ################################################################### ▄ 49%
+##  win   ################################################################### ▅ 50%
 - terms: 
   - term: win
     lang: en
+    tts: win.mp3
   - term: vyhrát
     lang: cs
     tts: vyhrat.mp3
@@ -11552,10 +11723,11 @@ concepts:
     tts: vitezstvi.mp3
   freq: 24721.45000
   origins: ["conceptDbSamples"]
-##  patient   ############################################################### ▄ 49%
+##  patient   ############################################################### ▅ 50%
 - terms: 
   - term: patient
     lang: en
+    tts: patient.mp3
   - term: pacient
     lang: cs
     tts: pacient.mp3
@@ -11564,10 +11736,11 @@ concepts:
     tts: trpelivy.mp3
   freq: 24442.10000
   origins: ["conceptDbSamples"]
-##  locked   ################################################################ ▄ 49%
+##  locked   ################################################################ ▅ 50%
 - terms: 
   - term: locked
     lang: en
+    tts: locked.mp3
   - term: uzamčený
     lang: cs
     tts: uzamceny.mp3
@@ -11576,10 +11749,11 @@ concepts:
     tts: zamceny.mp3
   freq: 24438.10000
   origins: ["conceptDbSamples"]
-##  proceed   ############################################################### ▄ 49%
+##  proceed   ############################################################### ▅ 50%
 - terms: 
   - term: proceed
     lang: en
+    tts: proceed.mp3
   - term: postupovat
     lang: cs
     tts: postupovat.mp3
@@ -11601,10 +11775,11 @@ concepts:
     tts: zasahnout.mp3
   freq: 23745.60000
   origins: ["conceptDbSamples"]
-##  egg   ################################################################### ▄ 49%
+##  egg   ################################################################### ▅ 50%
 - terms: 
   - term: egg
     lang: en
+    tts: egg.mp3
   - term: vejce
     lang: cs
     tts: vejce.mp3
@@ -11613,10 +11788,11 @@ concepts:
     tts: vajicko.mp3
   freq: 22506.70000
   origins: ["conceptDbSamples"]
-##  camera   ################################################################ ▄ 49%
+##  camera   ################################################################ ▅ 50%
 - terms: 
   - term: camera
     lang: en
+    tts: camera.mp3
   - term: fotoaparát
     lang: cs
     tts: fotoaparat.mp3
@@ -11625,10 +11801,11 @@ concepts:
     tts: kamera.mp3
   freq: 22397.35500
   origins: ["conceptDbSamples"]
-##  that   ################################################################## ▄ 49%
+##  that   ################################################################## ▅ 50%
 - terms: 
   - term: that
     lang: en
+    tts: that.mp3
   - term: že
     lang: cs
     tts: ze.mp3
@@ -11637,10 +11814,11 @@ concepts:
     tts: ktery.mp3
   freq: 21910.90650
   origins: ["conceptDbSamples"]
-##  emotions   ############################################################## ▄ 49%
+##  emotions   ############################################################## ▅ 50%
 - terms: 
   - term: emotions
     lang: en
+    tts: emotions.mp3
   - term: emoce
     lang: cs
     tts: emoce.mp3
@@ -11649,10 +11827,11 @@ concepts:
     tts: pocity.mp3
   freq: 21695.20000
   origins: ["conceptDbSamples"]
-##  tables   ################################################################ ▄ 49%
+##  tables   ################################################################ ▅ 50%
 - terms: 
   - term: tables
     lang: en
+    tts: tables.mp3
   - term: tabulky
     lang: cs
     tts: tabulky.mp3
@@ -11661,28 +11840,31 @@ concepts:
     tts: stoly.mp3
   freq: 21432.60000
   origins: ["conceptDbSamples"]
-##  print   ################################################################# ▄ 48%
+##  print   ################################################################# ▅ 50%
 - terms: 
   - term: print
     lang: en
+    tts: print.mp3
   - term: vytisknout
     lang: cs
     tts: vytisknout.mp3
   freq: 21355.55000
   origins: ["conceptDbSamples"]
-##  tomorrow   ############################################################## ▄ 48%
+##  tomorrow   ############################################################## ▅ 50%
 - terms: 
   - term: tomorrow
     lang: en
+    tts: tomorrow.mp3
   - term: zítra
     lang: cs
     tts: zitra.mp3
   freq: 21349.20000
   origins: ["conceptDbSamples"]
-##  hurry   ################################################################# ▄ 49%
+##  hurry   ################################################################# ▅ 50%
 - terms: 
   - term: hurry
     lang: en
+    tts: hurry.mp3
   - term: spěch
     lang: cs
     tts: spech.mp3
@@ -11691,28 +11873,31 @@ concepts:
     tts: naspech.mp3
   freq: 21059.55000
   origins: ["conceptDbSamples"]
-##  regret   ################################################################ ▄ 48%
+##  regret   ################################################################ ▅ 50%
 - terms: 
   - term: regret
     lang: en
+    tts: regret.mp3
   - term: litovat
     lang: cs
     tts: litovat.mp3
   freq: 20930.45000
   origins: ["conceptDbSamples"]
-##  user   ################################################################## ▄ 48%
+##  user   ################################################################## ▅ 50%
 - terms: 
   - term: user
     lang: en
+    tts: user.mp3
   - term: uživatele
     lang: cs
     tts: uzivatele.mp3
   freq: 20688.50000
   origins: ["conceptDbSamples"]
-##  lonely   ################################################################ ▄ 49%
+##  lonely   ################################################################ ▅ 50%
 - terms: 
   - term: lonely
     lang: en
+    tts: lonely.mp3
   - term: osamělý
     lang: cs
     tts: osamely.mp3
@@ -11721,10 +11906,11 @@ concepts:
     tts: opusteny.mp3
   freq: 20598.05000
   origins: ["conceptDbSamples"]
-##  cares   ################################################################# ▄ 49%
+##  cares   ################################################################# ▅ 50%
 - terms: 
   - term: cares
     lang: en
+    tts: cares.mp3
   - term: zajímá
     lang: cs
     tts: zajima.mp3
@@ -11733,19 +11919,21 @@ concepts:
     tts: pecuje.mp3
   freq: 20161.20000
   origins: ["conceptDbSamples"]
-##  mirror   ################################################################ ▄ 48%
+##  mirror   ################################################################ ▅ 50%
 - terms: 
   - term: mirror
     lang: en
+    tts: mirror.mp3
   - term: zrcadlo
     lang: cs
     tts: zrcadlo.mp3
   freq: 20145.65000
   origins: ["conceptDbSamples"]
-##  rarely   ################################################################ ▄ 49%
+##  rarely   ################################################################ ▅ 50%
 - terms: 
   - term: rarely
     lang: en
+    tts: rarely.mp3
   - term: zřídka
     lang: cs
     tts: zridka.mp3
@@ -11754,10 +11942,11 @@ concepts:
     tts: malokdy.mp3
   freq: 20081.70000
   origins: ["conceptDbSamples"]
-##  beach   ################################################################# ▄ 49%
+##  beach   ################################################################# ▅ 50%
 - terms: 
   - term: beach
     lang: en
+    tts: beach.mp3
   - term: pláž
     lang: cs
     tts: plaz.mp3
@@ -11766,19 +11955,21 @@ concepts:
     tts: pobrezi.mp3
   freq: 19941.40000
   origins: ["conceptDbSamples"]
-##  bedroom   ############################################################### ▄ 48%
+##  bedroom   ############################################################### ▅ 50%
 - terms: 
   - term: bedroom
     lang: en
+    tts: bedroom.mp3
   - term: ložnice
     lang: cs
     tts: loznice.mp3
   freq: 19349.30000
   origins: ["conceptDbSamples"]
-##  stolen   ################################################################ ▄ 49%
+##  stolen   ################################################################ ▅ 50%
 - terms: 
   - term: stolen
     lang: en
+    tts: stolen.mp3
   - term: ukradené
     lang: cs
     tts: ukradene.mp3
@@ -11787,10 +11978,11 @@ concepts:
     tts: kradeny.mp3
   freq: 19337.70000
   origins: ["conceptDbSamples"]
-##  justified   ############################################################# ▄ 49%
+##  justified   ############################################################# ▅ 50%
 - terms: 
   - term: justified
     lang: en
+    tts: justified.mp3
   - term: zdůvodněny
     lang: cs
     tts: zduvodneny.mp3
@@ -11799,10 +11991,11 @@ concepts:
     tts: opravnene.mp3
   freq: 19003.80000
   origins: ["conceptDbSamples"]
-##  funny   ################################################################# ▄ 49%
+##  funny   ################################################################# ▅ 50%
 - terms: 
   - term: funny
     lang: en
+    tts: funny.mp3
   - term: vtipné
     lang: cs
     tts: vtipne.mp3
@@ -11811,28 +12004,31 @@ concepts:
     tts: zabavne.mp3
   freq: 18987.80000
   origins: ["conceptDbSamples"]
-##  column   ################################################################ ▄ 48%
+##  column   ################################################################ ▅ 50%
 - terms: 
   - term: column
     lang: en
+    tts: column.mp3
   - term: sloupec
     lang: cs
     tts: sloupec.mp3
   freq: 18928.25000
   origins: ["conceptDbSamples"]
-##  tool   ################################################################## ▄ 48%
+##  tool   ################################################################## ▅ 50%
 - terms: 
   - term: tool
     lang: en
+    tts: tool.mp3
   - term: nástroj
     lang: cs
     tts: nastroj.mp3
   freq: 18451.52000
   origins: ["conceptDbSamples"]
-##  device   ################################################################ ▄ 49%
+##  device   ################################################################ ▅ 50%
 - terms: 
   - term: device
     lang: en
+    tts: device.mp3
   - term: zařízení
     lang: cs
     tts: zarizeni.mp3
@@ -11841,10 +12037,11 @@ concepts:
     tts: pristroj.mp3
   freq: 17951.45000
   origins: ["conceptDbSamples"]
-##  appreciate   ############################################################ ▄ 49%
+##  appreciate   ############################################################ ▅ 50%
 - terms: 
   - term: appreciate
     lang: en
+    tts: appreciate.mp3
   - term: ocenit
     lang: cs
     tts: ocenit.mp3
@@ -11853,10 +12050,11 @@ concepts:
     tts: vazime.mp3
   freq: 17935.75000
   origins: ["conceptDbSamples"]
-##  stores   ################################################################ ▄ 49%
+##  stores   ################################################################ ▅ 50%
 - terms: 
   - term: stores
     lang: en
+    tts: stores.mp3
   - term: ukládá
     lang: cs
     tts: uklada.mp3
@@ -11865,10 +12063,11 @@ concepts:
     tts: prodejny.mp3
   freq: 17677.90000
   origins: ["conceptDbSamples"]
-##  select   ################################################################ ▄ 49%
+##  select   ################################################################ ▅ 50%
 - terms: 
   - term: select
     lang: en
+    tts: select.mp3
   - term: vybrat
     lang: cs
     tts: vybrat.mp3
@@ -11877,10 +12076,11 @@ concepts:
     tts: zvolte.mp3
   freq: 17442.95000
   origins: ["conceptDbSamples"]
-##  rejected   ############################################################## ▄ 49%
+##  rejected   ############################################################## ▅ 50%
 - terms: 
   - term: rejected
     lang: en
+    tts: rejected.mp3
   - term: zamítnuta
     lang: cs
     tts: zamitnuta.mp3
@@ -11889,19 +12089,21 @@ concepts:
     tts: odmitl.mp3
   freq: 16802.10000
   origins: ["conceptDbSamples"]
-##  niece   ################################################################# ▄ 48%
+##  niece   ################################################################# ▅ 50%
 - terms: 
   - term: niece
     lang: en
+    tts: niece.mp3
   - term: neteř
     lang: cs
     tts: neter.mp3
   freq: 15329.80000
   origins: ["conceptDbSamples"]
-##  root   ################################################################## ▄ 49%
+##  root   ################################################################## ▅ 50%
 - terms: 
   - term: root
     lang: en
+    tts: root.mp3
   - term: kořen
     lang: cs
     tts: koren.mp3
@@ -11910,10 +12112,11 @@ concepts:
     tts: korenovy.mp3
   freq: 15258.95000
   origins: ["conceptDbSamples"]
-##  caution   ############################################################### ▄ 49%
+##  caution   ############################################################### ▅ 50%
 - terms: 
   - term: caution
     lang: en
+    tts: caution.mp3
   - term: opatrnost
     lang: cs
     tts: opatrnost.mp3
@@ -11922,10 +12125,11 @@ concepts:
     tts: pozor.mp3
   freq: 15246.70000
   origins: ["conceptDbSamples"]
-##  ghost   ################################################################# ▄ 49%
+##  ghost   ################################################################# ▅ 50%
 - terms: 
   - term: ghost
     lang: en
+    tts: ghost.mp3
   - term: duch
     lang: cs
     tts: duch.mp3
@@ -11934,10 +12138,11 @@ concepts:
     tts: prizrak.mp3
   freq: 14563.95000
   origins: ["conceptDbSamples"]
-##  speaker   ############################################################### ▄ 49%
+##  speaker   ############################################################### ▅ 50%
 - terms: 
   - term: speaker
     lang: en
+    tts: speaker.mp3
   - term: reproduktor
     lang: cs
     tts: reproduktor.mp3
@@ -11946,28 +12151,31 @@ concepts:
     tts: mluvci.mp3
   freq: 14417.15000
   origins: ["conceptDbSamples"]
-##  neighbour   ############################################################# ▄ 48%
+##  neighbour   ############################################################# ▅ 50%
 - terms: 
   - term: neighbour
     lang: en
+    tts: neighbour.mp3
   - term: soused
     lang: cs
     tts: soused.mp3
   freq: 14405.70000
   origins: ["conceptDbSamples"]
-##  wake   ################################################################## ▄ 48%
+##  wake   ################################################################## ▅ 50%
 - terms: 
   - term: wake
     lang: en
+    tts: wake.mp3
   - term: vzbudit
     lang: cs
     tts: vzbudit.mp3
   freq: 13978.30000
   origins: ["conceptDbSamples"]
-##  bath   ################################################################## ▄ 49%
+##  bath   ################################################################## ▅ 50%
 - terms: 
   - term: bath
     lang: en
+    tts: bath.mp3
   - term: koupel
     lang: cs
     tts: koupel.mp3
@@ -11976,28 +12184,31 @@ concepts:
     tts: lazen.mp3
   freq: 13822.45000
   origins: ["conceptDbSamples"]
-##  entry   ################################################################# ▄ 48%
+##  entry   ################################################################# ▅ 50%
 - terms: 
   - term: entry
     lang: en
+    tts: entry.mp3
   - term: položka
     lang: cs
     tts: polozka.mp3
   freq: 13709.10000
   origins: ["conceptDbSamples"]
-##  studying   ############################################################## ▄ 48%
+##  studying   ############################################################## ▅ 50%
 - terms: 
   - term: studying
     lang: en
+    tts: studying.mp3
   - term: studuje
     lang: cs
     tts: studuje.mp3
   freq: 13662.80000
   origins: ["conceptDbSamples"]
-##  piano   ################################################################# ▄ 49%
+##  piano   ################################################################# ▅ 50%
 - terms: 
   - term: piano
     lang: en
+    tts: piano.mp3
   - term: klavír
     lang: cs
     tts: klavir.mp3
@@ -12016,10 +12227,11 @@ concepts:
     tts: vir.mp3
   freq: 13416.45000
   origins: ["conceptDbSamples"]
-##  diamonds   ############################################################## ▄ 49%
+##  diamonds   ############################################################## ▅ 50%
 - terms: 
   - term: diamonds
     lang: en
+    tts: diamonds.mp3
   - term: diamanty
     lang: cs
     tts: diamanty.mp3
@@ -12040,10 +12252,11 @@ concepts:
     lang: cs
   freq: 12638.30000
   origins: ["conceptDbSamples"]
-##  tricks   ################################################################ ▄ 49%
+##  tricks   ################################################################ ▅ 50%
 - terms: 
   - term: tricks
     lang: en
+    tts: tricks.mp3
   - term: triky
     lang: cs
     tts: triky.mp3
@@ -12052,10 +12265,11 @@ concepts:
     tts: podvody.mp3
   freq: 12560.00000
   origins: ["conceptDbSamples"]
-##  dad   ################################################################### ▄ 49%
+##  dad   ################################################################### ▅ 50%
 - terms: 
   - term: dad
     lang: en
+    tts: dad.mp3
   - term: tati
     lang: cs
     tts: tati.mp3
@@ -12064,10 +12278,11 @@ concepts:
     tts: tata.mp3
   freq: 12195.12000
   origins: ["conceptDbSamples"]
-##  document   ############################################################## ▄ 49%
+##  document   ############################################################## ▅ 50%
 - terms: 
   - term: document
     lang: en
+    tts: document.mp3
   - term: dokument
     lang: cs
     tts: dokument.mp3
@@ -12076,10 +12291,11 @@ concepts:
     tts: doklad.mp3
   freq: 11841.05000
   origins: ["conceptDbSamples"]
-##  anymore   ############################################################### ▄ 49%
+##  anymore   ############################################################### ▅ 50%
 - terms: 
   - term: anymore
     lang: en
+    tts: anymore.mp3
   - term: už
     lang: cs
     tts: uz.mp3
@@ -12088,10 +12304,11 @@ concepts:
     tts: jeste.mp3
   freq: 11099.89700
   origins: ["conceptDbSamples"]
-##  complicated   ########################################################### ▄ 49%
+##  complicated   ########################################################### ▅ 50%
 - terms: 
   - term: complicated
     lang: en
+    tts: complicated.mp3
   - term: komplikované
     lang: cs
     tts: komplikovane.mp3
@@ -12107,19 +12324,21 @@ concepts:
   state: ignore
   freq: 10479.44000
   origins: ["conceptDbSamples"]
-##  alert   ################################################################# ▄ 48%
+##  alert   ################################################################# ▅ 50%
 - terms: 
   - term: alert
     lang: en
+    tts: alert.mp3
   - term: výstraha
     lang: cs
     tts: vystraha.mp3
   freq: 10451.60000
   origins: ["conceptDbSamples"]
-##  extract   ############################################################### ▄ 49%
+##  extract   ############################################################### ▅ 50%
 - terms: 
   - term: extract
     lang: en
+    tts: extract.mp3
   - term: výpis
     lang: cs
     tts: vypis.mp3
@@ -12128,19 +12347,21 @@ concepts:
     tts: vytazek.mp3
   freq: 10345.60000
   origins: ["conceptDbSamples"]
-##  toy   ################################################################### ▄ 48%
+##  toy   ################################################################### ▅ 50%
 - terms: 
   - term: toy
     lang: en
+    tts: toy.mp3
   - term: hračka
     lang: cs
     tts: hracka.mp3
   freq: 10145.48500
   origins: ["conceptDbSamples"]
-##  processing   ############################################################ ▄ 49%
+##  processing   ############################################################ ▅ 50%
 - terms: 
   - term: processing
     lang: en
+    tts: processing.mp3
   - term: zpracování
     lang: cs
     tts: zpracovani.mp3
@@ -12149,10 +12370,11 @@ concepts:
     tts: vyrizovani.mp3
   freq: 10121.80000
   origins: ["conceptDbSamples"]
-##  tons   ################################################################## ▄ 49%
+##  tons   ################################################################## ▅ 50%
 - terms: 
   - term: tons
     lang: en
+    tts: tons.mp3
   - term: tun
     lang: cs
     tts: tun.mp3
@@ -12161,28 +12383,31 @@ concepts:
     tts: tuny.mp3
   freq: 10088.50000
   origins: ["conceptDbSamples"]
-##  worried   ############################################################### ▄ 48%
+##  worried   ############################################################### ▅ 50%
 - terms: 
   - term: worried
     lang: en
+    tts: worried.mp3
   - term: ustaraný
     lang: cs
     tts: ustarany.mp3
   freq: 9953.55000
   origins: ["conceptDbSamples"]
-##  chapters   ############################################################## ▄ 48%
+##  chapters   ############################################################## ▅ 50%
 - terms: 
   - term: chapters
     lang: en
+    tts: chapters.mp3
   - term: kapitoly
     lang: cs
     tts: kapitoly.mp3
   freq: 9389.18000
   origins: ["conceptDbSamples"]
-##  happening   ############################################################# ▄ 49%
+##  happening   ############################################################# ▅ 50%
 - terms: 
   - term: happening
     lang: en
+    tts: happening.mp3
   - term: děje
     lang: cs
     tts: deje.mp3
@@ -12191,10 +12416,11 @@ concepts:
     tts: deji.mp3
   freq: 9339.34000
   origins: ["conceptDbSamples"]
-##  messages   ############################################################## ▄ 49%
+##  messages   ############################################################## ▅ 50%
 - terms: 
   - term: messages
     lang: en
+    tts: messages.mp3
   - term: zprávy
     lang: cs
     tts: zpravy.mp3
@@ -12203,10 +12429,11 @@ concepts:
     tts: vzkazy.mp3
   freq: 9314.02000
   origins: ["conceptDbSamples"]
-##  upset   ################################################################# ▄ 49%
+##  upset   ################################################################# ▅ 50%
 - terms: 
   - term: upset
     lang: en
+    tts: upset.mp3
   - term: rozrušený
     lang: cs
     tts: rozruseny.mp3
@@ -12215,28 +12442,31 @@ concepts:
     tts: rozcileny.mp3
   freq: 9102.75000
   origins: ["conceptDbSamples"]
-##  whoever   ############################################################### ▄ 48%
+##  whoever   ############################################################### ▅ 50%
 - terms: 
   - term: whoever
     lang: en
+    tts: whoever.mp3
   - term: kdokoli
     lang: cs
     tts: kdokoli.mp3
   freq: 8846.85000
   origins: ["conceptDbSamples"]
-##  bean   ################################################################## ▄ 48%
+##  bean   ################################################################## ▅ 50%
 - terms: 
   - term: bean
     lang: en
+    tts: bean.mp3
   - term: fazole
     lang: cs
     tts: fazole.mp3
   freq: 8738.49500
   origins: ["conceptDbSamples"]
-##  hello   ################################################################# ▄ 49%
+##  hello   ################################################################# ▅ 50%
 - terms: 
   - term: hello
     lang: en
+    tts: hello.mp3
   - term: dobrý den
     lang: cs
     tts: dobry den.mp3
@@ -12245,10 +12475,11 @@ concepts:
     tts: ahoj.mp3
   freq: 8621.20050
   origins: ["conceptDbSamples"]
-##  transport   ############################################################# ▄ 49%
+##  transport   ############################################################# ▅ 50%
 - terms: 
   - term: transport
     lang: en
+    tts: transport.mp3
   - term: doprava
     lang: cs
     tts: doprava.mp3
@@ -12257,10 +12488,11 @@ concepts:
     tts: prenos.mp3
   freq: 8144.60000
   origins: ["conceptDbSamples"]
-##  relaxed   ############################################################### ▄ 49%
+##  relaxed   ############################################################### ▅ 50%
 - terms: 
   - term: relaxed
     lang: en
+    tts: relaxed.mp3
   - term: uvolněné
     lang: cs
     tts: uvolnene.mp3
@@ -12269,19 +12501,21 @@ concepts:
     tts: odpocinkovy.mp3
   freq: 7812.45000
   origins: ["conceptDbSamples"]
-##  jungle   ################################################################ ▄ 48%
+##  jungle   ################################################################ ▅ 50%
 - terms: 
   - term: jungle
     lang: en
+    tts: jungle.mp3
   - term: džungle
     lang: cs
     tts: dzungle.mp3
   freq: 7630.09500
   origins: ["conceptDbSamples"]
-##  proving   ############################################################### ▄ 49%
+##  proving   ############################################################### ▅ 50%
 - terms: 
   - term: proving
     lang: en
+    tts: proving.mp3
   - term: prokazující
     lang: cs
     tts: prokazujici.mp3
@@ -12290,10 +12524,11 @@ concepts:
     tts: ktere prokazuji.mp3
   freq: 7603.59000
   origins: ["conceptDbSamples"]
-##  athletic   ############################################################## ▄ 49%
+##  athletic   ############################################################## ▅ 50%
 - terms: 
   - term: athletic
     lang: en
+    tts: athletic.mp3
   - term: atletické
     lang: cs
     tts: atleticke.mp3
@@ -12302,19 +12537,21 @@ concepts:
     tts: sportovni.mp3
   freq: 7581.47000
   origins: ["conceptDbSamples"]
-##  values   ################################################################ ▄ 48%
+##  values   ################################################################ ▅ 50%
 - terms: 
   - term: values
     lang: en
+    tts: values.mp3
   - term: hodnoty
     lang: cs
     tts: hodnoty.mp3
   freq: 7039.51000
   origins: ["conceptDbSamples"]
-##  kid   ################################################################### ▄ 49%
+##  kid   ################################################################### ▅ 50%
 - terms: 
   - term: kid
     lang: en
+    tts: kid.mp3
   - term: kluk
     lang: cs
     tts: kluk.mp3
@@ -12323,28 +12560,31 @@ concepts:
     tts: dite.mp3
   freq: 6770.47000
   origins: ["conceptDbSamples"]
-##  hen   ################################################################### ▄ 48%
+##  hen   ################################################################### ▅ 50%
 - terms: 
   - term: hen
     lang: en
+    tts: hen.mp3
   - term: slepice
     lang: cs
     tts: slepice.mp3
   freq: 6569.58000
   origins: ["conceptDbSamples"]
-##  liar   ################################################################## ▄ 48%
+##  liar   ################################################################## ▅ 50%
 - terms: 
   - term: liar
     lang: en
+    tts: liar.mp3
   - term: lhář
     lang: cs
     tts: lhar.mp3
   freq: 6052.17000
   origins: ["conceptDbSamples"]
-##  menu   ################################################################## ▄ 49%
+##  menu   ################################################################## ▅ 50%
 - terms: 
   - term: menu
     lang: en
+    tts: menu.mp3
   - term: nabídky
     lang: cs
     tts: nabidky.mp3
@@ -12353,10 +12593,11 @@ concepts:
     tts: jidelni listek.mp3
   freq: 5951.66500
   origins: ["conceptDbSamples"]
-##  counts   ################################################################ ▄ 49%
+##  counts   ################################################################ ▅ 50%
 - terms: 
   - term: counts
     lang: en
+    tts: counts.mp3
   - term: počítá
     lang: cs
     tts: pocita.mp3
@@ -12372,10 +12613,11 @@ concepts:
   state: ignore
   freq: 5632.08000
   origins: ["conceptDbSamples"]
-##  arrogant   ############################################################## ▄ 49%
+##  arrogant   ############################################################## ▅ 50%
 - terms: 
   - term: arrogant
     lang: en
+    tts: arrogant.mp3
   - term: nadutý
     lang: cs
     tts: naduty.mp3
@@ -12397,10 +12639,11 @@ concepts:
     tts: rizek.mp3
   freq: 4027.81500
   origins: ["conceptDbSamples"]
-##  drivers   ############################################################### ▄ 49%
+##  drivers   ############################################################### ▅ 50%
 - terms: 
   - term: drivers
     lang: en
+    tts: drivers.mp3
   - term: ovladače
     lang: cs
     tts: ovladace.mp3
@@ -12409,10 +12652,11 @@ concepts:
     tts: ridici.mp3
   freq: 3781.62000
   origins: ["conceptDbSamples"]
-##  filter   ################################################################ ▄ 49%
+##  filter   ################################################################ ▅ 50%
 - terms: 
   - term: filter
     lang: en
+    tts: filter.mp3
   - term: filtr
     lang: cs
     tts: filtr.mp3
@@ -12421,10 +12665,11 @@ concepts:
     tts: filtrovat.mp3
   freq: 3768.36500
   origins: ["conceptDbSamples"]
-##  kids   ################################################################## ▄ 49%
+##  kids   ################################################################## ▅ 50%
 - terms: 
   - term: kids
     lang: en
+    tts: kids.mp3
   - term: děti
     lang: cs
     tts: deti.mp3
@@ -12433,19 +12678,21 @@ concepts:
     tts: decka.mp3
   freq: 3525.29000
   origins: ["conceptDbSamples"]
-##  zero   ################################################################## ▄ 48%
+##  zero   ################################################################## ▅ 50%
 - terms: 
   - term: zero
     lang: en
+    tts: zero.mp3
   - term: nula
     lang: cs
     tts: nula.mp3
   freq: 2789.54000
   origins: ["conceptDbSamples"]
-##  relaxing   ############################################################## ▄ 49%
+##  relaxing   ############################################################## ▅ 50%
 - terms: 
   - term: relaxing
     lang: en
+    tts: relaxing.mp3
   - term: uvolňující
     lang: cs
     tts: uvolnujici.mp3
@@ -12454,37 +12701,41 @@ concepts:
     tts: odpocinkove.mp3
   freq: 1546.66000
   origins: ["conceptDbSamples"]
-##  planetary   ############################################################# ▄ 48%
+##  planetary   ############################################################# ▅ 50%
 - terms: 
   - term: planetary
     lang: en
+    tts: planetary.mp3
   - term: planetární
     lang: cs
     tts: planetarni.mp3
   freq: 1291.92000
   origins: ["conceptDbSamples"]
-##  variants   ############################################################## ▄ 48%
+##  variants   ############################################################## ▅ 50%
 - terms: 
   - term: variants
     lang: en
+    tts: variants.mp3
   - term: varianty
     lang: cs
     tts: varianty.mp3
   freq: 778.47600
   origins: ["conceptDbSamples"]
-##  suitcase   ############################################################## ▄ 48%
+##  suitcase   ############################################################## ▅ 50%
 - terms: 
   - term: suitcase
     lang: en
+    tts: suitcase.mp3
   - term: kufr
     lang: cs
     tts: kufr.mp3
   freq: 655.85000
   origins: ["conceptDbSamples"]
-##  pointless   ############################################################# ▄ 49%
+##  pointless   ############################################################# ▅ 50%
 - terms: 
   - term: pointless
     lang: en
+    tts: pointless.mp3
   - term: zbytečné
     lang: cs
     tts: zbytecne.mp3
@@ -12493,19 +12744,21 @@ concepts:
     tts: nesmyslne.mp3
   freq: 492.87600
   origins: ["conceptDbSamples"]
-##  noodles   ############################################################### ▄ 48%
+##  noodles   ############################################################### ▅ 50%
 - terms: 
   - term: noodles
     lang: en
+    tts: noodles.mp3
   - term: nudle
     lang: cs
     tts: nudle.mp3
   freq: 345.72500
   origins: ["conceptDbSamples"]
-##  sat   ################################################################### ▄ 49%
+##  sat   ################################################################### ▅ 50%
 - terms: 
   - term: sat
     lang: en
+    tts: sat.mp3
   - term: seděl
     lang: cs
     tts: sedel.mp3
@@ -12514,10 +12767,11 @@ concepts:
     tts: posadil.mp3
   freq: 166.13800
   origins: ["conceptDbSamples"]
-##  beers   ################################################################# ▄ 48%
+##  beers   ################################################################# ▅ 50%
 - terms: 
   - term: beers
     lang: en
+    tts: beers.mp3
   - term: piva
     lang: cs
     tts: piva.mp3
