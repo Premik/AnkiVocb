@@ -134,8 +134,8 @@ public class ConceptYamlStorage {
 	public CharSequence listToYaml(List<CharSequence> st) {
 		//if (!st) return "[]"
 		if (!st) return null
-		if (st.size() <2) { //Short list
-			if ( !st.any {it?.contains('\n') || it?.length()> 20}) {
+		if (st.size() <5) { //Short list
+			if ( !st.any {it?.contains('\n') || it?.length()> 80}) {
 				//Put short simple lists on one line
 				String ml = st.collect().collect{/"$it"/}join(', ')
 				//println "!! $ml ${ml.contains('\n')} !!"
