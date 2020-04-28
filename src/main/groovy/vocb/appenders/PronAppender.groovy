@@ -2,7 +2,6 @@ package vocb.appenders
 
 import vocb.Helper
 import vocb.HttpHelper
-import vocb.corp.Corpus
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
@@ -37,10 +36,36 @@ public class PronAppender {
 					Concept c=  dbMan.conceptByFirstTerm[it]
 					if (!c) return false
 					if (c.state == "ignore") return false
-					return true
+					Term enTrm = c.termsByLang("en")[0]
+					if (!enTrm) return
+						return !enTrm.pron
 				}
 
-		println "${words}"
+		println words.join("\n")
+	}
+
+	void importPron(String pronCopied) {
+		pronCopied.readLines()
+				.collect{it?.trim()}
+				.findAll()
+				.collect { new Tuple2<String,String> (*it.split(/\s+/)) }
+				.each { Tuple2<String,String> wp->
+					assert wp.v1
+					assert wp.v2
+					Concept c=  dbMan.conceptByFirstTerm[wp.v1]
+					if (!c) {
+						println "$wp not in db"
+						return
+					}
+					Term enTrm = c.termsByLang("en")[0]
+					if (enTrm.pron) {
+						assert enTrm.pron == wp.v2 : "Strange replacement"
+						return
+					}
+					enTrm.pron = wp.v2
+					println "${wp}"
+				}
+		dbMan.save()
 
 	}
 
@@ -48,6 +73,11 @@ public class PronAppender {
 	public static void main(String[] args) {
 		new PronAppender().tap {
 			printWords()
+			importPron """
+				year 	jɪr
+				spoke 	spoʊk
+				bring	brɪŋ
+			"""
 		}
 
 		println "Done"

@@ -167,6 +167,7 @@ public class ConceptYamlStorage {
 		appendYamlHash("term", t.term, sb)
 		appendYamlHash("lang", t.lang,sb)
 		appendYamlHash("tts", t.tts, sb)
+		appendYamlHash("pron", t.pron, sb)
 		return sb.toString()
 	}
 
