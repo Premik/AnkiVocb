@@ -14,17 +14,8 @@
 ## Trizeni
 - Podle hvezdicek, castejsi drive
 - Podobnost 
-  - podobne slova dale
-  - prvni stejne pismenko (dve) znamena hodne podobne
-  
-  1. Pismena - pridat porovnani pro podobne pismena. 
-  2. Pridat i permutace dvojslov, pridat podobne slabiky?
-  - pridat foneticky prepis?
-  - normalizovat vahu na delku slova.
+ 
 - Dvojslova, prvni druhe drive. Druhe slovo blizko dvojslvi? 
 - Kompozitni slova po jejich castech?
 - Preferovat, aby slova z examples byly drive
-- Stridat snadne s obtiznyma. Napr 3 snadne 1 tezke.
-   - Slova bez obrazku s velkym rozptylem (obtizne). 
-   - Bez alt native = lehke
-   - dlouhe slova- tezke
+ 
