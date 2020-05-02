@@ -34,7 +34,7 @@ public class ConceptExtra {
 
 	@Override
 	public String toString() {
-		"$c?.firstTerm($difficulty, ${similarities.keySet().take(50).collect{it?.firstTerm} })"
+		"${c?.firstTerm}"
 	}
 }
 

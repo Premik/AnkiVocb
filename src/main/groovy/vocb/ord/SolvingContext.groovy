@@ -38,6 +38,8 @@ public class SolvingContext {
 		})
 	}()
 	
+	@Lazy Order freqWorstOrder= new Order(ord:freqIdealOrder.ord.reverse(), ctx:this) 
+	
 	@Lazy Order initialOrder = createInitialOrder()
 	
 	Order createInitialOrder() {

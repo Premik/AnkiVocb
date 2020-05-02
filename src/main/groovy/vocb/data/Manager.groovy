@@ -188,7 +188,8 @@ public class Manager {
 	public static void main(String[] args) {
 		new Manager().tap {
 		load()
-		println allTextWithLang("en")
+		findBrokenMedia()
+		//println allTextWithLang("en")
 		}
 
 
