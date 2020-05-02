@@ -2,6 +2,7 @@ package vocb.ord
 
 
 
+import java.nio.file.Path
 import java.util.Map.Entry
 
 import vocb.corp.Difficulty
@@ -14,30 +15,37 @@ public class SolvingContext {
 
 	Similarity sm = new Similarity()
 	Difficulty dfc = new Difficulty()
+	Manager dbMan
 
-	@Lazy Manager dbMan = {
-		new Manager().tap {
-			load()
+
+
+	@Lazy List<Concept> initialSelection = {
+		assert dbMan
+		dbMan.db.concepts.findAll{ it.state != "ignore"}
+	}()
+
+	@Lazy ConceptExtra[] concepts = {		
+		initialSelection.withIndex().collect { Concept ce, int i ->
+			new ConceptExtra(c:ce, ctx:this, id:i)
 		}
 	}()
 
-	@Lazy Concept[] initialSelection = {
-		dbMan.db.concepts.findAll{ it.state != "ignore"}.take(50)
-	}()
-	
-	@Lazy ConceptExtra[] concepts = {		
-		//println "${this.class.hashCode()} ${OrderSolver.class.hashCode()}"
-		initialSelection.collect {new ConceptExtra(c:it, solver:this)}
-	}()
-	
 	@Lazy Order freqIdealOrder = {
-		new Order(ord:concepts.sort { ConceptExtra a, ConceptExtra b->
+		new Order(ctx:this, ord:concepts.sort { ConceptExtra a, ConceptExtra b->
+			assert a?.c : a
+			assert b?.c : b
 			b.c.freq <=> a.c.freq
 		})
 	}()
 	
+	@Lazy Order initialOrder = createInitialOrder()
 	
-	
+	Order createInitialOrder() {
+		return new Order(ord: concepts, ctx:this)
+	}
+
+
+
 
 
 }
