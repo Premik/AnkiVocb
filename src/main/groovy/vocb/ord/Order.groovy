@@ -1,20 +1,33 @@
 package vocb.ord
 
+import vocb.Helper
+
 public class Order {
 
 	SolvingContext ctx
 
-	ConceptExtra[] ord
+	List<ConceptExtra> ord
 
 	@Lazy double freqFitness = {
 		assert ctx
-		assert ord		
+		assert ord
 		1-(absSumDetlasFromFreqIdealOrder/ctx.freqWorstOrder.absSumDetlasFromFreqIdealOrder)
 	}()
 
 	@Lazy int[] deltasFromFreqIdealOrder = deltasFrom(ctx.freqIdealOrder)
 	@Lazy int absSumDetlasFromFreqIdealOrder = deltasFromFreqIdealOrder.inject(0) {int sum, int d->
 		sum+= Math.abs(d)
+	}
+
+	private Map<ConceptExtra, Integer> indexMapCached
+
+	Map<ConceptExtra, Integer> getIndexMap() {
+		if (indexMapCached == null) {
+			indexMapCached =  (ord as List).withIndex().collectEntries{ ConceptExtra ce, int i ->
+				[ce, i]
+			}
+		}
+		return indexMapCached
 	}
 
 	int[] deltasFrom(Order o) {
@@ -27,35 +40,64 @@ public class Order {
 		return ret
 	}
 	
-	
+	public void finalizeOrder() {
+		ord = ord.asImmutable()
+	}
+
+
 
 	double getFitness() {
 		return freqFitness
-
 	}
 
 	public ConceptExtra getAt(int i) {
 		assert ord
 		return ord[i]
 	}
-	
+
 	Order mix() {
-		ConceptExtra[] newOrd = ord.findAll() as ConceptExtra[]
-		newOrd.shuffle()
- 		return new Order(ord:newOrd, ctx:ctx)
+		clone().tap {
+			ord.shuffle(ctx.rnd)
+		}
+	}
+
+	Order clone() {
+		return new Order(ord:ord.findAll(), ctx:ctx)
 	}
 	
-	Order crossWith(Order o) {
-		ConceptExtra[] newOrds = ord.findAll() as ConceptExtra[]
-		Order ret = new Order(ord:newOrds, ctx:ctx)
-		idx[] = o.ord
+	public void lerpToPosition(int from, int to, double r) {		
+		int newOtherPos = (to -from)*r+from
+		Helper.cutPaste(from, newOtherPos, ord)
+		indexMapCached = null
+	}
+
+	public void lerpConcextPosition(int pos, Order other, double r) {		
+		ConceptExtra a = ord[pos]
+		assert a
+		int otherPos = other.indexMap[a]
+		//println "[$pos]*${r.round(2)} -> [$otherPos]"
+		if (pos == otherPos) {
+			return
+		}
+		lerpToPosition(pos, otherPos, r)
+	}
+
+	Order crossWith(Order o) {		
+		Order ret = clone()
+		int mutCount = Math.max(10d, ctx.rndConceptIndex/4)
+		for (int i=0;i<mutCount;i++) {
+			//println ctx.rndRate
+			ret.lerpConcextPosition(ctx.rndConceptIndex, o, ctx.rndRate)
+		}
+		ret.finalizeOrder()
+		return ret
 		
 	}
 
 	@Override
 	public String toString() {
-		String ord = ord.take(50).collect{"$it.c.firstTerm $it.id  "}
-		"$fitness $ord"
+		String ord = ord.take(4).collect{"$it.c.firstTerm:$it.id"}
+		"${fitness.round(2)} $ord"
 	}
 
 	@Override

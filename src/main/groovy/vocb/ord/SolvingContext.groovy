@@ -2,9 +2,6 @@ package vocb.ord
 
 
 
-import java.nio.file.Path
-import java.util.Map.Entry
-
 import vocb.corp.Difficulty
 import vocb.corp.Similarity
 import vocb.data.Concept
@@ -16,8 +13,22 @@ public class SolvingContext {
 	Similarity sm = new Similarity()
 	Difficulty dfc = new Difficulty()
 	Manager dbMan
-
-
+	
+	Random rnd = new Random(123456)
+	
+	double getRndRate() {
+		//Much higher chances to yield 0 or 1 exactly.
+		switch (rnd.nextInt(5)) {
+			case 0..1: return 0
+			case 2: return rnd.nextDouble()
+			case 3..4: return 1
+		}
+	}
+	
+	int getRndConceptIndex() {
+		rnd.nextInt(concepts.size())
+	}
+	
 
 	@Lazy List<Concept> initialSelection = {
 		assert dbMan
