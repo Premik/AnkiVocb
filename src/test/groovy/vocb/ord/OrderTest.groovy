@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test
 
 import vocb.Helper
 
-class OrderSolverTest {
+class OrderTest {
 
 	URL dbEntry = getClass().getResource('/vocb/data/orderingTest.yaml')
 
@@ -177,5 +177,20 @@ class OrderSolverTest {
 		assert Math.abs(zeros - ones) < 10
 		assert zeros/cnt > 0.3
 		assert ones/cnt > 0.3
+	}
+	
+	@Test
+	void solveSort() {
+		sol.with {
+			maxGens = 5000
+			initialSpawn = 50
+			crossAtOnce = 50
+			maxPopsize = 500
+					
+		}
+		sol.runEpoch()
+		println sol.ctx.freqIdealOrder
+		println sol.bestFirst[0]
+		
 	}
 }
