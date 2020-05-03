@@ -53,7 +53,7 @@ public class SolvingContext {
 	
 	@Lazy Order initialOrder = createInitialOrder()
 	
-	Order createInitialOrder() {
+	Order createInitialOrder(int genNum=0) {
 		return new Order(ord: concepts, ctx:this)
 	}
 

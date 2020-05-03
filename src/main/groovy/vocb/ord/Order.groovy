@@ -7,6 +7,7 @@ public class Order {
 	SolvingContext ctx
 
 	List<ConceptExtra> ord
+	int genNum
 
 	@Lazy double freqFitness = {
 		assert ctx
@@ -82,9 +83,11 @@ public class Order {
 		lerpToPosition(pos, otherPos, r)
 	}
 
-	Order crossWith(Order o) {		
+	Order crossWith(Order o,int genNum=0) {
 		Order ret = clone()
+		ret.genNum = genNum
 		int mutCount = Math.max(10d, ctx.rndConceptIndex/4)
+		
 		for (int i=0;i<mutCount;i++) {
 			//println ctx.rndRate
 			ret.lerpConcextPosition(ctx.rndConceptIndex, o, ctx.rndRate)
@@ -97,7 +100,7 @@ public class Order {
 	@Override
 	public String toString() {
 		String ord = ord.take(4).collect{"$it.c.firstTerm:$it.id"}
-		"${fitness.round(2)} $ord"
+		"${fitness.round(2)} ($genNum) $ord"
 	}
 
 	@Override
