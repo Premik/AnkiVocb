@@ -1,0 +1,62 @@
+${render.expandTemplate(template.header)}
+
+${
+    boolean hint = true
+    render.templateVisibility += [
+     "hintButton.html": hint,
+     "script.js" : hint,
+     "hintPanel.html": hint
+    ]
+    ""
+}
+
+${render.expandTemplate("hintButton.html")}
+<div class="wrapper rounded shadow">
+
+    <div class="foreign foreignTerm">
+        <span>{{foreign}}</span>[sound:{{foreignTTS}}]
+    </div>
+
+
+    <figure class="img"><img class="shadow" src="{{img}}"></span></figure>
+
+    <div class="native native1 hintCover">
+        {{native}}[sound:{{nativeTTS}}]
+    </div>
+
+
+    ${render.expandTemplate("hintPanel.html")}
+
+    
+
+    
+    
+
+
+    <!-- {{#nativeAlt}} -->
+    <div class="native native2 hintCover">
+        <span>{{nativeAlt}}</span> [sound:{{nativeAltTTS}}]
+    </div>
+    <!-- {{/nativeAlt}} -->
+
+    <!-- {{#nativeExample}} -->
+    <div class="native nativeExample">
+        <span>{{nativeExample}}</span> [sound:{{nativeExampleTTS}}]
+    </div>
+    <!-- {{/nativeExample}} -->
+
+    <!-- {{#foreignExample}} -->
+    <div class="foreign foreignExample">
+        <span>{{foreignExample}}</span> [sound:{{foreignExampleTTS}}]
+    </div>
+    <!-- {{/foreignExample}} -->
+
+    
+
+</div>
+
+<script>
+${render.expandTemplate("script.js")}
+</script>  
+
+${render.expandTemplate(template.footer)}
