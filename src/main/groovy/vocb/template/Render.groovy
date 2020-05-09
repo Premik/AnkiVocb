@@ -69,12 +69,13 @@ class Render {
 	static void main(String... args) {
 		File p= new File("/tmp/work/template")
 		new Render().with {
-			cfg.render.each { String name, Map r ->
+			Map toRender = cfg.render
+			//toRender = toRender.findAll {String k, v-> k =="cardBackPreview"} 
+			toRender.each { String name, Map r ->
 				File outF = renderToFile(name, p)
 				if (r.runWith) {
-					Process proc = [r.runWith, outF.absolutePath].execute()
-					proc.waitFor(5, TimeUnit.SECONDS)
-					Helper.printProcOut(proc)
+					Process proc = [r.runWith, outF.absolutePath].execute()					
+					Helper.printProcOut(proc, 2)
 				}
 				//ssml
 			}

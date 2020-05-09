@@ -28,10 +28,10 @@ class VocbModel {
 	void assureNote(Note n) {
 		assert n
 		n.assertIsComplete()
-		n.tags.remove("ankiVocb") //Legacy tag
-		if (!n.hasTagWithPrefix("ankivocb")) {
+		n.tags.remove("ankivocb1") //Legacy tag
+		/*if (!n.hasTagWithPrefix(version)) {
 			n.tags.add(version)
-		}
+		}*/
 		n.guid = "avcb_${n.foreign?:n.hashCode() }"
 	}
 
