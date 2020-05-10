@@ -1,7 +1,5 @@
 ${render.expandTemplate(templates.header)}
-
-
-
+<!-- $v.nativeAltShow -->
 <div class="wrapper rounded shadow">
 
     <div class="tags">$v.tags</div>
@@ -14,10 +12,18 @@ ${render.expandTemplate(templates.header)}
 
     <figure class="img hintCover"><img class="shadow" src="$v.img"></span></figure>
 
-    <div class="native native1">$v.native</div>
+    <div class="native native1">
+        <!-- $v.nativeShow -->    
+        <span>$v.native</span>$v.nativeTTS
+        <!-- $v.nativeShowEnd -->        
+    </div>
+
     
-        
-    <div class="native native2">$v.nativeAlt</div>
+    <div class="native native2">
+        <!-- $v.nativeAltShow -->
+        <span>$v.nativeAlt</span>$v.nativeAltTTS
+        <!-- $v.nativeAltShowEnd -->
+    </div>
     
 
      
@@ -71,5 +77,5 @@ ${render.expandTemplate(templates.header)}
 
 
 </script>
-
+<!-- $v.nativeAltShowEnd -->
 ${render.expandTemplate(templates.footer)}

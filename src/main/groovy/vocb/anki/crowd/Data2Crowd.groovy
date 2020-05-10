@@ -3,15 +3,12 @@ package vocb.anki.crowd
 import java.nio.file.Path
 import java.nio.file.Paths
 
-import javax.naming.LimitExceededException
-
-import groovy.transform.Memoized
 import vocb.ConfHelper
-import vocb.Helper
 import vocb.corp.Similarity
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
+import vocb.template.Render
 
 public class Data2Crowd {
 	
@@ -19,8 +16,8 @@ public class Data2Crowd {
 	@Lazy ConfigObject cfg = cfgHelper.cfg
 
 	Path dataPath= Paths.get("/data/src/AnkiVocb/db/")
-	String destCrowdRootFolder = "/tmp/work/test"
-	Similarity sim = new Similarity()
+	String destCrowdRootFolder = "/tmp/work/test"	
+	@Lazy Render render = new Render(cfg:cfg)
 
 	BigDecimal[] freqRanges = [
 		0,
@@ -94,59 +91,14 @@ public class Data2Crowd {
 		Note n = vocbModel.updateNoteHaving(c.firstTerm)
 		concept2CrowdNote(c, n)
 	}
-
-	@Memoized
-	BigDecimal similarConcepts(Concept a, Concept b) {
-		assert a?.terms
-		assert b?.terms
-		int sz = Math.min( a.terms.size(), b.terms.size())
-		BigDecimal ret = 0
-		for (int i=0;i<sz;i++) {
-			ret += sim.similarSubstrings(a.terms.values()[i].term, b.terms.values()[i].term)
-			if (i == 0) ret*3 //First term is more important
+	
+	void renderCardTemplate( ConfigObject renderCardTemplate, NoteModel targetM=vocbModel.noteModel) {		
+		targetM.css = render.render(renderCardTemplate.css)
+		renderCardTemplate.cards.each {
+			println "${it}"
 		}
-		return ret
+		 
 	}
-
-	BigDecimal topSimilarOf(Concept a, BigDecimal scoreCur=8*3) {
-	}
-
-	Concept[] optimizeOrder() {
-		
-
-		Random random = new Random()
-		Concept[] prev = new ArrayList(dbMan.db.concepts)
-		Concept[] ret = new ArrayList(dbMan.db.concepts)
-		BigDecimal lastScore =0
-		
-		def mixIt = {
-			(0..50).each {ret.swap(random.nextInt(ret.size()), random.nextInt(ret.size()))}
-		}
-		def isBetter = {
-		}
-		def scoreOf = { Concept[] cps ->
-			BigDecimal penalty =0			
-			Helper.withAllPairs(cps as List, 20) { Integer i, Concept c1,Concept c2->			
-					//Similar and close => bigger  score
-					penalty+= similarConcepts(c1, c2) * Helper.lerp(5, 1, i/30)   			
-			}
-			return penalty
-		}
-		
-		lastScore = scoreOf(ret) 
-		println lastScore 		
-		for (int i=0;i<1000;i++) {
-		mixIt()
-		BigDecimal newScore = scoreOf(ret) 
-		println newScore
-		if (newScore < lastScore)
-			newScore = lastScore
-			prev = new ArrayList(ret as List)
-			prev.take(40).collect {it.firstTerm} 
-		}
-		return prev
-	}
-
 
 	void exportToCrowd(int limit=10, int mult=1) {
 		vocbModel.notes.clear()

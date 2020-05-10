@@ -21,7 +21,7 @@ public class NoteModel  {
 	List req
 	int sortf
 	List<String> tags
-	List tmpls
+	List<TemplateModel> tmpls
 	int type
 	List vers
 	
@@ -41,6 +41,19 @@ public class NoteModel  {
 		flds = l.collect {
 			if (it instanceof FieldModel) return it
 			return new FieldModel(it)
+		}		
+	}
+	
+	public setTmpls(Object newTmpls) {
+		assert newTmpls
+		List l = newTmpls as List
+		if (l.size() ==0) {
+			tmpls.clear()
+			return
+		}
+		tmpls = l.collect {
+			if (it instanceof TemplateModel) return it
+			return new TemplateModel(it)
 		}
 		
 	}
@@ -76,6 +89,9 @@ public class NoteModel  {
 		}
 		flds.eachWithIndex {FieldModel m, int i -> m.ord = i }
 		assert flds*.assertIsComplete()
+		assert tmpls
+		tmpls.eachWithIndex {TemplateModel m, int i -> m.ord = i }
+		assert tmpls*.assertIsComplete()
 
 		if (!crowdanki_uuid) {
 			crowdanki_uuid = "ankivocb-0.0.1-$name"

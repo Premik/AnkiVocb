@@ -3,8 +3,6 @@
  */
 package vocb.template
 
-import java.util.concurrent.TimeUnit
-
 import groovy.text.GStringTemplateEngine
 import vocb.ConfHelper
 import vocb.Helper
@@ -48,13 +46,18 @@ class Render {
 		Writable templ = templEngine.createTemplate(templText).make(templBinding)
 		templ.toString()
 	}
+	
+	public String render(ConfigObject renderCfg) {
+		this.renderCfg = renderCfg		
+		String mainTemplate = templates.main
+		assert  mainTemplate
+		expandTemplate(mainTemplate)
+	}
 
 	public String render(String renderConfigName) {
 		renderCfg = cfg.render[renderConfigName]
 		assert renderCfg : "render.$renderConfigName cont found in config"
-		String mainTemplate = templates.main
-		assert  mainTemplate		
-		expandTemplate(mainTemplate)
+		return render(renderCfg)
 	}
 
 	public File renderToFile(String renderConfigName, File path) {
@@ -65,20 +68,27 @@ class Render {
 		f <<	render(renderConfigName)
 		return f
 	}
+	
+	public void preview() {
+		Map toRender = cfg.render
+		//toRender = toRender.findAll {String k, v-> k =="card2Preview"}
+		toRender.each { String name, Map r ->
+			File outF = renderToFile(name, p)
+			if (r.runWith) {
+				Process proc = [r.runWith, outF.absolutePath].execute()
+				Helper.printProcOut(proc, 2)
+			}
+			//ssml
+		}
+	}
+	
+	
+	
 
 	static void main(String... args) {
 		File p= new File("/tmp/work/template")
 		new Render().with {
-			Map toRender = cfg.render
-			//toRender = toRender.findAll {String k, v-> k =="card2Preview"} 
-			toRender.each { String name, Map r ->
-				File outF = renderToFile(name, p)
-				if (r.runWith) {
-					Process proc = [r.runWith, outF.absolutePath].execute()					
-					Helper.printProcOut(proc, 2)
-				}
-				//ssml
-			}
+			preview()
 		}
 		
 		println "Done"
