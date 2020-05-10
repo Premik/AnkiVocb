@@ -7,29 +7,27 @@ ${render.expandTemplate(templates.header)}
     <div class="tags">$v.tags</div>
 
        
-    <div class="foreign foreignTerm">
-        <span>$v.foreign</span>$v.foreignTTS
-    </div>
+    <div class="foreign foreignTerm hintCover hint">$v.foreign</div>
 
     <button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
 
 
     <figure class="img hintCover"><img class="shadow" src="$v.img"></span></figure>
 
-    <div class="native native1 hintCover hint">$v.native</div>
+    <div class="native native1">$v.native</div>
     
-    
-    
-    <div class="native native2 hintCover hint">$v.nativeAlt</div>
+        
+    <div class="native native2">$v.nativeAlt</div>
     
 
      
-    <div class="native nativeExample hintCover">
-        <span>$v.nativeExample</span>
+    <div class="native nativeExample">
+        <span>$v.nativeExample</span>$v.nativeExampleTTS
     </div>
     
-    <div class="foreign foreignExample">
-        <span>$v.foreignExample</span>$v.foreignExampleTTS
+    
+    <div class="foreign foreignExample hintCover">
+        <span>$v.foreignExample</span>
     </div>
     
 

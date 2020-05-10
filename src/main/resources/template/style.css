@@ -45,20 +45,20 @@
 }
 
 
-.question {
-  /*background-image: url("ukFlagBlur.png");*/
+.foreign {
+  /*background-image: url("ukFlagBlur.png");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   color:rgb(255, 50, 50);
   z-index: 1;
   
 }
 
-.answer {
-  /*background-image: url("csFlagBlur.png");*/
-  background-size: 100% 100%;
+.native {
+  /*background-image: url("csFlagBlur.png");
+  background-size: 100% 100%;*
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   color:rgb(50, 255, 50);
 }
 
@@ -134,7 +134,7 @@ font-family: 'Courier New', Courier, monospace;
 @media all and (min-width: 1200px) {
 
   .tags {order: 1;}
-  .question { order: 2;}
+  .foreign { order: 2;}
   .native1 { order: 3; }
   .img { 
     order: 4;

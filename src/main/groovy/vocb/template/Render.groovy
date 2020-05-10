@@ -70,7 +70,7 @@ class Render {
 		File p= new File("/tmp/work/template")
 		new Render().with {
 			Map toRender = cfg.render
-			//toRender = toRender.findAll {String k, v-> k =="cardBackPreview"} 
+			//toRender = toRender.findAll {String k, v-> k =="card2Preview"} 
 			toRender.each { String name, Map r ->
 				File outF = renderToFile(name, p)
 				if (r.runWith) {
