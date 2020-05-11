@@ -1,5 +1,4 @@
-
-
+/* $cfg.timestamp */
 .shadow {
  -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
  -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
@@ -72,18 +71,21 @@
 font-family: 'Courier New', Courier, monospace;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
 .hintCover {
   /*display: none;*/
   visibility:hidden;
 }
 
+@keyframes fadeIn {
+  0%   {opacity: 0;visibility:hidden;}
+  30%  {opacity: 0;visibility:visible;}
+  100% {opacity: 100;}
+}
+
+
 .hintUncover {
-  animation: fadeIn 3s;
+  animation: fadeIn 10s;
   /*animation-delay: 5s;*/
   animation-fill-mode: forwards;
 }
@@ -141,8 +143,9 @@ font-family: 'Courier New', Courier, monospace;
     flex: 1 auto; 
   }
   .native2 { order: 5;}
-  .foreignExample { order: 6;}
-  .nativeExample { order: 7;}  
+  .nativeExample { order: 6;}  
+  .foreignExample { order: 7;}
+  
 }
 
 
@@ -158,7 +161,7 @@ font-family: 'Courier New', Courier, monospace;
   border-radius: 50%;
 
 }#hintButton {
-  background-image: url('lightBulb.png');
+  background-image: url('_lightBulb.png');
   background-repeat: no-repeat;
   background-color: #8adbdb;
   background-position: center; 

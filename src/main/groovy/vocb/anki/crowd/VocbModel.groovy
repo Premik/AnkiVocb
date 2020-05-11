@@ -1,4 +1,4 @@
-package vocb.anki.crowd;
+package vocb.anki.crowd
 
 import java.nio.file.Files
 import java.nio.file.Path
@@ -30,11 +30,17 @@ class VocbModel {
 		n.assertIsComplete()
 		n.tags.remove("ankivocb1") //Legacy tag
 		/*if (!n.hasTagWithPrefix(version)) {
-			n.tags.add(version)
-		}*/
+		 n.tags.add(version)
+		 }*/
 		n.guid = "avcb_${n.foreign?:n.hashCode() }"
 	}
 
+	void syncNoteModels() {
+
+		noteModel.assureIsComplete()
+		parser.noteModels = [noteModel]
+	}
+	
 	void syncNoteFields() {
 		//println Helper.objectToJson(notes)
 		notes.each {assureNote(it)}
@@ -49,19 +55,24 @@ class VocbModel {
 	}
 
 	void syncMedia() {
+		copyMediaLinks(
+				notes.collectMany { Note n->
+					[
+						n.img,
+						n.foreignTTS,
+						n.foreignExampleTTS,
+						n.nativeTTS,
+						n.nativeTTS,
+						n.nativeExampleTTS
+					].findAll()
+				})
+	}
+
+	void copyMediaLinks(List<String> links) {
 		assureCrowdDest()
 		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
 		assert resolveMediaLink : "Set a closure to resolve the mediaLink to file path"
-		notes.collectMany { Note n->
-			[
-				n.img,
-				n.foreignTTS,
-				n.foreignExampleTTS,
-				n.nativeTTS,
-				n.nativeTTS,
-				n.nativeExampleTTS
-			].findAll()
-		}.each { String mediaLink->
+		links.each { String mediaLink->
 			Path crowdPath = corwdMediaPath.resolve(mediaLink)
 			if (!Files.exists(crowdPath)) {
 				println "$mediaLink: copy"
@@ -70,7 +81,7 @@ class VocbModel {
 				if (Files.exists(sourcePath)) {
 					Files.copy(sourcePath, crowdPath)
 				}
-				
+
 			}
 		}
 	}
@@ -78,6 +89,7 @@ class VocbModel {
 	void save() {
 		assureCrowdDest()
 		syncNoteFields()
+		syncNoteModels()
 		syncMedia()
 		Path deckJson = destCrowdRootFolder.resolve("${destCrowdRootFolder.fileName}.json")
 		parser.saveTo(deckJson.toFile())

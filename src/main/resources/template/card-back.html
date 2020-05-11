@@ -1,7 +1,7 @@
 ${render.expandTemplate(templates.header)}
 
 
-
+<!-- $cfg.timestamp -->
 <div class="wrapper rounded shadow">
 
     <div class="tags">$v.tags</div>
@@ -31,15 +31,14 @@ ${render.expandTemplate(templates.header)}
     
 
     
+    <div class="foreign foreignExample">
+        <span>$v.foreignExample</span>$v.foreignExampleTTS
+    </div>
+
     <div class="native nativeExample">
         <span>$v.nativeExample</span>$v.nativeExampleTTS
     </div>
     
-
-    
-    <div class="foreign foreignExample">        
-        <span>$v.foreignExample</span>$v.foreignExampleTTS
-    </div>
     
 
     
