@@ -1,10 +1,8 @@
 /* $cfg.timestamp */
 .shadow {
- -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
- -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
- -o-box-shadow: 5px 6px 5px 0px  rgba(0,0,0,0.68);
  box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
 }
+
 
 
 .wrapper {
@@ -20,9 +18,10 @@
   font-family: Helvetica;
   font-size: 1.3em;
   font-weight: bold;
-  /*line-height: 40px;*/
+  line-height: 28px;
   text-align: center;
   text-shadow: 2px 2px 3px  #121f1fee, -1px 0 10px #00ffffc9;
+  /*z-index: -2;*/
   
   /*opacity: 0.9;
   filter: alpha(opacity=9);*/
@@ -34,6 +33,7 @@
   flex: 1 100%;
   /*margin: auto;*/
   margin: 5px;
+  
  /* min-height: 80px;
  line-height: 80px; */
  /* background-color: aqua;*/
@@ -49,7 +49,7 @@
   background-size: contain;
   background-repeat: no-repeat;*/
   color:rgb(255, 50, 50);
-  z-index: 1;
+
   
 }
 
@@ -63,7 +63,7 @@
 
 
 .native1, .native2, .foreignTerm, .hint {
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -83,6 +83,11 @@ font-family: 'Courier New', Courier, monospace;
   100% {opacity: 100;}
 }
 
+@-webkit-keyframes fadeIn {
+  0%   {opacity: 0;visibility:hidden;}
+  30%  {opacity: 0;visibility:visible;}
+  100% {opacity: 100;}
+}
 
 .hintUncover {
   animation: fadeIn 10s;
@@ -106,7 +111,9 @@ font-family: 'Courier New', Courier, monospace;
 
 .tags {
   color: yellow;
-  font-size: 2em;  
+  font-size: 1.6em;
+ /*z-index: -1;*/
+ 
 }
 
 
@@ -140,14 +147,17 @@ font-family: 'Courier New', Courier, monospace;
   .native1 { order: 3; }
   .img { 
     order: 4;
-    flex: 1 auto; 
+    flex: 1 auto;    
+  }
+  .img img {
+    width: 70%;
   }
   .native2 { order: 5;}
-  .nativeExample { order: 6;}  
-  .foreignExample { order: 7;}
+  .foreignExample { order: 6;}
+  .nativeExample { order: 7;}  
+  
   
 }
-
 
 
 .buttonRounded {
@@ -160,14 +170,16 @@ font-family: 'Courier New', Courier, monospace;
   margin: 4px 2px;
   border-radius: 50%;
 
-}#hintButton {
+}
+
+#hintButton button {
   background-image: url('_lightBulb.png');
   background-repeat: no-repeat;
   background-color: #8adbdb;
   background-position: center; 
-  width: 80px;
+  /*width: 80px;*/
   cursor: pointer;
-  z-index: 2;
+  
   /*float: right;*/
  
 }

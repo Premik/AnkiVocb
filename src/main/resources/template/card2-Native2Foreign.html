@@ -1,5 +1,5 @@
 ${render.expandTemplate(templates.header)}
-<!-- $v.nativeShow -->    
+$v.nativeShow
 <!-- $cfg.timestamp -->
 <div class="wrapper rounded shadow">
 
@@ -8,7 +8,9 @@ ${render.expandTemplate(templates.header)}
        
     <div class="foreign foreignTerm hintCover hint">$v.foreign</div>
 
-    <button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
+    <div id="hintButton" >
+    <button class="buttonRounded" onclick="showHint()" type="button">HINT</button>
+    </div>
 
 
     <figure class="img hintCover"><img class="shadow" src="$v.img"></span></figure>
@@ -29,7 +31,7 @@ ${render.expandTemplate(templates.header)}
     <div class="foreign foreignExample hintCover">
         <span>$v.foreignExample</span>
     </div>
-    
+
     <div class="native nativeExample">
         <span>$v.nativeExample</span>$v.nativeExampleTTS
     </div>
@@ -43,5 +45,5 @@ ${render.expandTemplate(templates.header)}
 </div>
 
 
-<!-- $v.nativeShowEnd -->  
+$v.nativeShowEnd
 ${render.expandTemplate(templates.footer)}

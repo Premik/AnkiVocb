@@ -34,7 +34,7 @@ task(renderTemplate, dependsOn: 'classes', type: JavaExec) {
 	//#systemProperty 'simple.message', 'Hello '
 }
 
-dependencies {s
+dependencies {
 
 	implementation "org.codehaus.groovy:groovy:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-xml:$groovyVersion"
@@ -43,7 +43,7 @@ dependencies {s
 	implementation "org.codehaus.groovy:groovy-sql:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-yaml:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-templates:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-dateutil:$groovyVersion"
+	//implementation "org.codehaus.groovy:groovy-dateutil:$groovyVersion"
 	
 
 	implementation "com.xlson.groovycsv:groovycsv:1.3"
