@@ -10105,7 +10105,7 @@ concepts:
   state: ignoreImage
   freq: 121764.50000
   origins: ["corpus", "conceptDbSamples"]
-##  six   ################################################################### ▆ 67%
+##  six   ###################################################################
 - terms: 
   - term: six
     lang: en
@@ -10114,10 +10114,17 @@ concepts:
   - term: šest
     lang: cs
     tts: sest.mp3
+  examples: 
+  - term: I called you six times.
+    lang: en
+    tts: I called you six times.mp3
+  - term: Volal jsem ti šestkrát.
+    lang: cs
+    tts: Volal jsem ti sestkrat.mp3
   img: six.jpeg
   freq: 121091.50000
   origins: ["conceptDbSamples"]
-##  fine   ################################################################## ▆ 67%
+##  fine   ##################################################################
 - terms: 
   - term: fine
     lang: en
@@ -10129,10 +10136,17 @@ concepts:
   - term: jemný
     lang: cs
     tts: jemny.mp3
+  examples: 
+  - term: My room is fine.
+    lang: en
+    tts: My room is fine.mp3
+  - term: Můj pokoj je v pohodě.
+    lang: cs
+    tts: Muj pokoj je v pohode.mp3
   state: ignoreImage
   freq: 119116.50000
   origins: ["conceptDbSamples"]
-##  million   ############################################################### ▆ 67%
+##  million   ###############################################################
 - terms: 
   - term: million
     lang: en
@@ -10141,10 +10155,17 @@ concepts:
   - term: milion
     lang: cs
     tts: milion.mp3
+  examples: 
+  - term: You mean a hundred million?
+    lang: en
+    tts: You mean a hundred million.mp3
+  - term: Chcete říct sto milionů?
+    lang: cs
+    tts: Chcete rict sto milionu.mp3
   img: million.jpeg
   freq: 118823.90000
   origins: ["conceptDbSamples"]
-##  bed   ################################################################### ▆ 67%
+##  bed   ###################################################################
 - terms: 
   - term: bed
     lang: en
@@ -10153,10 +10174,17 @@ concepts:
   - term: postel
     lang: cs
     tts: postel.mp3
+  examples: 
+  - term: Placed next to the bed.
+    lang: en
+    tts: Placed next to the bed.mp3
+  - term: Umístěný vedle postele.
+    lang: cs
+    tts: Umisteny vedle postele.mp3
   img: bed.jpeg
   freq: 118469.50000
   origins: ["conceptDbSamples"]
-##  wrote   ################################################################# ▆ 67%
+##  wrote   #################################################################
 - terms: 
   - term: wrote
     lang: en
@@ -10165,10 +10193,17 @@ concepts:
   - term: napsal
     lang: cs
     tts: napsal.mp3
+  examples: 
+  - term: He wrote a book a few years after mine.
+    lang: en
+    tts: He wrote a book a few years after mine.mp3
+  - term: Napsal knihu pár let poté mojí.
+    lang: cs
+    tts: Napsal knihu par let pote moji.mp3
   img: wrote.jpeg
   freq: 118114.00000
   origins: ["conceptDbSamples"]
-##  road   ################################################################## ▆ 67%
+##  road   ##################################################################
 - terms: 
   - term: road
     lang: en
@@ -10180,10 +10215,17 @@ concepts:
   - term: cesta
     lang: cs
     tts: cesta.mp3
+  examples: 
+  - term: We continued along the main road.
+    lang: en
+    tts: We continued along the main road.mp3
+  - term: Pokračovali jsme po hlavní silnici.
+    lang: cs
+    tts: Pokracovali jsme po hlavni silnici.mp3
   img: road.jpeg
   freq: 117982.00000
   origins: ["conceptDbSamples"]
-##  lost   ################################################################## ▆ 67%
+##  lost   ##################################################################
 - terms: 
   - term: lost
     lang: en
@@ -10195,10 +10237,17 @@ concepts:
   - term: prohrál
     lang: cs
     tts: prohral.mp3
+  examples: 
+  - term: I almost lost you.
+    lang: en
+    tts: I almost lost you.mp3
+  - term: Skoro jsem tě ztratil.
+    lang: cs
+    tts: Skoro jsem te ztratil.mp3
   img: lost.jpeg
   freq: 117075.00000
   origins: ["conceptDbSamples"]
-##  months   ################################################################ ▆ 67%
+##  months   ################################################################
 - terms: 
   - term: months
     lang: en
@@ -10207,10 +10256,17 @@ concepts:
   - term: měsíce
     lang: cs
     tts: mesice.mp3
+  examples: 
+  - term: She's only eight months.
+    lang: en
+    tts: Shes only eight months.mp3
+  - term: Je jí jenom osm měsíců.
+    lang: cs
+    tts: Je ji jenom osm mesicu.mp3
   img: months.jpeg
   freq: 116955.00000
   origins: ["conceptDbSamples"]
-##  ready   ################################################################# ▆ 67%
+##  ready   #################################################################
 - terms: 
   - term: ready
     lang: en
@@ -10219,10 +10275,17 @@ concepts:
   - term: připraven
     lang: cs
     tts: pripraven.mp3
+  examples: 
+  - term: It's not ready yet.
+    lang: en
+    tts: Its not ready yet.mp3
+  - term: Není to ještě hotové.
+    lang: cs
+    tts: Neni to jeste hotove.mp3
   img: ready.jpeg
   freq: 116349.50000
   origins: ["conceptDbSamples"]
-##  following   ############################################################# ▆ 67%
+##  following   #############################################################
 - terms: 
   - term: following
     lang: en
@@ -10231,10 +10294,17 @@ concepts:
   - term: následující
     lang: cs
     tts: nasledujici.mp3
+  examples: 
+  - term: Please fill in the following information!
+    lang: en
+    tts: Please fill in the following information.mp3
+  - term: Vyplňte prosím následující údaje!
+    lang: cs
+    tts: Vyplnte prosim nasledujici udaje.mp3
   img: following.jpeg
   freq: 116148.00000
   origins: ["conceptDbSamples"]
-##  ten   ################################################################### ▆ 67%
+##  ten   ###################################################################
 - terms: 
   - term: ten
     lang: en
@@ -10243,10 +10313,17 @@ concepts:
   - term: deset
     lang: cs
     tts: deset.mp3
+  examples: 
+  - term: He returned in ten minutes.
+    lang: en
+    tts: He returned in ten minutes.mp3
+  - term: Vrátil se za deset minut.
+    lang: cs
+    tts: Vratil se za deset minut.mp3
   img: ten.jpeg
   freq: 115719.50000
   origins: ["conceptDbSamples"]
-##  mean   ################################################################## ▆ 67%
+##  mean   ##################################################################
 - terms: 
   - term: mean
     lang: en
@@ -10258,10 +10335,17 @@ concepts:
   - term: střední
     lang: cs
     tts: stredni.mp3
+  examples: 
+  - term: You mean a hundred million?
+    lang: en
+    tts: You mean a hundred million.mp3
+  - term: Chcete říct sto milionů?
+    lang: cs
+    tts: Chcete rict sto milionu.mp3
   img: mean.jpeg
   freq: 115545.50000
   origins: ["conceptDbSamples"]
-##  question   ############################################################## ▆ 67%
+##  question   ##############################################################
 - terms: 
   - term: question
     lang: en
@@ -10273,10 +10357,17 @@ concepts:
   - term: dotaz
     lang: cs
     tts: dotaz.mp3
+  examples: 
+  - term: I answered your question.
+    lang: en
+    tts: I answered your question.mp3
+  - term: Odpověděl jsem ti na otázku.
+    lang: cs
+    tts: Odpovedel jsem ti na otazku.mp3
   img: question.jpeg
   freq: 115524.00000
   origins: ["conceptDbSamples"]
-##  human   ################################################################# ▆ 67%
+##  human   #################################################################
 - terms: 
   - term: human
     lang: en
@@ -10288,10 +10379,17 @@ concepts:
   - term: člověk
     lang: cs
     tts: clovek.mp3
+  examples: 
+  - term: The human body regenerates itself.
+    lang: en
+    tts: The human body regenerates itself.mp3
+  - term: Lidské tělo se regeneruje samo.
+    lang: cs
+    tts: Lidske telo se regeneruje samo.mp3
   img: human.jpeg
   freq: 114381.00000
   origins: ["conceptDbSamples"]
-##  states   ################################################################ ▆ 67%
+##  states   ################################################################
 - terms: 
   - term: states
     lang: en
@@ -10303,10 +10401,17 @@ concepts:
   - term: stavy
     lang: cs
     tts: stavy.mp3
+  examples: 
+  - term: The united states of america.
+    lang: en
+    tts: The united states of america.mp3
+  - term: Spojené státy americké
+    lang: cs
+    tts: Spojene staty americke.mp3
   img: states.jpeg
   freq: 113807.00000
   origins: ["conceptDbSamples"]
-##  yes   ################################################################### ▆ 67%
+##  yes   ###################################################################
 - terms: 
   - term: "yes"
     lang: en
@@ -10315,10 +10420,17 @@ concepts:
   - term: ano
     lang: cs
     tts: ano.mp3
+  examples: 
+  - term: Yes. Although I don't know when.
+    lang: en
+    tts: Yes Although I dont know when.mp3
+  - term: Ano. I když nevím kdy.
+    lang: cs
+    tts: Ano I kdyz nevim kdy.mp3
   img: yes.jpeg
   freq: 113547.65000
   origins: ["conceptDbSamples"]
-##  feel   ################################################################## ▆ 67%
+##  feel   ##################################################################
 - terms: 
   - term: feel
     lang: en
@@ -10330,10 +10442,17 @@ concepts:
   - term: pocit
     lang: cs
     tts: pocit.mp3
+  examples: 
+  - term: How do you feel, dear?
+    lang: en
+    tts: How do you feel, dear.mp3
+  - term: Jak se cítíš, drahá?
+    lang: cs
+    tts: Jak se citis, draha.mp3
   img: feel.jpeg
   freq: 111647.50000
   origins: ["conceptDbSamples"]
-##  parts   ################################################################# ▆ 67%
+##  parts   #################################################################
 - terms: 
   - term: parts
     lang: en
@@ -10345,10 +10464,17 @@ concepts:
   - term: části
     lang: cs
     tts: casti.mp3
+  examples: 
+  - term: Making of small and bigger parts.
+    lang: en
+    tts: Making of small and bigger parts.mp3
+  - term: Výroba drobných i větších dílů.
+    lang: cs
+    tts: Vyroba drobnych i vetsich dilu.mp3
   img: parts.jpeg
   freq: 111194.00000
   origins: ["conceptDbSamples"]
-##  talk   ################################################################## ▆ 67%
+##  talk   ##################################################################
 - terms: 
   - term: talk
     lang: en
@@ -10360,10 +10486,17 @@ concepts:
   - term: hovořit
     lang: cs
     tts: hovorit.mp3
+  examples: 
+  - term: You want to talk about art?
+    lang: en
+    tts: You want to talk about art.mp3
+  - term: Chcete mluvit o umění?
+    lang: cs
+    tts: Chcete mluvit o umeni.mp3
   img: talk.jpeg
   freq: 111072.00000
   origins: ["conceptDbSamples"]
-##  fear   ################################################################## ▆ 67%
+##  fear   ##################################################################
 - terms: 
   - term: fear
     lang: en
@@ -10375,10 +10508,17 @@ concepts:
   - term: obava
     lang: cs
     tts: obava.mp3
+  examples: 
+  - term: I will face my fear.
+    lang: en
+    tts: I will face my fear.mp3
+  - term: Budu čelit svému strachu.
+    lang: cs
+    tts: Budu celit svemu strachu.mp3
   img: fear.jpeg
   freq: 109036.00000
   origins: ["conceptDbSamples"]
-##  live   ################################################################## ▆ 67%
+##  live   ##################################################################
 - terms: 
   - term: live
     lang: en
@@ -10390,10 +10530,17 @@ concepts:
   - term: žijí
     lang: cs
     tts: ziji.mp3
+  examples: 
+  - term: We all live here together.
+    lang: en
+    tts: We all live here together.mp3
+  - term: Všichni tady žijeme společně.
+    lang: cs
+    tts: Vsichni tady zijeme spolecne.mp3
   img: live.jpeg
   freq: 108511.50000
   origins: ["conceptDbSamples"]
-##  learn   ################################################################# ▆ 67%
+##  learn   #################################################################
 - terms: 
   - term: learn
     lang: en
@@ -10405,10 +10552,17 @@ concepts:
   - term: učit
     lang: cs
     tts: ucit.mp3
+  examples: 
+  - term: I began to learn.
+    lang: en
+    tts: I began to learn.mp3
+  - term: Začal jsem se učit.
+    lang: cs
+    tts: Zacal jsem se ucit.mp3
   img: learn.jpeg
   freq: 107429.85000
   origins: ["conceptDbSamples"]
-##  happy   ################################################################# ▆ 67%
+##  happy   #################################################################
 - terms: 
   - term: happy
     lang: en
@@ -10420,10 +10574,17 @@ concepts:
   - term: spokojeni
     lang: cs
     tts: spokojeni.mp3
+  examples: 
+  - term: She has a happy nature.
+    lang: en
+    tts: She has a happy nature.mp3
+  - term: Má veselou povahu.
+    lang: cs
+    tts: Ma veselou povahu.mp3
   img: happy.jpeg
   freq: 106887.00000
   origins: ["conceptDbSamples"]
-##  stopped   ############################################################### ▆ 67%
+##  stopped   ###############################################################
 - terms: 
   - term: stopped
     lang: en
@@ -10435,10 +10596,17 @@ concepts:
   - term: přestal
     lang: cs
     tts: prestal.mp3
+  examples: 
+  - term: My heart has stopped.
+    lang: en
+    tts: My heart has stopped.mp3
+  - term: Zastavilo se mi srdce.
+    lang: cs
+    tts: Zastavilo se mi srdce.mp3
   img: stopped.jpeg
   freq: 106661.00000
   origins: ["conceptDbSamples"]
-##  suddenly   ############################################################## ▆ 67%
+##  suddenly   ##############################################################
 - terms: 
   - term: suddenly
     lang: en
@@ -10450,10 +10618,17 @@ concepts:
   - term: najednou
     lang: cs
     tts: najednou.mp3
+  examples: 
+  - term: Suddenly he turned back.
+    lang: en
+    tts: Suddenly he turned back.mp3
+  - term: Náhle se obrátil zpět.
+    lang: cs
+    tts: Nahle se obratil zpet.mp3
   state: ignoreImage
   freq: 104116.00000
   origins: ["conceptDbSamples"]
-##  red   ################################################################### ▆ 67%
+##  red   ###################################################################
 - terms: 
   - term: red
     lang: en
@@ -10465,10 +10640,17 @@ concepts:
   - term: červená
     lang: cs
     tts: cervena.mp3
+  examples: 
+  - term: Your lips are so red.
+    lang: en
+    tts: Your lips are so red.mp3
+  - term: Máš tak červené rty.
+    lang: cs
+    tts: Mas tak cervene rty.mp3
   img: red.jpeg
   freq: 103902.50000
   origins: ["conceptDbSamples"]
-##  dark   ################################################################## ▆ 67%
+##  dark   ##################################################################
 - terms: 
   - term: dark
     lang: en
@@ -10480,10 +10662,17 @@ concepts:
   - term: temné
     lang: cs
     tts: temne.mp3
+  examples: 
+  - term: Most of them were dark.
+    lang: en
+    tts: Most of them were dark.mp3
+  - term: Většina z nich byla temná.
+    lang: cs
+    tts: Vetsina z nich byla temna.mp3
   img: dark.jpeg
   freq: 102590.50000
   origins: ["conceptDbSamples"]
-##  sense   ################################################################# ▆ 67%
+##  sense   #################################################################
 - terms: 
   - term: sense
     lang: en
@@ -10492,10 +10681,17 @@ concepts:
   - term: smysl
     lang: cs
     tts: smysl.mp3
+  examples: 
+  - term: False sense of happiness.
+    lang: en
+    tts: False sense of happiness.mp3
+  - term: Falešný pocit štěstí.
+    lang: cs
+    tts: Falesny pocit stesti.mp3
   img: sense.jpeg
   freq: 101208.00000
   origins: ["conceptDbSamples"]
-##  attention   ############################################################# ▆ 67%
+##  attention   #############################################################
 - terms: 
   - term: attention
     lang: en
@@ -10507,10 +10703,17 @@ concepts:
   - term: upozornění
     lang: cs
     tts: upozorneni.mp3
+  examples: 
+  - term: Kitty needs some attention.
+    lang: en
+    tts: Kitty needs some attention.mp3
+  - term: Koťátko potřebuje trochu pozornosti.
+    lang: cs
+    tts: Kotatko potrebuje trochu pozornosti.mp3
   img: attention.jpeg
   freq: 99764.00000
   origins: ["conceptDbSamples"]
-##  wait   ################################################################## ▆ 67%
+##  wait   ##################################################################
 - terms: 
   - term: wait
     lang: en
@@ -10522,10 +10725,17 @@ concepts:
   - term: čekat
     lang: cs
     tts: cekat.mp3
+  examples: 
+  - term: I can't wait any longer.
+    lang: en
+    tts: I cant wait any longer.mp3
+  - term: Už nemůžu déle čekat.
+    lang: cs
+    tts: Uz nemuzu dele cekat.mp3
   img: wait.jpeg
   freq: 98993.45000
   origins: ["conceptDbSamples"]
-##  where   ################################################################# ▆ 67%
+##  where   #################################################################
 - terms: 
   - term: where
     lang: en
@@ -10537,10 +10747,17 @@ concepts:
   - term: kam
     lang: cs
     tts: kam.mp3
+  examples: 
+  - term: Where is my child?
+    lang: en
+    tts: Where is my child.mp3
+  - term: Kde je mé dítě!
+    lang: cs
+    tts: Kde je me dite.mp3
   img: where.jpeg
   freq: 98596.79500
   origins: ["conceptDbSamples"]
-##  job   ################################################################### ▆ 67%
+##  job   ###################################################################
 - terms: 
   - term: job
     lang: en
@@ -10552,10 +10769,17 @@ concepts:
   - term: práce
     lang: cs
     tts: prace.mp3
+  examples: 
+  - term: I can still do my job.
+    lang: en
+    tts: I can still do my job.mp3
+  - term: Mohu stále dělat svoji práci.
+    lang: cs
+    tts: Mohu stale delat svoji praci.mp3
   img: job.jpeg
   freq: 95596.85000
   origins: ["conceptDbSamples"]
-##  trying   ################################################################ ▆ 67%
+##  trying   ################################################################
 - terms: 
   - term: trying
     lang: en
@@ -10567,10 +10791,17 @@ concepts:
   - term: pokouší
     lang: cs
     tts: pokousi.mp3
+  examples: 
+  - term: We are trying to save her life!
+    lang: en
+    tts: We are trying to save her life.mp3
+  - term: Snažíme se jí zachránit život!
+    lang: cs
+    tts: Snazime se ji zachranit zivot.mp3
   img: trying.jpeg
   freq: 94706.70000
   origins: ["conceptDbSamples"]
-##  strange   ############################################################### ▆ 67%
+##  strange   ###############################################################
 - terms: 
   - term: strange
     lang: en
@@ -10582,10 +10813,17 @@ concepts:
   - term: zvláštní
     lang: cs
     tts: zvlastni.mp3
+  examples: 
+  - term: Man is a strange being.
+    lang: en
+    tts: Man is a strange being.mp3
+  - term: Člověk je podivná bytost.
+    lang: cs
+    tts: Clovek je podivna bytost.mp3
   img: strange.jpeg
   freq: 93945.50000
   origins: ["conceptDbSamples"]
-##  car   ################################################################### ▆ 67%
+##  car   ###################################################################
 - terms: 
   - term: car
     lang: en
@@ -10594,10 +10832,17 @@ concepts:
   - term: auto
     lang: cs
     tts: auto.mp3
+  examples: 
+  - term: My car was white.
+    lang: en
+    tts: My car was white.mp3
+  - term: Moje auto bylo bílé.
+    lang: cs
+    tts: Moje auto bylo bile.mp3
   img: car.jpeg
   freq: 90131.05000
   origins: ["conceptDbSamples"]
-##  play   ################################################################## ▆ 67%
+##  play   ##################################################################
 - terms: 
   - term: play
     lang: en
@@ -10609,10 +10854,17 @@ concepts:
   - term: přehrát
     lang: cs
     tts: prehrat.mp3
+  examples: 
+  - term: We play by the rules.
+    lang: en
+    tts: We play by the rules.mp3
+  - term: Hrajeme podle pravidel.
+    lang: cs
+    tts: Hrajeme podle pravidel.mp3
   img: play.jpeg
   freq: 89945.00000
   origins: ["conceptDbSamples"]
-##  save   ################################################################## ▆ 67%
+##  save   ##################################################################
 - terms: 
   - term: save
     lang: en
@@ -10624,10 +10876,17 @@ concepts:
   - term: zachránit
     lang: cs
     tts: zachranit.mp3
+  examples: 
+  - term: We are trying to save her life!
+    lang: en
+    tts: We are trying to save her life.mp3
+  - term: Snažíme se jí zachránit život!
+    lang: cs
+    tts: Snazime se ji zachranit zivot.mp3
   img: save.jpeg
   freq: 89433.00000
   origins: ["conceptDbSamples"]
-##  add   ################################################################### ▆ 67%
+##  add   ###################################################################
 - terms: 
   - term: add
     lang: en
@@ -10636,10 +10895,17 @@ concepts:
   - term: přidat
     lang: cs
     tts: pridat.mp3
+  examples: 
+  - term: Add any additional tables.
+    lang: en
+    tts: Add any additional tables.mp3
+  - term: Přidejte libovolné další tabulky.
+    lang: cs
+    tts: Pridejte libovolne dalsi tabulky.mp3
   img: add.jpeg
   freq: 89244.75000
   origins: ["conceptDbSamples"]
-##  continued   ############################################################# ▆ 67%
+##  continued   #############################################################
 - terms: 
   - term: continued
     lang: en
@@ -10648,10 +10914,17 @@ concepts:
   - term: pokračoval
     lang: cs
     tts: pokracoval.mp3
+  examples: 
+  - term: We continued along the main road.
+    lang: en
+    tts: We continued along the main road.mp3
+  - term: Pokračovali jsme po hlavní silnici.
+    lang: cs
+    tts: Pokracovali jsme po hlavni silnici.mp3
   img: continued.jpeg
   freq: 89244.00000
   origins: ["conceptDbSamples"]
-##  run   ################################################################### ▆ 67%
+##  run   ###################################################################
 - terms: 
   - term: run
     lang: en
@@ -10663,10 +10936,17 @@ concepts:
   - term: běžet
     lang: cs
     tts: bezet.mp3
+  examples: 
+  - term: Run into the nearest town.
+    lang: en
+    tts: Run into the nearest town.mp3
+  - term: Utíkej do nejbližšího města?
+    lang: cs
+    tts: Utikej do nejblizsiho mesta.mp3
   img: run.jpeg
   freq: 88006.50000
   origins: ["conceptDbSamples"]
-##  single   ################################################################ ▆ 67%
+##  single   ################################################################
 - terms: 
   - term: single
     lang: en
@@ -10675,10 +10955,17 @@ concepts:
   - term: jediný
     lang: cs
     tts: jediny.mp3
+  examples: 
+  - term: Every single day was busy.
+    lang: en
+    tts: Every single day was busy.mp3
+  - term: Každý den byl rušný.
+    lang: cs
+    tts: Kazdy den byl rusny.mp3
   img: single.jpeg
   freq: 87988.50000
   origins: ["conceptDbSamples"]
-##  late   ################################################################## ▆ 67%
+##  late   ##################################################################
 - terms: 
   - term: late
     lang: en
@@ -10690,10 +10977,17 @@ concepts:
   - term: pozdě
     lang: cs
     tts: pozde.mp3
+  examples: 
+  - term: I am late.
+    lang: en
+    tts: I am late.mp3
+  - term: Jdu pozdě
+    lang: cs
+    tts: Jdu pozde.mp3
   img: late.jpeg
   freq: 87283.50000
   origins: ["conceptDbSamples"]
-##  america   ############################################################### ▆ 67%
+##  america   ###############################################################
 - terms: 
   - term: america
     lang: en
@@ -10702,10 +10996,17 @@ concepts:
   - term: amerika
     lang: cs
     tts: amerika.mp3
+  examples: 
+  - term: The united states of america.
+    lang: en
+    tts: The united states of america.mp3
+  - term: Spojené státy americké
+    lang: cs
+    tts: Spojene staty americke.mp3
   img: america.jpeg
   freq: 87195.60000
   origins: ["conceptDbSamples"]
-##  agree   ################################################################# ▆ 67%
+##  agree   #################################################################
 - terms: 
   - term: agree
     lang: en
@@ -10717,10 +11018,17 @@ concepts:
   - term: shodují
     lang: cs
     tts: shoduji.mp3
+  examples: 
+  - term: Not everyone will agree with you.
+    lang: en
+    tts: Not everyone will agree with you.mp3
+  - term: Ne každý s vámi souhlasí.
+    lang: cs
+    tts: Ne kazdy s vami souhlasi.mp3
   img: agree.jpeg
   freq: 86583.45000
   origins: ["conceptDbSamples"]
-##  talking   ############################################################### ▆ 67%
+##  talking   ###############################################################
 - terms: 
   - term: talking
     lang: en
@@ -10732,10 +11040,17 @@ concepts:
   - term: hovoří
     lang: cs
     tts: hovori.mp3
+  examples: 
+  - term: He was talking, thus proving he was still alive.
+    lang: en
+    tts: He was talking, thus proving he was still alive.mp3
+  - term: Mluvil, čímž dokazoval, že je stále naživu.
+    lang: cs
+    tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
   img: talking.jpeg
   freq: 85391.10000
   origins: ["conceptDbSamples"]
-##  gold   ################################################################## ▆ 67%
+##  gold   ##################################################################
 - terms: 
   - term: gold
     lang: en
@@ -10744,10 +11059,17 @@ concepts:
   - term: zlato
     lang: cs
     tts: zlato.mp3
+  examples: 
+  - term: It could be made of gold and diamonds.
+    lang: en
+    tts: It could be made of gold and diamonds.mp3
+  - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
+    lang: cs
+    tts: Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
   img: gold.jpeg
   freq: 85222.00000
   origins: ["conceptDbSamples"]
-##  class   ################################################################# ▆ 67%
+##  class   #################################################################
 - terms: 
   - term: class
     lang: en
@@ -10756,10 +11078,17 @@ concepts:
   - term: třída
     lang: cs
     tts: trida.mp3
+  examples: 
+  - term: We were studying in class as usual.
+    lang: en
+    tts: We were studying in class as usual.mp3
+  - term: Učili jsme se ve třídě jako obvykle.
+    lang: cs
+    tts: Ucili jsme se ve tride jako obvykle.mp3
   img: class.jpeg
   freq: 84748.25000
   origins: ["conceptDbSamples"]
-##  neither   ############################################################### ▆ 67%
+##  neither   ###############################################################
 - terms: 
   - term: neither
     lang: en
@@ -10768,10 +11097,17 @@ concepts:
   - term: ani
     lang: cs
     tts: ani.mp3
+  examples: 
+  - term: You are neither here nor there.
+    lang: en
+    tts: You are neither here nor there.mp3
+  - term: Nejste ani tady, ani tam.
+    lang: cs
+    tts: Nejste ani tady, ani tam.mp3
   state: ignoreImage
   freq: 84393.50000
   origins: ["conceptDbSamples"]
-##  mine   ################################################################## ▆ 67%
+##  mine   ##################################################################
 - terms: 
   - term: mine
     lang: en
@@ -10783,10 +11119,17 @@ concepts:
   - term: moje
     lang: cs
     tts: moje.mp3
+  examples: 
+  - term: Those letters are mine.
+    lang: en
+    tts: Those letters are mine.mp3
+  - term: To jsou moje dopisy.
+    lang: cs
+    tts: To jsou moje dopisy.mp3
   img: mine.jpeg
   freq: 83382.00000
   origins: ["conceptDbSamples"]
-##  copies   ################################################################ ▆ 67%
+##  copies   ################################################################
 - terms: 
   - term: copies
     lang: en
@@ -10798,10 +11141,17 @@ concepts:
   - term: výtisky
     lang: cs
     tts: vytisky.mp3
+  examples: 
+  - term: Enter the number of copies to print.
+    lang: en
+    tts: Enter the number of copies to print.mp3
+  - term: Zadejte počet kopií, které chcete vytisknout.
+    lang: cs
+    tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
   img: copies.jpeg
   freq: 81479.70000
   origins: ["conceptDbSamples"]
-##  whatever   ############################################################## ▆ 67%
+##  whatever   ##############################################################
 - terms: 
   - term: whatever
     lang: en
@@ -10813,10 +11163,17 @@ concepts:
   - term: jakékoli
     lang: cs
     tts: jakekoli.mp3
+  examples: 
+  - term: It was strong, whatever it was.
+    lang: en
+    tts: It was strong, whatever it was.mp3
+  - term: Bylo to silné, ať to bylo cokoliv.
+    lang: cs
+    tts: Bylo to silne, at to bylo cokoliv.mp3
   state: ignoreImage
   freq: 80374.50000
   origins: ["conceptDbSamples"]
-##  distance   ############################################################## ▆ 67%
+##  distance   ##############################################################
 - terms: 
   - term: distance
     lang: en
@@ -10828,10 +11185,17 @@ concepts:
   - term: dálka
     lang: cs
     tts: dalka.mp3
+  examples: 
+  - term: Keep other persons at safe distance!
+    lang: en
+    tts: Keep other persons at safe distance.mp3
+  - term: Udržujte ostatní osoby v bezpečné vzdálenosti!
+    lang: cs
+    tts: Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
   img: distance.jpeg
   freq: 80213.00000
   origins: ["conceptDbSamples"]
-##  situation   ############################################################# ▆ 67%
+##  situation   #############################################################
 - terms: 
   - term: situation
     lang: en
@@ -10840,10 +11204,17 @@ concepts:
   - term: situace
     lang: cs
     tts: situace.mp3
+  examples: 
+  - term: The present situation is very complicated.
+    lang: en
+    tts: The present situation is very complicated.mp3
+  - term: Současná situace je velmi komplikovaná.
+    lang: cs
+    tts: Soucasna situace je velmi komplikovana.mp3
   img: situation.jpeg
   freq: 76627.20000
   origins: ["conceptDbSamples"]
-##  finally   ############################################################### ▆ 67%
+##  finally   ###############################################################
 - terms: 
   - term: finally
     lang: en
@@ -10855,10 +11226,17 @@ concepts:
   - term: nakonec
     lang: cs
     tts: nakonec.mp3
+  examples: 
+  - term: You can finally be free.
+    lang: en
+    tts: You can finally be free.mp3
+  - term: Konečně můžete být svobodní.
+    lang: cs
+    tts: Konecne muzete byt svobodni.mp3
   state: ignoreImage
   freq: 75984.75000
   origins: ["conceptDbSamples"]
-##  doctor   ################################################################ ▆ 67%
+##  doctor   ################################################################
 - terms: 
   - term: doctor
     lang: en
@@ -10870,10 +11248,17 @@ concepts:
   - term: doktor
     lang: cs
     tts: doktor.mp3
+  examples: 
+  - term: I should become a doctor.
+    lang: en
+    tts: I should become a doctor.mp3
+  - term: Měl bych se stát doktorem.
+    lang: cs
+    tts: Mel bych se stat doktorem.mp3
   img: doctor.jpeg
   freq: 73863.95000
   origins: ["conceptDbSamples"]
-##  visit   ################################################################# ▆ 67%
+##  visit   #################################################################
 - terms: 
   - term: visit
     lang: en
@@ -10882,10 +11267,17 @@ concepts:
   - term: návštěva
     lang: cs
     tts: navsteva.mp3
+  examples: 
+  - term: You came to visit me?
+    lang: en
+    tts: You came to visit me.mp3
+  - term: Přišel jsi na návštěvu?
+    lang: cs
+    tts: Prisel jsi na navstevu.mp3
   img: visit.jpeg
   freq: 72403.50000
   origins: ["conceptDbSamples"]
-##  afraid   ################################################################ ▆ 67%
+##  afraid   ################################################################
 - terms: 
   - term: afraid
     lang: en
@@ -10897,10 +11289,17 @@ concepts:
   - term: polekaný
     lang: cs
     tts: polekany.mp3
+  examples: 
+  - term: I was afraid to call.
+    lang: en
+    tts: I was afraid to call.mp3
+  - term: Bála jsem se zavolat.
+    lang: cs
+    tts: Bala jsem se zavolat.mp3
   img: afraid.jpeg
   freq: 72097.00000
   origins: ["conceptDbSamples"]
-##  using   ################################################################# ▆ 67%
+##  using   #################################################################
 - terms: 
   - term: using
     lang: en
@@ -10912,10 +11311,17 @@ concepts:
   - term: s využitím
     lang: cs
     tts: s vyuzitim.mp3
+  examples: 
+  - term: Be alert while using public transport.
+    lang: en
+    tts: Be alert while using public transport.mp3
+  - term: Buď ostražitý při používání veřejné dopravy.
+    lang: cs
+    tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
   img: using.jpeg
   freq: 71751.90000
   origins: ["conceptDbSamples"]
-##  green   ################################################################# ▆ 67%
+##  green   #################################################################
 - terms: 
   - term: green
     lang: en
@@ -10927,10 +11333,17 @@ concepts:
   - term: zelená
     lang: cs
     tts: zelena.mp3
+  examples: 
+  - term: The green earth, you say?
+    lang: en
+    tts: The green earth, you say.mp3
+  - term: Zelená země, říkáš?
+    lang: cs
+    tts: Zelena zeme, rikas.mp3
   img: green.jpeg
   freq: 71603.50000
   origins: ["conceptDbSamples"]
-##  create   ################################################################ ▆ 67%
+##  create   ################################################################
 - terms: 
   - term: create
     lang: en
@@ -10939,10 +11352,17 @@ concepts:
   - term: vytvořit
     lang: cs
     tts: vytvorit.mp3
+  examples: 
+  - term: You can also create a new menu.
+    lang: en
+    tts: You can also create a new menu.mp3
+  - term: Můžete také vytvořit novou nabídku.
+    lang: cs
+    tts: Muzete take vytvorit novou nabidku.mp3
   img: create.jpeg
   freq: 71339.15000
   origins: ["conceptDbSamples"]
-##  easily   ################################################################ ▆ 67%
+##  easily   ################################################################
 - terms: 
   - term: easily
     lang: en
@@ -10954,10 +11374,17 @@ concepts:
   - term: jednoduše
     lang: cs
     tts: jednoduse.mp3
+  examples: 
+  - term: She will do without us easily.
+    lang: en
+    tts: She will do without us easily.mp3
+  - term: Snadno si bez nás poradí.
+    lang: cs
+    tts: Snadno si bez nas poradi.mp3
   img: easily.jpeg
   freq: 69383.50000
   origins: ["conceptDbSamples"]
-##  plan   ################################################################## ▆ 67%
+##  plan   ##################################################################
 - terms: 
   - term: plan
     lang: en
@@ -10969,10 +11396,17 @@ concepts:
   - term: záměr
     lang: cs
     tts: zamer.mp3
+  examples: 
+  - term: A very good plan indeed.
+    lang: en
+    tts: A very good plan indeed.mp3
+  - term: Opravdu moc dobrý plán.
+    lang: cs
+    tts: Opravdu moc dobry plan.mp3
   img: plan.jpeg
   freq: 67949.45000
   origins: ["conceptDbSamples"]
-##  fresh   ################################################################# ▆ 67%
+##  fresh   #################################################################
 - terms: 
   - term: fresh
     lang: en
@@ -10984,10 +11418,17 @@ concepts:
   - term: svěží
     lang: cs
     tts: svezi.mp3
+  examples: 
+  - term: I just want some fresh air.
+    lang: en
+    tts: I just want some fresh air.mp3
+  - term: Chci jen trošku čerstvého vzduchu.
+    lang: cs
+    tts: Chci jen trosku cerstveho vzduchu.mp3
   img: fresh.jpeg
   freq: 67814.20000
   origins: ["conceptDbSamples"]
-##  lies   ################################################################## ▆ 67%
+##  lies   ##################################################################
 - terms: 
   - term: lies
     lang: en
@@ -10999,10 +11440,17 @@ concepts:
   - term: spočívá
     lang: cs
     tts: spociva.mp3
+  examples: 
+  - term: A dead body lies there.
+    lang: en
+    tts: A dead body lies there.mp3
+  - term: Leží tam mrtvé tělo.
+    lang: cs
+    tts: Lezi tam mrtve telo.mp3
   img: lies.jpeg
   freq: 67551.00000
   origins: ["conceptDbSamples"]
-##  eight   ################################################################# ▆ 67%
+##  eight   #################################################################
 - terms: 
   - term: eight
     lang: en
@@ -11011,10 +11459,17 @@ concepts:
   - term: osm
     lang: cs
     tts: osm.mp3
+  examples: 
+  - term: Tomorrow evening at eight?
+    lang: en
+    tts: Tomorrow evening at eight.mp3
+  - term: Zítra večer v osm?
+    lang: cs
+    tts: Zitra vecer v osm.mp3
   img: eight.jpeg
   freq: 67362.45000
   origins: ["conceptDbSamples"]
-##  explain   ############################################################### ▆ 67%
+##  explain   ###############################################################
 - terms: 
   - term: explain
     lang: en
@@ -11026,10 +11481,17 @@ concepts:
   - term: objasnit
     lang: cs
     tts: objasnit.mp3
+  examples: 
+  - term: I can explain everything.
+    lang: en
+    tts: I can explain everything.mp3
+  - term: Já to můžu všechno vysvětlit.
+    lang: cs
+    tts: Ja to muzu vsechno vysvetlit.mp3
   img: explain.jpeg
   freq: 66041.10000
   origins: ["conceptDbSamples"]
-##  meeting   ############################################################### ▆ 67%
+##  meeting   ###############################################################
 - terms: 
   - term: meeting
     lang: en
@@ -11041,10 +11503,17 @@ concepts:
   - term: setkání
     lang: cs
     tts: setkani.mp3
+  examples: 
+  - term: The meeting is open to anyone.
+    lang: en
+    tts: The meeting is open to anyone.mp3
+  - term: Schůze je otevřena všem.
+    lang: cs
+    tts: Schuze je otevrena vsem.mp3
   img: meeting.jpeg
   freq: 65939.15000
   origins: ["conceptDbSamples"]
-##  fingers   ############################################################### ▆ 67%
+##  fingers   ###############################################################
 - terms: 
   - term: fingers
     lang: en
@@ -11053,10 +11522,17 @@ concepts:
   - term: prsty
     lang: cs
     tts: prsty.mp3
+  examples: 
+  - term: My fingers are too big.
+    lang: en
+    tts: My fingers are too big.mp3
+  - term: Moje prsty jsou příliš velké.
+    lang: cs
+    tts: Moje prsty jsou prilis velke.mp3
   img: fingers.jpeg
   freq: 65564.40000
   origins: ["conceptDbSamples"]
-##  step   ################################################################## ▆ 67%
+##  step   ##################################################################
 - terms: 
   - term: step
     lang: en
@@ -11065,10 +11541,17 @@ concepts:
   - term: krok
     lang: cs
     tts: krok.mp3
+  examples: 
+  - term: The second step is not required.
+    lang: en
+    tts: The second step is not required.mp3
+  - term: Druhý krok není vyžadován.
+    lang: cs
+    tts: Druhy krok neni vyzadovan.mp3
   img: step.jpeg
   freq: 65474.00000
   origins: ["conceptDbSamples"]
-##  boat   ################################################################## ▆ 67%
+##  boat   ##################################################################
 - terms: 
   - term: boat
     lang: en
@@ -11080,10 +11563,17 @@ concepts:
   - term: člun
     lang: cs
     tts: clun.mp3
+  examples: 
+  - term: His boat was gone.
+    lang: en
+    tts: His boat was gone.mp3
+  - term: Jeho člun zmizel.
+    lang: cs
+    tts: Jeho clun zmizel.mp3
   img: boat.jpeg
   freq: 65417.75000
   origins: ["conceptDbSamples"]
-##  married   ############################################################### ▆ 67%
+##  married   ###############################################################
 - terms: 
   - term: married
     lang: en
@@ -11095,10 +11585,17 @@ concepts:
   - term: vdaná
     lang: cs
     tts: vdana.mp3
+  examples: 
+  - term: Have you ever been married?
+    lang: en
+    tts: Have you ever been married.mp3
+  - term: Byl jste někdy ženatý?
+    lang: cs
+    tts: Byl jste nekdy zenaty.mp3
   img: married.jpeg
   freq: 65385.50000
   origins: ["conceptDbSamples"]
-##  garden   ################################################################ ▆ 67%
+##  garden   ################################################################
 - terms: 
   - term: garden
     lang: en
@@ -11107,10 +11604,17 @@ concepts:
   - term: zahrada
     lang: cs
     tts: zahrada.mp3
+  examples: 
+  - term: Trees stolen from my garden!
+    lang: en
+    tts: Trees stolen from my garden.mp3
+  - term: Kradené stromy z mé zahrady!
+    lang: cs
+    tts: Kradene stromy z me zahrady.mp3
   img: garden.jpeg
   freq: 65096.30000
   origins: ["conceptDbSamples"]
-##  secret   ################################################################ ▆ 67%
+##  secret   ################################################################
 - terms: 
   - term: secret
     lang: en
@@ -11122,10 +11626,17 @@ concepts:
   - term: tajemství
     lang: cs
     tts: tajemstvi.mp3
+  examples: 
+  - term: Help him keep the secret.
+    lang: en
+    tts: Help him keep the secret.mp3
+  - term: Pomoz mu zachovat tajemství.
+    lang: cs
+    tts: Pomoz mu zachovat tajemstvi.mp3
   img: secret.jpeg
   freq: 64491.50000
   origins: ["conceptDbSamples"]
-##  enter   ################################################################# ▆ 67%
+##  enter   #################################################################
 - terms: 
   - term: enter
     lang: en
@@ -11137,10 +11648,17 @@ concepts:
   - term: vstoupit
     lang: cs
     tts: vstoupit.mp3
+  examples: 
+  - term: Enter the number of copies to print.
+    lang: en
+    tts: Enter the number of copies to print.mp3
+  - term: Zadejte počet kopií, které chcete vytisknout.
+    lang: cs
+    tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
   img: enter.jpeg
   freq: 64435.45000
   origins: ["conceptDbSamples"]
-##  sell   ################################################################## ▆ 67%
+##  sell   ##################################################################
 - terms: 
   - term: sell
     lang: en
@@ -11149,10 +11667,17 @@ concepts:
   - term: prodat
     lang: cs
     tts: prodat.mp3
+  examples: 
+  - term: I have to sell my house.
+    lang: en
+    tts: I have to sell my house.mp3
+  - term: Budu muset prodat dům.
+    lang: cs
+    tts: Budu muset prodat dum.mp3
   img: sell.jpeg
   freq: 64174.45000
   origins: ["conceptDbSamples"]
-##  dog   ################################################################### ▆ 67%
+##  dog   ###################################################################
 - terms: 
   - term: dog
     lang: en
@@ -11161,10 +11686,17 @@ concepts:
   - term: pes
     lang: cs
     tts: pes.mp3
+  examples: 
+  - term: Get the dog out of here!
+    lang: en
+    tts: Get the dog out of here.mp3
+  - term: Odveďte toho psa ven!
+    lang: cs
+    tts: Odvedte toho psa ven.mp3
   img: dog.jpeg
   freq: 64110.75000
   origins: ["conceptDbSamples"]
-##  maybe   ################################################################# ▆ 67%
+##  maybe   #################################################################
 - terms: 
   - term: maybe
     lang: en
@@ -11173,10 +11705,17 @@ concepts:
   - term: možná
     lang: cs
     tts: mozna.mp3
+  examples: 
+  - term: Maybe we can get out!
+    lang: en
+    tts: Maybe we can get out.mp3
+  - term: Možná se můžem dostat ven!
+    lang: cs
+    tts: Mozna se muzem dostat ven.mp3
   img: maybe.jpeg
   freq: 64096.10000
   origins: ["conceptDbSamples"]
-##  foreign   ############################################################### ▆ 67%
+##  foreign   ###############################################################
 - terms: 
   - term: foreign
     lang: en
@@ -11188,10 +11727,17 @@ concepts:
   - term: cizí
     lang: cs
     tts: cizi.mp3
+  examples: 
+  - term: Have you ever lived in a foreign country?
+    lang: en
+    tts: Have you ever lived in a foreign country.mp3
+  - term: Žili jste někdy v cizí zemi?
+    lang: cs
+    tts: Zili jste nekdy v cizi zemi.mp3
   img: foreign.jpeg
   freq: 64074.75000
   origins: ["conceptDbSamples"]
-##  birds   ################################################################# ▆ 67%
+##  birds   #################################################################
 - terms: 
   - term: birds
     lang: en
@@ -11203,10 +11749,17 @@ concepts:
   - term: ptactvo
     lang: cs
     tts: ptactvo.mp3
+  examples: 
+  - term: And what do the birds say?
+    lang: en
+    tts: And what do the birds say.mp3
+  - term: A co říkají ptáci?
+    lang: cs
+    tts: A co rikaji ptaci.mp3
   img: birds.jpeg
   freq: 63162.60000
   origins: ["conceptDbSamples"]
-##  waited   ################################################################ ▆ 67%
+##  waited   ################################################################
 - terms: 
   - term: waited
     lang: en
@@ -11218,10 +11771,17 @@ concepts:
   - term: vyčkávala
     lang: cs
     tts: vyckavala.mp3
+  examples: 
+  - term: I waited two hours.
+    lang: en
+    tts: I waited two hours.mp3
+  - term: Čekala jsem dvě hodiny.
+    lang: cs
+    tts: Cekala jsem dve hodiny.mp3
   img: waited.jpeg
   freq: 62808.10000
   origins: ["conceptDbSamples"]
-##  walk   ################################################################## ▆ 67%
+##  walk   ##################################################################
 - terms: 
   - term: walk
     lang: en
@@ -11233,10 +11793,17 @@ concepts:
   - term: projít
     lang: cs
     tts: projit.mp3
+  examples: 
+  - term: It's too far to walk.
+    lang: en
+    tts: Its too far to walk.mp3
+  - term: Pěšky to je příliš daleko.
+    lang: cs
+    tts: Pesky to je prilis daleko.mp3
   img: walk.jpeg
   freq: 61245.00000
   origins: ["conceptDbSamples"]
-##  enemies   ############################################################### ▆ 67%
+##  enemies   ###############################################################
 - terms: 
   - term: enemies
     lang: en
@@ -11245,10 +11812,17 @@ concepts:
   - term: nepřátele
     lang: cs
     tts: nepratele.mp3
+  examples: 
+  - term: Enemies are all around!
+    lang: en
+    tts: Enemies are all around.mp3
+  - term: Nepřátelé jsou všude kolem!
+    lang: cs
+    tts: Nepratele jsou vsude kolem.mp3
   img: enemies.jpeg
   freq: 60982.20000
   origins: ["conceptDbSamples"]
-##  anyone   ################################################################ ▆ 67%
+##  anyone   ################################################################
 - terms: 
   - term: anyone
     lang: en
@@ -11260,10 +11834,17 @@ concepts:
   - term: kohokoliv
     lang: cs
     tts: kohokoliv.mp3
+  examples: 
+  - term: The meeting is open to anyone.
+    lang: en
+    tts: The meeting is open to anyone.mp3
+  - term: Schůze je otevřena všem.
+    lang: cs
+    tts: Schuze je otevrena vsem.mp3
   img: anyone.jpeg
   freq: 60607.90000
   origins: ["conceptDbSamples"]
-##  usual   ################################################################# ▆ 67%
+##  usual   #################################################################
 - terms: 
   - term: usual
     lang: en
@@ -11275,10 +11856,17 @@ concepts:
   - term: běžné
     lang: cs
     tts: bezne.mp3
+  examples: 
+  - term: We were studying in class as usual.
+    lang: en
+    tts: We were studying in class as usual.mp3
+  - term: Učili jsme se ve třídě jako obvykle.
+    lang: cs
+    tts: Ucili jsme se ve tride jako obvykle.mp3
   state: ignoreImage
   freq: 59858.50000
   origins: ["conceptDbSamples"]
-##  main   ################################################################## ▆ 67%
+##  main   ##################################################################
 - terms: 
   - term: main
     lang: en
@@ -11287,10 +11875,17 @@ concepts:
   - term: hlavní
     lang: cs
     tts: hlavni.mp3
+  examples: 
+  - term: We continued along the main road.
+    lang: en
+    tts: We continued along the main road.mp3
+  - term: Pokračovali jsme po hlavní silnici.
+    lang: cs
+    tts: Pokracovali jsme po hlavni silnici.mp3
   img: main.jpeg
   freq: 59778.50000
   origins: ["conceptDbSamples"]
-##  someone   ############################################################### ▆ 67%
+##  someone   ###############################################################
 - terms: 
   - term: someone
     lang: en
@@ -11302,10 +11897,17 @@ concepts:
   - term: někoho
     lang: cs
     tts: nekoho.mp3
+  examples: 
+  - term: Someone else was here.
+    lang: en
+    tts: Someone else was here.mp3
+  - term: Byl tu někdo jiný.
+    lang: cs
+    tts: Byl tu nekdo jiny.mp3
   state: ignoreImage
   freq: 59644.10000
   origins: ["conceptDbSamples"]
-##  please   ################################################################ ▆ 67%
+##  please   ################################################################
 - terms: 
   - term: please
     lang: en
@@ -11317,10 +11919,17 @@ concepts:
   - term: potěšit
     lang: cs
     tts: potesit.mp3
+  examples: 
+  - term: Please fill in the following information!
+    lang: en
+    tts: Please fill in the following information.mp3
+  - term: Vyplňte prosím následující údaje!
+    lang: cs
+    tts: Vyplnte prosim nasledujici udaje.mp3
   img: please.jpeg
   freq: 58839.50000
   origins: ["conceptDbSamples"]
-##  shot   ################################################################## ▆ 67%
+##  shot   ##################################################################
 - terms: 
   - term: shot
     lang: cs
@@ -11331,10 +11940,17 @@ concepts:
   - term: záběr
     lang: cs
     tts: zaber.mp3
+  examples: 
+  - term: Film was shot using hand held camera.
+    lang: en
+    tts: Film was shot using hand held camera.mp3
+  - term: Film byl natočen pomocí ruční kamery.
+    lang: cs
+    tts: Film byl natocen pomoci rucni kamery.mp3
   img: shot.jpeg
   freq: 58465.05000
   origins: ["conceptDbSamples"]
-##  stay   ################################################################## ▆ 67%
+##  stay   ##################################################################
 - terms: 
   - term: stay
     lang: en
@@ -11346,10 +11962,17 @@ concepts:
   - term: pobyt
     lang: cs
     tts: pobyt.mp3
+  examples: 
+  - term: I said stay here!
+    lang: en
+    tts: I said stay here.mp3
+  - term: Řekl jsem, zůstaň tady!
+    lang: cs
+    tts: Rekl jsem, zustan tady.mp3
   state: ignoreImage
   freq: 57836.50000
   origins: ["conceptDbSamples"]
-##  grown   ################################################################# ▆ 67%
+##  grown   #################################################################
 - terms: 
   - term: grown
     lang: en
@@ -11361,10 +11984,17 @@ concepts:
   - term: vypěstovány
     lang: cs
     tts: vypestovany.mp3
+  examples: 
+  - term: He's a grown man.
+    lang: en
+    tts: Hes a grown man.mp3
+  - term: Už je to dospělý muž.
+    lang: cs
+    tts: Uz je to dospely muz.mp3
   img: grown.jpeg
   freq: 57772.60000
   origins: ["conceptDbSamples"]
-##  safe   ################################################################## ▆ 67%
+##  safe   ##################################################################
 - terms: 
   - term: safe
     lang: en
@@ -11376,10 +12006,17 @@ concepts:
   - term: trezor
     lang: cs
     tts: trezor.mp3
+  examples: 
+  - term: Keep other persons at safe distance!
+    lang: en
+    tts: Keep other persons at safe distance.mp3
+  - term: Udržujte ostatní osoby v bezpečné vzdálenosti!
+    lang: cs
+    tts: Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
   img: safe.jpeg
   freq: 57432.25000
   origins: ["conceptDbSamples"]
-##  worth   ################################################################# ▆ 67%
+##  worth   #################################################################
 - terms: 
   - term: worth
     lang: en
@@ -11391,10 +12028,17 @@ concepts:
   - term: hodnota
     lang: cs
     tts: hodnota.mp3
+  examples: 
+  - term: He was worth nothing to the world.
+    lang: en
+    tts: He was worth nothing to the world.mp3
+  - term: Neměl pro svět žádnou cenu.
+    lang: cs
+    tts: Nemel pro svet zadnou cenu.mp3
   img: worth.jpeg
   freq: 57291.50000
   origins: ["conceptDbSamples"]
-##  pull   ################################################################## ▆ 67%
+##  pull   ##################################################################
 - terms: 
   - term: pull
     lang: en
@@ -11406,10 +12050,17 @@ concepts:
   - term: tahat
     lang: cs
     tts: tahat.mp3
+  examples: 
+  - term: Pull the other end!
+    lang: en
+    tts: Pull the other end.mp3
+  - term: Táhni za druhý konec!
+    lang: cs
+    tts: Tahni za druhy konec.mp3
   img: pull.jpeg
   freq: 57029.25000
   origins: ["conceptDbSamples"]
-##  clearly   ############################################################### ▆ 67%
+##  clearly   ###############################################################
 - terms: 
   - term: clearly
     lang: en
@@ -11421,10 +12072,17 @@ concepts:
   - term: zřejmé
     lang: cs
     tts: zrejme.mp3
+  examples: 
+  - term: The answer is clearly no.
+    lang: en
+    tts: The answer is clearly no.mp3
+  - term: Odpověď zní jednoznačně ne.
+    lang: cs
+    tts: Odpoved zni jednoznacne ne.mp3
   img: clearly.jpeg
   freq: 56615.20000
   origins: ["conceptDbSamples"]
-##  energy   ################################################################ ▆ 67%
+##  energy   ################################################################
 - terms: 
   - term: energy
     lang: en
@@ -11433,10 +12091,17 @@ concepts:
   - term: energie
     lang: cs
     tts: energie.mp3
+  examples: 
+  - term: He has got a lot of energy.
+    lang: en
+    tts: He has got a lot of energy.mp3
+  - term: Má hrozně moc energie.
+    lang: cs
+    tts: Ma hrozne moc energie.mp3
   img: energy.jpeg
   freq: 55273.45000
   origins: ["conceptDbSamples"]
-##  directly   ############################################################## ▆ 67%
+##  directly   ##############################################################
 - terms: 
   - term: directly
     lang: en
@@ -11448,10 +12113,17 @@ concepts:
   - term: bezprostředně
     lang: cs
     tts: bezprostredne.mp3
+  examples: 
+  - term: It can't be seen from directly above.
+    lang: en
+    tts: It cant be seen from directly above.mp3
+  - term: Přímo shora to není vidět.
+    lang: cs
+    tts: Primo zhora to neni videt.mp3
   img: directly.jpeg
   freq: 55211.70000
   origins: ["conceptDbSamples"]
-##  song   ################################################################## ▆ 67%
+##  song   ##################################################################
 - terms: 
   - term: song
     lang: en
@@ -11463,10 +12135,17 @@ concepts:
   - term: skladba
     lang: cs
     tts: skladba.mp3
+  examples: 
+  - term: That song is very good though.
+    lang: en
+    tts: That song is very good though.mp3
+  - term: Ačkoli ta píseň je velmi dobrá.
+    lang: cs
+    tts: Ackoli ta pisen je velmi dobra.mp3
   img: song.jpeg
   freq: 54221.30000
   origins: ["conceptDbSamples"]
-##  choice   ################################################################ ▆ 67%
+##  choice   ################################################################
 - terms: 
   - term: choice
     lang: en
@@ -11478,10 +12157,17 @@ concepts:
   - term: výběr
     lang: cs
     tts: vyber.mp3
+  examples: 
+  - term: The government has no choice!
+    lang: en
+    tts: The government has no choice.mp3
+  - term: Vláda nemá na vybranou!
+    lang: cs
+    tts: Vlada nema na vybranou.mp3
   img: choice.jpeg
   freq: 54079.15000
   origins: ["conceptDbSamples"]
-##  size   ################################################################## ▆ 67%
+##  size   ##################################################################
 - terms: 
   - term: size
     lang: en
@@ -11493,10 +12179,17 @@ concepts:
   - term: rozměry
     lang: cs
     tts: rozmery.mp3
+  examples: 
+  - term: Group by size.
+    lang: en
+    tts: Group by size.mp3
+  - term: Seskupit podle velikosti.
+    lang: cs
+    tts: Seskupit podle velikosti.mp3
   img: size.jpeg
   freq: 53495.50000
   origins: ["conceptDbSamples"]
-##  rules   ################################################################# ▆ 67%
+##  rules   #################################################################
 - terms: 
   - term: rules
     lang: en
@@ -11508,10 +12201,17 @@ concepts:
   - term: předpisy
     lang: cs
     tts: predpisy.mp3
+  examples: 
+  - term: We play by the rules.
+    lang: en
+    tts: We play by the rules.mp3
+  - term: Hrajeme podle pravidel.
+    lang: cs
+    tts: Hrajeme podle pravidel.mp3
   img: rules.jpeg
   freq: 53386.50000
   origins: ["conceptDbSamples"]
-##  value   ################################################################# ▆ 67%
+##  value   #################################################################
 - terms: 
   - term: value
     lang: en
@@ -11520,10 +12220,17 @@ concepts:
   - term: hodnota
     lang: cs
     tts: hodnota.mp3
+  examples: 
+  - term: Value must be zero or greater.
+    lang: en
+    tts: Value must be zero or greater.mp3
+  - term: Hodnota musí být rovna nebo větší než nula.
+    lang: cs
+    tts: Hodnota musi byt rovna nebo vetsi nez nula.mp3
   img: value.jpeg
   freq: 52616.40000
   origins: ["conceptDbSamples"]
-##  teeth   ################################################################# ▆ 67%
+##  teeth   #################################################################
 - terms: 
   - term: teeth
     lang: en
@@ -11535,10 +12242,17 @@ concepts:
   - term: chrup
     lang: cs
     tts: chrup.mp3
+  examples: 
+  - term: Apple helps clean teeth.
+    lang: en
+    tts: Apple helps clean teeth.mp3
+  - term: Jablko pomáhá čistit zuby.
+    lang: cs
+    tts: Jablko pomaha cistit zuby.mp3
   img: teeth.jpeg
   freq: 52449.00000
   origins: ["conceptDbSamples"]
-##  permission   ############################################################ ▆ 67%
+##  permission   ############################################################
 - terms: 
   - term: permission
     lang: en
@@ -11550,10 +12264,17 @@ concepts:
   - term: povolení
     lang: cs
     tts: povoleni.mp3
+  examples: 
+  - term: Asking permission to land.
+    lang: en
+    tts: Asking permission to land.mp3
+  - term: Žádám o povolení přistát.
+    lang: cs
+    tts: Zadam o povoleni pristat.mp3
   img: permission.jpeg
   freq: 52344.50000
   origins: ["conceptDbSamples"]
-##  won   ################################################################### ▆ 67%
+##  won   ###################################################################
 - terms: 
   - term: won
     lang: en
@@ -11565,10 +12286,17 @@ concepts:
   - term: zvítězil
     lang: cs
     tts: zvitezil.mp3
+  examples: 
+  - term: I won't be able to do that for so long.
+    lang: en
+    tts: I wont be able to do that for so long.mp3
+  - term: Nebudu to moct dělat tak hrozně dlouho.
+    lang: cs
+    tts: Nebudu to moct delat tak hrozne dlouho.mp3
   img: won.jpeg
   freq: 51798.70000
   origins: ["conceptDbSamples"]
-##  nice   ################################################################## ▆ 67%
+##  nice   ##################################################################
 - terms: 
   - term: nice
     lang: en
@@ -11580,10 +12308,17 @@ concepts:
   - term: příjemné
     lang: cs
     tts: prijemne.mp3
+  examples: 
+  - term: Nice to meet you.
+    lang: en
+    tts: Nice to meet you.mp3
+  - term: Je hezké se s tebou setkat.
+    lang: cs
+    tts: Je hezke se s tebou setkat.mp3
   img: nice.jpeg
   freq: 50915.20000
   origins: ["conceptDbSamples"]
-##  start   ################################################################# ▆ 67%
+##  start   #################################################################
 - terms: 
   - term: start
     lang: en
@@ -11595,10 +12330,17 @@ concepts:
   - term: zahájení
     lang: cs
     tts: zahajeni.mp3
+  examples: 
+  - term: That was a good start.
+    lang: en
+    tts: That was a good start.mp3
+  - term: To byl dobrý začátek.
+    lang: cs
+    tts: To byl dobry zacatek.mp3
   img: start.jpeg
   freq: 50331.95000
   origins: ["conceptDbSamples"]
-##  marry   ################################################################# ▆ 67%
+##  marry   #################################################################
 - terms: 
   - term: marry
     lang: en
@@ -11610,10 +12352,17 @@ concepts:
   - term: provdat
     lang: cs
     tts: provdat.mp3
+  examples: 
+  - term: Because you want to marry me.
+    lang: en
+    tts: Because you want to marry me.mp3
+  - term: Protože si mě chceš vzít.
+    lang: cs
+    tts: Protoze si me chces vzit.mp3
   img: marry.jpeg
   freq: 49835.45000
   origins: ["conceptDbSamples"]
-##  fees   ################################################################## ▆ 67%
+##  fees   ##################################################################
 - terms: 
   - term: fees
     lang: en
@@ -11622,10 +12371,17 @@ concepts:
   - term: poplatky
     lang: cs
     tts: poplatky.mp3
+  examples: 
+  - term: That also means no high fees.
+    lang: en
+    tts: That also means no high fees.mp3
+  - term: To také znamená žádné vysoké poplatky.
+    lang: cs
+    tts: To take znamena zadne vysoke poplatky.mp3
   img: fees.jpeg
   freq: 49820.10000
   origins: ["conceptDbSamples"]
-##  fill   ################################################################## ▅ 50%
+##  fill   ################################################################## ▇ 83%
 - terms: 
   - term: fill
     lang: en
@@ -11637,9 +12393,16 @@ concepts:
   - term: naplňte
     lang: cs
     tts: naplnte.mp3
+  examples: 
+  - term: Please fill in the following information!
+    lang: en
+    tts: Please fill in the following information.mp3
+  - term: Vyplňte prosím následující údaje!
+    lang: cs
+    tts: Vyplnte prosim nasledujici udaje.mp3
   freq: 49413.45000
   origins: ["conceptDbSamples"]
-##  cup   ################################################################### ▅ 50%
+##  cup   ################################################################### ▇ 83%
 - terms: 
   - term: cup
     lang: en
@@ -11651,9 +12414,16 @@ concepts:
   - term: šálek
     lang: cs
     tts: salek.mp3
+  examples: 
+  - term: A cup of tea or coffee.
+    lang: en
+    tts: A cup of tea or coffee.mp3
+  - term: Šálek čaje nebo kávy.
+    lang: cs
+    tts: Salek caje nebo kavy.mp3
   freq: 49370.15000
   origins: ["conceptDbSamples"]
-##  worst   ################################################################# ▅ 50%
+##  worst   ################################################################# ▇ 83%
 - terms: 
   - term: worst
     lang: en
@@ -11665,6 +12435,13 @@ concepts:
   - term: nejhůře
     lang: cs
     tts: nejhure.mp3
+  examples: 
+  - term: That will be the worst part.
+    lang: en
+    tts: That will be the worst part.mp3
+  - term: To bude nejhorší část.
+    lang: cs
+    tts: To bude nejhorsi cast.mp3
   freq: 49369.10000
   origins: ["conceptDbSamples"]
 ##  don   ###################################################################
@@ -11674,14 +12451,21 @@ concepts:
   state: ignore
   freq: 49305.00000
   origins: ["conceptDbSamples"]
-##  data   ################################################################## ▄ 42%
+##  data   ################################################################## ▇ 75%
 - terms: 
   - term: data
     lang: cs
     tts: data-cs.mp3
+  examples: 
+  - term: How long is your data kept?
+    lang: en
+    tts: How long is your data kept.mp3
+  - term: Jak dlouho jsou vaše data uchovávány?
+    lang: cs
+    tts: Jak dlouho jsou vase data uchovavany.mp3
   freq: 48658.45000
   origins: ["conceptDbSamples"]
-##  additional   ############################################################ ▅ 50%
+##  additional   ############################################################ ▇ 83%
 - terms: 
   - term: additional
     lang: en
@@ -11693,9 +12477,16 @@ concepts:
   - term: přídavné
     lang: cs
     tts: pridavne.mp3
+  examples: 
+  - term: Add any additional tables.
+    lang: en
+    tts: Add any additional tables.mp3
+  - term: Přidejte libovolné další tabulky.
+    lang: cs
+    tts: Pridejte libovolne dalsi tabulky.mp3
   freq: 47705.70000
   origins: ["conceptDbSamples"]
-##  needs   ################################################################# ▅ 50%
+##  needs   ################################################################# ▇ 83%
 - terms: 
   - term: needs
     lang: en
@@ -11707,9 +12498,16 @@ concepts:
   - term: potřeby
     lang: cs
     tts: potreby.mp3
+  examples: 
+  - term: Kitty needs some attention.
+    lang: en
+    tts: Kitty needs some attention.mp3
+  - term: Koťátko potřebuje trochu pozornosti.
+    lang: cs
+    tts: Kotatko potrebuje trochu pozornosti.mp3
   freq: 47619.10000
   origins: ["conceptDbSamples"]
-##  happiness   ############################################################# ▅ 50%
+##  happiness   ############################################################# ▇ 83%
 - terms: 
   - term: happiness
     lang: en
@@ -11718,9 +12516,16 @@ concepts:
   - term: štěstí
     lang: cs
     tts: stesti.mp3
+  examples: 
+  - term: False sense of happiness.
+    lang: en
+    tts: False sense of happiness.mp3
+  - term: Falešný pocit štěstí.
+    lang: cs
+    tts: Falesny pocit stesti.mp3
   freq: 47520.50000
   origins: ["conceptDbSamples"]
-##  stop   ################################################################## ▅ 50%
+##  stop   ################################################################## ▇ 83%
 - terms: 
   - term: stop
     lang: en
@@ -11732,9 +12537,16 @@ concepts:
   - term: stůj
     lang: cs
     tts: stuj.mp3
+  examples: 
+  - term: Not even death will stop me.
+    lang: en
+    tts: Not even death will stop me.mp3
+  - term: Ani smrt mě nezastaví.
+    lang: cs
+    tts: Ani smrt me nezastavi.mp3
   freq: 46709.35000
   origins: ["conceptDbSamples"]
-##  thinks   ################################################################ ▅ 50%
+##  thinks   ################################################################ ▇ 83%
 - terms: 
   - term: thinks
     lang: en
@@ -11746,9 +12558,16 @@ concepts:
   - term: přemýšlí
     lang: cs
     tts: premysli.mp3
+  examples: 
+  - term: She only thinks of herself.
+    lang: en
+    tts: She only thinks of herself.mp3
+  - term: Ona myslí jen na sebe.
+    lang: cs
+    tts: Ona mysli jen na sebe.mp3
   freq: 46053.50000
   origins: ["conceptDbSamples"]
-##  medium   ################################################################ ▅ 50%
+##  medium   ################################################################ ▇ 83%
 - terms: 
   - term: medium
     lang: en
@@ -11757,9 +12576,16 @@ concepts:
   - term: střední
     lang: cs
     tts: stredni.mp3
+  examples: 
+  - term: The effect is medium to strong.
+    lang: en
+    tts: The effect is medium to strong.mp3
+  - term: Účinek je střední až silný.
+    lang: cs
+    tts: Ucinek je stredni az silny.mp3
   freq: 45868.70000
   origins: ["conceptDbSamples"]
-##  everyone   ############################################################## ▅ 50%
+##  everyone   ############################################################## ▇ 83%
 - terms: 
   - term: everyone
     lang: en
@@ -11771,9 +12597,16 @@ concepts:
   - term: každý
     lang: cs
     tts: kazdy.mp3
+  examples: 
+  - term: Not everyone will agree with you.
+    lang: en
+    tts: Not everyone will agree with you.mp3
+  - term: Ne každý s vámi souhlasí.
+    lang: cs
+    tts: Ne kazdy s vami souhlasi.mp3
   freq: 45742.40000
   origins: ["conceptDbSamples"]
-##  goods   ################################################################# ▅ 50%
+##  goods   ################################################################# ▇ 83%
 - terms: 
   - term: goods
     lang: en
@@ -11782,9 +12615,16 @@ concepts:
   - term: zboží
     lang: cs
     tts: zbozi.mp3
+  examples: 
+  - term: Stores are full of goods.
+    lang: en
+    tts: Stores are full of goods.mp3
+  - term: Obchody jsou plné zboží.
+    lang: cs
+    tts: Obchody jsou plne zbozi.mp3
   freq: 45735.40000
   origins: ["conceptDbSamples"]
-##  closed   ################################################################ ▅ 50%
+##  closed   ################################################################ ▇ 83%
 - terms: 
   - term: closed
     lang: en
@@ -11793,9 +12633,16 @@ concepts:
   - term: uzavřené
     lang: cs
     tts: uzavrene.mp3
+  examples: 
+  - term: The school was closed during the day.
+    lang: en
+    tts: The school was closed during the day.mp3
+  - term: Škola byla během dne zavřená.
+    lang: cs
+    tts: Skola byla behem dne zavrena.mp3
   freq: 45657.15000
   origins: ["conceptDbSamples"]
-##  claim   ################################################################# ▅ 50%
+##  claim   ################################################################# ▇ 83%
 - terms: 
   - term: claim
     lang: en
@@ -11807,9 +12654,16 @@ concepts:
   - term: nárok
     lang: cs
     tts: narok.mp3
+  examples: 
+  - term: This claim is therefore rejected.
+    lang: en
+    tts: This claim is therefore rejected.mp3
+  - term: Toto tvrzení se proto zamítá.
+    lang: cs
+    tts: Toto tvrzeni se proto zamita.mp3
   freq: 44928.50000
   origins: ["conceptDbSamples"]
-##  rule   ################################################################## ▅ 50%
+##  rule   ################################################################## ▇ 83%
 - terms: 
   - term: rule
     lang: en
@@ -11818,9 +12672,16 @@ concepts:
   - term: pravidlo
     lang: cs
     tts: pravidlo.mp3
+  examples: 
+  - term: When does this rule apply?
+    lang: en
+    tts: When does this rule apply.mp3
+  - term: Kdy platí toto pravidlo?
+    lang: cs
+    tts: Kdy plati toto pravidlo.mp3
   freq: 44844.25000
   origins: ["conceptDbSamples"]
-##  required   ############################################################## ▅ 50%
+##  required   ############################################################## ▇ 83%
 - terms: 
   - term: required
     lang: en
@@ -11832,9 +12693,16 @@ concepts:
   - term: vyžadováno
     lang: cs
     tts: vyzadovano.mp3
+  examples: 
+  - term: The second step is not required.
+    lang: en
+    tts: The second step is not required.mp3
+  - term: Druhý krok není vyžadován.
+    lang: cs
+    tts: Druhy krok neni vyzadovan.mp3
   freq: 44600.85000
   origins: ["conceptDbSamples"]
-##  asking   ################################################################ ▅ 50%
+##  asking   ################################################################ ▇ 83%
 - terms: 
   - term: asking
     lang: en
@@ -11846,9 +12714,16 @@ concepts:
   - term: ptá se
     lang: cs
     tts: pta se.mp3
+  examples: 
+  - term: Asking permission to land.
+    lang: en
+    tts: Asking permission to land.mp3
+  - term: Žádám o povolení přistát.
+    lang: cs
+    tts: Zadam o povoleni pristat.mp3
   freq: 44097.80000
   origins: ["conceptDbSamples"]
-##  nine   ################################################################## ▅ 50%
+##  nine   ################################################################## ▇ 83%
 - terms: 
   - term: nine
     lang: en
@@ -11857,9 +12732,16 @@ concepts:
   - term: devět
     lang: cs
     tts: devet.mp3
+  examples: 
+  - term: Only nine thousand a month.
+    lang: en
+    tts: Only nine thousand a month.mp3
+  - term: Jen devět tisíc za měsíc.
+    lang: cs
+    tts: Jen devet tisic za mesic.mp3
   freq: 43944.95000
   origins: ["conceptDbSamples"]
-##  apply   ################################################################# ▅ 50%
+##  apply   ################################################################# ▇ 83%
 - terms: 
   - term: apply
     lang: en
@@ -11871,9 +12753,16 @@ concepts:
   - term: aplikovat
     lang: cs
     tts: aplikovat.mp3
+  examples: 
+  - term: When does this rule apply?
+    lang: en
+    tts: When does this rule apply.mp3
+  - term: Kdy platí toto pravidlo?
+    lang: cs
+    tts: Kdy plati toto pravidlo.mp3
   freq: 43667.25000
   origins: ["conceptDbSamples"]
-##  excellent   ############################################################# ▅ 50%
+##  excellent   ############################################################# ▇ 83%
 - terms: 
   - term: excellent
     lang: en
@@ -11885,9 +12774,16 @@ concepts:
   - term: výborný
     lang: cs
     tts: vyborny.mp3
+  examples: 
+  - term: He is an excellent speaker.
+    lang: en
+    tts: He is an excellent speaker.mp3
+  - term: On je výborný řečník.
+    lang: cs
+    tts: On je vyborny recnik.mp3
   freq: 43273.45000
   origins: ["conceptDbSamples"]
-##  brain   ################################################################# ▅ 50%
+##  brain   ################################################################# ▇ 83%
 - terms: 
   - term: brain
     lang: en
@@ -11896,9 +12792,16 @@ concepts:
   - term: mozek
     lang: cs
     tts: mozek.mp3
+  examples: 
+  - term: His brain is much smaller.
+    lang: en
+    tts: His brain is much smaller.mp3
+  - term: Jeho mozek je o hodně menší.
+    lang: cs
+    tts: Jeho mozek je o hodne mensi.mp3
   freq: 42478.85000
   origins: ["conceptDbSamples"]
-##  alive   ################################################################# ▅ 50%
+##  alive   ################################################################# ▇ 83%
 - terms: 
   - term: alive
     lang: en
@@ -11910,9 +12813,16 @@ concepts:
   - term: zaživa
     lang: cs
     tts: zaziva.mp3
+  examples: 
+  - term: He was talking, thus proving he was still alive.
+    lang: en
+    tts: He was talking, thus proving he was still alive.mp3
+  - term: Mluvil, čímž dokazoval, že je stále naživu.
+    lang: cs
+    tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
   freq: 41908.25000
   origins: ["conceptDbSamples"]
-##  dangerous   ############################################################# ▅ 50%
+##  dangerous   ############################################################# ▇ 83%
 - terms: 
   - term: dangerous
     lang: en
@@ -11921,9 +12831,16 @@ concepts:
   - term: nebezpečné
     lang: cs
     tts: nebezpecne.mp3
+  examples: 
+  - term: And they can be dangerous.
+    lang: en
+    tts: And they can be dangerous.mp3
+  - term: A mohou být nebezpeční.
+    lang: cs
+    tts: A mohou byt nebezpecni.mp3
   freq: 41231.15000
   origins: ["conceptDbSamples"]
-##  working   ############################################################### ▅ 50%
+##  working   ############################################################### ▇ 83%
 - terms: 
   - term: working
     lang: en
@@ -11935,9 +12852,16 @@ concepts:
   - term: fungující
     lang: cs
     tts: fungujici.mp3
+  examples: 
+  - term: I was working, of course.
+    lang: en
+    tts: I was working, of course.mp3
+  - term: Pracoval jsem, samozřejmě.
+    lang: cs
+    tts: Pracoval jsem, samozrejme.mp3
   freq: 41121.15000
   origins: ["conceptDbSamples"]
-##  drive   ################################################################# ▅ 50%
+##  drive   ################################################################# ▇ 83%
 - terms: 
   - term: drive
     lang: en
@@ -11949,9 +12873,16 @@ concepts:
   - term: pohon
     lang: cs
     tts: pohon.mp3
+  examples: 
+  - term: Can you really drive this thing?
+    lang: en
+    tts: Can you really drive this thing.mp3
+  - term: Opravdu umíš řídit tuhle věc?
+    lang: cs
+    tts: Opravdu umis ridit tuhle vec.mp3
   freq: 40999.60000
   origins: ["conceptDbSamples"]
-##  brother   ############################################################### ▅ 50%
+##  brother   ############################################################### ▇ 83%
 - terms: 
   - term: brother
     lang: en
@@ -11960,9 +12891,16 @@ concepts:
   - term: bratr
     lang: cs
     tts: bratr.mp3
+  examples: 
+  - term: This is your new brother.
+    lang: en
+    tts: This is your new brother.mp3
+  - term: Tohle je tvůj nový bratr.
+    lang: cs
+    tts: Tohle je tvuj novy bratr.mp3
   freq: 40977.45000
   origins: ["conceptDbSamples"]
-##  earlier   ############################################################### ▅ 50%
+##  earlier   ############################################################### ▇ 83%
 - terms: 
   - term: earlier
     lang: en
@@ -11974,9 +12912,16 @@ concepts:
   - term: dříve
     lang: cs
     tts: drive-cs.mp3
+  examples: 
+  - term: Earlier versions may be different.
+    lang: en
+    tts: Earlier versions may be different.mp3
+  - term: Dřívější verze se mohou lišit.
+    lang: cs
+    tts: Drivejsi verze se mohou lisit.mp3
   freq: 40843.10000
   origins: ["conceptDbSamples"]
-##  nobody   ################################################################ ▅ 50%
+##  nobody   ################################################################ ▇ 83%
 - terms: 
   - term: nobody
     lang: en
@@ -11988,9 +12933,16 @@ concepts:
   - term: nikoho
     lang: cs
     tts: nikoho.mp3
+  examples: 
+  - term: Nobody cares about me anymore.
+    lang: en
+    tts: Nobody cares about me anymore.mp3
+  - term: Nikdo se už o mě nezajímá.
+    lang: cs
+    tts: Nikdo se uz o me nezajima.mp3
   freq: 40420.30000
   origins: ["conceptDbSamples"]
-##  hospital   ############################################################## ▅ 50%
+##  hospital   ############################################################## ▇ 83%
 - terms: 
   - term: hospital
     lang: en
@@ -11999,9 +12951,16 @@ concepts:
   - term: nemocnice
     lang: cs
     tts: nemocnice.mp3
+  examples: 
+  - term: I went to the hospital.
+    lang: en
+    tts: I went to the hospital.mp3
+  - term: Šel jsem do nemocnice.
+    lang: cs
+    tts: Sel jsem do nemocnice.mp3
   freq: 40282.20000
   origins: ["conceptDbSamples"]
-##  tired   ################################################################# ▅ 50%
+##  tired   ################################################################# ▇ 83%
 - terms: 
   - term: tired
     lang: en
@@ -12010,9 +12969,16 @@ concepts:
   - term: unavený
     lang: cs
     tts: unaveny.mp3
+  examples: 
+  - term: He's old and tired.
+    lang: en
+    tts: Hes old and tired.mp3
+  - term: Je starý a unavený.
+    lang: cs
+    tts: Je stary a unaveny.mp3
   freq: 39561.35000
   origins: ["conceptDbSamples"]
-##  successful   ############################################################ ▅ 50%
+##  successful   ############################################################ ▇ 83%
 - terms: 
   - term: successful
     lang: en
@@ -12021,9 +12987,16 @@ concepts:
   - term: úspěšné
     lang: cs
     tts: uspesne.mp3
+  examples: 
+  - term: What makes our company successful?
+    lang: en
+    tts: What makes our company successful.mp3
+  - term: Díky čemu je naše firma úspěšná?
+    lang: cs
+    tts: Diky cemu je nase firma uspesna.mp3
   freq: 39535.10000
   origins: ["conceptDbSamples"]
-##  empty   ################################################################# ▅ 50%
+##  empty   ################################################################# ▇ 83%
 - terms: 
   - term: empty
     lang: en
@@ -12032,9 +13005,16 @@ concepts:
   - term: prázdné
     lang: cs
     tts: prazdne.mp3
+  examples: 
+  - term: My head is empty.
+    lang: en
+    tts: My head is empty.mp3
+  - term: Moje hlava je prázdná.
+    lang: cs
+    tts: Moje hlava je prazdna.mp3
   freq: 38692.60000
   origins: ["conceptDbSamples"]
-##  list   ################################################################## ▅ 50%
+##  list   ################################################################## ▇ 83%
 - terms: 
   - term: list
     lang: en
@@ -12043,9 +13023,16 @@ concepts:
   - term: seznam
     lang: cs
     tts: seznam.mp3
+  examples: 
+  - term: Who's next on my list?
+    lang: en
+    tts: Whos next on my list.mp3
+  - term: Tak kdo je další na seznamu?
+    lang: cs
+    tts: Tak kdo je dalsi na seznamu.mp3
   freq: 37150.75000
   origins: ["conceptDbSamples"]
-##  yesterday   ############################################################# ▅ 50%
+##  yesterday   ############################################################# ▇ 83%
 - terms: 
   - term: yesterday
     lang: en
@@ -12054,9 +13041,16 @@ concepts:
   - term: včera
     lang: cs
     tts: vcera.mp3
+  examples: 
+  - term: I've been worried since yesterday.
+    lang: en
+    tts: Ive been worried since yesterday.mp3
+  - term: Mám starosti od včerejška.
+    lang: cs
+    tts: Mam starosti od vcerejska.mp3
   freq: 37019.50000
   origins: ["conceptDbSamples"]
-##  phone   ################################################################# ▅ 50%
+##  phone   ################################################################# ▇ 83%
 - terms: 
   - term: phone
     lang: en
@@ -12065,9 +13059,16 @@ concepts:
   - term: telefon
     lang: cs
     tts: telefon.mp3
+  examples: 
+  - term: You can order by phone.
+    lang: en
+    tts: You can order by phone.mp3
+  - term: Můžete si objednat telefonicky.
+    lang: cs
+    tts: Muzete si objednat telefonicky.mp3
   freq: 36947.43500
   origins: ["conceptDbSamples"]
-##  mistake   ############################################################### ▅ 50%
+##  mistake   ############################################################### ▇ 83%
 - terms: 
   - term: mistake
     lang: en
@@ -12079,9 +13080,16 @@ concepts:
   - term: chyba
     lang: cs
     tts: chyba.mp3
+  examples: 
+  - term: His first big mistake.
+    lang: en
+    tts: His first big mistake.mp3
+  - term: Jeho první velká chyba.
+    lang: cs
+    tts: Jeho prvni velka chyba.mp3
   freq: 36424.35000
   origins: ["conceptDbSamples"]
-##  busy   ################################################################## ▅ 50%
+##  busy   ################################################################## ▇ 83%
 - terms: 
   - term: busy
     lang: en
@@ -12093,9 +13101,16 @@ concepts:
   - term: rušný
     lang: cs
     tts: rusny.mp3
+  examples: 
+  - term: Every single day was busy.
+    lang: en
+    tts: Every single day was busy.mp3
+  - term: Každý den byl rušný.
+    lang: cs
+    tts: Kazdy den byl rusny.mp3
   freq: 35453.55000
   origins: ["conceptDbSamples"]
-##  film   ################################################################## ▅ 50%
+##  film   ################################################################## ▇ 83%
 - terms: 
   - term: film
     lang: cs
@@ -12103,9 +13118,16 @@ concepts:
   - term: fólie
     lang: cs
     tts: folie.mp3
+  examples: 
+  - term: Film was shot using hand held camera.
+    lang: en
+    tts: Film was shot using hand held camera.mp3
+  - term: Film byl natočen pomocí ruční kamery.
+    lang: cs
+    tts: Film byl natocen pomoci rucni kamery.mp3
   freq: 35325.20000
   origins: ["conceptDbSamples"]
-##  remarkable   ############################################################ ▅ 50%
+##  remarkable   ############################################################ ▇ 83%
 - terms: 
   - term: remarkable
     lang: en
@@ -12117,9 +13139,16 @@ concepts:
   - term: mimořádný
     lang: cs
     tts: mimoradny.mp3
+  examples: 
+  - term: Those early days were remarkable.
+    lang: en
+    tts: Those early days were remarkable.mp3
+  - term: Tyto první dny byly pozoruhodné.
+    lang: cs
+    tts: Tyto prvni dny byly pozoruhodne.mp3
   freq: 35244.40000
   origins: ["conceptDbSamples"]
-##  movie   ################################################################# ▅ 50%
+##  movie   ################################################################# ▇ 83%
 - terms: 
   - term: movie
     lang: en
@@ -12128,9 +13157,16 @@ concepts:
   - term: film
     lang: cs
     tts: film-cs.mp3
+  examples: 
+  - term: Have you seen the movie yet?
+    lang: en
+    tts: Have you seen the movie yet.mp3
+  - term: Už jste ten film viděli?
+    lang: cs
+    tts: Uz jste ten film videli.mp3
   freq: 35083.52900
   origins: ["conceptDbSamples"]
-##  nose   ################################################################## ▅ 50%
+##  nose   ################################################################## ▇ 83%
 - terms: 
   - term: nose
     lang: en
@@ -12139,9 +13175,16 @@ concepts:
   - term: nos
     lang: cs
     tts: nos.mp3
+  examples: 
+  - term: He has a ring through his nose.
+    lang: en
+    tts: He has a ring through his nose.mp3
+  - term: Má kroužek skrz nos.
+    lang: cs
+    tts: Ma krouzek skrz nos.mp3
   freq: 34998.90000
   origins: ["conceptDbSamples"]
-##  hide   ################################################################## ▅ 50%
+##  hide   ################################################################## ▇ 83%
 - terms: 
   - term: hide
     lang: en
@@ -12153,9 +13196,16 @@ concepts:
   - term: schovat
     lang: cs
     tts: schovat.mp3
+  examples: 
+  - term: They hide the truth from you.
+    lang: en
+    tts: They hide the truth from you.mp3
+  - term: Skrývají před vámi pravdu.
+    lang: cs
+    tts: Skryvaji pred vami pravdu.mp3
   freq: 34760.90000
   origins: ["conceptDbSamples"]
-##  explanation   ########################################################### ▅ 50%
+##  explanation   ########################################################### ▇ 83%
 - terms: 
   - term: explanation
     lang: en
@@ -12164,9 +13214,16 @@ concepts:
   - term: vysvětlení
     lang: cs
     tts: vysvetleni.mp3
+  examples: 
+  - term: No further explanation was given.
+    lang: en
+    tts: No further explanation was given.mp3
+  - term: Žádné další vysvětlení nebylo dáno.
+    lang: cs
+    tts: Zadne dalsi vysvetleni nebylo dano.mp3
   freq: 34381.15000
   origins: ["conceptDbSamples"]
-##  tea   ################################################################### ▅ 50%
+##  tea   ################################################################### ▇ 83%
 - terms: 
   - term: tea
     lang: en
@@ -12175,9 +13232,16 @@ concepts:
   - term: čaj
     lang: cs
     tts: caj.mp3
+  examples: 
+  - term: A cup of tea or coffee.
+    lang: en
+    tts: A cup of tea or coffee.mp3
+  - term: Šálek čaje nebo kávy.
+    lang: cs
+    tts: Salek caje nebo kavy.mp3
   freq: 33960.05000
   origins: ["conceptDbSamples"]
-##  test   ################################################################## ▅ 50%
+##  test   ################################################################## ▇ 83%
 - terms: 
   - term: test
     lang: cs
@@ -12185,9 +13249,16 @@ concepts:
   - term: zkouška
     lang: cs
     tts: zkouska.mp3
+  examples: 
+  - term: But you passed the test.
+    lang: en
+    tts: But you passed the test.mp3
+  - term: Ale zkouškou jste prošel.
+    lang: cs
+    tts: Ale zkouskou jste prosel.mp3
   freq: 33664.05000
   origins: ["conceptDbSamples"]
-##  ring   ################################################################## ▅ 50%
+##  ring   ################################################################## ▇ 83%
 - terms: 
   - term: ring
     lang: en
@@ -12199,9 +13270,16 @@ concepts:
   - term: kroužek
     lang: cs
     tts: krouzek.mp3
+  examples: 
+  - term: He has a ring through his nose.
+    lang: en
+    tts: He has a ring through his nose.mp3
+  - term: Má kroužek skrz nos.
+    lang: cs
+    tts: Ma krouzek skrz nos.mp3
   freq: 33378.70000
   origins: ["conceptDbSamples"]
-##  fault   ################################################################# ▅ 50%
+##  fault   ################################################################# ▇ 83%
 - terms: 
   - term: fault
     lang: en
@@ -12213,9 +13291,16 @@ concepts:
   - term: porucha
     lang: cs
     tts: porucha.mp3
+  examples: 
+  - term: But it is not their fault.
+    lang: en
+    tts: But it is not their fault.mp3
+  - term: Ale není to jejich vina.
+    lang: cs
+    tts: Ale neni to jejich vina.mp3
   freq: 33363.20000
   origins: ["conceptDbSamples"]
-##  clean   ################################################################# ▅ 50%
+##  clean   ################################################################# ▇ 83%
 - terms: 
   - term: clean
     lang: en
@@ -12227,9 +13312,16 @@ concepts:
   - term: vyčistit
     lang: cs
     tts: vycistit.mp3
+  examples: 
+  - term: Apple helps clean teeth.
+    lang: en
+    tts: Apple helps clean teeth.mp3
+  - term: Jablko pomáhá čistit zuby.
+    lang: cs
+    tts: Jablko pomaha cistit zuby.mp3
   freq: 33343.65000
   origins: ["conceptDbSamples"]
-##  shape   ################################################################# ▅ 50%
+##  shape   ################################################################# ▇ 83%
 - terms: 
   - term: shape
     lang: en
@@ -12241,9 +13333,16 @@ concepts:
   - term: tvar
     lang: cs
     tts: tvar.mp3
+  examples: 
+  - term: You must select only one shape.
+    lang: en
+    tts: You must select only one shape.mp3
+  - term: Musíš vybrat jen jeden tvar.
+    lang: cs
+    tts: Musis vybrat jen jeden tvar.mp3
   freq: 33284.95000
   origins: ["conceptDbSamples"]
-##  eggs   ################################################################## ▅ 50%
+##  eggs   ################################################################## ▇ 83%
 - terms: 
   - term: eggs
     lang: en
@@ -12255,9 +13354,16 @@ concepts:
   - term: vajíčka
     lang: cs
     tts: vajicka.mp3
+  examples: 
+  - term: Hens lay white eggs.
+    lang: en
+    tts: Hens lay white eggs.mp3
+  - term: Slepice kladou bílá vejce.
+    lang: cs
+    tts: Slepice kladou bila vejce.mp3
   freq: 33059.90000
   origins: ["conceptDbSamples"]
-##  smaller   ############################################################### ▅ 50%
+##  smaller   ############################################################### ▇ 83%
 - terms: 
   - term: smaller
     lang: en
@@ -12266,9 +13372,16 @@ concepts:
   - term: menší
     lang: cs
     tts: mensi.mp3
+  examples: 
+  - term: His brain is much smaller.
+    lang: en
+    tts: His brain is much smaller.mp3
+  - term: Jeho mozek je o hodně menší.
+    lang: cs
+    tts: Jeho mozek je o hodne mensi.mp3
   freq: 32668.30000
   origins: ["conceptDbSamples"]
-##  finds   ################################################################# ▅ 50%
+##  finds   ################################################################# ▇ 83%
 - terms: 
   - term: finds
     lang: en
@@ -12280,9 +13393,16 @@ concepts:
   - term: vyhledá
     lang: cs
     tts: vyhleda.mp3
+  examples: 
+  - term: Just wait until she finds out!
+    lang: en
+    tts: Just wait until she finds out.mp3
+  - term: Jen počkejte, až to zjistí!
+    lang: cs
+    tts: Jen pockejte, az to zjisti.mp3
   freq: 31934.90000
   origins: ["conceptDbSamples"]
-##  unable   ################################################################ ▅ 50%
+##  unable   ################################################################ ▇ 83%
 - terms: 
   - term: unable
     lang: en
@@ -12294,9 +13414,16 @@ concepts:
   - term: nemůže
     lang: cs
     tts: nemuze.mp3
+  examples: 
+  - term: I was unable to speak.
+    lang: en
+    tts: I was unable to speak.mp3
+  - term: Nebyl jsem schopen mluvit.
+    lang: cs
+    tts: Nebyl jsem schopen mluvit.mp3
   freq: 31745.05000
   origins: ["conceptDbSamples"]
-##  stayed   ################################################################ ▅ 50%
+##  stayed   ################################################################ ▇ 83%
 - terms: 
   - term: stayed
     lang: en
@@ -12308,9 +13435,16 @@ concepts:
   - term: pobýval
     lang: cs
     tts: pobyval.mp3
+  examples: 
+  - term: You stayed up all night?
+    lang: en
+    tts: You stayed up all night.mp3
+  - term: Byl jste vzhůru celou noc?
+    lang: cs
+    tts: Byl jste vzhuru celou noc.mp3
   freq: 31165.90000
   origins: ["conceptDbSamples"]
-##  scale   ################################################################# ▅ 50%
+##  scale   ################################################################# ▇ 82%
 - terms: 
   - term: scale
     lang: en
@@ -12319,12 +13453,18 @@ concepts:
   - term: měřítko
     lang: cs
     tts: meritko.mp3
-  - term: rozsahu
+  - term: rozsah
     lang: cs
-    tts: rozsahu.mp3
+  examples: 
+  - term: It has been happening on a very large scale.
+    lang: en
+    tts: It has been happening on a very large scale.mp3
+  - term: Dělo se to ve velkém měřítku.
+    lang: cs
+    tts: Delo se to ve velkem meritku.mp3
   freq: 30427.90000
   origins: ["conceptDbSamples"]
-##  process   ############################################################### ▅ 50%
+##  process   ############################################################### ▇ 83%
 - terms: 
   - term: process
     lang: en
@@ -12336,9 +13476,16 @@ concepts:
   - term: postup
     lang: cs
     tts: postup.mp3
+  examples: 
+  - term: This process can take several minutes.
+    lang: en
+    tts: This process can take several minutes.mp3
+  - term: Tento proces může trvat několik minut.
+    lang: cs
+    tts: Tento proces muze trvat nekolik minut.mp3
   freq: 30250.70000
   origins: ["conceptDbSamples"]
-##  nearest   ############################################################### ▅ 50%
+##  nearest   ############################################################### ▇ 83%
 - terms: 
   - term: nearest
     lang: en
@@ -12347,9 +13494,16 @@ concepts:
   - term: nejbližší
     lang: cs
     tts: nejblizsi.mp3
+  examples: 
+  - term: Run into the nearest town.
+    lang: en
+    tts: Run into the nearest town.mp3
+  - term: Utíkej do nejbližšího města?
+    lang: cs
+    tts: Utikej do nejblizsiho mesta.mp3
   freq: 29094.70000
   origins: ["conceptDbSamples"]
-##  coffee   ################################################################ ▅ 50%
+##  coffee   ################################################################ ▇ 83%
 - terms: 
   - term: coffee
     lang: en
@@ -12358,9 +13512,16 @@ concepts:
   - term: káva
     lang: cs
     tts: kava.mp3
+  examples: 
+  - term: I brought you coffee.
+    lang: en
+    tts: I brought you coffee.mp3
+  - term: Přinesl jsem ti kafe.
+    lang: cs
+    tts: Prinesl jsem ti kafe.mp3
   freq: 29061.35000
   origins: ["conceptDbSamples"]
-##  fly   ################################################################### ▅ 50%
+##  fly   ################################################################### ▇ 83%
 - terms: 
   - term: fly
     lang: en
@@ -12372,9 +13533,16 @@ concepts:
   - term: let
     lang: cs
     tts: let-cs.mp3
+  examples: 
+  - term: How far can you fly?
+    lang: en
+    tts: How far can you fly.mp3
+  - term: Jak daleko můžete létat?
+    lang: cs
+    tts: Jak daleko muzete letat.mp3
   freq: 28502.95000
   origins: ["conceptDbSamples"]
-##  visible   ############################################################### ▅ 50%
+##  visible   ############################################################### ▇ 83%
 - terms: 
   - term: visible
     lang: en
@@ -12383,9 +13551,16 @@ concepts:
   - term: viditelné
     lang: cs
     tts: viditelne.mp3
+  examples: 
+  - term: Entry point must be visible.
+    lang: en
+    tts: Entry point must be visible.mp3
+  - term: Vstupní bod musí být viditelný.
+    lang: cs
+    tts: Vstupni bod musi byt viditelny.mp3
   freq: 28287.60000
   origins: ["conceptDbSamples"]
-##  library   ############################################################### ▅ 50%
+##  library   ############################################################### ▇ 83%
 - terms: 
   - term: library
     lang: en
@@ -12394,9 +13569,16 @@ concepts:
   - term: knihovna
     lang: cs
     tts: knihovna.mp3
+  examples: 
+  - term: I entered the library.
+    lang: en
+    tts: I entered the library.mp3
+  - term: Vstoupil jsem do knihovny.
+    lang: cs
+    tts: Vstoupil jsem do knihovny.mp3
   freq: 28114.95000
   origins: ["conceptDbSamples"]
-##  catch   ################################################################# ▅ 50%
+##  catch   ################################################################# ▇ 83%
 - terms: 
   - term: catch
     lang: en
@@ -12408,9 +13590,16 @@ concepts:
   - term: úlovek
     lang: cs
     tts: ulovek.mp3
+  examples: 
+  - term: However there's a catch.
+    lang: en
+    tts: However theres a catch.mp3
+  - term: Nicméně je tu jeden háček.
+    lang: cs
+    tts: Nicmene je tu jeden hacek.mp3
   freq: 28047.90000
   origins: ["conceptDbSamples"]
-##  instructions   ########################################################## ▅ 50%
+##  instructions   ########################################################## ▇ 83%
 - terms: 
   - term: instructions
     lang: en
@@ -12422,9 +13611,16 @@ concepts:
   - term: instrukce
     lang: cs
     tts: instrukce.mp3
+  examples: 
+  - term: We followed your instructions.
+    lang: en
+    tts: We followed your instructions.mp3
+  - term: Postupovali jsme podle tvých instrukcí.
+    lang: cs
+    tts: Postupovali jsme podle tvych instrukci.mp3
   freq: 26838.40000
   origins: ["conceptDbSamples"]
-##  cool   ################################################################## ▅ 50%
+##  cool   ################################################################## ▇ 83%
 - terms: 
   - term: cool
     lang: en
@@ -12433,9 +13629,16 @@ concepts:
   - term: chladné
     lang: cs
     tts: chladne.mp3
+  examples: 
+  - term: They have some really cool tricks.
+    lang: en
+    tts: They have some really cool tricks.mp3
+  - term: Mají některé opravdu skvělé triky.
+    lang: cs
+    tts: Maji nektere opravdu skvele triky.mp3
   freq: 26142.55000
   origins: ["conceptDbSamples"]
-##  cat   ################################################################### ▅ 50%
+##  cat   ################################################################### ▇ 83%
 - terms: 
   - term: cat
     lang: en
@@ -12444,9 +13647,16 @@ concepts:
   - term: kočka
     lang: cs
     tts: kocka.mp3
+  examples: 
+  - term: Cat and dog.
+    lang: en
+    tts: Cat and dog.mp3
+  - term: Kočka a pes.
+    lang: cs
+    tts: Kocka a pes.mp3
   freq: 25867.60000
   origins: ["conceptDbSamples"]
-##  repeat   ################################################################ ▅ 50%
+##  repeat   ################################################################ ▇ 83%
 - terms: 
   - term: repeat
     lang: en
@@ -12455,9 +13665,16 @@ concepts:
   - term: opakovat
     lang: cs
     tts: opakovat.mp3
+  examples: 
+  - term: I repeat, a green light.
+    lang: en
+    tts: I repeat, a green light.mp3
+  - term: Opakuji, zelené světlo.
+    lang: cs
+    tts: Opakuji, zelene svetlo.mp3
   freq: 25063.25000
   origins: ["conceptDbSamples"]
-##  advantages   ############################################################ ▅ 50%
+##  advantages   ############################################################ ▇ 83%
 - terms: 
   - term: advantages
     lang: en
@@ -12469,9 +13686,16 @@ concepts:
   - term: přednosti
     lang: cs
     tts: prednosti.mp3
+  examples: 
+  - term: What are its advantages?
+    lang: en
+    tts: What are its advantages.mp3
+  - term: Jaké to má výhody?
+    lang: cs
+    tts: Jake to ma vyhody.mp3
   freq: 24802.80000
   origins: ["conceptDbSamples"]
-##  win   ################################################################### ▅ 50%
+##  win   ################################################################### ▇ 83%
 - terms: 
   - term: win
     lang: en
@@ -12483,9 +13707,16 @@ concepts:
   - term: vítězství
     lang: cs
     tts: vitezstvi.mp3
+  examples: 
+  - term: They might even win.
+    lang: en
+    tts: They might even win.mp3
+  - term: Možná že dokonce zvítězí.
+    lang: cs
+    tts: Mozna ze dokonce zvitezi.mp3
   freq: 24721.45000
   origins: ["conceptDbSamples"]
-##  patient   ############################################################### ▅ 50%
+##  patient   ############################################################### ▇ 83%
 - terms: 
   - term: patient
     lang: en
@@ -12497,9 +13728,16 @@ concepts:
   - term: trpělivý
     lang: cs
     tts: trpelivy.mp3
+  examples: 
+  - term: Distance between patient and doctor.
+    lang: en
+    tts: Distance between patient and doctor.mp3
+  - term: Vzdálenost mezi pacientem a lékařem.
+    lang: cs
+    tts: Vzdalenost mezi pacientem a lekarem.mp3
   freq: 24442.10000
   origins: ["conceptDbSamples"]
-##  locked   ################################################################ ▅ 50%
+##  locked   ################################################################ ▇ 83%
 - terms: 
   - term: locked
     lang: en
@@ -12511,9 +13749,16 @@ concepts:
   - term: zamčený
     lang: cs
     tts: zamceny.mp3
+  examples: 
+  - term: Why is the door locked?
+    lang: en
+    tts: Why is the door locked.mp3
+  - term: Proč jsou ty dveře zamčené?
+    lang: cs
+    tts: Proc jsou ty dvere zamcene.mp3
   freq: 24438.10000
   origins: ["conceptDbSamples"]
-##  proceed   ############################################################### ▅ 50%
+##  proceed   ############################################################### ▇ 83%
 - terms: 
   - term: proceed
     lang: en
@@ -12525,9 +13770,16 @@ concepts:
   - term: pokračovat
     lang: cs
     tts: pokracovat.mp3
+  examples: 
+  - term: Proceed at your own risks.
+    lang: en
+    tts: Proceed at your own risks.mp3
+  - term: Pokračujte na vlastní nebezpečí.
+    lang: cs
+    tts: Pokracujte na vlastni nebezpeci.mp3
   freq: 24123.80000
   origins: ["conceptDbSamples"]
-##  hit   ################################################################### ▅ 50%
+##  hit   ################################################################### ▇ 83%
 - terms: 
   - term: hit
     lang: cs
@@ -12538,9 +13790,16 @@ concepts:
   - term: zasáhnout
     lang: cs
     tts: zasahnout.mp3
+  examples: 
+  - term: I hit the ground.
+    lang: en
+    tts: I hit the ground.mp3
+  - term: Dopadl jsem na zem.
+    lang: cs
+    tts: Dopadl jsem na zem.mp3
   freq: 23745.60000
   origins: ["conceptDbSamples"]
-##  egg   ################################################################### ▅ 50%
+##  egg   ################################################################### ▇ 83%
 - terms: 
   - term: egg
     lang: en
@@ -12552,9 +13811,16 @@ concepts:
   - term: vajíčko
     lang: cs
     tts: vajicko.mp3
+  examples: 
+  - term: The hen laid an egg.
+    lang: en
+    tts: The hen laid an egg.mp3
+  - term: Slepice snesla vejce.
+    lang: cs
+    tts: Slepice snesla vejce.mp3
   freq: 22506.70000
   origins: ["conceptDbSamples"]
-##  camera   ################################################################ ▅ 50%
+##  camera   ################################################################ ▇ 83%
 - terms: 
   - term: camera
     lang: en
@@ -12566,9 +13832,16 @@ concepts:
   - term: kamera
     lang: cs
     tts: kamera.mp3
+  examples: 
+  - term: Film was shot using hand held camera.
+    lang: en
+    tts: Film was shot using hand held camera.mp3
+  - term: Film byl natočen pomocí ruční kamery.
+    lang: cs
+    tts: Film byl natocen pomoci rucni kamery.mp3
   freq: 22397.35500
   origins: ["conceptDbSamples"]
-##  that   ################################################################## ▅ 50%
+##  that   ################################################################## ▇ 83%
 - terms: 
   - term: that
     lang: en
@@ -12580,9 +13853,16 @@ concepts:
   - term: který
     lang: cs
     tts: ktery.mp3
+  examples: 
+  - term: I'll always remember that moment.
+    lang: en
+    tts: Ill always remember that moment.mp3
+  - term: Ten okamžik si budu vždy pamatovat
+    lang: cs
+    tts: Ten okamzik si budu vzdy pamatovat.mp3
   freq: 21910.90650
   origins: ["conceptDbSamples"]
-##  emotions   ############################################################## ▅ 50%
+##  emotions   ############################################################## ▇ 83%
 - terms: 
   - term: emotions
     lang: en
@@ -12594,9 +13874,16 @@ concepts:
   - term: pocity
     lang: cs
     tts: pocity.mp3
+  examples: 
+  - term: Have you felt any other emotions?
+    lang: en
+    tts: Have you felt any other emotions.mp3
+  - term: Cítil jste I jiné emoce?
+    lang: cs
+    tts: Citil jste I jine emoce.mp3
   freq: 21695.20000
   origins: ["conceptDbSamples"]
-##  tables   ################################################################ ▅ 50%
+##  tables   ################################################################ ▇ 83%
 - terms: 
   - term: tables
     lang: en
@@ -12608,9 +13895,16 @@ concepts:
   - term: stoly
     lang: cs
     tts: stoly.mp3
+  examples: 
+  - term: Add any additional tables.
+    lang: en
+    tts: Add any additional tables.mp3
+  - term: Přidejte libovolné další tabulky.
+    lang: cs
+    tts: Pridejte libovolne dalsi tabulky.mp3
   freq: 21432.60000
   origins: ["conceptDbSamples"]
-##  print   ################################################################# ▅ 50%
+##  print   ################################################################# ▇ 83%
 - terms: 
   - term: print
     lang: en
@@ -12619,9 +13913,16 @@ concepts:
   - term: vytisknout
     lang: cs
     tts: vytisknout.mp3
+  examples: 
+  - term: Enter the number of copies to print.
+    lang: en
+    tts: Enter the number of copies to print.mp3
+  - term: Zadejte počet kopií, které chcete vytisknout.
+    lang: cs
+    tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
   freq: 21355.55000
   origins: ["conceptDbSamples"]
-##  tomorrow   ############################################################## ▅ 50%
+##  tomorrow   ############################################################## ▇ 83%
 - terms: 
   - term: tomorrow
     lang: en
@@ -12630,9 +13931,16 @@ concepts:
   - term: zítra
     lang: cs
     tts: zitra.mp3
+  examples: 
+  - term: Tomorrow evening at eight?
+    lang: en
+    tts: Tomorrow evening at eight.mp3
+  - term: Zítra večer v osm?
+    lang: cs
+    tts: Zitra vecer v osm.mp3
   freq: 21349.20000
   origins: ["conceptDbSamples"]
-##  hurry   ################################################################# ▅ 50%
+##  hurry   ################################################################# ▇ 83%
 - terms: 
   - term: hurry
     lang: en
@@ -12644,9 +13952,16 @@ concepts:
   - term: naspěch
     lang: cs
     tts: naspech.mp3
+  examples: 
+  - term: Hurry before he finds us.
+    lang: en
+    tts: Hurry before he finds us.mp3
+  - term: Spěchej, než nás najde.
+    lang: cs
+    tts: Spechej, nez nas najde.mp3
   freq: 21059.55000
   origins: ["conceptDbSamples"]
-##  regret   ################################################################ ▅ 50%
+##  regret   ################################################################ ▇ 83%
 - terms: 
   - term: regret
     lang: en
@@ -12655,9 +13970,16 @@ concepts:
   - term: litovat
     lang: cs
     tts: litovat.mp3
+  examples: 
+  - term: I already regret it.
+    lang: en
+    tts: I already regret it.mp3
+  - term: Už teď toho lituji.
+    lang: cs
+    tts: Uz ted toho lituji.mp3
   freq: 20930.45000
   origins: ["conceptDbSamples"]
-##  user   ################################################################## ▅ 50%
+##  user   ################################################################## ▇ 83%
 - terms: 
   - term: user
     lang: en
@@ -12666,9 +13988,16 @@ concepts:
   - term: uživatele
     lang: cs
     tts: uzivatele.mp3
+  examples: 
+  - term: The user chooses either yes or no.
+    lang: en
+    tts: The user chooses either yes or no.mp3
+  - term: Uživatel zvolí buď ano nebo ne.
+    lang: cs
+    tts: Uzivatel zvoli bud ano nebo ne.mp3
   freq: 20688.50000
   origins: ["conceptDbSamples"]
-##  lonely   ################################################################ ▅ 50%
+##  lonely   ################################################################ ▇ 83%
 - terms: 
   - term: lonely
     lang: en
@@ -12680,9 +14009,16 @@ concepts:
   - term: opuštěný
     lang: cs
     tts: opusteny.mp3
+  examples: 
+  - term: She must feel lonely.
+    lang: en
+    tts: She must feel lonely.mp3
+  - term: Musí se cítit osamělá.
+    lang: cs
+    tts: Musi se citit osamela.mp3
   freq: 20598.05000
   origins: ["conceptDbSamples"]
-##  cares   ################################################################# ▅ 50%
+##  cares   ################################################################# ▇ 83%
 - terms: 
   - term: cares
     lang: en
@@ -12694,9 +14030,16 @@ concepts:
   - term: pečuje
     lang: cs
     tts: pecuje.mp3
+  examples: 
+  - term: Nobody cares about me anymore.
+    lang: en
+    tts: Nobody cares about me anymore.mp3
+  - term: Nikdo se už o mě nezajímá.
+    lang: cs
+    tts: Nikdo se uz o me nezajima.mp3
   freq: 20161.20000
   origins: ["conceptDbSamples"]
-##  mirror   ################################################################ ▅ 50%
+##  mirror   ################################################################ ▇ 83%
 - terms: 
   - term: mirror
     lang: en
@@ -12705,9 +14048,16 @@ concepts:
   - term: zrcadlo
     lang: cs
     tts: zrcadlo.mp3
+  examples: 
+  - term: They looked at themselves in the mirror.
+    lang: en
+    tts: They looked at themselves in the mirror.mp3
+  - term: Dívali se na sebe do zrcadla
+    lang: cs
+    tts: Divali se na sebe do zrcadla.mp3
   freq: 20145.65000
   origins: ["conceptDbSamples"]
-##  rarely   ################################################################ ▅ 50%
+##  rarely   ################################################################ ▇ 83%
 - terms: 
   - term: rarely
     lang: en
@@ -12719,9 +14069,16 @@ concepts:
   - term: málokdy
     lang: cs
     tts: malokdy.mp3
+  examples: 
+  - term: I rarely use the car.
+    lang: en
+    tts: I rarely use the car.mp3
+  - term: Auto používám málokdy.
+    lang: cs
+    tts: Auto pouzivam malokdy.mp3
   freq: 20081.70000
   origins: ["conceptDbSamples"]
-##  beach   ################################################################# ▅ 50%
+##  beach   ################################################################# ▇ 83%
 - terms: 
   - term: beach
     lang: en
@@ -12733,9 +14090,16 @@ concepts:
   - term: pobřeží
     lang: cs
     tts: pobrezi.mp3
+  examples: 
+  - term: It was near the beach.
+    lang: en
+    tts: It was near the beach.mp3
+  - term: Bylo to poblíž pláže.
+    lang: cs
+    tts: Bylo to pobliz plaze.mp3
   freq: 19941.40000
   origins: ["conceptDbSamples"]
-##  bedroom   ############################################################### ▅ 50%
+##  bedroom   ############################################################### ▇ 83%
 - terms: 
   - term: bedroom
     lang: en
@@ -12744,9 +14108,16 @@ concepts:
   - term: ložnice
     lang: cs
     tts: loznice.mp3
+  examples: 
+  - term: Go to the bedroom.
+    lang: en
+    tts: Go to the bedroom.mp3
+  - term: Jdi do ložnice.
+    lang: cs
+    tts: Jdi do loznice.mp3
   freq: 19349.30000
   origins: ["conceptDbSamples"]
-##  stolen   ################################################################ ▅ 50%
+##  stolen   ################################################################ ▇ 83%
 - terms: 
   - term: stolen
     lang: en
@@ -12758,9 +14129,16 @@ concepts:
   - term: kradený
     lang: cs
     tts: kradeny.mp3
+  examples: 
+  - term: Trees stolen from my garden!
+    lang: en
+    tts: Trees stolen from my garden.mp3
+  - term: Kradené stromy z mé zahrady!
+    lang: cs
+    tts: Kradene stromy z me zahrady.mp3
   freq: 19337.70000
   origins: ["conceptDbSamples"]
-##  justified   ############################################################# ▅ 50%
+##  justified   ############################################################# ▇ 83%
 - terms: 
   - term: justified
     lang: en
@@ -12772,9 +14150,16 @@ concepts:
   - term: oprávněné
     lang: cs
     tts: opravnene.mp3
+  examples: 
+  - term: It seems your caution was justified.
+    lang: en
+    tts: It seems your caution was justified.mp3
+  - term: Zdá se, že vaše opatrnost byla oprávněná.
+    lang: cs
+    tts: Zda se, ze vase opatrnost byla opravnena.mp3
   freq: 19003.80000
   origins: ["conceptDbSamples"]
-##  funny   ################################################################# ▅ 50%
+##  funny   ################################################################# ▇ 83%
 - terms: 
   - term: funny
     lang: en
@@ -12786,9 +14171,16 @@ concepts:
   - term: zábavné
     lang: cs
     tts: zabavne.mp3
+  examples: 
+  - term: Now that was quite funny.
+    lang: en
+    tts: Now that was quite funny.mp3
+  - term: Tak to bylo docela vtipné.
+    lang: cs
+    tts: Tak to bylo docela vtipne.mp3
   freq: 18987.80000
   origins: ["conceptDbSamples"]
-##  column   ################################################################ ▅ 50%
+##  column   ################################################################ ▇ 83%
 - terms: 
   - term: column
     lang: en
@@ -12797,9 +14189,16 @@ concepts:
   - term: sloupec
     lang: cs
     tts: sloupec.mp3
+  examples: 
+  - term: Enter values for each column.
+    lang: en
+    tts: Enter values for each column.mp3
+  - term: Zadejte hodnoty pro každý sloupec.
+    lang: cs
+    tts: Zadejte hodnoty pro kazdy sloupec.mp3
   freq: 18928.25000
   origins: ["conceptDbSamples"]
-##  tool   ################################################################## ▅ 50%
+##  tool   ################################################################## ▇ 83%
 - terms: 
   - term: tool
     lang: en
@@ -12808,9 +14207,16 @@ concepts:
   - term: nástroj
     lang: cs
     tts: nastroj.mp3
+  examples: 
+  - term: Have you used this tool before?
+    lang: en
+    tts: Have you used this tool before.mp3
+  - term: Použili jste tento nástroj již dříve?
+    lang: cs
+    tts: Pouzili jste tento nastroj jiz drive.mp3
   freq: 18451.52000
   origins: ["conceptDbSamples"]
-##  device   ################################################################ ▅ 50%
+##  device   ################################################################ ▇ 83%
 - terms: 
   - term: device
     lang: en
@@ -12822,9 +14228,16 @@ concepts:
   - term: přístroj
     lang: cs
     tts: pristroj.mp3
+  examples: 
+  - term: There is no such device.
+    lang: en
+    tts: There is no such device.mp3
+  - term: Není zde žádné takové zařízení.
+    lang: cs
+    tts: Neni zde zadne takove zarizeni.mp3
   freq: 17951.45000
   origins: ["conceptDbSamples"]
-##  appreciate   ############################################################ ▅ 50%
+##  appreciate   ############################################################ ▇ 83%
 - terms: 
   - term: appreciate
     lang: en
@@ -12836,9 +14249,16 @@ concepts:
   - term: vážíme
     lang: cs
     tts: vazime.mp3
+  examples: 
+  - term: We appreciate your interest.
+    lang: en
+    tts: We appreciate your interest.mp3
+  - term: Ceníme si vašeho zájemu.
+    lang: cs
+    tts: Cenime si vaseho zajemu.mp3
   freq: 17935.75000
   origins: ["conceptDbSamples"]
-##  stores   ################################################################ ▅ 50%
+##  stores   ################################################################ ▇ 83%
 - terms: 
   - term: stores
     lang: en
@@ -12850,9 +14270,16 @@ concepts:
   - term: prodejny
     lang: cs
     tts: prodejny.mp3
+  examples: 
+  - term: Stores are full of goods.
+    lang: en
+    tts: Stores are full of goods.mp3
+  - term: Obchody jsou plné zboží.
+    lang: cs
+    tts: Obchody jsou plne zbozi.mp3
   freq: 17677.90000
   origins: ["conceptDbSamples"]
-##  select   ################################################################ ▅ 50%
+##  select   ################################################################ ▇ 83%
 - terms: 
   - term: select
     lang: en
@@ -12864,9 +14291,16 @@ concepts:
   - term: zvolte
     lang: cs
     tts: zvolte.mp3
+  examples: 
+  - term: Please select a city and state.
+    lang: en
+    tts: Please select a city and state.mp3
+  - term: Vyberte prosím město a stát.
+    lang: cs
+    tts: Vyberte prosim mesto a stat.mp3
   freq: 17442.95000
   origins: ["conceptDbSamples"]
-##  rejected   ############################################################## ▅ 50%
+##  rejected   ############################################################## ▇ 83%
 - terms: 
   - term: rejected
     lang: en
@@ -12878,9 +14312,16 @@ concepts:
   - term: odmítl
     lang: cs
     tts: odmitl.mp3
+  examples: 
+  - term: This claim is therefore rejected.
+    lang: en
+    tts: This claim is therefore rejected.mp3
+  - term: Toto tvrzení se proto zamítá.
+    lang: cs
+    tts: Toto tvrzeni se proto zamita.mp3
   freq: 16802.10000
   origins: ["conceptDbSamples"]
-##  niece   ################################################################# ▅ 50%
+##  niece   ################################################################# ▇ 83%
 - terms: 
   - term: niece
     lang: en
@@ -12889,9 +14330,16 @@ concepts:
   - term: neteř
     lang: cs
     tts: neter.mp3
+  examples: 
+  - term: Has her niece arrived from England?
+    lang: en
+    tts: Has her niece arrived from England.mp3
+  - term: Už přijela její neteř z Anglie?
+    lang: cs
+    tts: Uz prijela jeji neter z Anglie.mp3
   freq: 15329.80000
   origins: ["conceptDbSamples"]
-##  root   ################################################################## ▅ 50%
+##  root   ################################################################## ▇ 83%
 - terms: 
   - term: root
     lang: en
@@ -12903,9 +14351,16 @@ concepts:
   - term: kořenový
     lang: cs
     tts: korenovy.mp3
+  examples: 
+  - term: What is the root cause?
+    lang: en
+    tts: What is the root cause.mp3
+  - term: Co je hlavní příčina?
+    lang: cs
+    tts: Co je hlavni pricina.mp3
   freq: 15258.95000
   origins: ["conceptDbSamples"]
-##  caution   ############################################################### ▅ 50%
+##  caution   ############################################################### ▇ 83%
 - terms: 
   - term: caution
     lang: en
@@ -12917,9 +14372,16 @@ concepts:
   - term: pozor
     lang: cs
     tts: pozor.mp3
+  examples: 
+  - term: It seems your caution was justified.
+    lang: en
+    tts: It seems your caution was justified.mp3
+  - term: Zdá se, že vaše opatrnost byla oprávněná.
+    lang: cs
+    tts: Zda se, ze vase opatrnost byla opravnena.mp3
   freq: 15246.70000
   origins: ["conceptDbSamples"]
-##  ghost   ################################################################# ▅ 50%
+##  ghost   ################################################################# ▇ 83%
 - terms: 
   - term: ghost
     lang: en
@@ -12931,9 +14393,16 @@ concepts:
   - term: přízrak
     lang: cs
     tts: prizrak.mp3
+  examples: 
+  - term: It is his ghost.
+    lang: en
+    tts: It is his ghost.mp3
+  - term: To je jeho duch.
+    lang: cs
+    tts: To je jeho duch.mp3
   freq: 14563.95000
   origins: ["conceptDbSamples"]
-##  speaker   ############################################################### ▅ 50%
+##  speaker   ############################################################### ▇ 83%
 - terms: 
   - term: speaker
     lang: en
@@ -12945,9 +14414,16 @@ concepts:
   - term: mluvčí
     lang: cs
     tts: mluvci.mp3
+  examples: 
+  - term: He is an excellent speaker.
+    lang: en
+    tts: He is an excellent speaker.mp3
+  - term: On je výborný řečník.
+    lang: cs
+    tts: On je vyborny recnik.mp3
   freq: 14417.15000
   origins: ["conceptDbSamples"]
-##  neighbour   ############################################################# ▅ 50%
+##  neighbour   ############################################################# ▇ 83%
 - terms: 
   - term: neighbour
     lang: en
@@ -12956,9 +14432,16 @@ concepts:
   - term: soused
     lang: cs
     tts: soused.mp3
+  examples: 
+  - term: Is it my neighbour on the left?
+    lang: en
+    tts: Is it my neighbour on the left.mp3
+  - term: Je to můj soused vlevo?
+    lang: cs
+    tts: Je to muj soused vlevo.mp3
   freq: 14405.70000
   origins: ["conceptDbSamples"]
-##  wake   ################################################################## ▅ 50%
+##  wake   ################################################################## ▇ 83%
 - terms: 
   - term: wake
     lang: en
@@ -12967,9 +14450,16 @@ concepts:
   - term: vzbudit
     lang: cs
     tts: vzbudit.mp3
+  examples: 
+  - term: Why can't we wake him up?
+    lang: en
+    tts: Why cant we wake him up.mp3
+  - term: Proč ho nemůžeme vzbudit?
+    lang: cs
+    tts: Proc ho nemuzeme vzbudit.mp3
   freq: 13978.30000
   origins: ["conceptDbSamples"]
-##  bath   ################################################################## ▅ 50%
+##  bath   ################################################################## ▇ 83%
 - terms: 
   - term: bath
     lang: en
@@ -12981,9 +14471,16 @@ concepts:
   - term: lázeň
     lang: cs
     tts: lazen.mp3
+  examples: 
+  - term: Taking bath is so relaxing.
+    lang: en
+    tts: Taking bath is so relaxing.mp3
+  - term: Koupání je tak relaxační.
+    lang: cs
+    tts: Koupani je tak relaxacni.mp3
   freq: 13822.45000
   origins: ["conceptDbSamples"]
-##  entry   ################################################################# ▅ 50%
+##  entry   ################################################################# ▇ 83%
 - terms: 
   - term: entry
     lang: en
@@ -12992,9 +14489,16 @@ concepts:
   - term: položka
     lang: cs
     tts: polozka.mp3
+  examples: 
+  - term: Entry point must be visible.
+    lang: en
+    tts: Entry point must be visible.mp3
+  - term: Vstupní bod musí být viditelný.
+    lang: cs
+    tts: Vstupni bod musi byt viditelny.mp3
   freq: 13709.10000
   origins: ["conceptDbSamples"]
-##  studying   ############################################################## ▅ 50%
+##  studying   ############################################################## ▇ 83%
 - terms: 
   - term: studying
     lang: en
@@ -13003,9 +14507,16 @@ concepts:
   - term: studuje
     lang: cs
     tts: studuje.mp3
+  examples: 
+  - term: We were studying in class as usual.
+    lang: en
+    tts: We were studying in class as usual.mp3
+  - term: Učili jsme se ve třídě jako obvykle.
+    lang: cs
+    tts: Ucili jsme se ve tride jako obvykle.mp3
   freq: 13662.80000
   origins: ["conceptDbSamples"]
-##  piano   ################################################################# ▅ 50%
+##  piano   ################################################################# ▇ 83%
 - terms: 
   - term: piano
     lang: en
@@ -13017,9 +14528,16 @@ concepts:
   - term: piáno
     lang: cs
     tts: piano.mp3
+  examples: 
+  - term: There must be a piano here.
+    lang: en
+    tts: There must be a piano here.mp3
+  - term: Musí tu někde být piáno.
+    lang: cs
+    tts: Musi tu nekde byt piano.mp3
   freq: 13521.10000
   origins: ["conceptDbSamples"]
-##  virus   ################################################################# ▅ 50%
+##  virus   ################################################################# ▇ 83%
 - terms: 
   - term: virus
     lang: cs
@@ -13027,9 +14545,16 @@ concepts:
   - term: vir
     lang: cs
     tts: vir.mp3
+  examples: 
+  - term: And this virus appeared.
+    lang: en
+    tts: And this virus appeared.mp3
+  - term: A tento virus se objevil.
+    lang: cs
+    tts: A tento virus se objevil.mp3
   freq: 13416.45000
   origins: ["conceptDbSamples"]
-##  diamonds   ############################################################## ▅ 50%
+##  diamonds   ############################################################## ▇ 83%
 - terms: 
   - term: diamonds
     lang: en
@@ -13041,9 +14566,16 @@ concepts:
   - term: brilianty
     lang: cs
     tts: brilianty.mp3
+  examples: 
+  - term: It could be made of gold and diamonds.
+    lang: en
+    tts: It could be made of gold and diamonds.mp3
+  - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
+    lang: cs
+    tts: Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
   freq: 12851.10000
   origins: ["conceptDbSamples"]
-##  cars   ################################################################## ▄ 45%
+##  cars   ################################################################## ▇ 78%
 - terms: 
   - term: cars
     lang: en
@@ -13054,9 +14586,16 @@ concepts:
     lang: cs
   - term: vozy
     lang: cs
+  examples: 
+  - term: Those are our cars, right?
+    lang: en
+    tts: Those are our cars, right.mp3
+  - term: To jsou naše auta, že?
+    lang: cs
+    tts: To jsou nase auta, ze.mp3
   freq: 12638.30000
   origins: ["conceptDbSamples"]
-##  tricks   ################################################################ ▅ 50%
+##  tricks   ################################################################ ▇ 83%
 - terms: 
   - term: tricks
     lang: en
@@ -13068,9 +14607,16 @@ concepts:
   - term: podvody
     lang: cs
     tts: podvody.mp3
+  examples: 
+  - term: They have some really cool tricks.
+    lang: en
+    tts: They have some really cool tricks.mp3
+  - term: Mají některé opravdu skvělé triky.
+    lang: cs
+    tts: Maji nektere opravdu skvele triky.mp3
   freq: 12560.00000
   origins: ["conceptDbSamples"]
-##  dad   ################################################################### ▅ 50%
+##  dad   ################################################################### ▇ 83%
 - terms: 
   - term: dad
     lang: en
@@ -13082,9 +14628,16 @@ concepts:
   - term: táta
     lang: cs
     tts: tata.mp3
+  examples: 
+  - term: My dad gave it to me.
+    lang: en
+    tts: My dad gave it to me.mp3
+  - term: Dal mi to můj táta.
+    lang: cs
+    tts: Dal mi to muj tata.mp3
   freq: 12195.12000
   origins: ["conceptDbSamples"]
-##  document   ############################################################## ▅ 50%
+##  document   ############################################################## ▇ 83%
 - terms: 
   - term: document
     lang: en
@@ -13096,9 +14649,16 @@ concepts:
   - term: doklad
     lang: cs
     tts: doklad.mp3
+  examples: 
+  - term: End of document reached.
+    lang: en
+    tts: End of document reached.mp3
+  - term: Bylo dosaženo konce dokumentu.
+    lang: cs
+    tts: Bylo dosazeno konce dokumentu.mp3
   freq: 11841.05000
   origins: ["conceptDbSamples"]
-##  anymore   ############################################################### ▅ 50%
+##  anymore   ############################################################### ▇ 83%
 - terms: 
   - term: anymore
     lang: en
@@ -13110,9 +14670,16 @@ concepts:
   - term: ještě
     lang: cs
     tts: jeste.mp3
+  examples: 
+  - term: Nobody cares about me anymore.
+    lang: en
+    tts: Nobody cares about me anymore.mp3
+  - term: Nikdo se už o mě nezajímá.
+    lang: cs
+    tts: Nikdo se uz o me nezajima.mp3
   freq: 11099.89700
   origins: ["conceptDbSamples"]
-##  complicated   ########################################################### ▅ 50%
+##  complicated   ########################################################### ▇ 83%
 - terms: 
   - term: complicated
     lang: en
@@ -13124,6 +14691,13 @@ concepts:
   - term: složité
     lang: cs
     tts: slozite.mp3
+  examples: 
+  - term: The history is complicated.
+    lang: en
+    tts: The history is complicated.mp3
+  - term: Dějiny jsou komplikované.
+    lang: cs
+    tts: Dejiny jsou komplikovane.mp3
   freq: 10946.45000
   origins: ["conceptDbSamples"]
 ##  re   ####################################################################
@@ -13133,7 +14707,7 @@ concepts:
   state: ignore
   freq: 10479.44000
   origins: ["conceptDbSamples"]
-##  alert   ################################################################# ▅ 50%
+##  alert   ################################################################# ▇ 83%
 - terms: 
   - term: alert
     lang: en
@@ -13142,9 +14716,16 @@ concepts:
   - term: výstraha
     lang: cs
     tts: vystraha.mp3
+  examples: 
+  - term: Be alert while using public transport.
+    lang: en
+    tts: Be alert while using public transport.mp3
+  - term: Buď ostražitý při používání veřejné dopravy.
+    lang: cs
+    tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
   freq: 10451.60000
   origins: ["conceptDbSamples"]
-##  extract   ############################################################### ▅ 50%
+##  extract   ############################################################### ▇ 83%
 - terms: 
   - term: extract
     lang: en
@@ -13156,9 +14737,16 @@ concepts:
   - term: výtažek
     lang: cs
     tts: vytazek.mp3
+  examples: 
+  - term: An extract from a book.
+    lang: en
+    tts: An extract from a book.mp3
+  - term: Výpis z knihy.
+    lang: cs
+    tts: Vypis z knihy.mp3
   freq: 10345.60000
   origins: ["conceptDbSamples"]
-##  toy   ################################################################### ▅ 50%
+##  toy   ################################################################### ▇ 83%
 - terms: 
   - term: toy
     lang: en
@@ -13167,9 +14755,16 @@ concepts:
   - term: hračka
     lang: cs
     tts: hracka.mp3
+  examples: 
+  - term: Put that toy away.
+    lang: en
+    tts: Put that toy away.mp3
+  - term: Dej tu hračku pryč.
+    lang: cs
+    tts: Dej tu hracku pryc.mp3
   freq: 10145.48500
   origins: ["conceptDbSamples"]
-##  processing   ############################################################ ▅ 50%
+##  processing   ############################################################ ▇ 83%
 - terms: 
   - term: processing
     lang: en
@@ -13181,9 +14776,16 @@ concepts:
   - term: vyřizování
     lang: cs
     tts: vyrizovani.mp3
+  examples: 
+  - term: Your order is ready for processing.
+    lang: en
+    tts: Your order is ready for processing.mp3
+  - term: Vaše objednávka je připravena ke zpracování.
+    lang: cs
+    tts: Vase objednavka je pripravena ke zpracovani.mp3
   freq: 10121.80000
   origins: ["conceptDbSamples"]
-##  tons   ################################################################## ▅ 50%
+##  tons   ################################################################## ▇ 83%
 - terms: 
   - term: tons
     lang: en
@@ -13195,9 +14797,16 @@ concepts:
   - term: tuny
     lang: cs
     tts: tuny.mp3
+  examples: 
+  - term: It weighs over five tons.
+    lang: en
+    tts: It weighs over five tons.mp3
+  - term: Váží to přes pět tun.
+    lang: cs
+    tts: Vazi to pres pet tun.mp3
   freq: 10088.50000
   origins: ["conceptDbSamples"]
-##  worried   ############################################################### ▅ 50%
+##  worried   ############################################################### ▇ 83%
 - terms: 
   - term: worried
     lang: en
@@ -13206,9 +14815,16 @@ concepts:
   - term: ustaraný
     lang: cs
     tts: ustarany.mp3
+  examples: 
+  - term: I've been worried since yesterday.
+    lang: en
+    tts: Ive been worried since yesterday.mp3
+  - term: Mám starosti od včerejška.
+    lang: cs
+    tts: Mam starosti od vcerejska.mp3
   freq: 9953.55000
   origins: ["conceptDbSamples"]
-##  chapters   ############################################################## ▅ 50%
+##  chapters   ############################################################## ▇ 83%
 - terms: 
   - term: chapters
     lang: en
@@ -13217,9 +14833,16 @@ concepts:
   - term: kapitoly
     lang: cs
     tts: kapitoly.mp3
+  examples: 
+  - term: I wrote three new chapters this week.
+    lang: en
+    tts: I wrote three new chapters this week.mp3
+  - term: Tento týden jsem napsal tři nové kapitoly.
+    lang: cs
+    tts: Tento tyden jsem napsal tri nove kapitoly.mp3
   freq: 9389.18000
   origins: ["conceptDbSamples"]
-##  happening   ############################################################# ▅ 50%
+##  happening   ############################################################# ▇ 83%
 - terms: 
   - term: happening
     lang: en
@@ -13231,9 +14854,16 @@ concepts:
   - term: dějí
     lang: cs
     tts: deji.mp3
+  examples: 
+  - term: What's happening there?
+    lang: en
+    tts: Whats happening there.mp3
+  - term: Co se tam děje?
+    lang: cs
+    tts: Co se tam deje.mp3
   freq: 9339.34000
   origins: ["conceptDbSamples"]
-##  messages   ############################################################## ▅ 50%
+##  messages   ############################################################## ▇ 83%
 - terms: 
   - term: messages
     lang: en
@@ -13245,9 +14875,16 @@ concepts:
   - term: vzkazy
     lang: cs
     tts: vzkazy.mp3
+  examples: 
+  - term: What do these messages mean?
+    lang: en
+    tts: What do these messages mean.mp3
+  - term: Co tyto zprávy znamenají?
+    lang: cs
+    tts: Co tyto zpravy znamenaji.mp3
   freq: 9314.02000
   origins: ["conceptDbSamples"]
-##  upset   ################################################################# ▅ 50%
+##  upset   ################################################################# ▇ 83%
 - terms: 
   - term: upset
     lang: en
@@ -13259,9 +14896,16 @@ concepts:
   - term: rozčilený
     lang: cs
     tts: rozcileny.mp3
+  examples: 
+  - term: Did he seem upset?
+    lang: en
+    tts: Did he seem upset.mp3
+  - term: Vypadal rozrušeně?
+    lang: cs
+    tts: Vypadal rozrusene.mp3
   freq: 9102.75000
   origins: ["conceptDbSamples"]
-##  whoever   ############################################################### ▅ 50%
+##  whoever   ############################################################### ▇ 83%
 - terms: 
   - term: whoever
     lang: en
@@ -13270,9 +14914,16 @@ concepts:
   - term: kdokoli
     lang: cs
     tts: kdokoli.mp3
+  examples: 
+  - term: Whoever says this is a liar.
+    lang: en
+    tts: Whoever says this is a liar.mp3
+  - term: Kdokoli to říká, je lhář.
+    lang: cs
+    tts: Kdokoli to rika, je lhar.mp3
   freq: 8846.85000
   origins: ["conceptDbSamples"]
-##  bean   ################################################################## ▅ 50%
+##  bean   ################################################################## ▇ 83%
 - terms: 
   - term: bean
     lang: en
@@ -13281,9 +14932,16 @@ concepts:
   - term: fazole
     lang: cs
     tts: fazole.mp3
+  examples: 
+  - term: Hello Mr. Bean
+    lang: en
+    tts: Hello Mr Bean.mp3
+  - term: Zdravím, pane Bín.
+    lang: cs
+    tts: Zdravim, pane Bin.mp3
   freq: 8738.49500
   origins: ["conceptDbSamples"]
-##  hello   ################################################################# ▅ 50%
+##  hello   ################################################################# ▇ 83%
 - terms: 
   - term: hello
     lang: en
@@ -13295,9 +14953,16 @@ concepts:
   - term: ahoj
     lang: cs
     tts: ahoj.mp3
+  examples: 
+  - term: Hello Mr. Bean
+    lang: en
+    tts: Hello Mr Bean.mp3
+  - term: Zdravím, pane Bín.
+    lang: cs
+    tts: Zdravim, pane Bin.mp3
   freq: 8621.20050
   origins: ["conceptDbSamples"]
-##  transport   ############################################################# ▅ 50%
+##  transport   ############################################################# ▇ 83%
 - terms: 
   - term: transport
     lang: en
@@ -13309,9 +14974,16 @@ concepts:
   - term: přenos
     lang: cs
     tts: prenos.mp3
+  examples: 
+  - term: Be alert while using public transport.
+    lang: en
+    tts: Be alert while using public transport.mp3
+  - term: Buď ostražitý při používání veřejné dopravy.
+    lang: cs
+    tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
   freq: 8144.60000
   origins: ["conceptDbSamples"]
-##  relaxed   ############################################################### ▅ 50%
+##  relaxed   ############################################################### ▇ 83%
 - terms: 
   - term: relaxed
     lang: en
@@ -13323,9 +14995,16 @@ concepts:
   - term: odpočinkový
     lang: cs
     tts: odpocinkovy.mp3
+  examples: 
+  - term: Your feet and your ankles are relaxed.
+    lang: en
+    tts: Your feet and your ankles are relaxed.mp3
+  - term: Chodidla a zápěstí máš uvolněná.
+    lang: cs
+    tts: Chodidla a zapesti mas uvolnena.mp3
   freq: 7812.45000
   origins: ["conceptDbSamples"]
-##  jungle   ################################################################ ▅ 50%
+##  jungle   ################################################################ ▇ 83%
 - terms: 
   - term: jungle
     lang: en
@@ -13334,9 +15013,16 @@ concepts:
   - term: džungle
     lang: cs
     tts: dzungle.mp3
+  examples: 
+  - term: I found it in the jungle.
+    lang: en
+    tts: I found it in the jungle.mp3
+  - term: Našel jsem to v džungli.
+    lang: cs
+    tts: Nasel jsem to v dzungli.mp3
   freq: 7630.09500
   origins: ["conceptDbSamples"]
-##  proving   ############################################################### ▅ 50%
+##  proving   ############################################################### ▇ 83%
 - terms: 
   - term: proving
     lang: en
@@ -13348,9 +15034,16 @@ concepts:
   - term: které prokazují
     lang: cs
     tts: ktere prokazuji.mp3
+  examples: 
+  - term: He was talking, thus proving he was still alive.
+    lang: en
+    tts: He was talking, thus proving he was still alive.mp3
+  - term: Mluvil, čímž dokazoval, že je stále naživu.
+    lang: cs
+    tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
   freq: 7603.59000
   origins: ["conceptDbSamples"]
-##  athletic   ############################################################## ▅ 50%
+##  athletic   ############################################################## ▇ 83%
 - terms: 
   - term: athletic
     lang: en
@@ -13362,9 +15055,16 @@ concepts:
   - term: sportovní
     lang: cs
     tts: sportovni.mp3
+  examples: 
+  - term: The arms are athletic.
+    lang: en
+    tts: The arms are athletic.mp3
+  - term: Paže jsou silné.
+    lang: cs
+    tts: Paze jsou silne.mp3
   freq: 7581.47000
   origins: ["conceptDbSamples"]
-##  values   ################################################################ ▅ 50%
+##  values   ################################################################ ▇ 83%
 - terms: 
   - term: values
     lang: en
@@ -13373,9 +15073,16 @@ concepts:
   - term: hodnoty
     lang: cs
     tts: hodnoty.mp3
+  examples: 
+  - term: Enter values for each column.
+    lang: en
+    tts: Enter values for each column.mp3
+  - term: Zadejte hodnoty pro každý sloupec.
+    lang: cs
+    tts: Zadejte hodnoty pro kazdy sloupec.mp3
   freq: 7039.51000
   origins: ["conceptDbSamples"]
-##  kid   ################################################################### ▅ 50%
+##  kid   ################################################################### ▇ 83%
 - terms: 
   - term: kid
     lang: en
@@ -13387,9 +15094,16 @@ concepts:
   - term: dítě
     lang: cs
     tts: dite.mp3
+  examples: 
+  - term: I really want another kid.
+    lang: en
+    tts: I really want another kid.mp3
+  - term: Vážně chci další dítě.
+    lang: cs
+    tts: Vazne chci dalsi dite.mp3
   freq: 6770.47000
   origins: ["conceptDbSamples"]
-##  hen   ################################################################### ▅ 50%
+##  hen   ################################################################### ▇ 83%
 - terms: 
   - term: hen
     lang: en
@@ -13398,9 +15112,16 @@ concepts:
   - term: slepice
     lang: cs
     tts: slepice.mp3
+  examples: 
+  - term: The hen laid an egg.
+    lang: en
+    tts: The hen laid an egg.mp3
+  - term: Slepice snesla vejce.
+    lang: cs
+    tts: Slepice snesla vejce.mp3
   freq: 6569.58000
   origins: ["conceptDbSamples"]
-##  liar   ################################################################## ▅ 50%
+##  liar   ################################################################## ▇ 83%
 - terms: 
   - term: liar
     lang: en
@@ -13409,9 +15130,16 @@ concepts:
   - term: lhář
     lang: cs
     tts: lhar.mp3
+  examples: 
+  - term: Whoever says this is a liar.
+    lang: en
+    tts: Whoever says this is a liar.mp3
+  - term: Kdokoli to říká, je lhář.
+    lang: cs
+    tts: Kdokoli to rika, je lhar.mp3
   freq: 6052.17000
   origins: ["conceptDbSamples"]
-##  menu   ################################################################## ▅ 50%
+##  menu   ################################################################## ▇ 83%
 - terms: 
   - term: menu
     lang: en
@@ -13423,9 +15151,16 @@ concepts:
   - term: jídelní lístek
     lang: cs
     tts: jidelni listek.mp3
+  examples: 
+  - term: You can also create a new menu.
+    lang: en
+    tts: You can also create a new menu.mp3
+  - term: Můžete také vytvořit novou nabídku.
+    lang: cs
+    tts: Muzete take vytvorit novou nabidku.mp3
   freq: 5951.66500
   origins: ["conceptDbSamples"]
-##  counts   ################################################################ ▅ 50%
+##  counts   ################################################################ ▇ 83%
 - terms: 
   - term: counts
     lang: en
@@ -13437,6 +15172,13 @@ concepts:
   - term: spočítá
     lang: cs
     tts: spocita.mp3
+  examples: 
+  - term: But every hour counts.
+    lang: en
+    tts: But every hour counts.mp3
+  - term: Ale každá hodina se počítá.
+    lang: cs
+    tts: Ale kazda hodina se pocita.mp3
   freq: 5730.18000
   origins: ["conceptDbSamples"]
 ##  ll   ####################################################################
@@ -13446,7 +15188,7 @@ concepts:
   state: ignore
   freq: 5632.08000
   origins: ["conceptDbSamples"]
-##  arrogant   ############################################################## ▅ 50%
+##  arrogant   ############################################################## ▇ 83%
 - terms: 
   - term: arrogant
     lang: en
@@ -13458,6 +15200,13 @@ concepts:
   - term: arogantní
     lang: cs
     tts: arogantni.mp3
+  examples: 
+  - term: His arrogant manner.
+    lang: en
+    tts: His arrogant manner.mp3
+  - term: Jeho arogantní způsob.
+    lang: cs
+    tts: Jeho arogantni zpusob.mp3
   freq: 4196.96000
   origins: ["conceptDbSamples"]
 ##  steak   ################################################################# ▅ 50%
@@ -13474,7 +15223,7 @@ concepts:
     tts: rizek.mp3
   freq: 4027.81500
   origins: ["conceptDbSamples"]
-##  drivers   ############################################################### ▅ 50%
+##  drivers   ############################################################### ▇ 83%
 - terms: 
   - term: drivers
     lang: en
@@ -13486,9 +15235,16 @@ concepts:
   - term: řidiči
     lang: cs
     tts: ridici.mp3
+  examples: 
+  - term: You are using certain filter drivers.
+    lang: en
+    tts: You are using certain filter drivers.mp3
+  - term: Používáte určité ovladače filtrů.
+    lang: cs
+    tts: Pouzivate urcite ovladace filtru.mp3
   freq: 3781.62000
   origins: ["conceptDbSamples"]
-##  filter   ################################################################ ▅ 50%
+##  filter   ################################################################ ▇ 83%
 - terms: 
   - term: filter
     lang: en
@@ -13500,9 +15256,16 @@ concepts:
   - term: filtrovat
     lang: cs
     tts: filtrovat.mp3
+  examples: 
+  - term: You are using certain filter drivers.
+    lang: en
+    tts: You are using certain filter drivers.mp3
+  - term: Používáte určité ovladače filtrů.
+    lang: cs
+    tts: Pouzivate urcite ovladace filtru.mp3
   freq: 3768.36500
   origins: ["conceptDbSamples"]
-##  kids   ################################################################## ▅ 50%
+##  kids   ################################################################## ▇ 83%
 - terms: 
   - term: kids
     lang: en
@@ -13514,9 +15277,16 @@ concepts:
   - term: děcka
     lang: cs
     tts: decka.mp3
+  examples: 
+  - term: I spoke with the kids.
+    lang: en
+    tts: I spoke with the kids.mp3
+  - term: Mluvil jsem s dětmi.
+    lang: cs
+    tts: Mluvil jsem s detmi.mp3
   freq: 3525.29000
   origins: ["conceptDbSamples"]
-##  zero   ################################################################## ▅ 50%
+##  zero   ################################################################## ▇ 83%
 - terms: 
   - term: zero
     lang: en
@@ -13525,9 +15295,16 @@ concepts:
   - term: nula
     lang: cs
     tts: nula.mp3
+  examples: 
+  - term: Value must be zero or greater.
+    lang: en
+    tts: Value must be zero or greater.mp3
+  - term: Hodnota musí být rovna nebo větší než nula.
+    lang: cs
+    tts: Hodnota musi byt rovna nebo vetsi nez nula.mp3
   freq: 2789.54000
   origins: ["conceptDbSamples"]
-##  relaxing   ############################################################## ▅ 50%
+##  relaxing   ############################################################## ▇ 83%
 - terms: 
   - term: relaxing
     lang: en
@@ -13539,9 +15316,16 @@ concepts:
   - term: odpočinkové
     lang: cs
     tts: odpocinkove.mp3
+  examples: 
+  - term: Taking bath is so relaxing.
+    lang: en
+    tts: Taking bath is so relaxing.mp3
+  - term: Koupání je tak relaxační.
+    lang: cs
+    tts: Koupani je tak relaxacni.mp3
   freq: 1546.66000
   origins: ["conceptDbSamples"]
-##  planetary   ############################################################# ▅ 50%
+##  planetary   ############################################################# ▇ 83%
 - terms: 
   - term: planetary
     lang: en
@@ -13550,9 +15334,16 @@ concepts:
   - term: planetární
     lang: cs
     tts: planetarni.mp3
+  examples: 
+  - term: We know our planetary system well.
+    lang: en
+    tts: We know our planetary system well.mp3
+  - term: Známe dobře náš planetární systém.
+    lang: cs
+    tts: Zname dobre nas planetarni system.mp3
   freq: 1291.92000
   origins: ["conceptDbSamples"]
-##  variants   ############################################################## ▅ 50%
+##  variants   ############################################################## ▇ 83%
 - terms: 
   - term: variants
     lang: en
@@ -13561,9 +15352,16 @@ concepts:
   - term: varianty
     lang: cs
     tts: varianty.mp3
+  examples: 
+  - term: Are there other variants?
+    lang: en
+    tts: Are there other variants.mp3
+  - term: Existují i jiné varianty?
+    lang: cs
+    tts: Existuji i jine varianty.mp3
   freq: 778.47600
   origins: ["conceptDbSamples"]
-##  suitcase   ############################################################## ▅ 50%
+##  suitcase   ############################################################## ▇ 83%
 - terms: 
   - term: suitcase
     lang: en
@@ -13572,9 +15370,16 @@ concepts:
   - term: kufr
     lang: cs
     tts: kufr.mp3
+  examples: 
+  - term: An opened suitcase on the bed.
+    lang: en
+    tts: An opened suitcase on the bed.mp3
+  - term: Otevřený kufr na posteli.
+    lang: cs
+    tts: Otevreny kufr na posteli.mp3
   freq: 655.85000
   origins: ["conceptDbSamples"]
-##  pointless   ############################################################# ▅ 50%
+##  pointless   ############################################################# ▇ 83%
 - terms: 
   - term: pointless
     lang: en
@@ -13586,9 +15391,16 @@ concepts:
   - term: nesmyslné
     lang: cs
     tts: nesmyslne.mp3
+  examples: 
+  - term: It would be rather pointless.
+    lang: en
+    tts: It would be rather pointless.mp3
+  - term: Bylo by to poněkud zbytečné.
+    lang: cs
+    tts: Bylo by to ponekud zbytecne.mp3
   freq: 492.87600
   origins: ["conceptDbSamples"]
-##  noodles   ############################################################### ▅ 50%
+##  noodles   ############################################################### ▇ 83%
 - terms: 
   - term: noodles
     lang: en
@@ -13597,9 +15409,16 @@ concepts:
   - term: nudle
     lang: cs
     tts: nudle.mp3
+  examples: 
+  - term: Who does not like noodles?
+    lang: en
+    tts: Who does not like noodles.mp3
+  - term: Kdo nemá rád nudle?
+    lang: cs
+    tts: Kdo nema rad nudle.mp3
   freq: 345.72500
   origins: ["conceptDbSamples"]
-##  sat   ################################################################### ▅ 50%
+##  sat   ################################################################### ▇ 83%
 - terms: 
   - term: sat
     lang: en
@@ -13611,9 +15430,16 @@ concepts:
   - term: posadil
     lang: cs
     tts: posadil.mp3
+  examples: 
+  - term: I sat and cried.
+    lang: en
+    tts: I sat and cried.mp3
+  - term: Posadila jsem se a plakala.
+    lang: cs
+    tts: Posadila jsem se a plakala.mp3
   freq: 166.13800
   origins: ["conceptDbSamples"]
-##  beers   ################################################################# ▅ 50%
+##  beers   ################################################################# ▇ 83%
 - terms: 
   - term: beers
     lang: en
@@ -13622,9 +15448,16 @@ concepts:
   - term: piva
     lang: cs
     tts: piva.mp3
+  examples: 
+  - term: I said four beers.
+    lang: en
+    tts: I said four beers.mp3
+  - term: Říkal jsem čtyři piva.
+    lang: cs
+    tts: Rikal jsem ctyri piva.mp3
   freq: 159.01800
   origins: ["conceptDbSamples"]
-##  seafood   ############################################################### ▅ 50%
+##  seafood   ############################################################### ▇ 83%
 - terms: 
   - term: seafood
     lang: en
@@ -13636,5 +15469,12 @@ concepts:
   - term: plody moře
     lang: cs
     tts: plody more.mp3
+  examples: 
+  - term: Do you like seafood?
+    lang: en
+    tts: Do you like seafood.mp3
+  - term: Máš rád mořské jídlo?
+    lang: cs
+    tts: Mas rad morske jidlo.mp3
   freq: 27.68970
   origins: ["conceptDbSamples"]

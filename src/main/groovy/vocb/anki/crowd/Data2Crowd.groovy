@@ -116,13 +116,14 @@ public class Data2Crowd {
 
 	}
 
-	void exportToCrowd(int limit=10, int mult=1) {
+	void exportToCrowd(int limit=10, int mod) {
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
 		vocbModel.copyMediaLinks(["_lightBulb.png"])
 
-		(0..limit).collect{it*mult} each {
-			mapConcept(dbMan.db.concepts[it])
+		(0..limit).collect {it} each {
+			int i = (it*mod) % dbMan.db.concepts.size()
+			mapConcept(dbMan.db.concepts[i])
 		}
 		vocbModel.save()
 	}
@@ -131,7 +132,7 @@ public class Data2Crowd {
 	public static void main(String[] args) {
 
 		new Data2Crowd().with {
-			exportToCrowd(10, 1)
+			exportToCrowd(10, 100*100)
 		}
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
