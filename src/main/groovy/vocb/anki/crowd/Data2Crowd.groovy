@@ -132,7 +132,7 @@ public class Data2Crowd {
 	public static void main(String[] args) {
 
 		new Data2Crowd().with {
-			exportToCrowd(10, 100*100)
+			exportToCrowd(30, 100*100)
 		}
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
