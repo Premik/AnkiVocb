@@ -35,9 +35,10 @@ public class WordNormalizer {
 
 
 	static void main(String... args) {
-		WordNormalizer n = new WordNormalizer()
+		new WordNormalizer().with {
 		String supa = getClass().getResource('/Supaplex.txt').text
-		println n.uniqueueTokens(supa)
+		println uniqueueTokens(supa)
+		}
 
 	}
 

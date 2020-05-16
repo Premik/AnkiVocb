@@ -12,10 +12,10 @@ public class SolvingContext {
 
 	Similarity sm = new Similarity()
 	Difficulty dfc = new Difficulty()
-	Manager dbMan
-	
+
+
 	Random rnd = new Random(123456)
-	
+
 	double getRndRate() {
 		//Much higher chances to yield 0 or 1 exactly.
 		switch (rnd.nextInt(5)) {
@@ -24,18 +24,21 @@ public class SolvingContext {
 			case 3..4: return 1
 		}
 	}
-	
+
 	int getRndConceptIndex() {
 		rnd.nextInt(concepts.size())
 	}
-	
 
-	@Lazy List<Concept> initialSelection = {
+
+	/*@Lazy List<Concept> initialSelection = {
 		assert dbMan
 		dbMan.db.concepts.findAll{ it.state != "ignore"}
-	}()
+	}()*/
+	
+	List<Concept> initialSelection = []
 
-	@Lazy ConceptExtra[] concepts = {		
+	@Lazy ConceptExtra[] concepts = {
+		assert initialSelection : "Configure listof the Concepts first"
 		initialSelection.withIndex().collect { Concept ce, int i ->
 			new ConceptExtra(c:ce, ctx:this, id:i)
 		}
@@ -48,17 +51,17 @@ public class SolvingContext {
 			b.c.freq <=> a.c.freq
 		})
 	}()
-	
+
 	@Lazy Map<String, ConceptExtra> byFirstTerm = {
 		concepts.collectEntries {
 			[it.c.firstTerm, it]
 		}
 	}()
-	
-	@Lazy Order freqWorstOrder= new Order(ord:freqIdealOrder.ord.reverse(), ctx:this) 
-	
+
+	@Lazy Order freqWorstOrder= new Order(ord:freqIdealOrder.ord.reverse(), ctx:this)
+
 	@Lazy Order initialOrder = createInitialOrder()
-	
+
 	Order createInitialOrder(int genNum=0) {
 		return new Order(ord: concepts, ctx:this)
 	}

@@ -3,26 +3,39 @@ package vocb.ord
 
 
 import java.nio.file.Path
+import java.nio.file.Paths
 import java.util.concurrent.ForkJoinPool
 import java.util.stream.Collectors
 import java.util.stream.IntStream
 import java.util.stream.Stream
 
 import groovy.time.TimeCategory
+import vocb.data.Concept
 import vocb.data.Manager
 
 
 public class OrderSolver {
 
 	Path dbStoragePath
+	Path partResultPath=Paths.get("/tmp/work/part")
 	String dbConceptFilename
-
-	@Lazy SolvingContext ctx = {
-		new SolvingContext(dbMan:new Manager().tap {
-			if (dbStoragePath) storagePath =dbStoragePath
+	
+	List<Concept> initialSelection = []
+	
+	@Lazy Manager dbMan =  {
+		assert dbStoragePath
+		new Manager(storagePath: dbStoragePath).tap {			
 			if (dbConceptFilename) conceptFilename= dbConceptFilename
 			load()
-		})
+		}
+	}()
+
+	@Lazy SolvingContext ctx = {
+		if (!initialSelection) {
+			initialSelection = dbMan.db.concepts.findAll{ it.state != "ignore"}
+		}		
+		new SolvingContext(initialSelection:initialSelection)
+		
 	}()
 
 
@@ -46,6 +59,17 @@ public class OrderSolver {
 		population.addAll( (0..count).collect {
 			ctx.createInitialOrder(genNum).mix()
 		})
+	}
+	
+	void loadLastResults() {
+		int i =0
+		partResultPath.toFile().eachFile { File f->
+			i++
+			Order o = ctx.createInitialOrder(genNum)
+			o.load(f.toPath())
+			population.add(o)			
+		}
+		println "Loaded $i winners from previous runs"
 	}
 
 	IntStream getRndIndexes() {
@@ -73,7 +97,7 @@ public class OrderSolver {
 		population.addAll(nextGen.collect(Collectors.toList()))
 	}
 
-	void removeWeakest(int count=maxPopsize/3) {
+	void removeWeakest(int count=maxPopsize/4) {
 		//count = Math.min((int)count, (int)(population.size()/2))
 		List<Order> toRemove = bestFirst.reverse().take(count)
 		//println "${population.size()}- ${toRemove.size()}"
@@ -86,12 +110,14 @@ public class OrderSolver {
 
 	}
 
-	void runEpoch() {
+	void runEpoch(double stopAtFitness = 0.99) {
 
 		spawn(initialSpawn)
+		loadLastResults()
 		println "Best freq fitness:${ctx.freqIdealOrder.freqFitness}. "
 		Date start0 = new Date()
 		Date start = new Date()
+		Order lastBest 
 		for (int i=0;i<maxGens;i++) {
 			genNum++
 			crossSome(crossAtOnce)
@@ -105,12 +131,15 @@ public class OrderSolver {
 			spawn(spawnNew)
 			
 			if (i % 100 == 1) {
-
-				
 				Date stop = new Date()
 				List<Order> b = bestFirst
-				if (b[0].fitness > 0.99) break
+				Order best = b[0]
+				if (best.fitness > stopAtFitness) break
 				printStat(b, TimeCategory.minus( stop, start ).toString())
+				if (best != lastBest) {
+					best.save(partResultPath.resolve("best-${best.fitness.round(3)}-${genNum}.yaml"))
+				}
+				lastBest = best
 				start = stop
 			}
 		}
