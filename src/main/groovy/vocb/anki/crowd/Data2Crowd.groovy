@@ -19,12 +19,6 @@ public class Data2Crowd {
 	String destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = new Render(cfgHelper:cfgHelper)
 
-	BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 2121000, 2811000, new BigDecimal("10e10")]
-
-	Integer numberOfStarts(BigDecimal freq) {
-		if (!freq) return null
-		freqRanges.findIndexOf { freq < it} -1
-	}
 
 
 	@Lazy Manager dbMan =  {
@@ -53,7 +47,7 @@ public class Data2Crowd {
 	void concept2CrowdNote(Concept c, Note n) {
 		assert c?.firstTerm
 		assert n
-		int stars = numberOfStarts(c?.freq)
+		int stars = dbMan.numberOfStarts(c?.freq)
 		String star = cfg.starSymbol?:"🟊"
 		n.with {
 			Term ent = c.terms.values()[0]

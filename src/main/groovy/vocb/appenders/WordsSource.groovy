@@ -12,9 +12,14 @@ public class WordsSource {
 
 	String sourceName
 	WordNormalizer wn = new WordNormalizer()
-	BigDecimal minFreq = 0
+	
+	 
 	@Lazy Corpus corp = Corpus.buildDef()
+	BigDecimal minFreq= 0
+	BigDecimal maxFreq= 10e10
+	
 	Similarity sim = new Similarity()
+	boolean simulation = false
 
 
 	@Lazy Manager dbMan = {
@@ -26,7 +31,8 @@ public class WordsSource {
 	void fromText(String text, int limit=20) {
 		assert sourceName
 		List<String> words = new ArrayList(wn.uniqueueTokens(text))
-				.findAll {String s -> corp.wordFreq[s] > minFreq }
+				.findAll {String s ->				
+					corp.wordFreq[s] > minFreq && corp.wordFreq[s] < maxFreq }
 				.sort{ String a, String b->
 					-(corp.wordFreq[a]?:0) <=> -(corp.wordFreq[b]?:0)
 				}
@@ -34,6 +40,7 @@ public class WordsSource {
 
 
 
+		println "Processing ${words.size()} words"
 		int i= 0
 		for (String w in words) {
 			if (i> limit) {
@@ -58,10 +65,10 @@ public class WordsSource {
 			i++
 			dbMan.db.concepts.add(c)
 			if (i % 10 == 0) {
-				dbMan.save()
+				if (!simulation) dbMan.save()
 			}
 		}
-		dbMan.save()
+		if (!simulation) dbMan.save()
 	}
 
 	void fromCorups(int limit=100) {
@@ -92,7 +99,7 @@ public class WordsSource {
 					s.length() > 2  //Longer than 2 letter words candidates
 				}
 				.filter {String s->
-					(corp.wordFreq[s]?:0) > minFreq //Reasonable words
+					corp.wordFreq[s]?:0 > minFreq //Reasonable words
 				}.filter {String s->
 					!dbMan.conceptsByTerm.containsKey(s) //Ignore already known words
 				}.collect()
@@ -106,13 +113,24 @@ public class WordsSource {
 	}
 
 	public static void main(String[] args) {
-		/*WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)
-		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
+		/*WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)		 
 		 a.run(supa)*/
 		new WordsSource().tap {
 			//fromOwnSamples(100)
-			minFreq = 40000
-			decomposition()
+			//freqRange = (0..250)
+			
+			simulation = true
+			//String tx = getClass().getResource('/Supaplex.txt').text
+			String tx = getClass().getResource('/sources/JingleBells.txt').text
+			sourceName = "JingleBells"
+			fromText(tx)
+			return
+			wn.phraseFreqs(tx,2, 3)
+			   .collectEntries{ String w, BigDecimal fqInText-> [w, corp.phraseFreq(w)*fqInText]}
+			   .findAll {it.value > 0}
+			   .sort {-it.value }
+			   .each {println it}
+			
 		}
 		//a.fromCorups(500)
 

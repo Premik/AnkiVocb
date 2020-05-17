@@ -10,7 +10,6 @@ import com.xlson.groovycsv.CsvParser
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 import vocb.ConfHelper
-import vocb.Helper
 
 
 public class Corpus {
@@ -157,6 +156,20 @@ public class Corpus {
 		}.take(x)
 	}
 
+	public BigDecimal phraseFreq(String phrase, int skipWordsFreq=1) {	
+		Map<String, BigDecimal> wf = wordFreq.withDefault {0}
+		List<String> parts = phrase.split(' ')
+		if (parts.any {wf[it] < skipWordsFreq}) return 0 //Phrase contains an unknow word,  			
+		parts.add(phrase)
+		parts.collect {wf[it]}.average()
+	}
+
+	List<String> topXOf(List<String> terms, int minFreq =1) {
+		terms
+		  .findAll {String s-> phraseFreq(s) >=minFreq}
+		  .sort { -phraseFreq(it)  }
+	}
+
 	static Corpus buildDef() {
 		Corpus c1 = new Corpus()
 		c1.loadWiki()
@@ -171,8 +184,9 @@ public class Corpus {
 	static void main(String... args) {
 
 		buildDef().with {
-			load12Dicts()
-			phrases.take(30).each {println "${it}"}
+			//load12Dicts()
+			//phrases.take(30).each {println "${it}"}
+			println topXOf(["i am", "hello"])
 		}
 
 		//n.importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())
