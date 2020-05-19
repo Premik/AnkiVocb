@@ -15729,11 +15729,11 @@ concepts:
   examples: 
   - term: Laughing all the way.
     lang: en
-  - term: Celou cestu se směje.
+  - term: Celou cestu se smát.
     lang: cs
   freq: 53113.60000
   origins: ["JingleBells"]
-##  drove   ################################################################# ▆ 64%
+##  drove   ################################################################# ▆ 73%
 - terms: 
   - term: drove
     lang: en
@@ -15744,9 +15744,11 @@ concepts:
   examples: 
   - term: Quickly drove away.
     lang: en
+  - term: Rychle odjel.
+    lang: cs
   freq: 50184.80000
   origins: ["JingleBells"]
-##  seated   ################################################################ ▆ 64%
+##  seated   ################################################################ ▆ 73%
 - terms: 
   - term: seated
     lang: en
@@ -15757,9 +15759,11 @@ concepts:
   examples: 
   - term: Was seated by my side
     lang: en
+  - term: Byla usazena po mém boku.
+    lang: cs
   freq: 49654.70000
   origins: ["JingleBells"]
-##  sing   ################################################################## ▆ 64%
+##  sing   ################################################################## ▆ 73%
 - terms: 
   - term: sing
     lang: en
@@ -15768,9 +15772,11 @@ concepts:
   examples: 
   - term: To ride and sing.
     lang: en
+  - term: Jezdit a zpívat.
+    lang: cs
   freq: 43453.10000
   origins: ["JingleBells"]
-##  snow   ################################################################## ▆ 64%
+##  snow   ################################################################## ▆ 73%
 - terms: 
   - term: snow
     lang: en
@@ -15779,9 +15785,11 @@ concepts:
   examples: 
   - term: Dashing through the snow.
     lang: en
+  - term: Prohánět se sněhem.
+    lang: cs
   freq: 41197.95000
   origins: ["JingleBells"]
-##  ride   ################################################################## ▆ 64%
+##  ride   ################################################################## ▆ 73%
 - terms: 
   - term: ride
     lang: en
@@ -15792,9 +15800,11 @@ concepts:
   examples: 
   - term: What joy it is to ride.
     lang: en
+  - term: Jaká je to radost, jezdit.
+    lang: cs
   freq: 34102.95000
   origins: ["JingleBells"]
-##  tonight   ############################################################### ▆ 64%
+##  tonight   ############################################################### ▆ 73%
 - terms: 
   - term: tonight
     lang: en
@@ -15805,9 +15815,11 @@ concepts:
   examples: 
   - term: To sing a song tonight.
     lang: en
+  - term: Zazpívat dnes večer písničku.
+    lang: cs
   freq: 28173.20500
   origins: ["JingleBells"]
-##  fun   ################################################################### ▆ 64%
+##  fun   ################################################################### ▆ 73%
 - terms: 
   - term: fun
     lang: en
@@ -15818,9 +15830,11 @@ concepts:
   examples: 
   - term: What fun it is to ride.
     lang: en
+  - term: Jaká je to zábava, jezdit.
+    lang: cs
   freq: 22138.75000
   origins: ["JingleBells"]
-##  lean   ################################################################## ▆ 64%
+##  lean   ################################################################## ▆ 73%
 - terms: 
   - term: lean
     lang: en
@@ -15831,20 +15845,26 @@ concepts:
   examples: 
   - term: The horse was lean.
     lang: en
+  - term: Kůň byl štíhlý.
+    lang: cs
   freq: 22063.05000
   origins: ["JingleBells"]
-##  tail   ################################################################## ▆ 64%
+##  tail   ################################################################## ▆ 73%
 - terms: 
   - term: tail
     lang: en
   - term: ocas
     lang: cs
+  - term: ohon
+    lang: cs
   examples: 
   - term: Bells on tail ring.
     lang: en
+  - term: Zvonky na oháňce zvoní.
+    lang: cs
   freq: 20681.45000
   origins: ["JingleBells"]
-##  bells   ################################################################# ▆ 64%
+##  bells   ################################################################# ▆ 73%
 - terms: 
   - term: bells
     lang: en
@@ -15855,6 +15875,8 @@ concepts:
   examples: 
   - term: Bells on tail ring.
     lang: en
+  - term: Zvonky na oháňce zvoní.
+    lang: cs
   freq: 17904.10000
   origins: ["JingleBells"]
 ##  hey   ###################################################################
@@ -15862,7 +15884,7 @@ concepts:
   - term: hey
     lang: en
   state: ignore
-##  dashing   ############################################################### ▆ 64%
+##  dashing   ############################################################### ▆ 73%
 - terms: 
   - term: dashing
     lang: en
@@ -15873,6 +15895,8 @@ concepts:
   examples: 
   - term: Dashing through the snow.
     lang: en
+  - term: Prohánět se sněhem.
+    lang: cs
   freq: 7393.94000
   origins: ["JingleBells"]
 ##  tho   ###################################################################
@@ -15880,7 +15904,7 @@ concepts:
   - term: tho
     lang: en
   state: ignore
-##  sleigh   ################################################################ ▆ 64%
+##  sleigh   ################################################################ ▆ 73%
 - terms: 
   - term: sleigh
     lang: en
@@ -15891,9 +15915,11 @@ concepts:
   examples: 
   - term: One-horse open sleigh.
     lang: en
+  - term: Otevřené sáně s jedním koňem.
+    lang: cs
   freq: 2972.29000
   origins: ["JingleBells"]
-##  jingle   ################################################################ ▆ 64%
+##  jingle   ################################################################ ▆ 73%
 - terms: 
   - term: jingle
     lang: cs
@@ -15904,5 +15930,7 @@ concepts:
   examples: 
   - term: Jingle bells.
     lang: en
+  - term: Rolničky.
+    lang: cs
   freq: 1631.31000
   origins: ["JingleBells"]
