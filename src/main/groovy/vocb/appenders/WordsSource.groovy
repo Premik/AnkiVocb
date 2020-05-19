@@ -17,6 +17,7 @@ public class WordsSource {
 	@Lazy Corpus corp = Corpus.buildDef()
 	BigDecimal minFreq= 0
 	BigDecimal maxFreq= 10e10
+	int limit=100
 	
 	Similarity sim = new Similarity()
 	boolean simulation = false
@@ -28,7 +29,7 @@ public class WordsSource {
 		}
 	}()
 
-	void fromText(String text, int limit=20) {
+	void fromText(String text) {
 		assert sourceName
 		List<String> words = new ArrayList(wn.uniqueueTokens(text))
 				.findAll {String s ->				
@@ -41,6 +42,7 @@ public class WordsSource {
 
 
 		println "Processing ${words.size()} words"
+		Map<String, List<String>> wordsInSentences = wn.wordsInSentences(text)
 		int i= 0
 		for (String w in words) {
 			if (i> limit) {
@@ -48,10 +50,12 @@ public class WordsSource {
 			}
 
 			Term t = new Term(w, "en")
-
+			BigDecimal frq = Helper.roundDecimal((corp.wordFreq[w]?:0), 3)
+			String stars  = '🟊'*dbMan.numberOfStarts(frq)
+			
 			Concept c= dbMan.conceptByFirstTerm[w]
 			if (c != null) {
-				println "X $w - already in db"
+				println "X $w - already in db $stars "
 				if (!c?.origins?.contains(sourceName)) {
 					if (c.origins == null) {
 						c.origins = []
@@ -61,7 +65,8 @@ public class WordsSource {
 				continue
 			}
 			c = new Concept(terms: [w:t], freq:corp.wordFreq[w], origins:[sourceName])
-			println "+ $w: ${Helper.roundDecimal((corp.wordFreq[w]?:0)/1000, 3)} added"
+			
+			println "+ $w: added $frq $stars ${wordsInSentences[w].join('|')}"
 			i++
 			dbMan.db.concepts.add(c)
 			if (i % 10 == 0) {
@@ -71,15 +76,15 @@ public class WordsSource {
 		if (!simulation) dbMan.save()
 	}
 
-	void fromCorups(int limit=100) {
+	void fromCorups() {
 		sourceName = "corpus"
 		String[] top = corp.sortedByFreq.take(limit)
-		fromText(top.join(" "), limit)
+		fromText(top.join(" "))
 	}
 
-	void fromOwnSamples(int limit=100) {
+	void fromOwnSamples() {
 		sourceName = "conceptDbSamples"
-		fromText(dbMan.allTextWithLang("en").join("\n"), limit)
+		fromText(dbMan.allTextWithLang("en").join("\n"))
 	}
 
 	void decomposition() {
@@ -117,11 +122,11 @@ public class WordsSource {
 		 a.run(supa)*/
 		new WordsSource().tap {
 			//fromOwnSamples(100)
-			//freqRange = (0..250)
-			
+			//minFreq = 1
 			simulation = true
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			String tx = getClass().getResource('/sources/JingleBells.txt').text
+			
 			sourceName = "JingleBells"
 			fromText(tx)
 			return

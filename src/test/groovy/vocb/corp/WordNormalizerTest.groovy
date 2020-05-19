@@ -32,16 +32,43 @@ class WordNormalizerTest {
 
 		//assert norm.pairs(w.stream(),1, 3).toList() == ['a', 'a b', 'b c', 'c d', 'd']
 	}
-	
+
 	@Test
 	void phraseFreqs() {
 		List<String> w = ["a", "b", "a", "b", "e"]
-		 Map<String , Integer> f = norm.phraseFreqs(w, 1, 4)
-		 assert f["a"] == 2
-		 assert f["e"] == 1
-		 assert f["a b"] == 2
-		 assert f["b a b e"] == 1
-		 //println "${f}"
+		Map<String , Integer> f = norm.phraseFreqs(w, 1, 4)
+		assert f["a"] == 2
+		assert f["e"] == 1
+		assert f["a b"] == 2
+		assert f["b a b e"] == 1
+		//println "${f}"
 		//assert norm.pairs(w.stream(),1, 3).toList() == ['a', 'a b', 'b c', 'c d', 'd']
+	}
+
+	@Test
+	void sentencesTriv() {
+		assert  norm.sentences("Hello world.") == ["Hello world"]
+		assert  norm.sentences("Hello world! Lazy dog?") == ["Hello world", "Lazy dog"]
+	}
+
+	@Test
+	void sentencesSimpleMulti() {
+		String[] sts = norm.sentences('''
+			The itsy bitsy spider climbed up the waterspout.
+			Down came the rain
+			and washed the spider out.
+			'''.stripIndent())
+		assert sts.size() == 2
+	}
+
+	@Test
+	void sentencesMultiNoDots() {
+		String[] sts = norm.sentences('''
+			Now the ground is white
+			Go it while you're young,
+			Take the girls tonight
+			and sing this sleighing song;'''.stripIndent())
+		sts.each {println "\n${it}"}
+		assert sts.size() == 3
 	}
 }

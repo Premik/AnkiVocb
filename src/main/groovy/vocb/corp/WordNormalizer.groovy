@@ -17,7 +17,7 @@ public class WordNormalizer {
 	@Lazy Pattern spacesPattern = ~ /[^\p{L}]+/
 	@Lazy Pattern niceWordPatter = ~ /^[\p{L}]+/  //No digits in words etc
 
-	
+
 	public Set<String> uniqueueTokens(CharSequence input) {
 		tokens(input).collect(Collectors.toSet())
 	}
@@ -28,17 +28,48 @@ public class WordNormalizer {
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
 				.map {String s ->s.toLowerCase()}
 	}
-	
-	
-	
-	public Stream<String> sentences(CharSequence input) {
-		BreakIterator iterator = BreakIterator.getSentenceInstance(Locale.US);	
-		iterator.setText(source);
-	int start = iterator.first();
-	/*for (int end = iterator.next();end != BreakIterator.DONE;start = end, end = iterator.next()) {
-	  System.out.println(source.substring(start,end));
-	}*/
+
+
+
+	public List<String> sentences(CharSequence input) {
+		int start
+		BreakIterator iterator = BreakIterator.getSentenceInstance(Locale.US).tap {
+			text = input
+			start = first()
+		}
+
+		List<String> ret=[]
+		for (int end = iterator.next();end != BreakIterator.DONE;) {
+			String s = input[start..end-1]
+			ret.add(s.trim())
+			start = end
+			end = iterator.next()
+		}
+		ret
+				.collectMany {  it.split(/[,;:]\s(=\s*)/) as List} //Split on non-full sentences
+				.collectMany { it.split(/\s+(?=\p{Lu})/) as List } //Missing dots, but capital letter next
+				.collect {it.trim()}
+				.collect {it.replaceAll(/[!?;.,"'":]$/, "") } //Remove sentence terminators 
+				.collect {it.trim()}
+				.collect {it.replaceAll("[\n\r]", "")} //remove newlines
 	}
+
+	public Map<String, List<String>> wordsInSentences(List<String> sentences) {
+		Map<String, Set<String>> ret = [:].withDefault{[] as LinkedHashSet}
+		sentences.each { String sen->
+			tokens(sen).each { String word->
+				ret[word].add(sen)
+			}
+		}
+		return ret
+	}
+	
+
+	public Map<String, List<String>> wordsInSentences(CharSequence input) {
+		wordsInSentences(sentences(input)) 
+	}
+
+
 
 	public Stream<String> tokens(Stream<CharSequence> listOfString) {
 		return listOfString.flatMap(this.&tokens)
@@ -47,19 +78,19 @@ public class WordNormalizer {
 	public Stream<String> pairs(Stream<CharSequence> listOfString, int sz=2) {
 		//Side effect, don't run in  parallel, consumes the stream
 		CircularFifoQueue<String> prevs= new CircularFifoQueue(sz)
-		listOfString.map { CharSequence s->			
+		listOfString.map { CharSequence s->
 			prevs.add(s)
 			//println "B: ${prevs} ${prevs.getClass()} ${prevs.size()} ${prevs.maxSize()}"
 			//(1..maxSz).inject([]) { ret, it-> ret += prevs.collate(it, 1, false)}
-			prevs.collate(sz, 1, false)			
+			prevs.collate(sz, 1, false)
 		}
-		//.peek { println "${it}"}				
-		.flatMap {it.stream()}		
-		.filter {List s -> s.size() >= sz}		
+		//.peek { println "${it}"}
+		.flatMap {it.stream()}
+		.filter {List s -> s.size() >= sz}
 		//.map {Collection<List<String>> s-> s.collect { it.join(' ')} }
-		.map {List<String> s -> s.join(' ') }				
+		.map {List<String> s -> s.join(' ') }
 	}
-	
+
 	public Map<String , Integer> phraseFreqs(Collection<CharSequence> words, int minSz=1, int maxSz=4) {
 		Map<String , Integer> ret = [:].withDefault {0}
 		for (int sz = minSz;sz<=maxSz;sz++) {
@@ -69,15 +100,15 @@ public class WordNormalizer {
 		}
 		return ret
 	}
-	
+
 	public Map<String , Integer> phraseFreqs(CharSequence input, int minSz=1, int maxSz=4) {
 		phraseFreqs (tokens( input).toList(), minSz, maxSz)
 	}
-	
+
 	public Map<String , Integer> topPhrases(Map<String , Integer> phraseFreq, int cutOff=2) {
 		phraseFreq
-		  .findAll {String w, Integer f-> f >=cutOff }
-		  .sort { -it.value}
+				.findAll {String w, Integer f-> f >=cutOff }
+				.sort { -it.value}
 	}
 
 	static void main(String... args) {
@@ -85,7 +116,7 @@ public class WordNormalizer {
 			String supa = getClass().getResource('/Supaplex.txt').text
 			topPhrases(phraseFreqs(supa, 2, 5)).each { w,i->
 				println "${w.padRight(10)} $i"
-				
+
 			}
 		}
 
