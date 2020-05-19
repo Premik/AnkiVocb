@@ -74,9 +74,9 @@ public class ExampleAppender {
 		dbMan.save()
 	}
 
-	void reuseExisting() {
+	int reuseExisting(boolean loadSave=true) {
 
-		dbMan.load()
+		if (loadSave) dbMan.load()
 		List<Concept> noEx = findTodo()
 		Map<String, Concept> enWords = dbMan.db.concepts.collectEntries {Concept c ->
 			wn.uniqueueTokens(c.examples.values().find {it.lang=="en"}?.term ?: "").collectEntries { String word->
@@ -84,23 +84,58 @@ public class ExampleAppender {
 			} 			
 		}
 		
+		int added = 0
 		for (Concept c in noEx) {
 			Concept fromC = enWords[c.firstTerm]
 			if (fromC) {	
 				println "'$c.firstTerm': ${fromC.examples.values()[0].term}"
 				c.examples = fromC.examples.values()*.clone().collectEntries {Term t->[(t.term): t] }
+				added++
 			}
 			
 		}
 
+		if (loadSave) dbMan.save()
+		return added
+	}
+	
+	void fromCorpus(String text) {
+		Map<String, Set<String>> wordsInSentences = wn.wordsInSentences(text)
+		
+		dbMan.load()
+		reuseExisting(false)
+		List<Concept> noEx= findTodo()
+		int i=0
+		for (Concept c in noEx) {
+			if (i> limit) break
+			
+			String enWord = c.firstTerm
+			Set<String> s = wordsInSentences[enWord]
+			if (!s) continue
+			println "'$c.firstTerm': $s"
+			c.examples.putAll (
+				s.collectEntries { 
+					[it, new Term(it, "en")] 
+				}
+			)
+			i++
+			reuseExisting(false)
+			
+		}
 		dbMan.save()
+		
+		
+		
 	}
 
 
 	public static void main(String[] args) {
-		ExampleAppender a = new ExampleAppender()		
+		ExampleAppender a = new ExampleAppender().with {		
 		//a.run()
-		a.reuseExisting()
+			limit = 1
+		String tx = getClass().getResource('/sources/JingleBells.txt').text
+		 fromCorpus(tx)
+		}
 
 		println "Done"
 	}

@@ -51,10 +51,10 @@ public class WordNormalizer {
 				.collect {it.trim()}
 				.collect {it.replaceAll(/[!?;.,"'":]$/, "") } //Remove sentence terminators 
 				.collect {it.trim()}
-				.collect {it.replaceAll("[\n\r]", "")} //remove newlines
+				.collect {it.replaceAll("[\n\r]+", " ")} //remove newlines
 	}
 
-	public Map<String, List<String>> wordsInSentences(List<String> sentences) {
+	public Map<String, Set<String>> wordsInSentences(List<String> sentences) {
 		Map<String, Set<String>> ret = [:].withDefault{[] as LinkedHashSet}
 		sentences.each { String sen->
 			tokens(sen).each { String word->
@@ -65,7 +65,7 @@ public class WordNormalizer {
 	}
 	
 
-	public Map<String, List<String>> wordsInSentences(CharSequence input) {
+	public Map<String, Set<String>> wordsInSentences(CharSequence input) {
 		wordsInSentences(sentences(input)) 
 	}
 

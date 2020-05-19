@@ -14,7 +14,7 @@ public class TranslationAppender {
 
 	Manager dbMan = new Manager()
 
-	void run() {
+	void translateWords() {
 
 		dbMan.load()
 		List<Concept> noCs = dbMan.db.concepts.findAll {
@@ -31,11 +31,30 @@ public class TranslationAppender {
 			//break
 		}
 	}
+	
+	void translateExamples() {
+		
+				dbMan.load()
+				List<Concept> noCs = dbMan.db.concepts.findAll {
+					it.terms && it.state!="ignore" &&  (!it.examples) && it.firstTerm)
+				}
+		
+				for (Concept c in noCs) {
+					Map trnJson = trn.trnJsonrunTrn(c.firstTerm)
+					trn.extractTopTrns(trnJson).each {String csWord ->
+						c.terms.put(csWord, new Term(csWord, "cs"))
+					}
+					dbMan.save()
+					Thread.sleep(sleep)
+					//break
+				}
+			}
 
 
 	public static void main(String[] args) {
 		TranslationAppender a = new TranslationAppender()
-		a.run()
+		a.translateWords()
+		a.translateExamples()
 
 		println "Done"
 	}
