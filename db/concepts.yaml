@@ -15642,7 +15642,7 @@ concepts:
   img: seafood.jpeg
   freq: 27.68970
   origins: ["conceptDbSamples"]
-##  horse   ################################################################# ▆ 64%
+##  horse   ################################################################# ▆ 73%
 - terms: 
   - term: horse
     lang: en
@@ -15651,9 +15651,11 @@ concepts:
   examples: 
   - term: The horse was lean.
     lang: en
+  - term: Kůň byl štíhlý.
+    lang: cs
   freq: 87507.50000
   origins: ["JingleBells"]
-##  quickly   ############################################################### ▆ 64%
+##  quickly   ############################################################### ▆ 73%
 - terms: 
   - term: quickly
     lang: en
@@ -15664,6 +15666,8 @@ concepts:
   examples: 
   - term: Quickly drove away.
     lang: en
+  - term: Rychle odjel pryč.
+    lang: cs
   freq: 77724.30000
   origins: ["JingleBells"]
 ##  oh   ####################################################################
@@ -15673,7 +15677,7 @@ concepts:
   state: ignore
   freq: 68285.00000
   origins: ["JingleBells"]
-##  bright   ################################################################ ▆ 64%
+##  bright   ################################################################ ▆ 73%
 - terms: 
   - term: bright
     lang: en
@@ -15684,9 +15688,11 @@ concepts:
   examples: 
   - term: Making spirits bright.
     lang: en
+  - term: Vytváření duchů jasných.
+    lang: cs
   freq: 64276.95000
   origins: ["JingleBells"]
-##  joy   ################################################################### ▆ 64%
+##  joy   ################################################################### ▆ 73%
 - terms: 
   - term: joy
     lang: en
@@ -15695,22 +15701,26 @@ concepts:
   examples: 
   - term: What joy it is to ride.
     lang: en
+  - term: Jaká radost je jezdit.
+    lang: cs
   freq: 63479.50000
   origins: ["JingleBells"]
-##  spirits   ############################################################### ▆ 64%
+##  spirits   ############################################################### ▆ 73%
 - terms: 
   - term: spirits
     lang: en
-  - term: lihoviny
+  - term: nálada
     lang: cs
   - term: duchy
     lang: cs
   examples: 
   - term: Making spirits bright.
     lang: en
+  - term: Rozjasňují náladu.
+    lang: cs
   freq: 62147.50000
   origins: ["JingleBells"]
-##  laughing   ############################################################## ▆ 64%
+##  laughing   ############################################################## ▆ 73%
 - terms: 
   - term: laughing
     lang: en
@@ -15719,6 +15729,8 @@ concepts:
   examples: 
   - term: Laughing all the way.
     lang: en
+  - term: Celou cestu se směje.
+    lang: cs
   freq: 53113.60000
   origins: ["JingleBells"]
 ##  drove   ################################################################# ▆ 64%
