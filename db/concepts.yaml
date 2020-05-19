@@ -1651,7 +1651,7 @@ concepts:
     lang: cs
     tts: nez.mp3
   examples: 
-  - term: This is better than .
+  - term: This is better than steak.
     lang: en
     tts: This is better than steak.mp3
   - term: Je to lepší než steak.
@@ -15356,18 +15356,21 @@ concepts:
   img: arrogant.jpeg
   freq: 4196.96000
   origins: ["conceptDbSamples"]
-##  steak   ################################################################# ▆ 67%
+##  steak   ################################################################# █ 95%
 - terms: 
   - term: steak
     lang: en
-    tts: steak.mp3
-    pron: steɪk
   - term: biftek
     lang: cs
-    tts: biftek.mp3
   - term: řízek
     lang: cs
-    tts: rizek.mp3
+  examples: 
+  - term: This is better than steak.
+    lang: en
+    tts: This is better than steak.mp3
+  - term: Je to lepší než steak.
+    lang: cs
+    tts: Je to lepsi nez steak.mp3
   img: steak.jpeg
   freq: 4027.81500
   origins: ["conceptDbSamples"]
@@ -15644,14 +15647,6 @@ concepts:
   - term: horse
     lang: en
   - term: kůň
-    lang: cs
-  - term: koně
-    lang: cs
-  - term: koni
-    lang: cs
-  - term: koňské
-    lang: cs
-  - term: koněm
     lang: cs
   examples: 
   - term: The horse was lean.
