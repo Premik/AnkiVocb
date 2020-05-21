@@ -44,7 +44,7 @@ public class EnTSSAppender {
 				if (i > limit) {
 					return
 				}
-				t.tts = dbMan.resolveMedia(t.term, "mp3") { Path path ->
+				t.tts = dbMan.resolveMedia(t.term, "mp3", "en-terms") { Path path ->
 					Process p=  enTts.synth(t.term, "neural", someVoice, "text", path.toString())
 					Helper.printProcOut(p)
 					p.waitFor(5, TimeUnit.SECONDS)
@@ -80,7 +80,7 @@ public class EnTSSAppender {
 
 			String tts = enTts.SSMLEmphSubstr(enSample.term, enWord )
 
-			enSample.tts = dbMan.resolveMedia(enSample.term, "mp3") { Path path ->
+			enSample.tts = dbMan.resolveMedia(enSample.term, "mp3", "en-samples") { Path path ->
 				Process p=  enTts.synth(tts, "neural", someVoice, "ssml", path.toString())
 				Helper.printProcOut(p)
 				p.waitFor(10, TimeUnit.SECONDS)
@@ -93,7 +93,7 @@ public class EnTSSAppender {
 
 
 	public static void main(String[] args) {
-		EnTSSAppender a = new EnTSSAppender(limit:200)
+		EnTSSAppender a = new EnTSSAppender(limit:1)
 		a.runTerms()
 		a.runExamples()
 		println "Done"

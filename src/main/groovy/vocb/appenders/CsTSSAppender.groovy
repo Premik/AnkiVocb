@@ -5,6 +5,7 @@ import java.nio.file.Path
 
 import vocb.Helper
 import vocb.aws.AwsTranslate
+import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
@@ -16,6 +17,7 @@ public class CsTSSAppender {
 	LocalTTS ttsCz = new LocalTTS()
 	Manager dbMan = new Manager()
 	int limit = 10
+	WordNormalizer wn = new WordNormalizer()
 
 	void run() {
 		dbMan.load()
@@ -35,10 +37,11 @@ public class CsTSSAppender {
 				i++;
 				dbMan.save()
 			}
-
-			
+			String folder
+			if (wn.uniqueueTokens(t.term).size() > 2) folder = "cs-samples"
+			else folder = "cs-terms"  			
 			if (!t.tts) {
-				t.tts = dbMan.resolveMedia(t.term, "mp3", synthIt)
+				t.tts = dbMan.resolveMedia(t.term, "mp3", folder, synthIt)
 			} else { //has medialink 
 				//but doesn't exist
 				if (!dbMan.linkedMediaExists(t.tts)) {
@@ -52,7 +55,7 @@ public class CsTSSAppender {
 
 
 	public static void main(String[] args) {
-		CsTSSAppender a = new CsTSSAppender(limit:200)
+		CsTSSAppender a = new CsTSSAppender(limit:1)
 		a.run()
 		println "Done"
 	}

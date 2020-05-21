@@ -15356,14 +15356,16 @@ concepts:
   img: img/arrogant.jpeg
   freq: 4196.96000
   origins: ["conceptDbSamples"]
-##  steak   ################################################################# █ 95%
+##  steak   ################################################################# █ 98%
 - terms: 
   - term: steak
     lang: en
   - term: biftek
     lang: cs
+    tts: cs-terms/biftek.mp3
   - term: řízek
     lang: cs
+    tts: cs-terms/rizek.mp3
   examples: 
   - term: This is better than steak.
     lang: en
@@ -15642,7 +15644,7 @@ concepts:
   img: img/seafood.jpeg
   freq: 27.68970
   origins: ["conceptDbSamples"]
-##  horse   ################################################################# █ 89%
+##  horse   ################################################################# █ 92%
 - terms: 
   - term: horse
     lang: en
@@ -15651,6 +15653,7 @@ concepts:
   examples: 
   - term: The horse was lean.
     lang: en
+    tts: en-samples/The horse was lean.mp3
   - term: Kůň byl štíhlý.
     lang: cs
   img: img/horse.jpeg
