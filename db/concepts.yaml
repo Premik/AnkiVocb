@@ -943,7 +943,7 @@ concepts:
 - terms: 
   - term: me
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-terms/me.mp3
+    tts: en-terms/me.mp3
     pron: mi
   - term: mě
     lang: cs
@@ -15360,7 +15360,7 @@ concepts:
 - terms: 
   - term: steak
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-terms/steak.mp3
+    tts: en-terms/steak.mp3
   - term: biftek
     lang: cs
     tts: cs-terms/biftek.mp3
@@ -15673,7 +15673,7 @@ concepts:
     tts: cs-terms/rychle.mp3
   - term: snadno
     lang: cs
-    tts: /data/src/AnkiVocb/db/media/cs-terms/snadno.mp3
+    tts: cs-terms/snadno.mp3
   examples: 
   - term: Quickly drove away.
     lang: en
@@ -15744,7 +15744,7 @@ concepts:
   examples: 
   - term: Making spirits bright.
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-samples/Making spirits bright.mp3
+    tts: en-samples/Making spirits bright.mp3
   - term: Rozjasňují náladu.
     lang: cs
     tts: cs-terms/Rozjasnuji naladu.mp3
@@ -15783,7 +15783,7 @@ concepts:
   examples: 
   - term: Quickly drove away.
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-samples/Quickly drove away.mp3
+    tts: en-samples/Quickly drove away.mp3
   - term: Rychle odjel.
     lang: cs
     tts: cs-terms/Rychle odjel.mp3
@@ -15861,7 +15861,7 @@ concepts:
   examples: 
   - term: What joy it is to ride.
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-samples/What joy it is to ride.mp3
+    tts: en-samples/What joy it is to ride.mp3
   - term: Jaká je to radost, jezdit.
     lang: cs
     tts: cs-samples/Jaka je to radost, jezdit.mp3
@@ -15875,7 +15875,7 @@ concepts:
     tts: en-terms/tonight.mp3
   - term: večer
     lang: cs
-    tts: /data/src/AnkiVocb/db/media/cs-terms/vecer.mp3
+    tts: cs-terms/vecer.mp3
   - term: dnešní večer
     lang: cs
     tts: cs-terms/dnesni vecer.mp3
@@ -15917,17 +15917,17 @@ concepts:
     tts: en-terms/lean.mp3
   - term: štíhlé
     lang: cs
-    tts: /data/src/AnkiVocb/db/media/cs-terms/stihle.mp3
+    tts: cs-terms/stihle.mp3
   - term: hubený
     lang: cs
     tts: cs-terms/hubeny.mp3
   examples: 
   - term: The horse was lean.
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-samples/The horse was lean.mp3
+    tts: en-samples/The horse was lean.mp3
   - term: Kůň byl štíhlý.
     lang: cs
-    tts: /data/src/AnkiVocb/db/media/cs-samples/Kun byl stihly.mp3
+    tts: cs-samples/Kun byl stihly.mp3
   img: img/lean.jpeg
   freq: 22063.05000
   origins: ["JingleBells"]
@@ -15966,10 +15966,10 @@ concepts:
   examples: 
   - term: Bells on tail ring.
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-samples/Bells on tail ring.mp3
+    tts: en-samples/Bells on tail ring.mp3
   - term: Zvonky na oháňce zvoní.
     lang: cs
-    tts: /data/src/AnkiVocb/db/media/cs-samples/Zvonky na ohance zvoni.mp3
+    tts: cs-samples/Zvonky na ohance zvoni.mp3
   img: img/bells.jpeg
   freq: 17904.10000
   origins: ["JingleBells"]
@@ -15992,10 +15992,10 @@ concepts:
   examples: 
   - term: Dashing through the snow.
     lang: en
-    tts: /data/src/AnkiVocb/db/media/en-samples/Dashing through the snow.mp3
+    tts: en-samples/Dashing through the snow.mp3
   - term: Prohánět se sněhem.
     lang: cs
-    tts: /data/src/AnkiVocb/db/media/cs-samples/Prohanet se snehem.mp3
+    tts: cs-samples/Prohanet se snehem.mp3
   img: img/dashing.jpeg
   freq: 7393.94000
   origins: ["JingleBells"]
@@ -16024,7 +16024,7 @@ concepts:
   img: img/sleigh.jpeg
   freq: 2972.29000
   origins: ["JingleBells"]
-##  jingle   ################################################################
+##  jingle   ################################################################ █ 98%
 - terms: 
   - term: jingle
     lang: en
