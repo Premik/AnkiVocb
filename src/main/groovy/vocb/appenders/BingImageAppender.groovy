@@ -88,7 +88,7 @@ public class BingImageAppender {
 			dbMan.save()
 
 			
-			dbMan.resolveMedia(trm, "jpeg") { Path dbPath->
+			dbMan.resolveMedia(trm, "jpeg", "img") { Path dbPath->
 				Files.move(resizedP, dbPath)
 				println "Stored $dbPath"
 				
