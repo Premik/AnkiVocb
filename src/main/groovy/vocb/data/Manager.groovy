@@ -7,6 +7,7 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 import vocb.Helper
+import vocb.corp.WordNormalizer
 
 
 public class Manager {
@@ -26,18 +27,19 @@ public class Manager {
 	ConceptYamlStorage storage =new ConceptYamlStorage()
 	ConceptDb db = new ConceptDb()
 	Path dbPath
+	
 
 	Map<String, Concept> conceptByFirstTerm = [:]
 
 	Map<String, Set<Concept>> conceptsByTerm = [:]
-	
+
 	Map<Integer, Set<Concept>> conceptsByStar = [:]
-	
+
 	List<String> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
 	BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, new BigDecimal("10e10")]
-	 .collect{it*1000}
+	.collect{it*1000}
 
 	Integer numberOfStarts(BigDecimal freq) {
 		if (!freq) return null
@@ -104,7 +106,7 @@ public class Manager {
 		Path mediaPath = mediaLinkPath(mediaLink, group)
 		if (Files.exists(mediaPath)) return mediaPath
 		mediaPath.toFile().mkdirs()
-		whenNotFound(mediaPath)		
+		whenNotFound(mediaPath)
 		return mediaRootPath.relativize(mediaPath)
 	}
 
@@ -192,7 +194,7 @@ public class Manager {
 		 println singular
 		 }
 		 }*/
-		
+
 		println "${'-'*80}"
 	}
 
@@ -201,20 +203,35 @@ public class Manager {
 			(c.termsByLang(lang) + c.examplesByLang(lang)).collect {it.term}
 		}
 	}
-	
-	
 
-	void printStats() {		
+
+
+	void printStats() {
 		int accu=0
 		(5..0).each {
 			int sz = conceptsByStar[it].size()
-			accu+=sz			
-			println "${sz.toString().padRight(5)} ${('🟊'*it).padRight(10)} $accu"			
+			accu+=sz
+			println "${sz.toString().padRight(5)} ${('🟊'*it).padRight(10)} $accu"
 		}
 	}
-	
+
 	Collection<String> filterByStars(Collection<String> src, Range starRange = (0..2)) {
 		src.findAll { conceptsByStar[it] in starRange }
+	}
+
+	public void moveToSubFolders() {
+		
+		WordNormalizer wn =new WordNormalizer()
+		groupByMedia().each { String mp, Set<Concept> cs->			
+			Concept c = cs[0]
+			if (c.img == mp && !mp.contains("img/")) {		
+							
+				c.img = "img/$mp"
+				println "$mp -> $c.img"
+				Files.move(mediaLinkPath(mp) , mediaLinkPath(c.img))
+			}
+		}
+		save()
 	}
 
 
@@ -222,7 +239,8 @@ public class Manager {
 		new Manager().tap {
 			load()
 			findBrokenMedia()
-			printStats()
+			//printStats()
+			moveToSubFolders()
 			//println allTextWithLang("en")
 		}
 
