@@ -5,6 +5,7 @@ import java.nio.file.Path
 
 import vocb.Helper
 import vocb.aws.AwsTranslate
+import vocb.azure.AzureTTs
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
@@ -14,7 +15,8 @@ import vocb.tts.LocalTTS
 
 public class CsTSSAppender {
 
-	LocalTTS ttsCz = new LocalTTS()
+	//LocalTTS ttsCz = new LocalTTS()
+	AzureTTs ttsCz = new AzureTTs()
 	Manager dbMan = new Manager()
 	int limit = 10
 	WordNormalizer wn = new WordNormalizer()
@@ -33,7 +35,8 @@ public class CsTSSAppender {
 			}
 			
 			Closure synthIt = { Path p ->
-				ttsCz.synth(t.term, "violka", p.toString() )
+				//ttsCz.synth(t.term, "violka", p.toString() )
+				ttsCz.synth(t.term, p.toString() )
 				i++;
 				dbMan.save()
 			}
@@ -55,8 +58,9 @@ public class CsTSSAppender {
 
 
 	public static void main(String[] args) {
-		CsTSSAppender a = new CsTSSAppender(limit:1)
-		a.run()
+		new CsTSSAppender(limit:2).tap {
+		  
+		}.run()
 		println "Done"
 	}
 }

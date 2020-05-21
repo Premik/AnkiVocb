@@ -939,7 +939,7 @@ concepts:
   state: ignoreImage
   freq: 1951647.00000
   origins: ["corpus", "conceptDbSamples"]
-##  me   #################################################################### █ 98%
+##  me   ####################################################################
 - terms: 
   - term: me
     lang: en
@@ -947,6 +947,7 @@ concepts:
     pron: mi
   - term: mě
     lang: cs
+    tts: cs-terms/me.mp3
   - term: mi
     lang: cs
     tts: cs-terms/mi.mp3
@@ -15644,19 +15645,21 @@ concepts:
   img: img/seafood.jpeg
   freq: 27.68970
   origins: ["conceptDbSamples"]
-##  horse   ################################################################# █ 95%
+##  horse   #################################################################
 - terms: 
   - term: horse
     lang: en
     tts: en-terms/horse.mp3
   - term: kůň
     lang: cs
+    tts: cs-terms/kun.mp3
   examples: 
   - term: The horse was lean.
     lang: en
     tts: en-samples/The horse was lean.mp3
   - term: Kůň byl štíhlý.
     lang: cs
+    tts: cs-samples/Kun byl stihly.mp3
   img: img/horse.jpeg
   freq: 87507.50000
   origins: ["JingleBells"]
