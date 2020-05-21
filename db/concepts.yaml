@@ -939,10 +939,11 @@ concepts:
   state: ignoreImage
   freq: 1951647.00000
   origins: ["corpus", "conceptDbSamples"]
-##  me   #################################################################### █ 96%
+##  me   #################################################################### █ 98%
 - terms: 
   - term: me
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-terms/me.mp3
     pron: mi
   - term: mě
     lang: cs
@@ -15354,10 +15355,11 @@ concepts:
   img: img/arrogant.jpeg
   freq: 4196.96000
   origins: ["conceptDbSamples"]
-##  steak   ################################################################# █ 98%
+##  steak   #################################################################
 - terms: 
   - term: steak
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-terms/steak.mp3
   - term: biftek
     lang: cs
     tts: cs-terms/biftek.mp3
@@ -15642,10 +15644,11 @@ concepts:
   img: img/seafood.jpeg
   freq: 27.68970
   origins: ["conceptDbSamples"]
-##  horse   ################################################################# █ 92%
+##  horse   ################################################################# █ 95%
 - terms: 
   - term: horse
     lang: en
+    tts: en-terms/horse.mp3
   - term: kůň
     lang: cs
   examples: 
@@ -15657,10 +15660,11 @@ concepts:
   img: img/horse.jpeg
   freq: 87507.50000
   origins: ["JingleBells"]
-##  quickly   ############################################################### █ 92%
+##  quickly   ############################################################### █ 94%
 - terms: 
   - term: quickly
     lang: en
+    tts: en-terms/quickly.mp3
   - term: rychle
     lang: cs
   - term: snadno
@@ -15681,10 +15685,11 @@ concepts:
   state: ignore
   freq: 68285.00000
   origins: ["JingleBells"]
-##  bright   ################################################################ █ 92%
+##  bright   ################################################################ █ 94%
 - terms: 
   - term: bright
     lang: en
+    tts: en-terms/bright.mp3
   - term: jasné
     lang: cs
   - term: zářivě
@@ -15698,24 +15703,27 @@ concepts:
   img: img/bright.jpeg
   freq: 64276.95000
   origins: ["JingleBells"]
-##  joy   ################################################################### █ 89%
+##  joy   ################################################################### █ 95%
 - terms: 
   - term: joy
     lang: en
+    tts: en-terms/joy.mp3
   - term: radost
     lang: cs
   examples: 
   - term: What joy it is to ride.
     lang: en
+    tts: en-samples/What joy it is to ride.mp3
   - term: Jaká radost je jezdit.
     lang: cs
   img: img/joy.jpeg
   freq: 63479.50000
   origins: ["JingleBells"]
-##  spirits   ############################################################### █ 89%
+##  spirits   ############################################################### █ 94%
 - terms: 
   - term: spirits
     lang: en
+    tts: en-terms/spirits.mp3
   - term: nálada
     lang: cs
   - term: duchy
@@ -15723,29 +15731,33 @@ concepts:
   examples: 
   - term: Making spirits bright.
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-samples/Making spirits bright.mp3
   - term: Rozjasňují náladu.
     lang: cs
   img: img/spirits.jpeg
   freq: 62147.50000
   origins: ["JingleBells"]
-##  laughing   ############################################################## █ 89%
+##  laughing   ############################################################## █ 95%
 - terms: 
   - term: laughing
     lang: en
+    tts: en-terms/laughing.mp3
   - term: smějící se
     lang: cs
   examples: 
   - term: Laughing all the way.
     lang: en
+    tts: en-samples/Laughing all the way.mp3
   - term: Celou cestu se smát.
     lang: cs
   img: img/laughing.jpeg
   freq: 53113.60000
   origins: ["JingleBells"]
-##  drove   ################################################################# █ 89%
+##  drove   ################################################################# █ 94%
 - terms: 
   - term: drove
     lang: en
+    tts: en-terms/drove.mp3
   - term: odjel
     lang: cs
   - term: odvezl
@@ -15753,15 +15765,17 @@ concepts:
   examples: 
   - term: Quickly drove away.
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-samples/Quickly drove away.mp3
   - term: Rychle odjel.
     lang: cs
   img: img/drove.jpeg
   freq: 50184.80000
   origins: ["JingleBells"]
-##  seated   ################################################################ █ 89%
+##  seated   ################################################################ █ 94%
 - terms: 
   - term: seated
     lang: en
+    tts: en-terms/seated.mp3
   - term: usazeny
     lang: cs
   - term: seděla
@@ -15769,43 +15783,49 @@ concepts:
   examples: 
   - term: Was seated by my side
     lang: en
+    tts: en-samples/Was seated by my side.mp3
   - term: Byla usazena po mém boku.
     lang: cs
   img: img/seated.jpeg
   freq: 49654.70000
   origins: ["JingleBells"]
-##  sing   ################################################################## █ 89%
+##  sing   ################################################################## █ 95%
 - terms: 
   - term: sing
     lang: en
+    tts: en-terms/sing.mp3
   - term: zpívat
     lang: cs
   examples: 
   - term: To ride and sing.
     lang: en
+    tts: en-samples/To ride and sing.mp3
   - term: Jezdit a zpívat.
     lang: cs
   img: img/sing.jpeg
   freq: 43453.10000
   origins: ["JingleBells"]
-##  snow   ################################################################## █ 89%
+##  snow   ################################################################## █ 95%
 - terms: 
   - term: snow
     lang: en
+    tts: en-terms/snow.mp3
   - term: sníh
     lang: cs
   examples: 
   - term: Dashing through the snow.
     lang: en
+    tts: en-samples/Dashing through the snow.mp3
   - term: Prohánět se sněhem.
     lang: cs
   img: img/snow.jpeg
   freq: 41197.95000
   origins: ["JingleBells"]
-##  ride   ################################################################## █ 89%
+##  ride   ################################################################## █ 94%
 - terms: 
   - term: ride
     lang: en
+    tts: en-terms/ride.mp3
   - term: jízda
     lang: cs
   - term: projížďka
@@ -15813,15 +15833,17 @@ concepts:
   examples: 
   - term: What joy it is to ride.
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-samples/What joy it is to ride.mp3
   - term: Jaká je to radost, jezdit.
     lang: cs
   img: img/ride.jpeg
   freq: 34102.95000
   origins: ["JingleBells"]
-##  tonight   ############################################################### █ 89%
+##  tonight   ############################################################### █ 94%
 - terms: 
   - term: tonight
     lang: en
+    tts: en-terms/tonight.mp3
   - term: večer
     lang: cs
   - term: dnešní večer
@@ -15829,15 +15851,17 @@ concepts:
   examples: 
   - term: To sing a song tonight.
     lang: en
+    tts: en-samples/To sing a song tonight.mp3
   - term: Zazpívat dnes večer písničku.
     lang: cs
   img: img/tonight.jpeg
   freq: 28173.20500
   origins: ["JingleBells"]
-##  fun   ################################################################### █ 89%
+##  fun   ################################################################### █ 94%
 - terms: 
   - term: fun
     lang: en
+    tts: en-terms/fun.mp3
   - term: zábava
     lang: cs
   - term: legrace
@@ -15845,15 +15869,17 @@ concepts:
   examples: 
   - term: What fun it is to ride.
     lang: en
+    tts: en-samples/What fun it is to ride.mp3
   - term: Jaká je to zábava, jezdit.
     lang: cs
   img: img/fun.jpeg
   freq: 22138.75000
   origins: ["JingleBells"]
-##  lean   ################################################################## █ 89%
+##  lean   ################################################################## █ 94%
 - terms: 
   - term: lean
     lang: en
+    tts: en-terms/lean.mp3
   - term: štíhlé
     lang: cs
   - term: hubený
@@ -15861,15 +15887,17 @@ concepts:
   examples: 
   - term: The horse was lean.
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-samples/The horse was lean.mp3
   - term: Kůň byl štíhlý.
     lang: cs
   img: img/lean.jpeg
   freq: 22063.05000
   origins: ["JingleBells"]
-##  tail   ################################################################## █ 89%
+##  tail   ################################################################## █ 94%
 - terms: 
   - term: tail
     lang: en
+    tts: en-terms/tail.mp3
   - term: ocas
     lang: cs
   - term: ohon
@@ -15877,15 +15905,17 @@ concepts:
   examples: 
   - term: Bells on tail ring.
     lang: en
+    tts: en-samples/Bells on tail ring.mp3
   - term: Zvonky na oháňce zvoní.
     lang: cs
   img: img/tail.jpeg
   freq: 20681.45000
   origins: ["JingleBells"]
-##  bells   ################################################################# █ 89%
+##  bells   ################################################################# █ 94%
 - terms: 
   - term: bells
     lang: en
+    tts: en-terms/bells.mp3
   - term: zvony
     lang: cs
   - term: rolničky
@@ -15893,6 +15923,7 @@ concepts:
   examples: 
   - term: Bells on tail ring.
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-samples/Bells on tail ring.mp3
   - term: Zvonky na oháňce zvoní.
     lang: cs
   img: img/bells.jpeg
@@ -15903,10 +15934,11 @@ concepts:
   - term: hey
     lang: en
   state: ignore
-##  dashing   ############################################################### █ 89%
+##  dashing   ############################################################### █ 94%
 - terms: 
   - term: dashing
     lang: en
+    tts: en-terms/dashing.mp3
   - term: hnát se
     lang: cs
   - term: temperamentní
@@ -15914,6 +15946,7 @@ concepts:
   examples: 
   - term: Dashing through the snow.
     lang: en
+    tts: /data/src/AnkiVocb/db/media/en-samples/Dashing through the snow.mp3
   - term: Prohánět se sněhem.
     lang: cs
   img: img/dashing.jpeg
@@ -15924,7 +15957,7 @@ concepts:
   - term: tho
     lang: en
   state: ignore
-##  sleigh   ################################################################ █ 89%
+##  sleigh   ################################################################ █ 92%
 - terms: 
   - term: sleigh
     lang: en
@@ -15935,12 +15968,13 @@ concepts:
   examples: 
   - term: One-horse open sleigh.
     lang: en
+    tts: en-samples/One-horse open sleigh.mp3
   - term: Otevřené sáně s jedním koňem.
     lang: cs
   img: img/sleigh.jpeg
   freq: 2972.29000
   origins: ["JingleBells"]
-##  jingle   ################################################################ █ 89%
+##  jingle   ################################################################ █ 92%
 - terms: 
   - term: jingle
     lang: cs
@@ -15951,6 +15985,7 @@ concepts:
   examples: 
   - term: Jingle bells.
     lang: en
+    tts: en-samples/Jingle bells.mp3
   - term: Rolničky.
     lang: cs
   img: img/jingle.jpeg
