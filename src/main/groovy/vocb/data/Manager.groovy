@@ -222,7 +222,7 @@ public class Manager {
 	public void moveToSubFolders() {
 		
 		WordNormalizer wn =new WordNormalizer()
-		groupByMedia().take(10).each { String mp, Set<Concept> cs->			
+		groupByMedia().take(1000).each { String mp, Set<Concept> cs->			
 			Concept c = cs[0]
 			if (c.img == mp && !mp.contains("img/")) {								
 				c.img = "img/$mp"
@@ -230,8 +230,12 @@ public class Manager {
 				Files.move(mediaLinkPath(mp) , mediaLinkPath(c.img))
 			}
 			
-			c.termsByLang("en").findAll{it.tts == mp }.each {
-				it.tts = "en-terms/$mp"
+			String pp = "en-terms/"
+			c.termsByLang("en")
+			  .findAll{it.tts == mp }
+			  .findAll{!it.tts.contains(pp) }
+			  .each {
+				it.tts = "$pp$mp"
 				println "$mp -> $it.tts"
 				Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
 			}
