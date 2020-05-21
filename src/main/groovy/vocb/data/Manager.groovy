@@ -252,8 +252,8 @@ public class Manager {
 		new Manager().tap {
 			load()
 			findBrokenMedia()
-			//printStats()
-			moveToSubFolders()
+			printStats()
+			//moveToSubFolders()
 			//println allTextWithLang("en")
 		}
 
