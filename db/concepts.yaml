@@ -14638,7 +14638,7 @@ concepts:
     tts: cs-terms/klavir.mp3
   - term: piáno
     lang: cs
-    tts: cs-terms/piano.mp3
+    tts: cs-terms/piano-cs.mp3
   examples: 
   - term: There must be a piano here.
     lang: en
@@ -15657,7 +15657,7 @@ concepts:
   img: img/horse.jpeg
   freq: 87507.50000
   origins: ["JingleBells"]
-##  quickly   ############################################################### █ 89%
+##  quickly   ############################################################### █ 92%
 - terms: 
   - term: quickly
     lang: en
@@ -15668,6 +15668,7 @@ concepts:
   examples: 
   - term: Quickly drove away.
     lang: en
+    tts: en-samples/Quickly drove away.mp3
   - term: Rychle odjel pryč.
     lang: cs
   img: img/quickly.jpeg

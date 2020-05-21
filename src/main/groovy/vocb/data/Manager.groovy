@@ -222,7 +222,7 @@ public class Manager {
 	public void moveToSubFolders() {
 		
 		WordNormalizer wn =new WordNormalizer()
-		groupByMedia().take(100).each { String mp, Set<Concept> cs->			
+		groupByMedia().each { String mp, Set<Concept> cs->			
 			Concept c = cs[0]
 			if (c.img == mp && !mp.contains("img/")) {								
 				c.img = "img/$mp"
@@ -237,7 +237,9 @@ public class Manager {
 			  .each {
 				it.tts = "$pp$mp"
 				println "$mp -> $it.tts"
-				Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
+				if (linkedMediaExists(mp)) {
+					Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
+				}
 			}
 			
 			
