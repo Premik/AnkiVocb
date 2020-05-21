@@ -230,8 +230,8 @@ public class Manager {
 				Files.move(mediaLinkPath(mp) , mediaLinkPath(c.img))
 			}
 			
-			String pp = "cs-terms/"
-			c.termsByLang("cs")
+			String pp = "cs-samples/"
+			c.examplesByLang("cs")
 			  .findAll{it.tts == mp }
 			  .findAll{!it.tts.contains(pp) }
 			  .each {
