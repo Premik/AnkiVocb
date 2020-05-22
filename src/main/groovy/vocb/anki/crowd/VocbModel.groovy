@@ -40,7 +40,7 @@ class VocbModel {
 		noteModel.assureIsComplete()
 		parser.noteModels = [noteModel]
 	}
-	
+
 	void syncNoteFields() {
 		//println Helper.objectToJson(notes)
 		notes.each {assureNote(it)}
@@ -68,12 +68,20 @@ class VocbModel {
 				})
 	}
 
+
+
+
+	String mediaLink2CrowdLink(String mediaLink) {
+		if (!mediaLink) return null
+		return new File(mediaLink).name
+	}
+
 	void copyMediaLinks(List<String> links) {
 		assureCrowdDest()
 		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
 		assert resolveMediaLink : "Set a closure to resolve the mediaLink to file path"
 		links.each { String mediaLink->
-			Path crowdPath = corwdMediaPath.resolve(mediaLink)
+			Path crowdPath = corwdMediaPath.resolve(mediaLink2CrowdLink(mediaLink))
 			if (!Files.exists(crowdPath)) {
 				println "$mediaLink: copy"
 				Path sourcePath =resolveMediaLink(mediaLink)

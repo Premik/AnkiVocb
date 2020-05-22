@@ -1,9 +1,11 @@
 package vocb
 
 import java.nio.charset.StandardCharsets
+import java.nio.file.Path
 import java.text.Normalizer
 import java.util.concurrent.TimeUnit
 import java.util.regex.Pattern
+import groovy.io.FileType
 
 import javax.xml.transform.OutputKeys
 import javax.xml.transform.Source
@@ -18,7 +20,6 @@ import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import groovy.text.GStringTemplateEngine
 import groovy.transform.stc.ClosureParams
-import groovy.transform.stc.FirstParam
 import groovy.transform.stc.FromString
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
@@ -35,7 +36,7 @@ public class Helper {
 		proc.consumeProcessErrorStream(b)
 		if (waitSec > 0) {
 			proc.waitFor(waitSec, TimeUnit.SECONDS)
-		}		
+		}
 		println(proc.text)
 		System.err.println( b)
 	}
@@ -278,6 +279,16 @@ public class Helper {
 		st = st .replaceAll(/\}\}/, /'\}/)
 		st = st .replaceAll(/\[sound:/, /\[/)
 		return st
+	}
+
+	public static List<Path> matchingFiles(List<Path> roots, Object nameFilter) {
+		List<Path> ret =[]
+		roots.each { Path p->
+			p.toFile().traverse(type: FileType.FILES, nameFilter: nameFilter) { File f ->
+				ret.add(f.toPath())
+			}
+		}
+		return ret
 	}
 
 

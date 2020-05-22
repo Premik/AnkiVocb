@@ -1,10 +1,10 @@
 package vocb.anki.crowd
 
-import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
 import vocb.ConfHelper
+import vocb.Helper
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
@@ -15,7 +15,11 @@ public class Data2Crowd {
 	ConfHelper cfgHelper = ConfHelper.instance
 	@Lazy ConfigObject cfg = cfgHelper.cfg
 
-	Path dataPath= Paths.get("/data/src/AnkiVocb/db/")
+	Path rootPath= Paths.get("/data/src/AnkiVocb")
+	Path dataPath= rootPath.resolve("db")
+	Path templatePath = ["src", "main", "resources", "template"].inject(rootPath) { Path p, String ch-> p.resolve(ch)}
+	
+	
 	String destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = new Render(cfgHelper:cfgHelper)
 
@@ -33,22 +37,33 @@ public class Data2Crowd {
 		new VocbModel(
 				destCrowdRootFolder: Paths.get(destCrowdRootFolder),
 				resolveMediaLink: {String mediaLink ->
-					Path lnk = Paths.get("/data/src/AnkiVocb/db/media").resolve(mediaLink)
+					String fn = new File(mediaLink).name
+					List<Path> resolved = Helper.matchingFiles([dataPath, templatePath], fn)
+					if (!resolved) { //Non-existing. Assume db/media
+						return dataPath.resolve("media").resolve(mediaLink)
+					}
+					assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. $resolved"
+					return resolved[0]
+					/*
+					Path lnk = dataPath.resolve("media").resolve(mediaLink)
 					if (!Files.exists(lnk)) {
-						Path tmlpLnk = Paths.get("/data/src/AnkiVocb/src/main/resources/template").resolve(mediaLink)
+						Path tmlpLnk = templatePath.resolve(mediaLink)
 						if (Files.exists(tmlpLnk)) {
 							return tmlpLnk
 						}
 					}
-					return lnk
+					return lnk*/
 				})
 	}()
+	
+	
 
 	void concept2CrowdNote(Concept c, Note n) {
 		assert c?.firstTerm
 		assert n
 		int stars = dbMan.numberOfStarts(c?.freq)
 		String star = cfg.starSymbol?:"🟊"
+		def link = vocbModel.&mediaLink2CrowdLink
 		n.with {
 			Term ent = c.terms.values()[0]
 			Term cst1 = c.terms.values()[1]
@@ -56,18 +71,18 @@ public class Data2Crowd {
 			Term enx = c.examples.values()[0]
 			Term csx = c.examples.values()[1]
 
-			img= c?.img
+			img= link(c?.img)
 			freq= stars
 			foreign= ent.term
-			foreignTTS= ent.tts
+			foreignTTS= link(ent?.tts)
 			foreignExample= enx?.term
-			foreignExampleTTS= enx?.tts
+			foreignExampleTTS= link(enx?.tts)
 			n.'native' = cst1?.term
-			nativeTTS= cst1?.tts
+			nativeTTS= link(cst1?.tts)
 			nativeAlt= cst2?.term
-			nativeAltTTS= cst2?.tts
+			nativeAltTTS= link(cst2?.tts)
 			nativeExample= csx?.term
-			nativeExampleTTS = csx?.tts
+			nativeExampleTTS = link(csx?.tts)
 
 			(1..5).each {tags.remove(star*it)}
 			if (stars >0) {
@@ -113,7 +128,7 @@ public class Data2Crowd {
 	void exportToCrowd(int limit=10, int mod) {
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
-		vocbModel.copyMediaLinks(["_lightBulb.png"])
+		vocbModel.copyMediaLinks(["_lightBulb.png", "_JingleBells.jpg"])
 
 		(0..limit).collect {it} each {
 			int i = (it*mod) % dbMan.db.concepts.size()
@@ -126,7 +141,7 @@ public class Data2Crowd {
 	public static void main(String[] args) {
 
 		new Data2Crowd().with {
-			exportToCrowd(100, 100*100)
+			exportToCrowd(10, 100*100)
 		}
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
