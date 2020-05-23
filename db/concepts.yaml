@@ -290,7 +290,7 @@ concepts:
     tts: cs-samples/Ale neni to jejich vina.mp3
   state: ignoreImage
   freq: 1957586.00000
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples"]
 ##  all   ###################################################################
 - terms: 
   - term: all
@@ -312,7 +312,7 @@ concepts:
     tts: cs-samples/Mate snad vsichni oci.mp3
   img: img/all.jpeg
   freq: 1940329.50000
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples"]
 ##  them   ##################################################################
 - terms: 
   - term: them
@@ -356,7 +356,7 @@ concepts:
     tts: cs-samples/Ty jsi smutny.mp3
   img: img/you.jpeg
   freq: 1540817.58700
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples"]
 ##  one   ###################################################################
 - terms: 
   - term: one
@@ -444,7 +444,7 @@ concepts:
     tts: cs-samples/Odvedte toho psa ven.mp3
   img: img/out.jpeg
   freq: 1058897.00000
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples"]
 ##  know   ##################################################################
 - terms: 
   - term: know
@@ -523,7 +523,7 @@ concepts:
     tts: cs-samples/A on te videl.mp3
   img: img/he.jpeg
   freq: 5653229.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  with   ##################################################################
 - terms: 
   - term: with
@@ -561,7 +561,7 @@ concepts:
     tts: cs-samples/To je jeho duch.mp3
   state: ignoreImage
   freq: 4409709.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  have   ##################################################################
 - terms: 
   - term: have
@@ -1347,7 +1347,7 @@ concepts:
     tts: cs-samples/Tak me nechte jit.mp3
   img: img/go.jpeg
   freq: 983790.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  its   ###################################################################
 - terms: 
   - term: its
@@ -1445,7 +1445,7 @@ concepts:
     tts: cs-samples/My chceme penize nazpet.mp3
   img: img/we.jpeg
   freq: 915268.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  then   ##################################################################
 - terms: 
   - term: then
@@ -1914,7 +1914,7 @@ concepts:
     tts: cs-samples/Sel jsem do nemocnice.mp3
   state: ignoreImage
   freq: 690186.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  great   #################################################################
 - terms: 
   - term: great
@@ -2084,7 +2084,7 @@ concepts:
     tts: cs-samples/Musi se citit osamela.mp3
   state: ignoreImage
   freq: 639579.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  over   ##################################################################
 - terms: 
   - term: over
@@ -2955,7 +2955,7 @@ concepts:
     tts: cs-samples/Prave jsem dostal praci.mp3
   state: ignoreImage
   freq: 432016.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  tell   ##################################################################
 - terms: 
   - term: tell
@@ -3474,7 +3474,7 @@ concepts:
     tts: cs-samples/Poloz se na zada.mp3
   img: img/back.jpeg
   freq: 379741.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  young   #################################################################
 - terms: 
   - term: young
@@ -4194,7 +4194,7 @@ concepts:
     tts: cs-samples/Prave jsem prisla domu.mp3
   state: ignoreImage
   freq: 315132.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  stood   #################################################################
 - terms: 
   - term: stood

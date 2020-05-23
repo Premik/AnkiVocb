@@ -124,8 +124,8 @@ public class Pack {
 					int coverCount = export.count {it.firstTerm in words}
 					coverCount+= dbMan.ignoreConcepts.count {it.firstTerm in words } //Count ignoring concepts as being exported
 					int newWordsCount = words.size()-coverCount //Penalty for introducing new words
-					println "$it.key:  $coverCount-$newWordsCount"
-					-coverCount+newWordsCount*2
+					//println "$it.key:  $coverCount-$newWordsCount"
+					-coverCount+newWordsCount*3
 				}
 	}
 
@@ -147,14 +147,17 @@ public class Pack {
 		Set<Concept> replaced = [] as HashSet
 		findBestExamples().each {String normExample, Set<Concept> cps->
 			Concept sourceCp = cps.find { wn.normalizeSentence(it.examplesByLang("en")[0]?.term) == normExample }
-			assert sourceCp
+			//assert sourceCp
+			if (sourceCp) {
 			findConceptsCandidatesForGivenExample(normExample).values()
 					.each { Concept c->
 						if (!(c in replaced)) {
-						println "$c ${c.examplesByLang('en')[0]?.term} <- ${sourceCp.examplesByLang('en')[0].term} "
+						//println "$c ${c.examplesByLang('en')[0]?.term} <- ${sourceCp.examplesByLang('en')[0].term} "
+							c.examples = sourceCp.examples.clone()
 						}
 						replaced.add(c)
 					}
+			}
 		}
 	}
 
@@ -165,16 +168,16 @@ public class Pack {
 			pkgName = "JingleBells"
 			//exportWordsWithDepc(["I"], 1)
 			exportByOrigin(pkgName)
-			findBestExamples().each {println "${it}"}
+			//findBestExamples().each {println "${it}"}
 
 			/*findConceptsCandidatesForGivenExample("the horse was lean", false, true).each {k,v->
 			 println "${v} ${v.examples.values()*.term}"
 			 }*/
-			//forceBestExamplesReuse()
-			return
 
-			filterByStars (0..2)
-			//addDependencies(2)
+			//filterByStars (0..2)
+			
+			//addDependencies(1)
+			forceBestExamplesReuse()
 
 			printExport()
 			//sort()
