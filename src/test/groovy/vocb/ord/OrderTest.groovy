@@ -128,9 +128,9 @@ class OrderTest {
 		sol.with {
 			Order o = ctx.createInitialOrder()
 			Order no = o.clone()
-			no.lerpConcextPosition(0, o, 0d) //ration 0 -> no swap
+			no.lerpConcepttPosition(0, o, 0d) //ration 0 -> no swap
 			assert no == o
-			no.lerpConcextPosition(0, o, 1d)
+			no.lerpConcepttPosition(0, o, 1d)
 			assert no == o
 		}
 	}
@@ -145,11 +145,11 @@ class OrderTest {
 		assert no[0] == o[1]
 		assert o[0] == no[-1]
 		Order no1 = no.clone()
-		no.lerpConcextPosition(0, o, 0d) //ration 0 -> no swap
+		no.lerpConcepttPosition(0, o, 0d) //ration 0 -> no swap
 		assert no1 == no
 
 		assert no.indexMap[o[0]] == no.ord.size()-1
-		no.lerpConcextPosition(no.ord.size()-1, o, 1d)
+		no.lerpConcepttPosition(no.ord.size()-1, o, 1d)
 		assert no != no1
 		assert no == o
 	}
@@ -160,7 +160,7 @@ class OrderTest {
 		Order o2 = o.clone()
 		Random rnd = new Random(123)
 		for (int i=0;i<100;i++) {
-			o2.lerpConcextPosition(rnd.nextInt(o.ord.size()), o, rnd.nextDouble() )
+			o2.lerpConcepttPosition(rnd.nextInt(o.ord.size()), o, rnd.nextDouble() )
 			assert o2 == o
 		}
 	}

@@ -1,12 +1,9 @@
 package vocb
 
-import static org.junit.Assert.*
+import java.nio.file.Paths
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
-
-import groovy.transform.CompileStatic
-import vocb.Helper
 
 
 class HelperTest {
@@ -123,6 +120,14 @@ class HelperTest {
 		assert Helper.cutPaste(0,4, [1,2,3,4,5]) == [2,3,4,5,1]
 		assert Helper.cutPaste(4,0, [1,2,3,4,5]) == [5,1,2,3,4]
 		assert Helper.cutPaste(1,3, [1,2,3,4,5]) == [1,3,4,2,5]
+		
+	}
+	
+	@Test
+	@Disabled
+	void eachMatchingFile() {
+		new File("/tmp/work/1.txt") << "test"
+		assert Helper.matchingFiles([Paths.get("/tmp")], "1.txt")
 		
 	}
 }

@@ -15,7 +15,8 @@ public class ConceptDb {
 }
 
 @EqualsAndHashCode
-@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
+//@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
+@ToString(includePackage=false, ignoreNulls=true, includes=['firstTerm', 'state', 'freq'])
 public class Concept {
 	LinkedHashMap<String, Term> terms = [:]
 	//State state

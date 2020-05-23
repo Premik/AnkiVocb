@@ -18,9 +18,9 @@ public class Data2Crowd {
 	Path rootPath= Paths.get("/data/src/AnkiVocb")
 	Path dataPath= rootPath.resolve("db")
 	Path templatePath = ["src", "main", "resources", "template"].inject(rootPath) { Path p, String ch-> p.resolve(ch)}
+	List<CharSequence> staticMedia = ["_lightBulb.png"]
 	
-	
-	String destCrowdRootFolder = "/tmp/work/test"
+	CharSequence destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = new Render(cfgHelper:cfgHelper)
 
 
@@ -61,7 +61,7 @@ public class Data2Crowd {
 	void concept2CrowdNote(Concept c, Note n) {
 		assert c?.firstTerm
 		assert n
-		int stars = dbMan.numberOfStarts(c?.freq)
+		int stars = dbMan.numberOfStarsFreq(c?.freq)
 		String star = cfg.starSymbol?:"🟊"
 		def link = vocbModel.&mediaLink2CrowdLink
 		n.with {
@@ -125,15 +125,11 @@ public class Data2Crowd {
 
 	}
 
-	void exportToCrowd(int limit=10, int mod) {
+	void exportToCrowd(List<Concept> toExport) {
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
-		vocbModel.copyMediaLinks(["_lightBulb.png", "_JingleBells.jpg"])
-
-		(0..limit).collect {it} each {
-			int i = (it*mod) % dbMan.db.concepts.size()
-			mapConcept(dbMan.db.concepts[i])
-		}
+		vocbModel.copyMediaLinks(staticMedia)
+		toExport.each { mapConcept(it) }			
 		vocbModel.save()
 	}
 
@@ -141,7 +137,7 @@ public class Data2Crowd {
 	public static void main(String[] args) {
 
 		new Data2Crowd().with {
-			exportToCrowd(10, 100*100)
+			exportToCrowd(dbMan.db.concepts.take(5))
 		}
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}

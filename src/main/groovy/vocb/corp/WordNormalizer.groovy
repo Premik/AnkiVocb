@@ -29,6 +29,11 @@ public class WordNormalizer {
 				.map {String s ->s.toLowerCase()}
 	}
 
+	public String normalizeSentence(CharSequence sentence) {
+		if (!sentence) return ""
+		tokens(sentence).collect( Collectors.joining( " ") )
+	}
+
 
 
 	public List<String> sentences(CharSequence input) {
@@ -49,7 +54,7 @@ public class WordNormalizer {
 				.collectMany {  it.split(/[,;:]\s(=\s*)/) as List} //Split on non-full sentences
 				.collectMany { it.split(/\s+(?=\p{Lu})/) as List } //Missing dots, but capital letter next
 				.collect {it.trim()}
-				.collect {it.replaceAll(/[!?;.,"'":]$/, "") } //Remove sentence terminators 
+				.collect {it.replaceAll(/[!?;.,"'":]$/, "") } //Remove sentence terminators
 				.collect {it.trim()}
 				.collect {it.replaceAll("[\n\r]+", " ")} //remove newlines
 	}
@@ -63,10 +68,10 @@ public class WordNormalizer {
 		}
 		return ret
 	}
-	
+
 
 	public Map<String, Set<String>> wordsInSentences(CharSequence input) {
-		wordsInSentences(sentences(input)) 
+		wordsInSentences(sentences(input))
 	}
 
 

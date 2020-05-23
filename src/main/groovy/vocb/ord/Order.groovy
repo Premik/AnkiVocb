@@ -21,7 +21,9 @@ public class Order {
 	@Lazy double freqFitness = {
 		assert ctx
 		assert ord
-		1-(absSumDetlasFromFreqIdealOrder/ctx.freqWorstOrder.absSumDetlasFromFreqIdealOrder)
+		double d = ctx.freqWorstOrder.absSumDetlasFromFreqIdealOrder
+		if (!d) return 0
+		1-(absSumDetlasFromFreqIdealOrder/d)
 	}()
 
 	@Lazy int[] deltasFromFreqIdealOrder = deltasFrom(ctx.freqIdealOrder)
@@ -110,7 +112,7 @@ public class Order {
 		indexMapCached = null
 	}
 
-	public void lerpConcextPosition(int pos, Order other, double r) {		
+	public void lerpConcepttPosition(int pos, Order other, double r) {		
 		ConceptExtra a = ord[pos]
 		assert a
 		int otherPos = other.indexMap[a]
@@ -122,6 +124,7 @@ public class Order {
 	}
 
 	Order crossWith(Order o,int genNum=0) {
+		assert ord.size() ==  o.ord.size() 
 		Order ret = clone()
 		ret.genNum = genNum
 		int mutCount = Math.max(3d, ctx.rndConceptIndex/4)
@@ -129,7 +132,7 @@ public class Order {
 		
 		for (int i=0;i<mutCount;i++) {
 			//println ctx.rndRate
-			ret.lerpConcextPosition(ctx.rndConceptIndex, o, ctx.rndRate)
+			ret.lerpConcepttPosition(ctx.rndConceptIndex, o, ctx.rndRate)
 		}
 		ret.finalizeOrder()
 		return ret
@@ -138,7 +141,7 @@ public class Order {
 
 	@Override
 	public String toString() {
-		String ord = ord.take(4).collect{"$it.c.firstTerm:$it.id"}
+		String ord = ord.findAll().take(4).collect{"$it.c.firstTerm:$it.id"}
 		"${fitness.round(2)} ($genNum) $ord"
 	}
 
@@ -167,7 +170,7 @@ public class Order {
 		}
 	}
 	
-	public void fromRootedYaml(Reader r) {
+	public void fromRootedYaml(Reader r) {		
 		LinkedHashSet newOrd = new LinkedHashSet()		
 		r.splitEachLine(/\s*-\s+/) {
 			assert it[1]
@@ -180,7 +183,8 @@ public class Order {
 			leftOver.remove(ce)
 			return ce
 		}
-		ord.addAll(leftOver)		 
+		ord.addAll(leftOver)
+		assert ord.findAll().size() == leftOver.findAll().size()		 
 	}
 	
 	public void load(Path p) {
