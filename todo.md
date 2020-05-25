@@ -19,3 +19,11 @@
 - Kompozitni slova po jejich castech?
 - Preferovat, aby slova z examples byly drive
  
+ 
+ ## sql
+ select c.* from cards as c where nid = '1590322168665'
+ 
+select c.id as cardId, c.nid as nodeId,  n.guid,c.ord,  n.tags,  n.flds from cards as c left join  notes as n on c.nid == n.id
+select * from cards where id =  1590322168668
+//1590322168668
+ 

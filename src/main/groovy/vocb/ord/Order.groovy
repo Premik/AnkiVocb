@@ -3,20 +3,23 @@ package vocb.ord
 import java.nio.file.Path
 
 import vocb.Helper
+import vocb.data.Concept
 
 public class Order {
-	
+
 	static int maxDist = 20
-	static double[] rateDis = (0..maxDist).collect{ 1-(it/40) }
+	static double[] rateDis = (0..maxDist).collect{
+		1-(it/40)
+	}
 	// [1, 0.975, 0.95, 0.925, 0.9, 0.875, 0.85, 0.825, 0.8, 0.775, 0.75, 0.725, 0.7, 0.675, 0.65, 0.625, 0.6, 0.575, 0.55, 0.525, 0.5]
 
 	SolvingContext ctx
 
 	List<ConceptExtra> ord
 	int genNum
-	
-	
-	
+
+
+
 
 	@Lazy double freqFitness = {
 		assert ctx
@@ -51,18 +54,18 @@ public class Order {
 		}
 		return ret
 	}
-	
+
 	@Lazy double similarityFitness = {
 		assert ctx
 		assert ord
-		
+
 		double sum = 0
 		for (int i=0;i<ord.size()-1;i++) {
-			sum += similarityFitnessAt(i)			
+			sum += similarityFitnessAt(i)
 		}
-		return sum		
+		return sum
 	}()
-	
+
 	double similarityFitnessAt(int indx) {
 		ConceptExtra a = ord[indx]
 		assert a
@@ -75,16 +78,16 @@ public class Order {
 			if (!sim) continue
 			sum+= 1-sim*rateDis[dist]
 		}
-		
+
 		return sum/maxDist
 	}
-	
-	
+
+
 	double getFitness() {
 		(freqFitness +
-		similarityFitness*3)/4
+		similarityFitness*9)/10
 	}
-	
+
 	public void finalizeOrder() {
 		ord = ord.asImmutable()
 	}
@@ -105,14 +108,14 @@ public class Order {
 	Order clone() {
 		return new Order(ord:new ArrayList(ord), ctx:ctx)
 	}
-	
-	public void lerpToPosition(int from, int to, double r) {		
+
+	public void lerpToPosition(int from, int to, double r) {
 		int newOtherPos = (to -from)*r+from
 		Helper.cutPaste(from, newOtherPos, ord)
 		indexMapCached = null
 	}
 
-	public void lerpConcepttPosition(int pos, Order other, double r) {		
+	public void lerpConcepttPosition(int pos, Order other, double r) {
 		ConceptExtra a = ord[pos]
 		assert a
 		int otherPos = other.indexMap[a]
@@ -123,20 +126,34 @@ public class Order {
 		lerpToPosition(pos, otherPos, r)
 	}
 
+	void lerpCross(Order ret, Order o) {
+		int to = ctx.rndConceptIndex
+		int from = ctx.rndConceptIndex
+		if (to == from) return
+		if (from >= to) {
+			int t = to
+			from = to
+			to = t
+		}
+		
+		for (int i=from;i<to;i++) {
+			ret.lerpConcepttPosition(i, o, ctx.rndRate)
+		}
+	}
+
 	Order crossWith(Order o,int genNum=0) {
-		assert ord.size() ==  o.ord.size() 
+		assert ord.size() ==  o.ord.size()
 		Order ret = clone()
 		ret.genNum = genNum
-		int mutCount = Math.max(3d, ctx.rndConceptIndex/4)
-		
-		
+		int mutCount = Math.max(1d, ctx.rndConceptIndex/10)
+		//int mutCount =1
 		for (int i=0;i<mutCount;i++) {
-			//println ctx.rndRate
-			ret.lerpConcepttPosition(ctx.rndConceptIndex, o, ctx.rndRate)
+			lerpCross(ret, o)
 		}
+
 		ret.finalizeOrder()
 		return ret
-		
+
 	}
 
 	@Override
@@ -156,41 +173,60 @@ public class Order {
 	public int hashCode() {
 		return ord.hashCode()
 	}
-	
+
 	public void toRootedYaml(PrintWriter pw) {
-		ord.each {			 
-			pw.println "- ${it.c.firstTerm}" 
+		ord.each {
+			pw.println "- ${it.c.firstTerm}"
 		}
 	}
-	
+
 	public void save(Path p) {
-		p.getParent().toFile().mkdirs()		
+		p.getParent().toFile().mkdirs()
 		p.withPrintWriter("UTF-8") {
 			toRootedYaml(it)
 		}
 	}
-	
-	public void fromRootedYaml(Reader r) {		
-		LinkedHashSet newOrd = new LinkedHashSet()		
-		r.splitEachLine(/\s*-\s+/) {
-			assert it[1]
-			newOrd.add(it[1])
-		}
-		//newOrd.addAll(ord)
-		List<Order> leftOver = new LinkedList(ord)
-		ord = newOrd.collect { String trm->			 
+
+	public void fromRootedYaml(Reader r) {
+		LinkedHashSet<String> newOrd = parseOrderYaml(r)
+		
+		List<Order> leftOver = new LinkedList(ord?:[])
+		int origSize = leftOver.size()
+
+		ord = newOrd.collect { String trm->
 			ConceptExtra ce = ctx.byFirstTerm[trm]
-			leftOver.remove(ce)
-			return ce
-		}
+			if (leftOver.remove(ce)) {
+				return ce
+			}  else {
+				return null
+			}
+
+		}.findAll()
 		ord.addAll(leftOver)
-		assert ord.findAll().size() == leftOver.findAll().size()		 
+
+		assert origSize == 0 || ord.findAll().size() == origSize
 	}
-	
+
 	public void load(Path p) {
-		p.withReader("UTF-8") {
+		p.withReader("UTF-8") {			
 			fromRootedYaml(it)
 		}
 	}
+	
+	
+
+	
+	
+	
+	public static Set<String> parseOrderYaml(Reader r) {
+		LinkedHashSet<String> ret = [] as LinkedHashSet
+		r.splitEachLine(/\s*-\s+/) {
+			assert it[1]
+			ret.add(it[1])
+		}
+		return ret
+	}
+	
+	
 	
 }

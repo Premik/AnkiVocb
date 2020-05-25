@@ -9,7 +9,7 @@ public class CrowdParser {
 	String json
 
 	JsonGenerator noteGenerator = new JsonGenerator.Options()
-	.excludeFieldsByName("model", "fieldNames")	
+	.excludeFieldsByName("model", "fieldNames")
 	.build()
 
 	@Lazy Map jsonRoot = {
@@ -36,6 +36,14 @@ public class CrowdParser {
 		}
 	}
 
+	String getDeckName() {
+		jsonRoot.name
+	}
+
+	void setDeckName(String name) {
+		jsonRoot.name = name
+	}
+
 	Set<String> notesAllFieldValues() {
 		assert jsonRoot : "Run parse() first"
 		Set<String> ret = new HashSet<String>()
@@ -55,7 +63,7 @@ public class CrowdParser {
 
 
 	public String toJsonString() {
-		  JsonOutput.prettyPrint(noteGenerator.toJson(jsonRoot))
+		JsonOutput.prettyPrint(noteGenerator.toJson(jsonRoot))
 	}
 
 	public void saveTo(File deckJson) {

@@ -46,19 +46,19 @@ public class Manager {
 	List<Concept> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
-	BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, 1000*1000]
+	static BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, 1000*1000]
 		.collect{it*1000 as BigDecimal} as BigDecimal[]
 
-	Integer numberOfStarsFreq(BigDecimal freq) {
+	public static Integer numberOfStarsFreq(BigDecimal freq) {
 		if (!freq) return null
 		freqRanges.findIndexOf { freq < it} -1
 	}
 
-	Integer numberOfStars(Concept c) {
+	public static Integer numberOfStars(Concept c) {
 		numberOfStarsFreq(c?.freq)
 	}
 
-	String starsOf(Concept c, boolean pad=true) {
+	public static String starsOf(Concept c, boolean pad=true) {
 		String s = '🟊'*numberOfStars(c)
 		if (pad) return s.padRight(10, '  ')
 		return pad
@@ -134,7 +134,7 @@ public class Manager {
 	public String resolveMedia(String term, String mediaExt, String group="", Closure whenNotFound) {
 		String mediaLink = termd2MediaLink(term, mediaExt)
 		Path mediaPath = mediaLinkPath(mediaLink, group)
-		if (Files.exists(mediaPath)) return mediaPath
+		if (Files.exists(mediaPath)) return mediaRootPath.relativize(mediaPath)
 		mediaPath.parent.toFile().mkdirs()
 		whenNotFound(mediaPath)
 		return mediaRootPath.relativize(mediaPath)

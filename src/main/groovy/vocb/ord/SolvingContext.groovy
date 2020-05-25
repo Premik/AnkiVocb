@@ -65,6 +65,9 @@ public class SolvingContext {
 	Order createInitialOrder(int genNum=0) {
 		return new Order(ord: concepts, ctx:this)
 	}
+	
+	
+	
 
 
 
