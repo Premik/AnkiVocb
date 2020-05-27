@@ -12,6 +12,7 @@ import vocb.Helper
 public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
+	List<Term> examples = []
 }
 
 @EqualsAndHashCode
