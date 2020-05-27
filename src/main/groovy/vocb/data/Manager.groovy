@@ -20,9 +20,9 @@ public class Manager {
 	Path getConceptsPath()  {
 		storagePath.resolve(conceptFilename.toString())
 	}
-	
+
 	CharSequence conceptFilename = "concepts.yaml"
-	
+
 
 	@Lazy Path mediaRootPath = {
 		storagePath.resolve("media")
@@ -42,14 +42,14 @@ public class Manager {
 	Map<String, Set<Concept>> conceptsByOrigin = [:]
 
 	Map<String, Set<Concept>> conceptsByEnWordsInSample = [:]
-	
+
 	Map<String, Set<Concept>> conceptsByEnSample = [:]
 
 	List<Concept> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
 	static BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, 1000*1000]
-		.collect{it*1000 as BigDecimal} as BigDecimal[]
+	.collect{it*1000 as BigDecimal} as BigDecimal[]
 
 	public static Integer numberOfStarsFreq(BigDecimal freq) {
 		if (!freq) return null
@@ -72,7 +72,7 @@ public class Manager {
 		conceptsByStar = [:].withDefault {[] as LinkedHashSet}
 		conceptsByOrigin = [:].withDefault {[] as LinkedHashSet}
 		conceptsByEnSample = [:].withDefault {[] as LinkedHashSet}
-		
+
 		conceptsByEnWordsInSample = conceptsByWordsInSample()
 		ignoreConcepts.clear()
 		db.concepts.each { Concept c->
@@ -90,10 +90,10 @@ public class Manager {
 				conceptsByOrigin[o].add(c)
 			}
 			c.examplesByLang("en")
-			    .collect {wn.normalizeSentence(it.term)}
-				.each {
-					conceptsByEnSample[it].add(c)
-				}
+					.collect {wn.normalizeSentence(it.term)}
+					.each {
+						conceptsByEnSample[it].add(c)
+					}
 		}
 	}
 
@@ -152,7 +152,7 @@ public class Manager {
 	}
 
 	public String save(Path path= conceptsPath) {
-		reindex()		
+		reindex()
 		assert path : "Not opened"
 		String yaml = storage.dbToYaml(db)
 		path.write(yaml)
@@ -190,13 +190,13 @@ public class Manager {
 
 	Map<String, Set<Concept>> conceptsByWordsInSample(String lang="en") {
 		Map<String, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
-		
-		db.concepts.each {Concept c ->		    
+
+		db.concepts.each {Concept c ->
 			wn.uniqueueTokens(c.examples.values()
 					.find {it.lang==lang}?.term ?: "")
 					.each { String word->
 						ret[word].add(c)
-					}				
+					}
 		}
 		return ret
 	}
@@ -292,6 +292,19 @@ public class Manager {
 		save()
 	}
 
+	void moveSamples() {
+		LinkedHashSet<Example> ret  = [] as LinkedHashSet
+		db.concepts.each { Concept c->
+			if (c.examples) {
+				ret.addAll( new Example(terms: c.examples.values().collect()))
+			}
+		}
+		//ret.sort {it.firstTerm}
+		db.examples = ret.collect()
+		db.concepts.each {it.examples.clear()}
+		
+	}
+
 
 	public static void main(String[] args) {
 		new Manager().tap {
@@ -300,14 +313,18 @@ public class Manager {
 			printStats()
 			//moveToSubFolders()
 			//println allTextWithLang("en")
+			moveSamples()
+			save()
+
+			println "Resaved "
 		}
 
 
-		//dbMan.save()
+
 		//println "${Helper.roundDecimal(dbMan.completeness*100, 0)}% completed"
 
 
-		//println "Resaved "
+
 	}
 
 

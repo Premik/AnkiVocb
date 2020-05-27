@@ -24,6 +24,7 @@ public class ConceptYamlStorage {
 		ConceptDb db = new ConceptDb(version: doc.version)
 
 		db.concepts= doc.concepts.collect(this.&parseConcept)
+		db.examples = doc.examples.collect(this.&parseExample)
 		return db
 	}
 
@@ -42,22 +43,21 @@ public class ConceptYamlStorage {
 		return c
 	}
 
+	public Example parseExample(Map exList) {
+		assert exList
+		new Example().tap{ Example e->
+			e.terms = exList.terms.collect(this.&parseTerm)
+		}
+	}
+
+
 	public Term parseTerm(Map term) {
 		new Term(term)
 	}
 
 	public String yamlHash(String key, String value) {
 		if (!key || !value) return ""
-		boolean reserved = value in [
-			'true',
-			'false',
-			"Yes",
-			"No",
-			"yes",
-			"no",
-			"off",
-			"on"
-		]
+		boolean reserved = value in ['true', 'false', "Yes", "No", "yes", "no", "off", "on"]
 		boolean specialChar = value[0] in  ('''!@#$%^&*("')''' as List)
 		boolean middleChar = false
 		if (value.readLines().size() ==1) {
@@ -76,8 +76,8 @@ public class ConceptYamlStorage {
 	public String dbToYaml(ConceptDb db) {
 		assert db
 		String concepts=listToYaml(db.concepts.collect(this.&conceptToYaml))
-		String samples=listToYaml(db.examples.collect(this.&termToYaml))
-		"version: $db.version\n${yamlHash('concepts', concepts)}\n${yamlHash('samples', samples)}"
+		String samples=listToYaml(db.examples.collect(this.&exampleToYaml))
+		"version: $db.version\n${yamlHash('concepts', concepts)}\n${yamlHash('examples', samples)}"
 	}
 
 	void appendBanner(String label, BigDecimal progress, StringBuilder sb, int width=70) {
@@ -92,9 +92,20 @@ public class ConceptYamlStorage {
 		sb.append("\n")
 	}
 
+	public String exampleToYaml(Example e) {
+		assert e
+		StringBuilder sb = new StringBuilder()
+
+		String examples=listToYaml(e.terms.collect(this.&termToYaml))
+		String ft = e.firstTerm
+		assert ft : "Term list is blank for a sample $e"
+
+		appendYamlHash("terms", examples, sb)
+		return sb.toString()
+	}
+
 	public String conceptToYaml(Concept c) {
 		assert c
-
 
 
 		StringBuilder sb = new StringBuilder()

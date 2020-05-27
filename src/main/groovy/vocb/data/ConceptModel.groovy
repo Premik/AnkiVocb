@@ -12,7 +12,22 @@ import vocb.Helper
 public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
-	List<Term> examples = []
+	List<Example> examples = []
+}
+
+@Canonical
+@ToString(includePackage=false, ignoreNulls=true)
+@AutoClone
+public class Example {
+	List<Term> terms = []
+	public String getFirstTerm() {terms[0]?.term}
+	
+	public Term getAt(int i) {
+		return terms[i]
+	}
+	
+	public List<Term> byLang(String lng) { terms.findAll {it.lang == lng }}
+
 }
 
 @EqualsAndHashCode
@@ -57,6 +72,10 @@ public class Concept {
 		BigDecimal grpSum = grp.sum() / grp.size()
 		BigDecimal fldSum = [state =="ignoreImage" ? "1" : img, freq].findAll().size()/2.0
 		(grpSum*2 + fldSum)/3
+	}
+	
+	public Term getAt(int i) {
+		return terms[i]
 	}
 
 
