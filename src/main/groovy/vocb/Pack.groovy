@@ -120,11 +120,8 @@ public class Pack {
 	}
 
 	Map<String, Set<Concept>> findBestExamples() {
-		dbMan.conceptsByEnSample
-				.collectEntries {String normSent, Set<Concept> cps->
-					[normSent, cps.intersect(export) ] //Only concept for export
-				}
-				.findAll {it.value?.size() >0}
+		dbMan.conceptsByEnWordsInSample
+				.submap(export.collect{it.firstTerm})								
 				.sort {Entry<String, Set<Concept>> it->
 					Set<String> words = wn.uniqueueTokens(it.key)
 					int coverCount = export.count {it.firstTerm in words}
@@ -135,7 +132,7 @@ public class Pack {
 				}
 	}
 
-	Map<String, Concept> findConceptsCandidatesForGivenExample(String example, boolean includeAlreadyHavingSample=false, boolean includeNonExported=false) {
+	Map<String, Concept> findConceptsCandidatesForGivenExample(String example, boolean includeNonExported=false) {
 		example = wn.normalizeSentence(example)
 		Set<String> words = wn.uniqueueTokens(example)
 		dbMan.conceptByFirstTerm
@@ -144,9 +141,9 @@ public class Pack {
 				.findAll{ String word, Concept c->
 					includeNonExported || export.contains(c)
 				}
-				.findAll { String word, Concept c->
+				/*.findAll { String word, Concept c->
 					includeAlreadyHavingSample || wn.normalizeSentence(c.examplesByLang("en")[0]?.term) != example
-				}
+				}*/
 	}
 
 	void forceBestExamplesReuse() {
@@ -179,18 +176,22 @@ public class Pack {
 			pkgName = "JingleBells"
 			//exportWordsWithDepc(["I"], 1)
 			exportByOrigin(pkgName)
-			//findBestExamples().each {println "${it}"}
+			findBestExamples().each {println "${it}"}
+			return
 
-			/*findConceptsCandidatesForGivenExample("the horse was lean", false, true).each {k,v->
+			/*findConceptsCandidatesForGivenExample("the horse was lean", false).each {k,v->
 			 println "${v} ${v.examples.values()*.term}"
 			 }*/
+
 
 			//filterByStars (0..2)
 			
 			//addDependencies(1)
 			forceBestExamplesReuse()
+			
 
-			//printExport()
+			printExport()
+			return
 			sort()
 			printExport()
 			//_JingleBellsBackground.jpg

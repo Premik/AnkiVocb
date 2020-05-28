@@ -30,7 +30,7 @@ public class ExampleAppender {
 		}
 	}
 
-	void run() {
+	void loadFromAzureDict() {
 
 		dbMan.load()
 		List<Concept> noEx= findTodo()
@@ -74,6 +74,7 @@ public class ExampleAppender {
 		dbMan.save()
 	}
 
+	@Deprecated
 	int reuseExisting(boolean loadSave=true) {
 
 		if (loadSave) dbMan.load()
@@ -99,7 +100,7 @@ public class ExampleAppender {
 		Map<String, Set<String>> wordsInSentences = wn.wordsInSentences(text)
 
 		dbMan.load()
-		reuseExisting(false)
+		
 		List<Concept> noEx= findTodo()
 		int i=0
 		for (Concept c in noEx) {
@@ -113,8 +114,7 @@ public class ExampleAppender {
 					s.collectEntries {
 						[it, new Term(it, "en")]}
 					)
-			i++
-			reuseExisting(false)
+			i++		
 
 		}
 		dbMan.save()

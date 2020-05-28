@@ -3,6 +3,7 @@ package vocb.data
 import java.nio.file.Files
 import java.nio.file.Path
 
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 import vocb.TestUtils
@@ -21,9 +22,11 @@ class ManagerTest {
 	Concept c = new Concept(
 	terms: [apple:t1, jablko:t2],
 	state: "state", img:"",
-	examples: [(s1.term):s1, (s2.term): s2],
+	
 	freq:1.1d,
 	origins:["o1", "o2"])
+	
+	Example e = new Example(terms:[s1, s2])
 
 
 	void createBlank() {
@@ -90,13 +93,16 @@ class ManagerTest {
 		assert mediaLink ==  "grp2/term2.txt"
 	}
 
-	@Test
+	@Test	
 	void indexTest() {
 		m.db.concepts.add(c)
+		m.db.examples.add(e)
 		m.reindex()
-		assert m.conceptByFirstTerm["apple"] == c
-		String sentenceNorm = m.wn.normalizeSentence(s1.term)
-		assert m.conceptsByEnSample[sentenceNorm]
-		assert m.conceptsByEnSample[sentenceNorm].contains(c)
+		assert m.conceptByFirstTerm["apple"] == c	
+		assert m.conceptsByEnWordsInSample	
+		assert m.conceptsByEnWordsInSample["apple"].contains(c)
+		
 	}
+	
+	
 }
