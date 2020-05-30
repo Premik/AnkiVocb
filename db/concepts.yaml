@@ -5672,11 +5672,10 @@ concepts:
   img: img/laid.jpeg
   freq: 145490.00000
   origins: ["corpus", "conceptDbSamples"]
-##  led   ################################################################### no en term
+##  led   ################################################################### t0:tts:missing
 - terms: 
   - term: led
-    lang: cs
-    tts: cs-terms/led.mp3
+    lang: en
   - term: vedl
     lang: cs
     tts: cs-terms/vedl.mp3
@@ -6011,7 +6010,7 @@ concepts:
   img: img/case.jpeg
   freq: 138689.50000
   origins: ["corpus", "conceptDbSamples"]
-##  student   ############################################################### no en term
+##  student   ############################################################### t0:tts:missing
 - terms: 
   - term: student
     lang: en
@@ -8037,7 +8036,7 @@ concepts:
   img: img/please.jpeg
   freq: 58839.50000
   origins: ["conceptDbSamples"]
-##  shot   ################################################################## no en term
+##  shot   ################################################################## t0:tts:missing
 - terms: 
   - term: shot
     lang: en
@@ -8395,8 +8394,6 @@ concepts:
   origins: ["conceptDbSamples"]
 ##  data   ################################################################## single term only|no en term
 - terms: 
-  - term: data
-    lang: en
   - term: data
     lang: cs
     tts: cs-terms/data-cs.mp3
@@ -8850,11 +8847,10 @@ concepts:
   img: img/busy.jpeg
   freq: 35453.55000
   origins: ["conceptDbSamples"]
-##  film   ################################################################## no en term
+##  film   ################################################################## t0:tts:missing
 - terms: 
   - term: film
-    lang: cs
-    tts: cs-terms/film-cs.mp3
+    lang: en
   - term: fólie
     lang: cs
     tts: cs-terms/folie.mp3
@@ -8939,7 +8935,7 @@ concepts:
   img: img/tea.jpeg
   freq: 33960.05000
   origins: ["conceptDbSamples"]
-##  test   ################################################################## no en term
+##  test   ################################################################## t0:tts:missing
 - terms: 
   - term: test
     lang: en
@@ -9315,7 +9311,7 @@ concepts:
   img: img/proceed.jpeg
   freq: 24123.80000
   origins: ["conceptDbSamples"]
-##  hit   ################################################################### no en term
+##  hit   ################################################################### t0:tts:missing
 - terms: 
   - term: hit
     lang: en
@@ -9847,7 +9843,7 @@ concepts:
   img: img/piano.jpeg
   freq: 13521.10000
   origins: ["conceptDbSamples"]
-##  virus   ################################################################# no en term
+##  virus   ################################################################# t0:tts:missing
 - terms: 
   - term: virus
     lang: en
@@ -9872,7 +9868,7 @@ concepts:
   img: img/diamonds.jpeg
   freq: 12851.10000
   origins: ["conceptDbSamples"]
-##  cars   ################################################################## 4 terms. Up to 3 supported only|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  cars   ################################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: cars
     lang: en

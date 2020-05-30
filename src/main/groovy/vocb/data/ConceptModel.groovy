@@ -17,6 +17,17 @@ public class ConceptDb {
 	public List<Term> examplesByLang(String lng) {
 		examples.collectMany {it.byLang(lng) }
 	}
+
+	public List<String> validate() {
+		List<String> ret = []
+		(concepts+examples).each { o->
+			List<String> innerVal = o.validate()
+			if (innerVal) {
+				ret.addAll("$o.firstTerm: ${innerVal.join('|')}")
+			}
+		}
+		return ret
+	}
 }
 
 @Canonical
@@ -34,6 +45,14 @@ public class Example {
 
 	public List<Term> byLang(String lng) {
 		terms.findAll {it.lang == lng }
+	}
+
+	public List<String> validate() {
+		List<String> ret = []
+		terms.eachWithIndex {Term t, Integer i->
+			ret.addAll(t.validate().collect{"t${i}:${it}"} )
+		}
+		return ret
 	}
 }
 

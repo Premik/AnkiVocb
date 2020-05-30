@@ -17,6 +17,8 @@ class OrderTest {
 
 
 
+	
+	
 	@Lazy OrderSolver sol = {
 		assert dbEntry
 		File dbFile = new File(dbEntry.toURI()).tap {
@@ -29,6 +31,14 @@ class OrderTest {
 				dbStoragePath:  Paths.get(dbFile.parentFile.toURI() )
 				)
 	}()
+	
+	@Test
+	void resave() {
+		sol.dbMan.with {
+			
+			 save(Paths.get("/tmp/work/1.yaml"))
+		}
+	}
 
 	@Test
 	void setupTest() {
