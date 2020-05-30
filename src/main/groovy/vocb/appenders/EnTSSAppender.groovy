@@ -8,6 +8,7 @@ import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
 import vocb.tts.AwsCliPollyTTS
+import static vocb.Ansi.*
 
 public class EnTSSAppender {
 
@@ -35,13 +36,14 @@ public class EnTSSAppender {
 
 
 		dbMan.withTermsByLang("en") {Concept c, Term t->
-			if (c.terms.size() >3 || c.examples.size()>2) {
-				println "Ignoring: $c"
+			if (c.terms.size() >3) {
+				println color("Ignoring: $c", WHITE)
 				return
 			}
 			if (!dbMan.linkedMediaExists(t.tts) ) {
 				i++
 				if (i > limit) {
+					println color("Limit reached", RED)
 					return
 				}
 				t.tts = dbMan.resolveMedia(t.term, "mp3", "en-terms") { Path path ->
@@ -53,6 +55,7 @@ public class EnTSSAppender {
 				}
 			}
 		}
+		dbMan.save()
 	}
 
 	void runExamples() {
@@ -74,6 +77,7 @@ public class EnTSSAppender {
 			}
 			i++
 			if (i > limit) {
+				println color("Limit reached", RED)
 				break
 			}
 			String enWord = c.firstTerm
@@ -95,7 +99,7 @@ public class EnTSSAppender {
 	public static void main(String[] args) {
 		EnTSSAppender a = new EnTSSAppender(limit:200)
 		a.runTerms()
-		a.runExamples()
+		//a.runExamples()
 		println "Done"
 	}
 }

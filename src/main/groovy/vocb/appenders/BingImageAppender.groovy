@@ -84,15 +84,14 @@ public class BingImageAppender {
 			Path selectedImg = pathForSelected(sd)
 			assert Files.exists(selectedImg)
 			Path resizedP = ImgTrn.resizeImage(selectedImg, 320, 200)
-			c.img =  dbMan.termd2MediaLink(trm, "jpeg")
-			dbMan.save()
-
 			
-			dbMan.resolveMedia(trm, "jpeg", "img") { Path dbPath->
+			
+			c.img = dbMan.resolveMedia(trm, "jpeg", "img") { Path dbPath->
 				Files.move(resizedP, dbPath)
 				println "Stored $dbPath"
 				
 			}
+			dbMan.save()
 			if (sd.runEditor) {
 				String editorCmd = ConfHelper.cfg?.ui?.editor
 				assert editorCmd : "No editor configured in the ankivocb.conf/ui/editor path"
