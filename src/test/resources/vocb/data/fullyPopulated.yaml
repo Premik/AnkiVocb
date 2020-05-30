@@ -10,13 +10,15 @@ concepts:
   - term: ve
     lang: cs
     tts: ve.mp3
-  examples: 
+  img: in.jpeg
+  freq: 8715316.00000
+  origins: ["Supaplex"]
+
+examples:
+- terms: 
   - term: Not in my city.
     lang: en
     tts: Not in my city.mp3
   - term: Ne v mém městě.
     lang: cs
-    tts: Ne v mem meste.mp3
-  img: in.jpeg
-  freq: 8715316.00000
-  origins: ["Supaplex"]
+    tts: Ne v mem meste.mp3  

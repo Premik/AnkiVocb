@@ -38,13 +38,7 @@ public class Pack {
 	LinkedHashSet<Concept> export = [] as LinkedHashSet
 	Order lastOrder
 
-	List<Concept> conceptsFrom(List<String> enWords) {
-		enWords
-				.findAll()
-				.collect {it.toLowerCase()}
-				.collect { dbMan.conceptByFirstTerm[it] }
-				.findAll { it.state != 'ignore'}
-	}
+	
 
 	void exportConceptsWithDepc(List<Concept> enConcepts, int depth=1) {
 		if (depth <= 0) return
@@ -59,7 +53,7 @@ public class Pack {
 	}
 
 	void exportWordsWithDepc(List<String> enWords, int depth=1) {
-		exportConceptsWithDepc(conceptsFrom(enWords), depth)
+		exportConceptsWithDepc(dbMan.conceptsFromWordList(enWords), depth)
 	}
 
 	void addDependencies(int depth=1) {

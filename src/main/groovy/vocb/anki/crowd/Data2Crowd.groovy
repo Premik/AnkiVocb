@@ -5,11 +5,14 @@ import java.nio.file.Paths
 
 import vocb.ConfHelper
 import vocb.Helper
+import vocb.corp.WordNormalizer
 import vocb.data.Concept
+import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
 import vocb.template.Render
 
+//@CompileStatic
 public class Data2Crowd {
 
 	ConfHelper cfgHelper = ConfHelper.instance
@@ -18,8 +21,8 @@ public class Data2Crowd {
 	Path rootPath= Paths.get("/data/src/AnkiVocb")
 	Path dataPath= rootPath.resolve("db")
 	Path templatePath = ["src", "main", "resources", "template"].inject(rootPath) { Path p, String ch-> p.resolve(ch)}
-	List<CharSequence> staticMedia = ["_lightBulb.png"]
-	
+	List<CharSequence> staticMedia = ["_lightBulb.png" as CharSequence]
+
 	CharSequence destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = new Render(cfgHelper:cfgHelper)
 
@@ -45,20 +48,20 @@ public class Data2Crowd {
 					assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. $resolved"
 					return resolved[0]
 					/*
-					Path lnk = dataPath.resolve("media").resolve(mediaLink)
-					if (!Files.exists(lnk)) {
-						Path tmlpLnk = templatePath.resolve(mediaLink)
-						if (Files.exists(tmlpLnk)) {
-							return tmlpLnk
-						}
-					}
-					return lnk*/
+			 Path lnk = dataPath.resolve("media").resolve(mediaLink)
+			 if (!Files.exists(lnk)) {
+			 Path tmlpLnk = templatePath.resolve(mediaLink)
+			 if (Files.exists(tmlpLnk)) {
+			 return tmlpLnk
+			 }
+			 }
+			 return lnk*/
 				})
 	}()
-	
-	
 
-	void concept2CrowdNote(Concept c, Note n) {
+
+
+	void concept2CrowdNote(Concept c, Example e, Note n) {
 		assert c?.firstTerm
 		assert n
 		int stars = dbMan.numberOfStarsFreq(c?.freq)
@@ -68,8 +71,8 @@ public class Data2Crowd {
 			Term ent = c.terms.values()[0]
 			Term cst1 = c.terms.values()[1]
 			Term cst2 = c.terms.values()[2]
-			Term enx = c.examples.values()[0]
-			Term csx = c.examples.values()[1]
+			Term enx = e[0]
+			Term csx = e[1]
 
 			img= link(c?.img)
 			freq= stars
@@ -92,12 +95,12 @@ public class Data2Crowd {
 	}
 
 
-	void mapConcept(Concept c) {
+	void mapConcept(Concept c, Example e) {
 		if (c.state == "ignore") return
 			assert c?.firstTerm
 		println c
 		Note n = vocbModel.updateNoteHaving(c.firstTerm)
-		concept2CrowdNote(c, n)
+		concept2CrowdNote(c, e, n)
 	}
 
 	NoteModel renderCardTemplate( ConfigObject renderCardTemplate, NoteModel targetM=vocbModel.noteModel) {
@@ -113,12 +116,12 @@ public class Data2Crowd {
 
 		[cards, targetM.tmpls].transpose().each {Map card, TemplateModel m->
 			println "$card.name -> $m"
-			m.name = card.name			
+			m.name = card.name
 			m.qfmt = render.render( card.qfmt)
 			m.afmt = render.render( card.afmt)
 			m.bqfmt = card.bqfmt
 			m.bafmt = card.bafmt
-			
+
 		}
 		targetM.tmpls = padded
 		return  targetM
@@ -126,18 +129,33 @@ public class Data2Crowd {
 	}
 
 	void exportToCrowd(Collection<Concept> toExport) {
+		assert false : "Depricated"
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
 		vocbModel.copyMediaLinks(staticMedia)
-		toExport.each { mapConcept(it) }			
+		toExport.each { mapConcept(it) }
 		vocbModel.save()
 	}
+
+	void exportExamplesToCrowd(Collection<Example> toExport, Set<Concept> ignore = []) {
+		WordNormalizer wn =dbMan.wn
+		toExport.each { Example e->
+			dbMan.conceptsFromWordsInExample(e)
+					.findAll {!ignore.contains(it) }
+					.each { Concept c->
+						mapConcept(c, e)
+					}
+		}
+
+	}
+
+
 
 
 	public static void main(String[] args) {
 
 		new Data2Crowd().with {
-			exportToCrowd(dbMan.db.concepts.take(5))
+			exportExamplesToCrowd(dbMan.db.examples.take(1) )
 		}
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
