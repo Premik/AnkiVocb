@@ -12,7 +12,7 @@ import vocb.Helper
 public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
-	List<Example> examples = []
+	LinkedHashSet<Example> examples = []
 
 	public List<Term> examplesByLang(String lng) {
 		examples.collectMany {it.byLang(lng) }
@@ -75,7 +75,8 @@ public class Concept {
 			ret.add("No terms")
 		}
 		else {
-			if (terms.size() < 3) ret.add("terms.size < 3")
+			if (terms.size() < 2) ret.add("single term only")
+			if (terms.size() > 3) ret.add("${terms.size()} terms. Up to 3 supported only")
 		}
 		if (state != "ignoreImage" && !img) ret.add("no img")
 		if (freq == null) ret.add("no freq")
