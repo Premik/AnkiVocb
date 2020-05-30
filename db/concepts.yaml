@@ -49,11 +49,11 @@ concepts:
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex", "conceptDbSamples", "corpus"]
-##  i   ##################################################################### t0:pron:missing
 - terms: 
   - term: i
     lang: en
     tts: en-terms/i.mp3
+    pron: aɪ
   - term: já
     lang: cs
     tts: cs-terms/ja.mp3

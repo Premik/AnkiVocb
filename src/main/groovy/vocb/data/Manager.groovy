@@ -43,7 +43,7 @@ public class Manager {
 	Map<String, Set<Concept>> conceptsByOrigin = [:]
 
 	Map<String, Set<Concept>> conceptsByEnWordsInSample = [:]
-	
+
 	Map<String, Set<Example>> examplesByFirstTermWords = [:]
 
 
@@ -75,7 +75,7 @@ public class Manager {
 		conceptsByOrigin = [:].withDefault {[] as LinkedHashSet}
 		examplesByFirstTermWords = [:].withDefault {[] as LinkedHashSet}
 
-		
+
 		ignoreConcepts.clear()
 		db.concepts.each { Concept c->
 			String ft = c.firstTerm
@@ -92,13 +92,13 @@ public class Manager {
 				conceptsByOrigin[o].add(c)
 			}
 		}
-		
+
 		db.examples.each { Example e->
 			wn.tokens(e.firstTerm).each {
 				examplesByFirstTermWords[it].add(e)
 			}
 		}
-		
+
 		conceptsByEnWordsInSample = conceptsByWordsInSample()
 
 	}
@@ -109,15 +109,15 @@ public class Manager {
 				c.terms.collect { Term t->
 					cl(c, t)
 				}
-				
+
 			}
 		}
 		assert !includeExamples : "Not implemented"
 		/*if (includeExamples) {
-			db.examples.each { Example e->
-				cl(e, t)
-			}
-		}*/
+		 db.examples.each { Example e->
+		 cl(e, t)
+		 }
+		 }*/
 	}
 
 	void withTermsByLang(String lang, boolean includeExamples=false, Closure cl) {
@@ -173,7 +173,7 @@ public class Manager {
 		assert false: "Add examples warning too"
 	}
 
-	public Map<CharSequence, Set<Concept>> groupByMedia(boolean stripExt=false, boolean includeImg=true) {
+	public Map<CharSequence, Set<Concept>> groupConceptsByMedia(boolean stripExt=false, boolean includeImg=true) {
 		Map<CharSequence, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
 		db.concepts.each { Concept c->
 			if (c.img && includeImg) {
@@ -192,14 +192,26 @@ public class Manager {
 				}
 			}
 		}
-		
-		
-
 		return ret
 	}
 
+	public Map<CharSequence, Set<Term>> groupCTermsByMedia(boolean stripExt=false) {
+		Map<CharSequence, Set<Term>> ret = [:].withDefault {[] as LinkedHashSet}
+		List<Term> allTerms = db.concepts.collectMany {it.terms} + db.examples.collectMany {it.terms}
+		allTerms.each { Term t->
+			if (t.tts) {
+				ret[t.tts].add(t)
+				if (stripExt) { ret[Helper.stripExt(t.tts)].add(t)}
+			}
+		}
+		return ret
+	}
+
+
+
 	Map<String, Set<Concept>> conceptsByWordsInSample(String lang="en") {
 		Map<String, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
+
 
 		db.examplesByLang("en").each {Term t ->
 			wn.uniqueueTokens(t.term).each { String word->
@@ -208,7 +220,7 @@ public class Manager {
 				if (!c) {
 					if (word.endsWith("s")) c = conceptByFirstTerm[word[0..-2]]
 					else c=  conceptByFirstTerm["${word}s"]
-				} 
+				}
 				if (!c) {
 					println "${color('Unknown term', YELLOW)} ${color(word, BOLD)} used in the ${color(t.term, BLUE)} example."
 				}
@@ -217,32 +229,42 @@ public class Manager {
 		}
 		return ret
 	}
-	
-	
-	
+
+
+
 	public void validate() {
-		
+
 		db.validate().each {println it}
-		Map<CharSequence, Set<Concept>> grp = groupByMedia()
+		Map<CharSequence, Set<Concept>> cGrp = groupConceptsByMedia()
+		Map<CharSequence, Set<Term>> tGrp = groupCTermsByMedia()
 
 		println "${'-'*80}"
 		println "Missing:"
-		grp.each { CharSequence mp, Set<Concept> cs->
+		tGrp.each { CharSequence mp, Set<Term> t->
 			if (!linkedMediaExists(mp)) {
-				println "${mp} $cs"
+				println "${mp} $t"
 			}
 		}
 		println "${'-'*80}"
-		println "Not used (FIX:ME - subfolders:"
-		mediaRootPath.toFile().eachFile { File f->
-			if ( !grp.containsKey(f.name) && f.isFile()) {
-				println "rm -f '${f}'"
+		//println tGrp
+		
+		println "Not used "
+		
+		mediaRootPath.toFile().eachFileRecurse { File f->
 
+			String s = "${f.parentFile.name}/${f.name}".toString()
+			
+			
+					
+			if ( !tGrp.containsKey(s) && !cGrp.containsKey(s)  && f.isFile()) {
+				//println "${s}"
+				println "rm -f '${f}'"
+				//println tGrp.keySet()
 			}
 		}
 		println "${'-'*80}"
 		println "Clashes"
-		grp.findAll{it.value.size() > 1} each {CharSequence ml, Set<Concept> cs->
+		cGrp.findAll{it.value.size() > 1} each {CharSequence ml, Set<Concept> cs->
 			List<Term> termsWithTts = cs.collectMany {it.terms.findAll {it.tts == ml} }
 			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
 				println "${cs.collect {it.firstTerm} }  $ml: ${termsWithTts}. $cs"
@@ -286,7 +308,7 @@ public class Manager {
 	Collection<String> filterByStars(Collection<String> src, List<Integer> starRange = (0..2)) {
 		src.findAll { conceptsByStar[it] in starRange }
 	}
-	
+
 	List<Concept> conceptsFromWordList(Collection<String> enWords) {
 		enWords
 				.findAll()
@@ -294,22 +316,22 @@ public class Manager {
 				.collect { conceptByFirstTerm[it] }
 				.findAll { it.state != 'ignore'}
 	}
-	
+
 	List<Concept> conceptsFromWordsInSentence(CharSequence sen) {
 		Set<String> words = wn.uniqueueTokens(wn.normalizeSentence(sen))
 		return conceptsFromWordList(words)
 	}
 
-	
+
 	List<Concept> conceptsFromWordsInExample(Example e) {
 		conceptsFromWordsInSentence(e.firstTerm)
 	}
-	
-	
+
+
 	public void moveToSubFolders() {
 
 
-		groupByMedia().each { CharSequence mp, Set<Concept> cs->
+		groupConceptsByMedia().each { CharSequence mp, Set<Concept> cs->
 			Concept c = cs[0]
 			if (c.img == mp && !mp.contains("img/")) {
 				c.img = "img/$mp"
@@ -341,7 +363,7 @@ public class Manager {
 			load()
 			validate()
 			printStats()
-			
+
 			//moveToSubFolders()
 			//println allTextWithLang("en")
 			//moveSamples()
