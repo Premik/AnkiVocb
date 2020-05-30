@@ -83,7 +83,7 @@ public class Manager {
 				System.err.println("Warninig: duplicate word '$ft'")
 			}
 			if (ft) conceptByFirstTerm[ft] = c
-			c.terms.values().each { Term t->
+			c.terms.each { Term t->
 				conceptsByTerm[t.term].add(c)
 			}
 			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
@@ -106,7 +106,7 @@ public class Manager {
 	void withTerms(boolean includeExamples=false, Closure cl) {
 		db.concepts.each { Concept c->
 			if (c.state != "ignore") {
-				c.terms.collect { String key, Term t->
+				c.terms.collect { Term t->
 					cl(c, t)
 				}
 				
@@ -185,7 +185,7 @@ public class Manager {
 
 
 			//ret[Filena c.img]+= c
-			c.terms.values().each { Term t->
+			c.terms.each { Term t->
 				if (t.tts) {
 					ret[t.tts].add(c)
 					if (stripExt) { ret[Helper.stripExt(t.tts)].add(c)}
@@ -243,7 +243,7 @@ public class Manager {
 		println "${'-'*80}"
 		println "Clashes"
 		grp.findAll{it.value.size() > 1} each {CharSequence ml, Set<Concept> cs->
-			List<Term> termsWithTts = cs.collectMany {it.terms.values().findAll {it.tts == ml} }
+			List<Term> termsWithTts = cs.collectMany {it.terms.findAll {it.tts == ml} }
 			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
 				println "${cs.collect {it.firstTerm} }  $ml: ${termsWithTts}. $cs"
 			}

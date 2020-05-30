@@ -60,7 +60,7 @@ public class Example {
 //@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
 @ToString(includePackage=false, ignoreNulls=true, includes=['firstTerm', 'state', 'freq'])
 public class Concept {
-	LinkedHashMap<String, Term> terms = [:]
+	List<Term> terms = []
 	//State state
 
 	String state
@@ -68,15 +68,15 @@ public class Concept {
 	BigDecimal freq
 	Set<String> origins = [] as HashSet
 
-	public String getFirstTerm() {terms.values()[0]?.term}
-	public List<Term> termsByLang(String lng) { terms?.values()?.findAll {it.lang == lng }}
+	public String getFirstTerm() {terms[0]?.term}
+	public List<Term> termsByLang(String lng) { terms?.findAll {it.lang == lng }}
 	public Term getEnTerm() { termsByLang("en")[0]}
 	public Term getCsTerm() { termsByLang("cs")[0]}
 	public Term getCsAltTerm() { termsByLang("cs")[1]}
 	public void addEnCsTerms(String en, String cs, String csAlt=null) {
-		terms[en] = Term.enTerm(en)
-		terms[cs] = Term.enTerm(cs)
-		if (csAlt) { terms[csAlt] = Term.enTerm(csAlt)}
+		terms[0] = Term.enTerm(en)
+		terms[1] = Term.enTerm(cs)
+		if (csAlt) { terms[2] = Term.enTerm(csAlt)}
 	}
 
 	/*public Term getEnTerm() {
@@ -102,7 +102,7 @@ public class Concept {
 		if (!termsByLang("en")) ret.add("no en term")
 		if (!termsByLang("cs")) ret.add("no cs term")
 		if (appendTermWarnings) {
-			terms.values().eachWithIndex {Term t, Integer i->
+			terms.eachWithIndex {Term t, Integer i->
 				ret.addAll(t.validate().collect{"t${i}:${it}"} )
 			}
 		}

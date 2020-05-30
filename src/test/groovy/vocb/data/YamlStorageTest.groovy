@@ -64,8 +64,8 @@ class YamlStorageTest {
 			assert origins[0] == "org1"
 			assert terms
 			assert terms.size() == 2
-			assertSimpleTerm(terms.values()[0], 1)
-			assertSimpleTerm(terms.values()[1], 2)
+			assertSimpleTerm(terms[0], 1)
+			assertSimpleTerm(terms[1], 2)
 		}
 	}
 
@@ -140,7 +140,7 @@ class YamlStorageTest {
 		origins: ["o1", "o2"]""".stripIndent()
 		Term t1 = new Term("apple", "en")
 		Term t2 = new Term("jablko", "cs")
-		Concept c = new Concept(terms: [apple:t1, jablko:t2], state: "state", img:"", freq:null, origins:["o1", "o2"])
+		Concept c = new Concept(terms: [t1, t2], state: "state", img:"", freq:null, origins:["o1", "o2"])
 		println st.conceptToYaml(c)
 
 		TestUtils.compareString(st.conceptToYaml(c),y)

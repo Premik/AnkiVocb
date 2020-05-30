@@ -8,12 +8,10 @@ concepts:
     lang: cs
   state: populate
   origins: ["top500"]
-##  a   #####################################################################
 - terms: 
   - term: a
     lang: en
   state: ignore
-##  the   ###################################################################
 - terms: 
   - term: the
     lang: en

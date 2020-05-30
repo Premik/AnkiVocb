@@ -37,7 +37,7 @@ public class TranslationAppender {
 		for (Concept c in noCs) {
 			Map trnJson = trn.dictLookup(c.firstTerm)
 			trn.extractTopTrns(trnJson).each {String csWord ->
-				c.terms.put(csWord, new Term(csWord, "cs"))
+				c.terms.add(new Term(csWord, "cs"))
 			}
 			dbMan.save()
 			if (i>limit) {

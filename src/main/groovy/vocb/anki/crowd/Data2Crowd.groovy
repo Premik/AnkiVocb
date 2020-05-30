@@ -68,9 +68,9 @@ public class Data2Crowd {
 		String star = cfg.starSymbol?:"🟊"
 		def link = vocbModel.&mediaLink2CrowdLink
 		n.with {
-			Term ent = c.terms.values()[0]
-			Term cst1 = c.terms.values()[1]
-			Term cst2 = c.terms.values()[2]
+			Term ent = c[0]
+			Term cst1 = c[1]
+			Term cst2 = c[2]
 			Term enx = e[0]
 			Term csx = e[1]
 

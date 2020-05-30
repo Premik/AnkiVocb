@@ -68,7 +68,7 @@ public class WordsSource {
 				}
 				continue
 			}
-			c = new Concept(terms: [w:t], freq:corp[w], origins:[sourceName])
+			c = new Concept(terms: [t], freq:corp[w], origins:[sourceName])
 			
 			println "${color(w.padLeft(10), BOLD)}: added $frq $stars ${color(wordsInSentences[w].join('|'), BLUE)}"
 			i++
