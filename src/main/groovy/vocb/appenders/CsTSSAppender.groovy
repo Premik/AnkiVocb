@@ -12,6 +12,7 @@ import vocb.data.Manager
 import vocb.data.Term
 import vocb.tts.AwsCliPollyTTS
 import vocb.tts.LocalTTS
+import static vocb.Ansi.*
 
 public class CsTSSAppender {
 
@@ -24,13 +25,13 @@ public class CsTSSAppender {
 	void run() {
 		dbMan.load()
 		int i = 0;
-		dbMan.withTermsByLang("cs", true) {Concept c, Term t->
-			if (c.terms.size() >3 || c.examples.size()>2) {
+		dbMan.withTermsByLang("cs", false) {Concept c, Term t->
+			if (c.terms.size() >3) {
 				//println "Ignoring: $c"
 				return
 			}
 			if (i >limit) {
-
+				println color("Limit reached", RED)
 				return
 			}
 			

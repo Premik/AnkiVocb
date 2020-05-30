@@ -30,6 +30,10 @@ concepts:
     lang: en
   state: ignore
 - terms: 
+  - term: ve
+    lang: en
+  state: ignore
+- terms: 
   - term: the
     lang: en
   state: ignore
@@ -4235,6 +4239,16 @@ concepts:
   - term: velký
     lang: cs
     tts: cs-terms/velky.mp3
+  img: img/big.jpeg
+  freq: 181717.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  bigger   ################################################################ t0:tts:missing
+- terms: 
+  - term: bigger
+    lang: en
+  - term: větší
+    lang: cs
+    tts: cs-terms/vetsi.mp3
   img: img/big.jpeg
   freq: 181717.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9161,15 +9175,17 @@ concepts:
   img: img/diamonds.jpeg
   freq: 12851.10000
   origins: ["conceptDbSamples"]
-##  cars   ################################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  cars   ################################################################## t0:tts:missing
 - terms: 
   - term: cars
     lang: en
     pron: kɑrz
   - term: auta
     lang: cs
+    tts: cs-terms/auta.mp3
   - term: vozy
     lang: cs
+    tts: cs-terms/vozy.mp3
   img: img/cars.jpeg
   freq: 12638.30000
   origins: ["conceptDbSamples"]
@@ -10018,137 +10034,172 @@ concepts:
   img: img/jingle.jpeg
   freq: 1631.31000
   origins: ["JingleBells"]
-##  example   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  example   ############################################################### no img|t0:tts:missing
 - terms: 
   - term: example
     lang: en
   - term: příklad
     lang: cs
+    tts: cs-terms/priklad.mp3
   - term: ukázka
     lang: cs
+    tts: cs-terms/ukazka.mp3
   freq: 62028.40000
   origins: ["corpus"]
-##  term   ################################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  term   ################################################################## no img|t0:tts:missing
 - terms: 
   - term: term
     lang: en
   - term: termín
     lang: cs
+    tts: cs-terms/termin.mp3
   - term: pojem
     lang: cs
+    tts: cs-terms/pojem.mp3
   freq: 54088.85000
   origins: ["corpus"]
-##  sad   ################################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  sad   ################################################################### no img|t0:tts:missing
 - terms: 
   - term: sad
     lang: en
   - term: smutné
     lang: cs
+    tts: cs-terms/smutne.mp3
   - term: smutný
     lang: cs
+    tts: cs-terms/smutny.mp3
   freq: 41879.55000
   origins: ["corpus"]
-##  unknown   ############################################################### no img|t0:tts:missing|t1:tts:missing
+##  unknown   ############################################################### no img|t0:tts:missing
 - terms: 
   - term: unknown
     lang: en
   - term: neznámý
     lang: cs
+    tts: cs-terms/neznamy.mp3
   freq: 34067.90000
   origins: ["corpus"]
-##  chooses   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  chooses   ############################################################### no img|t0:tts:missing
 - terms: 
   - term: chooses
     lang: en
   - term: zvolí
     lang: cs
+    tts: cs-terms/zvoli.mp3
   - term: vybírá
     lang: cs
+    tts: cs-terms/vybira.mp3
   freq: 64872.00000
   origins: ["corpus"]
-##  version   ############################################################### no img|t0:tts:missing|t1:tts:missing
+##  version   ############################################################### no img|t0:tts:missing
 - terms: 
   - term: version
     lang: en
   - term: verze
     lang: cs
+    tts: cs-terms/verze.mp3
   freq: 31817.00000
   origins: ["corpus"]
-##  level   ################################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  level   ################################################################# no img|t0:tts:missing
 - terms: 
   - term: level
     lang: en
   - term: úroveň
     lang: cs
+    tts: cs-terms/uroven.mp3
   - term: hladina
     lang: cs
+    tts: cs-terms/hladina.mp3
   freq: 26427.00000
   origins: ["corpus"]
-##  risk   ################################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  risk   ################################################################## no img|t0:tts:missing
 - terms: 
   - term: risk
     lang: en
   - term: riziko
     lang: cs
+    tts: cs-terms/riziko.mp3
   - term: nebezpečí
     lang: cs
+    tts: cs-terms/nebezpeci.mp3
   freq: 22810.00000
   origins: ["corpus"]
-##  shields   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  shields   ############################################################### no img|t0:tts:missing
 - terms: 
   - term: shields
     lang: en
   - term: štíty
     lang: cs
+    tts: cs-terms/stity.mp3
   - term: kryty
     lang: cs
+    tts: cs-terms/kryty.mp3
   freq: 19736.00000
   origins: ["corpus"]
-##  weighs   ################################################################ no img|t0:tts:missing|t1:tts:missing
+##  weighs   ################################################################ no img|t0:tts:missing
 - terms: 
   - term: weighs
     lang: en
   - term: váží
     lang: cs
+    tts: cs-terms/vazi.mp3
   freq: 10946.00000
   origins: ["corpus"]
-##  pillow   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  pillow   ################################################################ no img|t0:tts:missing
 - terms: 
   - term: pillow
     lang: en
   - term: polštář
     lang: cs
+    tts: cs-terms/polstar.mp3
   - term: poduška
     lang: cs
+    tts: cs-terms/poduska.mp3
   freq: 10631.00000
   origins: ["corpus"]
-##  ankle   ################################################################# no img|t0:tts:missing|t1:tts:missing
+##  ankle   ################################################################# no img|t0:tts:missing
 - terms: 
   - term: ankle
     lang: en
   - term: kotník
     lang: cs
+    tts: cs-terms/kotnik.mp3
   freq: 5801.00000
   origins: ["corpus"]
-##  meters   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  meters   ################################################################ no img|t0:tts:missing
 - terms: 
   - term: meters
     lang: en
   - term: metry
     lang: cs
+    tts: cs-terms/metry.mp3
   - term: měřiče
     lang: cs
+    tts: cs-terms/merice.mp3
   freq: 5786.00000
   origins: ["corpus"]
-##  regenerates   ########################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  regenerates   ########################################################### no img|t0:tts:missing
 - terms: 
   - term: regenerates
     lang: en
   - term: regeneruje
     lang: cs
+    tts: cs-terms/regeneruje.mp3
   - term: obnovuje
     lang: cs
+    tts: cs-terms/obnovuje.mp3
   freq: 1344.00000
+  origins: ["corpus"]
+##  arrived   ############################################################### no img|no freq|t0:tts:missing
+- terms: 
+  - term: arrived
+    lang: en
+  - term: přijel
+    lang: cs
+    tts: cs-terms/prijel.mp3
+  - term: přijela
+    lang: cs
+    tts: cs-terms/prijela.mp3
   origins: ["corpus"]
 
 examples: 

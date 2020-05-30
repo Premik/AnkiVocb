@@ -5,6 +5,7 @@ import java.text.Normalizer
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import static vocb.Helper.utf8
+import static vocb.Ansi.*
 
 public class HttpHelper {
 
@@ -32,11 +33,11 @@ public class HttpHelper {
 			readTimeout = connectionProps.readTimeout
 			hdrs.each { String k, v->
 				setRequestProperty(k, v.toString())
-				println "$k: $v"
+				println "${color(k, BOLD)}: ${color(v, WHITE)}"
 			}
 			println """\
 				$u
-				$payload
+				${color(payload, BLUE)}
 			""".stripIndent()
 
 			outputStream.write(payload.getBytes(utf8))
@@ -51,7 +52,7 @@ public class HttpHelper {
 		assert url
 		String key = url.toString()
 		if (cache.isCached(key)) {
-			println "Cache hit for $key"
+			println color("Cache hit for", WHITE) + key
 			cache.subPathForKey(key).withInputStream { BufferedInputStream rsp->
 				c(rsp)
 			}

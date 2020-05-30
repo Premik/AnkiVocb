@@ -109,13 +109,15 @@ public class Manager {
 				c.terms.collect { String key, Term t->
 					cl(c, t)
 				}
-				if (includeExamples) {
-					c.examples.collect { String key, Term t->
-						cl(c, t)
-					}
-				}
+				
 			}
 		}
+		assert !includeExamples : "Not implemented"
+		/*if (includeExamples) {
+			db.examples.each { Example e->
+				cl(e, t)
+			}
+		}*/
 	}
 
 	void withTermsByLang(String lang, boolean includeExamples=false, Closure cl) {
