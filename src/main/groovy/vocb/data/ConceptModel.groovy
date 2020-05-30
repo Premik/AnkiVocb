@@ -104,6 +104,7 @@ public class Concept {
 		if (appendTermWarnings) {
 			terms.eachWithIndex {Term t, Integer i->
 				ret.addAll(t.validate().collect{"t${i}:${it}"} )
+				if (!t.pron && t.lang=="en") ret.add("t${i}:pron:missing")
 			}
 		}
 		return ret
