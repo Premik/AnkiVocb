@@ -10,7 +10,7 @@ import com.xlson.groovycsv.CsvParser
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 import vocb.ConfHelper
-
+import static vocb.Ansi.*
 
 public class Corpus {
 
@@ -156,18 +156,31 @@ public class Corpus {
 		}.take(x)
 	}
 
-	public BigDecimal phraseFreq(String phrase, int skipWordsFreq=1) {	
+	public BigDecimal phraseFreq(String phrase, int skipWordsFreq=1) {
 		Map<String, BigDecimal> wf = wordFreq.withDefault {0}
 		List<String> parts = phrase.split(' ')
-		if (parts.any {wf[it] < skipWordsFreq}) return 0 //Phrase contains an unknow word,  			
+		if (parts.any {wf[it] < skipWordsFreq}) return 0 //Phrase contains an unknow word,
 		parts.add(phrase)
 		parts.collect {wf[it]}.average()
 	}
 
 	List<String> topXOf(List<String> terms, int minFreq =1) {
 		terms
-		  .findAll {String s-> phraseFreq(s) >=minFreq}
-		  .sort { -phraseFreq(it)  }
+				.findAll {String s-> phraseFreq(s) >=minFreq}
+				.sort { -phraseFreq(it)  }
+	}
+
+	public BigInteger getAt(String word) {
+		BigInteger ret = wordFreq[word]
+		if (ret) return ret
+		if (word.endsWith("s")) {
+			word = word[0..-2] //Cur the pluar
+		} else {
+			word = "${word}s"
+		}
+		ret = wordFreq[word]
+		if (ret) return ret
+		println color(word.padLeft(10), BOLD) + color(" - not in corpus" , RED)
 	}
 
 	static Corpus buildDef() {

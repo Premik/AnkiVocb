@@ -7,6 +7,7 @@ import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
+import static vocb.Ansi.*
 
 public class WordsSource {
 
@@ -17,7 +18,7 @@ public class WordsSource {
 	@Lazy Corpus corp = Corpus.buildDef()
 	BigDecimal minFreq= 0
 	BigDecimal maxFreq= 10e10
-	int limit=100
+	int limit=0
 	
 	Similarity sim = new Similarity()
 	boolean simulation = false
@@ -31,31 +32,34 @@ public class WordsSource {
 
 	void fromText(String text) {
 		assert sourceName
+		
 		List<String> words = new ArrayList(wn.uniqueueTokens(text))
-				.findAll {String s ->				
-					corp.wordFreq[s] > minFreq && corp.wordFreq[s] < maxFreq }
+				.findAll {String s ->					
+					corp[s] > minFreq && corp[s] < maxFreq }
 				.sort{ String a, String b->
-					-(corp.wordFreq[a]?:0) <=> -(corp.wordFreq[b]?:0)
+					-(corp[a]?:0) <=> -(corp[b]?:0)
 				}
 
 
 
 
-		println "Processing ${words.size()} words"
+		println "Processing ${color(words.size().toString(), BOLD)} words"
+		
 		Map<String, List<String>> wordsInSentences = wn.wordsInSentences(text)
 		int i= 0
 		for (String w in words) {
-			if (i> limit) {
+			if (limit > 0 && i> limit) {
+				println color("Limit reached", RED)
 				break
 			}
 
 			Term t = new Term(w, "en")
-			BigDecimal frq = Helper.roundDecimal((corp.wordFreq[w]?:0), 3)
-			String stars  = '🟊'*dbMan.numberOfStarsFreq(frq)
+			BigDecimal frq = Helper.roundDecimal((corp[w]?:0), 3)
+			String stars  = color('🟊'*dbMan.numberOfStarsFreq(frq), YELLOW )
 			
 			Concept c= dbMan.conceptByFirstTerm[w]
 			if (c != null) {
-				println "X $w - already in db $stars "
+				println color("${w.padLeft(10)}  - already in db $stars ", WHITE)
 				if (!c?.origins?.contains(sourceName)) {
 					if (c.origins == null) {
 						c.origins = []
@@ -64,9 +68,9 @@ public class WordsSource {
 				}
 				continue
 			}
-			c = new Concept(terms: [w:t], freq:corp.wordFreq[w], origins:[sourceName])
+			c = new Concept(terms: [w:t], freq:corp[w], origins:[sourceName])
 			
-			println "+ $w: added $frq $stars ${wordsInSentences[w].join('|')}"
+			println "${color(w.padLeft(10), BOLD)}: added $frq $stars ${color(wordsInSentences[w].join('|'), BLUE)}"
 			i++
 			dbMan.db.concepts.add(c)
 			if (i % 10 == 0) {
@@ -127,22 +131,21 @@ public class WordsSource {
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			String tx = '''
-			Unknown term 'sad' used in the 'You are sad.' example.
-			Unknown term 'versions' used in the 'Earlier versions may be different.' example.
-			Unknown term 'weighs' used in the 'It weighs over five tons.' example.
-			Unknown term 'levels' used in the 'It has many levels.' example.
-			Unknown term 'risks' used in the 'Proceed at your own risks.' example.
-			Unknown term 'ankles' used in the 'Your feet and your ankles are relaxed.' example.
-			Unknown term 've' used in the 'That could've been my money!' example.
-			Unknown term 'shields' used in the 'Shields at full power.' example.
-			Unknown term 'arrived' used in the 'Has her niece arrived from England?' example.
-			Unknown term 'bigger' used in the 'Making of small and bigger parts.' example.
-			Unknown term 've' used in the 'I should've done it myself.' example.
-			Unknown term 've' used in the 'I've been worried since yesterday.' example.
-			Unknown term 'regenerates' used in the 'The human body regenerates itself.' example.
-			Unknown term 'meters' used in the 'It was within two meters of the house.' example.
-			Unknown term 'chooses' used in the 'The user chooses either yes or no.' example.
-			Unknown term 'pillows' used in the 'The pillows are too hard!' example.
+			Unknown term versions used in the Earlier versions may be different. example.
+Unknown term weighs used in the It weighs over five tons. example.
+Unknown term levels used in the It has many levels. example.
+Unknown term risks used in the Proceed at your own risks. example.
+Unknown term ankles used in the Your feet and your ankles are relaxed. example.
+Unknown term ve used in the That could've been my money! example.
+Unknown term shields used in the Shields at full power. example.
+Unknown term arrived used in the Has her niece arrived from England? example.
+Unknown term bigger used in the Making of small and bigger parts. example.
+Unknown term ve used in the I should've done it myself. example.
+Unknown term ve used in the I've been worried since yesterday. example.
+Unknown term regenerates used in the The human body regenerates itself. example.
+Unknown term meters used in the It was within two meters of the house. example.
+Unknown term chooses used in the The user chooses either yes or no. example.
+Unknown term pillows used in the The pillows are too hard! example.
 			'''
 			
 			sourceName = "corpus"
