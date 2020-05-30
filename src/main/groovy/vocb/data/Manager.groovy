@@ -165,9 +165,9 @@ public class Manager {
 		return yaml
 	}
 
-	public BigDecimal getCompleteness() {
-		if (db.concepts.size() ==0) return 0
-		(db.concepts.sum {it.completeness}  as BigDecimal) / db.concepts.size()
+	public List<String> getWarnings() {
+		db.concepts.collectMany {it.validate()}
+		assert false: "Add examples warning too"
 	}
 
 	public Map<CharSequence, Set<Concept>> groupByMedia(boolean stripExt=false, boolean includeImg=true) {

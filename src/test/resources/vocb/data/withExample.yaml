@@ -1,6 +1,6 @@
 version: 0.0.1
 concepts: 
-##  kitty   ################################################################# █ 91%
+##  kitty   ################################################################# t1:tts:missing|t2:tts:missing
 - terms: 
   - term: kitty
     lang: en
@@ -8,12 +8,13 @@ concepts:
   - term: koťátko
     lang: cs
   - term: kočička
-    lang: cs
-  examples: 
+    lang: cs 
+  img: kitty.jpeg
+  freq: 278.47900
+
+examples:
+- terms:
   - term: Kitty needs some attention.
     lang: en
   - term: Koťátko potřebuje trochu pozornosti.
     lang: cs  
-  img: kitty.jpeg
-  freq: 278.47900
-  

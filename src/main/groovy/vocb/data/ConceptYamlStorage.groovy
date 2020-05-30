@@ -81,15 +81,13 @@ public class ConceptYamlStorage {
 		"version: $db.version\n${yamlHash('concepts', concepts)}\n${yamlHash('examples', samples)}"
 	}
 
-	void appendBanner(String label, BigDecimal progress, StringBuilder sb, int width=70) {
+	void appendBanner(String label, String warnings, StringBuilder sb, int width=70) {
 		if (!label) return
 			sb.append("##  ")
 		sb.append(label)
 		sb.append('   ' + '#'*(70-label.length()))
-		if (progress < 0.99) {
-			sb.append(" ${Helper.progressBar(progress)}")
-			sb.append(" ${Helper.roundDecimal(progress*100,0)}%")
-		}
+		if (warnings) sb.append(" "  +warnings)
+		
 		sb.append("\n")
 	}
 
@@ -119,7 +117,7 @@ public class ConceptYamlStorage {
 		//String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
 		assert ft : "Term list is blank for a conpcept $c"
-		appendBanner(ft, c.completeness, sb)
+		appendBanner(ft, c.validate().join("|"), sb)
 		appendYamlHash("terms", terms, sb)
 		//appendYamlHash("examples", examples, sb)
 		/*sb.append("terms: ")
