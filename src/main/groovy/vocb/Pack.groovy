@@ -7,23 +7,30 @@ import java.util.Map.Entry
 import vocb.anki.crowd.Data2Crowd
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
+import vocb.data.Example
 import vocb.data.Manager
 import vocb.ord.ConceptExtra
 import vocb.ord.Order
 import vocb.ord.OrderSolver
-
+import static vocb.Ansi.*
 
 //@CompileStatic
 public class Pack {
 
 	Path destFolder = Paths.get("/tmp/work")
 	String pkgName ="basic0"
+	
+	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+	
+	@Lazy String sentences = packageRootPath.resolve(pkgName).resolve("sentences.txt").text
 
 	@Lazy Path destPath = {
 		destFolder.resolve(pkgName).tap {
 			toFile().mkdirs()
 		}
 	}()
+	
+	
 
 	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString()).tap {
 		staticMedia.add "_${pkgName}Background.jpg"
@@ -35,7 +42,10 @@ public class Pack {
 
 	WordNormalizer wn = new WordNormalizer()
 
+	@Deprecated
 	LinkedHashSet<Concept> export = [] as LinkedHashSet
+	LinkedHashSet<Example> exportExamples = [] as LinkedHashSet
+	
 	Order lastOrder
 
 	
@@ -158,9 +168,30 @@ public class Pack {
 		}
 	}
 	
-	void export() {
+	void doExport() {
 		d2c.vocbModel.parser.deckName = pkgName
-		d2c.exportToCrowd(export)
+		d2c.exportExamplesToCrowd(exportExamples)
+	}
+	
+	void exportSentences(String text=sentences) {
+		List<String> snts = wn.sentences(text)
+		snts.each { String sen->
+			Example e = dbMan.findBestExampleForSentence(sen)
+			String et = e?.firstTerm
+			if (wn.normalizeSentence(et) == wn.normalizeSentence(sen)) {
+				println color(sen, BOLD)
+			} else {
+				Set<String> com = wn.commonWordOf(sen, e.firstTerm)
+				Set<String> mis = wn.uniqueueTokens(sen) + wn.uniqueueTokens(e.firstTerm) - com
+				String col = NORMAL
+				if (mis.size() > 2)  {
+					col = RED
+				}
+				println "${color(sen, col)} -> ${color(et, BLUE)} ${color(mis.join(' '), MAGENTA)}"
+			}
+			exportExamples.add(e)
+		}
+		
 	}
 
 
@@ -168,9 +199,11 @@ public class Pack {
 	public static void main(String[] args) {
 		new Pack().with {
 			pkgName = "JingleBells"
+			exportSentences()
+			//doExport()
 			//exportWordsWithDepc(["I"], 1)
-			exportByOrigin(pkgName)
-			findBestExamples().each {println "${it}"}
+			//exportByOrigin(pkgName)
+			//findBestExamples().each {println "${it}"}
 			return
 
 			/*findConceptsCandidatesForGivenExample("the horse was lean", false).each {k,v->
@@ -189,8 +222,7 @@ public class Pack {
 			sort()
 			printExport()
 			//_JingleBellsBackground.jpg
-			export()
-
+			doExport()
 		}
 
 	}

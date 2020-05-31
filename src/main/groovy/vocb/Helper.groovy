@@ -259,6 +259,27 @@ public class Helper {
 		return col
 	}
 
+	public static  <T>  List<T> reposition(List<T> col, Closure<Integer> newPos) {
+		if (!col) return []
+		int safeGr = col.size()*col.size()
+		for (Integer i=0;i<col.size();safeGr--) {
+			assert safeGr >0  : "Endles loop"
+			Integer ni = newPos(col[i], i)
+			if (i == ni) {
+				i++
+				continue //No change in position. Next pos
+			}
+			cutPaste(i, ni, col)
+			if (ni > i) {
+				//Moved forward. This item is a new one, rerun closure on this pos again in next cycle
+				continue 
+			}
+			//ni <i
+			i = ni //Moved backwards, jump to this position a re-wind from there
+		}
+		return col
+	}
+
 	public static <T> void withAllPairs(List<T> coll, int limit=coll.size()-1,@ClosureParams(value= FromString, options=["int,T,T"] )  Closure c) {
 		for (int i=limit-1;i>0;i--) {
 			withEachPairInDistance(coll, i, c)
@@ -290,6 +311,8 @@ public class Helper {
 		}
 		return ret
 	}
+
+
 
 
 }

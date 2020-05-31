@@ -128,6 +128,7 @@ public class Data2Crowd {
 
 	}
 
+	@Deprecated
 	void exportToCrowd(Collection<Concept> toExport) {
 		assert false : "Depricated"
 		vocbModel.notes.clear()
@@ -139,6 +140,9 @@ public class Data2Crowd {
 
 	void exportExamplesToCrowd(Collection<Example> toExport, Set<Concept> ignore = []) {
 		WordNormalizer wn =dbMan.wn
+		vocbModel.notes.clear()
+		renderCardTemplate(cfg.renderCardTemplate)
+		vocbModel.copyMediaLinks(staticMedia)
 		toExport.each { Example e->
 			dbMan.conceptsFromWordsInExample(e)
 					.findAll {!ignore.contains(it) }
@@ -146,6 +150,7 @@ public class Data2Crowd {
 						mapConcept(c, e)
 					}
 		}
+		vocbModel.save()
 
 	}
 

@@ -125,6 +125,12 @@ public class ProfileSupport {
 		}
 		return ret
 	}
+	
+	public void ankivocbCards(List<GroovyRowResult> interleaveAltCards) {
+		
+	}
+	
+	
 
 	public List<Long> nodeIdsMissingNativeAlt(List<GroovyRowResult> rows) {
 		int indx = vocbModel.noteModel.getFieldIndex("nativeAlt")
@@ -151,7 +157,7 @@ public class ProfileSupport {
 	static void main(String... args) {
 		new ProfileSupport().with {
 			//println listProfiles()
-			selectedProfile = "test2"
+			selectedProfile = "test"
 			println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
 
 
