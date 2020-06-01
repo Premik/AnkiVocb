@@ -13500,33 +13500,38 @@ examples:
   - term: Rolničky.
     lang: cs
     tts: cs-terms/rolnicky.mp3
-##  The story I must tell   ################################################# t0:tts:missing|t1:tts:missing
+##  The story I must tell.   ################################################ t1:tts:missing
 - terms: 
-  - term: The story I must tell
+  - term: The story I must tell.
     lang: en
+    tts: en-samples/The story I must tell.mp3
   - term: Příběh, který musím vyprávět.
     lang: cs
-##  I went out on the snow   ################################################ t0:tts:missing|t1:tts:missing
+##  I went out on the snow.   ############################################### t1:tts:missing
 - terms: 
-  - term: I went out on the snow
+  - term: I went out on the snow.
     lang: en
+    tts: en-samples/I went out on the snow.mp3
   - term: Vyšel jsem ven na sníh.
     lang: cs
-##  And on my back I fell   ################################################# t0:tts:missing|t1:tts:missing
+##  And on my back I fell.   ################################################ t1:tts:missing
 - terms: 
-  - term: And on my back I fell
+  - term: And on my back I fell.
     lang: en
+    tts: en-samples/And on my back I fell.mp3
   - term: A na záda jsem upadl.
     lang: cs
-##  A gent was riding by   ################################################## t0:tts:missing|t1:tts:missing
+##  A gent was riding by.   ################################################# t1:tts:missing
 - terms: 
-  - term: A gent was riding by
+  - term: A gent was riding by.
     lang: en
+    tts: en-samples/A gent was riding by.mp3
   - term: Nějaký pán jel kolem.
     lang: cs
-##  The ground is white   ################################################### t0:tts:missing|t1:tts:missing
+##  The ground is white.   ################################################## t1:tts:missing
 - terms: 
-  - term: The ground is white
+  - term: The ground is white.
     lang: en
+    tts: en-samples/The ground is white.mp3
   - term: Země je bílá.
     lang: cs
