@@ -19,7 +19,7 @@ public class ConceptDb {
 	}
 	
 	public List<Term> conceptsByLang(String lng) {
-		concepts.collectMany {it.termsByLang(lng)}
+		concepts.findAll {it.state != "ignore"}.collectMany {it.termsByLang(lng)}
 	}
 
 
