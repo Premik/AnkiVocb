@@ -99,7 +99,7 @@ public class EnTSSAppender {
 	public static void main(String[] args) {
 		EnTSSAppender a = new EnTSSAppender(limit:200)
 		a.runTerms()
-		//a.runExamples()
+		a.runExamples()
 		println "Done"
 	}
 }

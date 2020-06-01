@@ -10246,16 +10246,29 @@ concepts:
   img: img/arrived.jpeg
   freq: 35735.00000
   origins: ["corpus"]
-##  riding   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  riding   ################################################################ t0:pron:missing
 - terms: 
   - term: riding
     lang: en
+    tts: en-terms/riding.mp3
+  - term: jezdecké
+    lang: cs
+    tts: cs-terms/jezdecke.mp3
+  - term: projíždět
+    lang: cs
+    tts: cs-terms/projizdet.mp3
+  img: img/riding.jpeg
   freq: 29915.00000
   origins: ["conceptDbSamples"]
-##  gent   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  gent   ################################################################## t0:pron:missing
 - terms: 
   - term: gent
     lang: en
+    tts: en-terms/gent.mp3
+  - term: pán
+    lang: cs
+    tts: cs-terms/pan.mp3
+  img: img/gent.jpeg
   freq: 2127.00000
   origins: ["conceptDbSamples"]
 
@@ -13487,23 +13500,33 @@ examples:
   - term: Rolničky.
     lang: cs
     tts: cs-terms/rolnicky.mp3
-##  The story I must tell   ################################################# t0:tts:missing
+##  The story I must tell   ################################################# t0:tts:missing|t1:tts:missing
 - terms: 
   - term: The story I must tell
     lang: en
-##  I went out on the snow   ################################################ t0:tts:missing
+  - term: Příběh, který musím vyprávět.
+    lang: cs
+##  I went out on the snow   ################################################ t0:tts:missing|t1:tts:missing
 - terms: 
   - term: I went out on the snow
     lang: en
-##  And on my back I fell   ################################################# t0:tts:missing
+  - term: Vyšel jsem ven na sníh.
+    lang: cs
+##  And on my back I fell   ################################################# t0:tts:missing|t1:tts:missing
 - terms: 
   - term: And on my back I fell
     lang: en
-##  A gent was riding by   ################################################## t0:tts:missing
+  - term: A na záda jsem upadl.
+    lang: cs
+##  A gent was riding by   ################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: A gent was riding by
     lang: en
-##  The ground is white   ################################################### t0:tts:missing
+  - term: Nějaký pán jel kolem.
+    lang: cs
+##  The ground is white   ################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: The ground is white
     lang: en
+  - term: Země je bílá.
+    lang: cs

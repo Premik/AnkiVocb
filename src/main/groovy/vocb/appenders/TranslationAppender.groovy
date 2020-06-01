@@ -1,12 +1,14 @@
 package vocb.appenders
 
+import static vocb.Ansi.*
+
 import vocb.HttpHelper
 import vocb.aws.AwsTranslate
 import vocb.azure.AzureTranslate
 import vocb.data.Concept
+import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
-import static vocb.Ansi.*
 
 public class TranslationAppender {
 
@@ -20,12 +22,6 @@ public class TranslationAppender {
 	Manager dbMan = new Manager()
 
 
-	@Deprecated
-	List<Concept> findTodo() {
-		dbMan.db.concepts.findAll {
-			it.terms && it.state!="ignore" && it.examplesByLang("en") && it.firstTerm && (!it.examplesByLang("cs"))
-		}
-	}
 
 	void translateWords() {
 
@@ -44,26 +40,26 @@ public class TranslationAppender {
 				println color("Limit reached", RED)
 				break
 			}
-				i++
+			i++
 			Thread.sleep(sleep)
 			//break
 		}
 	}
 
 	void translateExamples() {
-		assert false: "Refactor"
 		dbMan.load()
-		List<Concept> noCs = findTodo()
+		List<Example> noCs = dbMan.db.examples.collect().findAll { Example e->
+			e.terms.size() ==1
+		}
+
 		int i = 0
-		println "Found ${noCs.size()} concept with missing cs trn"
-		for (Concept c in noCs) {
-			String enSam = c.examplesByLang("en")[0]?.term
+		println "Found ${noCs.size()} examples with missing cs trn"
+		for (Example e in noCs) {
+			String enSam = e.firstTerm
 			String[] csSams = [awsTrn.trn(enSam)]
-			//Map trnJson = trn.dictLookup(enSam)
-			//List<String> csSams =trn.extractTopTrns(trnJson)
-			println "$c.firstTerm $enSam $csSams"
+			println "$enSam -> ${color(csSams.join("|"), BLUE)}"
 			csSams.each {String csTrn ->
-				c.examples.put(csTrn, new Term(csTrn, "cs"))
+				e.terms.add(Term.csTerm(csTrn))
 			}
 
 			dbMan.save()
@@ -85,17 +81,16 @@ public class TranslationAppender {
 				.collectEntries { Concept c->
 					[c.examplesByLang("en")[0]?.term, c]
 				}
-				
-				
+
+
 
 		for (Concept c in findTodo()) {
 			String enSample = c.examplesByLang("en")[0]?.term
 			if (!enSample) continue
-			String csSample = byEnSample[enSample]?.examplesByLang("cs")?.first()?.term
+				String csSample = byEnSample[enSample]?.examplesByLang("cs")?.first()?.term
 			if (!csSample) continue
 				println "'$c.firstTerm' Reusing: $csSample"
 			c.examples.put(csSample, new Term(csSample, "cs"))
-
 		}
 		dbMan.save()
 	}
@@ -108,7 +103,7 @@ public class TranslationAppender {
 			//limit = 1
 			translateWords()
 			//reuseTranlation()
-			//translateExamples()
+			translateExamples()
 
 		}
 
