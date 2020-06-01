@@ -200,7 +200,7 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			//println topXOf(["i am", "hello"])
-			println it["arrive"]
+			println it["sleighing"]
 		}
 
 		//n.importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())

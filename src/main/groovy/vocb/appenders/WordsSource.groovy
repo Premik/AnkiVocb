@@ -57,9 +57,11 @@ public class WordsSource {
 			BigDecimal frq = Helper.roundDecimal((corp[w]?:0), 3)
 			String stars  = color('🟊'*dbMan.numberOfStarsFreq(frq), YELLOW )
 			
-			Concept c= dbMan.conceptByFirstTerm[w]
+			Concept c= dbMan.findConceptByFirstTermAnyVariant(w)
 			if (c != null) {
-				println color("${w.padLeft(10)}  - already in db $stars ", WHITE)
+				if (words.size() < 30) {
+					println color("${w.padLeft(10)}  - already in db $stars ", WHITE)
+				}
 				if (!c?.origins?.contains(sourceName)) {
 					if (c.origins == null) {
 						c.origins = []
@@ -131,25 +133,12 @@ public class WordsSource {
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			String tx = '''
-			Unknown term versions used in the Earlier versions may be different. example.
-Unknown term weighs used in the It weighs over five tons. example.
-Unknown term levels used in the It has many levels. example.
-Unknown term risks used in the Proceed at your own risks. example.
-Unknown term ankles used in the Your feet and your ankles are relaxed. example.
-Unknown term ve used in the That could've been my money! example.
-Unknown term shields used in the Shields at full power. example.
-Unknown term arrived used in the Has her niece arrived from England? example.
-Unknown term bigger used in the Making of small and bigger parts. example.
-Unknown term ve used in the I should've done it myself. example.
-Unknown term ve used in the I've been worried since yesterday. example.
-Unknown term regenerates used in the The human body regenerates itself. example.
-Unknown term meters used in the It was within two meters of the house. example.
-Unknown term chooses used in the The user chooses either yes or no. example.
-Unknown term pillows used in the The pillows are too hard! example.
+		
 			'''
 			
 			sourceName = "corpus"
-			fromText(tx)
+			//fromText(tx)
+			fromOwnSamples()
 			return
 			wn.phraseFreqs(tx,2, 3)
 			   .collectEntries{ String w, BigDecimal fqInText-> [w, corp.phraseFreq(w)*fqInText]}

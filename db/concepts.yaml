@@ -4953,7 +4953,7 @@ concepts:
     lang: en
   state: ignore
   freq: 154457.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: matter
     lang: en
@@ -9791,7 +9791,7 @@ concepts:
     tts: cs-terms/kun.mp3
   img: img/horse.jpeg
   freq: 87507.50000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: quickly
     lang: en
@@ -9805,13 +9805,13 @@ concepts:
     tts: cs-terms/snadno.mp3
   img: img/quickly.jpeg
   freq: 77724.30000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: oh
     lang: en
   state: ignore
   freq: 68285.00000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: bright
     lang: en
@@ -9825,7 +9825,7 @@ concepts:
     tts: cs-terms/zarive.mp3
   img: img/bright.jpeg
   freq: 64276.95000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: joy
     lang: en
@@ -9836,7 +9836,7 @@ concepts:
     tts: cs-terms/radost.mp3
   img: img/joy.jpeg
   freq: 63479.50000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: spirits
     lang: en
@@ -9850,7 +9850,7 @@ concepts:
     tts: cs-terms/duchy.mp3
   img: img/spirits.jpeg
   freq: 62147.50000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: laughing
     lang: en
@@ -9861,7 +9861,7 @@ concepts:
     tts: cs-terms/smejici se.mp3
   img: img/laughing.jpeg
   freq: 53113.60000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: drove
     lang: en
@@ -9875,7 +9875,7 @@ concepts:
     tts: cs-terms/odvezl.mp3
   img: img/drove.jpeg
   freq: 50184.80000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: seated
     lang: en
@@ -9889,7 +9889,7 @@ concepts:
     tts: cs-terms/sedela.mp3
   img: img/seated.jpeg
   freq: 49654.70000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: sing
     lang: en
@@ -9900,7 +9900,7 @@ concepts:
     tts: cs-terms/zpivat.mp3
   img: img/sing.jpeg
   freq: 43453.10000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: snow
     lang: en
@@ -9911,7 +9911,7 @@ concepts:
     tts: cs-terms/snih.mp3
   img: img/snow.jpeg
   freq: 41197.95000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: ride
     lang: en
@@ -9925,7 +9925,7 @@ concepts:
     tts: cs-terms/projizdka.mp3
   img: img/ride.jpeg
   freq: 34102.95000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: tonight
     lang: en
@@ -9939,7 +9939,7 @@ concepts:
     tts: cs-terms/dnesni vecer.mp3
   img: img/tonight.jpeg
   freq: 28173.20500
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: fun
     lang: en
@@ -9953,7 +9953,7 @@ concepts:
     tts: cs-terms/legrace.mp3
   img: img/fun.jpeg
   freq: 22138.75000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: lean
     lang: en
@@ -9967,7 +9967,7 @@ concepts:
     tts: cs-terms/hubeny.mp3
   img: img/lean.jpeg
   freq: 22063.05000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: tail
     lang: en
@@ -9981,7 +9981,7 @@ concepts:
     tts: cs-terms/ohon.mp3
   img: img/tail.jpeg
   freq: 20681.45000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: bells
     lang: en
@@ -9995,11 +9995,12 @@ concepts:
     tts: cs-terms/rolnicky.mp3
   img: img/bells.jpeg
   freq: 17904.10000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: hey
     lang: en
   state: ignore
+  origins: ["conceptDbSamples"]
 - terms: 
   - term: dashing
     lang: en
@@ -10013,11 +10014,12 @@ concepts:
     tts: cs-terms/temperamentni.mp3
   img: img/dashing.jpeg
   freq: 7393.94000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: tho
     lang: en
   state: ignore
+  origins: ["conceptDbSamples"]
 - terms: 
   - term: sleigh
     lang: en
@@ -10031,7 +10033,7 @@ concepts:
     tts: cs-terms/sanky.mp3
   img: img/sleigh.jpeg
   freq: 2972.29000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: jingle
     lang: en
@@ -10045,7 +10047,7 @@ concepts:
     tts: cs-terms/cinkot.mp3
   img: img/jingle.jpeg
   freq: 1631.31000
-  origins: ["JingleBells"]
+  origins: ["JingleBells", "conceptDbSamples"]
 - terms: 
   - term: example
     lang: en
@@ -10059,7 +10061,7 @@ concepts:
     tts: cs-terms/ukazka.mp3
   img: img/example.jpeg
   freq: 62028.40000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: term
     lang: en
@@ -10073,7 +10075,7 @@ concepts:
     tts: cs-terms/pojem.mp3
   img: img/term.jpeg
   freq: 54088.85000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: sad
     lang: en
@@ -10087,7 +10089,7 @@ concepts:
     tts: cs-terms/smutny.mp3
   img: img/sad.jpeg
   freq: 41879.55000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: unknown
     lang: en
@@ -10098,7 +10100,7 @@ concepts:
     tts: cs-terms/neznamy.mp3
   img: img/unknown.jpeg
   freq: 34067.90000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: chooses
     lang: en
@@ -10112,7 +10114,7 @@ concepts:
     tts: cs-terms/vybira.mp3
   img: img/chooses.jpeg
   freq: 64872.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: version
     lang: en
@@ -10123,7 +10125,7 @@ concepts:
     tts: cs-terms/verze.mp3
   img: img/version.jpeg
   freq: 31817.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: level
     lang: en
@@ -10137,7 +10139,7 @@ concepts:
     tts: cs-terms/hladina.mp3
   img: img/level.jpeg
   freq: 26427.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: risk
     lang: en
@@ -10151,7 +10153,7 @@ concepts:
     tts: cs-terms/nebezpeci.mp3
   img: img/risk.jpeg
   freq: 22810.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: shields
     lang: en
@@ -10165,7 +10167,7 @@ concepts:
     tts: cs-terms/kryty.mp3
   img: img/shields.jpeg
   freq: 19736.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: weighs
     lang: en
@@ -10176,7 +10178,7 @@ concepts:
     tts: cs-terms/vazi.mp3
   img: img/weighs.jpeg
   freq: 10946.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: pillow
     lang: en
@@ -10190,7 +10192,7 @@ concepts:
     tts: cs-terms/poduska.mp3
   img: img/pillow.jpeg
   freq: 10631.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: ankle
     lang: en
@@ -10201,7 +10203,7 @@ concepts:
     tts: cs-terms/kotnik.mp3
   img: img/ankle.jpeg
   freq: 5801.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: meters
     lang: en
@@ -10215,7 +10217,7 @@ concepts:
     tts: cs-terms/merice.mp3
   img: img/meters.jpeg
   freq: 5786.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: regenerates
     lang: en
@@ -10229,7 +10231,7 @@ concepts:
     tts: cs-terms/obnovuje.mp3
   img: img/regenerates.jpeg
   freq: 1344.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 - terms: 
   - term: arrived
     lang: en
@@ -10244,6 +10246,18 @@ concepts:
   img: img/arrived.jpeg
   freq: 35735.00000
   origins: ["corpus"]
+##  riding   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: riding
+    lang: en
+  freq: 29915.00000
+  origins: ["conceptDbSamples"]
+##  gent   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: gent
+    lang: en
+  freq: 2127.00000
+  origins: ["conceptDbSamples"]
 
 examples: 
 - terms: 
@@ -13473,3 +13487,23 @@ examples:
   - term: Rolničky.
     lang: cs
     tts: cs-terms/rolnicky.mp3
+##  The story I must tell   ################################################# t0:tts:missing
+- terms: 
+  - term: The story I must tell
+    lang: en
+##  I went out on the snow   ################################################ t0:tts:missing
+- terms: 
+  - term: I went out on the snow
+    lang: en
+##  And on my back I fell   ################################################# t0:tts:missing
+- terms: 
+  - term: And on my back I fell
+    lang: en
+##  A gent was riding by   ################################################## t0:tts:missing
+- terms: 
+  - term: A gent was riding by
+    lang: en
+##  The ground is white   ################################################### t0:tts:missing
+- terms: 
+  - term: The ground is white
+    lang: en
