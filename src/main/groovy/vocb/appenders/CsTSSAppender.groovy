@@ -22,14 +22,11 @@ public class CsTSSAppender {
 	int limit = 10
 	WordNormalizer wn = new WordNormalizer()
 
-	void run() {
+	void synth() {
 		dbMan.load()
 		int i = 0;
-		dbMan.withTermsByLang("cs", false) {Concept c, Term t->
-			if (c.terms.size() >3) {
-				//println "Ignoring: $c"
-				return
-			}
+		//dbMan.withTermsByLang("cs", false) {Concept c, Term t->
+		(dbMan.db.conceptsByLang("cs") + dbMan.db.examplesByLang("cs")).each  {Term t->			
 			if (i >limit) {
 				println color("Limit reached", RED)
 				return
@@ -59,9 +56,10 @@ public class CsTSSAppender {
 
 
 	public static void main(String[] args) {
-		new CsTSSAppender(limit:10).tap {
-		  
-		}.run()
+		new CsTSSAppender().with {
+			limit = 1
+			synth()
+		}
 		println "Done"
 	}
 }
