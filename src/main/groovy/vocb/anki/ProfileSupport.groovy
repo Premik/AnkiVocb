@@ -157,7 +157,8 @@ public class ProfileSupport {
 	static void main(String... args) {
 		new ProfileSupport().with {
 			//println listProfiles()
-			selectedProfile = "test"
+			selectedProfile = "tets4"
+			deckName = "JingleBells"
 			println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
 
 

@@ -67,8 +67,8 @@ class Render {
 		assert renderConfigName
 		File f = new File(path, "${renderConfigName}.html")
 		println "Rendering $renderConfigName to $f"
-		if (f.exists()) f.delete()
-		f <<	render(renderConfigName)
+		f.parentFile.mkdirs()
+		f.write(render(renderConfigName))
 		return f
 	}
 	

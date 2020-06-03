@@ -19,6 +19,7 @@ public class Pack {
 
 	Path destFolder = Paths.get("/tmp/work")
 	String pkgName ="basic0"
+	String pkgDisplayName 
 
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
 
@@ -29,11 +30,12 @@ public class Pack {
 			toFile().mkdirs()
 		}
 	}()
+	
+	
 
-
-
-	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString()).tap {
-		staticMedia.add "_${pkgName}Background.jpg"
+	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString(), pkgName : pkgName).tap {
+		staticMedia.add backgroundName
+		
 	}
 
 	@Lazy Manager dbMan = d2c.dbMan
@@ -71,6 +73,7 @@ public class Pack {
 		exportConceptsWithDepc(cp, depth)
 	}
 
+	@Deprecated
 	List<Concept> dependenciesOf(Concept c) {
 		assert c
 		Set<String> allWords = wn.uniqueueTokens((c.termsByLang("en") + c.examplesByLang("en"))
@@ -169,7 +172,8 @@ public class Pack {
 	}
 
 	void doExport() {
-		d2c.vocbModel.parser.deckName = pkgName
+		d2c.vocbModel.parser.deckName = pkgDisplayName?:pkgName.replaceAll(/(\p{Lu})(\p{L})/, ' $1$2').trim()
+		
 		d2c.exportExamplesToCrowd(exportExamples)
 	}
 
@@ -198,9 +202,10 @@ public class Pack {
 
 	public static void main(String[] args) {
 		new Pack().with {
-			pkgName = "JingleBells"
+			//pkgName = "JingleBells"
+			pkgName = "FiveLittleMonkeys"
 			exportSentences()
-			//doExport()
+			doExport()
 			//exportWordsWithDepc(["I"], 1)
 			//exportByOrigin(pkgName)
 			//findBestExamples().each {println "${it}"}
