@@ -10272,7 +10272,7 @@ concepts:
   img: img/gent.jpeg
   freq: 2127.00000
   origins: ["conceptDbSamples"]
-##  straight   ############################################################## no img|t0:pron:missing
+##  straight   ############################################################## t0:pron:missing
 - terms: 
   - term: straight
     lang: en
@@ -10283,9 +10283,10 @@ concepts:
   - term: přímo
     lang: cs
     tts: cs-terms/primo.mp3
+  img: img/straight.jpeg
   freq: 49112.00000
   origins: ["conceptDbSamples"]
-##  jumping   ############################################################### no img|t0:pron:missing
+##  jumping   ############################################################### t0:pron:missing
 - terms: 
   - term: jumping
     lang: en
@@ -10296,9 +10297,10 @@ concepts:
   - term: skáčou
     lang: cs
     tts: cs-terms/skacou.mp3
+  img: img/jumping.jpeg
   freq: 6974.00000
   origins: ["conceptDbSamples"]
-##  monkeys   ############################################################### no img|t0:pron:missing
+##  monkeys   ############################################################### t0:pron:missing
 - terms: 
   - term: monkeys
     lang: en
@@ -10306,9 +10308,10 @@ concepts:
   - term: opice
     lang: cs
     tts: cs-terms/opice.mp3
+  img: img/monkeys.jpeg
   freq: 4518.00000
   origins: ["conceptDbSamples"]
-##  mama   ################################################################## no img|t0:pron:missing
+##  mama   ################################################################## t0:pron:missing
 - terms: 
   - term: mama
     lang: en
@@ -10316,9 +10319,10 @@ concepts:
   - term: máma
     lang: cs
     tts: cs-terms/mama-cs.mp3
+  img: img/mama.jpeg
   freq: 1931.00000
   origins: ["conceptDbSamples"]
-##  bumped   ################################################################ no img|t0:pron:missing
+##  bumped   ################################################################ t0:pron:missing
 - terms: 
   - term: bumped
     lang: en
@@ -10329,6 +10333,7 @@ concepts:
   - term: vrazil
     lang: cs
     tts: cs-terms/vrazil.mp3
+  img: img/bumped.jpeg
   freq: 1000.00000
   origins: ["conceptDbSamples"]
 
@@ -13627,7 +13632,7 @@ examples:
   - term: Mama called the doctor.
     lang: en
     tts: en-samples/Mama called the doctor.mp3
-  - term: Mááma zavolala doktorovi.
+  - term: Máma zavolala doktorovi.
     lang: cs
     tts: cs-samples/Mama zavolala doktorovi.mp3
 - terms: 
