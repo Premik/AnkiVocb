@@ -183,6 +183,16 @@ public class Corpus {
 		println color(word.padLeft(10), BOLD) + color(" - not in corpus" , RED)
 	}
 
+	public void addStrange() {
+		wordFreq.putAll( [
+			"bumped" : 1000,
+			"ve" : 1,
+			"bigger":81717,
+			"arrived":5735,
+		])
+
+	}
+
 	static Corpus buildDef() {
 		Corpus c1 = new Corpus()
 		c1.loadWiki()
@@ -190,6 +200,7 @@ public class Corpus {
 		//c2.load12Dicts()
 		c2.loadWordFreq()
 		c1.averageCommonWordsFrom(c2)
+		c1.addStrange()
 		return c1
 
 	}
@@ -200,7 +211,7 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			//println topXOf(["i am", "hello"])
-			println it["sleighing"]
+			println it["arrive"]
 		}
 
 		//n.importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())
