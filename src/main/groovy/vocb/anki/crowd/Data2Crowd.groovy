@@ -1,5 +1,7 @@
 package vocb.anki.crowd
 
+import static vocb.Ansi.*
+
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.regex.Pattern
@@ -11,8 +13,8 @@ import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
+import vocb.pck.PackInfo
 import vocb.template.Render
-import static vocb.Ansi.*
 
 //@CompileStatic
 public class Data2Crowd {
@@ -23,16 +25,20 @@ public class Data2Crowd {
 	Path rootPath= Paths.get("/data/src/AnkiVocb")
 	Path dataPath= rootPath.resolve("db")
 	Path templatePath = ["src", "main", "resources", "template"].inject(rootPath) { Path p, String ch-> p.resolve(ch)}
-	String pkgName
-	@Lazy Path pkgPath = rootPath.resolve("pkg").resolve(pkgName)
-	@Lazy String backgroundName = addExtensionToMediaLink("_${pkgName}Background")
+	PackInfo info = new PackInfo()
+	
+	
 
 
 	List<CharSequence> staticMedia = ["_lightBulb.png" as CharSequence]
 
 
 	CharSequence destCrowdRootFolder = "/tmp/work/test"
-	@Lazy Render render = new Render(cfgHelper:cfgHelper)
+	@Lazy Render render = {		  
+		 new Render(cfgHelper:cfgHelper).tap {
+			 extraVars.put("info", info)			 
+		 }
+	}()
 
 
 
@@ -52,7 +58,8 @@ public class Data2Crowd {
 
 	Path resolveMediaLink(String mediaLink) {
 		String fn = new File(mediaLink).name
-		List<String> lookupPaths = [pkgPath, dataPath, templatePath]
+		Path pkgPath = rootPath.resolve("pkg").resolve(info.name)
+		List<Path> lookupPaths = [pkgPath, dataPath, templatePath]
 
 		List<Path> resolved = Helper.matchingFiles(lookupPaths, fn) //Exact match first
 		if (!resolved) {
@@ -68,14 +75,7 @@ public class Data2Crowd {
 		}
 		return resolved[0]
 	}
-	
-	public String getDeckUuid() {
-		String p = pkgName.toLowerCase()*10
-		assert p.length() > 30
-		//return "ankivocb-${p[0..3]}-${p[4..7]}-${p[8..11]}-${p[11..22]}"
-		return "ankivocb-2020-${p[0..21]}"
-	}
-	
+			
 	String addExtensionToMediaLink(String mediaLink) {
 		if (!mediaLink) return null
 		Tuple2<String, String> fn = Helper.splitFileNameExt(mediaLink)
@@ -105,7 +105,7 @@ public class Data2Crowd {
 
 			img= link(c?.img)
 			freq= stars
-			background = thisObject.backgroundName
+			background = addExtensionToMediaLink(thisObject.info.backgroundName)
 			foreign= ent.term
 			foreignTTS= link(ent?.tts)
 			foreignExample= enx?.term
@@ -157,24 +157,15 @@ public class Data2Crowd {
 		return  targetM
 
 	}
-
-	@Deprecated
-	void exportToCrowd(Collection<Concept> toExport) {
-		assert false : "Depricated"
-		vocbModel.notes.clear()
-		renderCardTemplate(cfg.renderCardTemplate)
-		staticMedia.add(backgroundName)
-		vocbModel.copyMediaLinks(staticMedia)
-		toExport.each { mapConcept(it) }
-		vocbModel.save()
-	}
-
+	
 	void exportExamplesToCrowd(Collection<Example> toExport, Set<Concept> ignore = []) {
 		WordNormalizer wn =dbMan.wn
-		vocbModel.parser.deckCrowdUuid = deckUuid
+		vocbModel.parser.deckName= info.displayName
+		vocbModel.parser.deckCrowdUuid = info.uuid
+		
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
-		staticMedia.add(backgroundName)
+		staticMedia.add(addExtensionToMediaLink(info.backgroundName))
 		vocbModel.copyMediaLinks(staticMedia)
 		toExport.each { Example e->
 			dbMan.conceptsFromWordsInExample(e)

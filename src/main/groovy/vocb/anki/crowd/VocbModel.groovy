@@ -4,9 +4,10 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
+import groovy.transform.CompileStatic
 import vocb.Helper
-import static vocb.Ansi.*
 
+//@CompileStatic
 class VocbModel {
 
 	String version = "ankivocb1"
@@ -79,16 +80,16 @@ class VocbModel {
 	
 	
 
-	String mediaLink2CrowdLink(String mediaLink) {
+	String mediaLink2CrowdLink(CharSequence mediaLink) {
 		if (!mediaLink) return null		
-		return new File(mediaLink).name
+		return new File(mediaLink.toString()).name
 	}
 
-	void copyMediaLinks(List<String> links) {
+	void copyMediaLinks(List<CharSequence> links) {
 		assureCrowdDest()
 		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
 		assert resolveMediaLink : "Set a closure to resolve the mediaLink to file path"
-		links.each { String mediaLink->
+		links.each { CharSequence mediaLink->
 			
 			Path crowdPath = corwdMediaPath.resolve(mediaLink2CrowdLink(mediaLink))
 			if (!Files.exists(crowdPath)) {

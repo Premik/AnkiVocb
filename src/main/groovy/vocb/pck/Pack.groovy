@@ -1,10 +1,12 @@
 package vocb.pck
 
+import static vocb.Ansi.*
+
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Map.Entry
 
-import vocb.Ansi
+import groovy.transform.CompileStatic
 import vocb.anki.crowd.Data2Crowd
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
@@ -13,31 +15,26 @@ import vocb.data.Manager
 import vocb.ord.ConceptExtra
 import vocb.ord.Order
 import vocb.ord.OrderSolver
-import static vocb.Ansi.*
 
 //@CompileStatic
 public class Pack {
 
 	Path destFolder = Paths.get("/tmp/work")
-	String pkgName ="basic0"
-	String pkgDisplayName 
-
+	PackInfo info = new PackInfo()
+	
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
 
-	@Lazy String sentences = packageRootPath.resolve(pkgName).resolve("sentences.txt").text
+	@Lazy String sentences = packageRootPath.resolve(info.name).resolve("sentences.txt").text
 
 	@Lazy Path destPath = {
-		destFolder.resolve(pkgName).tap {
+		destFolder.resolve(info.name).tap {
 			toFile().mkdirs()
 		}
 	}()
 	
 	
 
-	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString(), pkgName : pkgName).tap {		
-		//staticMedia.add backgroundName
-		render.extraVars.add( pkgName: pkgName, pkgDisplayName:pkgDisplayName )
-	}
+	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString(), info : info)
 
 	@Lazy Manager dbMan = d2c.dbMan
 
@@ -173,8 +170,6 @@ public class Pack {
 	}
 
 	void doExport() {
-		d2c.vocbModel.parser.deckName = pkgDisplayName?:pkgName.replaceAll(/(\p{Lu})(\p{L})/, ' $1$2').trim()
-		
 		d2c.exportExamplesToCrowd(exportExamples)
 	}
 
@@ -203,8 +198,9 @@ public class Pack {
 
 	public static void main(String[] args) {
 		new Pack().with {
-			//pkgName = "JingleBells"
-			pkgName = "FiveLittleMonkeys"
+			//pkgName = "JingleBells"			
+			info.name = "FiveLittleMonkeys"
+		 
 			exportSentences()
 			doExport()
 			//exportWordsWithDepc(["I"], 1)
