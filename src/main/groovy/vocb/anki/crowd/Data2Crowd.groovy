@@ -12,6 +12,7 @@ import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
 import vocb.template.Render
+import static vocb.Ansi.*
 
 //@CompileStatic
 public class Data2Crowd {
@@ -24,10 +25,11 @@ public class Data2Crowd {
 	Path templatePath = ["src", "main", "resources", "template"].inject(rootPath) { Path p, String ch-> p.resolve(ch)}
 	String pkgName
 	@Lazy Path pkgPath = rootPath.resolve("pkg").resolve(pkgName)
-	@Lazy String backgroundName = "_${pkgName}Background"
-	
+	@Lazy String backgroundName = addExtensionToMediaLink("_${pkgName}Background")
+
+
 	List<CharSequence> staticMedia = ["_lightBulb.png" as CharSequence]
-	
+
 
 	CharSequence destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = new Render(cfgHelper:cfgHelper)
@@ -43,33 +45,48 @@ public class Data2Crowd {
 
 	@Lazy VocbModel vocbModel = {
 		assert destCrowdRootFolder
-		new VocbModel(
-				destCrowdRootFolder: Paths.get(destCrowdRootFolder),
-				resolveMediaLink: {String mediaLink ->
-					String fn = new File(mediaLink).name
-					List<String> lookupPaths = [pkgPath, dataPath, templatePath]
-					
-					List<Path> resolved = Helper.matchingFiles(lookupPaths, fn) //Exact match first
-					if (!resolved) {
-						Pattern fnP = ~/${Pattern.quote(fn)}\.?(jpeg|jpg|png|mp3|gif)?/
-						resolved = Helper.matchingFiles(lookupPaths, fnP) //Any extension						
-					}
-					if (!resolved) { //Non-existing. Assume db/media
-						return dataPath.resolve("media").resolve(mediaLink)
-					}
-					assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. $resolved"
-					return resolved[0]
-					/*
-			 Path lnk = dataPath.resolve("media").resolve(mediaLink)
-			 if (!Files.exists(lnk)) {
-			 Path tmlpLnk = templatePath.resolve(mediaLink)
-			 if (Files.exists(tmlpLnk)) {
-			 return tmlpLnk
-			 }
-			 }
-			 return lnk*/
-				})
+		new VocbModel(destCrowdRootFolder: Paths.get(destCrowdRootFolder)).tap {
+			resolveMediaLink = thisObject.&resolveMediaLink
+		}
 	}()
+
+	Path resolveMediaLink(String mediaLink) {
+		String fn = new File(mediaLink).name
+		List<String> lookupPaths = [pkgPath, dataPath, templatePath]
+
+		List<Path> resolved = Helper.matchingFiles(lookupPaths, fn) //Exact match first
+		if (!resolved) {
+			Pattern fnP = ~/${Pattern.quote(fn)}\.?(jpeg|jpg|png|mp3|gif)?/
+			resolved = Helper.matchingFiles(lookupPaths, fnP) //Any extension
+		}
+		if (!resolved) { //Non-existing. Assume db/media
+			return dataPath.resolve("media").resolve(mediaLink)
+		}
+		//assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. $resolved"
+		if (resolved.size() > 1) {
+			 println (color(mediaLink, BOLD) +  color(" was found on multiple locations: ",YELLOW) + color(resolved.join("|"), BLUE))			
+		}
+		return resolved[0]
+	}
+	
+	public String getDeckUuid() {
+		String p = pkgName.toLowerCase()*10
+		assert p.length() > 30
+		//return "ankivocb-${p[0..3]}-${p[4..7]}-${p[8..11]}-${p[11..22]}"
+		return "ankivocb-2020-${p[0..21]}"
+	}
+	
+	String addExtensionToMediaLink(String mediaLink) {
+		if (!mediaLink) return null
+		Tuple2<String, String> fn = Helper.splitFileNameExt(mediaLink)
+		if (!fn.v2) { //Media link has no extension. Have to take it from the actual resolved path
+			Path sourcePath =resolveMediaLink(mediaLink)
+			Tuple2<String, String> rFn = Helper.splitFileNameExt(sourcePath.fileName.toString())
+			assert rFn.v2 : "Resolved media file has no extension"
+			mediaLink = "${mediaLink}.${rFn.v2}"
+		}
+		return mediaLink
+	}
 
 
 
@@ -146,6 +163,7 @@ public class Data2Crowd {
 		assert false : "Depricated"
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
+		staticMedia.add(backgroundName)
 		vocbModel.copyMediaLinks(staticMedia)
 		toExport.each { mapConcept(it) }
 		vocbModel.save()
@@ -153,8 +171,10 @@ public class Data2Crowd {
 
 	void exportExamplesToCrowd(Collection<Example> toExport, Set<Concept> ignore = []) {
 		WordNormalizer wn =dbMan.wn
+		vocbModel.parser.deckCrowdUuid = deckUuid
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
+		staticMedia.add(backgroundName)
 		vocbModel.copyMediaLinks(staticMedia)
 		toExport.each { Example e->
 			dbMan.conceptsFromWordsInExample(e)

@@ -83,7 +83,10 @@ public class Helper {
 
 
 	}
-
+	
+	public static String shortHash(Object o) {
+		Integer.toHexString(o.hashCode())
+	}
 
 	public static String word2Key(String word, boolean appendHash=false) {
 		//https://stackoverflow.com/questions/3322152/is-there-a-way-to-get-rid-of-accents-and-convert-a-whole-string-to-regular-lette
@@ -91,7 +94,7 @@ public class Helper {
 		String norm = Normalizer.normalize(word, Normalizer.Form.NFKD)
 		String noPunc = norm.replaceAll(/\p{InCombiningDiacriticalMarks}+/, "").replaceAll("[!@#.&\\\\/:*?\"<>'|=]", "")
 		if (!appendHash) return noPunc
-		return "$noPunc-${Integer.toHexString(word.hashCode())}"
+		return "$noPunc-${shortHash(word)}"
 	}
 
 

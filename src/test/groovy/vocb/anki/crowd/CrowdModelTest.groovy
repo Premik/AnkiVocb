@@ -51,8 +51,21 @@ class CrowdModelTest {
 		assert a.freq == b.freq
 		assert a.tags == b.tags
 		assert a.model
-		assert a.model === b.model
-		
+		assert a.model === b.model		
+	}
+	
+	@Test
+	void hashTest() {
+		Note a = vocbModel.notes[0]		
+		a.assertIsComplete()
+		int orighash = a.hashCode()
+		a.data= "data"
+		assert orighash == a.hashCode()
+		vocbModel = new VocbModel()
+		a = vocbModel.notes[0]
+		assert orighash == a.hashCode()
+		a.img = "newImg"
+		assert orighash != a.hashCode()
 	}
 	
 	
