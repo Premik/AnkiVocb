@@ -20,10 +20,11 @@ class Render {
 	@Lazy ConfigObject cfg = cfgHelper.cfg
 	ConfigObject renderCfg
 	Map<String, Boolean> templateVisibility = [:].withDefault {true}
+	Map extraVars = []
 
 
 	public Map getTemplBinding() {
-		[cfg:cfg, render: this, templates:this.templates, v:renderCfg.vars]
+		[cfg:cfg, render: this, templates:this.templates, v:renderCfg.vars] + extraVars
 	}
 
 	public ConfigObject getTemplates() {
