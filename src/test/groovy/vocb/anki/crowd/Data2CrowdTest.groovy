@@ -9,7 +9,9 @@ import vocb.data.Example
 
 class Data2CrowdTest {
 
-	Data2Crowd dc = new Data2Crowd()
+	Data2Crowd dc = new Data2Crowd().tap {
+		pkgName = "test"
+	}
 	URL testConceptsUrl = getClass().getResource('/vocb/data/fullyPopulated.yaml')
 	
 	@Lazy ConceptDb db =  new ConceptYamlStorage().parseDb(testConceptsUrl.newReader())
@@ -22,7 +24,7 @@ class Data2CrowdTest {
 	void mapConcept() {		
 		Note n = new Note(model:dc.vocbModel.noteModel)
 		dc.concept2CrowdNote(firstConcept, firstExample, n)
-		assert n.fields == ['in.jpeg', '5', 'in', 'in.mp3', 'Not in my city.', 'Not in my city.mp3', 'v', 'v.mp3', 've', 've.mp3', 'Ne v mém městě.', 'Ne v mem meste.mp3']
+		assert n.fields == ['in', 'in.mp3', 'Not in my city.', 'Not in my city.mp3', 'v', 'v.mp3', 've', 've.mp3', 'Ne v mém městě.', 'Ne v mem meste.mp3', 'in.jpeg', '5', '_testBackground']
 	
 	}
 	

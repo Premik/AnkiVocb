@@ -15,7 +15,7 @@
   width: 99%;
   height: 97%;
   z-index: -1;
-  opacity: 0.4;  
+  opacity: 0.8;  
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
@@ -44,7 +44,7 @@
    -webkit-align-items: center;
        -ms-flex-align: center;
            align-items: center;
-   background-color: #d0d0d095;
+   background-color: #d0d0d0e0;
    color: #fff;
    font-family: Helvetica;
    font-size: 1.3em;

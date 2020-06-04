@@ -18,41 +18,42 @@
                 "leechAction": 0,
                 "leechFails": 8,
                 "minInt": 1,
-                "mult": 0
+                "mult": 0.4
             },
             "maxTaken": 60,
             "name": "Default",
             "new": {
-                "bury": false,
+                "bury": true,
                 "delays": [
-                    1,
-                    10
+                    1.0,
+                    4.0,
+                    30.0
                 ],
                 "initialFactor": 2500,
                 "ints": [
                     1,
-                    4,
+                    2,
                     7
                 ],
                 "order": 1,
-                "perDay": 20,
+                "perDay": 5,
                 "separate": true
             },
             "replayq": true,
             "rev": {
-                "bury": false,
+                "bury": true,
                 "ease4": 1.3,
                 "fuzz": 0.05,
                 "hardFactor": 1.2,
                 "ivlFct": 1,
                 "maxIvl": 36500,
                 "minSpace": 1,
-                "perDay": 200
+                "perDay": 60
             },
             "timer": 0
         }
     ],
-    "desc": "",
+    "desc": "Description\n<b>Html</b>\n<img src=\"_lightBulb.png\" ></img>",
     "dyn": 0,
     "extendNew": 10,
     "extendRev": 50,

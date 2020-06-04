@@ -57,7 +57,7 @@ class ModelTest {
 
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
-			assert c.validate() == ["t2:lang:missing", "t2:tts:missing"]
+			assert c.validate() == ["t0:pron:missing", "t2:lang:missing", "t2:tts:missing"]
 			
 		}
 	}
@@ -87,7 +87,7 @@ class ModelTest {
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			println c
-			assert c.validate() == []
+			assert c.validate() == ["t0:pron:missing"]
 		}
 	}
 }
