@@ -10508,7 +10508,7 @@ concepts:
   - term: roh
     lang: cs
     tts: cs-terms/roh.mp3
-  - term: k-outek
+  - term: koutek
     lang: cs
     tts: cs-terms/koutek.mp3
   freq: 60040.00000
@@ -10838,56 +10838,64 @@ concepts:
     tts: cs-terms/chybi.mp3
   freq: 11830.00000
   origins: ["Supaplex"]
-##  hunter   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  hunter   ################################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: hunter
     lang: en
   - term: lovec
     lang: cs
+    tts: cs-terms/lovec.mp3
   freq: 11270.00000
   origins: ["Supaplex"]
-##  gravity   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  gravity   ############################################################### no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: gravity
     lang: en
   - term: gravitace
     lang: cs
+    tts: cs-terms/gravitace.mp3
   freq: 11200.00000
   origins: ["Supaplex"]
-##  easy   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  easy   ################################################################## no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: easy
     lang: en
   - term: snadné
     lang: cs
+    tts: cs-terms/snadne.mp3
   - term: lehké
     lang: cs
+    tts: cs-terms/lehke.mp3
   freq: 10790.00000
   origins: ["Supaplex"]
-##  classic   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  classic   ############################################################### no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: classic
     lang: en
   - term: klasické
     lang: cs
+    tts: cs-terms/klasicke.mp3
   freq: 10356.00000
   origins: ["Supaplex"]
-##  festival   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  festival   ############################################################## no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: festival
     lang: en
   - term: festival
     lang: cs
+    tts: cs-terms/festival.mp3
   - term: slavnost
     lang: cs
+    tts: cs-terms/slavnost.mp3
   freq: 9783.00000
   origins: ["Supaplex"]
-##  crash   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  crash   ################################################################# no img|t0:tts:missing|t0:pron:missing|t2:tts:missing
 - terms: 
   - term: crash
     lang: en
   - term: havárie
     lang: cs
+    tts: cs-terms/havarie.mp3
   - term: krach
     lang: cs
   freq: 9543.00000
