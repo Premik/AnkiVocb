@@ -129,16 +129,15 @@ public class WordsSource {
 		new WordsSource().tap {
 			//fromOwnSamples(100)
 			//minFreq = 1
-			//simulation = true
+			simulation = true
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
-			String tx = '''
-		
-			'''
+			//String tx = ''''''
+			String tx = new File("/data/src/AnkiVocb/pkg/Supaplex/Supaplex.txt").text
 			
-			sourceName = "fiveLittleMonkeys"
-			//fromText(tx)
-			fromOwnSamples()
+			sourceName = "Supaplex"
+			fromText(tx)
+			//fromOwnSamples()
 			return
 			wn.phraseFreqs(tx,2, 3)
 			   .collectEntries{ String w, BigDecimal fqInText-> [w, corp.phraseFreq(w)*fqInText]}

@@ -39,7 +39,7 @@ public class WordNormalizer {
 
 	public List<String> wordVariants(String s) {
 		if (s.endsWith('s')) return [s, s[0..-2]] //Remove 's'
-		return [s, "${s}s"] //Add 's'
+		return [s, "${s}s" as String] //Add 's'
 	}
 
 

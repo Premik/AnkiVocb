@@ -17,6 +17,7 @@ public class Corpus {
 
 	Map<String, BigDecimal> wordFreq = new HashMap(5000)
 	Set<String> phrases = new HashSet<String>(2000)
+	WordNormalizer wn = new WordNormalizer()
 
 	@Lazy public String[] sortedByFreq = {
 		wordFreq.keySet().sort { String a, String b->
@@ -31,7 +32,9 @@ public class Corpus {
 		Iterator csvLines = CsvParser.parseCsv(parserArgs, reader)
 		for (line in csvLines) {
 			String w = line."Word".toLowerCase().replace('\u00A0',' ').trim()
+			
 			String f = line."Frequency"
+			
 			//String f  = line."Dispersion"
 			if (!f || !w) {
 				continue
@@ -139,14 +142,23 @@ public class Corpus {
 		Map<String, BigDecimal> f1 = wordFreq
 		Map<String, BigDecimal> f2 = c.wordFreq
 
-		Set<String> commonWords = f1.keySet().intersect(f2.keySet())
+		
+		
+		//Set<String> commonWords = f1.keySet().intersect(f2.keySet())
+		Set<String> allWords = f1.keySet() + (f2.keySet())
+		
 		/*commonWords.take(100).each { String w->
 		 println "$w:  ${f1[w]/f2[w]} ( ${f1[w]-f2[w]})  ${f1[w]} ${f2[w]} }"
 		 }*/
 
-		commonWords.each { String w->
-			f1[w] = (f1[w] + f2[w]) /2
-
+		for (String w in allWords) {
+			//If only one is defined, take it
+			if (!f2[w]) continue
+			if (!f1[w]) {
+				f1[w] = f2[w]
+				continue
+			}			
+			f1[w] = (f1[w] + f2[w]) /2 //When both do avg
 		}
 	}
 
@@ -171,14 +183,9 @@ public class Corpus {
 	}
 
 	public BigInteger getAt(String word) {
-		BigInteger ret = wordFreq[word]
-		if (ret) return ret
-		if (word.endsWith("s")) {
-			word = word[0..-2] //Cur the pluar
-		} else {
-			word = "${word}s"
-		}
-		ret = wordFreq[word]
+		
+		List<String> wordVariants = wn.wordVariants(word) 	
+		BigInteger ret = wordVariants.findResult {wordFreq[it]}
 		if (ret) return ret
 		println color(word.padLeft(10), BOLD) + color(" - not in corpus" , RED)
 	}
@@ -198,7 +205,7 @@ public class Corpus {
 		c1.loadWiki()
 		Corpus c2 = new Corpus()
 		//c2.load12Dicts()
-		c2.loadWordFreq()
+		c2.loadWordFreq()		
 		c1.averageCommonWordsFrom(c2)
 		c1.addStrange()
 		return c1
@@ -211,7 +218,8 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			//println topXOf(["i am", "hello"])
-			println it["arrive"]
+			println it["easy"]
+			
 		}
 
 		//n.importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())
