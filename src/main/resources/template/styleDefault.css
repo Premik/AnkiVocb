@@ -31,6 +31,30 @@
     padding-left: 150px;
 	position: relative;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
+}
+
+.container {
+	width: 1140px;
+}
+
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+main {
+	min-height: 75vh;
+	margin-bottom: 1rem;
+}
+
+figcaption, figure, main {
+	display: block;
 }

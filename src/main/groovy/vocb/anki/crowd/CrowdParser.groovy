@@ -52,6 +52,14 @@ public class CrowdParser {
 		jsonRoot.crowdanki_uuid = id
 	}
 	
+	String getDeckDesc() {
+		jsonRoot.desc
+	}
+	
+	void setDeckDesc(String d) {
+		jsonRoot.desc = d
+	}
+	
 	
 
 	Set<String> notesAllFieldValues() {

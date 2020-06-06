@@ -36,7 +36,9 @@ public class Data2Crowd {
 	CharSequence destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = {		  
 		 new Render(cfgHelper:cfgHelper).tap {
-			 extraVars.put("info", info)			 
+			 extraVars.putAll( [
+				  info: info, 
+				  backgroundImg: addExtensionToMediaLink(info.backgroundName)])
 		 }
 	}()
 
@@ -138,7 +140,7 @@ public class Data2Crowd {
 
 		List cards = renderCardTemplate.cards
 		assert cards
-		//Ensure target list as at least same number of elements as the source
+		//Ensure target list has at least same number of elements as the source
 		List<TemplateModel> padded = targetM.tmpls.withEagerDefault { new TemplateModel() }
 		padded[cards.size()-1] //Pad with new template models if needed
 		padded.take(cards.size())
@@ -158,10 +160,16 @@ public class Data2Crowd {
 
 	}
 	
+	void renderDeckDescriptionTemplate( ConfigObject deckDescriptionPreview=cfg.render.deckDescriptionRender) {
+		assert deckDescriptionPreview
+		vocbModel.parser.deckDesc = render.render(deckDescriptionPreview)
+	}
+	
 	void exportExamplesToCrowd(Collection<Example> toExport, Set<Concept> ignore = []) {
 		WordNormalizer wn =dbMan.wn
 		vocbModel.parser.deckName= info.displayName
 		vocbModel.parser.deckCrowdUuid = info.uuid
+		renderDeckDescriptionTemplate()
 		
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
