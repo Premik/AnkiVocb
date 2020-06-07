@@ -344,14 +344,16 @@ public class Manager {
 	
 	public void withBestExample(String text, Closure cl) {
 		List<String> snts = wn.sentences(text)
+		assert snts
 		snts.each { String sen->
-			Example e = findBestExampleForSentence(sen)
+			Example e = findBestExampleForSentence(sen)			
 			String et = e?.firstTerm
+			//assert et : "No example for '$sen' \n ${snts.take(5)} ..."
 			if (wn.normalizeSentence(et) == wn.normalizeSentence(sen)) {
 				cl(e, sen, [] as Set, [] as Set)
 			} else {
-				Set<String> com = wn.commonWordOf(sen, e.firstTerm)
-				Set<String> mis = wn.uniqueueTokens(sen) + wn.uniqueueTokens(e.firstTerm) - com
+				Set<String> com = wn.commonWordOf(sen, et)
+				Set<String> mis = wn.uniqueueTokens(sen) + wn.uniqueueTokens(et) - com
 				cl(e, sen, com, mis)
 			}			
 		}
