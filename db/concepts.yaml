@@ -11211,7 +11211,7 @@ concepts:
     tts: cs-terms/bomba.mp3
   freq: 4241.00000
   origins: ["Supaplex"]
-##  bang   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  bang   ################################################################## no img
 - terms: 
   - term: bang
     lang: en
@@ -11219,11 +11219,13 @@ concepts:
     pron: bæŋ
   - term: třesk
     lang: cs
+    tts: cs-terms/tresk.mp3
   - term: prásk
     lang: cs
+    tts: cs-terms/prask.mp3
   freq: 4075.00000
   origins: ["Supaplex"]
-##  timing   ################################################################ no img|t1:tts:missing
+##  timing   ################################################################ no img
 - terms: 
   - term: timing
     lang: en
@@ -11231,9 +11233,10 @@ concepts:
     pron: ˈtaɪmɪŋ
   - term: načasování
     lang: cs
+    tts: cs-terms/nacasovani.mp3
   freq: 3905.00000
   origins: ["Supaplex"]
-##  flip   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  flip   ################################################################## no img
 - terms: 
   - term: flip
     lang: en
@@ -11241,11 +11244,13 @@ concepts:
     pron: flɪp
   - term: překlopit
     lang: cs
+    tts: cs-terms/preklopit.mp3
   - term: převrátit
     lang: cs
+    tts: cs-terms/prevratit.mp3
   freq: 3878.00000
   origins: ["Supaplex"]
-##  triple   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  triple   ################################################################ no img
 - terms: 
   - term: triple
     lang: en
@@ -11253,11 +11258,13 @@ concepts:
     pron: ˈtrɪpl
   - term: trojitý
     lang: cs
+    tts: cs-terms/trojity.mp3
   - term: ztrojnásobit
     lang: cs
+    tts: cs-terms/ztrojnasobit.mp3
   freq: 3858.00000
   origins: ["Supaplex"]
-##  boring   ################################################################ no img|t1:tts:missing
+##  boring   ################################################################ no img
 - terms: 
   - term: boring
     lang: en
@@ -11265,9 +11272,10 @@ concepts:
     pron: ˈbɔːrɪŋ
   - term: nudný
     lang: cs
+    tts: cs-terms/nudny.mp3
   freq: 3595.00000
   origins: ["Supaplex"]
-##  yawn   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  yawn   ################################################################## no img
 - terms: 
   - term: yawn
     lang: en
@@ -11275,11 +11283,13 @@ concepts:
     pron: jɔːn
   - term: zívnutí
     lang: cs
+    tts: cs-terms/zivnuti.mp3
   - term: zívat
     lang: cs
+    tts: cs-terms/zivat.mp3
   freq: 2763.00000
   origins: ["Supaplex"]
-##  diagonal   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  diagonal   ############################################################## no img
 - terms: 
   - term: diagonal
     lang: en
@@ -11287,11 +11297,13 @@ concepts:
     pron: daɪˈægənl
   - term: úhlopříčka
     lang: cs
+    tts: cs-terms/uhlopricka.mp3
   - term: diagonální
     lang: cs
+    tts: cs-terms/diagonalni.mp3
   freq: 1155.00000
   origins: ["Supaplex"]
-##  cracker   ############################################################### no img|t1:tts:missing|t2:tts:missing
+##  cracker   ############################################################### no img
 - terms: 
   - term: cracker
     lang: en
@@ -11299,11 +11311,13 @@ concepts:
     pron: ˈkrækə
   - term: suchar
     lang: cs
+    tts: cs-terms/suchar.mp3
   - term: prskavka
     lang: cs
+    tts: cs-terms/prskavka.mp3
   freq: 1119.00000
   origins: ["Supaplex"]
-##  pre   ################################################################### no img|t1:tts:missing|t2:tts:missing
+##  pre   ################################################################### no img
 - terms: 
   - term: pre
     lang: en
@@ -11311,11 +11325,13 @@ concepts:
     pron: priː
   - term: předběžné
     lang: cs
+    tts: cs-terms/predbezne.mp3
   - term: před
     lang: cs
+    tts: cs-terms/pred.mp3
   freq: 644.00000
   origins: ["Supaplex"]
-##  bombastic   ############################################################# no img|t1:tts:missing
+##  bombastic   ############################################################# no img
 - terms: 
   - term: bombastic
     lang: en
@@ -11323,9 +11339,10 @@ concepts:
     pron: bɒmˈbæstɪk
   - term: bombastický
     lang: cs
+    tts: cs-terms/bombasticky.mp3
   freq: 564.00000
   origins: ["Supaplex"]
-##  hopper   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  hopper   ################################################################ no img
 - terms: 
   - term: hopper
     lang: en
@@ -11333,11 +11350,13 @@ concepts:
     pron: ˈhɒpə
   - term: pendlák
     lang: cs
+    tts: cs-terms/pendlak.mp3
   - term: násypka
     lang: cs
+    tts: cs-terms/nasypka.mp3
   freq: 544.00000
   origins: ["Supaplex"]
-##  flop   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  flop   ################################################################## no img
 - terms: 
   - term: flop
     lang: en
@@ -11345,11 +11364,13 @@ concepts:
     pron: flɒp
   - term: žuchnout
     lang: cs
+    tts: cs-terms/zuchnout.mp3
   - term: propadák
     lang: cs
+    tts: cs-terms/propadak.mp3
   freq: 535.00000
   origins: ["Supaplex"]
-##  ignition   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  ignition   ############################################################## no img
 - terms: 
   - term: ignition
     lang: en
@@ -11357,11 +11378,13 @@ concepts:
     pron: ɪgˈnɪʃən
   - term: zapalování
     lang: cs
+    tts: cs-terms/zapalovani.mp3
   - term: zážeh
     lang: cs
+    tts: cs-terms/zazeh.mp3
   freq: 512.00000
   origins: ["Supaplex"]
-##  telepathy   ############################################################# no img|t1:tts:missing|t2:tts:missing
+##  telepathy   ############################################################# no img
 - terms: 
   - term: telepathy
     lang: en
@@ -11369,11 +11392,13 @@ concepts:
     pron: tɪˈlɛpəθi
   - term: telepatie
     lang: cs
+    tts: cs-terms/telepatie.mp3
   - term: přenos myšlenek
     lang: cs
+    tts: cs-terms/prenos myslenek.mp3
   freq: 437.00000
   origins: ["Supaplex"]
-##  info   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  info   ################################################################## no img
 - terms: 
   - term: info
     lang: en
@@ -11381,11 +11406,13 @@ concepts:
     pron: ˈɪnfəʊ
   - term: informace
     lang: cs
+    tts: cs-terms/informace.mp3
   - term: údaje
     lang: cs
+    tts: cs-terms/udaje.mp3
   freq: 177.00000
   origins: ["Supaplex"]
-##  anti   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  anti   ################################################################## no img
 - terms: 
   - term: anti
     lang: en
@@ -11393,11 +11420,13 @@ concepts:
     pron: ˈænti
   - term: proti
     lang: cs
+    tts: cs-terms/proti.mp3
   - term: opak
     lang: cs
+    tts: cs-terms/opak.mp3
   freq: 143.00000
   origins: ["Supaplex"]
-##  clockwise   ############################################################# no img|t1:tts:missing
+##  clockwise   ############################################################# no img
 - terms: 
   - term: clockwise
     lang: en
@@ -11405,9 +11434,10 @@ concepts:
     pron: ˈklɒkwaɪz
   - term: po směru hodinových ručiček
     lang: cs
+    tts: cs-samples/po smeru hodinovych rucicek.mp3
   freq: 44.00000
   origins: ["Supaplex"]
-##  joystick   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  joystick   ############################################################## no img
 - terms: 
   - term: joystick
     lang: en
@@ -11415,8 +11445,10 @@ concepts:
     pron: ˈʤɔɪstɪk
   - term: knipl
     lang: cs
+    tts: cs-terms/knipl.mp3
   - term: ovládací páka
     lang: cs
+    tts: cs-terms/ovladaci paka.mp3
   freq: 11.00000
   origins: ["Supaplex"]
 
