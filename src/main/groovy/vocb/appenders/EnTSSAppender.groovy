@@ -92,7 +92,7 @@ public class EnTSSAppender {
 
 	public static void main(String[] args) {
 		new EnTSSAppender().with {
-			limit = 10
+			limit = 50
 			runTerms()
 			runExamples()
 		}
