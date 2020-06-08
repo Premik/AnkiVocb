@@ -11455,10 +11455,11 @@ concepts:
   - term: baba
     lang: en
   state: ignore
-##  path   ################################################################## no img|t0:tts:missing|t0:pron:missing
+##  path   ################################################################## no img|t0:pron:missing
 - terms: 
   - term: path
     lang: en
+    tts: en-terms/path.mp3
   - term: cesta
     lang: cs
     tts: cs-terms/cesta.mp3
@@ -11467,10 +11468,11 @@ concepts:
     tts: cs-terms/trasa.mp3
   freq: 51747.00000
   origins: ["Supaplex"]
-##  finder   ################################################################ no img|t0:tts:missing|t0:pron:missing
+##  finder   ################################################################ no img|t0:pron:missing
 - terms: 
   - term: finder
     lang: en
+    tts: en-terms/finder.mp3
   - term: vyhledávač
     lang: cs
     tts: cs-terms/vyhledavac.mp3
@@ -15197,120 +15199,122 @@ examples:
   - term: Najdi cestu.
     lang: cs
     tts: cs-terms/Najdi cestu.mp3
-##  Easy deal.   ############################################################ t0:tts:missing
 - terms: 
   - term: Easy deal.
     lang: en
+    tts: en-samples/Easy deal.mp3
   - term: Snadná dohoda.
     lang: cs
     tts: cs-terms/Snadna dohoda.mp3
-##  Stone age.   ############################################################ t0:tts:missing
 - terms: 
   - term: Stone age.
     lang: en
+    tts: en-samples/Stone age.mp3
   - term: Doba kamenná.
     lang: cs
     tts: cs-terms/Doba kamenna.mp3
-##  Crazy harry.   ########################################################## t0:tts:missing
 - terms: 
   - term: Crazy harry.
     lang: en
+    tts: en-samples/Crazy harry.mp3
   - term: Šílený otrava.
     lang: cs
     tts: cs-terms/Sileny otrava.mp3
-##  Moving objects.   ####################################################### t0:tts:missing
 - terms: 
   - term: Moving objects.
     lang: en
+    tts: en-samples/Moving objects.mp3
   - term: Pohybující se objekty.
     lang: cs
     tts: cs-samples/Pohybujici se objekty.mp3
-##  Nearly boring.   ######################################################## t0:tts:missing
 - terms: 
   - term: Nearly boring.
     lang: en
+    tts: en-samples/Nearly boring.mp3
   - term: Téměř nudné.
     lang: cs
     tts: cs-terms/Temer nudne.mp3
-##  Chamber music.   ######################################################## t0:tts:missing
 - terms: 
   - term: Chamber music.
     lang: en
+    tts: en-samples/Chamber music.mp3
   - term: Komorní hudba.
     lang: cs
     tts: cs-terms/Komorni hudba.mp3
-##  Looks difficult.   ###################################################### t0:tts:missing
 - terms: 
   - term: Looks difficult.
     lang: en
+    tts: en-samples/Looks difficult.mp3
   - term: Vypadá to obtížně.
     lang: cs
     tts: cs-samples/Vypada to obtizne.mp3
-##  Corner confusion.   ##################################################### t0:tts:missing
 - terms: 
   - term: Corner confusion.
     lang: en
+    tts: en-samples/Corner confusion.mp3
   - term: Zmatek v rohu.
     lang: cs
     tts: cs-terms/Zmatek v rohu.mp3
-##  Path finder.   ########################################################## t0:tts:missing
 - terms: 
   - term: Path finder.
     lang: en
+    tts: en-samples/Path finder.mp3
   - term: Průzkumník.
     lang: cs
     tts: cs-terms/Pruzkumnik.mp3
-##  Island hopper.   ######################################################## t0:tts:missing
 - terms: 
   - term: Island hopper.
     lang: en
+    tts: en-samples/Island hopper.mp3
   - term: Ostrovní dopravní linka.
     lang: cs
     tts: cs-samples/Ostrovni dopravni linka.mp3
-##  Classic entertainment.   ################################################ t0:tts:missing
 - terms: 
   - term: Classic entertainment.
     lang: en
+    tts: en-samples/Classic entertainment.mp3
   - term: Klasická zábava.
     lang: cs
     tts: cs-terms/Klasicka zabava.mp3
-##  Triple fork.   ########################################################## t0:tts:missing
 - terms: 
   - term: Triple fork.
     lang: en
+    tts: en-samples/Triple fork.mp3
   - term: Trojitá vidlička.
     lang: cs
     tts: cs-terms/Trojita vidlicka.mp3
-##  Einstein's favourite.   ################################################# t0:tts:missing
 - terms: 
   - term: Einstein's favourite.
     lang: en
+    tts: en-samples/Einsteins favourite.mp3
   - term: Einsteinův oblíbený.
     lang: cs
     tts: cs-terms/Einsteinuv oblibeny.mp3
-##  Mixed salad.   ########################################################## t0:tts:missing
 - terms: 
   - term: Mixed salad.
     lang: en
+    tts: en-samples/Mixed salad.mp3
   - term: Míchaný salát.
     lang: cs
     tts: cs-terms/Michany salat.mp3
-##  Sub effects.   ########################################################## t0:tts:missing
 - terms: 
   - term: Sub effects.
     lang: en
+    tts: en-samples/Sub effects.mp3
   - term: Pod efekty.
     lang: cs
     tts: cs-terms/Pod efekty.mp3
-##  Upstairs downstairs.   ################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Upstairs downstairs.
     lang: en
+    tts: en-samples/Upstairs downstairs.mp3
   - term: Po schodech nahoře dole.
     lang: cs
-##  Trouble ahead.   ######################################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Po schodech nahore dole.mp3
 - terms: 
   - term: Trouble ahead.
     lang: en
+    tts: en-samples/Trouble ahead.mp3
   - term: Problémy před námi.
     lang: cs
+    tts: cs-samples/Problemy pred nami.mp3
