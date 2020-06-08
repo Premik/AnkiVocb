@@ -181,13 +181,14 @@ public class Pack {
 				exportExamples.add(e)
 				return
 			}
+		
 			String col = NORMAL
-			if (mis.size() > 2)  {
+			if (mis.size() > 2 || !e)  {
 				col = RED
 			} else {
 				exportExamples.add(e)
 			}
-			println "${color(sen, col)} -> ${color(e.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
+			println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
 
 
@@ -199,7 +200,8 @@ public class Pack {
 	public static void main(String[] args) {
 		new Pack().with {
 			//info.name = "JingleBells"			
-			info.name = "FiveLittleMonkeys"
+			//info.name = "FiveLittleMonkeys"
+			info.name = "Supaplex"
 		 
 			exportSentences()
 			doExport()

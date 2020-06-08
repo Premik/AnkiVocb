@@ -9,7 +9,9 @@ function coverWord(w) {
     if (chrs.length > 7) start++;
 
     for (var i = start; i < end; i++) {
-        chrs[i] = placeholder;
+        if (chrs[i] !==' ') {
+            chrs[i] = placeholder;
+        }
     }
     return chrs.join("");
 }

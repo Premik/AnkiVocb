@@ -89,7 +89,7 @@ public class WordsSource {
 	}
 
 	void fromOwnSamples() {
-		sourceName = "conceptDbSamples"
+		sourceName = sourceName?:"conceptDbSamples"
 		fromText(dbMan.allTextWithLang("en").join("\n"))
 	}
 
@@ -136,8 +136,8 @@ public class WordsSource {
 			String tx = new File("/data/src/AnkiVocb/pkg/Supaplex/Supaplex.txt").text
 			
 			sourceName = "Supaplex"
-			fromText(tx)
-			//fromOwnSamples()
+			////fromText(tx)
+			fromOwnSamples()
 			return
 			wn.phraseFreqs(tx,2, 3)
 			   .collectEntries{ String w, BigDecimal fqInText-> [w, corp.phraseFreq(w)*fqInText]}
