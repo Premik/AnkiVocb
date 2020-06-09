@@ -20,7 +20,7 @@ public class ProfileSupport {
 	String deckName = "JingleBells"
 
 	@Lazy VocbModel vocbModel = new VocbModel()
-
+ 
 
 	public Sql withProfileCollectionDb(String profileName, Closure<Sql> cl) {
 		assert profileName
@@ -111,12 +111,16 @@ public class ProfileSupport {
 		List<GroovyRowResult> ret
 
 		withProfileCollectionDb(selectedProfile) { Sql sql->
-			ret =sql.rows("""
+			String did = ""
+			if (selectedDeckId) did = "and did = $selectedDeckId"
+			String select = """
                   select c.id as cid, c.nid, c.did, c.ord, c.due, c.type, n.mid, n.guid, n.tags, n.flds from cards as c 
                         left join  notes as n on c.nid = n.id where 
-                          mid = $ankivocbModelId and
-                          did = $selectedDeckId
-                  """) //
+                          mid = $ankivocbModelId
+                          $did
+                  """
+			//println "${select}"
+			ret =sql.rows(select) //
 					.collect { GroovyRowResult r ->
 						r.type = [0:"new", 1:"learning", 2:"due", 3:"relearning"][r.type]
 						r.flds = splitFields(r.flds)
@@ -153,8 +157,9 @@ public class ProfileSupport {
 	static void main(String... args) {
 		new ProfileSupport().with {
 			//println listProfiles()
-			selectedProfile = "Honzik"
-			deckName = "Jingle Bells"
+			selectedProfile = "Honzik" 
+			//deckName = "Supaplex"
+			//deckName = "Jingle Bells"
 			//deckName = "Five Little Monkeys"
 			println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
 

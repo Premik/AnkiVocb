@@ -61,7 +61,7 @@ class Render {
 	public String render(String renderConfigName) {
 		renderCfg = cfg.render[renderConfigName]
 		assert renderCfg : "render.$renderConfigName cont found in config"
-		return render(renderCfg)
+		return render(renderCfg).trim()
 	}
 
 	public File renderToFile(String renderConfigName, File path) {

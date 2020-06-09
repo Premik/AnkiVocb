@@ -11455,7 +11455,7 @@ concepts:
   - term: baba
     lang: en
   state: ignore
-##  path   ################################################################## no img|t0:pron:missing
+##  path   ################################################################## t0:pron:missing
 - terms: 
   - term: path
     lang: en
@@ -11466,9 +11466,10 @@ concepts:
   - term: trasa
     lang: cs
     tts: cs-terms/trasa.mp3
+  img: img/path.jpeg
   freq: 51747.00000
   origins: ["Supaplex"]
-##  finder   ################################################################ no img|t0:pron:missing
+##  finder   ################################################################ t0:pron:missing
 - terms: 
   - term: finder
     lang: en
@@ -11479,6 +11480,7 @@ concepts:
   - term: nálezce
     lang: cs
     tts: cs-terms/nalezce.mp3
+  img: img/finder.jpeg
   freq: 554.00000
   origins: ["Supaplex"]
 - terms: 
