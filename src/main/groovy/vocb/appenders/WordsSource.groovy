@@ -133,9 +133,9 @@ public class WordsSource {
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
-			String tx = new File("/data/src/AnkiVocb/pkg/Supaplex/Supaplex.txt").text
+			String tx = new File("/data/src/AnkiVocb/pkg/LondonBridge/sentences.txt").text
 			
-			sourceName = "Supaplex"
+			sourceName = "LondonBridge"
 			////fromText(tx)
 			fromOwnSamples()
 			return
