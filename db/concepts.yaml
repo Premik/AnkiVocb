@@ -11732,7 +11732,7 @@ concepts:
     tts: cs-terms/tyce.mp3
   freq: 14391.00000
   origins: ["LondonBridge"]
-##  clay   ################################################################## no img|t0:pron:missing|t2:tts:missing
+##  clay   ################################################################## no img|t0:pron:missing
 - terms: 
   - term: clay
     lang: en
@@ -11742,6 +11742,7 @@ concepts:
     tts: cs-terms/jil.mp3
   - term: hlína
     lang: cs
+    tts: cs-terms/hlina.mp3
   freq: 12342.00000
   origins: ["LondonBridge"]
 
@@ -15575,73 +15576,73 @@ examples:
   - term: Problémy před námi.
     lang: cs
     tts: cs-samples/Problemy pred nami.mp3
-##  London bridge.   ######################################################## t1:tts:missing
 - terms: 
   - term: London bridge.
     lang: en
     tts: en-samples/London bridge.mp3
   - term: Londýnský most.
     lang: cs
-##  Falling down.   ######################################################### t1:tts:missing
+    tts: cs-terms/Londynsky most.mp3
 - terms: 
   - term: Falling down.
     lang: en
     tts: en-samples/Falling down.mp3
   - term: Padá dolů.
     lang: cs
-##  My fair lady.   ######################################################### t1:tts:missing
+    tts: cs-terms/Pada dolu.mp3
 - terms: 
   - term: My fair lady.
     lang: en
     tts: en-samples/My fair lady.mp3
   - term: Má milá dámo.
     lang: cs
-##  Build it up.   ########################################################## t1:tts:missing
+    tts: cs-samples/Ma mila damo.mp3
 - terms: 
   - term: Build it up.
     lang: en
     tts: en-samples/Build it up.mp3
   - term: Vybudujte to.
     lang: cs
-##  Wood and clay.   ######################################################## t1:tts:missing
+    tts: cs-terms/Vybudujte to.mp3
 - terms: 
   - term: Wood and clay.
     lang: en
     tts: en-samples/Wood and clay.mp3
   - term: Dřevo a hlína.
     lang: cs
-##  Will wash away.   ####################################################### t1:tts:missing
+    tts: cs-terms/Drevo a hlina.mp3
 - terms: 
   - term: Will wash away.
     lang: en
     tts: en-samples/Will wash away.mp3
-  - term: Vymýje se.
+  - term: Vymyje se.
     lang: cs
-##  With iron bars.   ####################################################### t1:tts:missing
+    tts: cs-terms/Vymyje se.mp3
 - terms: 
   - term: With iron bars.
     lang: en
     tts: en-samples/With iron bars.mp3
   - term: Se železnými tyčemi.
     lang: cs
-##  Will bend and break.   ################################################## t1:tts:missing
+    tts: cs-samples/Se zeleznymi tycemi.mp3
 - terms: 
   - term: Will bend and break.
     lang: en
     tts: en-samples/Will bend and break.mp3
   - term: Zohne se a zlomí.
     lang: cs
-##  Gold and silver.   ###################################################### t1:tts:missing
+    tts: cs-samples/Zohne se a zlomi.mp3
 - terms: 
   - term: Gold and silver.
     lang: en
     tts: en-samples/Gold and silver.mp3
   - term: Zlato a stříbro.
     lang: cs
-##  Will be stolen away.   ################################################## t1:tts:missing
+    tts: cs-terms/Zlato a stribro.mp3
 - terms: 
   - term: Will be stolen away.
     lang: en
     tts: en-samples/Will be stolen away.mp3
   - term: Bude vykradeno.
     lang: cs
+    tts: cs-terms/Bude vykradeno.mp3
