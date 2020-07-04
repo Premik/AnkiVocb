@@ -206,7 +206,7 @@ public class Pack {
 			//info.name = "JingleBells"			
 			//info.name = "FiveLittleMonkeys"
 			info.name = "LondonBridge"
-			cfgHelper.lookupFoldersToConsider.add(packagePath)
+			cfgHelper.lookupFoldersToConsider.add(packagePath.toString())
 		 
 			
 			exportSentences()

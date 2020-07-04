@@ -93,7 +93,7 @@ class Render {
 		Map toRender = cfg.render
 		//toRender = toRender.findAll {String k, v-> k =="card2Preview"}
 		//toRender = toRender.findAll {String k, v-> k =="cardBackPreview"}
-		toRender = toRender.findAll {String k, v-> k =="deckDescriptionPreview"}
+		//toRender = toRender.findAll {String k, v-> k =="deckDescriptionPreview"}
 		toRender.each { String name, Map r ->
 			File outF = renderToFile(name, p)
 			if (r.runWith) {
