@@ -30,7 +30,7 @@ public class ConceptYamlStorage {
 
 	public Concept parseConcept(Map cjs) {
 		assert cjs
-		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, origins:cjs.origins)
+		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq)
 		cjs.terms.each {
 			Term t = parseTerm(it)
 			c.terms.add(t)
@@ -133,7 +133,7 @@ public class ConceptYamlStorage {
 		appendYamlHash("img", c.img,sb)
 		appendYamlHash("freq", Helper.roundDecimal(c.freq, 5), sb)
 		//sb.append("origins: ").append(origins)
-		appendYamlHash("origins", listToYaml(c.origins as List<String>), sb)
+	
 		return sb.toString()
 
 		/*"""\

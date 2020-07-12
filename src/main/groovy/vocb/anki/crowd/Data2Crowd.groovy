@@ -2,6 +2,7 @@ package vocb.anki.crowd
 
 import static vocb.Ansi.*
 
+import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.regex.Pattern
@@ -36,6 +37,7 @@ public class Data2Crowd {
 	CharSequence destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = {		  
 		 new Render(cfgHelper:cfgHelper).tap {
+			 assert info?.backgroundName
 			 extraVars.putAll( [
 				  info: info, 
 				  backgroundImg: addExtensionToMediaLink(info.backgroundName)])
@@ -83,8 +85,9 @@ public class Data2Crowd {
 		Tuple2<String, String> fn = Helper.splitFileNameExt(mediaLink)
 		if (!fn.v2) { //Media link has no extension. Have to take it from the actual resolved path
 			Path sourcePath =resolveMediaLink(mediaLink)
+			if (!Files.exists(sourcePath)) return null
 			Tuple2<String, String> rFn = Helper.splitFileNameExt(sourcePath.fileName.toString())
-			assert rFn.v2 : "Resolved media file has no extension"
+			assert rFn.v2 : "Resolved media file has no extension. MediaLink: $mediaLink"
 			mediaLink = "${mediaLink}.${rFn.v2}"
 		}
 		return mediaLink

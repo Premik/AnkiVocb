@@ -61,16 +61,10 @@ public class WordsSource {
 			if (c != null) {
 				if (words.size() < 30) {
 					println color("${w.padLeft(10)}  - already in db $stars ", WHITE)
-				}
-				if (!c?.origins?.contains(sourceName)) {
-					if (c.origins == null) {
-						c.origins = []
-					}
-					c.origins.add(sourceName)
-				}
+				}				
 				continue
 			}
-			c = new Concept(terms: [t], freq:corp[w], origins:[sourceName])
+			c = new Concept(terms: [t], freq:corp[w])
 			
 			println "${color(w.padLeft(10), BOLD)}: added $frq $stars ${color(wordsInSentences[w].join('|'), BLUE)}"
 			i++
@@ -133,9 +127,10 @@ public class WordsSource {
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
-			String tx = new File("/data/src/AnkiVocb/pkg/LondonBridge/sentences.txt").text
+			sourceName = "MaryHadALittleLamb"
+			String tx = new File("/data/src/AnkiVocb/pkg/$sourceName/sentences.txt").text
 			
-			sourceName = "LondonBridge"
+			
 			////fromText(tx)
 			fromOwnSamples()
 			return

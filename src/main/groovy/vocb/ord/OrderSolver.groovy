@@ -184,7 +184,7 @@ public class OrderSolver {
 			String sim = ce?.similarities.findAll{it.value > 0.23}.collect {it.key.firstTerm}.join(" ")
 			if (sim) sim = "<$sim>"
 
-			println "$term $stars $sim $sample ${c.origins} "
+			println "$term $stars $sim $sample "
 		}
 
 	}

@@ -72,7 +72,6 @@ public class Concept {
 	String state
 	String img
 	BigDecimal freq
-	Set<String> origins = [] as HashSet
 
 	public String getFirstTerm() {terms[0]?.term}
 	public List<Term> termsByLang(String lng) { terms?.findAll {it.lang == lng }}
