@@ -37,6 +37,7 @@ public class Note {
 		return """<img src=":$ref">"""
 	}
 
+	@Deprecated
 	public List<String> toRichFields(boolean fitToModel=true) {
 		List<String> fls = [
 			enWord,
