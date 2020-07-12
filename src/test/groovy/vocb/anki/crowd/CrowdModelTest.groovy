@@ -58,13 +58,13 @@ class CrowdModelTest {
 	void hashTest() {
 		Note a = vocbModel.notes[0]
 		println "${a}"		
-		a.assertIsComplete()
+		//a.assertIsComplete()
 		int orighash = a.hashCode()
 		a.data= "data"
 		assert orighash == a.hashCode()
 		vocbModel = new VocbModel()
 		a = vocbModel.notes[0]
-		println "${a}"
+		//println "${a}"
 		assert orighash == a.hashCode()
 		a.img = "newImg"
 		assert orighash != a.hashCode()
