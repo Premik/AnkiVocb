@@ -205,7 +205,9 @@ public class Pack {
 		new Pack().with {
 			//info.name = "JingleBells"			
 			//info.name = "FiveLittleMonkeys"
-			info.name = "LondonBridge"
+			//info.name = "LondonBridge"
+			info.name = "MaryHadALittleLamb"
+			info.displayName = "Mary Had a Little Lamb"
 			cfgHelper.lookupFoldersToConsider.add(packagePath.toString())
 		 
 			
