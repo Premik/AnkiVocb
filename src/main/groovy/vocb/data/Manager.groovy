@@ -407,7 +407,7 @@ public class Manager {
 			load()
 			validate()
 			printStats()
-			//allTextWithLang("en").each {println it}
+			allTextWithLang("cs").each {println it}
 			
 
 			//moveToSubFolders()
