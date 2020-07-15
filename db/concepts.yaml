@@ -10879,56 +10879,70 @@ concepts:
     tts: cs-terms/ovci vlna.mp3
   img: img/fleece.jpeg
   freq: 2219.00000
-##  sea   ################################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  sea   ################################################################### t0:pron:missing
 - terms: 
   - term: sea
     lang: en
+    tts: en-terms/sea.mp3
   - term: moře
     lang: cs
+    tts: cs-terms/more.mp3
   img: img/sea.jpeg
   freq: 118822.00000
-##  winds   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  winds   ################################################################# t0:pron:missing
 - terms: 
   - term: winds
     lang: en
+    tts: en-terms/winds.mp3
   - term: větry
     lang: cs
+    tts: cs-terms/vetry.mp3
   img: img/winds.jpeg
   freq: 29930.00000
-##  ocean   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  ocean   ################################################################# t0:pron:missing
 - terms: 
   - term: ocean
     lang: en
+    tts: en-terms/ocean.mp3
   - term: oceán
     lang: cs
+    tts: cs-terms/ocean.mp3
   img: img/ocean.jpeg
   freq: 26689.00000
-##  blown   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  blown   ################################################################# t0:pron:missing
 - terms: 
   - term: blown
     lang: en
+    tts: en-terms/blown.mp3
   - term: odfouknutý
     lang: cs
+    tts: cs-terms/odfouknuty.mp3
   - term: odvátý
     lang: cs
+    tts: cs-terms/odvaty.mp3
   img: img/blown.jpeg
   freq: 14594.00000
-##  dreamt   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  dreamt   ################################################################ t0:pron:missing
 - terms: 
   - term: dreamt
     lang: en
+    tts: en-terms/dreamt.mp3
   - term: snil
     lang: cs
+    tts: cs-terms/snil.mp3
   - term: zdálo
     lang: cs
+    tts: cs-terms/zdalo.mp3
   img: img/dreamt.jpeg
   freq: 4353.00000
-##  bonnie   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  bonnie   ################################################################ t0:pron:missing
 - terms: 
   - term: bonnie
     lang: en
+    tts: en-terms/bonnie.mp3
   - term: miláček
     lang: cs
+    tts: cs-terms/milacek.mp3
   img: img/bonnie.jpeg
   freq: 1992.00000
 
@@ -14944,63 +14958,73 @@ examples:
   - term: Učitel odpověděl.
     lang: cs
     tts: cs-terms/Ucitel odpovedel.mp3
-##  My bonnie lies.   ####################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: My bonnie lies.
     lang: en
+    tts: en-samples/My bonnie lies.mp3
   - term: Můj miláček leží.
     lang: cs
-##  Over the ocean.   ####################################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Muj milacek lezi.mp3
 - terms: 
   - term: Over the ocean.
     lang: en
+    tts: en-samples/Over the ocean.mp3
   - term: Za oceánem.
     lang: cs
-##  Bring back my bonnie to me.   ########################################### t0:tts:missing|t1:tts:missing
+    tts: cs-terms/Za oceanem.mp3
 - terms: 
   - term: Bring back my bonnie to me.
     lang: en
+    tts: en-samples/Bring back my bonnie to me.mp3
   - term: Přiveď mi mého miláčka zpět.
     lang: cs
-##  Last night as I lay.   ################################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Prived mi meho milacka zpet.mp3
 - terms: 
   - term: Last night as I lay.
     lang: en
+    tts: en-samples/Last night as I lay.mp3
   - term: Minulou noc, když jsem si lehla.
     lang: cs
-##  On my pillow.   ######################################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Minulou noc, kdyz jsem si lehla.mp3
 - terms: 
   - term: On my pillow.
     lang: en
+    tts: en-samples/On my pillow.mp3
   - term: Na svůj polštář.
     lang: cs
-##  I dreamt that my bonnie was dead.   ##################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Na svuj polstar.mp3
 - terms: 
   - term: I dreamt that my bonnie was dead.
     lang: en
+    tts: en-samples/I dreamt that my bonnie was dead.mp3
   - term: Zdálo se mi, že můj miláček je mrtvý.
     lang: cs
-##  The winds have blown.   ################################################# t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Zdalo se mi, ze muj milacek je mrtvy.mp3
 - terms: 
   - term: The winds have blown.
     lang: en
+    tts: en-samples/The winds have blown.mp3
   - term: Větry odvály.
     lang: cs
-##  Over the sea.   ######################################################### t0:tts:missing|t1:tts:missing
+    tts: cs-terms/Vetry odvaly.mp3
 - terms: 
   - term: Over the sea.
     lang: en
+    tts: en-samples/Over the sea.mp3
   - term: Za mořem.
     lang: cs
-##  On my bed.   ############################################################ t0:tts:missing|t1:tts:missing
+    tts: cs-terms/Za morem.mp3
 - terms: 
   - term: On my bed.
     lang: en
+    tts: en-samples/On my bed.mp3
   - term: Na svoji postel.
     lang: cs
-##  Brought back my bonnie to me.   ######################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Na svoji postel.mp3
 - terms: 
   - term: Brought back my bonnie to me.
     lang: en
+    tts: en-samples/Brought back my bonnie to me.mp3
   - term: Přivedl mi mého miláčka zpět.
     lang: cs
+    tts: cs-samples/Privedl mi meho milacka zpet.mp3
