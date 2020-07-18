@@ -11,7 +11,7 @@ import static vocb.Ansi.*
 
 public class WordsSource {
 
-	String sourceName
+	
 	WordNormalizer wn = new WordNormalizer()
 	
 	 
@@ -31,7 +31,7 @@ public class WordsSource {
 	}()
 
 	void fromText(String text) {
-		assert sourceName
+		
 		
 		List<String> words = new ArrayList(wn.uniqueueTokens(text))
 				.findAll {String s ->					
@@ -77,18 +77,18 @@ public class WordsSource {
 	}
 
 	void fromCorups() {
-		sourceName = "corpus"
+		
 		String[] top = corp.sortedByFreq.take(limit)
 		fromText(top.join(" "))
 	}
 
 	void fromOwnSamples() {
-		sourceName = sourceName?:"conceptDbSamples"
+		
 		fromText(dbMan.allTextWithLang("en").join("\n"))
 	}
 
 	void decomposition() {
-		sourceName = "decomp"
+		
 		dbMan.db
 		dbMan.db.concepts.stream()
 				.flatMap{ Concept c ->
@@ -127,8 +127,9 @@ public class WordsSource {
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
-			sourceName = "MyBonnie"
-			String tx = new File("/data/src/AnkiVocb/pkg/$sourceName/sentences.txt").text
+			
+			String tx = new File("/data/src/AnkiVocb/pkg/EverythingIsAwesome/sentences.txt").text
+			                                             
 			
 			
 			fromText(tx)
