@@ -550,7 +550,7 @@ concepts:
     pron: mi
   - term: mě
     lang: cs
-    tts: cs-terms/me.mp3
+    tts: cs-terms/me-cs.mp3
   - term: mi
     lang: cs
     tts: cs-terms/mi.mp3
@@ -9539,7 +9539,7 @@ concepts:
     pron: ˈprɒbləm
   - term: problém
     lang: cs
-    tts: cs-terms/problem.mp3
+    tts: cs-terms/problem-cs.mp3
   - term: potíže
     lang: cs
     tts: cs-terms/potize.mp3
@@ -9692,7 +9692,7 @@ concepts:
     tts: cs-terms/potize.mp3
   - term: problém
     lang: cs
-    tts: cs-terms/problem.mp3
+    tts: cs-terms/problem-cs.mp3
   img: img/trouble.jpeg
   freq: 65531.00000
 - terms: 
@@ -10122,7 +10122,7 @@ concepts:
     pron: ˈfɛstəvəl
   - term: festival
     lang: cs
-    tts: cs-terms/festival.mp3
+    tts: cs-terms/festival-cs.mp3
   - term: slavnost
     lang: cs
     tts: cs-terms/slavnost.mp3
@@ -10906,7 +10906,7 @@ concepts:
     tts: en-terms/ocean.mp3
   - term: oceán
     lang: cs
-    tts: cs-terms/ocean.mp3
+    tts: cs-terms/ocean-cs.mp3
   img: img/ocean.jpeg
   freq: 26689.00000
 ##  blown   ################################################################# t0:pron:missing

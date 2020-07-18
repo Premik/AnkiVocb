@@ -206,8 +206,10 @@ public class Pack {
 			//info.name = "JingleBells"			
 			//info.name = "FiveLittleMonkeys"
 			//info.name = "LondonBridge"
-			info.name = "MaryHadALittleLamb"
-			info.displayName = "Mary Had a Little Lamb"
+			//info.name = "MaryHadALittleLamb"
+			info.name = "MyBonnie"
+			
+			//info.displayName = "Mary Had a Little Lamb"
 			cfgHelper.lookupFoldersToConsider.add(packagePath.toString())
 		 
 			
