@@ -10945,251 +10945,322 @@ concepts:
     tts: cs-terms/milacek.mp3
   img: img/bonnie.jpeg
   freq: 1992.00000
-##  lose   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  lose   ################################################################## no img|t0:pron:missing
 - terms: 
   - term: lose
     lang: en
+    tts: en-terms/lose.mp3
   - term: ztratit
     lang: cs
+    tts: cs-terms/ztratit.mp3
   - term: prohrát
     lang: cs
+    tts: cs-terms/prohrat.mp3
   freq: 101608.00000
-##  later   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  later   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: later
     lang: en
+    tts: en-terms/later.mp3
   - term: později
     lang: cs
+    tts: cs-terms/pozdeji.mp3
   freq: 91769.00000
-##  living   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  living   ################################################################ no img|t0:pron:missing
 - terms: 
   - term: living
     lang: en
+    tts: en-terms/living.mp3
   - term: žijící
     lang: cs
+    tts: cs-terms/zijici.mp3
   - term: obývací
     lang: cs
+    tts: cs-terms/obyvaci.mp3
   freq: 83933.00000
-##  piece   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  piece   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: piece
     lang: en
+    tts: en-terms/piece.mp3
   - term: kousek
     lang: cs
+    tts: cs-terms/kousek.mp3
   freq: 82102.00000
-##  named   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  named   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: named
     lang: en
+    tts: en-terms/named.mp3
   - term: pojmenované
     lang: cs
+    tts: cs-terms/pojmenovane.mp3
   - term: nazvaný
     lang: cs
+    tts: cs-terms/nazvany.mp3
   freq: 80756.00000
-##  opportunity   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  opportunity   ########################################################### no img|t0:pron:missing
 - terms: 
   - term: opportunity
     lang: en
+    tts: en-terms/opportunity.mp3
   - term: příležitost
     lang: cs
+    tts: cs-terms/prilezitost.mp3
   freq: 78272.00000
-##  team   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  team   ################################################################## no img|t0:pron:missing
 - terms: 
   - term: team
     lang: en
+    tts: en-terms/team.mp3
   - term: tým
     lang: cs
+    tts: cs-terms/tym.mp3
   - term: družstvo
     lang: cs
+    tts: cs-terms/druzstvo.mp3
   freq: 71483.00000
-##  blue   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  blue   ################################################################## no img|t0:pron:missing
 - terms: 
   - term: blue
     lang: en
+    tts: en-terms/blue.mp3
   - term: modrá
     lang: cs
+    tts: cs-terms/modra.mp3
   - term: sklíčený
     lang: cs
+    tts: cs-terms/skliceny.mp3
   freq: 58560.00000
-##  sky   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  sky   ################################################################### no img|t0:pron:missing
 - terms: 
   - term: sky
     lang: en
+    tts: en-terms/sky.mp3
   - term: nebe
     lang: cs
+    tts: cs-terms/nebe.mp3
   - term: obloha
     lang: cs
+    tts: cs-terms/obloha.mp3
   freq: 58299.00000
-##  brown   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  brown   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: brown
     lang: en
+    tts: en-terms/brown.mp3
   - term: hnědá
     lang: cs
+    tts: cs-terms/hneda.mp3
   freq: 53525.00000
-##  dream   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  dream   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: dream
     lang: en
+    tts: en-terms/dream.mp3
   - term: sen
     lang: cs
+    tts: cs-terms/sen.mp3
   - term: snít
     lang: cs
+    tts: cs-terms/snit.mp3
   freq: 43306.00000
-##  greek   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  greek   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: greek
     lang: en
+    tts: en-terms/greek.mp3
   - term: řecké
     lang: cs
+    tts: cs-terms/recke.mp3
   - term: řečtina
     lang: cs
+    tts: cs-terms/rectina.mp3
   freq: 40885.00000
-##  stepped   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  stepped   ############################################################### no img|t0:pron:missing
 - terms: 
   - term: stepped
     lang: en
+    tts: en-terms/stepped.mp3
   - term: šlápl
     lang: cs
+    tts: cs-terms/slapl.mp3
   - term: vkročila
     lang: cs
+    tts: cs-terms/vkrocila.mp3
   freq: 39957.00000
-##  shoes   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  shoes   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: shoes
     lang: en
+    tts: en-terms/shoes.mp3
   - term: boty
     lang: cs
+    tts: cs-terms/boty.mp3
   freq: 29324.00000
-##  stick   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  stick   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: stick
     lang: en
+    tts: en-terms/stick.mp3
   - term: přilepit
     lang: cs
+    tts: cs-terms/prilepit.mp3
   - term: klacek
     lang: cs
+    tts: cs-terms/klacek.mp3
   freq: 25451.00000
-##  forever   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  forever   ############################################################### no img|t0:pron:missing
 - terms: 
   - term: forever
     lang: en
+    tts: en-terms/forever.mp3
   - term: navždy
     lang: cs
+    tts: cs-terms/navzdy.mp3
   freq: 25444.00000
-##  springs   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  springs   ############################################################### no img|t0:pron:missing
 - terms: 
   - term: springs
     lang: en
+    tts: en-terms/springs.mp3
   - term: pružiny
     lang: cs
+    tts: cs-terms/pruziny.mp3
   - term: prameny
     lang: cs
+    tts: cs-terms/prameny.mp3
   freq: 18661.00000
-##  mud   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  mud   ################################################################### no img|t0:pron:missing
 - terms: 
   - term: mud
     lang: en
+    tts: en-terms/mud.mp3
   - term: bláto
     lang: cs
+    tts: cs-terms/blato.mp3
   - term: bahno
     lang: cs
+    tts: cs-terms/bahno.mp3
   freq: 16120.00000
-##  prize   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  prize   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: prize
     lang: en
+    tts: en-terms/prize.mp3
   - term: cena
     lang: cs
+    tts: cs-terms/cena.mp3
   freq: 15634.00000
-##  string   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  string   ################################################################ no img|t0:pron:missing
 - terms: 
   - term: string
     lang: en
+    tts: en-terms/string.mp3
   - term: struna
     lang: cs
+    tts: cs-terms/struna.mp3
   - term: vlákno
     lang: cs
+    tts: cs-terms/vlakno.mp3
   freq: 15280.00000
-##  harmony   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  harmony   ############################################################### no img|t0:pron:missing
 - terms: 
   - term: harmony
     lang: en
+    tts: en-terms/harmony.mp3
   - term: harmonie
     lang: cs
+    tts: cs-terms/harmonie.mp3
   - term: soulad
     lang: cs
+    tts: cs-terms/soulad.mp3
   freq: 14081.00000
-##  brand   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  brand   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: brand
     lang: en
+    tts: en-terms/brand.mp3
   - term: značka
     lang: cs
+    tts: cs-terms/znacka.mp3
   - term: cejch
     lang: cs
+    tts: cs-terms/cejch.mp3
   freq: 9865.00000
-##  items   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  items   ################################################################# no img|t0:pron:missing
 - terms: 
   - term: items
     lang: en
+    tts: en-terms/items.mp3
   - term: položky
     lang: cs
+    tts: cs-terms/polozky.mp3
   freq: 9728.00000
-##  chocolate   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  chocolate   ############################################################# no img|t0:pron:missing
 - terms: 
   - term: chocolate
     lang: en
+    tts: en-terms/chocolate.mp3
   - term: čokoláda
     lang: cs
+    tts: cs-terms/cokolada.mp3
   freq: 9205.00000
-##  blossom   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  blossom   ############################################################### no img|t0:pron:missing
 - terms: 
   - term: blossom
     lang: en
+    tts: en-terms/blossom.mp3
   - term: květy
     lang: cs
+    tts: cs-terms/kvety.mp3
   - term: rozkvést
     lang: cs
+    tts: cs-terms/rozkvest.mp3
   freq: 8302.00000
-##  dip   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  dip   ################################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: dip
     lang: en
+    tts: en-terms/dip.mp3
   - term: omočit
     lang: cs
   - term: omáčka
     lang: cs
   freq: 5859.00000
-##  vest   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  vest   ################################################################## no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: vest
     lang: en
+    tts: en-terms/vest.mp3
   - term: vesta
     lang: cs
   - term: tílko
     lang: cs
   freq: 4367.00000
-##  pants   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  pants   ################################################################# no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: pants
     lang: en
+    tts: en-terms/pants.mp3
   - term: kalhoty
     lang: cs
   - term: spodky
     lang: cs
   freq: 2075.00000
-##  fleas   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  fleas   ################################################################# no img|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: fleas
     lang: en
+    tts: en-terms/fleas.mp3
   - term: blechy
     lang: cs
   freq: 1708.00000
-##  awesome   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  awesome   ############################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: awesome
     lang: en
+    tts: en-terms/awesome.mp3
   - term: úžasné
     lang: cs
   - term: ohromný
@@ -11200,17 +11271,19 @@ concepts:
     lang: en
   state: ignore
   freq: 400.00000
-##  possum   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  possum   ################################################################ no img|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: possum
     lang: en
+    tts: en-terms/possum.mp3
   - term: vačice
     lang: cs
   freq: 344.00000
-##  nobel   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  nobel   ################################################################# no img|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: nobel
     lang: en
+    tts: en-terms/nobel.mp3
   - term: nobelova
     lang: cs
   freq: 18.00000
@@ -15297,3 +15370,163 @@ examples:
   - term: Přivedl mi mého miláčka zpět.
     lang: cs
     tts: cs-samples/Privedl mi meho milacka zpet.mp3
+- terms: 
+  - term: Everything is cool
+    lang: en
+    tts: en-samples/Everything is cool.mp3
+- terms: 
+  - term: "'cause everything is awesome"
+    lang: en
+    tts: en-samples/cause everything is awesome.mp3
+- terms: 
+  - term: You know what's awesome
+    lang: en
+    tts: en-samples/You know whats awesome.mp3
+- terms: 
+  - term: Everything you see or think or say is awesome
+    lang: en
+    tts: en-samples/Everything you see or think or say is awesome.mp3
+- terms: 
+  - term: When you're part of a team
+    lang: en
+    tts: en-samples/When youre part of a team.mp3
+- terms: 
+  - term: You're living out a dream
+    lang: en
+    tts: en-samples/Youre living out a dream.mp3
+- terms: 
+  - term: When we stick together
+    lang: en
+    tts: en-samples/When we stick together.mp3
+- terms: 
+  - term: Side by side
+    lang: en
+    tts: en-samples/Side by side.mp3
+- terms: 
+  - term: You and I are gonna win
+    lang: en
+    tts: en-samples/You and I are gonna win.mp3
+- terms: 
+  - term: We're the same
+    lang: en
+    tts: en-samples/Were the same.mp3
+- terms: 
+  - term: You're like me
+    lang: en
+    tts: en-samples/Youre like me.mp3
+##  We are working in harmony   ############################################# t0:tts:missing
+- terms: 
+  - term: We are working in harmony
+    lang: en
+##  Have you heard the news   ############################################### t0:tts:missing
+- terms: 
+  - term: Have you heard the news
+    lang: en
+##  Everyone's talking   #################################################### t0:tts:missing
+- terms: 
+  - term: Everyone's talking
+    lang: en
+##  Life is good   ########################################################## t0:tts:missing
+- terms: 
+  - term: Life is good
+    lang: en
+##  Lost my job   ########################################################### t0:tts:missing
+- terms: 
+  - term: Lost my job
+    lang: en
+##  There's a new opportunity   ############################################# t0:tts:missing
+- terms: 
+  - term: There's a new opportunity
+    lang: en
+##  More free time   ######################################################## t0:tts:missing
+- terms: 
+  - term: More free time
+    lang: en
+##  For my awesome community   ############################################## t0:tts:missing
+- terms: 
+  - term: For my awesome community
+    lang: en
+##  I feel more awesome   ################################################### t0:tts:missing
+- terms: 
+  - term: I feel more awesome
+    lang: en
+##  Than an awesome possum   ################################################ t0:tts:missing
+- terms: 
+  - term: Than an awesome possum
+    lang: en
+##  Dip my body   ########################################################### t0:tts:missing
+- terms: 
+  - term: Dip my body
+    lang: en
+##  In chocolate frosting   ################################################# t0:tts:missing
+- terms: 
+  - term: In chocolate frosting
+    lang: en
+##  Three years later   ##################################################### t0:tts:missing
+- terms: 
+  - term: Three years later
+    lang: en
+##  Wash off the frosting   ################################################# t0:tts:missing
+- terms: 
+  - term: Wash off the frosting
+    lang: en
+##  Smelling like a blossom   ############################################### t0:tts:missing
+- terms: 
+  - term: Smelling like a blossom
+    lang: en
+##  Stepped in mud   ######################################################## t0:tts:missing
+- terms: 
+  - term: Stepped in mud
+    lang: en
+##  Got new brown shoes   ################################################### t0:tts:missing
+- terms: 
+  - term: Got new brown shoes
+    lang: en
+##  To win and to lose   #################################################### t0:tts:missing
+- terms: 
+  - term: To win and to lose
+    lang: en
+##  Blue sky   ############################################################## t0:tts:missing
+- terms: 
+  - term: Blue sky
+    lang: en
+##  Bouncy springs   ######################################################## t0:tts:missing
+- terms: 
+  - term: Bouncy springs
+    lang: en
+##  We just named two awesome things   ###################################### t0:tts:missing
+- terms: 
+  - term: We just named two awesome things
+    lang: en
+##  Nobel prize   ########################################################### t0:tts:missing
+- terms: 
+  - term: Nobel prize
+    lang: en
+##  A piece of string   ##################################################### t0:tts:missing
+- terms: 
+  - term: A piece of string
+    lang: en
+##  Dogs with fleas   ####################################################### t0:tts:missing
+- terms: 
+  - term: Dogs with fleas
+    lang: en
+##  A book of   ############################################################# t0:tts:missing
+- terms: 
+  - term: A book of
+    lang: en
+##  Greek antiquities   ##################################################### t0:tts:missing
+- terms: 
+  - term: Greek antiquities
+    lang: en
+##  Brand new pants   ####################################################### t0:tts:missing
+- terms: 
+  - term: Brand new pants
+    lang: en
+##  A very old vest   ####################################################### t0:tts:missing
+- terms: 
+  - term: A very old vest
+    lang: en
+##  Awesome items are the best   ############################################ t0:tts:missing
+- terms: 
+  - term: Awesome items are the best
+    lang: en
