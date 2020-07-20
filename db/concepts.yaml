@@ -11243,57 +11243,66 @@ concepts:
     tts: cs-terms/rozkvest.mp3
   img: img/blossom.jpeg
   freq: 8302.00000
-##  dip   ################################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  dip   ################################################################### t0:pron:missing
 - terms: 
   - term: dip
     lang: en
     tts: en-terms/dip.mp3
   - term: omočit
     lang: cs
+    tts: cs-terms/omocit.mp3
   - term: omáčka
     lang: cs
+    tts: cs-terms/omacka.mp3
   img: img/dip.jpeg
   freq: 5859.00000
-##  vest   ################################################################## t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  vest   ################################################################## t0:pron:missing
 - terms: 
   - term: vest
     lang: en
     tts: en-terms/vest.mp3
   - term: vesta
     lang: cs
+    tts: cs-terms/vesta.mp3
   - term: tílko
     lang: cs
+    tts: cs-terms/tilko.mp3
   img: img/vest.jpeg
   freq: 4367.00000
-##  pants   ################################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  pants   ################################################################# t0:pron:missing
 - terms: 
   - term: pants
     lang: en
     tts: en-terms/pants.mp3
   - term: kalhoty
     lang: cs
+    tts: cs-terms/kalhoty.mp3
   - term: spodky
     lang: cs
+    tts: cs-terms/spodky.mp3
   img: img/pants.jpeg
   freq: 2075.00000
-##  fleas   ################################################################# t0:pron:missing|t1:tts:missing
+##  fleas   ################################################################# t0:pron:missing
 - terms: 
   - term: fleas
     lang: en
     tts: en-terms/fleas.mp3
   - term: blechy
     lang: cs
+    tts: cs-terms/blechy.mp3
   img: img/fleas.jpeg
   freq: 1708.00000
-##  awesome   ############################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  awesome   ############################################################### t0:pron:missing
 - terms: 
   - term: awesome
     lang: en
     tts: en-terms/awesome.mp3
   - term: úžasné
     lang: cs
+    tts: cs-terms/uzasne.mp3
   - term: ohromný
     lang: cs
+    tts: cs-terms/ohromny.mp3
   img: img/awesome.jpeg
   freq: 659.00000
 - terms: 
@@ -11301,22 +11310,24 @@ concepts:
     lang: en
   state: ignore
   freq: 400.00000
-##  possum   ################################################################ t0:pron:missing|t1:tts:missing
+##  possum   ################################################################ t0:pron:missing
 - terms: 
   - term: possum
     lang: en
     tts: en-terms/possum.mp3
   - term: vačice
     lang: cs
+    tts: cs-terms/vacice.mp3
   img: img/possum.jpeg
   freq: 344.00000
-##  nobel   ################################################################# t0:pron:missing|t1:tts:missing
+##  nobel   ################################################################# t0:pron:missing
 - terms: 
   - term: nobel
     lang: en
     tts: en-terms/nobel.mp3
   - term: nobelova
     lang: cs
+    tts: cs-terms/nobelova.mp3
   img: img/nobel.jpeg
   freq: 18.00000
 
@@ -15406,159 +15417,272 @@ examples:
   - term: Everything is cool
     lang: en
     tts: en-samples/Everything is cool.mp3
+  - term: Všechno je v pohodě.
+    lang: cs
+    tts: cs-samples/Vsechno je v pohode.mp3
 - terms: 
   - term: "'cause everything is awesome"
     lang: en
     tts: en-samples/cause everything is awesome.mp3
+  - term: Protože všechno je úžasné.
+    lang: cs
+    tts: cs-samples/Protoze vsechno je uzasne.mp3
 - terms: 
-  - term: You know what's awesome
+  - term: You know what's awesome?
     lang: en
     tts: en-samples/You know whats awesome.mp3
+  - term: Víš co je úžasné?
+    lang: cs
+    tts: cs-samples/Vis co je uzasne.mp3
 - terms: 
-  - term: Everything you see or think or say is awesome
+  - term: Everything you see or think or say is awesome.
     lang: en
     tts: en-samples/Everything you see or think or say is awesome.mp3
+  - term: Všechno, co vidíš, myslíš nebo říkáš, je úžasné.
+    lang: cs
+    tts: cs-samples/Vsechno, co vidis, myslis nebo rikas, je uzasne.mp3
 - terms: 
-  - term: When you're part of a team
+  - term: When you're part of a team.
     lang: en
     tts: en-samples/When youre part of a team.mp3
+  - term: Když jsi součástí týmu.
+    lang: cs
+    tts: cs-samples/Kdyz jsi soucasti tymu.mp3
 - terms: 
-  - term: You're living out a dream
+  - term: You're living out a dream.
     lang: en
     tts: en-samples/Youre living out a dream.mp3
+  - term: Žiješ svůj sen.
+    lang: cs
+    tts: cs-samples/Zijes svuj sen.mp3
 - terms: 
   - term: When we stick together
     lang: en
     tts: en-samples/When we stick together.mp3
+  - term: Když držíme pohromadě.
+    lang: cs
+    tts: cs-samples/Kdyz drzime pohromade.mp3
 - terms: 
-  - term: Side by side
+  - term: Side by side.
     lang: en
     tts: en-samples/Side by side.mp3
+  - term: Bok po boku.
+    lang: cs
+    tts: cs-samples/Bok po boku.mp3
 - terms: 
-  - term: You and I are gonna win
+  - term: You and I are gonna win.
     lang: en
     tts: en-samples/You and I are gonna win.mp3
+  - term: Ty a já vyhrajeme.
+    lang: cs
+    tts: cs-samples/Ty a ja vyhrajeme.mp3
 - terms: 
-  - term: We're the same
+  - term: We're the same.
     lang: en
     tts: en-samples/Were the same.mp3
+  - term: Jsme stejní.
+    lang: cs
+    tts: cs-terms/Jsme stejni.mp3
 - terms: 
-  - term: You're like me
+  - term: You're like me.
     lang: en
     tts: en-samples/Youre like me.mp3
-##  We are working in harmony   ############################################# t0:tts:missing
+  - term: Jsi jako já.
+    lang: cs
+    tts: cs-samples/Jsi jako ja.mp3
 - terms: 
-  - term: We are working in harmony
+  - term: We are working in harmony.
     lang: en
-##  Have you heard the news   ############################################### t0:tts:missing
+    tts: en-samples/We are working in harmony.mp3
+  - term: Pracujeme v harmonii.
+    lang: cs
+    tts: cs-terms/Pracujeme v harmonii.mp3
 - terms: 
-  - term: Have you heard the news
+  - term: Have you heard the news.
     lang: en
-##  Everyone's talking   #################################################### t0:tts:missing
+    tts: en-samples/Have you heard the news.mp3
+  - term: Slyšeli jste zprávy?
+    lang: cs
+    tts: cs-samples/Slyseli jste zpravy.mp3
 - terms: 
-  - term: Everyone's talking
+  - term: Everyone is talking.
     lang: en
-##  Life is good   ########################################################## t0:tts:missing
+    tts: en-samples/Everyone is talking.mp3
+  - term: Všichni mluví.
+    lang: cs
+    tts: cs-terms/Vsichni mluvi.mp3
 - terms: 
-  - term: Life is good
+  - term: Life is good.
     lang: en
-##  Lost my job   ########################################################### t0:tts:missing
+    tts: en-samples/Life is good.mp3
+  - term: Život je dobrý.
+    lang: cs
+    tts: cs-samples/Zivot je dobry.mp3
 - terms: 
-  - term: Lost my job
+  - term: Lost my job.
     lang: en
-##  There's a new opportunity   ############################################# t0:tts:missing
+    tts: en-samples/Lost my job.mp3
+  - term: Přišel jsem o práci.
+    lang: cs
+    tts: cs-samples/Prisel jsem o praci.mp3
 - terms: 
-  - term: There's a new opportunity
+  - term: There is a new opportunity.
     lang: en
-##  More free time   ######################################################## t0:tts:missing
+    tts: en-samples/There is a new opportunity.mp3
+  - term: Je tu nová příležitost.
+    lang: cs
+    tts: cs-samples/Je tu nova prilezitost.mp3
 - terms: 
-  - term: More free time
+  - term: More free time.
     lang: en
-##  For my awesome community   ############################################## t0:tts:missing
+    tts: en-samples/More free time.mp3
+  - term: Víc volného času.
+    lang: cs
+    tts: cs-samples/Vic volneho casu.mp3
 - terms: 
-  - term: For my awesome community
+  - term: For my awesome community.
     lang: en
-##  I feel more awesome   ################################################### t0:tts:missing
+    tts: en-samples/For my awesome community.mp3
+  - term: Pro mou úžasnou komunitu.
+    lang: cs
+    tts: cs-samples/Pro mou uzasnou komunitu.mp3
 - terms: 
-  - term: I feel more awesome
+  - term: I feel more awesome.
     lang: en
-##  Than an awesome possum   ################################################ t0:tts:missing
+    tts: en-samples/I feel more awesome.mp3
+  - term: Cítím se víc úžasně.
+    lang: cs
+    tts: cs-samples/Citim se vic uzasne.mp3
 - terms: 
-  - term: Than an awesome possum
+  - term: Than an awesome possum.
     lang: en
-##  Dip my body   ########################################################### t0:tts:missing
+    tts: en-samples/Than an awesome possum.mp3
+  - term: Než úžasná vačice.
+    lang: cs
+    tts: cs-samples/Nez uzasna vacice.mp3
 - terms: 
-  - term: Dip my body
+  - term: Dip my body.
     lang: en
-##  In chocolate frosting   ################################################# t0:tts:missing
+    tts: en-samples/Dip my body.mp3
+  - term: Ponořte mé tělo.
+    lang: cs
+    tts: cs-samples/Ponorte me telo.mp3
 - terms: 
-  - term: In chocolate frosting
+  - term: In chocolate frosting.
     lang: en
-##  Three years later   ##################################################### t0:tts:missing
+    tts: en-samples/In chocolate frosting.mp3
+  - term: Do čokoládové polevy.
+    lang: cs
+    tts: cs-samples/Do cokoladove polevy.mp3
 - terms: 
-  - term: Three years later
+  - term: Three years later.
     lang: en
-##  Wash off the frosting   ################################################# t0:tts:missing
+    tts: en-samples/Three years later.mp3
+  - term: O tři roky později.
+    lang: cs
+    tts: cs-samples/O tri roky pozdeji.mp3
 - terms: 
-  - term: Wash off the frosting
+  - term: Wash off the frosting.
     lang: en
-##  Smelling like a blossom   ############################################### t0:tts:missing
+    tts: en-samples/Wash off the frosting.mp3
+  - term: Omyjte tu polevu.
+    lang: cs
+    tts: cs-samples/Omyjte tu polevu.mp3
 - terms: 
-  - term: Smelling like a blossom
+  - term: Smelling like a blossom.
     lang: en
-##  Stepped in mud   ######################################################## t0:tts:missing
+    tts: en-samples/Smelling like a blossom.mp3
+  - term: Voní jako květ.
+    lang: cs
+    tts: cs-samples/Voni jako kvet.mp3
 - terms: 
-  - term: Stepped in mud
+  - term: Stepped in mud.
     lang: en
-##  Got new brown shoes   ################################################### t0:tts:missing
+    tts: en-samples/Stepped in mud.mp3
+  - term: Šlápl do bláta.
+    lang: cs
+    tts: cs-samples/Slapl do blata.mp3
 - terms: 
-  - term: Got new brown shoes
+  - term: Got new brown shoes.
     lang: en
-##  To win and to lose   #################################################### t0:tts:missing
+    tts: en-samples/Got new brown shoes.mp3
+  - term: Získal nové hnědé boty.
+    lang: cs
+    tts: cs-samples/Ziskal nove hnede boty.mp3
 - terms: 
-  - term: To win and to lose
+  - term: To win and to lose.
     lang: en
-##  Blue sky   ############################################################## t0:tts:missing
+    tts: en-samples/To win and to lose.mp3
+  - term: Vyhrát a prohrát.
+    lang: cs
+    tts: cs-terms/Vyhrat a prohrat.mp3
 - terms: 
-  - term: Blue sky
+  - term: Blue sky.
     lang: en
-##  Bouncy springs   ######################################################## t0:tts:missing
+    tts: en-samples/Blue sky.mp3
+  - term: Modrá obloha.
+    lang: cs
+    tts: cs-terms/Modra obloha.mp3
 - terms: 
-  - term: Bouncy springs
+  - term: Bouncy springs.
     lang: en
-##  We just named two awesome things   ###################################### t0:tts:missing
+    tts: en-samples/Bouncy springs.mp3
+  - term: Skákací pružiny.
+    lang: cs
+    tts: cs-terms/Skakaci pruziny.mp3
 - terms: 
-  - term: We just named two awesome things
+  - term: We just named two awesome things.
     lang: en
-##  Nobel prize   ########################################################### t0:tts:missing
+    tts: en-samples/We just named two awesome things.mp3
+  - term: Právě jsme vyjmenovali dvě úžasné věci.
+    lang: cs
+    tts: cs-samples/Prave jsme vyjmenovali dve uzasne veci.mp3
 - terms: 
-  - term: Nobel prize
+  - term: Nobel prize.
     lang: en
-##  A piece of string   ##################################################### t0:tts:missing
+    tts: en-samples/Nobel prize.mp3
+  - term: Nobelovu cenu.
+    lang: cs
+    tts: cs-terms/Nobelovu cenu.mp3
 - terms: 
-  - term: A piece of string
+  - term: A piece of string.
     lang: en
-##  Dogs with fleas   ####################################################### t0:tts:missing
+    tts: en-samples/A piece of string.mp3
+  - term: Kousek provázku.
+    lang: cs
+    tts: cs-terms/Kousek provazku.mp3
 - terms: 
-  - term: Dogs with fleas
+  - term: Dogs with fleas.
     lang: en
-##  A book of   ############################################################# t0:tts:missing
+    tts: en-samples/Dogs with fleas.mp3
+  - term: Psi s blechami.
+    lang: cs
+    tts: cs-terms/Psi s blechami.mp3
 - terms: 
-  - term: A book of
+  - term: A book of Greek antiquities.
     lang: en
-##  Greek antiquities   ##################################################### t0:tts:missing
+    tts: en-samples/A book of Greek antiquities.mp3
+  - term: Kniha řeckých starožitností.
+    lang: cs
+    tts: cs-samples/Kniha reckych starozitnosti.mp3
 - terms: 
-  - term: Greek antiquities
+  - term: Brand new pants.
     lang: en
-##  Brand new pants   ####################################################### t0:tts:missing
+    tts: en-samples/Brand new pants.mp3
+  - term: Zbrusu nové kalhoty.
+    lang: cs
+    tts: cs-samples/Zbrusu nove kalhoty.mp3
 - terms: 
-  - term: Brand new pants
+  - term: A very old vest.
     lang: en
-##  A very old vest   ####################################################### t0:tts:missing
+    tts: en-samples/A very old vest.mp3
+  - term: Velmi stará vesta.
+    lang: cs
+    tts: cs-samples/Velmi stara vesta.mp3
 - terms: 
-  - term: A very old vest
+  - term: Awesome items are the best.
     lang: en
-##  Awesome items are the best   ############################################ t0:tts:missing
-- terms: 
-  - term: Awesome items are the best
-    lang: en
+    tts: en-samples/Awesome items are the best.mp3
+  - term: Úžasné předměty jsou nejlepší.
+    lang: cs
+    tts: cs-samples/Uzasne predmety jsou nejlepsi.mp3
