@@ -3219,7 +3219,6 @@ concepts:
     tts: cs-terms/celek.mp3
   img: img/whole.jpeg
   freq: 225308.50000
-##  became   ################################################################ no img
 - terms: 
   - term: became
     lang: en
@@ -3228,6 +3227,7 @@ concepts:
   - term: stal
     lang: cs
     tts: cs-terms/stal.mp3
+  img: img/became.jpeg
   freq: 224811.00000
 - terms: 
   - term: full
@@ -3317,7 +3317,6 @@ concepts:
     tts: cs-terms/kamarad.mp3
   img: img/friend.jpeg
   freq: 218887.50000
-##  often   ################################################################# no img
 - terms: 
   - term: often
     lang: en
@@ -3329,6 +3328,7 @@ concepts:
   - term: mnohdy
     lang: cs
     tts: cs-terms/mnohdy.mp3
+  img: img/often.jpeg
   freq: 218764.50000
 - terms: 
   - term: looking
@@ -3343,7 +3343,6 @@ concepts:
     tts: cs-terms/divat.mp3
   img: img/looking.jpeg
   freq: 218510.00000
-##  use   ################################################################### no img
 - terms: 
   - term: use
     lang: en
@@ -3355,6 +3354,7 @@ concepts:
   - term: využít
     lang: cs
     tts: cs-terms/vyuzit.mp3
+  img: img/use.jpeg
   freq: 215223.50000
 - terms: 
   - term: england
@@ -3402,7 +3402,6 @@ concepts:
     tts: cs-terms/pocet.mp3
   img: img/number.jpeg
   freq: 212369.50000
-##  during   ################################################################ no img
 - terms: 
   - term: during
     lang: en
@@ -3414,6 +3413,7 @@ concepts:
   - term: v průběhu
     lang: cs
     tts: cs-terms/v prubehu.mp3
+  img: img/during.jpeg
   freq: 212250.00000
 - terms: 
   - term: together
@@ -3464,7 +3464,6 @@ concepts:
     tts: cs-terms/vyroba.mp3
   img: img/making.jpeg
   freq: 210031.00000
-##  whose   ################################################################# no img
 - terms: 
   - term: whose
     lang: en
@@ -3476,6 +3475,7 @@ concepts:
   - term: jehož
     lang: cs
     tts: cs-terms/jehoz.mp3
+  img: img/whose.jpeg
   freq: 209645.50000
 - terms: 
   - term: fell
@@ -3513,7 +3513,6 @@ concepts:
     tts: cs-terms/pokuste.mp3
   img: img/try.jpeg
   freq: 206441.50000
-##  kept   ################################################################## no img
 - terms: 
   - term: kept
     lang: en
@@ -3525,6 +3524,7 @@ concepts:
   - term: udržovány
     lang: cs
     tts: cs-terms/udrzovany.mp3
+  img: img/kept.jpeg
   freq: 206329.00000
 - terms: 
   - term: voice
@@ -3546,7 +3546,6 @@ concepts:
     tts: cs-terms/samy sobe.mp3
   img: img/themselves.jpeg
   freq: 205524.50000
-##  anything   ############################################################## no img
 - terms: 
   - term: anything
     lang: en
@@ -3555,6 +3554,7 @@ concepts:
   - term: cokoliv
     lang: cs
     tts: cs-terms/cokoliv.mp3
+  img: img/anything.jpeg
   freq: 205144.50000
 - terms: 
   - term: met
@@ -3669,7 +3669,6 @@ concepts:
     tts: cs-terms/brzo.mp3
   img: img/soon.jpeg
   freq: 193680.00000
-##  nor   ################################################################### no img
 - terms: 
   - term: nor
     lang: en
@@ -3678,8 +3677,8 @@ concepts:
   - term: ani
     lang: cs
     tts: cs-terms/ani.mp3
+  img: img/nor.jpeg
   freq: 193460.50000
-##  seems   ################################################################# no img
 - terms: 
   - term: seems
     lang: en
@@ -3691,6 +3690,7 @@ concepts:
   - term: jeví se
     lang: cs
     tts: cs-terms/jevi se.mp3
+  img: img/seems.jpeg
   freq: 192229.00000
 - terms: 
   - term: least
@@ -3731,7 +3731,6 @@ concepts:
     tts: cs-terms/postupovali.mp3
   img: img/followed.jpeg
   freq: 190649.00000
-##  seem   ################################################################## no img
 - terms: 
   - term: seem
     lang: en
@@ -3743,6 +3742,7 @@ concepts:
   - term: připadat
     lang: cs
     tts: cs-terms/pripadat.mp3
+  img: img/seem.jpeg
   freq: 190588.00000
 - terms: 
   - term: read
@@ -3754,7 +3754,6 @@ concepts:
     tts: cs-terms/cist.mp3
   img: img/read.jpeg
   freq: 190020.50000
-##  already   ############################################################### no img
 - terms: 
   - term: already
     lang: en
@@ -3766,6 +3765,7 @@ concepts:
   - term: už
     lang: cs
     tts: cs-terms/uz.mp3
+  img: img/already.jpeg
   freq: 189941.00000
 - terms: 
   - term: woman
@@ -3879,7 +3879,6 @@ concepts:
     tts: cs-terms/chudak.mp3
   img: img/poor.jpeg
   freq: 182819.00000
-##  bring   ################################################################# no img
 - terms: 
   - term: bring
     lang: en
@@ -3891,8 +3890,8 @@ concepts:
   - term: přivést
     lang: cs
     tts: cs-terms/privest.mp3
+  img: img/bring.jpeg
   freq: 182757.00000
-##  certain   ############################################################### no img
 - terms: 
   - term: certain
     lang: en
@@ -3904,6 +3903,7 @@ concepts:
   - term: jakési
     lang: cs
     tts: cs-terms/jakesi.mp3
+  img: img/certain.jpeg
   freq: 182011.50000
 - terms: 
   - term: big
@@ -3971,7 +3971,6 @@ concepts:
     tts: cs-terms/hovorit.mp3
   img: img/speak.jpeg
   freq: 178191.50000
-##  given   ################################################################# no img
 - terms: 
   - term: given
     lang: en
@@ -3983,6 +3982,7 @@ concepts:
   - term: dána
     lang: cs
     tts: cs-terms/dana.mp3
+  img: img/given.jpeg
   freq: 177381.50000
 - terms: 
   - term: air
@@ -3997,7 +3997,6 @@ concepts:
     tts: cs-terms/letecke.mp3
   img: img/air.jpeg
   freq: 176706.00000
-##  until   ################################################################# no img
 - terms: 
   - term: until
     lang: en
@@ -4009,8 +4008,8 @@ concepts:
   - term: až
     lang: cs
     tts: cs-terms/az.mp3
+  img: img/until.jpeg
   freq: 176699.00000
-##  whether   ############################################################### no img
 - terms: 
   - term: whether
     lang: en
@@ -4022,6 +4021,7 @@ concepts:
   - term: ať už
     lang: cs
     tts: cs-terms/at uz.mp3
+  img: img/whether.jpeg
   freq: 176370.00000
 - terms: 
   - term: war
@@ -4046,7 +4046,6 @@ concepts:
     tts: cs-terms/forma.mp3
   img: img/form.jpeg
   freq: 176076.00000
-##  herself   ############################################################### no img
 - terms: 
   - term: herself
     lang: en
@@ -4055,6 +4054,7 @@ concepts:
   - term: sama sebe
     lang: cs
     tts: cs-terms/sama sebe.mp3
+  img: img/herself.jpeg
   freq: 174415.50000
 - terms: 
   - term: longer
@@ -4082,7 +4082,6 @@ concepts:
     tts: cs-terms/hovoril.mp3
   img: img/spoke.jpeg
   freq: 172990.00000
-##  perhaps   ############################################################### no img
 - terms: 
   - term: perhaps
     lang: en
@@ -4094,6 +4093,7 @@ concepts:
   - term: snad
     lang: cs
     tts: cs-terms/snad.mp3
+  img: img/perhaps.jpeg
   freq: 172512.00000
 - terms: 
   - term: used
@@ -4147,7 +4147,6 @@ concepts:
     tts: cs-terms/porekadlo.mp3
   img: img/saying.jpeg
   freq: 170695.00000
-##  appeared   ############################################################## no img
 - terms: 
   - term: appeared
     lang: en
@@ -4159,6 +4158,7 @@ concepts:
   - term: vyjevil
     lang: cs
     tts: cs-terms/vyjevil.mp3
+  img: img/appeared.jpeg
   freq: 169913.00000
 - terms: 
   - term: present
@@ -4173,7 +4173,6 @@ concepts:
     tts: cs-terms/predstavit.mp3
   img: img/present.jpeg
   freq: 169888.00000
-##  rather   ################################################################ no img
 - terms: 
   - term: rather
     lang: en
@@ -4185,6 +4184,7 @@ concepts:
   - term: poněkud
     lang: cs
     tts: cs-terms/ponekud.mp3
+  img: img/rather.jpeg
   freq: 169665.00000
 - terms: 
   - term: next
@@ -4240,7 +4240,6 @@ concepts:
     tts: cs-terms/priciny.mp3
   img: img/reason.jpeg
   freq: 168401.50000
-##  since   ################################################################# no img
 - terms: 
   - term: since
     lang: en
@@ -4249,6 +4248,7 @@ concepts:
   - term: od té doby
     lang: cs
     tts: cs-terms/od te doby.mp3
+  img: img/since.jpeg
   freq: 168360.00000
 - terms: 
   - term: there
@@ -4299,7 +4299,6 @@ concepts:
     tts: cs-terms/rezervovat.mp3
   img: img/book.jpeg
   freq: 166876.00000
-##  thus   ################################################################## no img
 - terms: 
   - term: thus
     lang: en
@@ -4311,6 +4310,7 @@ concepts:
   - term: tudíž
     lang: cs
     tts: cs-terms/tudiz.mp3
+  img: img/thus.jpeg
   freq: 166130.00000
 - terms: 
   - term: reached
@@ -4416,7 +4416,6 @@ concepts:
     tts: cs-terms/placene.mp3
   img: img/paid.jpeg
   freq: 162605.00000
-##  further   ############################################################### no img
 - terms: 
   - term: further
     lang: en
@@ -4428,6 +4427,7 @@ concepts:
   - term: dále
     lang: cs
     tts: cs-terms/dale.mp3
+  img: img/further.jpeg
   freq: 162328.00000
 - terms: 
   - term: itself
@@ -4530,7 +4530,6 @@ concepts:
     tts: cs-terms/uvnitr.mp3
   img: img/within.jpeg
   freq: 156154.00000
-##  entered   ############################################################### no img
 - terms: 
   - term: entered
     lang: en
@@ -4542,6 +4541,7 @@ concepts:
   - term: zadali
     lang: cs
     tts: cs-terms/zadali.mp3
+  img: img/entered.jpeg
   freq: 155480.00000
 - terms: 
   - term: begin
@@ -4556,7 +4556,6 @@ concepts:
     tts: cs-terms/zacatek.mp3
   img: img/begin.jpeg
   freq: 154912.25000
-##  till   ################################################################## no img
 - terms: 
   - term: till
     lang: en
@@ -4565,6 +4564,7 @@ concepts:
   - term: až do
     lang: cs
     tts: cs-terms/az do.mp3
+  img: img/till.jpeg
   freq: 154907.00000
 - terms: 
   - term: la
@@ -4620,7 +4620,6 @@ concepts:
     tts: cs-terms/doufam.mp3
   img: img/hope.jpeg
   freq: 153382.50000
-##  comes   ################################################################# no img
 - terms: 
   - term: comes
     lang: en
@@ -4632,6 +4631,7 @@ concepts:
   - term: pochází
     lang: cs
     tts: cs-terms/pochazi.mp3
+  img: img/comes.jpeg
   freq: 153299.00000
 - terms: 
   - term: week
@@ -4669,7 +4669,6 @@ concepts:
     tts: cs-terms/povaha.mp3
   img: img/nature.jpeg
   freq: 152360.50000
-##  able   ################################################################## no img
 - terms: 
   - term: able
     lang: en
@@ -4681,6 +4680,7 @@ concepts:
   - term: moct
     lang: cs
     tts: cs-terms/moct.mp3
+  img: img/able.jpeg
   freq: 151658.00000
 - terms: 
   - term: letter
@@ -4705,7 +4705,6 @@ concepts:
     tts: cs-terms/francie.mp3
   img: img/france.jpeg
   freq: 151108.00000
-##  indeed   ################################################################ no img
 - terms: 
   - term: indeed
     lang: en
@@ -4717,6 +4716,7 @@ concepts:
   - term: opravdu
     lang: cs
     tts: cs-terms/opravdu.mp3
+  img: img/indeed.jpeg
   freq: 150986.50000
 - terms: 
   - term: party
@@ -5125,7 +5125,6 @@ concepts:
     tts: cs-terms/mrtve.mp3
   img: img/dead.jpeg
   freq: 139580.00000
-##  makes   ################################################################# no img
 - terms: 
   - term: makes
     lang: en
@@ -5137,8 +5136,8 @@ concepts:
   - term: činí
     lang: cs
     tts: cs-terms/cini.mp3
+  img: img/makes.jpeg
   freq: 139167.00000
-##  real   ################################################################## no img
 - terms: 
   - term: real
     lang: en
@@ -5150,6 +5149,7 @@ concepts:
   - term: skutečné
     lang: cs
     tts: cs-terms/skutecne.mp3
+  img: img/real.jpeg
   freq: 139116.50000
 - terms: 
   - term: case
@@ -5230,7 +5230,6 @@ concepts:
     tts: cs-terms/zajem.mp3
   img: img/interest.jpeg
   freq: 137310.50000
-##  therefore   ############################################################# no img
 - terms: 
   - term: therefore
     lang: en
@@ -5242,6 +5241,7 @@ concepts:
   - term: tedy
     lang: cs
     tts: cs-terms/tedy.mp3
+  img: img/therefore.jpeg
   freq: 137061.50000
 - terms: 
   - term: write
@@ -5266,7 +5266,6 @@ concepts:
     tts: cs-terms/anglicky.mp3
   img: img/english.jpeg
   freq: 136965.50000
-##  tried   ################################################################# no img
 - terms: 
   - term: tried
     lang: en
@@ -5278,6 +5277,7 @@ concepts:
   - term: zkusil
     lang: cs
     tts: cs-terms/zkusil.mp3
+  img: img/tried.jpeg
   freq: 136507.00000
 - terms: 
   - term: dr
@@ -5335,7 +5335,6 @@ concepts:
     tts: cs-terms/vsechno.mp3
   img: img/everything.jpeg
   freq: 134993.00000
-##  known   ################################################################# no img
 - terms: 
   - term: known
     lang: en
@@ -5344,6 +5343,7 @@ concepts:
   - term: známý
     lang: cs
     tts: cs-terms/znamy.mp3
+  img: img/known.jpeg
   freq: 134231.50000
 - terms: 
   - term: unto
@@ -5414,7 +5414,6 @@ concepts:
     tts: cs-terms/vyssi.mp3
   img: img/greater.jpeg
   freq: 132045.00000
-##  else   ################################################################## no img
 - terms: 
   - term: else
     lang: en
@@ -5426,6 +5425,7 @@ concepts:
   - term: jinak
     lang: cs
     tts: cs-terms/jinak.mp3
+  img: img/else.jpeg
   freq: 131928.00000
 - terms: 
   - term: month
@@ -5525,7 +5525,6 @@ concepts:
     tts: cs-terms/nezapomente.mp3
   img: img/remember.jpeg
   freq: 128101.00000
-##  sometimes   ############################################################# no img
 - terms: 
   - term: sometimes
     lang: en
@@ -5537,6 +5536,7 @@ concepts:
   - term: občas
     lang: cs
     tts: cs-terms/obcas.mp3
+  img: img/sometimes.jpeg
   freq: 128077.00000
 - terms: 
   - term: care
@@ -5551,7 +5551,6 @@ concepts:
     tts: cs-terms/starat se.mp3
   img: img/care.jpeg
   freq: 128025.00000
-##  ago   ################################################################### no img
 - terms: 
   - term: ago
     lang: en
@@ -5560,6 +5559,7 @@ concepts:
   - term: před
     lang: cs
     tts: cs-terms/pred.mp3
+  img: img/ago.jpeg
   freq: 127753.50000
 - terms: 
   - term: leave
@@ -5620,7 +5620,6 @@ concepts:
     tts: cs-terms/urad.mp3
   img: img/office.jpeg
   freq: 125703.50000
-##  manner   ################################################################ no img
 - terms: 
   - term: manner
     lang: en
@@ -5632,6 +5631,7 @@ concepts:
   - term: obyčej
     lang: cs
     tts: cs-terms/obycej.mp3
+  img: img/manner.jpeg
   freq: 125206.50000
 - terms: 
   - term: wish
@@ -5646,7 +5646,6 @@ concepts:
     tts: cs-terms/prat.mp3
   img: img/wish.jpeg
   freq: 124440.00000
-##  although   ############################################################## no img
 - terms: 
   - term: although
     lang: en
@@ -5658,6 +5657,7 @@ concepts:
   - term: přestože
     lang: cs
     tts: cs-terms/prestoze.mp3
+  img: img/although.jpeg
   freq: 124296.00000
 - terms: 
   - term: early
@@ -5700,7 +5700,6 @@ concepts:
     tts: cs-terms/tvrde.mp3
   img: img/hard.jpeg
   freq: 123625.50000
-##  happened   ############################################################## no img
 - terms: 
   - term: happened
     lang: en
@@ -5712,6 +5711,7 @@ concepts:
   - term: přihodilo
     lang: cs
     tts: cs-terms/prihodilo.mp3
+  img: img/happened.jpeg
   freq: 123421.00000
 - terms: 
   - term: spirit
