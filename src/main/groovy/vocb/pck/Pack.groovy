@@ -187,7 +187,7 @@ public class Pack {
 			}
 		
 			String col = NORMAL
-			if (mis.size() > 2 || !e)  {
+			if (mis.size() > 1 || !e)  {
 				col = RED
 			} else {
 				exportExamples.add(e)
@@ -208,7 +208,8 @@ public class Pack {
 			//info.name = "LondonBridge"
 			//info.name = "MaryHadALittleLamb"
 			//info.displayName = "Mary Had a Little Lamb"
-			info.name = "MyBonnie"
+			//info.name = "MyBonnie"
+			info.name = "EverythingIsAwesome"
 			
 			
 			cfgHelper.lookupFoldersToConsider.add(packagePath.toString())
