@@ -121,7 +121,7 @@ public class WordsSource {
 		/*WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)		 
 		 a.run(supa)*/
 		new WordsSource().tap {
-			//fromOwnSamples(100)
+			//fromOwnSamples()
 			//minFreq = 1
 			simulation = true
 			//String tx = getClass().getResource('/Supaplex.txt').text

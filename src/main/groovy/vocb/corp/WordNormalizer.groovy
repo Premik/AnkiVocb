@@ -13,8 +13,8 @@ public class WordNormalizer {
 	int minLenght = 2
 	int maxLenght = 15
 
-	//Treat non-letter or non-digit as a space. Except underscore and hyphen.
-	@Lazy Pattern spacesPattern = ~ /[^\p{L}]+/
+	//Treat non-letter or non-digit as a space. Except single quote
+	@Lazy Pattern spacesPattern = ~ /[^\p{L}']+/
 	@Lazy Pattern niceWordPatter = ~ /^[\p{L}]+/  //No digits in words etc
 
 
