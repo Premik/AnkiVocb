@@ -11330,6 +11330,55 @@ concepts:
     tts: cs-terms/nobelova.mp3
   img: img/nobel.jpeg
   freq: 18.00000
+##  bouncy   ################################################################ t0:pron:missing
+- terms: 
+  - term: bouncy
+    lang: en
+    tts: en-terms/bouncy.mp3
+  - term: skákavý
+    lang: cs
+    tts: cs-terms/skakavy.mp3
+  - term: živý
+    lang: cs
+    tts: cs-terms/zivy.mp3
+  img: img/bouncy.jpeg
+  freq: 81717.00000
+##  smelling   ############################################################## t0:pron:missing
+- terms: 
+  - term: smelling
+    lang: en
+    tts: en-terms/smelling.mp3
+  - term: vonící
+    lang: cs
+    tts: cs-terms/vonici.mp3
+  - term: páchnoucí
+    lang: cs
+    tts: cs-terms/pachnouci.mp3
+  img: img/smelling.jpeg
+  freq: 41717.00000
+##  frosting   ############################################################## t0:pron:missing
+- terms: 
+  - term: frosting
+    lang: en
+    tts: en-terms/frosting.mp3
+  - term: poleva
+    lang: cs
+    tts: cs-terms/poleva.mp3
+  img: img/frosting.jpeg
+  freq: 3735.00000
+##  antiquities   ########################################################### t0:pron:missing
+- terms: 
+  - term: antiquities
+    lang: en
+    tts: en-terms/antiquities.mp3
+  - term: starožitnosti
+    lang: cs
+    tts: cs-terms/starozitnosti.mp3
+  - term: památky
+    lang: cs
+    tts: cs-terms/pamatky.mp3
+  img: img/antiquities.jpeg
+  freq: 500.00000
 
 examples: 
 - terms: 

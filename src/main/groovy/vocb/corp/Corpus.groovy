@@ -196,6 +196,10 @@ public class Corpus {
 			"ve" : 1,
 			"bigger":81717,
 			"arrived":5735,
+			"frosting":3735,
+			"smelling":41717,
+			"bouncy":81717,
+			"antiquities":500,			
 		])
 
 	}
