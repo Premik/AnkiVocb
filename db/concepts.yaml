@@ -16227,127 +16227,187 @@ examples:
   - term: Úžasné předměty jsou nejlepší.
     lang: cs
     tts: cs-samples/Uzasne predmety jsou nejlepsi.mp3
-##  Thomas and his friends   ################################################ t0:tts:missing
+##  Thomas and his friends.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Thomas and his friends.
     lang: en
-##  They're two, four, six, eight   ######################################### t0:tts:missing
+  - term: Tomáš a jeho přátelé.
+    lang: cs
+##  They're two, four, six, eight.   ######################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: They're two, four, six, eight.
+  - term: They're two, they're four, six, eight.
     lang: en
-##  Shunting trucks   ####################################################### t0:tts:missing
+  - term: Jsou dva, jsou čtyři, šest, osm.
+    lang: cs
+##  Shunting trucks.   ###################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Shunting trucks.
     lang: en
-##  Hauling freight   ####################################################### t0:tts:missing
+  - term: Odstavují nákladní vagóny.
+    lang: cs
+##  Hauling freight.   ###################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Hauling freight.
     lang: en
-##  Red and green and brown and blue   ###################################### t0:tts:missing
+  - term: Přepravují náklad.
+    lang: cs
+##  Red and green and brown and blue.   ##################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Red and green and brown and blue.
     lang: en
-##  Useful crew   ########################################################### t0:tts:missing
+  - term: Červené a zelené a hnědé a modré.
+    lang: cs
+##  Really useful crew.   ################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Really useful crew.
     lang: en
-##  All with different roles to play   ###################################### t0:tts:missing
+  - term: Opravdu užitečná posádka.
+    lang: cs
+##  All with different roles to play.   ##################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: All with different roles to play.
     lang: en
-##  Down the hills   ######################################################## t0:tts:missing
+  - term: Každý hraje svoji roli.
+    lang: cs
+##  Down the hills.   ####################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Down the hills.
     lang: en
-##  Round the bends   ####################################################### t0:tts:missing
+  - term: Dolů po kopcích.
+    lang: cs
+##  Round the bends.   ###################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Round the bends.
     lang: en
-##  He's the cheeky one   ################################################### t0:tts:missing
+  - term: Zaokrouhlit zatáčky.
+    lang: cs
+##  He's the cheeky one.   ################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: He's the cheeky one.
     lang: en
-##  He always gets things done   ############################################ t0:tts:missing
+  - term: On je ten drzý.
+    lang: cs
+##  He always gets things done.   ########################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: He always gets things done.
     lang: en
-##  He's a friend of mine   ################################################# t0:tts:missing
+  - term: Vždycky to dělá.
+    lang: cs
+##  He's a friend of mine.   ################################################ t0:tts:missing|t1:tts:missing
 - terms: 
   - term: He's a friend of mine.
     lang: en
-##  Is vain but lots of fun   ############################################### t0:tts:missing
+  - term: Je to můj přítel.
+    lang: cs
+##  Is vain but lots of fun.   ############################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Is vain but lots of fun.
     lang: en
-##  Pulls the mail on time   ################################################ t0:tts:missing
+  - term: Je to marné, ale spousta zábavy.
+    lang: cs
+##  Pulls the mail on time.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Pulls the mail on time.
     lang: en
-##  Thunders down the line   ################################################ t0:tts:missing
+  - term: Vytáhne poštu včas.
+    lang: cs
+##  Thunders down the line.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Thunders down the line.
     lang: en
-##  Really knows her stuff   ################################################ t0:tts:missing
+  - term: Hroma dole v linii.
+    lang: cs
+##  Really knows her stuff.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Really knows her stuff.
     lang: en
-##  Toots and huffs and puffs   ############################################# t0:tts:missing
+  - term: Opravdu zná její věci.
+    lang: cs
+##  Toots and huffs and puffs.   ############################################ t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Toots and huffs and puffs.
     lang: en
-##  Wants to help and share   ############################################### t0:tts:missing
+  - term: Toots a huffs a pusinky.
+    lang: cs
+##  Wants to help and share.   ############################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Wants to help and share.
     lang: en
-##  Let's say, he's square   ################################################ t0:tts:missing
+  - term: Chce pomoct a podělit se o to.
+    lang: cs
+##  Let's say, he's square.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Let's say, he's square.
     lang: en
-##  He is strong and tough   ################################################ t0:tts:missing
+  - term: Řekněme, že je čtverec.
+    lang: cs
+##  He is strong and tough.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: He is strong and tough.
     lang: en
-##  Engines are on hand   ################################################### t0:tts:missing
+  - term: Je silný a tvrdý.
+    lang: cs
+##  Engines are on hand.   ################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Engines are on hand.
     lang: en
-##  Waiting for a plane to land   ########################################### t0:tts:missing
+  - term: Motory jsou po ruce.
+    lang: cs
+##  Waiting for a plane to land.   ########################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Waiting for a plane to land.
     lang: en
-##  Be they diesels, be they steam   ######################################## t0:tts:missing
+  - term: Čekám, až přistane letadlo.
+    lang: cs
+##  Be they diesels, be they steam.   ####################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Be they diesels, be they steam.
     lang: en
-##  Keep working as a team   ################################################ t0:tts:missing
+  - term: A ať už jsou to diesely, ať už párou.
+    lang: cs
+##  Keep working as a team.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Keep working as a team.
     lang: en
-##  Will now go to bed   #################################################### t0:tts:missing
+  - term: Pracuj dál jako tým.
+    lang: cs
+##  Will now go to bed.   ################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Will now go to bed.
     lang: en
-##  And no one can remember   ############################################### t0:tts:missing
+  - term: Teď půjdu do postele.
+    lang: cs
+##  And no one can remember.   ############################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: And no one can remember.
     lang: en
-##  The new one there   ##################################################### t0:tts:missing
+  - term: A nikdo si to nepamatuje.
+    lang: cs
+##  The new one there.   #################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: The new one there.
     lang: en
-##  When there's a job   #################################################### t0:tts:missing
+  - term: Tamhle ten nový.
+    lang: cs
+##  When there's a job.   ################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: When there's a job.
     lang: en
-##  They're always there   ################################################## t0:tts:missing
+  - term: Když je tu práce.
+    lang: cs
+##  They're always there.   ################################################# t0:tts:missing|t1:tts:missing
 - terms: 
   - term: They're always there.
     lang: en
-##  The engines have been working late   #################################### t0:tts:missing
+  - term: Vždycky tam jsou.
+    lang: cs
+##  The engines have been working late.   ################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: The engines have been working late.
     lang: en
-##  All have roles to play   ################################################ t0:tts:missing
+  - term: Motory pracují dlouho.
+    lang: cs
+##  All have roles to play.   ############################################### t0:tts:missing
 - terms: 
   - term: All have roles to play.
     lang: en
