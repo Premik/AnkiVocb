@@ -2266,9 +2266,9 @@ concepts:
     lang: en
     tts: en-terms/hand.mp3
     pron: hænd
-  - term: ruku
+  - term: ruka
     lang: cs
-    tts: cs-terms/ruku.mp3
+    tts: cs-terms/ruka.mp3
   img: img/hand.jpeg
   freq: 333229.00000
 - terms: 
@@ -3075,12 +3075,12 @@ concepts:
     lang: en
     tts: en-terms/friends.mp3
     pron: frɛndz
-  - term: přátel
+  - term: přátelé
     lang: cs
-    tts: cs-terms/pratel.mp3
-  - term: kamarády
+    tts: cs-terms/pratele.mp3
+  - term: kamarádi
     lang: cs
-    tts: cs-terms/kamarady.mp3
+    tts: cs-terms/kamaradi.mp3
   img: img/friends.jpeg
   freq: 237481.00000
 - terms: 
@@ -11757,11 +11757,8 @@ concepts:
 - terms: 
   - term: mail
     lang: en
-    tts: en-terms/mail.mp3
-    pron: meɪl
-  - term: mail
-    lang: cs
     tts: cs-terms/pošta.mp3
+    pron: meɪl
   - term: pošta
     lang: cs
     tts: cs-terms/posta.mp3
