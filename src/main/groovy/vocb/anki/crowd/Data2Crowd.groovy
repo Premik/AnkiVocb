@@ -7,6 +7,7 @@ import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.regex.Pattern
 
+import groovy.transform.CompileStatic
 import vocb.ConfHelper
 import vocb.Helper
 import vocb.corp.WordNormalizer
@@ -26,7 +27,7 @@ public class Data2Crowd {
 	Path rootPath= Paths.get("/data/src/AnkiVocb")
 	Path dataPath= rootPath.resolve("db")
 	Path templatePath = ["src", "main", "resources", "template"].inject(rootPath) { Path p, String ch-> p.resolve(ch)}
-	PackInfo info = new PackInfo()
+	PackInfo info
 	
 	
 
@@ -34,7 +35,8 @@ public class Data2Crowd {
 	List<CharSequence> staticMedia = ["_lightBulb.png" as CharSequence]
 
 
-	CharSequence destCrowdRootFolder = "/tmp/work/test"
+	
+	
 	@Lazy Render render = {		  
 		 new Render(cfgHelper:cfgHelper).tap {
 			 assert info?.backgroundName
@@ -48,14 +50,15 @@ public class Data2Crowd {
 
 	@Lazy Manager dbMan =  {
 		assert dataPath
+		assert info
 		new Manager(storagePath: dataPath).tap {
 			load()
 		}
 	}()
 
 	@Lazy VocbModel vocbModel = {
-		assert destCrowdRootFolder
-		new VocbModel(destCrowdRootFolder: Paths.get(destCrowdRootFolder)).tap {
+		assert info?.destPath
+		new VocbModel(destCrowdRootFolder: info.destRootFolder).tap {
 			resolveMediaLink = thisObject.&resolveMediaLink
 		}
 	}()
@@ -92,15 +95,28 @@ public class Data2Crowd {
 		}
 		return mediaLink
 	}
-
+	
+	
 
 
 	void concept2CrowdNote(Concept c, Example e, Note n) {
+		assert info
 		assert c?.firstTerm
 		assert n
 		int stars = dbMan.numberOfStarsFreq(c?.freq)
 		String star = cfg.starSymbol?:"🟊"
-		def link = vocbModel.&mediaLink2CrowdLink
+		Closure<String> link = vocbModel.&mediaLink2CrowdLink
+		Closure<String> sndField = { String s->
+			n.mediaLinks.add(s)
+			Helper.sndField(link(s), cfg);
+		}
+		
+		Closure<String> imgField = { String s->
+			n.mediaLinks.add(s)
+			Helper.imgField(link(s), cfg);
+		}
+		
+		
 		n.with {
 			Term ent = c[0]
 			Term cst1 = c[1]
@@ -108,19 +124,19 @@ public class Data2Crowd {
 			Term enx = e[0]
 			Term csx = e[1]
 
-			img= link(c?.img)
+			img= imgField(c?.img)
 			freq= stars
 			background = addExtensionToMediaLink(thisObject.info.backgroundName)
 			foreign= ent.term
-			foreignTTS= link(ent?.tts)
+			foreignTTS= sndField(ent?.tts)
 			foreignExample= enx?.term
-			foreignExampleTTS= link(enx?.tts)
+			foreignExampleTTS= sndField(enx?.tts)
 			n.'native' = cst1?.term
-			nativeTTS= link(cst1?.tts)
+			nativeTTS= sndField(cst1?.tts)
 			nativeAlt= cst2?.term
-			nativeAltTTS= link(cst2?.tts)
+			nativeAltTTS= sndField(cst2?.tts)
 			nativeExample= csx?.term
-			nativeExampleTTS = link(csx?.tts)
+			nativeExampleTTS = sndField(csx?.tts)
 
 			(1..5).each {tags.remove(star*it)}
 			if (stars >0) {

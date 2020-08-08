@@ -10,18 +10,18 @@ ${render.expandTemplate(templates.header)}
     ${render.expandTemplate('hintButton.html')}
 
 
-    <figure class="img hintCover"><img class="shadow" src="$v.img"></span></figure>
+    <figure class="img hintCover">${render.imgField(v.img)}</figure>
 
     <div class="native native1">
         <!-- $v.nativeShow -->    
-        <span>$v.native</span>$v.nativeTTS
+        <span>$v.native</span>${render.sndField(v.nativeTTS)}
         <!-- $v.nativeShowEnd -->        
     </div>
 
     
     <div class="native native2">
         <!-- $v.nativeAltShow -->
-        <span>$v.nativeAlt</span>$v.nativeAltTTS
+        <span>$v.nativeAlt</span>${render.sndField(v.nativeTTS)}
         <!-- $v.nativeAltShowEnd -->
     </div>
          
@@ -30,7 +30,7 @@ ${render.expandTemplate(templates.header)}
     </div>
 
     <div class="native nativeExample">
-        <span>$v.nativeExample</span>$v.nativeExampleTTS
+        <span>$v.nativeExample</span>${render.sndField(v.nativeExampleTTS)}
     </div>
     
     

@@ -39,7 +39,7 @@ class ConfHelper {
 		return s + File.separator
 	}
 
-	public  List<File> lookupFoldersToConsider =
+	public  List<String> lookupFoldersToConsider =
 	[
 		"${ensureEndSlash(getProperty('user.home'))}.local${File.separator}share${File.separator}Ankivocb",
 		"${ensureEndSlash(windowsHomePath)}${File.separator}Ankivocb",
@@ -49,6 +49,8 @@ class ConfHelper {
 	@Lazy public  List<File> lookupFolders = {
 		lookupFoldersToConsider.unique().findAll(this.&isLookupFolderValid) as File[]
 	}()
+	
+	final List<File> extraLookupFolders= []
 
 	public  boolean  isLookupFolderValid(String path) {
 		if (!path) return false
@@ -87,7 +89,7 @@ class ConfHelper {
 		return c
 	}
 
-	public InputStream resolveResExactName(String resName, File[] lookupPaths =lookupFolders) {
+	public InputStream resolveResExactName(String resName, File[] lookupPaths =lookupFolders + extraLookupFolders) {
 		if (!resName) return null
 		//First try to find a file. Take the first match
 		File file = lookupPaths.findResult { File pf->
@@ -115,11 +117,11 @@ class ConfHelper {
 		return is
 	}
 
-	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders) {
+	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders + extraLookupFolders) {
 		resolveRes(resName, lookupPaths, this.&resolveResExactName)
 	}
 
-	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders, Closure cb) {
+	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders + extraLookupFolders, Closure cb) {
 		(['']+ resExplicitExtensions).findResult {
 			cb("$resName$it", lookupPaths)
 		}
