@@ -319,16 +319,16 @@ public class Helper {
 	}
 	
 	
-	public static String sndField(String soundRef, ConfigObject cfg) {
+	public static String sndField(String soundRef, boolean wrap) {
 		if (!soundRef) return ""
-		if (cfg.useRawNoteFields) return soundRef
-		return "[sound:$soundRef]"
+		if (wrap) return "[sound:$soundRef]"
+		return  soundRef
 	}
 
-	public static String imgField(String ref, ConfigObject cfg) {
-		if (!ref) return ""
-		if (cfg.useRawNoteFields) return ref
-		return """<img src='$ref'>"""
+	public static String imgField(String ref, boolean wrap) {
+		if (!ref) return ""		
+		if (wrap) return """<img src='$ref'>"""
+		return ref
 	}
 
 

@@ -7,7 +7,7 @@ ${render.expandTemplate(templates.header)}
 
        
     <div class="foreign foreignTerm">
-        <span>$v.foreign</span>$v.foreignTTS
+        <span>$v.foreign</span>${render.sndField(v.foreignTTS)}
     </div>
 
     ${render.expandTemplate('hintButton.html')}
