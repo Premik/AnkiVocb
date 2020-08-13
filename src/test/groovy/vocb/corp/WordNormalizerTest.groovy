@@ -99,4 +99,11 @@ class WordNormalizerTest {
 	void lemm() {
 		assert norm.uniqueueTokens("Hello world!", true) == ["hello", "hellos", "world", "worlds"] as LinkedHashSet
 	}
+
+	@Test
+	void stripBrk() {
+		norm.stripBracketsOut ("Hello (world)") == "Hello"
+		norm.stripBracketsOut ("Hello ( world ) there.") == "Hello there."
+		norm.stripBracketsOut ("Hello world.") == "Hello world."
+	}
 }
