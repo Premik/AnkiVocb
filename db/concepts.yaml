@@ -131,7 +131,7 @@ concepts:
     pron: fɔr
   - term: pro
     lang: cs
-    tts: cs-terms/pro.mp3
+    tts: cs-terms/pro-cs.mp3
   img: img/for.jpeg
   freq: 3556287.50000
 - terms: 
@@ -11379,22 +11379,22 @@ concepts:
     tts: cs-terms/pamatky.mp3
   img: img/antiquities.jpeg
   freq: 500.00000
-##  I'll   ################################################################## t0:pron:missing
+##  I'll (I will)   ######################################################### t0:pron:missing
 - terms: 
-  - term: I'll
+  - term: I'll (I will)
     lang: en
     tts: en-terms/Ill.mp3
-  - term: Já budu
+  - term: Já budu (zkráceně)
     lang: cs
     tts: cs-terms/Ja budu.mp3
   img: img/Ill.jpeg
   freq: 218372.00000
 - terms: 
-  - term: can't
+  - term: can't (can not)
     lang: en
     tts: en-terms/cant.mp3
     pron: kɑːnt
-  - term: nemohu
+  - term: nemohu (zkráceně)
     lang: cs
     tts: cs-terms/nemohu.mp3
   - term: neumět
@@ -11402,72 +11402,72 @@ concepts:
     tts: cs-terms/neumet.mp3
   img: img/cant.jpeg
   freq: 176728.00000
-##  I've   ################################################################## t0:pron:missing
+##  I've (I have)   ######################################################### t0:pron:missing
 - terms: 
-  - term: I've
+  - term: I've (I have)
     lang: en
     tts: en-terms/Ive.mp3
-  - term: Já mám
+  - term: Já mám (zkráceně)
     lang: cs
     tts: cs-terms/Ja mam.mp3
   img: img/Ive.jpeg
   freq: 157210.00000
 - terms: 
-  - term: won't
+  - term: won't (will not)
     lang: en
     tts: en-terms/wont.mp3
     pron: wəʊnt
-  - term: nebude
+  - term: nebude (zkráceně)
     lang: cs
     tts: cs-terms/nebude.mp3
   img: img/wont.jpeg
   freq: 116568.00000
 - terms: 
-  - term: that's
+  - term: that's (that is)
     lang: en
     tts: en-terms/thats.mp3
     pron: ðæts
-  - term: ten je
+  - term: ten je (zkráceně)
     lang: cs
     tts: cs-terms/ten je.mp3
   img: img/thats.jpeg
   freq: 93912.00000
 - terms: 
-  - term: he's
+  - term: he's (he is)
     lang: en
     tts: en-terms/hes.mp3
     pron: hiːz
-  - term: on je
+  - term: on je (zkráceně)
     lang: cs
     tts: cs-terms/on je.mp3
   img: img/hes.jpeg
   freq: 74505.00000
 - terms: 
-  - term: there's
+  - term: there's (there is)
     lang: en
     tts: en-terms/theres.mp3
     pron: ðeəz
-  - term: tady je
+  - term: tady je (zkráceně)
     lang: cs
     tts: cs-terms/tady je.mp3
   img: img/theres.jpeg
   freq: 65017.00000
 - terms: 
-  - term: you'd
+  - term: you'd (you would)
     lang: en
     tts: en-terms/youd.mp3
     pron: juːd
-  - term: ty bys
+  - term: ty bys (zkráceně)
     lang: cs
     tts: cs-terms/ty bys.mp3
   img: img/youd.jpeg
   freq: 33008.00000
 - terms: 
-  - term: we're
+  - term: we're (we are)
     lang: en
     tts: en-terms/were.mp3
     pron: wɪə
-  - term: my jsme
+  - term: my jsme (zkráceně)
     lang: cs
     tts: cs-terms/my jsme.mp3
   img: img/were.jpeg
@@ -11492,42 +11492,42 @@ concepts:
     lang: en
   state: ignore
   freq: 18.00000
-##  I'm   ################################################################### t0:pron:missing
+##  I'm (I am)   ############################################################ t0:pron:missing
 - terms: 
-  - term: I'm
+  - term: I'm (I am)
     lang: en
     tts: en-terms/Im.mp3
-  - term: Já jsem
+  - term: Já jsem (zkráceně)
     lang: cs
     tts: cs-terms/Ja jsem.mp3
   img: img/Im.jpeg
   freq: 4082139.00000
 - terms: 
-  - term: you're
+  - term: you're (you are)
     lang: en
     tts: en-terms/youre.mp3
     pron: jʊə
-  - term: Ty jsi
+  - term: Ty jsi (zkráceně)
     lang: cs
     tts: cs-terms/Ty jsi.mp3
   img: img/youre.jpeg
   freq: 2382497.00000
 - terms: 
-  - term: what's
+  - term: what's (what is)
     lang: en
     tts: en-terms/whats.mp3
     pron: wɒts
-  - term: Co je
+  - term: Co je (zkráceně)
     lang: cs
     tts: cs-terms/Co je.mp3
   img: img/whats.jpeg
   freq: 408213.00000
 - terms: 
-  - term: let's
+  - term: let's (let us)
     lang: en
     tts: en-terms/lets.mp3
     pron: lɛts
-  - term: pojďme
+  - term: pojďme (zkráceně)
     lang: cs
     tts: cs-terms/pojdme.mp3
   - term: ať
@@ -11805,9 +11805,9 @@ concepts:
     lang: en
     tts: en-terms/shunting.mp3
     pron: ˈʃʌntɪŋ
-  - term: odstavovat na vedlejší kolej
+  - term: odstavovat (na vedlejší kolej)
     lang: cs
-    tts: cs-samples/odstavovat na vedlejsi kolej.mp3
+    tts: cs-terms/odstavovat.mp3
   img: img/shunting.jpeg
   freq: 2000.00000
 - terms: 
