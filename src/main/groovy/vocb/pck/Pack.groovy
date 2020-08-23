@@ -199,8 +199,8 @@ public class Pack {
 	public static void main(String[] args) {
 		new Pack().with {
 			//allPackages.each {println it}
-			//Collection<PackInfo> pkgs = allPackages.values()
-			Collection<PackInfo> pkgs = [allPackages["FiveLittleMonkeys"]]
+			Collection<PackInfo> pkgs = allPackages.values()
+			//Collection<PackInfo> pkgs = [allPackages["Supaplex"]]
 			pkgs.each { PackInfo i->
 				println '*'*100
 				println "* ${i.name}"

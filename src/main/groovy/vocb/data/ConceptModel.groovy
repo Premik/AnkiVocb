@@ -28,7 +28,7 @@ public class ConceptDb {
 		(concepts+examples).each { o->
 			List<String> innerVal = o.validate()
 			if (innerVal) {
-				ret.addAll("$o.firstTerm: ${innerVal.join('|')}")
+				ret.add("$o.firstTerm: ${innerVal.join('|')}")
 			}
 		}
 		return ret
@@ -127,6 +127,7 @@ public class Concept {
 @Canonical
 @ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
+@EqualsAndHashCode
 public class Term {
 	String term
 	String lang

@@ -1,16 +1,14 @@
 package vocb.anki.crowd
 
-import java.nio.file.Files
-import java.nio.file.Path
-
-import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.junit.jupiter.api.io.TempDir
-import org.junit.jupiter.engine.extension.TempDirectory
+import org.junit.rules.TemporaryFolder
 
-@ExtendWith(TempDirectory.class)
+import java.nio.file.Path
+
+//@ExtendWith(TemporaryFolder)
 class MediaManTest {
 
 	MediaMan mm
