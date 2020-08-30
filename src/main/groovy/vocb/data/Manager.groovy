@@ -48,7 +48,7 @@ public class Manager {
 	List<Concept> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
-	static BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, 1000*1000]
+	static BigDecimal[] freqRanges = [0, 3, 50, 165, 400, 1200, 1000*1000]
 	.collect{it*1000 as BigDecimal} as BigDecimal[]
 
 	public static Integer numberOfStarsFreq(BigDecimal freq) {
@@ -345,9 +345,12 @@ public class Manager {
 		int accu=0
 		(5..0).each {
 			int sz = conceptsByStar[it].size()
+			if (it == 0) sz+=conceptsByStar[null].size()
 			accu+=sz
-			println "${sz.toString().padRight(5)} ${starsOf(conceptsByStar[it][0])} $accu"
+			String samples = conceptsByStar[it].take(40).collect {it.firstTerm}
+			println "${sz.toString().padRight(5)} (${accu.toString().padRight(5)}) ${starsOf(conceptsByStar[it][0])} $samples "
 		}
+		
 	}
 
 	Collection<String> filterByStars(Collection<String> src, List<Integer> starRange = (0..2)) {
