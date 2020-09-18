@@ -56,7 +56,7 @@ class VocbModel {
 
     static String noteIdentity(Note n) {
         assert n
-        return "$n['foreign'] $n.['foreignExample']"
+        return "${n.foreign} ${n.foreignExample}"
     }
 
     void syncNoteModels() {

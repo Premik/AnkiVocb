@@ -70,5 +70,18 @@ class CrowdModelTest {
 		assert orighash != a.hashCode()
 	}
 	
+	@Test
+	void guidTest() {
+		NoteModel model = new VocbModel().noteModel		
+		Note n1 = vocbModel.notes[0]
+						
+		Note n =new Note(model: model)			
+		n.foreign = n1.foreign
+		n.foreignExample= n1.foreignExample
+		assert VocbModel.noteIdentity(n1) == VocbModel.noteIdentity(n)		
+		assert VocbModel.noteGuid(n1) == VocbModel.noteGuid(n) 
+		
+	}
+	
 	
 }

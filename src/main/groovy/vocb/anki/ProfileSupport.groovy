@@ -10,6 +10,8 @@ import vocb.Helper
 import vocb.anki.crowd.Note
 import vocb.anki.crowd.NoteModel
 import vocb.anki.crowd.VocbModel
+import static vocb.Ansi.*
+import static vocb.Ansi.*
 
 public class ProfileSupport {
 
@@ -169,33 +171,43 @@ public class ProfileSupport {
 			sql.execute(s)
 		}
 	}
-	
+
 	public void fixGuids() {
 		NoteModel model = new VocbModel().noteModel
-		ankivocbNotes().each { GroovyRowResult r->			
+		int i = 0
+		int fixed = 0
+		ankivocbNotes().each { GroovyRowResult r->
+			i++
 			Note n =new Note(model: model, fields: r.flds)
 			String newGuid = VocbModel.noteGuid(n)
 			String guid = r.guid
 			if (guid != newGuid) {
-			  println "${guid.padLeft(30)} ${newGuid.padLeft(30)} $r"
+				fixed++
+				println "${guid.padLeft(30)}\n${color(newGuid.padLeft(30), BOLD)} $r"
+				withProfileCollectionDb(selectedProfile) { Sql sql->
+					String s = "update notes set guid ='$newGuid' where id =$r.id"
+					sql.execute(s)
+					//throw new Exception("break")
+				}
 			}
-			
 		}
-		
-		
-		
+		println "$i processed. Fixed: $fixed"
+
+
+
 	}
 
 
 	static void main(String... args) {
 		new ProfileSupport().with {
 			println listProfiles()
-			selectedProfile = "test4"
+			//selectedProfile = "test"
+			selectedProfile = "Honzik"
 			println decksByName.keySet()
 			//deckName = "Supaplex"
 			//deckName = "Jingle Bells"
 			//deckName = "Five Little Monkeys"
-			deckName = "Mary Had a Little Lamb"
+			//deckName = "Mary Had a Little Lamb"
 			fixGuids()
 
 			//println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
@@ -203,14 +215,15 @@ public class ProfileSupport {
 
 
 			//ankivocbCards().each { println it}
-			
-			
-			
-		
-			
-			
-			
-			
+			println "Done"
+
+
+
+
+
+
+
+
 			//List<Long> toDelete = nodeIdsMissingNativeAlt(ankivocbCards())
 			//println toDelete
 			//dropCardsByIdList(toDelete)

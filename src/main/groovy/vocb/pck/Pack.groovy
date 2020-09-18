@@ -199,7 +199,7 @@ public class Pack {
 		
 		(0..7).stream().parallel()
 				.forEach( {int p->
-					if (p == 2)
+					if (2 == 2)
 					new Pack().with {
 						//allPackages.each {println it}
 						//Collection<PackInfo> pkgs = allPackages.values()
