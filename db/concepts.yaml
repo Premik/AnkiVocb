@@ -1288,7 +1288,7 @@ concepts:
     lang: en
     tts: en-terms/mr.mp3
     pron: ˈmɪstər
-  - term: pan
+  - term: pán
     lang: cs
     tts: cs-terms/pan.mp3
   img: img/mr.jpeg
@@ -1623,7 +1623,7 @@ concepts:
     tts: cs-terms/stejne.mp3
   - term: stejně
     lang: cs
-    tts: cs-terms/stejne.mp3
+    tts: cs-terms/stejne2.mp3
   img: img/same.jpeg
   freq: 456106.00000
 - terms: 
@@ -1803,6 +1803,7 @@ concepts:
     tts: cs-terms/receno.mp3
   img: img/told.jpeg
   freq: 424696.00000
+##  lord   ################################################################## t0:pron:missing
 - terms: 
   - term: lord
     lang: en
@@ -1810,7 +1811,6 @@ concepts:
   - term: pán
     lang: cs
     tts: cs-terms/pan.mp3
-  state: ignore
   img: img/lord.jpeg
   freq: 422407.00000
 - terms: 
@@ -5322,7 +5322,7 @@ concepts:
     tts: cs-terms/jiste.mp3
   - term: určitě
     lang: cs
-    tts: cs-terms/urcite.mp3
+    tts: cs-terms/urcite2.mp3
   img: img/sure.jpeg
   freq: 135369.50000
 - terms: 
