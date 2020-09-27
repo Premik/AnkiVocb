@@ -207,6 +207,8 @@ public class Corpus {
 			"everyone's":5735,
 			"hauling": 120,
 			"shunting":2000,
+			"babies":22544,
+			"mummies":1456
 
 		])
 
@@ -230,8 +232,8 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			//println topXOf(["i am", "hello"])
-			println it["shunt"]
-			println it["haul"]
+			println it["baby"]
+			println it["mummy"]
 			
 			
 		}

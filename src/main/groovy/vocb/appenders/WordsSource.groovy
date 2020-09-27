@@ -128,7 +128,7 @@ public class WordsSource {
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
 			
-			String tx = new File("/data/src/AnkiVocb/pkg/ThomasAndFriends/sentences.txt").text
+			String tx = new File("/data/src/AnkiVocb/pkg/WheelsOnTheBus/sentences.txt").text
 			                                             
 			
 			
