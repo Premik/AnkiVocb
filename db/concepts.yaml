@@ -11872,7 +11872,7 @@ concepts:
     tts: cs-terms/vznetovy.mp3
   img: img/diesel.jpeg
   freq: 22.00000
-##  goes   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  goes   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: goes
     lang: en
@@ -11880,84 +11880,92 @@ concepts:
     lang: cs
   - term: chodí
     lang: cs
-
+  img: img/goes.jpeg
   freq: 100235.00000
-##  move   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  move   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: move
     lang: en
   - term: pohybovat
     lang: cs
   - term: posunout
-    lang: cs  
+    lang: cs
+  img: img/move.jpeg
   freq: 53046.00000
-##  shut   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  shut   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: shut
     lang: en
   - term: zavřít
-    lang: cs  
+    lang: cs
   - term: umlčet
     lang: cs
+  img: img/shut.jpeg
   freq: 45918.00000
-##  wheels   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  wheels   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: wheels
     lang: en
   - term: kola
     lang: cs
+  img: img/wheels.jpeg
   freq: 18427.00000
-##  bus   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  bus   ################################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: bus
     lang: en
   - term: autobus
-    lang: cs  
+    lang: cs
+  img: img/bus.jpeg
   freq: 13755.00000
-##  horn   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  horn   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: horn
     lang: en
   - term: roh
-    lang: cs  
+    lang: cs
   - term: houkačka
     lang: cs
+  img: img/horn.jpeg
   freq: 11019.00000
-##  swish   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  swish   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: swish
-    lang: en  
+    lang: en
   - term: svištět
     lang: cs
+  img: img/swish.jpeg
   freq: 1172.00000
-##  wah   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: wah
     lang: en
   - term: wah
     lang: cs
-  state: ignore  
+  state: ignore
   freq: 274.00000
-##  wipers   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  wipers   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: wipers
     lang: en
   - term: stěrače
-    lang: cs  
+    lang: cs
+  img: img/wipers.jpeg
   freq: 60.00000
-##  beep   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  beep   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: beep
     lang: en
   - term: píp
     lang: cs
+  img: img/beep.jpeg
   freq: 60.00000
-##  shush   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  shush   ################################################################# no cs term|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: shush
     lang: en
   - term: píp
     lang: pššš
+  img: img/shush.jpeg
   freq: 13.00000
 
 examples: 
