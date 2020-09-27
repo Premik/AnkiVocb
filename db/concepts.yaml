@@ -11981,31 +11981,37 @@ concepts:
     tts: cs-terms/pip.mp3
   img: img/beep.jpeg
   freq: 60.00000
-##  shush   ################################################################# t0:pron:missing|t1:tts:missing
+##  shush   ################################################################# t0:pron:missing
 - terms: 
   - term: shush
     lang: en
     tts: en-terms/shush.mp3
-  - term: pššš
+  - term: pššt
     lang: cs
+    tts: cs-terms/psss.mp3
   img: img/shush.jpeg
   freq: 13.00000
-##  babies   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  babies   ################################################################ t0:pron:missing
 - terms: 
   - term: babies
     lang: en
+    tts: en-terms/babies.mp3
   - term: miminka
     lang: cs
+    tts: cs-terms/miminka.mp3
   - term: děťátka
     lang: cs
+    tts: cs-terms/detatka.mp3
   img: img/babies.jpeg
   freq: 22544.00000
-##  mommies   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  mommies   ############################################################### t0:pron:missing
 - terms: 
   - term: mommies
     lang: en
+    tts: en-terms/mommies.mp3
   - term: maminky
     lang: cs
+    tts: cs-terms/maminky.mp3
   img: img/mommies.jpeg
   freq: 1456.00000
 
@@ -16588,63 +16594,73 @@ examples:
   - term: Všichni mají role, které hrají.
     lang: cs
     tts: cs-samples/Vsichni maji role, ktere hraji.mp3
-##  The wheels on the bus.   ################################################ t0:tts:missing|t1:tts:missing
 - terms: 
   - term: The wheels on the bus.
     lang: en
+    tts: en-samples/The wheels on the bus.mp3
   - term: Kola autobusu.
     lang: cs
-##  Go round and round.   ################################################### t0:tts:missing|t1:tts:missing
+    tts: cs-terms/Kola autobusu.mp3
 - terms: 
   - term: Go round and round.
     lang: en
+    tts: en-samples/Go round and round.mp3
   - term: Jdou dokola a dokola.
     lang: cs
-##  All through the town.   ################################################# t0:tts:missing|t1:tts:missing
+    tts: cs-terms/Jdou dokola a dokola.mp3
 - terms: 
   - term: All through the town.
     lang: en
+    tts: en-samples/All through the town.mp3
   - term: Po celém městě.
     lang: cs
-##  The wipers go swish.   ################################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Po celem meste.mp3
 - terms: 
   - term: The wipers go swish.
     lang: en
+    tts: en-samples/The wipers go swish.mp3
   - term: Stěrače dělají sviš.
     lang: cs
-##  The horn goes beep.   ################################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Sterace delaji svis.mp3
 - terms: 
   - term: The horn goes beep.
     lang: en
+    tts: en-samples/The horn goes beep.mp3
   - term: Klakson dělá píp.
     lang: cs
-##  The doors go open and shut.   ########################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Klakson dela pip.mp3
 - terms: 
   - term: The doors go open and shut.
     lang: en
+    tts: en-samples/The doors go open and shut.mp3
   - term: Dveře se otevírají a zavírají.
     lang: cs
-##  Driver says: 'Move on back'.   ########################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Dvere se oteviraji a zaviraji.mp3
 - terms: 
   - term: "Driver says: 'Move on back'."
     lang: en
+    tts: en-samples/Driver says Move on back.mp3
   - term: "Řidič říká: „Postupujte dále“."
     lang: cs
-##  The babies says wah.   ################################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Ridic rika „Postupujte dale“.mp3
 - terms: 
   - term: The babies says wah.
     lang: en
+    tts: en-samples/The babies says wah.mp3
   - term: Miminka říkají béé.
     lang: cs
-##  The mommies says shush.   ############################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Miminka rikaji bee.mp3
 - terms: 
   - term: The mommies says shush.
     lang: en
-  - term: Maminky říkají pšt.
+    tts: en-samples/The mommies says shush.mp3
+  - term: Maminky říkají pštros.
     lang: cs
-##  All day long   ########################################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Maminky rikaji pst.mp3
 - terms: 
   - term: All day long
     lang: en
+    tts: en-samples/All day long.mp3
   - term: Celý dlouhý den.
     lang: cs
+    tts: cs-samples/Cely dlouhy den.mp3
