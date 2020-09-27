@@ -11981,15 +11981,33 @@ concepts:
     tts: cs-terms/pip.mp3
   img: img/beep.jpeg
   freq: 60.00000
-##  shush   ################################################################# no cs term|t0:pron:missing|t1:tts:missing
+##  shush   ################################################################# t0:pron:missing|t1:tts:missing
 - terms: 
   - term: shush
     lang: en
     tts: en-terms/shush.mp3
-  - term: píp
-    lang: pššš
+  - term: pššš
+    lang: cs
   img: img/shush.jpeg
   freq: 13.00000
+##  babies   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: babies
+    lang: en
+  - term: miminka
+    lang: cs
+  - term: děťátka
+    lang: cs
+  img: img/babies.jpeg
+  freq: 22544.00000
+##  mommies   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: mommies
+    lang: en
+  - term: maminky
+    lang: cs
+  img: img/mommies.jpeg
+  freq: 1456.00000
 
 examples: 
 - terms: 
@@ -16570,3 +16588,63 @@ examples:
   - term: Všichni mají role, které hrají.
     lang: cs
     tts: cs-samples/Vsichni maji role, ktere hraji.mp3
+##  The wheels on the bus.   ################################################ t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: The wheels on the bus.
+    lang: en
+  - term: Kola autobusu.
+    lang: cs
+##  Go round and round.   ################################################### t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: Go round and round.
+    lang: en
+  - term: Jdou dokola a dokola.
+    lang: cs
+##  All through the town.   ################################################# t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: All through the town.
+    lang: en
+  - term: Po celém městě.
+    lang: cs
+##  The wipers go swish.   ################################################## t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: The wipers go swish.
+    lang: en
+  - term: Stěrače dělají sviš.
+    lang: cs
+##  The horn goes beep.   ################################################### t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: The horn goes beep.
+    lang: en
+  - term: Klakson dělá píp.
+    lang: cs
+##  The doors go open and shut.   ########################################### t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: The doors go open and shut.
+    lang: en
+  - term: Dveře se otevírají a zavírají.
+    lang: cs
+##  Driver says: 'Move on back'.   ########################################## t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: "Driver says: 'Move on back'."
+    lang: en
+  - term: "Řidič říká: „Postupujte dále“."
+    lang: cs
+##  The babies says wah.   ################################################## t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: The babies says wah.
+    lang: en
+  - term: Miminka říkají béé.
+    lang: cs
+##  The mommies says shush.   ############################################### t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: The mommies says shush.
+    lang: en
+  - term: Maminky říkají pšt.
+    lang: cs
+##  All day long   ########################################################## t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: All day long
+    lang: en
+  - term: Celý dlouhý den.
+    lang: cs
