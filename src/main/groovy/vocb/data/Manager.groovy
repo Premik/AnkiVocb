@@ -335,7 +335,7 @@ public class Manager {
 			c.termsByLang(lang)*.term
 		} +
 		db.examples.collectMany {Example e ->
-			e.byLang(lang)*.term
+			e.termsByLang(lang)*.term
 		}
 	}
 

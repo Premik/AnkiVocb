@@ -337,13 +337,15 @@ public class Helper {
 	}
 	
 	public static void setAndCheckDirty(Object owner, String propName, Object propValue) {
-		MetaObjectProtocol ownerMop = owner.metaClass
+		MetaClass ownerMop = owner.metaClass
 		if (propName != "dirty") {
 			Object oldValue = ownerMop.getProperty(owner, propName)
 			if (oldValue == propValue) return
-			ownerMop.setAttribute(owner, "dirty", true)
+			owner.@dirty = true
 		}
-		ownerMop.setAttribute(owner, propName, propValue)
+		//ownerMop.setAttribute(owner, propName, propValue)
+		//ownerMop.setAttribute(owner.getClass(), owner, propName, propValue, true, false)
+		owner.@"$propName" = propValue
 	}
 	
 	

@@ -1,25 +1,47 @@
-package vocb.data;
+package vocb.data
 
-public interface TermContainer {
+import groovy.transform.EqualsAndHashCode
+import groovy.transform.ToString
+import vocb.Helper
+
+
+public abstract class TermContainer  {
+	final List<Term> terms = []
+	protected boolean dirty=true
+
+	public String getFirstTerm() {terms[0]?.term}
+	public List<Term> termsByLang(String lng) { terms?.findAll {it.lang == lng }}
+	public Term getEnTerm() { termsByLang("en")[0]}
+	public Term getCsTerm() { termsByLang("cs")[0]}
+	public Term getCsAltTerm() { termsByLang("cs")[1]}
+
+	public void addEnCsTerms(String en, String cs, String csAlt=null) {
+		terms[0] = Term.enTerm(en)
+		terms[1] = Term.enTerm(cs)
+		if (csAlt) { terms[2] = Term.enTerm(csAlt)}
+	}	
+
+	public Term getAt(int i) {
+		return terms[i]
+	}
 	
-	/*
 	void setProperty(String name, Object value) {
 		Helper.setAndCheckDirty(this, name, value)
-		if (name == "isDirty") {
-			terms*.isDirty = value
-		}
-		
+		if (name == "dirty") {
+			terms*.dirty = value
+		}	
 	}
 	
 	public boolean isDirty() {
-		if (metaclass.getAttribute(this, "dirty")) retunr
-		if (isDirty) return true
-		if (terms.find { it.isDirty }) {
-			isDirty = true
+		if (dirty) return true
+		if (terms.find { it.dirty }) {
+			dirty = true
 		}
-		return isDirty
+		return dirty
 	}
-	*/
-
+	
+	public void setDirty(boolean v) {
+		dirty = v
+	}
 
 }

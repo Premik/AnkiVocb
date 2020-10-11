@@ -47,7 +47,7 @@ public class ConceptYamlStorage {
 	public Example parseExample(Map exList) {
 		assert exList
 		new Example().tap{ Example e->
-			e.terms = exList.terms.collect(this.&parseTerm)
+			e.terms.addAll( exList.terms.collect(this.&parseTerm))
 		}
 	}
 

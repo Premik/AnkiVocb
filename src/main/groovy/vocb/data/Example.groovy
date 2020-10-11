@@ -7,22 +7,9 @@ import groovy.transform.ToString
 @Canonical
 @ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
-public class Example  {
-	List<Term> terms = []
-	public String getFirstTerm() {
-		terms[0]?.term
-	}
-
-
-	public Term getAt(int i) {
-		return terms[i]
-	}
-
-	public List<Term> byLang(String lng) {
-		terms.findAll {it.lang == lng }
-	}
-
-	public List<String> validate() {
+public class Example extends TermContainer {
+	
+		public List<String> validate() {
 		List<String> ret = []
 		terms.eachWithIndex {Term t, Integer i->
 			ret.addAll(t.validate().collect{"t${i}:${it}"} )

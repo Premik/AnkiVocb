@@ -7,34 +7,18 @@ import vocb.Helper
 @EqualsAndHashCode
 //@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
 @ToString(includePackage=false, ignoreNulls=true, includes=['firstTerm', 'state', 'freq'])
-public class Concept  {
-	List<Term> terms = []
-	//State state
+public class Concept extends TermContainer  {
+	
 
 	String state
 	String img
 	BigDecimal freq
-	boolean dirty=true
-
-	public String getFirstTerm() {terms[0]?.term}
-	public List<Term> termsByLang(String lng) { terms?.findAll {it.lang == lng }}
-	public Term getEnTerm() { termsByLang("en")[0]}
-	public Term getCsTerm() { termsByLang("cs")[0]}
-	public Term getCsAltTerm() { termsByLang("cs")[1]}
-	public void addEnCsTerms(String en, String cs, String csAlt=null) {
-		terms[0] = Term.enTerm(en)
-		terms[1] = Term.enTerm(cs)
-		if (csAlt) { terms[2] = Term.enTerm(csAlt)}
-	}
 	
 
+	
 	/*public Term getEnTerm() {
 	 termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
 	 }*/
-
-	public Object getExamples() {assert false : "Depricated" }
-
-	public List<Term> examplesByLang(String lng) { assert false : "Depricated" }
 
 	public List<String> validate(boolean appendTermWarnings=true ) {
 		List<String> ret = []
@@ -59,31 +43,6 @@ public class Concept  {
 		return ret
 	}
 
-	public Term getAt(int i) {
-		return terms[i]
-	}
 	
-	void setProperty(String name, Object value) {
-		Helper.setAndCheckDirty(this, name, value)
-		if (name == "dirty") {
-			terms*.dirty = value
-		}
-		
-	}
-	
-	public boolean isDirty() {
-		if (dirty) return true
-		if (terms.find { it.dirty }) {
-			dirty = true
-		}
-		return dirty
-	}
-	
-	
-	
-	
-	
-
-
 
 }
