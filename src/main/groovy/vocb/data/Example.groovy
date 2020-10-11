@@ -7,7 +7,7 @@ import groovy.transform.ToString
 @Canonical
 @ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
-public class Example {
+public class Example  {
 	List<Term> terms = []
 	public String getFirstTerm() {
 		terms[0]?.term

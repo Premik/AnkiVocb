@@ -26,6 +26,7 @@ import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 
 
+
 public class Helper {
 
 	public static String utf8=StandardCharsets.UTF_8.toString()
@@ -334,6 +335,18 @@ public class Helper {
 		if (wrap) return """<img src='$ref'>"""
 		return ref
 	}
+	
+	public static void setAndCheckDirty(Object owner, String propName, Object propValue) {
+		MetaObjectProtocol ownerMop = owner.metaClass
+		if (propName != "dirty") {
+			Object oldValue = ownerMop.getProperty(owner, propName)
+			if (oldValue == propValue) return
+			ownerMop.setAttribute(owner, "dirty", true)
+		}
+		ownerMop.setAttribute(owner, propName, propValue)
+	}
+	
+	
 	
 	
 
