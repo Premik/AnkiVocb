@@ -53,8 +53,20 @@ public class ConceptDb {
 	
 	
 	public boolean flush() {
-		concepts*.dirtyDataLocation()
-		examples*.dirtyDataLocation()
+		concepts*.updateDataLocationDirty()
+		examples*.updateDataLocationDirty()
 		dataLocations = null
 	}
+	
+	public void assignDataLocationToAll(DataLocation dl) {
+		concepts*.location = dl
+		concepts*.location = dl
+		flush()
+	}
+	
+	public void mergeWith(ConceptDb ctd) {
+		if (!ctd) return
+		
+	} 
+	
 }

@@ -4,11 +4,11 @@ import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 import vocb.Helper
 
-
+@EqualsAndHashCode(excludes=["location"])
 public abstract class TermContainer  {
 	final List<Term> terms = []
 	protected boolean dirty=true
-	public DataLocation location
+	DataLocation location
 
 	public String getFirstTerm() {terms[0]?.term}
 	public List<Term> termsByLang(String lng) { terms?.findAll {it.lang == lng }}
@@ -45,7 +45,7 @@ public abstract class TermContainer  {
 		dirty = v
 	}
 	
-	public void dirtyDataLocation() {
+	public void updateDataLocationDirty() {
 		assert location
 		if (location.dirty) return
 		if (isDirty()) location.dirty = true

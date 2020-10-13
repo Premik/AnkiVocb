@@ -136,9 +136,18 @@ public class Manager {
 		reindex()
 	}
 	
-	public void load(DataLocation loc) {
+	public void load(DataLocation loc, boolean merge=true) {
 		assert loc?.storageRootPath
 		assert loc.storagePath
+		ConceptDb cdb
+		loc.storagePath.withReader(utf8) { Reader r->
+			cdb =storage.parseDb(r)
+			assert cdb.version == "0.0.1" : "Not compatible db version"
+			if (!merge) return cdb
+		}
+		
+		reindex()
+		
 	}
 
 

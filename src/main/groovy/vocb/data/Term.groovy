@@ -1,16 +1,16 @@
 package vocb.data
 
 import groovy.transform.AutoClone
-import groovy.transform.Canonical
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
+import groovy.transform.TupleConstructor
 import vocb.Helper
 
 
-@Canonical
+@TupleConstructor
 @ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
-@EqualsAndHashCode
+@EqualsAndHashCode(excludes=["dirty"])
 public class Term {
 	String term
 	String lang
