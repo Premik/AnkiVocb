@@ -13,7 +13,7 @@ import groovy.transform.ToString
 public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
-	LinkedHashSet<Example> examples = []
+	List<Example> examples = []
 
 	private List<DataLocation> dataLocations
 
@@ -66,7 +66,10 @@ public class ConceptDb {
 	
 	public void mergeWith(ConceptDb ctd) {
 		if (!ctd) return
-		
+		assert examples.intersect(ctd.examples).empty
+		assert concepts.intersect(ctd.concepts).empty
+		concepts.addAll(ctd.concepts)
+		examples.addAll(ctd.examples)		
 	} 
 	
 }

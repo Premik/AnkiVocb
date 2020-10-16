@@ -13,6 +13,7 @@ class ManagerTest {
 
 
 	Path tempDir = Files.createTempDirectory("ankivocbTest")
+	DataLocation location = new DataLocation(storageRootPath: tempDir)
 	Manager m = new Manager(storagePath: tempDir )
 
 	Term t1 = new Term("apple", "en")
@@ -50,9 +51,7 @@ class ManagerTest {
 		Path tempFile2 = Files.createTempFile("tempfiles", ".yaml")
 		String saved2 =  m.save(tempFile2)
 		TestUtils.compareFiles(m.conceptsPath.toFile(), tempFile2.toFile())
-
 		//assert saved1 == saved2
-
 	}
 
 	@Test
