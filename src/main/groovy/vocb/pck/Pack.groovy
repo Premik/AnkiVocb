@@ -197,14 +197,15 @@ public class Pack {
 
 	public static void main(String[] args) {
 		
+		
 		(0..7).stream().parallel()
 				.forEach( {int p->
-					if (2 == 2)
+					if (p == 2)
 					new Pack().with {
 						//allPackages.each {println it}
 						//Collection<PackInfo> pkgs = allPackages.values()
-						//Collection<PackInfo> pkgs = [allPackages["Supaplex"]]
-						Collection<PackInfo> pkgs = [allPackages.values()[p]]
+						Collection<PackInfo> pkgs = [allPackages["DuckTales"]]
+						//Collection<PackInfo> pkgs = [allPackages.values()[p]]
 						pkgs.each { PackInfo i->
 							println '*'*100
 							println "* ${i.name}"

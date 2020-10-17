@@ -125,7 +125,7 @@ public class WordsSource {
 		new WordsSource().tap {
 			//fromOwnSamples()
 			//minFreq = 1
-			//simulation = true
+			simulation = true
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
