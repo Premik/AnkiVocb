@@ -108,7 +108,9 @@ public class ExampleAppender {
 			}			
 			if (mis.size() > 2 || !e)  {				
 				print color(sen, RED)
-				e = new Example(terms: [Term.enTerm(sen)] )
+				e = new Example().tap {
+					terms.add(Term.enTerm(sen))					
+				}
 				dbMan.db.examples.add(e)
 				dbMan.save()
 			} else {
@@ -130,7 +132,7 @@ public class ExampleAppender {
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx  = new File("/data/src/AnkiVocb/pkg/FiveLittleMonkeys/sentences.txt").text
 			//String tx  = new File("/data/src/AnkiVocb/pkg/EverythingIsAwesome/sentences.txt").text
-			String tx  = new File("/data/src/AnkiVocb/pkg/WheelsOnTheBus/sentences.txt").text
+			String tx  = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
 			fromCorpus(tx)
 
 			//reuseExisting()
