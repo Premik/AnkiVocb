@@ -12014,14 +12014,15 @@ concepts:
     tts: cs-terms/maminky.mp3
   img: img/mommies.jpeg
   freq: 1456.00000
-##  it's   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  it's   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: it's
     lang: en
   - term: své
     lang: cs
+  img: img/its.jpeg
   freq: 4082139.00000
-##  danger   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  danger   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: danger
     lang: en
@@ -12029,33 +12030,37 @@ concepts:
     lang: cs
   - term: ohrožení
     lang: cs
+  img: img/danger.jpeg
   freq: 64509.00000
-##  successes   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  successes   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: successes
     lang: en
   - term: úspěchy
-    lang: cs  
+    lang: cs
+  img: img/successes.jpeg
   freq: 52956.00000
-##  race   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  race   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: race
     lang: en
   - term: závod
-    lang: cs  
+    lang: cs
   - term: rasa
-    lang: cs  
+    lang: cs
+  img: img/race.jpeg
   freq: 52769.00000
-##  fails   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  fails   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: fails
     lang: en
   - term: nezdaří
     lang: cs
   - term: selže
-    lang: cs  
+    lang: cs
+  img: img/fails.jpeg
   freq: 47640.00000
-##  stranger   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  stranger   ############################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: stranger
     lang: en
@@ -12063,17 +12068,19 @@ concepts:
     lang: cs
   - term: podivnější
     lang: cs
+  img: img/stranger.jpeg
   freq: 38265.00000
-##  final   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  final   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: final
     lang: en
   - term: konečné
     lang: cs
   - term: závěrečná
-    lang: cs  
+    lang: cs
+  img: img/final.jpeg
   freq: 29784.00000
-##  mystery   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  mystery   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: mystery
     lang: en
@@ -12081,17 +12088,19 @@ concepts:
     lang: cs
   - term: tajemství
     lang: cs
+  img: img/mystery.jpeg
   freq: 26198.00000
-##  tales   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  tales   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: tales
     lang: en
   - term: příběhy
     lang: cs
   - term: pohádky
-    lang: cs  
+    lang: cs
+  img: img/tales.jpeg
   freq: 23483.00000
-##  daring   ################################################################ 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  daring   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: daring
     lang: en
@@ -12099,42 +12108,47 @@ concepts:
     lang: cs
   - term: smělé
     lang: cs
+  img: img/daring.jpeg
   freq: 22198.00000
-##  curtain   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  curtain   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: curtain
     lang: en
   - term: opona
-    lang: cs  
+    lang: cs
   - term: závěs
-    lang: cs  
+    lang: cs
+  img: img/curtain.jpeg
   freq: 13510.00000
-##  solve   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  solve   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: solve
     lang: en
   - term: vyřešit
-    lang: cs  
+    lang: cs
+  img: img/solve.jpeg
   freq: 13170.00000
-##  duck   ################################################################## 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  duck   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: duck
     lang: en
   - term: kachna
     lang: cs
   - term: kačer
-    lang: cs  
+    lang: cs
+  img: img/duck.jpeg
   freq: 7791.00000
-##  heading   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  heading   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: heading
     lang: en
   - term: nadpis
     lang: cs
   - term: míří (k)
-    lang: cs  
+    lang: cs
+  img: img/heading.jpeg
   freq: 5396.00000
-##  hurricane   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  hurricane   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: hurricane
     lang: en
@@ -12142,38 +12156,43 @@ concepts:
     lang: cs
   - term: vichřice
     lang: cs
+  img: img/hurricane.jpeg
   freq: 5273.00000
-##  messes   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  messes   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: messes
     lang: en
   - term: zmatky
     lang: cs
+  img: img/messes.jpeg
   freq: 4000.00000
-##  lasers   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  lasers   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: lasers
     lang: en
   - term: lasery
     lang: cs
+  img: img/lasers.jpeg
   freq: 3680.00000
-##  aeroplanes   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  aeroplanes   ############################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: aeroplanes
     lang: en
   - term: letadla
-    lang: cs  
+    lang: cs
+  img: img/aeroplanes.jpeg
   freq: 3086.00000
-##  deduction   ############################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  deduction   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: deduction
     lang: en
   - term: vyvození (závěrů)
     lang: cs
   - term: dedukce
-    lang: cs  
+    lang: cs
+  img: img/deduction.jpeg
   freq: 2715.00000
-##  lurks   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  lurks   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: lurks
     lang: en
@@ -12181,47 +12200,53 @@ concepts:
     lang: cs
   - term: číhá
     lang: cs
+  img: img/lurks.jpeg
   freq: 1689.00000
-##  blur   ################################################################## 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  blur   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: blur
     lang: en
   - term: rozostření
-    lang: cs  
+    lang: cs
   - term: šmouha
     lang: cs
+  img: img/blur.jpeg
   freq: 1682.00000
-##  burg   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  burg   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: burg
     lang: en
   - term: okres (městský)
     lang: cs
+  img: img/burg.jpeg
   freq: 456.00000
-##  rewrite   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  rewrite   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: rewrite
     lang: en
   - term: přepsat
-    lang: cs  
+    lang: cs
+  img: img/rewrite.jpeg
   freq: 336.00000
-##  cottontails   ########################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  cottontails (cotton tails)   ############################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: cottontails (cotton tails)
     lang: en
-  - term: králíci (americký druh) 
-    lang: cs  
+  - term: králíci (americký druh)
+    lang: cs
   - term: bavlněné ocasy (doslova)
     lang: cs
+  img: img/cottontails.jpeg
   freq: 49.00000
-##  ponytails   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  ponytails   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: ponytails
     lang: en
-  - term: drdol (účes) 
-    lang: cs  
+  - term: drdol (účes)
+    lang: cs
   - term: koňské ohony (doslova)
     lang: cs
+  img: img/ponytails.jpeg
   freq: 10.00000
 
 examples: 
