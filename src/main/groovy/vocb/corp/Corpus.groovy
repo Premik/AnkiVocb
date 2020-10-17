@@ -202,6 +202,7 @@ public class Corpus {
 			"antiquities":500,
 			"you're":2382497,
 			"i'm":4082139,
+			"it's":4082139,
 			"what's":408213,
 			"let's":41000,
 			"everyone's":5735,
@@ -209,6 +210,10 @@ public class Corpus {
 			"shunting":2000,
 			"babies":22544,
 			"mommies":1456,
+			"burg":456,
+			"ponytail":10,
+			"messes":4000,
+			"successes":52956,
 
 		])
 		
@@ -234,8 +239,8 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			//println topXOf(["i am", "hello"])
-			println it["babies"]
-			println it["mommies"]
+			println it["success"]
+			
 
 
 		}
