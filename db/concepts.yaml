@@ -1803,11 +1803,11 @@ concepts:
     tts: cs-terms/receno.mp3
   img: img/told.jpeg
   freq: 424696.00000
-##  lord   ################################################################## t0:pron:missing
 - terms: 
   - term: lord
     lang: en
     tts: en-terms/lord.mp3
+    pron: lɔːd
   - term: pán
     lang: cs
     tts: cs-terms/pan.mp3
@@ -11872,11 +11872,11 @@ concepts:
     tts: cs-terms/vznetovy.mp3
   img: img/diesel.jpeg
   freq: 22.00000
-##  goes   ################################################################## t0:pron:missing
 - terms: 
   - term: goes
     lang: en
     tts: en-terms/goes.mp3
+    pron: gəʊz
   - term: jde
     lang: cs
     tts: cs-terms/jde.mp3
@@ -11885,11 +11885,11 @@ concepts:
     tts: cs-terms/chodi.mp3
   img: img/goes.jpeg
   freq: 100235.00000
-##  move   ################################################################## t0:pron:missing
 - terms: 
   - term: move
     lang: en
     tts: en-terms/move.mp3
+    pron: muːv
   - term: pohybovat
     lang: cs
     tts: cs-terms/pohybovat.mp3
@@ -11898,11 +11898,11 @@ concepts:
     tts: cs-terms/posunout.mp3
   img: img/move.jpeg
   freq: 53046.00000
-##  shut   ################################################################## t0:pron:missing
 - terms: 
   - term: shut
     lang: en
     tts: en-terms/shut.mp3
+    pron: ʃʌt
   - term: zavřít
     lang: cs
     tts: cs-terms/zavrit.mp3
@@ -11911,31 +11911,31 @@ concepts:
     tts: cs-terms/umlcet.mp3
   img: img/shut.jpeg
   freq: 45918.00000
-##  wheels   ################################################################ t0:pron:missing
 - terms: 
   - term: wheels
     lang: en
     tts: en-terms/wheels.mp3
+    pron: wiːlz
   - term: kola
     lang: cs
     tts: cs-terms/kola.mp3
   img: img/wheels.jpeg
   freq: 18427.00000
-##  bus   ################################################################### t0:pron:missing
 - terms: 
   - term: bus
     lang: en
     tts: en-terms/bus.mp3
+    pron: bʌs
   - term: autobus
     lang: cs
     tts: cs-terms/autobus.mp3
   img: img/bus.jpeg
   freq: 13755.00000
-##  horn   ################################################################## t0:pron:missing
 - terms: 
   - term: horn
     lang: en
     tts: en-terms/horn.mp3
+    pron: hɔːn
   - term: roh
     lang: cs
     tts: cs-terms/roh.mp3
@@ -11944,11 +11944,11 @@ concepts:
     tts: cs-terms/houkacka.mp3
   img: img/horn.jpeg
   freq: 11019.00000
-##  swish   ################################################################# t0:pron:missing
 - terms: 
   - term: swish
     lang: en
     tts: en-terms/swish.mp3
+    pron: swɪʃ
   - term: svištět
     lang: cs
     tts: cs-terms/svistet.mp3
@@ -11961,41 +11961,41 @@ concepts:
     lang: cs
   state: ignore
   freq: 274.00000
-##  wipers   ################################################################ t0:pron:missing
 - terms: 
   - term: wipers
     lang: en
     tts: en-terms/wipers.mp3
+    pron: ˈwaɪpəz
   - term: stěrače
     lang: cs
     tts: cs-terms/sterace.mp3
   img: img/wipers.jpeg
   freq: 60.00000
-##  beep   ################################################################## t0:pron:missing
 - terms: 
   - term: beep
     lang: en
     tts: en-terms/beep.mp3
+    pron: biːp
   - term: píp
     lang: cs
     tts: cs-terms/pip.mp3
   img: img/beep.jpeg
   freq: 60.00000
-##  shush   ################################################################# t0:pron:missing
 - terms: 
   - term: shush
     lang: en
     tts: en-terms/shush.mp3
+    pron: ʃʌʃ
   - term: pššt
     lang: cs
     tts: cs-terms/psss.mp3
   img: img/shush.jpeg
   freq: 13.00000
-##  babies   ################################################################ t0:pron:missing
 - terms: 
   - term: babies
     lang: en
     tts: en-terms/babies.mp3
+    pron: ˈbeɪbiz
   - term: miminka
     lang: cs
     tts: cs-terms/miminka.mp3
@@ -12004,31 +12004,31 @@ concepts:
     tts: cs-terms/detatka.mp3
   img: img/babies.jpeg
   freq: 22544.00000
-##  mommies   ############################################################### t0:pron:missing
 - terms: 
   - term: mommies
     lang: en
     tts: en-terms/mommies.mp3
+    pron: ˈmɒmiz
   - term: maminky
     lang: cs
     tts: cs-terms/maminky.mp3
   img: img/mommies.jpeg
   freq: 1456.00000
-##  it's (it is, it has)   ################################################## t0:pron:missing
 - terms: 
   - term: it's (it is, it has)
     lang: en
     tts: en-terms/its.mp3
+    pron: ɪts
   - term: své
     lang: cs
     tts: cs-terms/sve.mp3
   img: img/its.jpeg
   freq: 4082139.00000
-##  danger   ################################################################ t0:pron:missing
 - terms: 
   - term: danger
     lang: en
     tts: en-terms/danger.mp3
+    pron: ˈdeɪnʤə
   - term: nebezpečí
     lang: cs
     tts: cs-terms/nebezpeci.mp3
@@ -12037,21 +12037,21 @@ concepts:
     tts: cs-terms/ohrozeni.mp3
   img: img/danger.jpeg
   freq: 64509.00000
-##  successes   ############################################################# t0:pron:missing
 - terms: 
   - term: successes
     lang: en
     tts: en-terms/successes.mp3
+    pron: səkˈsɛsɪz
   - term: úspěchy
     lang: cs
     tts: cs-terms/uspechy.mp3
   img: img/successes.jpeg
   freq: 52956.00000
-##  race   ################################################################## t0:pron:missing
 - terms: 
   - term: race
     lang: en
     tts: en-terms/race.mp3
+    pron: reɪs
   - term: závod
     lang: cs
     tts: cs-terms/zavod.mp3
@@ -12060,11 +12060,11 @@ concepts:
     tts: cs-terms/rasa.mp3
   img: img/race.jpeg
   freq: 52769.00000
-##  fails   ################################################################# t0:pron:missing
 - terms: 
   - term: fails
     lang: en
     tts: en-terms/fails.mp3
+    pron: feɪlz
   - term: nezdaří
     lang: cs
     tts: cs-terms/nezdari.mp3
@@ -12073,11 +12073,11 @@ concepts:
     tts: cs-terms/selze.mp3
   img: img/fails.jpeg
   freq: 47640.00000
-##  stranger   ############################################################## t0:pron:missing
 - terms: 
   - term: stranger
     lang: en
     tts: en-terms/stranger.mp3
+    pron: ˈstreɪnʤə
   - term: cizinec
     lang: cs
     tts: cs-terms/cizinec.mp3
@@ -12086,11 +12086,11 @@ concepts:
     tts: cs-terms/podivnejsi.mp3
   img: img/stranger.jpeg
   freq: 38265.00000
-##  final   ################################################################# t0:pron:missing
 - terms: 
   - term: final
     lang: en
     tts: en-terms/final.mp3
+    pron: ˈfaɪnl
   - term: konečné
     lang: cs
     tts: cs-terms/konecne.mp3
@@ -12099,11 +12099,11 @@ concepts:
     tts: cs-terms/zaverecna.mp3
   img: img/final.jpeg
   freq: 29784.00000
-##  mystery   ############################################################### t0:pron:missing
 - terms: 
   - term: mystery
     lang: en
     tts: en-terms/mystery.mp3
+    pron: ˈmɪstəri
   - term: záhada
     lang: cs
     tts: cs-terms/zahada.mp3
@@ -12112,11 +12112,11 @@ concepts:
     tts: cs-terms/tajemstvi.mp3
   img: img/mystery.jpeg
   freq: 26198.00000
-##  tales   ################################################################# t0:pron:missing
 - terms: 
   - term: tales
     lang: en
     tts: en-terms/tales.mp3
+    pron: teɪlz
   - term: příběhy
     lang: cs
     tts: cs-terms/pribehy.mp3
@@ -12125,11 +12125,11 @@ concepts:
     tts: cs-terms/pohadky.mp3
   img: img/tales.jpeg
   freq: 23483.00000
-##  daring   ################################################################ t0:pron:missing
 - terms: 
   - term: daring
     lang: en
     tts: en-terms/daring.mp3
+    pron: ˈdeərɪŋ
   - term: odvážné
     lang: cs
     tts: cs-terms/odvazne.mp3
@@ -12138,11 +12138,11 @@ concepts:
     tts: cs-terms/smele.mp3
   img: img/daring.jpeg
   freq: 22198.00000
-##  curtain   ############################################################### t0:pron:missing
 - terms: 
   - term: curtain
     lang: en
     tts: en-terms/curtain.mp3
+    pron: ˈkɜːtn
   - term: opona
     lang: cs
     tts: cs-terms/opona.mp3
@@ -12151,21 +12151,21 @@ concepts:
     tts: cs-terms/zaves.mp3
   img: img/curtain.jpeg
   freq: 13510.00000
-##  solve   ################################################################# t0:pron:missing
 - terms: 
   - term: solve
     lang: en
     tts: en-terms/solve.mp3
+    pron: sɒlv
   - term: vyřešit
     lang: cs
     tts: cs-terms/vyresit.mp3
   img: img/solve.jpeg
   freq: 13170.00000
-##  duck   ################################################################## t0:pron:missing
 - terms: 
   - term: duck
     lang: en
     tts: en-terms/duck.mp3
+    pron: dʌk
   - term: kachna
     lang: cs
     tts: cs-terms/kachna.mp3
@@ -12174,11 +12174,11 @@ concepts:
     tts: cs-terms/kacer.mp3
   img: img/duck.jpeg
   freq: 7791.00000
-##  heading   ############################################################### t0:pron:missing
 - terms: 
   - term: heading
     lang: en
     tts: en-terms/heading.mp3
+    pron: ˈhɛdɪŋ
   - term: nadpis
     lang: cs
     tts: cs-terms/nadpis.mp3
@@ -12187,11 +12187,11 @@ concepts:
     tts: cs-terms/miri.mp3
   img: img/heading.jpeg
   freq: 5396.00000
-##  hurricane   ############################################################# t0:pron:missing
 - terms: 
   - term: hurricane
     lang: en
     tts: en-terms/hurricane.mp3
+    pron: ˈhʌrɪkən
   - term: hurikán
     lang: cs
     tts: cs-terms/hurikan.mp3
@@ -12200,41 +12200,41 @@ concepts:
     tts: cs-terms/vichrice.mp3
   img: img/hurricane.jpeg
   freq: 5273.00000
-##  messes   ################################################################ t0:pron:missing
 - terms: 
   - term: messes
     lang: en
     tts: en-terms/messes.mp3
+    pron: ˈmɛsɪz
   - term: zmatky
     lang: cs
     tts: cs-terms/zmatky.mp3
   img: img/messes.jpeg
   freq: 4000.00000
-##  lasers   ################################################################ t0:pron:missing
 - terms: 
   - term: lasers
     lang: en
     tts: en-terms/lasers.mp3
+    pron: ˈleɪzəz
   - term: lasery
     lang: cs
     tts: cs-terms/lasery.mp3
   img: img/lasers.jpeg
   freq: 3680.00000
-##  aeroplanes   ############################################################ t0:pron:missing
 - terms: 
   - term: aeroplanes
     lang: en
     tts: en-terms/aeroplanes.mp3
+    pron: ˈeərəpleɪnz
   - term: letadla
     lang: cs
     tts: cs-terms/letadla.mp3
   img: img/aeroplanes.jpeg
   freq: 3086.00000
-##  deduction   ############################################################# t0:pron:missing
 - terms: 
   - term: deduction
     lang: en
     tts: en-terms/deduction.mp3
+    pron: dɪˈdʌkʃən
   - term: vyvození (závěrů)
     lang: cs
     tts: cs-terms/vyvozeni.mp3
@@ -12243,11 +12243,11 @@ concepts:
     tts: cs-terms/dedukce.mp3
   img: img/deduction.jpeg
   freq: 2715.00000
-##  lurks   ################################################################# t0:pron:missing
 - terms: 
   - term: lurks
     lang: en
     tts: en-terms/lurks.mp3
+    pron: lɜːks
   - term: skrývá
     lang: cs
     tts: cs-terms/skryva.mp3
@@ -12256,11 +12256,11 @@ concepts:
     tts: cs-terms/ciha.mp3
   img: img/lurks.jpeg
   freq: 1689.00000
-##  blur   ################################################################## t0:pron:missing
 - terms: 
   - term: blur
     lang: en
     tts: en-terms/blur.mp3
+    pron: blɜː
   - term: rozostření
     lang: cs
     tts: cs-terms/rozostreni.mp3
@@ -12269,31 +12269,31 @@ concepts:
     tts: cs-terms/smouha.mp3
   img: img/blur.jpeg
   freq: 1682.00000
-##  burg   ################################################################## t0:pron:missing
 - terms: 
   - term: burg
     lang: en
     tts: en-terms/burg.mp3
+    pron: bɜːg
   - term: okres (městský)
     lang: cs
     tts: cs-terms/okres.mp3
   img: img/burg.jpeg
   freq: 456.00000
-##  rewrite   ############################################################### t0:pron:missing
 - terms: 
   - term: rewrite
     lang: en
     tts: en-terms/rewrite.mp3
+    pron: ˌriːˈraɪt
   - term: přepsat
     lang: cs
     tts: cs-terms/prepsat.mp3
   img: img/rewrite.jpeg
   freq: 336.00000
-##  cottontails (cotton tails)   ############################################ t0:pron:missing
 - terms: 
   - term: cottontails (cotton tails)
     lang: en
     tts: en-terms/cottontails.mp3
+    pron: ˈkɒtnteɪlz
   - term: králíci (americký druh)
     lang: cs
     tts: cs-terms/kralici.mp3
@@ -12302,11 +12302,11 @@ concepts:
     tts: cs-terms/bavlnene ocasy.mp3
   img: img/cottontails.jpeg
   freq: 49.00000
-##  ponytails   ############################################################# t0:pron:missing
 - terms: 
   - term: ponytails
     lang: en
     tts: en-terms/ponytails.mp3
+    pron: ˈpəʊnɪteɪlz
   - term: drdol (účes)
     lang: cs
     tts: cs-terms/drdol.mp3
