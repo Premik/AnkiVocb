@@ -16,10 +16,12 @@ class VocbModel {
 
     Path destCrowdFolder
     //Closure<Path> resolveMediaLink
+	ConfHelper cfgHelper = new ConfHelper()
+	
 
     @Lazy
     CrowdParser parser = {
-        InputStream deck = ConfHelper.instance.resolveRes("deck.json")
+        InputStream deck = cfgHelper.resolveRes("deck.json")
         assert deck != null
         new CrowdParser(json: deck.text)
     }()

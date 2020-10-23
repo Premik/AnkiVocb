@@ -19,8 +19,8 @@ class Render {
 
 	GStringTemplateEngine templEngine = new GStringTemplateEngine()
 
-	ConfHelper cfgHelper = ConfHelper.instance
-	@Lazy ConfigObject cfg = cfgHelper.cfg
+	ConfHelper cfgHelper = new ConfHelper()
+	@Lazy ConfigObject cfg = cfgHelper.config
 	ConfigObject renderCfg
 	Map<String, Boolean> templateVisibility = [:].withDefault {true}
 	Map extraVars = [:]

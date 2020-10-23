@@ -11,10 +11,13 @@ import vocb.pck.PackInfo
 
 class Data2CrowdTest {
 
-    Data2Crowd dc = new Data2Crowd().tap {
+	ConfHelper cfgHelper = new ConfHelper()
+	ConfigObject cfg = cfgHelper.config
+	Data2Crowd dc = new Data2Crowd(cfgHelper:cfgHelper).tap {		
+		//delegate.metaClass.setAttribute(delegate, '$cfg', cfg)
         info = new PackInfo(name: "test")
     }
-    ConfigObject cfg = ConfHelper.instance.cfg
+    
     URL testConceptsUrl = getClass().getResource('/vocb/data/fullyPopulated.yaml')
 
     @Lazy

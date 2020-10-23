@@ -7,7 +7,8 @@ import static vocb.Ansi.*
 
 public class AzureEnv {
 
-	@Lazy ConfigObject cfg = ConfHelper.cfg
+	ConfHelper cfgHelper = new ConfHelper()
+	@Lazy ConfigObject cfg = cfgHelper.config
 
 	String lastClientId = "df5978d6-eb16-4b61-aa72-d89c665dd8ef"
 	
