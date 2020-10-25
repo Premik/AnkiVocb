@@ -166,7 +166,7 @@ public class Pack {
 		assert info
 		File pkgFile = info.packagePath.toFile()
 		cfgHelper.extraLookupFolders.add(pkgFile)
-		Data2Crowd d2c = new Data2Crowd (info : info)
+		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		exportSentences(info.sentences, d2c.dbMan)
 		d2c.exportExamplesToCrowd(exportExamples)
 		cfgHelper.extraLookupFolders.remove(pkgFile)
@@ -197,15 +197,16 @@ public class Pack {
 
 	public static void main(String[] args) {
 		
-		
-		(0..7).stream().parallel()
+		int cnt = new Pack().allPackages.size()
+		(0..cnt-1).stream().parallel()
 				.forEach( {int p->
 					if (2 == 2)
 					new Pack().with {
 						//allPackages.each {println it}
 						Collection<PackInfo>  pkgs
 						synchronized (Pack.class ) {
-							pkgs = allPackages.values()
+							//pkgs = allPackages.values()
+							pkgs = [allPackages.values()[p]]
 						}
 						
 						//Collection<PackInfo> pkgs = [allPackages["DuckTales"]]

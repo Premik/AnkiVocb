@@ -192,18 +192,21 @@ public class Data2Crowd {
         assert deckDescriptionPreview
         vocbModel.parser.deckDesc = render.render(deckDescriptionPreview)
     }
+	
+	private void prepareVocbModel() {
+		vocbModel.parser.deckName = info.displayName
+		vocbModel.parser.deckCrowdUuid = info.uuid
+		renderDeckDescriptionTemplate()
+
+		vocbModel.notes.clear()
+		renderCardTemplate(cfg.renderCardTemplate)
+
+		vocbModel.copyToMedia(resolveMediaLink(addExtensionToMediaLink(info.backgroundName)))
+		staticMedia.each { vocbModel.copyToMedia(resolveMediaLink(it)) }
+	}
 
     void exportExamplesToCrowd(Collection<Example> toExport, Set<Concept> ignore = []) {
-        WordNormalizer wn = dbMan.wn
-        vocbModel.parser.deckName = info.displayName
-        vocbModel.parser.deckCrowdUuid = info.uuid
-        renderDeckDescriptionTemplate()
-
-        vocbModel.notes.clear()
-        renderCardTemplate(cfg.renderCardTemplate)
-
-        vocbModel.copyToMedia(resolveMediaLink(addExtensionToMediaLink(info.backgroundName)))
-        staticMedia.each { vocbModel.copyToMedia(resolveMediaLink(it)) }
+        prepareVocbModel()
         toExport.each { Example e ->
             dbMan.conceptsFromWordsInExample(e)
                     .findAll { !ignore.contains(it) }
@@ -212,8 +215,13 @@ public class Data2Crowd {
                     }
         }
         vocbModel.save()
-
     }
+	
+	void exportConceptsToCrowd(Collection<Concept> concepts) {
+		prepareVocbModel()		
+		concepts.each { Concept c -> mapConcept(c, Example.empty) }		
+		vocbModel.save()
+	}
 
 
     public static void main(String[] args) {
