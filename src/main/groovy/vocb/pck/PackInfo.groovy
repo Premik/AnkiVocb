@@ -33,6 +33,7 @@ public class PackInfo {
 	}();
 	
 	@Lazy String sentences = packagePath.resolve("sentences.txt").text
+	@Lazy String wordList = packagePath.resolve("words.txt").text
 	
 	
 	
