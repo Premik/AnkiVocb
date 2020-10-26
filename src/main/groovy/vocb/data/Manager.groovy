@@ -307,7 +307,8 @@ public class Manager {
 		groupConceptsByMedia(false, true, true).each {CharSequence mediaLink, Set<Concept> cs->
 			List<Term> termsWithTts = cs.collectMany {
 				it.terms.findAll {
-					assert it?.tts
+					//assert it?.tts
+					if (!it.tts) return false
 					it.tts == mediaLink || it.tts.takeAfter("/") == mediaLink.takeAfter("/") 
 					
 					}
@@ -344,6 +345,7 @@ public class Manager {
 		 }*/
 
 		println "${'-'*80}"
+		println  "Concepts: ${db.concepts.size()} Unique: ${conceptByFirstTerm.size()}"
 	}
 
 	List<String> allTextWithLang(String lang="cs") {
