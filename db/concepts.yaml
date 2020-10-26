@@ -13320,7 +13320,7 @@ concepts:
     lang: cs
   img: img/marriage.jpeg
   freq: 65227.00000
-##  servants   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  servants   ############################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: servants
     lang: en
@@ -13328,50 +13328,57 @@ concepts:
     lang: cs
   - term: sloužící
     lang: cs
+  img: img/servants.jpeg
   freq: 64642.00000
-##  shoulders   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  shoulders   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: shoulders
     lang: en
   - term: ramena
     lang: cs
+  img: img/shoulders.jpeg
   freq: 64397.00000
-##  glass   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  glass   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: glass
     lang: en
   - term: sklo
     lang: cs
+  img: img/glass.jpeg
   freq: 64369.00000
-##  college   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  college   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: college
     lang: en
   - term: vysoká škola
     lang: cs
+  img: img/college.jpeg
   freq: 63894.00000
-##  village   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  village   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: village
     lang: en
   - term: vesnice
     lang: cs
+  img: img/village.jpeg
   freq: 63711.00000
-##  pain   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  pain   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: pain
     lang: en
   - term: bolest
     lang: cs
+  img: img/pain.jpeg
   freq: 63591.00000
-##  july   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  july   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: july
     lang: en
   - term: červenec
     lang: cs
+  img: img/july.jpeg
   freq: 63558.00000
-##  hall   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  hall   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: hall
     lang: en
@@ -13379,8 +13386,9 @@ concepts:
     lang: cs
   - term: hala
     lang: cs
+  img: img/hall.jpeg
   freq: 63172.00000
-##  memory   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  memory   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: memory
     lang: en
@@ -13388,15 +13396,17 @@ concepts:
     lang: cs
   - term: vzpomínka
     lang: cs
+  img: img/memory.jpeg
   freq: 63128.00000
-##  bank   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  bank   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: bank
     lang: en
   - term: banka
     lang: cs
+  img: img/bank.jpeg
   freq: 62986.00000
-##  speech   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  speech   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: speech
     lang: en
@@ -13404,8 +13414,9 @@ concepts:
     lang: cs
   - term: projev
     lang: cs
+  img: img/speech.jpeg
   freq: 62911.00000
-##  animals   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  animals   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: animals
     lang: en
@@ -13413,8 +13424,9 @@ concepts:
     lang: cs
   - term: živočichy
     lang: cs
+  img: img/animals.jpeg
   freq: 62815.00000
-##  fight   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  fight   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: fight
     lang: en
@@ -13422,8 +13434,9 @@ concepts:
     lang: cs
   - term: boj
     lang: cs
+  img: img/fight.jpeg
   freq: 62708.00000
-##  guy   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  guy   ################################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: guy
     lang: en
@@ -13431,43 +13444,49 @@ concepts:
     lang: cs
   - term: kluk
     lang: cs
+  img: img/guy.jpeg
   freq: 62677.00000
-##  twenty   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  twenty   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: twenty
     lang: en
   - term: dvacet
     lang: cs
+  img: img/twenty.jpeg
   freq: 62483.00000
-##  june   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  june   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: june
     lang: en
   - term: červen
     lang: cs
+  img: img/june.jpeg
   freq: 62288.00000
-##  police   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  police   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: police
     lang: en
   - term: policie
     lang: cs
+  img: img/police.jpeg
   freq: 62218.00000
-##  page   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  page   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: page
     lang: en
   - term: stránka
     lang: cs
+  img: img/page.jpeg
   freq: 62085.00000
-##  bit   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  bit   ################################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: bit
     lang: en
   - term: kousek
     lang: cs
+  img: img/bit.jpeg
   freq: 61219.00000
-##  prince   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  prince   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: prince
     lang: en
@@ -13475,8 +13494,9 @@ concepts:
     lang: cs
   - term: kníže
     lang: cs
+  img: img/prince.jpeg
   freq: 60998.00000
-##  ship   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  ship   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: ship
     lang: en
@@ -13484,22 +13504,25 @@ concepts:
     lang: cs
   - term: dopravovat
     lang: cs
+  img: img/ship.jpeg
   freq: 60437.00000
-##  event   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  event   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: event
     lang: en
   - term: událost
     lang: cs
+  img: img/event.jpeg
   freq: 60117.00000
-##  tone   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  tone   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: tone
     lang: en
   - term: tón
     lang: cs
+  img: img/tone.jpeg
   freq: 59761.00000
-##  leader   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  leader   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: leader
     lang: en
@@ -13507,8 +13530,9 @@ concepts:
     lang: cs
   - term: velitel
     lang: cs
+  img: img/leader.jpeg
   freq: 59687.00000
-##  couple   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  couple   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: couple
     lang: en
@@ -13516,8 +13540,9 @@ concepts:
     lang: cs
   - term: několik
     lang: cs
+  img: img/couple.jpeg
   freq: 59619.00000
-##  march   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  march   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: march
     lang: en
@@ -13525,8 +13550,9 @@ concepts:
     lang: cs
   - term: pochodovat
     lang: cs
+  img: img/march.jpeg
   freq: 59550.00000
-##  bill   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  bill   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: bill
     lang: en
@@ -13534,20 +13560,23 @@ concepts:
     lang: cs
   - term: účtovat
     lang: cs
+  img: img/bill.jpeg
   freq: 59492.00000
-##  evil   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  evil   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: evil
     lang: en
   - term: zlo
     lang: cs
+  img: img/evil.jpeg
   freq: 58971.00000
-##  gods   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  gods   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: gods
     lang: en
   - term: bohové
     lang: cs
+  img: img/gods.jpeg
   freq: 58789.00000
 ##  silent   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15081,32 +15110,30 @@ concepts:
   - term: dvanáctá
     lang: cs
   freq: 41104.00000
-##  rate   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  rate   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: rate
-    lang: en  
+    lang: en
   - term: poměr (k)
     lang: cs
-  - term: (vzájemná) míra 
+  - term: "(vzájemná) míra"
     lang: cs
   freq: 40966.00000
-##  gate   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  gate   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: gate
-    lang: en  
+    lang: en
   - term: brána
     lang: cs
-  
   freq: 40925.00000
-##  text   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  text   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: text
     lang: en
   - term: text
     lang: cs
-  - term: (SMS - textová zpráva)
+  - term: "(SMS - textová zpráva)"
     lang: cs
-  
   freq: 40869.00000
 ##  hotel   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15115,70 +15142,64 @@ concepts:
   - term: hotel
     lang: cs
   freq: 40857.00000
-##  yellow   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  yellow   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: yellow
     lang: en
   - term: žluté
     lang: cs
-
   freq: 40751.00000
-##  stream   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  stream   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: stream
     lang: en
   - term: proud (vody)
-    lang: cs  
+    lang: cs
   - term: tok
     lang: cs
   freq: 40701.00000
-##  sword   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  sword   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: sword
     lang: en
   - term: meč
     lang: cs
-  
   freq: 40685.00000
-##  familiar   ############################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  familiar   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: familiar
-    lang: en  
+    lang: en
   - term: povědomý
     lang: cs
   - term: známé
     lang: cs
-  
   freq: 40675.00000
-##  base   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  base   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: base
     lang: en
   - term: základna
-    lang: cs  
+    lang: cs
   - term: podstavec
     lang: cs
- 
   freq: 40527.00000
-##  title   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  title   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: title
     lang: en
   - term: titul
-    lang: cs  
+    lang: cs
   - term: nadpis
     lang: cs
-  
   freq: 40493.00000
-##  grass   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  grass   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: grass
     lang: en
   - term: tráva
     lang: cs
-  
   freq: 40432.00000
-##  pressure   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  pressure   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: pressure
     lang: en
@@ -15187,64 +15208,60 @@ concepts:
   - term: nátlak
     lang: cs
   freq: 40396.00000
-##  crowd   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  crowd   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: crowd
     lang: en
   - term: dav
-    lang: cs  
+    lang: cs
   - term: zástup
     lang: cs
   freq: 40252.00000
-##  seat   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  seat   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: seat
     lang: en
   - term: sedadlo
     lang: cs
-  
   freq: 40246.00000
-##  safety   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  safety   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: safety
     lang: en
   - term: bezpečnost
-    lang: cs  
+    lang: cs
   - term: ochranné
     lang: cs
   freq: 40190.00000
-##  direct   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  direct   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: direct
     lang: en
   - term: přímé
-    lang: cs  
+    lang: cs
   - term: nasměrovat
     lang: cs
   freq: 40026.00000
-##  wings   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  wings   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: wings
     lang: en
   - term: křídla
     lang: cs
-  
   freq: 40014.00000
-##  dozen   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  dozen   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: dozen
     lang: en
   - term: tucet (malý počet, 12)
-    lang: cs  
-  
+    lang: cs
   freq: 39975.00000
-##  golden   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  golden   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: golden
     lang: en
   - term: zlatý
     lang: cs
-  
   freq: 39910.00000
 ##  kitchen   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15253,23 +15270,21 @@ concepts:
   - term: kuchyně
     lang: cs
   freq: 39907.00000
-##  maid   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  maid   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: maid
     lang: en
   - term: služka
-    lang: cs  
+    lang: cs
   - term: pokojská
     lang: cs
-  
   freq: 39847.00000
-##  gray   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  gray   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: gray
     lang: en
   - term: šedé
     lang: cs
-  
   freq: 39804.00000
 ##  sport   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15278,44 +15293,37 @@ concepts:
   - term: sport
     lang: cs
   freq: 39797.00000
-##  increase   ############################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  increase   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: increase
     lang: en
   - term: zvýšit
     lang: cs
-  
   freq: 39722.00000
-
-##  prisoners   ############################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  prisoners   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: prisoners
     lang: en
-
   - term: vězni
     lang: cs
   - term: zajatci
     lang: cs
-
   freq: 39576.00000
-##  dry   ################################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  dry   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: dry
     lang: en
   - term: suché
     lang: cs
-
   freq: 39560.00000
-##  glory   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  glory   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: glory
     lang: en
   - term: sláva
     lang: cs
-
   - term: nádhera
     lang: cs
-
   freq: 39543.00000
 ##  thirty   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15324,47 +15332,39 @@ concepts:
   - term: třicet
     lang: cs
   freq: 39433.00000
-##  sharp   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  sharp   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: sharp
     lang: en
-  
   - term: ostrý
     lang: cs
-  
   freq: 39249.00000
-##  bottom   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  bottom   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: bottom
     lang: en
-  
   - term: spodní
     lang: cs
-  
   - term: dno
     lang: cs
-  
   freq: 38907.00000
-##  shoot   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  shoot   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: shoot
     lang: en
   - term: střílet
     lang: cs
-  
   - term: natočit (na kameru)
     lang: cs
-  
   freq: 38906.00000
-##  holy   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  holy   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: holy
     lang: en
   - term: svatý
     lang: cs
-  
   freq: 38899.00000
-##  central   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  central   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: central
     lang: en
@@ -15372,33 +15372,29 @@ concepts:
     lang: cs
   - term: ústřední
     lang: cs
-  
   freq: 38755.00000
-##  fate   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  fate   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: fate
     lang: en
   - term: osud
     lang: cs
-  
   freq: 38733.00000
-##  pocket   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  pocket   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: pocket
     lang: en
-  
   - term: kapsa
     lang: cs
   freq: 38681.00000
-##  birth   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  birth   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: birth
     lang: en
   - term: narození
     lang: cs
-
   freq: 38609.00000
-##  pair   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  pair   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: pair
     lang: en
@@ -15406,9 +15402,8 @@ concepts:
     lang: cs
   - term: pár
     lang: cs
-
   freq: 38553.00000
-##  operation   ############################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  operation   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: operation
     lang: en
@@ -15416,7 +15411,6 @@ concepts:
     lang: cs
   - term: provoz (něčeho)
     lang: cs
-
   freq: 38459.00000
 ##  sin   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15425,16 +15419,14 @@ concepts:
   - term: hřích
     lang: cs
   freq: 38318.00000
-##  storm   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  storm   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: storm
     lang: en
-  
   - term: bouřka
     lang: cs
-  
   freq: 38285.00000
-##  truly   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  truly   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: truly
     lang: en
@@ -15442,15 +15434,13 @@ concepts:
     lang: cs
   - term: skutečně
     lang: cs
-  
   freq: 38176.00000
-##  february   ############################################################## 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  february   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: february
     lang: en
   - term: únor
     lang: cs
-  
   freq: 38131.00000
 ##  weak   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15459,26 +15449,25 @@ concepts:
   - term: slabý
     lang: cs
   freq: 38069.00000
-##  vision   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  vision   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: vision
     lang: en
   - term: vize
-    lang: cs  
+    lang: cs
   - term: zrak
     lang: cs
   freq: 37981.00000
-##  wealth   ################################################################ 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  wealth   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: wealth
     lang: en
   - term: bohatství
-    lang: cs  
+    lang: cs
   - term: jmění
     lang: cs
-  
   freq: 37976.00000
-##  worker   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  worker   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: worker
     lang: en
@@ -15486,9 +15475,8 @@ concepts:
     lang: cs
   - term: dělník
     lang: cs
-  
   freq: 37963.00000
-##  habits   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  habits   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: habits
     lang: en
@@ -15496,47 +15484,41 @@ concepts:
     lang: cs
   - term: zvyky
     lang: cs
-  
   freq: 37913.00000
-##  prison   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  prison   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: prison
     lang: en
   - term: vězení
     lang: cs
-  
   freq: 37744.00000
-##  shake   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  shake   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: shake
     lang: en
   - term: třást
     lang: cs
-  
   freq: 37530.00000
-##  waves   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  waves   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: waves
     lang: en
   - term: vlny
     lang: cs
-  
   freq: 37462.00000
-##  pray   ################################################################## 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  pray   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: pray
     lang: en
   - term: modlit (se)
     lang: cs
-
   freq: 37279.00000
-##  hang   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  hang   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: hang
     lang: en
   - term: pověsit
     lang: cs
-  
   freq: 37222.00000
 ##  violence   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15545,30 +15527,28 @@ concepts:
   - term: násilí
     lang: cs
   freq: 37215.00000
-##  fruit   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  fruit   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: fruit
     lang: en
   - term: ovoce
-    lang: cs  
+    lang: cs
   - term: plod
     lang: cs
   freq: 37037.00000
-##  flight   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  flight   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: flight
     lang: en
   - term: let
     lang: cs
-  
   freq: 36994.00000
-##  protection   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  protection   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: protection
     lang: en
   - term: ochrana
     lang: cs
-  
   freq: 36980.00000
 ##  victory   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15577,23 +15557,21 @@ concepts:
   - term: vítězství
     lang: cs
   freq: 36976.00000
-##  lawyer   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  lawyer   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: lawyer
     lang: en
   - term: právník
     lang: cs
-
   freq: 36973.00000
-##  tongue   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  tongue   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: tongue
     lang: en
   - term: jazyk (v puse)
     lang: cs
-
   freq: 36896.00000
-##  comfort   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  comfort   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: comfort
     lang: en
@@ -15601,9 +15579,8 @@ concepts:
     lang: cs
   - term: komfort
     lang: cs
-  
   freq: 36869.00000
-##  defense   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  defense   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: defense
     lang: en
@@ -15611,9 +15588,8 @@ concepts:
     lang: cs
   - term: obhajoba
     lang: cs
-  
   freq: 36712.00000
-##  soil   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  soil   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: soil
     lang: en
@@ -15622,7 +15598,7 @@ concepts:
   - term: zeminy
     lang: cs
   freq: 36508.00000
-##  noise   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  noise   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: noise
     lang: en
@@ -15630,7 +15606,6 @@ concepts:
     lang: cs
   - term: šum
     lang: cs
-  
   freq: 36377.00000
 ##  moon   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15639,31 +15614,30 @@ concepts:
   - term: měsíc (na obloze)
     lang: cs
   freq: 36359.00000
-##  address   ############################################################### 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  address   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: address
     lang: en
   - term: adresa
-    lang: cs  
+    lang: cs
   - term: zabývat (se)
     lang: cs
   freq: 36330.00000
-##  cross   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  cross   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: cross
     lang: en
   - term: kříž
-    lang: cs  
+    lang: cs
   - term: napříč
     lang: cs
   freq: 36305.00000
-##  height   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  height   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: height
     lang: en
   - term: výška
     lang: cs
-  
   freq: 36282.00000
 ##  spanish   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
