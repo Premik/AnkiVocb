@@ -12315,128 +12315,148 @@ concepts:
     tts: cs-terms/konske ohony.mp3
   img: img/ponytails.jpeg
   freq: 10.00000
-##  soul   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  soul   ################################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: soul
     lang: en
   - term: duše
     lang: cs
+    tts: cs-terms/duse.mp3
   img: img/soul.jpeg
   freq: 120276.00000
-##  forth   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  forth   ################################################################# t0:tts:missing|t0:pron:missing
 - terms: 
   - term: forth
     lang: en
   - term: dále
     lang: cs
+    tts: cs-terms/dale.mp3
   - term: dopředu
     lang: cs
+    tts: cs-terms/dopredu.mp3
   img: img/forth.jpeg
   freq: 120064.00000
-##  foot   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  foot   ################################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: foot
     lang: en
   - term: noha
     lang: cs
+    tts: cs-terms/noha.mp3
   img: img/foot.jpeg
   freq: 117669.00000
-##  rest   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  rest   ################################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: rest
     lang: en
   - term: odpočinout
     lang: cs
+    tts: cs-terms/odpocinout.mp3
   - term: zbytek
     lang: cs
+    tts: cs-terms/zbytek.mp3
   img: img/rest.jpeg
   freq: 115291.00000
-##  turn   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  turn   ################################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: turn
     lang: en
   - term: obrátit
     lang: cs
+    tts: cs-terms/obratit.mp3
   - term: otočit
     lang: cs
+    tts: cs-terms/otocit.mp3
   img: img/turn.jpeg
   freq: 112853.00000
-##  game   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  game   ################################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: game
     lang: en
   - term: hra
     lang: cs
+    tts: cs-terms/hra.mp3
   img: img/game.jpeg
   freq: 110265.00000
-##  force   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  force   ################################################################# t0:tts:missing|t0:pron:missing
 - terms: 
   - term: force
     lang: en
   - term: síla
     lang: cs
+    tts: cs-terms/sila.mp3
   - term: nutit
     lang: cs
+    tts: cs-terms/nutit.mp3
   img: img/force.jpeg
   freq: 110225.00000
-##  south   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  south   ################################################################# t0:tts:missing|t0:pron:missing
 - terms: 
   - term: south
     lang: en
   - term: jih
     lang: cs
+    tts: cs-terms/jih.mp3
   img: img/south.jpeg
   freq: 109647.00000
-##  north   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  north   ################################################################# t0:tts:missing|t0:pron:missing
 - terms: 
   - term: north
     lang: en
   - term: sever
     lang: cs
+    tts: cs-terms/sever.mp3
   img: img/north.jpeg
   freq: 108823.00000
-##  blood   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  blood   ################################################################# t0:tts:missing|t0:pron:missing
 - terms: 
   - term: blood
     lang: en
   - term: krev
     lang: cs
+    tts: cs-terms/krev.mp3
   img: img/blood.jpeg
   freq: 108449.00000
-##  food   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  food   ################################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: food
     lang: en
   - term: jídlo
     lang: cs
+    tts: cs-terms/jidlo.mp3
   - term: strava
     lang: cs
+    tts: cs-terms/strava.mp3
   img: img/food.jpeg
   freq: 107934.00000
-##  hair   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  hair   ################################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: hair
     lang: en
   - term: vlasy
     lang: cs
+    tts: cs-terms/vlasy.mp3
   - term: chlupy
     lang: cs
+    tts: cs-terms/chlupy.mp3
   img: img/hair.jpeg
   freq: 107690.00000
-##  daughter   ############################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  daughter   ############################################################## t0:tts:missing|t0:pron:missing
 - terms: 
   - term: daughter
     lang: en
   - term: dcera
     lang: cs
+    tts: cs-terms/dcera.mp3
   img: img/daughter.jpeg
   freq: 107342.00000
-##  short   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  short   ################################################################# t0:tts:missing|t0:pron:missing|t2:tts:missing
 - terms: 
   - term: short
     lang: en
   - term: krátké
     lang: cs
+    tts: cs-terms/kratke.mp3
   - term: stručný
     lang: cs
   img: img/short.jpeg
