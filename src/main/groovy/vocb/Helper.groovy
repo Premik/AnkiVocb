@@ -311,11 +311,11 @@ public class Helper {
 		return st
 	}
 
-	public static List<Path> matchingFiles(List<Path> roots, Object nameFilter) {
+	public static List<Path> matchingFiles(List<Path> roots, Object nameFilter, Object filter=null) {
 		List<Path> ret =[]
 		roots.each { Path p->
 			if (Files.isDirectory(p)) {
-				p.toFile().traverse(type: FileType.FILES, nameFilter: nameFilter) { File f ->
+				p.toFile().traverse(type: FileType.FILES, nameFilter: nameFilter, filter: filter) { File f ->
 					ret.add(f.toPath())
 				}
 			}

@@ -1,6 +1,6 @@
 package vocb
 
-import java.nio.file.Paths
+import java.nio.file.Path
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
@@ -143,10 +143,24 @@ class HelperTest {
 		}
 	}
 
-	@Test
-	@Disabled
-	void eachMatchingFile() {
-		new File("/tmp/work/1.txt") << "test"
-		assert Helper.matchingFiles([Paths.get("/tmp")], "1.txt")
+	@Test	
+	void eachMatchingFileBasic() {
+		File r = new File("/tmp/vocbHelperTest").tap { mkdirs() }
+				
+		new File(r, "1.txt") << "test"		
+		new File(r, "2.txt") << "test"
+		File sub1 =new File(r, "sub1").tap { mkdirs() }
+		File sub2 =new File(r, "sub2").tap { mkdirs() }
+		new File(sub1, "dup.png") << "test1"
+		new File(sub2, "dup.png") << "test2"
+		
+		List<Path> paths= [r.toPath()]
+		assert Helper.matchingFiles(paths, "1.txt").size() ==1
+		assert Helper.matchingFiles(paths, "1.txt")[0].endsWith("1.txt")
+		assert Helper.matchingFiles(paths, "dup.png").size() == 2
+		Helper.matchingFiles(paths, "dup.png").each {assert it.endsWith("dup.png")}
+		println '-'*100
+		
+		assert Helper.matchingFiles(paths, null, {it.toString().endsWith("sub1/dup.png")}).size() == 1
 	}
 }

@@ -215,7 +215,7 @@ public class Pack {
 						Collection<PackInfo>  pkgs
 						synchronized (Pack.class ) {
 							//pkgs = [allPackages.values()[p]]
-							pkgs = [allPackages["SimpleWords"]]
+							pkgs = [allPackages["MaryHadALittleLamb"]]
 							//pkgs = [allPackages.values()[p]]
 						}
 						
