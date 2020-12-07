@@ -9669,7 +9669,7 @@ concepts:
     tts: cs-terms/jednoduche.mp3
   - term: prosté
     lang: cs
-    tts: cs-terms/proste.mp3
+    tts: cs-terms/proste2.mp3
   img: img/simple.jpeg
   freq: 76734.00000
 - terms: 
@@ -13404,10 +13404,10 @@ concepts:
     tts: cs-terms/autor.mp3
   img: img/author.jpeg
   freq: 72146.00000
-##  bear   ################################################################## t0:tts:missing
 - terms: 
   - term: bear
     lang: en
+    tts: en-terms/bear.mp3
     pron: beə
   - term: medvěd
     lang: cs
