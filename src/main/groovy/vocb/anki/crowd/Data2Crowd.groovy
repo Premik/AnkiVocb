@@ -76,7 +76,7 @@ public class Data2Crowd {
 		]
 
 		//Exact match first
-		List<Path> resolved = Helper.matchingFiles(lookupPaths, null, {it.toString().endsWith(mediaLink)}) 
+		List<Path> resolved = Helper.matchingFiles(lookupPaths, null, {it.toString().endsWith("/$mediaLink")}) 
 		if (!resolved) {
 			Pattern fnP = ~/${Pattern.quote(fn)}\.?(jpeg|jpg|png|mp3|gif)?/
 			resolved = Helper.matchingFiles(lookupPaths, fnP) //Any extension
@@ -84,7 +84,7 @@ public class Data2Crowd {
 		if (!resolved) { //Non-existing. Assume db/media
 			return dataPath.resolve("media").resolve(mediaLink)
 		}
-		assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. $resolved"
+		assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. \n $resolved \n LookupPaths: $lookupPaths\n "
 		/*if (resolved.size() > 1) {
 			println(color(mediaLink, BOLD) + color(" was found on multiple locations: ", YELLOW) + color(resolved.join("|"), BLUE))
 		}*/
@@ -204,7 +204,8 @@ public class Data2Crowd {
 	}
 
 	private void prepareVocbModel() {
-		vocbModel.parser.deckName = info.displayName
+		String pfx = cfg.packageRootPrefix?:"Vocb::"
+		vocbModel.parser.deckName =   "${pfx}${info.displayName}"
 		vocbModel.parser.deckCrowdUuid = info.uuid
 		renderDeckDescriptionTemplate()
 
