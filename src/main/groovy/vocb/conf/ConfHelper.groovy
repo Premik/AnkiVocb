@@ -1,4 +1,4 @@
-package vocb
+package vocb.conf
 
 import static java.lang.System.getProperty
 import static java.lang.System.getenv

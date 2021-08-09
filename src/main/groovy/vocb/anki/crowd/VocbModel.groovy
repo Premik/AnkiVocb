@@ -5,8 +5,8 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 import groovy.transform.CompileStatic
-import vocb.ConfHelper
 import vocb.Helper
+import vocb.conf.ConfHelper
 
 //@CompileStatic
 class VocbModel {

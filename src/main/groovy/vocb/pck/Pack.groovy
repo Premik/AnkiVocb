@@ -7,8 +7,8 @@ import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Map.Entry
 
-import vocb.ConfHelper
 import vocb.anki.crowd.Data2Crowd
+import vocb.conf.ConfHelper
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Example

@@ -7,8 +7,8 @@ import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.regex.Pattern
 
-import vocb.ConfHelper
 import vocb.Helper
+import vocb.conf.ConfHelper
 import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.Manager
