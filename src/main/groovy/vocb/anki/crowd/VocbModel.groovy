@@ -28,7 +28,7 @@ class VocbModel {
 
     @Lazy
     NoteModel noteModel = {
-        NoteModel n = parser.ankivocbModel
+        NoteModel n = parser.defaultModel
         assert n: "Failed to find the ankivobc model. The model name must start with 'ankivocb' "
         return n
     }()

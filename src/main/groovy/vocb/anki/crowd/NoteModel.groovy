@@ -17,6 +17,7 @@ public class NoteModel  {
 	List<FieldModel> flds = []
 	String latexPost
 	String latexPre
+	boolean latexsvg
 	String name = "anikvob"
 	List req
 	int sortf

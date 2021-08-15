@@ -17,6 +17,9 @@ public class TemplateModel  {
 	String name
 	int    ord = -1
 	String qfmt
+	String bfont
+	int bsize
+	
 	
 	public void assertIsComplete() {
 		assert ord > -1
