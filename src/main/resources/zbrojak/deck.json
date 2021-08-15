@@ -1,0 +1,212 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "e8dd86f0-fdf4-11eb-acd0-d8cb8a536b75",
+    "deck_config_uuid": "0f934c16-70f8-11ea-a10e-d8cb8a536b75",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "0f934c16-70f8-11ea-a10e-d8cb8a536b75",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.4
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": true,
+                "delays": [
+                    1.0,
+                    4.0,
+                    30.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    2,
+                    0
+                ],
+                "order": 1,
+                "perDay": 2,
+                "separate": true
+            },
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "replayq": true,
+            "rev": {
+                "bury": true,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 60
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "361.jpg",
+        "_lightBulb.png"
+    ],
+    "name": "zbrojak",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "zbrojak-8082-11ea-b853-d8cb8a536b75",
+            "css": "/* 0.1.0 */\n.img img,\n.shadow {\n  box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);\n }\n \n#backgroundImg {\n/*.card:after {*/\n    \n  content: ' ';\n  display: block;\n  position: absolute;\n  left: 0;\n  top: 0;\n  overflow: hidden;\n  width: 99%;\n  height: 97%;\n  z-index: -1;\n  opacity: 0.8;  \n  background-repeat: no-repeat;\n  background-position: 50% 0;\n  -ms-background-size: cover;\n  -o-background-size: cover;\n  -moz-background-size: cover;\n  -webkit-background-size: cover;\n  background-size: cover;\n\n}\n\n.card {\n  background-color: transparent;\n}\n\n .wrapper {\n   padding: 10px;\n   margin: 10px;\n   display: -webkit-box;\n   display: -webkit-flex;\n   display: -ms-flexbox;\n   display: flex;\t\n   -webkit-flex-flow: row wrap;\t\n       -ms-flex-flow: row wrap;\t\n           flex-flow: row wrap;\n   -webkit-box-align: center;\n   -webkit-align-items: center;\n       -ms-flex-align: center;\n           align-items: center;\n   background-color: #d0d0d0e0;\n   color: #fff;\n   font-family: Helvetica;\n   font-size: 1.3em;\n   font-weight: bold;\n   line-height: 28px;\n   text-align: center;\n   text-shadow: 2px 2px 3px  #121f1fee, -1px 0 10px #ffffffaf;\n   \n }\n \n .wrapper > * {\n   -webkit-box-flex: 1;\n   -webkit-flex: 1 100%;\n       -ms-flex: 1 100%;\n           flex: 1 100%;\n  \n   margin: 5px;\n  \n }\n \n \n .foreign {  \n   color:rgb(255, 50, 50);\n \n   \n }\n \n .native {   \n   color:rgb(50, 255, 50);\n }\n \n \n .native1, .native2, .foreignTerm, .hint {\n   font-size: 1.5em;\n   text-transform: uppercase;\n }\n \n .hint {\n font-family: 'Courier New', Courier, monospace;\n }\n \n \n .hintCover {\n   visibility:hidden;\n }\n \n @keyframes fadeIn {\n   0%   {opacity: 0;visibility:hidden;}\n   30%  {opacity: 0;visibility:visible;}\n   100% {opacity: 100;}\n }\n \n @-webkit-keyframes fadeIn {\n   0%   {opacity: 0;visibility:hidden;}\n   30%  {opacity: 0;visibility:visible;}\n   100% {opacity: 100;}\n }\n \n .hintUncover {\n   -webkit-animation: fadeIn 10s;\n           animation: fadeIn 10s;\n   /*animation-delay: 5s;*/\n   -webkit-animation-fill-mode: forwards;\n           animation-fill-mode: forwards;\n }\n \n .rounded {\n   border-radius: 18px;\n   -moz-border-radius: 18px;\n   -webkit-border-radius: 18px;\n   border: 0px solid #000000;   \n }\n \n .tags {\n   color: yellow;\n  font-size: 1.3em;\n  \n }\n\n .foreignTerm {\n   z-index: 1;\n }\n\n \n @media all and (max-height: 400px) {\n  \n   .img img {\n    width: 20%;\n   }\n  .wrapper, #hintButton {\n    font-size: 80%;    \n    line-height: 16px;\n  }\n   \n }\n\n \n @media all and (min-width: 400px) {\n \n   .tags {    \n     position: absolute;\n     left: 40px;\n     top: 40px;\n   }\n \n  #hintButton {\n  \n   position: absolute;\n   right: 40px;\n   top: 40px;\n }\n   \n   \n   .native1, .native2 {\n     -webkit-box-flex: 1;\n     -webkit-flex: 1 auto;\n         -ms-flex: 1 auto;\n             flex: 1 auto;  \n   /*  background-color: #ff0040e8; */\n   } \n }\n \n \n @media all and (min-width: 700px) {\n \n   .tags {-webkit-box-ordinal-group: 2;-webkit-order: 1;-ms-flex-order: 1;order: 1;}\n   .foreign { -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2;}\n   .native1 { -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; }\n   .img { \n     -webkit-box-ordinal-group: 5; \n     -webkit-order: 4; \n         -ms-flex-order: 4; \n             order: 4;\n     -webkit-box-flex: 1;\n     -webkit-flex: 1 auto;\n         -ms-flex: 1 auto;\n             flex: 1 auto;    \n   }\n   .img img {\n     width: 70%;\n   }\n   .native2 { -webkit-box-ordinal-group: 6; -webkit-order: 5; -ms-flex-order: 5; order: 5;}\n   .foreignExample { -webkit-box-ordinal-group: 7; -webkit-order: 6; -ms-flex-order: 6; order: 6;}\n   .nativeExample { -webkit-box-ordinal-group: 8; -webkit-order: 7; -ms-flex-order: 7; order: 7;}  \n   \n   \n }\n \n \n #hintButton button {\n   background-image: url('_lightBulb.png');\n   background-repeat: no-repeat;\n   background-color: #e0e0e0ff;\n   background-position: center; \n   /*width: 80px;*/\n   cursor: pointer;\n   border: none;\n   padding: 30px;\n   text-align: center;\n   text-decoration: none;\n   display: inline-block;\n   font-size: 16px;\n   margin: 4px 2px;\n   border-radius: 50%;\n  \n }\n   ",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "question",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "img",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "a",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "b",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "c",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "answer",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "questionNumber",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "zbrojak",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                ],
+                [
+                    1,
+                    "any",
+                    [
+                        0,
+                        1,
+                        3,
+                        5
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "\n\n\n<!-- 0.1.0 -->\n<div class=\"wrapper rounded shadow\">\n\n    <div>\n    <div class=\"tags\">{{Tags}}</div>\n    </div>\n        \n\n    <div class=\"foreign foreignTerm\">\n        <span>{{question}}</span>{{a}}\n    </div>\n\n    \n\n\n    <figure class=\"img\">{{img}}</figure>\n\n    <div class=\"native native1\">\n        <!-- {{#answer}} -->    \n        <span>{{answer}}</span>{{questionNumber}}\n        <!-- {{/answer}} -->        \n    </div>\n\n    \n    <div class=\"native native2\">\n        <!--  -->    \n        <span></span>\n        <!--  -->\n    </div>\n    \n\n    \n    <div class=\"foreign foreignExample\">\n        <span>{{b}}</span>{{c}}\n    </div>\n\n    <div class=\"native nativeExample\">\n        <span></span>\n    </div>\n    \n    \n\n    \n\n</div>\n<span style=\"background-image: url('');\" id=\"backgroundImg\"></span>\n",
+                    "bafmt": "{{foreign}}",
+                    "bfont": "",
+                    "bqfmt": "{{native}} {{nativeAlt}}",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "card1-Foreign->2Native",
+                    "ord": 0,
+                    "qfmt": "\n<!-- 0.1.0 -->\n<div class=\"wrapper rounded shadow\">\n\n    \n    <div class=\"tags\">{{Tags}}</div>\n\n       \n    <div class=\"foreign foreignTerm\">\n        <span>{{question}}</span>{{a}}\n    </div>\n\n    <div id=\"hintButton\">\n    <button class=\"buttonRounded\" onclick=\"showHint()\" type=\"button\">HINT</button>\n</div>\n\n    <figure class=\"img hintCover\">{{img}}</figure>\n\n    <div class=\"native native1 hintCover hint\">{{answer}}</div>\n    \n    \n    \n    <div class=\"native native2 hintCover hint\"></div>\n    \n\n     \n    <div class=\"foreign foreignExample\">\n        <span>{{b}}</span>{{c}}\n    </div>\n\n    <div class=\"native nativeExample hintCover\">\n        <span></span>\n    </div>\n    \n    \n    \n\n\n    <script>\nfunction coverWord(w) {\n    var placeholder = '-';\n    var chrs = Array.from(w)\n    var end = chrs.length;\n    var start = 0;\n    if (chrs.length > 1) start++;\n    if (chrs.length > 4) end--;\n    if (chrs.length > 7) start++;\n\n    for (var i = start; i < end; i++) {\n        if (chrs[i] !==' ') {\n            chrs[i] = placeholder;\n        }\n    }\n    return chrs.join(\"\");\n}\nfunction showHint() {\n    \n    var hints = document.getElementsByClassName('hint');\n    for (var i = 0; i < hints.length; i++) {\n        var covered = coverWord(hints[i].textContent);\n        hints[i].textContent = covered;\n        hints[i].classList.remove('hintCover');\n    };\n    \n    var imgCover = document.getElementsByClassName('hintCover');\n        for (var i = 0; i < imgCover.length; i++) {                \n            imgCover[i].classList.add('hintUncover');\n            imgCover[i].classList.remove('hintCover');\n        }\n    \n    document.getElementById(\"hintButton\").style.display = \"none\";\n}\n</script>\n    <span style=\"background-image: url('');\" id=\"backgroundImg\"></span>\n</div>\n"
+                },
+                {
+                    "afmt": "\n\n\n<!-- 0.1.0 -->\n<div class=\"wrapper rounded shadow\">\n\n    <div>\n    <div class=\"tags\">{{Tags}}</div>\n    </div>\n        \n\n    <div class=\"foreign foreignTerm\">\n        <span>{{question}}</span>{{a}}\n    </div>\n\n    \n\n\n    <figure class=\"img\">{{img}}</figure>\n\n    <div class=\"native native1\">\n        <!--  -->    \n        <span></span>\n        <!--  -->        \n    </div>\n\n    \n    <div class=\"native native2\">\n        <!-- {{#answer}} -->    \n        <span>{{answer}}</span>{{questionNumber}}\n        <!-- {{/answer}} -->\n    </div>\n    \n\n    \n    <div class=\"foreign foreignExample\">\n        <span>{{b}}</span>{{c}}\n    </div>\n\n    <div class=\"native nativeExample\">\n        <span></span>\n    </div>\n    \n    \n\n    \n\n</div>\n<span style=\"background-image: url('');\" id=\"backgroundImg\"></span>\n",
+                    "bafmt": "{{nativeAlt}} {{native}}",
+                    "bfont": "",
+                    "bqfmt": "{{foreign}}",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "card2-Native->Foreign",
+                    "ord": 1,
+                    "qfmt": "\n<!-- 0.1.0 -->\n<div class=\"wrapper rounded shadow\">\n\n    <div class=\"tags\">{{Tags}}</div>\n\n       \n    <div class=\"foreign foreignTerm hintCover hint\">{{question}}</div>\n\n    <div id=\"hintButton\">\n    <button class=\"buttonRounded\" onclick=\"showHint()\" type=\"button\">HINT</button>\n</div>\n\n\n    <figure class=\"img hintCover\">{{img}}</figure>\n\n    <div class=\"native native1\">\n        <!--  -->    \n        <span></span>\n        <!--  -->        \n    </div>\n\n    \n    <div class=\"native native2\">\n        <!-- {{#answer}} -->\n        <span>{{answer}}</span>{{questionNumber}}\n        <!-- {{/answer}} -->\n    </div>\n         \n    <div class=\"foreign foreignExample hintCover\">\n        <span>{{b}}</span>\n    </div>\n\n    <div class=\"native nativeExample\">\n        <span></span>\n    </div>\n    \n    \n    \n    \n\n\n    <script>\nfunction coverWord(w) {\n    var placeholder = '-';\n    var chrs = Array.from(w)\n    var end = chrs.length;\n    var start = 0;\n    if (chrs.length > 1) start++;\n    if (chrs.length > 4) end--;\n    if (chrs.length > 7) start++;\n\n    for (var i = start; i < end; i++) {\n        if (chrs[i] !==' ') {\n            chrs[i] = placeholder;\n        }\n    }\n    return chrs.join(\"\");\n}\nfunction showHint() {\n    \n    var hints = document.getElementsByClassName('hint');\n    for (var i = 0; i < hints.length; i++) {\n        var covered = coverWord(hints[i].textContent);\n        hints[i].textContent = covered;\n        hints[i].classList.remove('hintCover');\n    };\n    \n    var imgCover = document.getElementsByClassName('hintCover');\n        for (var i = 0; i < imgCover.length; i++) {                \n            imgCover[i].classList.add('hintUncover');\n            imgCover[i].classList.remove('hintCover');\n        }\n    \n    document.getElementById(\"hintButton\").style.display = \"none\";\n}\n</script>\n    <span style=\"background-image: url('');\" id=\"backgroundImg\"></span>\n</div>\n\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Porovnejte vyobrazené vzorky a vyberte výkonné střelivo určené původně pro střelbu z revolveru. Jedná se o vzorek nacházející se",
+                "<img src=\"361.jpg\">",
+                "vlevo na začátku řady,",
+                "vpravo na konci řady,",
+                "uprostřed řady.",
+                "b",
+                "361"
+            ],
+            "guid": "C<Z!?.C~~h",
+            "note_model_uuid": "zbrojak-8082-11ea-b853-d8cb8a536b75",
+            "tags": []
+        }
+    ]
+}

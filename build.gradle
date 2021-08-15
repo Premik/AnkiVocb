@@ -64,7 +64,7 @@ dependencies {
 	
 
 	//compile group: 'net.sourceforge.nekohtml', name: 'nekohtml', version: '1.9.22'
-	//compile group: 'org.ccil.cowan.tagsoup', name: 'tagsoup', version: '1.2.1'
+	compile group: 'org.ccil.cowan.tagsoup', name: 'tagsoup', version: '1.2.1'
 	
 	
 
