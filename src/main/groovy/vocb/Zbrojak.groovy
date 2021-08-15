@@ -15,7 +15,7 @@ import vocb.anki.crowd.Note
 @CompileStatic
 public class Zbrojak {
 
-	Path ankiCrowdExportPath = Paths.get("/tmp/work/Zbrojak")
+	Path ankiCrowdExportPath = Paths.get("/tmp/work/zbrojak")
 	Path deckPath = ankiCrowdExportPath.resolve('deck.json')
 	Path deckMediaPath = deckPath.resolve("media")
 
@@ -33,22 +33,27 @@ public class Zbrojak {
 		return parser.allNotes
 	}()
 
+	@CompileDynamic
 	void assureNote(Note n) {
 		assert n
 		n.assertIsComplete()
-		n.guid = Helper.word2Key(n['question']).take(30)
+		String q = Helper.word2Key(n['question']).replaceAll(" ", "")
+		n.guid = "$n.questionNumber-${q.take(30)}"
+		assert n.guid
+		println n.guid
 	}
 
 	Note addNewNote() {
-		Note n =new Note(model: parser.defaultModel)
-		assureNote(n)
-		notes.add(n)
-		parser.jsonRoot.notes = notes
+		Note n =new Note(model: parser.defaultModel)	
+		notes.add(n)		
 		return n
 	}
 
 	void save() {
 		//syncMedia()
+		ankiCrowdExportPath.toFile().mkdirs()
+		notes.each { Note n-> assureNote(n) }
+		parser.jsonRoot.notes = notes
 		parser.saveTo(deckPath.toFile())
 		println "Saved notes to $deckPath"
 		Path mp = ankiCrowdExportPath.resolve("media")
@@ -64,7 +69,7 @@ public class Zbrojak {
 		assert name
 		Path p = htmlRootPath.resolve(name)
 		if (Files.exists(p)) {
-			println "Not scraping since $p exists "
+			//println "Not scraping since $p exists "
 			return p
 		}
 		p.withOutputStream { OutputStream out ->
@@ -72,7 +77,7 @@ public class Zbrojak {
 				out << from
 			}
 		}
-		println "Cached response to $p"
+		//println "Cached response to $p"
 		return p
 	}
 
@@ -104,11 +109,13 @@ public class Zbrojak {
 			def (String a, String b, String c) = rows.drop(1).collect {it.p[1].text()}
 			Note n = addNewNote()
 			n.question = question
-			n.img = imgPath?.fileName
+			n.img = Helper.imgField(imgPath?.fileName?.toString(),  true)
 			n.a=a
 			n.b=b
-			n.c=c
-			n.answer = correctIndex
+			n.c=c			
+			n.aRes = correctIndex == 0 ? "correct" : "wrong"
+			n.bRes = correctIndex == 1 ? "correct" : "wrong"
+			n.cRes = correctIndex == 2 ? "correct" : "wrong"
 			n.questionNumber = qNo+1
 		}
 
