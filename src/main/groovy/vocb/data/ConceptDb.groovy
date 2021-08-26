@@ -6,16 +6,26 @@ import java.util.stream.Stream
 import java.util.stream.StreamSupport
 
 import groovy.transform.Canonical
+import groovy.transform.CompileDynamic
+import groovy.transform.CompileStatic
 import groovy.transform.ToString
 
 @Canonical
-@ToString(excludes=['concepts', 'examples'], includePackage=false)
+@ToString(excludes=['concepts', 'examples', 'dataLocations'], includePackage=false)
+@CompileStatic
 public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
 	List<Example> examples = []
 
-	private List<DataLocation> dataLocations
+	@Lazy 
+	List<DataLocation> dataLocations = termContainers
+					.map {
+						assert it.location
+						it.location
+						}
+					//.filter {it}
+					.collect(Collectors.toSet()).toList()
 
 	public List<Term> examplesByLang(String lng) {
 		examples.collectMany {it.termsByLang(lng) }
@@ -25,6 +35,7 @@ public class ConceptDb {
 		concepts.findAll {it.state != "ignore"}.collectMany {it.termsByLang(lng)}
 	}
 
+	@CompileDynamic
 	public Stream<TermContainer> getTermContainers() {
 		return Stream.concat(concepts.stream(), examples.stream())
 	}
@@ -35,27 +46,18 @@ public class ConceptDb {
 		termContainers.forEach { o->
 			List<String> innerVal = o.validate()
 			if (innerVal) {
-				ret.add("$o.firstTerm: ${innerVal.join('|')}")
+				ret.add("$o.firstTerm: ${innerVal.join('|')}".toString())
 			}
 		}
 		return ret
 	}
 
-	public List<DataLocation> getDataLocations() {
-		if (!dataLocations) {
-			dataLocations = termContainers
-					.map {it.location}
-					.filter {it}
-					.collect(Collectors.toSet()).toList()
-		}
-		return dataLocations
-	}
 	
 	
 	public boolean flush() {
 		concepts*.updateDataLocationDirty()
 		examples*.updateDataLocationDirty()
-		dataLocations = null
+		this.@$dataLocations = null
 	}
 	
 	public void assignDataLocationToAll(DataLocation dl) {

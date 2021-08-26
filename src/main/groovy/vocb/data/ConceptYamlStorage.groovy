@@ -74,12 +74,14 @@ public class ConceptYamlStorage {
 		sb.append(yamlHash(key, value?.toString()))
 	}
 
-	public String dbToYaml(ConceptDb db) {
+	public String dbToYaml(ConceptDb db, Closure<Boolean> termFilter= {true}) {
 		assert db
-		String concepts=listToYaml(db.concepts.collect(this.&conceptToYaml))
-		String samples=listToYaml(db.examples.collect(this.&exampleToYaml))
+		String concepts=listToYaml(db.concepts.findAll(termFilter).collect(this.&conceptToYaml))
+		String samples=listToYaml(db.examples.findAll(termFilter).collect(this.&exampleToYaml))
 		"version: $db.version\n${yamlHash('concepts', concepts)}\n${yamlHash('examples', samples)}"
 	}
+	
+	
 
 	void appendBanner(String label, String warnings, StringBuilder sb, int width=70) {		
 		if (!warnings) return

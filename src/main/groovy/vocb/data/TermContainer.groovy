@@ -52,7 +52,16 @@ public abstract class TermContainer  {
 	}
 	
 	public List<String> validate() {
-		return []
-	} 
+		List<String> ret = []
+		//if (!location) ret.add("No data location set")
+		return ret
+	}
+	
+	void setLocation(DataLocation l) {
+		if (location) location.dirty = true
+		if (l) l.dirty = true
+		location = l
+		
+	}
 
 }

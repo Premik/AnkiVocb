@@ -15,18 +15,17 @@ import static vocb.Ansi.*
 public class Manager {
 
 
-	Path storagePath = Paths.get("/data/src/AnkiVocb/db/")
+	Path defaultStoragePath = Paths.get("/data/src/AnkiVocb/db/")
 	WordNormalizer wn =new WordNormalizer()
-
-	Path getConceptsPath()  {
-		storagePath.resolve(conceptFilename.toString())
-	}
-
-	CharSequence conceptFilename = "concepts.yaml"
+	
+	@Lazy 
+	DataLocation defaultConceptsLocation = new DataLocation(storageRootPath:defaultStoragePath, filename:"concepts.yaml")
+	@Lazy
+	DataLocation defaultExamplesLocation = new DataLocation(storageRootPath:defaultStoragePath, filename:"examples.yaml")
 
 
 	@Lazy Path mediaRootPath = {
-		storagePath.resolve("media")
+		defaultStoragePath.resolve("media")
 	}()
 
 	ConceptYamlStorage storage =new ConceptYamlStorage()
@@ -127,18 +126,20 @@ public class Manager {
 		}
 	}
 
-	@Deprecated
-	public void load() {
-		conceptsPath.withReader(utf8) { Reader r->
-			db =storage.parseDb(r)
-		}
-		assert db.version == "0.0.1" : "Not compatible db version"
+	
+	public void load() {			
+		load(defaultConceptsLocation, true)
+		load(defaultExamplesLocation, true)
 		reindex()
 	}
 	
 	public ConceptDb load(DataLocation loc, boolean merge=true) {
 		assert loc?.storageRootPath
 		assert loc.storagePath
+		if (!loc.exists()) {
+			println "Ignoring non-existing source $loc"
+			return
+		}
 		ConceptDb cdb
 		loc.storagePath.withReader(utf8) { Reader r->
 			cdb =storage.parseDb(r)
@@ -176,13 +177,26 @@ public class Manager {
 		Files.exists(mediaLinkPath(mediaLink, group))
 	}
 
-	public String save(Path path= conceptsPath) {
+	public void save(boolean forceSaveAll=false) {
 		reindex()
-		assert path : "Not opened"
-		String yaml = storage.dbToYaml(db)
-		path.write(yaml)
-		println "Saved $path"
-		return yaml
+		
+		
+		db.dataLocations
+			.findAll { DataLocation dl-> dl.dirty || forceSaveAll }
+			.each { DataLocation dl->
+				save(dl)
+			}
+	}
+	
+	public String save(DataLocation loc) {
+		assert loc
+		String yaml = storage.dbToYaml(db) {TermContainer t->
+			t.location === loc
+		}
+		loc.storagePath.write(yaml)
+		println "Saved $loc"
+		
+		
 	}
 
 	public List<String> getWarnings() {

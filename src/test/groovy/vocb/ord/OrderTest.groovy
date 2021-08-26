@@ -9,7 +9,6 @@ import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 
 import vocb.Helper
-import vocb.data.Concept
 
 class OrderTest {
 
@@ -33,6 +32,7 @@ class OrderTest {
 	}()
 	
 	@Test
+	@Disabled
 	void resave() {
 		sol.dbMan.with {
 			

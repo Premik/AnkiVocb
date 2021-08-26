@@ -22,7 +22,7 @@ public class Concept extends TermContainer  {
 
 	@Override
 	public List<String> validate(boolean appendTermWarnings=true ) {
-		List<String> ret = []
+		List<String> ret = super.validate()
 		if (state == "ignore") return ret
 		if (!terms) {
 			ret.add("No terms")

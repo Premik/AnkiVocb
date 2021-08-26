@@ -54,7 +54,7 @@ public class Data2Crowd {
 	Manager dbMan = {
 		assert dataPath
 		assert info
-		new Manager(storagePath: dataPath).tap {
+		new Manager(defaultStoragePath: dataPath).tap {
 			load()
 		}
 	}()

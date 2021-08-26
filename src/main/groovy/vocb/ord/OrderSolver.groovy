@@ -24,8 +24,8 @@ public class OrderSolver {
 
 	@Lazy Manager dbMan =  {
 		assert dbStoragePath
-		new Manager(storagePath: dbStoragePath).tap {
-			if (dbConceptFilename) conceptFilename= dbConceptFilename
+		new Manager(defaultStoragePath: dbStoragePath).tap {
+			if (dbConceptFilename) defaultConceptsLocation.filename = dbConceptFilename
 			load()
 		}
 	}()
