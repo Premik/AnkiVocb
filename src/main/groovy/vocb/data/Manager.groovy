@@ -179,10 +179,10 @@ public class Manager {
 		Files.exists(mediaLinkPath(mediaLink, group))
 	}
 
-	public void save(boolean forceSaveAll=false) {
+	public void save(boolean forceSaveAll=true) {
 		reindex()
 		
-		
+		assert db.dataLocations
 		db.dataLocations
 			.findAll { DataLocation dl-> dl.dirty || forceSaveAll }
 			.each { DataLocation dl->
