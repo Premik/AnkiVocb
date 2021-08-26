@@ -140,11 +140,13 @@ public class Manager {
 			println "Ignoring non-existing source $loc"
 			return
 		}
+		assert  !(db.dataLocations.contains(loc)) : "$loc already loaded"
 		ConceptDb cdb
 		loc.storagePath.withReader(utf8) { Reader r->
 			cdb =storage.parseDb(r)
 			assert cdb.version == "0.0.1" : "Not compatible db version"			
 		}
+		cdb.assignDataLocationToAll(loc)
 		if (merge) {
 			db.mergeWith(cdb)
 			reindex()		

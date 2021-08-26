@@ -35,7 +35,7 @@ class ManagerTest {
 	void addData() {
 		m.db.concepts.add(c)
 		m.save()
-		m.load()
+		//m.load()
 		Path cp1 = m.defaultConceptsLocation.storagePath
 		Path tempFile2 =  Files.createTempDirectory("ankivocbTestReload")
 		m.defaultConceptsLocation.storageRootPath = tempFile2		
