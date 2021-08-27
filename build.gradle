@@ -48,6 +48,7 @@ dependencies {
 	implementation "org.codehaus.groovy:groovy-xml:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-json:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-nio:$groovyVersion"
+	implementation "org.codehaus.groovy:groovy-test:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-sql:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-yaml:$groovyVersion"
 	implementation "org.codehaus.groovy:groovy-templates:$groovyVersion"
@@ -62,7 +63,8 @@ dependencies {
 	
 	//compile "org.apache.commons:commons-compress:1.20"
 	
-
+	implementation "org.apache.logging.log4j:log4j-api:2.13.1"
+    implementation "org.apache.logging.log4j:log4j-core:2.13.1"
 	//compile group: 'net.sourceforge.nekohtml', name: 'nekohtml', version: '1.9.22'
 	compile group: 'org.ccil.cowan.tagsoup', name: 'tagsoup', version: '1.2.1'
 	

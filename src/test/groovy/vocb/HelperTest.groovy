@@ -1,6 +1,8 @@
 package vocb
 
+import java.nio.file.Files
 import java.nio.file.Path
+import java.nio.file.Paths
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
@@ -163,4 +165,15 @@ class HelperTest {
 		
 		assert Helper.matchingFiles(paths, null, {it.toString().endsWith("sub1/dup.png")}).size() == 1
 	}
+	
+	@Test
+	void testSubfolderCount() {
+		Path r = Files.createTempDirectory("ankivocbPackTest")
+		Path subDir = Files.createDirectory(r.resolve("subDir"))
+		assert Helper.subFolderCountIn(subDir) == 0
+		assert Helper.subFolderCountIn(Files.createDirectory(subDir.resolve("subsubDir"))) == 0
+		assert Helper.subFolderCountIn(subDir) == 1
+	}
+	
+	
 }
