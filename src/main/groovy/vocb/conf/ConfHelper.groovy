@@ -106,7 +106,7 @@ class ConfHelper {
 		return mergedCfg
 	}
 
-	public InputStream resolveResExactName(String resName, File[] lookupPaths =lookupFolders + extraLookupFolders) {
+	public InputStream resolveResExactName(String resName, File[] lookupPaths =extraLookupFolders + lookupFolders) {
 		if (!resName) return null
 		//First try to find a file. Take the first match
 		File file = lookupPaths.findResult { File pf->
@@ -139,11 +139,11 @@ class ConfHelper {
 		return is
 	}
 
-	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders + extraLookupFolders) {
+	public  InputStream resolveRes(String resName, File[] lookupPaths = extraLookupFolders + lookupFolders) {
 		resolveRes(resName, lookupPaths, this.&resolveResExactName)
 	}
 
-	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders + extraLookupFolders, Closure cb) {
+	public  InputStream resolveRes(String resName, File[] lookupPaths = extraLookupFolders + lookupFolders, Closure cb) {
 		(['']+ resExplicitExtensions).findResult {
 			cb("$resName$it", [null, *lookupPaths] as File[] ) //Allow using path as resName
 		}

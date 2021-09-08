@@ -7,6 +7,7 @@ import java.nio.file.Paths
 import groovy.transform.Canonical
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
+import vocb.Helper
 
 
 @Canonical
@@ -14,70 +15,35 @@ import groovy.transform.ToString
 @ToString(
 	includeNames=true,
 	ignoreNulls=true,
-	includePackage=false,
-	excludes=['sentences', 'wordList'],	
+	includePackage=false	
 	)
 public class ParentInfo {
 		
+	ParentInfo parent
+	List<PackInfo> pkgs = []
 	Path path
-			
 	
-	@Lazy Path infoConfPath = packagePath.resolve("info.conf")
-	@Lazy Path sentencesPath = packagePath.resolve("sentences.txt")
-	@Lazy Path wordsPath= packagePath.resolve("words.txt")
+	/*ParentInfo buildFromRootPath(Path path) {
+		assert path				
+		assert Helper.subFolderCountIn(path) > 0 : "No packages found. $path has no sub-folders"
+		return buildFromParentInfo(new ParentInfo(path:path))		
+	}
 	
-	@Lazy ConfigObject infoCfg =  {
-		if (!Files.exists(infoConfPath)) return new ConfigObject()
-		return new ConfigSlurper().parse(infoConfPath.text)
-	}();
-	
-	@Lazy String sentences = {
-		if (!Files.exists(sentencesPath)) return ""
-		return sentencesPath.text
-	}()
-	
-	@Lazy List<String> wordList = {
-		if (!Files.exists(wordsPath)) return [] as List<String>
-		return wordsPath.text.split(/\s+/) as List<String>
-	}()
-	
-	
-	
-	@Lazy Path destPath = {
-		assert destRootFolder
-		destRootFolder.resolve(name).tap {
-			toFile().mkdirs()
+	ParentInfo buildFromParentInfo(ParentInfo pi) {
+		if (Helper.subFolderCountIn(path) == 0) { //Leaf, this is a PackInfo
+			PackInfo p = new PackInfo(
+				name:name,
+				parent: pi,
+				packageRootPath: packageRootPath,
+				destRootFolder: destRootFolder)
+			ret.add(pi)
 		}
-	}()
-	
-	
-	
-	public String getDisplayName() {
-		infoCfg.displayName?:name?.replaceAll(/(\p{Lu})(\p{L})/, ' $1$2')?.trim()
+		path.eachDir { Path dir->
+			
+		}
+		
 	}
-	
-	public void setDisplayName(String v) {
-		infoCfg.displayName = v		
-	}
-	
-	public String getBackgroundName() {
-		infoCfg.backgroundName?:"_${name}Background"
-	}
-	
-	public void setBackgroundName(String v) {
-		infoCfg.backgroundName = v
-	}
-	
-	public boolean getNoExamples() {
-		infoCfg.noExamples
-	}
-	
-	public String getUuid() {
-		if (!name) return ""	
-		String p = name.toLowerCase()*10
-		assert p.length() > 30
-		//return "ankivocb-${p[0..3]}-${p[4..7]}-${p[8..11]}-${p[11..22]}"
-		return "ankivocb-2020-${p[0..21]}"
-	}
+		
+	}*/
 		
 }
