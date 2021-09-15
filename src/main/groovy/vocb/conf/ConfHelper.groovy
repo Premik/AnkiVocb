@@ -15,7 +15,7 @@ class ConfHelper {
 	}
 
 	@Lazy  public static ConfigObject cfg = instance.config
-	
+
 	public final configRootFolder="Ankivocb"
 	public  final List<String> resExplicitExtensions = ['.conf', '.html']
 	public  final List<String> cpFolders = [
@@ -70,14 +70,14 @@ class ConfHelper {
 	}
 
 
-	public  ConfigObject parseString(String cfgString, Map binding =[:]) {
+	public static  ConfigObject parseString(String cfgString, Map binding =[:]) {
 		assert cfgString
 		ConfigSlurper cfgSlurper = new ConfigSlurper()
 		cfgSlurper.setBinding(binding)
 		return cfgSlurper.parse(cfgString)
 	}
 
-	public  ConfigObject parseMap(Map<String, String> mapProps, Map binding =[:]) {
+	public static ConfigObject parseMap(Map<String, String> mapProps, Map binding =[:]) {
 		ConfigSlurper cfgSlurper = new ConfigSlurper()
 		Objects.requireNonNull(mapProps)
 		Properties p = new Properties()
@@ -129,7 +129,11 @@ class ConfHelper {
 		].findAll {it}
 		.toUnique{a -> a.hashCode()}
 		.collect { ClassLoader cl ->
-			cpFolders.collectMany {["$it/$resName", "/$it/$resName", "../$it/$resName"]}
+			cpFolders.collectMany {[
+					"$it/$resName",
+					"/$it/$resName",
+					"../$it/$resName"
+				]}
 			.collect{ String cpPath ->
 				//println "   $cpPath $cl"
 				cl.getResourceAsStream(cpPath)
@@ -191,7 +195,7 @@ class ConfHelper {
 		"""\n
               Failed to load the inbuilt 'default.conf' config. Paths considered: 
               $confPathDetails""".stripIndent()
-		
+
 		ConfigObject c=  loadAndMergeConfig("ankivocb")
 		if (!c) log.warn("Couldn't find the custom ankivocb.conf file. Using the default.\n")
 	}
@@ -201,12 +205,12 @@ class ConfHelper {
 		new ConfHelper().with {
 			println confPathDetails
 			loadDefault()
-			
-			
-			
+
+
+
 			println toPrettyString()
 		}
-		
+
 	}
 
 
