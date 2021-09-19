@@ -67,7 +67,7 @@ public class WordsSource {
 				}				
 				continue
 			}
-			c = new Concept(freq:corp[w]).tap {
+			c = new Concept(freq:corp[w], location: dbMan.defaultConceptsLocation).tap {
 				terms.add(t)
 			}
 			
@@ -138,18 +138,18 @@ public class WordsSource {
 		new WordsSource().tap {
 			//fromOwnSamples()
 			//minFreq = 1
-			simulation = true
+			//simulation = true
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
 			
 			//String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
-			//String tx = new File("/data/src/AnkiVocb/pkg/SimpleWords/words.txt").text
+			String tx = new File("/data/src/AnkiVocb/pkg/SimpleVerbs/words.txt").text
 			
 			
-			//fromText(tx)
+			fromText(tx)
 			//fromOwnSamples()
-			basicWords()
+			//basicWords()
 			return
 			wn.phraseFreqs(tx,2, 3)
 			   .collectEntries{ String w, BigDecimal fqInText-> [w, corp.phraseFreq(w)*fqInText]}
