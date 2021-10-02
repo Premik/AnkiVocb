@@ -22,7 +22,7 @@ public class PackOld {
 	Path destRootFolder = Paths.get("/tmp/work/pkg")
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
 	
-	ConfHelper cfgHelper = new ConfHelper()
+	ConfHelper cfgHelper = ConfHelper.instance
 	@Lazy ConfigObject cfg = cfgHelper.config
 
 	@Lazy List<String> allPackageNames = packageRootPath.toFile().listFiles().collect {it.name}
@@ -205,17 +205,24 @@ public class PackOld {
 
 
 	public static void main(String[] args) {
+
 		
 		int cnt = new PackOld().allPackages.size()
-		(0..cnt-1).stream().parallel()
+		//ConfHelper.instance.defaultClassLoader =  Thread.currentThread().getContextClassLoader()
+	
+		
+		//(0..cnt-1).stream().parallel()
+		(0..cnt-1).stream()
 				.forEach( {int p->
 					//if (p == 0)
 					new PackOld().with {
 						//allPackages.each {println it}
-						Collection<PackInfo>  pkgs
+						Collection<PackInfo>  pkgs = []
 						synchronized (PackOld.class ) {
-							pkgs = [allPackages.values()[p]]
-							//pkgs = [allPackages["MaryHadALittleLamb"]]
+							//pkgs = [allPackages.values()[p]]
+							if (p==0) {
+							pkgs = [allPackages["SimpleVerbs"]]
+							}
 							//pkgs = [allPackages.values()[p]]
 						}
 						

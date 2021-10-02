@@ -3,6 +3,7 @@ package vocb.conf
 import static java.lang.System.getProperty
 import static java.lang.System.getenv
 
+import groovy.transform.CompileStatic
 import groovy.transform.Synchronized
 import groovy.util.logging.Log4j2
 
@@ -16,6 +17,7 @@ class ConfHelper {
 
 	@Lazy  public static ConfigObject cfg = instance.config
 
+	//public GroovyClassLoader defaultClassLoader
 	public final configRootFolder="Ankivocb"
 	public  final List<String> resExplicitExtensions = ['.conf', '.html']
 	public  final List<String> cpFolders = [
@@ -70,13 +72,14 @@ class ConfHelper {
 	}
 
 
-	public static  ConfigObject parseString(String cfgString, Map binding =[:]) {
-		assert cfgString
-		ConfigSlurper cfgSlurper = new ConfigSlurper()
+
+	public static  ConfigObject parseString(String cfgString, Map binding =[:], ConfigSlurper cfgSlurper = new ConfigSlurper()) {
 		cfgSlurper.setBinding(binding)
+		//cfgSlurper.classLoader = ConfHelper.classLoader
 		return cfgSlurper.parse(cfgString)
 	}
 
+	@CompileStatic
 	public static ConfigObject parseMap(Map<String, String> mapProps, Map binding =[:]) {
 		ConfigSlurper cfgSlurper = new ConfigSlurper()
 		Objects.requireNonNull(mapProps)
@@ -86,13 +89,20 @@ class ConfHelper {
 		return cfgSlurper.parse(p)
 	}
 
+
 	public  ConfigObject loadConfig(String configName, Map binding = null) {
 		String cfgStr = resolveRes( configName)?.text
 		if (cfgStr == null) return null
 		if (binding == null) binding = mergedCfg
-		return parseString(cfgStr, binding)
+		ConfigSlurper cfgSlurper = new ConfigSlurper()
+		/*if (defaultClassLoader) {
+			cfgSlurper.classLoader = defaultClassLoader
+			Thread.currentThread().setContextClassLoader(defaultClassLoader)
+		}*/
+		return parseString(cfgStr, binding, cfgSlurper)
 	}
 
+	@CompileStatic
 	public   ConfigObject loadAndMergeConfig(String configName, Map binding = null) {
 		log.info("Loading $configName config")
 		ConfigObject c = loadConfig(configName, binding)
@@ -129,7 +139,8 @@ class ConfHelper {
 		].findAll {it}
 		.toUnique{a -> a.hashCode()}
 		.collect { ClassLoader cl ->
-			cpFolders.collectMany {[
+			cpFolders.collectMany {
+				[
 					"$it/$resName",
 					"/$it/$resName",
 					"../$it/$resName"
