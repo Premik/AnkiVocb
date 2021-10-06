@@ -64,8 +64,11 @@ public class TreeConf {
 	
 	@Lazy
 	ConfigObject conf = {
-		if (!confPath) return new ConfigObject()
-		ConfHelper.parseString(confPath.text, binding)
+		if (isRoot) return thisConf
+		ConfigObject ret = new ConfigObject()
+		ret.merge(parent.conf)
+		ret.merge(thisConf)
+		return ret
 	}()
 
 	@Lazy
@@ -123,7 +126,9 @@ public class TreeConf {
 		List<TreeConf> dsd = children*.descendants.flatten() as List<TreeConf>
 		return [this, *dsd] as List<TreeConf>
 	}
-
+	
+	List<TreeConf> getLeafs() { descendants.findAll {it.isLeaf} }
+		
 	
 	TreeConf findByName(String name) {
 		descendants.find {it.name == name}		
