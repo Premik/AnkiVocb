@@ -7,10 +7,12 @@ import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Map.Entry
 
+import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import vocb.Helper
 import vocb.anki.crowd.Data2Crowd
 import vocb.conf.ConfHelper
+import vocb.conf.TreeConf
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Example
@@ -22,44 +24,27 @@ import vocb.ord.OrderSolver
 public class Pack {
 
 	Path destRootFolder = Paths.get("/tmp/work/pkg")
-	final Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+
+
+	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+
 
 	ConfHelper cfgHelper = new ConfHelper()
 	@Lazy ConfigObject cfg = cfgHelper.config
 
-	@Lazy List<String> allPackageNames = packageRootPath.toFile().listFiles().collect {it.name}
-	
+	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage)
+
 	@Lazy List<PackInfo> allPackInfos = {
-		List<PackInfo> ret = []
-		ParentInfo parent = null
-		packageRootPath.eachDirRecurse { Path d->
-			if (Helper.subFolderCountIn(d) == 0) { //Leaf
-				PackInfo pi = new PackInfo(
-					name:null,
-					parent: parent, 
-					packageRootPath: packageRootPath, 
-					destRootFolder: destRootFolder)
-				ret.add(pi)
-			} else {
-				if (parent) {
-					parent = new ParentInfo(path:d, parent:parent)
-				} else {
-					parent = new ParentInfo(path:d)
-				}
-			}
+		treeConf.leafs.collect { TreeConf<PackInfo> tc->
+			PackInfo pi = new PackInfo(
+					pack: this,
+					treeConf: tc).tap {
+						tc.obj= it
+					}
 		}
-		return ret
 	}()
-
-	@Lazy Map<String, PackInfo> allPackages = allPackageNames.collectEntries {String name->
-		[
-			name,
-			new PackInfo(name:name, packageRootPath: packageRootPath, destRootFolder: destRootFolder)
-		]
-	}
-
-
-
+	
+	
 
 	WordNormalizer wn = new WordNormalizer()
 
@@ -68,7 +53,7 @@ public class Pack {
 
 	void doExport(PackInfo info) {
 		assert info
-		File pkgFile = info.packagePath.toFile()
+		File pkgFile = info.treeConf.path.toFile()
 		cfgHelper.extraLookupFolders.add(pkgFile)
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		if (info.sentences) {
@@ -103,49 +88,45 @@ public class Pack {
 			println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
 	}
-	
+
 	static Pack buildFromRootPath(Path path) {
 		assert path
 		assert Helper.subFolderCountIn(path) > 0 : "No packages found. $path has no sub-folders"
 		new Pack(packageRootPath: path)
-		
-	}
-	
-	static boolean isFolderPackage(Path folder) {
-		assert folder
-		assert Files.isDirectory(folder)
-		return Files.isRegularFile(folder.resolve("packageDescription.md"))		
 	}
 
+	@CompileDynamic
+	static boolean isFolderPackage(Path folder) {
+		assert folder
+		if (!Helper.subFolderFilter(folder.toFile())) return false
+		return Files.isRegularFile(folder.resolve("packageDescription.md"))
+	}
+
+	public export(List<PackInfo> pkgs=allPackInfos) {
+		int cnt = pkgs.size()
+		(0..cnt-1).stream().parallel().forEach( {int p->
+			PackInfo pi
+			synchronized (Pack.class ) {
+				pi = allPackInfos[p]
+			}
+
+			println '*'*100
+			println "* ${pi.treeConf.name}"
+			println '*'*100
+
+			doExport(pi)
+		})
+
+		println "Done"
+	}
+	
+	public exportByName(String name) {
+		export(allPackInfos.findAll {it.treeConf.name.containsIgnoreCase("name")})
+	}
 
 
 	public static void main(String[] args) {
-
-		int cnt = new Pack().allPackages.size()
-		(0..cnt-1).stream().parallel()
-				.forEach( {int p->
-					//if (p == 0)
-					new Pack().with {
-						//allPackages.each {println it}
-						Collection<PackInfo>  pkgs
-						synchronized (Pack.class ) {
-							pkgs = [allPackages.values()[p]]
-							//pkgs = [allPackages["MaryHadALittleLamb"]]
-							//pkgs = [allPackages.values()[p]]
-						}
-
-
-						pkgs.each { PackInfo i->
-							println '*'*100
-							println "* ${i.name}"
-							println '*'*100
-
-							doExport(i)
-						}
-
-					}
-				})
-
+		new Pack().exportByName("marry")
 		println "Done"
 
 	}
