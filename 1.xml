@@ -1,0 +1,240 @@
+<InvoiceDetails xmlns="http://www.leaseplan.com/esb/xsd/lpgp/IVBX" LPEntityCode="LPFI" CompanyCode="FI01" CustomerName="LeasePlan Finland">
+  <InvoiceHeader>
+    <InvoiceNumber>32172</InvoiceNumber>
+    <Subsystem code="A">Repair &amp; Maintenance</Subsystem>
+    <CreditDebit>Debit</CreditDebit>
+    <Received>2021-10-07</Received>
+    <InvoiceDate>2021-10-06</InvoiceDate>
+    <PaymentReference>00000000032172028205</PaymentReference>
+    <Currency>EUR</Currency>
+    <GrossAmount>156.00</GrossAmount>
+    <NetAmount>125.81</NetAmount>
+    <VatAmount>30.19</VatAmount>
+    <VatAnalysis>
+      <InvoicePortion>
+        <NettAmount>0.00</NettAmount>
+        <VatAmount>0.00</VatAmount>
+        <VatRate code="11">0</VatRate>
+      </InvoicePortion>
+      <InvoicePortion>
+        <NettAmount>125.81</NettAmount>
+        <VatAmount>30.19</VatAmount>
+        <VatRate code="10">24</VatRate>
+      </InvoicePortion>
+    </VatAnalysis>
+    <PaymentBlock>false</PaymentBlock>
+    <DestinationFormat>EINVOICE</DestinationFormat>
+    <Ivbx>
+      <Id>INV20210008446</Id>
+    </Ivbx>
+    <Custom>
+      <Field code="DueDate">
+        <String>2021-11-05</String>
+      </Field>
+      <Field code="OVTNumber">
+        <String>003708795362</String>
+      </Field>
+      <Field code="LPFIEntityName">
+        <String>Lease Plan Finland Oy /palautuvat</String>
+      </Field>
+      <Field code="BookingDate">
+        <String>2021-10-06</String>
+      </Field>
+      <Field code="LPFICustomerName">
+        <String>SPEED SPORT OY</String>
+      </Field>
+      <Field code="OriginalInvoiceFormat">
+        <String>PDF</String>
+      </Field>
+      <Field code="HeaderNetAmount">
+        <String>125.81</String>
+      </Field>
+      <Field code="HeaderVatAmount">
+        <String>30.19</String>
+      </Field>
+      <Field code="HeaderGrossAmount">
+        <String>156.00</String>
+      </Field>
+    </Custom>
+  </InvoiceHeader>
+  <Processing>
+    <Action>Created</Action>
+    <CreatedDate>2021-10-07T11:33:02+00:00</CreatedDate>
+    <CreatedBy>Test Plan, Lease</CreatedBy>
+  </Processing>
+  <LPReference>
+    <AdditionalReferences>
+      <Reference code="ContractReference"/>
+      <Reference code="SubscriberReference">MMU-360/11</Reference>
+    </AdditionalReferences>
+  </LPReference>
+  <Supplier>
+    <SupplierID>200601</SupplierID>
+    <SupplierName>Autohuolto T.Lahtinen/Speed Sp</SupplierName>
+    <VatNumber>08795362</VatNumber>
+  </Supplier>
+  <Attachments>
+    <Attachment>
+      <GDMSDocument>
+        <Attributes>
+          <Attribute name="global_document_id"></Attribute>
+          <Attribute name="LP_entity">LPFI</Attribute>
+          <Attribute name="LP_application">IVBX</Attribute>
+          <Attribute name="global_document_type">IVBX_SUPPLIER_INVOICE</Attribute>
+          <Attribute name="file_format">PDF</Attribute>
+          <Attribute name="file_name">226193-pdf.pdf</Attribute>
+          <Attribute name="source_type">CLOUD</Attribute>
+          <Attribute name="IVBX_invoice_reference">INV20210008446</Attribute>
+          <Attribute name="IVBX_invoice_status">VALID</Attribute>
+          <Attribute name="IVBX_CEV_document_id">226193-pdf</Attribute>
+          <Attribute name="IVBX_document_title">Autohuolto T.Lahtinen-Speed Sp 32172.pdf</Attribute>
+          <Attribute name="IVBX_invoice_date">2021-10-06</Attribute>
+          <Attribute name="IVBX_supplier_id">200601</Attribute>
+          <Attribute name="IVBX_supplier_invoice_ref">32172</Attribute>
+        </Attributes>
+      </GDMSDocument>
+    </Attachment>
+    <Attachment>
+      <GDMSDocument>
+        <Attributes>
+          <Attribute name="global_document_id">A1001001A21J07B23409G12292</Attribute>
+          <Attribute name="LP_entity">LPFI</Attribute>
+          <Attribute name="LP_application">IVBX</Attribute>
+          <Attribute name="global_document_type">IVBX_SUPPLIER_INVOICE</Attribute>
+          <Attribute name="file_format">HTML</Attribute>
+          <Attribute name="file_name">226193-221119.html</Attribute>
+          <Attribute name="source_type">CLOUD</Attribute>
+          <Attribute name="IVBX_invoice_reference">INV20210008446</Attribute>
+          <Attribute name="IVBX_invoice_status">VALID</Attribute>
+          <Attribute name="IVBX_CEV_document_id">226193-221119</Attribute>
+          <Attribute name="IVBX_document_title">ic_32172_SL003714724114_1382083820.html</Attribute>
+          <Attribute name="IVBX_invoice_date">2021-10-06</Attribute>
+          <Attribute name="IVBX_supplier_id">200601</Attribute>
+          <Attribute name="IVBX_supplier_invoice_ref">32172</Attribute>
+        </Attributes>
+      </GDMSDocument>
+    </Attachment>
+  </Attachments>
+  <Lines>
+    <Line>
+      <InvoiceLine ItemSeq="1">
+        <Exploitation code="1">General</Exploitation>
+        <GrossAmount>0.00</GrossAmount>
+        <Amount>0.00</Amount>
+        <VatAmount>0.00</VatAmount>
+        <VatRate code="11">0.00</VatRate>
+        <ItemIdentification>-</ItemIdentification>
+        <UnitPrice>0.00</UnitPrice>
+        <Quantity>1</Quantity>
+        <CostCentreNumber>1</CostCentreNumber>
+        <GeneralLedgerNumber>354320</GeneralLedgerNumber>
+        <Custom>
+          <Field code="RiviVapaataTekstia">
+            <String>AJONEUVON REK.NRO: MMU-360</String>
+          </Field>
+          <Field code="Free_text2">
+            <String>MOOTTORIN H�IRI�VALO PALAA</String>
+          </Field>
+          <Field code="Free_text3">
+            <String>-RENGASPAINEIDENMERKKIVALOPALAA</String>
+          </Field>
+          <Field code="Vapaata_tekstia">
+            <String>Ostajan viite: MMU-360/11</String>
+          </Field>
+          <Field code="Quantity">
+            <String>0.00</String>
+          </Field>
+        </Custom>
+      </InvoiceLine>
+    </Line>
+    <Line>
+      <InvoiceLine ItemSeq="2">
+        <Exploitation code="1">General</Exploitation>
+        <GrossAmount>0.00</GrossAmount>
+        <Amount>0.00</Amount>
+        <VatAmount>0.00</VatAmount>
+        <VatRate code="11">0.00</VatRate>
+        <ItemIdentification>-</ItemIdentification>
+        <UnitPrice>0.00</UnitPrice>
+        <Quantity>1</Quantity>
+        <CostCentreNumber>1</CostCentreNumber>
+        <GeneralLedgerNumber>354320</GeneralLedgerNumber>
+        <Custom>
+          <Field code="RiviVapaataTekstia">
+            <String>---------------TY�T---------------</String>
+          </Field>
+          <Field code="Free_text2">
+            <String>MOOTTORIN H�IRI�VALO PALAA</String>
+          </Field>
+          <Field code="Free_text3">
+            <String>-RENGASPAINEIDENMERKKIVALOPALAA</String>
+          </Field>
+          <Field code="Vapaata_tekstia">
+            <String>Ostajan viite: MMU-360/11</String>
+          </Field>
+          <Field code="Quantity">
+            <String>0.00</String>
+          </Field>
+        </Custom>
+      </InvoiceLine>
+    </Line>
+    <Line>
+      <InvoiceLine ItemSeq="3">
+        <Exploitation code="1">General</Exploitation>
+        <GrossAmount>60.00</GrossAmount>
+        <Amount>48.39</Amount>
+        <VatAmount>11.61</VatAmount>
+        <VatRate code="10">24.00</VatRate>
+        <Description>VIKAKOODIT LUKU+NOLLAUS</Description>
+        <ItemIdentification>VK</ItemIdentification>
+        <UnitPrice>48.39</UnitPrice>
+        <Quantity>1</Quantity>
+        <CostCentreNumber>1</CostCentreNumber>
+        <GeneralLedgerNumber>354320</GeneralLedgerNumber>
+        <Custom>
+          <Field code="Free_text2">
+            <String>MOOTTORIN H�IRI�VALO PALAA</String>
+          </Field>
+          <Field code="Free_text3">
+            <String>-RENGASPAINEIDENMERKKIVALOPALAA</String>
+          </Field>
+          <Field code="Vapaata_tekstia">
+            <String>Ostajan viite: MMU-360/11</String>
+          </Field>
+          <Field code="Quantity">
+            <String>0.00</String>
+          </Field>
+        </Custom>
+      </InvoiceLine>
+    </Line>
+    <Line>
+      <InvoiceLine ItemSeq="4">
+        <Exploitation code="1">General</Exploitation>
+        <GrossAmount>96.00</GrossAmount>
+        <Amount>77.42</Amount>
+        <VatAmount>18.58</VatAmount>
+        <VatRate code="10">24.00</VatRate>
+        <Description>KOEAJOA</Description>
+        <ItemIdentification>ht</ItemIdentification>
+        <UnitPrice>77.42</UnitPrice>
+        <Quantity>1</Quantity>
+        <CostCentreNumber>1</CostCentreNumber>
+        <GeneralLedgerNumber>354320</GeneralLedgerNumber>
+        <Custom>
+          <Field code="Free_text2">
+            <String>MOOTTORIN H�IRI�VALO PALAA</String>
+          </Field>
+          <Field code="Free_text3">
+            <String>-RENGASPAINEIDENMERKKIVALOPALAA</String>
+          </Field>
+          <Field code="Vapaata_tekstia">
+            <String>Ostajan viite: MMU-360/11</String>
+          </Field>
+          <Field code="Quantity">
+            <String>0.00</String>
+          </Field>
+        </Custom>
+      </InvoiceLine>
+    </Line>
+  </Lines>
+</InvoiceDetails>
