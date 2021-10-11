@@ -172,7 +172,7 @@
             "tags": [],
             "tmpls": [
                 {
-                    "afmt": "<div class=\"wrapper rounded shadow\">\n\n       \n    <div class=\"foreign\">\n        <span>{{question}}</span>\n    </div>\n\n    <div class=\"questionNumber\">\n        <span>{{questionNumber}}</span>\n    </div>\n\n    <figure class=\"img\">{{img}}</figure>\n\n    <div class=\"native {{aRes}}\">a) {{a}}</div>\n          \n    <div class=\"native {{bRes}}\">b) {{b}}</div>\n\n    <div class=\"native {{cRes}}\">c) {{c}}</div>\n           \n\n    <span style=\"background-image: url('');\" id=\"backgroundImg\"></span>\n</div>\n",
+                    "afmt": "<div class=\"wrapper rounded shadow\">\n\n       \n    <div class=\"foreign\">\n        <span>{{question}}</span>\n    </div>\n\n    <div class=\"questionNumber\">\n        <span>{{questionNumber}}</span>\n    </div>\n\n    <figure class=\"img\">{{img}}</figure>\n\n    <div class=\"native {{aRes}}\">a) {{a}}</div>\n          \n    <div class=\"native {{bRes}}\">b) {{b}}</div>\n\n    <div class=\"native {{cRes}}\">c) {{c}}</div>\n           \n\n    <span style=\"background-image: url('_ZbrojakBackground.jpeg');\" id=\"backgroundImg\"></span>\n</div>\n",
                     "bafmt": "{{a}}|{{b}}|{{c}}",
                     "bfont": "",
                     "bqfmt": "{{questionNumber}} {{question}}",
@@ -180,7 +180,7 @@
                     "did": null,
                     "name": "Question",
                     "ord": 0,
-                    "qfmt": "<div class=\"wrapper rounded shadow\">\n\n       \n    <div class=\"foreign\">\n        <span>{{question}}</span>\n    </div>\n\n    <div class=\"questionNumber\">\n        <span>{{questionNumber}}</span>\n    </div>\n\n    <figure class=\"img\">{{img}}</figure>\n\n    <div class=\"native\">a) {{a}}</div>\n          \n    <div class=\"native\">b) {{b}}</div>\n\n    <div class=\"native\">c) {{c}}</div>\n           \n\n    <span style=\"background-image: url('');\" id=\"backgroundImg\"></span>\n</div>\n"
+                    "qfmt": "<div class=\"wrapper rounded shadow\">\n\n       \n    <div class=\"foreign\">\n        <span>{{question}}</span>\n    </div>\n\n    <div class=\"questionNumber\">\n        <span>{{questionNumber}}</span>\n    </div>\n\n    <figure class=\"img\">{{img}}</figure>\n\n    <div class=\"native\">a) {{a}}</div>\n          \n    <div class=\"native\">b) {{b}}</div>\n\n    <div class=\"native\">c) {{c}}</div>\n           \n\n    <span style=\"background-image: url('_ZbrojakBackground.jpeg');\" id=\"backgroundImg\"></span>\n</div>\n"
                 }
             ],
             "type": 0,

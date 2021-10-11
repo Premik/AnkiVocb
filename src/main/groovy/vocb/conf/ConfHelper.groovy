@@ -3,6 +3,9 @@ package vocb.conf
 import static java.lang.System.getProperty
 import static java.lang.System.getenv
 
+import java.nio.file.Path
+import java.nio.file.Paths
+
 import groovy.transform.CompileStatic
 import groovy.transform.Synchronized
 import groovy.util.logging.Log4j2
@@ -216,12 +219,15 @@ class ConfHelper {
 		new ConfHelper().with {
 			println confPathDetails
 			loadDefault()
-
-
-
 			println toPrettyString()
 		}
-
+	}
+	
+	public static Path resolveOutputPath(String name, ConfigObject cfg=cfg) {
+		assert cfg.outputRoot 
+		Path root = Paths.get(cfg.outputRoot.toString())
+		root.toFile().mkdirs()
+		return root.resolve(name)
 	}
 
 
