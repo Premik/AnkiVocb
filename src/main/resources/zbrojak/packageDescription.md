@@ -1,8 +1,7 @@
 # Zbrojní průkaz - Testové otázky
 
 - Podle verze platné od `30. ledna 2021`
-- Kartičky jsou v náhodném pořadí.
-- V přednastavené učení je **14 nových kartiček** denně. Což vychází na **víc než jeden měsíc**. Pokud spěcháte, nastavte více.
+- V přednastaveném učení je **14 nových kartiček** denně. Což celkem vychází na **víc než jeden měsíc**. Pokud spěcháte, nastavte si více.
 - **Vysoký bonus za snadné kartičky**. Tímto se snadné/triviální kartičky rychle dostanou na interval měsíců a roků. A není třeba kartičky `suspendovat`.
 - Tip: Někdy narazíte na otázku, kterou nelze rozumě tipnout a je nejdříve potřeba něco dostudovat. Obzvláště pokud se učíte kartičky v náhodném pořadí (což doporučuji). Kartičku *zahrabte*: `bury`. V desktopové verzi Anki je na to klávesová zkratka `=`.
  
