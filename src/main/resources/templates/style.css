@@ -5,8 +5,7 @@
  }
  
 #backgroundImg {
-/*.card:after {*/
-    
+/*.card:after {*/    
   content: ' ';
   display: block;
   position: absolute;
@@ -27,8 +26,13 @@
 
 }
 
+body { /* Hack to display background img on ankiuser.net */
+  background-color: unset;
+}
+
 .card {
   background-color: transparent;
+  position: unset; /* To make background img spawn whole card height on ankiuser.net */
 }
 
  .wrapper {
