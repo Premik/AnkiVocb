@@ -234,6 +234,18 @@ public class Data2Crowd {
 		}
 		vocbModel.save()
 	}
+	
+	void exportExamplesToCrowdStrict(Collection<Example> toExport, Set<String> wordList = []) {
+		prepareVocbModel()
+		toExport.each { Example e ->
+			dbMan.conceptsFromWordsInExample(e)
+					.findAll { Concept c-> wordList.contains(c.firstTerm) }
+					.each { Concept c ->
+						mapConcept(c, e)
+					}
+		}
+		vocbModel.save()
+	}
 
 	void exportConceptsToCrowd(Collection<Concept> concepts) {
 		prepareVocbModel()
