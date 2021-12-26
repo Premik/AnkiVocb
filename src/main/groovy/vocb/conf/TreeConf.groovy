@@ -18,11 +18,12 @@ public class TreeConf<T> {
 	@Lazy
 	List<TreeConf> children = {
 		assert path
+		
 
 		List<TreeConf> ret = path.toFile()
 				.listFiles()
-				.findAll(subFolderFilter)
-				.collect { it.toPath() }				
+				.collect { it.toPath() }
+				.findAll(subFolderFilter)								
 				.collect { Path cp->					
 					TreeConf tf = new TreeConf(
 							path:cp,

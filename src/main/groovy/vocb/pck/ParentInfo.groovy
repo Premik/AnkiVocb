@@ -12,6 +12,7 @@ import vocb.Helper
 
 @Canonical
 @CompileStatic
+@Deprecated
 @ToString(
 	includeNames=true,
 	ignoreNulls=true,
