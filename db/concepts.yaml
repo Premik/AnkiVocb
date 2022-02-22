@@ -16818,12 +16818,13 @@ concepts:
     tts: cs-terms/spanelstina.mp3
   img: img/spanish.jpeg
   freq: 36246.00000
-##  beyond   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  beyond   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: beyond
     lang: en
   - term: nad rámec
     lang: cs
+  state: ignoreImage
   freq: 81690.00000
 ##  affairs   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -19739,20 +19740,30 @@ concepts:
   - term: sutana
     lang: cs
   freq: 1555.00000
-##  incongruity   ########################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  incongruity   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: incongruity
     lang: en
+  - term: nesoulad
+    lang: cs
+  - term: rozpor
+    lang: cs
   freq: 1504.00000
-##  laymen   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  laymen   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: laymen
     lang: en
+  - term: laiky
+    lang: cs
   freq: 1499.00000
-##  docility   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  docility   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: docility
     lang: en
+  - term: krotkost
+    lang: cs
+  - term: poddajnost
+    lang: cs
   freq: 1487.00000
 ##  upheaval   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -19760,22 +19771,24 @@ concepts:
     lang: en
   - term: pozdvižení
     lang: cs
-  - term: otřesů
+  - term: otřesy
     lang: cs
   freq: 1462.00000
 ##  virulent   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: virulent
     lang: en
-  - term: virulentní
+  - term: zhoubný
     lang: cs
-  - term: jedovatý
+  - term: prudký
     lang: cs
   freq: 1456.00000
-##  barque   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  barque   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: barque
     lang: en
+  - term: bárka
+    lang: cs
   freq: 1441.00000
 ##  posthumous   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -19800,7 +19813,7 @@ concepts:
   - term: zničit
     lang: cs
   freq: 1395.00000
-##  clandestine   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  clandestine   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: clandestine
     lang: en
@@ -19808,27 +19821,30 @@ concepts:
     lang: cs
   - term: ilegální
     lang: cs
-  - term: tajných
-    lang: cs
   freq: 1373.00000
 ##  behest   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: behest
     lang: en
-  - term: popudu
+  - term: popud
     lang: cs
   - term: příkaz
     lang: cs
   freq: 1364.00000
-##  ooze   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  ooze   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:term:missing|t1:tts:missing
 - terms: 
   - term: ooze
     lang: en
+  - lang: cs
   freq: 1361.00000
-##  sapling   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  sapling   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: sapling
     lang: en
+  - term: sliz
+    lang: cs
+  - term: kal
+    lang: cs
   freq: 1350.00000
 ##  stampede   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -19836,7 +19852,7 @@ concepts:
     lang: en
   - term: úprk
     lang: cs
-  - term: panice
+  - term: panika
     lang: cs
   freq: 1340.00000
 ##  deranged   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
@@ -19861,7 +19877,7 @@ concepts:
 - terms: 
   - term: espouse
     lang: en
-  - term: vyznávají
+  - term: manžel
     lang: cs
   - term: obhajovat
     lang: cs
@@ -19894,27 +19910,25 @@ concepts:
   - term: prozradit
     lang: cs
   freq: 1241.00000
-##  inalienable   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  inalienable   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: inalienable
     lang: en
-  - term: nezcizitelných
-    lang: cs
-  - term: nezadatelná
+  - term: nezcizitelný
     lang: cs
   freq: 1215.00000
 ##  abhorrent   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: abhorrent
     lang: en
-  - term: odporné
+  - term: odporný
     lang: cs
   freq: 1213.00000
 ##  unequivocal   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: unequivocal
     lang: en
-  - term: jednoznačné
+  - term: jednoznačný
     lang: cs
   freq: 1209.00000
 ##  cursory   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
@@ -19924,10 +19938,12 @@ concepts:
   - term: zběžný
     lang: cs
   freq: 1208.00000
-##  sacerdotal   ############################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  sacerdotal   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: sacerdotal
     lang: en
+  - term: kněžský
+    lang: cs
   freq: 1196.00000
 ##  seduction   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -19938,27 +19954,25 @@ concepts:
   - term: svůdnost
     lang: cs
   freq: 1183.00000
-##  elicit   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  elicit   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: elicit
     lang: en
-  - term: vymohl
+  - term: vyloudit
     lang: cs
   - term: vylákat
-    lang: cs
-  - term: vyvolat
     lang: cs
   freq: 1118.00000
 ##  wile   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: wile
     lang: en
-  - term: wile
+  - term: lest
     lang: cs
   freq: 1109.00000
-##  decoys   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  decoy   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
-  - term: decoys
+  - term: decoy
     lang: en
   - term: návnada
     lang: cs
@@ -19972,10 +19986,12 @@ concepts:
   - term: roztříštit
     lang: cs
   freq: 1106.00000
-##  doers   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  doers   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: doers
     lang: en
+  - term: dělníci
+    lang: cs
   freq: 1080.00000
 ##  apostasy   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -19984,30 +20000,32 @@ concepts:
   - term: odpadlictví
     lang: cs
   freq: 1019.00000
-##  smear   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  smear   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: smear
     lang: en
-  - term: stěr
-    lang: cs
-  - term: roztěr
-    lang: cs
   - term: namazat
-    lang: cs
-  - term: pošpinit
     lang: cs
   - term: skvrna
     lang: cs
   freq: 1011.00000
-##  corroboration   ######################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  corroboration   ######################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: corroboration
     lang: en
+  - term: potvrzení
+    lang: cs
+  - term: podepření
+    lang: cs
   freq: 984.00000
-##  rancor   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  rancor   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: rancor
     lang: en
+  - term: nevraživost
+    lang: cs
+  - term: zášť
+    lang: cs
   freq: 941.00000
 ##  rabid   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -20015,7 +20033,7 @@ concepts:
     lang: en
   - term: vzteklý
     lang: cs
-  - term: zuřivého
+  - term: zuřivý
     lang: cs
   freq: 925.00000
 ##  aggravation   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
@@ -20032,15 +20050,11 @@ concepts:
   - term: komár
     lang: cs
   freq: 905.00000
-##  pave   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  pave   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: pave
     lang: en
-  - term: vydláždit
-    lang: cs
-  - term: vydláždění
-    lang: cs
-  - term: připravit
+  - term: dláždit
     lang: cs
   freq: 899.00000
 ##  lice   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
@@ -20057,10 +20071,14 @@ concepts:
   - term: objasnění
     lang: cs
   freq: 876.00000
-##  prowls   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  prowls   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: prowls
     lang: en
+  - term: slídí
+    lang: cs
+  - term: potuluje se
+    lang: cs
   freq: 870.00000
 ##  slur   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -20100,7 +20118,7 @@ concepts:
     lang: en
   - term: donutit
     lang: cs
-  - term: převedeno
+  - term: přinutit
     lang: cs
   freq: 791.00000
 ##  loafers   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
@@ -20119,10 +20137,12 @@ concepts:
   - term: cep
     lang: cs
   freq: 722.00000
-##  extirpation   ########################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  extirpation   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: extirpation
     lang: en
+  - term: vykořenení
+    lang: cs
   freq: 685.00000
 ##  diphtheria   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -20131,33 +20151,43 @@ concepts:
   - term: záškrtu
     lang: cs
   freq: 664.00000
-##  gloat   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  gloat   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: gloat
     lang: en
+  - term: jásot
+    lang: cs
   freq: 644.00000
-##  continence   ############################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  continence   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: continence
     lang: en
+  - term: zdrženlivost
+    lang: cs
   freq: 621.00000
-##  effusive   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  effusive   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: effusive
     lang: en
+  - term: překypující
+    lang: cs
+  - term: hojný
+    lang: cs
   freq: 621.00000
-##  gleeful   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  gleeful   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: gleeful
     lang: en
+  - term: veselý
+    lang: cs
+  - term: radnostný
+    lang: cs
   freq: 609.00000
-##  syringe   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  syringe   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: syringe
     lang: en
-  - term: stříkačku
-    lang: cs
-  - term: injekční stříkačky
+  - term: stříkača
     lang: cs
   freq: 582.00000
 ##  obituary   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
@@ -20171,21 +20201,23 @@ concepts:
 - terms: 
   - term: aberrations
     lang: en
-  - term: aberací
+  - term: poblouznení
     lang: cs
-  - term: úchylky
+  - term: odchylky
     lang: cs
   freq: 570.00000
-##  crony   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  crony   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: crony
     lang: en
+  - term: kamarád
+    lang: cs
   freq: 549.00000
 ##  heterodox   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: heterodox
     lang: en
-  - term: heterodoxní
+  - term: jinověrný
     lang: cs
   freq: 532.00000
 ##  engulf   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
@@ -20202,20 +20234,16 @@ concepts:
   - term: narážky
     lang: cs
   freq: 494.00000
-##  pervasive   ############################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  pervasive   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: pervasive
     lang: en
   - term: všudypřítomné
     lang: cs
-  - term: pervazivní
-    lang: cs
   - term: prostupující
     lang: cs
-  - term: přítomny
-    lang: cs
   freq: 493.00000
-##  impeccable   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  impeccable   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: impeccable
     lang: en
@@ -20223,15 +20251,12 @@ concepts:
     lang: cs
   - term: dokonalé
     lang: cs
-  - term: bezúhonný
-    lang: cs
   freq: 445.00000
-##  bedridden   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  bedridden   ############################################################# no img|no cs term|t0:tts:missing|t0:pron:missing|t1:lang:missing|t1:tts:missing
 - terms: 
   - term: bedridden
     lang: en
-  - term: upoutaný
-    lang: cs
+  - term: upoutaný na lůžko
   freq: 440.00000
 ##  curfew   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -20242,49 +20267,65 @@ concepts:
   - term: večerka
     lang: cs
   freq: 428.00000
-##  prevarication   ######################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  prevarication   ######################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: prevarication
     lang: en
+  - term: vytáčky
+    lang: cs
+  - term: vykrucování
+    lang: cs
   freq: 397.00000
-##  castigation   ########################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  castigation   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: castigation
     lang: en
+  - term: kárání
+    lang: cs
   freq: 359.00000
-##  indict   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  indict   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: indict
     lang: en
+  - term: obvinit
+    lang: cs
   freq: 329.00000
-##  inebriated   ############################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  inebriated   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: inebriated
     lang: en
+  - term: opilý
+    lang: cs
   freq: 325.00000
-##  amalgamate   ############################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  amalgamate   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: amalgamate
     lang: en
+  - term: sloučit se
+    lang: cs
+  - term: fůzovat
+    lang: cs
   freq: 318.00000
-##  lineament   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  lineament   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: lineament
     lang: en
+  - term: rys
+    lang: cs
   freq: 306.00000
-##  femur   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  femur   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: femur
     lang: en
   - term: stehenní kosti
     lang: cs
-  - term: femuru
-    lang: cs
   freq: 290.00000
-##  episcopacy   ############################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  episcopacy   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: episcopacy
     lang: en
+  - term: biskupství
+    lang: cs
   freq: 288.00000
 ##  corroborates   ########################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -20293,10 +20334,12 @@ concepts:
   - term: potvrzuje
     lang: cs
   freq: 287.00000
-##  precipitously   ######################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  precipitously   ######################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: precipitously
     lang: en
+  - term: strmě
+    lang: cs
   freq: 248.00000
 ##  culpability   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -20304,13 +20347,17 @@ concepts:
     lang: en
   - term: zavinění
     lang: cs
-  - term: vinu
+  - term: trestuhodnost
     lang: cs
   freq: 238.00000
-##  espousal   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  espousal   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: espousal
     lang: en
+  - term: přijetí
+    lang: cs
+  - term: podpora
+    lang: cs
   freq: 230.00000
 ##  imposter   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -20319,47 +20366,45 @@ concepts:
   - term: podvodník
     lang: cs
   freq: 196.00000
-##  lacerations   ########################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  lacerations   ########################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: lacerations
     lang: en
+  - term: tržná rána
+    lang: cs
   freq: 183.00000
-##  potable   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  potable   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: potable
     lang: en
-  - term: pitnou
-    lang: cs
-  - term: konzumního
+  - term: pitný
     lang: cs
   freq: 167.00000
-##  detractor   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  detractor   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: detractor
     lang: en
+  - term: krityk
+    lang: cs
+  - term: pomlouvač
+    lang: cs
   freq: 158.00000
-##  expatriate   ############################################################ 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  expatriate   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: expatriate
     lang: en
-  - term: krajanských
+  - term: vystěhovalec
     lang: cs
   - term: emigrant
     lang: cs
-  - term: vyslání
-    lang: cs
-  - term: emigranti
-    lang: cs
   freq: 148.00000
-##  caret   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  caret   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: caret
     lang: en
   - term: stříška
     lang: cs
   - term: vsuvka
-    lang: cs
-  - term: kurzoru
     lang: cs
   freq: 124.00000
 ##  ploy   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
@@ -20369,10 +20414,12 @@ concepts:
   - term: trik
     lang: cs
   freq: 121.00000
-##  squelch   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  squelch   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: squelch
     lang: en
+  - term: mlaskat
+    lang: cs
   freq: 121.00000
 ##  splurge   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -20383,31 +20430,41 @@ concepts:
   - term: utrácet
     lang: cs
   freq: 113.00000
-##  canard   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  canard   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: canard
     lang: en
-  - term: canard
+  - term: kachna
+    lang: cs
+  - term: blud
     lang: cs
   freq: 110.00000
-##  vilification   ########################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  vilification   ########################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: vilification
     lang: en
+  - term: očeňování
+    lang: cs
+  - term: pomlouvání
+    lang: cs
   freq: 106.00000
 ##  doodle   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: doodle
     lang: en
-  - term: doodle
+  - term: klikyháky
     lang: cs
   - term: čmáranice
     lang: cs
   freq: 102.00000
-##  licit   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  licit   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: licit
     lang: en
+  - term: líčit
+    lang: cs
+  - term: popisovat
+    lang: cs
   freq: 72.00000
 ##  proponent   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -20418,10 +20475,14 @@ concepts:
   - term: podpůrce
     lang: cs
   freq: 37.00000
-##  intransigent   ########################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  intransigent   ########################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: intransigent
     lang: en
+  - term: zatvrzelý
+    lang: cs
+  - term: neústupný
+    lang: cs
   freq: 36.00000
 ##  probative   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
