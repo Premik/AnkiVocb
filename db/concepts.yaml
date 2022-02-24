@@ -11379,11 +11379,11 @@ concepts:
     tts: cs-terms/pamatky.mp3
   img: img/antiquities.jpeg
   freq: 500.00000
-##  I'll (I will)   ######################################################### t0:pron:missing
 - terms: 
   - term: I'll (I will)
     lang: en
     tts: en-terms/Ill.mp3
+    pron: aɪl
   - term: Já budu (zkráceně)
     lang: cs
     tts: cs-terms/Ja budu.mp3
@@ -11402,11 +11402,11 @@ concepts:
     tts: cs-terms/neumet.mp3
   img: img/cant.jpeg
   freq: 176728.00000
-##  I've (I have)   ######################################################### t0:pron:missing
 - terms: 
   - term: I've (I have)
     lang: en
     tts: en-terms/Ive.mp3
+    pron: aɪv
   - term: Já mám (zkráceně)
     lang: cs
     tts: cs-terms/Ja mam.mp3
@@ -11492,11 +11492,11 @@ concepts:
     lang: en
   state: ignore
   freq: 18.00000
-##  I'm (I am)   ############################################################ t0:pron:missing
 - terms: 
   - term: I'm (I am)
     lang: en
     tts: en-terms/Im.mp3
+    pron: aɪm
   - term: Já jsem (zkráceně)
     lang: cs
     tts: cs-terms/Ja jsem.mp3
@@ -11607,11 +11607,11 @@ concepts:
     tts: cs-terms/vrchy.mp3
   img: img/hills.jpeg
   freq: 66475.00000
-##  Thomas   ################################################################ t0:pron:missing
 - terms: 
   - term: Thomas
     lang: en
     tts: en-terms/Thomas.mp3
+    pron: ˈtɒməs
   - term: Tomáš
     lang: cs
     tts: cs-terms/Tomas.mp3
@@ -15874,7 +15874,6 @@ concepts:
     tts: cs-terms/bidny.mp3
   img: img/miserable.jpeg
   freq: 41704.00000
-##  lad   ################################################################### no freq
 - terms: 
   - term: lad
     lang: en
@@ -15887,6 +15886,7 @@ concepts:
     lang: cs
     tts: cs-terms/hoch.mp3
   img: img/lad.jpeg
+  freq: 320.00000
 - terms: 
   - term: shadow
     lang: en
@@ -18241,16 +18241,14 @@ concepts:
   - term: prchat
     lang: cs
   freq: 9936.00000
-##  strive   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  strive   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: strive
     lang: en
     pron: straɪv
   - term: usilovat o
     lang: cs
-  - term: snažit
-    lang: cs
-  - term: snažte se
+  - term: snažit se
     lang: cs
   freq: 9902.00000
 ##  mantle   ################################################################ no img|t1:tts:missing
@@ -20554,13 +20552,16 @@ concepts:
   - term: příkaz
     lang: cs
   freq: 1364.00000
-##  ooze   ################################################################## no img|t1:term:missing|t1:tts:missing
+##  ooze   ################################################################## no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: ooze
     lang: en
     tts: en-terms/ooze.mp3
     pron: uːz
-  - lang: cs
+  - term: sliz
+    lang: cs
+  - term: kal
+    lang: cs
   freq: 1361.00000
 ##  sapling   ############################################################### no img|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -21083,13 +21084,14 @@ concepts:
   - term: dokonalé
     lang: cs
   freq: 445.00000
-##  bedridden   ############################################################# no img|no cs term|t1:lang:missing|t1:tts:missing
+##  bedridden   ############################################################# no img|t1:tts:missing
 - terms: 
   - term: bedridden
     lang: en
     tts: en-terms/bedridden.mp3
     pron: ˈbɛdˌrɪd(n)
   - term: upoutaný na lůžko
+    lang: cs
   freq: 440.00000
 ##  curfew   ################################################################ no img|t1:tts:missing|t2:tts:missing
 - terms: 
