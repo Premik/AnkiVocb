@@ -51,7 +51,7 @@ public abstract class TermContainer  {
 		if (isDirty()) location.dirty = true
 	}
 	
-	public List<String> validate() {
+	public List<String> validate(ValidationProfile vp) {
 		List<String> ret = []
 		//if (!location) ret.add("No data location set")
 		return ret
