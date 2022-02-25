@@ -20938,28 +20938,24 @@ concepts:
   - term: důkazní
     lang: cs
   freq: 32.00000
-##  blows   ################################################################# 6 terms. Up to 3 supported only|t0:pron:missing
 - terms: 
   - term: blows
     lang: en
   - term: fouká
     lang: cs
   - term: rány
-    lang: cs  
+    lang: cs
   freq: 21851.00000
-##  chastisement   ########################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: chastisement
     lang: en
   - term: trestání
-    lang: cs  
-##  intercession   ########################################################## no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: intercession
     lang: en
   - term: přímluvu
     lang: cs
-##  harassed   ############################################################## no freq|t0:pron:missing
 - terms: 
   - term: harassed
     lang: en
@@ -20967,35 +20963,30 @@ concepts:
     lang: cs
   - term: pronásledováni
     lang: cs
-##  miseries   ############################################################## no freq|t0:pron:missing
 - terms: 
   - term: miseries
     lang: en
   - term: utrpení
     lang: cs
-##  undermined   ############################################################ 4 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: undermined
     lang: en
   - term: podkopal
-    lang: cs  
+    lang: cs
   - term: narušena
     lang: cs
-##  wavering   ############################################################## 4 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: wavering
     lang: en
   - term: chvějící se
-    lang: cs  
+    lang: cs
   - term: váhání
     lang: cs
-##  wreckers   ############################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: wreckers
     lang: en
-  - term: záškodníci 
-    lang: cs   
-##  fleeing   ############################################################### 4 terms. Up to 3 supported only|no freq|t0:pron:missing
+  - term: záškodníci
+    lang: cs
 - terms: 
   - term: fleeing
     lang: en
@@ -21003,46 +20994,38 @@ concepts:
     lang: cs
   - term: utíkají
     lang: cs
-  
-##  immersed   ############################################################## no freq|t0:pron:missing
 - terms: 
   - term: immersed
     lang: en
   - term: ponoří do
     lang: cs
-##  godliness   ############################################################# single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: godliness
     lang: en
   - term: zbožnost
-    lang: cs    
-##  kneaded   ############################################################### single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: kneaded
     lang: en
   - term: hnětený
-    lang: cs    
-##  perpetrated   ########################################################### single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: perpetrated
     lang: en
   - term: spáchán
-    lang: cs    
-##  irreverence   ########################################################### single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: irreverence
     lang: en
   - term: neuctivost
-    lang: cs    
-##  stifled   ############################################################### single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: stifle
     lang: en
   - term: potlačit
-    lang: cs    
+    lang: cs
   - term: umlčet
-    lang: cs    
-##  engulfed   ############################################################## no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: engulfed
     lang: en
@@ -21050,13 +21033,11 @@ concepts:
     lang: cs
   - term: pohltila
     lang: cs
-##  insistently   ########################################################### no freq|t0:pron:missing
 - terms: 
   - term: insistently
     lang: en
   - term: naléhavě
     lang: cs
-##  staggering   ############################################################ 5 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: staggering
     lang: en
@@ -21064,8 +21045,6 @@ concepts:
     lang: cs
   - term: závratná
     lang: cs
-  
-##  comforted   ############################################################# no freq|t0:pron:missing
 - terms: 
   - term: comforted
     lang: en
@@ -21073,7 +21052,6 @@ concepts:
     lang: cs
   - term: utěšoval
     lang: cs
-##  lured   ################################################################# no freq|t0:pron:missing
 - terms: 
   - term: lured
     lang: en
@@ -21081,21 +21059,16 @@ concepts:
     lang: cs
   - term: vábil
     lang: cs
-
-
-##  tepidity   ############################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: tepidity
     lang: en
   - term: vlažnost
-    lang: cs    
-##  implored   ############################################################## no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: implored
     lang: en
   - term: prosil
     lang: cs
-##  resplendent   ########################################################### no freq|t0:pron:missing
 - terms: 
   - term: resplendent
     lang: en
@@ -21103,63 +21076,47 @@ concepts:
     lang: cs
   - term: zářivý
     lang: cs
-##  aspired   ############################################################### single term only|no freq|no cs term|t0:pron:missing
-- terms: 
-  - term: aspire
-    lang: en
-  - term: toužit
-    lang: cs    
-  - term: usilovat
-    lang: cs    
-##  aridity   ############################################################### single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: aridity
     lang: en
   - term: vyprahlost
-    lang: cs    
-##  expiated   ############################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: expiated
     lang: en
   - term: odpykaný
-    lang: cs    
+    lang: cs
   - term: odčiněný
-    lang: cs    
-##  grievously   ############################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: grievously
     lang: en
   - term: těžce
-    lang: cs    
+    lang: cs
   - term: bolestně
-    lang: cs    
-##  acquiesced   ############################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: acquiesced
     lang: en
   - term: vyhověl
-    lang: cs    
+    lang: cs
   - term: podvolil
-    lang: cs    
-##  špalda   ################################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: spelled
     lang: en
   - term: špalda
-    lang: cs    
-##  emanated   ############################################################## no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: emanated
     lang: en
   - term: pocházely
     lang: cs
-##  redemptive   ############################################################ no freq|t0:pron:missing
 - terms: 
   - term: redemptive
     lang: en
   - term: vykupitelské
     lang: cs
-##  shedding   ############################################################## 6 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: shedding
     lang: en
@@ -21167,7 +21124,6 @@ concepts:
     lang: cs
   - term: ubývání
     lang: cs
-##  deficiencies   ########################################################## no freq|t0:pron:missing
 - terms: 
   - term: deficiencies
     lang: en
@@ -21175,27 +21131,23 @@ concepts:
     lang: cs
   - term: závady
     lang: cs
-##  lamented   ############################################################## no freq|t0:pron:missing
 - terms: 
   - term: lamented
     lang: en
   - term: bědoval
     lang: cs
-##  cherishes   ############################################################# single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: cherish
     lang: en
   - term: chovat (v sdrci)
-    lang: cs    
+    lang: cs
   - term: střežit
-    lang: cs    
-##  martyred   ############################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: martyred
     lang: en
   - term: umučena
-    lang: cs    
-##  repercussions   ######################################################### 4 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: repercussions
     lang: en
@@ -21203,8 +21155,6 @@ concepts:
     lang: cs
   - term: následky
     lang: cs
-
-##  intrinsically   ######################################################### 4 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: intrinsically
     lang: en
@@ -21212,31 +21162,26 @@ concepts:
     lang: cs
   - term: vnitřně
     lang: cs
-##  perplexities   ########################################################## no freq|t0:pron:missing
 - terms: 
   - term: perplexities
     lang: en
   - term: rozpaky
     lang: cs
-##  dissensions   ########################################################### single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: dissensions
     lang: en
   - term: neshody
-    lang: cs    
-##  estranging   ############################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: estranging
     lang: en
   - term: odcizující
-    lang: cs    
-##  puppeteers   ############################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: puppeteers
     lang: en
   - term: loutkáři
-    lang: cs    
-##  quashed   ############################################################### no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: quashed
     lang: en
@@ -21244,25 +21189,21 @@ concepts:
     lang: cs
   - term: zrušil
     lang: cs
-##  rabidly   ############################################################### no freq|t0:pron:missing
 - terms: 
   - term: rabidly
     lang: en
   - term: fanaticky
     lang: cs
-##  extrauterine   ########################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: extrauterine
     lang: en
   - term: mimoděložní
-    lang: cs    
-##  proffered   ############################################################# single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: proffered
     lang: en
   - term: nabídl
-    lang: cs    
-##  hampered   ############################################################## no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: hampered
     lang: en
@@ -21270,15 +21211,13 @@ concepts:
     lang: cs
   - term: brání
     lang: cs
-##  obviating   ############################################################# single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: obviate
     lang: en
   - term: obejít
-    lang: cs    
+    lang: cs
   - term: vyhnout se
-    lang: cs    
-##  wheezing   ############################################################## no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: wheezing
     lang: en
@@ -21286,105 +21225,82 @@ concepts:
     lang: cs
   - term: dušnost
     lang: cs
-##  stomping   ############################################################## no freq|t0:pron:missing
 - terms: 
   - term: stomping
     lang: en
   - term: dupání
     lang: cs
-##  conflating   ############################################################ single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: conflating
     lang: en
   - term: slučování
-    lang: cs    
-##  phony   ################################################################# no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: phony
     lang: en
   - term: falešné
     lang: cs
-##  disbanding   ############################################################ single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: disbanding
     lang: en
   - term: rozpouštění
-    lang: cs    
-##  promulgating   ########################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: promulgating
     lang: en
   - term: vyhlašující
-    lang: cs    
-##  eradicte   ############################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: eradicte
     lang: en
   - term: vymýtit
-    lang: cs    
-##  imbued   ################################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: imbued
     lang: en
   - term: prodchnutý
-    lang: cs    
-##  fetched   ############################################################### 6 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: fetched
     lang: en
   - term: načteny
     lang: cs
   - term: přitažené za vlasy
-    lang: cs  
-##  instill   ############################################################### no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: instill
     lang: en
   - term: vštípit
     lang: cs
-##  permeated   ############################################################# single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: permeated
     lang: en
   - term: prostoupené
-    lang: cs    
-##  clearsighted   ########################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: clearsighted
     lang: en
   - term: bystrozraký
-    lang: cs    
+    lang: cs
   - term: prozíravý
-    lang: cs    
-##  swirled   ############################################################### single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: swirled
     lang: en
   - term: zavířil
-    lang: cs    
-##  waged   ################################################################# no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: waged
     lang: en
   - term: vedeny
     lang: cs
-##  ilustrious   ############################################################ single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: ilustrious
     lang: en
   - term: vynikající
-    lang: cs    
-  - term: význačný
-    lang: cs    
-##  nourished   ############################################################# 4 terms. Up to 3 supported only|no freq|t0:pron:missing
-- terms: 
-  - term: nourish
-    lang: en
-  - term: živit
     lang: cs
-  - term: přiživovat
-    lang: cs  
-##  raving   ################################################################ 4 terms. Up to 3 supported only|no freq|t0:pron:missing
+  - term: význačný
+    lang: cs
 - terms: 
   - term: raving
     lang: en
@@ -21392,80 +21308,68 @@ concepts:
     lang: cs
   - term: nepříčetný
     lang: cs
-##  expiation   ############################################################# single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: expiation
     lang: en
   - term: odčinění
-    lang: cs    
+    lang: cs
   - term: pokání
-    lang: cs    
-##  dissuaded   ############################################################# single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: dissuaded
     lang: en
   - term: odradit
-    lang: cs    
+    lang: cs
   - term: rozmluvit
-    lang: cs    
-##  corralled   ############################################################# single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: corral
     lang: en
   - term: vozová hradba
-    lang: cs    
+    lang: cs
   - term: ohrada (pro dobytek)
-    lang: cs    
-##  disdainfully   ########################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: disdainfully
     lang: en
   - term: pohrdavě
-    lang: cs    
+    lang: cs
   - term: opovržlivě
-    lang: cs    
-##  clique   ################################################################ no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: clique
     lang: en
   - term: klika
     lang: cs
-    
-##  wreaking   ############################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: wreaking
     lang: en
   - term: nadělat (škodu)
     lang: cs
   - term: zchladit si (zlost)
-    lang: cs    
-##  anathematize   ########################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: anathematize
     lang: en
   - term: proklet
-    lang: cs    
-##  ostracized   ############################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: ostracized
     lang: en
   - term: vyobcovat
-    lang: cs    
-##  infatuated   ############################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: infatuated
     lang: en
   - term: poblázněný
-    lang: cs    
+    lang: cs
   - term: zabouchnutý
-    lang: cs    
-##  censer   ################################################################ single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: censer
     lang: en
   - term: kadidelnice
-    lang: cs    
-##  rumbling   ############################################################## no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: rumbling
     lang: en
@@ -21473,52 +21377,44 @@ concepts:
     lang: cs
   - term: dunění
     lang: cs
-    
-##  consigned   ############################################################# 5 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: consigned
     lang: en
   - term: zasílané
     lang: cs
   - term: svěřený
-    lang: cs  
-##  betrothed   ############################################################# no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: betrothed
     lang: en
   - term: zasnoubena
     lang: cs
-##  filial   ################################################################ single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: filial
     lang: en
   - term: synovský
     lang: cs
   - term: dceřiný
-    lang: cs      
-##  anticipated   ########################################################### 6 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: anticipated
     lang: en
   - term: očekávané
-    lang: cs  
+    lang: cs
   - term: předpokládané
-    lang: cs  
-##  idolatrous   ############################################################ no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: idolatrous
     lang: en
   - term: modlářské
-    lang: cs    
-##  decries   ############################################################### single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: decries
     lang: en
   - term: odsuzuje
     lang: cs
   - term: pomlouvá
-    lang: cs    
-##  concealing   ############################################################ no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: concealing
     lang: en
@@ -21526,19 +21422,16 @@ concepts:
     lang: cs
   - term: zatajování
     lang: cs
-##  purportedly   ########################################################### no freq|t0:pron:missing
 - terms: 
   - term: purportedly
     lang: en
   - term: údajně
     lang: cs
-##  enmeshed   ############################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: enmeshed
     lang: en
   - term: zapletený
-    lang: cs    
-##  vying   ################################################################# no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: vying
     lang: en
@@ -21546,55 +21439,47 @@ concepts:
     lang: cs
   - term: závodění
     lang: cs
-##  ruthlessness   ########################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: ruthlessness
     lang: en
   - term: bezohlednost
-    lang: cs    
-##  scattershot   ########################################################### single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: scattershot
     lang: en
   - term: rozptylka
-    lang: cs    
-##  marginalized   ########################################################## 6 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: marginalized
-    lang: en  
+    lang: en
   - term: odsunutých
     lang: cs
   - term: opomíjené
-    lang: cs  
-##  entourage   ############################################################# no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: entourage
-    lang: en  
+    lang: en
   - term: doprovod
     lang: cs
-##  levied   ################################################################ 6 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: levied
     lang: en
   - term: vybírané
-    lang: cs  
+    lang: cs
   - term: postihující
-    lang: cs  
-##  enacted   ############################################################### 5 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: enacted
     lang: en
   - term: uzákoněna
-    lang: cs  
+    lang: cs
   - term: schválené
     lang: cs
-##  contagiousness   ######################################################## single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: contagiousness
     lang: en
   - term: nakažlivost
-    lang: cs    
-##  imposition   ############################################################ 5 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: imposition
     lang: en
@@ -21602,8 +21487,6 @@ concepts:
     lang: cs
   - term: zavedení
     lang: cs
-  
-##  looming   ############################################################### 5 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: looming
     lang: en
@@ -21611,21 +21494,18 @@ concepts:
     lang: cs
   - term: hrozící
     lang: cs
-##  aligned   ############################################################### 6 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: aligned
     lang: en
   - term: zarovnán
     lang: cs
   - term: sladěna
-    lang: cs  
-##  surrende   ############################################################## single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: surrende
     lang: en
   - term: kapitulace
-    lang: cs    
-##  unearthed   ############################################################# no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: unearthed
     lang: en
@@ -21633,21 +21513,18 @@ concepts:
     lang: cs
   - term: objevil
     lang: cs
-##  subpar   ################################################################ single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: subpar
     lang: en
   - term: pododdíl
-    lang: cs    
-##  subtly   ################################################################ 4 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: subtly
     lang: en
   - term: jemně
-    lang: cs 
+    lang: cs
   - term: nepatrně
     lang: cs
-##  despised   ############################################################## no freq|t0:pron:missing
 - terms: 
   - term: despised
     lang: en
@@ -21655,82 +21532,70 @@ concepts:
     lang: cs
   - term: opovrhoval
     lang: cs
-##  malady   ################################################################ no freq|t0:pron:missing
 - terms: 
   - term: malady
     lang: en
   - term: nemoc
     lang: cs
-##  foretaste   ############################################################# single term only|no freq|no cs term|t0:pron:missing
 - terms: 
   - term: foretaste
     lang: en
   - term: předzvěst
-    lang: cs    
-##  germinate   ############################################################# no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: germinate
     lang: en
   - term: klíčit
     lang: cs
-##  irrigate   ############################################################## no freq|t0:pron:missing
 - terms: 
   - term: irrigate
     lang: en
   - term: zavlažování
     lang: cs
-##  intrigued   ############################################################# 6 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: intrigued
     lang: en
   - term: zaujalo
-    lang: cs  
+    lang: cs
   - term: fascinován
-    lang: cs  
-##  appreciably   ########################################################### no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: appreciably
     lang: en
   - term: znatelně
     lang: cs
-##  prevailing   ############################################################ 6 terms. Up to 3 supported only|no freq|t0:pron:missing
 - terms: 
   - term: prevailing
     lang: en
   - term: převládající
-    lang: cs  
-##  corrugated   ############################################################ no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: corrugated
     lang: en
   - term: vlnité
-    lang: cs  
-##  mustering   ############################################################# single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: mustering
     lang: en
   - term: shromažďování
-    lang: cs    
-##  cloak   ################################################################# 4 terms. Up to 3 supported only|no freq|t0:pron:missing
+    lang: cs
 - terms: 
   - term: cloak
     lang: en
   - term: plášť
-    lang: cs  
+    lang: cs
   - term: zástěrka
     lang: cs
-##  ere   ################################################################### no freq|t0:pron:missing
 - terms: 
   - term: ere
     lang: en
   - term: dříve
-    lang: cs  
-##  uttermost   ############################################################# single term only|no freq|no cs term|t0:pron:missing
+    lang: cs
 - terms: 
   - term: uttermost
     lang: en
   - term: nejzazší
     lang: cs
   - term: nanejvýš
-    lang: cs        
+    lang: cs
 
