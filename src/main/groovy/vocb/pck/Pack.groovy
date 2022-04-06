@@ -5,7 +5,7 @@ import static vocb.Ansi.*
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-import java.util.Map.Entry
+import java.util.stream.Collectors
 
 import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
@@ -17,8 +17,6 @@ import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.Manager
-import vocb.ord.ConceptExtra
-import vocb.ord.OrderSolver
 
 @CompileStatic
 public class Pack {
@@ -108,11 +106,14 @@ public class Pack {
 		assert info : "$first100 pkg not found"
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		//Words from the whole db without words from any package
-		Set<String> pkgWords = wordsFromAllPackages()
+		Set<String> pkgWords = wn.lemming(wordsFromAllPackages().stream())
+				.collect(Collectors.toSet())
+
 
 		Set<String> wordsToExport = d2c.dbMan.db.concepts
 				.findAll { Concept c->
 					if (c.state == 'ignore') return false
+
 					return !pkgWords.contains(c.firstTerm)
 				}
 				.collect {it.firstTerm}
@@ -142,6 +143,10 @@ public class Pack {
 		assert folder
 		if (!Helper.subFolderFilter(folder.toFile())) return false
 		return Files.isRegularFile(folder.resolve("packageDescription.md"))
+	}
+
+	static boolean isFolderPackage(File folder) {
+		isFolderPackage(folder.toPath())
 	}
 
 	public export(List<PackInfo> pkgs=allPackInfos) {

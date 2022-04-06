@@ -43,24 +43,36 @@ public class WordNormalizer {
 	}
 
 	public List<String> wordVariants(String s) {
-		//if (s.endsWith('es')) return [s, s[0..-3]] //Remove 'es'			
-		if (s.endsWith('s')) return [s, s[0..-2]] //Remove 's'
-		return [s, "${s}s" as String] //Add 's'
+		String cap = swapCapitalFirstLetter(s)
+		[
+			swapPluralSingular(cap),
+			swapPluralSingular(s),
+			cap,
+			s
+		]
+		.toUnique()
+		.sort { String a, String b->			
+			Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
+			a.length() <=> b.length()
+			
+		}
 	}
-	
-	public String swapPluralSingular(String s) { //Removes or adds 's'
+
+	public String swapPluralSingular(String s) {
+		//Removes or adds 's'
 		if (s.endsWith('s')) return s[0..-2]
 		return "${s}s" as String //Add 's'
 	}
-	
+
 	@CompileStatic
-	public String swapCapitalFirstLetter(String s) {
-		Character first = s[0] as Character
+	public String swapCapitalFirstLetter(String s) {		
+		Character first = s[0] as Character		
 		if (Character.isUpperCase(first)) {
 			first = Character.toLowerCase(first)
 		} else {
 			first = Character.toUpperCase(first)
 		}
+		if (s.length() ==1) return first
 		return "$first${s[1..-1]}" as String
 	}
 
@@ -168,11 +180,7 @@ public class WordNormalizer {
 			String supa = getClass().getResource('/Supaplex.txt').text
 			topPhrases(phraseFreqs(supa, 2, 5)).each { w,i->
 				println "${w.padRight(10)} $i"
-
 			}
 		}
-
 	}
-
-
 }

@@ -97,13 +97,16 @@ class WordNormalizerTest {
 
 	@Test
 	void lemm() {
-		assert norm.uniqueueTokens("Hello world!", true) == ["hello", "hellos", "world", "worlds"] as LinkedHashSet
+		LinkedHashSet exp = ["hello", "hellos", "Hello", "Hellos", "world", "worlds", "World", "Worlds"] as LinkedHashSet
+		assert norm.uniqueueTokens("Hello world!", true) == exp
 	}
 	
 	@Test
 	void variants() {
-		assert norm.wordVariants("cats") as Set == "cat cats".split() as Set
-		assert norm.wordVariants("cat") as Set == "cat cats".split() as Set
+		Set exp = "cat cats Cat Cats".split() as Set
+		assert norm.wordVariants("cats") as Set == exp
+		assert norm.wordVariants("cat") as Set == exp
+		assert norm.wordVariants("Cat") as Set == exp
 		//assert norm.wordVariants("antiquities") as Set == "cat cats".split() as Set
 	}
 
