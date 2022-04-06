@@ -22,7 +22,7 @@ import vocb.ord.OrderSolver
 
 @CompileStatic
 public class Pack {
-	
+
 	String first100 = "First1000"
 
 	Path destRootFolder = Paths.get("/tmp/work/pkg")
@@ -37,23 +37,23 @@ public class Pack {
 	@Lazy
 	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
-	@Lazy List<PackInfo> allPackInfos = {		
+	@Lazy List<PackInfo> allPackInfos = {
 		treeConf.leafs.collect { TreeConf<PackInfo> tc->
-			
+
 			PackInfo pi = new PackInfo(
-					pack: this,					
+					pack: this,
 					treeConf: tc).tap {
 						tc.obj= it
 					}
 			return pi
 		}
 	}()
-	
-	
+
+
 
 	WordNormalizer wn = new WordNormalizer()
 
-	
+
 
 
 	void doExport(PackInfo info) {
@@ -72,10 +72,11 @@ public class Pack {
 			}
 		}
 
-		if (info.wordList && !info.strictlyWordlist) { //When strict, wordlist is not exported, only examples (with words)
+		if (info.wordList && !info.strictlyWordlist) {
+			//When strict, wordlist is not exported, only examples (with words)
 			d2c.exportWordsToCrowd(info.wordList)
 		}
-		
+
 
 		cfgHelper.extraLookupFolders.remove(pkgFile)
 	}
@@ -99,29 +100,35 @@ public class Pack {
 			println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
 	}
-	
-	
-	@CompileDynamic
-	void exportFirst1000(Data2Crowd d2c) {
+
+
+
+	void findFirst1000() {
+		PackInfo info = pkgsByName(first100)?.first()
+		assert info : "$first100 pkg not found"
+		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		//Words from the whole db without words from any package
 		Set<String> pkgWords = wordsFromAllPackages()
-		Set<String> wordsToExport = d2c.dbMan.db.concepts.findAll { Concept c->
-			if (c.state == 'ignore') return false
-			return !pkgWords.contains(c.firstTerm)
-		} .collect {it.firstTerm}
-		
+
+		Set<String> wordsToExport = d2c.dbMan.db.concepts
+				.findAll { Concept c->
+					if (c.state == 'ignore') return false
+					return !pkgWords.contains(c.firstTerm)
+				}
+				.collect {it.firstTerm}
+				.toSet()
+
+
 		wordsToExport.each {println it}
 		//d2c.info.@$wordList = wordsToExport as List<String>
-		//Example candidates. Any example from db which contains a word-to-export 
+		//Example candidates. Any example from db which contains a word-to-export
 		List<String> exCand = wordsToExport
-			.collect {d2c.dbMan.examplesByFirstTermWords[it].collect{it.firstTerm}}
-			.flatten()
-			.toUnique()
+				.collect {d2c.dbMan.examplesByFirstTermWords[it].collect{it.firstTerm}}
+				.flatten()
+				.toUnique() as List<String>
 		exCand.each {println it}
 		//Compose the "sentences.txt"
 		//d2c.info.@$sentences= exCand.join("\n")
-		
-		
 	}
 
 	static Pack buildFromRootPath(Path path) {
@@ -154,20 +161,20 @@ public class Pack {
 
 		println "Done"
 	}
-	
+
 	public List<PackInfo>  pkgsByName(String name) {
 		allPackInfos.findAll {it.treeConf.name.containsIgnoreCase(name)}
 	}
-	
-	
+
+
 	public exportByName(String name) {
 		export(pkgsByName(name))
 	}
-	
+
 	Set<String> wordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collect {it.allWords}.flatten().sort() as Set<String>
 	}
-	
+
 	@CompileDynamic
 	List<String> sentencesFromAllPackages(List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collect {wn.sentences(it.sentences)}.flatten().toUnique().sort()
@@ -175,12 +182,12 @@ public class Pack {
 
 
 	public static void main(String[] args) {
-		new Pack().tap { Pack p->			
+		new Pack().tap { Pack p->
 
-			
-			p.exportByName("Uncommon")
+
+			//p.exportByName("Uncommon")
+			findFirst1000()
 		}
 		println "Done"
-
 	}
 }

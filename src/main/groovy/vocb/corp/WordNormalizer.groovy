@@ -7,13 +7,14 @@ import java.util.stream.Stream
 
 import org.apache.commons.collections4.queue.CircularFifoQueue
 
+import groovy.transform.CompileStatic
 import vocb.Helper
 
 
 public class WordNormalizer {
 
 	int minLenght = 2
-	int maxLenght = 15
+	int maxLenght = 20
 
 	//Treat non-letter or non-digit as a space. Except single quote
 	@Lazy Pattern spacesPattern = ~ /[^\p{L}']+/
@@ -42,9 +43,25 @@ public class WordNormalizer {
 	}
 
 	public List<String> wordVariants(String s) {
-		//if (s.endsWith('es')) return [s, s[0..-3]] //Remove 'es'
+		//if (s.endsWith('es')) return [s, s[0..-3]] //Remove 'es'			
 		if (s.endsWith('s')) return [s, s[0..-2]] //Remove 's'
 		return [s, "${s}s" as String] //Add 's'
+	}
+	
+	public String swapPluralSingular(String s) { //Removes or adds 's'
+		if (s.endsWith('s')) return s[0..-2]
+		return "${s}s" as String //Add 's'
+	}
+	
+	@CompileStatic
+	public String swapCapitalFirstLetter(String s) {
+		Character first = s[0] as Character
+		if (Character.isUpperCase(first)) {
+			first = Character.toLowerCase(first)
+		} else {
+			first = Character.toUpperCase(first)
+		}
+		return "$first${s[1..-1]}" as String
 	}
 
 

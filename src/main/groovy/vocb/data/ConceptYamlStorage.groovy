@@ -14,7 +14,7 @@ public class ConceptYamlStorage {
 	//.addConverter(Optional) { value -> value.orElse('UNKNOWN') } // Custom converter for given type defined as Closure.
 	.build()
 	
-	 ValidationProfile vp = ValidationProfile.defaultProfile
+	 ValidationProfile vp = ValidationProfile.strict
 
 
 

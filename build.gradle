@@ -10,7 +10,7 @@ mainClassName = "vocb.appenders.BingImageAppender"
 project.ext.groovyVersion='3.0.7'
 
 wrapper {
-	gradleVersion = '6.8.3'
+	gradleVersion = '7.3.3'
 }
 
 repositories {
@@ -31,7 +31,7 @@ test {
 		showStackTraces = true              // Show full stack traces in the console.
 		exceptionFormat = "full"
 		events "passed", "skipped", "failed", "standardError"
-		} //Pring simple test results also to console
+	} //Pring simple test results also to console
 }
 
 task(renderTemplate, dependsOn: 'classes', type: JavaExec) {
