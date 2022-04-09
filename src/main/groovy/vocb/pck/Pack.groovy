@@ -31,8 +31,8 @@ public class Pack {
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
 
 
-	ConfHelper cfgHelper = new ConfHelper()
-	@Lazy ConfigObject cfg = cfgHelper.config
+	//ConfHelper cfgHelper = new ConfHelper()
+	//@Lazy ConfigObject cfg = cfgHelper.config
 
 	@Lazy
 	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
@@ -60,7 +60,7 @@ public class Pack {
 	void doExport(PackInfo info) {
 		assert info
 		File pkgFile = info.treeConf.path.toFile()
-		
+		ConfHelper cfgHelper = new ConfHelper()
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		PackExport pe = new PackExport(dbMan: d2c.dbMan, info:info)
 		cfgHelper.extraLookupFolders.add(pkgFile)
@@ -69,6 +69,7 @@ public class Pack {
 	}
 	
 	@Deprecated
+	@CompileDynamic
 	void doExportOld(PackInfo info) {
 		assert info
 		File pkgFile = info.treeConf.path.toFile()
@@ -94,6 +95,7 @@ public class Pack {
 	}
 
 	@Deprecated
+	@CompileDynamic
 	void collectSentencesForExport(String text, Manager dbMan, LinkedHashSet<Example> exportExamples ) {
 		assert text
 		dbMan.withBestExample(text) { Example e, String sen, Set<String> com, Set<String> mis->
@@ -120,6 +122,7 @@ public class Pack {
 		PackInfo info = pkgsByName(first100)?.first()
 		
 		assert info : "$first100 pkg not found"
+		ConfHelper cfgHelper = new ConfHelper()
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		//Words from the whole db without words from any package
 		Set<String> pkgWords = wn.lemming(wordsFromAllPackages(allPackInfos - info).stream())
