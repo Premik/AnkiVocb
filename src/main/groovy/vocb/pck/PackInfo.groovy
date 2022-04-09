@@ -24,25 +24,38 @@ public class PackInfo {
 	
 	TreeConf treeConf	
 	Object pack
+	//Pack pack //LinkageError error. Pack is loaded with GroovyCl, PackInfo with RootCl
 		
 	@Lazy Path sentencesPath = treeConf.path.resolve("sentences.txt")
 	@Lazy Path wordsPath= treeConf.path.resolve("words.txt")
 	
+	public WordNormalizer getWn() { pack?.wn}
 	
-	@Lazy String sentences = {
+	
+	@Lazy String sentencesText = {
 		if (!Files.exists(sentencesPath)) return ""
 		return sentencesPath.text
 	}()
+	
+	
+	List<String> getSentences()  { wn.sentences(sentencesText) }
 	
 	@Lazy List<String> wordList = {
 		if (!Files.exists(wordsPath)) return [] as List<String>
 		return wordsPath.text.split(/\s+/) as List<String>
 	}()
 	
-	@Lazy Set<String> allWords = {	
-		WordNormalizer wn = pack.wn		
-		wn.wordsInSentences(sentences).keySet().plus(wordList).sort() as Set<String> 
+	@Lazy Set<String> allSentenceWords = {	
+		wn.wordsInSentences(sentencesText).keySet().sort() as Set<String>
 	}()
+		
+	@Lazy Set<String> allWords = {	
+		allSentenceWords + wordList 
+	}()
+	
+	
+	
+	
 	
 		
 	@Lazy Path destPath = {

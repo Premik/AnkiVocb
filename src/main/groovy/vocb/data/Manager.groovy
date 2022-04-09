@@ -427,7 +427,7 @@ public class Manager {
 		} as LinkedHashSet
 		return cand.max { Example e->
 			//Example covering the most words in the give sentence
-			//prefer shorted examples
+			//prefer shorter examples
 			wn.commonWordOf(e.firstTerm, sentence).size()*100 - e.firstTerm.length()
 		}
 	}
