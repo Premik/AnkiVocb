@@ -7,6 +7,7 @@ import java.util.stream.Stream
 
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
+import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.Manager
@@ -24,6 +25,7 @@ public class PackExport {
 	Manager dbMan
 	PackInfo info
 	LinkedHashSet<Example> examplesToExport = [] as LinkedHashSet
+	WordNormalizer wn = new WordNormalizer()
 
 	void collectSentencesForExport(String text) {
 		assert text
@@ -66,8 +68,11 @@ public class PackExport {
 		if (!info?.wordList ||info.strictlyWordlist) return Stream.empty()
 		assert dbMan
 		info.wordList.stream().map { String w->
-			Concept c =dbMan.conceptByFirstTerm[w]
-			if (c == null) println "Concept not found for word:'${color(w, BOLD)}'"
+			//Concept c =dbMan.conceptByFirstTerm[w]
+			Concept c = wn.wordVariants(w).collect {String wv->dbMan.conceptByFirstTerm[wv]}.find()
+			
+			//if (c == null) println "Concept not found for word:'${color(w, BOLD)}'"
+			assert c : "Concept not found for word:'${color(w, BOLD)}'"
 			return c
 		}
 		.filter {it!=null}

@@ -296,9 +296,9 @@ public class Manager {
 
 
 
-	public void validate() {
+	public void validate(ValidationProfile vp=ValidationProfile.defaultProfile) {
 
-		db.validate(ValidationProfile.defaultProfile).each {println it}
+		db.validate(vp).each {println it}
 		Map<CharSequence, Set<Concept>> cGrp = groupConceptsByMedia()
 		Map<CharSequence, Set<Term>> tGrp = groupCTermsByMedia()
 
