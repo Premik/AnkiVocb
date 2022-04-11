@@ -82,12 +82,12 @@ public class PackOld {
 					]
 				}
 				.findAll()
-				.findAll {it.state != 'ignore'}
+				.findAll {!it.ignore}
 				.minus(c)
 	}
 
 	void exportByOrigin(String origin) {
-		export.addAll(dbMan.conceptsByOrigin[origin].findAll {it.state != 'ignore'} )
+		export.addAll(dbMan.conceptsByOrigin[origin].findAll {!it.ignore} )
 	}
 
 	void filterByStars(List<Integer> starsToTake) {
@@ -136,7 +136,7 @@ public class PackOld {
 		Set<String> words = wn.uniqueueTokens(example)
 		dbMan.conceptByFirstTerm
 				.subMap(words)
-				.findAll{ String word, Concept c-> c.state != "ignore" }
+				.findAll{ String word, Concept c-> !c.ignore }
 				.findAll{ String word, Concept c->
 					includeNonExported || export.contains(c)
 				}

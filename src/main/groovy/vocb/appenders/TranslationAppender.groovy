@@ -27,7 +27,7 @@ public class TranslationAppender {
 
 		dbMan.load()
 		List<Concept> noCs = dbMan.db.concepts.findAll {
-			it.terms && it.state!="ignore" && (!it.termsByLang("cs"))
+			it.terms && !it.ignore && (!it.termsByLang("cs"))
 		}
 		int i = 0
 		for (Concept c in noCs) {

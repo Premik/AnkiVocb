@@ -5,7 +5,7 @@ import groovy.transform.Canonical
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
 
-@ToString(includePackage=false, ignoreNulls=true)
+@ToString(includePackage=false, ignoreNulls=true, includes=['name'])
 @AutoClone
 @CompileStatic
 public class ValidationProfile {
@@ -23,8 +23,9 @@ public class ValidationProfile {
 	}
 	
 	public static ValidationProfile currentDefaultProfile =  strict
+	public static ValidationProfile testDefaultProfile =  currentDefaultProfile.clone().tap {name="testProfile" }
 
-	public static final Map<String, ValidationProfile> PredefinedProfiles = [strict, strictNoImg, relax].collectEntries {
+	public static final Map<String, ValidationProfile> PredefinedProfiles = [strict, strictNoImg, relax, ignore, testDefaultProfile].collectEntries {
 		[(it.name): it]
 	}
 
@@ -40,8 +41,6 @@ public class ValidationProfile {
 		return this == currentDefaultProfile
 	}
 	
-	public boolean isIgnore() {
-		name == "ignore"
-	}
+	
 		
 }

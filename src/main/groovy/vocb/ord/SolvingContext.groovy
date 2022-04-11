@@ -32,7 +32,7 @@ public class SolvingContext {
 
 	/*@Lazy List<Concept> initialSelection = {
 		assert dbMan
-		dbMan.db.concepts.findAll{ it.state != "ignore"}
+		dbMan.db.concepts.findAll{ !it.ignore}
 	}()*/
 	
 	List<Concept> initialSelection = []
