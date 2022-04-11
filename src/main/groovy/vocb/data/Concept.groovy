@@ -25,7 +25,14 @@ public class Concept extends TermContainer  {
 		if (!profileName) return ValidationProfile.currentDefaultProfile
 		assert ValidationProfile.PredefinedProfiles[profileName]
 		return ValidationProfile.PredefinedProfiles[profileName]
-		
+	}
+	
+	public boolean isIgnore() {
+		validationProfile.ignore
+	}
+	
+	public boolean isNoImg() {
+		!validationProfile.img
 	}
 
 	@Override

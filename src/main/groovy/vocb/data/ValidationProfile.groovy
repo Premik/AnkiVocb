@@ -21,6 +21,7 @@ public class ValidationProfile {
 		requiredNativeTerm = false
 		validateTerms = false		
 	}
+	
 	public static ValidationProfile currentDefaultProfile =  strict
 
 	public static final Map<String, ValidationProfile> PredefinedProfiles = [strict, strictNoImg, relax].collectEntries {
@@ -38,4 +39,9 @@ public class ValidationProfile {
 	public boolean isDefaultProfile() {
 		return this == currentDefaultProfile
 	}
+	
+	public boolean isIgnore() {
+		name == "ignore"
+	}
+		
 }
