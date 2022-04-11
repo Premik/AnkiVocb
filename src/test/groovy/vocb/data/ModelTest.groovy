@@ -16,7 +16,11 @@ class ModelTest {
 		 terms.addAll([t1, t2, t3])
 	}
 	
-	
+	@Test validationProfileBasic() {
+		assert ValidationProfile.currentDefaultProfile.isDefaultProfile()
+		assert !ValidationProfile.strict.isDefaultProfile() || !ValidationProfile.relax.isDefaultProfile()
+		
+	}
 	
 	@Test constrHelper() {
 		assert t1 == t1

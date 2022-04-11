@@ -11,6 +11,7 @@ public class Concept extends TermContainer  {
 
 
 	String state
+	String profileName
 	String img
 	BigDecimal freq
 
@@ -19,10 +20,20 @@ public class Concept extends TermContainer  {
 	/*public Term getEnTerm() {
 	 termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
 	 }*/
+	
+	public ValidationProfile getValidationProfile() {
+		if (!profileName) return ValidationProfile.currentDefaultProfile
+		assert ValidationProfile.PredefinedProfiles[profileName]
+		return ValidationProfile.PredefinedProfiles[profileName]
+		
+	}
 
 	@Override
 	public List<String> validate(ValidationProfile vp ) {
-		assert vp
+		if (!validationProfile.isDefaultProfile()) {
+			//Local profile overrides the provided one, unless the local one is the default
+			vp = validationProfile 
+		}
 		List<String> ret = super.validate(vp)
 		if (state == "ignore") return ret
 		if (!terms) {
