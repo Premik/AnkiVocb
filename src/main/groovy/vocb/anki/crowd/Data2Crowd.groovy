@@ -8,6 +8,7 @@ import java.nio.file.Paths
 import java.util.regex.Pattern
 import java.util.stream.Stream
 
+import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import vocb.Helper
 import vocb.conf.ConfHelper
@@ -19,7 +20,7 @@ import vocb.pck.ExportItem
 import vocb.pck.PackInfo
 import vocb.template.Render
 
-//@CompileStatic
+@CompileStatic
 public class Data2Crowd {
 
 	ConfHelper cfgHelper = ConfHelper.instance
@@ -110,6 +111,7 @@ public class Data2Crowd {
 		return mediaLink
 	}
 
+	@CompileDynamic
 	String mapSndField(Term s, String pfx = "") {
 		if (!s) return null
 		Path srcPath = resolveMediaLink(s.tts)
@@ -121,6 +123,7 @@ public class Data2Crowd {
 		return Helper.sndField(trg, !cfg.useRawNoteFields);
 	}
 
+	@CompileDynamic
 	String mapImgField(String s, String pfx = "") {
 		Path srcPath = resolveMediaLink(s)
 		if (!srcPath) return null
@@ -131,6 +134,7 @@ public class Data2Crowd {
 	}
 
 
+	@CompileDynamic
 	void concept2CrowdNote(Concept c, Example e, Note n) {
 		assert info
 		assert c?.firstTerm
@@ -185,6 +189,7 @@ public class Data2Crowd {
 		mapConcept(ei.concept, ei.example)
 	}
 
+	@CompileDynamic
 	NoteModel renderCardTemplate(ConfigObject renderCardTemplate, NoteModel targetM = vocbModel.noteModel) {
 		targetM.css = render.render(renderCardTemplate.css)
 
@@ -208,12 +213,14 @@ public class Data2Crowd {
 		return targetM
 	}
 
+	@CompileDynamic
 	void renderDeckDescriptionTemplate(ConfigObject deckDescriptionPreview = cfg.render.deckDescriptionRender) {		
 		assert deckDescriptionPreview
 		vocbModel.parser.deckDesc = render.render(deckDescriptionPreview)
 	}
 
 
+	@CompileDynamic
 	private void prepareVocbModel() {
 
 		String pfx = cfg.packageRootPrefix?:"Vocb::"

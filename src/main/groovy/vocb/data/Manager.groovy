@@ -74,11 +74,15 @@ public class Manager {
 		return pad
 	}
 
-	public Concept findConceptByFirstTermAnyVariant(String firstTerm) {
-		wn.wordVariants(wn.stripBracketsOut(firstTerm))
-				.collect {conceptByFirstTerm[it] }
-				.find()
+	public Concept findConceptByFirstTermAnyVariant(String firstTerm, boolean preferOrigialWord=true) {
+		List<String> variants = wn.wordVariants(wn.stripBracketsOut(firstTerm))
+		if (preferOrigialWord) {
+			//The exact word first, only when not found try to find variants
+			variants.push(firstTerm)
+		}
+		variants.collect {conceptByFirstTerm[it] }.find()
 	}
+
 
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
@@ -282,10 +286,10 @@ public class Manager {
 		db.examplesByLang("en").each {Term t ->
 			wn.uniqueueTokens(t.term).each { String word->
 				assert lang == "en" : "not implemented"
-				Concept c = wn.wordVariants(word).collect {String w->conceptByFirstTerm[w]}.find()
-				
+				Concept c = findConceptByFirstTermAnyVariant(word)
+
 				if (!c && !word.contains("'")) {
-				//if (!c) {
+					//if (!c) {
 					println "${color('Unknown term', YELLOW)} ${color(word, BOLD)} used in the ${color(t.term, BLUE)} example."
 				}
 				ret[word].add(c)
@@ -293,6 +297,8 @@ public class Manager {
 		}
 		return ret
 	}
+
+
 
 
 
