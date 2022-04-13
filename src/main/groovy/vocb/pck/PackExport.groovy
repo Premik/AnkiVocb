@@ -1,9 +1,16 @@
 package vocb.pck
 
 import static vocb.Ansi.*
+
+import java.util.stream.Collectors
 import java.util.stream.Stream
+
+import org.codehaus.groovy.runtime.MethodClosure
+
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
+import vocb.anki.crowd.Data2Crowd
+import vocb.conf.ConfHelper
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Example
@@ -17,10 +24,19 @@ includePackage=false
 @CompileStatic
 public class PackExport {
 
-	Manager dbMan
+
 	PackInfo info
 	LinkedHashSet<Example> examplesToExport = [] as LinkedHashSet
 	WordNormalizer wn = new WordNormalizer()
+	Data2Crowd data2crowd
+
+	Manager getDbMan() {
+		data2crowd?.dbMan
+	}
+
+	ConfHelper getConfHelper() {
+		data2crowd?.cfgHelper
+	}
 
 	void collectSentencesForExport(String text) {
 		assert text
@@ -80,4 +96,15 @@ public class PackExport {
 	Stream<ExportItem> export() {
 		Stream.concat(sentencesExport(), wordListExport())
 	}
+
+	@Lazy
+	Set<String> exportedWords = {
+		MethodClosure mc = LinkedHashSet.&new as MethodClosure
+		export().map { ExportItem ei->
+			ei.concept.firstTerm
+		}		
+		.collect(Collectors.toCollection(mc)) as Set<String>
+		 
+		
+	}()
 }

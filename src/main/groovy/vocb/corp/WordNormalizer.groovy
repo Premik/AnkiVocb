@@ -61,7 +61,7 @@ public class WordNormalizer {
 
 	public String swapPluralSingular(String s) {
 		//Removes or adds 's'
-		if (s.endsWith('s')) return s[0..-2]
+		if (s.endsWith('s')) return s[0..<-1]
 		return "${s}s" as String //Add 's'
 	}
 
