@@ -11,13 +11,24 @@ class WordNormalizerTest {
 	@Test
 	void simple() {
 		List<String> t =  norm.tokens("123 aaa bbb fooBar a123 mm_word").collect(Collectors.toList())
-		assert t == ["aaa", "bbb", "foobar", "mm", "word"]
+		assert t == [
+			"aaa",
+			"bbb",
+			"foobar",
+			"mm",
+			"word"
+		]
 	}
 
 	@Test
 	void ampersand() {
 		List<String> t = norm.tokens("That's 'cause you're young").collect(Collectors.toList())
-		assert t == ["that's", "'cause", "you're", "young"]
+		assert t == [
+			"that's",
+			"'cause",
+			"you're",
+			"young"
+		]
 	}
 
 
@@ -97,16 +108,33 @@ class WordNormalizerTest {
 
 	@Test
 	void lemm() {
-		LinkedHashSet exp = ['hello', 'hellos', 'helloed', 'Hello', 'Hellos', 'Helloed', 'world', 'worlds', 'worlded', 'World', 'Worlds', 'Worlded'] as LinkedHashSet
+		LinkedHashSet exp = [
+			'hello',
+			'hellos',
+			'helloed',
+			'helloing',
+			'Hello',
+			'Hellos',
+			'Helloed',
+			'Helloing',
+			'world',
+			'worlds',
+			'worlded',
+			'worlding',
+			'World',
+			'Worlds',
+			'Worlded',
+			'Worlding',
+		] as LinkedHashSet
 		assert norm.uniqueueTokens("Hello world!", true) == exp
 	}
-	
+
 	@Test
 	void variants() {
-		assert norm.wordVariants("cats") as Set == "cat cats catsed Cat Cats Catsed".split() as Set
-		assert norm.wordVariants("cat") as Set == "cat cats cated Cat Cats Cated".split() as Set
-		assert norm.wordVariants("Cat") as Set ==  "cat cats cated Cat Cats Cated".split() as Set
-		assert norm.wordVariants("look") as Set ==  "look looks looked Look Looks Looked".split() as Set
+		assert norm.wordVariants("cats") as Set == "cat cats catsed catsing Cat Cats Catsed Catsing".split() as Set
+		assert norm.wordVariants("cat") as Set == "cat cats cated cating Cat Cats Cated Cating".split() as Set
+		assert norm.wordVariants("Cat") as Set ==  norm.wordVariants("cat") as Set
+		assert norm.wordVariants("look") as Set ==  "look looks looked looking Look Looks Looked Looking".split() as Set
 		//assert norm.wordVariants("antiquities") as Set == "cat cats".split() as Set
 	}
 
