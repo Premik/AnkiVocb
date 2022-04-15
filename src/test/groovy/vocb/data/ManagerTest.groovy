@@ -17,23 +17,30 @@ class ManagerTest {
 	
 	Manager m = new Manager(defaultStoragePath: tempDir )
 
-	Term t1 = new Term("apple", "en")
-	Term t2 = new Term("jablko", "cs")
-	Term s1 = new Term("Apple helps.", "en")
-	Term s2 = new Term("Jablko pomáhá", "cs")
-	Concept c = new Concept(state: "state", img:"", freq:1.1d, location: m.defaultConceptsLocation).tap {
-		terms.addAll([t1, t2])
+	Term t1En = new Term("apple", "en")
+	Term t1Cs = new Term("jablko", "cs")
+	Term s1En = new Term("Apple helps.", "en")
+	Term s1Cs = new Term("Jablko pomáhá", "cs")
+	Concept c1 = new Concept(state: "state", img:"", freq:1.1d, location: m.defaultConceptsLocation).tap {
+		terms.addAll([t1En, t1Cs])
 	}
 	
-
-	Example e= new Example().tap {
-		terms.addAll([s1,s2])		
+	Example e1= new Example().tap {
+		terms.addAll([s1En,s1Cs])		
 	}
+	
+	Term t2En = new Term("I'm (I am)", "en")
+	Term t2Cs = new Term("Já jsem (zkráceně)", "cs")	
+	Concept c2 = new Concept(location: m.defaultConceptsLocation).tap {
+		terms.addAll([t2En, t2Cs])
+	}
+	
+	
 	
 
 	@Test
 	void addData() {
-		m.db.concepts.add(c)
+		m.db.concepts.addAll([c1, c2])
 		m.save()
 		//m.load()
 		Path cp1 = m.defaultConceptsLocation.storagePath
@@ -86,11 +93,12 @@ class ManagerTest {
 
 	@Test
 	void indexTest() {
-		m.db.concepts.add(c)
-		m.db.examples.add(e)
+		m.db.concepts.addAll([c1, c2])
+		m.db.examples.add(e1)
 		m.reindex()
-		assert m.conceptByFirstTerm["apple"] == c
+		assert m.conceptByFirstTerm["apple"] == c1
 		assert m.conceptsByEnWordsInSample
-		assert m.conceptsByEnWordsInSample["apple"].contains(c)
+		assert m.conceptsByEnWordsInSample["apple"].contains(c1)
+		
 	}
 }

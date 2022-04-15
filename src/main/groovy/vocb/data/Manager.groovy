@@ -43,8 +43,9 @@ public class Manager {
 	Map<String, Set<Concept>> conceptsByEnWordsInSample = [:]
 
 	Map<String, Set<Example>> examplesByFirstTermWords = [:]
-
-
+	
+	//Map<String, Concept> multiWordconceptByFirstTerm = [:]
+	
 	List<Concept> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
@@ -86,13 +87,15 @@ public class Manager {
 		}
 		variants.findResults {conceptByFirstTerm[it] }
 	}
-
+	
+	
 
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
 		conceptsByTerm = [:].withDefault {[] as LinkedHashSet}
 		conceptsByStar = [:].withDefault {[] as LinkedHashSet}
 		examplesByFirstTermWords = [:].withDefault {[] as LinkedHashSet}
+		//multiWordconceptByFirstTerm = [:] as HashMap 
 
 
 		ignoreConcepts.clear()
@@ -107,6 +110,7 @@ public class Manager {
 			}
 			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
 			if (c.ignore) ignoreConcepts.add(c)
+		
 		}
 
 		db.examples.each { Example e->
@@ -116,6 +120,8 @@ public class Manager {
 		}
 
 		conceptsByEnWordsInSample = conceptsByWordsInSample()
+		
+		
 	}
 
 	void withTerms(boolean includeExamples=false, Closure cl) {

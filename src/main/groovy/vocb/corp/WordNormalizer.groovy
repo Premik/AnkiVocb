@@ -47,8 +47,8 @@ public class WordNormalizer {
 		[
 			swapPluralSingular(cap),
 			swapPluralSingular(s),
-			swapEd(cap),
-			swapEd(s),
+			*edVariants(cap),
+			*edVariants(s),
 			cap,
 			s
 		]
@@ -79,9 +79,11 @@ public class WordNormalizer {
 		return "$first${s[1..-1]}" as String
 	}
 	
-	public String swapEd(String s) {
-		if (s.endsWith('ed')) return s[0..<-2]
-		return "${s}ed" as String
+	public List<String> edVariants(String s) {
+		//Drop 'ed' and just 'd'		
+		if (s.endsWith('ed')) return [s[0..<-2] as String, s[0..<-1] as String] 
+		if (s.endsWith('e')) return ["${s}d" as String]
+		return ["${s}ed" as String]
 	}
 
 
