@@ -47,6 +47,8 @@ public class WordNormalizer {
 		[
 			swapPluralSingular(cap),
 			swapPluralSingular(s),
+			swapEd(cap),
+			swapEd(s),
 			cap,
 			s
 		]
@@ -75,6 +77,11 @@ public class WordNormalizer {
 		}
 		if (s.length() ==1) return first
 		return "$first${s[1..-1]}" as String
+	}
+	
+	public String swapEd(String s) {
+		if (s.endsWith('ed')) return s[0..<-2]
+		return "${s}ed" as String
 	}
 
 

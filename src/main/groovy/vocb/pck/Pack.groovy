@@ -15,6 +15,7 @@ import vocb.Helper
 import vocb.anki.crowd.Data2Crowd
 import vocb.conf.ConfHelper
 import vocb.conf.TreeConf
+import vocb.corp.Corpus
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Example
@@ -78,18 +79,27 @@ public class Pack {
 				.collectMany {pkgsByName(it)}
 				.findAll()
 				.collect {packExportOf(it)}
-				.collectMany { it.exportedWords } as LinkedHashSet				
-				
+				.collectMany { it.exportedWords } as LinkedHashSet
 	}
 
 
+
 	void findFirst1000() {
-		Set<String> includeWords = exportedWordsFromAllPackages()
-		Set<String> exlucedWords = exportedWordsOf(first100, "Supa")		
+		Set<String> top = Corpus.buildDef().topX(1000) as LinkedHashSet		
+		PackExport pe =  packExportOf(pkgsByName("First1000").first())
+		Manager dbMan = pe.dbMan
+		assert !(new HashSet(top).removeAll(dbMan.conceptByFirstTerm.keySet()))
+
 		println "-"*100
 
-		
-		
+		File f = new File("/tmp/work/First1000.txt")
+		if (f.exists()) {
+			f.delete()
+		}
+		top.each {
+			//f <<"$it\n"
+			println it
+		}
 	}
 
 	/*Stream<String> wordsFromPackages(List<PackInfo> infos) {
@@ -107,10 +117,10 @@ public class Pack {
 		def l = exportedWordsOf("Basic") - exportedWordsOf("Simple")
 		//def l = exportedWordsOf("BasicWords")
 		println l
-		 l.each {
-			
+		l.each {
+
 			new File("/tmp/work/BasicWordsNoSimple.txt") <<"$it\n"
-		 } 
+		}
 	}
 
 
@@ -161,18 +171,18 @@ public class Pack {
 		export(pkgsByName(name))
 	}
 
-	
+
 	Set<String> exportedWordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collect {packExportOf(it)}
 		.collectMany { it.exportedWords }
-		.toSet()		
+		.toSet()
 	}
-	
+
 	Set<String> wordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collectMany {it.allWords}.toSet()
 	}
-	
-	
+
+
 	@Deprecated
 	List<PackInfo> findAllPacksWithAnyWord(List<PackInfo> pkgInfos = allPackInfos, Closure wordFilter) {
 		pkgInfos.findAll { PackInfo pi->
@@ -199,10 +209,10 @@ public class Pack {
 
 
 
-			//p.exportByName("Simple")
-			//findFirst1000()
+			//p.exportByName("BasicWords")
+			findFirst1000()
 			//p.export()
-			findBasicWords()
+			//findBasicWords()
 		}
 		println "Done"
 	}
