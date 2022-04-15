@@ -13,7 +13,7 @@ public class AwsCliPollyTTS {
 	TTSTextMod empMod = new TTSTextMod(speedChange: -2, volumeChange: 1 ) //Emphasis even slower and louder
 	TTSConf defaultConf = new TTSConf( engine:'standard', voiceId:"Emma")
 
-	Process synth(String text, String engine='standard', String voiceId="Emma", String textType="text", String outFile="/tmp/work/1.mp3") {
+	Process synth(String text, String engine='neural', String voiceId="Emma", String textType="text", String outFile="/tmp/work/1.mp3") {
 		assert engine
 		assert voiceId
 		assert outFile
@@ -69,9 +69,10 @@ public class AwsCliPollyTTS {
 
 	static void main(String... args) {
 		AwsCliPollyTTS tts = new AwsCliPollyTTS()
-		Process p = tts.synth("Hello world")
-		p.waitFor(5, TimeUnit.SECONDS)
+		Process p = tts.synth("Hello world", "neural", "Aria" )
 		Helper.printProcOut(p)
+		p.waitFor(5, TimeUnit.SECONDS)
+		//Ayanda
 		//ssml
 
 		/*

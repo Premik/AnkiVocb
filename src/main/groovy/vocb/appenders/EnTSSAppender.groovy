@@ -16,7 +16,7 @@ import static vocb.Ansi.*
 
 public class EnTSSAppender {
 
-	String[] voices = ["Emma", "Amy", "Brian", "Joanna", "Matthew"]
+	String[] voices = ["Emma", "Amy", "Brian", "Joanna", "Matthew", "Joey", "Kimberly", "Ayanda", "Olivia", "Aria"]
 	int voiceCounter = 0
 	int limit = 5
 	int sleep = 1000
