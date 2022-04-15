@@ -22378,7 +22378,7 @@ concepts:
   - term: nanejvýš
     lang: cs
   profileName: relax
-##  sit   ################################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  sit   ################################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: sit
     lang: en
@@ -22387,16 +22387,18 @@ concepts:
     lang: cs
   - term: sednout
     lang: cs
+  img: img/sit.jpeg
   freq: 119701.00000
-##  provide   ############################################################### no img|t0:pron:missing|t1:tts:missing
+##  provide   ############################################################### t0:pron:missing|t1:tts:missing
 - terms: 
   - term: provide
     lang: en
     tts: en-terms/provide.mp3
   - term: poskytnout
     lang: cs
+  img: img/provide.jpeg
   freq: 119226.00000
-##  general   ############################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  general   ############################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: general
     lang: en
@@ -22405,8 +22407,9 @@ concepts:
     lang: cs
   - term: generální
     lang: cs
+  img: img/general.jpeg
   freq: 118867.00000
-##  common   ################################################################ no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  common   ################################################################ t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: common
     lang: en
@@ -22415,8 +22418,9 @@ concepts:
     lang: cs
   - term: běžný
     lang: cs
+  img: img/common.jpeg
   freq: 118000.00000
-##  character   ############################################################# no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  character   ############################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: character
     lang: en
@@ -22425,22 +22429,25 @@ concepts:
     lang: cs
   - term: charakter
     lang: cs
+  img: img/character.jpeg
   freq: 117893.00000
-##  political   ############################################################# no img|t0:pron:missing|t1:tts:missing
+##  political   ############################################################# t0:pron:missing|t1:tts:missing
 - terms: 
   - term: political
     lang: en
     tts: en-terms/political.mp3
   - term: politický
     lang: cs
+  img: img/political.jpeg
   freq: 117424.00000
-##  Paris   ################################################################# no img|t0:pron:missing|t1:tts:missing
+##  Paris   ################################################################# t0:pron:missing|t1:tts:missing
 - terms: 
   - term: Paris
     lang: en
     tts: en-terms/Paris.mp3
   - term: Paříž
     lang: cs
+  img: img/Paris.jpeg
   freq: 116402.00000
 ##  probably   ############################################################## no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
