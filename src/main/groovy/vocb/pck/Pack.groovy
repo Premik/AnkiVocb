@@ -104,12 +104,12 @@ public class Pack {
 
 
 	void findBasicWords() {
-		//def l = exportedWordsOf("Basic") - exportedWordsOf("Simple")
-		def l = exportedWordsOf("SimpleWords")
+		def l = exportedWordsOf("Basic") - exportedWordsOf("Simple")
+		//def l = exportedWordsOf("BasicWords")
 		println l
 		 l.each {
 			
-			new File("/tmp/work/1.txt") <<"$it\n"
+			new File("/tmp/work/BasicWordsNoSimple.txt") <<"$it\n"
 		 } 
 	}
 
@@ -199,7 +199,7 @@ public class Pack {
 
 
 
-			//p.exportByName("a")
+			//p.exportByName("Simple")
 			//findFirst1000()
 			//p.export()
 			findBasicWords()
