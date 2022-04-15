@@ -99,7 +99,7 @@ public class EnTSSAppender {
 		new EnTSSAppender().with {
 			limit = 50
 			runTerms()
-			runExamples()
+			//runExamples()
 		}
 		println "Done"
 	}
