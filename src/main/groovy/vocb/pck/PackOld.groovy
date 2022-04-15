@@ -109,7 +109,7 @@ public class PackOld {
 		/*os.runEpoch(5)
 		 lastOrder = os.bestFirst[0]*/
 		lastOrder = os.ctx.createInitialOrder()
-		lastOrder.load(Paths.get("/data/src/AnkiVocb/pkg/JingleBells/order.yaml"))
+		lastOrder.loadYaml(Paths.get("/data/src/AnkiVocb/pkg/JingleBells/order.yaml"))
 		export = lastOrder.ord.collect {ConceptExtra ce ->ce.c } as LinkedHashSet
 	}
 

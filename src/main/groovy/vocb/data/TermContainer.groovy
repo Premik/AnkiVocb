@@ -1,10 +1,12 @@
 package vocb.data
 
+import groovy.transform.AutoClone
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 import vocb.Helper
 
 @EqualsAndHashCode(excludes=["location"])
+@AutoClone
 public abstract class TermContainer  {
 	final List<Term> terms = []
 	protected boolean dirty=true

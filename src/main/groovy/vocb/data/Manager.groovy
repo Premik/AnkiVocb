@@ -69,7 +69,7 @@ public class Manager {
 	}
 
 	public static String starsOf(Concept c, boolean pad=true) {
-		String s = '🟊'*numberOfStars(c)
+		String s = '🟊'*(numberOfStars(c)?:0)
 		if (pad) return s.padRight(10, '  ')
 		return pad
 	}

@@ -1,10 +1,12 @@
 package vocb.corp
 
+import groovy.transform.CompileStatic
 import groovy.transform.Memoized
 import vocb.data.Concept
 import vocb.data.Term
 
 
+@CompileStatic
 public class Similarity {
 
 	//https://stackoverflow.com/questions/10433657/how-to-determine-character-similarity
@@ -17,7 +19,7 @@ public class Similarity {
 	List<String> allSubstringsWithLen(CharSequence s, int len=s.length()) {
 		int count = s.length() - len +1
 		if (count <=0) return []
-		return (0..count-1).collect { s[it..it+len-1] }
+		return (0..count-1).collect { s[it..it+len-1] as String }
 	}
 
 	List<String> allSubstringsOf(CharSequence s) {
@@ -45,7 +47,7 @@ public class Similarity {
 			if (indx==0) return 5*rateDistance(dist) //Match at the start makes words more similar
 			if (indx==1) return 3*rateDistance(dist)
 			return  rateDistance(dist)
-		}.average()
+		}.average() as double
 	}
 
 	double similarWithLen(CharSequence a, CharSequence b, int len) {
@@ -72,7 +74,7 @@ public class Similarity {
 		if (!a || !b) return 0
 		int len = Math.min(a.length() ,b.length())
 		int lenDif = Math.abs(a.length() - b.length())
-		double s = (len..1).collect {similarWithLenSmart(a, b, it)*it }.sum()
+		double s = (len..1).collect {similarWithLenSmart(a, b, it)*it }.sum() as double
 		return s+8*rateDistance(lenDif)
 	}
 
@@ -89,12 +91,14 @@ public class Similarity {
 		return ((ab+ba)/2d).round(4)
 	}
 
+	
 	double termSimilarity(Term t1, Term t2) {
 		if (!t1 || !t2) return 0
 		if (t1.lang != t2.lang) return 0
-		[similar(t1.term, t2.term), 2*similar(t1.pron, t2.pron)].sum()
+		[similar(t1.term, t2.term), 2*similar(t1.pron, t2.pron)].sum() as double
 	}
 
+	
 	double conceptSimilarity(Concept c1, Concept c2) {
 
 		double sum = [
@@ -102,9 +106,10 @@ public class Similarity {
 			termSimilarity(c1.csTerm, c2.csTerm),
 			termSimilarity(c1.csTerm, c2.csAltTerm),
 			termSimilarity(c1.csAltTerm, c2.csAltTerm),
-		].sum()
+		].sum() as double
 	}
 
+	
 	double conceptSimilarityNorm(Concept c1, Concept c2) {
 		conceptSimilarity(c1, c2)/conceptSimilarity(c1, c1)
 
@@ -113,8 +118,8 @@ public class Similarity {
 
 
 	Set<String> commonSubstringsOf(CharSequence a, CharSequence b) {
-		Set<String> aSet = allSubstringsOf(a)
-		Set<String> bSet = allSubstringsOf(b)
+		Set<String> aSet = allSubstringsOf(a) as HashSet<String>
+		Set<String> bSet = allSubstringsOf(b) as HashSet<String>
 		return aSet.intersect(bSet)
 	}
 

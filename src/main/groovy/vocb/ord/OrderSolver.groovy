@@ -10,14 +10,19 @@ import java.util.stream.IntStream
 import java.util.stream.Stream
 
 import groovy.time.TimeCategory
+import groovy.transform.CompileStatic
 import vocb.data.Concept
 import vocb.data.Manager
+import vocb.pck.Pack
 
 
+@CompileStatic
 public class OrderSolver {
 
 	Path dbStoragePath
-	Path partResultPath=Paths.get("/tmp/work/part")
+	Path partResultPath=Paths.get("/tmp/work/part").tap {
+		toFile().mkdirs()
+	}
 	String dbConceptFilename
 
 	List<Concept> initialSelection = []
@@ -38,7 +43,7 @@ public class OrderSolver {
 	}()
 
 
-	int maxPopsize = 5000
+	int maxPopsize = 5000l
 	List<Order> population = new ArrayList(5000)
 	//List<Order> population = new LinkedList()
 	int genNum = 0
@@ -48,9 +53,18 @@ public class OrderSolver {
 	int crossAtOnce=100
 
 	public void initialSelectionFromWordList(Collection<String> wordList) {
-		initialSelection = wordList.collect {
-			Concept c = dbMan.conceptByFirstTerm[it]
-			assert c : "The word $it is not in the concept db"
+		initialSelection = wordList.collect { String w->
+			Concept c = dbMan.conceptByFirstTerm[w]
+			assert c : "The word $w was not found in the concept db"
+			/*if (!c) {
+				Concept vc = dbMan.findConceptByFirstTermAnyVariant(w)
+				assert vc : "The word $w nor any of its variant found in the concept db"
+				println "Creating dummy concept for word '$w' based on the '$vc'"
+				c = vc.clone() as Concept
+				c.ter
+				
+			}*/
+			
 			return c
 		}
 	}
@@ -77,7 +91,7 @@ public class OrderSolver {
 		partResultPath.toFile().eachFile { File f->
 			i++
 			Order o = ctx.createInitialOrder(genNum)
-			o.load(f.toPath())
+			o.loadYaml(f.toPath())
 			population.add(o)
 		}
 		println "Loaded $i winners from previous runs"
@@ -108,7 +122,7 @@ public class OrderSolver {
 		population.addAll(nextGen.collect(Collectors.toList()))
 	}
 
-	void removeWeakest(int count=maxPopsize/4) {
+	void removeWeakest(int count=maxPopsize/4 as int) {
 		//count = Math.min((int)count, (int)(population.size()/2))
 		List<Order> toRemove = bestFirst.reverse().take(count)
 		//println "${population.size()}- ${toRemove.size()}"
@@ -178,13 +192,13 @@ public class OrderSolver {
 				c = o as Concept
 			}
 			String stars = Manager.starsOf(c)
-			String sample = c.examples.values()[0]?.term
+			//String sample = c.examples.values()[0]?.term
 			String term = c.firstTerm.padRight(8)
 
 			String sim = ce?.similarities.findAll{it.value > 0.23}.collect {it.key.firstTerm}.join(" ")
 			if (sim) sim = "<$sim>"
 
-			println "$term $stars $sim $sample "
+			println "$term $stars $sim"
 		}
 
 	}
@@ -196,12 +210,29 @@ public class OrderSolver {
 	//
 	static void main(String... args) {
 		//println "${vocb.ord.OrderSolver.class.hashCode()}"
+		Pack p =new Pack()
+		long previousTime
 		new OrderSolver().tap {
 			dbStoragePath = Paths.get("/data/src/AnkiVocb/db/")
-			//runEpoch()
-			loadInitialSelection(new File("/data/src/AnkiVocb/pkg/JingleBells/order.yaml").newReader())
-
+			//
+			//loadInitialSelection(new File("/data/src/AnkiVocb/pkg/JingleBells/orderSmall.yaml").newReader())
+			initialSelectionFromWordList(p.exportedWordsOf("BasicWords"))
+			previousTime = System.currentTimeMillis();
 			printDetails (ctx.createInitialOrder())
+			println "Similarity caching took: ${(System.currentTimeMillis() - previousTime) / 1000.0}s"
+			
+			previousTime = System.currentTimeMillis();
+			runEpoch(100)
+
+			println "-"*100
+			println "Epoch took: ${(System.currentTimeMillis() - previousTime) / 1000.0}s"
+			printDetails (ctx.createInitialOrder())
+
+			
+			
+			
+			
+		
 			//spawn()
 			//gen.each {println "${it}"}
 			//crossSome()

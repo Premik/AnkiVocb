@@ -207,7 +207,7 @@ public class Order {
 		assert origSize == 0 || ord.findAll().size() == origSize
 	}
 
-	public void load(Path p) {
+	public void loadYaml(Path p) {
 		p.withReader("UTF-8") {			
 			fromRootedYaml(it)
 		}
