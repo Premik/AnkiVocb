@@ -16,7 +16,7 @@ public class FreqAppender {
 
 	Manager dbMan = new Manager()
 	int sleep =500
-	
+
 
 	void run() {
 		dbMan.load()
@@ -26,12 +26,14 @@ public class FreqAppender {
 			if (!c.freq) {
 				c.freq = corp.wordFreq[t.term] //Exact match first
 				if (!c.freq) {
-					c.freq = corp[t.term] //Any variant 
+					c.freq = corp[t.term] //Any variant
+					if(c.freq) {
+						c.freq/=4 //just random fraction of it
+					}
 				}
-			} 
+			}
 		}
 		dbMan.save()
-		
 	}
 
 
