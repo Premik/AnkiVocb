@@ -30,7 +30,7 @@ public class Corpus {
 
 
 	//https://www.wordfrequency.info/free.asp
-	void importCsvCorpus(Map parserArgs = [:], Reader reader) {
+	void importWordFreqCsvCorpus(Map parserArgs = [:], Reader reader) {
 		String dispersionCol="Dispersion"
 		Iterator csvLines = CsvParser.parseCsv(parserArgs, reader)
 		for (line in csvLines) {
@@ -45,6 +45,33 @@ public class Corpus {
 			wordFreq[w] = new BigDecimal(f)
 		}
 		println "Imported ${wordFreq.size()} words from Csv"
+	}
+	
+	void loadWordFreq() {
+		getClass().getResource('/wordFreq.csv').withReader(StandardCharsets.UTF_8.toString()) {
+			importWordFreqCsvCorpus([:], it)
+		}
+		
+	}
+	
+	
+	
+	//https://www.kaggle.com/datasets/rtatman/english-word-frequency
+	void importKaggleEnglishWordFreqCsv(Reader reader) {
+		Iterator csvLines = CsvParser.parseCsv([:], reader)
+		for (line in csvLines) {
+			String w = line."word".toLowerCase().trim()			
+			String c = line."count"
+			assert w && c				
+			wordFreq[w] = new BigDecimal(c)*0.037 //Avg error from other corpuses
+		}
+		println "Imported ${wordFreq.size()} words from Kaggle"
+	}
+	
+	void loadKaggleEnglishWordFreqCsv() {
+		getClass().getResource('/unigram_freq.csv').withReader(StandardCharsets.UTF_8.toString()) {
+			importKaggleEnglishWordFreqCsv(it)
+		}
 	}
 
 	//https://github.com/en-wl/wordlist/tree/master/alt12dicts
@@ -118,9 +145,7 @@ public class Corpus {
 
 	}
 
-	public void importCsvCorpus(Map parserArgs = [:], InputStream str) {
-		importCsvCorpus(parserArgs, new InputStreamReader(str, StandardCharsets.UTF_8))
-	}
+	
 
 	void loadWiki() {
 		importWikiWordList(cfgHelper.resolveRes("Wiktionary_Frequency lists_PG_2006_04_1-10000 - Wiktionary"))
@@ -134,9 +159,7 @@ public class Corpus {
 		import12WordFreq(getClass().getResource('/2+2+3frq.txt').openStream())
 	}
 
-	void loadWordFreq() {
-		importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())
-	}
+	
 
 
 
@@ -224,31 +247,41 @@ public class Corpus {
 	}
 
 	static Corpus buildDef() {
-		Corpus c1 = new Corpus()
-		c1.loadWiki()
-		Corpus c2 = new Corpus()
-		//c2.load12Dicts()
-		c2.loadWordFreq()
+		Corpus c1 = new Corpus().tap {loadWiki()}		
+		Corpus c2 = new Corpus().tap {loadWordFreq()}
+		c1.averageCommonWordsFrom(c2)
+		c2 = new Corpus().tap {loadKaggleEnglishWordFreqCsv()}
 		c1.averageCommonWordsFrom(c2)
 		c1.addStrange()
 		
 		return c1
-
+	}
+	
+	void statKaggle() {
+		Corpus kg = new Corpus().tap {
+			loadKaggleEnglishWordFreqCsv()
+		}
+		Corpus df = buildDef()
+		Collection<String> rndWords=df.wordFreq.keySet().take(2000) + (df.sortedByFreq.take(500) as Set)
+		Set<String> commonWords = kg.wordFreq.keySet().intersect(rndWords).findAll {it.length() >2}
+		commonWords.take(100).each { String w->
+			println "${w.padRight(20)} ${df[w]} ${kg[w]} ${kg[w]-df[w]}"
+			//println "${w.padRight(20)} ${df[w]/kg[w]}"
+		}
+		//*0.06
+		//0.037
+		println commonWords.average { String w-> df[w]/(kg[w])}
 	}
 
 	static void main(String... args) {
-
+		
 		buildDef().with {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
-			//topX(2000).each  {println it }
-			println it["tears"]
+			topX(2000).each  {println it }
+			
 
 		}
-
-		//n.importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())
-		//n.import12WordFreq(getClass().getResource('/2+2+3frq.txt').openStream())
-		//n.importWikiWordList(Corpus.class.getResource('/Wiktionary_Frequency lists_PG_2006_04_1-10000.html').openStream())
 
 
 	}
