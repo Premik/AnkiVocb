@@ -23026,7 +23026,6 @@ concepts:
     tts: cs-terms/rust.mp3
   img: img/grow.jpeg
   freq: 87012.00000
-##  considered   ############################################################ t2:lang:missing|t2:tts:missing
 - terms: 
   - term: considered
     lang: en
@@ -23035,6 +23034,8 @@ concepts:
     lang: cs
     tts: cs-terms/zvazoval.mp3
   - term: pokládán (za)
+    lang: cs
+    tts: cs-terms/pokladan.mp3
   img: img/considered.jpeg
   freq: 87010.00000
 - terms: 
@@ -23541,7 +23542,6 @@ concepts:
     tts: cs-terms/vratit.mp3
   img: img/refund.jpeg
   freq: 73914.00000
-##  worthy   ################################################################ no img
 - terms: 
   - term: worthy
     lang: en
@@ -23552,6 +23552,7 @@ concepts:
   - term: hodnotný
     lang: cs
     tts: cs-terms/hodnotny.mp3
+  img: img/worthy.jpeg
   freq: 73622.00000
 ##  jack   ################################################################## no img
 - terms: 
@@ -23561,9 +23562,9 @@ concepts:
   - term: zvedák
     lang: cs
     tts: cs-terms/zvedak.mp3
-  - term: žolík
+  - term: junek
     lang: cs
-    tts: cs-terms/zolik.mp3
+    tts: cs-terms/junek.mp3
   freq: 73527.00000
 ##  shook   ################################################################# no img
 - terms: 
