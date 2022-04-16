@@ -43,6 +43,8 @@ public class WordNormalizer {
 	}
 
 	public List<String> wordVariants(String s) {
+		if (!s) return []
+
 		String cap = swapCapitalFirstLetter(s)
 		[
 			swapPluralSingular(cap),
@@ -55,23 +57,24 @@ public class WordNormalizer {
 			s
 		]
 		.toUnique()
+		//.tap {println it}
 		.sort { String a, String b->
 			//Lower-cased first
 			Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
-			a.length() <=> b.length() //Shorter first
-			
+					a.length() <=> b.length() //Shorter first
 		}
 	}
 
 	public String swapPluralSingular(String s) {
+		if (s.length() < 2) return [s]
 		//Removes or adds 's'
 		if (s.endsWith('s')) return s[0..<-1]
 		return "${s}s" as String //Add 's'
 	}
 
 	@CompileStatic
-	public String swapCapitalFirstLetter(String s) {		
-		Character first = s[0] as Character		
+	public String swapCapitalFirstLetter(String s) {
+		Character first = s[0] as Character
 		if (Character.isUpperCase(first)) {
 			first = Character.toLowerCase(first)
 		} else {
@@ -80,18 +83,35 @@ public class WordNormalizer {
 		if (s.length() ==1) return first
 		return "$first${s[1..-1]}" as String
 	}
-	
+
 	public List<String> edVariants(String s) {
-		//Drop 'ed' and just 'd'		
-		if (s.endsWith('ed')) return [s[0..<-2], s[0..<-1]] 
+		//Drop 'ed' and just 'd'
+		if (s.length() < 3) return [s]
 		if (s.endsWith('e')) return ["${s}d" as String]
+		if (s.endsWith('ed')) {
+			if (s.length() > 4) {
+				return [s[0..<-2], s[0..<-1]]
+			} else {
+				return [s[0..<-1]]
+			}
+		}
 		return ["${s}ed" as String]
 	}
-	
-	public List<String> ingVariants(String s) {		
-		if (s.endsWith('ing')) return [s[0..<-3], "${s[0..<-3]}e" as String]
+
+	public List<String> ingVariants(String s) {
+		if (s.length() < 3) return [s]
 		if (s.endsWith('e')) return ["${s[0..<-1]}ing" as String]
-		return ["${s}ing" as String] 
+		if (s.endsWith('ing')) {
+			if (s.length() > 5) {
+				return[
+					s[0..<-3],
+					"${s[0..<-3]}e" as String
+				]
+			} else {
+				return ["${s[0..<-3]}e" as String]
+			}
+		}
+		return ["${s}ing" as String]
 	}
 
 

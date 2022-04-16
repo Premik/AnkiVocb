@@ -16,7 +16,7 @@ public class ValidationProfile {
 		name="strictNoImg"
 		img=false
 	}
-	public static final ValidationProfile relax = new ValidationProfile (name:"relax", img:false, freq:false, pron:false, termRequiredFields : ["term", "lang"] )
+	public static final ValidationProfile relax = new ValidationProfile (name:"relax", img:false, freq:true, pron:false, termRequiredFields : ["term", "lang"] )
 	public static final ValidationProfile ignore = relax.clone().tap {
 		name ="ignore"
 		requiredNativeTerm = false

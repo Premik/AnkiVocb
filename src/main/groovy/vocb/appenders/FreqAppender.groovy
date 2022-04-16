@@ -1,5 +1,6 @@
 package vocb.appenders
 
+import groovy.transform.CompileStatic
 import vocb.Helper
 import vocb.corp.Corpus
 import vocb.corp.WordNormalizer
@@ -7,6 +8,7 @@ import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
 
+@CompileStatic
 public class FreqAppender {
 
 	@Lazy Corpus corp = Corpus.buildDef()
@@ -22,7 +24,10 @@ public class FreqAppender {
 
 		dbMan.withTermsByLang("en") {Concept c, Term t->
 			if (!c.freq) {
-				c.freq = corp.wordFreq[t.term]				
+				c.freq = corp.wordFreq[t.term] //Exact match first
+				if (!c.freq) {
+					c.freq = corp[t.term] //Any variant 
+				}
 			} 
 		}
 		dbMan.save()

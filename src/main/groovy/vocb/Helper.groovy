@@ -16,10 +16,12 @@ import javax.xml.transform.stream.StreamResult
 import javax.xml.transform.stream.StreamSource
 
 import org.apache.groovy.io.StringBuilderWriter
+import org.codehaus.groovy.runtime.StackTraceUtils
 
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import groovy.text.GStringTemplateEngine
+import groovy.transform.Memoized
 import groovy.transform.stc.ClosureParams
 import groovy.transform.stc.FromString
 import groovy.xml.XmlSlurper
@@ -361,8 +363,33 @@ public class Helper {
 		p.toFile().listFiles().count (subFolderFilter)
 	}
 	
+	public static String callerMethodName(int depth=3) {
+		Throwable marker = new Throwable()
+		StackTraceUtils.sanitize(marker).stackTrace
+		.collect{it?.methodName}
+		.findAll {!["doCall"].contains(it)}[depth]				
+	}
 	
+	/**
+	 * One-off (can't be restarted) timer
+	 * @param name - unique name
+	 * @return
+	 */
+	@Memoized
+	public static Long startWatch(String name=callerMethodName()) {
+		println "-"*100
+		println "- '$name' timer started"
+		println "-"*100
+		System.currentTimeMillis() as Long
+	}
 	
+	public static void printLapseTime(String name=callerMethodName()) {
+		Long last = startWatch(name)
+		println "-"*100
+		println "- '$name' took: ${(System.currentTimeMillis() - last) / 1000.0}s"
+		println "-"*100
+		
+	}
 	
 
 }
