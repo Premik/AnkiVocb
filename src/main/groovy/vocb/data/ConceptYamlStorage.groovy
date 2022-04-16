@@ -41,7 +41,7 @@ public class ConceptYamlStorage {
 		//Migration
 		if (c.validationProfile.isDefaultProfile()) {
 			if (c.state == "ignoreImage") {
-				c.profileName = ValidationProfile.strictNoImg.name
+				c.profileName = ValidationProfile.noImg.name
 			}
 			if (c.state == "ignore") {
 				c.profileName = ValidationProfile.ignore.name
@@ -160,7 +160,7 @@ public class ConceptYamlStorage {
 				c.profileName = ValidationProfile.ignore.name
 			}
 			if (c.state == 'ignoreImg') {
-				c.profileName = ValidationProfile.strictNoImg.name
+				c.profileName = ValidationProfile.noImg.name
 			}
 		}
 
