@@ -11,6 +11,7 @@ import groovy.transform.ToString
 public class ValidationProfile {
 
 	public static final ValidationProfile strict = new ValidationProfile (name:"strict")
+	
 	@Lazy public static final ValidationProfile noImg = currentDefaultProfile.clone().tap {
 		name="strictNoImg"
 		img=false
@@ -32,7 +33,7 @@ public class ValidationProfile {
 	String name
 	boolean img = true
 	boolean freq = true
-	boolean pron = true
+	boolean pron = false
 	boolean requiredNativeTerm = true //Concept with only foreign term is effectively ignored 
 	boolean validateTerms = true
 	List<String> termRequiredFields = ["term", "lang", "tts"]
