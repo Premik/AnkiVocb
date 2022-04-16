@@ -2,6 +2,7 @@ package vocb.corp
 
 import java.util.stream.Collectors
 
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 class WordNormalizerTest {
@@ -146,6 +147,7 @@ class WordNormalizerTest {
 	}
 	
 	@Test
+	@Disabled
 	void stripMultiple() {
 		norm.stripBracketsOut ("(The) Hello (world)") == "Hello"		
 	}
