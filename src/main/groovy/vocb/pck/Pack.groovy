@@ -104,9 +104,10 @@ public class Pack {
 
 		Set<Concept> allExp = exportedItemsFromPackages()
 				.map {it.concept}
+				.filter {!it.ignore}
 				.toSet()
-				.toSorted { 0-it.freq } as LinkedHashSet
-		Helper.printLapseTime()		
+				.toSorted {0-it.freq} as LinkedHashSet
+		Helper.printLapseTime()
 		allExp.take(100).each {println it}
 
 
@@ -235,9 +236,7 @@ public class Pack {
 
 
 			//p.exportByName("BasicWords")
-			//findTopxNotInDb(2000)
-
-
+			//findTopxNotInDb(1000)
 			findTopxFromDb(1000)
 			//p.export()
 			//findBasicWords()

@@ -67,8 +67,10 @@ public class PackExport {
 				.flatMap {Example e->
 					dbMan.conceptsFromWordsInExample(e).stream().filter {Concept c->
 						//If strictlyWordlist, exclude concept which are not listed in the pack wordlist
-						!info.strictlyWordlist || info.wordList.contains(c.firstTerm)
-					}.map { Concept c->
+						!info.strictlyWordlist || info.wordList.contains(c.firstTerm)					
+					}
+					.filter {it!=null && !it.ignore}
+					.map { Concept c->
 						new ExportItem(concept: c, example: e)
 					}
 				}
@@ -87,8 +89,8 @@ public class PackExport {
 			//assert c : "Concept not found for word:'${color(w, BOLD)}'"
 			return c
 		}
-		.filter {it!=null}
-		.map { Concept c->
+		.filter {it!=null && !it.ignore}
+		.map { Concept c-> 
 			new ExportItem(concept: c)
 		}
 	}

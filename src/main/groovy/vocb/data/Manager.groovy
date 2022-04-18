@@ -85,7 +85,8 @@ public class Manager {
 			//The exact word first, only when not found try to find variants
 			variants.push(firstTerm)
 		}
-		variants.findResults {conceptByFirstTerm[it] }
+		variants
+		.findResults {conceptByFirstTerm[it] }		
 	}
 	
 	

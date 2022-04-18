@@ -7,6 +7,7 @@ import java.util.regex.Pattern
 
 import com.xlson.groovycsv.CsvParser
 
+import groovy.transform.CompileStatic
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 import vocb.conf.ConfHelper
@@ -218,29 +219,14 @@ public class Corpus {
 
 	public void addStrange() {
 		wordFreq.putAll( [
-			"bumped" : 1000,
-			"ve" : 1,
-			"bigger":81717,
-			"arrived":5735,
-			"frosting":3735,
-			"smelling":41717,
-			"bouncy":81717,
-			"antiquities":500,
-			"you're":2382497,
-			"i'm":4082139,
-			"it's":4082139,
-			"what's":408213,
-			"let's":41000,
-			"everyone's":5735,
-			"hauling": 120,
-			"shunting":2000,
-			"babies":22544,
-			"mommies":1456,
-			"burg":456,
-			"ponytail":10,
-			"messes":4000,
-			"successes":52956,
-
+			"tepidity" : 30,
+			"extrauterine" : 20,
+			"eradicte":30,
+			"clearsighted":20,
+			"ilustrious":15,
+			"anathematize":30,
+			"contagiousness":15,
+			"surrende":30,			
 		])
 		
 
@@ -275,10 +261,14 @@ public class Corpus {
 
 	static void main(String... args) {
 		
-		buildDef().with {
+		buildDef().with { Corpus c->
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
-			topX(2000).each  {println it }
+			println c["surrender"]
+			String[] s = sortedByFreq
+			println s.takeRight(1000).each {
+				println "${it.padRight(20)} ${wordFreq[it]}"
+			}
 			
 
 		}
