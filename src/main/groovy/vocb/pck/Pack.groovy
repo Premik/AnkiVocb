@@ -86,43 +86,38 @@ public class Pack {
 		packExportOf(allPackInfos.first()).dbMan
 	}
 
-	void findTopxNotInDb(int topx=1000) {
+	Set<String> findTopxNotInDb(int topx=1000) {
 		Set<String> top = Corpus.buildDef().topX(topx) as LinkedHashSet
 		//Set<String> topInDb = top.collectMany { dbMan.findConceptsByFirstTermAllVariant(it) }.collect {it.firstTerm} as LinkedHashSet
 		top.findAll { !dbMan.findConceptsByFirstTermAllVariant(it)}
 		.findAll {!it.contains("'")}
 		.findAll {!it.contains(".")}
-		.findAll {it.size()>1}
-		.each {
-			println it
-		}
+		.findAll {it.size()>1} as LinkedHashSet
 	}
 
-	void findTopxFromDb(int topx) {
+	Set<Concept> findTopxFromDb(int topx) {
 		Helper.startWatch()
-
 
 		Set<Concept> allExp = exportedItemsFromPackages()
 				.map {it.concept}
 				.filter {!it.ignore}
 				.toSet()
-				.toSorted {0-it.freq} as LinkedHashSet
+				.toSorted {0-it.freq}
+				.take(topx) as LinkedHashSet
 		Helper.printLapseTime()
-		allExp.take(100).each {println it}
+		return allExp
+		//allExp.take(100).each {println it}
+	}
 
-
-		return
-
-
-		File f = new File("/tmp/work/First1000.txt")
-		if (f.exists()) {
-			f.delete()
-		}
-
-		0.each {
-			//f <<"$it\n"
+	void printFirst1000() {
+		Set<String> topDb = findTopxFromDb(1000)
+				.collect {it.firstTerm} as LinkedHashSet
+		Set<String> ignore = exportedWordsOf("First", "Supa", "Uncomm")
+		topDb.intersect(ignore).each {
 			println it
 		}
+		
+		
 	}
 
 	/*Stream<String> wordsFromPackages(List<PackInfo> infos) {
@@ -137,7 +132,7 @@ public class Pack {
 
 
 	void findBasicWords() {
-		def l = exportedWordsOf("Basic") - exportedWordsOf("Simple")
+		Set<String> l = exportedWordsOf("Basic") - exportedWordsOf("Simple")
 		//def l = exportedWordsOf("BasicWords")
 		println l
 		l.each {
@@ -237,7 +232,7 @@ public class Pack {
 
 			//p.exportByName("BasicWords")
 			//findTopxNotInDb(1000)
-			findTopxFromDb(1000)
+			printFirst1000()
 			//p.export()
 			//findBasicWords()
 		}

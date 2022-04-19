@@ -261,14 +261,16 @@ public class Corpus {
 
 	static void main(String... args) {
 		
-		buildDef().with { Corpus c->
+		//buildDef().with { Corpus c->
+		new Corpus().with { Corpus c->
+			loadKaggleEnglishWordFreqCsv()
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
-			println c["surrender"]
-			String[] s = sortedByFreq
+			println c["corrugated"]
+			/*String[] s = sortedByFreq
 			println s.takeRight(1000).each {
 				println "${it.padRight(20)} ${wordFreq[it]}"
-			}
+			}*/
 			
 
 		}

@@ -14,7 +14,7 @@ class ManagerTest {
 
 
 	Path tempDir = Files.createTempDirectory("ankivocbTest")
-	
+
 	Manager m = new Manager(defaultStoragePath: tempDir )
 
 	Term t1En = new Term("apple", "en")
@@ -24,19 +24,19 @@ class ManagerTest {
 	Concept c1 = new Concept(state: "state", img:"", freq:1.1d, location: m.defaultConceptsLocation).tap {
 		terms.addAll([t1En, t1Cs])
 	}
-	
+
 	Example e1= new Example().tap {
-		terms.addAll([s1En,s1Cs])		
+		terms.addAll([s1En, s1Cs])
 	}
-	
+
 	Term t2En = new Term("I'm (I am)", "en")
-	Term t2Cs = new Term("Já jsem (zkráceně)", "cs")	
+	Term t2Cs = new Term("Já jsem (zkráceně)", "cs")
 	Concept c2 = new Concept(location: m.defaultConceptsLocation).tap {
 		terms.addAll([t2En, t2Cs])
 	}
-	
-	
-	
+
+
+
 
 	@Test
 	void addData() {
@@ -45,23 +45,39 @@ class ManagerTest {
 		//m.load()
 		Path cp1 = m.defaultConceptsLocation.storagePath
 		Path tempFile2 =  Files.createTempDirectory("ankivocbTestReload")
-		m.defaultConceptsLocation.storageRootPath = tempFile2		
+		m.defaultConceptsLocation.storageRootPath = tempFile2
 		m.save()
 		Path cp2 = m.defaultConceptsLocation.storagePath
-		
+
 		TestUtils.compareFiles(cp1.toFile(), cp2.toFile())
 		//assert saved1 == saved2
 	}
 
 	@Test
-	void testNumberOfStars() {
+	void testNumberOfStarsCorners() {
 		assert m.numberOfStarsFreq(0) ==null
 		assert m.numberOfStarsFreq(10) == 0
-		assert m.numberOfStarsFreq(20*1000) == 1
-		assert m.numberOfStarsFreq(60*1000) == 2
-		assert m.numberOfStarsFreq(200*1000) == 3
-
 		assert m.numberOfStarsFreq(null) == null
+	}
+
+	@Test
+	void testNumberOfStars() {
+		Manager mr = new Manager().tap {load()}	
+		Closure<Integer> ns = { String w->
+			mr.numberOfStarsFreq(mr.conceptByFirstTerm[w]?.freq)
+		}
+		assert ns("and") == 5
+		assert ns("was") == 5
+		assert ns("make") == 4
+		assert ns("some") == 4
+		assert ns("back") == 3
+		assert ns("gave") == 3
+		assert ns("open") == 2
+		assert ns("kind") == 2
+		assert ns("everyone") == 1
+		assert ns("rule") == 1
+		assert ns("planetary") == 0
+		assert ns("jingle") == 0
 	}
 
 	@Test
@@ -99,6 +115,5 @@ class ManagerTest {
 		assert m.conceptByFirstTerm["apple"] == c1
 		assert m.conceptsByEnWordsInSample
 		assert m.conceptsByEnWordsInSample["apple"].contains(c1)
-		
 	}
 }
