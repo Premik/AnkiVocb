@@ -10,7 +10,9 @@ import vocb.azure.AzureEnv
 public class AzureTTs {
 
 	// http -v  https://api.cognitive.microsoft.com/bing/v7.0/images/search\?q\=sailing+dinghies\&mkt\=en-us\&answerCount\=3 Ocp-Apim-Subscription-Key:$AZURE_KEY
-
+//AntoninNeural
+	//VlastaNeural
+	//Jakub
 	AzureEnv azEnv = new AzureEnv()
 	@Lazy HttpHelper httpHelper = new HttpHelper()
 
@@ -40,18 +42,18 @@ public class AzureTTs {
 		return ret
 	}
 
-	public String SSMLWrap(String text) {
+	public String SSMLWrap(String text, String voice=azEnv.cfg.azure.tts.voice) {
 		"""\
 		<speak version='1.0' xml:lang='en-US'>
-		   <voice xml:lang='cs' name='$azEnv.cfg.azure.tts.voice'>
+		   <voice xml:lang='cs' name='$voice'>
 		   	$text
 		   </voice>
 		</speak>""".stripIndent()
 	}
 
-	void synth(String text, String outFile="/tmp/work/1.mp3") {
+	void synth(String text, String outFile="/tmp/work/1.mp3", String voice=azEnv.cfg.azure.tts.voice) {
 		File f= new File(outFile)
-		String sw = SSMLWrap(text)
+		String sw = SSMLWrap(text, voice)
 		httpHelper.withUrlPostResponse(azEnv.ttsHeaders(token), azEnv.ttsUrl(), sw) { InputStream res->
 			 f.newOutputStream() << res
 		}
@@ -61,8 +63,11 @@ public class AzureTTs {
 
 	static void main(String... args) {
 		AzureTTs bs = new AzureTTs().with{
+			/*listVoices().each {
+				println it
+			}*/
 			//println Helper.jsonToString(listVoices())
-			println  synth("Testovací text.")
+			println  synth("Testovací text.", "/tmp/work/1.mp3", "cs-CZ-AntoninNeural")
 
 
 
