@@ -11379,7 +11379,6 @@ concepts:
     tts: cs-terms/pamatky.mp3
   img: img/antiquities.jpeg
   freq: 1.67440
-##  I'll (I will)   ######################################################### no freq
 - terms: 
   - term: I'll (I will)
     lang: en
@@ -11389,7 +11388,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ja budu.mp3
   img: img/Ill.jpeg
-##  can't (can not)   ####################################################### no freq
+  freq: 576.53365
 - terms: 
   - term: can't (can not)
     lang: en
@@ -11402,7 +11401,7 @@ concepts:
     lang: cs
     tts: cs-terms/neumet.mp3
   img: img/cant.jpeg
-##  I've (I have)   ######################################################### no freq
+  freq: 82.37653
 - terms: 
   - term: I've (I have)
     lang: en
@@ -11412,7 +11411,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ja mam.mp3
   img: img/Ive.jpeg
-##  won't (will not)   ###################################################### no freq
+  freq: 664.91173
 - terms: 
   - term: won't (will not)
     lang: en
@@ -11422,7 +11421,7 @@ concepts:
     lang: cs
     tts: cs-terms/nebude.mp3
   img: img/wont.jpeg
-##  that's (that is)   ###################################################### no freq
+  freq: 84.79885
 - terms: 
   - term: that's (that is)
     lang: en
@@ -11432,7 +11431,7 @@ concepts:
     lang: cs
     tts: cs-terms/ten je.mp3
   img: img/thats.jpeg
-##  he's (he is)   ########################################################## no freq
+  freq: 172.28025
 - terms: 
   - term: he's (he is)
     lang: en
@@ -11442,7 +11441,7 @@ concepts:
     lang: cs
     tts: cs-terms/on je.mp3
   img: img/hes.jpeg
-##  there's (there is)   #################################################### no freq
+  freq: 117.92983
 - terms: 
   - term: there's (there is)
     lang: en
@@ -11452,7 +11451,7 @@ concepts:
     lang: cs
     tts: cs-terms/tady je.mp3
   img: img/theres.jpeg
-##  you'd (you would)   ##################################################### no freq
+  freq: 114.91862
 - terms: 
   - term: you'd (you would)
     lang: en
@@ -11462,7 +11461,7 @@ concepts:
     lang: cs
     tts: cs-terms/ty bys.mp3
   img: img/youd.jpeg
-##  we're (we are)   ######################################################## no freq
+  freq: 75.85186
 - terms: 
   - term: we're (we are)
     lang: en
@@ -11472,9 +11471,9 @@ concepts:
     lang: cs
     tts: cs-terms/my jsme.mp3
   img: img/were.jpeg
-##  'cause   ################################################################ no freq
+  freq: 80.43107
 - terms: 
-  - term: "'cause"
+  - term: "'cause (because)"
     lang: en
     tts: en-terms/cause.mp3
     pron: kɒz
@@ -11482,6 +11481,7 @@ concepts:
     lang: cs
     tts: cs-terms/protoze.mp3
   img: img/cause.jpeg
+  freq: 115.33448
 - terms: 
   - term: could've
     lang: en
@@ -11492,7 +11492,6 @@ concepts:
     lang: en
   freq: 18.00000
   profileName: ignore
-##  I'm (I am)   ############################################################ no freq
 - terms: 
   - term: I'm (I am)
     lang: en
@@ -11502,7 +11501,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ja jsem.mp3
   img: img/Im.jpeg
-##  you're (you are)   ###################################################### no freq
+  freq: 245.03165
 - terms: 
   - term: you're (you are)
     lang: en
@@ -11512,7 +11511,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ty jsi.mp3
   img: img/youre.jpeg
-##  what's (what is)   ###################################################### no freq
+  freq: 114.55479
 - terms: 
   - term: what's (what is)
     lang: en
@@ -11522,7 +11521,7 @@ concepts:
     lang: cs
     tts: cs-terms/Co je.mp3
   img: img/whats.jpeg
-##  let's (let us)   ######################################################## no freq
+  freq: 117.28261
 - terms: 
   - term: let's (let us)
     lang: en
@@ -11535,6 +11534,7 @@ concepts:
     lang: cs
     tts: cs-terms/at.mp3
   img: img/lets.jpeg
+  freq: 29.16423
 - terms: 
   - term: everyone's
     lang: en
@@ -11677,7 +11677,6 @@ concepts:
     tts: cs-terms/stab.mp3
   img: img/crew.jpeg
   freq: 38.16180
-##  they're (they are)   #################################################### no freq
 - terms: 
   - term: they're (they are)
     lang: en
@@ -11687,6 +11686,7 @@ concepts:
     lang: cs
     tts: cs-terms/oni jsou.mp3
   img: img/theyre.jpeg
+  freq: 69.64597
 - terms: 
   - term: thunders
     lang: en
@@ -12010,7 +12010,6 @@ concepts:
     tts: cs-terms/maminky.mp3
   img: img/mommies.jpeg
   freq: 0.40880
-##  it's (it is, it has)   ################################################## no freq
 - terms: 
   - term: it's (it is, it has)
     lang: en
@@ -12020,6 +12019,7 @@ concepts:
     lang: cs
     tts: cs-terms/sve.mp3
   img: img/its.jpeg
+  freq: 120.91824
 - terms: 
   - term: danger
     lang: en
@@ -12285,7 +12285,6 @@ concepts:
     tts: cs-terms/prepsat.mp3
   img: img/rewrite.jpeg
   freq: 4.50340
-##  cottontails (cotton tails)   ############################################ no freq
 - terms: 
   - term: cottontails (cotton tails)
     lang: en
@@ -12298,6 +12297,7 @@ concepts:
     lang: cs
     tts: cs-terms/bavlnene ocasy.mp3
   img: img/cottontails.jpeg
+  freq: 0.36279
 - terms: 
   - term: ponytails
     lang: en

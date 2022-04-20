@@ -70,11 +70,11 @@ class ManagerTest {
 		assert ns("was") == 5
 		assert ns("make") == 4
 		assert ns("some") == 4
-		assert ns("back") == 3
-		assert ns("gave") == 3
-		assert ns("open") == 2
+		assert ns("back") == 4		
+		assert ns("open") == 3
 		assert ns("kind") == 2
 		assert ns("everyone") == 1
+		assert ns("gave") == 1
 		assert ns("rule") == 1
 		assert ns("planetary") == 0
 		assert ns("jingle") == 0
