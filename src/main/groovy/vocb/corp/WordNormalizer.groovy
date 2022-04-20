@@ -37,17 +37,17 @@ public class WordNormalizer {
 				.map {String s ->s.toLowerCase()}
 	}
 
-	public Stream<String> lemming( Stream<String> inp) {
+	public Stream<String> lemming( Stream<String> inp, boolean preferOrigialWord=false) {
 		inp.flatMap { String s->
 			wordVariants(s).stream()
 		}
 	}
 
-	public List<String> wordVariants(String s) {
+	public List<String> wordVariants(String s, boolean preferOrigialWord=false) {
 		if (!s) return []
 
 		String cap = swapCapitalFirstLetter(s)
-		[
+		List<String> variants = [
 			swapPluralSingular(cap),
 			swapPluralSingular(s),
 			*ingVariants(cap),
@@ -64,6 +64,11 @@ public class WordNormalizer {
 			Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
 					a.length() <=> b.length() //Shorter first
 		}
+		if (preferOrigialWord) {
+			//The exact word first,
+			variants.push(s)
+		}
+		return variants
 	}
 
 	public String swapPluralSingular(String s) {

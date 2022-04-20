@@ -17,10 +17,12 @@ import static vocb.Ansi.*
 public class Corpus {
 
 
+	int limit=0
+	private int limitCounter=0
 	Map<String, BigDecimal> wordFreq = new HashMap(5000)
 	Set<String> phrases = new HashSet<String>(2000)
 	WordNormalizer wn = new WordNormalizer()
-	
+
 	ConfHelper cfgHelper = new ConfHelper()
 
 	@Lazy public String[] sortedByFreq = {
@@ -28,6 +30,13 @@ public class Corpus {
 			wordFreq[b] <=> wordFreq[a]
 		}
 	}()
+	
+	private boolean checkLimit() {
+		if (!limit) return true //unlimited		
+		if (limitCounter>limit) return false
+		limitCounter++		
+		return true
+	}
 
 
 	//https://www.wordfrequency.info/free.asp
@@ -35,6 +44,7 @@ public class Corpus {
 		String dispersionCol="Dispersion"
 		Iterator csvLines = CsvParser.parseCsv(parserArgs, reader)
 		for (line in csvLines) {
+			if (!checkLimit()) break
 			String w = line."Word".toLowerCase().replace('\u00A0',' ').trim()
 
 			String f = line."Frequency"
@@ -47,37 +57,38 @@ public class Corpus {
 		}
 		println "Imported ${wordFreq.size()} words from Csv"
 	}
-	
+
 	void loadWordFreq() {
 		getClass().getResource('/wordFreq.csv').withReader(StandardCharsets.UTF_8.toString()) {
 			importWordFreqCsvCorpus([:], it)
 		}
-		
 	}
-	
-	
-	
+
+
+
 	//https://www.kaggle.com/datasets/rtatman/english-word-frequency
 	void importKaggleEnglishWordFreqCsv(Reader reader, boolean normalize=true) {
 		Iterator csvLines = CsvParser.parseCsv([:], reader)
 		BigDecimal sum = 0
 		for (line in csvLines) {
-			String w = line."word".toLowerCase().trim()			
+			if (!checkLimit()) break
+			String w = line."word".toLowerCase().trim()
 			String c = line."count"
 			assert w && c
 			BigDecimal bc = new BigDecimal(c)
-			wordFreq[w] = bc 
+			wordFreq[w] = bc
 			sum+=bc
-		}		
-		
-		if (normalize) { //Convert freq to ppm
-			wordFreq = wordFreq.collectEntries { String w, BigDecimal f-> 
+		}
+
+		if (normalize) {
+			//Convert freq to ppm
+			wordFreq = wordFreq.collectEntries { String w, BigDecimal f->
 				[w, f/sum*1000000]
 			}
 		}
 		println "Imported ${wordFreq.size()} words from Kaggle. Freq sum=$sum"
 	}
-	
+
 	void loadKaggleEnglishWordFreqCsv(boolean normalize=true) {
 		getClass().getResource('/unigram_freq.csv').withReader(StandardCharsets.UTF_8.toString()) {
 			importKaggleEnglishWordFreqCsv(it)
@@ -85,7 +96,7 @@ public class Corpus {
 	}
 
 	//https://github.com/en-wl/wordlist/tree/master/alt12dicts
-	void import12WordFreq(InputStream input, int limit = 0) {
+	void import12WordFreq(InputStream input) {
 		//2+2+3frq.txt
 		Pattern blockDeli= ~/-+\s*(\d+)\s*-+/
 		Pattern wordPatter = ~/^\w+/
@@ -99,11 +110,13 @@ public class Corpus {
 				return
 			}
 			def wordMatcher = line =~  wordPatter
-			if (!wordMatcher) {return} //Ignore lemming
+			if (!wordMatcher) {
+				return
+			} //Ignore lemming
 			String w = wordMatcher[0]
 			//println w
 
-			if (limit > 1 || limit==0) {
+			if (checkLimit()) {
 				wordFreq[w.toLowerCase()] = new BigDecimal(1-groupIndex/120d) //Magic factor to get similar Disp as wordfreq
 				if (limit != 0) {
 					limit--
@@ -140,10 +153,14 @@ public class Corpus {
 		def page = new XmlSlurper().parse(input)
 		GPathResult content = page.body.'**'.find {it.@id == 'bodyContent'}
 		content.'**'.each { GPathResult table ->
-			if (table.name() != 'table') {return}
+			if (table.name() != 'table') {
+				return
+			}
 
 			table.tbody.tr.eachWithIndex { GPathResult row, int i ->
-				if (i == 0) {return}
+				if (i == 0) {
+					return
+				}
 				String w = row.td[1].a.toString().trim().toLowerCase()
 				String r = row.td[2].toString().trim().toLowerCase()
 
@@ -151,11 +168,9 @@ public class Corpus {
 			}
 		}
 		println "Imported ${wordFreq.size()} words for wiki pages"
-
-
 	}
 
-	
+
 
 	void loadWiki() {
 		importWikiWordList(cfgHelper.resolveRes("Wiktionary_Frequency lists_PG_2006_04_1-10000 - Wiktionary"))
@@ -169,7 +184,7 @@ public class Corpus {
 		import12WordFreq(getClass().getResource('/2+2+3frq.txt').openStream())
 	}
 
-	
+
 
 
 
@@ -218,12 +233,46 @@ public class Corpus {
 				.sort { -phraseFreq(it)  }
 	}
 
-	public BigDecimal getAt(String word) {
+	public BigDecimal getFreqAnyVariant(String word, BigDecimal penalty=0.25) {
+		List<String> wordVariants = wn.wordVariants(word, true)
+		int foundAt = wordVariants.findIndexOf {wordFreq[it]}
+		if (foundAt<0) return null //Not found
+		BigDecimal ret = wordFreq[wordVariants[foundAt]]
+		if (foundAt == 0) {
+			//Exact match
+			return ret
+		}
+		if (foundAt>0) {
+			//Found a variant
+			return ret*penalty //just random fraction of it
+		}
+		return null
+	}
+	
+	public BigDecimal getFreqFromSentenceAnyVariant(String sentense, BigDecimal penaltySingle=1, BigDecimal penaltyMore=0.1) {
+		List<BigDecimal> frqs = wn.tokens(sentense).map(this.&getFreqAnyVariant).toList().findAll()
+		if (!frqs) return null
+		int sz = frqs.size()
+		if (sz ==1) return frqs.first()*penaltySingle
+		return (frqs.sum()/sz)*penaltyMore //Average freq, random small fraction
+	}
 
-		List<String> wordVariants = wn.wordVariants(word)
-		BigDecimal ret = wordVariants.findResult {wordFreq[it]}
+
+	public BigDecimal getAt(String word) {
+		BigDecimal ret = getFreqFromSentenceAnyVariant(word)
 		if (ret) return ret
+		def (String a, String b) = wn.splitBrackets(word)
+		if (b) {
+
+			//Brackets were included. Try main word without the brackets first
+			ret = getFreqFromSentenceAnyVariant(a)
+			if (ret) return ret
+			//Try word(s) in the bracket
+			ret = getFreqFromSentenceAnyVariant(b, 0.5)
+			if (ret) return ret
+		}
 		println color(word.padLeft(10), BOLD) + color(" - not in corpus" , RED)
+		return null
 	}
 
 	public void addStrange() {
@@ -235,30 +284,29 @@ public class Corpus {
 			"ilustrious":1,
 			"anathematize":3,
 			"contagiousness":1,
-			"surrende":3,			
+			"surrende":3,
 		])
-		
-
 	}
 
 	static Corpus buildAll() {
-		Corpus c1 = new Corpus().tap {loadWiki()}		
+		Corpus c1 = new Corpus().tap {loadWiki()}
 		Corpus c2 = new Corpus().tap {loadWordFreq()}
 		c1.averageCommonWordsFrom(c2)
 		c2 = new Corpus().tap {loadKaggleEnglishWordFreqCsv()}
 		c1.averageCommonWordsFrom(c2)
 		c1.addStrange()
-		
+
 		return c1
 	}
-	
-	static Corpus buildDef() {		
+
+	static Corpus buildDef(int max=0) {
 		new Corpus().tap {
+			limit = max
 			loadKaggleEnglishWordFreqCsv()
 			addStrange()
-			}
+		}
 	}
-	
+
 	void statKaggle() {
 		Corpus kg = new Corpus().tap {
 			loadKaggleEnglishWordFreqCsv()
@@ -276,13 +324,14 @@ public class Corpus {
 	}
 
 	static void main(String... args) {
-		
+
 		//buildDef().with { Corpus c->
 		new Corpus().with { Corpus c->
 			loadKaggleEnglishWordFreqCsv()
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			println c["corrugated"]
+			println c.wordFreq["you"]
 			String[] s = sortedByFreq
 			println s.take(10).each {
 				println "${it.padRight(20)} ${wordFreq[it]}"
@@ -290,12 +339,6 @@ public class Corpus {
 			println s.takeRight(10).each {
 				println "${it.padRight(20)} ${wordFreq[it]}"
 			}
-			
-
 		}
-
-
 	}
-
-
 }
