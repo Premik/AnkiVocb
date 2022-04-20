@@ -500,8 +500,7 @@ public class Manager {
 
 		new Manager().tap {
 			load()
-			tuneStars()
-			return
+
 			validate()
 			printStats()
 			//allTextWithLang("cs").each {println it}
