@@ -20,6 +20,7 @@ public class WordNormalizer {
 	@Lazy Pattern spacesPattern = ~ /[^\p{L}']+/
 	@Lazy Pattern niceWordPatter = ~ /^[\p{L}]+/  //No digits in words etc
 	@Lazy Pattern stripBrkPattern = ~ /\s*\([^)]+\)\s*/
+	@Lazy Pattern brkPattern = ~ /\s*[()]\s*/
 
 
 	public Set<String> uniqueueTokens(CharSequence input, boolean doLemming=false) {
@@ -208,9 +209,16 @@ public class WordNormalizer {
 	}
 
 	public String stripBracketsOut(String tx) {
-		def (a,b,c) = Helper.splitByRex(tx, stripBrkPattern)
-		if (a == null) return tx
-		return "$a$c"
+		def (String a, String b) = splitBrackets(tx)
+		return a
+	}
+	
+	public Tuple2<String, String> splitBrackets(String tx) {
+		def (String a, String b, String c) = Helper.splitByRex(tx, stripBrkPattern)
+		if (a == null) return [tx, ""]
+		b = b.replaceAll(brkPattern, "")
+		//return ["${a.trim()} ${c.trim()}" as String, b]
+		return [[a,c].findAll().join(" "), b]
 	}
 
 	static void main(String... args) {
