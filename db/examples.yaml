@@ -358,13 +358,13 @@ examples:
   - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
     lang: cs
     tts: cs-samples/Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
+##  Run into the nearest town.   ############################################ t1:tts:missing
 - terms: 
   - term: Run into the nearest town.
     lang: en
     tts: en-samples/Run into the nearest town.mp3
-  - term: Utíkej do nejbližšího města?
+  - term: Utíkej do nejbližšího města.
     lang: cs
-    tts: cs-samples/Utikej do nejblizsiho mesta.mp3
 - terms: 
   - term: So you did do it?
     lang: en
@@ -526,13 +526,13 @@ examples:
   - term: Co tyto zprávy znamenají?
     lang: cs
     tts: cs-samples/Co tyto zpravy znamenaji.mp3
+##  This is better than steak.   ############################################ t1:tts:missing
 - terms: 
   - term: This is better than steak.
     lang: en
     tts: en-samples/This is better than steak.mp3
-  - term: Je to lepší než steak.
+  - term: Je to lepší než řízek.
     lang: cs
-    tts: cs-samples/Je to lepsi nez steak.mp3
 - terms: 
   - term: Maybe we can get out!
     lang: en
@@ -1219,13 +1219,13 @@ examples:
   - term: Náhle se obrátil zpět.
     lang: cs
     tts: cs-samples/Nahle se obratil zpet.mp3
+##  You stayed up all night?   ############################################## t1:tts:missing
 - terms: 
   - term: You stayed up all night?
     lang: en
     tts: en-samples/You stayed up all night.mp3
   - term: Byl jste vzhůru celou noc?
     lang: cs
-    tts: cs-samples/Byl jste vzhuru celou noc.mp3
 - terms: 
   - term: You know what he does?
     lang: en
@@ -1506,10 +1506,10 @@ examples:
   - term: Zadejte hodnoty pro každý sloupec.
     lang: cs
     tts: cs-samples/Zadejte hodnoty pro kazdy sloupec.mp3
+##  Whoever says this is a liar.   ########################################## t0:tts:missing
 - terms: 
   - term: Whoever says this is a liar.
     lang: en
-    tts: en-samples/Whoever says this is a liar.mp3
   - term: Kdokoli to říká, je lhář.
     lang: cs
     tts: cs-samples/Kdokoli to rika, je lhar.mp3
