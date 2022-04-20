@@ -231,8 +231,10 @@ public class Pack {
 
 
 			//p.exportByName("BasicWords")
-			//findTopxNotInDb(1000)
-			printFirst1000()
+			findTopxNotInDb(1000).each {
+				println it
+			}
+			//printFirst1000()
 			//p.export()
 			//findBasicWords()
 		}

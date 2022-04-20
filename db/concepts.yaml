@@ -23802,7 +23802,6 @@ concepts:
     tts: cs-terms/spolecnik.mp3
   img: img/fellow.jpeg
   freq: 28.05100
-##  latter   ################################################################ no img
 - terms: 
   - term: latter
     lang: en
@@ -23813,8 +23812,8 @@ concepts:
   - term: druhý (ze dvou)
     lang: cs
     tts: cs-terms/druhy.mp3
+  img: img/latter.jpeg
   freq: 23.87930
-##  Jesus   ################################################################# no img
 - terms: 
   - term: Jesus
     lang: en
@@ -23822,8 +23821,8 @@ concepts:
   - term: Ježíš
     lang: cs
     tts: cs-terms/Jezis.mp3
+  img: img/Jesus.jpeg
   freq: 0.11168
-##  born   ################################################################## no img
 - terms: 
   - term: born
     lang: en
@@ -23834,8 +23833,8 @@ concepts:
   - term: rozený
     lang: cs
     tts: cs-terms/rozeny.mp3
+  img: img/born.jpeg
   freq: 89.18530
-##  fancy   ################################################################# no img
 - terms: 
   - term: fancy
     lang: en
@@ -23846,8 +23845,8 @@ concepts:
   - term: ozdobný
     lang: cs
     tts: cs-terms/ozdobny.mp3
+  img: img/fancy.jpeg
   freq: 14.92390
-##  gentlemen   ############################################################# no img
 - terms: 
   - term: gentlemen
     lang: en
@@ -23855,8 +23854,8 @@ concepts:
   - term: pánové
     lang: cs
     tts: cs-terms/panove.mp3
+  img: img/gentlemen.jpeg
   freq: 6.37390
-##  forgotten   ############################################################# no img
 - terms: 
   - term: forgotten
     lang: en
@@ -23864,8 +23863,8 @@ concepts:
   - term: zapomenuté
     lang: cs
     tts: cs-terms/zapomenute.mp3
+  img: img/forgotten.jpeg
   freq: 24.16870
-##  thrown   ################################################################ no img
 - terms: 
   - term: thrown
     lang: en
@@ -23876,8 +23875,8 @@ concepts:
   - term: vržen
     lang: cs
     tts: cs-terms/vrzen.mp3
+  img: img/thrown.jpeg
   freq: 10.46220
-##  Michael   ############################################################### no img
 - terms: 
   - term: Michael
     lang: en
@@ -23885,8 +23884,8 @@ concepts:
   - term: Michael
     lang: cs
     tts: cs-terms/Michael.mp3
+  img: img/Michael.jpeg
   freq: 36.78110
-##  generally   ############################################################# no img
 - terms: 
   - term: generally
     lang: en
@@ -23898,7 +23897,7 @@ concepts:
     lang: cs
     tts: cs-terms/obvykle.mp3
   freq: 68.75390
-##  authority   ############################################################# no img
+  profileName: strictNoImg
 - terms: 
   - term: authority
     lang: en
@@ -23909,8 +23908,8 @@ concepts:
   - term: autorita
     lang: cs
     tts: cs-terms/autorita.mp3
+  img: img/authority.jpeg
   freq: 97.60410
-##  particular   ############################################################ no img
 - terms: 
   - term: particular
     lang: en
@@ -23921,8 +23920,8 @@ concepts:
   - term: zvláštní
     lang: cs
     tts: cs-terms/zvlastni.mp3
+  img: img/particular.jpeg
   freq: 122.51990
-##  usually   ############################################################### no img
 - terms: 
   - term: usually
     lang: en
@@ -23934,7 +23933,7 @@ concepts:
     lang: cs
     tts: cs-terms/zpravidla.mp3
   freq: 160.64190
-##  youth   ################################################################# no img
+  profileName: strictNoImg
 - terms: 
   - term: youth
     lang: en
@@ -23942,8 +23941,8 @@ concepts:
   - term: mládeže
     lang: cs
     tts: cs-terms/mladeze.mp3
+  img: img/youth.jpeg
   freq: 87.44110
-##  holding   ############################################################### no img
 - terms: 
   - term: holding
     lang: en
@@ -23954,8 +23953,8 @@ concepts:
   - term: podíl
     lang: cs
     tts: cs-terms/podil.mp3
+  img: img/holding.jpeg
   freq: 41.69860
-##  charge   ################################################################ no img
 - terms: 
   - term: charge
     lang: en
@@ -23966,8 +23965,8 @@ concepts:
   - term: nabít
     lang: cs
     tts: cs-terms/nabit.mp3
+  img: img/charge.jpeg
   freq: 96.14030
-##  development   ########################################################### no img
 - terms: 
   - term: development
     lang: en
@@ -23978,8 +23977,8 @@ concepts:
   - term: vývoj
     lang: cs
     tts: cs-terms/vyvoj.mp3
+  img: img/development.jpeg
   freq: 486.78730
-##  experience   ############################################################ no img
 - terms: 
   - term: experience
     lang: en
@@ -23990,8 +23989,8 @@ concepts:
   - term: zážitek
     lang: cs
     tts: cs-terms/zazitek.mp3
+  img: img/experience.jpeg
   freq: 233.17300
-##  evidence   ############################################################## no img
 - terms: 
   - term: evidence
     lang: en
@@ -23999,8 +23998,8 @@ concepts:
   - term: důkaz
     lang: cs
     tts: cs-terms/dukaz.mp3
+  img: img/evidence.jpeg
   freq: 105.44080
-##  perfect   ############################################################### no img
 - terms: 
   - term: perfect
     lang: en
@@ -24011,8 +24010,8 @@ concepts:
   - term: dokonalý
     lang: cs
     tts: cs-terms/dokonaly.mp3
+  img: img/perfect.jpeg
   freq: 102.32370
-##  quiet   ################################################################# no img
 - terms: 
   - term: quiet
     lang: en
@@ -24023,8 +24022,8 @@ concepts:
   - term: tichý
     lang: cs
     tts: cs-terms/tichy.mp3
+  img: img/quiet.jpeg
   freq: 28.47510
-##  influence   ############################################################# no img
 - terms: 
   - term: influence
     lang: en
@@ -24035,8 +24034,8 @@ concepts:
   - term: ovlivnit
     lang: cs
     tts: cs-terms/ovlivnit.mp3
+  img: img/influence.jpeg
   freq: 44.99160
-##  dropped   ############################################################### no img
 - terms: 
   - term: dropped
     lang: en
@@ -24047,8 +24046,8 @@ concepts:
   - term: upustil
     lang: cs
     tts: cs-terms/upustil.mp3
+  img: img/dropped.jpeg
   freq: 20.85560
-##  individual   ############################################################ no img
 - terms: 
   - term: individual
     lang: en
@@ -24059,8 +24058,8 @@ concepts:
   - term: individuální
     lang: cs
     tts: cs-terms/individualni.mp3
+  img: img/individual.jpeg
   freq: 161.21610
-##  highest   ############################################################### no img
 - terms: 
   - term: highest
     lang: en
@@ -24068,8 +24067,8 @@ concepts:
   - term: nejvyšší
     lang: cs
     tts: cs-terms/nejvyssi.mp3
+  img: img/highest.jpeg
   freq: 78.61390
-##  appearance   ############################################################ no img
 - terms: 
   - term: appearance
     lang: en
@@ -24080,8 +24079,8 @@ concepts:
   - term: zdání
     lang: cs
     tts: cs-terms/zdani.mp3
+  img: img/appearance.jpeg
   freq: 28.18220
-##  impossible   ############################################################ no img
 - terms: 
   - term: impossible
     lang: en
@@ -24089,8 +24088,8 @@ concepts:
   - term: nemožné
     lang: cs
     tts: cs-terms/nemozne.mp3
+  img: img/impossible.jpeg
   freq: 26.43190
-##  local   ################################################################# no img
 - terms: 
   - term: local
     lang: en
@@ -24101,8 +24100,8 @@ concepts:
   - term: lokální
     lang: cs
     tts: cs-terms/lokalni.mp3
+  img: img/local.jpeg
   freq: 460.34990
-##  expression   ############################################################ no img
 - terms: 
   - term: expression
     lang: en
@@ -24113,8 +24112,8 @@ concepts:
   - term: vyjádření
     lang: cs
     tts: cs-terms/vyjadreni.mp3
+  img: img/expression.jpeg
   freq: 53.01550
-##  raised   ################################################################ no img
 - terms: 
   - term: raised
     lang: en
@@ -24125,8 +24124,8 @@ concepts:
   - term: zvýšen
     lang: cs
     tts: cs-terms/zvysen.mp3
+  img: img/raised.jpeg
   freq: 41.48430
-##  officers   ############################################################## no img
 - terms: 
   - term: officers
     lang: en
@@ -24137,8 +24136,8 @@ concepts:
   - term: úředníci
     lang: cs
     tts: cs-terms/urednici.mp3
+  img: img/officers.jpeg
   freq: 49.23300
-##  accepted   ############################################################## no img
 - terms: 
   - term: accepted
     lang: en
@@ -24146,8 +24145,8 @@ concepts:
   - term: přijata
     lang: cs
     tts: cs-terms/prijata.mp3
+  img: img/accepted.jpeg
   freq: 79.78250
-##  proved   ################################################################ no img
 - terms: 
   - term: proved
     lang: en
@@ -24155,8 +24154,8 @@ concepts:
   - term: dokázal
     lang: cs
     tts: cs-terms/dokazal.mp3
+  img: img/proved.jpeg
   freq: 16.63390
-##  decided   ############################################################### no img
 - terms: 
   - term: decided
     lang: en
@@ -24164,8 +24163,8 @@ concepts:
   - term: rozhodl
     lang: cs
     tts: cs-terms/rozhodl.mp3
+  img: img/decided.jpeg
   freq: 56.16300
-##  prepared   ############################################################## no img
 - terms: 
   - term: prepared
     lang: en
@@ -24173,8 +24172,8 @@ concepts:
   - term: připravené
     lang: cs
     tts: cs-terms/pripravene.mp3
+  img: img/prepared.jpeg
   freq: 55.26430
-##  promised   ############################################################## no img
 - terms: 
   - term: promised
     lang: en
@@ -24182,6 +24181,7 @@ concepts:
   - term: slíbil
     lang: cs
     tts: cs-terms/slibil.mp3
+  img: img/promised.jpeg
   freq: 12.17920
 ##  discovered   ############################################################ no img
 - terms: 
