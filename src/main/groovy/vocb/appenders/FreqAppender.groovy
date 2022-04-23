@@ -22,17 +22,16 @@ public class FreqAppender {
 		dbMan.load()
 
 
+		
 		dbMan.withTermsByLang("en") {Concept c, Term t->
 			if (!c.freq) {
-				c.freq = corp.wordFreq[t.term] //Exact match first
-				if (!c.freq) {
-					c.freq = corp[t.term] //Any variant
-					if(c.freq) {
-						c.freq/=4 //just random fraction of it
-					}
-				}
+				c.freq = corp[t.term]				
 			}
 		}
+		/*dbMan.db.concepts.each {
+			it.freq =corp[it.firstTerm]
+		}*/
+		
 		dbMan.save()
 	}
 

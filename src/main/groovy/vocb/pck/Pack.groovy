@@ -95,7 +95,7 @@ public class Pack {
 		.findAll {it.size()>1} as LinkedHashSet
 	}
 
-	Set<Concept> findTopConceptsFromDb(int topx) {
+	Set<Concept> findTopConceptsFromAllPackages(int topx) {
 		Helper.startWatch()
 
 		Set<Concept> allExp = exportedItemsFromPackages()
@@ -111,23 +111,26 @@ public class Pack {
 
 
 
-	void printFirstX(int x=1000) {
+	void printFirstX(int x=100) {
 		Helper.startWatch()
-		Set<String> topDb = findTopConceptsFromDb(x)
+		Set<String> topDb = dbMan.db.concepts
+				//.findAll {!it.ignore}
+				.toSorted {-1*(it.freq?:0)}
+				.take(x)				
 				.collect {it.firstTerm} as LinkedHashSet
 		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic")
-		
+
 		Set<String> list = (topDb - ignore)
 		Helper.printLapseTime()
-		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->		
+		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
 			list.each {
 				w.println(it)
-				println it
 			}
 		}
-		println "Size: ${list.size()}" 
-		
-		
+		println "${list.join(' ')} \nSize: ${list.size()}"
+		dbMan.bestExampleForSentence(list.join(' ')).each {
+			println it.toAnsiString()
+		}
 	}
 
 	void printExamplesExport() {
@@ -215,19 +218,18 @@ public class Pack {
 	public List<PackInfo>  pkgsByName(String ... names) {
 		Map<String, Boolean> matches = names.collectEntries {[it, false]}
 		List<PackInfo> ret = allPackInfos.findAll { PackInfo pi->
-			names.any {String name-> 
+			names.any {String name->
 				if (pi.treeConf.name.containsIgnoreCase(name)) {
-					matches[name] = true	
-					return true				
+					matches[name] = true
+					return true
 				}
 				return false
-			}					
+			}
 		}
 		assert matches.each { String pkgSearch, Boolean m->
 			assert m : "No package matching '$pkgSearch'"
 		}
 		return ret
-		
 	}
 
 
@@ -282,6 +284,9 @@ public class Pack {
 			silent=true
 			//p.exportByName("BasicWords")
 			/*findTopxNotInDb(1000).each {
+			 println it
+			 }*/
+			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/
 			printFirstX()

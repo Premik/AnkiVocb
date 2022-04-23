@@ -330,7 +330,7 @@ public class Corpus {
 			loadKaggleEnglishWordFreqCsv()
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
-			println c["corrugated"]
+			println c["copyright"]
 			println c["upon"]
 			println c["I"]
 			println c["you"]
