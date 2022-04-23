@@ -25,11 +25,11 @@ class ExampleComparatorTest {
 	void cornerScores() {
 		
 		assert c1.words == ["hello", "world"] as Set 
-		assert c1.similarityScoreOf([]) ==0
-		assert c1.similarityScoreOf(["non this word"]) <=0
-		assert c1.similarityScoreOf(["hello"]) >0
-		assert c1.similarityScoreOf(["hello"]) == c1.similarityScoreOf(["world"])
-		assert c3.similarityScoreOf(["hello", "world", "example"]) == c3Uncached.similarityScoreOf(["hello", "world", "example"]) 		
+		assert c1.similarityScoreOf("") ==0
+		assert c1.similarityScoreOf("non this word") <=0
+		assert c1.similarityScoreOf("hello") >0
+		assert c1.similarityScoreOf("hello") == c1.similarityScoreOf("world")
+		assert c3.similarityScoreOf("hello world example") == c3Uncached.similarityScoreOf("hello world example") 		
 	}
 	
 	@Test
@@ -41,7 +41,8 @@ class ExampleComparatorTest {
 	@Test
 	void testOrder() {
 		assert c1.bestExamplesFrom([c3, c3Uncached]).size() == 2
-		assert c1.bestExamplesFrom([c1,c2])[0] == c1
+		assert c1.bestExamplesFrom([c1,c2])[0].a == c1
+		assert c1.bestExamplesFrom([c1,c2])[0].b == c1
 	}
 	
 	
