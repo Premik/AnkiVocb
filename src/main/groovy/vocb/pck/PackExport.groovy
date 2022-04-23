@@ -27,7 +27,7 @@ public class PackExport {
 
 	PackInfo info
 	LinkedHashSet<Example> examplesToExport = [] as LinkedHashSet
-	WordNormalizer wn = new WordNormalizer()
+	WordNormalizer wn = WordNormalizer.instance
 	Data2Crowd data2crowd
 	boolean silent=false
 
@@ -45,7 +45,7 @@ public class PackExport {
 		dbMan.withBestExample(text) { Example e, String sen, Set<String> com, Set<String> mis->
 
 			if (!mis)  {
-				//Exact match, jsut export
+				//Exact match, just export
 				if (!silent) {
 					println color(sen, BOLD)
 				}

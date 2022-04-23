@@ -54,7 +54,7 @@ public class Pack {
 
 
 
-	WordNormalizer wn = new WordNormalizer()
+	WordNormalizer wn = WordNormalizer.instance
 
 
 	@Memoized
@@ -76,8 +76,7 @@ public class Pack {
 	}
 
 	Set<String> exportedWordsOf(String ... names) {
-		names
-				.collectMany {pkgsByName(it)}
+		pkgsByName(names)
 				.findAll()
 				.collect {packExportOf(it)}
 				.collectMany { it.exportedWords } as LinkedHashSet
@@ -112,18 +111,23 @@ public class Pack {
 
 
 
-	void printFirst1000() {
+	void printFirstX(int x=1000) {
 		Helper.startWatch()
-		Set<String> topDb = findTopConceptsFromDb(1000)
+		Set<String> topDb = findTopConceptsFromDb(x)
 				.collect {it.firstTerm} as LinkedHashSet
 		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic")
 		
-		Paths.get("/tmp/work/first1000.txt").withPrintWriter { PrintWriter w->
-			(topDb - ignore).each {
+		Set<String> list = (topDb - ignore)
+		Helper.printLapseTime()
+		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->		
+			list.each {
 				w.println(it)
+				println it
 			}
 		}
-		Helper.printLapseTime()
+		println "Size: ${list.size()}" 
+		dbMan.withBestExample(INVISIBLE_TEXT) {  }
+		
 	}
 
 	void printExamplesExport() {
@@ -209,9 +213,21 @@ public class Pack {
 
 
 	public List<PackInfo>  pkgsByName(String ... names) {
-		allPackInfos.findAll { PackInfo pi->
-			names.any {String name-> pi.treeConf.name.containsIgnoreCase(name)}
+		Map<String, Boolean> matches = names.collectEntries {[it, false]}
+		List<PackInfo> ret = allPackInfos.findAll { PackInfo pi->
+			names.any {String name-> 
+				if (pi.treeConf.name.containsIgnoreCase(name)) {
+					matches[name] = true	
+					return true				
+				}
+				return false
+			}					
 		}
+		assert matches.each { String pkgSearch, Boolean m->
+			assert m : "No package matching '$pkgSearch'"
+		}
+		return ret
+		
 	}
 
 
@@ -268,7 +284,7 @@ public class Pack {
 			/*findTopxNotInDb(1000).each {
 			 println it
 			 }*/
-			printFirst1000()
+			printFirstX()
 
 			//printExamplesExport()
 			//p.export()
