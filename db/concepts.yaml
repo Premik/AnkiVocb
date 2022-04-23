@@ -26,14 +26,17 @@ concepts:
 - terms: 
   - term: a
     lang: en
+  freq: 15440.91260
   profileName: ignore
 - terms: 
   - term: ve
     lang: en
+  freq: 12.86040
   profileName: ignore
 - terms: 
   - term: the
     lang: en
+  freq: 39338.37510
   profileName: ignore
 - terms: 
   - term: of
@@ -45,6 +48,7 @@ concepts:
     tts: cs-terms/z.mp3
   img: img/of.jpeg
   freq: 22362.52530
+##  I   ##################################################################### no freq
 - terms: 
   - term: I
     lang: en
@@ -9223,6 +9227,7 @@ concepts:
 - terms: 
   - term: hey
     lang: en
+  freq: 47.04000
   profileName: ignore
 - terms: 
   - term: dashing
@@ -9240,6 +9245,7 @@ concepts:
 - terms: 
   - term: tho
     lang: en
+  freq: 4.19800
   profileName: ignore
 - terms: 
   - term: sleigh
@@ -9946,6 +9952,7 @@ concepts:
 - terms: 
   - term: vice
     lang: en
+  freq: 54.78510
   profileName: ignore
 - terms: 
   - term: mixed
@@ -10009,6 +10016,7 @@ concepts:
 - terms: 
   - term: phil
     lang: en
+  freq: 24.88850
   profileName: ignore
 - terms: 
   - term: miracle
@@ -10562,6 +10570,7 @@ concepts:
 - terms: 
   - term: baba
     lang: en
+  freq: 2.28130
   profileName: ignore
 - terms: 
   - term: path
@@ -11614,7 +11623,7 @@ concepts:
     lang: cs
     tts: cs-terms/Tomas.mp3
   img: img/Thomas.jpeg
-  freq: 0.07568
+  freq: 27.70410
 - terms: 
   - term: share
     lang: en
@@ -14793,7 +14802,7 @@ concepts:
     lang: cs
     tts: cs-terms/barva.mp3
   img: img/colour.jpeg
-  freq: 49.39310
+  freq: 3.01839
 - terms: 
   - term: crime
     lang: en
@@ -21849,7 +21858,7 @@ concepts:
     tts: en-terms/estranging.mp3
   - term: odcizující
     lang: cs
-  freq: 0.02250
+  freq: 0.00563
   profileName: relax
 - terms: 
   - term: puppeteers
@@ -22559,7 +22568,7 @@ concepts:
     lang: cs
     tts: cs-terms/Pariz.mp3
   img: img/Paris.jpeg
-  freq: 0.27003
+  freq: 20.75728
 - terms: 
   - term: probably
     lang: en
@@ -22676,6 +22685,7 @@ concepts:
 - terms: 
   - term: york
     lang: en
+  freq: 308.70380
   profileName: ignore
 - terms: 
   - term: necessary
@@ -23021,7 +23031,7 @@ concepts:
     lang: cs
     tts: cs-terms/Karel.mp3
   img: img/Charles.jpeg
-  freq: 0.03753
+  freq: 18.90165
 - terms: 
   - term: written
     lang: en
@@ -23545,7 +23555,7 @@ concepts:
     lang: cs
     tts: cs-terms/Jakub.mp3
   img: img/James.jpeg
-  freq: 0.06930
+  freq: 38.48493
 - terms: 
   - term: hart
     lang: en
@@ -23819,7 +23829,7 @@ concepts:
     lang: cs
     tts: cs-terms/Jezis.mp3
   img: img/Jesus.jpeg
-  freq: 0.11168
+  freq: 14.84765
 - terms: 
   - term: born
     lang: en
@@ -24918,7 +24928,7 @@ concepts:
     lang: cs
     tts: cs-terms/pocitac.mp3
   img: img/pc (personal computer).jpeg
-  freq: 260.93150
+  freq: 8.39263
 - terms: 
   - term: application
     lang: en
