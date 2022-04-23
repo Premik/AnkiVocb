@@ -30,6 +30,7 @@ public class Pack {
 
 
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+	boolean silent=false
 
 
 	//ConfHelper cfgHelper = new ConfHelper()
@@ -61,7 +62,7 @@ public class Pack {
 		assert info
 		ConfHelper cfgHelper = new ConfHelper()
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
-		return new PackExport(data2crowd: d2c, info:info)
+		return new PackExport(data2crowd: d2c, info:info, silent:silent)
 	}
 
 	void doExport(PackInfo info) {
@@ -86,7 +87,7 @@ public class Pack {
 		packExportOf(allPackInfos.first()).dbMan
 	}
 
-	Set<String> findTopxNotInDb(int topx=1000) {
+	Set<String> findTopWordsNotInDb(int topx=1000) {
 		Set<String> top = Corpus.buildDef().topX(topx) as LinkedHashSet
 		//Set<String> topInDb = top.collectMany { dbMan.findConceptsByFirstTermAllVariant(it) }.collect {it.firstTerm} as LinkedHashSet
 		top.findAll { !dbMan.findConceptsByFirstTermAllVariant(it)}
@@ -95,7 +96,7 @@ public class Pack {
 		.findAll {it.size()>1} as LinkedHashSet
 	}
 
-	Set<Concept> findTopxFromDb(int topx) {
+	Set<Concept> findTopConceptsFromDb(int topx) {
 		Helper.startWatch()
 
 		Set<Concept> allExp = exportedItemsFromPackages()
@@ -109,15 +110,44 @@ public class Pack {
 		//allExp.take(100).each {println it}
 	}
 
+
+
 	void printFirst1000() {
-		Set<String> topDb = findTopxFromDb(1000)
+		Helper.startWatch()
+		Set<String> topDb = findTopConceptsFromDb(1000)
 				.collect {it.firstTerm} as LinkedHashSet
-		Set<String> ignore = exportedWordsOf("First", "Supa", "Uncomm")
-		topDb.intersect(ignore).each {
-			println it
+		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic")
+		
+		Paths.get("/tmp/work/first1000.txt").withPrintWriter { PrintWriter w->
+			(topDb - ignore).each {
+				w.println(it)
+			}
 		}
-		
-		
+		Helper.printLapseTime()
+	}
+
+	void printExamplesExport() {
+		Helper.startWatch()
+		//exportedExamplesFromPackages(pkgsByName("First")).forEach {
+
+		//}
+		//return
+
+		Set<Example> exported = exportedExamplesFromPackages().toSet() as LinkedHashSet
+		Set<Example> ignore = exportedExamplesFromPackages(allPackInfos-pkgsByName("First")).toSet() as LinkedHashSet
+		println ignore
+		dbMan.db.examples.toSorted{it.firstTerm}.each { Example e->
+			if (ignore.contains(e)) {
+				println color(e.firstTerm, WHITE)
+			}
+			else {
+				if (exported.contains(e)) {
+					println color(e.firstTerm, BOLD)
+				} else
+					println e.firstTerm
+			}
+		}
+		Helper.printLapseTime()
 	}
 
 	/*Stream<String> wordsFromPackages(List<PackInfo> infos) {
@@ -195,6 +225,12 @@ public class Pack {
 		.collectMany { it.exportedWords } as HashSet
 	}
 
+	Stream<Example> exportedExamplesFromPackages( List<PackInfo> pkgInfos = allPackInfos) {
+		exportedItemsFromPackages(pkgInfos).map{it.example}.filter {it as boolean}
+	}
+
+
+
 	Stream<ExportItem> exportedItemsFromPackages( List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.parallelStream().flatMap {packExportOf(it).export()}
 	}
@@ -227,14 +263,14 @@ public class Pack {
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
-
-
-
+			silent=true
 			//p.exportByName("BasicWords")
-			findTopxNotInDb(1000).each {
-				println it
-			}
-			//printFirst1000()
+			/*findTopxNotInDb(1000).each {
+			 println it
+			 }*/
+			printFirst1000()
+
+			//printExamplesExport()
 			//p.export()
 			//findBasicWords()
 		}
