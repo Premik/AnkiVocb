@@ -331,7 +331,10 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			println c["corrugated"]
-			println c.wordFreq["you"]
+			println c["upon"]
+			println c["I"]
+			println c["you"]
+			
 			String[] s = sortedByFreq
 			println s.take(10).each {
 				println "${it.padRight(20)} ${wordFreq[it]}"

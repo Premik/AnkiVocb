@@ -25,8 +25,14 @@ class CorpusTest {
 	
 	@Test
 	void bracket() {		
-		assert c["you're (you are)"] == c["you are"]
-		
+		assert c["you're (you are)"] == c["you are"]	
+	}
+	
+	@Test
+	void shortCase() {
+		assert c["I"]
+		assert c["I"] >= c["i"]
+	
 	}
 
 }
