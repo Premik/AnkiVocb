@@ -159,4 +159,10 @@ class ModelTest {
 		assert e.dirty				
 		assert e.enTerm.pron =="changed"
 	}
+	
+	@Test
+	void emptyExample() {
+		assert !Example.empty
+		assert new Example() 
+	}
 }
