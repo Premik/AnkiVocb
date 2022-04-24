@@ -19,7 +19,7 @@ public class ExampleComparator {
 	Collection<String> words = [] 
 	
 	@Lazy
-	Collection<String> wordVariants = words.collectMany {WordNormalizer.instance.wordVariants(it, true)} as LinkedHashSet
+	Collection<String> wordVariants = words.collectMany {WordNormalizer.instance.wordVariantsWithBrackets(it)} as LinkedHashSet
 	
 	String getSentence() {
 		words.join(" ").capitalize() + "."		
@@ -27,12 +27,16 @@ public class ExampleComparator {
 	
 	void setSentence(String s) {		
 		example = null
-		words = WordNormalizer.instance.uniqueueTokens(s)		
+		words = WordNormalizer.instance.tokensWithPairs(s).toList() as LinkedHashSet		
 	}
 	
-	void setExample(Example e) {		
+	void setExample(Example e) {
 		sentence = e?.firstTerm
 		example= e		
+	}
+	
+	Collection<String> getWordsWithoutBrackets() {
+		words.collect{WordNormalizer.instance.stripBracketsOut(it)}
 	}
 	
 	

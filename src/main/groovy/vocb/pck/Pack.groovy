@@ -114,11 +114,11 @@ public class Pack {
 	void printFirstX(int x=1000) {
 		Helper.startWatch()
 		Set<String> topDb = dbMan.db.concepts
-				//.findAll {!it.ignore}
+				.findAll {!it.ignore}
 				.toSorted {-1*(it.freq?:0)}
 				.take(x)
 				.collect {it.firstTerm} as LinkedHashSet
-		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic")
+		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
 
 		Set<String> list = (topDb - ignore) as LinkedHashSet
 		Helper.printLapseTime()
@@ -130,19 +130,15 @@ public class Pack {
 		println "${list.take(100).join(' ')} \nSize: ${list.size()}"
 		int lastDec = 0
 		while (list.size() > 0) {
-			dbMan.bestExampleForSentence(list).each {
-				println list.contains("you")
-				println list.find { it == "you" }
-				println it.commonWords.contains("you")
-				println list.size()
+			dbMan.bestExampleForSentence(list).each {			
 				println "-$lastDec ${it.toAnsiString()}"
-				lastDec = it.commonWords.size()
-				
+				lastDec = it.commonWords.size()				
 				list-=it.commonWords
-				
-				
 			}
-			if (lastDec == 0) break
+			if (lastDec == 0) {
+				println "No more common words"
+				break
+			}
 		}
 	}
 
