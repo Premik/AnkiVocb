@@ -34,6 +34,7 @@ public class Helper {
 	public static String utf8=StandardCharsets.UTF_8.toString()
 	public static GStringTemplateEngine templEngine = new GStringTemplateEngine()
 	public static Tuple3 null3 = [null, null, null]
+	public static Tuple2 null2 = [null, null]
 
 	static public void printProcOut(Process proc, int waitSec=0) {
 		StringBuffer b = new StringBuffer()

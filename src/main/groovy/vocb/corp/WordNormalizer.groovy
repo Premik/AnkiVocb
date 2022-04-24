@@ -39,18 +39,37 @@ public class WordNormalizer {
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
 				.map {String s ->s.toLowerCase()}
 	}
+	
+
+	public Stream<String> tokensWithPairs(CharSequence input) {
+		String last = ""
+		spacesPattern.splitAsStream(input)
+				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
+				.flatMap { String w->
+					[[last, w].findAll().join(' '), w, [w, last].findAll().join(' ')].toUnique().tap {last=w}.stream() 
+				} //Hack, statful, no para
+	}
 
 	public Stream<String> lemming( Stream<String> inp, boolean preferOrigialWord=false) {
 		inp.flatMap { String s->
 			wordVariants(s).stream()
 		}
 	}
-
-	public List<String> wordVariants(String s, boolean preferOrigialWord=false) {
+	
+	public List<String> sortWordVariants(List<String> variants) {
+		variants.toUnique()
+		//.tap {println it}
+		.sort { String a, String b->
+			//Lower-cased first
+			Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
+					a.length() <=> b.length() //Shorter first
+		}		
+	}
+	
+	public List<String> wordVariantUnsorted(String s) {
 		if (!s) return []
-
 		String cap = swapCapitalFirstLetter(s)
-		List<String> variants = [
+		[
 			swapPluralSingular(cap),
 			swapPluralSingular(s),
 			*ingVariants(cap),
@@ -59,14 +78,11 @@ public class WordNormalizer {
 			*edVariants(s),
 			cap,
 			s
-		]
-		.toUnique()
-		//.tap {println it}
-		.sort { String a, String b->
-			//Lower-cased first
-			Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
-					a.length() <=> b.length() //Shorter first
-		}
+		]	
+	}
+
+	public List<String> wordVariants(String s, boolean preferOrigialWord=false) {		
+		List<String> variants = sortWordVariants(wordVariantUnsorted(s))
 		if (preferOrigialWord) {
 			//The exact word first,
 			variants.push(s)
@@ -124,6 +140,14 @@ public class WordNormalizer {
 			}
 		}
 		return ["${s}ing" as String]
+	}
+	
+	public List<String> wordVariantsWithBrackets(String s) {
+		def (String a, String b) = splitBrackets(s)
+		if (!b) return wordVariants(s, true) //No brackets
+		
+		List<String> exact = wordVariantUnsorted(a) + wordVariantUnsorted(b)	
+		
 	}
 
 
