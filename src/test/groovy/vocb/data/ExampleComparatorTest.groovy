@@ -2,6 +2,8 @@ package vocb.data
 
 import org.junit.jupiter.api.Test
 
+import vocb.corp.WordNormalizer
+
 @Newify(value=[Example, Term])
 class ExampleComparatorTest {
 
@@ -52,7 +54,7 @@ class ExampleComparatorTest {
 
 	@Test
 	void printAnsi() {
-		println c2.bestFromComparators([c1, c3])[0].toAnsiString()
+		println c2.bestFromComparators([c1, c3])[0].toAnsiString()		
 	}
 	
 	@Test
@@ -82,7 +84,7 @@ class ExampleComparatorTest {
 		].collect {String s->Example().tap{terms.add(Term(s))}}
 		
 		List<String> words = ["That's (that is)", "it's (it is, it has)", "fun", "to"]		
-		List<ExampleComparatorMatch> m = new ExampleComparator(words:words).bestFromExamples(examples.stream())
+		List<ExampleComparatorMatch> ms = new ExampleComparator(words:words).bestFromExamples(examples.stream())
 		def p = { ExampleComparatorMatch match->
 			println "-"*100
 			println "$match.a.sentence $match.a.wordVariants"
@@ -91,8 +93,13 @@ class ExampleComparatorTest {
 			println match.commonWordVariants
 			println "-"*100
 		}
-		p(m.first())
-		p(m.first().inverted())
+		assert ms
+		ExampleComparatorMatch m = ms.first()
+		p(m)
+		p(m.inverted())
+		assert m.commonWords.contains("That's")
+		assert m.commonWordVariants.contains("")
+		
 		
 	}
 }

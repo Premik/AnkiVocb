@@ -44,13 +44,14 @@ class WordNormalizerTest {
 	void pairs() {
 		String[] w = ["a", "b", "c", "d", "e"]
 
-
 		assert wn.tuples(w.stream(),1).toList() == w
 		assert wn.tuples(w.stream(), 2).toList() == ['a b', 'b c', 'c d', 'd e']
 		assert wn.tuples(w.stream(), 3).toList() == ['a b c', 'b c d', 'c d e']
 
 		//assert norm.pairs(w.stream(),1, 3).toList() == ['a', 'a b', 'b c', 'c d', 'd']
 	}
+	
+	
 
 	@Test
 	void phraseFreqs() {
