@@ -78,7 +78,7 @@ class ExampleComparatorTest {
 	@Test
 	void complexVariants() {
 		List<Example> examples = [
-			"That is it.",
+			//"That is it.",
 			"That's very funny",
 			//"What fun it is to ride"
 		].collect {String s->Example().tap{terms.add(Term(s))}}
@@ -98,7 +98,7 @@ class ExampleComparatorTest {
 		p(m)
 		p(m.inverted())
 		assert m.commonWords.contains("That's")
-		assert m.commonWordVariants.contains("")
+		assert m.commonWordVariants.contains("that")
 		
 		
 	}

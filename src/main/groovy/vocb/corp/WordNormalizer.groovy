@@ -254,6 +254,11 @@ public class WordNormalizer {
 		//.map {Collection<List<String>> s-> s.collect { it.join(' ')} }
 		.map {List<String> s -> s.join(' ') }
 	}
+	
+	public List<String> pairVariants(String w, String w2="") {
+		String pair = [w, w2].collect {stripBracketsOut(it)}.findAll().join(" ")
+		 [w, w2, pair ].collectMany { wordVariantsWithBrackets(it) }
+	}
 
 	public Map<String , Integer> phraseFreqs(Collection<String> words, int minSz=1, int maxSz=4) {
 		Map<String , Integer> ret = [:].withDefault {0}
