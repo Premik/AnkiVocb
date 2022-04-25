@@ -179,6 +179,14 @@ class WordNormalizerTest {
 	}
 	
 	@Test
+	void expandBrk() {
+		assert wn.expandBrackets (["I've (I have)", "foo"]) == ["I've", "I have", "foo"] 
+		
+	}
+	
+	
+	
+	@Test
 	@Disabled
 	void stripMultiple() {
 		wn.stripBracketsOut ("(The) Hello (world)") == "Hello"		

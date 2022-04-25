@@ -130,7 +130,7 @@ public class Pack {
 				w.println(it)
 			}
 		}
-		findBestExamplesFor(list)
+		findBestExamplesFor(wn.expandBrackets(list))
 	}
 
 	private void findBestExamplesFor(Collection<String> wordList) {
@@ -142,11 +142,11 @@ public class Pack {
 		while (wordList.size() > 0) {
 
 			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
-			ms.take(10).each {println it.toAnsiString()}
+			ms.take(20).each {println it.toAnsiString()}
 			//Collection<String> all = ms.collectMany { it.commonWords }.toUnique()
 			Collection<String> all = ms.collectMany {it.matchesWordlist(wordList)}.toUnique()			
 			(wordList - all).each {
-				println it
+				//println it
 			}
 			
 			break
