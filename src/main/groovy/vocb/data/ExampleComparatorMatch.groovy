@@ -14,7 +14,7 @@ import vocb.corp.WordNormalizer
 public class ExampleComparatorMatch {
 
 	public static LinkedHashSet<String> preferedWords= []
-	
+
 	public WordNormalizer getWn() {
 		WordNormalizer.instance
 	}
@@ -37,16 +37,30 @@ public class ExampleComparatorMatch {
 		(a.wordVariants + b.wordVariants) - commonWordVariants
 	}
 
+	double preferedWordsScore(Collection<String> preferedList) {
+		preferedList.sum {String cw->
+			int idx = preferedWords.findIndexOf { cw.equalsIgnoreCase(it) }
+			if(idx<0) return 0
+			return preferedWords.size() - idx
+		} as double
+	}
+
 	@Lazy
 	public double similarityScore = {
+
 		Number pairs = commonWords.count {it.contains(" ") || it.contains("'")} //Composed/pairs higher
 		double longWordMatch = (commonWords.sum {it.length()}?:0) as double //Long exact match word is better
 		double exactMatches = commonWords.size()*500 //Exact word matches
 		double variants = commonWordVariants.size()
 		double sentenceLen = b.wordsWithoutBrackets.size() //Prefer shorter sentences
-		double preferedList = commonWords.intersect(preferedWords).size()
-		double preferedListVars = commonWordVariants.intersect(preferedWords).size()
-		return pairs*1000 + longWordMatch*3 + exactMatches*500 + variants*50 - sentenceLen + preferedList*5 + preferedListVars*2
+		Collection<String> preferedList = commonWords.intersect(preferedWords)
+		preferedList.each {String cw->preferedWords.findIndexOf { cw.equalsIgnoreCase(it) }>-1}
+		double prefered = (preferedList.sum {preferedWords.findIndexOf { it }}?:0) as double
+
+		Collection<String> preferedListVars = commonWordVariants.intersect(preferedWords)
+		double preferedVars = (preferedListVars.sum {preferedWords.findIndexOf { it }}?:0) as double
+
+		return pairs*1000 + longWordMatch*3 + exactMatches*500 + variants*50 - sentenceLen + prefered/20 + preferedVars/30
 	}()
 
 	public String sentenceToAnsiString(String defaultColor=RED, boolean printMiss=true) {

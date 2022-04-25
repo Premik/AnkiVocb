@@ -57,6 +57,7 @@ class ExampleComparatorTest {
 
 	@Test
 	void printAnsi() {
+		ExampleComparatorMatch.preferedWords = ["hello"]
 		println c2.bestFromComparators([c1, c3])[0].toAnsiString()		
 	}
 	
