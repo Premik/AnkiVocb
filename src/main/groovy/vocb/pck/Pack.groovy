@@ -40,7 +40,7 @@ public class Pack {
 	@Lazy
 	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
-	@Lazy List<PackInfo> allPackInfos = {
+	@Lazy List<PackInfo> allPackInfos = {		
 		treeConf.leafs.collect { TreeConf<PackInfo> tc->
 
 			PackInfo pi = new PackInfo(
@@ -77,10 +77,11 @@ public class Pack {
 	}
 
 	Set<String> exportedWordsOf(String ... names) {
-		pkgsByName(names)
-				.findAll()
-				.collect {packExportOf(it)}
-				.collectMany { it.exportedWords } as LinkedHashSet
+		pkgsByName(names).parallelStream()
+				.filter {it as Boolean}
+				.map {packExportOf(it)}
+				.flatMap { it.exportedWords.stream() }
+				.toList() as LinkedHashSet				
 	}
 
 	Manager getDbMan() {
@@ -114,13 +115,14 @@ public class Pack {
 
 	void printFirstX(int x=1000) {
 		Helper.startWatch()
-		Set<String> topDb = dbMan.db.concepts
-				.findAll {!it.ignore}
-				.toSorted {-1*(it.freq?:0)}
-				.take(x)
-				.collect {it.firstTerm} as LinkedHashSet
-		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
+		//Arrays.parallelSo
+		Concept[] topDbAr = dbMan.db.concepts.findAll {!it.ignore}.toArray() as Concept[]
+		Arrays.parallelSort(topDbAr, {Concept a, Concept b-> (b.freq?:0) <=>(a.freq?:0)})		
 
+		Set<String> topDb = topDbAr.take(x).collect {it.firstTerm} as LinkedHashSet
+		
+		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
+		
 		Set<String> list = (topDb - ignore) as LinkedHashSet
 		Helper.printLapseTime()
 		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
@@ -131,18 +133,18 @@ public class Pack {
 		findBestExamplesFor(list)
 	}
 
-	private LinkedHashSet findBestExamplesFor(Collection<String> wordList) {
+	private void findBestExamplesFor(Collection<String> wordList) {
 		println "${wordList.take(100).join(' ')} \nSize: ${wordList.size()}"
 		int lastDec = 0
 		//Set<String> matchedVariants = [] as LinkedHashSet
 		List<String> matched = []
 		Helper.startWatch()
 		while (wordList.size() > 0) {
-			
+
 			ExampleComparatorMatch m =dbMan.bestExampleForSentence(wordList)[0]
-			Helper.printLapseTime()
+
 			if (!m) break
-			println "-$lastDec ${m.toAnsiString()}"
+				println "-$lastDec ${m.toAnsiString()}"
 			Collection<String> remove = m.matchesWordlist(wordList)
 			matched.addAll(remove)
 			/*if (!removed) {
@@ -159,10 +161,18 @@ public class Pack {
 				break
 			}
 		}
+		Helper.printLapseTime()
 		println "Matched: $matched"
 
 		//println "Vars   : $matchedVariants"
 		println "Left   : ${wordList-matched}"
+
+		Paths.get("/tmp/work/matched.txt").withPrintWriter { PrintWriter w->
+			matched.each {
+				w.println(it)
+			}
+		}
+		
 	}
 
 	void printExamplesExport() {
