@@ -136,8 +136,11 @@ public class Pack {
 		int lastDec = 0
 		//Set<String> matchedVariants = [] as LinkedHashSet
 		List<String> matched = []
+		Helper.startWatch()
 		while (wordList.size() > 0) {
+			
 			ExampleComparatorMatch m =dbMan.bestExampleForSentence(wordList)[0]
+			Helper.printLapseTime()
 			if (!m) break
 			println "-$lastDec ${m.toAnsiString()}"
 			Collection<String> remove = m.matchesWordlist(wordList)
@@ -320,11 +323,8 @@ public class Pack {
 			 }*/
 			//printFirstX()
 			ExampleComparatorMatch.preferedWords = Corpus.buildDef(1500).topX(1000) as LinkedHashSet
-			findBestExamplesFor(["that's (that is)", "that is"])
-			return
-
-			//findBestExamplesFor(["that is"])
-			
+			//findBestExamplesFor(["that's (that is)", "that is"])
+			//return
 			printFirstX()
 
 			//printExamplesExport()

@@ -38,10 +38,12 @@ public class ExampleComparatorMatch {
 	}
 
 	double preferedWordsScore(Collection<String> preferedList) {
+		if (!preferedWords) return 0
+		if (!preferedList) return 0
 		preferedList.sum {String cw->
 			int idx = preferedWords.findIndexOf { cw.equalsIgnoreCase(it) }
 			if(idx<0) return 0
-			return preferedWords.size() - idx
+			return 1-(idx+1)/(preferedWords.size())			
 		} as double
 	}
 
@@ -52,15 +54,11 @@ public class ExampleComparatorMatch {
 		double longWordMatch = (commonWords.sum {it.length()}?:0) as double //Long exact match word is better
 		double exactMatches = commonWords.size()*500 //Exact word matches
 		double variants = commonWordVariants.size()
-		double sentenceLen = b.wordsWithoutBrackets.size() //Prefer shorter sentences
-		Collection<String> preferedList = commonWords.intersect(preferedWords)
-		preferedList.each {String cw->preferedWords.findIndexOf { cw.equalsIgnoreCase(it) }>-1}
-		double prefered = (preferedList.sum {preferedWords.findIndexOf { it }}?:0) as double
+		double sentenceLen = b.wordsWithoutBrackets.size() //Prefer shorter sentences		
+		double prefered = preferedWordsScore(commonWords.intersect(preferedWords))
+		double preferedVars = preferedWordsScore(commonWordVariants.intersect(preferedWords))
 
-		Collection<String> preferedListVars = commonWordVariants.intersect(preferedWords)
-		double preferedVars = (preferedListVars.sum {preferedWords.findIndexOf { it }}?:0) as double
-
-		return pairs*1000 + longWordMatch*3 + exactMatches*500 + variants*50 - sentenceLen + prefered/20 + preferedVars/30
+		return pairs*1000 + longWordMatch*3 + exactMatches*500 + variants*50 - sentenceLen + prefered*40 + preferedVars*30
 	}()
 
 	public String sentenceToAnsiString(String defaultColor=RED, boolean printMiss=true) {
