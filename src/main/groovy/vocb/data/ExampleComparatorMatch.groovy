@@ -12,8 +12,13 @@ import vocb.corp.WordNormalizer
 @CompileStatic
 @EqualsAndHashCode(includes=["a", "b"])
 public class ExampleComparatorMatch {
-	
+
 	public static LinkedHashSet<String> preferedWords= []
+	
+	public WordNormalizer getWn() {
+		WordNormalizer.instance
+	}
+
 
 	ExampleComparator a
 	ExampleComparator b
@@ -42,7 +47,7 @@ public class ExampleComparatorMatch {
 		double preferedList = commonWords.intersect(preferedWords).size()
 		double preferedListVars = commonWordVariants.intersect(preferedWords).size()
 		return pairs*1000 + longWordMatch*3 + exactMatches*500 + variants*50 - sentenceLen + preferedList*5 + preferedListVars*2
-	}() 
+	}()
 
 	public String sentenceToAnsiString(String defaultColor=RED, boolean printMiss=true) {
 		if (!missWords) {
@@ -51,10 +56,11 @@ public class ExampleComparatorMatch {
 		}
 		String s= a.words.withIndex().collect { String wa, int i->
 			String col = RED
-			if (commonWords.contains(wa)) {
+			String waNoBrackets = wn.stripBracketsOut(wa)
+			if (commonWords.contains(wa) || commonWords.contains(waNoBrackets) ) {
 				col = BOLD
 			} else {
-				if (commonWordVariants.contains(wa)) {
+				if (commonWordVariants.contains(wa) || commonWordVariants.contains(waNoBrackets)) {
 					col = GREEN
 				} else {
 					if (!printMiss) return null
@@ -63,6 +69,16 @@ public class ExampleComparatorMatch {
 			if (i==0) wa = wa.capitalize()
 			return color(wa, col)
 		}.findAll().join(" ") + "."
+	}
+
+	Collection<String> matchesWordlist(Collection<String> wordList) {
+		assert wordList
+
+		Collection<String> remove = commonWords.intersect(wordList) 	//Exact matches first
+		if (remove) return remove
+		remove = a.wordsMatchingWithoutBrackets(commonWords).intersect(wordList) //Exact match without brackets
+		if (remove) return remove
+		return commonWordVariants.intersect(wordList) //All variants last
 	}
 
 	public String toAnsiString() {
