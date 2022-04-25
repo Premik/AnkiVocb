@@ -141,7 +141,16 @@ public class Pack {
 		Helper.startWatch()
 		while (wordList.size() > 0) {
 
-			ExampleComparatorMatch m =dbMan.bestExampleForSentence(wordList)[0]
+			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
+			ms.take(10).each {println it.toAnsiString()}
+			//Collection<String> all = ms.collectMany { it.commonWords }.toUnique()
+			Collection<String> all = ms.collectMany {it.matchesWordlist(wordList)}.toUnique()			
+			(wordList - all).each {
+				println it
+			}
+			
+			break
+			ExampleComparatorMatch m =ms[0]
 
 			if (!m) break
 				println "-$lastDec ${m.toAnsiString()}"

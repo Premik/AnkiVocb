@@ -86,10 +86,9 @@ public class ExampleComparatorMatch {
 	Collection<String> matchesWordlist(Collection<String> wordList) {
 		assert wordList
 
-		Collection<String> remove = commonWords.intersect(wordList) 	//Exact matches first
-		if (remove) return remove
-		remove = a.wordsMatchingWithoutBrackets(commonWords).intersect(wordList) //Exact match without brackets
-		if (remove) return remove
+		Collection<String> remove = commonWords.intersect(wordList) 	//Exact matches first		
+		Collection<String> removeBrackets = a.wordsMatchingWithoutBrackets(commonWords).intersect(wordList) //Exact match without brackets
+		if (remove ||removeBrackets) return remove + removeBrackets
 		return commonWordVariants.intersect(wordList) //All variants last
 	}
 

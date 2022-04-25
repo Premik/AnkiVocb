@@ -21,6 +21,17 @@ class ExampleComparatorTest {
 	Example e1 = Example().tap {
 		terms.add(Term("Hello world example"))
 	}
+	
+	
+	
+	
+	
+	public Example example(String en) {
+		Example().tap {
+			terms.add(Term(en))
+		}
+	}
+	
 
 	ExampleComparator c3 = ExampleComparator.of(e1)
 	ExampleComparator c3Uncached = new ExampleComparator(sentence:e1.firstTerm)
@@ -92,6 +103,38 @@ class ExampleComparatorTest {
 		assert m.commonWordVariants.containsAll("that is", "that's")
 		assert m.commonWordVariants.containsAll("That is", "That's")
 		assert m.commonWordVariants.containsAll("that", "is")
+	}
+	
+	@Test
+	void matchIll() {
+		ExampleComparator ex =ExampleComparator.of(example("I'll always remember that moment."))
+		assert ex.words.contains("I'll")
+		ExampleComparator wr = new ExampleComparator(words:["I'll (I will)"])
+		assert wr.wordsWithoutBrackets == ["I'll"]
+		ExampleComparatorMatch m = wr.similarityCompareTo(ex)
+		assert m.commonWords.contains("I'll")
+	}
+	
+	@Test
+	void matchIts() {
+		ExampleComparator ex =ExampleComparator.of(example("Then it's true."))
+		assert ex.words.contains("it's")
+		ExampleComparator wr = new ExampleComparator(words:["it's (it is, it has)"])
+		assert wr.wordsWithoutBrackets == ["it's"]
+		ExampleComparatorMatch m = wr.similarityCompareTo(ex)
+		assert m.commonWords.contains("it's")
+	}
+	
+	@Test
+	void matchIve() {
+		ExampleComparator ex =ExampleComparator.of(example("I've been worried since yesterday."))
+		assert ex.words.contains("I've")
+		assert ex.words.contains("i've")
+		ExampleComparator wr = new ExampleComparator(words:["I've (I have)"])
+		assert wr.wordsWithoutBrackets == ["I've"]
+		ExampleComparatorMatch m = wr.similarityCompareTo(ex)
+		assert m.commonWords.contains("I've")
+		
 	}
 
 	@Test
