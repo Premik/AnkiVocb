@@ -40,7 +40,7 @@ public class Pack {
 	@Lazy
 	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
-	@Lazy List<PackInfo> allPackInfos = {		
+	@Lazy List<PackInfo> allPackInfos = {
 		treeConf.leafs.collect { TreeConf<PackInfo> tc->
 
 			PackInfo pi = new PackInfo(
@@ -81,7 +81,7 @@ public class Pack {
 				.filter {it as Boolean}
 				.map {packExportOf(it)}
 				.flatMap { it.exportedWords.stream() }
-				.toList() as LinkedHashSet				
+				.toList() as LinkedHashSet
 	}
 
 	Manager getDbMan() {
@@ -117,14 +117,17 @@ public class Pack {
 		Helper.startWatch()
 		//Arrays.parallelSo
 		Concept[] topDbAr = dbMan.db.concepts.findAll {!it.ignore}.toArray() as Concept[]
-		Arrays.parallelSort(topDbAr, {Concept a, Concept b-> (b.freq?:0) <=>(a.freq?:0)})		
+		Arrays.parallelSort(topDbAr, {Concept a, Concept b-> (b.freq?:0) <=>(a.freq?:0)})
 
 		Set<String> topDb = topDbAr.take(x).collect {it.firstTerm} as LinkedHashSet
-		
+
 		//Set<String> ignore =  []
 		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
 		Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
-		
+		//Set<String> ignore =  exportedWordsOf("Simple" )
+		//Prefer the ignored (known) words
+		ExampleComparatorMatch.preferedWords = ( ignore + ExampleComparatorMatch.preferedWords) as LinkedHashSet
+
 		Set<String> list = (topDb - ignore) as LinkedHashSet
 		Helper.printLapseTime()
 		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
@@ -132,29 +135,38 @@ public class Pack {
 				w.println(it)
 			}
 		}
-		findBestExamplesFor(wn.expandBrackets(list))
+		findBestExamplesFor(wn.expandBrackets(list), ignore)
 	}
 
-	private void findBestExamplesFor(Collection<String> wordList) {
+	private void findBestExamplesFor(Collection<String> wordList, Collection<String> highligh=[]) {
 		println "${wordList.take(100).join(' ')} \nSize: ${wordList.size()}"
 		int lastDec = 0
 		//Set<String> matchedVariants = [] as LinkedHashSet
 		List<String> matched = []
+		Closure<String> colourer =  { ExampleComparatorMatch self, String word, String defaultColor ->
+			if (highligh.contains(word) ){
+				return ExampleComparatorMatch.invertedFgBgColors.call(self, word, defaultColor)
+			}
+			return ExampleComparatorMatch.defaultColors.call(self, word, defaultColor)
+		}
+
 		Helper.startWatch()
 		while (wordList.size() > 0) {
 
 			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
 			ms.take(4).each { ExampleComparatorMatch m->
-				println m.toAnsiString()
+				println m.toAnsiString(colourer)
 				println "${m.b.example?.firstTerm}"
-				println "${m.commonWords.join('\n')}\n"
+				println "${(m.commonWords-highligh).join('\n')}\n"
 			}
 			//Collection<String> all = ms.collectMany { it.commonWords }.toUnique()
-			Collection<String> all = ms.collectMany {it.matchesWordlist(wordList)}.toUnique()			
+			Collection<String> all = ms.collectMany {
+				it.matchesWordlist(wordList)
+			}.toUnique()
 			(wordList - all).each {
 				//println it
 			}
-			
+
 			break
 			ExampleComparatorMatch m =ms[0]
 
@@ -187,7 +199,6 @@ public class Pack {
 				w.println(it)
 			}
 		}
-		
 	}
 
 	void printExamplesExport() {
