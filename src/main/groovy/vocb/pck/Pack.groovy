@@ -140,8 +140,7 @@ public class Pack {
 				w.println(it)
 			}
 		}
-		assert ignore.contains("I") || ignore.contains("i")
-		//findBestExamplesFor(wn.expandBrackets(list), ignore)
+		findBestExamplesFor(wn.expandBrackets(list), ignore)
 	}
 
 	private void findBestExamplesFor(Collection<String> wordList, Collection<String> highligh=[]) {
@@ -357,8 +356,8 @@ public class Pack {
 		new Pack().tap { Pack p->
 			
 			silent=true
-			packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))			
-			return
+			//packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))			
+			//return
 			/*findTopxNotInDb(1000).each {
 			 println it
 			 }*/
