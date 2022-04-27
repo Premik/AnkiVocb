@@ -190,7 +190,7 @@ public class WordNormalizer {
 	}
 
 	@CompileDynamic
-	//@Memoized
+	@Memoized
 	public List<String> wordVariantsWithBrackets(String s) {
 		def (String a, String b) = splitBrackets(s)
 		//if (!b) return wordVariants(s, true) //No brackets

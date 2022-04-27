@@ -76,13 +76,26 @@ public class Manager {
 		return pad
 	}
 
-	public Concept findConceptByFirstTermAnyVariant(String firstTerm, boolean preferOrigialWord=true) {
-		findConceptsByFirstTermAllVariant(firstTerm, preferOrigialWord)[0]
+	public Concept findConceptByFirstTermAnyVariant(String firstTerm) {
+		findConceptsByFirstTermAllVariant(firstTerm)[0]
 	}
 
-	public Collection<Concept> findConceptsByFirstTermAllVariant(String firstTerm, boolean preferOrigialWord=true) {
-		List<String> variants = wn.wordVariants(wn.stripBracketsOut(firstTerm), preferOrigialWord)
-		variants.findResults {conceptByFirstTerm[it] }
+	public Collection<Concept> findConceptsByFirstTermAllVariant(String firstTerm) {
+		/*if (firstTerm == "i") {
+			println "I"
+		}*/
+		List<String> variants = wn.wordVariantsWithBrackets(firstTerm)
+		Collection<Concept> sourceVars = variants.findResults {conceptByFirstTerm[it] }
+		if (sourceVars) return sourceVars
+		db.concepts.parallelStream().map{ Concept c-> 			
+			List<String> vars = wn.wordVariantsWithBrackets(c.firstTerm)
+			new Tuple2<Concept, List<String >>(c, vars)
+		}.filter { Tuple2<Concept, List<String >> t->
+			t.v2.contains(firstTerm)
+		}.map { Tuple2<Concept, List<String >> t->
+			t.v1
+		}.toList()
+				
 	}
 
 
@@ -415,7 +428,7 @@ public class Manager {
 		enWords
 				.findAll()
 				.collect {it.toLowerCase()}
-				.collect { conceptByFirstTerm[it] }
+				.collect {findConceptByFirstTermAnyVariant(it)}
 				.findAll()
 				.findAll {!it.ignore}
 	}

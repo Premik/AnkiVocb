@@ -99,7 +99,7 @@ class ExampleComparatorTest {
 		assert ex.wordVariants.containsAll("that", "is")
 
 		ExampleComparatorMatch m =ex.similarityCompareTo(word)
-		assert m.commonWords as Set == ["That's"] as Set
+		assert m.commonWords.contains("That's")
 		assert m.commonWordVariants.containsAll("that is", "that's")
 		assert m.commonWordVariants.containsAll("That is", "That's")
 		assert m.commonWordVariants.containsAll("that", "is")
@@ -110,7 +110,7 @@ class ExampleComparatorTest {
 		ExampleComparator ex =ExampleComparator.of(example("I'll always remember that moment."))
 		assert ex.words.contains("I'll")
 		ExampleComparator wr = new ExampleComparator(words:["I'll (I will)"])
-		assert wr.wordsWithoutBrackets == ["I'll"]
+		assert wr.wordsWithoutBrackets.contains("I'll")
 		ExampleComparatorMatch m = wr.similarityCompareTo(ex)
 		assert m.commonWords.contains("I'll")
 	}
@@ -120,7 +120,7 @@ class ExampleComparatorTest {
 		ExampleComparator ex =ExampleComparator.of(example("Then it's true."))
 		assert ex.words.contains("it's")
 		ExampleComparator wr = new ExampleComparator(words:["it's (it is, it has)"])
-		assert wr.wordsWithoutBrackets == ["it's"]
+		assert wr.wordsWithoutBrackets.contains("it's")
 		ExampleComparatorMatch m = wr.similarityCompareTo(ex)
 		assert m.commonWords.contains("it's")
 	}
@@ -131,7 +131,7 @@ class ExampleComparatorTest {
 		assert ex.words.contains("I've")
 		assert ex.words.contains("i've")
 		ExampleComparator wr = new ExampleComparator(words:["I've (I have)"])
-		assert wr.wordsWithoutBrackets == ["I've"]
+		assert wr.wordsWithoutBrackets.contains("I've")
 		ExampleComparatorMatch m = wr.similarityCompareTo(ex)
 		assert m.commonWords.contains("I've")
 		

@@ -35,7 +35,8 @@ public class ConceptDb {
 	public List<Term> conceptsByLang(String lng, Closure conceptFilter= {Concept c->!c.ignore}) {
 		concepts.findAll(conceptFilter).collectMany {it.termsByLang(lng)}
 	}
-
+	
+	
 	@CompileDynamic
 	public Stream<TermContainer> getTermContainers() {
 		return Stream.concat(concepts.stream(), examples.stream())
