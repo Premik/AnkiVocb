@@ -11529,10 +11529,28 @@ concepts:
   img: img/whats.jpeg
   freq: 469.13043
 - terms: 
+  - term: don't (do not)
+    lang: en
+    tts: en-terms/dont.mp3
+  - term: ne (nedělej, zkráceně)
+    lang: cs
+    tts: cs-terms/ne.mp3
+  img: img/dont (do not).jpeg
+  freq: 304.71785
+- terms: 
+  - term: doesn't (does not)
+    lang: en
+    tts: en-terms/doesnt.mp3
+  - term: ne (nedělá, zkráceně)
+    lang: cs
+    tts: cs-terms/ne.mp3
+  img: img/doesnt (does not).jpeg
+  freq: 250.58533
+- terms: 
   - term: let's (let us)
     lang: en
     tts: en-terms/lets.mp3
-    pron: lɛts
+    pron: lɛt{}
   - term: pojďme (zkráceně)
     lang: cs
     tts: cs-terms/pojdme.mp3
@@ -21462,7 +21480,7 @@ concepts:
     tts: en-terms/licit.mp3
     pron: ˈlɪsɪt
   - term: legální
-    lang: cs  
+    lang: cs
   freq: 0.10790
   profileName: relax
 - terms: 
