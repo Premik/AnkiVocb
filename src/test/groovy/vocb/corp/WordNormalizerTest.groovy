@@ -93,12 +93,20 @@ class WordNormalizerTest {
 	@Test
 	void sentencesI() {
 		assert wn.sentences('''You say I am sad.''').size() == 1
+		assert wn.sentences('''You say I'm sad.''').size() == 1
 		assert wn.sentences('''
               The story I must tell
              ''').size() == 1
 	}
+	
+	@Test
+	void sentencesCapital() {
+		assert wn.sentences('''I say You are sad.''').size() == 1
+		assert wn.sentences('''I know London very well.''').size() == 1
+	}
 
 	@Test
+	@Disabled
 	void sentencesMultiNoDots() {
 		String[] sts = wn.sentences('''
 			Now the ground is white

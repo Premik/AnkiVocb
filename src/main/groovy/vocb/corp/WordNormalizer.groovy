@@ -229,11 +229,15 @@ public class WordNormalizer {
 		}
 		ret
 				.collectMany {  it.split(/[,;:]\s(=\s*)/) as List} //Split on non-full sentences
-				.collectMany { it.split(/\s+(?=[\p{Lu}&&[^I]])/) as List}//Missing dots, but capital letter next (but ignore capital I)
+				//.collectMany { it.split(/\s+(?=[\p{Lu}&&[^I]])/) as List}//Missing dots, but capital letter next (but ignore capital I)
 				.collect {it.trim()}
 				.collect {it.replaceAll(/[!?;.,"'":]$/, "") } //Remove sentence terminators
 				.collect {it.trim()}
 				.collect {String s->s.replaceAll("[\n\r]+", " ")} //remove newlines
+	}
+	
+	public List<String> splitSentenceMissingDots(CharSequence input) {
+		
 	}
 
 	public Map<String, Set<String>> wordsInSentences(List<String> sentences) {

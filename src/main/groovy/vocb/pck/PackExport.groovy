@@ -2,6 +2,10 @@ package vocb.pck
 
 import static vocb.Ansi.*
 
+import java.nio.charset.StandardCharsets
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.StandardCopyOption
 import java.util.stream.Collectors
 import java.util.stream.Stream
 
@@ -113,4 +117,47 @@ public class PackExport {
 		}
 		.collect(Collectors.toCollection(mc)) as Set<String>
 	}()
+
+	public debugDumpTo(Path folder) {
+		int fileCount=0
+		assert folder
+		Path trgPath = folder.resolve(info.treeConf.relativePath)
+		Files.createDirectories(trgPath)
+		Closure cp = { Path p->
+			if (!Files.exists(p)) return
+				Files.copy(p, trgPath.resolve(p.fileName), StandardCopyOption.REPLACE_EXISTING)
+			fileCount++
+		}
+		Closure pw = { String name, Closure c->
+			trgPath.resolve(name).withPrintWriter(StandardCharsets.UTF_8.toString(), c)
+			fileCount++
+		}
+
+		Closure pl = { String name, Iterable it->
+			pw(name) { PrintWriter w->
+				it.forEach {
+					w.println(it)
+				}
+				
+			}
+		}
+
+		cp(info.sentencesPath)
+		cp(info.wordsPath)
+		pl("sentences-reparsed.txt", info.sentences)
+		pl("words-sorted.txt", info.wordList.toSorted())
+		
+		List<String> wordDups = info.wordList.groupBy { it }.findAll { k,v-> v.size() >1 }.collect{k,v->v[0]}
+
+		if (wordDups) {
+			pl("words-dups.txt", wordDups)
+		}
+		pl("words-exported.txt", exportedWords)
+		pl("sentences-exported.txt",
+			sentencesExport()
+					.map {ExportItem ex-> ex.example.firstTerm}
+					.toList()
+		)
+		println "Dumped $fileCount files to the $trgPath"
+	}
 }

@@ -40,7 +40,8 @@ public class Pack {
 	@Lazy
 	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
-	@Lazy List<PackInfo> allPackInfos = {
+	@Lazy 
+	List<PackInfo> allPackInfos = {
 		treeConf.leafs.collect { TreeConf<PackInfo> tc->
 
 			PackInfo pi = new PackInfo(
@@ -64,6 +65,10 @@ public class Pack {
 		ConfHelper cfgHelper = new ConfHelper()
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		return new PackExport(data2crowd: d2c, info:info, silent:silent)
+	}
+	
+	public List<PackExport>  packExportsOf(String ... names) {
+		pkgsByName(names).collect {packExportOf(it)}
 	}
 
 	void doExport(PackInfo info) {
@@ -135,7 +140,8 @@ public class Pack {
 				w.println(it)
 			}
 		}
-		findBestExamplesFor(wn.expandBrackets(list), ignore)
+		assert ignore.contains("I") || ignore.contains("i")
+		//findBestExamplesFor(wn.expandBrackets(list), ignore)
 	}
 
 	private void findBestExamplesFor(Collection<String> wordList, Collection<String> highligh=[]) {
@@ -349,8 +355,10 @@ public class Pack {
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
+			
 			silent=true
-			//p.exportByName("BasicWords")
+			packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))			
+			return
 			/*findTopxNotInDb(1000).each {
 			 println it
 			 }*/
