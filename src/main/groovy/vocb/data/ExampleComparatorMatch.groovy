@@ -101,8 +101,8 @@ public class ExampleComparatorMatch {
 	}
 
 	public String toAnsiString(Closure<String> colors=defaultColors) {
-		String inv = inverted().sentenceToAnsiString(colors).take(1000).padRight(120)
-		String tx= sentenceToAnsiString(colors).take(1000)
+		String inv = inverted().sentenceToAnsiString(colors).take(500).padRight(120)
+		String tx= sentenceToAnsiString(colors).take(500)
 		return "$inv ${color('<-',BLUE)} $tx ${color("", NORMAL)}"
 	}
 

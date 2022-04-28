@@ -159,7 +159,7 @@ public class Pack {
 		while (wordList.size() > 0) {
 
 			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
-			ms.take(4).each { ExampleComparatorMatch m->
+			ms.take(20).each { ExampleComparatorMatch m->
 				println m.toAnsiString(colourer)
 				println "${m.b.example?.firstTerm}"
 				println "${(m.commonWords-highligh).join('\n')}\n"
