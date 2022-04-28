@@ -52,13 +52,13 @@ public class ExampleComparatorMatch {
 
 		Number pairs = commonWordVariants.count {it.contains(" ")} //Composed/pairs higher
 		double longWordMatch = (commonWordVariants.sum {it.length()}?:0) as double //Long exact match word is better
-		double exactMatches = commonWords.size()*500 //Exact word matches
+		double exactMatches = commonWords.size() //Exact word matches
 		double variants = commonWordVariants.size()
 		double sentenceLen = b.wordsWithoutBrackets.size() //Prefer shorter sentences
 		double prefered = preferedWordsScore(commonWords.intersect(preferedWords))
 		double preferedVars = preferedWordsScore(commonWordVariants.intersect(preferedWords))
 
-		return pairs*500 + longWordMatch*5 + exactMatches*100 + variants*50 - sentenceLen + prefered*40 + preferedVars*30
+		return pairs*500 + longWordMatch*5 + exactMatches*100 + variants*50 - sentenceLen + prefered*60 + preferedVars*50
 	}()
 
 	public static Closure<String> defaultColors = {ExampleComparatorMatch self, String word, String defaultColor ->
@@ -104,7 +104,7 @@ public class ExampleComparatorMatch {
 	}
 
 	public String toAnsiString(Closure<String> colors=defaultColors) {
-		String inv = Helper.padRightAnsi(inverted().sentenceToAnsiString(colors),80).take(500)
+		String inv = Helper.padRightAnsi(inverted().sentenceToAnsiString(colors),50).take(500)
 		String tx= sentenceToAnsiString(colors).take(500)
 		return "$inv ${color('<-',BLUE)} $tx ${color("", NORMAL)}"
 	}
