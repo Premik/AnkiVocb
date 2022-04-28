@@ -356,7 +356,7 @@ public class Pack {
 		new Pack().tap { Pack p->
 			
 			silent=true
-			//packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))			
+						
 			//return
 			/*findTopxNotInDb(1000).each {
 			 println it
@@ -369,6 +369,7 @@ public class Pack {
 			//findBestExamplesFor(["that's (that is)", "that is"])
 			//return
 			printFirstX()
+			packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))
 
 			//printExamplesExport()
 			//p.export()

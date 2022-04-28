@@ -160,20 +160,39 @@ public class PackExport {
 		Helper.startWatch()
 		int fileCount=0
 		assert folder
-		Path trgPath = folder.resolve(info.treeConf.relativePath)
-		Files.createDirectories(trgPath)
+		Path trgPath = folder.resolve(info.treeConf.relativePath)		
+		Files.createDirectories(trgPath.resolve("sorted"))
+		Closure<Path> pw = { String name, Closure c->
+			fileCount++
+			Path t = trgPath.resolve(name)
+			t.withPrintWriter(Helper.utf8, c)
+			return t			
+		}
+		
+		Closure cps = { Path p->
+			assert Files.exists(p)
+			pw("sorted/$p.fileName") {PrintWriter w->
+				p.withReader(Helper.utf8) { Reader r->  
+					r.readLines().toSorted().each {
+						w.println(it)
+					}
+				}
+			}		
+		}
 		Closure cp = { Path p->
 			if (!Files.exists(p)) return
-				Files.copy(p, trgPath.resolve(p.fileName), StandardCopyOption.REPLACE_EXISTING)
+			Path t = trgPath.resolve(p.fileName)
+			Files.copy(p, t, StandardCopyOption.REPLACE_EXISTING)			
 			fileCount++
+			cps(t)
 		}
-		Closure pw = { String name, Closure c->
-			trgPath.resolve(name).withPrintWriter(StandardCharsets.UTF_8.toString(), c)
-			fileCount++
+		Closure pws = { String name, Closure c->
+			cps(pw(name, c))
 		}
+		
 
 		Closure pl = { String name, Iterable it->
-			pw(name) { PrintWriter w->
+			pws(name) { PrintWriter w->
 				it.forEach {
 					w.println(it)
 				}
@@ -182,8 +201,7 @@ public class PackExport {
 
 		cp(info.sentencesPath)
 		cp(info.wordsPath)
-		pl("sentences-reparsed.txt", info.sentences)
-		pl("words-sorted.txt", info.wordList.toSorted())
+		pl("sentences-reparsed.txt", info.sentences)		
 
 		List<String> wordDups = info.wordList.groupBy { it }.findAll { k,v-> v.size() >1 }.collect{k,v->v[0]}
 

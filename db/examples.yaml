@@ -1076,7 +1076,7 @@ examples:
   - term: I am late.
     lang: en
     tts: en-samples/I am late.mp3
-  - term: Jdu pozdě
+  - term: Jdu pozdě.
     lang: cs
     tts: cs-samples/Jdu pozde.mp3
 - terms: 
@@ -4090,7 +4090,7 @@ examples:
     lang: cs
     tts: cs-samples/Vsechno je v pohode.mp3
 - terms: 
-  - term: "'cause everything is awesome"
+  - term: "'cause everything is awesome."
     lang: en
     tts: en-samples/cause everything is awesome.mp3
   - term: Protože všechno je úžasné.
