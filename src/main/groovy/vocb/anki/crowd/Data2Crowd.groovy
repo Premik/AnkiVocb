@@ -177,7 +177,7 @@ public class Data2Crowd {
 
 	void mapConcept(Concept c, Example e) {
 		assert c
-		assert e
+		assert e!= null
 		if (c.ignore) return
 			assert c?.firstTerm
 		println c

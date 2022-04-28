@@ -354,8 +354,10 @@ public class Pack {
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
+			p.exportByName("Simple")
+			return
 			
-			silent=true
+			//silent=true
 						
 			//return
 			/*findTopxNotInDb(1000).each {
