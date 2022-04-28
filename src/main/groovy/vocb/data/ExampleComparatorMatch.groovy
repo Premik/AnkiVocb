@@ -1,10 +1,10 @@
 package vocb.data
 
-import java.util.stream.Stream
 import static vocb.Ansi.*
+
 import groovy.transform.CompileStatic
 import groovy.transform.EqualsAndHashCode
-import groovy.transform.Memoized
+import vocb.Helper
 import vocb.corp.WordNormalizer
 
 
@@ -43,7 +43,7 @@ public class ExampleComparatorMatch {
 		preferedList.sum {String cw->
 			int idx = preferedWords.findIndexOf { cw.equalsIgnoreCase(it) }
 			if(idx<0) return 0
-			return 1-(idx+1)/(preferedWords.size())			
+			return 1-(idx+1)/(preferedWords.size())
 		} as double
 	}
 
@@ -54,18 +54,23 @@ public class ExampleComparatorMatch {
 		double longWordMatch = (commonWordVariants.sum {it.length()}?:0) as double //Long exact match word is better
 		double exactMatches = commonWords.size()*500 //Exact word matches
 		double variants = commonWordVariants.size()
-		double sentenceLen = b.wordsWithoutBrackets.size() //Prefer shorter sentences		
+		double sentenceLen = b.wordsWithoutBrackets.size() //Prefer shorter sentences
 		double prefered = preferedWordsScore(commonWords.intersect(preferedWords))
 		double preferedVars = preferedWordsScore(commonWordVariants.intersect(preferedWords))
 
 		return pairs*500 + longWordMatch*5 + exactMatches*100 + variants*50 - sentenceLen + prefered*40 + preferedVars*30
 	}()
-	
+
 	public static Closure<String> defaultColors = {ExampleComparatorMatch self, String word, String defaultColor ->
+		if (!word) return null
+		//if (defaultColor == RED) return null //Skip misses
+		if (self.a.words.size() > 100 && defaultColor == RED) return null //Skip misses only for long sentences
 		color(word, defaultColor)
 	}
-	
+
 	public static Closure<String> invertedFgBgColors = {ExampleComparatorMatch self, String word, String defaultColor ->
+		if (!word) return null
+		//if (defaultColor == RED) return null //Skip misses
 		color(color(word, defaultColor), REVERSE_VIDEO)
 	}
 
@@ -82,9 +87,7 @@ public class ExampleComparatorMatch {
 			} else {
 				if (commonWordVariants.contains(wa) || commonWordVariants.contains(waNoBrackets)) {
 					col = GREEN
-				} else {
-					//if (!printMiss) return null
-				}
+				} //RED
 			}
 			if (i==0) wa = wa.capitalize()
 			return colors(this, wa, col)
@@ -94,14 +97,14 @@ public class ExampleComparatorMatch {
 	Collection<String> matchesWordlist(Collection<String> wordList) {
 		assert wordList
 
-		Collection<String> remove = commonWords.intersect(wordList) 	//Exact matches first		
+		Collection<String> remove = commonWords.intersect(wordList) 	//Exact matches first
 		Collection<String> removeBrackets = a.wordsMatchingWithoutBrackets(commonWords).intersect(wordList) //Exact match without brackets
 		if (remove ||removeBrackets) return remove + removeBrackets
 		return commonWordVariants.intersect(wordList) //All variants last
 	}
 
 	public String toAnsiString(Closure<String> colors=defaultColors) {
-		String inv = inverted().sentenceToAnsiString(colors).take(500).padRight(120)
+		String inv = Helper.padRightAnsi(inverted().sentenceToAnsiString(colors),80).take(500)
 		String tx= sentenceToAnsiString(colors).take(500)
 		return "$inv ${color('<-',BLUE)} $tx ${color("", NORMAL)}"
 	}
