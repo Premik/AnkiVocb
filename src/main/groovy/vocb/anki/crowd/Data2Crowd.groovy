@@ -46,8 +46,7 @@ public class Data2Crowd {
 		}
 	}()
 
-
-	@Lazy
+	
 	Manager dbMan = Manager.defaultInstance 
 
 	@Lazy
