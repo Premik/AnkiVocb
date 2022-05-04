@@ -27,6 +27,11 @@ public class ConceptDb {
 					//.filter {it}
 					.collect(Collectors.toSet()).toList()
 	}
+	
+	public void dedup() {
+		concepts = new LinkedHashSet(concepts).toList() 
+		examples = new LinkedHashSet(examples).toList()
+	}
 
 	public List<Term> examplesByLang(String lng) {
 		examples.collectMany {it.termsByLang(lng) }
