@@ -99,9 +99,9 @@ class ConfHelper {
 		if (binding == null) binding = mergedCfg
 		ConfigSlurper cfgSlurper = new ConfigSlurper()
 		/*if (defaultClassLoader) {
-			cfgSlurper.classLoader = defaultClassLoader
-			Thread.currentThread().setContextClassLoader(defaultClassLoader)
-		}*/
+		 cfgSlurper.classLoader = defaultClassLoader
+		 Thread.currentThread().setContextClassLoader(defaultClassLoader)
+		 }*/
 		return parseString(cfgStr, binding, cfgSlurper)
 	}
 
@@ -147,12 +147,12 @@ class ConfHelper {
 					"$it/$resName",
 					"/$it/$resName",
 					"../$it/$resName"
-				]}
+				]
+			}
 			.collect{ String cpPath ->
 				//println "   $cpPath $cl"
 				cl.getResourceAsStream(cpPath)
 			}.find {it}
-
 		}.find {it}
 		return is
 	}
@@ -207,11 +207,23 @@ class ConfHelper {
 	public loadDefault() {
 		assert loadAndMergeConfig("ankivocb-default") :
 		"""\n
-              Failed to load the inbuilt 'default.conf' config. Paths considered: 
+              Failed to load the inbuilt 'ankivocb-default.conf' config. Paths considered: 
               $confPathDetails""".stripIndent()
 
 		ConfigObject c=  loadAndMergeConfig("ankivocb")
 		if (!c) log.warn("Couldn't find the custom ankivocb.conf file. Using the default.\n")
+	}
+
+	public Path getStoragePath() {
+		Paths.get("$cfg.rootPath/$cfg.db.dbName")
+	}
+
+	public Path getPkgPath() {
+		Paths.get("$cfg.rootPath/$cfg.pkg.pkgName")
+	}
+
+	public Path getOutPath() {
+		Paths.get(cfg.outputRoot)
 	}
 
 
@@ -222,14 +234,11 @@ class ConfHelper {
 			println toPrettyString()
 		}
 	}
-	
+
 	public static Path resolveOutputPath(String name, ConfigObject cfg=cfg) {
-		assert cfg.outputRoot 
+		assert cfg.outputRoot
 		Path root = Paths.get(cfg.outputRoot.toString())
 		root.toFile().mkdirs()
 		return root.resolve(name)
 	}
-
-
-
 }

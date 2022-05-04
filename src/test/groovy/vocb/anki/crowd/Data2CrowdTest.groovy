@@ -19,14 +19,26 @@ class Data2CrowdTest {
 	Path tmpDir = Paths.get(System.getProperty("java.io.tmpdir")).resolve("ankivocbData2Crowd")
 
 	ConfHelper cfgHelper = new ConfHelper()
-	ConfigObject cfg = cfgHelper.config
 	
-	Pack pack = new Pack(destRootFolder: tmpDir)
+	@Lazy
+	ConfigObject cfg = {
+		cfgHelper.config.outputRoot = tmpDir.toString()
+		return cfgHelper.config
+	}()
+	
+	Pack pack = new Pack(cfgHelper:cfgHelper)
 	TreeConf treeConf = new TreeConf().tap {
 		path = tmpDir
 		it.@$conf = new ConfigObject()
 	}
 	
+	@Test
+	void preCond() {		
+		assert cfg.outputRoot == tmpDir.toString()
+		assert cfg === cfgHelper.config
+	}
+	
+	@Lazy
 	Data2Crowd dc = new Data2Crowd(cfgHelper:cfgHelper).tap {		
 		//delegate.metaClass.setAttribute(delegate, '$cfg', cfg)
         info = new PackInfo(treeConf: treeConf, displayName: "test", pack:pack)
@@ -46,6 +58,7 @@ class Data2CrowdTest {
     @Test
     void mapConceptRawField() {
         cfg.useRawNoteFields = true
+		println cfg.rootPath
         Note n = new Note(model: dc.vocbModel.noteModel)
         dc.concept2CrowdNote(firstConcept, firstExample, n)
         assert n.fields == ['in', '_in-en-ankivocb.mp3', 'Not in my city.', 'Not in my city-en-ankivocb.mp3',
@@ -69,7 +82,8 @@ class Data2CrowdTest {
 
     @Test
     void renderCardTemplate() {
-        ConfigObject renderCardTemplate = dc.cfg.renderCardTemplate
+		
+        ConfigObject renderCardTemplate = dc.cfgHelper.cfg.renderCardTemplate
         NoteModel nm = dc.renderCardTemplate(renderCardTemplate)
         assert nm
         nm.assureIsComplete()

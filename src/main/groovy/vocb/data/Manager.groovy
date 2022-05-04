@@ -10,17 +10,24 @@ import java.util.stream.Stream
 
 import groovy.transform.CompileStatic
 import vocb.Helper
+import vocb.conf.ConfHelper
 import vocb.corp.WordNormalizer
 
 @CompileStatic
 public class Manager {
+	
+	ConfHelper cfgHelper = ConfHelper.instance
+	ConfigObject cfg = cfgHelper.config
 
 
-	Path defaultStoragePath = Paths.get("/data/src/AnkiVocb/db/")
-	String defaultConceptsFileName = "concepts.yaml"
-	String defaultExamplesFileName = "examples.yaml"
+	Path defaultStoragePath = cfgHelper.storagePath
+	String defaultConceptsFileName = cfg["db"]["concepts"] as String
+	String defaultExamplesFileName = cfg["db"]["examples"] as String
 	WordNormalizer wn =WordNormalizer.instance
-
+	
+	@Lazy
+	public static Manager defaultInstance = new Manager().tap { load() }
+		
 	@Lazy
 	DataLocation defaultConceptsLocation = new DataLocation(storageRootPath:defaultStoragePath, filename:defaultConceptsFileName)
 	@Lazy
