@@ -3,12 +3,9 @@ concepts:
 ##  kitty   ################################################################# t1:tts:missing|t2:tts:missing
 - terms: 
   - term: kitty
-    lang: en
     tts: kitty.mp3
   - term: koťátko
-    lang: cs
-  - term: kočička
-    lang: cs 
+  - term: kočička 
   img: kitty.jpeg
   freq: 278.47900
 
@@ -16,6 +13,4 @@ examples:
 ##  Kitty needs some attention.   ########################################### t0:tts:missing|t1:tts:missing
 - terms:
   - term: Kitty needs some attention.
-    lang: en
   - term: Koťátko potřebuje trochu pozornosti.
-    lang: cs  

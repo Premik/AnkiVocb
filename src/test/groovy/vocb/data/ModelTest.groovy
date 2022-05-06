@@ -7,7 +7,7 @@ import groovy.yaml.YamlSlurper
 
 class ModelTest {
 	
-	ValidationProfile vp = ValidationProfile.strict
+	ValidationProfile vp = ValidationProfile.testDefaultProfile
 
 	Term t1 = new Term("en1", "en")
 	Term t2 = new Term("cs1", "cs", "tts")
@@ -65,10 +65,13 @@ class ModelTest {
 			freq: 1951647.00000
 			origins: ["corpus"]'''.stripIndent())			
 		assert j
+		ValidationProfile noLangVp = vp.clone().tap {
+			termsDefaultLanguages = [] //Force no lang codes to added when missing
+		}
 
-		new ConceptYamlStorage().tap {
+		new ConceptYamlStorage(vp: noLangVp).tap {
 			Concept c = parseConcept(j)
-			assert c.validate(vp) == ["t2:lang:missing", "t2:tts:missing"]
+			assert c.validate(noLangVp) == ["t2:lang:missing", "t2:tts:missing"]
 			
 		}
 	}

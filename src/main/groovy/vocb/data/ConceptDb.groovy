@@ -54,7 +54,7 @@ public class ConceptDb {
 		termContainers.forEach { o->
 			List<String> innerVal = o.validate(vp)
 			if (innerVal) {
-				ret.add("${o.firstTerm.padRight(20)}: ${innerVal.join('|')}".toString())
+				ret.add("${o.firstTerm?.padRight(20)}: ${innerVal?.join('|')}".toString())
 			}
 		}
 		return ret

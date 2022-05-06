@@ -218,7 +218,7 @@ public class Pack {
 			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
 			ms.take(100).each { ExampleComparatorMatch m->
 				println m.toAnsiString(colourer)
-				println "${m.b.example?.firstTerm}"
+				println "${m.b.example[0]?.term} (${m.b.example[1]?.term})"
 				println "${(m.commonWords-highligh).join('\n')}\n"
 			}
 			//Collection<String> all = ms.collectMany { it.commonWords }.toUnique()

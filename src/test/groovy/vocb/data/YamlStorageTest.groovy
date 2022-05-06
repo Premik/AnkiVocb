@@ -35,8 +35,8 @@ class YamlStorageTest {
 
 	@Test
 	void parseTerm() {
-		assertSimpleTerm(st.parseTerm(simpleTerm1), 1)
-		assertSimpleTerm(st.parseTerm(simpleTerm2), 2)
+		assertSimpleTerm(st.parseTerm(simpleTerm1, 0), 1)
+		assertSimpleTerm(st.parseTerm(simpleTerm2, 1), 2)
 	}
 
 	@Test
@@ -128,7 +128,7 @@ class YamlStorageTest {
 		term: term
 		lang: lang
 		tts: tts""".stripIndent()
-		String y2 = st.termToYaml(new Term("term", "lang", "tts"))
+		String y2 = st.termToYaml(new Term("term", "lang", "tts"), 0)
 		TestUtils.compareString(y2,y)
 	}
 
@@ -138,9 +138,7 @@ class YamlStorageTest {
         ##  apple   ################################################################# no img|no freq|t0:tts:missing|t1:tts:missing
 		terms: 
 		- term: apple
-		  lang: en
 		- term: jablko
-		  lang: cs
 		profileName: testProfile""".stripIndent()
 		Term t1 = new Term("apple", "en")
 		Term t2 = new Term("jablko", "cs")
@@ -157,9 +155,7 @@ class YamlStorageTest {
 		##  apple   ################################################################# no freq
 		terms: 
 		- term: apple
-		  lang: en
 		- term: jablko
-		  lang: cs
 		profileName: relax""".stripIndent()
 		Term t1 = new Term("apple", "en")
 		Term t2 = new Term("jablko", "cs")
