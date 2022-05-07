@@ -145,9 +145,9 @@ public class Pack {
 	void printBestExamplesFor() {
 		
 		Collection<String> words='''
-		available privacy general development local download including location account content provide sale credit categories advanced
-		topic financial below login legal options status browse range request reference term original
-		common daily natural average region record environment district calendar update resource material adult
+		available privacy general local download including account content provide sale credit categories advanced
+		topic financial below login legal options status browse range reference term original
+		common daily average region record environment district calendar update resource material adult
 		cheap third individual plus usually percent fast global subscribe various knowledge loan taken friday lake basic response
 		practice holiday loss higher kingdom storage across inside necessary according
 		'''.split(/\s+/).reverse().findAll()
