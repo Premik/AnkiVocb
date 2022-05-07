@@ -6517,7 +6517,7 @@ concepts:
   img: img/speaker.jpeg
   freq: 52.25570
 - terms: 
-  - term: neighbour
+  - term: neighbour (neighbor)
     tts: en-terms/neighbour.mp3
     pron: neighbour
   - term: soused
@@ -7673,7 +7673,7 @@ concepts:
   img: img/inside.jpeg
   freq: 125.86920
 - terms: 
-  - term: favourite
+  - term: favourite (favorite)
     tts: en-terms/favourite.mp3
     pron: ˈfeɪvərɪt
   - term: oblíbená
@@ -8235,7 +8235,7 @@ concepts:
   img: img/finder.jpeg
   freq: 34.52220
 - terms: 
-  - term: einstein
+  - term: Einstein
   freq: 8.08260
   profileName: ignore
 - terms: 
@@ -10640,7 +10640,7 @@ concepts:
   img: img/pain.jpeg
   freq: 71.72430
 - terms: 
-  - term: july
+  - term: July
     tts: en-terms/july.mp3
     pron: ʤu(ː)ˈlaɪ
   - term: červenec
@@ -10724,7 +10724,7 @@ concepts:
   img: img/twenty.jpeg
   freq: 35.88430
 - terms: 
-  - term: june
+  - term: June
     tts: en-terms/june.mp3
     pron: ʤuːn
   - term: červen
@@ -10812,7 +10812,7 @@ concepts:
   img: img/couple.jpeg
   freq: 74.09690
 - terms: 
-  - term: march
+  - term: March
     tts: en-terms/march.mp3
     pron: mɑːʧ
   - term: březen
@@ -10884,7 +10884,7 @@ concepts:
   img: img/amount.jpeg
   freq: 156.49700
 - terms: 
-  - term: august
+  - term: August
     tts: en-terms/august.mp3
     pron: ˈɔːgəst
   - term: srpen
@@ -11130,7 +11130,7 @@ concepts:
   img: img/guess.jpeg
   freq: 48.87310
 - terms: 
-  - term: november
+  - term: November
     tts: en-terms/november.mp3
     pron: nəʊˈvɛmbə
   - term: listopad
@@ -11138,7 +11138,7 @@ concepts:
   img: img/november.jpeg
   freq: 277.67670
 - terms: 
-  - term: december
+  - term: December
     tts: en-terms/december.mp3
     pron: dɪˈsɛmbə
   - term: prosinec
@@ -11184,7 +11184,7 @@ concepts:
   img: img/relations.jpeg
   freq: 93.82480
 - terms: 
-  - term: january
+  - term: January
     tts: en-terms/january.mp3
     pron: ˈʤænjʊəri
   - term: leden
@@ -11256,7 +11256,7 @@ concepts:
   img: img/yeah.jpeg
   freq: 43.96760
 - terms: 
-  - term: sunday
+  - term: Sunday
     tts: en-terms/sunday.mp3
     pron: ˈsʌndeɪ
   - term: neděle
@@ -11380,7 +11380,7 @@ concepts:
   img: img/top.jpeg
   freq: 823.31890
 - terms: 
-  - term: april
+  - term: April
     tts: en-terms/april.mp3
     pron: ˈeɪprəl
   - term: duben
@@ -11416,7 +11416,7 @@ concepts:
   img: img/trust.jpeg
   freq: 93.78490
 - terms: 
-  - term: october
+  - term: October
     tts: en-terms/october.mp3
     pron: ɒkˈtəʊbə
   - term: říjen
@@ -11708,7 +11708,7 @@ concepts:
   img: img/protect.jpeg
   freq: 63.68720
 - terms: 
-  - term: center
+  - term: center (centre)
     tts: en-terms/center.mp3
     pron: ˈsɛntə
   - term: centrum
@@ -12088,7 +12088,7 @@ concepts:
   img: img/reader.jpeg
   freq: 86.52570
 - terms: 
-  - term: labour
+  - term: labour (labor)
     tts: en-terms/labour.mp3
     pron: ˈleɪbə
   - term: práce
@@ -12490,7 +12490,7 @@ concepts:
   img: img/twice.jpeg
   freq: 33.91390
 - terms: 
-  - term: september
+  - term: September
     tts: en-terms/september.mp3
     pron: sɛpˈtɛmbə
   - term: září
@@ -12880,7 +12880,7 @@ concepts:
   img: img/truly.jpeg
   freq: 36.88600
 - terms: 
-  - term: february
+  - term: February
     tts: en-terms/february.mp3
     pron: ˈfɛbrʊəri
   - term: únor
@@ -17611,7 +17611,7 @@ concepts:
   img: img/knowledge.jpeg
   freq: 152.60270
 - terms: 
-  - term: william
+  - term: William
   freq: 101.68660
   profileName: ignore
 - terms: 
@@ -19781,7 +19781,7 @@ concepts:
   img: img/loan.jpeg
   freq: 149.26360
 - terms: 
-  - term: friday
+  - term: Friday
     tts: en-terms/friday.mp3
   - term: pátek
     tts: cs-terms/patek.mp3
@@ -20031,16 +20031,3 @@ concepts:
 - terms: 
   - term: stronger
   freq: 15.43310
-##  potřebujeme   ########################################################### single term only|no img|no freq|no cs term|t0:tts:missing
-- terms: 
-  - term: potřebujeme
-##  zkusit   ################################################################ single term only|no img|no freq|no cs term|t0:tts:missing
-- terms: 
-  - term: zkusit
-##  jiný   ################################################################## single term only|no img|no freq|no cs term|t0:tts:missing
-- terms: 
-  - term: jiný
-##  materiál   ############################################################## single term only|no img|no freq|no cs term|t0:tts:missing
-- terms: 
-  - term: materiál
-
