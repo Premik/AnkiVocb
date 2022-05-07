@@ -8884,9 +8884,11 @@ concepts:
     tts: cs-terms/nebude.mp3
   img: img/wont.jpeg
   freq: 339.19542
+##  should've (should have)   ############################################### no img|no freq|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: should've (should have)
-  - term: měl by mít (zkráceně) 
+  - term: měl by mít (zkráceně)
+##  could've   ############################################################## no img|no freq|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: could've
   - term: mohl mít (zkráceně)
@@ -8938,21 +8940,13 @@ concepts:
     tts: cs-terms/protoze.mp3
   img: img/cause.jpeg
   freq: 461.33790
-- terms: 
-  - term: could've
-  profileName: ignore
-- terms: 
-  - term: should've
-  profileName: ignore
+##  I'm (I am)   ############################################################ no img
 - terms: 
   - term: I'm (I am)
     tts: en-terms/Im.mp3
     pron: aɪm
   - term: Já jsem (zkráceně)
     tts: cs-terms/Ja jsem.mp3
-- terms: 
-  - term: I've (I have)
-  - term: Mám (zkráceně)
   freq: 311.38502
 - terms: 
   - term: you're (you are)
@@ -19952,4 +19946,107 @@ concepts:
 - terms: 
   - term: blink
   freq: 0.75490
+##  specific   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: specific
+  freq: 183.27040
+##  existing   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: existing
+  freq: 99.98410
+##  businesses   ############################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: businesses
+  freq: 82.32940
+##  setting   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: setting
+  freq: 78.80530
+##  backup   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: backup
+  freq: 41.83430
+##  transaction   ########################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: transaction
+  freq: 37.34380
+##  romantic   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: romantic
+  freq: 22.19910
+##  identifies   ############################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: identifies
+  freq: 11.12010
+##  'yes'   ################################################################# single term only|no img|no freq|no cs term|t0:tts:missing
+- terms: 
+  - term: "'yes'"
+##  online   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: online
+  freq: 1022.43210
+##  method   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: method
+  freq: 143.50630
+##  sellers   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: sellers
+  freq: 119.49440
+##  channel   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: channel
+  freq: 114.52120
+##  blogs   ################################################################# single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: blogs
+  freq: 79.87810
+##  monthly   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: monthly
+  freq: 78.55290
+##  weekly   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: weekly
+  freq: 76.43520
+##  lessons   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: lessons
+  freq: 38.73170
+##  yield   ################################################################# single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: yield
+  freq: 25.54310
+##  involves   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: involves
+  freq: 21.89690
+##  producers   ############################################################# single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: producers
+  freq: 20.81560
+##  honest   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: honest
+  freq: 18.88920
+##  processors   ############################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: processors
+  freq: 17.79950
+##  stronger   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: stronger
+  freq: 15.43310
+##  potřebujeme   ########################################################### single term only|no img|no freq|no cs term|t0:tts:missing
+- terms: 
+  - term: potřebujeme
+##  zkusit   ################################################################ single term only|no img|no freq|no cs term|t0:tts:missing
+- terms: 
+  - term: zkusit
+##  jiný   ################################################################## single term only|no img|no freq|no cs term|t0:tts:missing
+- terms: 
+  - term: jiný
+##  materiál   ############################################################## single term only|no img|no freq|no cs term|t0:tts:missing
+- terms: 
+  - term: materiál
 
