@@ -285,6 +285,8 @@ public class Corpus {
 			"anathematize":3,
 			"contagiousness":1,
 			"surrende":3,
+			"could've":100,
+			"should've":100,
 		])
 	}
 
@@ -330,7 +332,7 @@ public class Corpus {
 			loadKaggleEnglishWordFreqCsv()
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
-			println c["copyright"]
+			println c["could"]
 			println c["upon"]
 			println c["I"]
 			println c["you"]
