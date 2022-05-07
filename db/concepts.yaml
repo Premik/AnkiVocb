@@ -8884,14 +8884,16 @@ concepts:
     tts: cs-terms/nebude.mp3
   img: img/wont.jpeg
   freq: 339.19542
-##  should've (should have)   ############################################### no freq|t0:tts:missing|t1:tts:missing
+##  should've (should have)   ############################################### no freq|t1:tts:missing
 - terms: 
   - term: should've (should have)
+    tts: en-terms/shouldve.mp3
   - term: měl by mít (zkráceně)
   profileName: strictNoImg
-##  could've   ############################################################## no freq|t0:tts:missing|t1:tts:missing
+##  could've   ############################################################## no freq|t1:tts:missing
 - terms: 
   - term: could've
+    tts: en-terms/couldve.mp3
   - term: mohl mít (zkráceně)
   profileName: strictNoImg
 - terms: 
@@ -19928,74 +19930,85 @@ concepts:
     tts: cs-terms/zverejnit.mp3
   img: img/publish.jpeg
   freq: 24.23920
-##  internet   ############################################################## t0:tts:missing
 - terms: 
   - term: internet
+    tts: en-terms/internet.mp3
   - term: internet
     tts: cs-terms/internet-cs.mp3
   img: img/internet.jpeg
   freq: 448.50600
-##  default   ############################################################### t0:tts:missing|t1:tts:missing
+##  default   ############################################################### t1:tts:missing
 - terms: 
   - term: default
+    tts: en-terms/default.mp3
   - term: výchozí
   img: img/default.jpeg
   freq: 90.98700
-##  identify   ############################################################## t0:tts:missing|t1:tts:missing
+##  identify   ############################################################## t1:tts:missing
 - terms: 
   - term: identify
+    tts: en-terms/identify.mp3
   - term: identifikovat
   img: img/identify.jpeg
   freq: 60.96350
-##  redirect   ############################################################## t0:tts:missing|t1:tts:missing
+##  redirect   ############################################################## t1:tts:missing
 - terms: 
   - term: redirect
+    tts: en-terms/redirect.mp3
   - term: přesměrovat
   img: img/redirect.jpeg
   freq: 3.53350
-##  blink   ################################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  blink   ################################################################# t1:tts:missing|t2:tts:missing
 - terms: 
   - term: blink
+    tts: en-terms/blink.mp3
   - term: blikat
   - term: mrkat
   img: img/blink.jpeg
   freq: 0.75490
-##  specific   ############################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  specific   ############################################################## t1:tts:missing|t2:tts:missing
 - terms: 
   - term: specific
+    tts: en-terms/specific.mp3
   - term: specifické
   - term: konkrétní
   img: img/specific.jpeg
   freq: 183.27040
-##  existing   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  existing   ############################################################## no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: existing
+    tts: en-terms/existing.mp3
   - term: stávající
   - term: existující
   freq: 99.98410
-##  settings   ############################################################## no img|t0:tts:missing|t1:tts:missing
+##  settings   ############################################################## no img|t1:tts:missing
 - terms: 
   - term: settings
+    tts: en-terms/settings.mp3
   - term: nastavení
   freq: 78.80530
-##  backup   ################################################################ no img|t0:tts:missing|t1:tts:missing
+##  backup   ################################################################ no img|t1:tts:missing
 - terms: 
   - term: backup
+    tts: en-terms/backup.mp3
   - term: záloha
   freq: 41.83430
-##  transaction   ########################################################### no img|t0:tts:missing|t1:tts:missing
+##  transaction   ########################################################### no img|t1:tts:missing
 - terms: 
   - term: transaction
+    tts: en-terms/transaction.mp3
   - term: transakce
   freq: 37.34380
-##  romantic   ############################################################## no img|t0:tts:missing|t1:tts:missing
+##  romantic   ############################################################## no img|t1:tts:missing
 - terms: 
   - term: romantic
+    tts: en-terms/romantic.mp3
   - term: romantické
   freq: 22.19910
-##  identifies   ############################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  identifies   ############################################################ no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: identifies
+    tts: en-terms/identifies.mp3
   - term: identifikuje
   - term: určuje
   freq: 11.12010
@@ -20003,74 +20016,86 @@ concepts:
   - term: online
   freq: 1022.43210
   profileName: ignore
-##  method   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  method   ################################################################ no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: method
+    tts: en-terms/method.mp3
   - term: metoda
   - term: způsob
   freq: 143.50630
-##  seller   ################################################################ no img|t0:tts:missing|t1:tts:missing
+##  seller   ################################################################ no img|t1:tts:missing
 - terms: 
   - term: seller
+    tts: en-terms/seller.mp3
   - term: prodejce
   freq: 119.49440
-##  channel   ############################################################### no img|t0:tts:missing|t1:tts:missing
+##  channel   ############################################################### no img|t1:tts:missing
 - terms: 
   - term: channel
+    tts: en-terms/channel.mp3
   - term: kanál
   freq: 114.52120
 - terms: 
   - term: blog
   freq: 79.87810
   profileName: ignore
-##  monthly   ############################################################### no img|t0:tts:missing|t1:tts:missing
+##  monthly   ############################################################### no img|t1:tts:missing
 - terms: 
   - term: monthly
+    tts: en-terms/monthly.mp3
   - term: měsíčně
   freq: 78.55290
-##  weekly   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  weekly   ################################################################ no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: weekly
+    tts: en-terms/weekly.mp3
   - term: týdenní
   - term: týdně
   freq: 76.43520
-##  lessons   ############################################################### no img|t0:tts:missing|t1:tts:missing
+##  lessons   ############################################################### no img|t1:tts:missing
 - terms: 
   - term: lessons
+    tts: en-terms/lessons.mp3
   - term: lekce
   freq: 38.73170
-##  yield   ################################################################# no img|t0:tts:missing|t1:tts:missing
+##  yield   ################################################################# no img|t1:tts:missing
 - terms: 
   - term: yield
+    tts: en-terms/yield.mp3
   - term: dávat (přednost)
   freq: 25.54310
-##  involves   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  involves   ############################################################## no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: involves
+    tts: en-terms/involves.mp3
   - term: zahrnuje
   - term: týká (se)
   freq: 21.89690
-##  producers   ############################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  producers   ############################################################# no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: producers
+    tts: en-terms/producers.mp3
   - term: výrobci
   - term: producenti
   freq: 20.81560
-##  honest   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  honest   ################################################################ no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: honest
+    tts: en-terms/honest.mp3
   - term: upřímný
   - term: čestný
   freq: 18.88920
-##  processors   ############################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  processors   ############################################################ no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: processors
+    tts: en-terms/processors.mp3
   - term: procesory
   - term: zpracovatelé
   freq: 17.79950
-##  stronger   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  stronger   ############################################################## no img|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: stronger
+    tts: en-terms/stronger.mp3
   - term: silnější
   - term: pevnější
   freq: 15.43310
