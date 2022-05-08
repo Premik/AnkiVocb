@@ -20015,7 +20015,6 @@ concepts:
     tts: cs-terms/romanticke.mp3
   img: img/romantic.jpeg
   freq: 22.19910
-##  identifies   ############################################################ no img
 - terms: 
   - term: identifies
     tts: en-terms/identifies.mp3
@@ -20023,12 +20022,12 @@ concepts:
     tts: cs-terms/identifikuje.mp3
   - term: určuje
     tts: cs-terms/urcuje.mp3
+  img: img/identifies.jpeg
   freq: 11.12010
 - terms: 
   - term: online
   freq: 1022.43210
   profileName: ignore
-##  method   ################################################################ no img
 - terms: 
   - term: method
     tts: en-terms/method.mp3
@@ -20036,33 +20035,33 @@ concepts:
     tts: cs-terms/metoda.mp3
   - term: způsob
     tts: cs-terms/zpusob.mp3
+  img: img/method.jpeg
   freq: 143.50630
-##  seller   ################################################################ no img
 - terms: 
   - term: seller
     tts: en-terms/seller.mp3
   - term: prodejce
     tts: cs-terms/prodejce.mp3
+  img: img/seller.jpeg
   freq: 119.49440
-##  channel   ############################################################### no img
 - terms: 
   - term: channel
     tts: en-terms/channel.mp3
   - term: kanál
     tts: cs-terms/kanal.mp3
+  img: img/channel.jpeg
   freq: 114.52120
 - terms: 
   - term: blog
   freq: 79.87810
   profileName: ignore
-##  monthly   ############################################################### no img
 - terms: 
   - term: monthly
     tts: en-terms/monthly.mp3
   - term: měsíčně
     tts: cs-terms/mesicne.mp3
+  img: img/monthly.jpeg
   freq: 78.55290
-##  weekly   ################################################################ no img
 - terms: 
   - term: weekly
     tts: en-terms/weekly.mp3
@@ -20070,22 +20069,22 @@ concepts:
     tts: cs-terms/tydenni.mp3
   - term: týdně
     tts: cs-terms/tydne.mp3
+  img: img/weekly.jpeg
   freq: 76.43520
-##  lessons   ############################################################### no img
 - terms: 
   - term: lessons
     tts: en-terms/lessons.mp3
   - term: lekce
     tts: cs-terms/lekce.mp3
+  img: img/lessons.jpeg
   freq: 38.73170
-##  yield   ################################################################# no img
 - terms: 
   - term: yield
     tts: en-terms/yield.mp3
   - term: dávat (přednost)
     tts: cs-terms/davat.mp3
+  img: img/yield.jpeg
   freq: 25.54310
-##  involves   ############################################################## no img
 - terms: 
   - term: involves
     tts: en-terms/involves.mp3
@@ -20093,8 +20092,8 @@ concepts:
     tts: cs-terms/zahrnuje.mp3
   - term: týká (se)
     tts: cs-terms/tyka.mp3
+  img: img/involves.jpeg
   freq: 21.89690
-##  producers   ############################################################# no img
 - terms: 
   - term: producers
     tts: en-terms/producers.mp3
@@ -20102,8 +20101,8 @@ concepts:
     tts: cs-terms/vyrobci.mp3
   - term: producenti
     tts: cs-terms/producenti.mp3
+  img: img/producers.jpeg
   freq: 20.81560
-##  honest   ################################################################ no img
 - terms: 
   - term: honest
     tts: en-terms/honest.mp3
@@ -20111,8 +20110,8 @@ concepts:
     tts: cs-terms/uprimny.mp3
   - term: čestný
     tts: cs-terms/cestny.mp3
+  img: img/honest.jpeg
   freq: 18.88920
-##  processors   ############################################################ no img
 - terms: 
   - term: processors
     tts: en-terms/processors.mp3
@@ -20120,8 +20119,8 @@ concepts:
     tts: cs-terms/procesory.mp3
   - term: zpracovatelé
     tts: cs-terms/zpracovatele.mp3
+  img: img/processors.jpeg
   freq: 17.79950
-##  stronger   ############################################################## no img
 - terms: 
   - term: stronger
     tts: en-terms/stronger.mp3
@@ -20129,5 +20128,6 @@ concepts:
     tts: cs-terms/silnejsi.mp3
   - term: pevnější
     tts: cs-terms/pevnejsi.mp3
+  img: img/stronger.jpeg
   freq: 15.43310
 
