@@ -59,8 +59,8 @@ public class Pack {
 
 	@Lazy
 	Manager dbMan = {
-		//Manager.defaultInstance
-		new Manager(defaultExamplesFileName:"examplesDraft.yaml", silent:silent).tap {load()}		
+		Manager.defaultInstance
+		//new Manager(defaultExamplesFileName:"examplesDraft.yaml", silent:silent).tap {load()}		
 	}()
 
 	WordNormalizer wn = WordNormalizer.instance
@@ -423,12 +423,10 @@ public class Pack {
 			 println it
 			 }*/
 			//printFirstX()
-			ExampleComparatorMatch.preferedWords = Corpus.buildDef(25000).topX(25000) as LinkedHashSet
+			//ExampleComparatorMatch.preferedWords = Corpus.buildDef(25000).topX(25000) as LinkedHashSet
+			//printBestExamplesFor()
 			
-			//findBestExamplesFor(["that's (that is)", "that is"])
-			//return
-			printBestExamplesFor()
-			//packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))
+			packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))
 
 			//printExamplesExport()
 			//p.export()

@@ -48,9 +48,14 @@ public class PackExport {
 	}
 
 	Stream<Example> sentencesForExport() {
-		info.sentences.parallelStream().map {String s->
-			dbMan.bestExampleForSentence(s)[0]
-		}.filter {it as Boolean}
+		info.sentences.parallelStream().map {String s->			
+			ExampleComparatorMatch m = dbMan.bestExampleForSentence(s)[0]
+			dbMan.silent
+			if (!m && !dbMan.silent) {
+				println "No example for '$s'"
+			}
+			return m
+		}.filter {it as boolean}
 		.map { ExampleComparatorMatch m->
 			if (!silent) {
 				println m.toAnsiString()
@@ -107,13 +112,15 @@ public class PackExport {
 	Stream<ExportItem> sentencesExport() {
 		if (!info?.sentences) return Stream.empty()
 		assert dbMan
-		sentencesForExport()
+		sentencesForExport()		
 				.flatMap {Example e->
+										
 					dbMan.conceptsFromWordsInExample(e).stream().filter {Concept c->
 						//If strictlyWordlist, exclude concept which are not listed in the pack wordlist
 						if (!info.strictlyWordlist ) return true 												
 						info.wn.wordVariantsWithBrackets(c.firstTerm).any {info.wordList.contains(it)}						
 					}
+					
 					.filter {it!=null && !it.ignore}
 					.map { Concept c->
 						
@@ -144,12 +151,14 @@ public class PackExport {
 
 	Stream<ExportItem> export() {
 		Stream.concat(sentencesExport(), wordListExport())
+		
 	}
 
 	@Lazy
 	Set<String> exportedWords = {
 		MethodClosure mc = LinkedHashSet.&new as MethodClosure
 		export().map { ExportItem ei->
+						
 			ei.concept.firstTerm
 		}
 		.collect(Collectors.toCollection(mc)) as Set<String>
