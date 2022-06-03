@@ -1681,7 +1681,7 @@ concepts:
   - term: last
     tts: en-terms/last.mp3
     pron: læst
-  - term: poslední
+  - term: posledníí
     tts: cs-terms/posledni.mp3
   - term: minulý
     tts: cs-terms/minuly.mp3
@@ -2508,7 +2508,7 @@ concepts:
   - term: became
     tts: en-terms/became.mp3
     pron: bɪˈkeɪm
-  - term: stal
+  - term: stal (se)
     tts: cs-terms/stal2.mp3
   img: img/became.jpeg
   freq: 63.47770
@@ -3385,8 +3385,8 @@ concepts:
   - term: kind
     tts: en-terms/kind.mp3
     pron: kaɪnd
-  - term: druhu
-    tts: cs-terms/druhu.mp3
+  - term: druh
+    tts: cs-terms/druh.mp3
   - term: laskavý
     tts: cs-terms/laskavy.mp3
   img: img/kind.jpeg
@@ -9165,7 +9165,7 @@ concepts:
   - term: mail
     tts: cs-terms/pošta.mp3
     pron: meɪl
-  - term: pošta
+  - term: pošta (dopisy, balíčky)
     tts: cs-terms/posta.mp3
   img: img/mail.jpeg
   freq: 527.67290
@@ -12039,8 +12039,8 @@ concepts:
   - term: product
     tts: en-terms/product.mp3
     pron: ˈprɒdʌkt
-  - term: produktu
-    tts: cs-terms/produktu.mp3
+  - term: produkt
+    tts: cs-terms/produkt.mp3
   - term: výrobek
     tts: cs-terms/vyrobek.mp3
   img: img/product.jpeg
@@ -17796,8 +17796,8 @@ concepts:
 - terms: 
   - term: society
     tts: en-terms/society.mp3
-  - term: společnosti
-    tts: cs-terms/spolecnosti.mp3
+  - term: společnost
+    tts: cs-terms/spolecnost.mp3
   img: img/society.jpeg
   freq: 189.07410
 - terms: 
@@ -18144,7 +18144,7 @@ concepts:
 - terms: 
   - term: east
     tts: en-terms/east.mp3
-  - term: východ
+  - term: východ (strana)
     tts: cs-terms/vychod.mp3
   img: img/east.jpeg
   freq: 229.60640
@@ -19178,6 +19178,8 @@ concepts:
     tts: en-terms/cost.mp3
   - term: cena
     tts: cs-terms/cena.mp3
+  - term: náklady
+    tts: cs-terms/naklady.mp3
   img: img/cost.jpeg
   freq: 270.15930
 - terms: 
@@ -19481,8 +19483,8 @@ concepts:
 - terms: 
   - term: journal
     tts: en-terms/journal.mp3
-  - term: deníku
-    tts: cs-terms/deniku.mp3
+  - term: deník
+    tts: cs-terms/denik.mp3
   - term: časopis
     tts: cs-terms/casopis.mp3
   img: img/journal.jpeg
