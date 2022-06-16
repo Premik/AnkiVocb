@@ -243,7 +243,7 @@ public class Pack {
 		while (wordList.size() > 0) {
 
 			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
-			ms.take(100).each { ExampleComparatorMatch m->
+			ms.take(200).each { ExampleComparatorMatch m->
 				println m.toAnsiString(colourer)
 				println "${m.b.example[0]?.term} (${m.b.example[1]?.term})"
 				println "${(m.commonWords-highligh).join('\n')}\n"
@@ -453,11 +453,11 @@ public class Pack {
 			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/
-			//printFirstX()
+			printFirstX()
 			//ExampleComparatorMatch.preferedWords = Corpus.buildDef(25000).topX(25000) as LinkedHashSet
 			//printBestExamplesFor()
 
-			packExportsOf("Basic").first().debugDumpTo(dbgOutPath)
+			//packExportsOf("Basic").first().debugDumpTo(dbgOutPath)
 
 			//printExamplesExport()
 			//p.export()
