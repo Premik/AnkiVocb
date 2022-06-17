@@ -28,7 +28,7 @@ public class Pack {
 
 	@Lazy
 	Path destRootFolder = cfgHelper.outPath.resolve("pkg")
-	
+
 	@Lazy
 	Path dbgOutPath = Paths.get("/tmp/work/vocbDebug").tap {
 		Files.createDirectories(it)
@@ -126,12 +126,12 @@ public class Pack {
 		Helper.startWatch()
 		dbgOutPath.resolve("word2pkg.txt").withPrintWriter("UTF8") { PrintWriter w->
 			packExportsByExportedWord()
-			.toSorted{Map.Entry<String, Set<PackExport>> e-> e.key.toLowerCase()}
-			.each { String k, Set<PackExport> v->
-				String s = "${k.padRight(20)} : ${v.collect{it.info.name.padRight(20)}.join(' ')}"
-				w.println(s)
-				println s
-			}
+					.toSorted{Map.Entry<String, Set<PackExport>> e-> e.key.toLowerCase()}
+					.each { String k, Set<PackExport> v->
+						String s = "${k.padRight(20)} : ${v.collect{it.info.name.padRight(20)}.join(' ')}"
+						w.println(s)
+						println s
+					}
 		}
 		Helper.printLapseTime()
 	}
@@ -228,7 +228,7 @@ public class Pack {
 	}
 
 	private void findBestExamplesFor(Collection<String> wordList, Collection<String> highligh=[]) {
-		println "${wordList.take(20).join(' ')} \nSize: ${wordList.size()}"
+		println "${wordList.take(50).join(' ')} \nSize: ${wordList.size()}"
 		int lastDec = 0
 		//Set<String> matchedVariants = [] as LinkedHashSet
 		List<String> matched = []
@@ -243,9 +243,9 @@ public class Pack {
 		while (wordList.size() > 0) {
 
 			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
-			ms.take(200).each { ExampleComparatorMatch m->
+			ms.take(500).each { ExampleComparatorMatch m->
 				println m.toAnsiString(colourer)
-				println "${m.b.example[0]?.term} (${m.b.example[1]?.term})"
+				println "${m.b.example[0]?.term} (${m.b.example[1]?.term}) $m.similarityScore"
 				println "${(m.commonWords-highligh).join('\n')}\n"
 			}
 			//Collection<String> all = ms.collectMany { it.commonWords }.toUnique()
