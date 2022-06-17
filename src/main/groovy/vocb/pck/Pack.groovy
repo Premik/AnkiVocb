@@ -211,6 +211,7 @@ public class Pack {
 		//Set<String> ignore =  []
 		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
 		//Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
+		
 		Set<String> ignore = exportedWordsFromPackages() - exportedWordsOf("First" ) + exportedWordsOf("Basic" )
 
 
@@ -218,13 +219,15 @@ public class Pack {
 		ExampleComparatorMatch.preferedWords = ( ignore + ExampleComparatorMatch.preferedWords) as LinkedHashSet
 
 		Set<String> list = (topDb - ignore) as LinkedHashSet
+		
 		Helper.printLapseTime()
 		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
 			list.each {
 				w.println(it)
 			}
 		}
-		findBestExamplesFor(wn.expandBrackets(list), ignore)
+		List<String> ignoreExtra = ["doesn't", "does", "not", "does not", "pre", "james", "James"]
+		findBestExamplesFor(wn.expandBrackets(list) - ignoreExtra, ignore)
 	}
 
 	private void findBestExamplesFor(Collection<String> wordList, Collection<String> highligh=[]) {
@@ -439,8 +442,8 @@ public class Pack {
 
 		new Pack().tap { Pack p->
 
-			//p.exportByName("SimpleW")
-			//return
+			p.exportByName("SimpleW")
+			return
 
 			silent=true
 			//savePackByWordList()
