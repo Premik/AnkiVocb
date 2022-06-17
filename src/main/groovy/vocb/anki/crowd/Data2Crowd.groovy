@@ -50,7 +50,7 @@ public class Data2Crowd {
 	Manager dbMan = Manager.defaultInstance 
 
 	@Lazy
-	VocbModel vocbModel = {
+	volatile VocbModel vocbModel = {
 		assert info?.destPath
 		new VocbModel(destCrowdFolder: info.destPath)
 	}()
@@ -278,9 +278,10 @@ public class Data2Crowd {
 
 	@CompileStatic
 	void export(Stream<ExportItem> exp) {
+		//println exp.isParallel()
 		assert exp
 		prepareVocbModel()
-		exp.forEach(this.&mapConcept)
+		exp.forEachOrdered(this.&mapConcept)
 		
 		vocbModel.save()
 	}
