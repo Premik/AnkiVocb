@@ -20206,18 +20206,22 @@ concepts:
     tts: cs-terms/komediant.mp3
   img: img/comedian.jpeg
   freq: 2.42320
-##  due to   ################################################################ no img|no freq|t0:tts:missing
 - terms: 
   - term: due to
+    tts: en-terms/due to.mp3
   - term: kvůli
     tts: cs-terms/kvuli.mp3
   - term: vzhledem ke
     tts: cs-terms/vzhledem ke.mp3
-##  fix   ################################################################### no img|no freq|t0:tts:missing
+  img: img/due to.jpeg
+  freq: 1040.75710
 - terms: 
   - term: fix
+    tts: en-terms/fix.mp3
   - term: opravit
     tts: cs-terms/opravit.mp3
   - term: připevnit
     tts: cs-terms/pripevnit.mp3
+  img: img/fix.jpeg
+  freq: 54.97830
 
