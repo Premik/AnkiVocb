@@ -18446,12 +18446,13 @@ concepts:
     tts: cs-terms/zpravidla.mp3
   freq: 160.64190
   profileName: strictNoImg
+##  youth   ################################################################# t2:tts:missing
 - terms: 
   - term: youth
     tts: en-terms/youth.mp3
   - term: mládež
     tts: cs-terms/mladez.mp3
-  - term: mládí        
+  - term: mládí
   img: img/youth.jpeg
   freq: 87.44110
 - terms: 
@@ -20205,4 +20206,9 @@ concepts:
     tts: cs-terms/komediant.mp3
   img: img/comedian.jpeg
   freq: 2.42320
+##  due to   ################################################################ no img|no freq|t0:tts:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: due to
+  - term: kvůli
+  - term: vzhledem k
 
