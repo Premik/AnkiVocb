@@ -348,8 +348,9 @@ public class Pack {
 	@CompileDynamic
 	static boolean isFolderPackage(Path folder) {
 		assert folder
-		if (!Helper.subFolderFilter(folder.toFile())) return false
-		return Files.isRegularFile(folder.resolve("packageDescription.md"))
+		return Helper.subFolderFilter(folder.toFile())
+		//if (!Helper.subFolderFilter(folder.toFile())) return false
+		//return Files.isRegularFile(folder.resolve("packageDescription.md"))
 	}
 
 	static boolean isFolderPackage(File folder) {
@@ -454,14 +455,18 @@ public class Pack {
 
 		new Pack().tap { Pack p->
 			silent=true
+			//print(allPackInfos.collect { it.displayName })
+			export()
+			
 			//deleteDupFirst1k()
 			//return
 
-			p.exportByName("Basic1K")
-			packExportsOf("Basic1K").each {
+			//p.exportByName("Basic1K")
+			//packExportsOf("Basic1K").each {
+			/*packExportsOf().each {
 				it.debugDumpTo(dbgOutPath)
-			}
-			return
+			}*/
+			//return
 
 			
 			//savePackByWordList()
@@ -474,7 +479,7 @@ public class Pack {
 			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/
-			printFirstX()
+			//printFirstX()
 			//ExampleComparatorMatch.preferedWords = Corpus.buildDef(25000).topX(25000) as LinkedHashSet
 			//printBestExamplesFor()
 
