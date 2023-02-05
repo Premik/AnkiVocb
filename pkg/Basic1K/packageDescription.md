@@ -1,5 +1,4 @@
 
-## Description 
+Prvních cca 1000 nejčastějších slov.
 
-Prvních cca 1000 nejčastějších slov. 
-Pozor, neobsahuje žáná slova z balíčků `SimpleWords` a `SimpleVerbs`. Tyto balíčky je třeba se naučit dříve, než tento.
+**Nezačínejte** s tímto balíčkem, pokud už neumíte **všechny slova z** balíčků `SimpleWords` a `SimpleVerbs`.
