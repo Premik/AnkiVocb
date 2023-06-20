@@ -29,8 +29,8 @@ public class ConceptDb {
 	}
 	
 	public void dedup() {
-		concepts = new LinkedHashSet(concepts).toList() 
-		examples = new LinkedHashSet(examples).toList()
+		concepts = new LinkedHashSet<Concept>(concepts).toList() 
+		examples = new LinkedHashSet<Example>(examples).toList()
 	}
 
 	public List<Term> examplesByLang(String lng) {

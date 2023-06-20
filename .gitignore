@@ -11,3 +11,5 @@ target
 *.retry
 .gradletasknamecache
 /.idea/
+/build
+*.log

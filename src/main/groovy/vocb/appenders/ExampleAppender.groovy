@@ -63,7 +63,7 @@ public class ExampleAppender {
 					wn.splitBrackets(term)
 				}
 				.findAll()
-				.unique()
+				.unique() as List<String>
 		println "$c $czWords"
 
 		czWords // Each alt translation

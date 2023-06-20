@@ -16,7 +16,7 @@ import vocb.Helper
 
 
 //@Singleton(lazy=true, strict=false) //Doens't work in eclipse
-@CompileStatic
+//@CompileStatic
 public class WordNormalizer {
 
 	public enum CaseHandling {

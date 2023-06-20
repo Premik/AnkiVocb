@@ -23,7 +23,7 @@ class PackTest {
 		return Paths.get(ru).parent
 	}()
 	
-	@Lazy Pack pack = new Pack(packageRootPath: pkgRoot, destRootFolder: tempDir)
+	//@Lazy Pack pack = new Pack(packageRootPath: pkgRoot, destRootFolder: tempDir)
 
 
 	@Test

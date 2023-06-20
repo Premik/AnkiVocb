@@ -67,7 +67,7 @@ class VocbModel {
         parser.noteModels = [noteModel]
     }
 
-	@CompileStatic
+	//@CompileStatic
 	void syncNoteFields() {
         //println Helper.objectToJson(notes)
         notes.each { assureNote(it) }

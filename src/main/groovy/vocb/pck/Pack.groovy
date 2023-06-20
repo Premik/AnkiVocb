@@ -22,7 +22,7 @@ import vocb.data.Example
 import vocb.data.ExampleComparatorMatch
 import vocb.data.Manager
 
-@CompileStatic
+//@CompileStatic
 public class Pack {
 
 	ConfHelper cfgHelper = ConfHelper.instance
@@ -48,9 +48,8 @@ public class Pack {
 	volatile TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
 	@Lazy
-	volatile List<PackInfo> allPackInfos = {
+	volatile List<PackInfo> allPackInfos = {		
 		treeConf.leafs.collect { TreeConf<PackInfo> tc->
-
 			PackInfo pi = new PackInfo(
 					pack: this,
 					treeConf: tc).tap {
@@ -454,9 +453,11 @@ public class Pack {
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
+			print(p.packageRootPath)
 			silent=true
 			//print(allPackInfos.collect { it.displayName })
-			export()
+			p.exportByName("DuckTales")
+			
 			
 			//deleteDupFirst1k()
 			//return

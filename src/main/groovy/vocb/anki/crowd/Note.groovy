@@ -43,6 +43,7 @@ public class Note {
 
         //assert model.flds.size() == fields.length : "Model fields doesn't match the note"
         int modelSz = model.flds.size()
+				
         if (modelSz != fields?.size()) {
             //Fields don't match the model. Resize
             String[] newFields = new String[modelSz]
@@ -50,8 +51,9 @@ public class Note {
             for (int i = 0; i < modelSz; i++) {
                 newFields[i] = cropped[i] ?: ""
             }
+			assert newFields
             fields = newFields
-        }
+        }		
     }
 
 
