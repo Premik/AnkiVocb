@@ -2,6 +2,7 @@ package vocb.pck
 
 import static vocb.Ansi.*
 
+import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -21,6 +22,7 @@ import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.ExampleComparatorMatch
 import vocb.data.Manager
+import vocb.template.Render
 
 //@CompileStatic
 public class Pack {
@@ -48,7 +50,7 @@ public class Pack {
 	volatile TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
 	@Lazy
-	volatile List<PackInfo> allPackInfos = {		
+	volatile List<PackInfo> allPackInfos = {
 		treeConf.leafs.collect { TreeConf<PackInfo> tc->
 			PackInfo pi = new PackInfo(
 					pack: this,
@@ -87,7 +89,7 @@ public class Pack {
 		assert info
 		File pkgFile = info.treeConf.path.toFile()
 		packExportOf(info).with {
-			confHelper.extraLookupFolders.add(pkgFile)			
+			confHelper.extraLookupFolders.add(pkgFile)
 			data2crowd.export(export())
 			confHelper.extraLookupFolders.remove(pkgFile)
 		}
@@ -207,11 +209,11 @@ public class Pack {
 		Set<String> topDb = topDbAr.take(x).collect {
 			it.firstTerm
 		} as LinkedHashSet
-		
+
 		//Set<String> ignore =  []
 		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
 		//Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
-		
+
 		Set<String> ignore = exportedWordsFromPackages() - exportedWordsOf("First" ) + exportedWordsOf("Basic" )
 
 
@@ -219,14 +221,22 @@ public class Pack {
 		ExampleComparatorMatch.preferedWords = ( ignore + ExampleComparatorMatch.preferedWords) as LinkedHashSet
 
 		Set<String> list = (topDb - ignore) as LinkedHashSet
-		
+
 		Helper.printLapseTime()
 		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
 			list.each {
 				w.println(it)
 			}
 		}
-		List<String> ignoreExtra = ["doesn't", "does", "not", "does not", "pre", "james", "James"]
+		List<String> ignoreExtra = [
+			"doesn't",
+			"does",
+			"not",
+			"does not",
+			"pre",
+			"james",
+			"James"
+		]
 		findBestExamplesFor(wn.expandBrackets(list) - ignoreExtra, ignore)
 	}
 
@@ -437,39 +447,61 @@ public class Pack {
 	List<String> sentencesFromAllPackages(List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collect {wn.sentences(it.sentences)}.flatten().toUnique().sort()
 	}
-	
+
 	private deleteDupFirst1k() {
 		//PackExport first100 = packExportsOf("First")[0]
 		//first100.cardsFieldsInDb().collect {List flds->flds[2]}
-		
+
 		Helper.startWatch()
-		exportedWordsOf("First", "Basic") //Prefetch in paral.		
-		
+		exportedWordsOf("First", "Basic") //Prefetch in paral.
+
 		println ((exportedWordsOf("First" ) - exportedWordsOf("Basic" )).join(" OR "))
 		Helper.printLapseTime()
+	}
+
+	private saveGeneralDescription() {
+		Path readmePath= Paths.get(cfgHelper.cfg.rootPath).resolve("readme.md")
+		assert Files.exists(readmePath)
+		Render render = new Render(cfgHelper: cfgHelper)
+		String html=render.renderMarkdownText(readmePath.text)
+		//Remove html tags not supported in the ankiweb description
+		html=html.replaceAll("<p>", "")
+		html=html.replaceAll("</p>", "")
+		html=html.replaceAll($/<h\d>/$, "\n\n<b>")
+		html=html.replaceAll($/</h\d>/$, "</b>\n")
+		html=html.replaceAll("doc/example.gif", '''https://raw.githubusercontent.com/Premik/AnkiVocb/master/doc/example.gif''')
+		
+		Path outP = cfgHelper.resolveOutputPath("readme.html")
+		outP.withWriter(StandardCharsets.UTF_8.toString()) { Writer w->
+			w.print(html)
+		}
+		
+		println "Saved to $outP"
+		//render.render(RED)
 	}
 
 
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
-			print(p.packageRootPath)
+			println(p.packageRootPath)
 			silent=true
+			saveGeneralDescription()
 			//print(allPackInfos.collect { it.displayName })
-			p.exportByName("DuckTales")
-			
-			
+			//p.exportByName("DuckTales")
+
+
 			//deleteDupFirst1k()
 			//return
 
 			//p.exportByName("Basic1K")
 			//packExportsOf("Basic1K").each {
 			/*packExportsOf().each {
-				it.debugDumpTo(dbgOutPath)
-			}*/
+			 it.debugDumpTo(dbgOutPath)
+			 }*/
 			//return
 
-			
+
 			//savePackByWordList()
 			//return
 
@@ -492,6 +524,4 @@ public class Pack {
 		}
 		println "Done"
 	}
-
-	
 }
