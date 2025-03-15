@@ -5,7 +5,7 @@ import groovy.transform.CompileStatic
 import groovy.transform.EqualsAndHashCode
 import vocb.Helper
 
-@EqualsAndHashCode(excludes=["location"])
+//@EqualsAndHashCode(excludes=["location"])
 @AutoClone
 @CompileStatic
 public abstract class TermContainer  {
@@ -65,7 +65,8 @@ public abstract class TermContainer  {
 		if (location) location.dirty = true
 		if (l) l.dirty = true
 		location = l
-		
 	}
+	
+
 
 }

@@ -123,12 +123,14 @@ public class WordsSource {
 	
 	void basicWords() {
 		dbMan.db
-		Set<String> simpleWords = new File("/data/src/AnkiVocb/pkg/SimpleWords/words.txt").readLines().toSet()
+			
+		Set<String> ignore = new File("/data/src/AnkiVocb/pkg/SimpleWords/words.txt").readLines().toSet()
+		
 		corp.topX(2000)
 				.findAll {String s-> !s.contains("'")}
 				.findAll {String s->
 					dbMan.conceptsByTerm[s].any { Concept c-> !c.ignore }
-				}.findAll { !simpleWords.contains(it) }
+				}.findAll { !ignore.contains(it) }
 				.each {
 					//println "${it} ${corp.wordFreq[it]}"
 					println it

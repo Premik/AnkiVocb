@@ -1,22 +1,31 @@
 plugins {
-	id "groovy"
+	id 'groovy'
 	id 'application'
-	id "com.github.johnrengelman.shadow" version "5.2.0"
+	//id "com.github.johnrengelman.shadow" version "5.2.0"
 }
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-//mainClassName = "vocb.appenders.BingImageAppender"
-mainClassName = "vocb.pck.Pack"
 
-project.ext.groovyVersion='4.0.12'
+ext {
+	groovyVersion='4.0.15'
 
+}
 wrapper {
-	gradleVersion = '7.3.3'
+	gradleVersion = '8.3'
 }
 
-repositories {
+java {
+	toolchain {
+		languageVersion.set(JavaLanguageVersion.of(11))
+	}
+	withJavadocJar() // https://stackoverflow.com/questions/57652477/sourcesjar-task-in-gradle-5
+	withSourcesJar()
+}
+repositories{
+	mavenLocal()
 	maven {
-		url "https://csspeechstorage.blob.core.windows.net/maven/"
+		url = uri('https://repo.maven.apache.org/maven2')
+	}
+	maven {
+		url = uri('https://repo.apache.org/maven2')
 	}
 }
 
@@ -28,6 +37,8 @@ test {
 		// includeTags("fast")
 		excludeTags("slow")
 	}
+	logger.info("Java version: ${JavaVersion.current()}")
+	failFast = true
 	testLogging {
 		showStackTraces = true              // Show full stack traces in the console.
 		exceptionFormat = "full"
