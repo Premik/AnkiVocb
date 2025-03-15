@@ -1,6 +1,13 @@
 # Ankivocb
 Set of decks for basic English-Czech vocabulary and phrases.
 
+czech english čeština angličtina slovíčka česky anglicky
+<img src="https://raw.githubusercontent.com/Premik/AnkiVocb/master/pkg/Toddler/WheelsOnTheBus/_WheelsOnTheBusBackground.jpeg" alt="background">
+Dětská písnička <code>Wheels On The Bus.</code>
+Vocb:Toddler:Wheels On The Bus
+
+Prvních cca 1000 nejčastějších slov.
+<strong>Nezačínejte</strong> s tímto balíčkem, pokud už neumíte <strong>všechny slova z</strong> balíčků <code>SimpleWords</code> a <code>SimpleVerbs</code>.
 
 Sada balíčků pro učení anglických slovíček a vět do programu Anki.
 
