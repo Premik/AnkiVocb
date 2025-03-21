@@ -55,11 +55,13 @@ public abstract class TermContainer  {
 		if (isDirty()) location.dirty = true
 	}
 	
-	public List<String> validate(ValidationProfile vp) {
-		List<String> ret = []
-		//if (!location) ret.add("No data location set")
-		return ret
-	}
+	public abstract List<String> validate(ValidationProfile vp);
+	
+//	public List<String> validate(ValidationProfile vp) {
+//		print("SUPER VAL")
+//		List<String> ret = []
+//		return ret
+//	}
 	
 	void setLocation(DataLocation l) {
 		if (location) location.dirty = true
