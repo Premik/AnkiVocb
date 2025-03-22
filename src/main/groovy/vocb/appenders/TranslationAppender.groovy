@@ -36,7 +36,9 @@ public class TranslationAppender {
 		}
 		int i = 0
 		for (Concept c in noCs) {			
-		 	List<String> translations = trn.translations(c.firstTerm) 
+			print("$c.firstTerm->")
+			List<String> translations = trn.translations(c.firstTerm)
+			println("$translations") 
 			translations.each {String csWord ->
 				c.terms.add(new Term(csWord, "cs"))
 			}
