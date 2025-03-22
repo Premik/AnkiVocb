@@ -6,8 +6,9 @@ import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import vocb.Helper
 import vocb.HttpHelper
+import vocb.translator.Translator
 
-public class AzureTranslate {
+public class AzureTranslate implements Translator {
 
 	// http -v  https://api.cognitive.microsoft.com/bing/v7.0/images/search\?q\=sailing+dinghies\&mkt\=en-us\&answerCount\=3 Ocp-Apim-Subscription-Key:$AZURE_KEY
 
@@ -16,6 +17,7 @@ public class AzureTranslate {
 	JsonSlurper jsonSlurper = new JsonSlurper()
 	JsonBuilder jsonBuilder = new JsonBuilder()
 
+	
 	Map dictLookup(String text, String srcLang="en", String destLang="cs") {
 		//https://docs.microsoft.com/en-us/azure/cognitive-services/translator/reference/v3-0-dictionary-lookup
 		//http -v post "https://api.cognitive.microsofttranslator.com/dictionary/lookup?api-version=3.0&from=en&to=es" Ocp-Apim-Subscription-Key:$AZURE_KEY  <<< '[{"Text":"fly"}]'
@@ -83,5 +85,11 @@ public class AzureTranslate {
 
 		//println Helper.jsonToString(bs.trnJsonrunTrn("Well done"))
 
+	}
+
+	@Override
+	public List<String> translations(String word) {
+		Map trnJson = dictLookup(word)
+		return extractTopTrns(trnJson)
 	}
 }
