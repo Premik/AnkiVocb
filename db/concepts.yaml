@@ -20426,67 +20426,49 @@ concepts:
   - term: federální
   - term: spolkový
   freq: 166.35530
-##  hosting   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
-- terms: 
-  - term: hosting
-  - term: hosting
-  - term: hostování
-  - term: webhosting
-  freq: 166.20260
 ##  nude   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: nude
   - term: nahý
-  - term: akt
-  - term: obnažený
   freq: 164.47850
 ##  finance   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: finance
   - term: finance
   - term: peníze
-  - term: financování
   freq: 164.17310
 ##  lyrics   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: lyrics
-  - term: text
   - term: slova písně
-  - term: písňový text
   freq: 157.41530
 ##  submit   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: submit
-  - term: odevzdat
+  - term: odeslat
   - term: podat
-  - term: předložit
   freq: 157.16330
 ##  production   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: production
   - term: výroba
   - term: produkce
-  - term: tvorba
   freq: 154.07070
 ##  commercial   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: commercial
   - term: reklamní
-  - term: obchodní
   - term: komerční
   freq: 153.97250
 ##  advertising   ########################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: advertising
   - term: reklama
-  - term: propagace
   freq: 153.38650
 ##  newsletter   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: newsletter
-  - term: informační bulletin
-  - term: e-mailový zpravodaj
-  - term: novinky e-mailem
+  - term: informační bulletin  
   freq: 152.73730
 ##  magazine   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -20498,35 +20480,30 @@ concepts:
 - terms: 
   - term: domain
   - term: doména
-  - term: oblast
   - term: působnost
   freq: 149.79380
 ##  manager   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: manager
   - term: vedoucí
-  - term: ředitel
   - term: manažer
   freq: 148.67900
 ##  engineering   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: engineering
   - term: inženýrství
-  - term: technika
   - term: strojírenství
   freq: 146.16750
 ##  wireless   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: wireless
   - term: bezdrátový
-  - term: bezdrátově
   freq: 145.09440
 ##  license   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: license
   - term: povolení
   - term: licence
-  - term: oprávnění
   freq: 145.08310
 ##  annual   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -20539,34 +20516,29 @@ concepts:
   - term: corporate
   - term: firemní
   - term: podnikový
-  - term: společný
   freq: 144.01320
 ##  purchase   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: purchase
-  - term: nákup
   - term: koupě
   - term: pořízení
   freq: 143.39350
 ##  hardware   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: hardware
-  - term: hardware
-  - term: železo
+  - term: železářské zboží
   - term: technické vybavení
   freq: 142.83110
 ##  japan   ################################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: japan
   - term: Japonsko
-  - term: Japonský
   freq: 137.91430
 ##  availability   ########################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: availability
   - term: dostupnost
   - term: přístupnost
-  - term: využitelnost
   freq: 137.01850
 ##  africa   ################################################################ no img|t0:tts:missing|t1:tts:missing
 - terms: 
@@ -20578,14 +20550,12 @@ concepts:
   - term: summary
   - term: shrnutí
   - term: souhrn
-  - term: rekapitulace
   freq: 136.92110
 ##  agency   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: agency
   - term: agentura
   - term: zprostředkovatelství
-  - term: pověřenectví
   freq: 135.88210
 ##  monday   ################################################################ no img|t0:tts:missing|t1:tts:missing
 - terms: 
@@ -20602,69 +20572,58 @@ concepts:
 - terms: 
   - term: western
   - term: západní
-  - term: western
   freq: 134.75950
 ##  income   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: income
   - term: příjem
-  - term: důchod
   - term: výdělek
   freq: 134.73430
 ##  cash   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: cash
   - term: hotovost
-  - term: peníze v hotovosti
-  - term: keš
   freq: 134.61940
 ##  employment   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: employment
   - term: zaměstnání
-  - term: práce
   - term: uplatnění
   freq: 134.50420
 ##  overall   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: overall
   - term: celkový
-  - term: převážně
-  - term: všeobecně
+  - term: celkově  
   freq: 134.31290
 ##  bay   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: bay
-  - term: zátoka
-  - term: lať
-  - term: štěkot
+  - term: zátoka  
   freq: 134.26950
 ##  commission   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: commission
   - term: provize
-  - term: zakázka
-  - term: pověření
+  - term: komise
   freq: 134.01500
 ##  package   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: package
-  - term: balík
   - term: balíček
-  - term: soubor
+  
   freq: 133.34120
 ##  port   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: port
   - term: přístav
-  - term: brána
-  - term: víno portské
+  
   freq: 132.71310
 ##  album   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: album
   - term: album
-  - term: deska
+  - term: deska (gramofónová)
   - term: sbírka
   freq: 132.47940
 ##  regional   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
@@ -20672,20 +20631,17 @@ concepts:
   - term: regional
   - term: krajský
   - term: oblastní
-  - term: místní
   freq: 132.20470
 ##  supplies   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: supplies
   - term: zásoby
-  - term: potřeby
-  - term: materiál
+  
   freq: 131.90210
 ##  administration   ######################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: administration
   - term: správa
-  - term: řízení
   - term: administrativa
   freq: 131.80070
 ##  institute   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
@@ -20693,7 +20649,6 @@ concepts:
   - term: institute
   - term: ústav
   - term: zavést
-  - term: ustanovit
   freq: 131.52500
 ##  double   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
