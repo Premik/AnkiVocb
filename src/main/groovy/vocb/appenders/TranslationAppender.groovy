@@ -20,8 +20,8 @@ public class TranslationAppender {
 	PythonTranslation pyTrn = new PythonTranslation()
 	Translator trn = pyTrn
 
-	int sleep =500
-	int limit= 2
+	int sleep =0
+	int limit= 100
 
 	@Lazy
 	Manager dbMan = new Manager()
@@ -40,7 +40,10 @@ public class TranslationAppender {
 			translations.each {String csWord ->
 				c.terms.add(new Term(csWord, "cs"))
 			}
-			dbMan.save()
+			if (i % 10 == 0) {
+				dbMan.save()				
+			}
+			
 			if (i>limit) {
 				println color("Limit reached", RED)
 				break
@@ -49,6 +52,7 @@ public class TranslationAppender {
 			Thread.sleep(sleep)
 			//break
 		}
+		dbMan.save()
 	}
 
 	void translateExamples() {
