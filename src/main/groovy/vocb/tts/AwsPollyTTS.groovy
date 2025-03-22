@@ -6,18 +6,22 @@ import java.util.concurrent.TimeUnit
 
 import vocb.Helper
 
+
+
 public class AwsCliPollyTTS {
 
-	String[] voices = [
-		"Aditi",
+	String[] voices = [		
+		//"Aditi",
 		"Amy",
+		"Aria",
 		"Arthur",
+		"Ayanda",
 		"Brian",
 		"Danielle",
 		"Emma",
 		"Geraint",
 		"Gregory",
-		"Ivy",
+	//	"Ivy",
 		"Joanna",
 		"Joey",
 		"Justin",
@@ -26,7 +30,12 @@ public class AwsCliPollyTTS {
 		"Kevin",
 		"Kimberly",
 		"Matthew",
-		"Raveena",
+		"Niamh",
+		//"Nicole",
+		"Olivia",
+		//"Patrick",
+		//"Raveena",
+		//"Russell",
 		"Ruth",
 		"Salli",
 		"Stephen",
