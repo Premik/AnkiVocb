@@ -9,27 +9,27 @@ import vocb.Helper
 public class AwsCliPollyTTS {
 
 	String[] voices = [
-		"Danielle",
-		"Gregory",
-		"Kevin",
-		"Salli",
-		"Matthew",
-		"Kimberly",
-		"Kendra",
-		"Justin",
-		"Joey",
-		"Joanna",
-		"Ivy",
-		"Ruth",
-		"Stephen",
-		"Raveena",
 		"Aditi",
-		"Kajal",
-		"Geraint",
-		"Emma",
-		"Brian",
 		"Amy",
-		"Arthur"
+		"Arthur",
+		"Brian",
+		"Danielle",
+		"Emma",
+		"Geraint",
+		"Gregory",
+		"Ivy",
+		"Joanna",
+		"Joey",
+		"Justin",
+		"Kajal",
+		"Kendra",
+		"Kevin",
+		"Kimberly",
+		"Matthew",
+		"Raveena",
+		"Ruth",
+		"Salli",
+		"Stephen",
 	]
 
 	Map<Integer, String> speeds = [(0-2):"x-slow", (0-1):"slow", 1:"fast", 2:"x-fast"]
@@ -89,7 +89,7 @@ public class AwsCliPollyTTS {
 		String innerSSML = SSMLWrapInner(w.trim(), highlMod)
 		SSMLWrap(a.trim() + innerSSML + b.trim(), normalMod)
 	}
-	
+
 	// Helper function to parse the dialog string
 	static List<Map<String, String>> splitDialog(String dialog) {
 		List<Map<String, String>> dialogParts = []
@@ -104,46 +104,47 @@ public class AwsCliPollyTTS {
 		}
 		return dialogParts
 	}
-	
+
 	void synthDialog(String dialog, Path rootPath = Paths.get("/tmp/work")) {
 		List<Map<String, String>> dialogParts = splitDialog(dialog)
 		int index = 0
-	
+
 		dialogParts.each { Map<String, String> part ->
 			String voice = part['voice']
 			String text = part['text']
 			String fileName = String.format("%02d-%s.mp3", index, voice)
 			String outFile = rootPath.resolve(fileName).toString()
-			
+
 			// Call the existing synth function to create the audio file
 			synth(text, "neural", voice, "text", outFile)
-			
+
 			index++
 		}
 	}
 
-	
+
 
 
 
 	static void main(String... args) {
 		AwsCliPollyTTS tts = new AwsCliPollyTTS()
 
-		//		tts.voices.each { String v->
-		//			String tx = "Hello world."
-		//			Process p = tts.synth(tx, "neural", v, "text", "/tmp/work/${v}.mp3")
-		//			Helper.printProcOut(p)
-		//			p.waitFor(5, TimeUnit.SECONDS)
-		//		}
+		tts.voices.each { String v->
+			String tx = "Hello world."
+			Process p = tts.synth(tx, "neural", v, "text", "/tmp/work/${v}.mp3")
+			Helper.printProcOut(p)
+			p.waitFor(5, TimeUnit.SECONDS)
+		}
+		return
 		//Process p = tts.synth(tx, "neural", v, "text", "/tmp/work/${v}.mp3")
 		String dialog = '''Gregory: "Mushroom soup is delicious."
 							Ivy: "I don't think so. Mushrooms are poisonous."
 							Gregory: "Not all of them. Some are edible."
 							Ivy: Well, not me.
 							Gregory: "You sure?"'''
-		
+
 		tts.synthDialog(dialog)
-		
+
 		//			Helper.printProcOut(p)
 		//			p.waitFor(5, TimeUnit.SECONDS)
 
