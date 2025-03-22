@@ -20224,10 +20224,6 @@ concepts:
     tts: cs-terms/pripevnit.mp3
   img: img/fix.jpeg
   freq: 54.97830
-##  software   ############################################################## single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: software
-  freq: 629.99790
 ##  review   ################################################################ single term only|no img|no cs term|t0:tts:missing
 - terms: 
   - term: review
@@ -20256,30 +20252,10 @@ concepts:
 - terms: 
   - term: reserved
   freq: 436.03560
-##  forum   ################################################################# single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: forum
-  freq: 432.69460
-##  website   ############################################################### single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: website
-  freq: 412.96760
 ##  index   ################################################################# single term only|no img|no cs term|t0:tts:missing
 - terms: 
   - term: index
   freq: 412.88260
-##  project   ############################################################### single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: project
-  freq: 400.02190
-##  digital   ############################################################### single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: digital
-  freq: 344.05450
-##  profile   ############################################################### single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: profile
-  freq: 343.21790
 ##  insurance   ############################################################# single term only|no img|no cs term|t0:tts:missing
 - terms: 
   - term: insurance
@@ -20468,10 +20444,6 @@ concepts:
 - terms: 
   - term: hardware
   freq: 142.83110
-##  environmental   ######################################################### single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: environmental
-  freq: 138.73990
 ##  japan   ################################################################# single term only|no img|no cs term|t0:tts:missing
 - terms: 
   - term: japan
@@ -23004,17 +22976,13 @@ concepts:
 - terms: 
   - term: compatible
   freq: 52.38970
-##  null   ################################################################## single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: null
-  freq: 52.26640
 ##  netherlands   ########################################################### single term only|no img|no cs term|t0:tts:missing
 - terms: 
   - term: netherlands
   freq: 52.15270
 ##  consulting   ############################################################ single term only|no img|no cs term|t0:tts:missing
 - terms: 
-  - term: consulting
+  - term: consultingoutput = output.replaceAll(/```json/, '')
   freq: 52.13630
 ##  recreation   ############################################################ single term only|no img|no cs term|t0:tts:missing
 - terms: 
