@@ -63,9 +63,9 @@ public class AzureTTs {
 
 	static void main(String... args) {
 		AzureTTs bs = new AzureTTs().with{
-			/*listVoices().each {
-				println it
-			}*/
+//			listVoices().each {
+//				println it
+//			}
 			//println Helper.jsonToString(listVoices())
 			println  synth("Testovací text.", "/tmp/work/1.mp3", "cs-CZ-AntoninNeural")
 
