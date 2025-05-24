@@ -12014,234 +12014,282 @@ concepts:
     tts: cs-terms/maminky.mp3
   img: img/mommies.jpeg
   freq: 1456.00000
-##  it's   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  it's (it is, it has)   ################################################## t0:pron:missing
 - terms: 
   - term: it's (it is, it has)
     lang: en
+    tts: en-terms/its.mp3
   - term: své
     lang: cs
+    tts: cs-terms/sve.mp3
   img: img/its.jpeg
   freq: 4082139.00000
-##  danger   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  danger   ################################################################ t0:pron:missing
 - terms: 
   - term: danger
     lang: en
+    tts: en-terms/danger.mp3
   - term: nebezpečí
     lang: cs
+    tts: cs-terms/nebezpeci.mp3
   - term: ohrožení
     lang: cs
+    tts: cs-terms/ohrozeni.mp3
   img: img/danger.jpeg
   freq: 64509.00000
-##  successes   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  successes   ############################################################# t0:pron:missing
 - terms: 
   - term: successes
     lang: en
+    tts: en-terms/successes.mp3
   - term: úspěchy
     lang: cs
+    tts: cs-terms/uspechy.mp3
   img: img/successes.jpeg
   freq: 52956.00000
-##  race   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  race   ################################################################## t0:pron:missing
 - terms: 
   - term: race
     lang: en
+    tts: en-terms/race.mp3
   - term: závod
     lang: cs
+    tts: cs-terms/zavod.mp3
   - term: rasa
     lang: cs
+    tts: cs-terms/rasa.mp3
   img: img/race.jpeg
   freq: 52769.00000
-##  fails   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  fails   ################################################################# t0:pron:missing
 - terms: 
   - term: fails
     lang: en
+    tts: en-terms/fails.mp3
   - term: nezdaří
     lang: cs
+    tts: cs-terms/nezdari.mp3
   - term: selže
     lang: cs
+    tts: cs-terms/selze.mp3
   img: img/fails.jpeg
   freq: 47640.00000
-##  stranger   ############################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  stranger   ############################################################## t0:pron:missing
 - terms: 
   - term: stranger
     lang: en
+    tts: en-terms/stranger.mp3
   - term: cizinec
     lang: cs
+    tts: cs-terms/cizinec.mp3
   - term: podivnější
     lang: cs
+    tts: cs-terms/podivnejsi.mp3
   img: img/stranger.jpeg
   freq: 38265.00000
-##  final   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  final   ################################################################# t0:pron:missing
 - terms: 
   - term: final
     lang: en
+    tts: en-terms/final.mp3
   - term: konečné
     lang: cs
+    tts: cs-terms/konecne.mp3
   - term: závěrečná
     lang: cs
+    tts: cs-terms/zaverecna.mp3
   img: img/final.jpeg
   freq: 29784.00000
-##  mystery   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  mystery   ############################################################### t0:pron:missing
 - terms: 
   - term: mystery
     lang: en
+    tts: en-terms/mystery.mp3
   - term: záhada
     lang: cs
+    tts: cs-terms/zahada.mp3
   - term: tajemství
     lang: cs
+    tts: cs-terms/tajemstvi.mp3
   img: img/mystery.jpeg
   freq: 26198.00000
-##  tales   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  tales   ################################################################# t0:pron:missing
 - terms: 
   - term: tales
     lang: en
+    tts: en-terms/tales.mp3
   - term: příběhy
     lang: cs
+    tts: cs-terms/pribehy.mp3
   - term: pohádky
     lang: cs
+    tts: cs-terms/pohadky.mp3
   img: img/tales.jpeg
   freq: 23483.00000
-##  daring   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  daring   ################################################################ t0:pron:missing
 - terms: 
   - term: daring
     lang: en
+    tts: en-terms/daring.mp3
   - term: odvážné
     lang: cs
+    tts: cs-terms/odvazne.mp3
   - term: smělé
     lang: cs
+    tts: cs-terms/smele.mp3
   img: img/daring.jpeg
   freq: 22198.00000
-##  curtain   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  curtain   ############################################################### t0:pron:missing
 - terms: 
   - term: curtain
     lang: en
+    tts: en-terms/curtain.mp3
   - term: opona
     lang: cs
+    tts: cs-terms/opona.mp3
   - term: závěs
     lang: cs
+    tts: cs-terms/zaves.mp3
   img: img/curtain.jpeg
   freq: 13510.00000
-##  solve   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  solve   ################################################################# t0:pron:missing
 - terms: 
   - term: solve
     lang: en
+    tts: en-terms/solve.mp3
   - term: vyřešit
     lang: cs
+    tts: cs-terms/vyresit.mp3
   img: img/solve.jpeg
   freq: 13170.00000
-##  duck   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  duck   ################################################################## t0:pron:missing
 - terms: 
   - term: duck
     lang: en
+    tts: en-terms/duck.mp3
   - term: kachna
     lang: cs
+    tts: cs-terms/kachna.mp3
   - term: kačer
     lang: cs
+    tts: cs-terms/kacer.mp3
   img: img/duck.jpeg
   freq: 7791.00000
-##  heading   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  heading   ############################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: heading
     lang: en
+    tts: en-terms/heading.mp3
   - term: nadpis
     lang: cs
   - term: míří (k)
     lang: cs
   img: img/heading.jpeg
   freq: 5396.00000
-##  hurricane   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  hurricane   ############################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: hurricane
     lang: en
+    tts: en-terms/hurricane.mp3
   - term: hurikán
     lang: cs
   - term: vichřice
     lang: cs
   img: img/hurricane.jpeg
   freq: 5273.00000
-##  messes   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  messes   ################################################################ t0:pron:missing|t1:tts:missing
 - terms: 
   - term: messes
     lang: en
+    tts: en-terms/messes.mp3
   - term: zmatky
     lang: cs
   img: img/messes.jpeg
   freq: 4000.00000
-##  lasers   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  lasers   ################################################################ t0:pron:missing|t1:tts:missing
 - terms: 
   - term: lasers
     lang: en
+    tts: en-terms/lasers.mp3
   - term: lasery
     lang: cs
   img: img/lasers.jpeg
   freq: 3680.00000
-##  aeroplanes   ############################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  aeroplanes   ############################################################ t0:pron:missing|t1:tts:missing
 - terms: 
   - term: aeroplanes
     lang: en
+    tts: en-terms/aeroplanes.mp3
   - term: letadla
     lang: cs
   img: img/aeroplanes.jpeg
   freq: 3086.00000
-##  deduction   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  deduction   ############################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: deduction
     lang: en
+    tts: en-terms/deduction.mp3
   - term: vyvození (závěrů)
     lang: cs
   - term: dedukce
     lang: cs
   img: img/deduction.jpeg
   freq: 2715.00000
-##  lurks   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  lurks   ################################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: lurks
     lang: en
+    tts: en-terms/lurks.mp3
   - term: skrývá
     lang: cs
   - term: číhá
     lang: cs
   img: img/lurks.jpeg
   freq: 1689.00000
-##  blur   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  blur   ################################################################## t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: blur
     lang: en
+    tts: en-terms/blur.mp3
   - term: rozostření
     lang: cs
   - term: šmouha
     lang: cs
   img: img/blur.jpeg
   freq: 1682.00000
-##  burg   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  burg   ################################################################## t0:pron:missing|t1:tts:missing
 - terms: 
   - term: burg
     lang: en
+    tts: en-terms/burg.mp3
   - term: okres (městský)
     lang: cs
   img: img/burg.jpeg
   freq: 456.00000
-##  rewrite   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  rewrite   ############################################################### t0:pron:missing|t1:tts:missing
 - terms: 
   - term: rewrite
     lang: en
+    tts: en-terms/rewrite.mp3
   - term: přepsat
     lang: cs
   img: img/rewrite.jpeg
   freq: 336.00000
-##  cottontails (cotton tails)   ############################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  cottontails (cotton tails)   ############################################ t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: cottontails (cotton tails)
     lang: en
+    tts: en-terms/cottontails.mp3
   - term: králíci (americký druh)
     lang: cs
   - term: bavlněné ocasy (doslova)
     lang: cs
   img: img/cottontails.jpeg
   freq: 49.00000
-##  ponytails   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  ponytails   ############################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: ponytails
     lang: en
+    tts: en-terms/ponytails.mp3
   - term: drdol (účes)
     lang: cs
   - term: koňské ohony (doslova)
@@ -16898,117 +16946,136 @@ examples:
   - term: Celý dlouhý den.
     lang: cs
     tts: cs-samples/Cely dlouhy den.mp3
-##  Life is like a hurricane.   ############################################# t0:tts:missing|t1:tts:missing
+##  Life is like a hurricane.   ############################################# t1:tts:missing
 - terms: 
   - term: Life is like a hurricane.
     lang: en
+    tts: en-samples/Life is like a hurricane.mp3
   - term: Život je jako hurikán.
     lang: cs
-##  Here in Duck-burg.   #################################################### t0:tts:missing|t1:tts:missing
+##  Here in Duck-burg.   #################################################### t1:tts:missing
 - terms: 
   - term: Here in Duck-burg.
     lang: en
+    tts: en-samples/Here in Duck-burg.mp3
   - term: Tady v Kačerově.
     lang: cs
-##  Race cars, lasers, aeroplanes.   ######################################## t0:tts:missing|t1:tts:missing
+##  Race cars, lasers, aeroplanes.   ######################################## t1:tts:missing
 - terms: 
   - term: Race cars, lasers, aeroplanes.
     lang: en
+    tts: en-samples/Race cars, lasers, aeroplanes.mp3
   - term: Závodní auta, lasery, letadla.
     lang: cs
-##  Might solve a mystery.   ################################################ t0:tts:missing|t1:tts:missing
+##  Might solve a mystery.   ################################################ t1:tts:missing
 - terms: 
   - term: Might solve a mystery.
     lang: en
+    tts: en-samples/Might solve a mystery.mp3
   - term: Mohlo by vyřešit záhadu.
     lang: cs
-##  Or rewrite history.   ################################################### t0:tts:missing|t1:tts:missing
+##  Or rewrite history.   ################################################### t1:tts:missing
 - terms: 
   - term: Or rewrite history.
     lang: en
+    tts: en-samples/Or rewrite history.mp3
   - term: Nebo přepsat historii.
     lang: cs
-##  Every day they're out there.   ########################################## t0:tts:missing|t1:tts:missing
+##  Every day they're out there.   ########################################## t1:tts:missing
 - terms: 
   - term: Every day they're out there.
     lang: en
+    tts: en-samples/Every day theyre out there.mp3
   - term: Každý den jsou tam venku.
     lang: cs
-##  Making Duck Tales.   #################################################### t0:tts:missing|t1:tts:missing
+##  Making Duck Tales.   #################################################### t1:tts:missing
 - terms: 
   - term: Making Duck Tales.
     lang: en
+    tts: en-samples/Making Duck Tales.mp3
   - term: Dělají kachní příběhy.
     lang: cs
-##  Tales of daring-do.   ################################################### t0:tts:missing|t1:tts:missing
+##  Tales of daring-do.   ################################################### t1:tts:missing
 - terms: 
   - term: Tales of daring-do.
     lang: en
+    tts: en-samples/Tales of daring-do.mp3
   - term: Příběhy o odvážných činech.
     lang: cs
-##  Bad and good luck tales.   ############################################## t0:tts:missing|t1:tts:missing
+##  Bad and good luck tales.   ############################################## t1:tts:missing
 - terms: 
   - term: Bad and good luck tales.
     lang: en
+    tts: en-samples/Bad and good luck tales.mp3
   - term: Příběhy o smůle a štěstí.
     lang: cs
-##  Danger lurks behind you.   ############################################## t0:tts:missing|t1:tts:missing
+##  Danger lurks behind you.   ############################################## t1:tts:missing
 - terms: 
   - term: Danger lurks behind you.
     lang: en
+    tts: en-samples/Danger lurks behind you.mp3
   - term: Nebezpečí číhá za tebou.
     lang: cs
-##  There's a stranger out to find you.   ################################### t0:tts:missing|t1:tts:missing
+##  There's a stranger out to find you.   ################################### t1:tts:missing
 - terms: 
   - term: There's a stranger out to find you.
     lang: en
+    tts: en-samples/Theres a stranger out to find you.mp3
   - term: Je tu podivín, který tě hledá.
     lang: cs
-##  What to do.   ########################################################### t0:tts:missing|t1:tts:missing
+##  What to do.   ########################################################### t1:tts:missing
 - terms: 
   - term: What to do.
     lang: en
+    tts: en-samples/What to do.mp3
   - term: Co dělat.
     lang: cs
-##  When it seems.   ######################################################## t0:tts:missing|t1:tts:missing
+##  When it seems.   ######################################################## t1:tts:missing
 - terms: 
   - term: When it seems.
     lang: en
+    tts: en-samples/When it seems.mp3
   - term: Když se zdá.
     lang: cs
-##  They're heading for.   ################################################## t0:tts:missing|t1:tts:missing
+##  They're heading for.   ################################################## t1:tts:missing
 - terms: 
   - term: They're heading for.
     lang: en
+    tts: en-samples/Theyre heading for.mp3
   - term: Míří k.
     lang: cs
-##  The final curtain.   #################################################### t0:tts:missing|t1:tts:missing
+##  The final curtain.   #################################################### t1:tts:missing
 - terms: 
   - term: The final curtain.
     lang: en
+    tts: en-samples/The final curtain.mp3
   - term: Závěrečná opona.
     lang: cs
-##  Good deduction never fails.   ########################################### t0:tts:missing|t1:tts:missing
+##  Good deduction never fails.   ########################################### t1:tts:missing
 - terms: 
   - term: Good deduction never fails.
     lang: en
+    tts: en-samples/Good deduction never fails.mp3
   - term: Dobrá dedukce nikdy nezklame.
     lang: cs
-##  The worst of messes.   ################################################## t0:tts:missing|t1:tts:missing
+##  The worst of messes.   ################################################## t1:tts:missing
 - terms: 
   - term: The worst of messes.
     lang: en
+    tts: en-samples/The worst of messes.mp3
   - term: Nejhorší z nepořádků.
     lang: cs
-##  Become successes.   ##################################################### t0:tts:missing|t1:tts:missing
+##  Become successes.   ##################################################### t1:tts:missing
 - terms: 
   - term: Become successes.
     lang: en
+    tts: en-samples/Become successes.mp3
   - term: Stávají se úspěchy.
     lang: cs
-##  Not ponytails or cottontails.   ######################################### t0:tts:missing|t1:tts:missing
+##  Not ponytails or cottontails.   ######################################### t1:tts:missing
 - terms: 
   - term: Not ponytails or cottontails.
     lang: en
+    tts: en-samples/Not ponytails or cottontails.mp3
   - term: Ne copánky nebo králíčci.
     lang: cs
