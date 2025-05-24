@@ -216,6 +216,7 @@ public class Manager {
 	}
 	
 	
+	
 	public void findBrokenMedia() {
 
 		Map<CharSequence, Set<Concept>> grp = groupByMedia()
@@ -348,6 +349,7 @@ public class Manager {
 			load()
 			findBrokenMedia()
 			printStats()
+			
 			//moveToSubFolders()
 			//println allTextWithLang("en")
 			//moveSamples()

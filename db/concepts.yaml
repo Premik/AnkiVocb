@@ -6014,8 +6014,7 @@ concepts:
 ##  student   ############################################################### no en term
 - terms: 
   - term: student
-    lang: cs
-    tts: cs-terms/student.mp3
+    lang: en
   - term: žák
     lang: cs
     tts: cs-terms/zak.mp3
@@ -8041,8 +8040,7 @@ concepts:
 ##  shot   ################################################################## no en term
 - terms: 
   - term: shot
-    lang: cs
-    tts: cs-terms/shot.mp3
+    lang: en
   - term: výstřel
     lang: cs
     tts: cs-terms/vystrel.mp3
@@ -8397,6 +8395,8 @@ concepts:
   origins: ["conceptDbSamples"]
 ##  data   ################################################################## single term only|no en term
 - terms: 
+  - term: data
+    lang: en
   - term: data
     lang: cs
     tts: cs-terms/data-cs.mp3
@@ -8942,8 +8942,7 @@ concepts:
 ##  test   ################################################################## no en term
 - terms: 
   - term: test
-    lang: cs
-    tts: cs-terms/test-cs.mp3
+    lang: en
   - term: zkouška
     lang: cs
     tts: cs-terms/zkouska.mp3
@@ -9319,8 +9318,7 @@ concepts:
 ##  hit   ################################################################### no en term
 - terms: 
   - term: hit
-    lang: cs
-    tts: cs-terms/hit.mp3
+    lang: en
   - term: uhodit
     lang: cs
     tts: cs-terms/uhodit.mp3
@@ -9852,8 +9850,7 @@ concepts:
 ##  virus   ################################################################# no en term
 - terms: 
   - term: virus
-    lang: cs
-    tts: cs-terms/virus.mp3
+    lang: en
   - term: vir
     lang: cs
     tts: cs-terms/vir.mp3
@@ -9880,8 +9877,6 @@ concepts:
   - term: cars
     lang: en
     pron: kɑrz
-  - term: automobily
-    lang: cs
   - term: auta
     lang: cs
   - term: vozy
