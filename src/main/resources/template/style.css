@@ -64,7 +64,9 @@
   text-transform: uppercase;
 }
 
-
+.hintCover {
+  display: none;
+}
 
 
 .rounded {
