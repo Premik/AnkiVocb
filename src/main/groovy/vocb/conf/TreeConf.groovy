@@ -51,6 +51,10 @@ public class TreeConf<T> {
 		assert paths.size() <=1
 		return paths[0]
 	}()
+	
+	public Path getRelativePath() {
+		root?.path?.relativize(path)
+	}
 
 	@Lazy
 	Map binding = {

@@ -77,6 +77,7 @@ public class PackInfo {
 		treeConf.conf.excludeWordsFromPackages?:[]
 	}
 
+	@Deprecated
 	public List<PackInfo> getExcludeWordsFromPackage() {
 		excludeWordsFromPackageNames.collect {
 			List<PackInfo> infos = pack.pkgsByName(it)
