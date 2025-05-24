@@ -3226,7 +3226,7 @@ concepts:
     pron: bɪˈkeɪm
   - term: stal
     lang: cs
-    tts: cs-terms/stal.mp3
+    tts: cs-terms/stal2.mp3
   img: img/became.jpeg
   freq: 224811.00000
 - terms: 
@@ -15167,6 +15167,9 @@ concepts:
   - term: hrob
     lang: cs
     tts: cs-terms/hrob.mp3
+  - term: závažný
+    lang: cs
+    tts: cs-terms/zavazny.mp3
   img: img/grave.jpeg
   freq: 45745.00000
 - terms: 
@@ -15748,6 +15751,9 @@ concepts:
     lang: en
     tts: en-terms/quarter.mp3
     pron: ˈkwɔːtə
+  - term: čtvrt
+    lang: cs
+    tts: cs-terms/ctvrt.mp3
   - term: čtvrtletí
     lang: cs
     tts: cs-terms/ctvrtleti.mp3
