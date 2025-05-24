@@ -3,6 +3,8 @@ package vocb;
 import java.nio.charset.StandardCharsets
 
 public class LocalTTS {
+	
+	HttpHelper httpHelper = new HttpHelper()
 
 	void synth(String text, String voiceId="violka", String outFile="/tmp/work/1.mp3") {
 		assert voiceId
@@ -12,7 +14,7 @@ public class LocalTTS {
 
 		URL u = "http://bb1:8081/?text=$txtEnc&voice=$voiceId&format=mp3".toURL()
 		println u
-		Helper.withUrlGetResponse(u) {
+		httpHelper.withUrlGetResponse(u) {
 			new File(outFile) << it
 		}
 

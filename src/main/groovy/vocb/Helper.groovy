@@ -51,6 +51,31 @@ public class Helper {
 	public static Tuple2<String, String> splitFileNameExt(String filename) {
 		if (!filename.contains(".")) return [filename, ""] //No ext
 		int dot = filename.lastIndexOf('.')
-		return [filename.take(dot),filename.substring(dot+ 1)]
+		return [
+			filename.take(dot),
+			filename.substring(dot+ 1)
+		]
+	}
+
+	public static String indent(String s, int indent=1, String indChr=" " ) {
+		s.replaceAll(/(?m)^/, indChr*indent)
+	}
+
+	public static String indentNextLines(String s, int indent=1, int ingnoreFirstLines=1, String indChr=" " ) {
+		List<String> lines = []
+		s.eachLine(0) {String l, int i ->
+			lines+= "${i>=ingnoreFirstLines ? indChr*indent : ""}$l"			
+		}
+		return lines.join("\n")
+	}
+
+
+
+	public static int countIndent(String s) {
+		for (int i = 0; i < s.length(); i++) {
+			if (!Character.isWhitespace(s.charAt(i))) {
+				return i
+			}
+		}
 	}
 }

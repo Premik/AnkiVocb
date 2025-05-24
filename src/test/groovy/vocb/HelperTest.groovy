@@ -38,4 +38,16 @@ class HelperTest {
 		assert Helper.padList([1, 2, 3], 0, 5) == [1, 2, 3, 0, 0]
 		assert Helper.padList([1, 2, 3], 0, 1, true) == [1]
 	}
+
+	@Test
+	void indentNextLines() {
+		String s ="""\
+        line1
+        line2""".stripIndent()
+		String s2 ="""\
+        line1
+          line2""".stripIndent()
+
+		assert Helper.indentNextLines(s, 2) == s2
+	}
 }
