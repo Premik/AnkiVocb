@@ -129,6 +129,13 @@ class WordNormalizerTest {
 		] as LinkedHashSet
 		assert norm.uniqueueTokens("Hello world!", true) == exp
 	}
+	
+	@Test
+	void lemmSort() {
+		assert norm.wordVariants("ed")
+		assert norm.wordVariants("ing")
+		assert norm.wordVariants("s")
+	}
 
 	@Test
 	void variants() {

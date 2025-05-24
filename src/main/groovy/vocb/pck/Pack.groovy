@@ -82,29 +82,43 @@ public class Pack {
 				.collectMany { it.exportedWords } as LinkedHashSet
 	}
 
+	Manager getDbMan() {
+		packExportOf(allPackInfos.first()).dbMan
+	}
 
-
-	void findFirst1000() {
-				
-		PackExport pe =  packExportOf(pkgsByName("First1000").first())
-		Manager dbMan = pe.dbMan
-		Set<String> top = Corpus.buildDef().topX(1000) as LinkedHashSet
+	void findTopxNotInDb(int topx=1000) {
+		Set<String> top = Corpus.buildDef().topX(topx) as LinkedHashSet
 		//Set<String> topInDb = top.collectMany { dbMan.findConceptsByFirstTermAllVariant(it) }.collect {it.firstTerm} as LinkedHashSet
 		top.findAll { !dbMan.findConceptsByFirstTermAllVariant(it)}
 		.findAll {!it.contains("'")}
+		.findAll {!it.contains(".")}
 		.findAll {it.size()>1}
 		.each {
 			println it
 		}
+	}
+
+	void findTopxFromDb(int topx) {
+		Helper.startWatch()
+
+
+		Set<Concept> allExp = exportedItemsFromPackages()
+				.map {it.concept}
+				.toSet()
+				.toSorted { 0-it.freq } as LinkedHashSet
+		Helper.printLapseTime()		
+		allExp.take(100).each {println it}
+
+
 		return
 
-		println "-"*100
 
 		File f = new File("/tmp/work/First1000.txt")
 		if (f.exists()) {
 			f.delete()
 		}
-		top.each {
+
+		0.each {
 			//f <<"$it\n"
 			println it
 		}
@@ -180,10 +194,13 @@ public class Pack {
 	}
 
 
-	Set<String> exportedWordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
+	Set<String> exportedWordsFromPackages( List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collect {packExportOf(it)}
-		.collectMany { it.exportedWords }
-		.toSet()
+		.collectMany { it.exportedWords } as HashSet
+	}
+
+	Stream<ExportItem> exportedItemsFromPackages( List<PackInfo> pkgInfos = allPackInfos) {
+		pkgInfos.parallelStream().flatMap {packExportOf(it).export()}
 	}
 
 	Set<String> wordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
@@ -218,7 +235,10 @@ public class Pack {
 
 
 			//p.exportByName("BasicWords")
-			findFirst1000()
+			//findTopxNotInDb(2000)
+
+
+			findTopxFromDb(1000)
 			//p.export()
 			//findBasicWords()
 		}

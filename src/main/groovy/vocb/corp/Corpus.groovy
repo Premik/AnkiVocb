@@ -185,10 +185,10 @@ public class Corpus {
 				.sort { -phraseFreq(it)  }
 	}
 
-	public BigInteger getAt(String word) {
+	public BigDecimal getAt(String word) {
 
 		List<String> wordVariants = wn.wordVariants(word)
-		BigInteger ret = wordVariants.findResult {wordFreq[it]}
+		BigDecimal ret = wordVariants.findResult {wordFreq[it]}
 		if (ret) return ret
 		println color(word.padLeft(10), BOLD) + color(" - not in corpus" , RED)
 	}
@@ -241,8 +241,8 @@ public class Corpus {
 		buildDef().with {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
-			topX(2000).each  {println it }
-			//println it["success"]
+			//topX(2000).each  {println it }
+			println it["tears"]
 
 		}
 
