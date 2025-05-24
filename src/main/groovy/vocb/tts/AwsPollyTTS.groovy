@@ -1,10 +1,17 @@
-package vocb.tts;
+package vocb.tts
 
 import java.util.concurrent.TimeUnit
 
 import vocb.Helper
 
 public class AwsCliPollyTTS {
+
+	Map<Integer, String> speeds = [(0-2):"x-slow", (0-1):"slow", 1:"fast", 2:"x-fast"]
+	Map<Integer, String> vols = [(0-2):"-8dB", (0-1):"-6dB",1:"+6dB", 2:"+8dB"]
+
+	TTSTextMod normalMod = new TTSTextMod(speedChange: -1) //Bit slower by default
+	TTSTextMod empMod = new TTSTextMod(speedChange: -2, volumeChange: 1 ) //Emphasis even slower and louder
+	TTSConf defaultConf = new TTSConf( engine:'standard', voiceId:"Emma")
 
 	Process synth(String text, String engine='standard', String voiceId="Emma", String outFile="/tmp/work/1.mp3") {
 		assert engine
@@ -29,6 +36,32 @@ public class AwsCliPollyTTS {
 		cmd.execute()
 	}
 
+	public String SSMLWrapInner(String text, TTSTextMod mod) {
+		String speed = speeds[mod.speedChange]
+		String spdAttr = speed ? / rate="$speed"/ : ""
+		String vol = vols[mod.volumeChange]
+		String volAttr = vol ? / volume="$vol"/ : ""
+		if (!spdAttr && !volAttr) return text
+		"""<prosody$spdAttr$volAttr>$text</prosody>"""
+	}
+
+	public String SSMLWrap(String text, TTSTextMod mod=normalMod) {
+		"""\
+        <speak>
+          ${SSMLWrapInner(text, mod)}
+        </speak>""".stripIndent()
+	}
+
+	public String SSMLEmphSubstr(String text, String substr, TTSTextMod normalMod=normalMod, TTSTextMod highlMod=empMod) {
+		assert text.contains(substr) : "The '$text' doesn't contain the '$substr'"
+		assert normalMod
+		assert highlMod
+		final def (String a, String b) =  Helper.splitBy(text, substr)
+		String innerSSML = SSMLWrapInner(substr, highlMod)
+		SSMLWrap(a + innerSSML + b, normalMod)
+
+	}
+
 
 
 	static void main(String... args) {
@@ -38,10 +71,8 @@ public class AwsCliPollyTTS {
 		Helper.printProcOut(p)
 		/*
 		 * <speak>
-<prosody volume="-8dB">Hi! My</prosody><prosody rate="x-slow">name is</prosody><prosody volume="-8dB">Joanna.</prosody>
-
-</speak>
-
+		 <prosody volume="-8dB">Hi! My</prosody><prosody rate="x-slow">name is</prosody><prosody volume="-8dB">Joanna.</prosody>
+		 </speak>
 		 */
 	}
 }

@@ -58,7 +58,7 @@ class ConfHelper {
 	}
 
 	public static ConfigObject loadConfig(String configName, Map binding = null) {
-		String cfgStr = resolveRes( configName)
+		String cfgStr = resolveRes( configName)?.text
 		if (cfgStr == null) return null
 		if (binding == null) binding = mergedCfg
 		return ConfHelper.parseString(cfgStr, binding)
@@ -71,7 +71,7 @@ class ConfHelper {
 		return c
 	}
 
-	public static String resolveResExactName(String resName, File[] lookupPaths = []) {
+	public static BufferedInputStream resolveResExactName(String resName, File[] lookupPaths = []) {
 		if (!resName) return null
 		//First try to find a file. Take the first match
 		File file = lookupPaths.findResult { File pf->
@@ -80,7 +80,7 @@ class ConfHelper {
 			else return null
 		}
 
-		if (file) return file.text
+		if (file) return file.newInputStream()
 		//Not found in file. Try classpath resource
 
 		InputStream is = [
@@ -94,14 +94,14 @@ class ConfHelper {
 				resName
 			].collect{cl.getResourceAsStream(it)}.find {it}
 		}.find {it}
-		return is?.text
+		return is
 	}
 
-	public static String resolveRes(String resName, File[] lookupPaths = lookupFolders) {
+	public static BufferedInputStream resolveRes(String resName, File[] lookupPaths = lookupFolders) {
 		resolveRes(resName, lookupPaths, this.&resolveResExactName)
 	}
 
-	public static String resolveRes(String resName, File[] lookupPaths = lookupFolders, Closure cb) {
+	public static BufferedInputStream resolveRes(String resName, File[] lookupPaths = lookupFolders, Closure cb) {
 		(['']+ resExplicitExtensions).findResult {
 			cb("$resName$it", lookupPaths)
 		}
