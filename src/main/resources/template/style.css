@@ -3,25 +3,48 @@
 
 
 .shadow {
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.8), 0 7px 20px 0 rgba(0,0,0,0.4);
 }
+
+.foreign {
+  background-image: url("ukFlagBlur.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.native {
+  background-image: url("csFlagBlur.png");
+  background-size: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
 
 .card {
   background-color: #76bdbde8;
   color: #fff;
   font-family: Helvetica;
- font-size: 2em;
+ font-size: 1.2em;
+ font-weight: bold;
+ /*line-height: 40px;*/
  text-align: center;
+ text-shadow: 2px 2px 3px  #121f1fee, -1px 0 10px #00ffffc9;
+ 
+ /*opacity: 0.9;
+ filter: alpha(opacity=9);*/
+ 
 }
 
 .rounded {
-  border: 1px 1px 1px 0px black;  
-  border-radius: 10px;    
+  /*border: 1px 1px 1px 0px black;  */
+  border-radius: 12px;    
 }
 
 .img img {
-  max-width: 320px;
-  min-width: 100px;
+  /*max-width: 320px; 
+  min-width: 200px;*/
+  height: 200px;
   
  
 }
@@ -39,46 +62,56 @@
 
 .wrapper {
   padding: 10px;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
+	display: flex;	
   flex-flow: row wrap;
+ /* justify-content: center;
+   justify-content: space-between;
+  align-items: center; */
+  align-items: center;
+
  
 }
 
 .wrapper > * {
   flex: 1 100%;
-  margin: auto;
-  min-height: 80px;
+  /*margin: auto;*/
+  margin: 5px;
+ /* min-height: 80px;
+ line-height: 80px; */
+ /* background-color: aqua;*/
+ 
+ 
+  
+  /*vertical-align: middle;*/
 }
-
-
-.native1, .native2 {
-  flex: 1 auto;  
-}
-
 
 /*
-@media all and (min-width: 300px) {
+.native1, .native2 {  
+  line-height: 200px; 
+  background-color: #2600ffe8;  
+}*/
+
+
+
+@media all and (min-width: 800px) {
   
   
   .native1, .native2 {
     flex: 1 auto;  
-    background-color: #ff0040e8; 
+  /*  background-color: #ff0040e8; */
   } 
-}*/
+}
 
-/*
-@media all and (min-width: 1000px) {
+
+@media all and (min-width: 1200px) {
   .wrapper .img {
-    flex: 1 auto;
+    flex: 1 auto; 
     
   }
   .foreign { order: 1;}
-  .native1 { order: 2;}
+  .native1 { order: 2; }
   .img { order: 3;}
   .native2 { order: 4;}
   .foreignExample { order: 4;}
   .nativeExample { order: 4;}  
-}*/
+}
