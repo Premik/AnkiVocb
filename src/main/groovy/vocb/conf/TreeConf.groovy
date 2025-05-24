@@ -2,59 +2,78 @@ package vocb.conf;
 
 import java.nio.file.Files
 import java.nio.file.Path
+import java.util.stream.Stream
+import java.util.stream.StreamSupport
 
 import groovy.transform.CompileStatic
-import groovy.transform.ToString
 import vocb.Helper
 
 @CompileStatic
-@ToString(
-includeNames=false,
-ignoreNulls=true,
-includePackage=false,
-includes=["name", "children"]
-)
 public class TreeConf {
 
 	Path path
 	TreeConf parent
-
+	
 	@Lazy
 	List<TreeConf> children = {
 		assert path
 
-		path.toFile()
-				.listFiles()				
+		List<TreeConf> ret = path.toFile()
+				.listFiles()
 				.findAll(subFolderFilter)
-				.collect { it.toPath() }
-				.collect { Path cp->
-					new TreeConf(
-						path:cp, 
-						parent:this,
-						subFolderFilter: subFolderFilter
-						)
+				.collect { it.toPath() }				
+				.collect { Path cp->					
+					TreeConf tf = new TreeConf(
+							path:cp,
+							parent:this,
+							subFolderFilter: subFolderFilter,
+							)						
+					return tf
 				}
+		//descendants.withIndex().each {TreeConf tf, int i-> tf.seq = i+1}
+		return ret
 	}()
-	
-	String getName() {
-		path?.fileName
-	}
+
+	@Lazy
+	Path confPath = {
+		List<Path> paths = Files.list(path)
+		.filter(Files.&isRegularFile)
+		.filter{it.fileName.toString().endsWith(".conf")}
+		.toList()
+		assert paths.size() <=1
+		return paths[0]
+	}()
+
+	@Lazy
+	Map binding = {
+		[self: this]
+	}()
+
+	@Lazy
+	ConfigObject thisConf = {
+		if (!confPath) return new ConfigObject()
+		ConfHelper.parseString(confPath.text, binding)
+	}()
+
+	@Lazy
+	String name = path?.fileName
+
+
+
 
 	Closure<Boolean> subFolderFilter = Helper.subFolderFilter
 
 	public List<CharSequence> validate() {
-		List<CharSequence> ret = []		
+		List<CharSequence> ret = []
 		if (!path || !Files.isDirectory(path) || !Files.exists(path) ) {
 			ret.add("The '$path' is not an existing directory")
 		}
-		Set<TreeConf> visited = []
-		deepFindChild { TreeConf t->
-			if (visited.contains(t)) {
-				ret.add("Cycle detected in the TreeConf $t")
-				return false
-			}
-			return true
-		}
+		/*Set<TreeConf> visited = []
+		descendantsStream().forEach { TreeConf t->
+			assert !visited.contains(t) : "Cycle detected in the TreeConf $t"			
+			visited.add(t)
+		}*/
+		
 		List<TreeConf> wrongLinks = children.findAll {it.parent != this}
 		if (wrongLinks) {
 			ret.add("Children has unknown parent: $wrongLinks")
@@ -71,7 +90,7 @@ public class TreeConf {
 
 
 	List<TreeConf> getParents() {
-		if (isRoot) return []
+		if (isRoot) return [this]
 		return [this, *parent.parents] as List<TreeConf>
 	}
 
@@ -79,16 +98,29 @@ public class TreeConf {
 		if (isRoot) return this
 		return parents[-1]
 	}
+	
+	@Deprecated
+	Stream<TreeConf> descendantsStream() {
+		Stream.concat(Stream.of(this), children.stream())
+	}
+	
+	List<TreeConf> getDescendants() {
+		List<TreeConf> dsd = children*.descendants.flatten() as List<TreeConf>
+		return [this, *dsd] as List<TreeConf>
+	}
 
-	List<TreeConf> deepFindChild(Closure<Boolean> cl, boolean includeSelf=true) {
-		List<TreeConf> ret = []
-		if (includeSelf) {
-			if (!cl(this)) return ret
-			ret.add(this)
+	
+	TreeConf findByName(String name) {
+		descendants.find {it.name == name}		
+	}
+
+
+	@Override
+	public String toString() {
+		String ch = ""
+		if (children) {
+			ch = "ꕞ$children"
 		}
-		for (TreeConf t : children) {
-			if (!cl(t)) return ret
-			ret.add(t)
-		}
+		"$name$ch"
 	}
 }

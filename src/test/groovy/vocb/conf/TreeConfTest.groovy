@@ -29,13 +29,34 @@ class TreeConfTest {
 	void testList() {
 		
 		TreeConf tc = new TreeConf(path:pkgRoot)
+		assert tc.root
+		
 		List<CharSequence >val = tc.validate()
 		if (val) val.each {
 			println Ansi.color(it.toString(), Ansi.RED)
 		}
 		assert !val
 		assert tc.children.size() == 2
-		//assert pack.allPackagePaths.collect{it.fileName.toString()}.toSet() == ["flatPack", "child1", "child2", "grandChild"] as Set
+		TreeConf chtf = tc.children.find().children[0]
+		assert chtf
+		assert !chtf.isRoot
+		assert chtf.root == tc
+		
+		//assert pack.allPackagePaths.collect{it.fileName.toString()}.toSet() == ["flatPack", "child1", "child2", "grandChild"] as Set		
+	}
+	
+	@Test
+	void testConf() {		
+		TreeConf tc = new TreeConf(path:pkgRoot)
+		TreeConf child1 = tc.findByName("child1")
+		assert child1
+		assert child1.confPath
+		assert child1.parent.confPath
+		
+		assert child1.thisConf.child1confKey == "child1confKey"
+		assert child1.thisConf.confkey1 == "child1"		
+		assert child1.parent.thisConf.parentConfKey == "parentConfKey"
+		
 		
 	}
 }
