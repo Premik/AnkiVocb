@@ -8155,12 +8155,10 @@ concepts:
     lang: cs
     tts: vratit.mp3
   examples: 
-
   - term: I was going to return it.
     lang: en
   - term: Chtěla jsem to vrátit.
     lang: cs
- 
   img: return.jpeg
   freq: 140295.50000
   origins: ["corpus"]
@@ -8197,12 +8195,10 @@ concepts:
     lang: cs
     tts: draha.mp3
   examples: 
-
   - term: How do you feel, dear?
     lang: en
   - term: Jak se cítíš, drahá?
     lang: cs
-  
   img: dear.jpeg
   freq: 139827.00000
   origins: ["corpus"]
@@ -8218,12 +8214,10 @@ concepts:
     lang: cs
     tts: mrtve.mp3
   examples: 
- 
   - term: A dead body lies there.
     lang: en
   - term: Leží tam mrtvé tělo.
     lang: cs
- 
   img: dead.jpeg
   freq: 139580.00000
   origins: ["corpus"]
@@ -8262,7 +8256,6 @@ concepts:
     lang: en
   - term: Bylo to tak skutečné.
     lang: cs
-  
   state: ignoreImage
   freq: 139116.50000
   origins: ["corpus"]
@@ -8295,7 +8288,6 @@ concepts:
     lang: en
   - term: Byl to dobrý žák.
     lang: cs
-  
   img: student.jpeg
   freq: 138627.05000
   origins: ["corpus"]
@@ -8308,12 +8300,10 @@ concepts:
     lang: cs
     tts: tisic.mp3
   examples: 
- 
   - term: Only nine thousand a month.
     lang: en
   - term: Jen devět tisíc za měsíc.
     lang: cs
- 
   img: thousand.jpeg
   freq: 138465.00000
   origins: ["corpus"]
@@ -8368,12 +8358,10 @@ concepts:
     lang: cs
     tts: vysoke.mp3
   examples: 
-
   - term: That also means no high fees.
     lang: en
   - term: To také znamená žádné vysoké poplatky.
     lang: cs
- 
   img: high.jpeg
   freq: 137721.50000
   origins: ["corpus"]
@@ -8389,12 +8377,10 @@ concepts:
     lang: cs
     tts: zajem.mp3
   examples: 
-
   - term: We appreciate your interest.
     lang: en
   - term: Ceníme si vášeho zájemu.
     lang: cs
- 
   img: interest.jpeg
   freq: 137310.50000
   origins: ["corpus"]
@@ -8414,7 +8400,6 @@ concepts:
     lang: en
   - term: Toto tvrzení se proto zamítá.
     lang: cs
-  
   state: ignoreImage
   freq: 137061.50000
   origins: ["corpus"]
@@ -8452,7 +8437,6 @@ concepts:
     lang: en
   - term: Odteď už jen anglicky.
     lang: cs
- 
   img: english.jpeg
   freq: 136965.50000
   origins: ["corpus"]
@@ -8944,12 +8928,10 @@ concepts:
     lang: cs
     tts: pismena.mp3
   examples: 
-
   - term: Those letters are mine.
     lang: en
   - term: To jsou moje dopisy.
     lang: cs
- 
   img: letters.jpeg
   freq: 132785.00000
   origins: ["corpus"]
@@ -8979,7 +8961,7 @@ concepts:
   state: ignoreImage
   freq: 131928.00000
   origins: ["corpus"]
-##  month   ################################################################# ▆ 67%
+##  month   ################################################################# █ 95%
 - terms: 
   - term: month
     lang: en
@@ -8987,6 +8969,11 @@ concepts:
   - term: měsíc
     lang: cs
     tts: mesic.mp3
+  examples: 
+  - term: Only nine thousand a month.
+    lang: en
+  - term: Jen devět tisíc za měsíc.
+    lang: cs
   img: month.jpeg
   freq: 131861.00000
   origins: ["corpus"]
