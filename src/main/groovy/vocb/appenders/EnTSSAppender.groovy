@@ -1,10 +1,13 @@
 package vocb.appenders
 
+import static vocb.Ansi.*
+
 import java.nio.file.Path
 import java.util.concurrent.TimeUnit
 
 import vocb.Helper
 import vocb.data.Concept
+import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
 import vocb.tts.AwsCliPollyTTS
@@ -12,13 +15,7 @@ import static vocb.Ansi.*
 
 public class EnTSSAppender {
 
-	String[] voices = [
-		"Emma",
-		"Amy",
-		"Brian",
-		"Joanna",
-		"Matthew"
-	]
+	String[] voices = ["Emma", "Amy", "Brian", "Joanna", "Matthew"]
 	int voiceCounter = 0
 	int limit = 5
 	int sleep = 1000
@@ -60,32 +57,29 @@ public class EnTSSAppender {
 
 	void runExamples() {
 		dbMan.load()
-		List<Concept> noEx = dbMan.db.concepts.findAll {
-			it.terms && it.state!="ignore" && it.firstTerm && it.examples
-		}
+		List<Example> todo = dbMan.db.examples.collect().findAll { !it[0].tts}
 
+		println "Found ${color(todo.size().toString(), BOLD)} example terms with no tts"
 		int i =0
-		for (Concept c in noEx) {
-			if (c.terms.size() >3 || c.examples.size()>2) {
-				println "Ignoring: $c"
+		for (Example e in todo) {
+			if (e.terms.size() >3 ) {
+				println "Ignoring: ${color(e.firstTerm, RED)}"
 				continue
 			}
 
-			Term enSample = c.examples.values()[0]
-			if (enSample.lang != 'en' || enSample.tts) {
-				continue
-			}
+			assert e[0].lang == "en"
 			i++
 			if (i > limit) {
 				println color("Limit reached", RED)
 				break
 			}
-			String enWord = c.firstTerm
+			//String enWord = e.firstTerm
+			//String tts = enTts.SSMLEmphSubstr(e.term, enWord )
+			String tts = e.firstTerm
 
-			String tts = enTts.SSMLEmphSubstr(enSample.term, enWord )
-
-			enSample.tts = dbMan.resolveMedia(enSample.term, "mp3", "en-samples") { Path path ->
-				Process p=  enTts.synth(tts, "neural", someVoice, "ssml", path.toString())
+			e[0].tts = dbMan.resolveMedia(e.firstTerm, "mp3", "en-samples") { Path path ->
+				//Process p=  enTts.synth(tts, "neural", someVoice, "ssml", path.toString())
+				Process p=  enTts.synth(tts, "neural", someVoice, "text", path.toString())
 				Helper.printProcOut(p)
 				p.waitFor(10, TimeUnit.SECONDS)
 				dbMan.save()
@@ -97,9 +91,11 @@ public class EnTSSAppender {
 
 
 	public static void main(String[] args) {
-		EnTSSAppender a = new EnTSSAppender(limit:200)
-		a.runTerms()
-		a.runExamples()
+		new EnTSSAppender().with {
+			limit = 10
+			runTerms()
+			runExamples()
+		}
 		println "Done"
 	}
 }
