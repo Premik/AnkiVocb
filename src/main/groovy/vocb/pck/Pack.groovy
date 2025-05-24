@@ -25,7 +25,7 @@ import vocb.data.Manager
 @CompileStatic
 public class Pack {
 
-	String first100 = "First1000"
+
 
 	Path destRootFolder = Paths.get("/tmp/work/pkg")
 
@@ -128,8 +128,9 @@ public class Pack {
 
 		//Set<String> ignore =  []
 		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
-		Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
-		//Set<String> ignore =  exportedWordsOf("Simple" )
+		//Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
+		Set<String> ignore = exportedWordsFromPackages()
+		
 		//Prefer the ignored (known) words
 		ExampleComparatorMatch.preferedWords = ( ignore + ExampleComparatorMatch.preferedWords) as LinkedHashSet
 
@@ -354,10 +355,10 @@ public class Pack {
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
-			p.exportByName("Simple")
-			return
+			//p.exportByName("Simple")
+			//return
 			
-			//silent=true
+			silent=true
 						
 			//return
 			/*findTopxNotInDb(1000).each {
