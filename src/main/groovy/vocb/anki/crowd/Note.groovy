@@ -13,7 +13,7 @@ public class NoteFields {
 	}
 
 	public String getGuid() {
-		return "vsocb_$enWord"
+		return "vocb_$enWord"
 	}
 
 	@Override
