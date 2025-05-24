@@ -124,6 +124,10 @@ public class Helper {
 		return [filename.take(dot), filename.substring(dot+ 1)]
 	}
 
+	public static Tuple2<String, String> splitFileNameExt(Path p) {
+		splitFileNameExt(p.fileName.toString())
+	}
+
 	public static String indent(String s, int indent=1, String indChr=" ", String ignorePfxs='#|$' ) {
 		String pfRx = //
 				s.replaceAll(/(?m)^(?!$ignorePfxs)/, indChr*indent)
