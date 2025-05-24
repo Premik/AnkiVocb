@@ -164,8 +164,19 @@ public class Manager {
 			}
 		}
 		println "${'-'*80}"
+		println "Plurals:"
+		db.concepts
+		  .collectMany { Concept c-> c.termsByLang("en")}
+		  .findAll {Term t -> t.term.endsWith("s")}
+		  .collect {Term t-> t.term.dropRight(1) }
+		  .each { String singular ->
+			  if (conceptByFirstTerm.containsKey(singular)) {
+				  println singular
+			  }
+		  }
+		println "${'-'*80}"
 	}
-	
+
 	List<String> allTextWithLang(String lang="cs") {
 		db.concepts.collectMany {Concept c ->
 			(c.termsByLang(lang) + c.examplesByLang(lang)).collect {it.term}
@@ -175,11 +186,12 @@ public class Manager {
 
 
 	public static void main(String[] args) {
-		Manager dbMan = new Manager()
-		dbMan.load()
-		dbMan.findBrokenMedia()
-		
-		
+		new Manager().tap {
+		load()
+		println allTextWithLang("en")
+		}
+
+
 		//dbMan.save()
 		//println "${Helper.roundDecimal(dbMan.completeness*100, 0)}% completed"
 

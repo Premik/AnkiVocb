@@ -30,7 +30,7 @@ public class HttpHelper {
 			doOutput = true
 			connectTimeout = connectionProps.connectTimeout
 			readTimeout = connectionProps.readTimeout
-			(hdrs + ["Content-Type": "application/json"]).each { String k, v->
+			hdrs.each { String k, v->
 				setRequestProperty(k, v.toString())
 				//println "$k: $v"
 			}

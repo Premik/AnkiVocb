@@ -10982,7 +10982,7 @@ concepts:
   img: won.jpeg
   freq: 51798.70000
   origins: ["conceptDbSamples"]
-##  nice   ################################################################## ▅ 50%
+##  nice   ################################################################## ▆ 67%
 - terms: 
   - term: nice
     lang: en
@@ -10993,9 +10993,10 @@ concepts:
   - term: příjemné
     lang: cs
     tts: prijemne.mp3
+  img: nice.jpeg
   freq: 50915.20000
   origins: ["conceptDbSamples"]
-##  start   ################################################################# ▅ 50%
+##  start   ################################################################# ▆ 67%
 - terms: 
   - term: start
     lang: en
@@ -11006,9 +11007,10 @@ concepts:
   - term: zahájení
     lang: cs
     tts: zahajeni.mp3
+  img: start.jpeg
   freq: 50331.95000
   origins: ["conceptDbSamples"]
-##  marry   ################################################################# ▅ 50%
+##  marry   ################################################################# ▆ 67%
 - terms: 
   - term: marry
     lang: en
@@ -11019,9 +11021,10 @@ concepts:
   - term: provdat
     lang: cs
     tts: provdat.mp3
+  img: marry.jpeg
   freq: 49835.45000
   origins: ["conceptDbSamples"]
-##  fees   ################################################################## ▅ 50%
+##  fees   ################################################################## ▆ 67%
 - terms: 
   - term: fees
     lang: en
@@ -11029,6 +11032,7 @@ concepts:
   - term: poplatky
     lang: cs
     tts: poplatky.mp3
+  img: fees.jpeg
   freq: 49820.10000
   origins: ["conceptDbSamples"]
 ##  fill   ################################################################## ▅ 50%
@@ -12880,10 +12884,11 @@ concepts:
     tts: piva.mp3
   freq: 159.01800
   origins: ["conceptDbSamples"]
-##  seafood   ############################################################### ▄ 49%
+##  seafood   ############################################################### ▅ 50%
 - terms: 
   - term: seafood
     lang: en
+    tts: seafood.mp3
   - term: mořské plody
     lang: cs
     tts: morske plody.mp3

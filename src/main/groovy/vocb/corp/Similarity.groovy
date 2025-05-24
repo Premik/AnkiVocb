@@ -7,15 +7,7 @@ import vocb.data.Concept
 public class Similarity {
 
 	//https://stackoverflow.com/questions/10433657/how-to-determine-character-similarity
-	List<String> visualLettersSim= [
-		'sbgae',
-		'rp',
-		'do',
-		'bhd',
-		'mw',
-		'il',
-		'vx'
-	]
+	List<String> visualLettersSim= ['sbgae', 'rp', 'do', 'bhd', 'mw', 'il', 'vx']
 
 	double sameLatter(char a, char b,  double exactScore=1, double visualScore=0.01) {
 		if (a==b) return exactScore
@@ -37,44 +29,89 @@ public class Similarity {
 			if (bi <0) return maxDist
 			return Math.abs(bi-ai)
 		}
-
 	}
 
-	BigDecimal similarWithLen(CharSequence a, CharSequence b, int len) {
+	double rateDistance(long distance) {
+		// [1.0, 0.44, 0.25, 0.16, 0.11, 0.08, 0.06, 0.05, 0.04, 0.03]
+		assert distance >=0
+		double d=distance+2
+		return 4/(d*d)
+	}
+
+	double similarWithLen(List<String> aSubs, List<String> bSubs) {
+		List<Integer> dst = distanceMatches(aSubs, bSubs, 1000)
+		dst.withIndex().collect {Integer dist, int indx->
+			if (indx==0) return 5*rateDistance(dist) //Match at the start makes words more similar 
+			if (indx==1) return 3*rateDistance(dist)
+			return  rateDistance(dist)
+		}.average()
+	}
+
+	double similarWithLen(CharSequence a, CharSequence b, int len) {
 		List<String> aSubs = allSubstringsWithLen(a, len)
 		List<String> bSubs = allSubstringsWithLen(b, len)
-		List<Integer> dst = distanceMatches(aSubs, bSubs, 1000) + distanceMatches(bSubs, aSubs, 1000)
-		dst.collect{ (it+1) as BigDecimal}.collect {1/(it*it)}.collect {(it < 0.01) ? 0 : it }.sum()
+		return similarWithLen(aSubs, bSubs)
+	}
+
+	double similarWithLenSmart(CharSequence a, CharSequence b, int len) {
+		double ret = similarWithLen(a,b,len)
+
+		if (len == 2) {
+			//Swapped letters in each pair
+			List<String> swpA = allSubstringsWithLen(a, 2).collect {"${it[1]}${it[0]}".toString()}
+			List<String> bSubs = allSubstringsWithLen(b, len)
+			ret = (2d*ret + similarWithLen(swpA, bSubs))/3d
+		}
+		return ret
 	}
 
 	@Memoized
-	BigDecimal similarSubstrings(CharSequence a, CharSequence b) {
+	double similarSubstrings(CharSequence a, CharSequence b) {
 		if (!a || !b) return 0
 		int len = Math.min(a.length() ,b.length())
-		BigDecimal s = (len..1).collect {similarWithLen(a, b, it)*it }.sum()
 		int lenDif = Math.abs(a.length() - b.length())
-		return s - lenDif
+		double s = (len..1).collect {similarWithLenSmart(a, b, it)*it }.sum()
+		return s+8*rateDistance(lenDif)
 	}
+
+	double similar(CharSequence a, CharSequence b) {
+		double selfA = similarSubstrings(a,a)
+		double selfB = similarSubstrings(b,b)
+		double ab = similarSubstrings(a,b)/selfA
+		double ba = similarSubstrings(b,a)/selfB
+		int lenDif = Math.abs(a.length() - b.length())
+
+		//println "${selfA}($ab) ${selfB}( $ba) "
+		return ((ab+ba)/2d).round(4)
+	}
+
+
 
 	Set<String> commonSubstringsOf(CharSequence a, CharSequence b) {
 		Set<String> aSet = allSubstringsOf(a)
 		Set<String> bSet = allSubstringsOf(b)
 		return aSet.intersect(bSet)
 	}
-		
+
 
 	static void main(String... args) {
 		Similarity n = new Similarity()
 		Corpus c=  Corpus.buildDef()
 		String word ="when"
-		println n.similarSubstrings("you", "yours")
-		
+		println "you yours   ${n.similar("you", "yours")}"
+		println "where whenever  ${n.similar("when", "whenever")}"
+		println "cake cook  ${n.similar("cake", "cook")}"
+		println "now know  ${n.similar("now", "know")}"
+		println "yesterday cat  ${n.similar("yesterday", "cat")}"
+
+
+
 		String[] sorted = c.topX(10000).sort {String a, String b ->
-			n.similarSubstrings(word, b) <=> n.similarSubstrings(word, a)
+			n.similar(word, b) <=> n.similar(word, a)
 		}
-		
+
 		println word
-		println ( sorted.take(20).collect{"$it ${n.similarSubstrings(word, it)} "})
+		println ( sorted.take(100).collect{"$it ${n.similar(word, it)} "})
 
 		//bedroom
 
