@@ -41,7 +41,7 @@ public class Manager {
 				System.err.println("Warninig: duplicate word '$ft'")
 			}						
 			if (ft) conceptByFirstTerm[ft] = c
-			c.terms.each { Term t->
+			c.terms.values().each { Term t->
 				conceptsByTerm[t.term] += t
 			}
 			
