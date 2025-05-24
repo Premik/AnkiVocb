@@ -36,6 +36,7 @@ import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import javax.swing.JScrollPane;
+import java.awt.Font;
 
 /*
  * To change this template, choose Tools | Templates
@@ -61,6 +62,7 @@ public class DisplayImage {
 		frmPickImage.getContentPane().setLayout(new BoxLayout(frmPickImage.getContentPane(), BoxLayout.Y_AXIS));
 		
 		searchTextField = new JTextField();
+		searchTextField.setFont(new Font("Monospaced", Font.BOLD, 20));
 		frmPickImage.getContentPane().add(searchTextField);
 		searchTextField.setBorder(new MatteBorder(10, 1, 10, 1, (Color) UIManager.getColor("Button.background")));
 		searchTextField.addActionListener(new ActionListener() {

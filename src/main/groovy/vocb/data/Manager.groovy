@@ -69,13 +69,13 @@ public class Manager {
 		}
 	}
 	
-	public String word2MediaLink(String mediaName, String mediaExt) {
+	public String termd2MediaLink(String mediaName, String mediaExt) {
 		assert mediaName : "The media name is blank"
 		"${Helper.word2Key(mediaName)}.$mediaExt"
 	}
 	
 	public String resolveMedia(String mediaName, String mediaExt, Closure whenNotFound) {
-		String mediaLink = word2MediaLink(mediaName, mediaExt)
+		String mediaLink = termd2MediaLink(mediaName, mediaExt)
 		if (linkedMediaExists(mediaLink)) return mediaLink
 		whenNotFound(mediaLinkPath(mediaLink))
 		return mediaLink
