@@ -56,7 +56,7 @@ concepts:
 - terms: 
   - term: of
     lang: en
-    tts: of.mp3
+    tts: en-terms/of.mp3
     pron: ʌv
   - term: z
     lang: cs
@@ -75,7 +75,7 @@ concepts:
 - terms: 
   - term: i
     lang: en
-    tts: i.mp3
+    tts: en-terms/i.mp3
   - term: já
     lang: cs
     tts: ja.mp3
@@ -93,7 +93,7 @@ concepts:
 - terms: 
   - term: and
     lang: en
-    tts: and.mp3
+    tts: en-terms/and.mp3
     pron: ænd
   - term: a
     lang: cs
@@ -112,7 +112,7 @@ concepts:
 - terms: 
   - term: to
     lang: en
-    tts: to.mp3
+    tts: en-terms/to.mp3
     pron: tu
   - term: do
     lang: cs
@@ -134,7 +134,7 @@ concepts:
 - terms: 
   - term: was
     lang: en
-    tts: was.mp3
+    tts: en-terms/was.mp3
     pron: wʌz
   - term: byl
     lang: cs
@@ -156,7 +156,7 @@ concepts:
 - terms: 
   - term: in
     lang: en
-    tts: in.mp3
+    tts: en-terms/in.mp3
     pron: ɪn
   - term: v
     lang: cs
@@ -178,7 +178,7 @@ concepts:
 - terms: 
   - term: is
     lang: en
-    tts: is.mp3
+    tts: en-terms/is.mp3
     pron: ɪz
   - term: je
     lang: cs
@@ -197,7 +197,7 @@ concepts:
 - terms: 
   - term: it
     lang: en
-    tts: it.mp3
+    tts: en-terms/it.mp3
     pron: ɪt
   - term: to
     lang: cs
@@ -216,7 +216,7 @@ concepts:
 - terms: 
   - term: for
     lang: en
-    tts: for.mp3
+    tts: en-terms/for.mp3
     pron: fɔr
   - term: pro
     lang: cs
@@ -235,7 +235,7 @@ concepts:
 - terms: 
   - term: "true"
     lang: en
-    tts: true.mp3
+    tts: en-terms/true.mp3
     pron: tru
   - term: pravda
     lang: cs
@@ -254,7 +254,7 @@ concepts:
 - terms: 
   - term: do
     lang: en
-    tts: do.mp3
+    tts: en-terms/do.mp3
     pron: du
   - term: udělat
     lang: cs
@@ -276,7 +276,7 @@ concepts:
 - terms: 
   - term: but
     lang: en
-    tts: but.mp3
+    tts: en-terms/but.mp3
     pron: bʌt
   - term: ale
     lang: cs
@@ -295,7 +295,7 @@ concepts:
 - terms: 
   - term: all
     lang: en
-    tts: all.mp3
+    tts: en-terms/all.mp3
     pron: ɔl
   - term: všichni
     lang: cs
@@ -317,7 +317,7 @@ concepts:
 - terms: 
   - term: them
     lang: en
-    tts: them.mp3
+    tts: en-terms/them.mp3
     pron: ðɛm
   - term: jim
     lang: cs
@@ -339,7 +339,7 @@ concepts:
 - terms: 
   - term: you
     lang: en
-    tts: you.mp3
+    tts: en-terms/you.mp3
     pron: ju
   - term: ty
     lang: cs
@@ -361,7 +361,7 @@ concepts:
 - terms: 
   - term: one
     lang: en
-    tts: one.mp3
+    tts: en-terms/one.mp3
     pron: wʌn
   - term: jeden
     lang: cs
@@ -383,7 +383,7 @@ concepts:
 - terms: 
   - term: "false"
     lang: en
-    tts: false.mp3
+    tts: en-terms/false.mp3
     pron: fɔls
   - term: nepravdivý
     lang: cs
@@ -405,7 +405,7 @@ concepts:
 - terms: 
   - term: time
     lang: en
-    tts: time.mp3
+    tts: en-terms/time.mp3
     pron: taɪm
   - term: čas
     lang: cs
@@ -427,7 +427,7 @@ concepts:
 - terms: 
   - term: out
     lang: en
-    tts: out.mp3
+    tts: en-terms/out.mp3
     pron: aʊt
   - term: ven
     lang: cs
@@ -449,7 +449,7 @@ concepts:
 - terms: 
   - term: know
     lang: en
-    tts: know.mp3
+    tts: en-terms/know.mp3
     pron: noʊ
   - term: vědět
     lang: cs
@@ -471,7 +471,7 @@ concepts:
 - terms: 
   - term: be
     lang: en
-    tts: be.mp3
+    tts: en-terms/be.mp3
     pron: bi
   - term: být
     lang: cs
@@ -490,7 +490,7 @@ concepts:
 - terms: 
   - term: had
     lang: en
-    tts: had.mp3
+    tts: en-terms/had.mp3
     pron: hæd
   - term: měl
     lang: cs
@@ -509,7 +509,7 @@ concepts:
 - terms: 
   - term: he
     lang: en
-    tts: he.mp3
+    tts: en-terms/he.mp3
     pron: hi
   - term: "on"
     lang: cs
@@ -528,7 +528,7 @@ concepts:
 - terms: 
   - term: with
     lang: en
-    tts: with.mp3
+    tts: en-terms/with.mp3
     pron: wɪð
   - term: s
     lang: cs
@@ -547,7 +547,7 @@ concepts:
 - terms: 
   - term: his
     lang: en
-    tts: his.mp3
+    tts: en-terms/his.mp3
     pron: hɪz
   - term: jeho
     lang: cs
@@ -566,7 +566,7 @@ concepts:
 - terms: 
   - term: have
     lang: en
-    tts: have.mp3
+    tts: en-terms/have.mp3
     pron: hæv
   - term: mít
     lang: cs
@@ -588,7 +588,7 @@ concepts:
 - terms: 
   - term: as
     lang: en
-    tts: as.mp3
+    tts: en-terms/as.mp3
     pron: æz
   - term: jako
     lang: cs
@@ -610,7 +610,7 @@ concepts:
 - terms: 
   - term: at
     lang: en
-    tts: at.mp3
+    tts: en-terms/at.mp3
     pron: æt
   - term: na
     lang: cs
@@ -632,7 +632,7 @@ concepts:
 - terms: 
   - term: were
     lang: en
-    tts: were.mp3
+    tts: en-terms/were.mp3
     pron: wɜr
   - term: byly
     lang: cs
@@ -654,7 +654,7 @@ concepts:
 - terms: 
   - term: are
     lang: en
-    tts: are.mp3
+    tts: en-terms/are.mp3
     pron: ɑr
   - term: jsou
     lang: cs
@@ -676,7 +676,7 @@ concepts:
 - terms: 
   - term: not
     lang: en
-    tts: not.mp3
+    tts: en-terms/not.mp3
     pron: nɑt
   - term: ne
     lang: cs
@@ -698,7 +698,7 @@ concepts:
 - terms: 
   - term: from
     lang: en
-    tts: from.mp3
+    tts: en-terms/from.mp3
     pron: frʌm
   - term: z
     lang: cs
@@ -720,7 +720,7 @@ concepts:
 - terms: 
   - term: or
     lang: en
-    tts: or.mp3
+    tts: en-terms/or.mp3
     pron: ɔr
   - term: nebo
     lang: cs
@@ -739,7 +739,7 @@ concepts:
 - terms: 
   - term: her
     lang: en
-    tts: her.mp3
+    tts: en-terms/her.mp3
     pron: hɜr
   - term: její
     lang: cs
@@ -767,7 +767,7 @@ concepts:
 - terms: 
   - term: said
     lang: en
-    tts: said.mp3
+    tts: en-terms/said.mp3
     pron: sɛd
   - term: řekl
     lang: cs
@@ -789,7 +789,7 @@ concepts:
 - terms: 
   - term: which
     lang: en
-    tts: which.mp3
+    tts: en-terms/which.mp3
     pron: wɪʧ
   - term: který
     lang: cs
@@ -811,7 +811,7 @@ concepts:
 - terms: 
   - term: by
     lang: en
-    tts: by.mp3
+    tts: en-terms/by.mp3
     pron: baɪ
   - term: podle
     lang: cs
@@ -833,7 +833,7 @@ concepts:
 - terms: 
   - term: been
     lang: en
-    tts: been.mp3
+    tts: en-terms/been.mp3
     pron: bɪn
   - term: byl
     lang: cs
@@ -855,7 +855,7 @@ concepts:
 - terms: 
   - term: him
     lang: en
-    tts: him.mp3
+    tts: en-terms/him.mp3
     pron: hɪm
   - term: ho
     lang: cs
@@ -877,7 +877,7 @@ concepts:
 - terms: 
   - term: my
     lang: en
-    tts: my.mp3
+    tts: en-terms/my.mp3
     pron: maɪ
   - term: můj
     lang: cs
@@ -899,7 +899,7 @@ concepts:
 - terms: 
   - term: this
     lang: en
-    tts: this.mp3
+    tts: en-terms/this.mp3
     pron: ðɪs
   - term: tento
     lang: cs
@@ -921,7 +921,7 @@ concepts:
 - terms: 
   - term: their
     lang: en
-    tts: their.mp3
+    tts: en-terms/their.mp3
     pron: ðɛr
   - term: jejich
     lang: cs
@@ -943,7 +943,7 @@ concepts:
 - terms: 
   - term: me
     lang: en
-    tts: me.mp3
+    tts: en-terms/me.mp3
     pron: mi
   - term: mě
     lang: cs
@@ -965,7 +965,7 @@ concepts:
 - terms: 
   - term: who
     lang: en
-    tts: who.mp3
+    tts: en-terms/who.mp3
     pron: hu
   - term: kdo
     lang: cs
@@ -987,7 +987,7 @@ concepts:
 - terms: 
   - term: would
     lang: en
-    tts: would.mp3
+    tts: en-terms/would.mp3
     pron: wʊd
   - term: bychom
     lang: cs
@@ -1009,7 +1009,7 @@ concepts:
 - terms: 
   - term: has
     lang: en
-    tts: has.mp3
+    tts: en-terms/has.mp3
     pron: hæz
   - term: má
     lang: cs
@@ -1028,7 +1028,7 @@ concepts:
 - terms: 
   - term: so
     lang: en
-    tts: so.mp3
+    tts: en-terms/so.mp3
     pron: soʊ
   - term: tak
     lang: cs
@@ -1050,7 +1050,7 @@ concepts:
 - terms: 
   - term: if
     lang: en
-    tts: if.mp3
+    tts: en-terms/if.mp3
     pron: ɪf
   - term: pokud
     lang: cs
@@ -1072,7 +1072,7 @@ concepts:
 - terms: 
   - term: say
     lang: en
-    tts: say.mp3
+    tts: en-terms/say.mp3
     pron: seɪ
   - term: říkají
     lang: cs
@@ -1094,7 +1094,7 @@ concepts:
 - terms: 
   - term: made
     lang: en
-    tts: made.mp3
+    tts: en-terms/made.mp3
     pron: meɪd
   - term: vyrobeny
     lang: cs
@@ -1116,7 +1116,7 @@ concepts:
 - terms: 
   - term: into
     lang: en
-    tts: into.mp3
+    tts: en-terms/into.mp3
     pron: ˈɪntu
   - term: do
     lang: cs
@@ -1135,7 +1135,7 @@ concepts:
 - terms: 
   - term: did
     lang: en
-    tts: did.mp3
+    tts: en-terms/did.mp3
     pron: dɪd
   - term: udělal
     lang: cs
@@ -1157,7 +1157,7 @@ concepts:
 - terms: 
   - term: will
     lang: en
-    tts: will.mp3
+    tts: en-terms/will.mp3
     pron: wɪl
   - term: bude
     lang: cs
@@ -1179,7 +1179,7 @@ concepts:
 - terms: 
   - term: more
     lang: en
-    tts: more.mp3
+    tts: en-terms/more.mp3
     pron: mɔr
   - term: více
     lang: cs
@@ -1198,7 +1198,7 @@ concepts:
 - terms: 
   - term: your
     lang: en
-    tts: your.mp3
+    tts: en-terms/your.mp3
     pron: jʊər
   - term: vaše
     lang: cs
@@ -1220,7 +1220,7 @@ concepts:
 - terms: 
   - term: when
     lang: en
-    tts: when.mp3
+    tts: en-terms/when.mp3
     pron: wɛn
   - term: když
     lang: cs
@@ -1242,7 +1242,7 @@ concepts:
 - terms: 
   - term: could
     lang: en
-    tts: could.mp3
+    tts: en-terms/could.mp3
     pron: kʊd
   - term: mohl by
     lang: cs
@@ -1264,7 +1264,7 @@ concepts:
 - terms: 
   - term: some
     lang: en
-    tts: some.mp3
+    tts: en-terms/some.mp3
     pron: sʌm
   - term: některé
     lang: cs
@@ -1286,7 +1286,7 @@ concepts:
 - terms: 
   - term: our
     lang: en
-    tts: our.mp3
+    tts: en-terms/our.mp3
     pron: ˈaʊər
   - term: naše
     lang: cs
@@ -1308,7 +1308,7 @@ concepts:
 - terms: 
   - term: man
     lang: en
-    tts: man.mp3
+    tts: en-terms/man.mp3
     pron: mən
   - term: muž
     lang: cs
@@ -1330,7 +1330,7 @@ concepts:
 - terms: 
   - term: go
     lang: en
-    tts: go.mp3
+    tts: en-terms/go.mp3
     pron: goʊ
   - term: jít
     lang: cs
@@ -1352,7 +1352,7 @@ concepts:
 - terms: 
   - term: its
     lang: en
-    tts: its.mp3
+    tts: en-terms/its.mp3
     pron: ɪts
   - term: jeho
     lang: cs
@@ -1374,7 +1374,7 @@ concepts:
 - terms: 
   - term: up
     lang: en
-    tts: up.mp3
+    tts: en-terms/up.mp3
     pron: ʌp
   - term: nahoru
     lang: cs
@@ -1393,7 +1393,7 @@ concepts:
 - terms: 
   - term: they
     lang: en
-    tts: they.mp3
+    tts: en-terms/they.mp3
     pron: ðeɪ
   - term: oni
     lang: cs
@@ -1412,7 +1412,7 @@ concepts:
 - terms: 
   - term: men
     lang: en
-    tts: men.mp3
+    tts: en-terms/men.mp3
     pron: mɛn
   - term: muži
     lang: cs
@@ -1431,7 +1431,7 @@ concepts:
 - terms: 
   - term: we
     lang: en
-    tts: we.mp3
+    tts: en-terms/we.mp3
     pron: wi
   - term: my
     lang: cs
@@ -1450,7 +1450,7 @@ concepts:
 - terms: 
   - term: then
     lang: en
-    tts: then.mp3
+    tts: en-terms/then.mp3
     pron: ðɛn
   - term: pak
     lang: cs
@@ -1472,7 +1472,7 @@ concepts:
 - terms: 
   - term: see
     lang: en
-    tts: see.mp3
+    tts: en-terms/see.mp3
     pron: si
   - term: vidět
     lang: cs
@@ -1491,7 +1491,7 @@ concepts:
 - terms: 
   - term: came
     lang: en
-    tts: came.mp3
+    tts: en-terms/came.mp3
     pron: keɪm
   - term: přišel
     lang: cs
@@ -1513,7 +1513,7 @@ concepts:
 - terms: 
   - term: may
     lang: en
-    tts: may.mp3
+    tts: en-terms/may.mp3
     pron: meɪ
   - term: mohu
     lang: cs
@@ -1535,7 +1535,7 @@ concepts:
 - terms: 
   - term: any
     lang: en
-    tts: any.mp3
+    tts: en-terms/any.mp3
     pron: ˈɛni
   - term: jakékoli
     lang: cs
@@ -1557,7 +1557,7 @@ concepts:
 - terms: 
   - term: make
     lang: en
-    tts: make.mp3
+    tts: en-terms/make.mp3
     pron: meɪk
   - term: sestavit
     lang: cs
@@ -1579,7 +1579,7 @@ concepts:
 - terms: 
   - term: about
     lang: en
-    tts: about.mp3
+    tts: en-terms/about.mp3
     pron: əˈbaʊt
   - term: o
     lang: cs
@@ -1601,7 +1601,7 @@ concepts:
 - terms: 
   - term: two
     lang: en
-    tts: two.mp3
+    tts: en-terms/two.mp3
     pron: tu
   - term: dva
     lang: cs
@@ -1623,7 +1623,7 @@ concepts:
 - terms: 
   - term: these
     lang: en
-    tts: these.mp3
+    tts: en-terms/these.mp3
     pron: ðiz
   - term: tyto
     lang: cs
@@ -1645,7 +1645,7 @@ concepts:
 - terms: 
   - term: than
     lang: en
-    tts: than.mp3
+    tts: en-terms/than.mp3
     pron: ðæn
   - term: než
     lang: cs
@@ -1664,7 +1664,7 @@ concepts:
 - terms: 
   - term: get
     lang: en
-    tts: get.mp3
+    tts: en-terms/get.mp3
     pron: gɛt
   - term: dostat
     lang: cs
@@ -1686,7 +1686,7 @@ concepts:
 - terms: 
   - term: other
     lang: en
-    tts: other.mp3
+    tts: en-terms/other.mp3
     pron: ˈʌðər
   - term: jiné
     lang: cs
@@ -1708,7 +1708,7 @@ concepts:
 - terms: 
   - term: us
     lang: en
-    tts: us.mp3
+    tts: en-terms/us.mp3
     pron: ʌs
   - term: nás
     lang: cs
@@ -1730,7 +1730,7 @@ concepts:
 - terms: 
   - term: should
     lang: en
-    tts: should.mp3
+    tts: en-terms/should.mp3
     pron: ʃʊd
   - term: měl by
     lang: cs
@@ -1752,7 +1752,7 @@ concepts:
 - terms: 
   - term: come
     lang: en
-    tts: come.mp3
+    tts: en-terms/come.mp3
     pron: kʌm
   - term: přijít
     lang: cs
@@ -1781,7 +1781,7 @@ concepts:
 - terms: 
   - term: she
     lang: en
-    tts: she.mp3
+    tts: en-terms/she.mp3
     pron: ʃi
   - term: ona
     lang: cs
@@ -1800,7 +1800,7 @@ concepts:
 - terms: 
   - term: very
     lang: en
-    tts: very.mp3
+    tts: en-terms/very.mp3
     pron: ˈvɛri
   - term: velmi
     lang: cs
@@ -1822,7 +1822,7 @@ concepts:
 - terms: 
   - term: think
     lang: en
-    tts: think.mp3
+    tts: en-terms/think.mp3
     pron: θɪŋk
   - term: myslet
     lang: cs
@@ -1853,7 +1853,7 @@ concepts:
 - terms: 
   - term: only
     lang: en
-    tts: only.mp3
+    tts: en-terms/only.mp3
     pron: ˈoʊnli
   - term: pouze
     lang: cs
@@ -1875,7 +1875,7 @@ concepts:
 - terms: 
   - term: people
     lang: en
-    tts: people.mp3
+    tts: en-terms/people.mp3
     pron: ˈpipəl
   - term: lidé
     lang: cs
@@ -1897,7 +1897,7 @@ concepts:
 - terms: 
   - term: went
     lang: en
-    tts: went.mp3
+    tts: en-terms/went.mp3
     pron: wɛnt
   - term: šel
     lang: cs
@@ -1919,7 +1919,7 @@ concepts:
 - terms: 
   - term: great
     lang: en
-    tts: great.mp3
+    tts: en-terms/great.mp3
     pron: greɪt
   - term: skvělé
     lang: cs
@@ -1941,7 +1941,7 @@ concepts:
 - terms: 
   - term: now
     lang: en
-    tts: now.mp3
+    tts: en-terms/now.mp3
     pron: naʊ
   - term: nyní
     lang: cs
@@ -1963,7 +1963,7 @@ concepts:
 - terms: 
   - term: take
     lang: en
-    tts: take.mp3
+    tts: en-terms/take.mp3
     pron: teɪk
   - term: vzít
     lang: cs
@@ -1985,7 +1985,7 @@ concepts:
 - terms: 
   - term: little
     lang: en
-    tts: little.mp3
+    tts: en-terms/little.mp3
     pron: ˈlɪtəl
   - term: trochu
     lang: cs
@@ -2007,7 +2007,7 @@ concepts:
 - terms: 
   - term: day
     lang: en
-    tts: day.mp3
+    tts: en-terms/day.mp3
     pron: deɪ
   - term: den
     lang: cs
@@ -2026,7 +2026,7 @@ concepts:
 - terms: 
   - term: eyes
     lang: en
-    tts: eyes.mp3
+    tts: en-terms/eyes.mp3
     pron: aɪz
   - term: oči
     lang: cs
@@ -2045,7 +2045,7 @@ concepts:
 - terms: 
   - term: like
     lang: en
-    tts: like.mp3
+    tts: en-terms/like.mp3
     pron: laɪk
   - term: jako
     lang: cs
@@ -2067,7 +2067,7 @@ concepts:
 - terms: 
   - term: must
     lang: en
-    tts: must.mp3
+    tts: en-terms/must.mp3
     pron: mʌst
   - term: musí
     lang: cs
@@ -2089,7 +2089,7 @@ concepts:
 - terms: 
   - term: over
     lang: en
-    tts: over.mp3
+    tts: en-terms/over.mp3
     pron: ˈoʊvər
   - term: nad
     lang: cs
@@ -2111,7 +2111,7 @@ concepts:
 - terms: 
   - term: those
     lang: en
-    tts: those.mp3
+    tts: en-terms/those.mp3
     pron: ðoʊz
   - term: těch
     lang: cs
@@ -2133,7 +2133,7 @@ concepts:
 - terms: 
   - term: such
     lang: en
-    tts: such.mp3
+    tts: en-terms/such.mp3
     pron: sʌʧ
   - term: takové
     lang: cs
@@ -2152,7 +2152,7 @@ concepts:
 - terms: 
   - term: can
     lang: en
-    tts: can.mp3
+    tts: en-terms/can.mp3
     pron: kæn
   - term: může
     lang: cs
@@ -2174,7 +2174,7 @@ concepts:
 - terms: 
   - term: what
     lang: en
-    tts: what.mp3
+    tts: en-terms/what.mp3
     pron: wʌt
   - term: co
     lang: cs
@@ -2196,7 +2196,7 @@ concepts:
 - terms: 
   - term: before
     lang: en
-    tts: before.mp3
+    tts: en-terms/before.mp3
     pron: bɪˈfɔr
   - term: před
     lang: cs
@@ -2218,7 +2218,7 @@ concepts:
 - terms: 
   - term: mr
     lang: en
-    tts: mr.mp3
+    tts: en-terms/mr.mp3
     pron: ˈmɪstər
   - term: pan
     lang: cs
@@ -2237,7 +2237,7 @@ concepts:
 - terms: 
   - term: never
     lang: en
-    tts: never.mp3
+    tts: en-terms/never.mp3
     pron: ˈnɛvər
   - term: nikdy
     lang: cs
@@ -2256,7 +2256,7 @@ concepts:
 - terms: 
   - term: life
     lang: en
-    tts: life.mp3
+    tts: en-terms/life.mp3
     pron: laɪf
   - term: život
     lang: cs
@@ -2275,7 +2275,7 @@ concepts:
 - terms: 
   - term: much
     lang: en
-    tts: much.mp3
+    tts: en-terms/much.mp3
     pron: mʌʧ
   - term: hodně
     lang: cs
@@ -2297,7 +2297,7 @@ concepts:
 - terms: 
   - term: things
     lang: en
-    tts: things.mp3
+    tts: en-terms/things.mp3
     pron: θɪŋz
   - term: věci
     lang: cs
@@ -2316,7 +2316,7 @@ concepts:
 - terms: 
   - term: many
     lang: en
-    tts: many.mp3
+    tts: en-terms/many.mp3
     pron: ˈmɛni
   - term: mnoho
     lang: cs
@@ -2338,7 +2338,7 @@ concepts:
 - terms: 
   - term: old
     lang: en
-    tts: old.mp3
+    tts: en-terms/old.mp3
     pron: oʊld
   - term: staré
     lang: cs
@@ -2360,7 +2360,7 @@ concepts:
 - terms: 
   - term: after
     lang: en
-    tts: after.mp3
+    tts: en-terms/after.mp3
     pron: ˈæftər
   - term: po
     lang: cs
@@ -2382,7 +2382,7 @@ concepts:
 - terms: 
   - term: years
     lang: en
-    tts: years.mp3
+    tts: en-terms/years.mp3
     pron: jɪrz
   - term: roky
     lang: cs
@@ -2404,7 +2404,7 @@ concepts:
 - terms: 
   - term: most
     lang: en
-    tts: most.mp3
+    tts: en-terms/most.mp3
     pron: moʊst
   - term: většina
     lang: cs
@@ -2426,7 +2426,7 @@ concepts:
 - terms: 
   - term: also
     lang: en
-    tts: also.mp3
+    tts: en-terms/also.mp3
     pron: ˈɔlsoʊ
   - term: také
     lang: cs
@@ -2448,7 +2448,7 @@ concepts:
 - terms: 
   - term: year
     lang: en
-    tts: year.mp3
+    tts: en-terms/year.mp3
     pron: jɪr
   - term: rok
     lang: cs
@@ -2467,7 +2467,7 @@ concepts:
 - terms: 
   - term: saw
     lang: en
-    tts: saw.mp3
+    tts: en-terms/saw.mp3
     pron: sɔ
   - term: viděl
     lang: cs
@@ -2489,7 +2489,7 @@ concepts:
 - terms: 
   - term: too
     lang: en
-    tts: too.mp3
+    tts: en-terms/too.mp3
     pron: tu
   - term: příliš
     lang: cs
@@ -2511,7 +2511,7 @@ concepts:
 - terms: 
   - term: down
     lang: en
-    tts: down.mp3
+    tts: en-terms/down.mp3
     pron: daʊn
   - term: dolů
     lang: cs
@@ -2533,7 +2533,7 @@ concepts:
 - terms: 
   - term: work
     lang: en
-    tts: work.mp3
+    tts: en-terms/work.mp3
     pron: wɜrk
   - term: práce
     lang: cs
@@ -2555,7 +2555,7 @@ concepts:
 - terms: 
   - term: took
     lang: en
-    tts: took.mp3
+    tts: en-terms/took.mp3
     pron: tʊk
   - term: vzal
     lang: cs
@@ -2577,7 +2577,7 @@ concepts:
 - terms: 
   - term: might
     lang: en
-    tts: might.mp3
+    tts: en-terms/might.mp3
     pron: maɪt
   - term: by mohlo
     lang: cs
@@ -2596,7 +2596,7 @@ concepts:
 - terms: 
   - term: first
     lang: en
-    tts: first.mp3
+    tts: en-terms/first.mp3
     pron: fɜrst
   - term: první
     lang: cs
@@ -2618,7 +2618,7 @@ concepts:
 - terms: 
   - term: without
     lang: en
-    tts: without.mp3
+    tts: en-terms/without.mp3
     pron: wɪˈθaʊt
   - term: bez
     lang: cs
@@ -2637,7 +2637,7 @@ concepts:
 - terms: 
   - term: good
     lang: en
-    tts: good.mp3
+    tts: en-terms/good.mp3
     pron: gʊd
   - term: dobré
     lang: cs
@@ -2659,7 +2659,7 @@ concepts:
 - terms: 
   - term: himself
     lang: en
-    tts: himself.mp3
+    tts: en-terms/himself.mp3
     pron: hɪmˈsɛlf
   - term: sám sebe
     lang: cs
@@ -2681,7 +2681,7 @@ concepts:
 - terms: 
   - term: own
     lang: en
-    tts: own.mp3
+    tts: en-terms/own.mp3
     pron: oʊn
   - term: vlastní
     lang: cs
@@ -2703,7 +2703,7 @@ concepts:
 - terms: 
   - term: again
     lang: en
-    tts: again.mp3
+    tts: en-terms/again.mp3
     pron: əˈgɛn
   - term: znovu
     lang: cs
@@ -2725,7 +2725,7 @@ concepts:
 - terms: 
   - term: give
     lang: en
-    tts: give.mp3
+    tts: en-terms/give.mp3
     pron: gɪv
   - term: dát
     lang: cs
@@ -2747,7 +2747,7 @@ concepts:
 - terms: 
   - term: new
     lang: en
-    tts: new.mp3
+    tts: en-terms/new.mp3
     pron: nu
   - term: nové
     lang: cs
@@ -2769,7 +2769,7 @@ concepts:
 - terms: 
   - term: every
     lang: en
-    tts: every.mp3
+    tts: en-terms/every.mp3
     pron: ˈɛvəri
   - term: každý
     lang: cs
@@ -2791,7 +2791,7 @@ concepts:
 - terms: 
   - term: same
     lang: en
-    tts: same.mp3
+    tts: en-terms/same.mp3
     pron: seɪm
   - term: stejné
     lang: cs
@@ -2813,7 +2813,7 @@ concepts:
 - terms: 
   - term: shall
     lang: en
-    tts: shall.mp3
+    tts: en-terms/shall.mp3
   state: ignore
   freq: 449921.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2821,7 +2821,7 @@ concepts:
 - terms: 
   - term: seemed
     lang: en
-    tts: seemed.mp3
+    tts: en-terms/seemed.mp3
     pron: simd
   - term: zdálo se
     lang: cs
@@ -2843,7 +2843,7 @@ concepts:
 - terms: 
   - term: looked
     lang: en
-    tts: looked.mp3
+    tts: en-terms/looked.mp3
     pron: lʊkt
   - term: vypadal
     lang: cs
@@ -2865,7 +2865,7 @@ concepts:
 - terms: 
   - term: called
     lang: en
-    tts: called.mp3
+    tts: en-terms/called.mp3
     pron: kɔld
   - term: nazývá
     lang: cs
@@ -2887,7 +2887,7 @@ concepts:
 - terms: 
   - term: want
     lang: en
-    tts: want.mp3
+    tts: en-terms/want.mp3
     pron: wɑnt
   - term: chtějí
     lang: cs
@@ -2916,7 +2916,7 @@ concepts:
 - terms: 
   - term: way
     lang: en
-    tts: way.mp3
+    tts: en-terms/way.mp3
     pron: weɪ
   - term: způsob
     lang: cs
@@ -2938,7 +2938,7 @@ concepts:
 - terms: 
   - term: got
     lang: en
-    tts: got.mp3
+    tts: en-terms/got.mp3
     pron: gɑt
   - term: dostal
     lang: cs
@@ -2960,7 +2960,7 @@ concepts:
 - terms: 
   - term: tell
     lang: en
-    tts: tell.mp3
+    tts: en-terms/tell.mp3
     pron: tɛl
   - term: říct
     lang: cs
@@ -2982,7 +2982,7 @@ concepts:
 - terms: 
   - term: thing
     lang: en
-    tts: thing.mp3
+    tts: en-terms/thing.mp3
     pron: θɪŋ
   - term: věc
     lang: cs
@@ -3001,7 +3001,7 @@ concepts:
 - terms: 
   - term: well
     lang: en
-    tts: well.mp3
+    tts: en-terms/well.mp3
     pron: wɛl
   - term: dobře
     lang: cs
@@ -3023,7 +3023,7 @@ concepts:
 - terms: 
   - term: done
     lang: en
-    tts: done.mp3
+    tts: en-terms/done.mp3
     pron: dʌn
   - term: udělal
     lang: cs
@@ -3045,7 +3045,7 @@ concepts:
 - terms: 
   - term: heard
     lang: en
-    tts: heard.mp3
+    tts: en-terms/heard.mp3
     pron: hɜrd
   - term: slyšel
     lang: cs
@@ -3067,7 +3067,7 @@ concepts:
 - terms: 
   - term: days
     lang: en
-    tts: days.mp3
+    tts: en-terms/days.mp3
     pron: deɪz
   - term: dny
     lang: cs
@@ -3089,7 +3089,7 @@ concepts:
 - terms: 
   - term: told
     lang: en
-    tts: told.mp3
+    tts: en-terms/told.mp3
     pron: toʊld
   - term: řekl
     lang: cs
@@ -3111,7 +3111,7 @@ concepts:
 - terms: 
   - term: lord
     lang: en
-    tts: lord.mp3
+    tts: en-terms/lord.mp3
   - term: pán
     lang: cs
     tts: pan.mp3
@@ -3123,7 +3123,7 @@ concepts:
 - terms: 
   - term: asked
     lang: en
-    tts: asked.mp3
+    tts: en-terms/asked.mp3
     pron: æskt
   - term: požádal
     lang: cs
@@ -3145,7 +3145,7 @@ concepts:
 - terms: 
   - term: going
     lang: en
-    tts: going.mp3
+    tts: en-terms/going.mp3
     pron: ˈgoʊɪŋ
   - term: děje se
     lang: cs
@@ -3167,7 +3167,7 @@ concepts:
 - terms: 
   - term: seen
     lang: en
-    tts: seen.mp3
+    tts: en-terms/seen.mp3
     pron: sin
   - term: viděn
     lang: cs
@@ -3189,7 +3189,7 @@ concepts:
 - terms: 
   - term: having
     lang: en
-    tts: having.mp3
+    tts: en-terms/having.mp3
     pron: ˈhævɪŋ
   - term: mající
     lang: cs
@@ -3208,7 +3208,7 @@ concepts:
 - terms: 
   - term: even
     lang: en
-    tts: even.mp3
+    tts: en-terms/even.mp3
     pron: ˈivɪn
   - term: dokonce
     lang: cs
@@ -3230,7 +3230,7 @@ concepts:
 - terms: 
   - term: find
     lang: en
-    tts: find.mp3
+    tts: en-terms/find.mp3
     pron: faɪnd
   - term: najít
     lang: cs
@@ -3252,7 +3252,7 @@ concepts:
 - terms: 
   - term: knew
     lang: en
-    tts: knew.mp3
+    tts: en-terms/knew.mp3
     pron: nu
   - term: věděl
     lang: cs
@@ -3274,7 +3274,7 @@ concepts:
 - terms: 
   - term: through
     lang: en
-    tts: through.mp3
+    tts: en-terms/through.mp3
     pron: θru
   - term: prostřednictvím
     lang: cs
@@ -3296,7 +3296,7 @@ concepts:
 - terms: 
   - term: world
     lang: en
-    tts: world.mp3
+    tts: en-terms/world.mp3
     pron: wɜrld
   - term: svět
     lang: cs
@@ -3315,7 +3315,7 @@ concepts:
 - terms: 
   - term: being
     lang: en
-    tts: being.mp3
+    tts: en-terms/being.mp3
     pron: ˈbiɪŋ
   - term: bytí
     lang: cs
@@ -3337,7 +3337,7 @@ concepts:
 - terms: 
   - term: long
     lang: en
-    tts: long.mp3
+    tts: en-terms/long.mp3
     pron: lɔŋ
   - term: dlouhé
     lang: cs
@@ -3359,7 +3359,7 @@ concepts:
 - terms: 
   - term: am
     lang: en
-    tts: am.mp3
+    tts: en-terms/am.mp3
     pron: æm
   - term: jsem
     lang: cs
@@ -3378,7 +3378,7 @@ concepts:
 - terms: 
   - term: against
     lang: en
-    tts: against.mp3
+    tts: en-terms/against.mp3
     pron: əˈgɛnst
   - term: proti
     lang: cs
@@ -3397,7 +3397,7 @@ concepts:
 - terms: 
   - term: hands
     lang: en
-    tts: hands.mp3
+    tts: en-terms/hands.mp3
     pron: hændz
   - term: ruce
     lang: cs
@@ -3416,7 +3416,7 @@ concepts:
 - terms: 
   - term: three
     lang: en
-    tts: three.mp3
+    tts: en-terms/three.mp3
     pron: θri
   - term: tři
     lang: cs
@@ -3438,7 +3438,7 @@ concepts:
 - terms: 
   - term: words
     lang: en
-    tts: words.mp3
+    tts: en-terms/words.mp3
     pron: wɜrdz
   - term: slova
     lang: cs
@@ -3457,7 +3457,7 @@ concepts:
 - terms: 
   - term: back
     lang: en
-    tts: back.mp3
+    tts: en-terms/back.mp3
     pron: bæk
   - term: zpět
     lang: cs
@@ -3479,7 +3479,7 @@ concepts:
 - terms: 
   - term: young
     lang: en
-    tts: young.mp3
+    tts: en-terms/young.mp3
     pron: jʌŋ
   - term: mladý
     lang: cs
@@ -3498,7 +3498,7 @@ concepts:
 - terms: 
   - term: between
     lang: en
-    tts: between.mp3
+    tts: en-terms/between.mp3
     pron: bɪˈtwin
   - term: mezi
     lang: cs
@@ -3517,7 +3517,7 @@ concepts:
 - terms: 
   - term: gave
     lang: en
-    tts: gave.mp3
+    tts: en-terms/gave.mp3
     pron: geɪv
   - term: dal
     lang: cs
@@ -3539,7 +3539,7 @@ concepts:
 - terms: 
   - term: put
     lang: en
-    tts: put.mp3
+    tts: en-terms/put.mp3
     pron: pʊt
   - term: položit
     lang: cs
@@ -3561,7 +3561,7 @@ concepts:
 - terms: 
   - term: thought
     lang: en
-    tts: thought.mp3
+    tts: en-terms/thought.mp3
     pron: θɔt
   - term: myslel
     lang: cs
@@ -3583,7 +3583,7 @@ concepts:
 - terms: 
   - term: away
     lang: en
-    tts: away.mp3
+    tts: en-terms/away.mp3
     pron: əˈweɪ
   - term: pryč
     lang: cs
@@ -3605,7 +3605,7 @@ concepts:
 - terms: 
   - term: yet
     lang: en
-    tts: yet.mp3
+    tts: en-terms/yet.mp3
     pron: jɛt
   - term: ještě
     lang: cs
@@ -3636,7 +3636,7 @@ concepts:
 - terms: 
   - term: cannot
     lang: en
-    tts: cannot.mp3
+    tts: en-terms/cannot.mp3
     pron: ˈkænɑt
   - term: nemůže
     lang: cs
@@ -3658,7 +3658,7 @@ concepts:
 - terms: 
   - term: brought
     lang: en
-    tts: brought.mp3
+    tts: en-terms/brought.mp3
     pron: brɔt
   - term: přinesl
     lang: cs
@@ -3680,7 +3680,7 @@ concepts:
 - terms: 
   - term: ever
     lang: en
-    tts: ever.mp3
+    tts: en-terms/ever.mp3
     pron: ˈɛvər
   - term: někdy
     lang: cs
@@ -3702,7 +3702,7 @@ concepts:
 - terms: 
   - term: under
     lang: en
-    tts: under.mp3
+    tts: en-terms/under.mp3
     pron: ˈʌndər
   - term: pod
     lang: cs
@@ -3721,7 +3721,7 @@ concepts:
 - terms: 
   - term: last
     lang: en
-    tts: last.mp3
+    tts: en-terms/last.mp3
     pron: læst
   - term: poslední
     lang: cs
@@ -3743,7 +3743,7 @@ concepts:
 - terms: 
   - term: place
     lang: en
-    tts: place.mp3
+    tts: en-terms/place.mp3
     pron: pleɪs
   - term: místo
     lang: cs
@@ -3762,7 +3762,7 @@ concepts:
 - terms: 
   - term: always
     lang: en
-    tts: always.mp3
+    tts: en-terms/always.mp3
     pron: ˈɔlˌweɪz
   - term: vždy
     lang: cs
@@ -3784,7 +3784,7 @@ concepts:
 - terms: 
   - term: turned
     lang: en
-    tts: turned.mp3
+    tts: en-terms/turned.mp3
     pron: tɜrnd
   - term: obrátil
     lang: cs
@@ -3806,7 +3806,7 @@ concepts:
 - terms: 
   - term: taken
     lang: en
-    tts: taken.mp3
+    tts: en-terms/taken.mp3
   - term: přijata
     lang: cs
     tts: prijata.mp3
@@ -3820,7 +3820,7 @@ concepts:
 - terms: 
   - term: night
     lang: en
-    tts: night.mp3
+    tts: en-terms/night.mp3
     pron: naɪt
   - term: noc
     lang: cs
@@ -3839,7 +3839,7 @@ concepts:
 - terms: 
   - term: does
     lang: en
-    tts: does.mp3
+    tts: en-terms/does.mp3
     pron: dʌz
   - term: dělá
     lang: cs
@@ -3858,7 +3858,7 @@ concepts:
 - terms: 
   - term: nothing
     lang: en
-    tts: nothing.mp3
+    tts: en-terms/nothing.mp3
     pron: ˈnʌθɪŋ
   - term: nic
     lang: cs
@@ -3877,7 +3877,7 @@ concepts:
 - terms: 
   - term: found
     lang: en
-    tts: found.mp3
+    tts: en-terms/found.mp3
     pron: faʊnd
   - term: nalezen
     lang: cs
@@ -3899,7 +3899,7 @@ concepts:
 - terms: 
   - term: hand
     lang: en
-    tts: hand.mp3
+    tts: en-terms/hand.mp3
     pron: hænd
   - term: ruku
     lang: cs
@@ -3918,7 +3918,7 @@ concepts:
 - terms: 
   - term: let
     lang: en
-    tts: let.mp3
+    tts: en-terms/let.mp3
     pron: lɛt
   - term: nechat
     lang: cs
@@ -3940,7 +3940,7 @@ concepts:
 - terms: 
   - term: few
     lang: en
-    tts: few.mp3
+    tts: en-terms/few.mp3
     pron: fju
   - term: několik
     lang: cs
@@ -3962,7 +3962,7 @@ concepts:
 - terms: 
   - term: right
     lang: en
-    tts: right.mp3
+    tts: en-terms/right.mp3
     pron: raɪt
   - term: vpravo
     lang: cs
@@ -3991,7 +3991,7 @@ concepts:
 - terms: 
   - term: still
     lang: en
-    tts: still.mp3
+    tts: en-terms/still.mp3
     pron: stɪl
   - term: stále
     lang: cs
@@ -4013,7 +4013,7 @@ concepts:
 - terms: 
   - term: something
     lang: en
-    tts: something.mp3
+    tts: en-terms/something.mp3
     pron: ˈsʌmθɪŋ
   - term: něco
     lang: cs
@@ -4032,7 +4032,7 @@ concepts:
 - terms: 
   - term: felt
     lang: en
-    tts: felt.mp3
+    tts: en-terms/felt.mp3
     pron: fɛlt
   - term: cítil
     lang: cs
@@ -4051,7 +4051,7 @@ concepts:
 - terms: 
   - term: began
     lang: en
-    tts: began.mp3
+    tts: en-terms/began.mp3
     pron: bɪˈgæn
   - term: začal
     lang: cs
@@ -4073,7 +4073,7 @@ concepts:
 - terms: 
   - term: country
     lang: en
-    tts: country.mp3
+    tts: en-terms/country.mp3
     pron: ˈkʌntri
   - term: stát
     lang: cs
@@ -4095,7 +4095,7 @@ concepts:
 - terms: 
   - term: "on"
     lang: en
-    tts: on.mp3
+    tts: en-terms/on.mp3
     pron: ɑn
   - term: na
     lang: cs
@@ -4114,7 +4114,7 @@ concepts:
 - terms: 
   - term: "no"
     lang: en
-    tts: no.mp3
+    tts: en-terms/no.mp3
     pron: noʊ
   - term: ne
     lang: cs
@@ -4133,7 +4133,7 @@ concepts:
 - terms: 
   - term: "off"
     lang: en
-    tts: off.mp3
+    tts: en-terms/off.mp3
     pron: ɔf
   - term: vypnutí
     lang: cs
@@ -4155,7 +4155,7 @@ concepts:
 - terms: 
   - term: while
     lang: en
-    tts: while.mp3
+    tts: en-terms/while.mp3
     pron: waɪl
   - term: zatímco
     lang: cs
