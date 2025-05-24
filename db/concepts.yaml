@@ -1080,6 +1080,7 @@ concepts:
   examples: 
   - term: That will be the worst part.
     lang: en
+    tts: That will be the worst part.mp3
   - term: To bude nejhorší část.
     lang: cs
     tts: To bude nejhorsi cast.mp3
@@ -1097,6 +1098,7 @@ concepts:
   examples: 
   - term: Read more of these books.
     lang: en
+    tts: Read more of these books.mp3
   - term: Číst více z těchto knih
     lang: cs
     tts: Cist vice z techto knih.mp3
