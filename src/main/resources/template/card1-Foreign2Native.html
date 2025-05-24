@@ -1,27 +1,28 @@
-${render.expandTemplate(template.header)}
+${render.expandTemplate(templates.header)}
 
 
 <button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
 <div class="wrapper rounded shadow">
 
-    <div class="foreign foreignTerm">
-        <span>{{foreign}}</span>[sound:{{foreignTTS}}]
+       
+    <div class="question foreignTerm">
+        <span>$v.foreign</span>$v.foreignTTS
     </div>
 
 
-    <figure class="img hintCover"><img class="shadow" src="{{img}}"></span></figure>
+    <figure class="img hintCover"><img class="shadow" src="$v.img"></span></figure>
 
-    <div class="native native1 hintCover hint">{{native}}</div>
+    <div class="answer native1 hintCover hint">$v.native</div>
     
     
     <!-- {{#nativeAlt}} -->
-    <div class="native native2 hintCover hint">{{nativeAlt}}</div>
+    <div class="answer native2 hintCover hint">$v.nativeAlt</div>
     <!-- {{/nativeAlt}} -->
  
 
     <!-- {{#foreignExample}} -->
-    <div class="foreign foreignExample">
-        <span>{{foreignExample}}</span> [sound:{{foreignExampleTTS}}]
+    <div class="question foreignExample">
+        <span>$v.foreignExample</span>$v.foreignExampleTTS
     </div>
     <!-- {{/foreignExample}} -->
 
@@ -61,4 +62,4 @@ ${render.expandTemplate(template.header)}
 
 </script>
 
-${render.expandTemplate(template.footer)}
+${render.expandTemplate(templates.footer)}

@@ -16,7 +16,7 @@
    justify-content: space-between;
   align-items: center; */
   align-items: center;
-  background-color: #76bdbde8;
+  background-color: #72c4c4e8;
   color: #fff;
   font-family: Helvetica;
   font-size: 1.3em;
@@ -45,17 +45,20 @@
 }
 
 
-.foreign {
+.question {
   /*background-image: url("ukFlagBlur.png");*/
   background-size: contain;
   background-repeat: no-repeat;
+  color:rgb(255, 50, 50);
+  
 }
 
-.native {
+.answer {
   /*background-image: url("csFlagBlur.png");*/
   background-size: 100% 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  color:rgb(50, 255, 50);
 }
 
 
@@ -66,11 +69,6 @@
 
 .hint {
 font-family: 'Courier New', Courier, monospace;
-  color: green;
-}
-
-.question {
-  color:red;
 
 }
 

@@ -10,7 +10,6 @@ ${
     ""
 }
 
-${render.expandTemplate("hintButton.html")}
 <div class="wrapper rounded shadow">
 
     <div class="foreign foreignTerm">
@@ -20,18 +19,9 @@ ${render.expandTemplate("hintButton.html")}
 
     <figure class="img"><img class="shadow" src="{{img}}"></span></figure>
 
-    <div class="native native1 hintCover">
+    <div class="native native1">
         {{native}}[sound:{{nativeTTS}}]
     </div>
-
-
-    ${render.expandTemplate("hintPanel.html")}
-
-    
-
-    
-    
-
 
     <!-- {{#nativeAlt}} -->
     <div class="native native2 hintCover">

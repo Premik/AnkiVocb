@@ -3,6 +3,8 @@
  */
 package vocb.template
 
+import java.util.concurrent.TimeUnit
+
 import groovy.text.GStringTemplateEngine
 import vocb.ConfHelper
 import vocb.Helper
@@ -15,22 +17,23 @@ class Render {
 
 
 	GStringTemplateEngine templEngine = new GStringTemplateEngine()
-		
+
 	ConfHelper cfgHelper = ConfHelper.instance
 	@Lazy ConfigObject cfg = cfgHelper.cfg
+	ConfigObject renderCfg
 	Map<String, Boolean> templateVisibility = [:].withDefault {true}
-	
-	
+
+
 	public Map getTemplBinding() {
-		[cfg:cfg, render: this, template:this.template]
+		[cfg:cfg, render: this, templates:this.templates, v:renderCfg.vars]
 	}
-	
-	public ConfigObject getTemplate() {		
-		cfg.templates[cfg.templateName?:"default"]?:"unknown"
+
+	public ConfigObject getTemplates() {
+		renderCfg.templates
 	}
 
 
-	public String expandTemplate(Object templRes, boolean expandAnkiInterpolations=true) {
+	public String expandTemplate(Object templRes, boolean expandAnkiInterpolations=false) {
 		if (!templRes) return ""
 		String templResName = templRes as String
 		if (!templateVisibility[templResName]) {
@@ -38,23 +41,45 @@ class Render {
 		}
 		String templText = cfgHelper.resolveRes(templResName)?.text
 		if (!templText) throw new FileNotFoundException("Failed to find the requested template '$templResName'", cfgHelper.lookupFolders as String)
-		if (expandAnkiInterpolations) 
+		if (expandAnkiInterpolations)
 			templText = Helper.ankiInterpoaltion2GString(templText)
-		println templText
 		
+
 		Writable templ = templEngine.createTemplate(templText).make(templBinding)
 		templ.toString()
 	}
-	
-	static void main(String... args) {
-		File f = new File("/tmp/work/template/preview.html")
-		if (f.exists()) f.delete()
-		new Render().with {
-			f << expandTemplate("card1-Foreign2Native")
-		}				
-		println "Done"
-		
+
+	public String render(String renderConfigName) {
+		renderCfg = cfg.render[renderConfigName]
+		assert renderCfg : "render.$renderConfigName cont found in config"
+		String mainTemplate = templates.main
+		assert  mainTemplate		
+		expandTemplate(mainTemplate)
 	}
 
+	public File renderToFile(String renderConfigName, File path) {
+		assert renderConfigName
+		File f = new File(path, "${renderConfigName}.html")
+		println "Rendering $renderConfigName to $f"
+		if (f.exists()) f.delete()
+		f <<	render(renderConfigName)
+		return f
+	}
 
+	static void main(String... args) {
+		File p= new File("/tmp/work/template")
+		new Render().with {
+			cfg.render.each { String name, Map r ->
+				File outF = renderToFile(name, p)
+				if (r.runWith) {
+					Process proc = [r.runWith, outF.absolutePath].execute()
+					proc.waitFor(5, TimeUnit.SECONDS)
+					Helper.printProcOut(proc)
+				}
+				//ssml
+			}
+		}
+		
+		println "Done"
+	}
 }
