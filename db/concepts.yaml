@@ -2665,11 +2665,8 @@ concepts:
 - terms: 
   - term: shall
     lang: en
-    tts: shall.mp3
-  - term: skořápka
-    lang: cs
-    tts: skorapka.mp3
-  state: ignoreImage
+    tts: shall.mp3  
+  state: ignore
   freq: 449921.50000
   origins: ["corpus"]
 ##  seemed   ################################################################
@@ -4852,7 +4849,7 @@ concepts:
   img: king.jpeg
   freq: 247147.00000
   origins: ["corpus"]
-##  answered   ############################################################## ▆ 67%
+##  answered   ############################################################## █ 95%
 - terms: 
   - term: answered
     lang: en
@@ -4860,6 +4857,11 @@ concepts:
   - term: odpověděl
     lang: cs
     tts: odpovedel.mp3
+  examples: 
+  - term: I answered your question.
+    lang: en
+  - term: Odpověděl jsem ti na otázku.
+    lang: cs  
   state: ignoreImage
   freq: 246251.00000
   origins: ["corpus"]
@@ -5711,6 +5713,7 @@ concepts:
     lang: en
     tts: Whose name is it.mp3
   - term: Čí je to jméno?
+    lang: cs
   state: ignoreImage
   freq: 209645.50000
   origins: ["corpus"]
@@ -6333,7 +6336,7 @@ concepts:
   img: different.jpeg
   freq: 186727.00000
   origins: ["corpus"]
-##  girl   ################################################################## ▆ 67%
+##  girl   ################################################################## █ 95%
 - terms: 
   - term: girl
     lang: en
@@ -6344,6 +6347,13 @@ concepts:
   - term: holka
     lang: cs
     tts: holka.mp3
+  examples: 
+
+  - term: I like this girl.
+    lang: en
+  - term: Ta holka se mi líbí.
+    lang: cs
+ 
   img: girl.jpeg
   freq: 186549.00000
   origins: ["corpus"]
@@ -6356,7 +6366,7 @@ concepts:
   state: ignore
   freq: 182978.00000
   origins: ["corpus"]
-##  poor   ################################################################## ▆ 67%
+##  poor   ################################################################## █ 95%
 - terms: 
   - term: poor
     lang: en
@@ -6367,10 +6377,17 @@ concepts:
   - term: chudák
     lang: cs
     tts: chudak.mp3
+  examples: 
+
+  - term: It's good to be poor.
+    lang: en
+  - term: Je dobré být chudý.
+    lang: cs
+ 
   img: poor.jpeg
   freq: 182819.00000
   origins: ["corpus"]
-##  bring   ################################################################# ▆ 67%
+##  bring   ################################################################# █ 95%
 - terms: 
   - term: bring
     lang: en
@@ -6381,10 +6398,17 @@ concepts:
   - term: přivést
     lang: cs
     tts: privest.mp3
+  examples: 
+
+  - term: Only he can bring you back.
+    lang: en
+  - term: Pouze on tě může přivést zpět.
+    lang: cs
+ 
   state: ignoreImage
   freq: 182757.00000
   origins: ["corpus"]
-##  certain   ############################################################### ▆ 67%
+##  certain   ############################################################### █ 95%
 - terms: 
   - term: certain
     lang: en
@@ -6395,10 +6419,16 @@ concepts:
   - term: jakési
     lang: cs
     tts: jakesi.mp3
+  examples: 
+
+  - term: You are using certain filter drivers.
+    lang: en
+  - term: Používáte určité ovladače filtrů.
+    lang: cs
   state: ignoreImage
   freq: 182011.50000
   origins: ["corpus"]
-##  big   ################################################################### ▆ 67%
+##  big   ################################################################### █ 95%
 - terms: 
   - term: big
     lang: en
@@ -6406,10 +6436,16 @@ concepts:
   - term: velký
     lang: cs
     tts: velky.mp3
+  examples: 
+  - term: It's a big case.
+    lang: en
+  - term: To je velký kufr.
+    lang: cs
+  
   img: big.jpeg
   freq: 181717.00000
   origins: ["corpus"]
-##  son   ################################################################### ▆ 67%
+##  son   ################################################################### █ 95%
 - terms: 
   - term: son
     lang: en
@@ -6417,10 +6453,16 @@ concepts:
   - term: syn
     lang: cs
     tts: syn.mp3
+  examples: 
+  - term: He's not your son, he's mine.
+    lang: en
+  - term: On není tvůj syn, je jen můj.
+    lang: cs
+  
   img: son.jpeg
   freq: 179061.00000
   origins: ["corpus"]
-##  several   ############################################################### ▆ 67%
+##  several   ############################################################### █ 95%
 - terms: 
   - term: several
     lang: en
@@ -6428,10 +6470,17 @@ concepts:
   - term: několik
     lang: cs
     tts: nekolik.mp3
+  examples: 
+    
+  - term: Tento proces může trvat několik minut.
+    lang: cs
+  - term: This process can take several minutes.
+    lang: en
+  
   img: several.jpeg
   freq: 178618.00000
   origins: ["corpus"]
-##  light   ################################################################# ▆ 67%
+##  light   ################################################################# █ 95%
 - terms: 
   - term: light
     lang: en
@@ -6442,10 +6491,17 @@ concepts:
   - term: lehké
     lang: cs
     tts: lehke.mp3
+  examples: 
+  
+  - term: I repeat, a green light.
+    lang: en
+  - term: Opakuji, zelené světlo.
+    lang: cs
+  
   img: light.jpeg
   freq: 178355.50000
   origins: ["corpus"]
-##  speak   ################################################################# ▆ 67%
+##  speak   ################################################################# █ 95%
 - terms: 
   - term: speak
     lang: en
@@ -6456,10 +6512,16 @@ concepts:
   - term: hovořit
     lang: cs
     tts: hovorit.mp3
+  examples: 
+  - term: I was unable to speak.
+    lang: en
+  - term: Nebyl jsem schopen mluvit.
+    lang: cs
+  
   img: speak.jpeg
   freq: 178191.50000
   origins: ["corpus"]
-##  given   ################################################################# ▆ 67%
+##  given   ################################################################# █ 95%
 - terms: 
   - term: given
     lang: en
@@ -6470,10 +6532,16 @@ concepts:
   - term: dána
     lang: cs
     tts: dana.mp3
+  examples: 
+  - term: No further explanation was given.
+    lang: en
+  - term: Žádné další vysvětlení nebylo dáno.
+    lang: cs
+ 
   state: ignoreImage
   freq: 177381.50000
   origins: ["corpus"]
-##  air   ################################################################### ▆ 67%
+##  air   ################################################################### █ 95%
 - terms: 
   - term: air
     lang: en
@@ -6484,10 +6552,17 @@ concepts:
   - term: letecké
     lang: cs
     tts: letecke.mp3
+  examples: 
+  
+  - term: I just want some fresh air.
+    lang: en
+  - term: Chci jen trošku čerstvého vzduchu.
+    lang: cs
+  
   img: air.jpeg
   freq: 176706.00000
   origins: ["corpus"]
-##  until   ################################################################# ▆ 67%
+##  until   ################################################################# █ 95%
 - terms: 
   - term: until
     lang: en
@@ -6498,10 +6573,17 @@ concepts:
   - term: až
     lang: cs
     tts: az.mp3
+  examples: 
+
+  - term: Just wait until she finds out!
+    lang: en
+  - term: Jen počkejte, až to zjistí!
+    lang: cs
+
   state: ignoreImage
   freq: 176699.00000
   origins: ["corpus"]
-##  whether   ############################################################### ▆ 67%
+##  whether   ############################################################### █ 95%
 - terms: 
   - term: whether
     lang: en
@@ -6512,10 +6594,17 @@ concepts:
   - term: ať už
     lang: cs
     tts: at uz.mp3
+  examples: 
+  
+  - term: Whether you like it or not.
+    lang: en
+  - term: Ať se ti to líbí nebo ne.
+    lang: cs
+  
   state: ignoreImage
   freq: 176370.00000
   origins: ["corpus"]
-##  war   ################################################################### ▆ 67%
+##  war   ################################################################### █ 95%
 - terms: 
   - term: war
     lang: en
@@ -6523,10 +6612,18 @@ concepts:
   - term: válka
     lang: cs
     tts: valka.mp3
+  examples: 
+  
+  
+  - term: This is not our war.
+    lang: en
+  - term: Toto není naše válka.
+    lang: cs
+  
   img: war.jpeg
   freq: 176174.00000
   origins: ["corpus"]
-##  form   ################################################################## ▆ 67%
+##  form   ################################################################## █ 95%
 - terms: 
   - term: form
     lang: en
@@ -6537,10 +6634,17 @@ concepts:
   - term: forma
     lang: cs
     tts: forma.mp3
+  examples: 
+  
+  - term: What if it's a life form?
+    lang: en
+  - term: Co když je to forma života?
+    lang: cs
+  
   img: form.jpeg
   freq: 176076.00000
   origins: ["corpus"]
-##  herself   ############################################################### ▆ 67%
+##  herself   ############################################################### █ 95%
 - terms: 
   - term: herself
     lang: en
@@ -6548,10 +6652,17 @@ concepts:
   - term: sama sebe
     lang: cs
     tts: sama sebe.mp3
+  examples: 
+
+  - term: She only thinks of herself.
+    lang: en
+  - term: Ona myslí jen na sebe.
+    lang: cs
+
   state: ignoreImage
   freq: 174415.50000
   origins: ["corpus"]
-##  longer   ################################################################ ▆ 67%
+##  longer   ################################################################ █ 95%
 - terms: 
   - term: longer
     lang: en
@@ -6562,10 +6673,17 @@ concepts:
   - term: déle
     lang: cs
     tts: dele.mp3
+  examples: 
+  
+  - term: I can't wait any longer.
+    lang: en
+  - term: Už nemůžu déle čekat.
+    lang: cs
+  
   img: longer.jpeg
   freq: 173897.00000
   origins: ["corpus"]
-##  spoke   ################################################################# ▆ 67%
+##  spoke   ################################################################# █ 95%
 - terms: 
   - term: spoke
     lang: en
@@ -6576,10 +6694,15 @@ concepts:
   - term: hovořil
     lang: cs
     tts: hovoril.mp3
+  examples: 
+  - term: I spoke with the kids.
+    lang: en
+  - term: Mluvil jsem s dětmi.
+    lang: cs
   img: spoke.jpeg
   freq: 172990.00000
   origins: ["corpus"]
-##  perhaps   ############################################################### ▆ 67%
+##  perhaps   ############################################################### █ 95%
 - terms: 
   - term: perhaps
     lang: en
@@ -6590,10 +6713,15 @@ concepts:
   - term: snad
     lang: cs
     tts: snad.mp3
+  examples: 
+  - term: Perhaps we should go home?
+    lang: en
+  - term: Možná bychom měli jít domů?
+    lang: cs
   state: ignoreImage
   freq: 172512.00000
   origins: ["corpus"]
-##  used   ################################################################## ▆ 67%
+##  used   ################################################################## █ 95%
 - terms: 
   - term: used
     lang: en
@@ -6604,10 +6732,15 @@ concepts:
   - term: užívané
     lang: cs
     tts: uzivane.mp3
+  examples: 
+  - term: Have you used this tool before?
+    lang: en
+  - term: Použili jste tento nástroj již dříve?
+    lang: cs
   img: used.jpeg
   freq: 172460.50000
   origins: ["corpus"]
-##  story   ################################################################# ▆ 67%
+##  story   ################################################################# █ 95%
 - terms: 
   - term: story
     lang: en
@@ -6618,6 +6751,11 @@ concepts:
   - term: povídka
     lang: cs
     tts: povidka.mp3
+  examples: 
+  - term: What about your story?
+    lang: en
+  - term: A co tvůj příběh?
+    lang: cs
   img: story.jpeg
   freq: 172290.00000
   origins: ["corpus"]
