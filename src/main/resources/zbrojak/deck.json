@@ -24,7 +24,6 @@
             "new": {
                 "bury": true,
                 "delays": [
-                    1.0,
                     4.0,
                     480.0
                 ],
@@ -35,7 +34,7 @@
                     0
                 ],
                 "order": 0,
-                "perDay": 50,
+                "perDay": 14,
                 "separate": true
             },
             "newGatherPriority": 0,
@@ -45,7 +44,7 @@
             "replayq": true,
             "rev": {
                 "bury": true,
-                "ease4": 8.0,
+                "ease4": 2.0,
                 "fuzz": 0.05,
                 "hardFactor": 0.5,
                 "ivlFct": 1.0,
@@ -174,9 +173,9 @@
             "tmpls": [
                 {
                     "afmt": "<div class=\"wrapper rounded shadow\">\n\n       \n    <div class=\"foreign\">\n        <span>{{question}}</span>\n    </div>\n\n    <div class=\"questionNumber\">\n        <span>{{questionNumber}}</span>\n    </div>\n\n    <figure class=\"img\">{{img}}</figure>\n\n    <div class=\"native {{aRes}}\">a) {{a}}</div>\n          \n    <div class=\"native {{bRes}}\">b) {{b}}</div>\n\n    <div class=\"native {{cRes}}\">c) {{c}}</div>\n           \n\n    <span style=\"background-image: url('');\" id=\"backgroundImg\"></span>\n</div>\n",
-                    "bafmt": "{{foreign}}",
+                    "bafmt": "{{a}}|{{b}}|{{c}}",
                     "bfont": "",
-                    "bqfmt": "{{native}} {{nativeAlt}}",
+                    "bqfmt": "{{questionNumber}} {{question}}",
                     "bsize": 0,
                     "did": null,
                     "name": "Question",
