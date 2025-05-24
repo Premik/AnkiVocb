@@ -15696,6 +15696,13 @@ examples:
     lang: cs
     tts: cs-terms/Jsme stejni.mp3
 - terms: 
+  - term: I'm like you.
+    lang: en
+    tts: en-samples/Im like you.mp3
+  - term: Jsem jako ty.
+    lang: cs
+    tts: cs-samples/Jsem jako ty.mp3
+- terms: 
   - term: You're like me.
     lang: en
     tts: en-samples/Youre like me.mp3
