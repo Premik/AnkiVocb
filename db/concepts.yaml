@@ -75,6 +75,7 @@ concepts:
 - terms: 
   - term: i
     lang: en
+    tts: i.mp3
   - term: já
     lang: cs
     tts: ja.mp3
@@ -346,12 +347,12 @@ concepts:
     lang: cs
     tts: vas.mp3
   examples: 
-  - term: Was it really you?
+  - term: You are sad.
     lang: en
-    tts: Was it really you.mp3
-  - term: Byl jsi to opravdu ty?
+    tts: You are sad.mp3
+  - term: Ty jsi smutný.
     lang: cs
-    tts: Byl jsi to opravdu ty.mp3
+    tts: Ty jsi smutny.mp3
   img: you.jpeg
   freq: 1540817.58700
   origins: ["Supaplex", "conceptDbSamples"]
