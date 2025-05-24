@@ -11754,7 +11754,6 @@ concepts:
     tts: cs-terms/kamiony.mp3
   img: img/trucks.jpeg
   freq: 17385.00000
-##  mail   ################################################################## t2:lang:missing|t2:tts:missing
 - terms: 
   - term: mail
     lang: en
@@ -11764,6 +11763,8 @@ concepts:
     lang: cs
     tts: cs-terms/mail.mp3
   - term: pošta
+    lang: cs
+    tts: cs-terms/posta.mp3
   img: img/mail.jpeg
   freq: 16723.00000
 - terms: 
@@ -11835,7 +11836,7 @@ concepts:
     lang: cs
     tts: cs-terms/hubaty.mp3
   freq: 276.00000
-##  hauling   ############################################################### no img|t2:lang:missing|t2:tts:missing
+##  hauling   ############################################################### no img
 - terms: 
   - term: hauling
     lang: en
@@ -11845,6 +11846,8 @@ concepts:
     lang: cs
     tts: cs-terms/dopravuji.mp3
   - term: přepravuje
+    lang: cs
+    tts: cs-terms/prepravuje.mp3
   freq: 120.00000
 ##  toots   ################################################################# no img
 - terms: 
@@ -16389,12 +16392,13 @@ examples:
   - term: Čekají, až přistane letadlo.
     lang: cs
     tts: cs-samples/Cekaji, az pristane letadlo.mp3
-##  Be they diesels, be they steam.   ####################################### t1:lang:missing|t1:tts:missing
 - terms: 
   - term: Be they diesels, be they steam.
     lang: en
     tts: en-samples/Be they diesels, be they steam.mp3
   - term: Ať už dieselové nebo parní.
+    lang: cs
+    tts: cs-samples/At uz dieselove nebo parni.mp3
 - terms: 
   - term: Keep working as a team.
     lang: en
