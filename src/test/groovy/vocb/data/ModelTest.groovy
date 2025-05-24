@@ -90,4 +90,39 @@ class ModelTest {
 			assert c.validate() == ["t0:pron:missing"]
 		}
 	}
+	
+	@Test
+	void testTermDirty() {
+		assert t2.dirty
+		t2.dirty = false
+		assert !t2.dirty
+		t2.lang="changed"
+		assert t2.lang == "changed"
+		assert t2.dirty
+		
+	}
+	
+	@Test
+	void conceptDirtyAtomic() {
+		assert c.dirty
+		c.dirty = false
+		c.img="changed"
+		assert c.img == "changed"
+		assert c.dirty
+	}
+	
+	@Test
+	void conceptDirtyComposite() {		
+		assert c.enTerm.dirty
+		c.dirty = false
+		assert c.enTerm
+		assert !c.enTerm.dirty
+		c.enTerm.pron="changed"
+		assert c.dirty
+		c.dirty = false
+		assert c.enTerm
+		c.enTerm.pron="changed"
+		assert !c.dirty
+		
+	}
 }
