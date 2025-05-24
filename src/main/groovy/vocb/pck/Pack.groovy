@@ -442,8 +442,11 @@ public class Pack {
 
 		new Pack().tap { Pack p->
 
-			p.exportByName("SimpleW")
-			return
+			/*p.exportByName("Simple")
+			packExportsOf("Simple").each {
+				it.debugDumpTo(dbgOutPath)
+			}
+			return*/
 
 			silent=true
 			//savePackByWordList()
