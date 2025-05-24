@@ -49,6 +49,9 @@ public class ExampleComparatorMatch {
 
 	@Lazy
 	public double similarityScore = {
+		/*if (a.sentence.contains("resource") && b.sentence.contains("resource") ) {
+			println "break"
+		}*/
 
 		Number pairs = commonWordVariants.count {it.contains(" ")} //Composed/pairs higher
 		double longWordMatch = (commonWordVariants.sum {it.length()}?:0) as double //Long exact match word is better
@@ -58,7 +61,8 @@ public class ExampleComparatorMatch {
 		double prefered = preferedWordsScore(commonWords.intersect(preferedWords))
 		double preferedVars = preferedWordsScore(commonWordVariants.intersect(preferedWords))
 
-		return pairs*500 + longWordMatch*5 + exactMatches*350 + variants*70 - sentenceLen + prefered*80 + preferedVars*70
+		double d= pairs*500 + longWordMatch*5 + exactMatches*400 + variants*100 - sentenceLen + prefered*10 + preferedVars*5		
+		return d
 	}()
 
 	public static Closure<String> defaultColors = {ExampleComparatorMatch self, String word, String defaultColor ->
