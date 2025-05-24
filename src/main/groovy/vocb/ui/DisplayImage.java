@@ -41,6 +41,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JFormattedTextField;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
+import java.awt.Toolkit;
 
 /*
  * To change this template, choose Tools | Templates
@@ -219,6 +220,7 @@ public class DisplayImage {
 
 	private JFrame createFrame(ImageIcon icon) {
 		frmPickImage = new JFrame();
+		frmPickImage.setIconImage(Toolkit.getDefaultToolkit().getImage(DisplayImage.class.getResource("/com/sun/java/swing/plaf/motif/icons/image-delayed.png")));
 		frmPickImage.setTitle("Pick image");
 		frmPickImage.addKeyListener(new KeyAdapter() {
 			@Override

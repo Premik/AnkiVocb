@@ -9,6 +9,7 @@ import java.awt.Font
 import java.awt.GridBagConstraints
 import java.awt.GridBagLayout
 import java.awt.Insets
+import java.awt.Toolkit
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import java.awt.event.ItemEvent
@@ -61,8 +62,7 @@ public class ImageSelector   {
 
 	SearchData searchData = new SearchData()
 	Closure runSearch
-	Closure runEditor
-
+	
 	MouseAdapter imageMouseAdapter = new MouseAdapter() {
 
 		public void mouseEntered(MouseEvent e) {
@@ -79,16 +79,10 @@ public class ImageSelector   {
 			JLabel l= e.source
 			int selected = l.name as Integer
 			searchData.selected = selected
-			if (SwingUtilities.isLeftMouseButton(e)) {				
-				closeFrame()
-				return
-			}
 			if (SwingUtilities.isRightMouseButton(e)) {
-				runEditor(searchData)
-				//searchData.selected = -1
-				closeFrame()
+				searchData.runEditor = true
 			}
-			
+			closeFrame()
 		}
 	}
 
@@ -114,6 +108,7 @@ public class ImageSelector   {
 		frame=new JFrame()
 		frame.with {
 			title = "Pick the image"
+			iconImage = Toolkit.defaultToolkit.getImage(DisplayImage.class.getResource("/com/sun/java/swing/plaf/motif/icons/image-delayed.png"))
 			//layout = new FlowLayout(FlowLayout.LEFT, 5, 5)
 			layout = new BoxLayout(frame.contentPane, BoxLayout.Y_AXIS)
 			extendedState = JFrame.MAXIMIZED_BOTH
@@ -232,7 +227,7 @@ public class ImageSelector   {
 
 		JFormattedTextField helpText = new JFormattedTextField()
 		helpText.with {
-			text = "Press left mouse to select press right button to edit with an external editor"
+			text = "Press left mouse to select as is. Press right button to edit afterwards with an external editor"
 			editable = false
 		}
 		GridBagConstraints gbc_helpText = new GridBagConstraints()
@@ -393,11 +388,7 @@ public class ImageSelector   {
 		s.runSearch = { SearchData sd->
 			s.loadSearchResult(bs.thumbnailSearch(sd), hh)
 		}
-		s.runEditor = { SearchData sd->
-			URL selectedUrl = sd.results[sd.selected] 
-			Path p = hh.cache.subPathForKey(selectedUrl.toString())
-			println "gimp '$p'"
-		}
+	
 		s.runSearch(new SearchData(q:"test"))
 		s.runAsModal()
 
