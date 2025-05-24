@@ -1,11 +1,11 @@
-package vocb.azure
+package vocb.tts
 
 import static vocb.Helper.utf8
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import vocb.Helper
 import vocb.HttpHelper
-import vocb.tts.TTSTextMod
+import vocb.azure.AzureEnv
 
 public class AzureTTs {
 

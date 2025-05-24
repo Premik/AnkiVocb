@@ -7,6 +7,8 @@ import java.util.stream.Stream
 
 import org.apache.commons.collections4.queue.CircularFifoQueue
 
+import vocb.Helper
+
 
 public class WordNormalizer {
 
@@ -16,6 +18,7 @@ public class WordNormalizer {
 	//Treat non-letter or non-digit as a space. Except single quote
 	@Lazy Pattern spacesPattern = ~ /[^\p{L}']+/
 	@Lazy Pattern niceWordPatter = ~ /^[\p{L}]+/  //No digits in words etc
+	@Lazy Pattern stripBrkPattern = ~ /\s*\([^)]+\)\s*/
 
 
 	public Set<String> uniqueueTokens(CharSequence input, boolean doLemming=false) {
@@ -34,7 +37,7 @@ public class WordNormalizer {
 
 	public Stream<String> lemming( Stream<String> inp) {
 		inp.flatMap { String s->
-			wordVariants(s).stream()			
+			wordVariants(s).stream()
 		}
 	}
 
@@ -134,6 +137,12 @@ public class WordNormalizer {
 
 	public Set<String> commonWordOf(String sen, String sen2) {
 		uniqueueTokens(sen, true).intersect(uniqueueTokens(sen2, true))
+	}
+
+	public String stripBracketsOut(String tx) {
+		def (a,b,c) = Helper.splitByRex(tx, stripBrkPattern)
+		if (a == null) return tx
+		return "$a$c"
 	}
 
 	static void main(String... args) {

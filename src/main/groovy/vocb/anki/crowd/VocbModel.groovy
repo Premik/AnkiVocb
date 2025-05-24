@@ -4,7 +4,7 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
-import groovy.transform.CompileStatic
+import vocb.ConfHelper
 import vocb.Helper
 
 //@CompileStatic
@@ -12,11 +12,15 @@ class VocbModel {
 
 	String version = "ankivocb1"
 	boolean ignoreMissingMedia = false
-	URL crowdJsonUrl = getClass().getResource('/template/deck.json')
+	
 	Path destCrowdFolder
 	Closure<Path> resolveMediaLink
 
-	@Lazy CrowdParser parser = new CrowdParser(json:crowdJsonUrl.text)
+	@Lazy CrowdParser parser = {		
+		InputStream deck = ConfHelper.instance.resolveRes("deck.json")
+		assert deck != null
+		new CrowdParser(json:deck.text)
+	}()
 
 	@Lazy NoteModel noteModel = {
 		NoteModel n = parser.ankivocbModel

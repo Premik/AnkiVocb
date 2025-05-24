@@ -5,12 +5,12 @@ import java.nio.file.Path
 
 import vocb.Helper
 import vocb.aws.AwsTranslate
-import vocb.azure.AzureTTs
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
 import vocb.tts.AwsCliPollyTTS
+import vocb.tts.AzureTTs
 import vocb.tts.LocalTTS
 import static vocb.Ansi.*
 
@@ -36,17 +36,18 @@ public class CsTSSAppender {
 				break
 			}
 
+			String trm = wn.stripBracketsOut(t.term);
 			Closure synthIt = { Path p ->
-				ttsCz.synth(t.term, p.toString() )
+				ttsCz.synth(trm, p.toString() )
 				i++
 				dbMan.save()
 				Thread.sleep(sleep)
 			}
 			String folder
-			if (wn.uniqueueTokens(t.term).size() > 2) folder = "cs-samples"
+			if (wn.uniqueueTokens(trm).size() > 2) folder = "cs-samples"
 			else folder = "cs-terms"
 			if (!t.tts) {
-				t.tts = dbMan.resolveMedia(t.term, "mp3", folder, synthIt)
+				t.tts = dbMan.resolveMedia(trm, "mp3", folder, synthIt)
 			} else { //has medialink
 				//but doesn't exist
 				if (!dbMan.linkedMediaExists(t.tts)) {

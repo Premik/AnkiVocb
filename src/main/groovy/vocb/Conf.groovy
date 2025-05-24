@@ -15,11 +15,11 @@ class ConfHelper {
 		'conf',
 		'wiki',
 		'vocb',
-		'template',
+		'templates',
 		'vocb/data',
 		'vocb/conf',
 		'vocb/wiki',
-		'vocb/template'
+		'vocb/templates'
 	]
 	private  String windowsHomePath = "${getenv('HOMEDRIVE')}${getenv('HOMEPATH')}"
 
@@ -49,7 +49,7 @@ class ConfHelper {
 	@Lazy public  List<File> lookupFolders = {
 		lookupFoldersToConsider.unique().findAll(this.&isLookupFolderValid) as File[]
 	}()
-	
+
 	final List<File> extraLookupFolders= []
 
 	public  boolean  isLookupFolderValid(String path) {
@@ -103,13 +103,16 @@ class ConfHelper {
 
 		InputStream is = [
 			//Try few class-loaders. They might be different on Graal
+			this.class.classLoader,
 			ConfHelper.class.classLoader,
 			Thread.currentThread().contextClassLoader,
 			ClassLoader.systemClassLoader,
-		].findAll {it}.collect { ClassLoader cl ->
-			cpFolders.collectMany {["$it/$resName", "/$it/$resName"]}
+		].findAll {it}
+		.toUnique{a -> a.hashCode()}
+		.collect { ClassLoader cl ->
+			cpFolders.collectMany {["$it/$resName", "/$it/$resName", "../$it/$resName"]}
 			.collect{ String cpPath ->
-				//println cpPath
+				//println "   $cpPath $cl"
 				cl.getResourceAsStream(cpPath)
 			}.find {it}
 
