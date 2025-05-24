@@ -8115,14 +8115,14 @@ concepts:
     tts: cs-terms/litovat.mp3
   img: img/regret.jpeg
   freq: 6.31970
+##  user   ################################################################## t1:tts:missing
 - terms: 
   - term: user
     lang: en
     tts: en-terms/user.mp3
     pron: ˈjuzər
-  - term: uživatele
+  - term: uživatel
     lang: cs
-    tts: cs-terms/uzivatele.mp3
   img: img/user.jpeg
   freq: 538.06020
 - terms: 
@@ -14123,14 +14123,14 @@ concepts:
     tts: cs-terms/subjekty.mp3
   img: img/subjects.jpeg
   freq: 84.29170
+##  justice   ############################################################### t1:tts:missing
 - terms: 
   - term: justice
     lang: en
     tts: en-terms/justice.mp3
     pron: ˈʤʌstɪs
-  - term: spravedlnosti
+  - term: spravedlnost
     lang: cs
-    tts: cs-terms/spravedlnosti.mp3
   - term: soudnictví
     lang: cs
     tts: cs-terms/soudnictvi.mp3
@@ -23010,7 +23010,7 @@ concepts:
     tts: en-terms/ex.mp3
   - term: ex
     lang: cs
-    tts: cs-terms/ex.mp3
+    tts: cs-terms/ex-cs.mp3
   - term: bývalý
     lang: cs
     tts: cs-terms/byvaly.mp3
@@ -23883,7 +23883,7 @@ concepts:
     tts: en-terms/Michael.mp3
   - term: Michael
     lang: cs
-    tts: cs-terms/Michael.mp3
+    tts: cs-terms/Michael-cs.mp3
   img: img/Michael.jpeg
   freq: 36.78110
 - terms: 
@@ -25433,7 +25433,7 @@ concepts:
   - term: procvičování
     lang: cs
   freq: 142.89130
-##  holiday   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:term:missing|t3:lang:missing|t3:tts:missing
+##  holiday   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: holiday
     lang: en
@@ -25441,7 +25441,6 @@ concepts:
     lang: cs
   - term: svátek
     lang: cs
-
   freq: 142.26880
 ##  chat   ################################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
