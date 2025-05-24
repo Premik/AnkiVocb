@@ -40,21 +40,21 @@ public class ExampleComparator {
 		this.@$wordVariants = null
 	}
 	
-	/**
-	 * How much is this example similar to the provided example (  list of words and words with its variants). 
-	 * Example covering the biggest number of words in the give sentence. Shorter examples preferable.
-	 */
-	public int similarityScoreOf(Collection<String> wordsB, Collection<String> wordVariantsB=[]) {
-		int exact = words.intersect(wordsB).size()		
-		int variants = wordVariants.intersect(wordVariantsB?:wordsB).size()
-		return exact*50 + variants*20 - wordsB.size()
+	
+	public ExampleComparatorMatch similarityCompareTo(ExampleComparator b) {		
+		new ExampleComparatorMatch(a:this, b:b)
 	}
 	
+	
 	public int similarityScoreOf(ExampleComparator compB) {
-		similarityScoreOf(compB.words, compB.wordVariants)
+		similarityCompareTo(compB).similarityScore
 	}
 	
 	public int similarityScoreOf(Example eB) {
+		similarityScoreOf(of(eB))
+	}
+	
+	public int similarityScoreOf(String eB) {
 		similarityScoreOf(of(eB))
 	}
 	
@@ -62,7 +62,7 @@ public class ExampleComparator {
 	
 	@Memoized
 	public static ExampleComparator of(String sentence) {		
-		assert sentence
+		assert sentence!= null
 		new ExampleComparator(sentence: sentence)
 	}
 	
@@ -76,23 +76,23 @@ public class ExampleComparator {
 		return "ExampleComparator(${sentence.take(100)})";
 	}
 
-	List<ExampleComparator> bestExamplesFrom(Stream<ExampleComparator> bs) {
+	List<ExampleComparatorMatch> bestExamplesFrom(Stream<ExampleComparator> bs) {
 		int max=Integer.MIN_VALUE
-		List<ExampleComparator> best = []
+		List<ExampleComparatorMatch> best = []
 		bs.forEach { ExampleComparator b->
-			int score = similarityScoreOf(b)
-			if (score > max) {
-				max = score
+			ExampleComparatorMatch m = similarityCompareTo(b)			
+			if (m.similarityScore > max) {
+				max = m.similarityScore
 				best.clear()
 			}
-			if (score == max) {
-				best.add(b)
+			if (m.similarityScore == max) {
+				best.add(m)
 			}
 		}
 		return best
 	}
 	
-	List<ExampleComparator> bestExamplesFrom(Iterable<ExampleComparator> bs) {
+	List<ExampleComparatorMatch> bestExamplesFrom(Iterable<ExampleComparator> bs) {
 		bestExamplesFrom(bs.stream())
 	}
 
