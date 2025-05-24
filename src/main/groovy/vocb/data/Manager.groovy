@@ -65,9 +65,9 @@ public class Manager {
 		if (pad) return s.padRight(10, '  ')
 		return pad
 	}
-	
+
 	public Concept findConceptByFirstTermAnyVariant(String firstTerm) {
-		wn.wordVariants(firstTerm).collect {conceptByFirstTerm[it] }.find()		
+		wn.wordVariants(firstTerm).collect {conceptByFirstTerm[it] }.find()
 	}
 
 	void reindex() {
@@ -89,7 +89,7 @@ public class Manager {
 			}
 			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
 			if (c.state == 'ignore') ignoreConcepts.add(c)
-			
+
 		}
 
 		db.examples.each { Example e->
@@ -172,10 +172,19 @@ public class Manager {
 		assert false: "Add examples warning too"
 	}
 
-	public Map<CharSequence, Set<Concept>> groupConceptsByMedia(boolean stripExt=false, boolean includeImg=true) {
+	public Map<CharSequence, Set<Concept>> groupConceptsByMedia(boolean stripExt=false, boolean includeImg=true, boolean stripPrefix=false) {
 		Map<CharSequence, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
 		db.concepts.each { Concept c->
-			if (c.img && includeImg) {
+			if (c.img && includeImg) {				
+				if (stripPrefix) {
+					String strp = c.img.takeAfter("/")
+					if (strp) {
+						ret[strp].add(c)
+						if (stripExt) {
+							ret[Helper.stripExt(strp)].add(c)
+						}
+					}
+				}
 				ret[c.img].add(c)
 				if (stripExt) {
 					ret[Helper.stripExt(c.img)].add(c)
@@ -187,6 +196,16 @@ public class Manager {
 			c.terms.each { Term t->
 				if (t.tts) {
 					ret[t.tts].add(c)
+					if (stripPrefix) {
+						String strp = t.tts.takeAfter("/")
+						if (strp) {
+							ret[strp].add(c)
+							if (stripExt) {
+								ret[Helper.stripExt(strp)].add(c)
+							}
+						}
+					}
+					
 					if (stripExt) { ret[Helper.stripExt(t.tts)].add(c)}
 				}
 			}
@@ -246,15 +265,15 @@ public class Manager {
 		}
 		println "${'-'*80}"
 		//println tGrp
-		
+
 		println "Not used "
-		
+
 		mediaRootPath.toFile().eachFileRecurse { File f->
 
 			String s = "${f.parentFile.name}/${f.name}".toString()
-			
-			
-					
+
+
+
 			if ( !tGrp.containsKey(s) && !cGrp.containsKey(s)  && f.isFile()) {
 				//println "${s}"
 				println "rm -f '${f}'"
@@ -263,15 +282,25 @@ public class Manager {
 		}
 		println "${'-'*80}"
 		println "Clashes"
-		cGrp.findAll{it.value.size() > 1}.each {CharSequence ml, Set<Concept> cs->
-			List<Term> termsWithTts = cs.collectMany {it.terms.findAll {it.tts == ml} }
+		
+		
+
+		//println groupConceptsByMedia(false, true, true)["ocean.mp3"]
+		groupConceptsByMedia(false, true, true).each {CharSequence mediaLink, Set<Concept> cs->
+			List<Term> termsWithTts = cs.collectMany {
+				it.terms.findAll {
+					it.tts == mediaLink || it.tts.takeAfter("/") == mediaLink.takeAfter("/") 
+					
+					}
+			}
+
 			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
-				println "${cs.collect {it.firstTerm} }  $ml: ${termsWithTts}. $cs"
+				println "${cs.collect {it.firstTerm} }  $mediaLink: ${termsWithTts}. $cs"
 			}
 		}
 		println "${'-'*80}"
 		println "Example dups"
-		Map<String, Example> ex = [:] 
+		Map<String, Example> ex = [:]
 		db.examples.each { Example e->
 			String sen = wn.uniqueueTokens(e.firstTerm, true).join(" ")
 			if (ex.containsKey(sen)) {
@@ -283,7 +312,7 @@ public class Manager {
 			}
 			ex.put(sen, e)
 		}
-		
+
 		/*println "Plurals:"
 		 db.concepts
 		 .collectMany { Concept c-> c.termsByLang("en")}
@@ -340,7 +369,7 @@ public class Manager {
 	List<Concept> conceptsFromWordsInExample(Example e) {
 		conceptsFromWordsInSentence(e.firstTerm)
 	}
-	
+
 	public Example findBestExampleForSentence(String sentence) {
 		Set<String> words = wn.uniqueueTokens(sentence)
 		Set<Example> cand =  words.collectMany {String w->
@@ -349,15 +378,15 @@ public class Manager {
 		return cand.max { Example e->
 			//Example covering the most words in the give sentence
 			//prefer shorted examples
-			wn.commonWordOf(e.firstTerm, sentence).size()*100 - e.firstTerm.length()			
-		}		
+			wn.commonWordOf(e.firstTerm, sentence).size()*100 - e.firstTerm.length()
+		}
 	}
-	
+
 	public void withBestExample(String text, Closure cl) {
 		List<String> snts = wn.sentences(text)
 		assert snts
 		snts.each { String sen->
-			Example e = findBestExampleForSentence(sen)			
+			Example e = findBestExampleForSentence(sen)
 			String et = e?.firstTerm
 			//assert et : "No example for '$sen' \n ${snts.take(5)} ..."
 			if (wn.normalizeSentence(et) == wn.normalizeSentence(sen)) {
@@ -366,9 +395,9 @@ public class Manager {
 				Set<String> com = wn.commonWordOf(sen, et)
 				Set<String> mis = wn.uniqueueTokens(sen) + wn.uniqueueTokens(et) - com
 				cl(e, sen, com, mis)
-			}			
+			}
 		}
-		
+
 	}
 
 
@@ -408,7 +437,7 @@ public class Manager {
 			validate()
 			printStats()
 			//allTextWithLang("cs").each {println it}
-			
+
 
 			//moveToSubFolders()
 			//println allTextWithLang("en")
