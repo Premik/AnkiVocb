@@ -23,6 +23,7 @@ class Data2CrowdTest {
 	
 	Pack pack = new Pack(destRootFolder: tmpDir)
 	TreeConf treeConf = new TreeConf().tap {
+		path = tmpDir
 		it.@$conf = new ConfigObject()
 	}
 	

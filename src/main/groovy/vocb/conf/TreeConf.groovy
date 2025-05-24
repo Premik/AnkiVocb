@@ -19,11 +19,11 @@ public class TreeConf<T> {
 	List<TreeConf> children = {
 		assert path
 		
-
+	
 		List<TreeConf> ret = path.toFile()
-				.listFiles()
+				.listFiles()				
+				.findAll(subFolderFilter)
 				.collect { it.toPath() }
-				.findAll(subFolderFilter)								
 				.collect { Path cp->					
 					TreeConf tf = new TreeConf(
 							path:cp,

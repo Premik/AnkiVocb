@@ -68,6 +68,7 @@ public class Data2Crowd {
 	Path resolveMediaLink(String mediaLink) {
 		if (!mediaLink) return null
 		String fn = new File(mediaLink).name
+		
 		Path pkgPath = rootPath.resolve("pkg").resolve(info.name)
 		List<Path> lookupPaths = [
 			pkgPath,

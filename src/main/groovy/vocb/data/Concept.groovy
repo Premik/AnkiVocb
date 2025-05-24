@@ -23,7 +23,7 @@ public class Concept extends TermContainer  {
 	@Override
 	public List<String> validate(ValidationProfile vp ) {
 		assert vp
-		List<String> ret = super.validate()
+		List<String> ret = super.validate(vp)
 		if (state == "ignore") return ret
 		if (!terms) {
 			ret.add("No terms")

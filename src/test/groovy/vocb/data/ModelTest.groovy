@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test
 import groovy.yaml.YamlSlurper
 
 class ModelTest {
+	
+	ValidationProfile vp = ValidationProfile.strict
 
 	Term t1 = new Term("en1", "en")
 	Term t2 = new Term("cs1", "cs", "tts")
@@ -29,15 +31,15 @@ class ModelTest {
 
 	@Test
 	void termCompletness() {
-		assert t1.validate().size() == 1
-		assert t1.validate()[0] == "tts:missing"
+		assert t1.validate(vp).size() == 1
+		assert t1.validate(vp)[0] == "tts:missing"
 						
 	}
 
 	@Test
 	void conceptCompletness() {
-		assert new Concept().validate().contains('no img')
-		assert c.validate().contains('no img')
+		assert new Concept().validate(vp).contains('no img')
+		assert c.validate(vp).contains('no img')
 		//(0..10).each {println  "$it: ${Helper.progressBar(it/10)}" }
 	}
 
@@ -62,7 +64,7 @@ class ModelTest {
 
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
-			assert c.validate() == ["t0:pron:missing", "t2:lang:missing", "t2:tts:missing"]
+			assert c.validate(vp) == ["t0:pron:missing", "t2:lang:missing", "t2:tts:missing"]
 			
 		}
 	}
@@ -92,7 +94,7 @@ class ModelTest {
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			println c
-			assert c.validate().collect{it.toString()}.contains("t0:pron:missing")
+			assert c.validate(vp).collect{it.toString()}.contains("t0:pron:missing")
 		}
 	}
 	
