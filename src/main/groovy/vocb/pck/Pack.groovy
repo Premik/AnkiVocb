@@ -6,9 +6,11 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.stream.Collectors
+import java.util.stream.Stream
 
 import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
+import groovy.transform.Memoized
 import vocb.Helper
 import vocb.anki.crowd.Data2Crowd
 import vocb.conf.ConfHelper
@@ -43,6 +45,7 @@ public class Pack {
 					treeConf: tc).tap {
 						tc.obj= it
 					}
+					
 			return pi
 		}
 	}()
@@ -50,11 +53,23 @@ public class Pack {
 
 
 	WordNormalizer wn = new WordNormalizer()
-
-
-
+	
+	
+	
 
 	void doExport(PackInfo info) {
+		assert info
+		File pkgFile = info.treeConf.path.toFile()
+		
+		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
+		PackExport pe = new PackExport(dbMan: d2c.dbMan, info:info)
+		cfgHelper.extraLookupFolders.add(pkgFile)
+		d2c.export(pe.export())
+		cfgHelper.extraLookupFolders.remove(pkgFile)
+	}
+	
+	@Deprecated
+	void doExportOld(PackInfo info) {
 		assert info
 		File pkgFile = info.treeConf.path.toFile()
 		cfgHelper.extraLookupFolders.add(pkgFile)
@@ -62,28 +77,28 @@ public class Pack {
 		LinkedHashSet<Example> exportExamples = [] as LinkedHashSet
 		//if (info.name == first100) exportFirst1000(d2c)
 		if (info.sentences) {
-			exportSentences(info.sentences, d2c.dbMan, exportExamples)
+			collectSentencesForExport(info.sentencesText, d2c.dbMan, exportExamples)//Collect best example sentences
 			if (info.strictlyWordlist) {
+				//Don't add new words from sentences, only exports words in the wordlist
 				d2c.exportExamplesToCrowdStrict(exportExamples, info.wordList as HashSet<String>)
 			} else {
+				//Export all words from sentences
 				d2c.exportExamplesToCrowd(exportExamples)
 			}
 		}
-
 		if (info.wordList && !info.strictlyWordlist) {
-			//When strict, wordlist is not exported, only examples (with words)
+			//Word list (with no examples)
 			d2c.exportWordsToCrowd(info.wordList)
 		}
-
-
 		cfgHelper.extraLookupFolders.remove(pkgFile)
 	}
 
-	void exportSentences(String text, Manager dbMan, LinkedHashSet<Example> exportExamples ) {
+	@Deprecated
+	void collectSentencesForExport(String text, Manager dbMan, LinkedHashSet<Example> exportExamples ) {
 		assert text
 		dbMan.withBestExample(text) { Example e, String sen, Set<String> com, Set<String> mis->
 
-			if (!mis)  {
+			if (!mis)  { //Exact match, jsut export
 				println color(sen, BOLD)
 				exportExamples.add(e)
 				return
@@ -103,18 +118,25 @@ public class Pack {
 
 	void findFirst1000() {
 		PackInfo info = pkgsByName(first100)?.first()
+		
 		assert info : "$first100 pkg not found"
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		//Words from the whole db without words from any package
-		Set<String> pkgWords = wn.lemming(wordsFromAllPackages().stream())
+		Set<String> pkgWords = wn.lemming(wordsFromAllPackages(allPackInfos - info).stream())
 				.collect(Collectors.toSet())
+				
+		//pkgWords.findAll {it.startsWith("cer")}
+		//.each {println it}
+				println "-"*100
+		println findAllPacksWithWord("cert")
+		return
 
 
 		Set<String> wordsToExport = d2c.dbMan.db.concepts
 				.findAll { Concept c->
 					if (c.state == 'ignore') return false
 
-					return !pkgWords.contains(c.firstTerm)
+					return !pkgWords.contains(wn.stripBracketsOut(c.firstTerm))
 				}
 				.collect {it.firstTerm}
 				.toSet()
@@ -166,6 +188,7 @@ public class Pack {
 
 		println "Done"
 	}
+	
 
 	public List<PackInfo>  pkgsByName(String name) {
 		allPackInfos.findAll {it.treeConf.name.containsIgnoreCase(name)}
@@ -179,6 +202,22 @@ public class Pack {
 	Set<String> wordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collect {it.allWords}.flatten().sort() as Set<String>
 	}
+	
+	Set<String> exportedWordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
+		pkgInfos.collect {it.allWords}.flatten().sort() as Set<String>
+	}
+	
+	List<PackInfo> findAllPacksWithAnyWord(List<PackInfo> pkgInfos = allPackInfos, Closure wordFilter) {
+		pkgInfos.findAll { PackInfo pi->
+			pi.allWords.any (wordFilter)
+		}
+	}
+	
+	List<PackInfo> findAllPacksWithWord(String word, List<PackInfo> pkgInfos = allPackInfos) {
+		findAllPacksWithAnyWord(pkgInfos) { String w->
+			w.containsIgnoreCase(word)
+		}
+	}
 
 	@CompileDynamic
 	List<String> sentencesFromAllPackages(List<PackInfo> pkgInfos = allPackInfos) {
@@ -187,11 +226,14 @@ public class Pack {
 
 
 	public static void main(String[] args) {
+		
 		new Pack().tap { Pack p->
+			
 
 
-			//p.exportByName("Uncommon")
-			findFirst1000()
+			//p.exportByName("Basic")
+			//findFirst1000()
+			p.export()
 		}
 		println "Done"
 	}

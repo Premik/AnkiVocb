@@ -6,6 +6,7 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.regex.Pattern
+import java.util.stream.Stream
 
 import vocb.Helper
 import vocb.conf.ConfHelper
@@ -13,6 +14,7 @@ import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
+import vocb.pck.ExportItem
 import vocb.pck.PackInfo
 import vocb.template.Render
 
@@ -68,7 +70,7 @@ public class Data2Crowd {
 	Path resolveMediaLink(String mediaLink) {
 		if (!mediaLink) return null
 		String fn = new File(mediaLink).name
-		
+
 		Path pkgPath = rootPath.resolve("pkg").resolve(info.name)
 		List<Path> lookupPaths = [
 			pkgPath,
@@ -77,25 +79,27 @@ public class Data2Crowd {
 		]
 
 		//Exact match first
-		List<Path> resolved = Helper.matchingFiles(lookupPaths, null, {it.toString().endsWith("/$mediaLink")}) 
+		List<Path> resolved = Helper.matchingFiles(lookupPaths, null, {it.toString().endsWith("/$mediaLink")})
 		if (!resolved) {
 			Pattern fnP = ~/${Pattern.quote(fn)}\.?(jpeg|jpg|png|mp3|gif)?/
 			resolved = Helper.matchingFiles(lookupPaths, fnP) //Any extension
 		}
-		if (!resolved) { //Non-existing. Assume db/media
+		if (!resolved) {
+			//Non-existing. Assume db/media
 			return dataPath.resolve("media").resolve(mediaLink)
 		}
 		assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. \n $resolved \n LookupPaths: $lookupPaths\n "
 		/*if (resolved.size() > 1) {
-			println(color(mediaLink, BOLD) + color(" was found on multiple locations: ", YELLOW) + color(resolved.join("|"), BLUE))
-		}*/
+		 println(color(mediaLink, BOLD) + color(" was found on multiple locations: ", YELLOW) + color(resolved.join("|"), BLUE))
+		 }*/
 		return resolved[0]
 	}
 
 	String addExtensionToMediaLink(String mediaLink) {
 		if (!mediaLink) return null
 		Tuple2<String, String> fn = Helper.splitFileNameExt(mediaLink)
-		if (!fn.v2) { //Media link has no extension. Have to take it from the actual resolved path
+		if (!fn.v2) {
+			//Media link has no extension. Have to take it from the actual resolved path
 			Path sourcePath = resolveMediaLink(mediaLink)
 			if (!Files.exists(sourcePath)) return null
 			Tuple2<String, String> rFn = Helper.splitFileNameExt(sourcePath.fileName.toString())
@@ -174,6 +178,10 @@ public class Data2Crowd {
 		concept2CrowdNote(c, e, n)
 	}
 
+	void mapConcept(ExportItem ei) {
+		mapConcept(ei.concept, ei.example)
+	}
+
 	NoteModel renderCardTemplate(ConfigObject renderCardTemplate, NoteModel targetM = vocbModel.noteModel) {
 		targetM.css = render.render(renderCardTemplate.css)
 
@@ -192,11 +200,9 @@ public class Data2Crowd {
 			m.afmt = render.render(card.afmt)
 			m.bqfmt = card.bqfmt
 			m.bafmt = card.bafmt
-
 		}
 		targetM.tmpls = padded
 		return targetM
-
 	}
 
 	void renderDeckDescriptionTemplate(ConfigObject deckDescriptionPreview = cfg.render.deckDescriptionRender) {
@@ -204,7 +210,7 @@ public class Data2Crowd {
 		vocbModel.parser.deckDesc = render.render(deckDescriptionPreview)
 	}
 
-	
+
 	private void prepareVocbModel() {
 
 		String pfx = cfg.packageRootPrefix?:"Vocb::"
@@ -224,6 +230,7 @@ public class Data2Crowd {
 		staticMedia.each { vocbModel.copyToMedia(resolveMediaLink(it)) }
 	}
 
+	@Deprecated
 	void exportExamplesToCrowd(Collection<Example> toExport, Set<Concept> ignore = []) {
 		prepareVocbModel()
 		toExport.each { Example e ->
@@ -235,7 +242,8 @@ public class Data2Crowd {
 		}
 		vocbModel.save()
 	}
-	
+
+	@Deprecated
 	void exportExamplesToCrowdStrict(Collection<Example> toExport, Set<String> wordList = []) {
 		prepareVocbModel()
 		toExport.each { Example e ->
@@ -248,19 +256,29 @@ public class Data2Crowd {
 		vocbModel.save()
 	}
 
+	@Deprecated
 	void exportConceptsToCrowd(Collection<Concept> concepts) {
 		prepareVocbModel()
 		concepts.each { Concept c -> mapConcept(c, Example.empty) }
 		vocbModel.save()
 	}
-	
+
+	@Deprecated
 	void exportWordsToCrowd(Collection<String> words) {
-		List<Concept> cps = words.collect {	String w->		
+		List<Concept> cps = words.collect {	String w->
 			Concept c =dbMan.conceptByFirstTerm[w]
 			if (c == null) println "Concept not found for word:'${color(w, BOLD)}'"
-			return c 
+			return c
 		}.findAll()
 		exportConceptsToCrowd(cps)
+	}
+
+	void export(Stream<ExportItem> exp) {
+		assert exp
+		prepareVocbModel()
+		exp.forEach(this.&mapConcept)
+
+		vocbModel.save()
 	}
 
 
@@ -273,7 +291,5 @@ public class Data2Crowd {
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
 
 		//println a.similarConcepts(a.dbMan.db.concepts[0], a.dbMan.db.concepts[1])
-
-
 	}
 }
