@@ -522,7 +522,7 @@ concepts:
     lang: cs
   freq: 3659513.00000
   origins: ["corpus"]
-##  at   #################################################################### ▃ 35%
+##  at   #################################################################### ▆ 63%
 - terms: 
   - term: at
     lang: en
@@ -530,6 +530,11 @@ concepts:
     lang: cs
   - term: v
     lang: cs
+  examples:  
+  - term: Look at my face.
+    lang: en
+  - term: Koukni se na můj obličej.
+    lang: cs  
   freq: 3429739.50000
   origins: ["corpus"]
 ##  were   ################################################################## ▅ 61%
@@ -562,7 +567,7 @@ concepts:
     lang: cs
   freq: 3224178.00000
   origins: ["corpus"]
-##  not   ################################################################### ▃ 35%
+##  not   ################################################################### ▆ 63%
 - terms: 
   - term: not
     lang: en
@@ -570,6 +575,11 @@ concepts:
     lang: cs
   - term: není
     lang: cs
+  examples:   
+  - term: Not everyone will agree with you.
+    lang: en
+  - term: Ne každý s vámi souhlasí.
+    lang: cs  
   freq: 2876549.00000
   origins: ["corpus"]
 ##  from   ################################################################## ▅ 61%
@@ -781,11 +791,72 @@ concepts:
     lang: cs
   freq: 1663186.50000
   origins: ["corpus"]
-##  has   ################################################################### ▃ 35%
+##  has   ################################################################### ▆ 63%
 - terms: 
   - term: has
     lang: en
   - term: má
+    lang: cs
+  examples: 
+  - term: She has very strong opinions.
+    lang: en
+  - term: Má dost radikální názory.
+    lang: cs
+  - term: If she has faith, she might survive.
+    lang: en
+  - term: Pokud má víru, může přežít.
+    lang: cs
+  - term: A child row has multiple parents.
+    lang: en
+  - term: Podřízený řádek má více nadřazených objektů.
+    lang: cs
+  - term: This is true if the device has a meaningful name.
+    lang: en
+  - term: To platí, pokud má zařízení srozumitelný název.
+    lang: cs
+  - term: This resource record has a property sheet open.
+    lang: en
+  - term: Tento záznam o prostředku má otevřené okno vlastností.
+    lang: cs
+  - term: A photograph has grains, a digital image has pixels.
+    lang: en
+  - term: Fotografie má zrno, digitální obraz pixely.
+    lang: cs
+  - term: Every capacity ledger entry has a unique entry number.
+    lang: en
+  - term: Každá položka kapacity má své specifické číslo položky.
+    lang: cs
+  - term: A slight annoyance has popped up.
+    lang: en
+  - term: Mírné obtěžování má vyskočila.
+    lang: cs
+  - term: This one has a great soul, don't you think?
+    lang: en
+  - term: Tenhle má úžasnou duši, nemyslíš?
+    lang: cs
+  - term: Each error type has different causes, and different solutions.
+    lang: en
+  - term: Každý typ chyby má jiné příčiny a jiná řešení.
+    lang: cs
+  - term: Indicates an event that has multiple triggers.
+    lang: en
+  - term: Označuje událost, která má více aktivačních signálů.
+    lang: cs
+  - term: Maybe it has something to do with this.
+    lang: en
+  - term: Možná to má něco společného s tímhle.
+    lang: cs
+  - term: It has followed us since the beginning of time.
+    lang: en
+  - term: To má za námi od počátku věků.
+    lang: cs
+  - term: Running a bank has its advantages.
+    lang: en
+  - term: Vedení banky má I nějaké výhody.
+    lang: cs
+  - term: He's got a lot of energy.
+    lang: en
+  - term: Má hrozně moc energie.
     lang: cs
   freq: 1602329.00000
   origins: ["corpus"]
@@ -856,7 +927,7 @@ concepts:
     lang: cs
   freq: 1497187.00000
   origins: ["corpus"]
-##  if   #################################################################### ▃ 35%
+##  if   #################################################################### ▆ 63%
 - terms: 
   - term: if
     lang: en
@@ -864,9 +935,70 @@ concepts:
     lang: cs
   - term: jestliže
     lang: cs
+  examples: 
+  - term: Can only be changed if there are no active subscriptions.
+    lang: en
+  - term: Může být změněna pouze, pokud nejsou žádné aktivní předplatné.
+    lang: cs
+  - term: If she has faith, she might survive.
+    lang: en
+  - term: Pokud má víru, může přežít.
+    lang: cs
+  - term: If it comes out, do not use it.
+    lang: en
+  - term: Pokud se uvolňuje, nepoužívejte jej.
+    lang: cs
+  - term: At run time, if the .
+    lang: en
+  - term: Při spuštění, pokud.
+    lang: cs
+  - term: Meditation can do wonders if practiced regularly.
+    lang: en
+  - term: Meditace může dělat zázraky, pokud pravidelně cvičil.
+    lang: cs
+  - term: If so what types?
+    lang: en
+  - term: Pokud ano, jaké typy?
+    lang: cs
+  - term: The system must not be used if the indicator is broken.
+    lang: en
+  - term: Pokud je indikátor zlomený, nesmí se systém použít.
+    lang: cs
+  - term: Please post a comment if something needs fixing.
+    lang: en
+  - term: Prosím post komentář, pokud něco potřebuje stanovením.
+    lang: cs
+  - term: If not, restart your computer.
+    lang: en
+  - term: Pokud ne, restartujte počítač.
+    lang: cs
+  - term: If so, on the basis of which criteria?
+    lang: en
+  - term: Pokud ano, na základě jakého kritéria?
+    lang: cs
+  - term: This is true if the device has a meaningful name.
+    lang: en
+  - term: To platí, pokud má zařízení srozumitelný název.
+    lang: cs
+  - term: Checked if the employee is still working on the job.
+    lang: en
+  - term: Zaškrtnuto, pokud zaměstnanec dosud pracuje na této úloze.
+    lang: cs
+  - term: If so, you cannot proceed with debugging.
+    lang: en
+  - term: Pokud ano, nelze pokračovat v ladění.
+    lang: cs
+  - term: I mean, if they were different.
+    lang: en
+  - term: Teda, pokud byly různý.
+    lang: cs
+  - term: If not, the bet is forfeit.
+    lang: en
+  - term: Pokud ne, tento závod je ztracen.
+    lang: cs
   freq: 1442322.00000
   origins: ["corpus"]
-##  say   ################################################################### ▃ 35%
+##  say   ################################################################### ▆ 63%
 - terms: 
   - term: say
     lang: en
@@ -874,9 +1006,70 @@ concepts:
     lang: cs
   - term: řekni
     lang: cs
+  examples: 
+  - term: And what do the birds say?
+    lang: en
+  - term: A co říkají ptáci?
+    lang: cs
+  - term: They say one thing but mean another.
+    lang: en
+  - term: Ty říkají jednu věc a myslí druhou.
+    lang: cs
+  - term: Some say it's a supportive family.
+    lang: en
+  - term: Někteří říkají, že to je podpora rodiny.
+    lang: cs
+  - term: They say the enemy has broken through the lines.
+    lang: en
+  - term: Říkají, že nepřítel se dostal přes linie.
+    lang: cs
+  - term: Just as many say?
+    lang: en
+  - term: Stejně jako mnozí říkají?
+    lang: cs
+  - term: What do my clients say about my work?
+    lang: en
+  - term: Co o mně říkají klienti?
+    lang: cs
+  - term: And what do they say about the portal?
+    lang: en
+  - term: A co o portálu říkají?
+    lang: cs
+  - term: They say they want their land back.
+    lang: en
+  - term: Říkají, že chtějí svůj pozemek zpátky.
+    lang: cs
+  - term: What did they say?
+    lang: en
+  - term: Co na to říkají?
+    lang: cs
+  - term: They say it may stop turning.
+    lang: en
+  - term: Říkají, že se může zastavit.
+    lang: cs
+  - term: All my friends say so.
+    lang: en
+  - term: Všechny mé přítelkyně to říkají.
+    lang: cs
+  - term: They say your voice is exceptional.
+    lang: en
+  - term: Říkají že Váš hlas je mimořádný.
+    lang: cs
+  - term: Experts say that fasting will not speed up recovery.
+    lang: en
+  - term: Odborníci říkají, že půst není urychlit vymáhání.
+    lang: cs
+  - term: Be there or be square, as they say.
+    lang: en
+  - term: Jak říkají: Buď tam nebo buď včas.
+    lang: cs
+  - term: Meanwhile other people say, it's wonderful.
+    lang: en
+  - term: Mezitím ostatní lidé říkají, je to báječné.
+    lang: cs
   freq: 1351631.00000
   origins: ["corpus"]
-##  made   ################################################################## ▃ 35%
+##  made   ################################################################## ▆ 63%
 - terms: 
   - term: made
     lang: en
@@ -884,17 +1077,137 @@ concepts:
     lang: cs
   - term: udělal
     lang: cs
+  examples: 
+  - term: Made of natural materials, without shock.
+    lang: en
+  - term: Vyrobeny z přírodních materiálů, bez šoku.
+    lang: cs
+  - term: Curious how scuba tanks are made?
+    lang: en
+  - term: Zvědavý, jak potápění nádrže jsou vyrobeny?
+    lang: cs
+  - term: What are your products made from?
+    lang: en
+  - term: Z jakého materiálu jsou vyrobeny Vaše výrobky?
+    lang: cs
+  - term: They are made of real rope and are extremely sturdy.
+    lang: en
+  - term: Jsou vyrobeny z reálných lana a jsou velmi odolné.
+    lang: cs
+  - term: Zvědaví, jak se scuba nádrže jsou vyrobeny?
+    lang: cs
+  - term: Most of them are made of sheepskin.
+    lang: en
+  - term: Většina z nich jsou vyrobeny z ovčí kůže.
+    lang: cs
+  - term: Where are they made and how durable?
+    lang: en
+  - term: Kde jsou vyrobeny, a jak trvanlivé?
+    lang: cs
+  - term: Your shoes aren't made in the city.
+    lang: en
+  - term: Tvoje boty nebyly vyrobeny ve městě.
+    lang: cs
+  - term: All the textures are made from scratch.
+    lang: en
+  - term: Všechny textury jsou vyrobeny od začátku.
+    lang: cs
+  - term: This will insure no errors are made.
+    lang: en
+  - term: Tím se pojistit žádné chyby jsou vyrobeny.
+    lang: cs
+  - term: Where the prototypes are being made.
+    lang: en
+  - term: Kde jsou vyrobeny prototypy.
+    lang: cs
+  - term: Both upper and lower receivers are primarily made of polymer.
+    lang: en
+  - term: Oba horní a dolní přijímače jsou vyrobeny převážně z polymeru.
+    lang: cs
+  - term: It could be made of gold and diamonds.
+    lang: en
+  - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
+    lang: cs
+  - term: On top of that, they are made of proteins.
+    lang: en
+  - term: Vrchol toho je, že jsou vyrobeny z bílkovin.
+    lang: cs
+  - term: These tattoos are often made in between the shoulders.
+    lang: en
+  - term: Tyto tetování jsou často vyrobeny v období mezi dvěma rameny.
+    lang: cs
   freq: 1188501.00000
   origins: ["corpus"]
-##  into   ################################################################## ▃ 35%
+##  into   ################################################################## ▆ 63%
 - terms: 
   - term: into
     lang: en
   - term: do
     lang: cs
+  examples: 
+  - term: Type or paste the permalink into the text.
+    lang: en
+  - term: Zadejte nebo vložte trvalý odkaz do textu.
+    lang: cs
+  - term: Pastes the selected cell name into the formula.
+    lang: en
+  - term: Vloží vybraný název buňky do vzorce.
+    lang: cs
+  - term: Hierarchies may be organized into folders.
+    lang: en
+  - term: Hierarchie je možné uspořádat do složek.
+    lang: cs
+  - term: You can combine these switches into one command.
+    lang: en
+  - term: Uvedené přepínače lze společně zadat do jednoho příkazu.
+    lang: cs
+  - term: Combine values from multiple ranges into one new range.
+    lang: en
+  - term: Kombinuje hodnoty z více rozsahů do jednoho nového rozsahu.
+    lang: cs
+  - term: Steps into debug mode for the currently active database object.
+    lang: en
+  - term: Vstup do režimu ladění pro aktivní databázový objekt.
+    lang: cs
+  - term: Drag and drop fields into the report.
+    lang: en
+  - term: Přetahovat pole myší do sestavy.
+    lang: cs
+  - term: Should items received physically be put into quarantine automatically?
+    lang: en
+  - term: Mají být fyzicky přijaté položky automaticky vloženy do karantény?
+    lang: cs
+  - term: How do you see social media fitting into your plans?
+    lang: en
+  - term: Jak vidíte sociální média montáž do vašich plánů?
+    lang: cs
+  - term: Inserts an icon into your document which represents the file.
+    lang: en
+  - term: Vloží do dokumentu ikonu představující soubor.
+    lang: cs
+  - term: Run into the nearest establishment?
+    lang: en
+  - term: Běžet do nejbližšího sídla?
+    lang: cs
+  - term: It transfers into the email as plain text.
+    lang: en
+  - term: Přenáší do e-mailu ve formátu prostého textu.
+    lang: cs
+  - term: March your way into the weekend!
+    lang: en
+  - term: Březen si cestu do víkendu!
+    lang: cs
+  - term: I'd like to put it back into the facility.
+    lang: en
+  - term: Chci to investovat zpět do svého ústavu.
+    lang: cs
+  - term: We need to move him into the scanner.
+    lang: en
+  - term: Musíme ho dostat do skeneru.
+    lang: cs
   freq: 1186067.50000
   origins: ["corpus"]
-##  did   ################################################################### ▃ 35%
+##  did   ################################################################### ▆ 63%
 - terms: 
   - term: did
     lang: en
@@ -902,9 +1215,70 @@ concepts:
     lang: cs
   - term: udělala
     lang: cs
+  examples: 
+  - term: And that's exactly what you did.
+    lang: en
+  - term: A to je přesně to, co jsi udělal.
+    lang: cs
+  - term: So you did do it?
+    lang: en
+  - term: Takže jsi to udělal?
+    lang: cs
+  - term: Well you did, but it wasn't really you.
+    lang: en
+  - term: No udělal, ale to jsi nebyl opravdu ty.
+    lang: cs
+  - term: Is that what you did?
+    lang: en
+  - term: To je to, co jste vy udělal?
+    lang: cs
+  - term: Look what he did for me.
+    lang: en
+  - term: Podívejte, co udělal se mnou.
+    lang: cs
+  - term: Now look what you did!
+    lang: en
+  - term: Podívej, cos udělal!
+    lang: cs
+  - term: I did exactly as you wanted.
+    lang: en
+  - term: Udělal jsem přesně to, co jsi chtěla.
+    lang: cs
+  - term: Show me what you did.
+    lang: en
+  - term: Ukaž co jsi udělal.
+    lang: cs
+  - term: What did you do all day?
+    lang: en
+  - term: co si udělal za celý den ?
+    lang: cs
+  - term: He did some rock, but he wasn't a rocker.
+    lang: en
+  - term: Udělal nějaký kámen, ale Nebyl rocker.
+    lang: cs
+  - term: You did this on purpose.
+    lang: en
+  - term: To jsi udělal schválně.
+    lang: cs
+  - term: But do you know what he did?
+    lang: en
+  - term: Víš ale, co udělal?
+    lang: cs
+  - term: Without knowing what he did, it's tough.
+    lang: en
+  - term: Když nevíme co udělal, bude to těžké.
+    lang: cs
+  - term: We know who did it.
+    lang: en
+  - term: Víme, kdo to udělal.
+    lang: cs
+  - term: Did you see what he did?
+    lang: en
+  - term: Viděl jsi, co udělal?
+    lang: cs
   freq: 1185720.00000
   origins: ["corpus"]
-##  will   ################################################################## ▃ 35%
+##  will   ################################################################## ▆ 63%
 - terms: 
   - term: will
     lang: en
@@ -912,23 +1286,206 @@ concepts:
     lang: cs
   - term: vůle
     lang: cs
+  examples: 
+  - term: The new shortcut will be placed on the desktop.
+    lang: en
+  - term: Nový zástupce bude umístěn na plochu.
+    lang: cs
+  - term: A selection window showing the available functions will be displayed.
+    lang: en
+  - term: Bude zobrazeno okno zobrazující dostupné funkce.
+    lang: cs
+  - term: This will be addressed in a future release.
+    lang: en
+  - term: Tento nedostatek bude odstraněn v další verzi produktu.
+    lang: cs
+  - term: Typically this will be the date of a purchase invoice.
+    lang: en
+  - term: Nejčastěji to bude datum nákupní faktury.
+    lang: cs
+  - term: My sequel will be magnificent.
+    lang: en
+  - term: Moje pokračování bude velkolepý.
+    lang: cs
+  - term: The user will have privileges to stored and updated.
+    lang: en
+  - term: Uživatel bude mít oprávnění k uložené a aktualizované.
+    lang: cs
+  - term: The final product will give your company the edge!
+    lang: en
+  - term: Konečný produkt bude Vaše společnost na okraji!
+    lang: cs
+  - term: He will be with me for this journey.
+    lang: en
+  - term: Na této cestě bude se mnou.
+    lang: cs
+  - term: We want to help you even more successful will.
+    lang: en
+  - term: Chceme vám bude ještě úspěšnější.
+    lang: cs
+  - term: What you will become when you will be great?
+    lang: en
+  - term: Co z tebe bude, až budeš velký?
+    lang: cs
+  - term: That will be the toughest part.
+    lang: en
+  - term: To bude nejhorší část.
+    lang: cs
+  - term: The duration of each visit will be about five days.
+    lang: en
+  - term: Každá návštěva bude trvat asi 5 dnů.
+    lang: cs
+  - term: Driver will listen on all available interfaces.
+    lang: en
+  - term: Ovladač bude naslouchat ve všech dostupných rozhraních.
+    lang: cs
+  - term: This page will be saved in the current briefing book.
+    lang: en
+  - term: Tato stránka bude uložena do aktuální přehledové knihy.
+    lang: cs
+  - term: This is typically where brake lines will rust through.
+    lang: en
+  - term: To je typicky, kde brzdové potrubí bude rez skrz.
+    lang: cs
   freq: 1172186.50000
   origins: ["corpus"]
-##  more   ################################################################## ▃ 35%
+##  more   ################################################################## ▆ 63%
 - terms: 
   - term: more
     lang: en
   - term: více
     lang: cs
+  examples: 
+  - term: One or more filtered fields are not completely visible.
+    lang: en
+  - term: Jedno nebo více filtrovaných polí není zcela zobrazeno.
+    lang: cs
+  - term: Most measure groups contain one or more cumulative counts.
+    lang: en
+  - term: Většina skupin měr obsahují jeden nebo více kumulativní počty.
+    lang: cs
+  - term: Any assistance to more information would greatly be appreciated.
+    lang: en
+  - term: Veškerou pomoc, více informací by velmi ocení.
+    lang: cs
+  - term: Click here for more book reviews!
+    lang: en
+  - term: Klikněte zde pro více hodnocení produktu!
+    lang: cs
+  - term: One or more references are missing.
+    lang: en
+  - term: chybí jeden nebo více odkazů,
+    lang: cs
+  - term: Every day a spirit possesses him more.
+    lang: en
+  - term: Každým dnem je více posedlý duchem.
+    lang: cs
+  - term: Install two or more international keyboard layouts.
+    lang: en
+  - term: Nainstalujte dvě či více mezinárodní rozložení klávesnice.
+    lang: cs
+  - term: One or more specific tables on the page.
+    lang: en
+  - term: Jedna nebo více konkrétních tabulek na stránce
+    lang: cs
+  - term: I never sleep more than a few hours.
+    lang: en
+  - term: Nikdy jsem nespal více než pár hodin.
+    lang: cs
+  - term: Determine clearly if they want photos casual or more formal.
+    lang: en
+  - term: Jednoznačně určit, zda chtějí fotografie ležérní či více formální.
+    lang: cs
+  - term: Changing page order requires two or more new pages.
+    lang: en
+  - term: Změna pořadí stránek vyžaduje dvě či více nových stránek.
+    lang: cs
+  - term: One or more bindings failed to be saved.
+    lang: en
+  - term: Nepodařilo se uložit jednu nebo více vazeb.
+    lang: cs
+  - term: More than one row is selected.
+    lang: en
+  - term: Je vybráno více řádků.
+    lang: cs
+  - term: A domain can contain two or more workgroups.
+    lang: en
+  - term: Doména může obsahovat dvě nebo více pracovních skupin.
+    lang: cs
+  - term: One or more papers put in the feeder input tray.
+    lang: en
+  - term: Do vstupního zásobníku podavače byl vložen jeden nebo více papírů.
+    lang: cs
   freq: 1159978.50000
   origins: ["corpus"]
-##  your   ################################################################## ▃ 35%
+##  your   ################################################################## ▆ 63%
 - terms: 
   - term: your
     lang: en
   - term: vaše
     lang: cs
   - term: tvůj
+    lang: cs
+  examples: 
+  - term: Your logon information might not be valid anymore.
+    lang: en
+  - term: Vaše přihlašovací informace nemusejí být nadále platné.
+    lang: cs
+  - term: Our vehicles are always ready to take over your shipments!
+    lang: en
+  - term: Naše vozidla jsou vždy připravena převzít vaše zásilky!
+    lang: cs
+  - term: Just curious, what is your height and weight?
+    lang: en
+  - term: Jsem jen zvědavý, jaká je vaše výška a hmotnost?
+    lang: cs
+  - term: That's your own imagination.
+    lang: en
+  - term: To je čistě jen vaše představa.
+    lang: cs
+  - term: The final product will give your company the edge!
+    lang: en
+  - term: Konečný produkt bude Vaše společnost na okraji!
+    lang: cs
+  - term: Your organization decides what each level of service includes.
+    lang: en
+  - term: Vaše organizace určuje, co spadá do jednotlivých rozsahů služeb.
+    lang: cs
+  - term: Your attachments cannot be added or removed.
+    lang: en
+  - term: Vaše přílohy nelze přidat nebo odebrat.
+    lang: cs
+  - term: Your score is based on your survival time.
+    lang: en
+  - term: Vaše skóre je založeno na dobu přežití.
+    lang: cs
+  - term: And what makes your photo pop?
+    lang: en
+  - term: A co dělá vaše fotografie pop?
+    lang: cs
+  - term: Your account is currently disabled.
+    lang: en
+  - term: Vaše registrace je v současné době zablokována.
+    lang: cs
+  - term: We will be glad for your feedback.
+    lang: en
+  - term: Budeme rádi za Vaše ohlasy.
+    lang: cs
+  - term: Please check your browser settings and try again.
+    lang: en
+  - term: Zkontrolujte prosím vaše nastavení prohlížeče a zkuste to znovu.
+    lang: cs
+  - term: Your clearance to command me is now void.
+    lang: en
+  - term: Vaše oprávnění mi dávat rozkazy je nyní neplatné.
+    lang: cs
+  - term: Your order is ready for processing.
+    lang: en
+  - term: Vaše objednávka je připravena ke zpracování.
+    lang: cs
+  - term: In game tutor will get your started.
+    lang: en
+  - term: ve hře učitel bude mít vaše začít.
     lang: cs
   freq: 1159087.50000
   origins: ["corpus"]
@@ -5855,10 +6412,18 @@ concepts:
     lang: cs
   freq: 137054.50000
   origins: ["corpus"]
-##  english   ############################################################### ▃ 30%
+##  english   ############################################################### ▃ 35%
 - terms: 
   - term: english
     lang: en
+  - term: anglicky
+    lang: cs
+  - term: čeština
+    lang: cs
+  - term: česky
+    lang: cs
+  - term: britský
+    lang: cs
   freq: 136965.50000
   origins: ["corpus"]
 ##  tried   ################################################################# ▃ 35%
