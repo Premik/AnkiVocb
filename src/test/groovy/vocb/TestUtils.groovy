@@ -1,8 +1,13 @@
 package vocb
 import static vocb.Ansi.*
 
+import java.nio.file.Path
+import java.nio.file.Paths
+
 
 public class TestUtils {
+	
+	public static Path testConfPath = Paths.get( TestUtils.getResource('/conf/test.conf').toURI())
 
 	public static void compareString(String aText, String bText) {
 
