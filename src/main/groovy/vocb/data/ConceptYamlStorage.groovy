@@ -50,8 +50,9 @@ public class ConceptYamlStorage {
 		if (!key || !value) return ""
 		boolean reserved = value in ['true', 'false', "Yes", "No", "yes", "no", "off", "on"]
 		boolean specialChar = value[0] in  ('''!@#$%^&*("')''' as List)
+		boolean middleChar = (':' in value )
 		
-		if (reserved || specialChar) { return """$key: "$value"\n"""}
+		if (reserved || specialChar ||middleChar) { return """$key: "$value"\n"""}
 		return "$key: $value\n"
 	}
 
