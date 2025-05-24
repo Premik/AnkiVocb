@@ -37,6 +37,10 @@ import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import javax.swing.JScrollPane;
 import java.awt.Font;
+import javax.swing.JRadioButton;
+import javax.swing.JFormattedTextField;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.ChangeEvent;
 
 /*
  * To change this template, choose Tools | Templates
@@ -61,9 +65,24 @@ public class DisplayImage {
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		frmPickImage.getContentPane().setLayout(new BoxLayout(frmPickImage.getContentPane(), BoxLayout.Y_AXIS));
 		
+		JPanel topPanel = new JPanel();
+		frmPickImage.getContentPane().add(topPanel);
+		GridBagLayout topPanelLayout = new GridBagLayout();
+		topPanelLayout.columnWidths = new int[] {30, 30, 30, 30, 0, 0, 108};
+		topPanelLayout.rowHeights = new int[] {30, 30};
+		topPanelLayout.columnWeights = new double[]{1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+		topPanelLayout.rowWeights = new double[]{1.0, 0.0};
+		topPanel.setLayout(topPanelLayout);
+		
 		searchTextField = new JTextField();
+		GridBagConstraints gbc_searchTextField = new GridBagConstraints();
+		gbc_searchTextField.insets = new Insets(0, 0, 5, 5);
+		gbc_searchTextField.weightx = 0.6;
+		gbc_searchTextField.fill = GridBagConstraints.BOTH;
+		gbc_searchTextField.gridx = 0;
+		gbc_searchTextField.gridy = 0;
+		topPanel.add(searchTextField, gbc_searchTextField);
 		searchTextField.setFont(new Font("Monospaced", Font.BOLD, 20));
-		frmPickImage.getContentPane().add(searchTextField);
 		searchTextField.setBorder(new MatteBorder(10, 1, 10, 1, (Color) UIManager.getColor("Button.background")));
 		searchTextField.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -72,10 +91,61 @@ public class DisplayImage {
 		searchTextField.setToolTipText("Search string");
 		searchTextField.setText("test");
 		
+		JButton searchMoreButton = new JButton("Search More");
+		searchMoreButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		searchMoreButton.setIcon(UIManager.getIcon("FileChooser.listViewIcon"));
+		searchMoreButton.setToolTipText("Search again with more results enabled");
+		GridBagConstraints gbc_searchMoreButton = new GridBagConstraints();
+		gbc_searchMoreButton.insets = new Insets(0, 0, 5, 5);
+		gbc_searchMoreButton.gridx = 1;
+		gbc_searchMoreButton.gridy = 0;
+		topPanel.add(searchMoreButton, gbc_searchMoreButton);
+		
+		JCheckBox chckbxClipart = new JCheckBox("ClipArt");
+		chckbxClipart.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+			}
+		});
+		chckbxClipart.setToolTipText("Search with ClipArt filter enabled");
+		GridBagConstraints gbc_chckbxClipart = new GridBagConstraints();
+		gbc_chckbxClipart.insets = new Insets(0, 0, 5, 5);
+		gbc_chckbxClipart.gridx = 2;
+		gbc_chckbxClipart.gridy = 0;
+		topPanel.add(chckbxClipart, gbc_chckbxClipart);
+		
+		JButton asBlankButton = new JButton("Ignore this one");
+		asBlankButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		asBlankButton.setToolTipText("Don't use image for this term");
+		asBlankButton.setIcon(UIManager.getIcon("Tree.leafIcon"));
+		GridBagConstraints gbc_asBlankButton = new GridBagConstraints();
+		gbc_asBlankButton.insets = new Insets(0, 0, 5, 5);
+		gbc_asBlankButton.weightx = 0.5;
+		gbc_asBlankButton.gridx = 3;
+		gbc_asBlankButton.gridy = 0;
+		topPanel.add(asBlankButton, gbc_asBlankButton);
+		
+		JFormattedTextField helpText = new JFormattedTextField();
+		helpText.setText("Press 'e' to edit with external editor");
+		helpText.setEditable(false);
+		GridBagConstraints gbc_helpText = new GridBagConstraints();
+		gbc_helpText.gridwidth = 4;
+		gbc_helpText.insets = new Insets(0, 0, 0, 5);
+		gbc_helpText.fill = GridBagConstraints.HORIZONTAL;
+		gbc_helpText.gridx = 0;
+		gbc_helpText.gridy = 1;
+		topPanel.add(helpText, gbc_helpText);
+		
 		JScrollPane scrollPane = new JScrollPane();
 		frmPickImage.getContentPane().add(scrollPane);
 		
 		panel_1 = new JPanel();
+		panel_1.setPreferredSize(new Dimension(1024, 4000));
 		panel_1.setMaximumSize(new Dimension(4900, 32767));
 		scrollPane.setViewportView(panel_1);
 		panel_1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
@@ -150,7 +220,7 @@ public class DisplayImage {
 			public void keyReleased(KeyEvent arg0) {
 			}
 		});
-		frmPickImage.setSize(1728, 891);
+		frmPickImage.setSize(1101, 746);
 		
 		frmPickImage.setVisible(true);
 		frmPickImage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
