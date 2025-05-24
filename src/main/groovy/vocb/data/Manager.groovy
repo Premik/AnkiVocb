@@ -1,3 +1,4 @@
+
 package vocb.data
 
 import static vocb.Ansi.*
@@ -540,7 +541,7 @@ public class Manager {
 			validate()
 			printStats()
 			//allTextWithLang("cs").each {println it}
-			//allTextWithLang("cs").each {println it}
+			//allTextWithLang("en").each {println it}
 
 
 			//moveToSubFolders()
