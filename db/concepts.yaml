@@ -7,6 +7,7 @@ concepts:
     tts: apple.mp3
   - term: jablko
     lang: cs
+    tts: jablko.mp3
   examples: 
   - term: Apple helps clean teeth.
     lang: en
@@ -21,6 +22,7 @@ concepts:
     tts: kitty.mp3
   - term: koťátko
     lang: cs
+    tts: kotatko.mp3
   - term: kočička
     lang: cs
   examples: 
@@ -220,7 +222,7 @@ concepts:
   - term: ale
     lang: cs
     tts: ale.mp3
-  examples:   
+  examples: 
   - term: But it is not their fault.
     lang: en
   - term: Ale není to jejich vina.
@@ -318,7 +320,6 @@ concepts:
     lang: en
   - term: Falešný pocit štěstí.
     lang: cs
-  
   img: false.jpeg
   freq: 1123368.00000
   origins: ["Supaplex"]
