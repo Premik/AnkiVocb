@@ -129,7 +129,7 @@ public class ExampleAppender {
 			limit = 1
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx  = new File("/data/src/AnkiVocb/pkg/FiveLittleMonkeys/sentences.txt").text
-			String tx  = new File("/data/src/AnkiVocb/pkg/MyBonnie/sentences.txt").text
+			String tx  = new File("/data/src/AnkiVocb/pkg/EverythingIsAwesome/sentences.txt").text
 			fromCorpus(tx)
 
 			//reuseExisting()
