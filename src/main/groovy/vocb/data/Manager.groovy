@@ -74,13 +74,17 @@ public class Manager {
 		return pad
 	}
 
-	public Concept findConceptByFirstTermAnyVariant(String firstTerm, boolean preferOrigialWord=true) {
+	public Concept findConceptByFirstTermAnyVariant(String firstTerm, boolean preferOrigialWord=true) {		
+		findConceptsByFirstTermAllVariant(firstTerm, preferOrigialWord)[0]
+	}
+	
+	public Collection<Concept> findConceptsByFirstTermAllVariant(String firstTerm, boolean preferOrigialWord=true) {
 		List<String> variants = wn.wordVariants(wn.stripBracketsOut(firstTerm))
 		if (preferOrigialWord) {
 			//The exact word first, only when not found try to find variants
 			variants.push(firstTerm)
 		}
-		variants.findResult {conceptByFirstTerm[it] }
+		variants.findResults {conceptByFirstTerm[it] }
 	}
 
 
@@ -413,7 +417,7 @@ public class Manager {
 				.collect {it.toLowerCase()}
 				.collect { conceptByFirstTerm[it] }
 				.findAll()
-				.findAll {it.state != 'ignore'}
+				.findAll {!it.ignore}
 	}
 
 	List<Concept> conceptsFromWordsInSentence(CharSequence sen) {
