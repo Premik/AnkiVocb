@@ -13,7 +13,7 @@ public class AwsCliPollyTTS {
 	TTSTextMod empMod = new TTSTextMod(speedChange: -2, volumeChange: 1 ) //Emphasis even slower and louder
 	TTSConf defaultConf = new TTSConf( engine:'standard', voiceId:"Emma")
 
-	Process synth(String text, String engine='standard', String voiceId="Emma", String outFile="/tmp/work/1.mp3") {
+	Process synth(String text, String engine='standard', String voiceId="Emma", String textType="text", String outFile="/tmp/work/1.mp3") {
 		assert engine
 		assert voiceId
 		assert outFile
@@ -27,6 +27,8 @@ public class AwsCliPollyTTS {
 			engine,
 			'--voice-id',
 			voiceId,
+			'--text-type',
+			textType,
 			'--text',
 			text,
 			outFile
@@ -53,11 +55,11 @@ public class AwsCliPollyTTS {
 	}
 
 	public String SSMLEmphSubstr(String text, String substr, TTSTextMod normalMod=normalMod, TTSTextMod highlMod=empMod) {
-		assert text.contains(substr) : "The '$text' doesn't contain the '$substr'"
+		assert text.toLowerCase().contains(substr.toLowerCase()) : "The '$text' doesn't contain the '$substr'"
 		assert normalMod
 		assert highlMod
-		final def (String a, String b) =  Helper.splitBy(text, substr)
-		String innerSSML = SSMLWrapInner(substr, highlMod)
+		final def (String a, String w, String b) =  Helper.splitBy(text, substr)
+		String innerSSML = SSMLWrapInner(w, highlMod)
 		SSMLWrap(a + innerSSML + b, normalMod)
 
 	}
@@ -69,6 +71,8 @@ public class AwsCliPollyTTS {
 		Process p = tts.synth("Hello world")
 		p.waitFor(5, TimeUnit.SECONDS)
 		Helper.printProcOut(p)
+		//ssml
+
 		/*
 		 * <speak>
 		 <prosody volume="-8dB">Hi! My</prosody><prosody rate="x-slow">name is</prosody><prosody volume="-8dB">Joanna.</prosody>

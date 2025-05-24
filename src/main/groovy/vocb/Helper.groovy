@@ -141,18 +141,19 @@ public class Helper {
 	 * index 1 being after the delimiter (neither element includes the delimiter);
 	 * or {@code null} if the delimiter wasn't found in the given input {@code String}
 	 */
-	public static Tuple2<String, String> splitBy(String toSplit, String delimiter) {
+	public static Tuple3<String, String, String> splitBy(String toSplit, String delimiter) {
 		if (!toSplit || !delimiter) {
 			return null
 		}
-		int offset = toSplit.indexOf(delimiter)
+		int offset = toSplit.toLowerCase().indexOf(delimiter.toLowerCase())
 		if (offset < 0) {
 			return null
 		}
 
 		String beforeDelimiter = toSplit.substring(0, offset)
+		String middle = toSplit.substring(offset , offset  +delimiter.length())
 		String afterDelimiter = toSplit.substring(offset + delimiter.length())
-		return new Tuple2<String, String>(beforeDelimiter, afterDelimiter)
+		return new Tuple3<String, String, String>(beforeDelimiter, middle, afterDelimiter)
 	}
 
 	public static BigDecimal roundDecimal(BigDecimal d, int n=2) {
