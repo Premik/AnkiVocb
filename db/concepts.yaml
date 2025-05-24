@@ -15,7 +15,7 @@ concepts:
     tts: Apple helps clean teeth.mp3
   - term: Jablko pomáhá čistit zuby.
     lang: cs
-    tts: Jablko pomaha cistit zuby.mp3
+    tts: cs-samples/Jablko pomaha cistit zuby.mp3
   img: img/apple.jpeg
   freq: 13506.05000
   origins: ["top500", "conceptDbSamples"]
@@ -37,7 +37,7 @@ concepts:
     tts: Kitty needs some attention.mp3
   - term: Koťátko potřebuje trochu pozornosti.
     lang: cs
-    tts: Kotatko potrebuje trochu pozornosti.mp3
+    tts: cs-samples/Kotatko potrebuje trochu pozornosti.mp3
   img: img/kitty.jpeg
   freq: 278.47900
   origins: ["conceptDbSamples"]
@@ -67,7 +67,7 @@ concepts:
     tts: Take one of these.mp3
   - term: Vezměte si jednu z těchto.
     lang: cs
-    tts: Vezmete si jednu z techto.mp3
+    tts: cs-samples/Vezmete si jednu z techto.mp3
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -85,7 +85,7 @@ concepts:
     tts: I am happy.mp3
   - term: Já jsem šťastný.
     lang: cs
-    tts: Ja jsem stastny.mp3
+    tts: cs-samples/Ja jsem stastny.mp3
   img: img/i.jpeg
   freq: 7871531.00000
   origins: ["Manualy"]
@@ -104,7 +104,7 @@ concepts:
     tts: Cat and dog.mp3
   - term: Kočka a pes.
     lang: cs
-    tts: Kocka a pes.mp3
+    tts: cs-samples/Kocka a pes.mp3
   img: img/and.jpeg
   freq: 20342628.50000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -126,7 +126,7 @@ concepts:
     tts: Go to the bedroom.mp3
   - term: Jdi do ložnice.
     lang: cs
-    tts: Jdi do loznice.mp3
+    tts: cs-samples/Jdi do loznice.mp3
   state: ignoreImage
   freq: 14906506.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -148,7 +148,7 @@ concepts:
     tts: He was a true friend.mp3
   - term: Byl to věrný přítel.
     lang: cs
-    tts: Byl to verny pritel.mp3
+    tts: cs-samples/Byl to verny pritel.mp3
   state: ignoreImage
   freq: 10078245.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -170,7 +170,7 @@ concepts:
     tts: Not in my city.mp3
   - term: Ne v mém městě.
     lang: cs
-    tts: Ne v mem meste.mp3
+    tts: cs-samples/Ne v mem meste.mp3
   img: img/in.jpeg
   freq: 8715316.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -189,7 +189,7 @@ concepts:
     tts: He is an excellent speaker.mp3
   - term: On je výborný řečník.
     lang: cs
-    tts: On je vyborny recnik.mp3
+    tts: cs-samples/On je vyborny recnik.mp3
   state: ignoreImage
   freq: 7557477.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -208,7 +208,7 @@ concepts:
     tts: That is it.mp3
   - term: To je ono.
     lang: cs
-    tts: To je ono.mp3
+    tts: cs-samples/To je ono.mp3
   state: ignoreImage
   freq: 5965293.50000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -227,7 +227,7 @@ concepts:
     tts: For all the people.mp3
   - term: Pro všechny lidi.
     lang: cs
-    tts: Pro vsechny lidi.mp3
+    tts: cs-samples/Pro vsechny lidi.mp3
   state: ignoreImage
   freq: 3556287.50000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -246,7 +246,7 @@ concepts:
     tts: Then its true.mp3
   - term: Pak je to pravda.
     lang: cs
-    tts: Pak je to pravda.mp3
+    tts: cs-samples/Pak je to pravda.mp3
   img: img/true.jpeg
   freq: 2675121.50000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -268,7 +268,7 @@ concepts:
     tts: We had to do it.mp3
   - term: Museli jsme to udělat.
     lang: cs
-    tts: Museli jsme to udelat.mp3
+    tts: cs-samples/Museli jsme to udelat.mp3
   state: ignoreImage
   freq: 2126875.50000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -287,7 +287,7 @@ concepts:
     tts: But it is not their fault.mp3
   - term: Ale není to jejich vina.
     lang: cs
-    tts: Ale neni to jejich vina.mp3
+    tts: cs-samples/Ale neni to jejich vina.mp3
   state: ignoreImage
   freq: 1957586.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -309,7 +309,7 @@ concepts:
     tts: You all got eyes.mp3
   - term: Máte snad všichni oči.
     lang: cs
-    tts: Mate snad vsichni oci.mp3
+    tts: cs-samples/Mate snad vsichni oci.mp3
   img: img/all.jpeg
   freq: 1940329.50000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -331,7 +331,7 @@ concepts:
     tts: Tell them all.mp3
   - term: Řekni jim vše.
     lang: cs
-    tts: Rekni jim vse.mp3
+    tts: cs-samples/Rekni jim vse.mp3
   img: img/them.jpeg
   freq: 1593893.50000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -353,7 +353,7 @@ concepts:
     tts: You are sad.mp3
   - term: Ty jsi smutný.
     lang: cs
-    tts: Ty jsi smutny.mp3
+    tts: cs-samples/Ty jsi smutny.mp3
   img: img/you.jpeg
   freq: 1540817.58700
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -375,7 +375,7 @@ concepts:
     tts: You must select only one shape.mp3
   - term: Musíš vybrat jen jeden tvar.
     lang: cs
-    tts: Musis vybrat jen jeden tvar.mp3
+    tts: cs-samples/Musis vybrat jen jeden tvar.mp3
   img: img/one.jpeg
   freq: 1439082.50000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -397,7 +397,7 @@ concepts:
     tts: False sense of happiness.mp3
   - term: Falešný pocit štěstí.
     lang: cs
-    tts: Falesny pocit stesti.mp3
+    tts: cs-samples/Falesny pocit stesti.mp3
   img: img/false.jpeg
   freq: 1123368.00000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -419,7 +419,7 @@ concepts:
     tts: Time to go.mp3
   - term: Čas jít.
     lang: cs
-    tts: Cas jit.mp3
+    tts: cs-samples/Cas jit.mp3
   img: img/time.jpeg
   freq: 1107169.00000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -441,7 +441,7 @@ concepts:
     tts: Get the dog out of here.mp3
   - term: Odveďte toho psa ven!
     lang: cs
-    tts: Odvedte toho psa ven.mp3
+    tts: cs-samples/Odvedte toho psa ven.mp3
   img: img/out.jpeg
   freq: 1058897.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
@@ -463,7 +463,7 @@ concepts:
     tts: How would they know.mp3
   - term: Jak by to mohli vědět?
     lang: cs
-    tts: Jak by to mohli vedet.mp3
+    tts: cs-samples/Jak by to mohli vedet.mp3
   img: img/know.jpeg
   freq: 984073.50000
   origins: ["Supaplex", "conceptDbSamples"]
@@ -482,7 +482,7 @@ concepts:
     tts: There must be a piano here.mp3
   - term: Musí tu někde být piáno.
     lang: cs
-    tts: Musi tu nekde byt piano.mp3
+    tts: cs-samples/Musi tu nekde byt piano.mp3
   state: ignoreImage
   freq: 9104176.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -501,7 +501,7 @@ concepts:
     tts: You had the number.mp3
   - term: Tys to číslo měl.
     lang: cs
-    tts: Tys to cislo mel.mp3
+    tts: cs-samples/Tys to cislo mel.mp3
   state: ignoreImage
   freq: 6139336.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -520,7 +520,7 @@ concepts:
     tts: And he saw you.mp3
   - term: A on tě viděl?
     lang: cs
-    tts: A on te videl.mp3
+    tts: cs-samples/A on te videl.mp3
   img: img/he.jpeg
   freq: 5653229.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -539,7 +539,7 @@ concepts:
     tts: Let me help you with that.mp3
   - term: Pomůžu vám s tím.
     lang: cs
-    tts: Pomuzu vam s tim.mp3
+    tts: cs-samples/Pomuzu vam s tim.mp3
   state: ignoreImage
   freq: 5204263.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -558,7 +558,7 @@ concepts:
     tts: It is his ghost.mp3
   - term: To je jeho duch.
     lang: cs
-    tts: To je jeho duch.mp3
+    tts: cs-samples/To je jeho duch.mp3
   state: ignoreImage
   freq: 4409709.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -580,7 +580,7 @@ concepts:
     tts: You must have permission from the doctor.mp3
   - term: Musíte mít povolení od doktora.
     lang: cs
-    tts: Musite mit povoleni od doktora.mp3
+    tts: cs-samples/Musite mit povoleni od doktora.mp3
   state: ignoreImage
   freq: 4325227.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -602,7 +602,7 @@ concepts:
     tts: We were studying in class as usual.mp3
   - term: Učili jsme se ve třídě jako obvykle.
     lang: cs
-    tts: Ucili jsme se ve tride jako obvykle.mp3
+    tts: cs-samples/Ucili jsme se ve tride jako obvykle.mp3
   state: ignoreImage
   freq: 3659513.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -624,7 +624,7 @@ concepts:
     tts: Look at my face.mp3
   - term: Koukni se na můj obličej.
     lang: cs
-    tts: Koukni se na muj oblicej.mp3
+    tts: cs-samples/Koukni se na muj oblicej.mp3
   img: img/at.jpeg
   freq: 3429739.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -646,7 +646,7 @@ concepts:
     tts: There were three more.mp3
   - term: Byly tu tři další.
     lang: cs
-    tts: Byly tu tri dalsi.mp3
+    tts: cs-samples/Byly tu tri dalsi.mp3
   state: ignoreImage
   freq: 3323884.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -668,7 +668,7 @@ concepts:
     tts: Stores are full of goods.mp3
   - term: Obchody jsou plné zboží.
     lang: cs
-    tts: Obchody jsou plne zbozi.mp3
+    tts: cs-samples/Obchody jsou plne zbozi.mp3
   state: ignoreImage
   freq: 3224178.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -690,7 +690,7 @@ concepts:
     tts: Not everyone will agree with you.mp3
   - term: Ne každý s vámi souhlasí.
     lang: cs
-    tts: Ne kazdy s vami souhlasi.mp3
+    tts: cs-samples/Ne kazdy s vami souhlasi.mp3
   img: img/not.jpeg
   freq: 2876549.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -712,7 +712,7 @@ concepts:
     tts: An extract from a book.mp3
   - term: Výpis z knihy.
     lang: cs
-    tts: Vypis z knihy.mp3
+    tts: cs-samples/Vypis z knihy.mp3
   state: ignoreImage
   freq: 2872012.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -731,7 +731,7 @@ concepts:
     tts: A cup of tea or coffee.mp3
   - term: Šálek čaje nebo kávy.
     lang: cs
-    tts: Salek caje nebo kavy.mp3
+    tts: cs-samples/Salek caje nebo kavy.mp3
   img: img/or.jpeg
   freq: 2803803.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -750,7 +750,7 @@ concepts:
     tts: Thats her suitcase.mp3
   - term: To je její kufr.
     lang: cs
-    tts: To je jeji kufr.mp3
+    tts: cs-samples/To je jeji kufr.mp3
   state: ignoreImage
   freq: 2800225.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -781,7 +781,7 @@ concepts:
     tts: I said stay here.mp3
   - term: Řekl jsem, zůstaň tady!
     lang: cs
-    tts: Rekl jsem, zustan tady.mp3
+    tts: cs-samples/Rekl jsem, zustan tady.mp3
   img: img/said.jpeg
   freq: 2637136.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -803,7 +803,7 @@ concepts:
     tts: So which one is the best.mp3
   - term: Tak který z nich je nejlepší?
     lang: cs
-    tts: Tak ktery z nich je nejlepsi.mp3
+    tts: cs-samples/Tak ktery z nich je nejlepsi.mp3
   state: ignoreImage
   freq: 2633444.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -825,7 +825,7 @@ concepts:
     tts: We play by the rules.mp3
   - term: Hrajeme podle pravidel.
     lang: cs
-    tts: Hrajeme podle pravidel.mp3
+    tts: cs-samples/Hrajeme podle pravidel.mp3
   state: ignoreImage
   freq: 2546805.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -847,7 +847,7 @@ concepts:
     tts: Have you ever been married.mp3
   - term: Byl jste někdy ženatý?
     lang: cs
-    tts: Byl jste nekdy zenaty.mp3
+    tts: cs-samples/Byl jste nekdy zenaty.mp3
   state: ignoreImage
   freq: 2357654.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -869,7 +869,7 @@ concepts:
     tts: Do you know how to find him.mp3
   - term: Víte jak ho najít?
     lang: cs
-    tts: Vite jak ho najit.mp3
+    tts: cs-samples/Vite jak ho najit.mp3
   state: ignoreImage
   freq: 2324852.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -891,7 +891,7 @@ concepts:
     tts: My room is fine.mp3
   - term: Můj pokoj je v pohodě.
     lang: cs
-    tts: Muj pokoj je v pohode.mp3
+    tts: cs-samples/Muj pokoj je v pohode.mp3
   img: img/my.jpeg
   freq: 2098760.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -913,7 +913,7 @@ concepts:
     tts: I wrote three new chapters this week.mp3
   - term: Tento týden jsem napsal tři nové kapitoly.
     lang: cs
-    tts: Tento tyden jsem napsal tri nove kapitoly.mp3
+    tts: cs-samples/Tento tyden jsem napsal tri nove kapitoly.mp3
   img: img/this.jpeg
   freq: 2010471.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -955,7 +955,7 @@ concepts:
     tts: Let me help you.mp3
   - term: Nech mě, ať ti pomůžu.
     lang: cs
-    tts: Nech me, at ti pomuzu.mp3
+    tts: cs-samples/Nech me, at ti pomuzu.mp3
   img: img/me.jpeg
   freq: 1868378.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -977,7 +977,7 @@ concepts:
     tts: Who does not like noodles.mp3
   - term: Kdo nemá rád nudle?
     lang: cs
-    tts: Kdo nema rad nudle.mp3
+    tts: cs-samples/Kdo nema rad nudle.mp3
   state: ignoreImage
   freq: 1745473.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -999,7 +999,7 @@ concepts:
     tts: I would never do that again.mp3
   - term: Já už bych to nikdy neudělal.
     lang: cs
-    tts: Ja uz bych to nikdy neudelal.mp3
+    tts: cs-samples/Ja uz bych to nikdy neudelal.mp3
   state: ignoreImage
   freq: 1663186.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1018,7 +1018,7 @@ concepts:
     tts: He has got a lot of energy.mp3
   - term: Má hrozně moc energie.
     lang: cs
-    tts: Ma hrozne moc energie.mp3
+    tts: cs-samples/Ma hrozne moc energie.mp3
   state: ignoreImage
   freq: 1602329.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1040,7 +1040,7 @@ concepts:
     tts: So let me go.mp3
   - term: Tak mě nechte jít.
     lang: cs
-    tts: Tak me nechte jit.mp3
+    tts: cs-samples/Tak me nechte jit.mp3
   state: ignoreImage
   freq: 1497187.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1062,7 +1062,7 @@ concepts:
     tts: If so, you cannot proceed.mp3
   - term: Pokud ano, nemůžeš pokračovat..
     lang: cs
-    tts: Pokud ano, nemuzes pokracovat.mp3
+    tts: cs-samples/Pokud ano, nemuzes pokracovat.mp3
   state: ignoreImage
   freq: 1442322.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1084,7 +1084,7 @@ concepts:
     tts: And what do the birds say.mp3
   - term: A co říkají ptáci?
     lang: cs
-    tts: A co rikaji ptaci.mp3
+    tts: cs-samples/A co rikaji ptaci.mp3
   img: img/say.jpeg
   freq: 1351631.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1106,7 +1106,7 @@ concepts:
     tts: It could be made of gold and diamonds.mp3
   - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
     lang: cs
-    tts: Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
+    tts: cs-samples/Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
   img: img/made.jpeg
   freq: 1188501.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1125,7 +1125,7 @@ concepts:
     tts: Run into the nearest town.mp3
   - term: Utíkej do nejbližšího města?
     lang: cs
-    tts: Utikej do nejblizsiho mesta.mp3
+    tts: cs-samples/Utikej do nejblizsiho mesta.mp3
   img: img/into.jpeg
   freq: 1186067.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1147,7 +1147,7 @@ concepts:
     tts: So you did do it.mp3
   - term: Takže jsi to udělal?
     lang: cs
-    tts: Takze jsi to udelal.mp3
+    tts: cs-samples/Takze jsi to udelal.mp3
   state: ignoreImage
   freq: 1185720.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1169,7 +1169,7 @@ concepts:
     tts: That will be the worst part.mp3
   - term: To bude nejhorší část.
     lang: cs
-    tts: To bude nejhorsi cast.mp3
+    tts: cs-samples/To bude nejhorsi cast.mp3
   state: ignoreImage
   freq: 1172186.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1188,7 +1188,7 @@ concepts:
     tts: Read more of these books.mp3
   - term: Číst více z těchto knih
     lang: cs
-    tts: Cist vice z techto knih.mp3
+    tts: cs-samples/Cist vice z techto knih.mp3
   img: img/more.jpeg
   freq: 1159978.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1210,7 +1210,7 @@ concepts:
     tts: Your order is ready for processing.mp3
   - term: Vaše objednávka je připravena ke zpracování.
     lang: cs
-    tts: Vase objednavka je pripravena ke zpracovani.mp3
+    tts: cs-samples/Vase objednavka je pripravena ke zpracovani.mp3
   img: img/your.jpeg
   freq: 1159087.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1232,7 +1232,7 @@ concepts:
     tts: When does this rule apply.mp3
   - term: Kdy platí toto pravidlo?
     lang: cs
-    tts: Kdy plati toto pravidlo.mp3
+    tts: cs-samples/Kdy plati toto pravidlo.mp3
   img: img/when.jpeg
   freq: 1124132.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1254,7 +1254,7 @@ concepts:
     tts: Who could that be.mp3
   - term: Kdo to mohl být?
     lang: cs
-    tts: Kdo to mohl byt.mp3
+    tts: cs-samples/Kdo to mohl byt.mp3
   state: ignoreImage
   freq: 1094521.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1276,7 +1276,7 @@ concepts:
     tts: They have some really cool tricks.mp3
   - term: Mají některé opravdu skvělé triky.
     lang: cs
-    tts: Maji nektere opravdu skvele triky.mp3
+    tts: cs-samples/Maji nektere opravdu skvele triky.mp3
   img: img/some.jpeg
   freq: 1075480.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1298,7 +1298,7 @@ concepts:
     tts: Those are our cars, right.mp3
   - term: To jsou naše auta, že?
     lang: cs
-    tts: To jsou nase auta, ze.mp3
+    tts: cs-samples/To jsou nase auta, ze.mp3
   state: ignoreImage
   freq: 1011790.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1320,7 +1320,7 @@ concepts:
     tts: Hes a grown man.mp3
   - term: Už je to dospělý muž.
     lang: cs
-    tts: Uz je to dospely muz.mp3
+    tts: cs-samples/Uz je to dospely muz.mp3
   img: img/man.jpeg
   freq: 991438.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1364,7 +1364,7 @@ concepts:
     tts: What are its advantages.mp3
   - term: Jaké to má výhody?
     lang: cs
-    tts: Jake to ma vyhody.mp3
+    tts: cs-samples/Jake to ma vyhody.mp3
   state: ignoreImage
   freq: 956494.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1383,7 +1383,7 @@ concepts:
     tts: Now bring them up.mp3
   - term: Teď je přines nahoru.
     lang: cs
-    tts: Ted je prines nahoru.mp3
+    tts: cs-samples/Ted je prines nahoru.mp3
   img: img/up.jpeg
   freq: 939235.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1402,7 +1402,7 @@ concepts:
     tts: They can help us.mp3
   - term: Oni nám mohou pomoct.
     lang: cs
-    tts: Oni nam mohou pomoct.mp3
+    tts: cs-samples/Oni nam mohou pomoct.mp3
   img: img/they.jpeg
   freq: 937391.63000
   origins: ["corpus", "conceptDbSamples"]
@@ -1421,7 +1421,7 @@ concepts:
     tts: Men and women are very different.mp3
   - term: Muži a ženy jsou velmi odlišné.
     lang: cs
-    tts: Muzi a zeny jsou velmi odlisne.mp3
+    tts: cs-samples/Muzi a zeny jsou velmi odlisne.mp3
   img: img/men.jpeg
   freq: 923053.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1440,7 +1440,7 @@ concepts:
     tts: We want the money back.mp3
   - term: My chceme peníze nazpět!
     lang: cs
-    tts: My chceme penize nazpet.mp3
+    tts: cs-samples/My chceme penize nazpet.mp3
   img: img/we.jpeg
   freq: 915268.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1462,7 +1462,7 @@ concepts:
     tts: And then we went on our way.mp3
   - term: A pak jsme šli svojí cestou.
     lang: cs
-    tts: A pak jsme sli svoji cestou.mp3
+    tts: cs-samples/A pak jsme sli svoji cestou.mp3
   img: img/then.jpeg
   freq: 899806.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1481,7 +1481,7 @@ concepts:
     tts: I need to see you right now.mp3
   - term: Musím tě vidět hned teď.
     lang: cs
-    tts: Musim te videt hned ted.mp3
+    tts: cs-samples/Musim te videt hned ted.mp3
   img: img/see.jpeg
   freq: 873965.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1503,7 +1503,7 @@ concepts:
     tts: You came to visit me.mp3
   - term: Přišel jsi na návštěvu?
     lang: cs
-    tts: Prisel jsi na navstevu.mp3
+    tts: cs-samples/Prisel jsi na navstevu.mp3
   state: ignoreImage
   freq: 873144.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1525,7 +1525,7 @@ concepts:
     tts: Earlier versions may be different.mp3
   - term: Dřívější verze se mohou lišit.
     lang: cs
-    tts: Drivejsi verze se mohou lisit.mp3
+    tts: cs-samples/Drivejsi verze se mohou lisit.mp3
   state: ignoreImage
   freq: 862605.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1547,7 +1547,7 @@ concepts:
     tts: Add any additional tables.mp3
   - term: Přidejte libovolné další tabulky.
     lang: cs
-    tts: Pridejte libovolne dalsi tabulky.mp3
+    tts: cs-samples/Pridejte libovolne dalsi tabulky.mp3
   img: img/any.jpeg
   freq: 835359.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1569,7 +1569,7 @@ concepts:
     tts: Would you like to make this change.mp3
   - term: Chcete tuto změnu provést?
     lang: cs
-    tts: Chcete tuto zmenu provest.mp3
+    tts: cs-samples/Chcete tuto zmenu provest.mp3
   img: img/make.jpeg
   freq: 832384.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1591,7 +1591,7 @@ concepts:
     tts: Nobody cares about me anymore.mp3
   - term: Nikdo se už o mě nezajímá.
     lang: cs
-    tts: Nikdo se uz o me nezajima.mp3
+    tts: cs-samples/Nikdo se uz o me nezajima.mp3
   img: img/about.jpeg
   freq: 811618.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1613,7 +1613,7 @@ concepts:
     tts: You two, what are you doing.mp3
   - term: Vy dva, co tady děláte?
     lang: cs
-    tts: Vy dva, co tady delate.mp3
+    tts: cs-samples/Vy dva, co tady delate.mp3
   img: img/two.jpeg
   freq: 802196.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1635,7 +1635,7 @@ concepts:
     tts: What do these messages mean.mp3
   - term: Co tyto zprávy znamenají?
     lang: cs
-    tts: Co tyto zpravy znamenaji.mp3
+    tts: cs-samples/Co tyto zpravy znamenaji.mp3
   state: ignoreImage
   freq: 802187.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1654,7 +1654,7 @@ concepts:
     tts: This is better than steak.mp3
   - term: Je to lepší než steak.
     lang: cs
-    tts: Je to lepsi nez steak.mp3
+    tts: cs-samples/Je to lepsi nez steak.mp3
   img: img/than.jpeg
   freq: 782249.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1676,7 +1676,7 @@ concepts:
     tts: Maybe we can get out.mp3
   - term: Možná se můžem dostat ven!
     lang: cs
-    tts: Mozna se muzem dostat ven.mp3
+    tts: cs-samples/Mozna se muzem dostat ven.mp3
   img: img/get.jpeg
   freq: 778635.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1698,7 +1698,7 @@ concepts:
     tts: Are there other variants.mp3
   - term: Existují i jiné varianty?
     lang: cs
-    tts: Existuji i jine varianty.mp3
+    tts: cs-samples/Existuji i jine varianty.mp3
   img: img/other.jpeg
   freq: 773847.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1720,7 +1720,7 @@ concepts:
     tts: Hurry before he finds us.mp3
   - term: Spěchej, než nás najde.
     lang: cs
-    tts: Spechej, nez nas najde.mp3
+    tts: cs-samples/Spechej, nez nas najde.mp3
   state: ignoreImage
   freq: 761415.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1742,7 +1742,7 @@ concepts:
     tts: What should we do.mp3
   - term: Co bychom měli dělat?
     lang: cs
-    tts: Co bychom meli delat.mp3
+    tts: cs-samples/Co bychom meli delat.mp3
   state: ignoreImage
   freq: 751209.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1764,7 +1764,7 @@ concepts:
     tts: Come and try it.mp3
   - term: Pojď a zkus to.
     lang: cs
-    tts: Pojd a zkus to.mp3
+    tts: cs-samples/Pojd a zkus to.mp3
   img: img/come.jpeg
   freq: 750630.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1790,7 +1790,7 @@ concepts:
     tts: She comes with me.mp3
   - term: Ona jede se mnou.
     lang: cs
-    tts: Ona jede se mnou.mp3
+    tts: cs-samples/Ona jede se mnou.mp3
   img: img/she.jpeg
   freq: 747484.30000
   origins: ["corpus", "conceptDbSamples"]
@@ -1812,7 +1812,7 @@ concepts:
     tts: Thats very funny.mp3
   - term: To je velice zábavné.
     lang: cs
-    tts: To je velice zabavne.mp3
+    tts: cs-samples/To je velice zabavne.mp3
   state: ignoreImage
   freq: 747094.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1834,7 +1834,7 @@ concepts:
     tts: Just let me think.mp3
   - term: Jenom mě nech přemýšlet.
     lang: cs
-    tts: Jenom me nech premyslet.mp3
+    tts: cs-samples/Jenom me nech premyslet.mp3
   img: img/think.jpeg
   freq: 744283.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1865,7 +1865,7 @@ concepts:
     tts: Shes only eight months.mp3
   - term: Je jí jenom osm měsíců.
     lang: cs
-    tts: Je ji jenom osm mesicu.mp3
+    tts: cs-samples/Je ji jenom osm mesicu.mp3
   state: ignoreImage
   freq: 718033.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1887,7 +1887,7 @@ concepts:
     tts: Theres people down there.mp3
   - term: Tam dole jsou lidé.
     lang: cs
-    tts: Tam dole jsou lide.mp3
+    tts: cs-samples/Tam dole jsou lide.mp3
   img: img/people.jpeg
   freq: 696604.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -1909,7 +1909,7 @@ concepts:
     tts: I went to the hospital.mp3
   - term: Šel jsem do nemocnice.
     lang: cs
-    tts: Sel jsem do nemocnice.mp3
+    tts: cs-samples/Sel jsem do nemocnice.mp3
   state: ignoreImage
   freq: 690186.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1931,7 +1931,7 @@ concepts:
     tts: I think its great.mp3
   - term: Myslím, že je to skvělé.
     lang: cs
-    tts: Myslim, ze je to skvele.mp3
+    tts: cs-samples/Myslim, ze je to skvele.mp3
   img: img/great.jpeg
   freq: 672584.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -1953,7 +1953,7 @@ concepts:
     tts: Now say good night.mp3
   - term: Teď řekni dobrou noc!
     lang: cs
-    tts: Ted rekni dobrou noc.mp3
+    tts: cs-samples/Ted rekni dobrou noc.mp3
   img: img/now.jpeg
   freq: 668424.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1975,7 +1975,7 @@ concepts:
     tts: He cant take that money.mp3
   - term: Nemůže si ty peníze vzít.
     lang: cs
-    tts: Nemuze si ty penize vzit.mp3
+    tts: cs-samples/Nemuze si ty penize vzit.mp3
   img: img/take.jpeg
   freq: 663615.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1997,7 +1997,7 @@ concepts:
     tts: Just a little better.mp3
   - term: Jen o trochu líp.
     lang: cs
-    tts: Jen o trochu lip.mp3
+    tts: cs-samples/Jen o trochu lip.mp3
   img: img/little.jpeg
   freq: 659529.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2016,7 +2016,7 @@ concepts:
     tts: Give me one more day.mp3
   - term: Dejte mi ještě jeden den.
     lang: cs
-    tts: Dejte mi jeste jeden den.mp3
+    tts: cs-samples/Dejte mi jeste jeden den.mp3
   img: img/day.jpeg
   freq: 657552.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -2035,7 +2035,7 @@ concepts:
     tts: I want to see your eyes.mp3
   - term: Chci vidět tvé oči.
     lang: cs
-    tts: Chci videt tve oci.mp3
+    tts: cs-samples/Chci videt tve oci.mp3
   img: img/eyes.jpeg
   freq: 647788.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2057,7 +2057,7 @@ concepts:
     tts: Do you like seafood.mp3
   - term: Máš rád mořské jídlo?
     lang: cs
-    tts: Mas rad morske jidlo.mp3
+    tts: cs-samples/Mas rad morske jidlo.mp3
   img: img/like.jpeg
   freq: 646931.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2079,7 +2079,7 @@ concepts:
     tts: She must feel lonely.mp3
   - term: Musí se cítit osamělá.
     lang: cs
-    tts: Musi se citit osamela.mp3
+    tts: cs-samples/Musi se citit osamela.mp3
   state: ignoreImage
   freq: 639579.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -2101,7 +2101,7 @@ concepts:
     tts: It weighs over five tons.mp3
   - term: Váží to přes pět tun.
     lang: cs
-    tts: Vazi to pres pet tun.mp3
+    tts: cs-samples/Vazi to pres pet tun.mp3
   img: img/over.jpeg
   freq: 632459.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2123,7 +2123,7 @@ concepts:
     tts: Those early days were remarkable.mp3
   - term: Tyto první dny byly pozoruhodné.
     lang: cs
-    tts: Tyto prvni dny byly pozoruhodne.mp3
+    tts: cs-samples/Tyto prvni dny byly pozoruhodne.mp3
   state: ignoreImage
   freq: 628314.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2142,7 +2142,7 @@ concepts:
     tts: There is no such device.mp3
   - term: Není zde žádné takové zařízení.
     lang: cs
-    tts: Neni zde zadne takove zarizeni.mp3
+    tts: cs-samples/Neni zde zadne takove zarizeni.mp3
   state: ignoreImage
   freq: 627941.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2164,7 +2164,7 @@ concepts:
     tts: And they can be dangerous.mp3
   - term: A mohou být nebezpeční.
     lang: cs
-    tts: A mohou byt nebezpecni.mp3
+    tts: cs-samples/A mohou byt nebezpecni.mp3
   img: img/can.jpeg
   freq: 610396.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2186,7 +2186,7 @@ concepts:
     tts: You see what you did.mp3
   - term: Vidíš co jsi způsobil?
     lang: cs
-    tts: Vidis co jsi zpusobil.mp3
+    tts: cs-samples/Vidis co jsi zpusobil.mp3
   img: img/what.jpeg
   freq: 606801.75000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -2208,7 +2208,7 @@ concepts:
     tts: Read the instructions before use.mp3
   - term: Před použitím si přečtěte pokyny.
     lang: cs
-    tts: Pred pouzitim si prectete pokyny.mp3
+    tts: cs-samples/Pred pouzitim si prectete pokyny.mp3
   img: img/before.jpeg
   freq: 586348.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2227,7 +2227,7 @@ concepts:
     tts: Hello Mr Bean.mp3
   - term: Zdravím, pane Bín.
     lang: cs
-    tts: Zdravim, pane Bin.mp3
+    tts: cs-samples/Zdravim, pane Bin.mp3
   img: img/mr.jpeg
   freq: 581487.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2246,7 +2246,7 @@ concepts:
     tts: I never heard of him.mp3
   - term: Nikdy jsem o něm neslyšel.
     lang: cs
-    tts: Nikdy jsem o nem neslysel.mp3
+    tts: cs-samples/Nikdy jsem o nem neslysel.mp3
   img: img/never.jpeg
   freq: 581128.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2265,7 +2265,7 @@ concepts:
     tts: We are trying to save her life.mp3
   - term: Snažíme se jí zachránit život!
     lang: cs
-    tts: Snazime se ji zachranit zivot.mp3
+    tts: cs-samples/Snazime se ji zachranit zivot.mp3
   img: img/life.jpeg
   freq: 579285.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2287,7 +2287,7 @@ concepts:
     tts: His brain is much smaller.mp3
   - term: Jeho mozek je o hodně menší.
     lang: cs
-    tts: Jeho mozek je o hodne mensi.mp3
+    tts: cs-samples/Jeho mozek je o hodne mensi.mp3
   state: ignoreImage
   freq: 573925.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2306,7 +2306,7 @@ concepts:
     tts: Look at those things.mp3
   - term: Podívejte se na ty věci!
     lang: cs
-    tts: Podivejte se na ty veci.mp3
+    tts: cs-samples/Podivejte se na ty veci.mp3
   img: img/things.jpeg
   freq: 567559.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2328,7 +2328,7 @@ concepts:
     tts: It has many levels.mp3
   - term: Má to mnoho úrovní.
     lang: cs
-    tts: Ma to mnoho urovni.mp3
+    tts: cs-samples/Ma to mnoho urovni.mp3
   img: img/many.jpeg
   freq: 564758.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2350,7 +2350,7 @@ concepts:
     tts: Hes old and tired.mp3
   - term: Je starý a unavený.
     lang: cs
-    tts: Je stary a unaveny.mp3
+    tts: cs-samples/Je stary a unaveny.mp3
   img: img/old.jpeg
   freq: 562247.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2372,7 +2372,7 @@ concepts:
     tts: He wrote a book a few years after mine.mp3
   - term: Napsal knihu pár let poté mojí.
     lang: cs
-    tts: Napsal knihu par let pote moji.mp3
+    tts: cs-samples/Napsal knihu par let pote moji.mp3
   state: ignoreImage
   freq: 560432.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2394,7 +2394,7 @@ concepts:
     tts: I waited years for it.mp3
   - term: Léta jsem na to čekal.
     lang: cs
-    tts: Leta jsem na to cekal.mp3
+    tts: cs-samples/Leta jsem na to cekal.mp3
   img: img/years.jpeg
   freq: 547420.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2416,7 +2416,7 @@ concepts:
     tts: Most of them were dark.mp3
   - term: Většina z nich byla temná.
     lang: cs
-    tts: Vetsina z nich byla temna.mp3
+    tts: cs-samples/Vetsina z nich byla temna.mp3
   state: ignoreImage
   freq: 543388.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2438,7 +2438,7 @@ concepts:
     tts: You can also create a new menu.mp3
   - term: Můžete také vytvořit novou nabídku.
     lang: cs
-    tts: Muzete take vytvorit novou nabidku.mp3
+    tts: cs-samples/Muzete take vytvorit novou nabidku.mp3
   state: ignoreImage
   freq: 536324.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2457,7 +2457,7 @@ concepts:
     tts: Only wait a year or two.mp3
   - term: Jen počkej takhle za rok nebo za dva.
     lang: cs
-    tts: Jen pockej takhle za rok nebo za dva.mp3
+    tts: cs-samples/Jen pockej takhle za rok nebo za dva.mp3
   img: img/year.jpeg
   freq: 532499.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2479,7 +2479,7 @@ concepts:
     tts: I saw it too.mp3
   - term: Já to taky viděl.
     lang: cs
-    tts: Ja to taky videl.mp3
+    tts: cs-samples/Ja to taky videl.mp3
   img: img/saw.jpeg
   freq: 520922.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2501,7 +2501,7 @@ concepts:
     tts: My fingers are too big.mp3
   - term: Moje prsty jsou příliš velké.
     lang: cs
-    tts: Moje prsty jsou prilis velke.mp3
+    tts: cs-samples/Moje prsty jsou prilis velke.mp3
   state: ignoreImage
   freq: 519626.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2523,7 +2523,7 @@ concepts:
     tts: What are you doing down here.mp3
   - term: Co děláš tady dole?
     lang: cs
-    tts: Co delas tady dole.mp3
+    tts: cs-samples/Co delas tady dole.mp3
   img: img/down.jpeg
   freq: 514720.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2545,7 +2545,7 @@ concepts:
     tts: This will never work.mp3
   - term: To nebude nikdy fungovat.
     lang: cs
-    tts: To nebude nikdy fungovat.mp3
+    tts: cs-samples/To nebude nikdy fungovat.mp3
   img: img/work.jpeg
   freq: 508678.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2567,7 +2567,7 @@ concepts:
     tts: He took her hands.mp3
   - term: Vzal ji za ruku.
     lang: cs
-    tts: Vzal ji za ruku.mp3
+    tts: cs-samples/Vzal ji za ruku.mp3
   state: ignoreImage
   freq: 501669.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2586,7 +2586,7 @@ concepts:
     tts: He said he might be late.mp3
   - term: Řekl, že by se mohl opozdit.
     lang: cs
-    tts: Rekl, ze by se mohl opozdit.mp3
+    tts: cs-samples/Rekl, ze by se mohl opozdit.mp3
   img: img/might.jpeg
   freq: 498257.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2608,7 +2608,7 @@ concepts:
     tts: His first big mistake.mp3
   - term: Jeho první velká chyba.
     lang: cs
-    tts: Jeho prvni velka chyba.mp3
+    tts: cs-samples/Jeho prvni velka chyba.mp3
   img: img/first.jpeg
   freq: 497764.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2627,7 +2627,7 @@ concepts:
     tts: She will do without us easily.mp3
   - term: Snadno si bez nás poradí.
     lang: cs
-    tts: Snadno si bez nas poradi.mp3
+    tts: cs-samples/Snadno si bez nas poradi.mp3
   img: img/without.jpeg
   freq: 496066.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2649,7 +2649,7 @@ concepts:
     tts: That was a good start.mp3
   - term: To byl dobrý začátek.
     lang: cs
-    tts: To byl dobry zacatek.mp3
+    tts: cs-samples/To byl dobry zacatek.mp3
   img: img/good.jpeg
   freq: 490930.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2671,7 +2671,7 @@ concepts:
     tts: He told me himself.mp3
   - term: Sám mi to řekl.
     lang: cs
-    tts: Sam mi to rekl.mp3
+    tts: cs-samples/Sam mi to rekl.mp3
   state: ignoreImage
   freq: 486383.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2693,7 +2693,7 @@ concepts:
     tts: Proceed at your own risks.mp3
   - term: Pokračujte na vlastní nebezpečí.
     lang: cs
-    tts: Pokracujte na vlastni nebezpeci.mp3
+    tts: cs-samples/Pokracujte na vlastni nebezpeci.mp3
   state: ignoreImage
   freq: 478353.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2715,7 +2715,7 @@ concepts:
     tts: You did it again.mp3
   - term: Udělal jsi to znovu?
     lang: cs
-    tts: Udelal jsi to znovu.mp3
+    tts: cs-samples/Udelal jsi to znovu.mp3
   img: img/again.jpeg
   freq: 476062.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2737,7 +2737,7 @@ concepts:
     tts: Give me that ring.mp3
   - term: Dej mi ten prsten.
     lang: cs
-    tts: Dej mi ten prsten.mp3
+    tts: cs-samples/Dej mi ten prsten.mp3
   img: img/give.jpeg
   freq: 469253.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2759,7 +2759,7 @@ concepts:
     tts: This is your new brother.mp3
   - term: Tohle je tvůj nový bratr.
     lang: cs
-    tts: Tohle je tvuj novy bratr.mp3
+    tts: cs-samples/Tohle je tvuj novy bratr.mp3
   img: img/new.jpeg
   freq: 467016.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2781,7 +2781,7 @@ concepts:
     tts: Every single day was busy.mp3
   - term: Každý den byl rušný.
     lang: cs
-    tts: Kazdy den byl rusny.mp3
+    tts: cs-samples/Kazdy den byl rusny.mp3
   state: ignoreImage
   freq: 458591.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -2803,7 +2803,7 @@ concepts:
     tts: I feel the same.mp3
   - term: Já to cítím stejně.
     lang: cs
-    tts: Ja to citim stejne.mp3
+    tts: cs-samples/Ja to citim stejne.mp3
   img: img/same.jpeg
   freq: 456106.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2833,7 +2833,7 @@ concepts:
     tts: It seemed like a good place.mp3
   - term: Vypadalo to jako dobré místo.
     lang: cs
-    tts: Vypadalo to jako dobre misto.mp3
+    tts: cs-samples/Vypadalo to jako dobre misto.mp3
   state: ignoreImage
   freq: 447884.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -2855,7 +2855,7 @@ concepts:
     tts: I looked different then.mp3
   - term: Tehdy jsem vypadal jinak.
     lang: cs
-    tts: Tehdy jsem vypadal jinak.mp3
+    tts: cs-samples/Tehdy jsem vypadal jinak.mp3
   state: ignoreImage
   freq: 447491.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2877,7 +2877,7 @@ concepts:
     tts: I called you six times.mp3
   - term: Volal jsem ti šestkrát.
     lang: cs
-    tts: Volal jsem ti sestkrat.mp3
+    tts: cs-samples/Volal jsem ti sestkrat.mp3
   img: img/called.jpeg
   freq: 445602.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2899,7 +2899,7 @@ concepts:
     tts: They just want to meet you.mp3
   - term: Prostě se s vámi chtějí setkat.
     lang: cs
-    tts: Proste se s vami chteji setkat.mp3
+    tts: cs-samples/Proste se s vami chteji setkat.mp3
   img: img/want.jpeg
   freq: 434592.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -2928,7 +2928,7 @@ concepts:
     tts: It was the only sure way.mp3
   - term: Byl to jediný jistý způsob.
     lang: cs
-    tts: Byl to jediny jisty zpusob.mp3
+    tts: cs-samples/Byl to jediny jisty zpusob.mp3
   img: img/way.jpeg
   freq: 433315.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -2950,7 +2950,7 @@ concepts:
     tts: I just got a job.mp3
   - term: Právě jsem dostal práci.
     lang: cs
-    tts: Prave jsem dostal praci.mp3
+    tts: cs-samples/Prave jsem dostal praci.mp3
   state: ignoreImage
   freq: 432016.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -2972,7 +2972,7 @@ concepts:
     tts: You tell me why.mp3
   - term: Ty mně řekni proč!
     lang: cs
-    tts: Ty mne rekni proc.mp3
+    tts: cs-samples/Ty mne rekni proc.mp3
   state: ignoreImage
   freq: 431716.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -2991,7 +2991,7 @@ concepts:
     tts: Can you really drive this thing.mp3
   - term: Opravdu umíš řídit tuhle věc?
     lang: cs
-    tts: Opravdu umis ridit tuhle vec.mp3
+    tts: cs-samples/Opravdu umis ridit tuhle vec.mp3
   state: ignoreImage
   freq: 431098.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3013,7 +3013,7 @@ concepts:
     tts: You know this well.mp3
   - term: Vy to dobře znáte.
     lang: cs
-    tts: Vy to dobre znate.mp3
+    tts: cs-samples/Vy to dobre znate.mp3
   img: img/well.jpeg
   freq: 430407.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3035,7 +3035,7 @@ concepts:
     tts: Why have you done that.mp3
   - term: Proč jsi to udělal?
     lang: cs
-    tts: Proc jsi to udelal.mp3
+    tts: cs-samples/Proc jsi to udelal.mp3
   img: img/done.jpeg
   freq: 430389.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3057,7 +3057,7 @@ concepts:
     tts: I heard your voice.mp3
   - term: Slyšel jsem tvůj hlas!
     lang: cs
-    tts: Slysel jsem tvuj hlas.mp3
+    tts: cs-samples/Slysel jsem tvuj hlas.mp3
   img: img/heard.jpeg
   freq: 429972.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3079,7 +3079,7 @@ concepts:
     tts: Those days are over.mp3
   - term: Ty dny jsou pryč.
     lang: cs
-    tts: Ty dny jsou pryc.mp3
+    tts: cs-samples/Ty dny jsou pryc.mp3
   img: img/days.jpeg
   freq: 426104.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3101,7 +3101,7 @@ concepts:
     tts: Because he told me.mp3
   - term: Protože mi to řekl.
     lang: cs
-    tts: Protoze mi to rekl.mp3
+    tts: cs-samples/Protoze mi to rekl.mp3
   state: ignoreImage
   freq: 424696.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3135,7 +3135,7 @@ concepts:
     tts: I asked for help.mp3
   - term: Požádal jsem o pomoc.
     lang: cs
-    tts: Pozadal jsem o pomoc.mp3
+    tts: cs-samples/Pozadal jsem o pomoc.mp3
   img: img/asked.jpeg
   freq: 420044.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3157,7 +3157,7 @@ concepts:
     tts: Whats going on.mp3
   - term: Co se děje?
     lang: cs
-    tts: Co se deje.mp3
+    tts: cs-samples/Co se deje.mp3
   img: img/going.jpeg
   freq: 419315.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3179,7 +3179,7 @@ concepts:
     tts: Have you seen the movie yet.mp3
   - term: Už jste ten film viděli?
     lang: cs
-    tts: Uz jste ten film videli.mp3
+    tts: cs-samples/Uz jste ten film videli.mp3
   state: ignoreImage
   freq: 418862.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3198,7 +3198,7 @@ concepts:
     tts: We were having a good time.mp3
   - term: Měli jsme se dobře.
     lang: cs
-    tts: Meli jsme se dobre.mp3
+    tts: cs-samples/Meli jsme se dobre.mp3
   state: ignoreImage
   freq: 415355.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3220,7 +3220,7 @@ concepts:
     tts: They might even win.mp3
   - term: Možná že dokonce zvítězí.
     lang: cs
-    tts: Mozna ze dokonce zvitezi.mp3
+    tts: cs-samples/Mozna ze dokonce zvitezi.mp3
   img: img/even.jpeg
   freq: 414918.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3242,7 +3242,7 @@ concepts:
     tts: I need to find a job.mp3
   - term: Musím si najít práci.
     lang: cs
-    tts: Musim si najit praci.mp3
+    tts: cs-samples/Musim si najit praci.mp3
   img: img/find.jpeg
   freq: 413161.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3264,7 +3264,7 @@ concepts:
     tts: My friend knew her.mp3
   - term: Znal ji můj kamarád.
     lang: cs
-    tts: Znal ji muj kamarad.mp3
+    tts: cs-samples/Znal ji muj kamarad.mp3
   img: img/knew.jpeg
   freq: 413101.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3286,7 +3286,7 @@ concepts:
     tts: He has a ring through his nose.mp3
   - term: Má kroužek skrz nos.
     lang: cs
-    tts: Ma krouzek skrz nos.mp3
+    tts: cs-samples/Ma krouzek skrz nos.mp3
   img: img/through.jpeg
   freq: 412381.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -3305,7 +3305,7 @@ concepts:
     tts: He was worth nothing to the world.mp3
   - term: Neměl pro svět žádnou cenu.
     lang: cs
-    tts: Nemel pro svet zadnou cenu.mp3
+    tts: cs-samples/Nemel pro svet zadnou cenu.mp3
   img: img/world.jpeg
   freq: 410531.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3327,7 +3327,7 @@ concepts:
     tts: Man is a strange being.mp3
   - term: Člověk je podivná bytost.
     lang: cs
-    tts: Clovek je podivna bytost.mp3
+    tts: cs-samples/Clovek je podivna bytost.mp3
   state: ignoreImage
   freq: 406957.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3349,7 +3349,7 @@ concepts:
     tts: But hes long gone now.mp3
   - term: Ale on už je dlouho pryč.
     lang: cs
-    tts: Ale on uz je dlouho pryc.mp3
+    tts: cs-samples/Ale on uz je dlouho pryc.mp3
   img: img/long.jpeg
   freq: 405456.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3368,7 +3368,7 @@ concepts:
     tts: I am late.mp3
   - term: Jdu pozdě
     lang: cs
-    tts: Jdu pozde.mp3
+    tts: cs-samples/Jdu pozde.mp3
   state: ignoreImage
   freq: 398204.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3387,7 +3387,7 @@ concepts:
     tts: I was against it.mp3
   - term: Já byl proti tomu.
     lang: cs
-    tts: Ja byl proti tomu.mp3
+    tts: cs-samples/Ja byl proti tomu.mp3
   img: img/against.jpeg
   freq: 386919.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3406,7 +3406,7 @@ concepts:
     tts: Please take my hands.mp3
   - term: Prosím vemte mě za ruce.
     lang: cs
-    tts: Prosim vemte me za ruce.mp3
+    tts: cs-samples/Prosim vemte me za ruce.mp3
   img: img/hands.jpeg
   freq: 385081.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3428,7 +3428,7 @@ concepts:
     tts: All three of them.mp3
   - term: Všichni tři?
     lang: cs
-    tts: Vsichni tri.mp3
+    tts: cs-samples/Vsichni tri.mp3
   img: img/three.jpeg
   freq: 384445.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3447,7 +3447,7 @@ concepts:
     tts: Those are my words.mp3
   - term: To jsou moje slova.
     lang: cs
-    tts: To jsou moje slova.mp3
+    tts: cs-samples/To jsou moje slova.mp3
   img: img/words.jpeg
   freq: 380328.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3469,7 +3469,7 @@ concepts:
     tts: Get on your back.mp3
   - term: Polož se na záda.
     lang: cs
-    tts: Poloz se na zada.mp3
+    tts: cs-samples/Poloz se na zada.mp3
   img: img/back.jpeg
   freq: 379741.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -3488,7 +3488,7 @@ concepts:
     tts: But youre young only once.mp3
   - term: Ale mladý jsi jenom jednou.
     lang: cs
-    tts: Ale mlady jsi jenom jednou.mp3
+    tts: cs-samples/Ale mlady jsi jenom jednou.mp3
   img: img/young.jpeg
   freq: 375916.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -3507,7 +3507,7 @@ concepts:
     tts: Distance between patient and doctor.mp3
   - term: Vzdálenost mezi pacientem a lékařem.
     lang: cs
-    tts: Vzdalenost mezi pacientem a lekarem.mp3
+    tts: cs-samples/Vzdalenost mezi pacientem a lekarem.mp3
   img: img/between.jpeg
   freq: 371596.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3529,7 +3529,7 @@ concepts:
     tts: My dad gave it to me.mp3
   - term: Dal mi to můj táta.
     lang: cs
-    tts: Dal mi to muj tata.mp3
+    tts: cs-samples/Dal mi to muj tata.mp3
   img: img/gave.jpeg
   freq: 369036.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3551,7 +3551,7 @@ concepts:
     tts: You can put that in your book.mp3
   - term: Můžeš to dát do své knihy.
     lang: cs
-    tts: Muzes to dat do sve knihy.mp3
+    tts: cs-samples/Muzes to dat do sve knihy.mp3
   img: img/put.jpeg
   freq: 366334.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3573,7 +3573,7 @@ concepts:
     tts: I thought youd be happy.mp3
   - term: Myslel sem, že budeš mít radost.
     lang: cs
-    tts: Myslel sem, ze budes mit radost.mp3
+    tts: cs-samples/Myslel sem, ze budes mit radost.mp3
   img: img/thought.jpeg
   freq: 363066.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -3595,7 +3595,7 @@ concepts:
     tts: Put that toy away.mp3
   - term: Dej tu hračku pryč.
     lang: cs
-    tts: Dej tu hracku pryc.mp3
+    tts: cs-samples/Dej tu hracku pryc.mp3
   img: img/away.jpeg
   freq: 362907.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -3617,7 +3617,7 @@ concepts:
     tts: Its not ready yet.mp3
   - term: Není to ještě hotové.
     lang: cs
-    tts: Neni to jeste hotove.mp3
+    tts: cs-samples/Neni to jeste hotove.mp3
   state: ignoreImage
   freq: 362049.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3670,7 +3670,7 @@ concepts:
     tts: I brought you coffee.mp3
   - term: Přinesl jsem ti kafe.
     lang: cs
-    tts: Prinesl jsem ti kafe.mp3
+    tts: cs-samples/Prinesl jsem ti kafe.mp3
   state: ignoreImage
   freq: 349925.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3692,7 +3692,7 @@ concepts:
     tts: Will this day ever end.mp3
   - term: Skončí tenhle den vůbec?
     lang: cs
-    tts: Skonci tenhle den vubec.mp3
+    tts: cs-samples/Skonci tenhle den vubec.mp3
   img: img/ever.jpeg
   freq: 347490.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3711,7 +3711,7 @@ concepts:
     tts: Who is under my table.mp3
   - term: Kdo to je pod mým stolem?
     lang: cs
-    tts: Kdo to je pod mym stolem.mp3
+    tts: cs-samples/Kdo to je pod mym stolem.mp3
   img: img/under.jpeg
   freq: 346344.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3733,7 +3733,7 @@ concepts:
     tts: That was last week.mp3
   - term: To bylo minulý týden.
     lang: cs
-    tts: To bylo minuly tyden.mp3
+    tts: cs-samples/To bylo minuly tyden.mp3
   img: img/last.jpeg
   freq: 344624.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3752,7 +3752,7 @@ concepts:
     tts: Thats a nice place.mp3
   - term: To je hezké místo.
     lang: cs
-    tts: To je hezke misto.mp3
+    tts: cs-samples/To je hezke misto.mp3
   img: img/place.jpeg
   freq: 341350.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3774,7 +3774,7 @@ concepts:
     tts: I always wanted to do that.mp3
   - term: To jsem vždy toužil udělat.
     lang: cs
-    tts: To jsem vzdy touzil udelat.mp3
+    tts: cs-samples/To jsem vzdy touzil udelat.mp3
   state: ignoreImage
   freq: 337654.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3796,7 +3796,7 @@ concepts:
     tts: Suddenly he turned back.mp3
   - term: Náhle se obrátil zpět.
     lang: cs
-    tts: Nahle se obratil zpet.mp3
+    tts: cs-samples/Nahle se obratil zpet.mp3
   img: img/turned.jpeg
   freq: 337367.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3829,7 +3829,7 @@ concepts:
     tts: You stayed up all night.mp3
   - term: Byl jste vzhůru celou noc?
     lang: cs
-    tts: Byl jste vzhuru celou noc.mp3
+    tts: cs-samples/Byl jste vzhuru celou noc.mp3
   img: img/night.jpeg
   freq: 334694.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3848,7 +3848,7 @@ concepts:
     tts: You know what he does.mp3
   - term: Víš, co dělá?
     lang: cs
-    tts: Vis, co dela.mp3
+    tts: cs-samples/Vis, co dela.mp3
   state: ignoreImage
   freq: 334332.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3867,7 +3867,7 @@ concepts:
     tts: Theres nothing to see.mp3
   - term: Není tu nic k vidění.
     lang: cs
-    tts: Neni tu nic k videni.mp3
+    tts: cs-samples/Neni tu nic k videni.mp3
   img: img/nothing.jpeg
   freq: 334204.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -3889,7 +3889,7 @@ concepts:
     tts: I found it in the jungle.mp3
   - term: Našel jsem to v džungli.
     lang: cs
-    tts: Nasel jsem to v dzungli.mp3
+    tts: cs-samples/Nasel jsem to v dzungli.mp3
   img: img/found.jpeg
   freq: 333444.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3908,7 +3908,7 @@ concepts:
     tts: Let me see your hand.mp3
   - term: Ukaž mi svou ruku.
     lang: cs
-    tts: Ukaz mi svou ruku.mp3
+    tts: cs-samples/Ukaz mi svou ruku.mp3
   img: img/hand.jpeg
   freq: 333229.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3930,7 +3930,7 @@ concepts:
     tts: Just let him go.mp3
   - term: Jen ať si jde.
     lang: cs
-    tts: Jen at si jde.mp3
+    tts: cs-samples/Jen at si jde.mp3
   state: ignoreImage
   freq: 332310.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3952,7 +3952,7 @@ concepts:
     tts: This may take few minutes.mp3
   - term: To může trvat několik minut.
     lang: cs
-    tts: To muze trvat nekolik minut.mp3
+    tts: cs-samples/To muze trvat nekolik minut.mp3
   state: ignoreImage
   freq: 331802.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -3974,7 +3974,7 @@ concepts:
     tts: Always do the right thing.mp3
   - term: Vždy dělej správné věci.
     lang: cs
-    tts: Vzdy delej spravne veci.mp3
+    tts: cs-samples/Vzdy delej spravne veci.mp3
   img: img/right.jpeg
   freq: 331507.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4003,7 +4003,7 @@ concepts:
     tts: I can still do my job.mp3
   - term: Mohu stále dělat svoji práci.
     lang: cs
-    tts: Mohu stale delat svoji praci.mp3
+    tts: cs-samples/Mohu stale delat svoji praci.mp3
   state: ignoreImage
   freq: 327187.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4022,7 +4022,7 @@ concepts:
     tts: I want you to know something.mp3
   - term: Chci, abyste něco věděl.
     lang: cs
-    tts: Chci, abyste neco vedel.mp3
+    tts: cs-samples/Chci, abyste neco vedel.mp3
   state: ignoreImage
   freq: 326818.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4041,7 +4041,7 @@ concepts:
     tts: Have you felt any other emotions.mp3
   - term: Cítil jste I jiné emoce?
     lang: cs
-    tts: Citil jste I jine emoce.mp3
+    tts: cs-samples/Citil jste I jine emoce.mp3
   img: img/felt.jpeg
   freq: 326524.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4063,7 +4063,7 @@ concepts:
     tts: I began to learn.mp3
   - term: Začal jsem se učit.
     lang: cs
-    tts: Zacal jsem se ucit.mp3
+    tts: cs-samples/Zacal jsem se ucit.mp3
   state: ignoreImage
   freq: 325327.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4085,7 +4085,7 @@ concepts:
     tts: Have you ever lived in a foreign country.mp3
   - term: Žili jste někdy v cizí zemi?
     lang: cs
-    tts: Zili jste nekdy v cizi zemi.mp3
+    tts: cs-samples/Zili jste nekdy v cizi zemi.mp3
   img: img/country.jpeg
   freq: 321963.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4104,7 +4104,7 @@ concepts:
     tts: Are you on the list.mp3
   - term: Jste na tomto seznamu?
     lang: cs
-    tts: Jste na tomto seznamu.mp3
+    tts: cs-samples/Jste na tomto seznamu.mp3
   img: img/on.jpeg
   freq: 2675121.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -4123,7 +4123,7 @@ concepts:
     tts: The answer is clearly no.mp3
   - term: Odpověď zní jednoznačně ne.
     lang: cs
-    tts: Odpoved zni jednoznacne ne.mp3
+    tts: cs-samples/Odpoved zni jednoznacne ne.mp3
   img: img/no.jpeg
   freq: 1123368.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4145,7 +4145,7 @@ concepts:
     tts: I need to get off.mp3
   - term: Musím se dostat pryč!
     lang: cs
-    tts: Musim se dostat pryc.mp3
+    tts: cs-samples/Musim se dostat pryc.mp3
   img: img/off.jpeg
   freq: 324977.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4167,7 +4167,7 @@ concepts:
     tts: Be alert while using public transport.mp3
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
-    tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
+    tts: cs-samples/Bud ostrazity pri pouzivani verejne dopravy.mp3
   img: img/while.jpeg
   freq: 321748.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -4189,7 +4189,7 @@ concepts:
     tts: I just got home.mp3
   - term: Právě jsem přišla domů.
     lang: cs
-    tts: Prave jsem prisla domu.mp3
+    tts: cs-samples/Prave jsem prisla domu.mp3
   state: ignoreImage
   freq: 315132.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -4211,7 +4211,7 @@ concepts:
     tts: He stood at the door.mp3
   - term: Postavil se ve dveřích.
     lang: cs
-    tts: Postavil se ve dverich.mp3
+    tts: cs-samples/Postavil se ve dverich.mp3
   img: img/stood.jpeg
   freq: 308025.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4233,7 +4233,7 @@ concepts:
     tts: I will face my fear.mp3
   - term: Budu čelit svému strachu.
     lang: cs
-    tts: Budu celit svemu strachu.mp3
+    tts: cs-samples/Budu celit svemu strachu.mp3
   img: img/face.jpeg
   freq: 306872.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4264,7 +4264,7 @@ concepts:
     tts: That song is very good though.mp3
   - term: Ačkoli ta píseň je velmi dobrá.
     lang: cs
-    tts: Ackoli ta pisen je velmi dobra.mp3
+    tts: cs-samples/Ackoli ta pisen je velmi dobra.mp3
   state: ignoreImage
   freq: 291475.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4286,7 +4286,7 @@ concepts:
     tts: Is it my neighbour on the left.mp3
   - term: Je to můj soused vlevo?
     lang: cs
-    tts: Je to muj soused vlevo.mp3
+    tts: cs-samples/Je to muj soused vlevo.mp3
   img: img/left.jpeg
   freq: 291138.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4308,7 +4308,7 @@ concepts:
     tts: Where is my child.mp3
   - term: Kde je mé dítě!
     lang: cs
-    tts: Kde je me dite.mp3
+    tts: cs-samples/Kde je me dite.mp3
   img: img/child.jpeg
   freq: 288025.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4330,7 +4330,7 @@ concepts:
     tts: Who sent you here.mp3
   - term: Kdo Vás sem poslal?
     lang: cs
-    tts: Kdo Vas sem poslal.mp3
+    tts: cs-samples/Kdo Vas sem poslal.mp3
   img: img/sent.jpeg
   freq: 287876.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4352,7 +4352,7 @@ concepts:
     tts: It means a lot to me.mp3
   - term: Moc to pro mě znamená.
     lang: cs
-    tts: Moc to pro me znamena.mp3
+    tts: cs-samples/Moc to pro me znamena.mp3
   img: img/means.jpeg
   freq: 284431.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4374,7 +4374,7 @@ concepts:
     tts: You told it to me once.mp3
   - term: Řekl jsi mi to kdysi.
     lang: cs
-    tts: Rekl jsi mi to kdysi.mp3
+    tts: cs-samples/Rekl jsi mi to kdysi.mp3
   img: img/once.jpeg
   freq: 283167.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4396,7 +4396,7 @@ concepts:
     tts: He was my first love.mp3
   - term: Byl moje první láska!
     lang: cs
-    tts: Byl moje prvni laska.mp3
+    tts: cs-samples/Byl moje prvni laska.mp3
   img: img/love.jpeg
   freq: 281995.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4418,7 +4418,7 @@ concepts:
     tts: But you passed the test.mp3
   - term: Ale zkouškou jste prošel.
     lang: cs
-    tts: Ale zkouskou jste prosel.mp3
+    tts: cs-samples/Ale zkouskou jste prosel.mp3
   img: img/passed.jpeg
   freq: 279864.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4437,7 +4437,7 @@ concepts:
     tts: Your feet and your ankles are relaxed.mp3
   - term: Chodidla a zápěstí máš uvolněná.
     lang: cs
-    tts: Chodidla a zapesti mas uvolnena.mp3
+    tts: cs-samples/Chodidla a zapesti mas uvolnena.mp3
   img: img/feet.jpeg
   freq: 279821.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4459,7 +4459,7 @@ concepts:
     tts: Thats your side.mp3
   - term: To je tvá strana!
     lang: cs
-    tts: To je tva strana.mp3
+    tts: cs-samples/To je tva strana.mp3
   img: img/side.jpeg
   freq: 279184.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -4478,7 +4478,7 @@ concepts:
     tts: My head is empty.mp3
   - term: Moje hlava je prázdná.
     lang: cs
-    tts: Moje hlava je prazdna.mp3
+    tts: cs-samples/Moje hlava je prazdna.mp3
   img: img/head.jpeg
   freq: 277069.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4497,7 +4497,7 @@ concepts:
     tts: My heart has stopped.mp3
   - term: Zastavilo se mi srdce.
     lang: cs
-    tts: Zastavilo se mi srdce.mp3
+    tts: cs-samples/Zastavilo se mi srdce.mp3
   img: img/heart.jpeg
   freq: 275846.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4516,7 +4516,7 @@ concepts:
     tts: Thats for children.mp3
   - term: To je pro děti.
     lang: cs
-    tts: To je pro deti.mp3
+    tts: cs-samples/To je pro deti.mp3
   img: img/children.jpeg
   freq: 275607.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4535,7 +4535,7 @@ concepts:
     tts: I really want another kid.mp3
   - term: Vážně chci další dítě.
     lang: cs
-    tts: Vazne chci dalsi dite.mp3
+    tts: cs-samples/Vazne chci dalsi dite.mp3
   img: img/another.jpeg
   freq: 274213.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4554,7 +4554,7 @@ concepts:
     tts: Do you have any idea how small you are.mp3
   - term: Víš vůbec, jak jsi malý?
     lang: cs
-    tts: Vis vubec, jak jsi maly.mp3
+    tts: cs-samples/Vis vubec, jak jsi maly.mp3
   img: img/small.jpeg
   freq: 272716.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4573,7 +4573,7 @@ concepts:
     tts: This is my mother.mp3
   - term: Je to moje matka!
     lang: cs
-    tts: Je to moje matka.mp3
+    tts: cs-samples/Je to moje matka.mp3
   img: img/mother.jpeg
   freq: 271652.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4592,7 +4592,7 @@ concepts:
     tts: Because you want to marry me.mp3
   - term: Protože si mě chceš vzít.
     lang: cs
-    tts: Protoze si me chces vzit.mp3
+    tts: cs-samples/Protoze si me chces vzit.mp3
   state: ignoreImage
   freq: 271351.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4611,7 +4611,7 @@ concepts:
     tts: How far can you fly.mp3
   - term: Jak daleko můžete létat?
     lang: cs
-    tts: Jak daleko muzete letat.mp3
+    tts: cs-samples/Jak daleko muzete letat.mp3
   img: img/how.jpeg
   freq: 269931.46500
   origins: ["corpus", "conceptDbSamples"]
@@ -4633,7 +4633,7 @@ concepts:
     tts: This is your room.mp3
   - term: Toto je tvůj pokoj.
     lang: cs
-    tts: Toto je tvuj pokoj.mp3
+    tts: cs-samples/Toto je tvuj pokoj.mp3
   img: img/room.jpeg
   freq: 269595.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4655,7 +4655,7 @@ concepts:
     tts: And we both know why.mp3
   - term: A oba víme proč.
     lang: cs
-    tts: A oba vime proc.mp3
+    tts: cs-samples/A oba vime proc.mp3
   img: img/both.jpeg
   freq: 269426.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4683,7 +4683,7 @@ concepts:
     tts: Enter values for each column.mp3
   - term: Zadejte hodnoty pro každý sloupec.
     lang: cs
-    tts: Zadejte hodnoty pro kazdy sloupec.mp3
+    tts: cs-samples/Zadejte hodnoty pro kazdy sloupec.mp3
   img: img/each.jpeg
   freq: 269131.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4702,7 +4702,7 @@ concepts:
     tts: Whoever says this is a liar.mp3
   - term: Kdokoli to říká, je lhář.
     lang: cs
-    tts: Kdokoli to rika, je lhar.mp3
+    tts: cs-samples/Kdokoli to rika, je lhar.mp3
   img: img/says.jpeg
   freq: 268542.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4721,7 +4721,7 @@ concepts:
     tts: You may take my word on it Mrs.mp3
   - term: Věřte mi to, paní.
     lang: cs
-    tts: Verte mi to, pani.mp3
+    tts: cs-samples/Verte mi to, pani.mp3
   img: img/mrs.jpeg
   freq: 267994.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4740,7 +4740,7 @@ concepts:
     tts: What would your father say.mp3
   - term: Co by tomu řekl tvůj otec?
     lang: cs
-    tts: Co by tomu rekl tvuj otec.mp3
+    tts: cs-samples/Co by tomu rekl tvuj otec.mp3
   img: img/father.jpeg
   freq: 266420.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4762,7 +4762,7 @@ concepts:
     tts: How to find the right part.mp3
   - term: Jak najít správný díl?
     lang: cs
-    tts: Jak najit spravny dil.mp3
+    tts: cs-samples/Jak najit spravny dil.mp3
   img: img/part.jpeg
   freq: 265820.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4781,7 +4781,7 @@ concepts:
     tts: I have to sell my house.mp3
   - term: Budu muset prodat dům.
     lang: cs
-    tts: Budu muset prodat dum.mp3
+    tts: cs-samples/Budu muset prodat dum.mp3
   img: img/house.jpeg
   freq: 264916.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4803,7 +4803,7 @@ concepts:
     tts: I received this thing this morning.mp3
   - term: Tuto věc jsem obdržel ráno.
     lang: cs
-    tts: Tuto vec jsem obdrzel rano.mp3
+    tts: cs-samples/Tuto vec jsem obdrzel rano.mp3
   img: img/received.jpeg
   freq: 264606.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4825,7 +4825,7 @@ concepts:
     tts: His boat was gone.mp3
   - term: Jeho člun zmizel.
     lang: cs
-    tts: Jeho clun zmizel.mp3
+    tts: cs-samples/Jeho clun zmizel.mp3
   img: img/gone.jpeg
   freq: 263585.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4844,7 +4844,7 @@ concepts:
     tts: We have people among you.mp3
   - term: Máme mezi vámi lidi.
     lang: cs
-    tts: Mame mezi vami lidi.mp3
+    tts: cs-samples/Mame mezi vami lidi.mp3
   img: img/among.jpeg
   freq: 262870.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4863,7 +4863,7 @@ concepts:
     tts: Theres only water out there.mp3
   - term: Tam venku je jen voda.
     lang: cs
-    tts: Tam venku je jen voda.mp3
+    tts: cs-samples/Tam venku je jen voda.mp3
   img: img/water.jpeg
   freq: 261566.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -4885,7 +4885,7 @@ concepts:
     tts: Good times are over.mp3
   - term: Dobré časy skončily.
     lang: cs
-    tts: Dobre casy skoncily.mp3
+    tts: cs-samples/Dobre casy skoncily.mp3
   img: img/times.jpeg
   freq: 260596.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4907,7 +4907,7 @@ concepts:
     tts: Help him keep the secret.mp3
   - term: Pomoz mu zachovat tajemství.
     lang: cs
-    tts: Pomoz mu zachovat tajemstvi.mp3
+    tts: cs-samples/Pomoz mu zachovat tajemstvi.mp3
   img: img/keep.jpeg
   freq: 260532.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4929,7 +4929,7 @@ concepts:
     tts: I sent them home.mp3
   - term: Poslal jsem je domů.
     lang: cs
-    tts: Poslal jsem je domu.mp3
+    tts: cs-samples/Poslal jsem je domu.mp3
   img: img/home.jpeg
   freq: 255718.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4948,7 +4948,7 @@ concepts:
     tts: You have my word.mp3
   - term: Dávám vám své slovo.
     lang: cs
-    tts: Davam vam sve slovo.mp3
+    tts: cs-samples/Davam vam sve slovo.mp3
   img: img/word.jpeg
   freq: 251288.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4967,7 +4967,7 @@ concepts:
     tts: Ill always remember that moment.mp3
   - term: Ten okamžik si budu vždy pamatovat
     lang: cs
-    tts: Ten okamzik si budu vzdy pamatovat.mp3
+    tts: cs-samples/Ten okamzik si budu vzdy pamatovat.mp3
   img: img/moment.jpeg
   freq: 250354.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -4989,7 +4989,7 @@ concepts:
     tts: From whom is that.mp3
   - term: Od koho to je?
     lang: cs
-    tts: Od koho to je.mp3
+    tts: cs-samples/Od koho to je.mp3
   state: ignoreImage
   freq: 248131.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5011,7 +5011,7 @@ concepts:
     tts: However theres a catch.mp3
   - term: Nicméně je tu jeden háček.
     lang: cs
-    tts: Nicmene je tu jeden hacek.mp3
+    tts: cs-samples/Nicmene je tu jeden hacek.mp3
   state: ignoreImage
   freq: 247555.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5033,7 +5033,7 @@ concepts:
     tts: Its a new look.mp3
   - term: To je nový vzhled.
     lang: cs
-    tts: To je novy vzhled.mp3
+    tts: cs-samples/To je novy vzhled.mp3
   img: img/look.jpeg
   freq: 247532.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5052,7 +5052,7 @@ concepts:
     tts: Thats much better.mp3
   - term: To je mnohem lepší.
     lang: cs
-    tts: To je mnohem lepsi.mp3
+    tts: cs-samples/To je mnohem lepsi.mp3
   img: img/better.jpeg
   freq: 247398.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5074,7 +5074,7 @@ concepts:
     tts: I almost lost you.mp3
   - term: Skoro jsem tě ztratil.
     lang: cs
-    tts: Skoro jsem te ztratil.mp3
+    tts: cs-samples/Skoro jsem te ztratil.mp3
   img: img/almost.jpeg
   freq: 247268.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5093,7 +5093,7 @@ concepts:
     tts: Long live the king.mp3
   - term: Ať žije náš král!
     lang: cs
-    tts: At zije nas kral.mp3
+    tts: cs-samples/At zije nas kral.mp3
   img: img/king.jpeg
   freq: 247147.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5112,7 +5112,7 @@ concepts:
     tts: I answered your question.mp3
   - term: Odpověděl jsem ti na otázku.
     lang: cs
-    tts: Odpovedel jsem ti na otazku.mp3
+    tts: cs-samples/Odpovedel jsem ti na otazku.mp3
   state: ignoreImage
   freq: 246251.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5134,7 +5134,7 @@ concepts:
     tts: I wont mind if you do.mp3
   - term: Nebude mi vadit, když to uděláš.
     lang: cs
-    tts: Nebude mi vadit, kdyz to udelas.mp3
+    tts: cs-samples/Nebude mi vadit, kdyz to udelas.mp3
   img: img/mind.jpeg
   freq: 243845.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5153,7 +5153,7 @@ concepts:
     tts: I should become a doctor.mp3
   - term: Měl bych se stát doktorem.
     lang: cs
-    tts: Mel bych se stat doktorem.mp3
+    tts: cs-samples/Mel bych se stat doktorem.mp3
   state: ignoreImage
   freq: 241714.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5175,7 +5175,7 @@ concepts:
     tts: I sat and cried.mp3
   - term: Posadila jsem se a plakala.
     lang: cs
-    tts: Posadila jsem se a plakala.mp3
+    tts: cs-samples/Posadila jsem se a plakala.mp3
   state: ignoreImage
   freq: 240280.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5194,7 +5194,7 @@ concepts:
     tts: That couldve been my money.mp3
   - term: Ty peníze mohly být moje.
     lang: cs
-    tts: Ty penize mohly byt moje.mp3
+    tts: cs-samples/Ty penize mohly byt moje.mp3
   img: img/money.jpeg
   freq: 240218.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5216,7 +5216,7 @@ concepts:
     tts: It has been happening on a very large scale.mp3
   - term: Dělo se to ve velkém měřítku.
     lang: cs
-    tts: Delo se to ve velkem meritku.mp3
+    tts: cs-samples/Delo se to ve velkem meritku.mp3
   img: img/large.jpeg
   freq: 239925.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5238,7 +5238,7 @@ concepts:
     tts: You could ask him.mp3
   - term: Můžeš se ho zeptat.
     lang: cs
-    tts: Muzes se ho zeptat.mp3
+    tts: cs-samples/Muzes se ho zeptat.mp3
   img: img/ask.jpeg
   freq: 239767.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5260,7 +5260,7 @@ concepts:
     tts: Who are those women.mp3
   - term: Kdo jsou ty ženy?
     lang: cs
-    tts: Kdo jsou ty zeny.mp3
+    tts: cs-samples/Kdo jsou ty zeny.mp3
   img: img/women.jpeg
   freq: 239735.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5282,7 +5282,7 @@ concepts:
     tts: Is it a full set.mp3
   - term: Je to celá sada?
     lang: cs
-    tts: Je to cela sada.mp3
+    tts: cs-samples/Je to cela sada.mp3
   img: img/set.jpeg
   freq: 238879.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5304,7 +5304,7 @@ concepts:
     tts: It really is true.mp3
   - term: Je to skutečně pravda.
     lang: cs
-    tts: Je to skutecne pravda.mp3
+    tts: cs-samples/Je to skutecne pravda.mp3
   state: ignoreImage
   freq: 237568.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5326,7 +5326,7 @@ concepts:
     tts: I brought my friends.mp3
   - term: Přivedl jsem si kamarády.
     lang: cs
-    tts: Privedl jsem si kamarady.mp3
+    tts: cs-samples/Privedl jsem si kamarady.mp3
   img: img/friends.jpeg
   freq: 237481.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5348,7 +5348,7 @@ concepts:
     tts: Please give me your name.mp3
   - term: Řekněte mi Vaše jméno.
     lang: cs
-    tts: Reknete mi Vase jmeno.mp3
+    tts: cs-samples/Reknete mi Vase jmeno.mp3
   img: img/name.jpeg
   freq: 237198.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5367,7 +5367,7 @@ concepts:
     tts: Its too far to walk.mp3
   - term: Pěšky to je příliš daleko.
     lang: cs
-    tts: Pesky to je prilis daleko.mp3
+    tts: cs-samples/Pesky to je prilis daleko.mp3
   img: img/far.jpeg
   freq: 236136.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5389,7 +5389,7 @@ concepts:
     tts: Film was shot using hand held camera.mp3
   - term: Film byl natočen pomocí ruční kamery.
     lang: cs
-    tts: Film byl natocen pomoci rucni kamery.mp3
+    tts: cs-samples/Film byl natocen pomoci rucni kamery.mp3
   state: ignoreImage
   freq: 235474.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5411,7 +5411,7 @@ concepts:
     tts: Shields at full power.mp3
   - term: Štíty na plný výkon.
     lang: cs
-    tts: Stity na plny vykon.mp3
+    tts: cs-samples/Stity na plny vykon.mp3
   img: img/power.jpeg
   freq: 233800.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5430,7 +5430,7 @@ concepts:
     tts: Why is the door locked.mp3
   - term: Proč jsou ty dveře zamčené?
     lang: cs
-    tts: Proc jsou ty dvere zamcene.mp3
+    tts: cs-samples/Proc jsou ty dvere zamcene.mp3
   img: img/door.jpeg
   freq: 233690.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5449,7 +5449,7 @@ concepts:
     tts: Why cant we wake him up.mp3
   - term: Proč ho nemůžeme vzbudit?
     lang: cs
-    tts: Proc ho nemuzeme vzbudit.mp3
+    tts: cs-samples/Proc ho nemuzeme vzbudit.mp3
   img: img/why.jpeg
   freq: 230829.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5468,7 +5468,7 @@ concepts:
     tts: My family was poor.mp3
   - term: Má rodina byla chudá.
     lang: cs
-    tts: Ma rodina byla chuda.mp3
+    tts: cs-samples/Ma rodina byla chuda.mp3
   img: img/family.jpeg
   freq: 230692.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5497,7 +5497,7 @@ concepts:
     tts: I cant believe this.mp3
   - term: Nemohu tomu uvěřit.
     lang: cs
-    tts: Nemohu tomu uverit.mp3
+    tts: cs-samples/Nemohu tomu uverit.mp3
   img: img/believe.jpeg
   freq: 230181.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5519,7 +5519,7 @@ concepts:
     tts: Yes, I replied.mp3
   - term: Ano, odvětil jsem.
     lang: cs
-    tts: Ano, odvetil jsem.mp3
+    tts: cs-samples/Ano, odvetil jsem.mp3
   img: img/replied.jpeg
   freq: 229913.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5541,7 +5541,7 @@ concepts:
     tts: Can you hear me now.mp3
   - term: Slyšíš mě teď?
     lang: cs
-    tts: Slysis me ted.mp3
+    tts: cs-samples/Slysis me ted.mp3
   img: img/hear.jpeg
   freq: 228408.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5563,7 +5563,7 @@ concepts:
     tts: Have you seen the whole place.mp3
   - term: Už jste to tu viděli celé?
     lang: cs
-    tts: Uz jste to tu videli cele.mp3
+    tts: cs-samples/Uz jste to tu videli cele.mp3
   img: img/whole.jpeg
   freq: 225308.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5582,7 +5582,7 @@ concepts:
     tts: He became one of us.mp3
   - term: Stal se jedním z nás.
     lang: cs
-    tts: Stal se jednim z nas.mp3
+    tts: cs-samples/Stal se jednim z nas.mp3
   state: ignoreImage
   freq: 224811.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5604,7 +5604,7 @@ concepts:
     tts: I had my hands full.mp3
   - term: Měla jsem plné ruce.
     lang: cs
-    tts: Mela jsem plne ruce.mp3
+    tts: cs-samples/Mela jsem plne ruce.mp3
   img: img/full.jpeg
   freq: 224689.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5626,7 +5626,7 @@ concepts:
     tts: I was working, of course.mp3
   - term: Pracoval jsem, samozřejmě.
     lang: cs
-    tts: Pracoval jsem, samozrejme.mp3
+    tts: cs-samples/Pracoval jsem, samozrejme.mp3
   img: img/course.jpeg
   freq: 224657.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5648,7 +5648,7 @@ concepts:
     tts: John did not want us there.mp3
   - term: Jeník nás tam nechtěl.
     lang: cs
-    tts: Jenik nas tam nechtel.mp3
+    tts: cs-samples/Jenik nas tam nechtel.mp3
   img: img/john.jpeg
   freq: 224569.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5670,7 +5670,7 @@ concepts:
     tts: Good morning to all of you.mp3
   - term: Dobré ráno všem.
     lang: cs
-    tts: Dobre rano vsem.mp3
+    tts: cs-samples/Dobre rano vsem.mp3
   img: img/morning.jpeg
   freq: 222284.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5689,7 +5689,7 @@ concepts:
     tts: Pull the other end.mp3
   - term: Táhni za druhý konec!
     lang: cs
-    tts: Tahni za druhy konec.mp3
+    tts: cs-samples/Tahni za druhy konec.mp3
   img: img/end.jpeg
   freq: 221430.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5711,7 +5711,7 @@ concepts:
     tts: Same as the others.mp3
   - term: Stejný jako ti ostatní.
     lang: cs
-    tts: Stejny jako ti ostatni.mp3
+    tts: cs-samples/Stejny jako ti ostatni.mp3
   img: img/others.jpeg
   freq: 219207.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5733,7 +5733,7 @@ concepts:
     tts: He was my friend.mp3
   - term: Byl to můj kamarád.
     lang: cs
-    tts: Byl to muj kamarad.mp3
+    tts: cs-samples/Byl to muj kamarad.mp3
   img: img/friend.jpeg
   freq: 218887.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5755,7 +5755,7 @@ concepts:
     tts: How often do we stop and think.mp3
   - term: Jak často se zastavíme a přemýšlíme?
     lang: cs
-    tts: Jak casto se zastavime a premyslime.mp3
+    tts: cs-samples/Jak casto se zastavime a premyslime.mp3
   state: ignoreImage
   freq: 218764.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5777,7 +5777,7 @@ concepts:
     tts: Stop looking at me like that.mp3
   - term: Přestaň se na mě tak dívat.
     lang: cs
-    tts: Prestan se na me tak divat.mp3
+    tts: cs-samples/Prestan se na me tak divat.mp3
   img: img/looking.jpeg
   freq: 218510.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5799,7 +5799,7 @@ concepts:
     tts: I rarely use the car.mp3
   - term: Auto používám málokdy.
     lang: cs
-    tts: Auto pouzivam malokdy.mp3
+    tts: cs-samples/Auto pouzivam malokdy.mp3
   state: ignoreImage
   freq: 215223.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5818,7 +5818,7 @@ concepts:
     tts: Has her niece arrived from England.mp3
   - term: Už přijela její neteř z Anglie?
     lang: cs
-    tts: Uz prijela jeji neter z Anglie.mp3
+    tts: cs-samples/Uz prijela jeji neter z Anglie.mp3
   img: img/england.jpeg
   freq: 214339.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5837,7 +5837,7 @@ concepts:
     tts: This is an important fact.mp3
   - term: To je významná skutečnost.
     lang: cs
-    tts: To je vyznamna skutecnost.mp3
+    tts: cs-samples/To je vyznamna skutecnost.mp3
   img: img/fact.jpeg
   freq: 214007.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5859,7 +5859,7 @@ concepts:
     tts: I said thats enough.mp3
   - term: Řekl jsem že to stačí.
     lang: cs
-    tts: Rekl jsem ze to staci.mp3
+    tts: cs-samples/Rekl jsem ze to staci.mp3
   img: img/enough.jpeg
   freq: 213322.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5881,7 +5881,7 @@ concepts:
     tts: Enter the number of copies to print.mp3
   - term: Zadejte počet kopií, které chcete vytisknout.
     lang: cs
-    tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
+    tts: cs-samples/Zadejte pocet kopii, ktere chcete vytisknout.mp3
   img: img/number.jpeg
   freq: 212369.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5903,7 +5903,7 @@ concepts:
     tts: The school was closed during the day.mp3
   - term: Škola byla během dne zavřená.
     lang: cs
-    tts: Skola byla behem dne zavrena.mp3
+    tts: cs-samples/Skola byla behem dne zavrena.mp3
   state: ignoreImage
   freq: 212250.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -5925,7 +5925,7 @@ concepts:
     tts: We all live here together.mp3
   - term: Všichni tady žijeme společně.
     lang: cs
-    tts: Vsichni tady zijeme spolecne.mp3
+    tts: cs-samples/Vsichni tady zijeme spolecne.mp3
   img: img/together.jpeg
   freq: 212070.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -5966,7 +5966,7 @@ concepts:
     tts: Now that was quite funny.mp3
   - term: Tak to bylo docela vtipné.
     lang: cs
-    tts: Tak to bylo docela vtipne.mp3
+    tts: cs-samples/Tak to bylo docela vtipne.mp3
   img: img/quite.jpeg
   freq: 210251.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -5988,7 +5988,7 @@ concepts:
     tts: Making of small and bigger parts.mp3
   - term: Výroba drobných i větších dílů.
     lang: cs
-    tts: Vyroba drobnych i vetsich dilu.mp3
+    tts: cs-samples/Vyroba drobnych i vetsich dilu.mp3
   img: img/making.jpeg
   freq: 210031.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -6010,7 +6010,7 @@ concepts:
     tts: Whose name is it.mp3
   - term: Čí je to jméno?
     lang: cs
-    tts: Ci je to jmeno.mp3
+    tts: cs-samples/Ci je to jmeno.mp3
   state: ignoreImage
   freq: 209645.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6032,7 +6032,7 @@ concepts:
     tts: I almost fell in the water.mp3
   - term: Skoro jsem spadl do vody.
     lang: cs
-    tts: Skoro jsem spadl do vody.mp3
+    tts: cs-samples/Skoro jsem spadl do vody.mp3
   img: img/fell.jpeg
   freq: 208344.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -6051,7 +6051,7 @@ concepts:
     tts: She ran to school every morning.mp3
   - term: Běžela každé ráno do školy.
     lang: cs
-    tts: Bezela kazde rano do skoly.mp3
+    tts: cs-samples/Bezela kazde rano do skoly.mp3
   img: img/school.jpeg
   freq: 206442.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6073,7 +6073,7 @@ concepts:
     tts: You should try it.mp3
   - term: Měl byste to zkusit.
     lang: cs
-    tts: Mel byste to zkusit.mp3
+    tts: cs-samples/Mel byste to zkusit.mp3
   img: img/try.jpeg
   freq: 206441.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6095,7 +6095,7 @@ concepts:
     tts: How long is your data kept.mp3
   - term: Jak dlouho jsou vaše data uchovávány?
     lang: cs
-    tts: Jak dlouho jsou vase data uchovavany.mp3
+    tts: cs-samples/Jak dlouho jsou vase data uchovavany.mp3
   state: ignoreImage
   freq: 206329.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6114,7 +6114,7 @@ concepts:
     tts: This is the voice.mp3
   - term: To je ten hlas.
     lang: cs
-    tts: To je ten hlas.mp3
+    tts: cs-samples/To je ten hlas.mp3
   img: img/voice.jpeg
   freq: 206124.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6133,7 +6133,7 @@ concepts:
     tts: They looked at themselves in the mirror.mp3
   - term: Dívali se na sebe do zrcadla
     lang: cs
-    tts: Divali se na sebe do zrcadla.mp3
+    tts: cs-samples/Divali se na sebe do zrcadla.mp3
   img: img/themselves.jpeg
   freq: 205524.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6152,7 +6152,7 @@ concepts:
     tts: You can order anything.mp3
   - term: Můžeš si objednat cokoliv.
     lang: cs
-    tts: Muzes si objednat cokoliv.mp3
+    tts: cs-samples/Muzes si objednat cokoliv.mp3
   state: ignoreImage
   freq: 205144.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6174,7 +6174,7 @@ concepts:
     tts: I met one of them.mp3
   - term: Jednoho z nich jsem potkal.
     lang: cs
-    tts: Jednoho z nich jsem potkal.mp3
+    tts: cs-samples/Jednoho z nich jsem potkal.mp3
   img: img/met.jpeg
   freq: 203956.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6196,7 +6196,7 @@ concepts:
     tts: He returned in ten minutes.mp3
   - term: Vrátil se za deset minut.
     lang: cs
-    tts: Vratil se za deset minut.mp3
+    tts: cs-samples/Vratil se za deset minut.mp3
   img: img/returned.jpeg
   freq: 202041.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6215,7 +6215,7 @@ concepts:
     tts: Not even death will stop me.mp3
   - term: Ani smrt mě nezastaví.
     lang: cs
-    tts: Ani smrt me nezastavi.mp3
+    tts: cs-samples/Ani smrt me nezastavi.mp3
   img: img/death.jpeg
   freq: 201437.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6237,7 +6237,7 @@ concepts:
     tts: Shes still in the city.mp3
   - term: Je pořád ve městě.
     lang: cs
-    tts: Je porad ve meste.mp3
+    tts: cs-samples/Je porad ve meste.mp3
   img: img/city.jpeg
   freq: 198911.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6263,7 +6263,7 @@ concepts:
     tts: I said four beers.mp3
   - term: Říkal jsem čtyři piva.
     lang: cs
-    tts: Rikal jsem ctyri piva.mp3
+    tts: cs-samples/Rikal jsem ctyri piva.mp3
   img: img/four.jpeg
   freq: 196372.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6285,7 +6285,7 @@ concepts:
     tts: The arms are athletic.mp3
   - term: Paže jsou silné.
     lang: cs
-    tts: Paze jsou silne.mp3
+    tts: cs-samples/Paze jsou silne.mp3
   img: img/arms.jpeg
   freq: 194298.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6304,7 +6304,7 @@ concepts:
     tts: I shouldve done it myself.mp3
   - term: Měl jsem to udělat sám.
     lang: cs
-    tts: Mel jsem to udelat sam.mp3
+    tts: cs-samples/Mel jsem to udelat sam.mp3
   img: img/myself.jpeg
   freq: 194173.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6326,7 +6326,7 @@ concepts:
     tts: This is a business meeting.mp3
   - term: Tohle je obchodní setkání.
     lang: cs
-    tts: Tohle je obchodni setkani.mp3
+    tts: cs-samples/Tohle je obchodni setkani.mp3
   img: img/business.jpeg
   freq: 193813.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6348,7 +6348,7 @@ concepts:
     tts: Its too soon.mp3
   - term: Je příliš brzy.
     lang: cs
-    tts: Je prilis brzy.mp3
+    tts: cs-samples/Je prilis brzy.mp3
   img: img/soon.jpeg
   freq: 193680.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -6367,7 +6367,7 @@ concepts:
     tts: You are neither here nor there.mp3
   - term: Nejste ani tady, ani tam.
     lang: cs
-    tts: Nejste ani tady, ani tam.mp3
+    tts: cs-samples/Nejste ani tady, ani tam.mp3
   state: ignoreImage
   freq: 193460.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6389,7 +6389,7 @@ concepts:
     tts: It seems your caution was justified.mp3
   - term: Zdá se, že vaše opatrnost byla oprávněná.
     lang: cs
-    tts: Zda se, ze vase opatrnost byla opravnena.mp3
+    tts: cs-samples/Zda se, ze vase opatrnost byla opravnena.mp3
   state: ignoreImage
   freq: 192229.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6411,7 +6411,7 @@ concepts:
     tts: What do you like the least.mp3
   - term: Co se ti líbí nejméně?
     lang: cs
-    tts: Co se ti libi nejmene.mp3
+    tts: cs-samples/Co se ti libi nejmene.mp3
   img: img/least.jpeg
   freq: 191938.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6433,7 +6433,7 @@ concepts:
     tts: He was a good person.mp3
   - term: Byl to dobrý člověk.
     lang: cs
-    tts: Byl to dobry clovek.mp3
+    tts: cs-samples/Byl to dobry clovek.mp3
   img: img/person.jpeg
   freq: 190764.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6455,7 +6455,7 @@ concepts:
     tts: We followed your instructions.mp3
   - term: Postupovali jsme podle tvých instrukcí.
     lang: cs
-    tts: Postupovali jsme podle tvych instrukci.mp3
+    tts: cs-samples/Postupovali jsme podle tvych instrukci.mp3
   img: img/followed.jpeg
   freq: 190649.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6477,7 +6477,7 @@ concepts:
     tts: Did he seem upset.mp3
   - term: Vypadal rozrušeně?
     lang: cs
-    tts: Vypadal rozrusene.mp3
+    tts: cs-samples/Vypadal rozrusene.mp3
   state: ignoreImage
   freq: 190588.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6496,7 +6496,7 @@ concepts:
     tts: I can read and write.mp3
   - term: Umím číst I psát.
     lang: cs
-    tts: Umim cist I psat.mp3
+    tts: cs-samples/Umim cist I psat.mp3
   img: img/read.jpeg
   freq: 190020.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6518,7 +6518,7 @@ concepts:
     tts: I already regret it.mp3
   - term: Už teď toho lituji.
     lang: cs
-    tts: Uz ted toho lituji.mp3
+    tts: cs-samples/Uz ted toho lituji.mp3
   state: ignoreImage
   freq: 189941.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6537,7 +6537,7 @@ concepts:
     tts: The woman and her children.mp3
   - term: Žena a její děti.
     lang: cs
-    tts: Zena a jeji deti.mp3
+    tts: cs-samples/Zena a jeji deti.mp3
   img: img/woman.jpeg
   freq: 189429.60000
   origins: ["corpus", "conceptDbSamples"]
@@ -6556,7 +6556,7 @@ concepts:
     tts: Less than two hours to home.mp3
   - term: Méně než dvě hodiny domů.
     lang: cs
-    tts: Mene nez dve hodiny domu.mp3
+    tts: cs-samples/Mene nez dve hodiny domu.mp3
   img: img/less.jpeg
   freq: 189322.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6575,7 +6575,7 @@ concepts:
     tts: The human body.mp3
   - term: Lidské tělo.
     lang: cs
-    tts: Lidske telo.mp3
+    tts: cs-samples/Lidske telo.mp3
   img: img/body.jpeg
   freq: 188988.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6597,7 +6597,7 @@ concepts:
     tts: Are we above the law.mp3
   - term: Jsme víc než zákon?
     lang: cs
-    tts: Jsme vic nez zakon.mp3
+    tts: cs-samples/Jsme vic nez zakon.mp3
   img: img/law.jpeg
   freq: 188922.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6619,7 +6619,7 @@ concepts:
     tts: Is that the best you can do.mp3
   - term: To je to nejlepší co dokážeš udělat?
     lang: cs
-    tts: To je to nejlepsi co dokazes udelat.mp3
+    tts: cs-samples/To je to nejlepsi co dokazes udelat.mp3
   img: img/best.jpeg
   freq: 188751.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6638,7 +6638,7 @@ concepts:
     tts: But every hour counts.mp3
   - term: Ale každá hodina se počítá.
     lang: cs
-    tts: Ale kazda hodina se pocita.mp3
+    tts: cs-samples/Ale kazda hodina se pocita.mp3
   img: img/hour.jpeg
   freq: 188459.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6660,7 +6660,7 @@ concepts:
     tts: He wanted to do something different.mp3
   - term: Chtěl udělat něco jiného.
     lang: cs
-    tts: Chtel udelat neco jineho.mp3
+    tts: cs-samples/Chtel udelat neco jineho.mp3
   img: img/different.jpeg
   freq: 186727.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6682,7 +6682,7 @@ concepts:
     tts: I like this girl.mp3
   - term: Ta holka se mi líbí.
     lang: cs
-    tts: Ta holka se mi libi.mp3
+    tts: cs-samples/Ta holka se mi libi.mp3
   img: img/girl.jpeg
   freq: 186549.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6713,7 +6713,7 @@ concepts:
     tts: Its good to be poor.mp3
   - term: Je dobré být chudý.
     lang: cs
-    tts: Je dobre byt chudy.mp3
+    tts: cs-samples/Je dobre byt chudy.mp3
   img: img/poor.jpeg
   freq: 182819.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6735,7 +6735,7 @@ concepts:
     tts: Only he can bring you back.mp3
   - term: Pouze on tě může přivést zpět.
     lang: cs
-    tts: Pouze on te muze privest zpet.mp3
+    tts: cs-samples/Pouze on te muze privest zpet.mp3
   state: ignoreImage
   freq: 182757.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6757,7 +6757,7 @@ concepts:
     tts: You are using certain filter drivers.mp3
   - term: Používáte určité ovladače filtrů.
     lang: cs
-    tts: Pouzivate urcite ovladace filtru.mp3
+    tts: cs-samples/Pouzivate urcite ovladace filtru.mp3
   state: ignoreImage
   freq: 182011.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6776,7 +6776,7 @@ concepts:
     tts: Its a big case.mp3
   - term: To je velký případ.
     lang: cs
-    tts: To je velky pripad.mp3
+    tts: cs-samples/To je velky pripad.mp3
   img: img/big.jpeg
   freq: 181717.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6795,7 +6795,7 @@ concepts:
     tts: Hes not your son Hes mine.mp3
   - term: On není tvůj syn. Je můj.
     lang: cs
-    tts: On neni tvuj syn Je muj.mp3
+    tts: cs-samples/On neni tvuj syn Je muj.mp3
   img: img/son.jpeg
   freq: 179061.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6814,7 +6814,7 @@ concepts:
     tts: This process can take several minutes.mp3
   - term: Tento proces může trvat několik minut.
     lang: cs
-    tts: Tento proces muze trvat nekolik minut.mp3
+    tts: cs-samples/Tento proces muze trvat nekolik minut.mp3
   img: img/several.jpeg
   freq: 178618.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6836,7 +6836,7 @@ concepts:
     tts: I repeat, a green light.mp3
   - term: Opakuji, zelené světlo.
     lang: cs
-    tts: Opakuji, zelene svetlo.mp3
+    tts: cs-samples/Opakuji, zelene svetlo.mp3
   img: img/light.jpeg
   freq: 178355.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6858,7 +6858,7 @@ concepts:
     tts: I was unable to speak.mp3
   - term: Nebyl jsem schopen mluvit.
     lang: cs
-    tts: Nebyl jsem schopen mluvit.mp3
+    tts: cs-samples/Nebyl jsem schopen mluvit.mp3
   img: img/speak.jpeg
   freq: 178191.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6880,7 +6880,7 @@ concepts:
     tts: No further explanation was given.mp3
   - term: Žádné další vysvětlení nebylo dáno.
     lang: cs
-    tts: Zadne dalsi vysvetleni nebylo dano.mp3
+    tts: cs-samples/Zadne dalsi vysvetleni nebylo dano.mp3
   state: ignoreImage
   freq: 177381.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -6902,7 +6902,7 @@ concepts:
     tts: I just want some fresh air.mp3
   - term: Chci jen trošku čerstvého vzduchu.
     lang: cs
-    tts: Chci jen trosku cerstveho vzduchu.mp3
+    tts: cs-samples/Chci jen trosku cerstveho vzduchu.mp3
   img: img/air.jpeg
   freq: 176706.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6924,7 +6924,7 @@ concepts:
     tts: Just wait until she finds out.mp3
   - term: Jen počkejte, až to zjistí!
     lang: cs
-    tts: Jen pockejte, az to zjisti.mp3
+    tts: cs-samples/Jen pockejte, az to zjisti.mp3
   state: ignoreImage
   freq: 176699.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6946,7 +6946,7 @@ concepts:
     tts: Whether you like it or not.mp3
   - term: Ať se ti to líbí nebo ne.
     lang: cs
-    tts: At se ti to libi nebo ne.mp3
+    tts: cs-samples/At se ti to libi nebo ne.mp3
   state: ignoreImage
   freq: 176370.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6965,7 +6965,7 @@ concepts:
     tts: This is not our war.mp3
   - term: Toto není naše válka.
     lang: cs
-    tts: Toto neni nase valka.mp3
+    tts: cs-samples/Toto neni nase valka.mp3
   img: img/war.jpeg
   freq: 176174.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -6987,7 +6987,7 @@ concepts:
     tts: What if its a life form.mp3
   - term: Co když je to forma života?
     lang: cs
-    tts: Co kdyz je to forma zivota.mp3
+    tts: cs-samples/Co kdyz je to forma zivota.mp3
   img: img/form.jpeg
   freq: 176076.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7006,7 +7006,7 @@ concepts:
     tts: She only thinks of herself.mp3
   - term: Ona myslí jen na sebe.
     lang: cs
-    tts: Ona mysli jen na sebe.mp3
+    tts: cs-samples/Ona mysli jen na sebe.mp3
   state: ignoreImage
   freq: 174415.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7028,7 +7028,7 @@ concepts:
     tts: I cant wait any longer.mp3
   - term: Už nemůžu déle čekat.
     lang: cs
-    tts: Uz nemuzu dele cekat.mp3
+    tts: cs-samples/Uz nemuzu dele cekat.mp3
   img: img/longer.jpeg
   freq: 173897.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7050,7 +7050,7 @@ concepts:
     tts: I spoke with the kids.mp3
   - term: Mluvil jsem s dětmi.
     lang: cs
-    tts: Mluvil jsem s detmi.mp3
+    tts: cs-samples/Mluvil jsem s detmi.mp3
   img: img/spoke.jpeg
   freq: 172990.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7072,7 +7072,7 @@ concepts:
     tts: Perhaps we should go home.mp3
   - term: Možná bychom měli jít domů?
     lang: cs
-    tts: Mozna bychom meli jit domu.mp3
+    tts: cs-samples/Mozna bychom meli jit domu.mp3
   state: ignoreImage
   freq: 172512.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7094,7 +7094,7 @@ concepts:
     tts: Have you used this tool before.mp3
   - term: Použili jste tento nástroj již dříve?
     lang: cs
-    tts: Pouzili jste tento nastroj jiz drive.mp3
+    tts: cs-samples/Pouzili jste tento nastroj jiz drive.mp3
   img: img/used.jpeg
   freq: 172460.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7116,7 +7116,7 @@ concepts:
     tts: What about your story.mp3
   - term: A co tvůj příběh?
     lang: cs
-    tts: A co tvuj pribeh.mp3
+    tts: cs-samples/A co tvuj pribeh.mp3
   img: img/story.jpeg
   freq: 172290.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -7138,7 +7138,7 @@ concepts:
     tts: Tell me how it works.mp3
   - term: Řekni mi, jak to funguje.
     lang: cs
-    tts: Rekni mi, jak to funguje.mp3
+    tts: cs-samples/Rekni mi, jak to funguje.mp3
   img: img/works.jpeg
   freq: 170829.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7160,7 +7160,7 @@ concepts:
     tts: I cant hear what hes saying.mp3
   - term: Neslyším, co říká.
     lang: cs
-    tts: Neslysim, co rika.mp3
+    tts: cs-samples/Neslysim, co rika.mp3
   img: img/saying.jpeg
   freq: 170695.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7182,7 +7182,7 @@ concepts:
     tts: And this virus appeared.mp3
   - term: A tento virus se objevil.
     lang: cs
-    tts: A tento virus se objevil.mp3
+    tts: cs-samples/A tento virus se objevil.mp3
   state: ignoreImage
   freq: 169913.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7204,7 +7204,7 @@ concepts:
     tts: The present situation is very complicated.mp3
   - term: Současná situace je velmi komplikovaná.
     lang: cs
-    tts: Soucasna situace je velmi komplikovana.mp3
+    tts: cs-samples/Soucasna situace je velmi komplikovana.mp3
   img: img/present.jpeg
   freq: 169888.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7226,7 +7226,7 @@ concepts:
     tts: It would be rather pointless.mp3
   - term: Bylo by to poněkud zbytečné.
     lang: cs
-    tts: Bylo by to ponekud zbytecne.mp3
+    tts: cs-samples/Bylo by to ponekud zbytecne.mp3
   state: ignoreImage
   freq: 169665.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7248,7 +7248,7 @@ concepts:
     tts: Whos next on my list.mp3
   - term: Tak kdo je další na seznamu?
     lang: cs
-    tts: Tak kdo je dalsi na seznamu.mp3
+    tts: cs-samples/Tak kdo je dalsi na seznamu.mp3
   img: img/next.jpeg
   freq: 169443.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7270,7 +7270,7 @@ concepts:
     tts: Keep your eye on the children.mp3
   - term: Dávejte pozor na děti.
     lang: cs
-    tts: Davejte pozor na deti.mp3
+    tts: cs-samples/Davejte pozor na deti.mp3
   img: img/eye.jpeg
   freq: 168936.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7296,7 +7296,7 @@ concepts:
     tts: You mean a hundred million.mp3
   - term: Chcete říct sto milionů?
     lang: cs
-    tts: Chcete rict sto milionu.mp3
+    tts: cs-samples/Chcete rict sto milionu.mp3
   img: img/hundred.jpeg
   freq: 168628.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7318,7 +7318,7 @@ concepts:
     tts: Theres always a reason.mp3
   - term: Vždycky je nějaký důvod.
     lang: cs
-    tts: Vzdycky je nejaky duvod.mp3
+    tts: cs-samples/Vzdycky je nejaky duvod.mp3
   img: img/reason.jpeg
   freq: 168401.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7337,7 +7337,7 @@ concepts:
     tts: Ive been worried since yesterday.mp3
   - term: Mám starosti od včerejška.
     lang: cs
-    tts: Mam starosti od vcerejska.mp3
+    tts: cs-samples/Mam starosti od vcerejska.mp3
   state: ignoreImage
   freq: 168360.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7359,7 +7359,7 @@ concepts:
     tts: Whats happening there.mp3
   - term: Co se tam děje?
     lang: cs
-    tts: Co se tam deje.mp3
+    tts: cs-samples/Co se tam deje.mp3
   img: img/there.jpeg
   freq: 168331.60000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -7381,7 +7381,7 @@ concepts:
     tts: What makes our company successful.mp3
   - term: Díky čemu je naše firma úspěšná?
     lang: cs
-    tts: Diky cemu je nase firma uspesna.mp3
+    tts: cs-samples/Diky cemu je nase firma uspesna.mp3
   img: img/company.jpeg
   freq: 168252.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7400,7 +7400,7 @@ concepts:
     tts: My car was white.mp3
   - term: Moje auto bylo bílé.
     lang: cs
-    tts: Moje auto bylo bile.mp3
+    tts: cs-samples/Moje auto bylo bile.mp3
   img: img/white.jpeg
   freq: 167140.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -7422,7 +7422,7 @@ concepts:
     tts: Call us and book your place.mp3
   - term: Zavolejte a rezervujte si místo.
     lang: cs
-    tts: Zavolejte a rezervujte si misto.mp3
+    tts: cs-samples/Zavolejte a rezervujte si misto.mp3
   img: img/book.jpeg
   freq: 166876.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7444,7 +7444,7 @@ concepts:
     tts: He was talking, thus proving he was still alive.mp3
   - term: Mluvil, čímž dokazoval, že je stále naživu.
     lang: cs
-    tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
+    tts: cs-samples/Mluvil, cimz dokazoval, ze je stale nazivu.mp3
   state: ignoreImage
   freq: 166130.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7466,7 +7466,7 @@ concepts:
     tts: End of document reached.mp3
   - term: Bylo dosaženo konce dokumentu.
     lang: cs
-    tts: Bylo dosazeno konce dokumentu.mp3
+    tts: cs-samples/Bylo dosazeno konce dokumentu.mp3
   img: img/reached.jpeg
   freq: 165752.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7488,7 +7488,7 @@ concepts:
     tts: So hows the boy.mp3
   - term: Tak jak se má ten chlapec?
     lang: cs
-    tts: Tak jak se ma ten chlapec.mp3
+    tts: cs-samples/Tak jak se ma ten chlapec.mp3
   img: img/boy.jpeg
   freq: 164881.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7507,7 +7507,7 @@ concepts:
     tts: I waited two hours.mp3
   - term: Čekala jsem dvě hodiny.
     lang: cs
-    tts: Cekala jsem dve hodiny.mp3
+    tts: cs-samples/Cekala jsem dve hodiny.mp3
   img: img/hours.jpeg
   freq: 164326.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7529,7 +7529,7 @@ concepts:
     tts: She was the last of her kind.mp3
   - term: Ona byla poslední svého druhu.
     lang: cs
-    tts: Ona byla posledni sveho druhu.mp3
+    tts: cs-samples/Ona byla posledni sveho druhu.mp3
   img: img/kind.jpeg
   freq: 163832.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7548,7 +7548,7 @@ concepts:
     tts: You said five minutes.mp3
   - term: Říkal jsi pět minut.
     lang: cs
-    tts: Rikal jsi pet minut.mp3
+    tts: cs-samples/Rikal jsi pet minut.mp3
   img: img/five.jpeg
   freq: 163511.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7581,7 +7581,7 @@ concepts:
     tts: Please select a city and state.mp3
   - term: Vyberte prosím město a stát.
     lang: cs
-    tts: Vyberte prosim mesto a stat.mp3
+    tts: cs-samples/Vyberte prosim mesto a stat.mp3
   img: img/state.jpeg
   freq: 162829.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7600,7 +7600,7 @@ concepts:
     tts: The government has no choice.mp3
   - term: Vláda nemá na vybranou!
     lang: cs
-    tts: Vlada nema na vybranou.mp3
+    tts: cs-samples/Vlada nema na vybranou.mp3
   img: img/government.jpeg
   freq: 162694.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7622,7 +7622,7 @@ concepts:
     tts: You will be well paid.mp3
   - term: Bude vám dobře zaplaceno.
     lang: cs
-    tts: Bude vam dobre zaplaceno.mp3
+    tts: cs-samples/Bude vam dobre zaplaceno.mp3
   img: img/paid.jpeg
   freq: 162605.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7644,7 +7644,7 @@ concepts:
     tts: I would go even further.mp3
   - term: Zašel bych ještě dále.
     lang: cs
-    tts: Zasel bych jeste dale.mp3
+    tts: cs-samples/Zasel bych jeste dale.mp3
   state: ignoreImage
   freq: 162328.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7663,7 +7663,7 @@ concepts:
     tts: The human body regenerates itself.mp3
   - term: Lidské tělo se regeneruje samo.
     lang: cs
-    tts: Lidske telo se regeneruje samo.mp3
+    tts: cs-samples/Lidske telo se regeneruje samo.mp3
   img: img/itself.jpeg
   freq: 161172.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7685,7 +7685,7 @@ concepts:
     tts: The meeting is open to anyone.mp3
   - term: Schůze je otevřena všem.
     lang: cs
-    tts: Schuze je otevrena vsem.mp3
+    tts: cs-samples/Schuze je otevrena vsem.mp3
   img: img/open.jpeg
   freq: 160795.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -7707,7 +7707,7 @@ concepts:
     tts: You can order by phone.mp3
   - term: Můžete si objednat telefonicky.
     lang: cs
-    tts: Muzete si objednat telefonicky.mp3
+    tts: cs-samples/Muzete si objednat telefonicky.mp3
   img: img/order.jpeg
   freq: 160771.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7729,7 +7729,7 @@ concepts:
     tts: Taking bath is so relaxing.mp3
   - term: Koupání je tak relaxační.
     lang: cs
-    tts: Koupani je tak relaxacni.mp3
+    tts: cs-samples/Koupani je tak relaxacni.mp3
   img: img/taking.jpeg
   freq: 160626.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7751,7 +7751,7 @@ concepts:
     tts: Enemies are all around.mp3
   - term: Nepřátelé jsou všude kolem!
     lang: cs
-    tts: Nepratele jsou vsude kolem.mp3
+    tts: cs-samples/Nepratele jsou vsude kolem.mp3
   img: img/around.jpeg
   freq: 159191.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7773,7 +7773,7 @@ concepts:
     tts: But try to understand.mp3
   - term: Ale snaž se pochopit.
     lang: cs
-    tts: Ale snaz se pochopit.mp3
+    tts: cs-samples/Ale snaz se pochopit.mp3
   img: img/understand.jpeg
   freq: 159041.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7795,7 +7795,7 @@ concepts:
     tts: And what about the other half.mp3
   - term: A co ta druhá polovina?
     lang: cs
-    tts: A co ta druha polovina.mp3
+    tts: cs-samples/A co ta druha polovina.mp3
   img: img/half.jpeg
   freq: 157947.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7817,7 +7817,7 @@ concepts:
     tts: It was within two meters of the house.mp3
   - term: Bylo to do dvou metrů od domu.
     lang: cs
-    tts: Bylo to do dvou metru od domu.mp3
+    tts: cs-samples/Bylo to do dvou metru od domu.mp3
   img: img/within.jpeg
   freq: 156154.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7839,7 +7839,7 @@ concepts:
     tts: I entered the library.mp3
   - term: Vstoupil jsem do knihovny.
     lang: cs
-    tts: Vstoupil jsem do knihovny.mp3
+    tts: cs-samples/Vstoupil jsem do knihovny.mp3
   state: ignoreImage
   freq: 155480.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7861,7 +7861,7 @@ concepts:
     tts: Then it can begin.mp3
   - term: Pak to může začít.
     lang: cs
-    tts: Pak to muze zacit.mp3
+    tts: cs-samples/Pak to muze zacit.mp3
   img: img/begin.jpeg
   freq: 154912.25000
   origins: ["corpus", "conceptDbSamples"]
@@ -7880,7 +7880,7 @@ concepts:
     tts: I did not see it till there was you.mp3
   - term: Neviděl jsem to, než jsi tu byla.
     lang: cs
-    tts: Nevidel jsem to, nez jsi tu byla.mp3
+    tts: cs-samples/Nevidel jsem to, nez jsi tu byla.mp3
   state: ignoreImage
   freq: 154907.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7909,7 +7909,7 @@ concepts:
     tts: Does this even matter.mp3
   - term: Záleží na tom vůbec?
     lang: cs
-    tts: Zalezi na tom vubec.mp3
+    tts: cs-samples/Zalezi na tom vubec.mp3
   img: img/matter.jpeg
   freq: 154339.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7928,7 +7928,7 @@ concepts:
     tts: We know our planetary system well.mp3
   - term: Známe dobře náš planetární systém.
     lang: cs
-    tts: Zname dobre nas planetarni system.mp3
+    tts: cs-samples/Zname dobre nas planetarni system.mp3
   img: img/system.jpeg
   freq: 153835.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7950,7 +7950,7 @@ concepts:
     tts: We have different laws here.mp3
   - term: My tu máme jiné zákony.
     lang: cs
-    tts: My tu mame jine zakony.mp3
+    tts: cs-samples/My tu mame jine zakony.mp3
   img: img/laws.jpeg
   freq: 153830.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -7972,7 +7972,7 @@ concepts:
     tts: Theres still hope.mp3
   - term: Ještě tu je naděje.
     lang: cs
-    tts: Jeste tu je nadeje.mp3
+    tts: cs-samples/Jeste tu je nadeje.mp3
   img: img/hope.jpeg
   freq: 153382.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -7994,7 +7994,7 @@ concepts:
     tts: All power comes from within.mp3
   - term: Všechna síla pochází zevnitř.
     lang: cs
-    tts: Vsechna sila pochazi zevnitr.mp3
+    tts: cs-samples/Vsechna sila pochazi zevnitr.mp3
   state: ignoreImage
   freq: 153299.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8035,7 +8035,7 @@ concepts:
     tts: Entry point must be visible.mp3
   - term: Vstupní bod musí být viditelný.
     lang: cs
-    tts: Vstupni bod musi byt viditelny.mp3
+    tts: cs-samples/Vstupni bod musi byt viditelny.mp3
   img: img/point.jpeg
   freq: 152624.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8057,7 +8057,7 @@ concepts:
     tts: She has a happy nature.mp3
   - term: Má veselou povahu.
     lang: cs
-    tts: Ma veselou povahu.mp3
+    tts: cs-samples/Ma veselou povahu.mp3
   img: img/nature.jpeg
   freq: 152360.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8079,7 +8079,7 @@ concepts:
     tts: I wont be able to do that for so long.mp3
   - term: Nebudu to moct dělat tak hrozně dlouho.
     lang: cs
-    tts: Nebudu to moct delat tak hrozne dlouho.mp3
+    tts: cs-samples/Nebudu to moct delat tak hrozne dlouho.mp3
   state: ignoreImage
   freq: 151658.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8101,7 +8101,7 @@ concepts:
     tts: I received your letter.mp3
   - term: Dostal jsem váš dopis.
     lang: cs
-    tts: Dostal jsem vas dopis.mp3
+    tts: cs-samples/Dostal jsem vas dopis.mp3
   img: img/letter.jpeg
   freq: 151273.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8120,7 +8120,7 @@ concepts:
     tts: France is no good for me.mp3
   - term: Francie pro mě není dobrá.
     lang: cs
-    tts: Francie pro me neni dobra.mp3
+    tts: cs-samples/Francie pro me neni dobra.mp3
   img: img/france.jpeg
   freq: 151108.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8142,7 +8142,7 @@ concepts:
     tts: A very good plan indeed.mp3
   - term: Opravdu moc dobrý plán.
     lang: cs
-    tts: Opravdu moc dobry plan.mp3
+    tts: cs-samples/Opravdu moc dobry plan.mp3
   state: ignoreImage
   freq: 150986.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8161,7 +8161,7 @@ concepts:
     tts: Lets go party.mp3
   - term: Pojďme na párty!
     lang: cs
-    tts: Pojdme na party.mp3
+    tts: cs-samples/Pojdme na party.mp3
   img: img/party.jpeg
   freq: 148515.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8183,7 +8183,7 @@ concepts:
     tts: Thats a nice round number.mp3
   - term: To je pěkně kulaté číslo.
     lang: cs
-    tts: To je pekne kulate cislo.mp3
+    tts: cs-samples/To je pekne kulate cislo.mp3
   img: img/round.jpeg
   freq: 148447.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8202,7 +8202,7 @@ concepts:
     tts: Thats just an idea.mp3
   - term: To je jen nápad.
     lang: cs
-    tts: To je jen napad.mp3
+    tts: cs-samples/To je jen napad.mp3
   img: img/idea.jpeg
   freq: 148188.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8224,7 +8224,7 @@ concepts:
     tts: Please fill in the following information.mp3
   - term: Vyplňte prosím následující údaje!
     lang: cs
-    tts: Vyplnte prosim nasledujici udaje.mp3
+    tts: cs-samples/Vyplnte prosim nasledujici udaje.mp3
   img: img/information.jpeg
   freq: 147869.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8246,7 +8246,7 @@ concepts:
     tts: It cant be seen from directly above.mp3
   - term: Přímo shora to není vidět.
     lang: cs
-    tts: Primo zhora to neni videt.mp3
+    tts: cs-samples/Primo zhora to neni videt.mp3
   img: img/above.jpeg
   freq: 147753.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8268,7 +8268,7 @@ concepts:
     tts: He is alone now.mp3
   - term: Je teď tak sám.
     lang: cs
-    tts: Je ted tak sam.mp3
+    tts: cs-samples/Je ted tak sam.mp3
   img: img/alone.jpeg
   freq: 147639.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8287,7 +8287,7 @@ concepts:
     tts: But it is possible.mp3
   - term: Ale možné to je.
     lang: cs
-    tts: Ale mozne to je.mp3
+    tts: cs-samples/Ale mozne to je.mp3
   img: img/possible.jpeg
   freq: 147091.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8306,7 +8306,7 @@ concepts:
     tts: At your service.mp3
   - term: K vašim službám.
     lang: cs
-    tts: K vasim sluzbam.mp3
+    tts: cs-samples/K vasim sluzbam.mp3
   img: img/service.jpeg
   freq: 146302.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8328,7 +8328,7 @@ concepts:
     tts: Hens lay white eggs.mp3
   - term: Slepice kladou bílá vejce.
     lang: cs
-    tts: Slepice kladou bila vejce.mp3
+    tts: cs-samples/Slepice kladou bila vejce.mp3
   img: img/lay.jpeg
   freq: 146055.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8347,7 +8347,7 @@ concepts:
     tts: Nice to meet you.mp3
   - term: Je hezké se s tebou setkat.
     lang: cs
-    tts: Je hezke se s tebou setkat.mp3
+    tts: cs-samples/Je hezke se s tebou setkat.mp3
   img: img/meet.jpeg
   freq: 145712.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8369,7 +8369,7 @@ concepts:
     tts: You want to talk about art.mp3
   - term: Chcete mluvit o umění?
     lang: cs
-    tts: Chcete mluvit o umeni.mp3
+    tts: cs-samples/Chcete mluvit o umeni.mp3
   img: img/art.jpeg
   freq: 145697.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8388,7 +8388,7 @@ concepts:
     tts: I know London very well.mp3
   - term: Znám Londýn velmi dobře.
     lang: cs
-    tts: Znam Londyn velmi dobre.mp3
+    tts: cs-samples/Znam Londyn velmi dobre.mp3
   img: img/london.jpeg
   freq: 145606.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8410,7 +8410,7 @@ concepts:
     tts: The hen laid an egg.mp3
   - term: Slepice snesla vejce.
     lang: cs
-    tts: Slepice snesla vejce.mp3
+    tts: cs-samples/Slepice snesla vejce.mp3
   img: img/laid.jpeg
   freq: 145490.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8431,7 +8431,7 @@ concepts:
     tts: You led me here.mp3
   - term: Tys mě sem přivedla.
     lang: cs
-    tts: Tys me sem privedla.mp3
+    tts: cs-samples/Tys me sem privedla.mp3
   img: img/led.jpeg
   freq: 145393.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8464,7 +8464,7 @@ concepts:
     tts: Group by size.mp3
   - term: Seskupit podle velikosti.
     lang: cs
-    tts: Seskupit podle velikosti.mp3
+    tts: cs-samples/Seskupit podle velikosti.mp3
   img: img/group.jpeg
   freq: 145209.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8486,7 +8486,7 @@ concepts:
     tts: What do you think hes doing.mp3
   - term: Co myslíš, že dělá?
     lang: cs
-    tts: Co myslis, ze dela.mp3
+    tts: cs-samples/Co myslis, ze dela.mp3
   img: img/doing.jpeg
   freq: 145131.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8508,7 +8508,7 @@ concepts:
     tts: Its not so bad.mp3
   - term: Tak špatné to není.
     lang: cs
-    tts: Tak spatne to neni.mp3
+    tts: cs-samples/Tak spatne to neni.mp3
   img: img/bad.jpeg
   freq: 143899.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8530,7 +8530,7 @@ concepts:
     tts: Let me help you.mp3
   - term: Dovolte mi, abych Vám pomohl.
     lang: cs
-    tts: Dovolte mi, abych Vam pomohl.mp3
+    tts: cs-samples/Dovolte mi, abych Vam pomohl.mp3
   img: img/help.jpeg
   freq: 143716.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8552,7 +8552,7 @@ concepts:
     tts: An opened suitcase on the bed.mp3
   - term: Otevřený kufr na posteli.
     lang: cs
-    tts: Otevreny kufr na posteli.mp3
+    tts: cs-samples/Otevreny kufr na posteli.mp3
   img: img/opened.jpeg
   freq: 143625.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8574,7 +8574,7 @@ concepts:
     tts: I hit the ground.mp3
   - term: Dopadl jsem na zem.
     lang: cs
-    tts: Dopadl jsem na zem.mp3
+    tts: cs-samples/Dopadl jsem na zem.mp3
   img: img/ground.jpeg
   freq: 143541.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -8596,7 +8596,7 @@ concepts:
     tts: The second step is not required.mp3
   - term: Druhý krok není vyžadován.
     lang: cs
-    tts: Druhy krok neni vyzadovan.mp3
+    tts: cs-samples/Druhy krok neni vyzadovan.mp3
   img: img/second.jpeg
   freq: 143161.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8618,7 +8618,7 @@ concepts:
     tts: I was afraid to call.mp3
   - term: Bála jsem se zavolat.
     lang: cs
-    tts: Bala jsem se zavolat.mp3
+    tts: cs-samples/Bala jsem se zavolat.mp3
   img: img/call.jpeg
   freq: 143102.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8637,7 +8637,7 @@ concepts:
     tts: Its a very small town.mp3
   - term: Tohle je velmi malé město.
     lang: cs
-    tts: Tohle je velmi male mesto.mp3
+    tts: cs-samples/Tohle je velmi male mesto.mp3
   img: img/town.jpeg
   freq: 142754.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8656,7 +8656,7 @@ concepts:
     tts: It was near the beach.mp3
   - term: Bylo to poblíž pláže.
     lang: cs
-    tts: Bylo to pobliz plaze.mp3
+    tts: cs-samples/Bylo to pobliz plaze.mp3
   img: img/near.jpeg
   freq: 142483.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8678,7 +8678,7 @@ concepts:
     tts: It was strong, whatever it was.mp3
   - term: Bylo to silné, ať to bylo cokoliv.
     lang: cs
-    tts: Bylo to silne, at to bylo cokoliv.mp3
+    tts: cs-samples/Bylo to silne, at to bylo cokoliv.mp3
   img: img/strong.jpeg
   freq: 141950.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8697,7 +8697,7 @@ concepts:
     tts: We continued along the main road.mp3
   - term: Pokračovali jsme po hlavní silnici.
     lang: cs
-    tts: Pokracovali jsme po hlavni silnici.mp3
+    tts: cs-samples/Pokracovali jsme po hlavni silnici.mp3
   img: img/along.jpeg
   freq: 141819.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8774,7 +8774,7 @@ concepts:
     tts: I was going to return it.mp3
   - term: Chtěla jsem to vrátit.
     lang: cs
-    tts: Chtela jsem to vratit.mp3
+    tts: cs-samples/Chtela jsem to vratit.mp3
   img: img/return.jpeg
   freq: 140295.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8818,7 +8818,7 @@ concepts:
     tts: How do you feel, dear.mp3
   - term: Jak se cítíš, drahá?
     lang: cs
-    tts: Jak se citis, draha.mp3
+    tts: cs-samples/Jak se citis, draha.mp3
   img: img/dear.jpeg
   freq: 139827.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8840,7 +8840,7 @@ concepts:
     tts: A dead body lies there.mp3
   - term: Leží tam mrtvé tělo.
     lang: cs
-    tts: Lezi tam mrtve telo.mp3
+    tts: cs-samples/Lezi tam mrtve telo.mp3
   img: img/dead.jpeg
   freq: 139580.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -8884,7 +8884,7 @@ concepts:
     tts: It felt so real.mp3
   - term: Bylo to tak skutečné.
     lang: cs
-    tts: Bylo to tak skutecne.mp3
+    tts: cs-samples/Bylo to tak skutecne.mp3
   state: ignoreImage
   freq: 139116.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -8921,7 +8921,7 @@ concepts:
     tts: He was a good student.mp3
   - term: Byl to dobrý žák.
     lang: cs
-    tts: Byl to dobry zak.mp3
+    tts: cs-samples/Byl to dobry zak.mp3
   img: img/student.jpeg
   freq: 138627.05000
   origins: ["corpus", "conceptDbSamples"]
@@ -8940,7 +8940,7 @@ concepts:
     tts: Only nine thousand a month.mp3
   - term: Jen devět tisíc za měsíc.
     lang: cs
-    tts: Jen devet tisic za mesic.mp3
+    tts: cs-samples/Jen devet tisic za mesic.mp3
   img: img/thousand.jpeg
   freq: 138465.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9003,7 +9003,7 @@ concepts:
     tts: That also means no high fees.mp3
   - term: To také znamená žádné vysoké poplatky.
     lang: cs
-    tts: To take znamena zadne vysoke poplatky.mp3
+    tts: cs-samples/To take znamena zadne vysoke poplatky.mp3
   img: img/high.jpeg
   freq: 137721.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9025,7 +9025,7 @@ concepts:
     tts: We appreciate your interest.mp3
   - term: Ceníme si vašeho zájemu.
     lang: cs
-    tts: Cenime si vaseho zajemu.mp3
+    tts: cs-samples/Cenime si vaseho zajemu.mp3
   img: img/interest.jpeg
   freq: 137310.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9047,7 +9047,7 @@ concepts:
     tts: This claim is therefore rejected.mp3
   - term: Toto tvrzení se proto zamítá.
     lang: cs
-    tts: Toto tvrzeni se proto zamita.mp3
+    tts: cs-samples/Toto tvrzeni se proto zamita.mp3
   state: ignoreImage
   freq: 137061.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9088,7 +9088,7 @@ concepts:
     tts: English only from now on.mp3
   - term: Odteď už jen anglicky.
     lang: cs
-    tts: Odted uz jen anglicky.mp3
+    tts: cs-samples/Odted uz jen anglicky.mp3
   img: img/english.jpeg
   freq: 136965.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9110,7 +9110,7 @@ concepts:
     tts: Have you tried it.mp3
   - term: Zkusil jsi to někdy?
     lang: cs
-    tts: Zkusil jsi to nekdy.mp3
+    tts: cs-samples/Zkusil jsi to nekdy.mp3
   state: ignoreImage
   freq: 136507.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9163,7 +9163,7 @@ concepts:
     tts: I want to show you this.mp3
   - term: Chci ti ukázat tohle.
     lang: cs
-    tts: Chci ti ukazat tohle.mp3
+    tts: cs-samples/Chci ti ukazat tohle.mp3
   img: img/show.jpeg
   freq: 135451.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9204,7 +9204,7 @@ concepts:
     tts: I can explain everything.mp3
   - term: Já to můžu všechno vysvětlit.
     lang: cs
-    tts: Ja to muzu vsechno vysvetlit.mp3
+    tts: cs-samples/Ja to muzu vsechno vysvetlit.mp3
   img: img/everything.jpeg
   freq: 134993.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9223,7 +9223,7 @@ concepts:
     tts: This is a known fact.mp3
   - term: To je známý fakt.
     lang: cs
-    tts: To je znamy fakt.mp3
+    tts: cs-samples/To je znamy fakt.mp3
   state: ignoreImage
   freq: 134231.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9254,7 +9254,7 @@ concepts:
     tts: Asking permission to land.mp3
   - term: Žádám o povolení přistát.
     lang: cs
-    tts: Zadam o povoleni pristat.mp3
+    tts: cs-samples/Zadam o povoleni pristat.mp3
   img: img/land.jpeg
   freq: 133539.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9273,7 +9273,7 @@ concepts:
     tts: Placed next to the bed.mp3
   - term: Umístěný vedle postele.
     lang: cs
-    tts: Umisteny vedle postele.mp3
+    tts: cs-samples/Umisteny vedle postele.mp3
   img: img/placed.jpeg
   freq: 133084.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9295,7 +9295,7 @@ concepts:
     tts: Who gave you the order to fire.mp3
   - term: Kdo vám dal rozkaz střílet?
     lang: cs
-    tts: Kdo vam dal rozkaz strilet.mp3
+    tts: cs-samples/Kdo vam dal rozkaz strilet.mp3
   img: img/fire.jpeg
   freq: 133021.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9317,7 +9317,7 @@ concepts:
     tts: Those letters are mine.mp3
   - term: To jsou moje dopisy.
     lang: cs
-    tts: To jsou moje dopisy.mp3
+    tts: cs-samples/To jsou moje dopisy.mp3
   img: img/letters.jpeg
   freq: 132785.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9339,7 +9339,7 @@ concepts:
     tts: Value must be zero or greater.mp3
   - term: Hodnota musí být rovna nebo větší než nula.
     lang: cs
-    tts: Hodnota musi byt rovna nebo vetsi nez nula.mp3
+    tts: cs-samples/Hodnota musi byt rovna nebo vetsi nez nula.mp3
   img: img/greater.jpeg
   freq: 132045.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9361,7 +9361,7 @@ concepts:
     tts: Someone else was here.mp3
   - term: Byl tu někdo jiný.
     lang: cs
-    tts: Byl tu nekdo jiny.mp3
+    tts: cs-samples/Byl tu nekdo jiny.mp3
   state: ignoreImage
   freq: 131928.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9402,7 +9402,7 @@ concepts:
     tts: The user chooses either yes or no.mp3
   - term: Uživatel zvolí buď ano nebo ne.
     lang: cs
-    tts: Uzivatel zvoli bud ano nebo ne.mp3
+    tts: cs-samples/Uzivatel zvoli bud ano nebo ne.mp3
   img: img/either.jpeg
   freq: 130841.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9452,7 +9452,7 @@ concepts:
     tts: Your lips are so red.mp3
   - term: Máš tak červené rty.
     lang: cs
-    tts: Mas tak cervene rty.mp3
+    tts: cs-samples/Mas tak cervene rty.mp3
   img: img/lips.jpeg
   freq: 129473.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9482,7 +9482,7 @@ concepts:
     tts: They hide the truth from you.mp3
   - term: Skrývají před vámi pravdu.
     lang: cs
-    tts: Skryvaji pred vami pravdu.mp3
+    tts: cs-samples/Skryvaji pred vami pravdu.mp3
   img: img/truth.jpeg
   freq: 128851.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9504,7 +9504,7 @@ concepts:
     tts: The history is complicated.mp3
   - term: Dějiny jsou komplikované.
     lang: cs
-    tts: Dejiny jsou komplikovane.mp3
+    tts: cs-samples/Dejiny jsou komplikovane.mp3
   img: img/history.jpeg
   freq: 128431.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9548,7 +9548,7 @@ concepts:
     tts: Sometimes you need to see old friends.mp3
   - term: Občas je třeba navštívit staré přátele.
     lang: cs
-    tts: Obcas je treba navstivit stare pratele.mp3
+    tts: cs-samples/Obcas je treba navstivit stare pratele.mp3
   state: ignoreImage
   freq: 128077.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9570,7 +9570,7 @@ concepts:
     tts: Why would she care.mp3
   - term: Proč by se měla starat?
     lang: cs
-    tts: Proc by se mela starat.mp3
+    tts: cs-samples/Proc by se mela starat.mp3
   img: img/care.jpeg
   freq: 128025.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9589,7 +9589,7 @@ concepts:
     tts: Long time ago.mp3
   - term: Dávno.
     lang: cs
-    tts: Davno.mp3
+    tts: cs-samples/Davno.mp3
   state: ignoreImage
   freq: 127753.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -9611,7 +9611,7 @@ concepts:
     tts: I must leave you now.mp3
   - term: Nyní vás musím opustit.
     lang: cs
-    tts: Nyni vas musim opustit.mp3
+    tts: cs-samples/Nyni vas musim opustit.mp3
   img: img/leave.jpeg
   freq: 127075.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9633,7 +9633,7 @@ concepts:
     tts: The united states of america.mp3
   - term: Spojené státy americké
     lang: cs
-    tts: Spojene staty americke.mp3
+    tts: cs-samples/Spojene staty americke.mp3
   img: img/united.jpeg
   freq: 126674.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9652,7 +9652,7 @@ concepts:
     tts: Trees stolen from my garden.mp3
   - term: Kradené stromy z mé zahrady!
     lang: cs
-    tts: Kradene stromy z me zahrady.mp3
+    tts: cs-samples/Kradene stromy z me zahrady.mp3
   img: img/trees.jpeg
   freq: 126469.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9693,7 +9693,7 @@ concepts:
     tts: You like my new office.mp3
   - term: Líbí se ti má nová kancelář?
     lang: cs
-    tts: Libi se ti ma nova kancelar.mp3
+    tts: cs-samples/Libi se ti ma nova kancelar.mp3
   img: img/office.jpeg
   freq: 125703.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9715,7 +9715,7 @@ concepts:
     tts: His arrogant manner.mp3
   - term: Jeho arogantní způsob.
     lang: cs
-    tts: Jeho arogantni zpusob.mp3
+    tts: cs-samples/Jeho arogantni zpusob.mp3
   state: ignoreImage
   freq: 125206.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9737,7 +9737,7 @@ concepts:
     tts: You only have one wish left.mp3
   - term: Zbývá ti už jen jedno přání.
     lang: cs
-    tts: Zbyva ti uz jen jedno prani.mp3
+    tts: cs-samples/Zbyva ti uz jen jedno prani.mp3
   img: img/wish.jpeg
   freq: 124440.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9759,7 +9759,7 @@ concepts:
     tts: Yes Although I dont know when.mp3
   - term: Ano. I když nevím kdy.
     lang: cs
-    tts: Ano I kdyz nevim kdy.mp3
+    tts: cs-samples/Ano I kdyz nevim kdy.mp3
   state: ignoreImage
   freq: 124296.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9800,7 +9800,7 @@ concepts:
     tts: Keep other persons at safe distance.mp3
   - term: Udržujte ostatní osoby v bezpečné vzdálenosti!
     lang: cs
-    tts: Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
+    tts: cs-samples/Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
   img: img/persons.jpeg
   freq: 123820.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9829,7 +9829,7 @@ concepts:
     tts: The pillows are too hard.mp3
   - term: Tyhle polštáře jsou moc tvrdé!
     lang: cs
-    tts: Tyhle polstare jsou moc tvrde.mp3
+    tts: cs-samples/Tyhle polstare jsou moc tvrde.mp3
   img: img/hard.jpeg
   freq: 123625.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9851,7 +9851,7 @@ concepts:
     tts: What happened to her.mp3
   - term: Co se jí přihodilo?
     lang: cs
-    tts: Co se ji prihodilo.mp3
+    tts: cs-samples/Co se ji prihodilo.mp3
   state: ignoreImage
   freq: 123421.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9873,7 +9873,7 @@ concepts:
     tts: The spirit only is real.mp3
   - term: Jen duch je skutečný.
     lang: cs
-    tts: Jen duch je skutecny.mp3
+    tts: cs-samples/Jen duch je skutecny.mp3
   img: img/spirit.jpeg
   freq: 123099.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -9895,7 +9895,7 @@ concepts:
     tts: You can finally be free.mp3
   - term: Konečně můžete být svobodní.
     lang: cs
-    tts: Konecne muzete byt svobodni.mp3
+    tts: cs-samples/Konecne muzete byt svobodni.mp3
   img: img/free.jpeg
   freq: 122955.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -9958,7 +9958,7 @@ concepts:
     tts: I drew a face.mp3
   - term: Nakreslil jsem obličej.
     lang: cs
-    tts: Nakreslil jsem oblicej.mp3
+    tts: cs-samples/Nakreslil jsem oblicej.mp3
   img: img/drew.jpeg
   freq: 122264.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -10015,7 +10015,7 @@ concepts:
     tts: Tomorrow evening at eight.mp3
   - term: Zítra večer v osm?
     lang: cs
-    tts: Zitra vecer v osm.mp3
+    tts: cs-samples/Zitra vecer v osm.mp3
   img: img/evening.jpeg
   freq: 122106.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -10037,7 +10037,7 @@ concepts:
     tts: The effect is medium to strong.mp3
   - term: Účinek je střední až silný.
     lang: cs
-    tts: Ucinek je stredni az silny.mp3
+    tts: cs-samples/Ucinek je stredni az silny.mp3
   img: img/effect.jpeg
   freq: 122005.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -10059,7 +10059,7 @@ concepts:
     tts: The green earth, you say.mp3
   - term: Zelená země, říkáš?
     lang: cs
-    tts: Zelena zeme, rikas.mp3
+    tts: cs-samples/Zelena zeme, rikas.mp3
   img: img/earth.jpeg
   freq: 121948.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -10078,7 +10078,7 @@ concepts:
     tts: They were right behind us.mp3
   - term: Byli těsně za námi.
     lang: cs
-    tts: Byli tesne za nami.mp3
+    tts: cs-samples/Byli tesne za nami.mp3
   img: img/behind.jpeg
   freq: 121776.00000
   origins: ["corpus", "conceptDbSamples"]
@@ -10100,7 +10100,7 @@ concepts:
     tts: What is the root cause.mp3
   - term: Co je hlavní příčina?
     lang: cs
-    tts: Co je hlavni pricina.mp3
+    tts: cs-samples/Co je hlavni pricina.mp3
   state: ignoreImage
   freq: 121764.50000
   origins: ["corpus", "conceptDbSamples"]
@@ -15681,7 +15681,7 @@ concepts:
   state: ignore
   freq: 68285.00000
   origins: ["JingleBells"]
-##  bright   ################################################################ █ 89%
+##  bright   ################################################################ █ 92%
 - terms: 
   - term: bright
     lang: en
@@ -15692,6 +15692,7 @@ concepts:
   examples: 
   - term: Making spirits bright.
     lang: en
+    tts: en-samples/Making spirits bright.mp3
   - term: Vytváření duchů jasných.
     lang: cs
   img: img/bright.jpeg
