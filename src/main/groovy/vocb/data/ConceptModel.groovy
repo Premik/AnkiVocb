@@ -29,7 +29,7 @@ public class Concept {
 	public BigDecimal getCompleteness( ) {
 		if (state == "ignore") return 1
 		BigDecimal termsCp = terms.values()*.completeness*.div(terms.size()).sum()?:0
-		BigDecimal exCp = examples.values()*.completeness*.div(terms.size()).sum()?:0
+		BigDecimal exCp = examples.values()*.completeness*.div(examples.size()).sum()?:0
 		BigDecimal[] grp =	[
 			Math.min(terms.size(), 2)/2,
 			0.01+ Math.min(examples.size(), 2)/2,
