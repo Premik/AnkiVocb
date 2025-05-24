@@ -60,11 +60,19 @@ public class ExampleComparatorMatch {
 
 		return pairs*500 + longWordMatch*5 + exactMatches*100 + variants*50 - sentenceLen + prefered*40 + preferedVars*30
 	}()
+	
+	public static Closure<String> defaultColors = {ExampleComparatorMatch self, String word, String defaultColor ->
+		color(word, defaultColor)
+	}
+	
+	public static Closure<String> invertedFgBgColors = {ExampleComparatorMatch self, String word, String defaultColor ->
+		color(color(word, defaultColor), REVERSE_VIDEO)
+	}
 
-	public String sentenceToAnsiString(String defaultColor=RED, boolean printMiss=true) {
+	public String sentenceToAnsiString(Closure<String> colors=defaultColors) {
 		if (!missWords) {
 			//Exact match
-			return color(a.sentence, BOLD)
+			return colors(this, a.sentence, BOLD)
 		}
 		String s= a.words.withIndex().collect { String wa, int i->
 			String col = RED
@@ -75,11 +83,11 @@ public class ExampleComparatorMatch {
 				if (commonWordVariants.contains(wa) || commonWordVariants.contains(waNoBrackets)) {
 					col = GREEN
 				} else {
-					if (!printMiss) return null
+					//if (!printMiss) return null
 				}
 			}
 			if (i==0) wa = wa.capitalize()
-			return color(wa, col)
+			return colors(this, wa, col)
 		}.findAll().join(" ") + "."
 	}
 
@@ -92,9 +100,9 @@ public class ExampleComparatorMatch {
 		return commonWordVariants.intersect(wordList) //All variants last
 	}
 
-	public String toAnsiString() {
-		String inv = inverted().sentenceToAnsiString(NORMAL).take(1000).padRight(120)
-		String tx= sentenceToAnsiString().take(1000)
+	public String toAnsiString(Closure<String> colors=defaultColors) {
+		String inv = inverted().sentenceToAnsiString(colors).take(1000).padRight(120)
+		String tx= sentenceToAnsiString(colors).take(1000)
 		return "$inv ${color('<-',BLUE)} $tx ${color("", NORMAL)}"
 	}
 

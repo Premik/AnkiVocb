@@ -55,6 +55,7 @@ def test() {
 	println color("BLINK", Ansi.BLINK)
 	println color("RAPID_BLINK", Ansi.RAPID_BLINK)
 	println color("REVERSE_VIDEO", Ansi.REVERSE_VIDEO)
+	println color("REVERSE_VIDEO" + color("GREEN", Ansi.GREEN) , Ansi.REVERSE_VIDEO)
 	println color("INVISIBLE_TEXT", Ansi.INVISIBLE_TEXT)
 
 	println color("RED", Ansi.RED)
