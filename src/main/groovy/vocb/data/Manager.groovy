@@ -80,13 +80,8 @@ public class Manager {
 	}
 	
 	public Collection<Concept> findConceptsByFirstTermAllVariant(String firstTerm, boolean preferOrigialWord=true) {
-		List<String> variants = wn.wordVariants(wn.stripBracketsOut(firstTerm))
-		if (preferOrigialWord) {
-			//The exact word first, only when not found try to find variants
-			variants.push(firstTerm)
-		}
-		variants
-		.findResults {conceptByFirstTerm[it] }		
+		List<String> variants = wn.wordVariants(wn.stripBracketsOut(firstTerm), preferOrigialWord)		
+		variants.findResults {conceptByFirstTerm[it] }		
 	}
 	
 	
