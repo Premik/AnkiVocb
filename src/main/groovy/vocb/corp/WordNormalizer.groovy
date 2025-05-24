@@ -18,8 +18,10 @@ public class WordNormalizer {
 	@Lazy Pattern niceWordPatter = ~ /^[\p{L}]+/  //No digits in words etc
 
 
-	public Set<String> uniqueueTokens(CharSequence input) {
-		tokens(input).collect(Collectors.toSet())
+	public Set<String> uniqueueTokens(CharSequence input, boolean doLemming=false) {
+		Stream<String> stream = tokens(input)
+		if (doLemming) stream = lemming(stream)
+		stream.collect(Collectors.toCollection( LinkedHashSet.&new ) )
 	}
 
 	public Stream<String> tokens(CharSequence input) {
@@ -27,6 +29,14 @@ public class WordNormalizer {
 				//.filter {String s -> (s=~ niceWordPatter).size() > 0 }
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
 				.map {String s ->s.toLowerCase()}
+	}
+	
+	public Stream<String> lemming( Stream<String> inp) {
+		inp.flatMap { String s->
+			if (s.endsWith('s')) return [s, s[0..-2]].stream() //Remove 's'
+			return [s, "${s}s"].stream() //Add 's'
+		}
+		
 	}
 
 	public String normalizeSentence(CharSequence sentence) {
@@ -52,7 +62,7 @@ public class WordNormalizer {
 		}
 		ret
 				.collectMany {  it.split(/[,;:]\s(=\s*)/) as List} //Split on non-full sentences
-				.collectMany { it.split(/\s+(?=\p{Lu})/) as List } //Missing dots, but capital letter next
+				.collectMany { it.split(/\s+(?=[\p{Lu}&&[^I]])/) as List } //Missing dots, but capital letter next (but ignore capital I)
 				.collect {it.trim()}
 				.collect {it.replaceAll(/[!?;.,"'":]$/, "") } //Remove sentence terminators
 				.collect {it.trim()}
@@ -114,6 +124,10 @@ public class WordNormalizer {
 		phraseFreq
 				.findAll {String w, Integer f-> f >=cutOff }
 				.sort { -it.value}
+	}
+	
+	public Set<String> commonWordOf(String sen, String sen2) {
+		uniqueueTokens(sen, true).intersect(uniqueueTokens(sen2, true))
 	}
 
 	static void main(String... args) {

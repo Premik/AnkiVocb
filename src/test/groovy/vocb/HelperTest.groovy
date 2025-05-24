@@ -114,20 +114,39 @@ class HelperTest {
 	@Test
 	void cutPaste() {
 		assert Helper.cutPaste(0,0, [1]) == [1]
-		assert Helper.cutPaste(0,1, [1,2]) == [2,1]
-		assert Helper.cutPaste(1,0, [1,2]) == [2,1]
-		assert Helper.cutPaste(1,0, [1,2,3,4,5]) == [2,1,3,4,5]
-		assert Helper.cutPaste(0,4, [1,2,3,4,5]) == [2,3,4,5,1]
-		assert Helper.cutPaste(4,0, [1,2,3,4,5]) == [5,1,2,3,4]
-		assert Helper.cutPaste(1,3, [1,2,3,4,5]) == [1,3,4,2,5]
+		assert Helper.cutPaste(0,1, [1, 2]) == [2, 1]
+		assert Helper.cutPaste(1,0, [1, 2]) == [2, 1]
+		assert Helper.cutPaste(1,0, [1, 2, 3, 4, 5]) == [2, 1, 3, 4, 5]
+		assert Helper.cutPaste(0,4, [1, 2, 3, 4, 5]) == [2, 3, 4, 5, 1]
+		assert Helper.cutPaste(4,0, [1, 2, 3, 4, 5]) == [5, 1, 2, 3, 4]
+		assert Helper.cutPaste(1,3, [1, 2, 3, 4, 5]) == [1, 3, 4, 2, 5]}
+
+	@Test
+	void rePos() {
+		List<String> col =Helper.reposition(["a", "b", "c"]) { String item, Integer i->
+			if (item != "c") return i
+			return 0
+		}
+		assert col == ["c", "a", "b"]
 		
+		col =Helper.reposition(["a", "b", "c"]) { String item, Integer i->
+			if (item != "b") return i
+			return 2
+		}
+		assert col == ["a", "c", "b"]
 	}
-	
+
+	@Test
+	void rePosSafe() {
+		groovy.test.GroovyAssert.shouldFail(AssertionError) {
+			assert Helper.reposition([1, 2, 3], {Integer a, Integer b->0})
+		}
+	}
+
 	@Test
 	@Disabled
 	void eachMatchingFile() {
 		new File("/tmp/work/1.txt") << "test"
 		assert Helper.matchingFiles([Paths.get("/tmp")], "1.txt")
-		
 	}
 }

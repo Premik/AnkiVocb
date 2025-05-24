@@ -58,7 +58,17 @@ class WordNormalizerTest {
 			Down came the rain
 			and washed the spider out.
 			'''.stripIndent())
-		assert sts.size() == 2
+		assert sts[0] == "The itsy bitsy spider climbed up the waterspout"
+		assert sts[1] == "Down came the rain and washed the spider out"
+	}
+	
+	@Test
+	void sentencesI() {
+		assert norm.sentences('''You say I am sad.''').size() == 1
+		assert norm.sentences('''
+              The story I must tell
+             ''').size() == 1
+		 
 	}
 
 	@Test
@@ -69,6 +79,8 @@ class WordNormalizerTest {
 			Take the girls tonight
 			and sing this sleighing song;'''.stripIndent())
 		sts.each {println "\n${it}"}
+		assert sts[0] == "Now the ground is white"
+		assert sts[1] == "Go it while you're young"		
 		assert sts.size() == 3
 	}
 	
@@ -76,5 +88,11 @@ class WordNormalizerTest {
 	void sentencesNorm() {		
 		assert norm.normalizeSentence("Hello world!") == "hello world"
 		assert norm.normalizeSentence("hello world") == "hello world"
+	}
+	
+	@Test
+	void lemm() {
+		assert norm.uniqueueTokens("Hello world!", true) == ["hello", "hellos", "world", "worlds"] as LinkedHashSet
+		
 	}
 }

@@ -326,6 +326,17 @@ public class Manager {
 	List<Concept> conceptsFromWordsInExample(Example e) {
 		conceptsFromWordsInSentence(e.firstTerm)
 	}
+	
+	public Example findBestExampleForSentence(String sentence) {
+		Set<String> words = wn.uniqueueTokens(sentence)
+		Set<Example> cand =  words.collectMany {String w->
+			examplesByFirstTermWords[w]
+		} as LinkedHashSet
+		return cand.max { Example e->
+			//Example covering the most words in the give sentence
+			wn.commonWordOf(e.firstTerm, sentence).size()			
+		}		
+	}
 
 
 	public void moveToSubFolders() {
