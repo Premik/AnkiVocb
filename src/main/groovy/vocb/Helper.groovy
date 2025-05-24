@@ -253,6 +253,10 @@ public class Helper {
 	{
 		point1 + alpha * (point2 - point1)
 	}
+	
+	public static String stripExt(String fn) {
+		fn?.replaceFirst(~/\.[^\.]+$/, '')?: ""
+	}
 }
 
 
