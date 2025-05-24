@@ -85,10 +85,18 @@ public class Pack {
 
 
 	void findFirst1000() {
-		Set<String> top = Corpus.buildDef().topX(1000) as LinkedHashSet		
+				
 		PackExport pe =  packExportOf(pkgsByName("First1000").first())
 		Manager dbMan = pe.dbMan
-		assert !(new HashSet(top).removeAll(dbMan.conceptByFirstTerm.keySet()))
+		Set<String> top = Corpus.buildDef().topX(1000) as LinkedHashSet
+		//Set<String> topInDb = top.collectMany { dbMan.findConceptsByFirstTermAllVariant(it) }.collect {it.firstTerm} as LinkedHashSet
+		top.findAll { !dbMan.findConceptsByFirstTermAllVariant(it)}
+		.findAll {!it.contains("'")}
+		.findAll {it.size()>1}
+		.each {
+			println it
+		}
+		return
 
 		println "-"*100
 
