@@ -67,11 +67,18 @@ public class ExampleAppender {
 		println "$c $czWords"
 
 		czWords // Each alt translation
-				.collect { String czWord ->
-					Map trnJson = trn.exampleJsonRun(enWord, czWord)
-					return trn.extractExamples(trnJson)
+				.collectMany { String czWord ->
+					wn.splitBrackets(enWord)
+					.findAll()
+					.collect {(String)it}
+					.collect {String enw-> //Each en bracket 
+						Map trnJson = trn.exampleJsonRun(enw, czWord)						
+					}.collectMany { Map trnJson->
+						trn.extractExamples(trnJson)
+					}
+					
+					
 				}
-				.collectMany {it}
 				.sort {Tuple2<String, String> a, Tuple2<String, String> b ->
 					String sa= a[0]
 					String sb= b[0]
@@ -187,23 +194,9 @@ public class ExampleAppender {
 			//String tx  = new File("/data/src/AnkiVocb/pkg/FiveLittleMonkeys/sentences.txt").text
 			//String tx  = new File("/data/src/AnkiVocb/pkg/EverythingIsAwesome/sentences.txt").text
 			//String tx  = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
-			String tx = '''
-			available privacy general development local section security total download media including location account content provide sale credit categories advanced application
-			topic comment financial below mobile login legal options status browse issue range request professional reference term original 
-            common display daily natural official average technical region record environment district calendar update resource material written adult requirements via 
-			cheap third individual plus usually percent fast function global subscribe various knowledge error currently construction loan taken friday lake basic response 
-			practice holiday chat speed loss discount higher political kingdom storage across inside solution necessary according particular
-			'''.split(/\s+/).reverse().join(" ")
-
-			String tx2 = '''
-			available privacy general development local download including location account content provide sale credit categories advanced
-		topic financial below login legal options status browse range request reference term original
-		common daily natural average region record environment district calendar update resource material adult
-		cheap third individual plus usually percent fast global subscribe various knowledge loan taken friday lake basic response
-		practice holiday loss higher kingdom storage across inside necessary according
-			'''
 			
-			tx = "available privacy general development local download including location account content provide sale"
+			
+			String tx = "storage"
 
 			dbMan.load()
 			todoFromText(tx)
