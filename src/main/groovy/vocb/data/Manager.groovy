@@ -268,13 +268,27 @@ public class Manager {
 		}
 		println "${'-'*80}"
 		println "Clashes"
-		cGrp.findAll{it.value.size() > 1} each {CharSequence ml, Set<Concept> cs->
+		cGrp.findAll{it.value.size() > 1}.each {CharSequence ml, Set<Concept> cs->
 			List<Term> termsWithTts = cs.collectMany {it.terms.findAll {it.tts == ml} }
 			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
 				println "${cs.collect {it.firstTerm} }  $ml: ${termsWithTts}. $cs"
 			}
 		}
 		println "${'-'*80}"
+		println "Example dups"
+		Map<String, Example> ex = [:] 
+		db.examples.each { Example e->
+			String sen = wn.uniqueueTokens(e.firstTerm, true).join(" ")
+			if (ex.containsKey(sen)) {
+				println """\
+                   Duplicate example ${color(sen, BLUE)} 
+                      ${color(e.toString(), BOLD)}. 
+                      ${color(ex[sen].toString(), BOLD)}.
+                   """.stripIndent()
+			}
+			ex.put(sen, e)
+		}
+		
 		/*println "Plurals:"
 		 db.concepts
 		 .collectMany { Concept c-> c.termsByLang("en")}
@@ -396,6 +410,8 @@ public class Manager {
 			load()
 			validate()
 			printStats()
+			//allTextWithLang("en").each {println it}
+			
 
 			//moveToSubFolders()
 			//println allTextWithLang("en")

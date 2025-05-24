@@ -106,9 +106,10 @@ public class ExampleAppender {
 				println color(sen, WHITE)
 				return
 			}			
-			if (mis.size() > 2)  {				
+			if (mis.size() > 2 || !e)  {				
 				print color(sen, RED)
-				dbMan.db.examples.add(new Example(terms: [Term.enTerm(sen)] ))
+				e = new Example(terms: [Term.enTerm(sen)] )
+				dbMan.db.examples.add(e)
 				dbMan.save()
 			} else {
 				print sen				

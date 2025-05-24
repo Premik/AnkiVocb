@@ -10,7 +10,7 @@ concepts:
     tts: cs-terms/jablko.mp3
   img: img/apple.jpeg
   freq: 13506.05000
-  origins: ["top500", "conceptDbSamples"]
+  origins: ["top500", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: kitty
     lang: en
@@ -24,7 +24,7 @@ concepts:
     tts: cs-terms/kocicka.mp3
   img: img/kitty.jpeg
   freq: 278.47900
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: a
     lang: en
@@ -33,7 +33,7 @@ concepts:
   - term: ve
     lang: en
   state: ignore
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: the
     lang: en
@@ -305,7 +305,7 @@ concepts:
     tts: cs-terms/byt.mp3
   state: ignoreImage
   freq: 9104176.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: had
     lang: en
@@ -316,7 +316,7 @@ concepts:
     tts: cs-terms/mel.mp3
   state: ignoreImage
   freq: 6139336.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: he
     lang: en
@@ -327,7 +327,7 @@ concepts:
     tts: cs-terms/on-cs.mp3
   img: img/he.jpeg
   freq: 5653229.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: with
     lang: en
@@ -338,7 +338,7 @@ concepts:
     tts: cs-terms/s.mp3
   state: ignoreImage
   freq: 5204263.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: his
     lang: en
@@ -349,7 +349,7 @@ concepts:
     tts: cs-terms/jeho.mp3
   state: ignoreImage
   freq: 4409709.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: have
     lang: en
@@ -363,7 +363,7 @@ concepts:
     tts: cs-terms/maji.mp3
   state: ignoreImage
   freq: 4325227.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: as
     lang: en
@@ -377,7 +377,7 @@ concepts:
     tts: cs-terms/jak.mp3
   state: ignoreImage
   freq: 3659513.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: at
     lang: en
@@ -391,7 +391,7 @@ concepts:
     tts: cs-terms/v.mp3
   img: img/at.jpeg
   freq: 3429739.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: were
     lang: en
@@ -405,7 +405,7 @@ concepts:
     tts: cs-terms/byli.mp3
   state: ignoreImage
   freq: 3323884.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: are
     lang: en
@@ -419,7 +419,7 @@ concepts:
     tts: cs-terms/jsi.mp3
   state: ignoreImage
   freq: 3224178.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: not
     lang: en
@@ -433,7 +433,7 @@ concepts:
     tts: cs-terms/neni.mp3
   img: img/not.jpeg
   freq: 2876549.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: from
     lang: en
@@ -447,7 +447,7 @@ concepts:
     tts: cs-terms/od.mp3
   state: ignoreImage
   freq: 2872012.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: or
     lang: en
@@ -458,7 +458,7 @@ concepts:
     tts: cs-terms/nebo.mp3
   img: img/or.jpeg
   freq: 2803803.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: her
     lang: en
@@ -469,7 +469,7 @@ concepts:
     tts: cs-terms/jeji.mp3
   state: ignoreImage
   freq: 2800225.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: an
     lang: en
@@ -477,7 +477,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 2641417.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: said
     lang: en
@@ -491,7 +491,7 @@ concepts:
     tts: cs-terms/rikal.mp3
   img: img/said.jpeg
   freq: 2637136.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: which
     lang: en
@@ -505,7 +505,7 @@ concepts:
     tts: cs-terms/ktere.mp3
   state: ignoreImage
   freq: 2633444.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: by
     lang: en
@@ -519,7 +519,7 @@ concepts:
     tts: cs-terms/od.mp3
   state: ignoreImage
   freq: 2546805.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: been
     lang: en
@@ -533,7 +533,7 @@ concepts:
     tts: cs-terms/byval.mp3
   state: ignoreImage
   freq: 2357654.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: him
     lang: en
@@ -547,7 +547,7 @@ concepts:
     tts: cs-terms/mu.mp3
   state: ignoreImage
   freq: 2324852.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: my
     lang: en
@@ -561,7 +561,7 @@ concepts:
     tts: cs-terms/moje.mp3
   img: img/my.jpeg
   freq: 2098760.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: this
     lang: en
@@ -575,7 +575,7 @@ concepts:
     tts: cs-terms/toto.mp3
   img: img/this.jpeg
   freq: 2010471.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: their
     lang: en
@@ -589,7 +589,7 @@ concepts:
     tts: cs-terms/sve.mp3
   state: ignoreImage
   freq: 1951647.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: me
     lang: en
@@ -603,7 +603,7 @@ concepts:
     tts: cs-terms/mi.mp3
   img: img/me.jpeg
   freq: 1868378.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: who
     lang: en
@@ -617,7 +617,7 @@ concepts:
     tts: cs-terms/ktery.mp3
   state: ignoreImage
   freq: 1745473.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: would
     lang: en
@@ -631,7 +631,7 @@ concepts:
     tts: cs-terms/bych.mp3
   state: ignoreImage
   freq: 1663186.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: has
     lang: en
@@ -642,7 +642,7 @@ concepts:
     tts: cs-terms/ma.mp3
   state: ignoreImage
   freq: 1602329.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: so
     lang: en
@@ -656,7 +656,7 @@ concepts:
     tts: cs-terms/takze.mp3
   state: ignoreImage
   freq: 1497187.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: if
     lang: en
@@ -670,7 +670,7 @@ concepts:
     tts: cs-terms/jestlize.mp3
   state: ignoreImage
   freq: 1442322.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: say
     lang: en
@@ -684,7 +684,7 @@ concepts:
     tts: cs-terms/rekni.mp3
   img: img/say.jpeg
   freq: 1351631.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: made
     lang: en
@@ -698,7 +698,7 @@ concepts:
     tts: cs-terms/udelal.mp3
   img: img/made.jpeg
   freq: 1188501.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: into
     lang: en
@@ -709,7 +709,7 @@ concepts:
     tts: cs-terms/do-cs.mp3
   img: img/into.jpeg
   freq: 1186067.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: did
     lang: en
@@ -723,7 +723,7 @@ concepts:
     tts: cs-terms/udelala.mp3
   state: ignoreImage
   freq: 1185720.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: will
     lang: en
@@ -737,7 +737,7 @@ concepts:
     tts: cs-terms/vule.mp3
   state: ignoreImage
   freq: 1172186.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: more
     lang: en
@@ -748,7 +748,7 @@ concepts:
     tts: cs-terms/vice.mp3
   img: img/more.jpeg
   freq: 1159978.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: your
     lang: en
@@ -762,7 +762,7 @@ concepts:
     tts: cs-terms/tvuj.mp3
   img: img/your.jpeg
   freq: 1159087.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: when
     lang: en
@@ -776,7 +776,7 @@ concepts:
     tts: cs-terms/kdy.mp3
   img: img/when.jpeg
   freq: 1124132.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: could
     lang: en
@@ -790,7 +790,7 @@ concepts:
     tts: cs-terms/mohla by.mp3
   state: ignoreImage
   freq: 1094521.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: some
     lang: en
@@ -804,7 +804,7 @@ concepts:
     tts: cs-terms/nejake.mp3
   img: img/some.jpeg
   freq: 1075480.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: our
     lang: en
@@ -818,7 +818,7 @@ concepts:
     tts: cs-terms/nas.mp3
   state: ignoreImage
   freq: 1011790.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: man
     lang: en
@@ -832,7 +832,7 @@ concepts:
     tts: cs-terms/clovek.mp3
   img: img/man.jpeg
   freq: 991438.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: go
     lang: en
@@ -860,7 +860,7 @@ concepts:
     tts: cs-terms/sve.mp3
   state: ignoreImage
   freq: 956494.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: up
     lang: en
@@ -893,7 +893,7 @@ concepts:
     tts: cs-terms/muzi.mp3
   img: img/men.jpeg
   freq: 923053.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: we
     lang: en
@@ -918,7 +918,7 @@ concepts:
     tts: cs-terms/potom.mp3
   img: img/then.jpeg
   freq: 899806.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: see
     lang: en
@@ -943,7 +943,7 @@ concepts:
     tts: cs-terms/prisla.mp3
   state: ignoreImage
   freq: 873144.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: may
     lang: en
@@ -957,7 +957,7 @@ concepts:
     tts: cs-terms/mohou.mp3
   state: ignoreImage
   freq: 862605.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: any
     lang: en
@@ -971,7 +971,7 @@ concepts:
     tts: cs-terms/libovolne.mp3
   img: img/any.jpeg
   freq: 835359.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: make
     lang: en
@@ -985,7 +985,7 @@ concepts:
     tts: cs-terms/provest.mp3
   img: img/make.jpeg
   freq: 832384.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: about
     lang: en
@@ -999,7 +999,7 @@ concepts:
     tts: cs-terms/priblizne.mp3
   img: img/about.jpeg
   freq: 811618.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: two
     lang: en
@@ -1013,7 +1013,7 @@ concepts:
     tts: cs-terms/dve.mp3
   img: img/two.jpeg
   freq: 802196.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: these
     lang: en
@@ -1027,7 +1027,7 @@ concepts:
     tts: cs-terms/techto.mp3
   state: ignoreImage
   freq: 802187.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: than
     lang: en
@@ -1038,7 +1038,7 @@ concepts:
     tts: cs-terms/nez.mp3
   img: img/than.jpeg
   freq: 782249.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: get
     lang: en
@@ -1066,7 +1066,7 @@ concepts:
     tts: cs-terms/dalsi.mp3
   img: img/other.jpeg
   freq: 773847.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: us
     lang: en
@@ -1080,7 +1080,7 @@ concepts:
     tts: cs-terms/nam.mp3
   state: ignoreImage
   freq: 761415.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: should
     lang: en
@@ -1094,7 +1094,7 @@ concepts:
     tts: cs-terms/meli byste.mp3
   state: ignoreImage
   freq: 751209.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: come
     lang: en
@@ -1114,7 +1114,7 @@ concepts:
     lang: en
   state: ignore
   freq: 748992.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: she
     lang: en
@@ -1125,7 +1125,7 @@ concepts:
     tts: cs-terms/ona.mp3
   img: img/she.jpeg
   freq: 747484.30000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: very
     lang: en
@@ -1139,7 +1139,7 @@ concepts:
     tts: cs-terms/velice.mp3
   state: ignoreImage
   freq: 747094.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: think
     lang: en
@@ -1153,7 +1153,7 @@ concepts:
     tts: cs-terms/premyslet.mp3
   img: img/think.jpeg
   freq: 744283.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: upon
     lang: en
@@ -1161,7 +1161,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 740814.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: only
     lang: en
@@ -1175,7 +1175,7 @@ concepts:
     tts: cs-terms/jenom.mp3
   state: ignoreImage
   freq: 718033.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: people
     lang: en
@@ -1189,7 +1189,7 @@ concepts:
     tts: cs-terms/osoby.mp3
   img: img/people.jpeg
   freq: 696604.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: went
     lang: en
@@ -1203,7 +1203,7 @@ concepts:
     tts: cs-terms/sli.mp3
   state: ignoreImage
   freq: 690186.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: great
     lang: en
@@ -1217,7 +1217,7 @@ concepts:
     tts: cs-terms/velke.mp3
   img: img/great.jpeg
   freq: 672584.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: now
     lang: en
@@ -1231,7 +1231,7 @@ concepts:
     tts: cs-terms/ted.mp3
   img: img/now.jpeg
   freq: 668424.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: take
     lang: en
@@ -1245,7 +1245,7 @@ concepts:
     tts: cs-terms/brat.mp3
   img: img/take.jpeg
   freq: 663615.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: little
     lang: en
@@ -1270,7 +1270,7 @@ concepts:
     tts: cs-terms/den.mp3
   img: img/day.jpeg
   freq: 657552.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: eyes
     lang: en
@@ -1281,7 +1281,7 @@ concepts:
     tts: cs-terms/oci.mp3
   img: img/eyes.jpeg
   freq: 647788.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: like
     lang: en
@@ -1309,7 +1309,7 @@ concepts:
     tts: cs-terms/muset.mp3
   state: ignoreImage
   freq: 639579.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: over
     lang: en
@@ -1323,7 +1323,7 @@ concepts:
     tts: cs-terms/pres.mp3
   img: img/over.jpeg
   freq: 632459.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: those
     lang: en
@@ -1348,7 +1348,7 @@ concepts:
     tts: cs-terms/takove.mp3
   state: ignoreImage
   freq: 627941.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: can
     lang: en
@@ -1362,7 +1362,7 @@ concepts:
     tts: cs-terms/mohou.mp3
   img: img/can.jpeg
   freq: 610396.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: what
     lang: en
@@ -1376,7 +1376,7 @@ concepts:
     tts: cs-terms/jake.mp3
   img: img/what.jpeg
   freq: 606801.75000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: before
     lang: en
@@ -1390,7 +1390,7 @@ concepts:
     tts: cs-terms/drive-cs.mp3
   img: img/before.jpeg
   freq: 586348.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mr
     lang: en
@@ -1401,7 +1401,7 @@ concepts:
     tts: cs-terms/pan.mp3
   img: img/mr.jpeg
   freq: 581487.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: never
     lang: en
@@ -1412,7 +1412,7 @@ concepts:
     tts: cs-terms/nikdy.mp3
   img: img/never.jpeg
   freq: 581128.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: life
     lang: en
@@ -1437,7 +1437,7 @@ concepts:
     tts: cs-terms/moc.mp3
   state: ignoreImage
   freq: 573925.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: things
     lang: en
@@ -1448,7 +1448,7 @@ concepts:
     tts: cs-terms/veci.mp3
   img: img/things.jpeg
   freq: 567559.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: many
     lang: en
@@ -1462,7 +1462,7 @@ concepts:
     tts: cs-terms/mnozi.mp3
   img: img/many.jpeg
   freq: 564758.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: old
     lang: en
@@ -1476,7 +1476,7 @@ concepts:
     tts: cs-terms/stary.mp3
   img: img/old.jpeg
   freq: 562247.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: after
     lang: en
@@ -1490,7 +1490,7 @@ concepts:
     tts: cs-terms/pote.mp3
   state: ignoreImage
   freq: 560432.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: years
     lang: en
@@ -1504,7 +1504,7 @@ concepts:
     tts: cs-terms/leta.mp3
   img: img/years.jpeg
   freq: 547420.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: most
     lang: en
@@ -1518,7 +1518,7 @@ concepts:
     tts: cs-terms/nejvic.mp3
   state: ignoreImage
   freq: 543388.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: also
     lang: en
@@ -1532,7 +1532,7 @@ concepts:
     tts: cs-terms/taky.mp3
   state: ignoreImage
   freq: 536324.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: year
     lang: en
@@ -1543,7 +1543,7 @@ concepts:
     tts: cs-terms/rok.mp3
   img: img/year.jpeg
   freq: 532499.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: saw
     lang: en
@@ -1557,7 +1557,7 @@ concepts:
     tts: cs-terms/pila.mp3
   img: img/saw.jpeg
   freq: 520922.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: too
     lang: en
@@ -1613,7 +1613,7 @@ concepts:
     tts: cs-terms/trvalo.mp3
   state: ignoreImage
   freq: 501669.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: might
     lang: en
@@ -1624,7 +1624,7 @@ concepts:
     tts: cs-terms/by mohlo.mp3
   img: img/might.jpeg
   freq: 498257.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: first
     lang: en
@@ -1649,7 +1649,7 @@ concepts:
     tts: cs-terms/bez.mp3
   img: img/without.jpeg
   freq: 496066.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: good
     lang: en
@@ -1677,7 +1677,7 @@ concepts:
     tts: cs-terms/sebe.mp3
   state: ignoreImage
   freq: 486383.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: own
     lang: en
@@ -1691,7 +1691,7 @@ concepts:
     tts: cs-terms/vlastnit.mp3
   state: ignoreImage
   freq: 478353.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: again
     lang: en
@@ -1705,7 +1705,7 @@ concepts:
     tts: cs-terms/zase.mp3
   img: img/again.jpeg
   freq: 476062.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: give
     lang: en
@@ -1719,7 +1719,7 @@ concepts:
     tts: cs-terms/dej.mp3
   img: img/give.jpeg
   freq: 469253.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: new
     lang: en
@@ -1733,7 +1733,7 @@ concepts:
     tts: cs-terms/novy.mp3
   img: img/new.jpeg
   freq: 467016.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: every
     lang: en
@@ -1747,7 +1747,7 @@ concepts:
     tts: cs-terms/kazde.mp3
   state: ignoreImage
   freq: 458591.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: same
     lang: en
@@ -1761,14 +1761,14 @@ concepts:
     tts: cs-terms/stejne.mp3
   img: img/same.jpeg
   freq: 456106.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: shall
     lang: en
     tts: en-terms/shall.mp3
   state: ignore
   freq: 449921.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: seemed
     lang: en
@@ -1782,7 +1782,7 @@ concepts:
     tts: cs-terms/vypadalo.mp3
   state: ignoreImage
   freq: 447884.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: looked
     lang: en
@@ -1796,7 +1796,7 @@ concepts:
     tts: cs-terms/podival.mp3
   state: ignoreImage
   freq: 447491.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: called
     lang: en
@@ -1810,7 +1810,7 @@ concepts:
     tts: cs-terms/volal.mp3
   img: img/called.jpeg
   freq: 445602.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: want
     lang: en
@@ -1824,7 +1824,7 @@ concepts:
     tts: cs-terms/chtit.mp3
   img: img/want.jpeg
   freq: 434592.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: de
     lang: cs
@@ -1858,7 +1858,7 @@ concepts:
     tts: cs-terms/ziskal.mp3
   state: ignoreImage
   freq: 432016.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tell
     lang: en
@@ -1872,7 +1872,7 @@ concepts:
     tts: cs-terms/rekni.mp3
   state: ignoreImage
   freq: 431716.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thing
     lang: en
@@ -1897,7 +1897,7 @@ concepts:
     tts: cs-terms/dobra.mp3
   img: img/well.jpeg
   freq: 430407.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: done
     lang: en
@@ -1911,7 +1911,7 @@ concepts:
     tts: cs-terms/hotovo.mp3
   img: img/done.jpeg
   freq: 430389.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: heard
     lang: en
@@ -1925,7 +1925,7 @@ concepts:
     tts: cs-terms/zaslechl.mp3
   img: img/heard.jpeg
   freq: 429972.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: days
     lang: en
@@ -1939,7 +1939,7 @@ concepts:
     tts: cs-terms/dnu.mp3
   img: img/days.jpeg
   freq: 426104.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: told
     lang: en
@@ -1953,7 +1953,7 @@ concepts:
     tts: cs-terms/receno.mp3
   state: ignoreImage
   freq: 424696.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: lord
     lang: en
@@ -1964,7 +1964,7 @@ concepts:
   state: ignore
   img: img/lord.jpeg
   freq: 422407.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: asked
     lang: en
@@ -1978,7 +1978,7 @@ concepts:
     tts: cs-terms/zeptal.mp3
   img: img/asked.jpeg
   freq: 420044.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: going
     lang: en
@@ -2006,7 +2006,7 @@ concepts:
     tts: cs-terms/spatren.mp3
   state: ignoreImage
   freq: 418862.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: having
     lang: en
@@ -2017,7 +2017,7 @@ concepts:
     tts: cs-terms/majici.mp3
   state: ignoreImage
   freq: 415355.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: even
     lang: en
@@ -2031,7 +2031,7 @@ concepts:
     tts: cs-terms/sudy.mp3
   img: img/even.jpeg
   freq: 414918.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: find
     lang: en
@@ -2059,7 +2059,7 @@ concepts:
     tts: cs-terms/znal.mp3
   img: img/knew.jpeg
   freq: 413101.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: through
     lang: en
@@ -2084,7 +2084,7 @@ concepts:
     tts: cs-terms/svet.mp3
   img: img/world.jpeg
   freq: 410531.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: being
     lang: en
@@ -2098,7 +2098,7 @@ concepts:
     tts: cs-terms/bytost.mp3
   state: ignoreImage
   freq: 406957.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: long
     lang: en
@@ -2112,7 +2112,7 @@ concepts:
     tts: cs-terms/dlouho.mp3
   img: img/long.jpeg
   freq: 405456.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: am
     lang: en
@@ -2123,7 +2123,7 @@ concepts:
     tts: cs-terms/jsem.mp3
   state: ignoreImage
   freq: 398204.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: against
     lang: en
@@ -2134,7 +2134,7 @@ concepts:
     tts: cs-terms/proti.mp3
   img: img/against.jpeg
   freq: 386919.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hands
     lang: en
@@ -2145,7 +2145,7 @@ concepts:
     tts: cs-terms/ruce.mp3
   img: img/hands.jpeg
   freq: 385081.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: three
     lang: en
@@ -2159,7 +2159,7 @@ concepts:
     tts: cs-terms/trojka.mp3
   img: img/three.jpeg
   freq: 384445.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: words
     lang: en
@@ -2170,7 +2170,7 @@ concepts:
     tts: cs-terms/slova.mp3
   img: img/words.jpeg
   freq: 380328.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: back
     lang: en
@@ -2184,7 +2184,7 @@ concepts:
     tts: cs-terms/zada.mp3
   img: img/back.jpeg
   freq: 379741.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: young
     lang: en
@@ -2195,7 +2195,7 @@ concepts:
     tts: cs-terms/mlady.mp3
   img: img/young.jpeg
   freq: 375916.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: between
     lang: en
@@ -2206,7 +2206,7 @@ concepts:
     tts: cs-terms/mezi.mp3
   img: img/between.jpeg
   freq: 371596.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: gave
     lang: en
@@ -2220,7 +2220,7 @@ concepts:
     tts: cs-terms/dali.mp3
   img: img/gave.jpeg
   freq: 369036.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: put
     lang: en
@@ -2234,7 +2234,7 @@ concepts:
     tts: cs-terms/dat.mp3
   img: img/put.jpeg
   freq: 366334.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thought
     lang: en
@@ -2248,7 +2248,7 @@ concepts:
     tts: cs-terms/myslenka.mp3
   img: img/thought.jpeg
   freq: 363066.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: away
     lang: en
@@ -2262,7 +2262,7 @@ concepts:
     tts: cs-terms/daleko.mp3
   img: img/away.jpeg
   freq: 362907.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: yet
     lang: en
@@ -2276,7 +2276,7 @@ concepts:
     tts: cs-terms/dosud.mp3
   state: ignoreImage
   freq: 362049.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thou
     lang: en
@@ -2284,7 +2284,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 355857.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cannot
     lang: en
@@ -2298,7 +2298,7 @@ concepts:
     tts: cs-terms/nelze.mp3
   state: ignoreImage
   freq: 355656.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: brought
     lang: en
@@ -2312,7 +2312,7 @@ concepts:
     tts: cs-terms/donesl.mp3
   state: ignoreImage
   freq: 349925.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ever
     lang: en
@@ -2326,7 +2326,7 @@ concepts:
     tts: cs-terms/vubec.mp3
   img: img/ever.jpeg
   freq: 347490.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: under
     lang: en
@@ -2337,7 +2337,7 @@ concepts:
     tts: cs-terms/pod.mp3
   img: img/under.jpeg
   freq: 346344.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: last
     lang: en
@@ -2351,7 +2351,7 @@ concepts:
     tts: cs-terms/minuly.mp3
   img: img/last.jpeg
   freq: 344624.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: place
     lang: en
@@ -2362,7 +2362,7 @@ concepts:
     tts: cs-terms/misto.mp3
   img: img/place.jpeg
   freq: 341350.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: always
     lang: en
@@ -2376,7 +2376,7 @@ concepts:
     tts: cs-terms/stale.mp3
   state: ignoreImage
   freq: 337654.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: turned
     lang: en
@@ -2390,7 +2390,7 @@ concepts:
     tts: cs-terms/otocil.mp3
   img: img/turned.jpeg
   freq: 337367.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: taken
     lang: en
@@ -2403,7 +2403,7 @@ concepts:
     tts: cs-terms/prevzaty.mp3
   state: ignore
   freq: 335210.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: night
     lang: en
@@ -2414,7 +2414,7 @@ concepts:
     tts: cs-terms/noc.mp3
   img: img/night.jpeg
   freq: 334694.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: does
     lang: en
@@ -2425,7 +2425,7 @@ concepts:
     tts: cs-terms/dela.mp3
   state: ignoreImage
   freq: 334332.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: nothing
     lang: en
@@ -2436,7 +2436,7 @@ concepts:
     tts: cs-terms/nic.mp3
   img: img/nothing.jpeg
   freq: 334204.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: found
     lang: en
@@ -2450,7 +2450,7 @@ concepts:
     tts: cs-terms/nasel.mp3
   img: img/found.jpeg
   freq: 333444.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hand
     lang: en
@@ -2461,7 +2461,7 @@ concepts:
     tts: cs-terms/ruku.mp3
   img: img/hand.jpeg
   freq: 333229.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: let
     lang: en
@@ -2475,7 +2475,7 @@ concepts:
     tts: cs-terms/at-cs.mp3
   state: ignoreImage
   freq: 332310.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: few
     lang: en
@@ -2489,7 +2489,7 @@ concepts:
     tts: cs-terms/malo.mp3
   state: ignoreImage
   freq: 331802.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: right
     lang: en
@@ -2503,13 +2503,13 @@ concepts:
     tts: cs-terms/spravne.mp3
   img: img/right.jpeg
   freq: 331507.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: gutenberg
     lang: en
   state: ignore
   freq: 328324.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: still
     lang: en
@@ -2523,7 +2523,7 @@ concepts:
     tts: cs-terms/porad.mp3
   state: ignoreImage
   freq: 327187.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: something
     lang: en
@@ -2534,7 +2534,7 @@ concepts:
     tts: cs-terms/neco.mp3
   state: ignoreImage
   freq: 326818.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: felt
     lang: en
@@ -2545,7 +2545,7 @@ concepts:
     tts: cs-terms/citil.mp3
   img: img/felt.jpeg
   freq: 326524.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: began
     lang: en
@@ -2559,7 +2559,7 @@ concepts:
     tts: cs-terms/zahajila.mp3
   state: ignoreImage
   freq: 325327.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: country
     lang: en
@@ -2573,7 +2573,7 @@ concepts:
     tts: cs-terms/krajina.mp3
   img: img/country.jpeg
   freq: 321963.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: "on"
     lang: en
@@ -2626,7 +2626,7 @@ concepts:
     tts: cs-terms/pri.mp3
   img: img/while.jpeg
   freq: 321748.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: just
     lang: en
@@ -2654,7 +2654,7 @@ concepts:
     tts: cs-terms/postavil.mp3
   img: img/stood.jpeg
   freq: 308025.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: face
     lang: en
@@ -2668,7 +2668,7 @@ concepts:
     tts: cs-terms/celit.mp3
   img: img/face.jpeg
   freq: 306872.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thy
     lang: en
@@ -2676,7 +2676,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 304489.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: though
     lang: en
@@ -2690,7 +2690,7 @@ concepts:
     tts: cs-terms/ackoli.mp3
   state: ignoreImage
   freq: 291475.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: left
     lang: en
@@ -2704,7 +2704,7 @@ concepts:
     tts: cs-terms/opustil.mp3
   img: img/left.jpeg
   freq: 291138.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: child
     lang: en
@@ -2718,7 +2718,7 @@ concepts:
     tts: cs-terms/detske.mp3
   img: img/child.jpeg
   freq: 288025.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sent
     lang: en
@@ -2732,7 +2732,7 @@ concepts:
     tts: cs-terms/poslal.mp3
   img: img/sent.jpeg
   freq: 287876.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: means
     lang: en
@@ -2746,7 +2746,7 @@ concepts:
     tts: cs-terms/prostredky.mp3
   img: img/means.jpeg
   freq: 284431.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: once
     lang: en
@@ -2774,7 +2774,7 @@ concepts:
     tts: cs-terms/milovat.mp3
   img: img/love.jpeg
   freq: 281995.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: passed
     lang: en
@@ -2788,7 +2788,7 @@ concepts:
     tts: cs-terms/prosel.mp3
   img: img/passed.jpeg
   freq: 279864.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: feet
     lang: en
@@ -2799,7 +2799,7 @@ concepts:
     tts: cs-terms/chodidla.mp3
   img: img/feet.jpeg
   freq: 279821.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: side
     lang: en
@@ -2813,7 +2813,7 @@ concepts:
     tts: cs-terms/bocni.mp3
   img: img/side.jpeg
   freq: 279184.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: head
     lang: en
@@ -2835,7 +2835,7 @@ concepts:
     tts: cs-terms/srdce.mp3
   img: img/heart.jpeg
   freq: 275846.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: children
     lang: en
@@ -2846,7 +2846,7 @@ concepts:
     tts: cs-terms/deti.mp3
   img: img/children.jpeg
   freq: 275607.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: another
     lang: en
@@ -2857,7 +2857,7 @@ concepts:
     tts: cs-terms/dalsi.mp3
   img: img/another.jpeg
   freq: 274213.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: small
     lang: en
@@ -2868,7 +2868,7 @@ concepts:
     tts: cs-terms/maly.mp3
   img: img/small.jpeg
   freq: 272716.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mother
     lang: en
@@ -2879,7 +2879,7 @@ concepts:
     tts: cs-terms/matka.mp3
   img: img/mother.jpeg
   freq: 271652.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: because
     lang: en
@@ -2890,7 +2890,7 @@ concepts:
     tts: cs-terms/protoze.mp3
   state: ignoreImage
   freq: 271351.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: how
     lang: en
@@ -2915,7 +2915,7 @@ concepts:
     tts: cs-terms/prostor.mp3
   img: img/room.jpeg
   freq: 269595.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: both
     lang: en
@@ -2929,7 +2929,7 @@ concepts:
     tts: cs-terms/obe.mp3
   img: img/both.jpeg
   freq: 269426.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thee
     lang: en
@@ -2937,7 +2937,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 269414.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: each
     lang: en
@@ -2948,7 +2948,7 @@ concepts:
     tts: cs-terms/kazdy.mp3
   img: img/each.jpeg
   freq: 269131.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: says
     lang: en
@@ -2959,7 +2959,7 @@ concepts:
     tts: cs-terms/rika.mp3
   img: img/says.jpeg
   freq: 268542.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mrs
     lang: en
@@ -2970,7 +2970,7 @@ concepts:
     tts: cs-terms/pani.mp3
   img: img/mrs.jpeg
   freq: 267994.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: father
     lang: en
@@ -2981,7 +2981,7 @@ concepts:
     tts: cs-terms/otec.mp3
   img: img/father.jpeg
   freq: 266420.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: part
     lang: en
@@ -2995,7 +2995,7 @@ concepts:
     tts: cs-terms/dil.mp3
   img: img/part.jpeg
   freq: 265820.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: house
     lang: en
@@ -3006,7 +3006,7 @@ concepts:
     tts: cs-terms/dum.mp3
   img: img/house.jpeg
   freq: 264916.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: received
     lang: en
@@ -3020,7 +3020,7 @@ concepts:
     tts: cs-terms/prijate.mp3
   img: img/received.jpeg
   freq: 264606.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: gone
     lang: en
@@ -3034,7 +3034,7 @@ concepts:
     tts: cs-terms/zmizel.mp3
   img: img/gone.jpeg
   freq: 263585.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: among
     lang: en
@@ -3045,7 +3045,7 @@ concepts:
     tts: cs-terms/mezi.mp3
   img: img/among.jpeg
   freq: 262870.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: water
     lang: en
@@ -3056,7 +3056,7 @@ concepts:
     tts: cs-terms/voda.mp3
   img: img/water.jpeg
   freq: 261566.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: times
     lang: en
@@ -3070,7 +3070,7 @@ concepts:
     tts: cs-terms/dobach.mp3
   img: img/times.jpeg
   freq: 260596.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: keep
     lang: en
@@ -3098,7 +3098,7 @@ concepts:
     tts: cs-terms/domov.mp3
   img: img/home.jpeg
   freq: 255718.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: word
     lang: en
@@ -3109,7 +3109,7 @@ concepts:
     tts: cs-terms/slovo.mp3
   img: img/word.jpeg
   freq: 251288.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: moment
     lang: en
@@ -3120,7 +3120,7 @@ concepts:
     tts: cs-terms/chvilka.mp3
   img: img/moment.jpeg
   freq: 250354.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: whom
     lang: en
@@ -3134,7 +3134,7 @@ concepts:
     tts: cs-terms/ktereho.mp3
   state: ignoreImage
   freq: 248131.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: however
     lang: en
@@ -3148,7 +3148,7 @@ concepts:
     tts: cs-terms/jakkoli.mp3
   state: ignoreImage
   freq: 247555.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: look
     lang: en
@@ -3173,7 +3173,7 @@ concepts:
     tts: cs-terms/lepsi.mp3
   img: img/better.jpeg
   freq: 247398.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: almost
     lang: en
@@ -3187,7 +3187,7 @@ concepts:
     tts: cs-terms/skoro.mp3
   img: img/almost.jpeg
   freq: 247268.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: king
     lang: en
@@ -3198,7 +3198,7 @@ concepts:
     tts: cs-terms/kral.mp3
   img: img/king.jpeg
   freq: 247147.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: answered
     lang: en
@@ -3209,7 +3209,7 @@ concepts:
     tts: cs-terms/odpovedel.mp3
   state: ignoreImage
   freq: 246251.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mind
     lang: en
@@ -3234,7 +3234,7 @@ concepts:
     tts: cs-terms/stal se.mp3
   state: ignoreImage
   freq: 241714.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cried
     lang: en
@@ -3248,7 +3248,7 @@ concepts:
     tts: cs-terms/plakala.mp3
   state: ignoreImage
   freq: 240280.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: money
     lang: en
@@ -3259,7 +3259,7 @@ concepts:
     tts: cs-terms/penize.mp3
   img: img/money.jpeg
   freq: 240218.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: large
     lang: en
@@ -3273,7 +3273,7 @@ concepts:
     tts: cs-terms/rozsahle.mp3
   img: img/large.jpeg
   freq: 239925.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ask
     lang: en
@@ -3287,7 +3287,7 @@ concepts:
     tts: cs-terms/pozadat.mp3
   img: img/ask.jpeg
   freq: 239767.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: women
     lang: en
@@ -3301,7 +3301,7 @@ concepts:
     tts: cs-terms/zensky.mp3
   img: img/women.jpeg
   freq: 239735.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: set
     lang: en
@@ -3315,7 +3315,7 @@ concepts:
     tts: cs-terms/sada.mp3
   img: img/set.jpeg
   freq: 238879.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: really
     lang: en
@@ -3329,7 +3329,7 @@ concepts:
     tts: cs-terms/skutecne.mp3
   state: ignoreImage
   freq: 237568.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: friends
     lang: en
@@ -3343,7 +3343,7 @@ concepts:
     tts: cs-terms/kamarady.mp3
   img: img/friends.jpeg
   freq: 237481.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: name
     lang: en
@@ -3357,7 +3357,7 @@ concepts:
     tts: cs-terms/jmeno.mp3
   img: img/name.jpeg
   freq: 237198.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: far
     lang: en
@@ -3368,7 +3368,7 @@ concepts:
     tts: cs-terms/daleko.mp3
   img: img/far.jpeg
   freq: 236136.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: held
     lang: en
@@ -3382,7 +3382,7 @@ concepts:
     tts: cs-terms/drzel.mp3
   state: ignoreImage
   freq: 235474.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: power
     lang: en
@@ -3396,7 +3396,7 @@ concepts:
     tts: cs-terms/vykon.mp3
   img: img/power.jpeg
   freq: 233800.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: door
     lang: en
@@ -3407,7 +3407,7 @@ concepts:
     tts: cs-terms/dvere.mp3
   img: img/door.jpeg
   freq: 233690.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: why
     lang: en
@@ -3418,7 +3418,7 @@ concepts:
     tts: cs-terms/proc.mp3
   img: img/why.jpeg
   freq: 230829.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: family
     lang: en
@@ -3435,7 +3435,7 @@ concepts:
     lang: en
   state: ignore
   freq: 230485.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: believe
     lang: en
@@ -3449,7 +3449,7 @@ concepts:
     tts: cs-terms/domnivat.mp3
   img: img/believe.jpeg
   freq: 230181.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: replied
     lang: en
@@ -3463,7 +3463,7 @@ concepts:
     tts: cs-terms/odvetil.mp3
   img: img/replied.jpeg
   freq: 229913.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hear
     lang: en
@@ -3477,7 +3477,7 @@ concepts:
     tts: cs-terms/poslouchat.mp3
   img: img/hear.jpeg
   freq: 228408.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: whole
     lang: en
@@ -3491,7 +3491,7 @@ concepts:
     tts: cs-terms/celek.mp3
   img: img/whole.jpeg
   freq: 225308.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: became
     lang: en
@@ -3502,7 +3502,7 @@ concepts:
     tts: cs-terms/stal.mp3
   state: ignoreImage
   freq: 224811.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: full
     lang: en
@@ -3516,7 +3516,7 @@ concepts:
     tts: cs-terms/plny.mp3
   img: img/full.jpeg
   freq: 224689.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: course
     lang: en
@@ -3530,7 +3530,7 @@ concepts:
     tts: cs-terms/samozrejme.mp3
   img: img/course.jpeg
   freq: 224657.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: john
     lang: en
@@ -3544,7 +3544,7 @@ concepts:
     tts: cs-terms/Honza.mp3
   img: img/john.jpeg
   freq: 224569.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: morning
     lang: en
@@ -3558,7 +3558,7 @@ concepts:
     tts: cs-terms/ranni.mp3
   img: img/morning.jpeg
   freq: 222284.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: end
     lang: en
@@ -3569,7 +3569,7 @@ concepts:
     tts: cs-terms/konec.mp3
   img: img/end.jpeg
   freq: 221430.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: others
     lang: en
@@ -3583,7 +3583,7 @@ concepts:
     tts: cs-terms/ostatni.mp3
   img: img/others.jpeg
   freq: 219207.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: friend
     lang: en
@@ -3597,7 +3597,7 @@ concepts:
     tts: cs-terms/kamarad.mp3
   img: img/friend.jpeg
   freq: 218887.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: often
     lang: en
@@ -3611,7 +3611,7 @@ concepts:
     tts: cs-terms/mnohdy.mp3
   state: ignoreImage
   freq: 218764.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: looking
     lang: en
@@ -3625,7 +3625,7 @@ concepts:
     tts: cs-terms/divat.mp3
   img: img/looking.jpeg
   freq: 218510.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: use
     lang: en
@@ -3639,7 +3639,7 @@ concepts:
     tts: cs-terms/vyuzit.mp3
   state: ignoreImage
   freq: 215223.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: england
     lang: en
@@ -3650,7 +3650,7 @@ concepts:
     tts: cs-terms/anglie.mp3
   img: img/england.jpeg
   freq: 214339.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fact
     lang: en
@@ -3661,7 +3661,7 @@ concepts:
     tts: cs-terms/skutecnost.mp3
   img: img/fact.jpeg
   freq: 214007.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: enough
     lang: en
@@ -3675,7 +3675,7 @@ concepts:
     tts: cs-terms/staci.mp3
   img: img/enough.jpeg
   freq: 213322.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: number
     lang: en
@@ -3689,7 +3689,7 @@ concepts:
     tts: cs-terms/pocet.mp3
   img: img/number.jpeg
   freq: 212369.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: during
     lang: en
@@ -3703,7 +3703,7 @@ concepts:
     tts: cs-terms/v prubehu.mp3
   state: ignoreImage
   freq: 212250.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: together
     lang: en
@@ -3731,7 +3731,7 @@ concepts:
     tts: cs-terms/tady.mp3
   img: img/here.jpeg
   freq: 210897.97500
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: quite
     lang: en
@@ -3742,7 +3742,7 @@ concepts:
     tts: cs-terms/docela.mp3
   img: img/quite.jpeg
   freq: 210251.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: making
     lang: en
@@ -3756,7 +3756,7 @@ concepts:
     tts: cs-terms/vyroba.mp3
   img: img/making.jpeg
   freq: 210031.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: whose
     lang: en
@@ -3770,7 +3770,7 @@ concepts:
     tts: cs-terms/jehoz.mp3
   state: ignoreImage
   freq: 209645.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fell
     lang: en
@@ -3784,7 +3784,7 @@ concepts:
     tts: cs-terms/padal.mp3
   img: img/fell.jpeg
   freq: 208344.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: school
     lang: en
@@ -3795,7 +3795,7 @@ concepts:
     tts: cs-terms/skola.mp3
   img: img/school.jpeg
   freq: 206442.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: try
     lang: en
@@ -3809,7 +3809,7 @@ concepts:
     tts: cs-terms/pokuste.mp3
   img: img/try.jpeg
   freq: 206441.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: kept
     lang: en
@@ -3823,7 +3823,7 @@ concepts:
     tts: cs-terms/udrzovany.mp3
   state: ignoreImage
   freq: 206329.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: voice
     lang: en
@@ -3834,7 +3834,7 @@ concepts:
     tts: cs-terms/hlas.mp3
   img: img/voice.jpeg
   freq: 206124.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: themselves
     lang: en
@@ -3845,7 +3845,7 @@ concepts:
     tts: cs-terms/samy sobe.mp3
   img: img/themselves.jpeg
   freq: 205524.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: anything
     lang: en
@@ -3856,7 +3856,7 @@ concepts:
     tts: cs-terms/cokoliv.mp3
   state: ignoreImage
   freq: 205144.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: met
     lang: en
@@ -3870,7 +3870,7 @@ concepts:
     tts: cs-terms/potkal.mp3
   img: img/met.jpeg
   freq: 203956.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: returned
     lang: en
@@ -3884,7 +3884,7 @@ concepts:
     tts: cs-terms/vratil.mp3
   img: img/returned.jpeg
   freq: 202041.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: death
     lang: en
@@ -3895,7 +3895,7 @@ concepts:
     tts: cs-terms/smrt.mp3
   img: img/death.jpeg
   freq: 201437.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: city
     lang: en
@@ -3909,13 +3909,13 @@ concepts:
     tts: cs-terms/mestske.mp3
   img: img/city.jpeg
   freq: 198911.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sn
     lang: en
   state: ignore
   freq: 198498.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: four
     lang: en
@@ -3926,7 +3926,7 @@ concepts:
     tts: cs-terms/ctyri.mp3
   img: img/four.jpeg
   freq: 196372.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: arms
     lang: en
@@ -3940,7 +3940,7 @@ concepts:
     tts: cs-terms/paze.mp3
   img: img/arms.jpeg
   freq: 194298.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: myself
     lang: en
@@ -3951,7 +3951,7 @@ concepts:
     tts: cs-terms/sam sebe.mp3
   img: img/myself.jpeg
   freq: 194173.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: business
     lang: en
@@ -3979,7 +3979,7 @@ concepts:
     tts: cs-terms/brzo.mp3
   img: img/soon.jpeg
   freq: 193680.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: nor
     lang: en
@@ -3990,7 +3990,7 @@ concepts:
     tts: cs-terms/ani.mp3
   state: ignoreImage
   freq: 193460.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: seems
     lang: en
@@ -4004,7 +4004,7 @@ concepts:
     tts: cs-terms/jevi se.mp3
   state: ignoreImage
   freq: 192229.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: least
     lang: en
@@ -4018,7 +4018,7 @@ concepts:
     tts: cs-terms/alespon.mp3
   img: img/least.jpeg
   freq: 191938.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: person
     lang: en
@@ -4032,7 +4032,7 @@ concepts:
     tts: cs-terms/clovek.mp3
   img: img/person.jpeg
   freq: 190764.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: followed
     lang: en
@@ -4046,7 +4046,7 @@ concepts:
     tts: cs-terms/postupovali.mp3
   img: img/followed.jpeg
   freq: 190649.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: seem
     lang: en
@@ -4060,7 +4060,7 @@ concepts:
     tts: cs-terms/pripadat.mp3
   state: ignoreImage
   freq: 190588.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: read
     lang: en
@@ -4071,7 +4071,7 @@ concepts:
     tts: cs-terms/cist.mp3
   img: img/read.jpeg
   freq: 190020.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: already
     lang: en
@@ -4085,7 +4085,7 @@ concepts:
     tts: cs-terms/uz.mp3
   state: ignoreImage
   freq: 189941.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: woman
     lang: en
@@ -4096,7 +4096,7 @@ concepts:
     tts: cs-terms/zena.mp3
   img: img/woman.jpeg
   freq: 189429.60000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: less
     lang: en
@@ -4107,7 +4107,7 @@ concepts:
     tts: cs-terms/mene.mp3
   img: img/less.jpeg
   freq: 189322.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: body
     lang: en
@@ -4118,7 +4118,7 @@ concepts:
     tts: cs-terms/telo.mp3
   img: img/body.jpeg
   freq: 188988.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: law
     lang: en
@@ -4132,7 +4132,7 @@ concepts:
     tts: cs-terms/prava.mp3
   img: img/law.jpeg
   freq: 188922.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: best
     lang: en
@@ -4146,7 +4146,7 @@ concepts:
     tts: cs-terms/nejvhodnejsi.mp3
   img: img/best.jpeg
   freq: 188751.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hour
     lang: en
@@ -4157,7 +4157,7 @@ concepts:
     tts: cs-terms/hodina.mp3
   img: img/hour.jpeg
   freq: 188459.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: different
     lang: en
@@ -4171,7 +4171,7 @@ concepts:
     tts: cs-terms/odlisne.mp3
   img: img/different.jpeg
   freq: 186727.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: girl
     lang: en
@@ -4185,7 +4185,7 @@ concepts:
     tts: cs-terms/holka.mp3
   img: img/girl.jpeg
   freq: 186549.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ye
     lang: en
@@ -4193,7 +4193,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 182978.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: poor
     lang: en
@@ -4207,7 +4207,7 @@ concepts:
     tts: cs-terms/chudak.mp3
   img: img/poor.jpeg
   freq: 182819.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bring
     lang: en
@@ -4221,7 +4221,7 @@ concepts:
     tts: cs-terms/privest.mp3
   state: ignoreImage
   freq: 182757.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: certain
     lang: en
@@ -4235,7 +4235,7 @@ concepts:
     tts: cs-terms/jakesi.mp3
   state: ignoreImage
   freq: 182011.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: big
     lang: en
@@ -4246,7 +4246,7 @@ concepts:
     tts: cs-terms/velky.mp3
   img: img/big.jpeg
   freq: 181717.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bigger
     lang: en
@@ -4257,7 +4257,7 @@ concepts:
     tts: cs-terms/vetsi.mp3
   img: img/big.jpeg
   freq: 181717.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: son
     lang: en
@@ -4268,7 +4268,7 @@ concepts:
     tts: cs-terms/syn.mp3
   img: img/son.jpeg
   freq: 179061.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: several
     lang: en
@@ -4279,7 +4279,7 @@ concepts:
     tts: cs-terms/nekolik.mp3
   img: img/several.jpeg
   freq: 178618.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: light
     lang: en
@@ -4293,7 +4293,7 @@ concepts:
     tts: cs-terms/lehke.mp3
   img: img/light.jpeg
   freq: 178355.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: speak
     lang: en
@@ -4307,7 +4307,7 @@ concepts:
     tts: cs-terms/hovorit.mp3
   img: img/speak.jpeg
   freq: 178191.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: given
     lang: en
@@ -4321,7 +4321,7 @@ concepts:
     tts: cs-terms/dana.mp3
   state: ignoreImage
   freq: 177381.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: air
     lang: en
@@ -4335,7 +4335,7 @@ concepts:
     tts: cs-terms/letecke.mp3
   img: img/air.jpeg
   freq: 176706.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: until
     lang: en
@@ -4349,7 +4349,7 @@ concepts:
     tts: cs-terms/az.mp3
   state: ignoreImage
   freq: 176699.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: whether
     lang: en
@@ -4363,7 +4363,7 @@ concepts:
     tts: cs-terms/at uz.mp3
   state: ignoreImage
   freq: 176370.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: war
     lang: en
@@ -4374,7 +4374,7 @@ concepts:
     tts: cs-terms/valka.mp3
   img: img/war.jpeg
   freq: 176174.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: form
     lang: en
@@ -4388,7 +4388,7 @@ concepts:
     tts: cs-terms/forma.mp3
   img: img/form.jpeg
   freq: 176076.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: herself
     lang: en
@@ -4399,7 +4399,7 @@ concepts:
     tts: cs-terms/sama sebe.mp3
   state: ignoreImage
   freq: 174415.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: longer
     lang: en
@@ -4413,7 +4413,7 @@ concepts:
     tts: cs-terms/dele.mp3
   img: img/longer.jpeg
   freq: 173897.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: spoke
     lang: en
@@ -4427,7 +4427,7 @@ concepts:
     tts: cs-terms/hovoril.mp3
   img: img/spoke.jpeg
   freq: 172990.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: perhaps
     lang: en
@@ -4441,7 +4441,7 @@ concepts:
     tts: cs-terms/snad.mp3
   state: ignoreImage
   freq: 172512.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: used
     lang: en
@@ -4455,7 +4455,7 @@ concepts:
     tts: cs-terms/uzivane.mp3
   img: img/used.jpeg
   freq: 172460.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: story
     lang: en
@@ -4469,7 +4469,7 @@ concepts:
     tts: cs-terms/povidka.mp3
   img: img/story.jpeg
   freq: 172290.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: works
     lang: en
@@ -4483,7 +4483,7 @@ concepts:
     tts: cs-terms/pracuje.mp3
   img: img/works.jpeg
   freq: 170829.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: saying
     lang: en
@@ -4497,7 +4497,7 @@ concepts:
     tts: cs-terms/porekadlo.mp3
   img: img/saying.jpeg
   freq: 170695.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: appeared
     lang: en
@@ -4511,7 +4511,7 @@ concepts:
     tts: cs-terms/vyjevil.mp3
   state: ignoreImage
   freq: 169913.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: present
     lang: en
@@ -4525,7 +4525,7 @@ concepts:
     tts: cs-terms/predstavit.mp3
   img: img/present.jpeg
   freq: 169888.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: rather
     lang: en
@@ -4539,7 +4539,7 @@ concepts:
     tts: cs-terms/ponekud.mp3
   state: ignoreImage
   freq: 169665.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: next
     lang: en
@@ -4553,7 +4553,7 @@ concepts:
     tts: cs-terms/dalsi.mp3
   img: img/next.jpeg
   freq: 169443.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: eye
     lang: en
@@ -4567,13 +4567,13 @@ concepts:
     tts: cs-terms/ocni.mp3
   img: img/eye.jpeg
   freq: 168936.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ety
     lang: en
   state: ignore
   freq: 168713.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hundred
     lang: en
@@ -4584,7 +4584,7 @@ concepts:
     tts: cs-terms/sto.mp3
   img: img/hundred.jpeg
   freq: 168628.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: reason
     lang: en
@@ -4598,7 +4598,7 @@ concepts:
     tts: cs-terms/priciny.mp3
   img: img/reason.jpeg
   freq: 168401.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: since
     lang: en
@@ -4609,7 +4609,7 @@ concepts:
     tts: cs-terms/od te doby.mp3
   state: ignoreImage
   freq: 168360.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: there
     lang: en
@@ -4637,7 +4637,7 @@ concepts:
     tts: cs-terms/firma.mp3
   img: img/company.jpeg
   freq: 168252.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: white
     lang: en
@@ -4648,7 +4648,7 @@ concepts:
     tts: cs-terms/bile.mp3
   img: img/white.jpeg
   freq: 167140.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: book
     lang: en
@@ -4662,7 +4662,7 @@ concepts:
     tts: cs-terms/rezervovat.mp3
   img: img/book.jpeg
   freq: 166876.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thus
     lang: en
@@ -4676,7 +4676,7 @@ concepts:
     tts: cs-terms/tudiz.mp3
   state: ignoreImage
   freq: 166130.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: reached
     lang: en
@@ -4690,7 +4690,7 @@ concepts:
     tts: cs-terms/dosazeno.mp3
   img: img/reached.jpeg
   freq: 165752.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: boy
     lang: en
@@ -4704,7 +4704,7 @@ concepts:
     tts: cs-terms/kluk.mp3
   img: img/boy.jpeg
   freq: 164881.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hours
     lang: en
@@ -4715,7 +4715,7 @@ concepts:
     tts: cs-terms/hodiny.mp3
   img: img/hours.jpeg
   freq: 164326.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: kind
     lang: en
@@ -4729,7 +4729,7 @@ concepts:
     tts: cs-terms/laskavy.mp3
   img: img/kind.jpeg
   freq: 163832.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: five
     lang: en
@@ -4740,7 +4740,7 @@ concepts:
     tts: cs-terms/pet.mp3
   img: img/five.jpeg
   freq: 163511.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: miles
     lang: en
@@ -4750,7 +4750,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 163341.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: state
     lang: en
@@ -4775,7 +4775,7 @@ concepts:
     tts: cs-terms/vlada.mp3
   img: img/government.jpeg
   freq: 162694.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: paid
     lang: en
@@ -4789,7 +4789,7 @@ concepts:
     tts: cs-terms/placene.mp3
   img: img/paid.jpeg
   freq: 162605.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: further
     lang: en
@@ -4803,7 +4803,7 @@ concepts:
     tts: cs-terms/dale.mp3
   state: ignoreImage
   freq: 162328.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: itself
     lang: en
@@ -4814,7 +4814,7 @@ concepts:
     tts: cs-terms/samo o sobe.mp3
   img: img/itself.jpeg
   freq: 161172.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: open
     lang: en
@@ -4842,7 +4842,7 @@ concepts:
     tts: cs-terms/poradi.mp3
   img: img/order.jpeg
   freq: 160771.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: taking
     lang: en
@@ -4856,7 +4856,7 @@ concepts:
     tts: cs-terms/uzivani.mp3
   img: img/taking.jpeg
   freq: 160626.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: around
     lang: en
@@ -4884,7 +4884,7 @@ concepts:
     tts: cs-terms/rozumet.mp3
   img: img/understand.jpeg
   freq: 159041.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: half
     lang: en
@@ -4898,7 +4898,7 @@ concepts:
     tts: cs-terms/pul.mp3
   img: img/half.jpeg
   freq: 157947.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: within
     lang: en
@@ -4912,7 +4912,7 @@ concepts:
     tts: cs-terms/uvnitr.mp3
   img: img/within.jpeg
   freq: 156154.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: entered
     lang: en
@@ -4926,7 +4926,7 @@ concepts:
     tts: cs-terms/zadali.mp3
   state: ignoreImage
   freq: 155480.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: begin
     lang: en
@@ -4940,7 +4940,7 @@ concepts:
     tts: cs-terms/zacatek.mp3
   img: img/begin.jpeg
   freq: 154912.25000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: till
     lang: en
@@ -4951,13 +4951,13 @@ concepts:
     tts: cs-terms/az do.mp3
   state: ignoreImage
   freq: 154907.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: la
     lang: en
   state: ignore
   freq: 154457.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: matter
     lang: en
@@ -4971,7 +4971,7 @@ concepts:
     tts: cs-terms/hmoty.mp3
   img: img/matter.jpeg
   freq: 154339.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: system
     lang: en
@@ -4982,7 +4982,7 @@ concepts:
     tts: cs-terms/soustava.mp3
   img: img/system.jpeg
   freq: 153835.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: laws
     lang: en
@@ -4996,7 +4996,7 @@ concepts:
     tts: cs-terms/predpisy.mp3
   img: img/laws.jpeg
   freq: 153830.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hope
     lang: en
@@ -5010,7 +5010,7 @@ concepts:
     tts: cs-terms/doufam.mp3
   img: img/hope.jpeg
   freq: 153382.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: comes
     lang: en
@@ -5024,7 +5024,7 @@ concepts:
     tts: cs-terms/pochazi.mp3
   state: ignoreImage
   freq: 153299.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: week
     lang: en
@@ -5035,7 +5035,7 @@ concepts:
     tts: cs-terms/tyden.mp3
   img: img/week.jpeg
   freq: 152726.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: point
     lang: en
@@ -5049,7 +5049,7 @@ concepts:
     tts: cs-terms/ukazat.mp3
   img: img/point.jpeg
   freq: 152624.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: nature
     lang: en
@@ -5063,7 +5063,7 @@ concepts:
     tts: cs-terms/povaha.mp3
   img: img/nature.jpeg
   freq: 152360.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: able
     lang: en
@@ -5077,7 +5077,7 @@ concepts:
     tts: cs-terms/moct.mp3
   state: ignoreImage
   freq: 151658.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: letter
     lang: en
@@ -5091,7 +5091,7 @@ concepts:
     tts: cs-terms/dopis.mp3
   img: img/letter.jpeg
   freq: 151273.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: france
     lang: en
@@ -5102,7 +5102,7 @@ concepts:
     tts: cs-terms/francie.mp3
   img: img/france.jpeg
   freq: 151108.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: indeed
     lang: en
@@ -5116,7 +5116,7 @@ concepts:
     tts: cs-terms/opravdu.mp3
   state: ignoreImage
   freq: 150986.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: party
     lang: en
@@ -5127,7 +5127,7 @@ concepts:
     tts: cs-terms/oslava.mp3
   img: img/party.jpeg
   freq: 148515.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: round
     lang: en
@@ -5141,7 +5141,7 @@ concepts:
     tts: cs-terms/zaokrouhlit.mp3
   img: img/round.jpeg
   freq: 148447.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: idea
     lang: en
@@ -5152,7 +5152,7 @@ concepts:
     tts: cs-terms/napad.mp3
   img: img/idea.jpeg
   freq: 148188.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: information
     lang: en
@@ -5166,7 +5166,7 @@ concepts:
     tts: cs-terms/udaje.mp3
   img: img/information.jpeg
   freq: 147869.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: above
     lang: en
@@ -5180,7 +5180,7 @@ concepts:
     tts: cs-terms/nad.mp3
   img: img/above.jpeg
   freq: 147753.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: alone
     lang: en
@@ -5194,7 +5194,7 @@ concepts:
     tts: cs-terms/o samote.mp3
   img: img/alone.jpeg
   freq: 147639.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: possible
     lang: en
@@ -5216,7 +5216,7 @@ concepts:
     tts: cs-terms/sluzba.mp3
   img: img/service.jpeg
   freq: 146302.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: lay
     lang: en
@@ -5230,7 +5230,7 @@ concepts:
     tts: cs-terms/polozit.mp3
   img: img/lay.jpeg
   freq: 146055.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: meet
     lang: en
@@ -5241,7 +5241,7 @@ concepts:
     tts: cs-terms/setkat.mp3
   img: img/meet.jpeg
   freq: 145712.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: art
     lang: en
@@ -5255,7 +5255,7 @@ concepts:
     tts: cs-terms/umelecke.mp3
   img: img/art.jpeg
   freq: 145697.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: london
     lang: en
@@ -5266,7 +5266,7 @@ concepts:
     tts: cs-terms/londyn.mp3
   img: img/london.jpeg
   freq: 145606.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: laid
     lang: en
@@ -5280,7 +5280,7 @@ concepts:
     tts: cs-terms/stanovena.mp3
   img: img/laid.jpeg
   freq: 145490.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: led
     lang: en
@@ -5294,7 +5294,7 @@ concepts:
     tts: cs-terms/privedla.mp3
   img: img/led.jpeg
   freq: 145393.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: copyright
     lang: cs
@@ -5318,7 +5318,7 @@ concepts:
     tts: cs-terms/seskupit.mp3
   img: img/group.jpeg
   freq: 145209.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: doing
     lang: en
@@ -5332,7 +5332,7 @@ concepts:
     tts: cs-terms/cinnost.mp3
   img: img/doing.jpeg
   freq: 145131.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bad
     lang: en
@@ -5346,7 +5346,7 @@ concepts:
     tts: cs-terms/chybny.mp3
   img: img/bad.jpeg
   freq: 143899.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: help
     lang: en
@@ -5360,7 +5360,7 @@ concepts:
     tts: cs-terms/pomoci.mp3
   img: img/help.jpeg
   freq: 143716.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: opened
     lang: en
@@ -5374,7 +5374,7 @@ concepts:
     tts: cs-terms/otevrel.mp3
   img: img/opened.jpeg
   freq: 143625.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ground
     lang: en
@@ -5388,7 +5388,7 @@ concepts:
     tts: cs-terms/zem.mp3
   img: img/ground.jpeg
   freq: 143541.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: second
     lang: en
@@ -5402,7 +5402,7 @@ concepts:
     tts: cs-terms/sekunda.mp3
   img: img/second.jpeg
   freq: 143161.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: call
     lang: en
@@ -5416,7 +5416,7 @@ concepts:
     tts: cs-terms/hovor.mp3
   img: img/call.jpeg
   freq: 143102.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: town
     lang: en
@@ -5427,7 +5427,7 @@ concepts:
     tts: cs-terms/mesto.mp3
   img: img/town.jpeg
   freq: 142754.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: near
     lang: en
@@ -5438,7 +5438,7 @@ concepts:
     tts: cs-terms/pobliz.mp3
   img: img/near.jpeg
   freq: 142483.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: strong
     lang: en
@@ -5452,7 +5452,7 @@ concepts:
     tts: cs-terms/pevne.mp3
   img: img/strong.jpeg
   freq: 141950.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: along
     lang: en
@@ -5463,7 +5463,7 @@ concepts:
     tts: cs-terms/podel.mp3
   img: img/along.jpeg
   freq: 141819.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: public
     lang: en
@@ -5477,7 +5477,7 @@ concepts:
     tts: cs-terms/verejnost.mp3
   img: img/public.jpeg
   freq: 141621.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hath
     lang: en
@@ -5487,7 +5487,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 141246.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: wanted
     lang: en
@@ -5501,7 +5501,7 @@ concepts:
     tts: cs-terms/hledany.mp3
   img: img/wanted.jpeg
   freq: 140608.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: return
     lang: en
@@ -5515,7 +5515,7 @@ concepts:
     tts: cs-terms/vratit.mp3
   img: img/return.jpeg
   freq: 140295.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: need
     lang: en
@@ -5529,7 +5529,7 @@ concepts:
     tts: cs-terms/potreba.mp3
   img: img/need.jpeg
   freq: 139916.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dear
     lang: en
@@ -5543,7 +5543,7 @@ concepts:
     tts: cs-terms/draha.mp3
   img: img/dear.jpeg
   freq: 139827.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dead
     lang: en
@@ -5557,7 +5557,7 @@ concepts:
     tts: cs-terms/mrtve.mp3
   img: img/dead.jpeg
   freq: 139580.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: makes
     lang: en
@@ -5571,7 +5571,7 @@ concepts:
     tts: cs-terms/cini.mp3
   state: ignoreImage
   freq: 139167.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: real
     lang: en
@@ -5585,7 +5585,7 @@ concepts:
     tts: cs-terms/skutecne.mp3
   state: ignoreImage
   freq: 139116.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: case
     lang: en
@@ -5596,7 +5596,7 @@ concepts:
     tts: cs-terms/pripad.mp3
   img: img/case.jpeg
   freq: 138689.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: student
     lang: en
@@ -5607,7 +5607,7 @@ concepts:
     tts: cs-terms/zak.mp3
   img: img/student.jpeg
   freq: 138627.05000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thousand
     lang: en
@@ -5618,7 +5618,7 @@ concepts:
     tts: cs-terms/tisic.mp3
   img: img/thousand.jpeg
   freq: 138465.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: important
     lang: en
@@ -5632,7 +5632,7 @@ concepts:
     tts: cs-terms/vyznamne.mp3
   img: img/important.jpeg
   freq: 138241.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: change
     lang: en
@@ -5646,7 +5646,7 @@ concepts:
     tts: cs-terms/zmena.mp3
   img: img/change.jpeg
   freq: 137970.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: high
     lang: en
@@ -5657,7 +5657,7 @@ concepts:
     tts: cs-terms/vysoke.mp3
   img: img/high.jpeg
   freq: 137721.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: interest
     lang: en
@@ -5671,7 +5671,7 @@ concepts:
     tts: cs-terms/zajem.mp3
   img: img/interest.jpeg
   freq: 137310.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: therefore
     lang: en
@@ -5685,7 +5685,7 @@ concepts:
     tts: cs-terms/tedy.mp3
   state: ignoreImage
   freq: 137061.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: write
     lang: en
@@ -5699,7 +5699,7 @@ concepts:
     tts: cs-terms/psat.mp3
   img: img/write.jpeg
   freq: 137054.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: english
     lang: en
@@ -5710,7 +5710,7 @@ concepts:
     tts: cs-terms/anglicky.mp3
   img: img/english.jpeg
   freq: 136965.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tried
     lang: en
@@ -5724,7 +5724,7 @@ concepts:
     tts: cs-terms/zkusil.mp3
   state: ignoreImage
   freq: 136507.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dr
     lang: cs
@@ -5746,7 +5746,7 @@ concepts:
     tts: cs-terms/bydlel.mp3
   img: img/lived.jpeg
   freq: 135512.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: show
     lang: en
@@ -5760,7 +5760,7 @@ concepts:
     tts: cs-terms/podivana.mp3
   img: img/show.jpeg
   freq: 135451.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sure
     lang: en
@@ -5774,7 +5774,7 @@ concepts:
     tts: cs-terms/urcite.mp3
   img: img/sure.jpeg
   freq: 135369.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: everything
     lang: en
@@ -5785,7 +5785,7 @@ concepts:
     tts: cs-terms/vsechno.mp3
   img: img/everything.jpeg
   freq: 134993.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: known
     lang: en
@@ -5796,7 +5796,7 @@ concepts:
     tts: cs-terms/znamy.mp3
   state: ignoreImage
   freq: 134231.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: unto
     lang: en
@@ -5804,7 +5804,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 134048.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: land
     lang: en
@@ -5818,7 +5818,7 @@ concepts:
     tts: cs-terms/pristat.mp3
   img: img/land.jpeg
   freq: 133539.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: placed
     lang: en
@@ -5829,7 +5829,7 @@ concepts:
     tts: cs-terms/umisteny.mp3
   img: img/placed.jpeg
   freq: 133084.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fire
     lang: en
@@ -5843,7 +5843,7 @@ concepts:
     tts: cs-terms/strilet.mp3
   img: img/fire.jpeg
   freq: 133021.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: letters
     lang: en
@@ -5857,7 +5857,7 @@ concepts:
     tts: cs-terms/pismena.mp3
   img: img/letters.jpeg
   freq: 132785.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: greater
     lang: en
@@ -5871,7 +5871,7 @@ concepts:
     tts: cs-terms/vyssi.mp3
   img: img/greater.jpeg
   freq: 132045.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: else
     lang: en
@@ -5885,7 +5885,7 @@ concepts:
     tts: cs-terms/jinak.mp3
   state: ignoreImage
   freq: 131928.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: month
     lang: en
@@ -5896,7 +5896,7 @@ concepts:
     tts: cs-terms/mesic.mp3
   img: img/month.jpeg
   freq: 131861.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: either
     lang: en
@@ -5910,7 +5910,7 @@ concepts:
     tts: cs-terms/bud.mp3
   img: img/either.jpeg
   freq: 130841.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ran
     lang: en
@@ -5924,7 +5924,7 @@ concepts:
     tts: cs-terms/spustili.mp3
   img: img/ran.jpeg
   freq: 130394.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: toward
     lang: en
@@ -5932,7 +5932,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 129478.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: lips
     lang: en
@@ -5943,7 +5943,7 @@ concepts:
     tts: cs-terms/rty.mp3
   img: img/lips.jpeg
   freq: 129473.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: remained
     lang: en
@@ -5953,7 +5953,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 129411.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: truth
     lang: en
@@ -5964,7 +5964,7 @@ concepts:
     tts: cs-terms/pravdivost.mp3
   img: img/truth.jpeg
   freq: 128851.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: history
     lang: en
@@ -5978,7 +5978,7 @@ concepts:
     tts: cs-terms/dejiny.mp3
   img: img/history.jpeg
   freq: 128431.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: remember
     lang: en
@@ -5992,7 +5992,7 @@ concepts:
     tts: cs-terms/nezapomente.mp3
   img: img/remember.jpeg
   freq: 128101.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sometimes
     lang: en
@@ -6006,7 +6006,7 @@ concepts:
     tts: cs-terms/obcas.mp3
   state: ignoreImage
   freq: 128077.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: care
     lang: en
@@ -6020,7 +6020,7 @@ concepts:
     tts: cs-terms/starat se.mp3
   img: img/care.jpeg
   freq: 128025.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ago
     lang: en
@@ -6031,7 +6031,7 @@ concepts:
     tts: cs-terms/pred.mp3
   state: ignoreImage
   freq: 127753.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: leave
     lang: en
@@ -6045,7 +6045,7 @@ concepts:
     tts: cs-terms/nechat.mp3
   img: img/leave.jpeg
   freq: 127075.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: united
     lang: en
@@ -6059,7 +6059,7 @@ concepts:
     tts: cs-terms/sjednocene.mp3
   img: img/united.jpeg
   freq: 126674.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: trees
     lang: en
@@ -6070,7 +6070,7 @@ concepts:
     tts: cs-terms/stromy.mp3
   img: img/trees.jpeg
   freq: 126469.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: books
     lang: en
@@ -6081,7 +6081,7 @@ concepts:
     tts: cs-terms/knihy.mp3
   img: img/books.jpeg
   freq: 125827.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: office
     lang: en
@@ -6095,7 +6095,7 @@ concepts:
     tts: cs-terms/urad.mp3
   img: img/office.jpeg
   freq: 125703.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: manner
     lang: en
@@ -6109,7 +6109,7 @@ concepts:
     tts: cs-terms/obycej.mp3
   state: ignoreImage
   freq: 125206.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: wish
     lang: en
@@ -6123,7 +6123,7 @@ concepts:
     tts: cs-terms/prat.mp3
   img: img/wish.jpeg
   freq: 124440.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: although
     lang: en
@@ -6137,7 +6137,7 @@ concepts:
     tts: cs-terms/prestoze.mp3
   state: ignoreImage
   freq: 124296.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: early
     lang: en
@@ -6151,7 +6151,7 @@ concepts:
     tts: cs-terms/casne.mp3
   img: img/early.jpeg
   freq: 124036.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: persons
     lang: en
@@ -6162,13 +6162,13 @@ concepts:
     tts: cs-terms/osoby.mp3
   img: img/persons.jpeg
   freq: 123820.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: blockquote
     lang: en
   state: ignore
   freq: 123703.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hard
     lang: en
@@ -6182,7 +6182,7 @@ concepts:
     tts: cs-terms/tvrde.mp3
   img: img/hard.jpeg
   freq: 123625.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: happened
     lang: en
@@ -6196,7 +6196,7 @@ concepts:
     tts: cs-terms/prihodilo.mp3
   state: ignoreImage
   freq: 123421.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: spirit
     lang: en
@@ -6210,7 +6210,7 @@ concepts:
     tts: cs-terms/lih.mp3
   img: img/spirit.jpeg
   freq: 123099.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: free
     lang: en
@@ -6224,7 +6224,7 @@ concepts:
     tts: cs-terms/volny.mp3
   img: img/free.jpeg
   freq: 122955.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: answer
     lang: en
@@ -6238,7 +6238,7 @@ concepts:
     tts: cs-terms/odpovedet.mp3
   img: img/answer.jpeg
   freq: 122924.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: table
     lang: en
@@ -6252,7 +6252,7 @@ concepts:
     tts: cs-terms/stul.mp3
   img: img/table.jpeg
   freq: 122685.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: drew
     lang: en
@@ -6263,7 +6263,7 @@ concepts:
     tts: cs-terms/kreslil.mp3
   img: img/drew.jpeg
   freq: 122264.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: minutes
     lang: en
@@ -6274,7 +6274,7 @@ concepts:
     tts: cs-terms/minut.mp3
   img: img/minutes.jpeg
   freq: 122201.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: lot
     lang: en
@@ -6285,7 +6285,7 @@ concepts:
     tts: cs-terms/mnoho.mp3
   img: img/lot.jpeg
   freq: 122157.80000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: evening
     lang: en
@@ -6296,7 +6296,7 @@ concepts:
     tts: cs-terms/vecer.mp3
   img: img/evening.jpeg
   freq: 122106.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: effect
     lang: en
@@ -6324,7 +6324,7 @@ concepts:
     tts: cs-terms/pozemske.mp3
   img: img/earth.jpeg
   freq: 121948.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: behind
     lang: en
@@ -6335,7 +6335,7 @@ concepts:
     tts: cs-terms/za.mp3
   img: img/behind.jpeg
   freq: 121776.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cause
     lang: en
@@ -6349,7 +6349,7 @@ concepts:
     tts: cs-terms/pricina.mp3
   state: ignoreImage
   freq: 121764.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: six
     lang: en
@@ -6360,7 +6360,7 @@ concepts:
     tts: cs-terms/sest.mp3
   img: img/six.jpeg
   freq: 121091.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fine
     lang: en
@@ -6374,7 +6374,7 @@ concepts:
     tts: cs-terms/jemny.mp3
   state: ignoreImage
   freq: 119116.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: million
     lang: en
@@ -6385,7 +6385,7 @@ concepts:
     tts: cs-terms/milion.mp3
   img: img/million.jpeg
   freq: 118823.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bed
     lang: en
@@ -6396,7 +6396,7 @@ concepts:
     tts: cs-terms/postel.mp3
   img: img/bed.jpeg
   freq: 118469.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: wrote
     lang: en
@@ -6407,7 +6407,7 @@ concepts:
     tts: cs-terms/napsal.mp3
   img: img/wrote.jpeg
   freq: 118114.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: road
     lang: en
@@ -6421,7 +6421,7 @@ concepts:
     tts: cs-terms/cesta.mp3
   img: img/road.jpeg
   freq: 117982.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: lost
     lang: en
@@ -6435,7 +6435,7 @@ concepts:
     tts: cs-terms/prohral.mp3
   img: img/lost.jpeg
   freq: 117075.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: months
     lang: en
@@ -6446,7 +6446,7 @@ concepts:
     tts: cs-terms/mesice.mp3
   img: img/months.jpeg
   freq: 116955.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ready
     lang: en
@@ -6468,7 +6468,7 @@ concepts:
     tts: cs-terms/nasledujici.mp3
   img: img/following.jpeg
   freq: 116148.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ten
     lang: en
@@ -6479,7 +6479,7 @@ concepts:
     tts: cs-terms/deset.mp3
   img: img/ten.jpeg
   freq: 115719.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mean
     lang: en
@@ -6493,7 +6493,7 @@ concepts:
     tts: cs-terms/stredni.mp3
   img: img/mean.jpeg
   freq: 115545.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: question
     lang: en
@@ -6507,7 +6507,7 @@ concepts:
     tts: cs-terms/dotaz.mp3
   img: img/question.jpeg
   freq: 115524.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: human
     lang: en
@@ -6521,7 +6521,7 @@ concepts:
     tts: cs-terms/clovek.mp3
   img: img/human.jpeg
   freq: 114381.00000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: states
     lang: en
@@ -6535,7 +6535,7 @@ concepts:
     tts: cs-terms/stavy.mp3
   img: img/states.jpeg
   freq: 113807.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: "yes"
     lang: en
@@ -6546,7 +6546,7 @@ concepts:
     tts: cs-terms/ano.mp3
   img: img/yes.jpeg
   freq: 113547.65000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: feel
     lang: en
@@ -6560,7 +6560,7 @@ concepts:
     tts: cs-terms/pocit.mp3
   img: img/feel.jpeg
   freq: 111647.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: parts
     lang: en
@@ -6574,7 +6574,7 @@ concepts:
     tts: cs-terms/casti.mp3
   img: img/parts.jpeg
   freq: 111194.00000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: talk
     lang: en
@@ -6588,7 +6588,7 @@ concepts:
     tts: cs-terms/hovorit.mp3
   img: img/talk.jpeg
   freq: 111072.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fear
     lang: en
@@ -6602,7 +6602,7 @@ concepts:
     tts: cs-terms/obava.mp3
   img: img/fear.jpeg
   freq: 109036.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: live
     lang: en
@@ -6616,7 +6616,7 @@ concepts:
     tts: cs-terms/ziji.mp3
   img: img/live.jpeg
   freq: 108511.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: learn
     lang: en
@@ -6630,7 +6630,7 @@ concepts:
     tts: cs-terms/ucit.mp3
   img: img/learn.jpeg
   freq: 107429.85000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: happy
     lang: en
@@ -6644,7 +6644,7 @@ concepts:
     tts: cs-terms/spokojeni.mp3
   img: img/happy.jpeg
   freq: 106887.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: stopped
     lang: en
@@ -6658,7 +6658,7 @@ concepts:
     tts: cs-terms/prestal.mp3
   img: img/stopped.jpeg
   freq: 106661.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: suddenly
     lang: en
@@ -6672,7 +6672,7 @@ concepts:
     tts: cs-terms/najednou.mp3
   state: ignoreImage
   freq: 104116.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: red
     lang: en
@@ -6686,7 +6686,7 @@ concepts:
     tts: cs-terms/cervena.mp3
   img: img/red.jpeg
   freq: 103902.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dark
     lang: en
@@ -6700,7 +6700,7 @@ concepts:
     tts: cs-terms/temne.mp3
   img: img/dark.jpeg
   freq: 102590.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sense
     lang: en
@@ -6711,7 +6711,7 @@ concepts:
     tts: cs-terms/smysl.mp3
   img: img/sense.jpeg
   freq: 101208.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: attention
     lang: en
@@ -6725,7 +6725,7 @@ concepts:
     tts: cs-terms/upozorneni.mp3
   img: img/attention.jpeg
   freq: 99764.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: wait
     lang: en
@@ -6739,7 +6739,7 @@ concepts:
     tts: cs-terms/cekat.mp3
   img: img/wait.jpeg
   freq: 98993.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: where
     lang: en
@@ -6753,7 +6753,7 @@ concepts:
     tts: cs-terms/kam.mp3
   img: img/where.jpeg
   freq: 98596.79500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: job
     lang: en
@@ -6781,7 +6781,7 @@ concepts:
     tts: cs-terms/pokousi.mp3
   img: img/trying.jpeg
   freq: 94706.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: strange
     lang: en
@@ -6795,7 +6795,7 @@ concepts:
     tts: cs-terms/zvlastni.mp3
   img: img/strange.jpeg
   freq: 93945.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: car
     lang: en
@@ -6806,7 +6806,7 @@ concepts:
     tts: cs-terms/auto.mp3
   img: img/car.jpeg
   freq: 90131.05000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: play
     lang: en
@@ -6820,7 +6820,7 @@ concepts:
     tts: cs-terms/prehrat.mp3
   img: img/play.jpeg
   freq: 89945.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: save
     lang: en
@@ -6834,7 +6834,7 @@ concepts:
     tts: cs-terms/zachranit.mp3
   img: img/save.jpeg
   freq: 89433.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: add
     lang: en
@@ -6845,7 +6845,7 @@ concepts:
     tts: cs-terms/pridat.mp3
   img: img/add.jpeg
   freq: 89244.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: continued
     lang: en
@@ -6856,7 +6856,7 @@ concepts:
     tts: cs-terms/pokracoval.mp3
   img: img/continued.jpeg
   freq: 89244.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: run
     lang: en
@@ -6881,7 +6881,7 @@ concepts:
     tts: cs-terms/jediny.mp3
   img: img/single.jpeg
   freq: 87988.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: late
     lang: en
@@ -6895,7 +6895,7 @@ concepts:
     tts: cs-terms/pozde.mp3
   img: img/late.jpeg
   freq: 87283.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: america
     lang: en
@@ -6906,7 +6906,7 @@ concepts:
     tts: cs-terms/amerika.mp3
   img: img/america.jpeg
   freq: 87195.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: agree
     lang: en
@@ -6920,7 +6920,7 @@ concepts:
     tts: cs-terms/shoduji.mp3
   img: img/agree.jpeg
   freq: 86583.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: talking
     lang: en
@@ -6934,7 +6934,7 @@ concepts:
     tts: cs-terms/hovori.mp3
   img: img/talking.jpeg
   freq: 85391.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: gold
     lang: en
@@ -6945,7 +6945,7 @@ concepts:
     tts: cs-terms/zlato.mp3
   img: img/gold.jpeg
   freq: 85222.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: class
     lang: en
@@ -6956,7 +6956,7 @@ concepts:
     tts: cs-terms/trida.mp3
   img: img/class.jpeg
   freq: 84748.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: neither
     lang: en
@@ -6967,7 +6967,7 @@ concepts:
     tts: cs-terms/ani.mp3
   state: ignoreImage
   freq: 84393.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mine
     lang: en
@@ -6981,7 +6981,7 @@ concepts:
     tts: cs-terms/moje.mp3
   img: img/mine.jpeg
   freq: 83382.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: copies
     lang: en
@@ -6995,7 +6995,7 @@ concepts:
     tts: cs-terms/vytisky.mp3
   img: img/copies.jpeg
   freq: 81479.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: whatever
     lang: en
@@ -7009,7 +7009,7 @@ concepts:
     tts: cs-terms/jakekoli.mp3
   state: ignoreImage
   freq: 80374.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: distance
     lang: en
@@ -7023,7 +7023,7 @@ concepts:
     tts: cs-terms/dalka.mp3
   img: img/distance.jpeg
   freq: 80213.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: situation
     lang: en
@@ -7034,7 +7034,7 @@ concepts:
     tts: cs-terms/situace.mp3
   img: img/situation.jpeg
   freq: 76627.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: finally
     lang: en
@@ -7048,7 +7048,7 @@ concepts:
     tts: cs-terms/nakonec.mp3
   state: ignoreImage
   freq: 75984.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: doctor
     lang: en
@@ -7062,7 +7062,7 @@ concepts:
     tts: cs-terms/doktor.mp3
   img: img/doctor.jpeg
   freq: 73863.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: visit
     lang: en
@@ -7073,7 +7073,7 @@ concepts:
     tts: cs-terms/navsteva.mp3
   img: img/visit.jpeg
   freq: 72403.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: afraid
     lang: en
@@ -7087,7 +7087,7 @@ concepts:
     tts: cs-terms/polekany.mp3
   img: img/afraid.jpeg
   freq: 72097.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: using
     lang: en
@@ -7101,7 +7101,7 @@ concepts:
     tts: cs-terms/s vyuzitim.mp3
   img: img/using.jpeg
   freq: 71751.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: green
     lang: en
@@ -7115,7 +7115,7 @@ concepts:
     tts: cs-terms/zelena.mp3
   img: img/green.jpeg
   freq: 71603.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: create
     lang: en
@@ -7126,7 +7126,7 @@ concepts:
     tts: cs-terms/vytvorit.mp3
   img: img/create.jpeg
   freq: 71339.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: easily
     lang: en
@@ -7140,7 +7140,7 @@ concepts:
     tts: cs-terms/jednoduse.mp3
   img: img/easily.jpeg
   freq: 69383.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: plan
     lang: en
@@ -7154,7 +7154,7 @@ concepts:
     tts: cs-terms/zamer.mp3
   img: img/plan.jpeg
   freq: 67949.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fresh
     lang: en
@@ -7168,7 +7168,7 @@ concepts:
     tts: cs-terms/svezi.mp3
   img: img/fresh.jpeg
   freq: 67814.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: lies
     lang: en
@@ -7182,7 +7182,7 @@ concepts:
     tts: cs-terms/spociva.mp3
   img: img/lies.jpeg
   freq: 67551.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: eight
     lang: en
@@ -7193,7 +7193,7 @@ concepts:
     tts: cs-terms/osm.mp3
   img: img/eight.jpeg
   freq: 67362.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: explain
     lang: en
@@ -7207,7 +7207,7 @@ concepts:
     tts: cs-terms/objasnit.mp3
   img: img/explain.jpeg
   freq: 66041.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: meeting
     lang: en
@@ -7221,7 +7221,7 @@ concepts:
     tts: cs-terms/setkani.mp3
   img: img/meeting.jpeg
   freq: 65939.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fingers
     lang: en
@@ -7232,7 +7232,7 @@ concepts:
     tts: cs-terms/prsty.mp3
   img: img/fingers.jpeg
   freq: 65564.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: step
     lang: en
@@ -7243,7 +7243,7 @@ concepts:
     tts: cs-terms/krok.mp3
   img: img/step.jpeg
   freq: 65474.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: boat
     lang: en
@@ -7257,7 +7257,7 @@ concepts:
     tts: cs-terms/clun.mp3
   img: img/boat.jpeg
   freq: 65417.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: married
     lang: en
@@ -7271,7 +7271,7 @@ concepts:
     tts: cs-terms/vdana.mp3
   img: img/married.jpeg
   freq: 65385.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: garden
     lang: en
@@ -7282,7 +7282,7 @@ concepts:
     tts: cs-terms/zahrada.mp3
   img: img/garden.jpeg
   freq: 65096.30000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: secret
     lang: en
@@ -7296,7 +7296,7 @@ concepts:
     tts: cs-terms/tajemstvi.mp3
   img: img/secret.jpeg
   freq: 64491.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: enter
     lang: en
@@ -7310,7 +7310,7 @@ concepts:
     tts: cs-terms/vstoupit.mp3
   img: img/enter.jpeg
   freq: 64435.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sell
     lang: en
@@ -7321,7 +7321,7 @@ concepts:
     tts: cs-terms/prodat.mp3
   img: img/sell.jpeg
   freq: 64174.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dog
     lang: en
@@ -7332,7 +7332,7 @@ concepts:
     tts: cs-terms/pes.mp3
   img: img/dog.jpeg
   freq: 64110.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: maybe
     lang: en
@@ -7343,7 +7343,7 @@ concepts:
     tts: cs-terms/mozna.mp3
   img: img/maybe.jpeg
   freq: 64096.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: foreign
     lang: en
@@ -7357,7 +7357,7 @@ concepts:
     tts: cs-terms/cizi.mp3
   img: img/foreign.jpeg
   freq: 64074.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: birds
     lang: en
@@ -7371,7 +7371,7 @@ concepts:
     tts: cs-terms/ptactvo.mp3
   img: img/birds.jpeg
   freq: 63162.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: waited
     lang: en
@@ -7385,7 +7385,7 @@ concepts:
     tts: cs-terms/vyckavala.mp3
   img: img/waited.jpeg
   freq: 62808.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: walk
     lang: en
@@ -7399,7 +7399,7 @@ concepts:
     tts: cs-terms/projit.mp3
   img: img/walk.jpeg
   freq: 61245.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: enemies
     lang: en
@@ -7410,7 +7410,7 @@ concepts:
     tts: cs-terms/nepratele.mp3
   img: img/enemies.jpeg
   freq: 60982.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: anyone
     lang: en
@@ -7424,7 +7424,7 @@ concepts:
     tts: cs-terms/kohokoliv.mp3
   img: img/anyone.jpeg
   freq: 60607.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: usual
     lang: en
@@ -7438,7 +7438,7 @@ concepts:
     tts: cs-terms/bezne.mp3
   state: ignoreImage
   freq: 59858.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: main
     lang: en
@@ -7449,7 +7449,7 @@ concepts:
     tts: cs-terms/hlavni.mp3
   img: img/main.jpeg
   freq: 59778.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: someone
     lang: en
@@ -7463,7 +7463,7 @@ concepts:
     tts: cs-terms/nekoho.mp3
   state: ignoreImage
   freq: 59644.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: please
     lang: en
@@ -7477,7 +7477,7 @@ concepts:
     tts: cs-terms/potesit.mp3
   img: img/please.jpeg
   freq: 58839.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: shot
     lang: en
@@ -7491,7 +7491,7 @@ concepts:
     tts: cs-terms/zaber.mp3
   img: img/shot.jpeg
   freq: 58465.05000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: stay
     lang: en
@@ -7505,7 +7505,7 @@ concepts:
     tts: cs-terms/pobyt.mp3
   state: ignoreImage
   freq: 57836.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: grown
     lang: en
@@ -7519,7 +7519,7 @@ concepts:
     tts: cs-terms/vypestovany.mp3
   img: img/grown.jpeg
   freq: 57772.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: safe
     lang: en
@@ -7533,7 +7533,7 @@ concepts:
     tts: cs-terms/trezor.mp3
   img: img/safe.jpeg
   freq: 57432.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: worth
     lang: en
@@ -7547,7 +7547,7 @@ concepts:
     tts: cs-terms/hodnota.mp3
   img: img/worth.jpeg
   freq: 57291.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: pull
     lang: en
@@ -7561,7 +7561,7 @@ concepts:
     tts: cs-terms/tahat.mp3
   img: img/pull.jpeg
   freq: 57029.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: clearly
     lang: en
@@ -7575,7 +7575,7 @@ concepts:
     tts: cs-terms/zrejme.mp3
   img: img/clearly.jpeg
   freq: 56615.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: energy
     lang: en
@@ -7586,7 +7586,7 @@ concepts:
     tts: cs-terms/energie.mp3
   img: img/energy.jpeg
   freq: 55273.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: directly
     lang: en
@@ -7600,7 +7600,7 @@ concepts:
     tts: cs-terms/bezprostredne.mp3
   img: img/directly.jpeg
   freq: 55211.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: song
     lang: en
@@ -7614,7 +7614,7 @@ concepts:
     tts: cs-terms/skladba.mp3
   img: img/song.jpeg
   freq: 54221.30000
-  origins: ["conceptDbSamples", "JingleBells"]
+  origins: ["conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: choice
     lang: en
@@ -7628,7 +7628,7 @@ concepts:
     tts: cs-terms/vyber.mp3
   img: img/choice.jpeg
   freq: 54079.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: size
     lang: en
@@ -7642,7 +7642,7 @@ concepts:
     tts: cs-terms/rozmery.mp3
   img: img/size.jpeg
   freq: 53495.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: rules
     lang: en
@@ -7656,7 +7656,7 @@ concepts:
     tts: cs-terms/predpisy.mp3
   img: img/rules.jpeg
   freq: 53386.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: value
     lang: en
@@ -7667,7 +7667,7 @@ concepts:
     tts: cs-terms/hodnota.mp3
   img: img/value.jpeg
   freq: 52616.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: teeth
     lang: en
@@ -7681,7 +7681,7 @@ concepts:
     tts: cs-terms/chrup.mp3
   img: img/teeth.jpeg
   freq: 52449.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: permission
     lang: en
@@ -7695,7 +7695,7 @@ concepts:
     tts: cs-terms/povoleni.mp3
   img: img/permission.jpeg
   freq: 52344.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: won
     lang: en
@@ -7709,7 +7709,7 @@ concepts:
     tts: cs-terms/zvitezil.mp3
   img: img/won.jpeg
   freq: 51798.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: nice
     lang: en
@@ -7737,7 +7737,7 @@ concepts:
     tts: cs-terms/zahajeni.mp3
   img: img/start.jpeg
   freq: 50331.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: marry
     lang: en
@@ -7751,7 +7751,7 @@ concepts:
     tts: cs-terms/provdat.mp3
   img: img/marry.jpeg
   freq: 49835.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fees
     lang: en
@@ -7762,7 +7762,7 @@ concepts:
     tts: cs-terms/poplatky.mp3
   img: img/fees.jpeg
   freq: 49820.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fill
     lang: en
@@ -7790,7 +7790,7 @@ concepts:
     tts: cs-terms/salek.mp3
   img: img/cup.jpeg
   freq: 49370.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: worst
     lang: en
@@ -7804,7 +7804,7 @@ concepts:
     tts: cs-terms/nejhure.mp3
   img: img/worst.jpeg
   freq: 49369.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: don
     lang: en
@@ -7821,7 +7821,7 @@ concepts:
     tts: cs-terms/data-cs.mp3
   img: img/data.jpeg
   freq: 48658.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: additional
     lang: en
@@ -7835,7 +7835,7 @@ concepts:
     tts: cs-terms/pridavne.mp3
   img: img/additional.jpeg
   freq: 47705.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: needs
     lang: en
@@ -7849,7 +7849,7 @@ concepts:
     tts: cs-terms/potreby.mp3
   img: img/needs.jpeg
   freq: 47619.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: happiness
     lang: en
@@ -7860,7 +7860,7 @@ concepts:
     tts: cs-terms/stesti.mp3
   img: img/happiness.jpeg
   freq: 47520.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: stop
     lang: en
@@ -7874,7 +7874,7 @@ concepts:
     tts: cs-terms/stuj.mp3
   img: img/stop.jpeg
   freq: 46709.35000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: thinks
     lang: en
@@ -7888,7 +7888,7 @@ concepts:
     tts: cs-terms/premysli.mp3
   img: img/thinks.jpeg
   freq: 46053.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: medium
     lang: en
@@ -7899,7 +7899,7 @@ concepts:
     tts: cs-terms/stredni.mp3
   img: img/medium.jpeg
   freq: 45868.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: everyone
     lang: en
@@ -7913,7 +7913,7 @@ concepts:
     tts: cs-terms/kazdy.mp3
   img: img/everyone.jpeg
   freq: 45742.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: goods
     lang: en
@@ -7924,7 +7924,7 @@ concepts:
     tts: cs-terms/zbozi.mp3
   img: img/goods.jpeg
   freq: 45735.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: closed
     lang: en
@@ -7935,7 +7935,7 @@ concepts:
     tts: cs-terms/uzavrene.mp3
   img: img/closed.jpeg
   freq: 45657.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: claim
     lang: en
@@ -7949,7 +7949,7 @@ concepts:
     tts: cs-terms/narok.mp3
   img: img/claim.jpeg
   freq: 44928.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: rule
     lang: en
@@ -7960,7 +7960,7 @@ concepts:
     tts: cs-terms/pravidlo.mp3
   img: img/rule.jpeg
   freq: 44844.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: required
     lang: en
@@ -7974,7 +7974,7 @@ concepts:
     tts: cs-terms/vyzadovano.mp3
   img: img/required.jpeg
   freq: 44600.85000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: asking
     lang: en
@@ -7988,7 +7988,7 @@ concepts:
     tts: cs-terms/pta se.mp3
   img: img/asking.jpeg
   freq: 44097.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: nine
     lang: en
@@ -7999,7 +7999,7 @@ concepts:
     tts: cs-terms/devet.mp3
   img: img/nine.jpeg
   freq: 43944.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: apply
     lang: en
@@ -8013,7 +8013,7 @@ concepts:
     tts: cs-terms/aplikovat.mp3
   img: img/apply.jpeg
   freq: 43667.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: excellent
     lang: en
@@ -8027,7 +8027,7 @@ concepts:
     tts: cs-terms/vyborny.mp3
   img: img/excellent.jpeg
   freq: 43273.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: brain
     lang: en
@@ -8038,7 +8038,7 @@ concepts:
     tts: cs-terms/mozek.mp3
   img: img/brain.jpeg
   freq: 42478.85000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: alive
     lang: en
@@ -8052,7 +8052,7 @@ concepts:
     tts: cs-terms/zaziva.mp3
   img: img/alive.jpeg
   freq: 41908.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dangerous
     lang: en
@@ -8063,7 +8063,7 @@ concepts:
     tts: cs-terms/nebezpecne.mp3
   img: img/dangerous.jpeg
   freq: 41231.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: working
     lang: en
@@ -8077,7 +8077,7 @@ concepts:
     tts: cs-terms/fungujici.mp3
   img: img/working.jpeg
   freq: 41121.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: drive
     lang: en
@@ -8091,7 +8091,7 @@ concepts:
     tts: cs-terms/pohon.mp3
   img: img/drive.jpeg
   freq: 40999.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: brother
     lang: en
@@ -8102,7 +8102,7 @@ concepts:
     tts: cs-terms/bratr.mp3
   img: img/brother.jpeg
   freq: 40977.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: earlier
     lang: en
@@ -8116,7 +8116,7 @@ concepts:
     tts: cs-terms/drive-cs.mp3
   img: img/earlier.jpeg
   freq: 40843.10000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: nobody
     lang: en
@@ -8130,7 +8130,7 @@ concepts:
     tts: cs-terms/nikoho.mp3
   state: ignoreImage
   freq: 40420.30000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hospital
     lang: en
@@ -8141,7 +8141,7 @@ concepts:
     tts: cs-terms/nemocnice.mp3
   img: img/hospital.jpeg
   freq: 40282.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tired
     lang: en
@@ -8152,7 +8152,7 @@ concepts:
     tts: cs-terms/unaveny.mp3
   img: img/tired.jpeg
   freq: 39561.35000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: successful
     lang: en
@@ -8163,7 +8163,7 @@ concepts:
     tts: cs-terms/uspesne.mp3
   img: img/successful.jpeg
   freq: 39535.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: empty
     lang: en
@@ -8174,7 +8174,7 @@ concepts:
     tts: cs-terms/prazdne.mp3
   img: img/empty.jpeg
   freq: 38692.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: list
     lang: en
@@ -8185,7 +8185,7 @@ concepts:
     tts: cs-terms/seznam.mp3
   img: img/list.jpeg
   freq: 37150.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: yesterday
     lang: en
@@ -8196,7 +8196,7 @@ concepts:
     tts: cs-terms/vcera.mp3
   img: img/yesterday.jpeg
   freq: 37019.50000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: phone
     lang: en
@@ -8207,7 +8207,7 @@ concepts:
     tts: cs-terms/telefon.mp3
   img: img/phone.jpeg
   freq: 36947.43500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mistake
     lang: en
@@ -8221,7 +8221,7 @@ concepts:
     tts: cs-terms/chyba.mp3
   img: img/mistake.jpeg
   freq: 36424.35000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: busy
     lang: en
@@ -8235,7 +8235,7 @@ concepts:
     tts: cs-terms/rusny.mp3
   img: img/busy.jpeg
   freq: 35453.55000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: film
     lang: en
@@ -8246,7 +8246,7 @@ concepts:
     tts: cs-terms/folie.mp3
   img: img/film.jpeg
   freq: 35325.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: remarkable
     lang: en
@@ -8260,7 +8260,7 @@ concepts:
     tts: cs-terms/mimoradny.mp3
   img: img/remarkable.jpeg
   freq: 35244.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: movie
     lang: en
@@ -8271,7 +8271,7 @@ concepts:
     tts: cs-terms/film-cs.mp3
   img: img/movie.jpeg
   freq: 35083.52900
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: nose
     lang: en
@@ -8282,7 +8282,7 @@ concepts:
     tts: cs-terms/nos.mp3
   img: img/nose.jpeg
   freq: 34998.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hide
     lang: en
@@ -8296,7 +8296,7 @@ concepts:
     tts: cs-terms/schovat.mp3
   img: img/hide.jpeg
   freq: 34760.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: explanation
     lang: en
@@ -8307,7 +8307,7 @@ concepts:
     tts: cs-terms/vysvetleni.mp3
   img: img/explanation.jpeg
   freq: 34381.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tea
     lang: en
@@ -8318,7 +8318,7 @@ concepts:
     tts: cs-terms/caj.mp3
   img: img/tea.jpeg
   freq: 33960.05000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: test
     lang: en
@@ -8329,7 +8329,7 @@ concepts:
     tts: cs-terms/zkouska.mp3
   img: img/test.jpeg
   freq: 33664.05000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ring
     lang: en
@@ -8343,7 +8343,7 @@ concepts:
     tts: cs-terms/krouzek.mp3
   img: img/ring.jpeg
   freq: 33378.70000
-  origins: ["conceptDbSamples", "JingleBells"]
+  origins: ["conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: fault
     lang: en
@@ -8357,7 +8357,7 @@ concepts:
     tts: cs-terms/porucha.mp3
   img: img/fault.jpeg
   freq: 33363.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: clean
     lang: en
@@ -8371,7 +8371,7 @@ concepts:
     tts: cs-terms/vycistit.mp3
   img: img/clean.jpeg
   freq: 33343.65000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: shape
     lang: en
@@ -8385,7 +8385,7 @@ concepts:
     tts: cs-terms/tvar.mp3
   img: img/shape.jpeg
   freq: 33284.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: eggs
     lang: en
@@ -8399,7 +8399,7 @@ concepts:
     tts: cs-terms/vajicka.mp3
   img: img/eggs.jpeg
   freq: 33059.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: smaller
     lang: en
@@ -8410,7 +8410,7 @@ concepts:
     tts: cs-terms/mensi.mp3
   img: img/smaller.jpeg
   freq: 32668.30000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: finds
     lang: en
@@ -8424,7 +8424,7 @@ concepts:
     tts: cs-terms/vyhleda.mp3
   img: img/finds.jpeg
   freq: 31934.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: unable
     lang: en
@@ -8438,7 +8438,7 @@ concepts:
     tts: cs-terms/nemuze.mp3
   img: img/unable.jpeg
   freq: 31745.05000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: stayed
     lang: en
@@ -8452,7 +8452,7 @@ concepts:
     tts: cs-terms/pobyval.mp3
   img: img/stayed.jpeg
   freq: 31165.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: scale
     lang: en
@@ -8466,7 +8466,7 @@ concepts:
     tts: cs-terms/rozsah.mp3
   img: img/scale.jpeg
   freq: 30427.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: process
     lang: en
@@ -8480,7 +8480,7 @@ concepts:
     tts: cs-terms/postup.mp3
   img: img/process.jpeg
   freq: 30250.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: nearest
     lang: en
@@ -8491,7 +8491,7 @@ concepts:
     tts: cs-terms/nejblizsi.mp3
   img: img/nearest.jpeg
   freq: 29094.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: coffee
     lang: en
@@ -8502,7 +8502,7 @@ concepts:
     tts: cs-terms/kava.mp3
   img: img/coffee.jpeg
   freq: 29061.35000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fly
     lang: en
@@ -8516,7 +8516,7 @@ concepts:
     tts: cs-terms/let-cs.mp3
   img: img/fly.jpeg
   freq: 28502.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: visible
     lang: en
@@ -8527,7 +8527,7 @@ concepts:
     tts: cs-terms/viditelne.mp3
   img: img/visible.jpeg
   freq: 28287.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: library
     lang: en
@@ -8538,7 +8538,7 @@ concepts:
     tts: cs-terms/knihovna.mp3
   img: img/library.jpeg
   freq: 28114.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: catch
     lang: en
@@ -8552,7 +8552,7 @@ concepts:
     tts: cs-terms/ulovek.mp3
   img: img/catch.jpeg
   freq: 28047.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: instructions
     lang: en
@@ -8566,7 +8566,7 @@ concepts:
     tts: cs-terms/instrukce.mp3
   img: img/instructions.jpeg
   freq: 26838.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cool
     lang: en
@@ -8588,7 +8588,7 @@ concepts:
     tts: cs-terms/kocka.mp3
   img: img/cat.jpeg
   freq: 25867.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: repeat
     lang: en
@@ -8599,7 +8599,7 @@ concepts:
     tts: cs-terms/opakovat.mp3
   img: img/repeat.jpeg
   freq: 25063.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: advantages
     lang: en
@@ -8613,7 +8613,7 @@ concepts:
     tts: cs-terms/prednosti.mp3
   img: img/advantages.jpeg
   freq: 24802.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: win
     lang: en
@@ -8627,7 +8627,7 @@ concepts:
     tts: cs-terms/vitezstvi.mp3
   img: img/win.jpeg
   freq: 24721.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: patient
     lang: en
@@ -8641,7 +8641,7 @@ concepts:
     tts: cs-terms/trpelivy.mp3
   img: img/patient.jpeg
   freq: 24442.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: locked
     lang: en
@@ -8655,7 +8655,7 @@ concepts:
     tts: cs-terms/zamceny.mp3
   img: img/locked.jpeg
   freq: 24438.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: proceed
     lang: en
@@ -8669,7 +8669,7 @@ concepts:
     tts: cs-terms/pokracovat.mp3
   img: img/proceed.jpeg
   freq: 24123.80000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: hit
     lang: en
@@ -8683,7 +8683,7 @@ concepts:
     tts: cs-terms/zasahnout.mp3
   img: img/hit.jpeg
   freq: 23745.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: egg
     lang: en
@@ -8697,7 +8697,7 @@ concepts:
     tts: cs-terms/vajicko.mp3
   img: img/egg.jpeg
   freq: 22506.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: camera
     lang: en
@@ -8711,7 +8711,7 @@ concepts:
     tts: cs-terms/kamera.mp3
   img: img/camera.jpeg
   freq: 22397.35500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: that
     lang: en
@@ -8739,7 +8739,7 @@ concepts:
     tts: cs-terms/pocity.mp3
   img: img/emotions.jpeg
   freq: 21695.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tables
     lang: en
@@ -8753,7 +8753,7 @@ concepts:
     tts: cs-terms/stoly.mp3
   img: img/tables.jpeg
   freq: 21432.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: print
     lang: en
@@ -8764,7 +8764,7 @@ concepts:
     tts: cs-terms/vytisknout.mp3
   img: img/print.jpeg
   freq: 21355.55000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tomorrow
     lang: en
@@ -8800,7 +8800,7 @@ concepts:
     tts: cs-terms/litovat.mp3
   img: img/regret.jpeg
   freq: 20930.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: user
     lang: en
@@ -8811,7 +8811,7 @@ concepts:
     tts: cs-terms/uzivatele.mp3
   img: img/user.jpeg
   freq: 20688.50000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: lonely
     lang: en
@@ -8825,7 +8825,7 @@ concepts:
     tts: cs-terms/opusteny.mp3
   img: img/lonely.jpeg
   freq: 20598.05000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cares
     lang: en
@@ -8839,7 +8839,7 @@ concepts:
     tts: cs-terms/pecuje.mp3
   img: img/cares.jpeg
   freq: 20161.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mirror
     lang: en
@@ -8850,7 +8850,7 @@ concepts:
     tts: cs-terms/zrcadlo.mp3
   img: img/mirror.jpeg
   freq: 20145.65000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: rarely
     lang: en
@@ -8864,7 +8864,7 @@ concepts:
     tts: cs-terms/malokdy.mp3
   img: img/rarely.jpeg
   freq: 20081.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: beach
     lang: en
@@ -8878,7 +8878,7 @@ concepts:
     tts: cs-terms/pobrezi.mp3
   img: img/beach.jpeg
   freq: 19941.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bedroom
     lang: en
@@ -8889,7 +8889,7 @@ concepts:
     tts: cs-terms/loznice.mp3
   img: img/bedroom.jpeg
   freq: 19349.30000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: stolen
     lang: en
@@ -8903,7 +8903,7 @@ concepts:
     tts: cs-terms/kradeny.mp3
   img: img/stolen.jpeg
   freq: 19337.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: justified
     lang: en
@@ -8917,7 +8917,7 @@ concepts:
     tts: cs-terms/opravnene.mp3
   state: ignoreImage
   freq: 19003.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: funny
     lang: en
@@ -8942,7 +8942,7 @@ concepts:
     tts: cs-terms/sloupec.mp3
   img: img/column.jpeg
   freq: 18928.25000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tool
     lang: en
@@ -8953,7 +8953,7 @@ concepts:
     tts: cs-terms/nastroj.mp3
   img: img/tool.jpeg
   freq: 18451.52000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: device
     lang: en
@@ -8967,7 +8967,7 @@ concepts:
     tts: cs-terms/pristroj.mp3
   img: img/device.jpeg
   freq: 17951.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: appreciate
     lang: en
@@ -8981,7 +8981,7 @@ concepts:
     tts: cs-terms/vazime.mp3
   img: img/appreciate.jpeg
   freq: 17935.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: stores
     lang: en
@@ -8995,7 +8995,7 @@ concepts:
     tts: cs-terms/prodejny.mp3
   img: img/stores.jpeg
   freq: 17677.90000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: select
     lang: en
@@ -9009,7 +9009,7 @@ concepts:
     tts: cs-terms/zvolte.mp3
   img: img/select.jpeg
   freq: 17442.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: rejected
     lang: en
@@ -9023,7 +9023,7 @@ concepts:
     tts: cs-terms/odmitl.mp3
   img: img/rejected.jpeg
   freq: 16802.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: niece
     lang: en
@@ -9034,7 +9034,7 @@ concepts:
     tts: cs-terms/neter.mp3
   img: img/niece.jpeg
   freq: 15329.80000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: root
     lang: en
@@ -9048,7 +9048,7 @@ concepts:
     tts: cs-terms/korenovy.mp3
   img: img/root.jpeg
   freq: 15258.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: caution
     lang: en
@@ -9062,7 +9062,7 @@ concepts:
     tts: cs-terms/pozor.mp3
   img: img/caution.jpeg
   freq: 15246.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ghost
     lang: en
@@ -9076,7 +9076,7 @@ concepts:
     tts: cs-terms/prizrak.mp3
   img: img/ghost.jpeg
   freq: 14563.95000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: speaker
     lang: en
@@ -9090,7 +9090,7 @@ concepts:
     tts: cs-terms/mluvci.mp3
   img: img/speaker.jpeg
   freq: 14417.15000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: neighbour
     lang: en
@@ -9101,7 +9101,7 @@ concepts:
     tts: cs-terms/soused.mp3
   img: img/neighbour.jpeg
   freq: 14405.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: wake
     lang: en
@@ -9112,7 +9112,7 @@ concepts:
     tts: cs-terms/vzbudit.mp3
   img: img/wake.jpeg
   freq: 13978.30000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bath
     lang: en
@@ -9126,7 +9126,7 @@ concepts:
     tts: cs-terms/lazen.mp3
   img: img/bath.jpeg
   freq: 13822.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: entry
     lang: en
@@ -9140,7 +9140,7 @@ concepts:
     tts: cs-terms/vstup.mp3
   img: img/entry.jpeg
   freq: 13709.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: studying
     lang: en
@@ -9151,7 +9151,7 @@ concepts:
     tts: cs-terms/studuje.mp3
   img: img/studying.jpeg
   freq: 13662.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: piano
     lang: en
@@ -9165,7 +9165,7 @@ concepts:
     tts: cs-terms/piano-cs.mp3
   img: img/piano.jpeg
   freq: 13521.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: virus
     lang: en
@@ -9176,7 +9176,7 @@ concepts:
     tts: cs-terms/vir.mp3
   img: img/virus.jpeg
   freq: 13416.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: diamonds
     lang: en
@@ -9190,7 +9190,7 @@ concepts:
     tts: cs-terms/brilianty.mp3
   img: img/diamonds.jpeg
   freq: 12851.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cars
     lang: en
@@ -9204,7 +9204,7 @@ concepts:
     tts: cs-terms/vozy.mp3
   img: img/cars.jpeg
   freq: 12638.30000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tricks
     lang: en
@@ -9218,7 +9218,7 @@ concepts:
     tts: cs-terms/podvody.mp3
   img: img/tricks.jpeg
   freq: 12560.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dad
     lang: en
@@ -9232,7 +9232,7 @@ concepts:
     tts: cs-terms/tata.mp3
   img: img/dad.jpeg
   freq: 12195.12000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: document
     lang: en
@@ -9246,7 +9246,7 @@ concepts:
     tts: cs-terms/doklad.mp3
   img: img/document.jpeg
   freq: 11841.05000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: anymore
     lang: en
@@ -9260,7 +9260,7 @@ concepts:
     tts: cs-terms/jeste.mp3
   state: ignoreImage
   freq: 11099.89700
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: complicated
     lang: en
@@ -9274,13 +9274,13 @@ concepts:
     tts: cs-terms/slozite.mp3
   img: img/complicated.jpeg
   freq: 10946.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: re
     lang: en
   state: ignore
   freq: 10479.44000
-  origins: ["conceptDbSamples", "JingleBells"]
+  origins: ["conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: alert
     lang: en
@@ -9291,7 +9291,7 @@ concepts:
     tts: cs-terms/vystraha.mp3
   img: img/alert.jpeg
   freq: 10451.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: extract
     lang: en
@@ -9305,7 +9305,7 @@ concepts:
     tts: cs-terms/vytazek.mp3
   img: img/extract.jpeg
   freq: 10345.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: toy
     lang: en
@@ -9316,7 +9316,7 @@ concepts:
     tts: cs-terms/hracka.mp3
   img: img/toy.jpeg
   freq: 10145.48500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: processing
     lang: en
@@ -9330,7 +9330,7 @@ concepts:
     tts: cs-terms/vyrizovani.mp3
   img: img/processing.jpeg
   freq: 10121.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tons
     lang: en
@@ -9344,7 +9344,7 @@ concepts:
     tts: cs-terms/tuny.mp3
   img: img/tons.jpeg
   freq: 10088.50000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: worried
     lang: en
@@ -9355,7 +9355,7 @@ concepts:
     tts: cs-terms/ustarany.mp3
   img: img/worried.jpeg
   freq: 9953.55000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: chapters
     lang: en
@@ -9366,7 +9366,7 @@ concepts:
     tts: cs-terms/kapitoly.mp3
   img: img/chapters.jpeg
   freq: 9389.18000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: happening
     lang: en
@@ -9380,7 +9380,7 @@ concepts:
     tts: cs-terms/deji.mp3
   img: img/happening.jpeg
   freq: 9339.34000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: messages
     lang: en
@@ -9394,7 +9394,7 @@ concepts:
     tts: cs-terms/vzkazy.mp3
   img: img/messages.jpeg
   freq: 9314.02000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: upset
     lang: en
@@ -9408,7 +9408,7 @@ concepts:
     tts: cs-terms/rozcileny.mp3
   img: img/upset.jpeg
   freq: 9102.75000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: whoever
     lang: en
@@ -9419,7 +9419,7 @@ concepts:
     tts: cs-terms/kdokoli.mp3
   state: ignoreImage
   freq: 8846.85000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bean
     lang: en
@@ -9430,7 +9430,7 @@ concepts:
     tts: cs-terms/fazole.mp3
   img: img/bean.jpeg
   freq: 8738.49500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hello
     lang: en
@@ -9444,7 +9444,7 @@ concepts:
     tts: cs-terms/ahoj.mp3
   img: img/hello.jpeg
   freq: 8621.20050
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: transport
     lang: en
@@ -9472,7 +9472,7 @@ concepts:
     tts: cs-terms/odpocinkovy.mp3
   img: img/relaxed.jpeg
   freq: 7812.45000
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: jungle
     lang: en
@@ -9483,7 +9483,7 @@ concepts:
     tts: cs-terms/dzungle.mp3
   img: img/jungle.jpeg
   freq: 7630.09500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: proving
     lang: en
@@ -9497,7 +9497,7 @@ concepts:
     tts: cs-terms/ktere prokazuji.mp3
   img: img/proving.jpeg
   freq: 7603.59000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: athletic
     lang: en
@@ -9511,7 +9511,7 @@ concepts:
     tts: cs-terms/sportovni.mp3
   img: img/athletic.jpeg
   freq: 7581.47000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: values
     lang: en
@@ -9522,7 +9522,7 @@ concepts:
     tts: cs-terms/hodnoty.mp3
   img: img/values.jpeg
   freq: 7039.51000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: kid
     lang: en
@@ -9536,7 +9536,7 @@ concepts:
     tts: cs-terms/dite.mp3
   img: img/kid.jpeg
   freq: 6770.47000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hen
     lang: en
@@ -9547,7 +9547,7 @@ concepts:
     tts: cs-terms/slepice.mp3
   img: img/hen.jpeg
   freq: 6569.58000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: liar
     lang: en
@@ -9558,7 +9558,7 @@ concepts:
     tts: cs-terms/lhar.mp3
   img: img/liar.jpeg
   freq: 6052.17000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: menu
     lang: en
@@ -9572,7 +9572,7 @@ concepts:
     tts: cs-terms/jidelni listek.mp3
   img: img/menu.jpeg
   freq: 5951.66500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: counts
     lang: en
@@ -9586,13 +9586,13 @@ concepts:
     tts: cs-terms/spocita.mp3
   img: img/counts.jpeg
   freq: 5730.18000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ll
     lang: en
   state: ignore
   freq: 5632.08000
-  origins: ["conceptDbSamples", "JingleBells"]
+  origins: ["conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: arrogant
     lang: en
@@ -9606,7 +9606,7 @@ concepts:
     tts: cs-terms/arogantni.mp3
   img: img/arrogant.jpeg
   freq: 4196.96000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: steak
     lang: en
@@ -9620,7 +9620,7 @@ concepts:
     tts: cs-terms/rizek.mp3
   img: img/steak.jpeg
   freq: 4027.81500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: drivers
     lang: en
@@ -9634,7 +9634,7 @@ concepts:
     tts: cs-terms/ridici.mp3
   img: img/drivers.jpeg
   freq: 3781.62000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: filter
     lang: en
@@ -9648,7 +9648,7 @@ concepts:
     tts: cs-terms/filtrovat.mp3
   img: img/filter.jpeg
   freq: 3768.36500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: kids
     lang: en
@@ -9662,7 +9662,7 @@ concepts:
     tts: cs-terms/decka.mp3
   img: img/kids.jpeg
   freq: 3525.29000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: zero
     lang: en
@@ -9673,7 +9673,7 @@ concepts:
     tts: cs-terms/nula.mp3
   img: img/zero.jpeg
   freq: 2789.54000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: relaxing
     lang: en
@@ -9687,7 +9687,7 @@ concepts:
     tts: cs-terms/odpocinkove.mp3
   img: img/relaxing.jpeg
   freq: 1546.66000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: planetary
     lang: en
@@ -9698,7 +9698,7 @@ concepts:
     tts: cs-terms/planetarni.mp3
   img: img/planetary.jpeg
   freq: 1291.92000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: variants
     lang: en
@@ -9709,7 +9709,7 @@ concepts:
     tts: cs-terms/varianty.mp3
   img: img/variants.jpeg
   freq: 778.47600
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: suitcase
     lang: en
@@ -9720,7 +9720,7 @@ concepts:
     tts: cs-terms/kufr.mp3
   img: img/suitcase.jpeg
   freq: 655.85000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: pointless
     lang: en
@@ -9734,7 +9734,7 @@ concepts:
     tts: cs-terms/nesmyslne.mp3
   state: ignoreImage
   freq: 492.87600
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: noodles
     lang: en
@@ -9745,7 +9745,7 @@ concepts:
     tts: cs-terms/nudle.mp3
   img: img/noodles.jpeg
   freq: 345.72500
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sat
     lang: en
@@ -9759,7 +9759,7 @@ concepts:
     tts: cs-terms/posadil.mp3
   img: img/sat.jpeg
   freq: 166.13800
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: beers
     lang: en
@@ -9770,7 +9770,7 @@ concepts:
     tts: cs-terms/piva.mp3
   img: img/beers.jpeg
   freq: 159.01800
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: seafood
     lang: en
@@ -9784,7 +9784,7 @@ concepts:
     tts: cs-terms/plody more.mp3
   img: img/seafood.jpeg
   freq: 27.68970
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: horse
     lang: en
@@ -9795,7 +9795,7 @@ concepts:
     tts: cs-terms/kun.mp3
   img: img/horse.jpeg
   freq: 87507.50000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: quickly
     lang: en
@@ -9809,13 +9809,13 @@ concepts:
     tts: cs-terms/snadno.mp3
   img: img/quickly.jpeg
   freq: 77724.30000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: oh
     lang: en
   state: ignore
   freq: 68285.00000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bright
     lang: en
@@ -9829,7 +9829,7 @@ concepts:
     tts: cs-terms/zarive.mp3
   img: img/bright.jpeg
   freq: 64276.95000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: joy
     lang: en
@@ -9840,7 +9840,7 @@ concepts:
     tts: cs-terms/radost.mp3
   img: img/joy.jpeg
   freq: 63479.50000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: spirits
     lang: en
@@ -9854,7 +9854,7 @@ concepts:
     tts: cs-terms/duchy.mp3
   img: img/spirits.jpeg
   freq: 62147.50000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: laughing
     lang: en
@@ -9865,7 +9865,7 @@ concepts:
     tts: cs-terms/smejici se.mp3
   img: img/laughing.jpeg
   freq: 53113.60000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: drove
     lang: en
@@ -9879,7 +9879,7 @@ concepts:
     tts: cs-terms/odvezl.mp3
   img: img/drove.jpeg
   freq: 50184.80000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: seated
     lang: en
@@ -9893,7 +9893,7 @@ concepts:
     tts: cs-terms/sedela.mp3
   img: img/seated.jpeg
   freq: 49654.70000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sing
     lang: en
@@ -9904,7 +9904,7 @@ concepts:
     tts: cs-terms/zpivat.mp3
   img: img/sing.jpeg
   freq: 43453.10000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: snow
     lang: en
@@ -9915,7 +9915,7 @@ concepts:
     tts: cs-terms/snih.mp3
   img: img/snow.jpeg
   freq: 41197.95000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ride
     lang: en
@@ -9929,7 +9929,7 @@ concepts:
     tts: cs-terms/projizdka.mp3
   img: img/ride.jpeg
   freq: 34102.95000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tonight
     lang: en
@@ -9943,7 +9943,7 @@ concepts:
     tts: cs-terms/dnesni vecer.mp3
   img: img/tonight.jpeg
   freq: 28173.20500
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: fun
     lang: en
@@ -9971,7 +9971,7 @@ concepts:
     tts: cs-terms/hubeny.mp3
   img: img/lean.jpeg
   freq: 22063.05000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tail
     lang: en
@@ -9985,7 +9985,7 @@ concepts:
     tts: cs-terms/ohon.mp3
   img: img/tail.jpeg
   freq: 20681.45000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bells
     lang: en
@@ -9999,12 +9999,12 @@ concepts:
     tts: cs-terms/rolnicky.mp3
   img: img/bells.jpeg
   freq: 17904.10000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hey
     lang: en
   state: ignore
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: dashing
     lang: en
@@ -10018,12 +10018,12 @@ concepts:
     tts: cs-terms/temperamentni.mp3
   img: img/dashing.jpeg
   freq: 7393.94000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: tho
     lang: en
   state: ignore
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sleigh
     lang: en
@@ -10037,7 +10037,7 @@ concepts:
     tts: cs-terms/sanky.mp3
   img: img/sleigh.jpeg
   freq: 2972.29000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: jingle
     lang: en
@@ -10051,7 +10051,7 @@ concepts:
     tts: cs-terms/cinkot.mp3
   img: img/jingle.jpeg
   freq: 1631.31000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: example
     lang: en
@@ -10065,7 +10065,7 @@ concepts:
     tts: cs-terms/ukazka.mp3
   img: img/example.jpeg
   freq: 62028.40000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: term
     lang: en
@@ -10079,7 +10079,7 @@ concepts:
     tts: cs-terms/pojem.mp3
   img: img/term.jpeg
   freq: 54088.85000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: sad
     lang: en
@@ -10093,7 +10093,7 @@ concepts:
     tts: cs-terms/smutny.mp3
   img: img/sad.jpeg
   freq: 41879.55000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: unknown
     lang: en
@@ -10104,7 +10104,7 @@ concepts:
     tts: cs-terms/neznamy.mp3
   img: img/unknown.jpeg
   freq: 34067.90000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: chooses
     lang: en
@@ -10118,7 +10118,7 @@ concepts:
     tts: cs-terms/vybira.mp3
   img: img/chooses.jpeg
   freq: 64872.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: version
     lang: en
@@ -10129,7 +10129,7 @@ concepts:
     tts: cs-terms/verze.mp3
   img: img/version.jpeg
   freq: 31817.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: level
     lang: en
@@ -10143,7 +10143,7 @@ concepts:
     tts: cs-terms/hladina.mp3
   img: img/level.jpeg
   freq: 26427.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: risk
     lang: en
@@ -10157,7 +10157,7 @@ concepts:
     tts: cs-terms/nebezpeci.mp3
   img: img/risk.jpeg
   freq: 22810.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: shields
     lang: en
@@ -10171,7 +10171,7 @@ concepts:
     tts: cs-terms/kryty.mp3
   img: img/shields.jpeg
   freq: 19736.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: weighs
     lang: en
@@ -10182,7 +10182,7 @@ concepts:
     tts: cs-terms/vazi.mp3
   img: img/weighs.jpeg
   freq: 10946.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: pillow
     lang: en
@@ -10196,7 +10196,7 @@ concepts:
     tts: cs-terms/poduska.mp3
   img: img/pillow.jpeg
   freq: 10631.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: ankle
     lang: en
@@ -10207,7 +10207,7 @@ concepts:
     tts: cs-terms/kotnik.mp3
   img: img/ankle.jpeg
   freq: 5801.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: meters
     lang: en
@@ -10221,7 +10221,7 @@ concepts:
     tts: cs-terms/merice.mp3
   img: img/meters.jpeg
   freq: 5786.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: regenerates
     lang: en
@@ -10235,7 +10235,7 @@ concepts:
     tts: cs-terms/obnovuje.mp3
   img: img/regenerates.jpeg
   freq: 1344.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: arrived
     lang: en
@@ -10249,7 +10249,7 @@ concepts:
     tts: cs-terms/prijela.mp3
   img: img/arrived.jpeg
   freq: 35735.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: riding
     lang: en
@@ -10263,7 +10263,7 @@ concepts:
     tts: cs-terms/projizdet.mp3
   img: img/riding.jpeg
   freq: 29915.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: gent
     lang: en
@@ -10274,7 +10274,7 @@ concepts:
     tts: cs-terms/pan.mp3
   img: img/gent.jpeg
   freq: 2127.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: straight
     lang: en
@@ -10288,7 +10288,7 @@ concepts:
     tts: cs-terms/primo.mp3
   img: img/straight.jpeg
   freq: 49112.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: jumping
     lang: en
@@ -10302,7 +10302,7 @@ concepts:
     tts: cs-terms/skacou.mp3
   img: img/jumping.jpeg
   freq: 6974.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: monkeys
     lang: en
@@ -10313,7 +10313,7 @@ concepts:
     tts: cs-terms/opice.mp3
   img: img/monkeys.jpeg
   freq: 4518.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: mama
     lang: en
@@ -10324,7 +10324,7 @@ concepts:
     tts: cs-terms/mama-cs.mp3
   img: img/mama.jpeg
   freq: 1931.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: bumped
     lang: en
@@ -10338,7 +10338,7 @@ concepts:
     tts: cs-terms/vrazil.mp3
   img: img/bumped.jpeg
   freq: 1000.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: problem
     lang: en
@@ -11342,14 +11342,14 @@ concepts:
   img: img/bombastic.jpeg
   freq: 564.00000
   origins: ["Supaplex"]
+##  hopper   ################################################################ t0:pron:missing
 - terms: 
   - term: hopper
     lang: en
     tts: en-terms/hopper.mp3
-    pron: ˈhɒpə
-  - term: pendlák
+  - term: skokan
     lang: cs
-    tts: cs-terms/pendlak.mp3
+    tts: cs-terms/skokan.mp3
   - term: násypka
     lang: cs
     tts: cs-terms/nasypka.mp3
@@ -11455,6 +11455,36 @@ concepts:
   - term: baba
     lang: en
   state: ignore
+##  path   ################################################################## no img|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: path
+    lang: en
+  - term: cesta
+    lang: cs
+    tts: cs-terms/cesta.mp3
+  - term: trasa
+    lang: cs
+    tts: cs-terms/trasa.mp3
+  freq: 51747.00000
+  origins: ["Supaplex"]
+##  finder   ################################################################ no img|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: finder
+    lang: en
+  - term: vyhledávač
+    lang: cs
+    tts: cs-terms/vyhledavac.mp3
+  - term: nálezce
+    lang: cs
+    tts: cs-terms/nalezce.mp3
+  freq: 554.00000
+  origins: ["Supaplex"]
+- terms: 
+  - term: einstein
+    lang: en
+  state: ignore
+  freq: 370.00000
+  origins: ["Supaplex"]
 
 examples: 
 - terms: 
@@ -11993,7 +12023,7 @@ examples:
   - term: Maybe we can get out!
     lang: en
     tts: en-samples/Maybe we can get out.mp3
-  - term: Možná se můžem dostat ven!
+  - term: Možná se můžeme dostat ven!
     lang: cs
     tts: cs-samples/Mozna se muzem dostat ven.mp3
 - terms: 
@@ -14202,13 +14232,6 @@ examples:
     lang: cs
     tts: cs-samples/Tak spatne to neni.mp3
 - terms: 
-  - term: Let me help you.
-    lang: en
-    tts: en-samples/Let me help you.mp3
-  - term: Dovolte mi, abych Vám pomohl.
-    lang: cs
-    tts: cs-samples/Dovolte mi, abych Vam pomohl.mp3
-- terms: 
   - term: An opened suitcase on the bed.
     lang: en
     tts: en-samples/An opened suitcase on the bed.mp3
@@ -14317,9 +14340,9 @@ examples:
   - term: We appreciate your interest.
     lang: en
     tts: en-samples/We appreciate your interest.mp3
-  - term: Ceníme si vašeho zájemu.
+  - term: Ceníme si vašeho zájmu.
     lang: cs
-    tts: cs-samples/Cenime si vaseho zajemu.mp3
+    tts: cs-samples/Cenime si vaseho zajmu.mp3
 - terms: 
   - term: This claim is therefore rejected.
     lang: en
@@ -14601,26 +14624,12 @@ examples:
     lang: cs
     tts: cs-terms/Rozjasnuji naladu.mp3
 - terms: 
-  - term: What joy it is to ride.
-    lang: en
-    tts: en-samples/What joy it is to ride.mp3
-  - term: Jaká radost je jezdit.
-    lang: cs
-    tts: cs-samples/Jaka radost je jezdit.mp3
-- terms: 
   - term: Laughing all the way.
     lang: en
     tts: en-samples/Laughing all the way.mp3
   - term: Celou cestu se smát.
     lang: cs
     tts: cs-samples/Celou cestu se smat.mp3
-- terms: 
-  - term: Quickly drove away.
-    lang: en
-    tts: en-samples/Quickly drove away.mp3
-  - term: Rychle odjel.
-    lang: cs
-    tts: cs-terms/Rychle odjel.mp3
 - terms: 
   - term: Was seated by my side
     lang: en
@@ -14674,7 +14683,7 @@ examples:
   - term: One-horse open sleigh.
     lang: en
     tts: en-samples/One-horse open sleigh.mp3
-  - term: Otevřené sáně s jedním koňem.
+  - term: Otevřené sáně s jedním koněm.
     lang: cs
     tts: cs-samples/Otevrene sane s jednim konem.mp3
 - terms: 
@@ -15188,3 +15197,120 @@ examples:
   - term: Najdi cestu.
     lang: cs
     tts: cs-terms/Najdi cestu.mp3
+##  Easy deal.   ############################################################ t0:tts:missing
+- terms: 
+  - term: Easy deal.
+    lang: en
+  - term: Snadná dohoda.
+    lang: cs
+    tts: cs-terms/Snadna dohoda.mp3
+##  Stone age.   ############################################################ t0:tts:missing
+- terms: 
+  - term: Stone age.
+    lang: en
+  - term: Doba kamenná.
+    lang: cs
+    tts: cs-terms/Doba kamenna.mp3
+##  Crazy harry.   ########################################################## t0:tts:missing
+- terms: 
+  - term: Crazy harry.
+    lang: en
+  - term: Šílený otrava.
+    lang: cs
+    tts: cs-terms/Sileny otrava.mp3
+##  Moving objects.   ####################################################### t0:tts:missing
+- terms: 
+  - term: Moving objects.
+    lang: en
+  - term: Pohybující se objekty.
+    lang: cs
+    tts: cs-samples/Pohybujici se objekty.mp3
+##  Nearly boring.   ######################################################## t0:tts:missing
+- terms: 
+  - term: Nearly boring.
+    lang: en
+  - term: Téměř nudné.
+    lang: cs
+    tts: cs-terms/Temer nudne.mp3
+##  Chamber music.   ######################################################## t0:tts:missing
+- terms: 
+  - term: Chamber music.
+    lang: en
+  - term: Komorní hudba.
+    lang: cs
+    tts: cs-terms/Komorni hudba.mp3
+##  Looks difficult.   ###################################################### t0:tts:missing
+- terms: 
+  - term: Looks difficult.
+    lang: en
+  - term: Vypadá to obtížně.
+    lang: cs
+    tts: cs-samples/Vypada to obtizne.mp3
+##  Corner confusion.   ##################################################### t0:tts:missing
+- terms: 
+  - term: Corner confusion.
+    lang: en
+  - term: Zmatek v rohu.
+    lang: cs
+    tts: cs-terms/Zmatek v rohu.mp3
+##  Path finder.   ########################################################## t0:tts:missing
+- terms: 
+  - term: Path finder.
+    lang: en
+  - term: Průzkumník.
+    lang: cs
+    tts: cs-terms/Pruzkumnik.mp3
+##  Island hopper.   ######################################################## t0:tts:missing
+- terms: 
+  - term: Island hopper.
+    lang: en
+  - term: Ostrovní dopravní linka.
+    lang: cs
+    tts: cs-samples/Ostrovni dopravni linka.mp3
+##  Classic entertainment.   ################################################ t0:tts:missing
+- terms: 
+  - term: Classic entertainment.
+    lang: en
+  - term: Klasická zábava.
+    lang: cs
+    tts: cs-terms/Klasicka zabava.mp3
+##  Triple fork.   ########################################################## t0:tts:missing
+- terms: 
+  - term: Triple fork.
+    lang: en
+  - term: Trojitá vidlička.
+    lang: cs
+    tts: cs-terms/Trojita vidlicka.mp3
+##  Einstein's favourite.   ################################################# t0:tts:missing
+- terms: 
+  - term: Einstein's favourite.
+    lang: en
+  - term: Einsteinův oblíbený.
+    lang: cs
+    tts: cs-terms/Einsteinuv oblibeny.mp3
+##  Mixed salad.   ########################################################## t0:tts:missing
+- terms: 
+  - term: Mixed salad.
+    lang: en
+  - term: Míchaný salát.
+    lang: cs
+    tts: cs-terms/Michany salat.mp3
+##  Sub effects.   ########################################################## t0:tts:missing
+- terms: 
+  - term: Sub effects.
+    lang: en
+  - term: Pod efekty.
+    lang: cs
+    tts: cs-terms/Pod efekty.mp3
+##  Upstairs downstairs.   ################################################## t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: Upstairs downstairs.
+    lang: en
+  - term: Po schodech nahoře dole.
+    lang: cs
+##  Trouble ahead.   ######################################################## t0:tts:missing|t1:tts:missing
+- terms: 
+  - term: Trouble ahead.
+    lang: en
+  - term: Problémy před námi.
+    lang: cs
