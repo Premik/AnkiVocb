@@ -13,8 +13,8 @@ public class ConceptYamlStorage {
 	.disableUnicodeEscaping()  // Do not escape UNICODE.
 	//.addConverter(Optional) { value -> value.orElse('UNKNOWN') } // Custom converter for given type defined as Closure.
 	.build()
-	
-	 ValidationProfile vp = ValidationProfile.strict
+
+	ValidationProfile vp = ValidationProfile.strict
 
 
 
@@ -31,17 +31,18 @@ public class ConceptYamlStorage {
 	}
 
 	public Concept parseConcept(Map cjs) {
-		assert cjs
-		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq)
+		assert cjs 
+		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, profileName: cjs.profileName)
+		
 		cjs.terms.each {
 			Term t = parseTerm(it)
 			c.terms.add(t)
 		}
 
 		/*cjs.examples.each {			
-			Term t = parseTerm(it)
-			c.examples.put(t.term, t)
-		}*/
+		 Term t = parseTerm(it)
+		 c.examples.put(t.term, t)
+		 }*/
 		assert !cjs.examples : "Depricated example found on $c"
 		return c
 	}
@@ -60,14 +61,25 @@ public class ConceptYamlStorage {
 
 	public String yamlHash(String key, String value) {
 		if (!key || !value) return ""
-		boolean reserved = value in ['true', 'false', "Yes", "No", "yes", "no", "off", "on"]
+		boolean reserved = value in [
+			'true',
+			'false',
+			"Yes",
+			"No",
+			"yes",
+			"no",
+			"off",
+			"on"
+		]
 		boolean specialChar = value[0] in  ('''!@#$%^&*("')''' as List)
 		boolean middleChar = false
 		if (value.readLines().size() ==1) {
 			middleChar = value.contains(':')
 		}
 
-		if (reserved || specialChar ||middleChar) { return """$key: "$value"\n"""}
+		if (reserved || specialChar ||middleChar) {
+			return """$key: "$value"\n"""
+		}
 		return "$key: $value\n"
 	}
 
@@ -82,17 +94,17 @@ public class ConceptYamlStorage {
 		String samples=listToYaml(db.examples.findAll(termFilter).collect(this.&exampleToYaml))
 		"version: $db.version\n${yamlHash('concepts', concepts)}\n${yamlHash('examples', samples)}"
 	}
-	
-	
 
-	void appendBanner(String label, String warnings, StringBuilder sb, int width=70) {		
+
+
+	void appendBanner(String label, String warnings, StringBuilder sb, int width=70) {
 		if (!warnings) return
-		if (!label) return
+			if (!label) return
 			sb.append("##  ")
 		sb.append(label)
 		sb.append('   ' + '#'*(70-label.length()))
 		if (warnings) sb.append(" "  +warnings)
-		
+
 		sb.append("\n")
 	}
 
@@ -120,7 +132,7 @@ public class ConceptYamlStorage {
 
 
 		String terms=listToYaml(c.terms.collect(this.&termToYaml))
-		
+
 		//String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
 		assert ft : "Term list is blank for a conpcept $c"
@@ -134,10 +146,14 @@ public class ConceptYamlStorage {
 		 sb.append(terms)*/
 
 		appendYamlHash("state", c.state, sb)
+		//if (c.is)
 		appendYamlHash("img", c.img,sb)
 		appendYamlHash("freq", Helper.roundDecimal(c.freq, 5), sb)
 		//sb.append("origins: ").append(origins)
-	
+		if (!c.validationProfile.defaultProfile) {
+			appendYamlHash("profileName", c.profileName, sb)
+		}
+
 		return sb.toString()
 
 		/*"""\
@@ -151,7 +167,8 @@ public class ConceptYamlStorage {
 	public CharSequence listToYaml(List<CharSequence> st) {
 		//if (!st) return "[]"
 		if (!st) return null
-		if (st.size() <5) { //Short list
+		if (st.size() <5) {
+			//Short list
 			if ( !st.any {it?.contains('\n') || it?.length()> 80}) {
 				//Put short simple lists on one line
 				String ml = st.collect().collect{/"$it"/}join(', ')
@@ -169,13 +186,12 @@ public class ConceptYamlStorage {
 				.collect {new StringBuilder(it)}
 				.each { StringBuilder sb->
 					if (found) return
-						if (sb.length() && sb[0].allWhitespace) { //Found first non-comment line
+						if (sb.length() && sb[0].allWhitespace) {
+							//Found first non-comment line
 							found = true
 							sb.setCharAt(0, '-' as char)
 						}
 				}.join("\n")
-
-
 	}
 
 	public CharSequence termToYaml(Term t) {
@@ -187,6 +203,4 @@ public class ConceptYamlStorage {
 		appendYamlHash("pron", t.pron, sb)
 		return sb.toString()
 	}
-
-
 }

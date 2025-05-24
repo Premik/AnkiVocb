@@ -12,7 +12,8 @@ class YamlStorageTest {
 
 	URL testConceptsUrl = getClass().getResource('/vocb/data/testConcepts.yaml')
 
-	def simpleTermGen = {int i=0->
+	def simpleTermGen = {
+		int i=0->
 		slurper.parseText("""\
 		term: term$i
 		lang: lang$i
@@ -59,7 +60,7 @@ class YamlStorageTest {
 		Concept c = st.parseConcept(y)
 
 		c.with {
-			assert img == "img"			
+			assert img == "img"
 			assert terms
 			assert terms.size() == 2
 			assertSimpleTerm(terms[0], 1)
@@ -139,7 +140,25 @@ class YamlStorageTest {
 		Term t2 = new Term("jablko", "cs")
 		Concept c = new Concept(state: "state", img:"", freq:null)
 		c.terms.addAll([t1, t2])
-		println st.conceptToYaml(c)
+		//println st.conceptToYaml(c)
+
+		TestUtils.compareString(st.conceptToYaml(c),y)
+	}
+
+	@Test
+	void conceptToYamlRelaxValidation() {
+		String y="""\
+		terms: 
+		- term: apple
+		  lang: en
+		- term: jablko
+		  lang: cs
+		profileName: relax""".stripIndent()
+		Term t1 = new Term("apple", "en")
+		Term t2 = new Term("jablko", "cs")
+		Concept c = new Concept(img:"", freq:null, profileName:"relax" )
+		c.terms.addAll([t1, t2])
+		//println st.conceptToYaml(c)
 
 		TestUtils.compareString(st.conceptToYaml(c),y)
 	}
