@@ -1,17 +1,19 @@
 package vocb.data
 
 import groovy.transform.AutoClone
+import groovy.transform.CompileStatic
 import groovy.transform.EqualsAndHashCode
-import groovy.transform.ToString
 import vocb.Helper
 
 @EqualsAndHashCode(excludes=["location"])
 @AutoClone
+@CompileStatic
 public abstract class TermContainer  {
 	final List<Term> terms = []
 	protected boolean dirty=true
 	DataLocation location
 
+	
 	public String getFirstTerm() {terms[0]?.term}
 	public List<Term> termsByLang(String lng) { terms?.findAll {it.lang == lng }}
 	public Term getEnTerm() { termsByLang("en")[0]}
@@ -31,7 +33,7 @@ public abstract class TermContainer  {
 	void setProperty(String name, Object value) {
 		Helper.setAndCheckDirty(this, name, value)
 		if (name == "dirty") {
-			terms*.dirty = value
+			terms*.dirty = value as boolean
 		}	
 	}
 	

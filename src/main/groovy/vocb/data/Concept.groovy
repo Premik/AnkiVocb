@@ -1,13 +1,14 @@
 package vocb.data
 
 import groovy.transform.AutoClone
+import groovy.transform.CompileStatic
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 import vocb.Helper
 
 @EqualsAndHashCode(callSuper=true)
 //@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
-@ToString(includePackage=false, ignoreNulls=true, includes=['firstTerm', 'state', 'freq'])
+//@ToString(includePackage=false, ignoreNulls=true, includes=['firstTerm', 'state', 'freq'])
 @AutoClone
 public class Concept extends TermContainer  {
 

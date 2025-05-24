@@ -8,7 +8,7 @@ targetCompatibility = 1.8
 //mainClassName = "vocb.appenders.BingImageAppender"
 mainClassName = "vocb.pck.Pack"
 
-project.ext.groovyVersion='3.0.10'
+project.ext.groovyVersion='4.0.12'
 
 wrapper {
 	gradleVersion = '7.3.3'
@@ -45,15 +45,15 @@ task(renderTemplate, dependsOn: 'classes', type: JavaExec) {
 
 dependencies {
 
-	implementation "org.codehaus.groovy:groovy:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-xml:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-json:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-nio:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-test:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-sql:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-yaml:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-templates:$groovyVersion"
-	//implementation "org.codehaus.groovy:groovy-dateutil:$groovyVersion"
+	implementation "org.apache.groovy:groovy:$groovyVersion"
+	implementation "org.apache.groovy:groovy-xml:$groovyVersion"
+	implementation "org.apache.groovy:groovy-json:$groovyVersion"
+	implementation "org.apache.groovy:groovy-nio:$groovyVersion"
+	implementation "org.apache.groovy:groovy-test:$groovyVersion"
+	implementation "org.apache.groovy:groovy-sql:$groovyVersion"
+	implementation "org.apache.groovy:groovy-yaml:$groovyVersion"
+	implementation "org.apache.groovy:groovy-templates:$groovyVersion"
+	//implementation "org.apache.groovy:groovy-dateutil:$groovyVersion"
 	//implementation "org.apache.groovy:groovy-dateutil:$groovyVersion"
 	implementation "org.apache.commons:commons-collections4:4.4"
 	
@@ -68,7 +68,8 @@ dependencies {
 	implementation "org.apache.logging.log4j:log4j-api:2.13.1"
     implementation "org.apache.logging.log4j:log4j-core:2.13.1"
 	//compile group: 'net.sourceforge.nekohtml', name: 'nekohtml', version: '1.9.22'
-	compile group: 'org.ccil.cowan.tagsoup', name: 'tagsoup', version: '1.2.1'
+	//compile group: 'org.ccil.cowan.tagsoup', name: 'tagsoup', version: '1.2.1'
+	implementation 'de.twentyeleven.skysail:org.ccil.cowan.tagsoup-osgi:1.2.1'
 	
 	
 

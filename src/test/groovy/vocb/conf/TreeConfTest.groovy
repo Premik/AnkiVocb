@@ -18,7 +18,7 @@ class TreeConfTest {
 	
 	Path tempDir = Files.createTempDirectory("ankivocbPackTest")
 		
-
+ 
 	@Lazy static Path pkgRoot = {
 		assert TreeConfTest.getResource('/testPck/readme.md')
 		URI ru = TreeConfTest.getResource('/testPck/readme.md').toURI()
