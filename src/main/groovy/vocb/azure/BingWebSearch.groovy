@@ -1,6 +1,5 @@
 package vocb.azure
 
-import java.awt.image.BufferedImage
 import java.nio.charset.StandardCharsets
 
 import groovy.json.JsonSlurper
@@ -18,7 +17,7 @@ public class BingWebSearch {
 	SimpleFileCache cache = new SimpleFileCache()
 
 	//https://docs.microsoft.com/en-us/rest/api/cognitiveservices-bingsearch/bing-web-api-v7-reference
-	URL buildSearchUrl(String q, int count=4, String imageType="Clipart", String license="Public") {
+	URL buildSearchUrl(String q, int count=3, String imageType="Clipart", String license="Public") {
 		String utf8=StandardCharsets.UTF_8.toString()
 		def u = { String key, Object val, String prefx="&"->
 			if (val == null || val == "") return ""
@@ -46,7 +45,7 @@ public class BingWebSearch {
 		return ret
 	}
 
-	Object searchWithCache(URL url) {
+	Object searchTryCache(URL url) {
 		String key = url.toString()
 		Object searchResult
 		if (cache.isCached(key)) {
@@ -54,18 +53,48 @@ public class BingWebSearch {
 			cache.subPathForKey(key).withInputStream { InputStream istr ->
 				searchResult = new JsonSlurper().parse(istr)
 			}
-		} else { 
+		} else {
 			searchResult = search(url)
 			cache.subPathForKey(key) << Helper.jsonToString(searchResult)
 		}
 		return searchResult
 	}
-	
+
+	void downloadTryCacheWithInputStream(URL url, Closure c) {
+		assert url
+		String key = url.toString()
+		if (cache.isCached(key)) {
+			println "Cache hit for $key"
+			cache.subPathForKey(key).withInputStream { BufferedInputStream imgStr->
+				c(imgStr, url)
+			}
+			return
+		}
+		Helper.withUrlGetResponse(url) {BufferedInputStream res->
+			println url
+			cache.subPathForKey(key) << res
+		}
+		cache.subPathForKey(key).withInputStream {BufferedInputStream imgStr->
+			c(imgStr, url)			
+		}
+	}
+
 	List<URL> thumbnailsFromSearchResult(Object searchResult) {
 		searchResult.value
-		.collect { it.thumbnailUrl}
-		.collect { new URL(it) }
+				.collect { it.thumbnailUrl}
+				.collect { new URL(it) }
 	}
+
+	void withEachThumbnailStream(String q, int count=3, String imageType="Clipart", String license="Public", Closure c) {
+		URL sUrl = buildSearchUrl(q, count, imageType,license)
+		Object resulJson = searchTryCache(sUrl)
+		List<URL> urls = thumbnailsFromSearchResult(resulJson)
+		urls.each {
+			downloadTryCacheWithInputStream(it, c)			
+		}
+	}
+
+
 
 
 	static void main(String... args) {
@@ -74,9 +103,10 @@ public class BingWebSearch {
 		//println bs.buildSearchUrl("test")
 		//println bs.getHttpHeaders()
 		//Object res= bs.search(bs.buildSearchUrl("test"))
-		bs.searchWithCache(bs.buildSearchUrl("test"))
-		println "Done"
-
-
+		bs.withEachThumbnailStream("test", 5) {BufferedInputStream bis, URL url ->
+			println "Got stream for $url"
+			
+		}
+		
 	}
 }
