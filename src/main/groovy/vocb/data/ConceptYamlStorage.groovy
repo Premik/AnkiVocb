@@ -74,7 +74,7 @@ public class ConceptYamlStorage {
 		
 		appendYamlHash("state", c.state, sb)
 		appendYamlHash("img", c.img,sb)
-		appendYamlHash("freq", c.freq, sb)
+		appendYamlHash("freq", Helper.roundDecimal(c.freq, 5), sb)
 		//sb.append("origins: ").append(Helper.indentNextLines(origins,2))
 		sb.append("origins: ").append(origins)
 		return sb.toString()
