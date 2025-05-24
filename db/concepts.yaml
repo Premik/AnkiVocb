@@ -16,7 +16,7 @@ concepts:
   - term: Jablko pomáhá čistit zuby.
     lang: cs
     tts: Jablko pomaha cistit zuby.mp3
-  img: apple.jpeg
+  img: img/apple.jpeg
   freq: 13506.05000
   origins: ["top500", "conceptDbSamples"]
 ##  kitty   #################################################################
@@ -38,7 +38,7 @@ concepts:
   - term: Koťátko potřebuje trochu pozornosti.
     lang: cs
     tts: Kotatko potrebuje trochu pozornosti.mp3
-  img: kitty.jpeg
+  img: img/kitty.jpeg
   freq: 278.47900
   origins: ["conceptDbSamples"]
 ##  a   #####################################################################
@@ -86,7 +86,7 @@ concepts:
   - term: Já jsem šťastný.
     lang: cs
     tts: Ja jsem stastny.mp3
-  img: i.jpeg
+  img: img/i.jpeg
   freq: 7871531.00000
   origins: ["Manualy"]
 ##  and   ###################################################################
@@ -105,7 +105,7 @@ concepts:
   - term: Kočka a pes.
     lang: cs
     tts: Kocka a pes.mp3
-  img: and.jpeg
+  img: img/and.jpeg
   freq: 20342628.50000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  to   ####################################################################
@@ -171,7 +171,7 @@ concepts:
   - term: Ne v mém městě.
     lang: cs
     tts: Ne v mem meste.mp3
-  img: in.jpeg
+  img: img/in.jpeg
   freq: 8715316.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  is   ####################################################################
@@ -247,7 +247,7 @@ concepts:
   - term: Pak je to pravda.
     lang: cs
     tts: Pak je to pravda.mp3
-  img: true.jpeg
+  img: img/true.jpeg
   freq: 2675121.50000
   origins: ["Supaplex", "conceptDbSamples"]
 ##  do   ####################################################################
@@ -310,7 +310,7 @@ concepts:
   - term: Máte snad všichni oči.
     lang: cs
     tts: Mate snad vsichni oci.mp3
-  img: all.jpeg
+  img: img/all.jpeg
   freq: 1940329.50000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  them   ##################################################################
@@ -332,7 +332,7 @@ concepts:
   - term: Řekni jim vše.
     lang: cs
     tts: Rekni jim vse.mp3
-  img: them.jpeg
+  img: img/them.jpeg
   freq: 1593893.50000
   origins: ["Supaplex", "conceptDbSamples"]
 ##  you   ###################################################################
@@ -354,7 +354,7 @@ concepts:
   - term: Ty jsi smutný.
     lang: cs
     tts: Ty jsi smutny.mp3
-  img: you.jpeg
+  img: img/you.jpeg
   freq: 1540817.58700
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  one   ###################################################################
@@ -376,7 +376,7 @@ concepts:
   - term: Musíš vybrat jen jeden tvar.
     lang: cs
     tts: Musis vybrat jen jeden tvar.mp3
-  img: one.jpeg
+  img: img/one.jpeg
   freq: 1439082.50000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  false   #################################################################
@@ -398,7 +398,7 @@ concepts:
   - term: Falešný pocit štěstí.
     lang: cs
     tts: Falesny pocit stesti.mp3
-  img: false.jpeg
+  img: img/false.jpeg
   freq: 1123368.00000
   origins: ["Supaplex", "conceptDbSamples"]
 ##  time   ##################################################################
@@ -420,7 +420,7 @@ concepts:
   - term: Čas jít.
     lang: cs
     tts: Cas jit.mp3
-  img: time.jpeg
+  img: img/time.jpeg
   freq: 1107169.00000
   origins: ["Supaplex", "conceptDbSamples"]
 ##  out   ###################################################################
@@ -442,7 +442,7 @@ concepts:
   - term: Odveďte toho psa ven!
     lang: cs
     tts: Odvedte toho psa ven.mp3
-  img: out.jpeg
+  img: img/out.jpeg
   freq: 1058897.00000
   origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  know   ##################################################################
@@ -464,7 +464,7 @@ concepts:
   - term: Jak by to mohli vědět?
     lang: cs
     tts: Jak by to mohli vedet.mp3
-  img: know.jpeg
+  img: img/know.jpeg
   freq: 984073.50000
   origins: ["Supaplex", "conceptDbSamples"]
 ##  be   ####################################################################
@@ -521,7 +521,7 @@ concepts:
   - term: A on tě viděl?
     lang: cs
     tts: A on te videl.mp3
-  img: he.jpeg
+  img: img/he.jpeg
   freq: 5653229.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  with   ##################################################################
@@ -625,7 +625,7 @@ concepts:
   - term: Koukni se na můj obličej.
     lang: cs
     tts: Koukni se na muj oblicej.mp3
-  img: at.jpeg
+  img: img/at.jpeg
   freq: 3429739.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  were   ##################################################################
@@ -691,7 +691,7 @@ concepts:
   - term: Ne každý s vámi souhlasí.
     lang: cs
     tts: Ne kazdy s vami souhlasi.mp3
-  img: not.jpeg
+  img: img/not.jpeg
   freq: 2876549.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  from   ##################################################################
@@ -732,7 +732,7 @@ concepts:
   - term: Šálek čaje nebo kávy.
     lang: cs
     tts: Salek caje nebo kavy.mp3
-  img: or.jpeg
+  img: img/or.jpeg
   freq: 2803803.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  her   ###################################################################
@@ -782,7 +782,7 @@ concepts:
   - term: Řekl jsem, zůstaň tady!
     lang: cs
     tts: Rekl jsem, zustan tady.mp3
-  img: said.jpeg
+  img: img/said.jpeg
   freq: 2637136.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  which   #################################################################
@@ -892,7 +892,7 @@ concepts:
   - term: Můj pokoj je v pohodě.
     lang: cs
     tts: Muj pokoj je v pohode.mp3
-  img: my.jpeg
+  img: img/my.jpeg
   freq: 2098760.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  this   ##################################################################
@@ -914,7 +914,7 @@ concepts:
   - term: Tento týden jsem napsal tři nové kapitoly.
     lang: cs
     tts: Tento tyden jsem napsal tri nove kapitoly.mp3
-  img: this.jpeg
+  img: img/this.jpeg
   freq: 2010471.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  their   #################################################################
@@ -958,7 +958,7 @@ concepts:
   - term: Nech mě, ať ti pomůžu.
     lang: cs
     tts: Nech me, at ti pomuzu.mp3
-  img: me.jpeg
+  img: img/me.jpeg
   freq: 1868378.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  who   ###################################################################
@@ -1087,7 +1087,7 @@ concepts:
   - term: A co říkají ptáci?
     lang: cs
     tts: A co rikaji ptaci.mp3
-  img: say.jpeg
+  img: img/say.jpeg
   freq: 1351631.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  made   ##################################################################
@@ -1109,7 +1109,7 @@ concepts:
   - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
     lang: cs
     tts: Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
-  img: made.jpeg
+  img: img/made.jpeg
   freq: 1188501.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  into   ##################################################################
@@ -1128,7 +1128,7 @@ concepts:
   - term: Utíkej do nejbližšího města?
     lang: cs
     tts: Utikej do nejblizsiho mesta.mp3
-  img: into.jpeg
+  img: img/into.jpeg
   freq: 1186067.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  did   ###################################################################
@@ -1191,7 +1191,7 @@ concepts:
   - term: Číst více z těchto knih
     lang: cs
     tts: Cist vice z techto knih.mp3
-  img: more.jpeg
+  img: img/more.jpeg
   freq: 1159978.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  your   ##################################################################
@@ -1213,7 +1213,7 @@ concepts:
   - term: Vaše objednávka je připravena ke zpracování.
     lang: cs
     tts: Vase objednavka je pripravena ke zpracovani.mp3
-  img: your.jpeg
+  img: img/your.jpeg
   freq: 1159087.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  when   ##################################################################
@@ -1235,7 +1235,7 @@ concepts:
   - term: Kdy platí toto pravidlo?
     lang: cs
     tts: Kdy plati toto pravidlo.mp3
-  img: when.jpeg
+  img: img/when.jpeg
   freq: 1124132.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  could   #################################################################
@@ -1279,7 +1279,7 @@ concepts:
   - term: Mají některé opravdu skvělé triky.
     lang: cs
     tts: Maji nektere opravdu skvele triky.mp3
-  img: some.jpeg
+  img: img/some.jpeg
   freq: 1075480.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  our   ###################################################################
@@ -1323,7 +1323,7 @@ concepts:
   - term: Už je to dospělý muž.
     lang: cs
     tts: Uz je to dospely muz.mp3
-  img: man.jpeg
+  img: img/man.jpeg
   freq: 991438.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  go   ####################################################################
@@ -1345,7 +1345,7 @@ concepts:
   - term: Tak mě nechte jít.
     lang: cs
     tts: Tak me nechte jit.mp3
-  img: go.jpeg
+  img: img/go.jpeg
   freq: 983790.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  its   ###################################################################
@@ -1386,7 +1386,7 @@ concepts:
   - term: Teď je přines nahoru.
     lang: cs
     tts: Ted je prines nahoru.mp3
-  img: up.jpeg
+  img: img/up.jpeg
   freq: 939235.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  they   ##################################################################
@@ -1405,7 +1405,7 @@ concepts:
   - term: Oni nám mohou pomoct.
     lang: cs
     tts: Oni nam mohou pomoct.mp3
-  img: they.jpeg
+  img: img/they.jpeg
   freq: 937391.63000
   origins: ["corpus", "conceptDbSamples"]
 ##  men   ###################################################################
@@ -1424,7 +1424,7 @@ concepts:
   - term: Muži a ženy jsou velmi odlišné.
     lang: cs
     tts: Muzi a zeny jsou velmi odlisne.mp3
-  img: men.jpeg
+  img: img/men.jpeg
   freq: 923053.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  we   ####################################################################
@@ -1443,7 +1443,7 @@ concepts:
   - term: My chceme peníze nazpět!
     lang: cs
     tts: My chceme penize nazpet.mp3
-  img: we.jpeg
+  img: img/we.jpeg
   freq: 915268.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  then   ##################################################################
@@ -1465,7 +1465,7 @@ concepts:
   - term: A pak jsme šli svojí cestou.
     lang: cs
     tts: A pak jsme sli svoji cestou.mp3
-  img: then.jpeg
+  img: img/then.jpeg
   freq: 899806.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  see   ###################################################################
@@ -1484,7 +1484,7 @@ concepts:
   - term: Musím tě vidět hned teď.
     lang: cs
     tts: Musim te videt hned ted.mp3
-  img: see.jpeg
+  img: img/see.jpeg
   freq: 873965.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  came   ##################################################################
@@ -1550,7 +1550,7 @@ concepts:
   - term: Přidejte libovolné další tabulky.
     lang: cs
     tts: Pridejte libovolne dalsi tabulky.mp3
-  img: any.jpeg
+  img: img/any.jpeg
   freq: 835359.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  make   ##################################################################
@@ -1572,7 +1572,7 @@ concepts:
   - term: Chcete tuto změnu provést?
     lang: cs
     tts: Chcete tuto zmenu provest.mp3
-  img: make.jpeg
+  img: img/make.jpeg
   freq: 832384.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  about   #################################################################
@@ -1594,7 +1594,7 @@ concepts:
   - term: Nikdo se už o mě nezajímá.
     lang: cs
     tts: Nikdo se uz o me nezajima.mp3
-  img: about.jpeg
+  img: img/about.jpeg
   freq: 811618.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  two   ###################################################################
@@ -1616,7 +1616,7 @@ concepts:
   - term: Vy dva, co tady děláte?
     lang: cs
     tts: Vy dva, co tady delate.mp3
-  img: two.jpeg
+  img: img/two.jpeg
   freq: 802196.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  these   #################################################################
@@ -1657,7 +1657,7 @@ concepts:
   - term: Je to lepší než steak.
     lang: cs
     tts: Je to lepsi nez steak.mp3
-  img: than.jpeg
+  img: img/than.jpeg
   freq: 782249.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  get   ###################################################################
@@ -1679,7 +1679,7 @@ concepts:
   - term: Možná se můžem dostat ven!
     lang: cs
     tts: Mozna se muzem dostat ven.mp3
-  img: get.jpeg
+  img: img/get.jpeg
   freq: 778635.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  other   #################################################################
@@ -1701,7 +1701,7 @@ concepts:
   - term: Existují i jiné varianty?
     lang: cs
     tts: Existuji i jine varianty.mp3
-  img: other.jpeg
+  img: img/other.jpeg
   freq: 773847.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  us   ####################################################################
@@ -1767,7 +1767,7 @@ concepts:
   - term: Pojď a zkus to.
     lang: cs
     tts: Pojd a zkus to.mp3
-  img: come.jpeg
+  img: img/come.jpeg
   freq: 750630.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  def   ###################################################################
@@ -1793,7 +1793,7 @@ concepts:
   - term: Ona jede se mnou.
     lang: cs
     tts: Ona jede se mnou.mp3
-  img: she.jpeg
+  img: img/she.jpeg
   freq: 747484.30000
   origins: ["corpus", "conceptDbSamples"]
 ##  very   ##################################################################
@@ -1837,7 +1837,7 @@ concepts:
   - term: Jenom mě nech přemýšlet.
     lang: cs
     tts: Jenom me nech premyslet.mp3
-  img: think.jpeg
+  img: img/think.jpeg
   freq: 744283.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  upon   ##################################################################
@@ -1890,7 +1890,7 @@ concepts:
   - term: Tam dole jsou lidé.
     lang: cs
     tts: Tam dole jsou lide.mp3
-  img: people.jpeg
+  img: img/people.jpeg
   freq: 696604.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  went   ##################################################################
@@ -1934,7 +1934,7 @@ concepts:
   - term: Myslím, že je to skvělé.
     lang: cs
     tts: Myslim, ze je to skvele.mp3
-  img: great.jpeg
+  img: img/great.jpeg
   freq: 672584.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  now   ###################################################################
@@ -1956,7 +1956,7 @@ concepts:
   - term: Teď řekni dobrou noc!
     lang: cs
     tts: Ted rekni dobrou noc.mp3
-  img: now.jpeg
+  img: img/now.jpeg
   freq: 668424.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  take   ##################################################################
@@ -1978,7 +1978,7 @@ concepts:
   - term: Nemůže si ty peníze vzít.
     lang: cs
     tts: Nemuze si ty penize vzit.mp3
-  img: take.jpeg
+  img: img/take.jpeg
   freq: 663615.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  little   ################################################################
@@ -2000,7 +2000,7 @@ concepts:
   - term: Jen o trochu líp.
     lang: cs
     tts: Jen o trochu lip.mp3
-  img: little.jpeg
+  img: img/little.jpeg
   freq: 659529.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  day   ###################################################################
@@ -2019,7 +2019,7 @@ concepts:
   - term: Dejte mi ještě jeden den.
     lang: cs
     tts: Dejte mi jeste jeden den.mp3
-  img: day.jpeg
+  img: img/day.jpeg
   freq: 657552.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  eyes   ##################################################################
@@ -2038,7 +2038,7 @@ concepts:
   - term: Chci vidět tvé oči.
     lang: cs
     tts: Chci videt tve oci.mp3
-  img: eyes.jpeg
+  img: img/eyes.jpeg
   freq: 647788.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  like   ##################################################################
@@ -2060,7 +2060,7 @@ concepts:
   - term: Máš rád mořské jídlo?
     lang: cs
     tts: Mas rad morske jidlo.mp3
-  img: like.jpeg
+  img: img/like.jpeg
   freq: 646931.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  must   ##################################################################
@@ -2104,7 +2104,7 @@ concepts:
   - term: Váží to přes pět tun.
     lang: cs
     tts: Vazi to pres pet tun.mp3
-  img: over.jpeg
+  img: img/over.jpeg
   freq: 632459.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  those   #################################################################
@@ -2167,7 +2167,7 @@ concepts:
   - term: A mohou být nebezpeční.
     lang: cs
     tts: A mohou byt nebezpecni.mp3
-  img: can.jpeg
+  img: img/can.jpeg
   freq: 610396.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  what   ##################################################################
@@ -2189,7 +2189,7 @@ concepts:
   - term: Vidíš co jsi způsobil?
     lang: cs
     tts: Vidis co jsi zpusobil.mp3
-  img: what.jpeg
+  img: img/what.jpeg
   freq: 606801.75000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  before   ################################################################
@@ -2211,7 +2211,7 @@ concepts:
   - term: Před použitím si přečtěte pokyny.
     lang: cs
     tts: Pred pouzitim si prectete pokyny.mp3
-  img: before.jpeg
+  img: img/before.jpeg
   freq: 586348.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  mr   ####################################################################
@@ -2230,7 +2230,7 @@ concepts:
   - term: Zdravím, pane Bín.
     lang: cs
     tts: Zdravim, pane Bin.mp3
-  img: mr.jpeg
+  img: img/mr.jpeg
   freq: 581487.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  never   #################################################################
@@ -2249,7 +2249,7 @@ concepts:
   - term: Nikdy jsem o něm neslyšel.
     lang: cs
     tts: Nikdy jsem o nem neslysel.mp3
-  img: never.jpeg
+  img: img/never.jpeg
   freq: 581128.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  life   ##################################################################
@@ -2268,7 +2268,7 @@ concepts:
   - term: Snažíme se jí zachránit život!
     lang: cs
     tts: Snazime se ji zachranit zivot.mp3
-  img: life.jpeg
+  img: img/life.jpeg
   freq: 579285.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  much   ##################################################################
@@ -2309,7 +2309,7 @@ concepts:
   - term: Podívejte se na ty věci!
     lang: cs
     tts: Podivejte se na ty veci.mp3
-  img: things.jpeg
+  img: img/things.jpeg
   freq: 567559.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  many   ##################################################################
@@ -2331,7 +2331,7 @@ concepts:
   - term: Má to mnoho úrovní.
     lang: cs
     tts: Ma to mnoho urovni.mp3
-  img: many.jpeg
+  img: img/many.jpeg
   freq: 564758.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  old   ###################################################################
@@ -2353,7 +2353,7 @@ concepts:
   - term: Je starý a unavený.
     lang: cs
     tts: Je stary a unaveny.mp3
-  img: old.jpeg
+  img: img/old.jpeg
   freq: 562247.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  after   #################################################################
@@ -2397,7 +2397,7 @@ concepts:
   - term: Léta jsem na to čekal.
     lang: cs
     tts: Leta jsem na to cekal.mp3
-  img: years.jpeg
+  img: img/years.jpeg
   freq: 547420.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  most   ##################################################################
@@ -2460,7 +2460,7 @@ concepts:
   - term: Jen počkej takhle za rok nebo za dva.
     lang: cs
     tts: Jen pockej takhle za rok nebo za dva.mp3
-  img: year.jpeg
+  img: img/year.jpeg
   freq: 532499.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  saw   ###################################################################
@@ -2482,7 +2482,7 @@ concepts:
   - term: Já to taky viděl.
     lang: cs
     tts: Ja to taky videl.mp3
-  img: saw.jpeg
+  img: img/saw.jpeg
   freq: 520922.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  too   ###################################################################
@@ -2526,7 +2526,7 @@ concepts:
   - term: Co děláš tady dole?
     lang: cs
     tts: Co delas tady dole.mp3
-  img: down.jpeg
+  img: img/down.jpeg
   freq: 514720.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  work   ##################################################################
@@ -2548,7 +2548,7 @@ concepts:
   - term: To nebude nikdy fungovat.
     lang: cs
     tts: To nebude nikdy fungovat.mp3
-  img: work.jpeg
+  img: img/work.jpeg
   freq: 508678.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  took   ##################################################################
@@ -2589,7 +2589,7 @@ concepts:
   - term: Řekl, že by se mohl opozdit.
     lang: cs
     tts: Rekl, ze by se mohl opozdit.mp3
-  img: might.jpeg
+  img: img/might.jpeg
   freq: 498257.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  first   #################################################################
@@ -2611,7 +2611,7 @@ concepts:
   - term: Jeho první velká chyba.
     lang: cs
     tts: Jeho prvni velka chyba.mp3
-  img: first.jpeg
+  img: img/first.jpeg
   freq: 497764.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  without   ###############################################################
@@ -2630,7 +2630,7 @@ concepts:
   - term: Snadno si bez nás poradí.
     lang: cs
     tts: Snadno si bez nas poradi.mp3
-  img: without.jpeg
+  img: img/without.jpeg
   freq: 496066.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  good   ##################################################################
@@ -2652,7 +2652,7 @@ concepts:
   - term: To byl dobrý začátek.
     lang: cs
     tts: To byl dobry zacatek.mp3
-  img: good.jpeg
+  img: img/good.jpeg
   freq: 490930.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  himself   ###############################################################
@@ -2718,7 +2718,7 @@ concepts:
   - term: Udělal jsi to znovu?
     lang: cs
     tts: Udelal jsi to znovu.mp3
-  img: again.jpeg
+  img: img/again.jpeg
   freq: 476062.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  give   ##################################################################
@@ -2740,7 +2740,7 @@ concepts:
   - term: Dej mi ten prsten.
     lang: cs
     tts: Dej mi ten prsten.mp3
-  img: give.jpeg
+  img: img/give.jpeg
   freq: 469253.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  new   ###################################################################
@@ -2762,7 +2762,7 @@ concepts:
   - term: Tohle je tvůj nový bratr.
     lang: cs
     tts: Tohle je tvuj novy bratr.mp3
-  img: new.jpeg
+  img: img/new.jpeg
   freq: 467016.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  every   #################################################################
@@ -2806,7 +2806,7 @@ concepts:
   - term: Já to cítím stejně.
     lang: cs
     tts: Ja to citim stejne.mp3
-  img: same.jpeg
+  img: img/same.jpeg
   freq: 456106.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  shall   #################################################################
@@ -2880,7 +2880,7 @@ concepts:
   - term: Volal jsem ti šestkrát.
     lang: cs
     tts: Volal jsem ti sestkrat.mp3
-  img: called.jpeg
+  img: img/called.jpeg
   freq: 445602.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  want   ##################################################################
@@ -2902,7 +2902,7 @@ concepts:
   - term: Prostě se s vámi chtějí setkat.
     lang: cs
     tts: Proste se s vami chteji setkat.mp3
-  img: want.jpeg
+  img: img/want.jpeg
   freq: 434592.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  de   ####################################################################
@@ -2931,7 +2931,7 @@ concepts:
   - term: Byl to jediný jistý způsob.
     lang: cs
     tts: Byl to jediny jisty zpusob.mp3
-  img: way.jpeg
+  img: img/way.jpeg
   freq: 433315.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  got   ###################################################################
@@ -3016,7 +3016,7 @@ concepts:
   - term: Vy to dobře znáte.
     lang: cs
     tts: Vy to dobre znate.mp3
-  img: well.jpeg
+  img: img/well.jpeg
   freq: 430407.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  done   ##################################################################
@@ -3038,7 +3038,7 @@ concepts:
   - term: Proč jsi to udělal?
     lang: cs
     tts: Proc jsi to udelal.mp3
-  img: done.jpeg
+  img: img/done.jpeg
   freq: 430389.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  heard   #################################################################
@@ -3060,7 +3060,7 @@ concepts:
   - term: Slyšel jsem tvůj hlas!
     lang: cs
     tts: Slysel jsem tvuj hlas.mp3
-  img: heard.jpeg
+  img: img/heard.jpeg
   freq: 429972.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  days   ##################################################################
@@ -3082,7 +3082,7 @@ concepts:
   - term: Ty dny jsou pryč.
     lang: cs
     tts: Ty dny jsou pryc.mp3
-  img: days.jpeg
+  img: img/days.jpeg
   freq: 426104.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  told   ##################################################################
@@ -3116,7 +3116,7 @@ concepts:
     lang: cs
     tts: pan.mp3
   state: ignore
-  img: lord.jpeg
+  img: img/lord.jpeg
   freq: 422407.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  asked   #################################################################
@@ -3138,7 +3138,7 @@ concepts:
   - term: Požádal jsem o pomoc.
     lang: cs
     tts: Pozadal jsem o pomoc.mp3
-  img: asked.jpeg
+  img: img/asked.jpeg
   freq: 420044.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  going   #################################################################
@@ -3160,7 +3160,7 @@ concepts:
   - term: Co se děje?
     lang: cs
     tts: Co se deje.mp3
-  img: going.jpeg
+  img: img/going.jpeg
   freq: 419315.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  seen   ##################################################################
@@ -3223,7 +3223,7 @@ concepts:
   - term: Možná že dokonce zvítězí.
     lang: cs
     tts: Mozna ze dokonce zvitezi.mp3
-  img: even.jpeg
+  img: img/even.jpeg
   freq: 414918.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  find   ##################################################################
@@ -3245,7 +3245,7 @@ concepts:
   - term: Musím si najít práci.
     lang: cs
     tts: Musim si najit praci.mp3
-  img: find.jpeg
+  img: img/find.jpeg
   freq: 413161.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  knew   ##################################################################
@@ -3267,7 +3267,7 @@ concepts:
   - term: Znal ji můj kamarád.
     lang: cs
     tts: Znal ji muj kamarad.mp3
-  img: knew.jpeg
+  img: img/knew.jpeg
   freq: 413101.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  through   ###############################################################
@@ -3289,7 +3289,7 @@ concepts:
   - term: Má kroužek skrz nos.
     lang: cs
     tts: Ma krouzek skrz nos.mp3
-  img: through.jpeg
+  img: img/through.jpeg
   freq: 412381.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  world   #################################################################
@@ -3308,7 +3308,7 @@ concepts:
   - term: Neměl pro svět žádnou cenu.
     lang: cs
     tts: Nemel pro svet zadnou cenu.mp3
-  img: world.jpeg
+  img: img/world.jpeg
   freq: 410531.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  being   #################################################################
@@ -3352,7 +3352,7 @@ concepts:
   - term: Ale on už je dlouho pryč.
     lang: cs
     tts: Ale on uz je dlouho pryc.mp3
-  img: long.jpeg
+  img: img/long.jpeg
   freq: 405456.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  am   ####################################################################
@@ -3390,7 +3390,7 @@ concepts:
   - term: Já byl proti tomu.
     lang: cs
     tts: Ja byl proti tomu.mp3
-  img: against.jpeg
+  img: img/against.jpeg
   freq: 386919.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  hands   #################################################################
@@ -3409,7 +3409,7 @@ concepts:
   - term: Prosím vemte mě za ruce.
     lang: cs
     tts: Prosim vemte me za ruce.mp3
-  img: hands.jpeg
+  img: img/hands.jpeg
   freq: 385081.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  three   #################################################################
@@ -3431,7 +3431,7 @@ concepts:
   - term: Všichni tři?
     lang: cs
     tts: Vsichni tri.mp3
-  img: three.jpeg
+  img: img/three.jpeg
   freq: 384445.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  words   #################################################################
@@ -3450,7 +3450,7 @@ concepts:
   - term: To jsou moje slova.
     lang: cs
     tts: To jsou moje slova.mp3
-  img: words.jpeg
+  img: img/words.jpeg
   freq: 380328.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  back   ##################################################################
@@ -3472,7 +3472,7 @@ concepts:
   - term: Polož se na záda.
     lang: cs
     tts: Poloz se na zada.mp3
-  img: back.jpeg
+  img: img/back.jpeg
   freq: 379741.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  young   #################################################################
@@ -3491,7 +3491,7 @@ concepts:
   - term: Ale mladý jsi jenom jednou.
     lang: cs
     tts: Ale mlady jsi jenom jednou.mp3
-  img: young.jpeg
+  img: img/young.jpeg
   freq: 375916.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  between   ###############################################################
@@ -3510,7 +3510,7 @@ concepts:
   - term: Vzdálenost mezi pacientem a lékařem.
     lang: cs
     tts: Vzdalenost mezi pacientem a lekarem.mp3
-  img: between.jpeg
+  img: img/between.jpeg
   freq: 371596.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  gave   ##################################################################
@@ -3532,7 +3532,7 @@ concepts:
   - term: Dal mi to můj táta.
     lang: cs
     tts: Dal mi to muj tata.mp3
-  img: gave.jpeg
+  img: img/gave.jpeg
   freq: 369036.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  put   ###################################################################
@@ -3554,7 +3554,7 @@ concepts:
   - term: Můžeš to dát do své knihy.
     lang: cs
     tts: Muzes to dat do sve knihy.mp3
-  img: put.jpeg
+  img: img/put.jpeg
   freq: 366334.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  thought   ###############################################################
@@ -3576,7 +3576,7 @@ concepts:
   - term: Myslel sem, že budeš mít radost.
     lang: cs
     tts: Myslel sem, ze budes mit radost.mp3
-  img: thought.jpeg
+  img: img/thought.jpeg
   freq: 363066.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  away   ##################################################################
@@ -3598,7 +3598,7 @@ concepts:
   - term: Dej tu hračku pryč.
     lang: cs
     tts: Dej tu hracku pryc.mp3
-  img: away.jpeg
+  img: img/away.jpeg
   freq: 362907.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  yet   ###################################################################
@@ -3695,7 +3695,7 @@ concepts:
   - term: Skončí tenhle den vůbec?
     lang: cs
     tts: Skonci tenhle den vubec.mp3
-  img: ever.jpeg
+  img: img/ever.jpeg
   freq: 347490.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  under   #################################################################
@@ -3714,7 +3714,7 @@ concepts:
   - term: Kdo to je pod mým stolem?
     lang: cs
     tts: Kdo to je pod mym stolem.mp3
-  img: under.jpeg
+  img: img/under.jpeg
   freq: 346344.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  last   ##################################################################
@@ -3736,7 +3736,7 @@ concepts:
   - term: To bylo minulý týden.
     lang: cs
     tts: To bylo minuly tyden.mp3
-  img: last.jpeg
+  img: img/last.jpeg
   freq: 344624.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  place   #################################################################
@@ -3755,7 +3755,7 @@ concepts:
   - term: To je hezké místo.
     lang: cs
     tts: To je hezke misto.mp3
-  img: place.jpeg
+  img: img/place.jpeg
   freq: 341350.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  always   ################################################################
@@ -3799,7 +3799,7 @@ concepts:
   - term: Náhle se obrátil zpět.
     lang: cs
     tts: Nahle se obratil zpet.mp3
-  img: turned.jpeg
+  img: img/turned.jpeg
   freq: 337367.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  taken   #################################################################
@@ -3832,7 +3832,7 @@ concepts:
   - term: Byl jste vzhůru celou noc?
     lang: cs
     tts: Byl jste vzhuru celou noc.mp3
-  img: night.jpeg
+  img: img/night.jpeg
   freq: 334694.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  does   ##################################################################
@@ -3870,7 +3870,7 @@ concepts:
   - term: Není tu nic k vidění.
     lang: cs
     tts: Neni tu nic k videni.mp3
-  img: nothing.jpeg
+  img: img/nothing.jpeg
   freq: 334204.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  found   #################################################################
@@ -3892,7 +3892,7 @@ concepts:
   - term: Našel jsem to v džungli.
     lang: cs
     tts: Nasel jsem to v dzungli.mp3
-  img: found.jpeg
+  img: img/found.jpeg
   freq: 333444.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  hand   ##################################################################
@@ -3911,7 +3911,7 @@ concepts:
   - term: Ukaž mi svou ruku.
     lang: cs
     tts: Ukaz mi svou ruku.mp3
-  img: hand.jpeg
+  img: img/hand.jpeg
   freq: 333229.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  let   ###################################################################
@@ -3977,7 +3977,7 @@ concepts:
   - term: Vždy dělej správné věci.
     lang: cs
     tts: Vzdy delej spravne veci.mp3
-  img: right.jpeg
+  img: img/right.jpeg
   freq: 331507.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  gutenberg   #############################################################
@@ -4044,7 +4044,7 @@ concepts:
   - term: Cítil jste I jiné emoce?
     lang: cs
     tts: Citil jste I jine emoce.mp3
-  img: felt.jpeg
+  img: img/felt.jpeg
   freq: 326524.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  began   #################################################################
@@ -4088,7 +4088,7 @@ concepts:
   - term: Žili jste někdy v cizí zemi?
     lang: cs
     tts: Zili jste nekdy v cizi zemi.mp3
-  img: country.jpeg
+  img: img/country.jpeg
   freq: 321963.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  on   ####################################################################
@@ -4107,7 +4107,7 @@ concepts:
   - term: Jste na tomto seznamu?
     lang: cs
     tts: Jste na tomto seznamu.mp3
-  img: on.jpeg
+  img: img/on.jpeg
   freq: 2675121.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  no   ####################################################################
@@ -4126,7 +4126,7 @@ concepts:
   - term: Odpověď zní jednoznačně ne.
     lang: cs
     tts: Odpoved zni jednoznacne ne.mp3
-  img: no.jpeg
+  img: img/no.jpeg
   freq: 1123368.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  off   ###################################################################
@@ -4148,7 +4148,7 @@ concepts:
   - term: Musím se dostat pryč!
     lang: cs
     tts: Musim se dostat pryc.mp3
-  img: off.jpeg
+  img: img/off.jpeg
   freq: 324977.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  while   #################################################################
@@ -4170,7 +4170,7 @@ concepts:
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
     tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
-  img: while.jpeg
+  img: img/while.jpeg
   freq: 321748.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  just   ##################################################################
@@ -4214,7 +4214,7 @@ concepts:
   - term: Postavil se ve dveřích.
     lang: cs
     tts: Postavil se ve dverich.mp3
-  img: stood.jpeg
+  img: img/stood.jpeg
   freq: 308025.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  face   ##################################################################
@@ -4236,7 +4236,7 @@ concepts:
   - term: Budu čelit svému strachu.
     lang: cs
     tts: Budu celit svemu strachu.mp3
-  img: face.jpeg
+  img: img/face.jpeg
   freq: 306872.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  thy   ###################################################################
@@ -4289,7 +4289,7 @@ concepts:
   - term: Je to můj soused vlevo?
     lang: cs
     tts: Je to muj soused vlevo.mp3
-  img: left.jpeg
+  img: img/left.jpeg
   freq: 291138.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  child   #################################################################
@@ -4311,7 +4311,7 @@ concepts:
   - term: Kde je mé dítě!
     lang: cs
     tts: Kde je me dite.mp3
-  img: child.jpeg
+  img: img/child.jpeg
   freq: 288025.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  sent   ##################################################################
@@ -4333,7 +4333,7 @@ concepts:
   - term: Kdo Vás sem poslal?
     lang: cs
     tts: Kdo Vas sem poslal.mp3
-  img: sent.jpeg
+  img: img/sent.jpeg
   freq: 287876.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  means   #################################################################
@@ -4355,7 +4355,7 @@ concepts:
   - term: Moc to pro mě znamená.
     lang: cs
     tts: Moc to pro me znamena.mp3
-  img: means.jpeg
+  img: img/means.jpeg
   freq: 284431.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  once   ##################################################################
@@ -4377,7 +4377,7 @@ concepts:
   - term: Řekl jsi mi to kdysi.
     lang: cs
     tts: Rekl jsi mi to kdysi.mp3
-  img: once.jpeg
+  img: img/once.jpeg
   freq: 283167.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  love   ##################################################################
@@ -4399,7 +4399,7 @@ concepts:
   - term: Byl moje první láska!
     lang: cs
     tts: Byl moje prvni laska.mp3
-  img: love.jpeg
+  img: img/love.jpeg
   freq: 281995.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  passed   ################################################################
@@ -4421,7 +4421,7 @@ concepts:
   - term: Ale zkouškou jste prošel.
     lang: cs
     tts: Ale zkouskou jste prosel.mp3
-  img: passed.jpeg
+  img: img/passed.jpeg
   freq: 279864.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  feet   ##################################################################
@@ -4440,7 +4440,7 @@ concepts:
   - term: Chodidla a zápěstí máš uvolněná.
     lang: cs
     tts: Chodidla a zapesti mas uvolnena.mp3
-  img: feet.jpeg
+  img: img/feet.jpeg
   freq: 279821.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  side   ##################################################################
@@ -4462,7 +4462,7 @@ concepts:
   - term: To je tvá strana!
     lang: cs
     tts: To je tva strana.mp3
-  img: side.jpeg
+  img: img/side.jpeg
   freq: 279184.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  head   ##################################################################
@@ -4481,7 +4481,7 @@ concepts:
   - term: Moje hlava je prázdná.
     lang: cs
     tts: Moje hlava je prazdna.mp3
-  img: head.jpeg
+  img: img/head.jpeg
   freq: 277069.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  heart   #################################################################
@@ -4500,7 +4500,7 @@ concepts:
   - term: Zastavilo se mi srdce.
     lang: cs
     tts: Zastavilo se mi srdce.mp3
-  img: heart.jpeg
+  img: img/heart.jpeg
   freq: 275846.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  children   ##############################################################
@@ -4519,7 +4519,7 @@ concepts:
   - term: To je pro děti.
     lang: cs
     tts: To je pro deti.mp3
-  img: children.jpeg
+  img: img/children.jpeg
   freq: 275607.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  another   ###############################################################
@@ -4538,7 +4538,7 @@ concepts:
   - term: Vážně chci další dítě.
     lang: cs
     tts: Vazne chci dalsi dite.mp3
-  img: another.jpeg
+  img: img/another.jpeg
   freq: 274213.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  small   #################################################################
@@ -4557,7 +4557,7 @@ concepts:
   - term: Víš vůbec, jak jsi malý?
     lang: cs
     tts: Vis vubec, jak jsi maly.mp3
-  img: small.jpeg
+  img: img/small.jpeg
   freq: 272716.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  mother   ################################################################
@@ -4576,7 +4576,7 @@ concepts:
   - term: Je to moje matka!
     lang: cs
     tts: Je to moje matka.mp3
-  img: mother.jpeg
+  img: img/mother.jpeg
   freq: 271652.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  because   ###############################################################
@@ -4614,7 +4614,7 @@ concepts:
   - term: Jak daleko můžete létat?
     lang: cs
     tts: Jak daleko muzete letat.mp3
-  img: how.jpeg
+  img: img/how.jpeg
   freq: 269931.46500
   origins: ["corpus", "conceptDbSamples"]
 ##  room   ##################################################################
@@ -4636,7 +4636,7 @@ concepts:
   - term: Toto je tvůj pokoj.
     lang: cs
     tts: Toto je tvuj pokoj.mp3
-  img: room.jpeg
+  img: img/room.jpeg
   freq: 269595.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  both   ##################################################################
@@ -4658,7 +4658,7 @@ concepts:
   - term: A oba víme proč.
     lang: cs
     tts: A oba vime proc.mp3
-  img: both.jpeg
+  img: img/both.jpeg
   freq: 269426.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  thee   ##################################################################
@@ -4686,7 +4686,7 @@ concepts:
   - term: Zadejte hodnoty pro každý sloupec.
     lang: cs
     tts: Zadejte hodnoty pro kazdy sloupec.mp3
-  img: each.jpeg
+  img: img/each.jpeg
   freq: 269131.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  says   ##################################################################
@@ -4705,7 +4705,7 @@ concepts:
   - term: Kdokoli to říká, je lhář.
     lang: cs
     tts: Kdokoli to rika, je lhar.mp3
-  img: says.jpeg
+  img: img/says.jpeg
   freq: 268542.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  mrs   ###################################################################
@@ -4724,7 +4724,7 @@ concepts:
   - term: Věřte mi to, paní.
     lang: cs
     tts: Verte mi to, pani.mp3
-  img: mrs.jpeg
+  img: img/mrs.jpeg
   freq: 267994.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  father   ################################################################
@@ -4743,7 +4743,7 @@ concepts:
   - term: Co by tomu řekl tvůj otec?
     lang: cs
     tts: Co by tomu rekl tvuj otec.mp3
-  img: father.jpeg
+  img: img/father.jpeg
   freq: 266420.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  part   ##################################################################
@@ -4765,7 +4765,7 @@ concepts:
   - term: Jak najít správný díl?
     lang: cs
     tts: Jak najit spravny dil.mp3
-  img: part.jpeg
+  img: img/part.jpeg
   freq: 265820.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  house   #################################################################
@@ -4784,7 +4784,7 @@ concepts:
   - term: Budu muset prodat dům.
     lang: cs
     tts: Budu muset prodat dum.mp3
-  img: house.jpeg
+  img: img/house.jpeg
   freq: 264916.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  received   ##############################################################
@@ -4806,7 +4806,7 @@ concepts:
   - term: Tuto věc jsem obdržel ráno.
     lang: cs
     tts: Tuto vec jsem obdrzel rano.mp3
-  img: received.jpeg
+  img: img/received.jpeg
   freq: 264606.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  gone   ##################################################################
@@ -4828,7 +4828,7 @@ concepts:
   - term: Jeho člun zmizel.
     lang: cs
     tts: Jeho clun zmizel.mp3
-  img: gone.jpeg
+  img: img/gone.jpeg
   freq: 263585.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  among   #################################################################
@@ -4847,7 +4847,7 @@ concepts:
   - term: Máme mezi vámi lidi.
     lang: cs
     tts: Mame mezi vami lidi.mp3
-  img: among.jpeg
+  img: img/among.jpeg
   freq: 262870.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  water   #################################################################
@@ -4866,7 +4866,7 @@ concepts:
   - term: Tam venku je jen voda.
     lang: cs
     tts: Tam venku je jen voda.mp3
-  img: water.jpeg
+  img: img/water.jpeg
   freq: 261566.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  times   #################################################################
@@ -4888,7 +4888,7 @@ concepts:
   - term: Dobré časy skončily.
     lang: cs
     tts: Dobre casy skoncily.mp3
-  img: times.jpeg
+  img: img/times.jpeg
   freq: 260596.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  keep   ##################################################################
@@ -4910,7 +4910,7 @@ concepts:
   - term: Pomoz mu zachovat tajemství.
     lang: cs
     tts: Pomoz mu zachovat tajemstvi.mp3
-  img: keep.jpeg
+  img: img/keep.jpeg
   freq: 260532.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  home   ##################################################################
@@ -4932,7 +4932,7 @@ concepts:
   - term: Poslal jsem je domů.
     lang: cs
     tts: Poslal jsem je domu.mp3
-  img: home.jpeg
+  img: img/home.jpeg
   freq: 255718.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  word   ##################################################################
@@ -4951,7 +4951,7 @@ concepts:
   - term: Dávám vám své slovo.
     lang: cs
     tts: Davam vam sve slovo.mp3
-  img: word.jpeg
+  img: img/word.jpeg
   freq: 251288.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  moment   ################################################################
@@ -4970,7 +4970,7 @@ concepts:
   - term: Ten okamžik si budu vždy pamatovat
     lang: cs
     tts: Ten okamzik si budu vzdy pamatovat.mp3
-  img: moment.jpeg
+  img: img/moment.jpeg
   freq: 250354.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  whom   ##################################################################
@@ -5036,7 +5036,7 @@ concepts:
   - term: To je nový vzhled.
     lang: cs
     tts: To je novy vzhled.mp3
-  img: look.jpeg
+  img: img/look.jpeg
   freq: 247532.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  better   ################################################################
@@ -5055,7 +5055,7 @@ concepts:
   - term: To je mnohem lepší.
     lang: cs
     tts: To je mnohem lepsi.mp3
-  img: better.jpeg
+  img: img/better.jpeg
   freq: 247398.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  almost   ################################################################
@@ -5077,7 +5077,7 @@ concepts:
   - term: Skoro jsem tě ztratil.
     lang: cs
     tts: Skoro jsem te ztratil.mp3
-  img: almost.jpeg
+  img: img/almost.jpeg
   freq: 247268.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  king   ##################################################################
@@ -5096,7 +5096,7 @@ concepts:
   - term: Ať žije náš král!
     lang: cs
     tts: At zije nas kral.mp3
-  img: king.jpeg
+  img: img/king.jpeg
   freq: 247147.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  answered   ##############################################################
@@ -5137,7 +5137,7 @@ concepts:
   - term: Nebude mi vadit, když to uděláš.
     lang: cs
     tts: Nebude mi vadit, kdyz to udelas.mp3
-  img: mind.jpeg
+  img: img/mind.jpeg
   freq: 243845.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  become   ################################################################
@@ -5197,7 +5197,7 @@ concepts:
   - term: Ty peníze mohly být moje.
     lang: cs
     tts: Ty penize mohly byt moje.mp3
-  img: money.jpeg
+  img: img/money.jpeg
   freq: 240218.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  large   #################################################################
@@ -5219,7 +5219,7 @@ concepts:
   - term: Dělo se to ve velkém měřítku.
     lang: cs
     tts: Delo se to ve velkem meritku.mp3
-  img: large.jpeg
+  img: img/large.jpeg
   freq: 239925.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  ask   ###################################################################
@@ -5241,7 +5241,7 @@ concepts:
   - term: Můžeš se ho zeptat.
     lang: cs
     tts: Muzes se ho zeptat.mp3
-  img: ask.jpeg
+  img: img/ask.jpeg
   freq: 239767.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  women   #################################################################
@@ -5263,7 +5263,7 @@ concepts:
   - term: Kdo jsou ty ženy?
     lang: cs
     tts: Kdo jsou ty zeny.mp3
-  img: women.jpeg
+  img: img/women.jpeg
   freq: 239735.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  set   ###################################################################
@@ -5285,7 +5285,7 @@ concepts:
   - term: Je to celá sada?
     lang: cs
     tts: Je to cela sada.mp3
-  img: set.jpeg
+  img: img/set.jpeg
   freq: 238879.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  really   ################################################################
@@ -5329,7 +5329,7 @@ concepts:
   - term: Přivedl jsem si kamarády.
     lang: cs
     tts: Privedl jsem si kamarady.mp3
-  img: friends.jpeg
+  img: img/friends.jpeg
   freq: 237481.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  name   ##################################################################
@@ -5351,7 +5351,7 @@ concepts:
   - term: Řekněte mi Vaše jméno.
     lang: cs
     tts: Reknete mi Vase jmeno.mp3
-  img: name.jpeg
+  img: img/name.jpeg
   freq: 237198.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  far   ###################################################################
@@ -5370,7 +5370,7 @@ concepts:
   - term: Pěšky to je příliš daleko.
     lang: cs
     tts: Pesky to je prilis daleko.mp3
-  img: far.jpeg
+  img: img/far.jpeg
   freq: 236136.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  held   ##################################################################
@@ -5414,7 +5414,7 @@ concepts:
   - term: Štíty na plný výkon.
     lang: cs
     tts: Stity na plny vykon.mp3
-  img: power.jpeg
+  img: img/power.jpeg
   freq: 233800.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  door   ##################################################################
@@ -5433,7 +5433,7 @@ concepts:
   - term: Proč jsou ty dveře zamčené?
     lang: cs
     tts: Proc jsou ty dvere zamcene.mp3
-  img: door.jpeg
+  img: img/door.jpeg
   freq: 233690.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  why   ###################################################################
@@ -5452,7 +5452,7 @@ concepts:
   - term: Proč ho nemůžeme vzbudit?
     lang: cs
     tts: Proc ho nemuzeme vzbudit.mp3
-  img: why.jpeg
+  img: img/why.jpeg
   freq: 230829.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  family   ################################################################
@@ -5471,7 +5471,7 @@ concepts:
   - term: Má rodina byla chudá.
     lang: cs
     tts: Ma rodina byla chuda.mp3
-  img: family.jpeg
+  img: img/family.jpeg
   freq: 230692.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  er   ####################################################################
@@ -5500,7 +5500,7 @@ concepts:
   - term: Nemohu tomu uvěřit.
     lang: cs
     tts: Nemohu tomu uverit.mp3
-  img: believe.jpeg
+  img: img/believe.jpeg
   freq: 230181.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  replied   ###############################################################
@@ -5522,7 +5522,7 @@ concepts:
   - term: Ano, odvětil jsem.
     lang: cs
     tts: Ano, odvetil jsem.mp3
-  img: replied.jpeg
+  img: img/replied.jpeg
   freq: 229913.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  hear   ##################################################################
@@ -5544,7 +5544,7 @@ concepts:
   - term: Slyšíš mě teď?
     lang: cs
     tts: Slysis me ted.mp3
-  img: hear.jpeg
+  img: img/hear.jpeg
   freq: 228408.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  whole   #################################################################
@@ -5566,7 +5566,7 @@ concepts:
   - term: Už jste to tu viděli celé?
     lang: cs
     tts: Uz jste to tu videli cele.mp3
-  img: whole.jpeg
+  img: img/whole.jpeg
   freq: 225308.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  became   ################################################################
@@ -5607,7 +5607,7 @@ concepts:
   - term: Měla jsem plné ruce.
     lang: cs
     tts: Mela jsem plne ruce.mp3
-  img: full.jpeg
+  img: img/full.jpeg
   freq: 224689.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  course   ################################################################
@@ -5629,7 +5629,7 @@ concepts:
   - term: Pracoval jsem, samozřejmě.
     lang: cs
     tts: Pracoval jsem, samozrejme.mp3
-  img: course.jpeg
+  img: img/course.jpeg
   freq: 224657.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  john   ##################################################################
@@ -5651,7 +5651,7 @@ concepts:
   - term: Jeník nás tam nechtěl.
     lang: cs
     tts: Jenik nas tam nechtel.mp3
-  img: john.jpeg
+  img: img/john.jpeg
   freq: 224569.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  morning   ###############################################################
@@ -5673,7 +5673,7 @@ concepts:
   - term: Dobré ráno všem.
     lang: cs
     tts: Dobre rano vsem.mp3
-  img: morning.jpeg
+  img: img/morning.jpeg
   freq: 222284.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  end   ###################################################################
@@ -5692,7 +5692,7 @@ concepts:
   - term: Táhni za druhý konec!
     lang: cs
     tts: Tahni za druhy konec.mp3
-  img: end.jpeg
+  img: img/end.jpeg
   freq: 221430.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  others   ################################################################
@@ -5714,7 +5714,7 @@ concepts:
   - term: Stejný jako ti ostatní.
     lang: cs
     tts: Stejny jako ti ostatni.mp3
-  img: others.jpeg
+  img: img/others.jpeg
   freq: 219207.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  friend   ################################################################
@@ -5736,7 +5736,7 @@ concepts:
   - term: Byl to můj kamarád.
     lang: cs
     tts: Byl to muj kamarad.mp3
-  img: friend.jpeg
+  img: img/friend.jpeg
   freq: 218887.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  often   #################################################################
@@ -5780,7 +5780,7 @@ concepts:
   - term: Přestaň se na mě tak dívat.
     lang: cs
     tts: Prestan se na me tak divat.mp3
-  img: looking.jpeg
+  img: img/looking.jpeg
   freq: 218510.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  use   ###################################################################
@@ -5821,7 +5821,7 @@ concepts:
   - term: Už přijela její neteř z Anglie?
     lang: cs
     tts: Uz prijela jeji neter z Anglie.mp3
-  img: england.jpeg
+  img: img/england.jpeg
   freq: 214339.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  fact   ##################################################################
@@ -5840,7 +5840,7 @@ concepts:
   - term: To je významná skutečnost.
     lang: cs
     tts: To je vyznamna skutecnost.mp3
-  img: fact.jpeg
+  img: img/fact.jpeg
   freq: 214007.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  enough   ################################################################
@@ -5862,7 +5862,7 @@ concepts:
   - term: Řekl jsem že to stačí.
     lang: cs
     tts: Rekl jsem ze to staci.mp3
-  img: enough.jpeg
+  img: img/enough.jpeg
   freq: 213322.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  number   ################################################################
@@ -5884,7 +5884,7 @@ concepts:
   - term: Zadejte počet kopií, které chcete vytisknout.
     lang: cs
     tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
-  img: number.jpeg
+  img: img/number.jpeg
   freq: 212369.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  during   ################################################################
@@ -5928,7 +5928,7 @@ concepts:
   - term: Všichni tady žijeme společně.
     lang: cs
     tts: Vsichni tady zijeme spolecne.mp3
-  img: together.jpeg
+  img: img/together.jpeg
   freq: 212070.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  here   ##################################################################
@@ -5950,7 +5950,7 @@ concepts:
   - term: Řekl jsem, zůstaň tady!
     lang: cs
     tts: Rekl jsem, zustan tady.mp3
-  img: here.jpeg
+  img: img/here.jpeg
   freq: 210897.97500
   origins: ["corpus", "conceptDbSamples"]
 ##  quite   #################################################################
@@ -5969,7 +5969,7 @@ concepts:
   - term: Tak to bylo docela vtipné.
     lang: cs
     tts: Tak to bylo docela vtipne.mp3
-  img: quite.jpeg
+  img: img/quite.jpeg
   freq: 210251.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  making   ################################################################
@@ -5991,7 +5991,7 @@ concepts:
   - term: Výroba drobných i větších dílů.
     lang: cs
     tts: Vyroba drobnych i vetsich dilu.mp3
-  img: making.jpeg
+  img: img/making.jpeg
   freq: 210031.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  whose   #################################################################
@@ -6035,7 +6035,7 @@ concepts:
   - term: Skoro jsem spadl do vody.
     lang: cs
     tts: Skoro jsem spadl do vody.mp3
-  img: fell.jpeg
+  img: img/fell.jpeg
   freq: 208344.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  school   ################################################################
@@ -6054,7 +6054,7 @@ concepts:
   - term: Běžela každé ráno do školy.
     lang: cs
     tts: Bezela kazde rano do skoly.mp3
-  img: school.jpeg
+  img: img/school.jpeg
   freq: 206442.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  try   ###################################################################
@@ -6076,7 +6076,7 @@ concepts:
   - term: Měl byste to zkusit.
     lang: cs
     tts: Mel byste to zkusit.mp3
-  img: try.jpeg
+  img: img/try.jpeg
   freq: 206441.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  kept   ##################################################################
@@ -6117,7 +6117,7 @@ concepts:
   - term: To je ten hlas.
     lang: cs
     tts: To je ten hlas.mp3
-  img: voice.jpeg
+  img: img/voice.jpeg
   freq: 206124.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  themselves   ############################################################
@@ -6136,7 +6136,7 @@ concepts:
   - term: Dívali se na sebe do zrcadla
     lang: cs
     tts: Divali se na sebe do zrcadla.mp3
-  img: themselves.jpeg
+  img: img/themselves.jpeg
   freq: 205524.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  anything   ##############################################################
@@ -6177,7 +6177,7 @@ concepts:
   - term: Jednoho z nich jsem potkal.
     lang: cs
     tts: Jednoho z nich jsem potkal.mp3
-  img: met.jpeg
+  img: img/met.jpeg
   freq: 203956.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  returned   ##############################################################
@@ -6199,7 +6199,7 @@ concepts:
   - term: Vrátil se za deset minut.
     lang: cs
     tts: Vratil se za deset minut.mp3
-  img: returned.jpeg
+  img: img/returned.jpeg
   freq: 202041.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  death   #################################################################
@@ -6218,7 +6218,7 @@ concepts:
   - term: Ani smrt mě nezastaví.
     lang: cs
     tts: Ani smrt me nezastavi.mp3
-  img: death.jpeg
+  img: img/death.jpeg
   freq: 201437.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  city   ##################################################################
@@ -6240,7 +6240,7 @@ concepts:
   - term: Je pořád ve městě.
     lang: cs
     tts: Je porad ve meste.mp3
-  img: city.jpeg
+  img: img/city.jpeg
   freq: 198911.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  sn   ####################################################################
@@ -6266,7 +6266,7 @@ concepts:
   - term: Říkal jsem čtyři piva.
     lang: cs
     tts: Rikal jsem ctyri piva.mp3
-  img: four.jpeg
+  img: img/four.jpeg
   freq: 196372.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  arms   ##################################################################
@@ -6288,7 +6288,7 @@ concepts:
   - term: Paže jsou silné.
     lang: cs
     tts: Paze jsou silne.mp3
-  img: arms.jpeg
+  img: img/arms.jpeg
   freq: 194298.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  myself   ################################################################
@@ -6307,7 +6307,7 @@ concepts:
   - term: Měl jsem to udělat sám.
     lang: cs
     tts: Mel jsem to udelat sam.mp3
-  img: myself.jpeg
+  img: img/myself.jpeg
   freq: 194173.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  business   ##############################################################
@@ -6329,7 +6329,7 @@ concepts:
   - term: Tohle je obchodní setkání.
     lang: cs
     tts: Tohle je obchodni setkani.mp3
-  img: business.jpeg
+  img: img/business.jpeg
   freq: 193813.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  soon   ##################################################################
@@ -6351,7 +6351,7 @@ concepts:
   - term: Je příliš brzy.
     lang: cs
     tts: Je prilis brzy.mp3
-  img: soon.jpeg
+  img: img/soon.jpeg
   freq: 193680.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  nor   ###################################################################
@@ -6414,7 +6414,7 @@ concepts:
   - term: Co se ti líbí nejméně?
     lang: cs
     tts: Co se ti libi nejmene.mp3
-  img: least.jpeg
+  img: img/least.jpeg
   freq: 191938.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  person   ################################################################
@@ -6436,7 +6436,7 @@ concepts:
   - term: Byl to dobrý člověk.
     lang: cs
     tts: Byl to dobry clovek.mp3
-  img: person.jpeg
+  img: img/person.jpeg
   freq: 190764.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  followed   ##############################################################
@@ -6458,7 +6458,7 @@ concepts:
   - term: Postupovali jsme podle tvých instrukcí.
     lang: cs
     tts: Postupovali jsme podle tvych instrukci.mp3
-  img: followed.jpeg
+  img: img/followed.jpeg
   freq: 190649.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  seem   ##################################################################
@@ -6499,7 +6499,7 @@ concepts:
   - term: Umím číst I psát.
     lang: cs
     tts: Umim cist I psat.mp3
-  img: read.jpeg
+  img: img/read.jpeg
   freq: 190020.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  already   ###############################################################
@@ -6540,7 +6540,7 @@ concepts:
   - term: Žena a její děti.
     lang: cs
     tts: Zena a jeji deti.mp3
-  img: woman.jpeg
+  img: img/woman.jpeg
   freq: 189429.60000
   origins: ["corpus", "conceptDbSamples"]
 ##  less   ##################################################################
@@ -6559,7 +6559,7 @@ concepts:
   - term: Méně než dvě hodiny domů.
     lang: cs
     tts: Mene nez dve hodiny domu.mp3
-  img: less.jpeg
+  img: img/less.jpeg
   freq: 189322.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  body   ##################################################################
@@ -6578,7 +6578,7 @@ concepts:
   - term: Lidské tělo.
     lang: cs
     tts: Lidske telo.mp3
-  img: body.jpeg
+  img: img/body.jpeg
   freq: 188988.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  law   ###################################################################
@@ -6600,7 +6600,7 @@ concepts:
   - term: Jsme víc než zákon?
     lang: cs
     tts: Jsme vic nez zakon.mp3
-  img: law.jpeg
+  img: img/law.jpeg
   freq: 188922.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  best   ##################################################################
@@ -6622,7 +6622,7 @@ concepts:
   - term: To je to nejlepší co dokážeš udělat?
     lang: cs
     tts: To je to nejlepsi co dokazes udelat.mp3
-  img: best.jpeg
+  img: img/best.jpeg
   freq: 188751.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  hour   ##################################################################
@@ -6641,7 +6641,7 @@ concepts:
   - term: Ale každá hodina se počítá.
     lang: cs
     tts: Ale kazda hodina se pocita.mp3
-  img: hour.jpeg
+  img: img/hour.jpeg
   freq: 188459.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  different   #############################################################
@@ -6663,7 +6663,7 @@ concepts:
   - term: Chtěl udělat něco jiného.
     lang: cs
     tts: Chtel udelat neco jineho.mp3
-  img: different.jpeg
+  img: img/different.jpeg
   freq: 186727.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  girl   ##################################################################
@@ -6685,7 +6685,7 @@ concepts:
   - term: Ta holka se mi líbí.
     lang: cs
     tts: Ta holka se mi libi.mp3
-  img: girl.jpeg
+  img: img/girl.jpeg
   freq: 186549.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  ye   ####################################################################
@@ -6716,7 +6716,7 @@ concepts:
   - term: Je dobré být chudý.
     lang: cs
     tts: Je dobre byt chudy.mp3
-  img: poor.jpeg
+  img: img/poor.jpeg
   freq: 182819.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  bring   #################################################################
@@ -6779,7 +6779,7 @@ concepts:
   - term: To je velký případ.
     lang: cs
     tts: To je velky pripad.mp3
-  img: big.jpeg
+  img: img/big.jpeg
   freq: 181717.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  son   ###################################################################
@@ -6798,7 +6798,7 @@ concepts:
   - term: On není tvůj syn. Je můj.
     lang: cs
     tts: On neni tvuj syn Je muj.mp3
-  img: son.jpeg
+  img: img/son.jpeg
   freq: 179061.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  several   ###############################################################
@@ -6817,7 +6817,7 @@ concepts:
   - term: Tento proces může trvat několik minut.
     lang: cs
     tts: Tento proces muze trvat nekolik minut.mp3
-  img: several.jpeg
+  img: img/several.jpeg
   freq: 178618.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  light   #################################################################
@@ -6839,7 +6839,7 @@ concepts:
   - term: Opakuji, zelené světlo.
     lang: cs
     tts: Opakuji, zelene svetlo.mp3
-  img: light.jpeg
+  img: img/light.jpeg
   freq: 178355.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  speak   #################################################################
@@ -6861,7 +6861,7 @@ concepts:
   - term: Nebyl jsem schopen mluvit.
     lang: cs
     tts: Nebyl jsem schopen mluvit.mp3
-  img: speak.jpeg
+  img: img/speak.jpeg
   freq: 178191.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  given   #################################################################
@@ -6905,7 +6905,7 @@ concepts:
   - term: Chci jen trošku čerstvého vzduchu.
     lang: cs
     tts: Chci jen trosku cerstveho vzduchu.mp3
-  img: air.jpeg
+  img: img/air.jpeg
   freq: 176706.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  until   #################################################################
@@ -6968,7 +6968,7 @@ concepts:
   - term: Toto není naše válka.
     lang: cs
     tts: Toto neni nase valka.mp3
-  img: war.jpeg
+  img: img/war.jpeg
   freq: 176174.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  form   ##################################################################
@@ -6990,7 +6990,7 @@ concepts:
   - term: Co když je to forma života?
     lang: cs
     tts: Co kdyz je to forma zivota.mp3
-  img: form.jpeg
+  img: img/form.jpeg
   freq: 176076.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  herself   ###############################################################
@@ -7031,7 +7031,7 @@ concepts:
   - term: Už nemůžu déle čekat.
     lang: cs
     tts: Uz nemuzu dele cekat.mp3
-  img: longer.jpeg
+  img: img/longer.jpeg
   freq: 173897.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  spoke   #################################################################
@@ -7053,7 +7053,7 @@ concepts:
   - term: Mluvil jsem s dětmi.
     lang: cs
     tts: Mluvil jsem s detmi.mp3
-  img: spoke.jpeg
+  img: img/spoke.jpeg
   freq: 172990.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  perhaps   ###############################################################
@@ -7097,7 +7097,7 @@ concepts:
   - term: Použili jste tento nástroj již dříve?
     lang: cs
     tts: Pouzili jste tento nastroj jiz drive.mp3
-  img: used.jpeg
+  img: img/used.jpeg
   freq: 172460.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  story   #################################################################
@@ -7119,7 +7119,7 @@ concepts:
   - term: A co tvůj příběh?
     lang: cs
     tts: A co tvuj pribeh.mp3
-  img: story.jpeg
+  img: img/story.jpeg
   freq: 172290.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  works   #################################################################
@@ -7141,7 +7141,7 @@ concepts:
   - term: Řekni mi, jak to funguje.
     lang: cs
     tts: Rekni mi, jak to funguje.mp3
-  img: works.jpeg
+  img: img/works.jpeg
   freq: 170829.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  saying   ################################################################
@@ -7163,7 +7163,7 @@ concepts:
   - term: Neslyším, co říká.
     lang: cs
     tts: Neslysim, co rika.mp3
-  img: saying.jpeg
+  img: img/saying.jpeg
   freq: 170695.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  appeared   ##############################################################
@@ -7207,7 +7207,7 @@ concepts:
   - term: Současná situace je velmi komplikovaná.
     lang: cs
     tts: Soucasna situace je velmi komplikovana.mp3
-  img: present.jpeg
+  img: img/present.jpeg
   freq: 169888.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  rather   ################################################################
@@ -7251,7 +7251,7 @@ concepts:
   - term: Tak kdo je další na seznamu?
     lang: cs
     tts: Tak kdo je dalsi na seznamu.mp3
-  img: next.jpeg
+  img: img/next.jpeg
   freq: 169443.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  eye   ###################################################################
@@ -7273,7 +7273,7 @@ concepts:
   - term: Dávejte pozor na děti.
     lang: cs
     tts: Davejte pozor na deti.mp3
-  img: eye.jpeg
+  img: img/eye.jpeg
   freq: 168936.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  ety   ###################################################################
@@ -7299,7 +7299,7 @@ concepts:
   - term: Chcete říct sto milionů?
     lang: cs
     tts: Chcete rict sto milionu.mp3
-  img: hundred.jpeg
+  img: img/hundred.jpeg
   freq: 168628.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  reason   ################################################################
@@ -7321,7 +7321,7 @@ concepts:
   - term: Vždycky je nějaký důvod.
     lang: cs
     tts: Vzdycky je nejaky duvod.mp3
-  img: reason.jpeg
+  img: img/reason.jpeg
   freq: 168401.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  since   #################################################################
@@ -7362,7 +7362,7 @@ concepts:
   - term: Co se tam děje?
     lang: cs
     tts: Co se tam deje.mp3
-  img: there.jpeg
+  img: img/there.jpeg
   freq: 168331.60000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  company   ###############################################################
@@ -7384,7 +7384,7 @@ concepts:
   - term: Díky čemu je naše firma úspěšná?
     lang: cs
     tts: Diky cemu je nase firma uspesna.mp3
-  img: company.jpeg
+  img: img/company.jpeg
   freq: 168252.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  white   #################################################################
@@ -7403,7 +7403,7 @@ concepts:
   - term: Moje auto bylo bílé.
     lang: cs
     tts: Moje auto bylo bile.mp3
-  img: white.jpeg
+  img: img/white.jpeg
   freq: 167140.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  book   ##################################################################
@@ -7425,7 +7425,7 @@ concepts:
   - term: Zavolejte a rezervujte si místo.
     lang: cs
     tts: Zavolejte a rezervujte si misto.mp3
-  img: book.jpeg
+  img: img/book.jpeg
   freq: 166876.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  thus   ##################################################################
@@ -7469,7 +7469,7 @@ concepts:
   - term: Bylo dosaženo konce dokumentu.
     lang: cs
     tts: Bylo dosazeno konce dokumentu.mp3
-  img: reached.jpeg
+  img: img/reached.jpeg
   freq: 165752.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  boy   ###################################################################
@@ -7491,7 +7491,7 @@ concepts:
   - term: Tak jak se má ten chlapec?
     lang: cs
     tts: Tak jak se ma ten chlapec.mp3
-  img: boy.jpeg
+  img: img/boy.jpeg
   freq: 164881.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  hours   #################################################################
@@ -7510,7 +7510,7 @@ concepts:
   - term: Čekala jsem dvě hodiny.
     lang: cs
     tts: Cekala jsem dve hodiny.mp3
-  img: hours.jpeg
+  img: img/hours.jpeg
   freq: 164326.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  kind   ##################################################################
@@ -7532,7 +7532,7 @@ concepts:
   - term: Ona byla poslední svého druhu.
     lang: cs
     tts: Ona byla posledni sveho druhu.mp3
-  img: kind.jpeg
+  img: img/kind.jpeg
   freq: 163832.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  five   ##################################################################
@@ -7551,7 +7551,7 @@ concepts:
   - term: Říkal jsi pět minut.
     lang: cs
     tts: Rikal jsi pet minut.mp3
-  img: five.jpeg
+  img: img/five.jpeg
   freq: 163511.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  miles   #################################################################
@@ -7584,7 +7584,7 @@ concepts:
   - term: Vyberte prosím město a stát.
     lang: cs
     tts: Vyberte prosim mesto a stat.mp3
-  img: state.jpeg
+  img: img/state.jpeg
   freq: 162829.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  government   ############################################################
@@ -7603,7 +7603,7 @@ concepts:
   - term: Vláda nemá na vybranou!
     lang: cs
     tts: Vlada nema na vybranou.mp3
-  img: government.jpeg
+  img: img/government.jpeg
   freq: 162694.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  paid   ##################################################################
@@ -7625,7 +7625,7 @@ concepts:
   - term: Bude vám dobře zaplaceno.
     lang: cs
     tts: Bude vam dobre zaplaceno.mp3
-  img: paid.jpeg
+  img: img/paid.jpeg
   freq: 162605.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  further   ###############################################################
@@ -7666,7 +7666,7 @@ concepts:
   - term: Lidské tělo se regeneruje samo.
     lang: cs
     tts: Lidske telo se regeneruje samo.mp3
-  img: itself.jpeg
+  img: img/itself.jpeg
   freq: 161172.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  open   ##################################################################
@@ -7688,7 +7688,7 @@ concepts:
   - term: Schůze je otevřena všem.
     lang: cs
     tts: Schuze je otevrena vsem.mp3
-  img: open.jpeg
+  img: img/open.jpeg
   freq: 160795.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  order   #################################################################
@@ -7710,7 +7710,7 @@ concepts:
   - term: Můžete si objednat telefonicky.
     lang: cs
     tts: Muzete si objednat telefonicky.mp3
-  img: order.jpeg
+  img: img/order.jpeg
   freq: 160771.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  taking   ################################################################
@@ -7732,7 +7732,7 @@ concepts:
   - term: Koupání je tak relaxační.
     lang: cs
     tts: Koupani je tak relaxacni.mp3
-  img: taking.jpeg
+  img: img/taking.jpeg
   freq: 160626.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  around   ################################################################
@@ -7754,7 +7754,7 @@ concepts:
   - term: Nepřátelé jsou všude kolem!
     lang: cs
     tts: Nepratele jsou vsude kolem.mp3
-  img: around.jpeg
+  img: img/around.jpeg
   freq: 159191.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  understand   ############################################################
@@ -7776,7 +7776,7 @@ concepts:
   - term: Ale snaž se pochopit.
     lang: cs
     tts: Ale snaz se pochopit.mp3
-  img: understand.jpeg
+  img: img/understand.jpeg
   freq: 159041.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  half   ##################################################################
@@ -7798,7 +7798,7 @@ concepts:
   - term: A co ta druhá polovina?
     lang: cs
     tts: A co ta druha polovina.mp3
-  img: half.jpeg
+  img: img/half.jpeg
   freq: 157947.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  within   ################################################################
@@ -7820,7 +7820,7 @@ concepts:
   - term: Bylo to do dvou metrů od domu.
     lang: cs
     tts: Bylo to do dvou metru od domu.mp3
-  img: within.jpeg
+  img: img/within.jpeg
   freq: 156154.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  entered   ###############################################################
@@ -7864,7 +7864,7 @@ concepts:
   - term: Pak to může začít.
     lang: cs
     tts: Pak to muze zacit.mp3
-  img: begin.jpeg
+  img: img/begin.jpeg
   freq: 154912.25000
   origins: ["corpus", "conceptDbSamples"]
 ##  till   ##################################################################
@@ -7912,7 +7912,7 @@ concepts:
   - term: Záleží na tom vůbec?
     lang: cs
     tts: Zalezi na tom vubec.mp3
-  img: matter.jpeg
+  img: img/matter.jpeg
   freq: 154339.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  system   ################################################################
@@ -7931,7 +7931,7 @@ concepts:
   - term: Známe dobře náš planetární systém.
     lang: cs
     tts: Zname dobre nas planetarni system.mp3
-  img: system.jpeg
+  img: img/system.jpeg
   freq: 153835.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  laws   ##################################################################
@@ -7953,7 +7953,7 @@ concepts:
   - term: My tu máme jiné zákony.
     lang: cs
     tts: My tu mame jine zakony.mp3
-  img: laws.jpeg
+  img: img/laws.jpeg
   freq: 153830.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  hope   ##################################################################
@@ -7975,7 +7975,7 @@ concepts:
   - term: Ještě tu je naděje.
     lang: cs
     tts: Jeste tu je nadeje.mp3
-  img: hope.jpeg
+  img: img/hope.jpeg
   freq: 153382.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  comes   #################################################################
@@ -8016,7 +8016,7 @@ concepts:
   - term: To bylo minulý týden.
     lang: cs
     tts: To bylo minuly tyden.mp3
-  img: week.jpeg
+  img: img/week.jpeg
   freq: 152726.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  point   #################################################################
@@ -8038,7 +8038,7 @@ concepts:
   - term: Vstupní bod musí být viditelný.
     lang: cs
     tts: Vstupni bod musi byt viditelny.mp3
-  img: point.jpeg
+  img: img/point.jpeg
   freq: 152624.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  nature   ################################################################
@@ -8060,7 +8060,7 @@ concepts:
   - term: Má veselou povahu.
     lang: cs
     tts: Ma veselou povahu.mp3
-  img: nature.jpeg
+  img: img/nature.jpeg
   freq: 152360.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  able   ##################################################################
@@ -8104,7 +8104,7 @@ concepts:
   - term: Dostal jsem váš dopis.
     lang: cs
     tts: Dostal jsem vas dopis.mp3
-  img: letter.jpeg
+  img: img/letter.jpeg
   freq: 151273.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  france   ################################################################
@@ -8123,7 +8123,7 @@ concepts:
   - term: Francie pro mě není dobrá.
     lang: cs
     tts: Francie pro me neni dobra.mp3
-  img: france.jpeg
+  img: img/france.jpeg
   freq: 151108.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  indeed   ################################################################
@@ -8164,7 +8164,7 @@ concepts:
   - term: Pojďme na párty!
     lang: cs
     tts: Pojdme na party.mp3
-  img: party.jpeg
+  img: img/party.jpeg
   freq: 148515.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  round   #################################################################
@@ -8186,7 +8186,7 @@ concepts:
   - term: To je pěkně kulaté číslo.
     lang: cs
     tts: To je pekne kulate cislo.mp3
-  img: round.jpeg
+  img: img/round.jpeg
   freq: 148447.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  idea   ##################################################################
@@ -8205,7 +8205,7 @@ concepts:
   - term: To je jen nápad.
     lang: cs
     tts: To je jen napad.mp3
-  img: idea.jpeg
+  img: img/idea.jpeg
   freq: 148188.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  information   ###########################################################
@@ -8227,7 +8227,7 @@ concepts:
   - term: Vyplňte prosím následující údaje!
     lang: cs
     tts: Vyplnte prosim nasledujici udaje.mp3
-  img: information.jpeg
+  img: img/information.jpeg
   freq: 147869.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  above   #################################################################
@@ -8249,7 +8249,7 @@ concepts:
   - term: Přímo shora to není vidět.
     lang: cs
     tts: Primo zhora to neni videt.mp3
-  img: above.jpeg
+  img: img/above.jpeg
   freq: 147753.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  alone   #################################################################
@@ -8271,7 +8271,7 @@ concepts:
   - term: Je teď tak sám.
     lang: cs
     tts: Je ted tak sam.mp3
-  img: alone.jpeg
+  img: img/alone.jpeg
   freq: 147639.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  possible   ##############################################################
@@ -8290,7 +8290,7 @@ concepts:
   - term: Ale možné to je.
     lang: cs
     tts: Ale mozne to je.mp3
-  img: possible.jpeg
+  img: img/possible.jpeg
   freq: 147091.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  service   ###############################################################
@@ -8309,7 +8309,7 @@ concepts:
   - term: K vašim službám.
     lang: cs
     tts: K vasim sluzbam.mp3
-  img: service.jpeg
+  img: img/service.jpeg
   freq: 146302.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  lay   ###################################################################
@@ -8331,7 +8331,7 @@ concepts:
   - term: Slepice kladou bílá vejce.
     lang: cs
     tts: Slepice kladou bila vejce.mp3
-  img: lay.jpeg
+  img: img/lay.jpeg
   freq: 146055.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  meet   ##################################################################
@@ -8350,7 +8350,7 @@ concepts:
   - term: Je hezké se s tebou setkat.
     lang: cs
     tts: Je hezke se s tebou setkat.mp3
-  img: meet.jpeg
+  img: img/meet.jpeg
   freq: 145712.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  art   ###################################################################
@@ -8372,7 +8372,7 @@ concepts:
   - term: Chcete mluvit o umění?
     lang: cs
     tts: Chcete mluvit o umeni.mp3
-  img: art.jpeg
+  img: img/art.jpeg
   freq: 145697.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  london   ################################################################
@@ -8391,7 +8391,7 @@ concepts:
   - term: Znám Londýn velmi dobře.
     lang: cs
     tts: Znam Londyn velmi dobre.mp3
-  img: london.jpeg
+  img: img/london.jpeg
   freq: 145606.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  laid   ##################################################################
@@ -8413,7 +8413,7 @@ concepts:
   - term: Slepice snesla vejce.
     lang: cs
     tts: Slepice snesla vejce.mp3
-  img: laid.jpeg
+  img: img/laid.jpeg
   freq: 145490.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  led   ###################################################################
@@ -8434,7 +8434,7 @@ concepts:
   - term: Tys mě sem přivedla.
     lang: cs
     tts: Tys me sem privedla.mp3
-  img: led.jpeg
+  img: img/led.jpeg
   freq: 145393.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  copyright   #############################################################
@@ -8467,7 +8467,7 @@ concepts:
   - term: Seskupit podle velikosti.
     lang: cs
     tts: Seskupit podle velikosti.mp3
-  img: group.jpeg
+  img: img/group.jpeg
   freq: 145209.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  doing   #################################################################
@@ -8489,7 +8489,7 @@ concepts:
   - term: Co myslíš, že dělá?
     lang: cs
     tts: Co myslis, ze dela.mp3
-  img: doing.jpeg
+  img: img/doing.jpeg
   freq: 145131.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  bad   ###################################################################
@@ -8511,7 +8511,7 @@ concepts:
   - term: Tak špatné to není.
     lang: cs
     tts: Tak spatne to neni.mp3
-  img: bad.jpeg
+  img: img/bad.jpeg
   freq: 143899.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  help   ##################################################################
@@ -8533,7 +8533,7 @@ concepts:
   - term: Dovolte mi, abych Vám pomohl.
     lang: cs
     tts: Dovolte mi, abych Vam pomohl.mp3
-  img: help.jpeg
+  img: img/help.jpeg
   freq: 143716.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  opened   ################################################################
@@ -8555,7 +8555,7 @@ concepts:
   - term: Otevřený kufr na posteli.
     lang: cs
     tts: Otevreny kufr na posteli.mp3
-  img: opened.jpeg
+  img: img/opened.jpeg
   freq: 143625.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  ground   ################################################################
@@ -8577,7 +8577,7 @@ concepts:
   - term: Dopadl jsem na zem.
     lang: cs
     tts: Dopadl jsem na zem.mp3
-  img: ground.jpeg
+  img: img/ground.jpeg
   freq: 143541.00000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  second   ################################################################
@@ -8599,7 +8599,7 @@ concepts:
   - term: Druhý krok není vyžadován.
     lang: cs
     tts: Druhy krok neni vyzadovan.mp3
-  img: second.jpeg
+  img: img/second.jpeg
   freq: 143161.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  call   ##################################################################
@@ -8621,7 +8621,7 @@ concepts:
   - term: Bála jsem se zavolat.
     lang: cs
     tts: Bala jsem se zavolat.mp3
-  img: call.jpeg
+  img: img/call.jpeg
   freq: 143102.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  town   ##################################################################
@@ -8640,7 +8640,7 @@ concepts:
   - term: Tohle je velmi malé město.
     lang: cs
     tts: Tohle je velmi male mesto.mp3
-  img: town.jpeg
+  img: img/town.jpeg
   freq: 142754.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  near   ##################################################################
@@ -8659,7 +8659,7 @@ concepts:
   - term: Bylo to poblíž pláže.
     lang: cs
     tts: Bylo to pobliz plaze.mp3
-  img: near.jpeg
+  img: img/near.jpeg
   freq: 142483.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  strong   ################################################################
@@ -8681,7 +8681,7 @@ concepts:
   - term: Bylo to silné, ať to bylo cokoliv.
     lang: cs
     tts: Bylo to silne, at to bylo cokoliv.mp3
-  img: strong.jpeg
+  img: img/strong.jpeg
   freq: 141950.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  along   #################################################################
@@ -8700,7 +8700,7 @@ concepts:
   - term: Pokračovali jsme po hlavní silnici.
     lang: cs
     tts: Pokracovali jsme po hlavni silnici.mp3
-  img: along.jpeg
+  img: img/along.jpeg
   freq: 141819.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  public   ################################################################
@@ -8722,7 +8722,7 @@ concepts:
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
     tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
-  img: public.jpeg
+  img: img/public.jpeg
   freq: 141621.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  hath   ##################################################################
@@ -8755,7 +8755,7 @@ concepts:
   - term: Chtěl udělat něco jiného.
     lang: cs
     tts: Chtel udelat neco jineho.mp3
-  img: wanted.jpeg
+  img: img/wanted.jpeg
   freq: 140608.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  return   ################################################################
@@ -8777,7 +8777,7 @@ concepts:
   - term: Chtěla jsem to vrátit.
     lang: cs
     tts: Chtela jsem to vratit.mp3
-  img: return.jpeg
+  img: img/return.jpeg
   freq: 140295.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  need   ##################################################################
@@ -8799,7 +8799,7 @@ concepts:
   - term: Musím se dostat pryč!
     lang: cs
     tts: Musim se dostat pryc.mp3
-  img: need.jpeg
+  img: img/need.jpeg
   freq: 139916.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  dear   ##################################################################
@@ -8821,7 +8821,7 @@ concepts:
   - term: Jak se cítíš, drahá?
     lang: cs
     tts: Jak se citis, draha.mp3
-  img: dear.jpeg
+  img: img/dear.jpeg
   freq: 139827.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  dead   ##################################################################
@@ -8843,7 +8843,7 @@ concepts:
   - term: Leží tam mrtvé tělo.
     lang: cs
     tts: Lezi tam mrtve telo.mp3
-  img: dead.jpeg
+  img: img/dead.jpeg
   freq: 139580.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  makes   #################################################################
@@ -8906,7 +8906,7 @@ concepts:
   - term: To je velký případ.
     lang: cs
     tts: To je velky pripad.mp3
-  img: case.jpeg
+  img: img/case.jpeg
   freq: 138689.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  student   ###############################################################
@@ -8924,7 +8924,7 @@ concepts:
   - term: Byl to dobrý žák.
     lang: cs
     tts: Byl to dobry zak.mp3
-  img: student.jpeg
+  img: img/student.jpeg
   freq: 138627.05000
   origins: ["corpus", "conceptDbSamples"]
 ##  thousand   ##############################################################
@@ -8943,7 +8943,7 @@ concepts:
   - term: Jen devět tisíc za měsíc.
     lang: cs
     tts: Jen devet tisic za mesic.mp3
-  img: thousand.jpeg
+  img: img/thousand.jpeg
   freq: 138465.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  important   #############################################################
@@ -8965,7 +8965,7 @@ concepts:
   - term: To je významná skutečnost.
     lang: cs
     tts: To je vyznamna skutecnost.mp3
-  img: important.jpeg
+  img: img/important.jpeg
   freq: 138241.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  change   ################################################################
@@ -8987,7 +8987,7 @@ concepts:
   - term: Chcete tuto změnu provést?
     lang: cs
     tts: Chcete tuto zmenu provest.mp3
-  img: change.jpeg
+  img: img/change.jpeg
   freq: 137970.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  high   ##################################################################
@@ -9006,7 +9006,7 @@ concepts:
   - term: To také znamená žádné vysoké poplatky.
     lang: cs
     tts: To take znamena zadne vysoke poplatky.mp3
-  img: high.jpeg
+  img: img/high.jpeg
   freq: 137721.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  interest   ##############################################################
@@ -9028,7 +9028,7 @@ concepts:
   - term: Ceníme si vašeho zájemu.
     lang: cs
     tts: Cenime si vaseho zajemu.mp3
-  img: interest.jpeg
+  img: img/interest.jpeg
   freq: 137310.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  therefore   #############################################################
@@ -9072,7 +9072,7 @@ concepts:
   - term: Umím číst I psát.
     lang: cs
     tts: Umim cist I psat.mp3
-  img: write.jpeg
+  img: img/write.jpeg
   freq: 137054.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  english   ###############################################################
@@ -9091,7 +9091,7 @@ concepts:
   - term: Odteď už jen anglicky.
     lang: cs
     tts: Odted uz jen anglicky.mp3
-  img: english.jpeg
+  img: img/english.jpeg
   freq: 136965.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  tried   #################################################################
@@ -9144,7 +9144,7 @@ concepts:
   - term: Žili jste někdy v cizí zemi?
     lang: cs
     tts: Zili jste nekdy v cizi zemi.mp3
-  img: lived.jpeg
+  img: img/lived.jpeg
   freq: 135512.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  show   ##################################################################
@@ -9166,7 +9166,7 @@ concepts:
   - term: Chci ti ukázat tohle.
     lang: cs
     tts: Chci ti ukazat tohle.mp3
-  img: show.jpeg
+  img: img/show.jpeg
   freq: 135451.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  sure   ##################################################################
@@ -9188,7 +9188,7 @@ concepts:
   - term: Byl to jediný jistý způsob.
     lang: cs
     tts: Byl to jediny jisty zpusob.mp3
-  img: sure.jpeg
+  img: img/sure.jpeg
   freq: 135369.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  everything   ############################################################
@@ -9207,7 +9207,7 @@ concepts:
   - term: Já to můžu všechno vysvětlit.
     lang: cs
     tts: Ja to muzu vsechno vysvetlit.mp3
-  img: everything.jpeg
+  img: img/everything.jpeg
   freq: 134993.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  known   #################################################################
@@ -9257,7 +9257,7 @@ concepts:
   - term: Žádám o povolení přistát.
     lang: cs
     tts: Zadam o povoleni pristat.mp3
-  img: land.jpeg
+  img: img/land.jpeg
   freq: 133539.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  placed   ################################################################
@@ -9276,7 +9276,7 @@ concepts:
   - term: Umístěný vedle postele.
     lang: cs
     tts: Umisteny vedle postele.mp3
-  img: placed.jpeg
+  img: img/placed.jpeg
   freq: 133084.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  fire   ##################################################################
@@ -9298,7 +9298,7 @@ concepts:
   - term: Kdo vám dal rozkaz střílet?
     lang: cs
     tts: Kdo vam dal rozkaz strilet.mp3
-  img: fire.jpeg
+  img: img/fire.jpeg
   freq: 133021.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  letters   ###############################################################
@@ -9320,7 +9320,7 @@ concepts:
   - term: To jsou moje dopisy.
     lang: cs
     tts: To jsou moje dopisy.mp3
-  img: letters.jpeg
+  img: img/letters.jpeg
   freq: 132785.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  greater   ###############################################################
@@ -9342,7 +9342,7 @@ concepts:
   - term: Hodnota musí být rovna nebo větší než nula.
     lang: cs
     tts: Hodnota musi byt rovna nebo vetsi nez nula.mp3
-  img: greater.jpeg
+  img: img/greater.jpeg
   freq: 132045.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  else   ##################################################################
@@ -9383,7 +9383,7 @@ concepts:
   - term: Jen devět tisíc za měsíc.
     lang: cs
     tts: Jen devet tisic za mesic.mp3
-  img: month.jpeg
+  img: img/month.jpeg
   freq: 131861.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  either   ################################################################
@@ -9405,7 +9405,7 @@ concepts:
   - term: Uživatel zvolí buď ano nebo ne.
     lang: cs
     tts: Uzivatel zvoli bud ano nebo ne.mp3
-  img: either.jpeg
+  img: img/either.jpeg
   freq: 130841.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  ran   ###################################################################
@@ -9427,7 +9427,7 @@ concepts:
   - term: Běžela každé ráno do školy.
     lang: cs
     tts: Bezela kazde rano do skoly.mp3
-  img: ran.jpeg
+  img: img/ran.jpeg
   freq: 130394.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  toward   ################################################################
@@ -9455,7 +9455,7 @@ concepts:
   - term: Máš tak červené rty.
     lang: cs
     tts: Mas tak cervene rty.mp3
-  img: lips.jpeg
+  img: img/lips.jpeg
   freq: 129473.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  remained   ##############################################################
@@ -9485,7 +9485,7 @@ concepts:
   - term: Skrývají před vámi pravdu.
     lang: cs
     tts: Skryvaji pred vami pravdu.mp3
-  img: truth.jpeg
+  img: img/truth.jpeg
   freq: 128851.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  history   ###############################################################
@@ -9507,7 +9507,7 @@ concepts:
   - term: Dějiny jsou komplikované.
     lang: cs
     tts: Dejiny jsou komplikovane.mp3
-  img: history.jpeg
+  img: img/history.jpeg
   freq: 128431.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  remember   ##############################################################
@@ -9529,7 +9529,7 @@ concepts:
   - term: Ten okamžik si budu vždy pamatovat
     lang: cs
     tts: Ten okamzik si budu vzdy pamatovat.mp3
-  img: remember.jpeg
+  img: img/remember.jpeg
   freq: 128101.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  sometimes   #############################################################
@@ -9573,7 +9573,7 @@ concepts:
   - term: Proč by se měla starat?
     lang: cs
     tts: Proc by se mela starat.mp3
-  img: care.jpeg
+  img: img/care.jpeg
   freq: 128025.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  ago   ###################################################################
@@ -9614,7 +9614,7 @@ concepts:
   - term: Nyní vás musím opustit.
     lang: cs
     tts: Nyni vas musim opustit.mp3
-  img: leave.jpeg
+  img: img/leave.jpeg
   freq: 127075.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  united   ################################################################
@@ -9636,7 +9636,7 @@ concepts:
   - term: Spojené státy americké
     lang: cs
     tts: Spojene staty americke.mp3
-  img: united.jpeg
+  img: img/united.jpeg
   freq: 126674.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  trees   #################################################################
@@ -9655,7 +9655,7 @@ concepts:
   - term: Kradené stromy z mé zahrady!
     lang: cs
     tts: Kradene stromy z me zahrady.mp3
-  img: trees.jpeg
+  img: img/trees.jpeg
   freq: 126469.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  books   #################################################################
@@ -9674,7 +9674,7 @@ concepts:
   - term: Číst více z těchto knih
     lang: cs
     tts: Cist vice z techto knih.mp3
-  img: books.jpeg
+  img: img/books.jpeg
   freq: 125827.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  office   ################################################################
@@ -9696,7 +9696,7 @@ concepts:
   - term: Líbí se ti má nová kancelář?
     lang: cs
     tts: Libi se ti ma nova kancelar.mp3
-  img: office.jpeg
+  img: img/office.jpeg
   freq: 125703.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  manner   ################################################################
@@ -9740,7 +9740,7 @@ concepts:
   - term: Zbývá ti už jen jedno přání.
     lang: cs
     tts: Zbyva ti uz jen jedno prani.mp3
-  img: wish.jpeg
+  img: img/wish.jpeg
   freq: 124440.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  although   ##############################################################
@@ -9784,7 +9784,7 @@ concepts:
   - term: Tyto první dny byly pozoruhodné.
     lang: cs
     tts: Tyto prvni dny byly pozoruhodne.mp3
-  img: early.jpeg
+  img: img/early.jpeg
   freq: 124036.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  persons   ###############################################################
@@ -9803,7 +9803,7 @@ concepts:
   - term: Udržujte ostatní osoby v bezpečné vzdálenosti!
     lang: cs
     tts: Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
-  img: persons.jpeg
+  img: img/persons.jpeg
   freq: 123820.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  blockquote   ############################################################
@@ -9832,7 +9832,7 @@ concepts:
   - term: Tyhle polštáře jsou moc tvrdé!
     lang: cs
     tts: Tyhle polstare jsou moc tvrde.mp3
-  img: hard.jpeg
+  img: img/hard.jpeg
   freq: 123625.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  happened   ##############################################################
@@ -9876,7 +9876,7 @@ concepts:
   - term: Jen duch je skutečný.
     lang: cs
     tts: Jen duch je skutecny.mp3
-  img: spirit.jpeg
+  img: img/spirit.jpeg
   freq: 123099.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  free   ##################################################################
@@ -9898,7 +9898,7 @@ concepts:
   - term: Konečně můžete být svobodní.
     lang: cs
     tts: Konecne muzete byt svobodni.mp3
-  img: free.jpeg
+  img: img/free.jpeg
   freq: 122955.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  answer   ################################################################
@@ -9920,7 +9920,7 @@ concepts:
   - term: Odpověď zní jednoznačně ne.
     lang: cs
     tts: Odpoved zni jednoznacne ne.mp3
-  img: answer.jpeg
+  img: img/answer.jpeg
   freq: 122924.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  table   #################################################################
@@ -9942,7 +9942,7 @@ concepts:
   - term: Kdo to je pod mým stolem?
     lang: cs
     tts: Kdo to je pod mym stolem.mp3
-  img: table.jpeg
+  img: img/table.jpeg
   freq: 122685.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  drew   ##################################################################
@@ -9961,7 +9961,7 @@ concepts:
   - term: Nakreslil jsem obličej.
     lang: cs
     tts: Nakreslil jsem oblicej.mp3
-  img: drew.jpeg
+  img: img/drew.jpeg
   freq: 122264.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  minutes   ###############################################################
@@ -9980,7 +9980,7 @@ concepts:
   - term: Říkal jsi pět minut.
     lang: cs
     tts: Rikal jsi pet minut.mp3
-  img: minutes.jpeg
+  img: img/minutes.jpeg
   freq: 122201.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  lot   ###################################################################
@@ -9999,7 +9999,7 @@ concepts:
   - term: Moc to pro mě znamená.
     lang: cs
     tts: Moc to pro me znamena.mp3
-  img: lot.jpeg
+  img: img/lot.jpeg
   freq: 122157.80000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  evening   ###############################################################
@@ -10018,7 +10018,7 @@ concepts:
   - term: Zítra večer v osm?
     lang: cs
     tts: Zitra vecer v osm.mp3
-  img: evening.jpeg
+  img: img/evening.jpeg
   freq: 122106.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  effect   ################################################################
@@ -10040,7 +10040,7 @@ concepts:
   - term: Účinek je střední až silný.
     lang: cs
     tts: Ucinek je stredni az silny.mp3
-  img: effect.jpeg
+  img: img/effect.jpeg
   freq: 122005.50000
   origins: ["corpus", "conceptDbSamples"]
 ##  earth   #################################################################
@@ -10062,7 +10062,7 @@ concepts:
   - term: Zelená země, říkáš?
     lang: cs
     tts: Zelena zeme, rikas.mp3
-  img: earth.jpeg
+  img: img/earth.jpeg
   freq: 121948.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  behind   ################################################################
@@ -10081,7 +10081,7 @@ concepts:
   - term: Byli těsně za námi.
     lang: cs
     tts: Byli tesne za nami.mp3
-  img: behind.jpeg
+  img: img/behind.jpeg
   freq: 121776.00000
   origins: ["corpus", "conceptDbSamples"]
 ##  cause   #################################################################
@@ -10122,7 +10122,7 @@ concepts:
   - term: Volal jsem ti šestkrát.
     lang: cs
     tts: Volal jsem ti sestkrat.mp3
-  img: six.jpeg
+  img: img/six.jpeg
   freq: 121091.50000
   origins: ["conceptDbSamples"]
 ##  fine   ##################################################################
@@ -10163,7 +10163,7 @@ concepts:
   - term: Chcete říct sto milionů?
     lang: cs
     tts: Chcete rict sto milionu.mp3
-  img: million.jpeg
+  img: img/million.jpeg
   freq: 118823.90000
   origins: ["conceptDbSamples"]
 ##  bed   ###################################################################
@@ -10182,7 +10182,7 @@ concepts:
   - term: Umístěný vedle postele.
     lang: cs
     tts: Umisteny vedle postele.mp3
-  img: bed.jpeg
+  img: img/bed.jpeg
   freq: 118469.50000
   origins: ["conceptDbSamples"]
 ##  wrote   #################################################################
@@ -10201,7 +10201,7 @@ concepts:
   - term: Napsal knihu pár let poté mojí.
     lang: cs
     tts: Napsal knihu par let pote moji.mp3
-  img: wrote.jpeg
+  img: img/wrote.jpeg
   freq: 118114.00000
   origins: ["conceptDbSamples"]
 ##  road   ##################################################################
@@ -10223,7 +10223,7 @@ concepts:
   - term: Pokračovali jsme po hlavní silnici.
     lang: cs
     tts: Pokracovali jsme po hlavni silnici.mp3
-  img: road.jpeg
+  img: img/road.jpeg
   freq: 117982.00000
   origins: ["conceptDbSamples"]
 ##  lost   ##################################################################
@@ -10245,7 +10245,7 @@ concepts:
   - term: Skoro jsem tě ztratil.
     lang: cs
     tts: Skoro jsem te ztratil.mp3
-  img: lost.jpeg
+  img: img/lost.jpeg
   freq: 117075.00000
   origins: ["conceptDbSamples"]
 ##  months   ################################################################
@@ -10264,7 +10264,7 @@ concepts:
   - term: Je jí jenom osm měsíců.
     lang: cs
     tts: Je ji jenom osm mesicu.mp3
-  img: months.jpeg
+  img: img/months.jpeg
   freq: 116955.00000
   origins: ["conceptDbSamples"]
 ##  ready   #################################################################
@@ -10283,7 +10283,7 @@ concepts:
   - term: Není to ještě hotové.
     lang: cs
     tts: Neni to jeste hotove.mp3
-  img: ready.jpeg
+  img: img/ready.jpeg
   freq: 116349.50000
   origins: ["conceptDbSamples"]
 ##  following   #############################################################
@@ -10302,7 +10302,7 @@ concepts:
   - term: Vyplňte prosím následující údaje!
     lang: cs
     tts: Vyplnte prosim nasledujici udaje.mp3
-  img: following.jpeg
+  img: img/following.jpeg
   freq: 116148.00000
   origins: ["conceptDbSamples"]
 ##  ten   ###################################################################
@@ -10321,7 +10321,7 @@ concepts:
   - term: Vrátil se za deset minut.
     lang: cs
     tts: Vratil se za deset minut.mp3
-  img: ten.jpeg
+  img: img/ten.jpeg
   freq: 115719.50000
   origins: ["conceptDbSamples"]
 ##  mean   ##################################################################
@@ -10343,7 +10343,7 @@ concepts:
   - term: Chcete říct sto milionů?
     lang: cs
     tts: Chcete rict sto milionu.mp3
-  img: mean.jpeg
+  img: img/mean.jpeg
   freq: 115545.50000
   origins: ["conceptDbSamples"]
 ##  question   ##############################################################
@@ -10365,7 +10365,7 @@ concepts:
   - term: Odpověděl jsem ti na otázku.
     lang: cs
     tts: Odpovedel jsem ti na otazku.mp3
-  img: question.jpeg
+  img: img/question.jpeg
   freq: 115524.00000
   origins: ["conceptDbSamples"]
 ##  human   #################################################################
@@ -10387,7 +10387,7 @@ concepts:
   - term: Lidské tělo se regeneruje samo.
     lang: cs
     tts: Lidske telo se regeneruje samo.mp3
-  img: human.jpeg
+  img: img/human.jpeg
   freq: 114381.00000
   origins: ["conceptDbSamples"]
 ##  states   ################################################################
@@ -10409,7 +10409,7 @@ concepts:
   - term: Spojené státy americké
     lang: cs
     tts: Spojene staty americke.mp3
-  img: states.jpeg
+  img: img/states.jpeg
   freq: 113807.00000
   origins: ["conceptDbSamples"]
 ##  yes   ###################################################################
@@ -10428,7 +10428,7 @@ concepts:
   - term: Ano. I když nevím kdy.
     lang: cs
     tts: Ano I kdyz nevim kdy.mp3
-  img: yes.jpeg
+  img: img/yes.jpeg
   freq: 113547.65000
   origins: ["conceptDbSamples"]
 ##  feel   ##################################################################
@@ -10450,7 +10450,7 @@ concepts:
   - term: Jak se cítíš, drahá?
     lang: cs
     tts: Jak se citis, draha.mp3
-  img: feel.jpeg
+  img: img/feel.jpeg
   freq: 111647.50000
   origins: ["conceptDbSamples"]
 ##  parts   #################################################################
@@ -10472,7 +10472,7 @@ concepts:
   - term: Výroba drobných i větších dílů.
     lang: cs
     tts: Vyroba drobnych i vetsich dilu.mp3
-  img: parts.jpeg
+  img: img/parts.jpeg
   freq: 111194.00000
   origins: ["conceptDbSamples"]
 ##  talk   ##################################################################
@@ -10494,7 +10494,7 @@ concepts:
   - term: Chcete mluvit o umění?
     lang: cs
     tts: Chcete mluvit o umeni.mp3
-  img: talk.jpeg
+  img: img/talk.jpeg
   freq: 111072.00000
   origins: ["conceptDbSamples"]
 ##  fear   ##################################################################
@@ -10516,7 +10516,7 @@ concepts:
   - term: Budu čelit svému strachu.
     lang: cs
     tts: Budu celit svemu strachu.mp3
-  img: fear.jpeg
+  img: img/fear.jpeg
   freq: 109036.00000
   origins: ["conceptDbSamples"]
 ##  live   ##################################################################
@@ -10538,7 +10538,7 @@ concepts:
   - term: Všichni tady žijeme společně.
     lang: cs
     tts: Vsichni tady zijeme spolecne.mp3
-  img: live.jpeg
+  img: img/live.jpeg
   freq: 108511.50000
   origins: ["conceptDbSamples"]
 ##  learn   #################################################################
@@ -10560,7 +10560,7 @@ concepts:
   - term: Začal jsem se učit.
     lang: cs
     tts: Zacal jsem se ucit.mp3
-  img: learn.jpeg
+  img: img/learn.jpeg
   freq: 107429.85000
   origins: ["conceptDbSamples"]
 ##  happy   #################################################################
@@ -10582,7 +10582,7 @@ concepts:
   - term: Má veselou povahu.
     lang: cs
     tts: Ma veselou povahu.mp3
-  img: happy.jpeg
+  img: img/happy.jpeg
   freq: 106887.00000
   origins: ["conceptDbSamples"]
 ##  stopped   ###############################################################
@@ -10604,7 +10604,7 @@ concepts:
   - term: Zastavilo se mi srdce.
     lang: cs
     tts: Zastavilo se mi srdce.mp3
-  img: stopped.jpeg
+  img: img/stopped.jpeg
   freq: 106661.00000
   origins: ["conceptDbSamples"]
 ##  suddenly   ##############################################################
@@ -10648,7 +10648,7 @@ concepts:
   - term: Máš tak červené rty.
     lang: cs
     tts: Mas tak cervene rty.mp3
-  img: red.jpeg
+  img: img/red.jpeg
   freq: 103902.50000
   origins: ["conceptDbSamples"]
 ##  dark   ##################################################################
@@ -10670,7 +10670,7 @@ concepts:
   - term: Většina z nich byla temná.
     lang: cs
     tts: Vetsina z nich byla temna.mp3
-  img: dark.jpeg
+  img: img/dark.jpeg
   freq: 102590.50000
   origins: ["conceptDbSamples"]
 ##  sense   #################################################################
@@ -10689,7 +10689,7 @@ concepts:
   - term: Falešný pocit štěstí.
     lang: cs
     tts: Falesny pocit stesti.mp3
-  img: sense.jpeg
+  img: img/sense.jpeg
   freq: 101208.00000
   origins: ["conceptDbSamples"]
 ##  attention   #############################################################
@@ -10711,7 +10711,7 @@ concepts:
   - term: Koťátko potřebuje trochu pozornosti.
     lang: cs
     tts: Kotatko potrebuje trochu pozornosti.mp3
-  img: attention.jpeg
+  img: img/attention.jpeg
   freq: 99764.00000
   origins: ["conceptDbSamples"]
 ##  wait   ##################################################################
@@ -10733,7 +10733,7 @@ concepts:
   - term: Už nemůžu déle čekat.
     lang: cs
     tts: Uz nemuzu dele cekat.mp3
-  img: wait.jpeg
+  img: img/wait.jpeg
   freq: 98993.45000
   origins: ["conceptDbSamples"]
 ##  where   #################################################################
@@ -10755,7 +10755,7 @@ concepts:
   - term: Kde je mé dítě!
     lang: cs
     tts: Kde je me dite.mp3
-  img: where.jpeg
+  img: img/where.jpeg
   freq: 98596.79500
   origins: ["conceptDbSamples"]
 ##  job   ###################################################################
@@ -10777,7 +10777,7 @@ concepts:
   - term: Mohu stále dělat svoji práci.
     lang: cs
     tts: Mohu stale delat svoji praci.mp3
-  img: job.jpeg
+  img: img/job.jpeg
   freq: 95596.85000
   origins: ["conceptDbSamples"]
 ##  trying   ################################################################
@@ -10799,7 +10799,7 @@ concepts:
   - term: Snažíme se jí zachránit život!
     lang: cs
     tts: Snazime se ji zachranit zivot.mp3
-  img: trying.jpeg
+  img: img/trying.jpeg
   freq: 94706.70000
   origins: ["conceptDbSamples"]
 ##  strange   ###############################################################
@@ -10821,7 +10821,7 @@ concepts:
   - term: Člověk je podivná bytost.
     lang: cs
     tts: Clovek je podivna bytost.mp3
-  img: strange.jpeg
+  img: img/strange.jpeg
   freq: 93945.50000
   origins: ["conceptDbSamples"]
 ##  car   ###################################################################
@@ -10840,7 +10840,7 @@ concepts:
   - term: Moje auto bylo bílé.
     lang: cs
     tts: Moje auto bylo bile.mp3
-  img: car.jpeg
+  img: img/car.jpeg
   freq: 90131.05000
   origins: ["conceptDbSamples"]
 ##  play   ##################################################################
@@ -10862,7 +10862,7 @@ concepts:
   - term: Hrajeme podle pravidel.
     lang: cs
     tts: Hrajeme podle pravidel.mp3
-  img: play.jpeg
+  img: img/play.jpeg
   freq: 89945.00000
   origins: ["conceptDbSamples"]
 ##  save   ##################################################################
@@ -10884,7 +10884,7 @@ concepts:
   - term: Snažíme se jí zachránit život!
     lang: cs
     tts: Snazime se ji zachranit zivot.mp3
-  img: save.jpeg
+  img: img/save.jpeg
   freq: 89433.00000
   origins: ["conceptDbSamples"]
 ##  add   ###################################################################
@@ -10903,7 +10903,7 @@ concepts:
   - term: Přidejte libovolné další tabulky.
     lang: cs
     tts: Pridejte libovolne dalsi tabulky.mp3
-  img: add.jpeg
+  img: img/add.jpeg
   freq: 89244.75000
   origins: ["conceptDbSamples"]
 ##  continued   #############################################################
@@ -10922,7 +10922,7 @@ concepts:
   - term: Pokračovali jsme po hlavní silnici.
     lang: cs
     tts: Pokracovali jsme po hlavni silnici.mp3
-  img: continued.jpeg
+  img: img/continued.jpeg
   freq: 89244.00000
   origins: ["conceptDbSamples"]
 ##  run   ###################################################################
@@ -10944,7 +10944,7 @@ concepts:
   - term: Utíkej do nejbližšího města?
     lang: cs
     tts: Utikej do nejblizsiho mesta.mp3
-  img: run.jpeg
+  img: img/run.jpeg
   freq: 88006.50000
   origins: ["conceptDbSamples"]
 ##  single   ################################################################
@@ -10963,7 +10963,7 @@ concepts:
   - term: Každý den byl rušný.
     lang: cs
     tts: Kazdy den byl rusny.mp3
-  img: single.jpeg
+  img: img/single.jpeg
   freq: 87988.50000
   origins: ["conceptDbSamples"]
 ##  late   ##################################################################
@@ -10985,7 +10985,7 @@ concepts:
   - term: Jdu pozdě
     lang: cs
     tts: Jdu pozde.mp3
-  img: late.jpeg
+  img: img/late.jpeg
   freq: 87283.50000
   origins: ["conceptDbSamples"]
 ##  america   ###############################################################
@@ -11004,7 +11004,7 @@ concepts:
   - term: Spojené státy americké
     lang: cs
     tts: Spojene staty americke.mp3
-  img: america.jpeg
+  img: img/america.jpeg
   freq: 87195.60000
   origins: ["conceptDbSamples"]
 ##  agree   #################################################################
@@ -11026,7 +11026,7 @@ concepts:
   - term: Ne každý s vámi souhlasí.
     lang: cs
     tts: Ne kazdy s vami souhlasi.mp3
-  img: agree.jpeg
+  img: img/agree.jpeg
   freq: 86583.45000
   origins: ["conceptDbSamples"]
 ##  talking   ###############################################################
@@ -11048,7 +11048,7 @@ concepts:
   - term: Mluvil, čímž dokazoval, že je stále naživu.
     lang: cs
     tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
-  img: talking.jpeg
+  img: img/talking.jpeg
   freq: 85391.10000
   origins: ["conceptDbSamples"]
 ##  gold   ##################################################################
@@ -11067,7 +11067,7 @@ concepts:
   - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
     lang: cs
     tts: Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
-  img: gold.jpeg
+  img: img/gold.jpeg
   freq: 85222.00000
   origins: ["conceptDbSamples"]
 ##  class   #################################################################
@@ -11086,7 +11086,7 @@ concepts:
   - term: Učili jsme se ve třídě jako obvykle.
     lang: cs
     tts: Ucili jsme se ve tride jako obvykle.mp3
-  img: class.jpeg
+  img: img/class.jpeg
   freq: 84748.25000
   origins: ["conceptDbSamples"]
 ##  neither   ###############################################################
@@ -11127,7 +11127,7 @@ concepts:
   - term: To jsou moje dopisy.
     lang: cs
     tts: To jsou moje dopisy.mp3
-  img: mine.jpeg
+  img: img/mine.jpeg
   freq: 83382.00000
   origins: ["conceptDbSamples"]
 ##  copies   ################################################################
@@ -11149,7 +11149,7 @@ concepts:
   - term: Zadejte počet kopií, které chcete vytisknout.
     lang: cs
     tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
-  img: copies.jpeg
+  img: img/copies.jpeg
   freq: 81479.70000
   origins: ["conceptDbSamples"]
 ##  whatever   ##############################################################
@@ -11193,7 +11193,7 @@ concepts:
   - term: Udržujte ostatní osoby v bezpečné vzdálenosti!
     lang: cs
     tts: Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
-  img: distance.jpeg
+  img: img/distance.jpeg
   freq: 80213.00000
   origins: ["conceptDbSamples"]
 ##  situation   #############################################################
@@ -11212,7 +11212,7 @@ concepts:
   - term: Současná situace je velmi komplikovaná.
     lang: cs
     tts: Soucasna situace je velmi komplikovana.mp3
-  img: situation.jpeg
+  img: img/situation.jpeg
   freq: 76627.20000
   origins: ["conceptDbSamples"]
 ##  finally   ###############################################################
@@ -11256,7 +11256,7 @@ concepts:
   - term: Měl bych se stát doktorem.
     lang: cs
     tts: Mel bych se stat doktorem.mp3
-  img: doctor.jpeg
+  img: img/doctor.jpeg
   freq: 73863.95000
   origins: ["conceptDbSamples"]
 ##  visit   #################################################################
@@ -11275,7 +11275,7 @@ concepts:
   - term: Přišel jsi na návštěvu?
     lang: cs
     tts: Prisel jsi na navstevu.mp3
-  img: visit.jpeg
+  img: img/visit.jpeg
   freq: 72403.50000
   origins: ["conceptDbSamples"]
 ##  afraid   ################################################################
@@ -11297,7 +11297,7 @@ concepts:
   - term: Bála jsem se zavolat.
     lang: cs
     tts: Bala jsem se zavolat.mp3
-  img: afraid.jpeg
+  img: img/afraid.jpeg
   freq: 72097.00000
   origins: ["conceptDbSamples"]
 ##  using   #################################################################
@@ -11319,7 +11319,7 @@ concepts:
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
     tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
-  img: using.jpeg
+  img: img/using.jpeg
   freq: 71751.90000
   origins: ["conceptDbSamples"]
 ##  green   #################################################################
@@ -11341,7 +11341,7 @@ concepts:
   - term: Zelená země, říkáš?
     lang: cs
     tts: Zelena zeme, rikas.mp3
-  img: green.jpeg
+  img: img/green.jpeg
   freq: 71603.50000
   origins: ["conceptDbSamples"]
 ##  create   ################################################################
@@ -11360,7 +11360,7 @@ concepts:
   - term: Můžete také vytvořit novou nabídku.
     lang: cs
     tts: Muzete take vytvorit novou nabidku.mp3
-  img: create.jpeg
+  img: img/create.jpeg
   freq: 71339.15000
   origins: ["conceptDbSamples"]
 ##  easily   ################################################################
@@ -11382,7 +11382,7 @@ concepts:
   - term: Snadno si bez nás poradí.
     lang: cs
     tts: Snadno si bez nas poradi.mp3
-  img: easily.jpeg
+  img: img/easily.jpeg
   freq: 69383.50000
   origins: ["conceptDbSamples"]
 ##  plan   ##################################################################
@@ -11404,7 +11404,7 @@ concepts:
   - term: Opravdu moc dobrý plán.
     lang: cs
     tts: Opravdu moc dobry plan.mp3
-  img: plan.jpeg
+  img: img/plan.jpeg
   freq: 67949.45000
   origins: ["conceptDbSamples"]
 ##  fresh   #################################################################
@@ -11426,7 +11426,7 @@ concepts:
   - term: Chci jen trošku čerstvého vzduchu.
     lang: cs
     tts: Chci jen trosku cerstveho vzduchu.mp3
-  img: fresh.jpeg
+  img: img/fresh.jpeg
   freq: 67814.20000
   origins: ["conceptDbSamples"]
 ##  lies   ##################################################################
@@ -11448,7 +11448,7 @@ concepts:
   - term: Leží tam mrtvé tělo.
     lang: cs
     tts: Lezi tam mrtve telo.mp3
-  img: lies.jpeg
+  img: img/lies.jpeg
   freq: 67551.00000
   origins: ["conceptDbSamples"]
 ##  eight   #################################################################
@@ -11467,7 +11467,7 @@ concepts:
   - term: Zítra večer v osm?
     lang: cs
     tts: Zitra vecer v osm.mp3
-  img: eight.jpeg
+  img: img/eight.jpeg
   freq: 67362.45000
   origins: ["conceptDbSamples"]
 ##  explain   ###############################################################
@@ -11489,7 +11489,7 @@ concepts:
   - term: Já to můžu všechno vysvětlit.
     lang: cs
     tts: Ja to muzu vsechno vysvetlit.mp3
-  img: explain.jpeg
+  img: img/explain.jpeg
   freq: 66041.10000
   origins: ["conceptDbSamples"]
 ##  meeting   ###############################################################
@@ -11511,7 +11511,7 @@ concepts:
   - term: Schůze je otevřena všem.
     lang: cs
     tts: Schuze je otevrena vsem.mp3
-  img: meeting.jpeg
+  img: img/meeting.jpeg
   freq: 65939.15000
   origins: ["conceptDbSamples"]
 ##  fingers   ###############################################################
@@ -11530,7 +11530,7 @@ concepts:
   - term: Moje prsty jsou příliš velké.
     lang: cs
     tts: Moje prsty jsou prilis velke.mp3
-  img: fingers.jpeg
+  img: img/fingers.jpeg
   freq: 65564.40000
   origins: ["conceptDbSamples"]
 ##  step   ##################################################################
@@ -11549,7 +11549,7 @@ concepts:
   - term: Druhý krok není vyžadován.
     lang: cs
     tts: Druhy krok neni vyzadovan.mp3
-  img: step.jpeg
+  img: img/step.jpeg
   freq: 65474.00000
   origins: ["conceptDbSamples"]
 ##  boat   ##################################################################
@@ -11571,7 +11571,7 @@ concepts:
   - term: Jeho člun zmizel.
     lang: cs
     tts: Jeho clun zmizel.mp3
-  img: boat.jpeg
+  img: img/boat.jpeg
   freq: 65417.75000
   origins: ["conceptDbSamples"]
 ##  married   ###############################################################
@@ -11593,7 +11593,7 @@ concepts:
   - term: Byl jste někdy ženatý?
     lang: cs
     tts: Byl jste nekdy zenaty.mp3
-  img: married.jpeg
+  img: img/married.jpeg
   freq: 65385.50000
   origins: ["conceptDbSamples"]
 ##  garden   ################################################################
@@ -11612,7 +11612,7 @@ concepts:
   - term: Kradené stromy z mé zahrady!
     lang: cs
     tts: Kradene stromy z me zahrady.mp3
-  img: garden.jpeg
+  img: img/garden.jpeg
   freq: 65096.30000
   origins: ["conceptDbSamples"]
 ##  secret   ################################################################
@@ -11634,7 +11634,7 @@ concepts:
   - term: Pomoz mu zachovat tajemství.
     lang: cs
     tts: Pomoz mu zachovat tajemstvi.mp3
-  img: secret.jpeg
+  img: img/secret.jpeg
   freq: 64491.50000
   origins: ["conceptDbSamples"]
 ##  enter   #################################################################
@@ -11656,7 +11656,7 @@ concepts:
   - term: Zadejte počet kopií, které chcete vytisknout.
     lang: cs
     tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
-  img: enter.jpeg
+  img: img/enter.jpeg
   freq: 64435.45000
   origins: ["conceptDbSamples"]
 ##  sell   ##################################################################
@@ -11675,7 +11675,7 @@ concepts:
   - term: Budu muset prodat dům.
     lang: cs
     tts: Budu muset prodat dum.mp3
-  img: sell.jpeg
+  img: img/sell.jpeg
   freq: 64174.45000
   origins: ["conceptDbSamples"]
 ##  dog   ###################################################################
@@ -11694,7 +11694,7 @@ concepts:
   - term: Odveďte toho psa ven!
     lang: cs
     tts: Odvedte toho psa ven.mp3
-  img: dog.jpeg
+  img: img/dog.jpeg
   freq: 64110.75000
   origins: ["conceptDbSamples"]
 ##  maybe   #################################################################
@@ -11713,7 +11713,7 @@ concepts:
   - term: Možná se můžem dostat ven!
     lang: cs
     tts: Mozna se muzem dostat ven.mp3
-  img: maybe.jpeg
+  img: img/maybe.jpeg
   freq: 64096.10000
   origins: ["conceptDbSamples"]
 ##  foreign   ###############################################################
@@ -11735,7 +11735,7 @@ concepts:
   - term: Žili jste někdy v cizí zemi?
     lang: cs
     tts: Zili jste nekdy v cizi zemi.mp3
-  img: foreign.jpeg
+  img: img/foreign.jpeg
   freq: 64074.75000
   origins: ["conceptDbSamples"]
 ##  birds   #################################################################
@@ -11757,7 +11757,7 @@ concepts:
   - term: A co říkají ptáci?
     lang: cs
     tts: A co rikaji ptaci.mp3
-  img: birds.jpeg
+  img: img/birds.jpeg
   freq: 63162.60000
   origins: ["conceptDbSamples"]
 ##  waited   ################################################################
@@ -11779,7 +11779,7 @@ concepts:
   - term: Čekala jsem dvě hodiny.
     lang: cs
     tts: Cekala jsem dve hodiny.mp3
-  img: waited.jpeg
+  img: img/waited.jpeg
   freq: 62808.10000
   origins: ["conceptDbSamples"]
 ##  walk   ##################################################################
@@ -11801,7 +11801,7 @@ concepts:
   - term: Pěšky to je příliš daleko.
     lang: cs
     tts: Pesky to je prilis daleko.mp3
-  img: walk.jpeg
+  img: img/walk.jpeg
   freq: 61245.00000
   origins: ["conceptDbSamples"]
 ##  enemies   ###############################################################
@@ -11820,7 +11820,7 @@ concepts:
   - term: Nepřátelé jsou všude kolem!
     lang: cs
     tts: Nepratele jsou vsude kolem.mp3
-  img: enemies.jpeg
+  img: img/enemies.jpeg
   freq: 60982.20000
   origins: ["conceptDbSamples"]
 ##  anyone   ################################################################
@@ -11842,7 +11842,7 @@ concepts:
   - term: Schůze je otevřena všem.
     lang: cs
     tts: Schuze je otevrena vsem.mp3
-  img: anyone.jpeg
+  img: img/anyone.jpeg
   freq: 60607.90000
   origins: ["conceptDbSamples"]
 ##  usual   #################################################################
@@ -11883,7 +11883,7 @@ concepts:
   - term: Pokračovali jsme po hlavní silnici.
     lang: cs
     tts: Pokracovali jsme po hlavni silnici.mp3
-  img: main.jpeg
+  img: img/main.jpeg
   freq: 59778.50000
   origins: ["conceptDbSamples"]
 ##  someone   ###############################################################
@@ -11927,7 +11927,7 @@ concepts:
   - term: Vyplňte prosím následující údaje!
     lang: cs
     tts: Vyplnte prosim nasledujici udaje.mp3
-  img: please.jpeg
+  img: img/please.jpeg
   freq: 58839.50000
   origins: ["conceptDbSamples"]
 ##  shot   ##################################################################
@@ -11948,7 +11948,7 @@ concepts:
   - term: Film byl natočen pomocí ruční kamery.
     lang: cs
     tts: Film byl natocen pomoci rucni kamery.mp3
-  img: shot.jpeg
+  img: img/shot.jpeg
   freq: 58465.05000
   origins: ["conceptDbSamples"]
 ##  stay   ##################################################################
@@ -11992,7 +11992,7 @@ concepts:
   - term: Už je to dospělý muž.
     lang: cs
     tts: Uz je to dospely muz.mp3
-  img: grown.jpeg
+  img: img/grown.jpeg
   freq: 57772.60000
   origins: ["conceptDbSamples"]
 ##  safe   ##################################################################
@@ -12014,7 +12014,7 @@ concepts:
   - term: Udržujte ostatní osoby v bezpečné vzdálenosti!
     lang: cs
     tts: Udrzujte ostatni osoby v bezpecne vzdalenosti.mp3
-  img: safe.jpeg
+  img: img/safe.jpeg
   freq: 57432.25000
   origins: ["conceptDbSamples"]
 ##  worth   #################################################################
@@ -12036,7 +12036,7 @@ concepts:
   - term: Neměl pro svět žádnou cenu.
     lang: cs
     tts: Nemel pro svet zadnou cenu.mp3
-  img: worth.jpeg
+  img: img/worth.jpeg
   freq: 57291.50000
   origins: ["conceptDbSamples"]
 ##  pull   ##################################################################
@@ -12058,7 +12058,7 @@ concepts:
   - term: Táhni za druhý konec!
     lang: cs
     tts: Tahni za druhy konec.mp3
-  img: pull.jpeg
+  img: img/pull.jpeg
   freq: 57029.25000
   origins: ["conceptDbSamples"]
 ##  clearly   ###############################################################
@@ -12080,7 +12080,7 @@ concepts:
   - term: Odpověď zní jednoznačně ne.
     lang: cs
     tts: Odpoved zni jednoznacne ne.mp3
-  img: clearly.jpeg
+  img: img/clearly.jpeg
   freq: 56615.20000
   origins: ["conceptDbSamples"]
 ##  energy   ################################################################
@@ -12099,7 +12099,7 @@ concepts:
   - term: Má hrozně moc energie.
     lang: cs
     tts: Ma hrozne moc energie.mp3
-  img: energy.jpeg
+  img: img/energy.jpeg
   freq: 55273.45000
   origins: ["conceptDbSamples"]
 ##  directly   ##############################################################
@@ -12121,7 +12121,7 @@ concepts:
   - term: Přímo shora to není vidět.
     lang: cs
     tts: Primo zhora to neni videt.mp3
-  img: directly.jpeg
+  img: img/directly.jpeg
   freq: 55211.70000
   origins: ["conceptDbSamples"]
 ##  song   ##################################################################
@@ -12143,7 +12143,7 @@ concepts:
   - term: Ačkoli ta píseň je velmi dobrá.
     lang: cs
     tts: Ackoli ta pisen je velmi dobra.mp3
-  img: song.jpeg
+  img: img/song.jpeg
   freq: 54221.30000
   origins: ["conceptDbSamples", "JingleBells"]
 ##  choice   ################################################################
@@ -12165,7 +12165,7 @@ concepts:
   - term: Vláda nemá na vybranou!
     lang: cs
     tts: Vlada nema na vybranou.mp3
-  img: choice.jpeg
+  img: img/choice.jpeg
   freq: 54079.15000
   origins: ["conceptDbSamples"]
 ##  size   ##################################################################
@@ -12187,7 +12187,7 @@ concepts:
   - term: Seskupit podle velikosti.
     lang: cs
     tts: Seskupit podle velikosti.mp3
-  img: size.jpeg
+  img: img/size.jpeg
   freq: 53495.50000
   origins: ["conceptDbSamples"]
 ##  rules   #################################################################
@@ -12209,7 +12209,7 @@ concepts:
   - term: Hrajeme podle pravidel.
     lang: cs
     tts: Hrajeme podle pravidel.mp3
-  img: rules.jpeg
+  img: img/rules.jpeg
   freq: 53386.50000
   origins: ["conceptDbSamples"]
 ##  value   #################################################################
@@ -12228,7 +12228,7 @@ concepts:
   - term: Hodnota musí být rovna nebo větší než nula.
     lang: cs
     tts: Hodnota musi byt rovna nebo vetsi nez nula.mp3
-  img: value.jpeg
+  img: img/value.jpeg
   freq: 52616.40000
   origins: ["conceptDbSamples"]
 ##  teeth   #################################################################
@@ -12250,7 +12250,7 @@ concepts:
   - term: Jablko pomáhá čistit zuby.
     lang: cs
     tts: Jablko pomaha cistit zuby.mp3
-  img: teeth.jpeg
+  img: img/teeth.jpeg
   freq: 52449.00000
   origins: ["conceptDbSamples"]
 ##  permission   ############################################################
@@ -12272,7 +12272,7 @@ concepts:
   - term: Žádám o povolení přistát.
     lang: cs
     tts: Zadam o povoleni pristat.mp3
-  img: permission.jpeg
+  img: img/permission.jpeg
   freq: 52344.50000
   origins: ["conceptDbSamples"]
 ##  won   ###################################################################
@@ -12294,7 +12294,7 @@ concepts:
   - term: Nebudu to moct dělat tak hrozně dlouho.
     lang: cs
     tts: Nebudu to moct delat tak hrozne dlouho.mp3
-  img: won.jpeg
+  img: img/won.jpeg
   freq: 51798.70000
   origins: ["conceptDbSamples"]
 ##  nice   ##################################################################
@@ -12316,7 +12316,7 @@ concepts:
   - term: Je hezké se s tebou setkat.
     lang: cs
     tts: Je hezke se s tebou setkat.mp3
-  img: nice.jpeg
+  img: img/nice.jpeg
   freq: 50915.20000
   origins: ["conceptDbSamples"]
 ##  start   #################################################################
@@ -12338,7 +12338,7 @@ concepts:
   - term: To byl dobrý začátek.
     lang: cs
     tts: To byl dobry zacatek.mp3
-  img: start.jpeg
+  img: img/start.jpeg
   freq: 50331.95000
   origins: ["conceptDbSamples"]
 ##  marry   #################################################################
@@ -12360,7 +12360,7 @@ concepts:
   - term: Protože si mě chceš vzít.
     lang: cs
     tts: Protoze si me chces vzit.mp3
-  img: marry.jpeg
+  img: img/marry.jpeg
   freq: 49835.45000
   origins: ["conceptDbSamples"]
 ##  fees   ##################################################################
@@ -12379,7 +12379,7 @@ concepts:
   - term: To také znamená žádné vysoké poplatky.
     lang: cs
     tts: To take znamena zadne vysoke poplatky.mp3
-  img: fees.jpeg
+  img: img/fees.jpeg
   freq: 49820.10000
   origins: ["conceptDbSamples"]
 ##  fill   ##################################################################
@@ -12401,7 +12401,7 @@ concepts:
   - term: Vyplňte prosím následující údaje!
     lang: cs
     tts: Vyplnte prosim nasledujici udaje.mp3
-  img: fill.jpeg
+  img: img/fill.jpeg
   freq: 49413.45000
   origins: ["conceptDbSamples"]
 ##  cup   ###################################################################
@@ -12423,7 +12423,7 @@ concepts:
   - term: Šálek čaje nebo kávy.
     lang: cs
     tts: Salek caje nebo kavy.mp3
-  img: cup.jpeg
+  img: img/cup.jpeg
   freq: 49370.15000
   origins: ["conceptDbSamples"]
 ##  worst   #################################################################
@@ -12445,7 +12445,7 @@ concepts:
   - term: To bude nejhorší část.
     lang: cs
     tts: To bude nejhorsi cast.mp3
-  img: worst.jpeg
+  img: img/worst.jpeg
   freq: 49369.10000
   origins: ["conceptDbSamples"]
 ##  don   ###################################################################
@@ -12467,7 +12467,7 @@ concepts:
   - term: Jak dlouho jsou vaše data uchovávány?
     lang: cs
     tts: Jak dlouho jsou vase data uchovavany.mp3
-  img: data.jpeg
+  img: img/data.jpeg
   freq: 48658.45000
   origins: ["conceptDbSamples"]
 ##  additional   ############################################################
@@ -12489,7 +12489,7 @@ concepts:
   - term: Přidejte libovolné další tabulky.
     lang: cs
     tts: Pridejte libovolne dalsi tabulky.mp3
-  img: additional.jpeg
+  img: img/additional.jpeg
   freq: 47705.70000
   origins: ["conceptDbSamples"]
 ##  needs   #################################################################
@@ -12511,7 +12511,7 @@ concepts:
   - term: Koťátko potřebuje trochu pozornosti.
     lang: cs
     tts: Kotatko potrebuje trochu pozornosti.mp3
-  img: needs.jpeg
+  img: img/needs.jpeg
   freq: 47619.10000
   origins: ["conceptDbSamples"]
 ##  happiness   #############################################################
@@ -12530,7 +12530,7 @@ concepts:
   - term: Falešný pocit štěstí.
     lang: cs
     tts: Falesny pocit stesti.mp3
-  img: happiness.jpeg
+  img: img/happiness.jpeg
   freq: 47520.50000
   origins: ["conceptDbSamples"]
 ##  stop   ##################################################################
@@ -12552,7 +12552,7 @@ concepts:
   - term: Ani smrt mě nezastaví.
     lang: cs
     tts: Ani smrt me nezastavi.mp3
-  img: stop.jpeg
+  img: img/stop.jpeg
   freq: 46709.35000
   origins: ["conceptDbSamples"]
 ##  thinks   ################################################################
@@ -12574,7 +12574,7 @@ concepts:
   - term: Ona myslí jen na sebe.
     lang: cs
     tts: Ona mysli jen na sebe.mp3
-  img: thinks.jpeg
+  img: img/thinks.jpeg
   freq: 46053.50000
   origins: ["conceptDbSamples"]
 ##  medium   ################################################################
@@ -12593,7 +12593,7 @@ concepts:
   - term: Účinek je střední až silný.
     lang: cs
     tts: Ucinek je stredni az silny.mp3
-  img: medium.jpeg
+  img: img/medium.jpeg
   freq: 45868.70000
   origins: ["conceptDbSamples"]
 ##  everyone   ##############################################################
@@ -12615,7 +12615,7 @@ concepts:
   - term: Ne každý s vámi souhlasí.
     lang: cs
     tts: Ne kazdy s vami souhlasi.mp3
-  img: everyone.jpeg
+  img: img/everyone.jpeg
   freq: 45742.40000
   origins: ["conceptDbSamples", "JingleBells"]
 ##  goods   #################################################################
@@ -12634,7 +12634,7 @@ concepts:
   - term: Obchody jsou plné zboží.
     lang: cs
     tts: Obchody jsou plne zbozi.mp3
-  img: goods.jpeg
+  img: img/goods.jpeg
   freq: 45735.40000
   origins: ["conceptDbSamples"]
 ##  closed   ################################################################
@@ -12653,7 +12653,7 @@ concepts:
   - term: Škola byla během dne zavřená.
     lang: cs
     tts: Skola byla behem dne zavrena.mp3
-  img: closed.jpeg
+  img: img/closed.jpeg
   freq: 45657.15000
   origins: ["conceptDbSamples"]
 ##  claim   #################################################################
@@ -12675,7 +12675,7 @@ concepts:
   - term: Toto tvrzení se proto zamítá.
     lang: cs
     tts: Toto tvrzeni se proto zamita.mp3
-  img: claim.jpeg
+  img: img/claim.jpeg
   freq: 44928.50000
   origins: ["conceptDbSamples"]
 ##  rule   ##################################################################
@@ -12694,7 +12694,7 @@ concepts:
   - term: Kdy platí toto pravidlo?
     lang: cs
     tts: Kdy plati toto pravidlo.mp3
-  img: rule.jpeg
+  img: img/rule.jpeg
   freq: 44844.25000
   origins: ["conceptDbSamples"]
 ##  required   ##############################################################
@@ -12716,7 +12716,7 @@ concepts:
   - term: Druhý krok není vyžadován.
     lang: cs
     tts: Druhy krok neni vyzadovan.mp3
-  img: required.jpeg
+  img: img/required.jpeg
   freq: 44600.85000
   origins: ["conceptDbSamples"]
 ##  asking   ################################################################
@@ -12738,7 +12738,7 @@ concepts:
   - term: Žádám o povolení přistát.
     lang: cs
     tts: Zadam o povoleni pristat.mp3
-  img: asking.jpeg
+  img: img/asking.jpeg
   freq: 44097.80000
   origins: ["conceptDbSamples"]
 ##  nine   ##################################################################
@@ -12757,7 +12757,7 @@ concepts:
   - term: Jen devět tisíc za měsíc.
     lang: cs
     tts: Jen devet tisic za mesic.mp3
-  img: nine.jpeg
+  img: img/nine.jpeg
   freq: 43944.95000
   origins: ["conceptDbSamples"]
 ##  apply   #################################################################
@@ -12779,7 +12779,7 @@ concepts:
   - term: Kdy platí toto pravidlo?
     lang: cs
     tts: Kdy plati toto pravidlo.mp3
-  img: apply.jpeg
+  img: img/apply.jpeg
   freq: 43667.25000
   origins: ["conceptDbSamples"]
 ##  excellent   #############################################################
@@ -12801,7 +12801,7 @@ concepts:
   - term: On je výborný řečník.
     lang: cs
     tts: On je vyborny recnik.mp3
-  img: excellent.jpeg
+  img: img/excellent.jpeg
   freq: 43273.45000
   origins: ["conceptDbSamples"]
 ##  brain   #################################################################
@@ -12820,7 +12820,7 @@ concepts:
   - term: Jeho mozek je o hodně menší.
     lang: cs
     tts: Jeho mozek je o hodne mensi.mp3
-  img: brain.jpeg
+  img: img/brain.jpeg
   freq: 42478.85000
   origins: ["conceptDbSamples"]
 ##  alive   #################################################################
@@ -12842,7 +12842,7 @@ concepts:
   - term: Mluvil, čímž dokazoval, že je stále naživu.
     lang: cs
     tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
-  img: alive.jpeg
+  img: img/alive.jpeg
   freq: 41908.25000
   origins: ["conceptDbSamples"]
 ##  dangerous   #############################################################
@@ -12861,7 +12861,7 @@ concepts:
   - term: A mohou být nebezpeční.
     lang: cs
     tts: A mohou byt nebezpecni.mp3
-  img: dangerous.jpeg
+  img: img/dangerous.jpeg
   freq: 41231.15000
   origins: ["conceptDbSamples"]
 ##  working   ###############################################################
@@ -12883,7 +12883,7 @@ concepts:
   - term: Pracoval jsem, samozřejmě.
     lang: cs
     tts: Pracoval jsem, samozrejme.mp3
-  img: working.jpeg
+  img: img/working.jpeg
   freq: 41121.15000
   origins: ["conceptDbSamples"]
 ##  drive   #################################################################
@@ -12905,7 +12905,7 @@ concepts:
   - term: Opravdu umíš řídit tuhle věc?
     lang: cs
     tts: Opravdu umis ridit tuhle vec.mp3
-  img: drive.jpeg
+  img: img/drive.jpeg
   freq: 40999.60000
   origins: ["conceptDbSamples"]
 ##  brother   ###############################################################
@@ -12924,7 +12924,7 @@ concepts:
   - term: Tohle je tvůj nový bratr.
     lang: cs
     tts: Tohle je tvuj novy bratr.mp3
-  img: brother.jpeg
+  img: img/brother.jpeg
   freq: 40977.45000
   origins: ["conceptDbSamples"]
 ##  earlier   ###############################################################
@@ -12946,7 +12946,7 @@ concepts:
   - term: Dřívější verze se mohou lišit.
     lang: cs
     tts: Drivejsi verze se mohou lisit.mp3
-  img: earlier.jpeg
+  img: img/earlier.jpeg
   freq: 40843.10000
   origins: ["conceptDbSamples"]
 ##  nobody   ################################################################
@@ -12987,7 +12987,7 @@ concepts:
   - term: Šel jsem do nemocnice.
     lang: cs
     tts: Sel jsem do nemocnice.mp3
-  img: hospital.jpeg
+  img: img/hospital.jpeg
   freq: 40282.20000
   origins: ["conceptDbSamples"]
 ##  tired   #################################################################
@@ -13006,7 +13006,7 @@ concepts:
   - term: Je starý a unavený.
     lang: cs
     tts: Je stary a unaveny.mp3
-  img: tired.jpeg
+  img: img/tired.jpeg
   freq: 39561.35000
   origins: ["conceptDbSamples"]
 ##  successful   ############################################################
@@ -13025,7 +13025,7 @@ concepts:
   - term: Díky čemu je naše firma úspěšná?
     lang: cs
     tts: Diky cemu je nase firma uspesna.mp3
-  img: successful.jpeg
+  img: img/successful.jpeg
   freq: 39535.10000
   origins: ["conceptDbSamples"]
 ##  empty   #################################################################
@@ -13044,7 +13044,7 @@ concepts:
   - term: Moje hlava je prázdná.
     lang: cs
     tts: Moje hlava je prazdna.mp3
-  img: empty.jpeg
+  img: img/empty.jpeg
   freq: 38692.60000
   origins: ["conceptDbSamples"]
 ##  list   ##################################################################
@@ -13063,7 +13063,7 @@ concepts:
   - term: Tak kdo je další na seznamu?
     lang: cs
     tts: Tak kdo je dalsi na seznamu.mp3
-  img: list.jpeg
+  img: img/list.jpeg
   freq: 37150.75000
   origins: ["conceptDbSamples"]
 ##  yesterday   #############################################################
@@ -13082,7 +13082,7 @@ concepts:
   - term: Mám starosti od včerejška.
     lang: cs
     tts: Mam starosti od vcerejska.mp3
-  img: yesterday.jpeg
+  img: img/yesterday.jpeg
   freq: 37019.50000
   origins: ["conceptDbSamples"]
 ##  phone   #################################################################
@@ -13101,7 +13101,7 @@ concepts:
   - term: Můžete si objednat telefonicky.
     lang: cs
     tts: Muzete si objednat telefonicky.mp3
-  img: phone.jpeg
+  img: img/phone.jpeg
   freq: 36947.43500
   origins: ["conceptDbSamples"]
 ##  mistake   ###############################################################
@@ -13123,7 +13123,7 @@ concepts:
   - term: Jeho první velká chyba.
     lang: cs
     tts: Jeho prvni velka chyba.mp3
-  img: mistake.jpeg
+  img: img/mistake.jpeg
   freq: 36424.35000
   origins: ["conceptDbSamples"]
 ##  busy   ##################################################################
@@ -13145,7 +13145,7 @@ concepts:
   - term: Každý den byl rušný.
     lang: cs
     tts: Kazdy den byl rusny.mp3
-  img: busy.jpeg
+  img: img/busy.jpeg
   freq: 35453.55000
   origins: ["conceptDbSamples"]
 ##  film   ##################################################################
@@ -13163,7 +13163,7 @@ concepts:
   - term: Film byl natočen pomocí ruční kamery.
     lang: cs
     tts: Film byl natocen pomoci rucni kamery.mp3
-  img: film.jpeg
+  img: img/film.jpeg
   freq: 35325.20000
   origins: ["conceptDbSamples"]
 ##  remarkable   ############################################################
@@ -13185,7 +13185,7 @@ concepts:
   - term: Tyto první dny byly pozoruhodné.
     lang: cs
     tts: Tyto prvni dny byly pozoruhodne.mp3
-  img: remarkable.jpeg
+  img: img/remarkable.jpeg
   freq: 35244.40000
   origins: ["conceptDbSamples"]
 ##  movie   #################################################################
@@ -13204,7 +13204,7 @@ concepts:
   - term: Už jste ten film viděli?
     lang: cs
     tts: Uz jste ten film videli.mp3
-  img: movie.jpeg
+  img: img/movie.jpeg
   freq: 35083.52900
   origins: ["conceptDbSamples"]
 ##  nose   ##################################################################
@@ -13223,7 +13223,7 @@ concepts:
   - term: Má kroužek skrz nos.
     lang: cs
     tts: Ma krouzek skrz nos.mp3
-  img: nose.jpeg
+  img: img/nose.jpeg
   freq: 34998.90000
   origins: ["conceptDbSamples"]
 ##  hide   ##################################################################
@@ -13245,7 +13245,7 @@ concepts:
   - term: Skrývají před vámi pravdu.
     lang: cs
     tts: Skryvaji pred vami pravdu.mp3
-  img: hide.jpeg
+  img: img/hide.jpeg
   freq: 34760.90000
   origins: ["conceptDbSamples"]
 ##  explanation   ###########################################################
@@ -13264,7 +13264,7 @@ concepts:
   - term: Žádné další vysvětlení nebylo dáno.
     lang: cs
     tts: Zadne dalsi vysvetleni nebylo dano.mp3
-  img: explanation.jpeg
+  img: img/explanation.jpeg
   freq: 34381.15000
   origins: ["conceptDbSamples"]
 ##  tea   ###################################################################
@@ -13283,7 +13283,7 @@ concepts:
   - term: Šálek čaje nebo kávy.
     lang: cs
     tts: Salek caje nebo kavy.mp3
-  img: tea.jpeg
+  img: img/tea.jpeg
   freq: 33960.05000
   origins: ["conceptDbSamples"]
 ##  test   ##################################################################
@@ -13301,7 +13301,7 @@ concepts:
   - term: Ale zkouškou jste prošel.
     lang: cs
     tts: Ale zkouskou jste prosel.mp3
-  img: test.jpeg
+  img: img/test.jpeg
   freq: 33664.05000
   origins: ["conceptDbSamples"]
 ##  ring   ##################################################################
@@ -13323,7 +13323,7 @@ concepts:
   - term: Má kroužek skrz nos.
     lang: cs
     tts: Ma krouzek skrz nos.mp3
-  img: ring.jpeg
+  img: img/ring.jpeg
   freq: 33378.70000
   origins: ["conceptDbSamples", "JingleBells"]
 ##  fault   #################################################################
@@ -13345,7 +13345,7 @@ concepts:
   - term: Ale není to jejich vina.
     lang: cs
     tts: Ale neni to jejich vina.mp3
-  img: fault.jpeg
+  img: img/fault.jpeg
   freq: 33363.20000
   origins: ["conceptDbSamples"]
 ##  clean   #################################################################
@@ -13367,7 +13367,7 @@ concepts:
   - term: Jablko pomáhá čistit zuby.
     lang: cs
     tts: Jablko pomaha cistit zuby.mp3
-  img: clean.jpeg
+  img: img/clean.jpeg
   freq: 33343.65000
   origins: ["conceptDbSamples"]
 ##  shape   #################################################################
@@ -13389,7 +13389,7 @@ concepts:
   - term: Musíš vybrat jen jeden tvar.
     lang: cs
     tts: Musis vybrat jen jeden tvar.mp3
-  img: shape.jpeg
+  img: img/shape.jpeg
   freq: 33284.95000
   origins: ["conceptDbSamples"]
 ##  eggs   ##################################################################
@@ -13411,7 +13411,7 @@ concepts:
   - term: Slepice kladou bílá vejce.
     lang: cs
     tts: Slepice kladou bila vejce.mp3
-  img: eggs.jpeg
+  img: img/eggs.jpeg
   freq: 33059.90000
   origins: ["conceptDbSamples"]
 ##  smaller   ###############################################################
@@ -13430,7 +13430,7 @@ concepts:
   - term: Jeho mozek je o hodně menší.
     lang: cs
     tts: Jeho mozek je o hodne mensi.mp3
-  img: smaller.jpeg
+  img: img/smaller.jpeg
   freq: 32668.30000
   origins: ["conceptDbSamples"]
 ##  finds   #################################################################
@@ -13452,7 +13452,7 @@ concepts:
   - term: Jen počkejte, až to zjistí!
     lang: cs
     tts: Jen pockejte, az to zjisti.mp3
-  img: finds.jpeg
+  img: img/finds.jpeg
   freq: 31934.90000
   origins: ["conceptDbSamples"]
 ##  unable   ################################################################
@@ -13474,7 +13474,7 @@ concepts:
   - term: Nebyl jsem schopen mluvit.
     lang: cs
     tts: Nebyl jsem schopen mluvit.mp3
-  img: unable.jpeg
+  img: img/unable.jpeg
   freq: 31745.05000
   origins: ["conceptDbSamples"]
 ##  stayed   ################################################################
@@ -13496,7 +13496,7 @@ concepts:
   - term: Byl jste vzhůru celou noc?
     lang: cs
     tts: Byl jste vzhuru celou noc.mp3
-  img: stayed.jpeg
+  img: img/stayed.jpeg
   freq: 31165.90000
   origins: ["conceptDbSamples"]
 ##  scale   #################################################################
@@ -13518,7 +13518,7 @@ concepts:
   - term: Dělo se to ve velkém měřítku.
     lang: cs
     tts: Delo se to ve velkem meritku.mp3
-  img: scale.jpeg
+  img: img/scale.jpeg
   freq: 30427.90000
   origins: ["conceptDbSamples"]
 ##  process   ###############################################################
@@ -13540,7 +13540,7 @@ concepts:
   - term: Tento proces může trvat několik minut.
     lang: cs
     tts: Tento proces muze trvat nekolik minut.mp3
-  img: process.jpeg
+  img: img/process.jpeg
   freq: 30250.70000
   origins: ["conceptDbSamples"]
 ##  nearest   ###############################################################
@@ -13559,7 +13559,7 @@ concepts:
   - term: Utíkej do nejbližšího města?
     lang: cs
     tts: Utikej do nejblizsiho mesta.mp3
-  img: nearest.jpeg
+  img: img/nearest.jpeg
   freq: 29094.70000
   origins: ["conceptDbSamples"]
 ##  coffee   ################################################################
@@ -13578,7 +13578,7 @@ concepts:
   - term: Přinesl jsem ti kafe.
     lang: cs
     tts: Prinesl jsem ti kafe.mp3
-  img: coffee.jpeg
+  img: img/coffee.jpeg
   freq: 29061.35000
   origins: ["conceptDbSamples"]
 ##  fly   ###################################################################
@@ -13600,7 +13600,7 @@ concepts:
   - term: Jak daleko můžete létat?
     lang: cs
     tts: Jak daleko muzete letat.mp3
-  img: fly.jpeg
+  img: img/fly.jpeg
   freq: 28502.95000
   origins: ["conceptDbSamples"]
 ##  visible   ###############################################################
@@ -13619,7 +13619,7 @@ concepts:
   - term: Vstupní bod musí být viditelný.
     lang: cs
     tts: Vstupni bod musi byt viditelny.mp3
-  img: visible.jpeg
+  img: img/visible.jpeg
   freq: 28287.60000
   origins: ["conceptDbSamples"]
 ##  library   ###############################################################
@@ -13638,7 +13638,7 @@ concepts:
   - term: Vstoupil jsem do knihovny.
     lang: cs
     tts: Vstoupil jsem do knihovny.mp3
-  img: library.jpeg
+  img: img/library.jpeg
   freq: 28114.95000
   origins: ["conceptDbSamples"]
 ##  catch   #################################################################
@@ -13660,7 +13660,7 @@ concepts:
   - term: Nicméně je tu jeden háček.
     lang: cs
     tts: Nicmene je tu jeden hacek.mp3
-  img: catch.jpeg
+  img: img/catch.jpeg
   freq: 28047.90000
   origins: ["conceptDbSamples"]
 ##  instructions   ##########################################################
@@ -13682,7 +13682,7 @@ concepts:
   - term: Postupovali jsme podle tvých instrukcí.
     lang: cs
     tts: Postupovali jsme podle tvych instrukci.mp3
-  img: instructions.jpeg
+  img: img/instructions.jpeg
   freq: 26838.40000
   origins: ["conceptDbSamples"]
 ##  cool   ##################################################################
@@ -13701,7 +13701,7 @@ concepts:
   - term: Mají některé opravdu skvělé triky.
     lang: cs
     tts: Maji nektere opravdu skvele triky.mp3
-  img: cool.jpeg
+  img: img/cool.jpeg
   freq: 26142.55000
   origins: ["conceptDbSamples"]
 ##  cat   ###################################################################
@@ -13720,7 +13720,7 @@ concepts:
   - term: Kočka a pes.
     lang: cs
     tts: Kocka a pes.mp3
-  img: cat.jpeg
+  img: img/cat.jpeg
   freq: 25867.60000
   origins: ["conceptDbSamples"]
 ##  repeat   ################################################################
@@ -13739,7 +13739,7 @@ concepts:
   - term: Opakuji, zelené světlo.
     lang: cs
     tts: Opakuji, zelene svetlo.mp3
-  img: repeat.jpeg
+  img: img/repeat.jpeg
   freq: 25063.25000
   origins: ["conceptDbSamples"]
 ##  advantages   ############################################################
@@ -13761,7 +13761,7 @@ concepts:
   - term: Jaké to má výhody?
     lang: cs
     tts: Jake to ma vyhody.mp3
-  img: advantages.jpeg
+  img: img/advantages.jpeg
   freq: 24802.80000
   origins: ["conceptDbSamples"]
 ##  win   ###################################################################
@@ -13783,7 +13783,7 @@ concepts:
   - term: Možná že dokonce zvítězí.
     lang: cs
     tts: Mozna ze dokonce zvitezi.mp3
-  img: win.jpeg
+  img: img/win.jpeg
   freq: 24721.45000
   origins: ["conceptDbSamples"]
 ##  patient   ###############################################################
@@ -13805,7 +13805,7 @@ concepts:
   - term: Vzdálenost mezi pacientem a lékařem.
     lang: cs
     tts: Vzdalenost mezi pacientem a lekarem.mp3
-  img: patient.jpeg
+  img: img/patient.jpeg
   freq: 24442.10000
   origins: ["conceptDbSamples"]
 ##  locked   ################################################################
@@ -13827,7 +13827,7 @@ concepts:
   - term: Proč jsou ty dveře zamčené?
     lang: cs
     tts: Proc jsou ty dvere zamcene.mp3
-  img: locked.jpeg
+  img: img/locked.jpeg
   freq: 24438.10000
   origins: ["conceptDbSamples"]
 ##  proceed   ###############################################################
@@ -13849,7 +13849,7 @@ concepts:
   - term: Pokračujte na vlastní nebezpečí.
     lang: cs
     tts: Pokracujte na vlastni nebezpeci.mp3
-  img: proceed.jpeg
+  img: img/proceed.jpeg
   freq: 24123.80000
   origins: ["conceptDbSamples"]
 ##  hit   ###################################################################
@@ -13870,7 +13870,7 @@ concepts:
   - term: Dopadl jsem na zem.
     lang: cs
     tts: Dopadl jsem na zem.mp3
-  img: hit.jpeg
+  img: img/hit.jpeg
   freq: 23745.60000
   origins: ["conceptDbSamples"]
 ##  egg   ###################################################################
@@ -13892,7 +13892,7 @@ concepts:
   - term: Slepice snesla vejce.
     lang: cs
     tts: Slepice snesla vejce.mp3
-  img: egg.jpeg
+  img: img/egg.jpeg
   freq: 22506.70000
   origins: ["conceptDbSamples"]
 ##  camera   ################################################################
@@ -13914,7 +13914,7 @@ concepts:
   - term: Film byl natočen pomocí ruční kamery.
     lang: cs
     tts: Film byl natocen pomoci rucni kamery.mp3
-  img: camera.jpeg
+  img: img/camera.jpeg
   freq: 22397.35500
   origins: ["conceptDbSamples"]
 ##  that   ##################################################################
@@ -13958,7 +13958,7 @@ concepts:
   - term: Cítil jste I jiné emoce?
     lang: cs
     tts: Citil jste I jine emoce.mp3
-  img: emotions.jpeg
+  img: img/emotions.jpeg
   freq: 21695.20000
   origins: ["conceptDbSamples"]
 ##  tables   ################################################################
@@ -13980,7 +13980,7 @@ concepts:
   - term: Přidejte libovolné další tabulky.
     lang: cs
     tts: Pridejte libovolne dalsi tabulky.mp3
-  img: tables.jpeg
+  img: img/tables.jpeg
   freq: 21432.60000
   origins: ["conceptDbSamples"]
 ##  print   #################################################################
@@ -13999,7 +13999,7 @@ concepts:
   - term: Zadejte počet kopií, které chcete vytisknout.
     lang: cs
     tts: Zadejte pocet kopii, ktere chcete vytisknout.mp3
-  img: print.jpeg
+  img: img/print.jpeg
   freq: 21355.55000
   origins: ["conceptDbSamples"]
 ##  tomorrow   ##############################################################
@@ -14018,7 +14018,7 @@ concepts:
   - term: Zítra večer v osm?
     lang: cs
     tts: Zitra vecer v osm.mp3
-  img: tomorrow.jpeg
+  img: img/tomorrow.jpeg
   freq: 21349.20000
   origins: ["conceptDbSamples"]
 ##  hurry   #################################################################
@@ -14040,7 +14040,7 @@ concepts:
   - term: Spěchej, než nás najde.
     lang: cs
     tts: Spechej, nez nas najde.mp3
-  img: hurry.jpeg
+  img: img/hurry.jpeg
   freq: 21059.55000
   origins: ["conceptDbSamples"]
 ##  regret   ################################################################
@@ -14059,7 +14059,7 @@ concepts:
   - term: Už teď toho lituji.
     lang: cs
     tts: Uz ted toho lituji.mp3
-  img: regret.jpeg
+  img: img/regret.jpeg
   freq: 20930.45000
   origins: ["conceptDbSamples"]
 ##  user   ##################################################################
@@ -14078,7 +14078,7 @@ concepts:
   - term: Uživatel zvolí buď ano nebo ne.
     lang: cs
     tts: Uzivatel zvoli bud ano nebo ne.mp3
-  img: user.jpeg
+  img: img/user.jpeg
   freq: 20688.50000
   origins: ["conceptDbSamples"]
 ##  lonely   ################################################################
@@ -14100,7 +14100,7 @@ concepts:
   - term: Musí se cítit osamělá.
     lang: cs
     tts: Musi se citit osamela.mp3
-  img: lonely.jpeg
+  img: img/lonely.jpeg
   freq: 20598.05000
   origins: ["conceptDbSamples"]
 ##  cares   #################################################################
@@ -14122,7 +14122,7 @@ concepts:
   - term: Nikdo se už o mě nezajímá.
     lang: cs
     tts: Nikdo se uz o me nezajima.mp3
-  img: cares.jpeg
+  img: img/cares.jpeg
   freq: 20161.20000
   origins: ["conceptDbSamples"]
 ##  mirror   ################################################################
@@ -14141,7 +14141,7 @@ concepts:
   - term: Dívali se na sebe do zrcadla
     lang: cs
     tts: Divali se na sebe do zrcadla.mp3
-  img: mirror.jpeg
+  img: img/mirror.jpeg
   freq: 20145.65000
   origins: ["conceptDbSamples"]
 ##  rarely   ################################################################
@@ -14163,7 +14163,7 @@ concepts:
   - term: Auto používám málokdy.
     lang: cs
     tts: Auto pouzivam malokdy.mp3
-  img: rarely.jpeg
+  img: img/rarely.jpeg
   freq: 20081.70000
   origins: ["conceptDbSamples"]
 ##  beach   #################################################################
@@ -14185,7 +14185,7 @@ concepts:
   - term: Bylo to poblíž pláže.
     lang: cs
     tts: Bylo to pobliz plaze.mp3
-  img: beach.jpeg
+  img: img/beach.jpeg
   freq: 19941.40000
   origins: ["conceptDbSamples"]
 ##  bedroom   ###############################################################
@@ -14204,7 +14204,7 @@ concepts:
   - term: Jdi do ložnice.
     lang: cs
     tts: Jdi do loznice.mp3
-  img: bedroom.jpeg
+  img: img/bedroom.jpeg
   freq: 19349.30000
   origins: ["conceptDbSamples"]
 ##  stolen   ################################################################
@@ -14226,7 +14226,7 @@ concepts:
   - term: Kradené stromy z mé zahrady!
     lang: cs
     tts: Kradene stromy z me zahrady.mp3
-  img: stolen.jpeg
+  img: img/stolen.jpeg
   freq: 19337.70000
   origins: ["conceptDbSamples"]
 ##  justified   #############################################################
@@ -14270,7 +14270,7 @@ concepts:
   - term: Tak to bylo docela vtipné.
     lang: cs
     tts: Tak to bylo docela vtipne.mp3
-  img: funny.jpeg
+  img: img/funny.jpeg
   freq: 18987.80000
   origins: ["conceptDbSamples"]
 ##  column   ################################################################
@@ -14289,7 +14289,7 @@ concepts:
   - term: Zadejte hodnoty pro každý sloupec.
     lang: cs
     tts: Zadejte hodnoty pro kazdy sloupec.mp3
-  img: column.jpeg
+  img: img/column.jpeg
   freq: 18928.25000
   origins: ["conceptDbSamples"]
 ##  tool   ##################################################################
@@ -14308,7 +14308,7 @@ concepts:
   - term: Použili jste tento nástroj již dříve?
     lang: cs
     tts: Pouzili jste tento nastroj jiz drive.mp3
-  img: tool.jpeg
+  img: img/tool.jpeg
   freq: 18451.52000
   origins: ["conceptDbSamples"]
 ##  device   ################################################################
@@ -14330,7 +14330,7 @@ concepts:
   - term: Není zde žádné takové zařízení.
     lang: cs
     tts: Neni zde zadne takove zarizeni.mp3
-  img: device.jpeg
+  img: img/device.jpeg
   freq: 17951.45000
   origins: ["conceptDbSamples"]
 ##  appreciate   ############################################################
@@ -14352,7 +14352,7 @@ concepts:
   - term: Ceníme si vašeho zájemu.
     lang: cs
     tts: Cenime si vaseho zajemu.mp3
-  img: appreciate.jpeg
+  img: img/appreciate.jpeg
   freq: 17935.75000
   origins: ["conceptDbSamples"]
 ##  stores   ################################################################
@@ -14374,7 +14374,7 @@ concepts:
   - term: Obchody jsou plné zboží.
     lang: cs
     tts: Obchody jsou plne zbozi.mp3
-  img: stores.jpeg
+  img: img/stores.jpeg
   freq: 17677.90000
   origins: ["conceptDbSamples"]
 ##  select   ################################################################
@@ -14396,7 +14396,7 @@ concepts:
   - term: Vyberte prosím město a stát.
     lang: cs
     tts: Vyberte prosim mesto a stat.mp3
-  img: select.jpeg
+  img: img/select.jpeg
   freq: 17442.95000
   origins: ["conceptDbSamples"]
 ##  rejected   ##############################################################
@@ -14418,7 +14418,7 @@ concepts:
   - term: Toto tvrzení se proto zamítá.
     lang: cs
     tts: Toto tvrzeni se proto zamita.mp3
-  img: rejected.jpeg
+  img: img/rejected.jpeg
   freq: 16802.10000
   origins: ["conceptDbSamples"]
 ##  niece   #################################################################
@@ -14437,7 +14437,7 @@ concepts:
   - term: Už přijela její neteř z Anglie?
     lang: cs
     tts: Uz prijela jeji neter z Anglie.mp3
-  img: niece.jpeg
+  img: img/niece.jpeg
   freq: 15329.80000
   origins: ["conceptDbSamples"]
 ##  root   ##################################################################
@@ -14459,7 +14459,7 @@ concepts:
   - term: Co je hlavní příčina?
     lang: cs
     tts: Co je hlavni pricina.mp3
-  img: root.jpeg
+  img: img/root.jpeg
   freq: 15258.95000
   origins: ["conceptDbSamples"]
 ##  caution   ###############################################################
@@ -14481,7 +14481,7 @@ concepts:
   - term: Zdá se, že vaše opatrnost byla oprávněná.
     lang: cs
     tts: Zda se, ze vase opatrnost byla opravnena.mp3
-  img: caution.jpeg
+  img: img/caution.jpeg
   freq: 15246.70000
   origins: ["conceptDbSamples"]
 ##  ghost   #################################################################
@@ -14503,7 +14503,7 @@ concepts:
   - term: To je jeho duch.
     lang: cs
     tts: To je jeho duch.mp3
-  img: ghost.jpeg
+  img: img/ghost.jpeg
   freq: 14563.95000
   origins: ["conceptDbSamples"]
 ##  speaker   ###############################################################
@@ -14525,7 +14525,7 @@ concepts:
   - term: On je výborný řečník.
     lang: cs
     tts: On je vyborny recnik.mp3
-  img: speaker.jpeg
+  img: img/speaker.jpeg
   freq: 14417.15000
   origins: ["conceptDbSamples"]
 ##  neighbour   #############################################################
@@ -14544,7 +14544,7 @@ concepts:
   - term: Je to můj soused vlevo?
     lang: cs
     tts: Je to muj soused vlevo.mp3
-  img: neighbour.jpeg
+  img: img/neighbour.jpeg
   freq: 14405.70000
   origins: ["conceptDbSamples"]
 ##  wake   ##################################################################
@@ -14563,7 +14563,7 @@ concepts:
   - term: Proč ho nemůžeme vzbudit?
     lang: cs
     tts: Proc ho nemuzeme vzbudit.mp3
-  img: wake.jpeg
+  img: img/wake.jpeg
   freq: 13978.30000
   origins: ["conceptDbSamples"]
 ##  bath   ##################################################################
@@ -14585,7 +14585,7 @@ concepts:
   - term: Koupání je tak relaxační.
     lang: cs
     tts: Koupani je tak relaxacni.mp3
-  img: bath.jpeg
+  img: img/bath.jpeg
   freq: 13822.45000
   origins: ["conceptDbSamples"]
 ##  entry   #################################################################
@@ -14607,7 +14607,7 @@ concepts:
   - term: Vstupní bod musí být viditelný.
     lang: cs
     tts: Vstupni bod musi byt viditelny.mp3
-  img: entry.jpeg
+  img: img/entry.jpeg
   freq: 13709.10000
   origins: ["conceptDbSamples"]
 ##  studying   ##############################################################
@@ -14626,7 +14626,7 @@ concepts:
   - term: Učili jsme se ve třídě jako obvykle.
     lang: cs
     tts: Ucili jsme se ve tride jako obvykle.mp3
-  img: studying.jpeg
+  img: img/studying.jpeg
   freq: 13662.80000
   origins: ["conceptDbSamples"]
 ##  piano   #################################################################
@@ -14648,7 +14648,7 @@ concepts:
   - term: Musí tu někde být piáno.
     lang: cs
     tts: Musi tu nekde byt piano.mp3
-  img: piano.jpeg
+  img: img/piano.jpeg
   freq: 13521.10000
   origins: ["conceptDbSamples"]
 ##  virus   #################################################################
@@ -14666,7 +14666,7 @@ concepts:
   - term: A tento virus se objevil.
     lang: cs
     tts: A tento virus se objevil.mp3
-  img: virus.jpeg
+  img: img/virus.jpeg
   freq: 13416.45000
   origins: ["conceptDbSamples"]
 ##  diamonds   ##############################################################
@@ -14688,7 +14688,7 @@ concepts:
   - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
     lang: cs
     tts: Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
-  img: diamonds.jpeg
+  img: img/diamonds.jpeg
   freq: 12851.10000
   origins: ["conceptDbSamples"]
 ##  cars   ################################################################## █ 95%
@@ -14709,7 +14709,7 @@ concepts:
   - term: To jsou naše auta, že?
     lang: cs
     tts: To jsou nase auta, ze.mp3
-  img: cars.jpeg
+  img: img/cars.jpeg
   freq: 12638.30000
   origins: ["conceptDbSamples"]
 ##  tricks   ################################################################
@@ -14731,7 +14731,7 @@ concepts:
   - term: Mají některé opravdu skvělé triky.
     lang: cs
     tts: Maji nektere opravdu skvele triky.mp3
-  img: tricks.jpeg
+  img: img/tricks.jpeg
   freq: 12560.00000
   origins: ["conceptDbSamples"]
 ##  dad   ###################################################################
@@ -14753,7 +14753,7 @@ concepts:
   - term: Dal mi to můj táta.
     lang: cs
     tts: Dal mi to muj tata.mp3
-  img: dad.jpeg
+  img: img/dad.jpeg
   freq: 12195.12000
   origins: ["conceptDbSamples"]
 ##  document   ##############################################################
@@ -14775,7 +14775,7 @@ concepts:
   - term: Bylo dosaženo konce dokumentu.
     lang: cs
     tts: Bylo dosazeno konce dokumentu.mp3
-  img: document.jpeg
+  img: img/document.jpeg
   freq: 11841.05000
   origins: ["conceptDbSamples"]
 ##  anymore   ###############################################################
@@ -14819,7 +14819,7 @@ concepts:
   - term: Dějiny jsou komplikované.
     lang: cs
     tts: Dejiny jsou komplikovane.mp3
-  img: complicated.jpeg
+  img: img/complicated.jpeg
   freq: 10946.45000
   origins: ["conceptDbSamples"]
 ##  re   ####################################################################
@@ -14845,7 +14845,7 @@ concepts:
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
     tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
-  img: alert.jpeg
+  img: img/alert.jpeg
   freq: 10451.60000
   origins: ["conceptDbSamples"]
 ##  extract   ###############################################################
@@ -14867,7 +14867,7 @@ concepts:
   - term: Výpis z knihy.
     lang: cs
     tts: Vypis z knihy.mp3
-  img: extract.jpeg
+  img: img/extract.jpeg
   freq: 10345.60000
   origins: ["conceptDbSamples"]
 ##  toy   ###################################################################
@@ -14886,7 +14886,7 @@ concepts:
   - term: Dej tu hračku pryč.
     lang: cs
     tts: Dej tu hracku pryc.mp3
-  img: toy.jpeg
+  img: img/toy.jpeg
   freq: 10145.48500
   origins: ["conceptDbSamples"]
 ##  processing   ############################################################
@@ -14908,7 +14908,7 @@ concepts:
   - term: Vaše objednávka je připravena ke zpracování.
     lang: cs
     tts: Vase objednavka je pripravena ke zpracovani.mp3
-  img: processing.jpeg
+  img: img/processing.jpeg
   freq: 10121.80000
   origins: ["conceptDbSamples"]
 ##  tons   ##################################################################
@@ -14930,7 +14930,7 @@ concepts:
   - term: Váží to přes pět tun.
     lang: cs
     tts: Vazi to pres pet tun.mp3
-  img: tons.jpeg
+  img: img/tons.jpeg
   freq: 10088.50000
   origins: ["conceptDbSamples"]
 ##  worried   ###############################################################
@@ -14949,7 +14949,7 @@ concepts:
   - term: Mám starosti od včerejška.
     lang: cs
     tts: Mam starosti od vcerejska.mp3
-  img: worried.jpeg
+  img: img/worried.jpeg
   freq: 9953.55000
   origins: ["conceptDbSamples"]
 ##  chapters   ##############################################################
@@ -14968,7 +14968,7 @@ concepts:
   - term: Tento týden jsem napsal tři nové kapitoly.
     lang: cs
     tts: Tento tyden jsem napsal tri nove kapitoly.mp3
-  img: chapters.jpeg
+  img: img/chapters.jpeg
   freq: 9389.18000
   origins: ["conceptDbSamples"]
 ##  happening   #############################################################
@@ -14990,7 +14990,7 @@ concepts:
   - term: Co se tam děje?
     lang: cs
     tts: Co se tam deje.mp3
-  img: happening.jpeg
+  img: img/happening.jpeg
   freq: 9339.34000
   origins: ["conceptDbSamples"]
 ##  messages   ##############################################################
@@ -15012,7 +15012,7 @@ concepts:
   - term: Co tyto zprávy znamenají?
     lang: cs
     tts: Co tyto zpravy znamenaji.mp3
-  img: messages.jpeg
+  img: img/messages.jpeg
   freq: 9314.02000
   origins: ["conceptDbSamples"]
 ##  upset   #################################################################
@@ -15034,7 +15034,7 @@ concepts:
   - term: Vypadal rozrušeně?
     lang: cs
     tts: Vypadal rozrusene.mp3
-  img: upset.jpeg
+  img: img/upset.jpeg
   freq: 9102.75000
   origins: ["conceptDbSamples"]
 ##  whoever   ###############################################################
@@ -15072,7 +15072,7 @@ concepts:
   - term: Zdravím, pane Bín.
     lang: cs
     tts: Zdravim, pane Bin.mp3
-  img: bean.jpeg
+  img: img/bean.jpeg
   freq: 8738.49500
   origins: ["conceptDbSamples"]
 ##  hello   #################################################################
@@ -15094,7 +15094,7 @@ concepts:
   - term: Zdravím, pane Bín.
     lang: cs
     tts: Zdravim, pane Bin.mp3
-  img: hello.jpeg
+  img: img/hello.jpeg
   freq: 8621.20050
   origins: ["conceptDbSamples"]
 ##  transport   #############################################################
@@ -15116,7 +15116,7 @@ concepts:
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
     tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
-  img: transport.jpeg
+  img: img/transport.jpeg
   freq: 8144.60000
   origins: ["conceptDbSamples"]
 ##  relaxed   ###############################################################
@@ -15138,7 +15138,7 @@ concepts:
   - term: Chodidla a zápěstí máš uvolněná.
     lang: cs
     tts: Chodidla a zapesti mas uvolnena.mp3
-  img: relaxed.jpeg
+  img: img/relaxed.jpeg
   freq: 7812.45000
   origins: ["conceptDbSamples"]
 ##  jungle   ################################################################
@@ -15157,7 +15157,7 @@ concepts:
   - term: Našel jsem to v džungli.
     lang: cs
     tts: Nasel jsem to v dzungli.mp3
-  img: jungle.jpeg
+  img: img/jungle.jpeg
   freq: 7630.09500
   origins: ["conceptDbSamples"]
 ##  proving   ###############################################################
@@ -15179,7 +15179,7 @@ concepts:
   - term: Mluvil, čímž dokazoval, že je stále naživu.
     lang: cs
     tts: Mluvil, cimz dokazoval, ze je stale nazivu.mp3
-  img: proving.jpeg
+  img: img/proving.jpeg
   freq: 7603.59000
   origins: ["conceptDbSamples"]
 ##  athletic   ##############################################################
@@ -15201,7 +15201,7 @@ concepts:
   - term: Paže jsou silné.
     lang: cs
     tts: Paze jsou silne.mp3
-  img: athletic.jpeg
+  img: img/athletic.jpeg
   freq: 7581.47000
   origins: ["conceptDbSamples"]
 ##  values   ################################################################
@@ -15220,7 +15220,7 @@ concepts:
   - term: Zadejte hodnoty pro každý sloupec.
     lang: cs
     tts: Zadejte hodnoty pro kazdy sloupec.mp3
-  img: values.jpeg
+  img: img/values.jpeg
   freq: 7039.51000
   origins: ["conceptDbSamples"]
 ##  kid   ###################################################################
@@ -15242,7 +15242,7 @@ concepts:
   - term: Vážně chci další dítě.
     lang: cs
     tts: Vazne chci dalsi dite.mp3
-  img: kid.jpeg
+  img: img/kid.jpeg
   freq: 6770.47000
   origins: ["conceptDbSamples"]
 ##  hen   ###################################################################
@@ -15261,7 +15261,7 @@ concepts:
   - term: Slepice snesla vejce.
     lang: cs
     tts: Slepice snesla vejce.mp3
-  img: hen.jpeg
+  img: img/hen.jpeg
   freq: 6569.58000
   origins: ["conceptDbSamples"]
 ##  liar   ##################################################################
@@ -15280,7 +15280,7 @@ concepts:
   - term: Kdokoli to říká, je lhář.
     lang: cs
     tts: Kdokoli to rika, je lhar.mp3
-  img: liar.jpeg
+  img: img/liar.jpeg
   freq: 6052.17000
   origins: ["conceptDbSamples"]
 ##  menu   ##################################################################
@@ -15302,7 +15302,7 @@ concepts:
   - term: Můžete také vytvořit novou nabídku.
     lang: cs
     tts: Muzete take vytvorit novou nabidku.mp3
-  img: menu.jpeg
+  img: img/menu.jpeg
   freq: 5951.66500
   origins: ["conceptDbSamples"]
 ##  counts   ################################################################
@@ -15324,7 +15324,7 @@ concepts:
   - term: Ale každá hodina se počítá.
     lang: cs
     tts: Ale kazda hodina se pocita.mp3
-  img: counts.jpeg
+  img: img/counts.jpeg
   freq: 5730.18000
   origins: ["conceptDbSamples"]
 ##  ll   ####################################################################
@@ -15353,7 +15353,7 @@ concepts:
   - term: Jeho arogantní způsob.
     lang: cs
     tts: Jeho arogantni zpusob.mp3
-  img: arrogant.jpeg
+  img: img/arrogant.jpeg
   freq: 4196.96000
   origins: ["conceptDbSamples"]
 ##  steak   ################################################################# █ 95%
@@ -15371,7 +15371,7 @@ concepts:
   - term: Je to lepší než steak.
     lang: cs
     tts: Je to lepsi nez steak.mp3
-  img: steak.jpeg
+  img: img/steak.jpeg
   freq: 4027.81500
   origins: ["conceptDbSamples"]
 ##  drivers   ###############################################################
@@ -15393,7 +15393,7 @@ concepts:
   - term: Používáte určité ovladače filtrů.
     lang: cs
     tts: Pouzivate urcite ovladace filtru.mp3
-  img: drivers.jpeg
+  img: img/drivers.jpeg
   freq: 3781.62000
   origins: ["conceptDbSamples"]
 ##  filter   ################################################################
@@ -15415,7 +15415,7 @@ concepts:
   - term: Používáte určité ovladače filtrů.
     lang: cs
     tts: Pouzivate urcite ovladace filtru.mp3
-  img: filter.jpeg
+  img: img/filter.jpeg
   freq: 3768.36500
   origins: ["conceptDbSamples"]
 ##  kids   ##################################################################
@@ -15437,7 +15437,7 @@ concepts:
   - term: Mluvil jsem s dětmi.
     lang: cs
     tts: Mluvil jsem s detmi.mp3
-  img: kids.jpeg
+  img: img/kids.jpeg
   freq: 3525.29000
   origins: ["conceptDbSamples"]
 ##  zero   ##################################################################
@@ -15456,7 +15456,7 @@ concepts:
   - term: Hodnota musí být rovna nebo větší než nula.
     lang: cs
     tts: Hodnota musi byt rovna nebo vetsi nez nula.mp3
-  img: zero.jpeg
+  img: img/zero.jpeg
   freq: 2789.54000
   origins: ["conceptDbSamples"]
 ##  relaxing   ##############################################################
@@ -15478,7 +15478,7 @@ concepts:
   - term: Koupání je tak relaxační.
     lang: cs
     tts: Koupani je tak relaxacni.mp3
-  img: relaxing.jpeg
+  img: img/relaxing.jpeg
   freq: 1546.66000
   origins: ["conceptDbSamples"]
 ##  planetary   #############################################################
@@ -15497,7 +15497,7 @@ concepts:
   - term: Známe dobře náš planetární systém.
     lang: cs
     tts: Zname dobre nas planetarni system.mp3
-  img: planetary.jpeg
+  img: img/planetary.jpeg
   freq: 1291.92000
   origins: ["conceptDbSamples"]
 ##  variants   ##############################################################
@@ -15516,7 +15516,7 @@ concepts:
   - term: Existují i jiné varianty?
     lang: cs
     tts: Existuji i jine varianty.mp3
-  img: variants.jpeg
+  img: img/variants.jpeg
   freq: 778.47600
   origins: ["conceptDbSamples"]
 ##  suitcase   ##############################################################
@@ -15535,7 +15535,7 @@ concepts:
   - term: Otevřený kufr na posteli.
     lang: cs
     tts: Otevreny kufr na posteli.mp3
-  img: suitcase.jpeg
+  img: img/suitcase.jpeg
   freq: 655.85000
   origins: ["conceptDbSamples"]
 ##  pointless   #############################################################
@@ -15576,7 +15576,7 @@ concepts:
   - term: Kdo nemá rád nudle?
     lang: cs
     tts: Kdo nema rad nudle.mp3
-  img: noodles.jpeg
+  img: img/noodles.jpeg
   freq: 345.72500
   origins: ["conceptDbSamples"]
 ##  sat   ###################################################################
@@ -15598,7 +15598,7 @@ concepts:
   - term: Posadila jsem se a plakala.
     lang: cs
     tts: Posadila jsem se a plakala.mp3
-  img: sat.jpeg
+  img: img/sat.jpeg
   freq: 166.13800
   origins: ["conceptDbSamples"]
 ##  beers   #################################################################
@@ -15617,7 +15617,7 @@ concepts:
   - term: Říkal jsem čtyři piva.
     lang: cs
     tts: Rikal jsem ctyri piva.mp3
-  img: beers.jpeg
+  img: img/beers.jpeg
   freq: 159.01800
   origins: ["conceptDbSamples"]
 ##  seafood   ###############################################################
@@ -15639,7 +15639,7 @@ concepts:
   - term: Máš rád mořské jídlo?
     lang: cs
     tts: Mas rad morske jidlo.mp3
-  img: seafood.jpeg
+  img: img/seafood.jpeg
   freq: 27.68970
   origins: ["conceptDbSamples"]
 ##  horse   ################################################################# █ 89%
@@ -15653,7 +15653,7 @@ concepts:
     lang: en
   - term: Kůň byl štíhlý.
     lang: cs
-  img: horse.jpeg
+  img: img/horse.jpeg
   freq: 87507.50000
   origins: ["JingleBells"]
 ##  quickly   ############################################################### █ 89%
@@ -15669,7 +15669,7 @@ concepts:
     lang: en
   - term: Rychle odjel pryč.
     lang: cs
-  img: quickly.jpeg
+  img: img/quickly.jpeg
   freq: 77724.30000
   origins: ["JingleBells"]
 ##  oh   ####################################################################
@@ -15692,7 +15692,7 @@ concepts:
     lang: en
   - term: Vytváření duchů jasných.
     lang: cs
-  img: bright.jpeg
+  img: img/bright.jpeg
   freq: 64276.95000
   origins: ["JingleBells"]
 ##  joy   ################################################################### █ 89%
@@ -15706,7 +15706,7 @@ concepts:
     lang: en
   - term: Jaká radost je jezdit.
     lang: cs
-  img: joy.jpeg
+  img: img/joy.jpeg
   freq: 63479.50000
   origins: ["JingleBells"]
 ##  spirits   ############################################################### █ 89%
@@ -15722,7 +15722,7 @@ concepts:
     lang: en
   - term: Rozjasňují náladu.
     lang: cs
-  img: spirits.jpeg
+  img: img/spirits.jpeg
   freq: 62147.50000
   origins: ["JingleBells"]
 ##  laughing   ############################################################## █ 89%
@@ -15736,7 +15736,7 @@ concepts:
     lang: en
   - term: Celou cestu se smát.
     lang: cs
-  img: laughing.jpeg
+  img: img/laughing.jpeg
   freq: 53113.60000
   origins: ["JingleBells"]
 ##  drove   ################################################################# █ 89%
@@ -15752,7 +15752,7 @@ concepts:
     lang: en
   - term: Rychle odjel.
     lang: cs
-  img: drove.jpeg
+  img: img/drove.jpeg
   freq: 50184.80000
   origins: ["JingleBells"]
 ##  seated   ################################################################ █ 89%
@@ -15768,7 +15768,7 @@ concepts:
     lang: en
   - term: Byla usazena po mém boku.
     lang: cs
-  img: seated.jpeg
+  img: img/seated.jpeg
   freq: 49654.70000
   origins: ["JingleBells"]
 ##  sing   ################################################################## █ 89%
@@ -15782,7 +15782,7 @@ concepts:
     lang: en
   - term: Jezdit a zpívat.
     lang: cs
-  img: sing.jpeg
+  img: img/sing.jpeg
   freq: 43453.10000
   origins: ["JingleBells"]
 ##  snow   ################################################################## █ 89%
@@ -15796,7 +15796,7 @@ concepts:
     lang: en
   - term: Prohánět se sněhem.
     lang: cs
-  img: snow.jpeg
+  img: img/snow.jpeg
   freq: 41197.95000
   origins: ["JingleBells"]
 ##  ride   ################################################################## █ 89%
@@ -15812,7 +15812,7 @@ concepts:
     lang: en
   - term: Jaká je to radost, jezdit.
     lang: cs
-  img: ride.jpeg
+  img: img/ride.jpeg
   freq: 34102.95000
   origins: ["JingleBells"]
 ##  tonight   ############################################################### █ 89%
@@ -15828,7 +15828,7 @@ concepts:
     lang: en
   - term: Zazpívat dnes večer písničku.
     lang: cs
-  img: tonight.jpeg
+  img: img/tonight.jpeg
   freq: 28173.20500
   origins: ["JingleBells"]
 ##  fun   ################################################################### █ 89%
@@ -15844,7 +15844,7 @@ concepts:
     lang: en
   - term: Jaká je to zábava, jezdit.
     lang: cs
-  img: fun.jpeg
+  img: img/fun.jpeg
   freq: 22138.75000
   origins: ["JingleBells"]
 ##  lean   ################################################################## █ 89%
@@ -15860,7 +15860,7 @@ concepts:
     lang: en
   - term: Kůň byl štíhlý.
     lang: cs
-  img: lean.jpeg
+  img: img/lean.jpeg
   freq: 22063.05000
   origins: ["JingleBells"]
 ##  tail   ################################################################## █ 89%
@@ -15876,7 +15876,7 @@ concepts:
     lang: en
   - term: Zvonky na oháňce zvoní.
     lang: cs
-  img: tail.jpeg
+  img: img/tail.jpeg
   freq: 20681.45000
   origins: ["JingleBells"]
 ##  bells   ################################################################# █ 89%
@@ -15892,7 +15892,7 @@ concepts:
     lang: en
   - term: Zvonky na oháňce zvoní.
     lang: cs
-  img: bells.jpeg
+  img: img/bells.jpeg
   freq: 17904.10000
   origins: ["JingleBells"]
 ##  hey   ###################################################################
@@ -15913,7 +15913,7 @@ concepts:
     lang: en
   - term: Prohánět se sněhem.
     lang: cs
-  img: dashing.jpeg
+  img: img/dashing.jpeg
   freq: 7393.94000
   origins: ["JingleBells"]
 ##  tho   ###################################################################
@@ -15934,7 +15934,7 @@ concepts:
     lang: en
   - term: Otevřené sáně s jedním koňem.
     lang: cs
-  img: sleigh.jpeg
+  img: img/sleigh.jpeg
   freq: 2972.29000
   origins: ["JingleBells"]
 ##  jingle   ################################################################ █ 89%
@@ -15950,6 +15950,6 @@ concepts:
     lang: en
   - term: Rolničky.
     lang: cs
-  img: jingle.jpeg
+  img: img/jingle.jpeg
   freq: 1631.31000
   origins: ["JingleBells"]
