@@ -63,7 +63,7 @@ public class Order {
 	}
 
 	Order clone() {
-		return new Order(ord:ord.findAll(), ctx:ctx)
+		return new Order(ord:new ArrayList(ord), ctx:ctx)
 	}
 	
 	public void lerpToPosition(int from, int to, double r) {		
@@ -86,7 +86,8 @@ public class Order {
 	Order crossWith(Order o,int genNum=0) {
 		Order ret = clone()
 		ret.genNum = genNum
-		int mutCount = Math.max(10d, ctx.rndConceptIndex/4)
+		int mutCount = Math.max(3d, ctx.rndConceptIndex/4)
+		
 		
 		for (int i=0;i<mutCount;i++) {
 			//println ctx.rndRate
