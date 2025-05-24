@@ -10945,7 +10945,7 @@ concepts:
     tts: cs-terms/milacek.mp3
   img: img/bonnie.jpeg
   freq: 1992.00000
-##  lose   ################################################################## no img|t0:pron:missing
+##  lose   ################################################################## t0:pron:missing
 - terms: 
   - term: lose
     lang: en
@@ -10956,8 +10956,9 @@ concepts:
   - term: prohrát
     lang: cs
     tts: cs-terms/prohrat.mp3
+  img: img/lose.jpeg
   freq: 101608.00000
-##  later   ################################################################# no img|t0:pron:missing
+##  later   ################################################################# t0:pron:missing
 - terms: 
   - term: later
     lang: en
@@ -10965,8 +10966,9 @@ concepts:
   - term: později
     lang: cs
     tts: cs-terms/pozdeji.mp3
+  img: img/later.jpeg
   freq: 91769.00000
-##  living   ################################################################ no img|t0:pron:missing
+##  living   ################################################################ t0:pron:missing
 - terms: 
   - term: living
     lang: en
@@ -10977,8 +10979,9 @@ concepts:
   - term: obývací
     lang: cs
     tts: cs-terms/obyvaci.mp3
+  img: img/living.jpeg
   freq: 83933.00000
-##  piece   ################################################################# no img|t0:pron:missing
+##  piece   ################################################################# t0:pron:missing
 - terms: 
   - term: piece
     lang: en
@@ -10986,8 +10989,9 @@ concepts:
   - term: kousek
     lang: cs
     tts: cs-terms/kousek.mp3
+  img: img/piece.jpeg
   freq: 82102.00000
-##  named   ################################################################# no img|t0:pron:missing
+##  named   ################################################################# t0:pron:missing
 - terms: 
   - term: named
     lang: en
@@ -10998,8 +11002,9 @@ concepts:
   - term: nazvaný
     lang: cs
     tts: cs-terms/nazvany.mp3
+  img: img/named.jpeg
   freq: 80756.00000
-##  opportunity   ########################################################### no img|t0:pron:missing
+##  opportunity   ########################################################### t0:pron:missing
 - terms: 
   - term: opportunity
     lang: en
@@ -11007,8 +11012,9 @@ concepts:
   - term: příležitost
     lang: cs
     tts: cs-terms/prilezitost.mp3
+  img: img/opportunity.jpeg
   freq: 78272.00000
-##  team   ################################################################## no img|t0:pron:missing
+##  team   ################################################################## t0:pron:missing
 - terms: 
   - term: team
     lang: en
@@ -11019,8 +11025,9 @@ concepts:
   - term: družstvo
     lang: cs
     tts: cs-terms/druzstvo.mp3
+  img: img/team.jpeg
   freq: 71483.00000
-##  blue   ################################################################## no img|t0:pron:missing
+##  blue   ################################################################## t0:pron:missing
 - terms: 
   - term: blue
     lang: en
@@ -11031,8 +11038,9 @@ concepts:
   - term: sklíčený
     lang: cs
     tts: cs-terms/skliceny.mp3
+  img: img/blue.jpeg
   freq: 58560.00000
-##  sky   ################################################################### no img|t0:pron:missing
+##  sky   ################################################################### t0:pron:missing
 - terms: 
   - term: sky
     lang: en
@@ -11043,8 +11051,9 @@ concepts:
   - term: obloha
     lang: cs
     tts: cs-terms/obloha.mp3
+  img: img/sky.jpeg
   freq: 58299.00000
-##  brown   ################################################################# no img|t0:pron:missing
+##  brown   ################################################################# t0:pron:missing
 - terms: 
   - term: brown
     lang: en
@@ -11052,8 +11061,9 @@ concepts:
   - term: hnědá
     lang: cs
     tts: cs-terms/hneda.mp3
+  img: img/brown.jpeg
   freq: 53525.00000
-##  dream   ################################################################# no img|t0:pron:missing
+##  dream   ################################################################# t0:pron:missing
 - terms: 
   - term: dream
     lang: en
@@ -11064,8 +11074,9 @@ concepts:
   - term: snít
     lang: cs
     tts: cs-terms/snit.mp3
+  img: img/dream.jpeg
   freq: 43306.00000
-##  greek   ################################################################# no img|t0:pron:missing
+##  greek   ################################################################# t0:pron:missing
 - terms: 
   - term: greek
     lang: en
@@ -11076,8 +11087,9 @@ concepts:
   - term: řečtina
     lang: cs
     tts: cs-terms/rectina.mp3
+  img: img/greek.jpeg
   freq: 40885.00000
-##  stepped   ############################################################### no img|t0:pron:missing
+##  stepped   ############################################################### t0:pron:missing
 - terms: 
   - term: stepped
     lang: en
@@ -11088,8 +11100,9 @@ concepts:
   - term: vkročila
     lang: cs
     tts: cs-terms/vkrocila.mp3
+  img: img/stepped.jpeg
   freq: 39957.00000
-##  shoes   ################################################################# no img|t0:pron:missing
+##  shoes   ################################################################# t0:pron:missing
 - terms: 
   - term: shoes
     lang: en
@@ -11097,8 +11110,9 @@ concepts:
   - term: boty
     lang: cs
     tts: cs-terms/boty.mp3
+  img: img/shoes.jpeg
   freq: 29324.00000
-##  stick   ################################################################# no img|t0:pron:missing
+##  stick   ################################################################# t0:pron:missing
 - terms: 
   - term: stick
     lang: en
@@ -11109,8 +11123,9 @@ concepts:
   - term: klacek
     lang: cs
     tts: cs-terms/klacek.mp3
+  img: img/stick.jpeg
   freq: 25451.00000
-##  forever   ############################################################### no img|t0:pron:missing
+##  forever   ############################################################### t0:pron:missing
 - terms: 
   - term: forever
     lang: en
@@ -11118,8 +11133,9 @@ concepts:
   - term: navždy
     lang: cs
     tts: cs-terms/navzdy.mp3
+  img: img/forever.jpeg
   freq: 25444.00000
-##  springs   ############################################################### no img|t0:pron:missing
+##  springs   ############################################################### t0:pron:missing
 - terms: 
   - term: springs
     lang: en
@@ -11130,8 +11146,9 @@ concepts:
   - term: prameny
     lang: cs
     tts: cs-terms/prameny.mp3
+  img: img/springs.jpeg
   freq: 18661.00000
-##  mud   ################################################################### no img|t0:pron:missing
+##  mud   ################################################################### t0:pron:missing
 - terms: 
   - term: mud
     lang: en
@@ -11142,8 +11159,9 @@ concepts:
   - term: bahno
     lang: cs
     tts: cs-terms/bahno.mp3
+  img: img/mud.jpeg
   freq: 16120.00000
-##  prize   ################################################################# no img|t0:pron:missing
+##  prize   ################################################################# t0:pron:missing
 - terms: 
   - term: prize
     lang: en
@@ -11151,8 +11169,9 @@ concepts:
   - term: cena
     lang: cs
     tts: cs-terms/cena.mp3
+  img: img/prize.jpeg
   freq: 15634.00000
-##  string   ################################################################ no img|t0:pron:missing
+##  string   ################################################################ t0:pron:missing
 - terms: 
   - term: string
     lang: en
@@ -11163,8 +11182,9 @@ concepts:
   - term: vlákno
     lang: cs
     tts: cs-terms/vlakno.mp3
+  img: img/string.jpeg
   freq: 15280.00000
-##  harmony   ############################################################### no img|t0:pron:missing
+##  harmony   ############################################################### t0:pron:missing
 - terms: 
   - term: harmony
     lang: en
@@ -11175,8 +11195,9 @@ concepts:
   - term: soulad
     lang: cs
     tts: cs-terms/soulad.mp3
+  img: img/harmony.jpeg
   freq: 14081.00000
-##  brand   ################################################################# no img|t0:pron:missing
+##  brand   ################################################################# t0:pron:missing
 - terms: 
   - term: brand
     lang: en
@@ -11187,8 +11208,9 @@ concepts:
   - term: cejch
     lang: cs
     tts: cs-terms/cejch.mp3
+  img: img/brand.jpeg
   freq: 9865.00000
-##  items   ################################################################# no img|t0:pron:missing
+##  items   ################################################################# t0:pron:missing
 - terms: 
   - term: items
     lang: en
@@ -11196,8 +11218,9 @@ concepts:
   - term: položky
     lang: cs
     tts: cs-terms/polozky.mp3
+  img: img/items.jpeg
   freq: 9728.00000
-##  chocolate   ############################################################# no img|t0:pron:missing
+##  chocolate   ############################################################# t0:pron:missing
 - terms: 
   - term: chocolate
     lang: en
@@ -11205,8 +11228,9 @@ concepts:
   - term: čokoláda
     lang: cs
     tts: cs-terms/cokolada.mp3
+  img: img/chocolate.jpeg
   freq: 9205.00000
-##  blossom   ############################################################### no img|t0:pron:missing
+##  blossom   ############################################################### t0:pron:missing
 - terms: 
   - term: blossom
     lang: en
@@ -11217,8 +11241,9 @@ concepts:
   - term: rozkvést
     lang: cs
     tts: cs-terms/rozkvest.mp3
+  img: img/blossom.jpeg
   freq: 8302.00000
-##  dip   ################################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  dip   ################################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: dip
     lang: en
@@ -11227,8 +11252,9 @@ concepts:
     lang: cs
   - term: omáčka
     lang: cs
+  img: img/dip.jpeg
   freq: 5859.00000
-##  vest   ################################################################## no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  vest   ################################################################## t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: vest
     lang: en
@@ -11237,8 +11263,9 @@ concepts:
     lang: cs
   - term: tílko
     lang: cs
+  img: img/vest.jpeg
   freq: 4367.00000
-##  pants   ################################################################# no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  pants   ################################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: pants
     lang: en
@@ -11247,16 +11274,18 @@ concepts:
     lang: cs
   - term: spodky
     lang: cs
+  img: img/pants.jpeg
   freq: 2075.00000
-##  fleas   ################################################################# no img|t0:pron:missing|t1:tts:missing
+##  fleas   ################################################################# t0:pron:missing|t1:tts:missing
 - terms: 
   - term: fleas
     lang: en
     tts: en-terms/fleas.mp3
   - term: blechy
     lang: cs
+  img: img/fleas.jpeg
   freq: 1708.00000
-##  awesome   ############################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  awesome   ############################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: awesome
     lang: en
@@ -11265,27 +11294,30 @@ concepts:
     lang: cs
   - term: ohromný
     lang: cs
+  img: img/awesome.jpeg
   freq: 659.00000
 - terms: 
   - term: gonna
     lang: en
   state: ignore
   freq: 400.00000
-##  possum   ################################################################ no img|t0:pron:missing|t1:tts:missing
+##  possum   ################################################################ t0:pron:missing|t1:tts:missing
 - terms: 
   - term: possum
     lang: en
     tts: en-terms/possum.mp3
   - term: vačice
     lang: cs
+  img: img/possum.jpeg
   freq: 344.00000
-##  nobel   ################################################################# no img|t0:pron:missing|t1:tts:missing
+##  nobel   ################################################################# t0:pron:missing|t1:tts:missing
 - terms: 
   - term: nobel
     lang: en
     tts: en-terms/nobel.mp3
   - term: nobelova
     lang: cs
+  img: img/nobel.jpeg
   freq: 18.00000
 
 examples: 
