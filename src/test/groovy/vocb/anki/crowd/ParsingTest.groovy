@@ -52,11 +52,13 @@ class ParsingTest {
 	}
 
 	@Test
-	void simpleFields() {
+	void modelsParse() {
 		p.parse(smallDeck)
-		assert p.noteModels
-		assert p.notes
-		assert p.notes[0].__type__ == 'Note'
+		NoteModel[] mods = p.noteModels
+		assert mods
+		assert mods.size() == 3
+		assert p.ankivocbModel
+		
 	}
 
 	@Test

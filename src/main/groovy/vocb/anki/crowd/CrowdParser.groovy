@@ -26,16 +26,32 @@ public class CrowdParser {
 			new NoteModel(mJson)
 		}
 	}
-	
+
+	public NoteModel getAnkivocbModel() {
+		noteModels.find { NoteModel m ->
+			m.name.toLowerCase().startsWith("ankivocb")
+		}
+	}
+
 	public void setNoteModels(List<NoteModel> cols) {
 		assert jsonRoot : "Run parse() first"
 		if (!cols) return
-		jsonRoot.note_models = Helper.parseJson(Helper.jsonToString(cols))
+			jsonRoot.note_models = Helper.parseJson(Helper.jsonToString(cols))
 	}
 
-	public Object getNotes() {
-		assert jsonRoot : "Run parse() first"
-		jsonRoot.notes
+	public List<Note> getAllNotes() {
+		NoteModel[] mods = noteModels
+		def findModel = { String guid ->
+			mods.find { NoteModel m ->
+				m.crowdanki_uuid == guid				
+			}
+		}
+ 
+		jsonRoot.notes.collect {Map jsonMap ->
+			Note n = new Note(jsonMap)
+			n.model = findModel(n.note_model_uuid)
+			return n			
+		} 
 	}
 
 	Map<String, Object> indexNotesByFirstField() {

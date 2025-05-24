@@ -1,8 +1,15 @@
 package vocb.anki.crowd
 
-import groovy.json.JsonOutput
+import groovy.transform.ToString
 import vocb.Helper
 
+
+@ToString(
+includeNames=true,
+ignoreNulls=true,
+includePackage=false,
+includes=['fields']
+)
 public class Note {
 	
 	String __type__ = "Note"
@@ -13,6 +20,7 @@ public class Note {
 	int flags = 0
 	List<String> tags = ["ankiVocb"]
 
+	String note_model_uuid
 	NoteModel model
 
 	public String sndField(String soundRef) {
@@ -43,35 +51,11 @@ public class Note {
 	}
 
 	public void assertIsComplete() {
-		assert enWord
-		assert czWord
 		assert model : "Note has no model set"
 		model.assertIsComplete()
+		note_model_uuid = model.crowdanki_uuid
 		assert model.flds.size() == fields.length : "Model fields doesn't match the note"
 	}
 	
-	String getEnWord() {
-		fields[0]
-	}
-	String getenSoundRef() {
-		fields[1]
-	}
-	String getczWord() {
-		fields[2]
-	}
-	String getczSoundRef() {
-		fields[3]
-	}
-	String getimageRef() {
-		fields[4]
-	}
-
-	public toJson() {
-		JsonOutput.prettyPrint(JsonOutput.toJson(this))
-	}
-
-	@Override
-	public String toString() {
-		return "[enWord=" + enWord +  ", czWord=" + czWord + "]"
-	}
+	
 }
