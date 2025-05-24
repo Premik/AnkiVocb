@@ -58,18 +58,27 @@ public class Corpus {
 	
 	
 	//https://www.kaggle.com/datasets/rtatman/english-word-frequency
-	void importKaggleEnglishWordFreqCsv(Reader reader) {
+	void importKaggleEnglishWordFreqCsv(Reader reader, boolean normalize=true) {
 		Iterator csvLines = CsvParser.parseCsv([:], reader)
+		BigDecimal sum = 0
 		for (line in csvLines) {
 			String w = line."word".toLowerCase().trim()			
 			String c = line."count"
-			assert w && c				
-			wordFreq[w] = new BigDecimal(c)*0.037 //Avg error from other corpuses
+			assert w && c
+			BigDecimal bc = new BigDecimal(c)
+			wordFreq[w] = bc 
+			sum+=bc
+		}		
+		
+		if (normalize) { //Convert freq to ppm
+			wordFreq = wordFreq.collectEntries { String w, BigDecimal f-> 
+				[w, f/sum*1000000]
+			}
 		}
-		println "Imported ${wordFreq.size()} words from Kaggle"
+		println "Imported ${wordFreq.size()} words from Kaggle. Freq sum=$sum"
 	}
 	
-	void loadKaggleEnglishWordFreqCsv() {
+	void loadKaggleEnglishWordFreqCsv(boolean normalize=true) {
 		getClass().getResource('/unigram_freq.csv').withReader(StandardCharsets.UTF_8.toString()) {
 			importKaggleEnglishWordFreqCsv(it)
 		}
@@ -219,20 +228,20 @@ public class Corpus {
 
 	public void addStrange() {
 		wordFreq.putAll( [
-			"tepidity" : 30,
-			"extrauterine" : 20,
-			"eradicte":30,
-			"clearsighted":20,
-			"ilustrious":15,
-			"anathematize":30,
-			"contagiousness":15,
-			"surrende":30,			
+			"tepidity" : 3,
+			"extrauterine" : 2,
+			"eradicte":3,
+			"clearsighted":2,
+			"ilustrious":1,
+			"anathematize":3,
+			"contagiousness":1,
+			"surrende":3,			
 		])
 		
 
 	}
 
-	static Corpus buildDef() {
+	static Corpus buildAll() {
 		Corpus c1 = new Corpus().tap {loadWiki()}		
 		Corpus c2 = new Corpus().tap {loadWordFreq()}
 		c1.averageCommonWordsFrom(c2)
@@ -241,6 +250,13 @@ public class Corpus {
 		c1.addStrange()
 		
 		return c1
+	}
+	
+	static Corpus buildDef() {		
+		new Corpus().tap {
+			loadKaggleEnglishWordFreqCsv()
+			addStrange()
+			}
 	}
 	
 	void statKaggle() {
@@ -267,10 +283,13 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			println c["corrugated"]
-			/*String[] s = sortedByFreq
-			println s.takeRight(1000).each {
+			String[] s = sortedByFreq
+			println s.take(10).each {
 				println "${it.padRight(20)} ${wordFreq[it]}"
-			}*/
+			}
+			println s.takeRight(10).each {
+				println "${it.padRight(20)} ${wordFreq[it]}"
+			}
 			
 
 		}
