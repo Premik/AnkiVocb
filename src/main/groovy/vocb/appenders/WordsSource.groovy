@@ -21,6 +21,7 @@ public class WordsSource {
 	Manager dbMan = new Manager()
 
 	void run(String text) {
+		assert sourceName
 		List<String> words = new ArrayList(wn.uniqueueTokens(text))
 				.findAll {String s -> corp.wordFreq[s] > minFreq }
 				.sort{ String a, String b->
@@ -46,9 +47,11 @@ public class WordsSource {
 			dbMan.db.concepts.add(c)
 			dbMan.save()
 		}
+		dbMan.save()
 	}
 
 	void fromCorups(int limit=100) {
+		sourceName = "corpus"
 		Map<String, BigDecimal> wf = corp.wordFreq		
 		String[] top = wf.keySet().sort { String a, String b->
 			wf[b] <=> wf[a]
@@ -62,7 +65,7 @@ public class WordsSource {
 		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
 		 a.run(supa)*/
 		WordsSource a = new WordsSource()
-		a.fromCorups(5)
+		a.fromCorups(100)
 
 
 		println "Done"

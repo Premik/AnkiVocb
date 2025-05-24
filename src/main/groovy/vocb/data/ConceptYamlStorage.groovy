@@ -28,12 +28,12 @@ public class ConceptYamlStorage {
 	}
 
 	public Concept parseConcept(Map cjs) {
-		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, origins:cjs.origins)		
+		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, origins:cjs.origins)
 		cjs.terms.each {
 			Term t = parseTerm(it)
 			c.terms.put(t.term, t)
 		}
-		
+
 		cjs.examples.each {
 			Term t = parseTerm(it)
 			c.examples.put(t.term, t)
@@ -63,6 +63,18 @@ public class ConceptYamlStorage {
 				"concepts: " +concepts
 	}
 
+	void appendBanner(String label, BigDecimal progress, StringBuilder sb, int width=80) {
+		if (!label) return
+			sb.append("##  ")
+		sb.append(label)
+		sb.append('   ' + '#'*(70-label.length()))
+		if (progress < 0.90) {
+			sb.append(" ${Helper.progressBar(progress)}")
+			sb.append(" ${Helper.roundDecimal(progress*100,0)}%")
+		}
+		sb.append("\n")
+	}
+
 	public String conceptToYaml(Concept c) {
 		assert c
 
@@ -72,12 +84,12 @@ public class ConceptYamlStorage {
 		//sb.append("terms: ").append(Helper.indentNextLines(terms,2))
 		//sb.append("#"*16 + "\n")
 
-		
+
 		String terms=listToYaml(c.terms.values().collect(this.&termToYaml))
 		String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
 		assert ft : "Term list is blank for a conpcept $c"
-		sb.append("##  ").append(ft).append('   ' + '#'*(70-ft.length())).append("\n")
+		appendBanner(ft, c.completeness, sb)
 		appendYamlHash("terms", terms, sb)
 		appendYamlHash("examples", examples, sb)
 		/*sb.append("terms: ")
