@@ -2,6 +2,7 @@ package vocb.corp
 
 import groovy.transform.Memoized
 import vocb.data.Concept
+import vocb.data.Term
 
 
 public class Similarity {
@@ -59,31 +60,54 @@ public class Similarity {
 		if (len == 2) {
 			//Swapped letters in each pair
 			List<String> swpA = allSubstringsWithLen(a, 2).collect {"${it[1]}${it[0]}".toString()}
-			List<String> bSubs = allSubstringsWithLen(b, len)			
+			List<String> bSubs = allSubstringsWithLen(b, len)
 			//ret = (2d*ret + similarWithLen(swpA, bSubs))/3d
 			ret+= similarWithLen(swpA, bSubs)/5d //Similarty after swap has lower weight
 		}
 		return ret
 	}
 
-	@Memoized
+
 	double similarSubstrings(CharSequence a, CharSequence b) {
 		if (!a || !b) return 0
 		int len = Math.min(a.length() ,b.length())
 		int lenDif = Math.abs(a.length() - b.length())
 		double s = (len..1).collect {similarWithLenSmart(a, b, it)*it }.sum()
-		return s+10*rateDistance(lenDif)
+		return s+8*rateDistance(lenDif)
 	}
 
+	@Memoized
 	double similar(CharSequence a, CharSequence b) {
+		if (!a || !b) return 0
 		double selfA = similarSubstrings(a,a)
 		double selfB = similarSubstrings(b,b)
 		double ab = similarSubstrings(a,b)/selfA
 		double ba = similarSubstrings(b,a)/selfB
-		int lenDif = Math.abs(a.length() - b.length())
+		
 
 		//println "${selfA}($ab) ${selfB}( $ba) "
 		return ((ab+ba)/2d).round(4)
+	}
+
+	double termSimilarity(Term t1, Term t2) {
+		if (!t1 || !t2) return 0
+		if (t1.lang != t2.lang) return 0
+		[similar(t1.term, t2.term), 2*similar(t1.pron, t2.pron)].sum()
+	}
+
+	double conceptSimilarity(Concept c1, Concept c2) {
+
+		double sum = [
+			termSimilarity(c1.enTerm, c2.enTerm)*8,
+			termSimilarity(c1.csTerm, c2.csTerm),
+			termSimilarity(c1.csTerm, c2.csAltTerm),
+			termSimilarity(c1.csAltTerm, c2.csAltTerm),
+		].sum()
+	}
+
+	double conceptSimilarityNorm(Concept c1, Concept c2) {
+		conceptSimilarity(c1, c2)/conceptSimilarity(c1, c1)
+
 	}
 
 
@@ -98,7 +122,7 @@ public class Similarity {
 	static void main(String... args) {
 		Similarity n = new Similarity()
 		Corpus c=  Corpus.buildDef()
-		
+
 		println "you yours   ${n.similar("you", "yours")}"
 		println "where whenever  ${n.similar("when", "whenever")}"
 		println "cake cook  ${n.similar("cake", "cook")}"
@@ -108,12 +132,12 @@ public class Similarity {
 
 
 		String[] top = c.topX(16000)
-		def prinSim = {String word-> 
+		def prinSim = {String word->
 			println top.sort {String a, String b ->
 				n.similar(word, b) <=> n.similar(word, a)
 			}.take(100).collect{"$it ${n.similar(word, it)}"}
-		} 
-		
+		}
+
 		prinSim("when")
 		prinSim("what")
 		prinSim("become")
@@ -121,10 +145,10 @@ public class Similarity {
 		prinSim("yesterday")
 		prinSim("wet")
 		prinSim("government")
-		
 
-		 
-		
+
+
+
 
 		//bedroom
 

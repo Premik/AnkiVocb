@@ -1,11 +1,8 @@
 package vocb.corp
 
-import java.util.stream.Collectors
-
-import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
-import vocb.corp.WordNormalizer
+import vocb.data.Term
 
 class SimilarityTest {
 
@@ -48,8 +45,11 @@ class SimilarityTest {
 	}
 
 	@Test
-	void simRelated() {
+	void termSim() {
+		Term t1 = new Term("know")
+		Term t2 = new Term("now")
 		norm.with {
+			assert termSimilarity(t1,t2) > 0.2
 			
 		}
 	}

@@ -10,9 +10,17 @@ class ModelTest {
 	Term t2 = new Term("cs1", "cs", "tts")
 	Term t3 = new Term("cs2", "cs")
 	Concept c = new Concept(terms: [en1:t1, cs1:t2, cs2:t3])
-
-
-
+	
+	@Test constrHelper() {
+		assert t1 == t1
+		assert t1 == Term.csTerm("en1")
+		new Concept().tap {
+			addEnCsTerms("enWord", "csWord")
+			assert terms.size() == 2
+			assert firstTerm == "enWord"
+		}
+		
+	}
 
 	@Test
 	void termCompletness() {

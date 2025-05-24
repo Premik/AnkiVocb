@@ -27,6 +27,19 @@ public class Concept {
 
 	public String getFirstTerm() {terms.values()[0]?.term}
 	public List<Term> termsByLang(String lng) { terms?.values()?.findAll {it.lang == lng }}
+	public Term getEnTerm() { termsByLang("en")[0]}
+	public Term getCsTerm() { termsByLang("cs")[0]}
+	public Term getCsAltTerm() { termsByLang("cs")[1]}
+	public void addEnCsTerms(String en, String cs, String csAlt=null) {
+		terms[en] = Term.enTerm(en)
+		terms[cs] = Term.enTerm(cs)
+		if (csAlt) { terms[csAlt] = Term.enTerm(csAlt)}
+	}
+	
+	/*public Term getEnTerm() {
+		termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
+	}*/
+	
 	public List<Term> examplesByLang(String lng) { examples?.values()?.findAll {it.lang == lng }}
 	public BigDecimal getCompleteness( ) {
 		if (state == "ignore") return 1
@@ -43,8 +56,10 @@ public class Concept {
 		BigDecimal fldSum = [state =="ignoreImage" ? "1" : img, freq].findAll().size()/2.0
 		(grpSum*2 + fldSum)/3
 	}
-	
-	
+
+
+
+
 }
 
 @Canonical
@@ -59,6 +74,9 @@ public class Term {
 	public double getCompleteness() {
 		[term, lang, tts].findAll().size()/3.0
 	}
+
+	public static Term csTerm(String t) {new Term(t, "cs")}
+	public static Term enTerm(String t) {new Term(t, "en")}
 
 
 }
