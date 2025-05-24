@@ -11158,7 +11158,7 @@ concepts:
     tts: cs-terms/sunka.mp3
   freq: 5057.00000
   origins: ["Supaplex"]
-##  sub   ################################################################### no img|t2:tts:missing
+##  sub   ################################################################### no img
 - terms: 
   - term: sub
     lang: en
@@ -11169,9 +11169,10 @@ concepts:
     tts: cs-terms/dilci.mp3
   - term: podřízené
     lang: cs
+    tts: cs-terms/podrizene.mp3
   freq: 4918.00000
   origins: ["Supaplex"]
-##  sandwich   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  sandwich   ############################################################## no img
 - terms: 
   - term: sandwich
     lang: en
@@ -11179,11 +11180,13 @@ concepts:
     pron: ˈsænwɪʤ
   - term: sendvič
     lang: cs
+    tts: cs-terms/sendvic.mp3
   - term: chlebíček
     lang: cs
+    tts: cs-terms/chlebicek.mp3
   freq: 4822.00000
   origins: ["Supaplex"]
-##  runner   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  runner   ################################################################ no img
 - terms: 
   - term: runner
     lang: en
@@ -11191,11 +11194,13 @@ concepts:
     pron: ˈrʌnə
   - term: běžec
     lang: cs
+    tts: cs-terms/bezec.mp3
   - term: závodník
     lang: cs
+    tts: cs-terms/zavodnik.mp3
   freq: 4498.00000
   origins: ["Supaplex"]
-##  bomb   ################################################################## no img|t1:tts:missing
+##  bomb   ################################################################## no img
 - terms: 
   - term: bomb
     lang: en
@@ -11203,6 +11208,7 @@ concepts:
     pron: bɒm
   - term: bomba
     lang: cs
+    tts: cs-terms/bomba.mp3
   freq: 4241.00000
   origins: ["Supaplex"]
 ##  bang   ################################################################## no img|t1:tts:missing|t2:tts:missing
