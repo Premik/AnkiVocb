@@ -8,6 +8,8 @@ import groovy.transform.Canonical
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
 import vocb.conf.TreeConf
+import vocb.corp.WordNormalizer
+
 
 
 @Canonical
@@ -21,7 +23,7 @@ public class PackInfo {
 	
 	
 	TreeConf treeConf	
-	Pack pack
+	Object pack
 		
 	@Lazy Path sentencesPath = treeConf.path.resolve("sentences.txt")
 	@Lazy Path wordsPath= treeConf.path.resolve("words.txt")
@@ -37,9 +39,14 @@ public class PackInfo {
 		return wordsPath.text.split(/\s+/) as List<String>
 	}()
 	
+	@Lazy Set<String> allWords = {	
+		WordNormalizer wn = pack.wn		
+		wn.wordsInSentences(sentences).keySet().plus(wordList).sort() as Set<String> 
+	}()
+	
 		
 	@Lazy Path destPath = {
-		assert pack.destRootFolder 
+		assert pack?.destRootFolder 
 		pack.destRootFolder.resolve(name?:displayName).tap {
 			toFile().mkdirs()
 		}
@@ -47,6 +54,20 @@ public class PackInfo {
 	
 	public String getName() {
 		treeConf.name
+	}
+	
+	@Deprecated
+	public List<String> getExcludeWordsFromPackageNames() {
+		treeConf.conf.excludeWordsFromPackages?:[]
+	}
+	
+	public List<PackInfo> getExcludeWordsFromPackage() {
+		excludeWordsFromPackageNames.collect {
+			List<PackInfo> infos = pack.pkgsByName(it)
+			assert infos.size() == 1
+			return infos[0]			
+		}
+		
 	}
 	
 	public String getDisplayName() {
@@ -73,8 +94,9 @@ public class PackInfo {
 		if (!name) return ""	
 		String p = name.toLowerCase()*10
 		assert p.length() > 30
+		p = p[0..21] 
 		//return "ankivocb-${p[0..3]}-${p[4..7]}-${p[8..11]}-${p[11..22]}"
-		return "ankivocb-2020-${p[0..21]}"
+		return "ankivocb-2020-$p"
 	}
 	
 	

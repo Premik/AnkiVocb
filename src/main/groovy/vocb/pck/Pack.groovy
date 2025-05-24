@@ -32,15 +32,18 @@ public class Pack {
 	ConfHelper cfgHelper = new ConfHelper()
 	@Lazy ConfigObject cfg = cfgHelper.config
 
-	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage)
+	@Lazy
+	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
-	@Lazy List<PackInfo> allPackInfos = {
+	@Lazy List<PackInfo> allPackInfos = {		
 		treeConf.leafs.collect { TreeConf<PackInfo> tc->
+			
 			PackInfo pi = new PackInfo(
-					pack: this,
+					pack: this,					
 					treeConf: tc).tap {
 						tc.obj= it
 					}
+			return pi
 		}
 	}()
 	
@@ -57,6 +60,7 @@ public class Pack {
 		cfgHelper.extraLookupFolders.add(pkgFile)
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
 		if (info.sentences) {
+			exportExamples.clear()
 			exportSentences(info.sentences, d2c.dbMan)
 			d2c.exportExamplesToCrowd(exportExamples)
 		}
@@ -120,13 +124,28 @@ public class Pack {
 		println "Done"
 	}
 	
+	public List<PackInfo>  pkgsByName(String name) {
+		allPackInfos.findAll {it.treeConf.name.containsIgnoreCase(name)}
+	}
+	
+	
 	public exportByName(String name) {
-		export(allPackInfos.findAll {it.treeConf.name.containsIgnoreCase("name")})
+		export(pkgsByName(name))
+	}
+	
+	Set<String> wordsFromAllPackages() {
+		allPackInfos.collect {it.allWords}.flatten().sort() as Set<String>
 	}
 
 
 	public static void main(String[] args) {
-		new Pack().exportByName("marry")
+		new Pack().tap { Pack p->
+			
+			println wordsFromAllPackages().size()
+			
+			
+			//p.exportByName("mary")
+		}
 		println "Done"
 
 	}
