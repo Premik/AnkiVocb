@@ -56,21 +56,17 @@
     "dyn": 0,
     "extendNew": 10,
     "extendRev": 50,
-    "media_files": [
-        
-    ],
+    "media_files": [],
     "name": "ankivocbTemplate",
     "note_models": [
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "ankivocb-8082-11ea-b853-d8cb8a536b75",
-            "css": ".card {\n font-family: Helvetica;\n font-size: 30px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.card img {\n  opacity: 0.90;\n  margin: 10px;\n}\n\n.buttonRounded {\n  border: none;\n  padding: 30px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  border-radius: 50%;\n\n}\n\n\n#hintButton {\n  background-image: url('lightBulb.png');\n  background-repeat: no-repeat;\n  background-color: #8adbdb;\n  background-position: center; \n  /*float: right;*/\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n  \n\n#hint {\n  font-family: 'Courier New', Courier, monospace;\n  color: green;\n}\n\n.rounded {\n  border: 1px 1px 1px 0px black;\n  background-color: #76bdbde8;\n  border-radius: 7px;\n  color: #fff;\n  position: relative;\n  left: 0;\n}\n\n.shadow {\n  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);\n}\n\n.foreign {\n  font-weight:bold\n}\n\n\n\n",
+            "css": "\n\n.shadow {\n -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);\n -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);\n -o-box-shadow: 5px 6px 5px 0px  rgba(0,0,0,0.68);\n box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);\n}\n\n\n.wrapper {\n  padding: 10px;\n\tdisplay: flex;\t\n  flex-flow: row wrap;\n /* justify-content: center;\n   justify-content: space-between;\n  align-items: center; */\n  align-items: center;\n  background-color: #72c4c4e8;\n  color: #fff;\n  font-family: Helvetica;\n  font-size: 1.3em;\n  font-weight: bold;\n  /*line-height: 40px;*/\n  text-align: center;\n  text-shadow: 2px 2px 3px  #121f1fee, -1px 0 10px #00ffffc9;\n  \n  /*opacity: 0.9;\n  filter: alpha(opacity=9);*/\n  \n \n}\n\n.wrapper > * {\n  flex: 1 100%;\n  /*margin: auto;*/\n  margin: 5px;\n /* min-height: 80px;\n line-height: 80px; */\n /* background-color: aqua;*/\n \n \n  \n  /*vertical-align: middle;*/\n}\n\n\n.foreign {\n  /*background-image: url(\"ukFlagBlur.png\");\n  background-size: contain;\n  background-repeat: no-repeat;*/\n  color:rgb(255, 50, 50);\n  z-index: 1;\n  \n}\n\n.native {\n  /*background-image: url(\"csFlagBlur.png\");\n  background-size: 100% 100%;*\n  background-size: contain;\n  background-repeat: no-repeat;*/\n  color:rgb(50, 255, 50);\n}\n\n\n.native1, .native2, .foreignTerm, .hint {\n  font-size: 1.6em;\n  text-transform: uppercase;\n}\n\n.hint {\nfont-family: 'Courier New', Courier, monospace;\n}\n\n@keyframes fadeIn {\n  from { opacity: 0; }\n  to { opacity: 1; }\n}\n\n.hintCover {\n  /*display: none;*/\n  visibility:hidden;\n}\n\n.hintUncover {\n  animation: fadeIn 3s;\n  /*animation-delay: 5s;*/\n  animation-fill-mode: forwards;\n}\n\n.rounded {\n  /* border: 1px 1px 1px 0px black;  */\n  border-radius: 18px;\n  -moz-border-radius: 18px;\n  -webkit-border-radius: 18px;\n  border: 0px solid #000000;   \n}\n\n/*\n.native1, .native2 {  \n  line-height: 200px; \n  background-color: #2600ffe8;  \n}*/\n\n.tags {\n  color: yellow;\n  font-size: 2em;  \n}\n\n\n@media all and (min-width: 800px) {\n\n  .tags {    \n    position: absolute;\n    left: 40px;\n    top: 40px;\n  }\n\n #hintButton {\n \n  position: absolute;\n  right: 40px;\n  top: 40px;\n}\n  \n  \n  .native1, .native2 {\n    flex: 1 auto;  \n  /*  background-color: #ff0040e8; */\n  } \n}\n\n\n@media all and (min-width: 1200px) {\n\n  .tags {order: 1;}\n  .foreign { order: 2;}\n  .native1 { order: 3; }\n  .img { \n    order: 4;\n    flex: 1 auto; \n  }\n  .native2 { order: 5;}\n  .foreignExample { order: 6;}\n  .nativeExample { order: 7;}  \n}\n\n\n\n.buttonRounded {\n  border: none;\n  padding: 30px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  margin: 4px 2px;\n  border-radius: 50%;\n\n}#hintButton {\n  background-image: url('lightBulb.png');\n  background-repeat: no-repeat;\n  background-color: #8adbdb;\n  background-position: center; \n  width: 80px;\n  cursor: pointer;\n  z-index: 2;\n  /*float: right;*/\n \n}\n  \n\n",
             "flds": [
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "img",
                     "ord": 0,
                     "rtl": false,
@@ -79,9 +75,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "freq",
                     "ord": 1,
                     "rtl": false,
@@ -90,9 +84,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "foreign",
                     "ord": 2,
                     "rtl": false,
@@ -101,9 +93,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "foreignTTS",
                     "ord": 3,
                     "rtl": false,
@@ -112,9 +102,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "foreignExample",
                     "ord": 4,
                     "rtl": false,
@@ -123,9 +111,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "foreignExampleTTS",
                     "ord": 5,
                     "rtl": false,
@@ -134,9 +120,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "native",
                     "ord": 6,
                     "rtl": false,
@@ -145,9 +129,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "nativeTTS",
                     "ord": 7,
                     "rtl": false,
@@ -156,9 +138,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "nativeAlt",
                     "ord": 8,
                     "rtl": false,
@@ -167,9 +147,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "nativeAltTTS",
                     "ord": 9,
                     "rtl": false,
@@ -178,9 +156,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "nativeExample",
                     "ord": 10,
                     "rtl": false,
@@ -189,9 +165,7 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [
-                        
-                    ],
+                    "media": [],
                     "name": "nativeExampleTTS",
                     "ord": 11,
                     "rtl": false,
@@ -210,29 +184,73 @@
                         0,
                         2,
                         3,
-                        6
+                        4,
+                        5,
+                        6,
+                        8,
+                        10
+                    ]
+                ],
+                [
+                    1,
+                    "any",
+                    [
+                        0,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        11
+                    ]
+                ],
+                [
+                    2,
+                    "any",
+                    [
+                        0,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        11
                     ]
                 ]
             ],
             "sortf": 2,
-            "tags": [
-                
-            ],
+            "tags": [],
             "tmpls": [
                 {
-                    "afmt": "<div class=\"rounded shadow\">\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<div><img src=\"{{img}}\"></div>\n\n\t\t\t\t<div class=\"question\">{{foreign}}</div>\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t\t<hr>\n\n\n\t\t\t\t<div class=\"answer\">{{native}}</div>\n\t\t\t\t[sound:{{nativeTTS}}]\n\n\t\t\t\t{{#nativeAlt}}\n\t\t\t\t<div class=\"answer\">{{nativeAlt}}</div>\n\t\t\t\t[sound:{{nativeTTSAlt}}]\n\t\t\t\t{{/nativeAlt}}\n\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t{{#foreignExample}}\n\t\t\t\t<hr>\n\t\t\t\t<div class=\"answer\">{{foreignExample}}</div>\n\t\t\t\t[sound:{{foreignExampleTTS}}]\n\t\t\t\t{{/foreignExample}}\n\t\t\t\t\n\n\t\t\t</div>\n\n\t\t\t",
-                    "bafmt": "",
-                    "bqfmt": "",
+                    "afmt": "\n\n\n\n<div class=\"wrapper rounded shadow\">\n\n    <div class=\"tags\">{{Tags}}</div>\n        \n\n    <div class=\"foreign foreignTerm\">\n        <span>{{foreign}}</span>[sound:{{foreignTTS}}]\n    </div>\n\n    \n\n\n    <figure class=\"img\"><img class=\"shadow\" src=\"{{img}}\"></span></figure>\n\n    <div class=\"native native1\">\n        <!-- {{#native}} -->    \n        <span>{{native}}</span>[sound:{{nativeTTS}}]\n        <!-- {{/native}} -->        \n    </div>\n\n    \n    <div class=\"native native2\">\n        <!-- {{#nativeAlt}} -->    \n        <span>{{nativeAlt}}</span>[sound:{{nativeAltTTS}}]\n        <!-- {{/nativeAlt}} -->\n    </div>\n    \n\n    \n    <div class=\"native nativeExample\">\n        <span>{{nativeExample}}</span>[sound:{{nativeExampleTTS}}]\n    </div>\n    \n\n    \n    <div class=\"foreign foreignExample\">        \n        <span>{{foreignExample}}</span>[sound:{{foreignExampleTTS}}]\n    </div>\n    \n\n    \n\n</div>\n\n",
+                    "bafmt": "{{native}} {{nativeAlt}}",
+                    "bqfmt": "{{foreign}}",
                     "did": null,
                     "name": "Card 1",
                     "ord": 0,
-                    "qfmt": "<div class=\"rounded shadow\">\n\t\t\t\t\t<button id=\"hintButton\" class=\"buttonRounded\" onclick=\"showHint()\" type=\"button\">HINT</button>\n\t\t\t\t\n\t\t\t\t<div><img src=\"{{img}}\"></div>\n\n\t\t\t\t<div class=\"question\">{{foreign}}</div>\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t\n\n\t\t\t\t<div class=\"hintPane\">\t\t\t\t\t\n\t\t\t\t\t\t<div id=\"hint\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\n\t\t\t\t\n\n\t\t\t</div>\n\n\t\t\t<script>\n\t\t\t\tfunction coverWord(w) {\n\t\t\t\t\tvar placeholder = '-';\n\t\t\t\t\tvar chrs = Array.from(w)\n\t\t\t\t\tvar end = chrs.length;\n\t\t\t\t\tvar start = 0;\n\t\t\t\t\tif (chrs.length > 1) start++;\n\t\t\t\t\tif (chrs.length > 5) end--;\n\t\t\t\t\tif (chrs.length > 8) start++;\n\n\t\t\t\t\tfor (var i = start; i < end; i++) {\n\t\t\t\t\t\tchrs[i] = placeholder;\n\t\t\t\t\t}\n\t\t\t\t\treturn chrs.join(\"\");\n\t\t\t\t}\n\t\t\t\tfunction showHint() {\n\t\t\t\t\tvar hint = document.getElementById(\"hint\");\n\t\t\t\t\thint.innerText = coverWord(\"{{native}}\");\n\t\t\t\t\tdocument.getElementById(\"hintButton\").style.display = \"none\";\n\t\t\t\t}\n\t\t\t</script>"
+                    "qfmt": "\n\n\n\n<div class=\"wrapper rounded shadow\">\n\n    <div class=\"tags\">{{Tags}}</div>\n\n       \n    <div class=\"foreign foreignTerm\">\n        <span>{{foreign}}</span>[sound:{{foreignTTS}}]\n    </div>\n\n    <button id=\"hintButton\" class=\"buttonRounded\" onclick=\"showHint()\" type=\"button\">HINT</button>\n\n\n    <figure class=\"img hintCover\"><img class=\"shadow\" src=\"{{img}}\"></span></figure>\n\n    <div class=\"native native1 hintCover hint\">{{native}}</div>\n    \n    \n    \n    <div class=\"native native2 hintCover hint\">{{nativeAlt}}</div>\n    \n\n     \n    <div class=\"native nativeExample hintCover\">\n        <span>{{nativeExample}}</span>\n    </div>\n    \n    <div class=\"foreign foreignExample\">\n        <span>{{foreignExample}}</span>[sound:{{foreignExampleTTS}}]\n    </div>\n    \n\n\n\n</div>\n\n<script>\n\n    function coverWord(w) {\n        var placeholder = '-';\n        var chrs = Array.from(w)\n        var end = chrs.length;\n        var start = 0;\n        if (chrs.length > 1) start++;\n        if (chrs.length > 4) end--;\n        if (chrs.length > 7) start++;\n\n        for (var i = start; i < end; i++) {\n            chrs[i] = placeholder;\n        }\n        return chrs.join(\"\");\n    }\n    function showHint() {\n        \n        var hints = document.getElementsByClassName('hint');\n        for (var i = 0; i < hints.length; i++) {\n            var covered = coverWord(hints[i].textContent);\n            hints[i].textContent = covered;\n            hints[i].classList.remove('hintCover');\n        };\n        setTimeout(function() { \n            var imgCover = document.getElementsByClassName('hintCover');\n            for (var i = 0; i < imgCover.length; i++) {                \n                imgCover[i].classList.add('hintUncover');\n                imgCover[i].classList.remove('hintCover');\n            }\n        }, 5000);\n        document.getElementById(\"hintButton\").style.display = \"none\";\n    }\n\n\n</script>\n\n"
+                },
+                {
+                    "afmt": "\n\n\n\n<div class=\"wrapper rounded shadow\">\n\n    <div class=\"tags\">{{Tags}}</div>\n        \n\n    <div class=\"foreign foreignTerm\">\n        <span>{{foreign}}</span>[sound:{{foreignTTS}}]\n    </div>\n\n    \n\n\n    <figure class=\"img\"><img class=\"shadow\" src=\"{{img}}\"></span></figure>\n\n    <div class=\"native native1\">\n        <!-- {{#native}} -->    \n        <span>{{native}}</span>[sound:{{nativeTTS}}]\n        <!-- {{/native}} -->        \n    </div>\n\n    \n    <div class=\"native native2\">\n        <!-- {{#nativeAlt}} -->    \n        <span>{{nativeAlt}}</span>[sound:{{nativeAltTTS}}]\n        <!-- {{/nativeAlt}} -->\n    </div>\n    \n\n    \n    <div class=\"native nativeExample\">\n        <span>{{nativeExample}}</span>[sound:{{nativeExampleTTS}}]\n    </div>\n    \n\n    \n    <div class=\"foreign foreignExample\">        \n        <span>{{foreignExample}}</span>[sound:{{foreignExampleTTS}}]\n    </div>\n    \n\n    \n\n</div>\n\n",
+                    "bafmt": "{{foreign}}",
+                    "bqfmt": "{{native}} {{nativeAlt}}",
+                    "did": null,
+                    "name": "Card 2",
+                    "ord": 1,
+                    "qfmt": "\n\n\n\n<div class=\"wrapper rounded shadow\">\n\n    <div class=\"tags\">{{Tags}}</div>\n\n       \n    <div class=\"foreign foreignTerm hintCover hint\">{{foreign}}</div>\n\n    <button id=\"hintButton\" class=\"buttonRounded\" onclick=\"showHint()\" type=\"button\">HINT</button>\n\n\n    <figure class=\"img hintCover\"><img class=\"shadow\" src=\"{{img}}\"></span></figure>\n\n    <div class=\"native native1\">{{native}}</div>\n    \n        \n    <div class=\"native native2\">{{nativeAlt}}</div>\n    \n\n     \n    <div class=\"native nativeExample\">\n        <span>{{nativeExample}}</span>[sound:{{nativeExampleTTS}}]\n    </div>\n    \n    \n    <div class=\"foreign foreignExample hintCover\">\n        <span>{{foreignExample}}</span>\n    </div>\n    \n\n\n\n</div>\n\n<script>\n\n    function coverWord(w) {\n        var placeholder = '-';\n        var chrs = Array.from(w)\n        var end = chrs.length;\n        var start = 0;\n        if (chrs.length > 1) start++;\n        if (chrs.length > 4) end--;\n        if (chrs.length > 7) start++;\n\n        for (var i = start; i < end; i++) {\n            chrs[i] = placeholder;\n        }\n        return chrs.join(\"\");\n    }\n    function showHint() {\n        \n        var hints = document.getElementsByClassName('hint');\n        for (var i = 0; i < hints.length; i++) {\n            var covered = coverWord(hints[i].textContent);\n            hints[i].textContent = covered;\n            hints[i].classList.remove('hintCover');\n        };\n        setTimeout(function() { \n            var imgCover = document.getElementsByClassName('hintCover');\n            for (var i = 0; i < imgCover.length; i++) {                \n                imgCover[i].classList.add('hintUncover');\n                imgCover[i].classList.remove('hintCover');\n            }\n        }, 5000);\n        document.getElementById(\"hintButton\").style.display = \"none\";\n    }\n\n\n</script>\n\n"
+                },
+                {
+                    "afmt": "\n\n\n\n<div class=\"wrapper rounded shadow\">\n\n    <div class=\"tags\">{{Tags}}</div>\n        \n\n    <div class=\"foreign foreignTerm\">\n        <span>{{foreign}}</span>[sound:{{foreignTTS}}]\n    </div>\n\n    \n\n\n    <figure class=\"img\"><img class=\"shadow\" src=\"{{img}}\"></span></figure>\n\n    <div class=\"native native1\">\n        <!-- {{#native}} -->    \n        <span>{{nativeAlt}}</span>[sound:{{nativeAltTTS}}]\n        <!-- {{/native}} -->        \n    </div>\n\n    \n    <div class=\"native native2\">\n        <!-- {{#nativeAlt}} -->    \n        <span>{{native}}</span>[sound:{{nativeTTS}}]\n        <!-- {{/nativeAlt}} -->\n    </div>\n    \n\n    \n    <div class=\"native nativeExample\">\n        <span>{{nativeExample}}</span>[sound:{{nativeExampleTTS}}]\n    </div>\n    \n\n    \n    <div class=\"foreign foreignExample\">        \n        <span>{{foreignExample}}</span>[sound:{{foreignExampleTTS}}]\n    </div>\n    \n\n    \n\n</div>\n\n",
+                    "bafmt": "{{foreign}}",
+                    "bqfmt": "{{nativeAlt}} {{native}}",
+                    "did": null,
+                    "name": "Card 3",
+                    "ord": 2,
+                    "qfmt": "\n\n\n\n<div class=\"wrapper rounded shadow\">\n\n    <div class=\"tags\">{{Tags}}</div>\n\n       \n    <div class=\"foreign foreignTerm hintCover hint\">{{foreign}}</div>\n\n    <button id=\"hintButton\" class=\"buttonRounded\" onclick=\"showHint()\" type=\"button\">HINT</button>\n\n\n    <figure class=\"img hintCover\"><img class=\"shadow\" src=\"{{img}}\"></span></figure>\n\n    <div class=\"native native1\">{{nativeAlt}}</div>\n    \n        \n    <div class=\"native native2\">{{native}}</div>\n    \n\n     \n    <div class=\"native nativeExample\">\n        <span>{{nativeExample}}</span>[sound:{{nativeExampleTTS}}]\n    </div>\n    \n    \n    <div class=\"foreign foreignExample hintCover\">\n        <span>{{foreignExample}}</span>\n    </div>\n    \n\n\n\n</div>\n\n<script>\n\n    function coverWord(w) {\n        var placeholder = '-';\n        var chrs = Array.from(w)\n        var end = chrs.length;\n        var start = 0;\n        if (chrs.length > 1) start++;\n        if (chrs.length > 4) end--;\n        if (chrs.length > 7) start++;\n\n        for (var i = start; i < end; i++) {\n            chrs[i] = placeholder;\n        }\n        return chrs.join(\"\");\n    }\n    function showHint() {\n        \n        var hints = document.getElementsByClassName('hint');\n        for (var i = 0; i < hints.length; i++) {\n            var covered = coverWord(hints[i].textContent);\n            hints[i].textContent = covered;\n            hints[i].classList.remove('hintCover');\n        };\n        setTimeout(function() { \n            var imgCover = document.getElementsByClassName('hintCover');\n            for (var i = 0; i < imgCover.length; i++) {                \n                imgCover[i].classList.add('hintUncover');\n                imgCover[i].classList.remove('hintCover');\n            }\n        }, 5000);\n        document.getElementById(\"hintButton\").style.display = \"none\";\n    }\n\n\n</script>\n\n"
                 }
             ],
             "type": 0,
-            "vers": [
-                
-            ]
+            "vers": []
         }
     ],
     "notes": [
