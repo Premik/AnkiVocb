@@ -1,4 +1,1 @@
-
-## Description 
-
-*TBD*
+Názvy levelů ze staré hry `Supaplex`.
