@@ -43,22 +43,22 @@ public class Manager {
 	Map<String, Set<Concept>> conceptsByEnWordsInSample = [:]
 
 	Map<String, Set<Example>> examplesByFirstTermWords = [:]
-	
+
 	//Map<String, Concept> multiWordconceptByFirstTerm = [:]
-	
+
 	List<Concept> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
 	static BigDecimal[] freqRanges = [
 		0,
-		3,
-		50,
-		165,
-		400,
-		1200,
-		1000*1000
+		49,
+		116,
+		255,
+		540,
+		1407,
+		1000*1000*1000
 	]
-	.collect{it*1000 as BigDecimal} as BigDecimal[]
+	.collect{it as BigDecimal} as BigDecimal[]
 
 	public static Integer numberOfStarsFreq(BigDecimal freq) {
 		if (!freq) return null
@@ -75,23 +75,23 @@ public class Manager {
 		return pad
 	}
 
-	public Concept findConceptByFirstTermAnyVariant(String firstTerm, boolean preferOrigialWord=true) {		
+	public Concept findConceptByFirstTermAnyVariant(String firstTerm, boolean preferOrigialWord=true) {
 		findConceptsByFirstTermAllVariant(firstTerm, preferOrigialWord)[0]
 	}
-	
+
 	public Collection<Concept> findConceptsByFirstTermAllVariant(String firstTerm, boolean preferOrigialWord=true) {
-		List<String> variants = wn.wordVariants(wn.stripBracketsOut(firstTerm), preferOrigialWord)		
-		variants.findResults {conceptByFirstTerm[it] }		
+		List<String> variants = wn.wordVariants(wn.stripBracketsOut(firstTerm), preferOrigialWord)
+		variants.findResults {conceptByFirstTerm[it] }
 	}
-	
-	
+
+
 
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
 		conceptsByTerm = [:].withDefault {[] as LinkedHashSet}
 		conceptsByStar = [:].withDefault {[] as LinkedHashSet}
 		examplesByFirstTermWords = [:].withDefault {[] as LinkedHashSet}
-		//multiWordconceptByFirstTerm = [:] as HashMap 
+		//multiWordconceptByFirstTerm = [:] as HashMap
 
 
 		ignoreConcepts.clear()
@@ -106,7 +106,6 @@ public class Manager {
 			}
 			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
 			if (c.ignore) ignoreConcepts.add(c)
-		
 		}
 
 		db.examples.each { Example e->
@@ -116,8 +115,6 @@ public class Manager {
 		}
 
 		conceptsByEnWordsInSample = conceptsByWordsInSample()
-		
-		
 	}
 
 	void withTerms(boolean includeExamples=false, Closure cl) {
@@ -401,7 +398,7 @@ public class Manager {
 	void printStats() {
 		int accu=0
 		(5..0).each {
-			int sz = conceptsByStar[it].size()
+			int sz = conceptsByStar[it].findAll{!it.ignore}.size()
 			if (it == 0) sz+=conceptsByStar[null].size()
 			accu+=sz
 			String samples = conceptsByStar[it].take(40).collect {it.firstTerm}
@@ -488,11 +485,23 @@ public class Manager {
 		save()
 	}
 
+	void tuneStars() {
+		db.concepts.findAll {!it.ignore}.sort {-1*it.freq}
+		.drop(650)
+		.take(400).each {
+			println it
+		}
+		printStats()
+	}
+
 
 
 	public static void main(String[] args) {
+
 		new Manager().tap {
 			load()
+			tuneStars()
+			return
 			validate()
 			printStats()
 			//allTextWithLang("cs").each {println it}

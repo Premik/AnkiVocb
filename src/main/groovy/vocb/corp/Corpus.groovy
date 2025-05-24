@@ -265,7 +265,7 @@ public class Corpus {
 		if (b) {
 
 			//Brackets were included. Try main word without the brackets first
-			ret = getFreqFromSentenceAnyVariant(a)
+			ret = getFreqFromSentenceAnyVariant(a, 1, 0.2)
 			if (ret) return ret
 			//Try word(s) in the bracket
 			ret = getFreqFromSentenceAnyVariant(b, 0.5)
