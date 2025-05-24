@@ -3,6 +3,8 @@ package vocb.anki.crowd
 import java.nio.file.Path
 import java.nio.file.Paths
 
+import javax.naming.LimitExceededException
+
 import groovy.transform.Memoized
 import vocb.Helper
 import vocb.corp.Similarity
@@ -151,7 +153,7 @@ public class Data2Crowd {
 
 	public static void main(String[] args) {
 		Data2Crowd a = new Data2Crowd()
-		a.exportToCrowd()
+		a.exportToCrowd(20)
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
 

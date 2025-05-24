@@ -59,7 +59,7 @@
 }
 
 
-.native1, .native2, .foreignTerm {
+.native1, .native2, .foreignTerm, #hint {
   font-size: 1.6em;
   text-transform: uppercase;
 }
@@ -107,4 +107,33 @@
   .native2 { order: 4;}
   .foreignExample { order: 4;}
   .nativeExample { order: 4;}  
+}
+
+
+
+.buttonRounded {
+  border: none;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+
+}#hintButton {
+  background-image: url('lightBulb.png');
+  background-repeat: no-repeat;
+  background-color: #8adbdb;
+  background-position: center; 
+  /*float: right;*/
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+  
+
+#hint {
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
 }
