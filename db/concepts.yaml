@@ -11872,68 +11872,86 @@ concepts:
     tts: cs-terms/vznetovy.mp3
   img: img/diesel.jpeg
   freq: 22.00000
-##  goes   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  goes   ################################################################## t0:pron:missing
 - terms: 
   - term: goes
     lang: en
+    tts: en-terms/goes.mp3
   - term: jde
     lang: cs
+    tts: cs-terms/jde.mp3
   - term: chodí
     lang: cs
+    tts: cs-terms/chodi.mp3
   img: img/goes.jpeg
   freq: 100235.00000
-##  move   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  move   ################################################################## t0:pron:missing
 - terms: 
   - term: move
     lang: en
+    tts: en-terms/move.mp3
   - term: pohybovat
     lang: cs
+    tts: cs-terms/pohybovat.mp3
   - term: posunout
     lang: cs
+    tts: cs-terms/posunout.mp3
   img: img/move.jpeg
   freq: 53046.00000
-##  shut   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  shut   ################################################################## t0:pron:missing
 - terms: 
   - term: shut
     lang: en
+    tts: en-terms/shut.mp3
   - term: zavřít
     lang: cs
+    tts: cs-terms/zavrit.mp3
   - term: umlčet
     lang: cs
+    tts: cs-terms/umlcet.mp3
   img: img/shut.jpeg
   freq: 45918.00000
-##  wheels   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  wheels   ################################################################ t0:pron:missing
 - terms: 
   - term: wheels
     lang: en
+    tts: en-terms/wheels.mp3
   - term: kola
     lang: cs
+    tts: cs-terms/kola.mp3
   img: img/wheels.jpeg
   freq: 18427.00000
-##  bus   ################################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  bus   ################################################################### t0:pron:missing
 - terms: 
   - term: bus
     lang: en
+    tts: en-terms/bus.mp3
   - term: autobus
     lang: cs
+    tts: cs-terms/autobus.mp3
   img: img/bus.jpeg
   freq: 13755.00000
-##  horn   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  horn   ################################################################## t0:pron:missing
 - terms: 
   - term: horn
     lang: en
+    tts: en-terms/horn.mp3
   - term: roh
     lang: cs
+    tts: cs-terms/roh.mp3
   - term: houkačka
     lang: cs
+    tts: cs-terms/houkacka.mp3
   img: img/horn.jpeg
   freq: 11019.00000
-##  swish   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  swish   ################################################################# t0:pron:missing
 - terms: 
   - term: swish
     lang: en
+    tts: en-terms/swish.mp3
   - term: svištět
     lang: cs
+    tts: cs-terms/svistet.mp3
   img: img/swish.jpeg
   freq: 1172.00000
 - terms: 
@@ -11943,26 +11961,31 @@ concepts:
     lang: cs
   state: ignore
   freq: 274.00000
-##  wipers   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  wipers   ################################################################ t0:pron:missing
 - terms: 
   - term: wipers
     lang: en
+    tts: en-terms/wipers.mp3
   - term: stěrače
     lang: cs
+    tts: cs-terms/sterace.mp3
   img: img/wipers.jpeg
   freq: 60.00000
-##  beep   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  beep   ################################################################## t0:pron:missing
 - terms: 
   - term: beep
     lang: en
+    tts: en-terms/beep.mp3
   - term: píp
     lang: cs
+    tts: cs-terms/pip.mp3
   img: img/beep.jpeg
   freq: 60.00000
-##  shush   ################################################################# no cs term|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  shush   ################################################################# no cs term|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: shush
     lang: en
+    tts: en-terms/shush.mp3
   - term: píp
     lang: pššš
   img: img/shush.jpeg
