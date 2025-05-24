@@ -71,6 +71,22 @@ concepts:
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex", "conceptDbSamples"]
+##  i   ##################################################################### ▇ 81%
+- terms: 
+  - term: i
+    lang: en
+  - term: já
+    lang: cs
+    tts: ja.mp3
+  examples: 
+  - term: I am happy.
+    lang: en
+    tts: I am happy.mp3
+  - term: Já jsem šťastný.
+    lang: cs
+    tts: Ja jsem stastny.mp3
+  freq: 7871531.00000
+  origins: ["Manualy"]
 ##  and   ###################################################################
 - terms: 
   - term: and
