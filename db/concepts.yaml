@@ -24397,7 +24397,6 @@ concepts:
     tts: cs-terms/vykrikl.mp3
   img: img/exclaimed.jpeg
   freq: 2.24450
-##  search   ################################################################ no img
 - terms: 
   - term: search
     lang: en
@@ -24405,8 +24404,8 @@ concepts:
   - term: prohledat
     lang: cs
     tts: cs-terms/prohledat.mp3
+  img: img/search.jpeg
   freq: 1741.28710
-##  contact   ############################################################### no img
 - terms: 
   - term: contact
     lang: en
@@ -24414,8 +24413,8 @@ concepts:
   - term: kontakt
     lang: cs
     tts: cs-terms/kontakt.mp3
+  img: img/contact.jpeg
   freq: 1098.10850
-##  web   ################################################################### no img
 - terms: 
   - term: web
     lang: en
@@ -24426,8 +24425,8 @@ concepts:
   - term: tkanivo
     lang: cs
     tts: cs-terms/tkanivo.mp3
+  img: img/web.jpeg
   freq: 1053.47060
-##  click   ################################################################# no img
 - terms: 
   - term: click
     lang: en
@@ -24438,8 +24437,8 @@ concepts:
   - term: cvaknout
     lang: cs
     tts: cs-terms/cvaknout.mp3
+  img: img/click.jpeg
   freq: 912.64130
-##  email   ################################################################# no img
 - terms: 
   - term: email
     lang: en
@@ -24447,8 +24446,8 @@ concepts:
   - term: email (elektronická pošta)
     lang: cs
     tts: cs-terms/email-cs.mp3
+  img: img/email.jpeg
   freq: 754.85690
-##  post   ################################################################## no img
 - terms: 
   - term: post
     lang: en
@@ -24459,8 +24458,8 @@ concepts:
   - term: poslat (poštou)
     lang: cs
     tts: cs-terms/poslat.mp3
+  img: img/post.jpeg
   freq: 668.15210
-##  available   ############################################################# no img
 - terms: 
   - term: available
     lang: en
@@ -24471,8 +24470,8 @@ concepts:
   - term: dostupné
     lang: cs
     tts: cs-terms/dostupne.mp3
+  img: img/available.jpeg
   freq: 645.51740
-##  video   ################################################################# no img
 - terms: 
   - term: video
     lang: en
@@ -24480,8 +24479,8 @@ concepts:
   - term: video
     lang: cs
     tts: cs-terms/video-cs.mp3
+  img: img/video.jpeg
   freq: 621.31430
-##  privacy   ############################################################### no img
 - terms: 
   - term: privacy
     lang: en
@@ -24489,8 +24488,8 @@ concepts:
   - term: soukromí
     lang: cs
     tts: cs-terms/soukromi.mp3
+  img: img/privacy.jpeg
   freq: 566.67010
-##  research   ############################################################## no img
 - terms: 
   - term: research
     lang: en
@@ -24498,8 +24497,8 @@ concepts:
   - term: výzkum
     lang: cs
     tts: cs-terms/vyzkum.mp3
+  img: img/research.jpeg
   freq: 529.71530
-##  program   ############################################################### no img
 - terms: 
   - term: program
     lang: en
@@ -24507,8 +24506,8 @@ concepts:
   - term: program
     lang: cs
     tts: cs-terms/program-cs.mp3
+  img: img/program.jpeg
   freq: 521.46630
-##  international   ######################################################### no img
 - terms: 
   - term: international
     lang: en
@@ -24516,8 +24515,8 @@ concepts:
   - term: mezinárodní
     lang: cs
     tts: cs-terms/mezinarodni.mp3
+  img: img/international.jpeg
   freq: 502.68160
-##  travel   ################################################################ no img
 - terms: 
   - term: travel
     lang: en
@@ -24525,8 +24524,8 @@ concepts:
   - term: cestovat
     lang: cs
     tts: cs-terms/cestovat.mp3
+  img: img/travel.jpeg
   freq: 489.21520
-##  code   ################################################################## no img
 - terms: 
   - term: code
     lang: en
@@ -24534,8 +24533,8 @@ concepts:
   - term: kód
     lang: cs
     tts: cs-terms/kod.mp3
+  img: img/code.jpeg
   freq: 425.49710
-##  check   ################################################################# no img
 - terms: 
   - term: check
     lang: en
@@ -24546,8 +24545,8 @@ concepts:
   - term: šek
     lang: cs
     tts: cs-terms/sek.mp3
+  img: img/check.jpeg
   freq: 415.71340
-##  link   ################################################################## no img
 - terms: 
   - term: link
     lang: en
@@ -24558,8 +24557,8 @@ concepts:
   - term: spojení
     lang: cs
     tts: cs-terms/spojeni.mp3
+  img: img/link.jpeg
   freq: 408.76170
-##  technology   ############################################################ no img
 - terms: 
   - term: technology
     lang: en
@@ -24567,8 +24566,8 @@ concepts:
   - term: technologie
     lang: cs
     tts: cs-terms/technologie.mp3
+  img: img/technology.jpeg
   freq: 405.82290
-##  section   ############################################################### no img
 - terms: 
   - term: section
     lang: en
@@ -24579,8 +24578,8 @@ concepts:
   - term: sekce
     lang: cs
     tts: cs-terms/sekce.mp3
+  img: img/section.jpeg
   freq: 394.90290
-##  related   ############################################################### no img
 - terms: 
   - term: related
     lang: en
@@ -24591,8 +24590,8 @@ concepts:
   - term: příbuzné
     lang: cs
     tts: cs-terms/pribuzne.mp3
+  img: img/related.jpeg
   freq: 392.99090
-##  security   ############################################################## no img
 - terms: 
   - term: security
     lang: en
@@ -24600,8 +24599,8 @@ concepts:
   - term: zabezpečení
     lang: cs
     tts: cs-terms/zabezpeceni.mp3
+  img: img/security.jpeg
   freq: 391.09770
-##  county   ################################################################ no img
 - terms: 
   - term: county
     lang: en
@@ -24612,8 +24611,8 @@ concepts:
   - term: okres
     lang: cs
     tts: cs-terms/okres.mp3
+  img: img/county.jpeg
   freq: 386.93760
-##  photo   ################################################################# no img
 - terms: 
   - term: photo
     lang: en
@@ -24621,8 +24620,8 @@ concepts:
   - term: fotka
     lang: cs
     tts: cs-terms/fotka.mp3
+  img: img/photo.jpeg
   freq: 386.18580
-##  network   ############################################################### no img
 - terms: 
   - term: network
     lang: en
@@ -24630,8 +24629,8 @@ concepts:
   - term: síť
     lang: cs
     tts: cs-terms/sit.mp3
+  img: img/network.jpeg
   freq: 382.94460
-##  total   ################################################################# no img
 - terms: 
   - term: total
     lang: en
@@ -24639,8 +24638,8 @@ concepts:
   - term: celkem (součet)
     lang: cs
     tts: cs-terms/celkem.mp3
+  img: img/total.jpeg
   freq: 378.57560
-##  download   ############################################################## no img
 - terms: 
   - term: download
     lang: en
@@ -24648,8 +24647,8 @@ concepts:
   - term: stáhnout (z internetu)
     lang: cs
     tts: cs-terms/stahnout.mp3
+  img: img/download.jpeg
   freq: 375.13530
-##  media   ################################################################# no img
 - terms: 
   - term: media
     lang: en
@@ -24660,8 +24659,8 @@ concepts:
   - term: sdělovací prostředky
     lang: cs
     tts: cs-terms/sdelovaci prostredky.mp3
+  img: img/media.jpeg
   freq: 368.00480
-##  guide   ################################################################# no img
 - terms: 
   - term: guide
     lang: en
@@ -24672,8 +24671,8 @@ concepts:
   - term: příručka
     lang: cs
     tts: cs-terms/prirucka.mp3
+  img: img/guide.jpeg
   freq: 362.81250
-##  shop   ################################################################## no img
 - terms: 
   - term: shop
     lang: en
@@ -24684,8 +24683,8 @@ concepts:
   - term: prodejna
     lang: cs
     tts: cs-terms/prodejna.mp3
+  img: img/shop.jpeg
   freq: 361.81790
-##  directory   ############################################################# no img
 - terms: 
   - term: directory
     lang: en
@@ -24693,8 +24692,8 @@ concepts:
   - term: adresář
     lang: cs
     tts: cs-terms/adresar.mp3
+  img: img/directory.jpeg
   freq: 361.28200
-##  location   ############################################################## no img
 - terms: 
   - term: location
     lang: en
@@ -24702,8 +24701,8 @@ concepts:
   - term: umístění (lokace)
     lang: cs
     tts: cs-terms/umisteni.mp3
+  img: img/location.jpeg
   freq: 359.18150
-##  shopping   ############################################################## no img
 - terms: 
   - term: shopping
     lang: en
@@ -24711,8 +24710,8 @@ concepts:
   - term: nákupní
     lang: cs
     tts: cs-terms/nakupni.mp3
+  img: img/shopping.jpeg
   freq: 347.04280
-##  previous   ############################################################## no img
 - terms: 
   - term: previous
     lang: en
@@ -24720,8 +24719,8 @@ concepts:
   - term: předchozí
     lang: cs
     tts: cs-terms/predchozi.mp3
+  img: img/previous.jpeg
   freq: 342.94230
-##  department   ############################################################ no img
 - terms: 
   - term: department
     lang: en
@@ -24732,8 +24731,8 @@ concepts:
   - term: útvar
     lang: cs
     tts: cs-terms/utvar.mp3
+  img: img/department.jpeg
   freq: 335.46200
-##  description   ########################################################### no img
 - terms: 
   - term: description
     lang: en
@@ -24741,8 +24740,8 @@ concepts:
   - term: popis
     lang: cs
     tts: cs-terms/popis.mp3
+  img: img/description.jpeg
   freq: 333.77510
-##  quality   ############################################################### no img
 - terms: 
   - term: quality
     lang: en
@@ -24750,8 +24749,8 @@ concepts:
   - term: kvalita
     lang: cs
     tts: cs-terms/kvalita.mp3
+  img: img/quality.jpeg
   freq: 322.22710
-##  content   ############################################################### no img
 - terms: 
   - term: content
     lang: en
@@ -24759,8 +24758,8 @@ concepts:
   - term: obsah (knihy)
     lang: cs
     tts: cs-terms/obsah.mp3
+  img: img/content.jpeg
   freq: 321.15750
-##  customer   ############################################################## no img
 - terms: 
   - term: customer
     lang: en
@@ -24768,8 +24767,8 @@ concepts:
   - term: zákazník
     lang: cs
     tts: cs-terms/zakaznik.mp3
+  img: img/customer.jpeg
   freq: 313.55090
-##  compare   ############################################################### no img
 - terms: 
   - term: compare
     lang: en
@@ -24777,8 +24776,8 @@ concepts:
   - term: porovnat
     lang: cs
     tts: cs-terms/porovnat.mp3
+  img: img/compare.jpeg
   freq: 311.50370
-##  article   ############################################################### no img
 - terms: 
   - term: article
     lang: en
@@ -24786,8 +24785,8 @@ concepts:
   - term: článek (v časopise)
     lang: cs
     tts: cs-terms/clanek.mp3
+  img: img/article.jpeg
   freq: 309.40630
-##  card   ################################################################## no img
 - terms: 
   - term: card
     lang: en
@@ -24795,8 +24794,8 @@ concepts:
   - term: karta
     lang: cs
     tts: cs-terms/karta.mp3
+  img: img/card.jpeg
   freq: 308.41620
-##  press   ################################################################# no img
 - terms: 
   - term: press
     lang: en
@@ -24804,8 +24803,8 @@ concepts:
   - term: stiskněte
     lang: cs
     tts: cs-terms/stisknete.mp3
+  img: img/press.jpeg
   freq: 305.46730
-##  sale   ################################################################## no img
 - terms: 
   - term: sale
     lang: en
@@ -24816,8 +24815,8 @@ concepts:
   - term: výprodej
     lang: cs
     tts: cs-terms/vyprodej.mp3
+  img: img/sale.jpeg
   freq: 304.73930
-##  credit   ################################################################ no img
 - terms: 
   - term: credit
     lang: en
@@ -24828,8 +24827,8 @@ concepts:
   - term: úvěr
     lang: cs
     tts: cs-terms/uver.mp3
+  img: img/credit.jpeg
   freq: 299.11460
-##  join   ################################################################## no img
 - terms: 
   - term: join
     lang: en
@@ -24840,8 +24839,8 @@ concepts:
   - term: připojit
     lang: cs
     tts: cs-terms/pripojit.mp3
+  img: img/join.jpeg
   freq: 296.36220
-##  categories   ############################################################ no img
 - terms: 
   - term: categories
     lang: en
@@ -24852,8 +24851,8 @@ concepts:
   - term: skupiny
     lang: cs
     tts: cs-terms/skupiny.mp3
+  img: img/categories.jpeg
   freq: 295.58210
-##  advanced   ############################################################## no img
 - terms: 
   - term: advanced
     lang: en
@@ -24864,8 +24863,8 @@ concepts:
   - term: vyspělé
     lang: cs
     tts: cs-terms/vyspele.mp3
+  img: img/advanced.jpeg
   freq: 294.87340
-##  thread   ################################################################ no img
 - terms: 
   - term: thread
     lang: en
@@ -24876,17 +24875,8 @@ concepts:
   - term: závit
     lang: cs
     tts: cs-terms/zavit.mp3
+  img: img/thread.jpeg
   freq: 284.83530
-##  category   ############################################################## no img
-- terms: 
-  - term: category
-    lang: en
-    tts: en-terms/category.mp3
-  - term: kategorie
-    lang: cs
-    tts: cs-terms/kategorie.mp3
-  freq: 283.63390
-##  market   ################################################################ no img
 - terms: 
   - term: market
     lang: en
@@ -24894,8 +24884,8 @@ concepts:
   - term: trh
     lang: cs
     tts: cs-terms/trh.mp3
+  img: img/market.jpeg
   freq: 276.11540
-##  cost   ################################################################## no img
 - terms: 
   - term: cost
     lang: en
@@ -24903,8 +24893,8 @@ concepts:
   - term: cena
     lang: cs
     tts: cs-terms/cena.mp3
+  img: img/cost.jpeg
   freq: 270.15930
-##  medical   ############################################################### no img
 - terms: 
   - term: medical
     lang: en
@@ -24915,8 +24905,8 @@ concepts:
   - term: zdravotní
     lang: cs
     tts: cs-terms/zdravotni.mp3
+  img: img/medical.jpeg
   freq: 263.98250
-##  pc (personal computer)   ################################################ no img
 - terms: 
   - term: pc (personal computer)
     lang: en
@@ -24927,8 +24917,8 @@ concepts:
   - term: "(osobní) počítač"
     lang: cs
     tts: cs-terms/pocitac.mp3
+  img: img/pc (personal computer).jpeg
   freq: 260.93150
-##  application   ########################################################### no img
 - terms: 
   - term: application
     lang: en
@@ -24939,8 +24929,8 @@ concepts:
   - term: použití
     lang: cs
     tts: cs-terms/pouziti.mp3
+  img: img/application.jpeg
   freq: 259.76930
-##  cart   ################################################################## no img
 - terms: 
   - term: cart
     lang: en
@@ -24951,8 +24941,8 @@ concepts:
   - term: kára
     lang: cs
     tts: cs-terms/kara.mp3
+  img: img/cart.jpeg
   freq: 258.71280
-##  complete   ############################################################## no img
 - terms: 
   - term: complete
     lang: en
@@ -24963,8 +24953,8 @@ concepts:
   - term: úplné
     lang: cs
     tts: cs-terms/uplne.mp3
+  img: img/complete.jpeg
   freq: 253.87870
-##  topic   ################################################################# no img
 - terms: 
   - term: topic
     lang: en
@@ -24972,8 +24962,8 @@ concepts:
   - term: téma
     lang: cs
     tts: cs-terms/tema.mp3
+  img: img/topic.jpeg
   freq: 253.35070
-##  comment   ############################################################### no img
 - terms: 
   - term: comment
     lang: en
@@ -24984,8 +24974,8 @@ concepts:
   - term: poznámka
     lang: cs
     tts: cs-terms/poznamka.mp3
+  img: img/comment.jpeg
   freq: 252.71660
-##  financial   ############################################################# no img
 - terms: 
   - term: financial
     lang: en
@@ -24993,8 +24983,8 @@ concepts:
   - term: finanční
     lang: cs
     tts: cs-terms/financni.mp3
+  img: img/financial.jpeg
   freq: 252.20910
-##  mobile   ################################################################ no img
 - terms: 
   - term: mobile
     lang: en
@@ -25005,8 +24995,8 @@ concepts:
   - term: pohyblivý
     lang: cs
     tts: cs-terms/pohyblivy.mp3
+  img: img/mobile.jpeg
   freq: 247.37980
-##  payment   ############################################################### no img
 - terms: 
   - term: payment
     lang: en
@@ -25014,8 +25004,8 @@ concepts:
   - term: platba
     lang: cs
     tts: cs-terms/platba.mp3
+  img: img/payment.jpeg
   freq: 245.94490
-##  equipment   ############################################################# no img
 - terms: 
   - term: equipment
     lang: en
@@ -25026,8 +25016,8 @@ concepts:
   - term: zařízení
     lang: cs
     tts: cs-terms/zarizeni.mp3
+  img: img/equipment.jpeg
   freq: 245.35330
-##  login   ################################################################# no img
 - terms: 
   - term: login
     lang: en
@@ -25035,8 +25025,8 @@ concepts:
   - term: přihlášení
     lang: cs
     tts: cs-terms/prihlaseni.mp3
+  img: img/login.jpeg
   freq: 245.18650
-##  legal   ################################################################# no img
 - terms: 
   - term: legal
     lang: en
@@ -25047,8 +25037,8 @@ concepts:
   - term: legální
     lang: cs
     tts: cs-terms/legalni.mp3
+  img: img/legal.jpeg
   freq: 241.52850
-##  park   ################################################################## no img
 - terms: 
   - term: park
     lang: en
@@ -25059,8 +25049,8 @@ concepts:
   - term: zaparkovat
     lang: cs
     tts: cs-terms/zaparkovat.mp3
+  img: img/park.jpeg
   freq: 240.67840
-##  quote   ################################################################# no img
 - terms: 
   - term: quote
     lang: en
@@ -25071,8 +25061,8 @@ concepts:
   - term: "(cenová) nabídka"
     lang: cs
     tts: cs-terms/nabidka.mp3
+  img: img/quote.jpeg
   freq: 236.75650
-##  options   ############################################################### no img
 - terms: 
   - term: options
     lang: en
@@ -25080,8 +25070,8 @@ concepts:
   - term: možnosti
     lang: cs
     tts: cs-terms/moznosti.mp3
+  img: img/options.jpeg
   freq: 234.09880
-##  key   ################################################################### no img
 - terms: 
   - term: key
     lang: en
@@ -25092,8 +25082,8 @@ concepts:
   - term: klávesa
     lang: cs
     tts: cs-terms/klavesa.mp3
+  img: img/key.jpeg
   freq: 232.71080
-##  activities   ############################################################ no img
 - terms: 
   - term: activities
     lang: en
@@ -25104,8 +25094,8 @@ concepts:
   - term: aktivity
     lang: cs
     tts: cs-terms/aktivity.mp3
+  img: img/activities.jpeg
   freq: 225.60740
-##  club   ################################################################## no img
 - terms: 
   - term: club
     lang: en
@@ -25116,8 +25106,8 @@ concepts:
   - term: kyj
     lang: cs
     tts: cs-terms/kyj.mp3
+  img: img/club.jpeg
   freq: 225.17100
-##  password   ############################################################## no img
 - terms: 
   - term: password
     lang: en
@@ -25125,8 +25115,8 @@ concepts:
   - term: heslo
     lang: cs
     tts: cs-terms/heslo.mp3
+  img: img/password.jpeg
   freq: 224.68340
-##  latest   ################################################################ no img
 - terms: 
   - term: latest
     lang: en
@@ -25137,8 +25127,8 @@ concepts:
   - term: poslední
     lang: cs
     tts: cs-terms/posledni.mp3
+  img: img/latest.jpeg
   freq: 224.36110
-##  gift   ################################################################## no img
 - terms: 
   - term: gift
     lang: en
@@ -25146,8 +25136,8 @@ concepts:
   - term: dárek
     lang: cs
     tts: cs-terms/darek.mp3
+  img: img/gift.jpeg
   freq: 223.45260
-##  status   ################################################################ no img
 - terms: 
   - term: status
     lang: en
@@ -25155,8 +25145,8 @@ concepts:
   - term: stav
     lang: cs
     tts: cs-terms/stav.mp3
+  img: img/status.jpeg
   freq: 219.33220
-##  browse   ################################################################ no img
 - terms: 
   - term: browse
     lang: en
@@ -25164,8 +25154,8 @@ concepts:
   - term: procházet
     lang: cs
     tts: cs-terms/prochazet.mp3
+  img: img/browse.jpeg
   freq: 218.90010
-##  issue   ################################################################# no img
 - terms: 
   - term: issue
     lang: en
@@ -25176,8 +25166,8 @@ concepts:
   - term: vydání
     lang: cs
     tts: cs-terms/vydani.mp3
+  img: img/issue.jpeg
   freq: 218.36740
-##  range   ################################################################# no img
 - terms: 
   - term: range
     lang: en
@@ -25188,8 +25178,8 @@ concepts:
   - term: dosah
     lang: cs
     tts: cs-terms/dosah.mp3
+  img: img/range.jpeg
   freq: 218.17660
-##  audio   ################################################################# no img
 - terms: 
   - term: audio
     lang: en
@@ -25197,8 +25187,8 @@ concepts:
   - term: zvuk
     lang: cs
     tts: cs-terms/zvuk.mp3
+  img: img/audio.jpeg
   freq: 215.96580
-##  release   ############################################################### no img
 - terms: 
   - term: release
     lang: en
@@ -25209,6 +25199,7 @@ concepts:
   - term: vydání
     lang: cs
     tts: cs-terms/vydani.mp3
+  img: img/release.jpeg
   freq: 213.11970
 ##  request   ############################################################### no img
 - terms: 
