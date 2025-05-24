@@ -13,6 +13,8 @@ public class ConceptYamlStorage {
 	.disableUnicodeEscaping()  // Do not escape UNICODE.
 	//.addConverter(Optional) { value -> value.orElse('UNKNOWN') } // Custom converter for given type defined as Closure.
 	.build()
+	
+	 ValidationProfile vp = ValidationProfile.defaultProfile
 
 
 
@@ -102,7 +104,7 @@ public class ConceptYamlStorage {
 		String ft = e.firstTerm
 		assert ft : "Term list is blank for a sample $e"
 
-		String v = e.validate().join("|")
+		String v = e.validate(vp).join("|")
 		if (v) appendBanner(ft, v, sb)
 		appendYamlHash("terms", examples, sb)
 		return sb.toString()
@@ -122,7 +124,7 @@ public class ConceptYamlStorage {
 		//String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
 		assert ft : "Term list is blank for a conpcept $c"
-		appendBanner(ft, c.validate().join("|"), sb)
+		appendBanner(ft, c.validate(vp).join("|"), sb)
 		appendYamlHash("terms", terms, sb)
 		//appendYamlHash("examples", examples, sb)
 		/*sb.append("terms: ")

@@ -18,9 +18,9 @@ public class Term {
 	String pron
 	boolean dirty=true
 
-	public List<String> validate() {
+	public List<String> validate(ValidationProfile vp) {
 		properties
-				.subMap (["term", "lang", "tts"])
+				.subMap (vp.termRequiredFields)
 				.findAll{k, v->!v}
 				.collect {String k, v -> "$k:missing" }
 	}

@@ -15,10 +15,10 @@ public class Example extends TermContainer {
 	public static Example empty = new Example()
 	
 	@Override
-	public List<String> validate() {
-		List<String> ret = super.validate()
+	public List<String> validate(ValidationProfile vp) {
+		List<String> ret = super.validate(vp)
 		terms.eachWithIndex {Term t, Integer i->
-			ret.addAll(t.validate().collect{"t${i}:${it}"} )
+			ret.addAll(t.validate(vp).collect{"t${i}:${it}"} )
 		}
 		return ret
 	}

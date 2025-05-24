@@ -42,10 +42,10 @@ public class ConceptDb {
 	}
 
 
-	public List<String> validate() {
+	public List<String> validate(ValidationProfile vp) {
 		List<String> ret = []
 		termContainers.forEach { o->
-			List<String> innerVal = o.validate()
+			List<String> innerVal = o.validate(vp)
 			if (innerVal) {
 				ret.add("$o.firstTerm: ${innerVal.join('|')}".toString())
 			}

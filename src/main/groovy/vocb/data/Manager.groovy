@@ -18,8 +18,8 @@ public class Manager {
 
 	Path defaultStoragePath = Paths.get("/data/src/AnkiVocb/db/")
 	WordNormalizer wn =new WordNormalizer()
-	
-	@Lazy 
+
+	@Lazy
 	DataLocation defaultConceptsLocation = new DataLocation(storageRootPath:defaultStoragePath, filename:"concepts.yaml")
 	@Lazy
 	DataLocation defaultExamplesLocation = new DataLocation(storageRootPath:defaultStoragePath, filename:"examples.yaml")
@@ -31,7 +31,7 @@ public class Manager {
 
 	ConceptYamlStorage storage =new ConceptYamlStorage()
 	ConceptDb db = new ConceptDb()
-	
+
 
 
 	Map<String, Concept> conceptByFirstTerm = [:]
@@ -48,7 +48,15 @@ public class Manager {
 	List<Concept> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
-	static BigDecimal[] freqRanges = [0, 3, 50, 165, 400, 1200, 1000*1000]
+	static BigDecimal[] freqRanges = [
+		0,
+		3,
+		50,
+		165,
+		400,
+		1200,
+		1000*1000
+	]
 	.collect{it*1000 as BigDecimal} as BigDecimal[]
 
 	public static Integer numberOfStarsFreq(BigDecimal freq) {
@@ -68,8 +76,8 @@ public class Manager {
 
 	public Concept findConceptByFirstTermAnyVariant(String firstTerm) {
 		wn.wordVariants(wn.stripBracketsOut(firstTerm))
-		.collect {conceptByFirstTerm[it] }
-		.find()
+				.collect {conceptByFirstTerm[it] }
+				.find()
 	}
 
 	void reindex() {
@@ -91,7 +99,6 @@ public class Manager {
 			}
 			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
 			if (c.state == 'ignore') ignoreConcepts.add(c)
-
 		}
 
 		db.examples.each { Example e->
@@ -101,7 +108,6 @@ public class Manager {
 		}
 
 		conceptsByEnWordsInSample = conceptsByWordsInSample()
-
 	}
 
 	void withTerms(boolean includeExamples=false, Closure cl) {
@@ -110,7 +116,6 @@ public class Manager {
 				c.terms.collect { Term t->
 					cl(c, t)
 				}
-
 			}
 		}
 		assert !includeExamples : "Not implemented"
@@ -126,20 +131,20 @@ public class Manager {
 			if (t.lang == lang) cl(c , t)
 		}
 	}
-	
+
 	Stream<String> termsStream(String lang="en") {
 		db.concepts.stream().flatMap{ Concept c ->
 			c.termsByLang(lang).collect {it.term}.stream()
 		}
 	}
 
-	
-	public void load() {			
+
+	public void load() {
 		load(defaultConceptsLocation, true)
 		load(defaultExamplesLocation, true)
 		reindex()
 	}
-	
+
 	public ConceptDb load(DataLocation loc, boolean merge=true) {
 		assert loc?.storageRootPath
 		assert loc.storagePath
@@ -151,12 +156,12 @@ public class Manager {
 		ConceptDb cdb
 		loc.storagePath.withReader(utf8) { Reader r->
 			cdb =storage.parseDb(r)
-			assert cdb.version == "0.0.1" : "Not compatible db version"			
+			assert cdb.version == "0.0.1" : "Not compatible db version"
 		}
 		cdb.assignDataLocationToAll(loc)
 		if (merge) {
 			db.mergeWith(cdb)
-			reindex()		
+			reindex()
 		}
 		return cdb
 	}
@@ -188,15 +193,15 @@ public class Manager {
 
 	public void save(boolean forceSaveAll=true) {
 		reindex()
-		
+
 		assert db.dataLocations
 		db.dataLocations
-			.findAll { DataLocation dl-> dl.dirty || forceSaveAll }
-			.each { DataLocation dl->
-				save(dl)
-			}
+				.findAll { DataLocation dl-> dl.dirty || forceSaveAll }
+				.each { DataLocation dl->
+					save(dl)
+				}
 	}
-	
+
 	public String save(DataLocation loc) {
 		assert loc
 		String yaml = storage.dbToYaml(db) {TermContainer t->
@@ -204,19 +209,17 @@ public class Manager {
 		}
 		loc.storagePath.write(yaml)
 		println "Saved $loc"
-		
-		
 	}
 
-	public List<String> getWarnings() {
-		db.concepts.collectMany {it.validate()}
+	public List<String> getWarnings(ValidationProfile vp) {
+		db.concepts.collectMany {it.validate(vp)}
 		assert false: "Add examples warning too"
 	}
 
 	public Map<CharSequence, Set<Concept>> groupConceptsByMedia(boolean stripExt=false, boolean includeImg=true, boolean stripPrefix=false) {
 		Map<CharSequence, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
 		db.concepts.each { Concept c->
-			if (c.img && includeImg) {				
+			if (c.img && includeImg) {
 				if (stripPrefix) {
 					String strp = c.img.takeAfter("/")
 					if (strp) {
@@ -246,8 +249,10 @@ public class Manager {
 							}
 						}
 					}
-					
-					if (stripExt) { ret[Helper.stripExt(t.tts)].add(c)}
+
+					if (stripExt) {
+						ret[Helper.stripExt(t.tts)].add(c)
+					}
 				}
 			}
 		}
@@ -260,7 +265,9 @@ public class Manager {
 		allTerms.each { Term t->
 			if (t.tts) {
 				ret[t.tts].add(t)
-				if (stripExt) { ret[Helper.stripExt(t.tts)].add(t)}
+				if (stripExt) {
+					ret[Helper.stripExt(t.tts)].add(t)
+				}
 			}
 		}
 		return ret
@@ -293,7 +300,7 @@ public class Manager {
 
 	public void validate() {
 
-		db.validate().each {println it}
+		db.validate(ValidationProfile.defaultProfile).each {println it}
 		Map<CharSequence, Set<Concept>> cGrp = groupConceptsByMedia()
 		Map<CharSequence, Set<Term>> tGrp = groupCTermsByMedia()
 
@@ -323,8 +330,8 @@ public class Manager {
 		}
 		println "${'-'*80}"
 		println "Clashes"
-		
-		
+
+
 
 		//println groupConceptsByMedia(false, true, true)["ocean.mp3"]
 		groupConceptsByMedia(false, true, true).each {CharSequence mediaLink, Set<Concept> cs->
@@ -332,9 +339,8 @@ public class Manager {
 				it.terms.findAll {
 					//assert it?.tts
 					if (!it.tts) return false
-					it.tts == mediaLink || it.tts.takeAfter("/") == mediaLink.takeAfter("/") 
-					
-					}
+					it.tts == mediaLink || it.tts.takeAfter("/") == mediaLink.takeAfter("/")
+				}
 			}
 
 			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
@@ -391,7 +397,6 @@ public class Manager {
 			String samples = conceptsByStar[it].take(40).collect {it.firstTerm}
 			println "${sz.toString().padRight(5)} (${accu.toString().padRight(5)}) ${starsOf(conceptsByStar[it][0])} $samples "
 		}
-		
 	}
 
 	Collection<String> filterByStars(Collection<String> src, List<Integer> starRange = (0..2)) {
@@ -444,7 +449,6 @@ public class Manager {
 				cl(e, sen, com, mis)
 			}
 		}
-
 	}
 
 
@@ -470,8 +474,6 @@ public class Manager {
 			 Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
 			 }
 			 }*/
-
-
 		}
 		save()
 	}
@@ -497,10 +499,5 @@ public class Manager {
 
 
 		//println "${Helper.roundDecimal(dbMan.completeness*100, 0)}% completed"
-
-
-
 	}
-
-
 }
