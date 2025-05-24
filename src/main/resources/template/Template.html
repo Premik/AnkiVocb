@@ -19,7 +19,7 @@
 	<main class="container">
 		<div id="qa_box" class="card card2">
 			<!-- --------------------------------------------------------------------------   -->
-			<div class="rounded shadow">
+			<div class="rounded shadow" id="rootContainer">
 					<button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
 				
 				<div><img src="{{img}}"></div>
@@ -39,7 +39,7 @@
 
 				{{#nativeAlt}}
 				<div class="answer">{{nativeAlt}}</div>
-				[sound:{{nativeTTSAlt}}]
+				[sound:{{nativeAltTTS}}]
 				{{/nativeAlt}}
 
 				[sound:{{foreignTTS}}]
