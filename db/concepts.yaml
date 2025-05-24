@@ -17,7 +17,7 @@ concepts:
     tts: Jablko pomaha cistit zuby.mp3
   img: apple.jpeg
   freq: 13506.05000
-  origins: ["top500"]
+  origins: ["top500", "conceptDbSamples"]
 ##  kitty   #################################################################
 - terms: 
   - term: kitty
@@ -38,6 +38,7 @@ concepts:
     tts: Kotatko potrebuje trochu pozornosti.mp3
   img: kitty.jpeg
   freq: 278.47900
+  origins: ["conceptDbSamples"]
 ##  a   #####################################################################
 - terms: 
   - term: a
@@ -363,7 +364,7 @@ concepts:
     tts: Falesny pocit stesti.mp3
   img: false.jpeg
   freq: 1123368.00000
-  origins: ["Supaplex"]
+  origins: ["Supaplex", "conceptDbSamples"]
 ##  time   ##################################################################
 - terms: 
   - term: time
@@ -9693,4 +9694,1534 @@ concepts:
   - term: mean
     lang: en
   freq: 115545.50000
+  origins: ["conceptDbSamples"]
+##  question   ############################################################## ▃ 37%
+- terms: 
+  - term: question
+    lang: en
+  freq: 115524.00000
+  origins: ["conceptDbSamples"]
+##  human   ################################################################# ▃ 37%
+- terms: 
+  - term: human
+    lang: en
+  freq: 114381.00000
+  origins: ["conceptDbSamples"]
+##  states   ################################################################ ▃ 37%
+- terms: 
+  - term: states
+    lang: en
+  freq: 113807.00000
+  origins: ["conceptDbSamples"]
+##  yes   ################################################################### ▃ 37%
+- terms: 
+  - term: "yes"
+    lang: en
+  freq: 113547.65000
+  origins: ["conceptDbSamples"]
+##  feel   ################################################################## ▃ 37%
+- terms: 
+  - term: feel
+    lang: en
+  freq: 111647.50000
+  origins: ["conceptDbSamples"]
+##  parts   ################################################################# ▃ 37%
+- terms: 
+  - term: parts
+    lang: en
+  freq: 111194.00000
+  origins: ["conceptDbSamples"]
+##  talk   ################################################################## ▃ 37%
+- terms: 
+  - term: talk
+    lang: en
+  freq: 111072.00000
+  origins: ["conceptDbSamples"]
+##  fear   ################################################################## ▃ 37%
+- terms: 
+  - term: fear
+    lang: en
+  freq: 109036.00000
+  origins: ["conceptDbSamples"]
+##  live   ################################################################## ▃ 37%
+- terms: 
+  - term: live
+    lang: en
+  freq: 108511.50000
+  origins: ["conceptDbSamples"]
+##  learn   ################################################################# ▃ 37%
+- terms: 
+  - term: learn
+    lang: en
+  freq: 107429.85000
+  origins: ["conceptDbSamples"]
+##  happy   ################################################################# ▃ 37%
+- terms: 
+  - term: happy
+    lang: en
+  freq: 106887.00000
+  origins: ["conceptDbSamples"]
+##  stopped   ############################################################### ▃ 37%
+- terms: 
+  - term: stopped
+    lang: en
+  freq: 106661.00000
+  origins: ["conceptDbSamples"]
+##  suddenly   ############################################################## ▃ 37%
+- terms: 
+  - term: suddenly
+    lang: en
+  freq: 104116.00000
+  origins: ["conceptDbSamples"]
+##  red   ################################################################### ▃ 37%
+- terms: 
+  - term: red
+    lang: en
+  freq: 103902.50000
+  origins: ["conceptDbSamples"]
+##  dark   ################################################################## ▃ 37%
+- terms: 
+  - term: dark
+    lang: en
+  freq: 102590.50000
+  origins: ["conceptDbSamples"]
+##  sense   ################################################################# ▃ 37%
+- terms: 
+  - term: sense
+    lang: en
+  freq: 101208.00000
+  origins: ["conceptDbSamples"]
+##  attention   ############################################################# ▃ 37%
+- terms: 
+  - term: attention
+    lang: en
+  freq: 99764.00000
+  origins: ["conceptDbSamples"]
+##  wait   ################################################################## ▃ 37%
+- terms: 
+  - term: wait
+    lang: en
+  freq: 98993.45000
+  origins: ["conceptDbSamples"]
+##  where   ################################################################# ▃ 37%
+- terms: 
+  - term: where
+    lang: en
+  freq: 98596.79500
+  origins: ["conceptDbSamples"]
+##  job   ################################################################### ▃ 37%
+- terms: 
+  - term: job
+    lang: en
+  freq: 95596.85000
+  origins: ["conceptDbSamples"]
+##  trying   ################################################################ ▃ 37%
+- terms: 
+  - term: trying
+    lang: en
+  freq: 94706.70000
+  origins: ["conceptDbSamples"]
+##  strange   ############################################################### ▃ 37%
+- terms: 
+  - term: strange
+    lang: en
+  freq: 93945.50000
+  origins: ["conceptDbSamples"]
+##  car   ################################################################### ▃ 37%
+- terms: 
+  - term: car
+    lang: en
+  freq: 90131.05000
+  origins: ["conceptDbSamples"]
+##  play   ################################################################## ▃ 37%
+- terms: 
+  - term: play
+    lang: en
+  freq: 89945.00000
+  origins: ["conceptDbSamples"]
+##  save   ################################################################## ▃ 37%
+- terms: 
+  - term: save
+    lang: en
+  freq: 89433.00000
+  origins: ["conceptDbSamples"]
+##  add   ################################################################### ▃ 37%
+- terms: 
+  - term: add
+    lang: en
+  freq: 89244.75000
+  origins: ["conceptDbSamples"]
+##  continued   ############################################################# ▃ 37%
+- terms: 
+  - term: continued
+    lang: en
+  freq: 89244.00000
+  origins: ["conceptDbSamples"]
+##  run   ################################################################### ▃ 37%
+- terms: 
+  - term: run
+    lang: en
+  freq: 88006.50000
+  origins: ["conceptDbSamples"]
+##  single   ################################################################ ▃ 37%
+- terms: 
+  - term: single
+    lang: en
+  freq: 87988.50000
+  origins: ["conceptDbSamples"]
+##  late   ################################################################## ▃ 37%
+- terms: 
+  - term: late
+    lang: en
+  freq: 87283.50000
+  origins: ["conceptDbSamples"]
+##  america   ############################################################### ▃ 37%
+- terms: 
+  - term: america
+    lang: en
+  freq: 87195.60000
+  origins: ["conceptDbSamples"]
+##  agree   ################################################################# ▃ 37%
+- terms: 
+  - term: agree
+    lang: en
+  freq: 86583.45000
+  origins: ["conceptDbSamples"]
+##  talking   ############################################################### ▃ 37%
+- terms: 
+  - term: talking
+    lang: en
+  freq: 85391.10000
+  origins: ["conceptDbSamples"]
+##  gold   ################################################################## ▃ 37%
+- terms: 
+  - term: gold
+    lang: en
+  freq: 85222.00000
+  origins: ["conceptDbSamples"]
+##  class   ################################################################# ▃ 37%
+- terms: 
+  - term: class
+    lang: en
+  freq: 84748.25000
+  origins: ["conceptDbSamples"]
+##  neither   ############################################################### ▃ 37%
+- terms: 
+  - term: neither
+    lang: en
+  freq: 84393.50000
+  origins: ["conceptDbSamples"]
+##  mine   ################################################################## ▃ 37%
+- terms: 
+  - term: mine
+    lang: en
+  freq: 83382.00000
+  origins: ["conceptDbSamples"]
+##  copies   ################################################################ ▃ 37%
+- terms: 
+  - term: copies
+    lang: en
+  freq: 81479.70000
+  origins: ["conceptDbSamples"]
+##  whatever   ############################################################## ▃ 37%
+- terms: 
+  - term: whatever
+    lang: en
+  freq: 80374.50000
+  origins: ["conceptDbSamples"]
+##  distance   ############################################################## ▃ 37%
+- terms: 
+  - term: distance
+    lang: en
+  freq: 80213.00000
+  origins: ["conceptDbSamples"]
+##  situation   ############################################################# ▃ 37%
+- terms: 
+  - term: situation
+    lang: en
+  freq: 76627.20000
+  origins: ["conceptDbSamples"]
+##  finally   ############################################################### ▃ 37%
+- terms: 
+  - term: finally
+    lang: en
+  freq: 75984.75000
+  origins: ["conceptDbSamples"]
+##  doctor   ################################################################ ▃ 37%
+- terms: 
+  - term: doctor
+    lang: en
+  freq: 73863.95000
+  origins: ["conceptDbSamples"]
+##  visit   ################################################################# ▃ 37%
+- terms: 
+  - term: visit
+    lang: en
+  freq: 72403.50000
+  origins: ["conceptDbSamples"]
+##  afraid   ################################################################ ▃ 37%
+- terms: 
+  - term: afraid
+    lang: en
+  freq: 72097.00000
+  origins: ["conceptDbSamples"]
+##  using   ################################################################# ▃ 37%
+- terms: 
+  - term: using
+    lang: en
+  freq: 71751.90000
+  origins: ["conceptDbSamples"]
+##  green   ################################################################# ▃ 37%
+- terms: 
+  - term: green
+    lang: en
+  freq: 71603.50000
+  origins: ["conceptDbSamples"]
+##  create   ################################################################ ▃ 37%
+- terms: 
+  - term: create
+    lang: en
+  freq: 71339.15000
+  origins: ["conceptDbSamples"]
+##  easily   ################################################################ ▃ 37%
+- terms: 
+  - term: easily
+    lang: en
+  freq: 69383.50000
+  origins: ["conceptDbSamples"]
+##  plan   ################################################################## ▃ 37%
+- terms: 
+  - term: plan
+    lang: en
+  freq: 67949.45000
+  origins: ["conceptDbSamples"]
+##  fresh   ################################################################# ▃ 37%
+- terms: 
+  - term: fresh
+    lang: en
+  freq: 67814.20000
+  origins: ["conceptDbSamples"]
+##  lies   ################################################################## ▃ 37%
+- terms: 
+  - term: lies
+    lang: en
+  freq: 67551.00000
+  origins: ["conceptDbSamples"]
+##  eight   ################################################################# ▃ 37%
+- terms: 
+  - term: eight
+    lang: en
+  freq: 67362.45000
+  origins: ["conceptDbSamples"]
+##  explain   ############################################################### ▃ 37%
+- terms: 
+  - term: explain
+    lang: en
+  freq: 66041.10000
+  origins: ["conceptDbSamples"]
+##  meeting   ############################################################### ▃ 37%
+- terms: 
+  - term: meeting
+    lang: en
+  freq: 65939.15000
+  origins: ["conceptDbSamples"]
+##  fingers   ############################################################### ▃ 37%
+- terms: 
+  - term: fingers
+    lang: en
+  freq: 65564.40000
+  origins: ["conceptDbSamples"]
+##  step   ################################################################## ▃ 37%
+- terms: 
+  - term: step
+    lang: en
+  freq: 65474.00000
+  origins: ["conceptDbSamples"]
+##  boat   ################################################################## ▃ 37%
+- terms: 
+  - term: boat
+    lang: en
+  freq: 65417.75000
+  origins: ["conceptDbSamples"]
+##  married   ############################################################### ▃ 37%
+- terms: 
+  - term: married
+    lang: en
+  freq: 65385.50000
+  origins: ["conceptDbSamples"]
+##  garden   ################################################################ ▃ 37%
+- terms: 
+  - term: garden
+    lang: en
+  freq: 65096.30000
+  origins: ["conceptDbSamples"]
+##  secret   ################################################################ ▃ 37%
+- terms: 
+  - term: secret
+    lang: en
+  freq: 64491.50000
+  origins: ["conceptDbSamples"]
+##  enter   ################################################################# ▃ 37%
+- terms: 
+  - term: enter
+    lang: en
+  freq: 64435.45000
+  origins: ["conceptDbSamples"]
+##  sell   ################################################################## ▃ 37%
+- terms: 
+  - term: sell
+    lang: en
+  freq: 64174.45000
+  origins: ["conceptDbSamples"]
+##  dog   ################################################################### ▃ 37%
+- terms: 
+  - term: dog
+    lang: en
+  freq: 64110.75000
+  origins: ["conceptDbSamples"]
+##  maybe   ################################################################# ▃ 37%
+- terms: 
+  - term: maybe
+    lang: en
+  freq: 64096.10000
+  origins: ["conceptDbSamples"]
+##  foreign   ############################################################### ▃ 37%
+- terms: 
+  - term: foreign
+    lang: en
+  freq: 64074.75000
+  origins: ["conceptDbSamples"]
+##  birds   ################################################################# ▃ 37%
+- terms: 
+  - term: birds
+    lang: en
+  freq: 63162.60000
+  origins: ["conceptDbSamples"]
+##  waited   ################################################################ ▃ 37%
+- terms: 
+  - term: waited
+    lang: en
+  freq: 62808.10000
+  origins: ["conceptDbSamples"]
+##  walk   ################################################################## ▃ 37%
+- terms: 
+  - term: walk
+    lang: en
+  freq: 61245.00000
+  origins: ["conceptDbSamples"]
+##  enemies   ############################################################### ▃ 37%
+- terms: 
+  - term: enemies
+    lang: en
+  freq: 60982.20000
+  origins: ["conceptDbSamples"]
+##  anyone   ################################################################ ▃ 37%
+- terms: 
+  - term: anyone
+    lang: en
+  freq: 60607.90000
+  origins: ["conceptDbSamples"]
+##  usual   ################################################################# ▃ 37%
+- terms: 
+  - term: usual
+    lang: en
+  freq: 59858.50000
+  origins: ["conceptDbSamples"]
+##  main   ################################################################## ▃ 37%
+- terms: 
+  - term: main
+    lang: en
+  freq: 59778.50000
+  origins: ["conceptDbSamples"]
+##  someone   ############################################################### ▃ 37%
+- terms: 
+  - term: someone
+    lang: en
+  freq: 59644.10000
+  origins: ["conceptDbSamples"]
+##  please   ################################################################ ▃ 37%
+- terms: 
+  - term: please
+    lang: en
+  freq: 58839.50000
+  origins: ["conceptDbSamples"]
+##  shot   ################################################################## ▃ 37%
+- terms: 
+  - term: shot
+    lang: en
+  freq: 58465.05000
+  origins: ["conceptDbSamples"]
+##  stay   ################################################################## ▃ 37%
+- terms: 
+  - term: stay
+    lang: en
+  freq: 57836.50000
+  origins: ["conceptDbSamples"]
+##  grown   ################################################################# ▃ 37%
+- terms: 
+  - term: grown
+    lang: en
+  freq: 57772.60000
+  origins: ["conceptDbSamples"]
+##  safe   ################################################################## ▃ 37%
+- terms: 
+  - term: safe
+    lang: en
+  freq: 57432.25000
+  origins: ["conceptDbSamples"]
+##  worth   ################################################################# ▃ 37%
+- terms: 
+  - term: worth
+    lang: en
+  freq: 57291.50000
+  origins: ["conceptDbSamples"]
+##  pull   ################################################################## ▃ 37%
+- terms: 
+  - term: pull
+    lang: en
+  freq: 57029.25000
+  origins: ["conceptDbSamples"]
+##  clearly   ############################################################### ▃ 37%
+- terms: 
+  - term: clearly
+    lang: en
+  freq: 56615.20000
+  origins: ["conceptDbSamples"]
+##  energy   ################################################################ ▃ 37%
+- terms: 
+  - term: energy
+    lang: en
+  freq: 55273.45000
+  origins: ["conceptDbSamples"]
+##  directly   ############################################################## ▃ 37%
+- terms: 
+  - term: directly
+    lang: en
+  freq: 55211.70000
+  origins: ["conceptDbSamples"]
+##  song   ################################################################## ▃ 37%
+- terms: 
+  - term: song
+    lang: en
+  freq: 54221.30000
+  origins: ["conceptDbSamples"]
+##  choice   ################################################################ ▃ 37%
+- terms: 
+  - term: choice
+    lang: en
+  freq: 54079.15000
+  origins: ["conceptDbSamples"]
+##  size   ################################################################## ▃ 37%
+- terms: 
+  - term: size
+    lang: en
+  freq: 53495.50000
+  origins: ["conceptDbSamples"]
+##  rules   ################################################################# ▃ 37%
+- terms: 
+  - term: rules
+    lang: en
+  freq: 53386.50000
+  origins: ["conceptDbSamples"]
+##  value   ################################################################# ▃ 37%
+- terms: 
+  - term: value
+    lang: en
+  freq: 52616.40000
+  origins: ["conceptDbSamples"]
+##  teeth   ################################################################# ▃ 37%
+- terms: 
+  - term: teeth
+    lang: en
+  freq: 52449.00000
+  origins: ["conceptDbSamples"]
+##  permission   ############################################################ ▃ 37%
+- terms: 
+  - term: permission
+    lang: en
+  freq: 52344.50000
+  origins: ["conceptDbSamples"]
+##  won   ################################################################### ▃ 37%
+- terms: 
+  - term: won
+    lang: en
+  freq: 51798.70000
+  origins: ["conceptDbSamples"]
+##  nice   ################################################################## ▃ 37%
+- terms: 
+  - term: nice
+    lang: en
+  freq: 50915.20000
+  origins: ["conceptDbSamples"]
+##  start   ################################################################# ▃ 37%
+- terms: 
+  - term: start
+    lang: en
+  freq: 50331.95000
+  origins: ["conceptDbSamples"]
+##  marry   ################################################################# ▃ 37%
+- terms: 
+  - term: marry
+    lang: en
+  freq: 49835.45000
+  origins: ["conceptDbSamples"]
+##  fees   ################################################################## ▃ 37%
+- terms: 
+  - term: fees
+    lang: en
+  freq: 49820.10000
+  origins: ["conceptDbSamples"]
+##  fill   ################################################################## ▃ 37%
+- terms: 
+  - term: fill
+    lang: en
+  freq: 49413.45000
+  origins: ["conceptDbSamples"]
+##  cup   ################################################################### ▃ 37%
+- terms: 
+  - term: cup
+    lang: en
+  freq: 49370.15000
+  origins: ["conceptDbSamples"]
+##  worst   ################################################################# ▃ 37%
+- terms: 
+  - term: worst
+    lang: en
+  freq: 49369.10000
+  origins: ["conceptDbSamples"]
+##  don   ################################################################### ▃ 37%
+- terms: 
+  - term: don
+    lang: en
+  freq: 49305.00000
+  origins: ["conceptDbSamples"]
+##  data   ################################################################## ▃ 37%
+- terms: 
+  - term: data
+    lang: en
+  freq: 48658.45000
+  origins: ["conceptDbSamples"]
+##  additional   ############################################################ ▃ 37%
+- terms: 
+  - term: additional
+    lang: en
+  freq: 47705.70000
+  origins: ["conceptDbSamples"]
+##  needs   ################################################################# ▃ 37%
+- terms: 
+  - term: needs
+    lang: en
+  freq: 47619.10000
+  origins: ["conceptDbSamples"]
+##  happiness   ############################################################# ▃ 37%
+- terms: 
+  - term: happiness
+    lang: en
+  freq: 47520.50000
+  origins: ["conceptDbSamples"]
+##  stop   ################################################################## ▃ 37%
+- terms: 
+  - term: stop
+    lang: en
+  freq: 46709.35000
+  origins: ["conceptDbSamples"]
+##  thinks   ################################################################ ▃ 37%
+- terms: 
+  - term: thinks
+    lang: en
+  freq: 46053.50000
+  origins: ["conceptDbSamples"]
+##  medium   ################################################################ ▃ 37%
+- terms: 
+  - term: medium
+    lang: en
+  freq: 45868.70000
+  origins: ["conceptDbSamples"]
+##  everyone   ############################################################## ▃ 37%
+- terms: 
+  - term: everyone
+    lang: en
+  freq: 45742.40000
+  origins: ["conceptDbSamples"]
+##  goods   ################################################################# ▃ 37%
+- terms: 
+  - term: goods
+    lang: en
+  freq: 45735.40000
+  origins: ["conceptDbSamples"]
+##  closed   ################################################################ ▃ 37%
+- terms: 
+  - term: closed
+    lang: en
+  freq: 45657.15000
+  origins: ["conceptDbSamples"]
+##  claim   ################################################################# ▃ 37%
+- terms: 
+  - term: claim
+    lang: en
+  freq: 44928.50000
+  origins: ["conceptDbSamples"]
+##  rule   ################################################################## ▃ 37%
+- terms: 
+  - term: rule
+    lang: en
+  freq: 44844.25000
+  origins: ["conceptDbSamples"]
+##  required   ############################################################## ▃ 37%
+- terms: 
+  - term: required
+    lang: en
+  freq: 44600.85000
+  origins: ["conceptDbSamples"]
+##  asking   ################################################################ ▃ 37%
+- terms: 
+  - term: asking
+    lang: en
+  freq: 44097.80000
+  origins: ["conceptDbSamples"]
+##  nine   ################################################################## ▃ 37%
+- terms: 
+  - term: nine
+    lang: en
+  freq: 43944.95000
+  origins: ["conceptDbSamples"]
+##  apply   ################################################################# ▃ 37%
+- terms: 
+  - term: apply
+    lang: en
+  freq: 43667.25000
+  origins: ["conceptDbSamples"]
+##  excellent   ############################################################# ▃ 37%
+- terms: 
+  - term: excellent
+    lang: en
+  freq: 43273.45000
+  origins: ["conceptDbSamples"]
+##  brain   ################################################################# ▃ 37%
+- terms: 
+  - term: brain
+    lang: en
+  freq: 42478.85000
+  origins: ["conceptDbSamples"]
+##  alive   ################################################################# ▃ 37%
+- terms: 
+  - term: alive
+    lang: en
+  freq: 41908.25000
+  origins: ["conceptDbSamples"]
+##  dangerous   ############################################################# ▃ 37%
+- terms: 
+  - term: dangerous
+    lang: en
+  freq: 41231.15000
+  origins: ["conceptDbSamples"]
+##  working   ############################################################### ▃ 37%
+- terms: 
+  - term: working
+    lang: en
+  freq: 41121.15000
+  origins: ["conceptDbSamples"]
+##  drive   ################################################################# ▃ 37%
+- terms: 
+  - term: drive
+    lang: en
+  freq: 40999.60000
+  origins: ["conceptDbSamples"]
+##  brother   ############################################################### ▃ 37%
+- terms: 
+  - term: brother
+    lang: en
+  freq: 40977.45000
+  origins: ["conceptDbSamples"]
+##  earlier   ############################################################### ▃ 37%
+- terms: 
+  - term: earlier
+    lang: en
+  freq: 40843.10000
+  origins: ["conceptDbSamples"]
+##  nobody   ################################################################ ▃ 37%
+- terms: 
+  - term: nobody
+    lang: en
+  freq: 40420.30000
+  origins: ["conceptDbSamples"]
+##  hospital   ############################################################## ▃ 37%
+- terms: 
+  - term: hospital
+    lang: en
+  freq: 40282.20000
+  origins: ["conceptDbSamples"]
+##  tired   ################################################################# ▃ 37%
+- terms: 
+  - term: tired
+    lang: en
+  freq: 39561.35000
+  origins: ["conceptDbSamples"]
+##  successful   ############################################################ ▃ 37%
+- terms: 
+  - term: successful
+    lang: en
+  freq: 39535.10000
+  origins: ["conceptDbSamples"]
+##  empty   ################################################################# ▃ 37%
+- terms: 
+  - term: empty
+    lang: en
+  freq: 38692.60000
+  origins: ["conceptDbSamples"]
+##  list   ################################################################## ▃ 37%
+- terms: 
+  - term: list
+    lang: en
+  freq: 37150.75000
+  origins: ["conceptDbSamples"]
+##  yesterday   ############################################################# ▃ 37%
+- terms: 
+  - term: yesterday
+    lang: en
+  freq: 37019.50000
+  origins: ["conceptDbSamples"]
+##  phone   ################################################################# ▃ 37%
+- terms: 
+  - term: phone
+    lang: en
+  freq: 36947.43500
+  origins: ["conceptDbSamples"]
+##  mistake   ############################################################### ▃ 37%
+- terms: 
+  - term: mistake
+    lang: en
+  freq: 36424.35000
+  origins: ["conceptDbSamples"]
+##  busy   ################################################################## ▃ 37%
+- terms: 
+  - term: busy
+    lang: en
+  freq: 35453.55000
+  origins: ["conceptDbSamples"]
+##  film   ################################################################## ▃ 37%
+- terms: 
+  - term: film
+    lang: en
+  freq: 35325.20000
+  origins: ["conceptDbSamples"]
+##  remarkable   ############################################################ ▃ 37%
+- terms: 
+  - term: remarkable
+    lang: en
+  freq: 35244.40000
+  origins: ["conceptDbSamples"]
+##  movie   ################################################################# ▃ 37%
+- terms: 
+  - term: movie
+    lang: en
+  freq: 35083.52900
+  origins: ["conceptDbSamples"]
+##  nose   ################################################################## ▃ 37%
+- terms: 
+  - term: nose
+    lang: en
+  freq: 34998.90000
+  origins: ["conceptDbSamples"]
+##  hide   ################################################################## ▃ 37%
+- terms: 
+  - term: hide
+    lang: en
+  freq: 34760.90000
+  origins: ["conceptDbSamples"]
+##  explanation   ########################################################### ▃ 37%
+- terms: 
+  - term: explanation
+    lang: en
+  freq: 34381.15000
+  origins: ["conceptDbSamples"]
+##  tea   ################################################################### ▃ 37%
+- terms: 
+  - term: tea
+    lang: en
+  freq: 33960.05000
+  origins: ["conceptDbSamples"]
+##  test   ################################################################## ▃ 37%
+- terms: 
+  - term: test
+    lang: en
+  freq: 33664.05000
+  origins: ["conceptDbSamples"]
+##  ring   ################################################################## ▃ 37%
+- terms: 
+  - term: ring
+    lang: en
+  freq: 33378.70000
+  origins: ["conceptDbSamples"]
+##  fault   ################################################################# ▃ 37%
+- terms: 
+  - term: fault
+    lang: en
+  freq: 33363.20000
+  origins: ["conceptDbSamples"]
+##  clean   ################################################################# ▃ 37%
+- terms: 
+  - term: clean
+    lang: en
+  freq: 33343.65000
+  origins: ["conceptDbSamples"]
+##  shape   ################################################################# ▃ 37%
+- terms: 
+  - term: shape
+    lang: en
+  freq: 33284.95000
+  origins: ["conceptDbSamples"]
+##  eggs   ################################################################## ▃ 37%
+- terms: 
+  - term: eggs
+    lang: en
+  freq: 33059.90000
+  origins: ["conceptDbSamples"]
+##  smaller   ############################################################### ▃ 37%
+- terms: 
+  - term: smaller
+    lang: en
+  freq: 32668.30000
+  origins: ["conceptDbSamples"]
+##  finds   ################################################################# ▃ 37%
+- terms: 
+  - term: finds
+    lang: en
+  freq: 31934.90000
+  origins: ["conceptDbSamples"]
+##  unable   ################################################################ ▃ 37%
+- terms: 
+  - term: unable
+    lang: en
+  freq: 31745.05000
+  origins: ["conceptDbSamples"]
+##  stayed   ################################################################ ▃ 37%
+- terms: 
+  - term: stayed
+    lang: en
+  freq: 31165.90000
+  origins: ["conceptDbSamples"]
+##  scale   ################################################################# ▃ 37%
+- terms: 
+  - term: scale
+    lang: en
+  freq: 30427.90000
+  origins: ["conceptDbSamples"]
+##  process   ############################################################### ▃ 37%
+- terms: 
+  - term: process
+    lang: en
+  freq: 30250.70000
+  origins: ["conceptDbSamples"]
+##  nearest   ############################################################### ▃ 37%
+- terms: 
+  - term: nearest
+    lang: en
+  freq: 29094.70000
+  origins: ["conceptDbSamples"]
+##  coffee   ################################################################ ▃ 37%
+- terms: 
+  - term: coffee
+    lang: en
+  freq: 29061.35000
+  origins: ["conceptDbSamples"]
+##  fly   ################################################################### ▃ 37%
+- terms: 
+  - term: fly
+    lang: en
+  freq: 28502.95000
+  origins: ["conceptDbSamples"]
+##  visible   ############################################################### ▃ 37%
+- terms: 
+  - term: visible
+    lang: en
+  freq: 28287.60000
+  origins: ["conceptDbSamples"]
+##  library   ############################################################### ▃ 37%
+- terms: 
+  - term: library
+    lang: en
+  freq: 28114.95000
+  origins: ["conceptDbSamples"]
+##  catch   ################################################################# ▃ 37%
+- terms: 
+  - term: catch
+    lang: en
+  freq: 28047.90000
+  origins: ["conceptDbSamples"]
+##  instructions   ########################################################## ▃ 37%
+- terms: 
+  - term: instructions
+    lang: en
+  freq: 26838.40000
+  origins: ["conceptDbSamples"]
+##  cool   ################################################################## ▃ 37%
+- terms: 
+  - term: cool
+    lang: en
+  freq: 26142.55000
+  origins: ["conceptDbSamples"]
+##  cat   ################################################################### ▃ 37%
+- terms: 
+  - term: cat
+    lang: en
+  freq: 25867.60000
+  origins: ["conceptDbSamples"]
+##  repeat   ################################################################ ▃ 37%
+- terms: 
+  - term: repeat
+    lang: en
+  freq: 25063.25000
+  origins: ["conceptDbSamples"]
+##  advantages   ############################################################ ▃ 37%
+- terms: 
+  - term: advantages
+    lang: en
+  freq: 24802.80000
+  origins: ["conceptDbSamples"]
+##  win   ################################################################### ▃ 37%
+- terms: 
+  - term: win
+    lang: en
+  freq: 24721.45000
+  origins: ["conceptDbSamples"]
+##  patient   ############################################################### ▃ 37%
+- terms: 
+  - term: patient
+    lang: en
+  freq: 24442.10000
+  origins: ["conceptDbSamples"]
+##  locked   ################################################################ ▃ 37%
+- terms: 
+  - term: locked
+    lang: en
+  freq: 24438.10000
+  origins: ["conceptDbSamples"]
+##  proceed   ############################################################### ▃ 37%
+- terms: 
+  - term: proceed
+    lang: en
+  freq: 24123.80000
+  origins: ["conceptDbSamples"]
+##  hit   ################################################################### ▃ 37%
+- terms: 
+  - term: hit
+    lang: en
+  freq: 23745.60000
+  origins: ["conceptDbSamples"]
+##  egg   ################################################################### ▃ 37%
+- terms: 
+  - term: egg
+    lang: en
+  freq: 22506.70000
+  origins: ["conceptDbSamples"]
+##  camera   ################################################################ ▃ 37%
+- terms: 
+  - term: camera
+    lang: en
+  freq: 22397.35500
+  origins: ["conceptDbSamples"]
+##  that   ################################################################## ▃ 37%
+- terms: 
+  - term: that
+    lang: en
+  freq: 21910.90650
+  origins: ["conceptDbSamples"]
+##  emotions   ############################################################## ▃ 37%
+- terms: 
+  - term: emotions
+    lang: en
+  freq: 21695.20000
+  origins: ["conceptDbSamples"]
+##  tables   ################################################################ ▃ 37%
+- terms: 
+  - term: tables
+    lang: en
+  freq: 21432.60000
+  origins: ["conceptDbSamples"]
+##  print   ################################################################# ▃ 37%
+- terms: 
+  - term: print
+    lang: en
+  freq: 21355.55000
+  origins: ["conceptDbSamples"]
+##  tomorrow   ############################################################## ▃ 37%
+- terms: 
+  - term: tomorrow
+    lang: en
+  freq: 21349.20000
+  origins: ["conceptDbSamples"]
+##  hurry   ################################################################# ▃ 37%
+- terms: 
+  - term: hurry
+    lang: en
+  freq: 21059.55000
+  origins: ["conceptDbSamples"]
+##  regret   ################################################################ ▃ 37%
+- terms: 
+  - term: regret
+    lang: en
+  freq: 20930.45000
+  origins: ["conceptDbSamples"]
+##  user   ################################################################## ▃ 37%
+- terms: 
+  - term: user
+    lang: en
+  freq: 20688.50000
+  origins: ["conceptDbSamples"]
+##  lonely   ################################################################ ▃ 37%
+- terms: 
+  - term: lonely
+    lang: en
+  freq: 20598.05000
+  origins: ["conceptDbSamples"]
+##  cares   ################################################################# ▃ 37%
+- terms: 
+  - term: cares
+    lang: en
+  freq: 20161.20000
+  origins: ["conceptDbSamples"]
+##  mirror   ################################################################ ▃ 37%
+- terms: 
+  - term: mirror
+    lang: en
+  freq: 20145.65000
+  origins: ["conceptDbSamples"]
+##  rarely   ################################################################ ▃ 37%
+- terms: 
+  - term: rarely
+    lang: en
+  freq: 20081.70000
+  origins: ["conceptDbSamples"]
+##  beach   ################################################################# ▃ 37%
+- terms: 
+  - term: beach
+    lang: en
+  freq: 19941.40000
+  origins: ["conceptDbSamples"]
+##  bedroom   ############################################################### ▃ 37%
+- terms: 
+  - term: bedroom
+    lang: en
+  freq: 19349.30000
+  origins: ["conceptDbSamples"]
+##  stolen   ################################################################ ▃ 37%
+- terms: 
+  - term: stolen
+    lang: en
+  freq: 19337.70000
+  origins: ["conceptDbSamples"]
+##  justified   ############################################################# ▃ 37%
+- terms: 
+  - term: justified
+    lang: en
+  freq: 19003.80000
+  origins: ["conceptDbSamples"]
+##  funny   ################################################################# ▃ 37%
+- terms: 
+  - term: funny
+    lang: en
+  freq: 18987.80000
+  origins: ["conceptDbSamples"]
+##  column   ################################################################ ▃ 37%
+- terms: 
+  - term: column
+    lang: en
+  freq: 18928.25000
+  origins: ["conceptDbSamples"]
+##  tool   ################################################################## ▃ 37%
+- terms: 
+  - term: tool
+    lang: en
+  freq: 18451.52000
+  origins: ["conceptDbSamples"]
+##  device   ################################################################ ▃ 37%
+- terms: 
+  - term: device
+    lang: en
+  freq: 17951.45000
+  origins: ["conceptDbSamples"]
+##  appreciate   ############################################################ ▃ 37%
+- terms: 
+  - term: appreciate
+    lang: en
+  freq: 17935.75000
+  origins: ["conceptDbSamples"]
+##  stores   ################################################################ ▃ 37%
+- terms: 
+  - term: stores
+    lang: en
+  freq: 17677.90000
+  origins: ["conceptDbSamples"]
+##  select   ################################################################ ▃ 37%
+- terms: 
+  - term: select
+    lang: en
+  freq: 17442.95000
+  origins: ["conceptDbSamples"]
+##  rejected   ############################################################## ▃ 37%
+- terms: 
+  - term: rejected
+    lang: en
+  freq: 16802.10000
+  origins: ["conceptDbSamples"]
+##  niece   ################################################################# ▃ 37%
+- terms: 
+  - term: niece
+    lang: en
+  freq: 15329.80000
+  origins: ["conceptDbSamples"]
+##  root   ################################################################## ▃ 37%
+- terms: 
+  - term: root
+    lang: en
+  freq: 15258.95000
+  origins: ["conceptDbSamples"]
+##  caution   ############################################################### ▃ 37%
+- terms: 
+  - term: caution
+    lang: en
+  freq: 15246.70000
+  origins: ["conceptDbSamples"]
+##  ghost   ################################################################# ▃ 37%
+- terms: 
+  - term: ghost
+    lang: en
+  freq: 14563.95000
+  origins: ["conceptDbSamples"]
+##  speaker   ############################################################### ▃ 37%
+- terms: 
+  - term: speaker
+    lang: en
+  freq: 14417.15000
+  origins: ["conceptDbSamples"]
+##  neighbour   ############################################################# ▃ 37%
+- terms: 
+  - term: neighbour
+    lang: en
+  freq: 14405.70000
+  origins: ["conceptDbSamples"]
+##  wake   ################################################################## ▃ 37%
+- terms: 
+  - term: wake
+    lang: en
+  freq: 13978.30000
+  origins: ["conceptDbSamples"]
+##  bath   ################################################################## ▃ 37%
+- terms: 
+  - term: bath
+    lang: en
+  freq: 13822.45000
+  origins: ["conceptDbSamples"]
+##  entry   ################################################################# ▃ 37%
+- terms: 
+  - term: entry
+    lang: en
+  freq: 13709.10000
+  origins: ["conceptDbSamples"]
+##  studying   ############################################################## ▃ 37%
+- terms: 
+  - term: studying
+    lang: en
+  freq: 13662.80000
+  origins: ["conceptDbSamples"]
+##  piano   ################################################################# ▃ 37%
+- terms: 
+  - term: piano
+    lang: en
+  freq: 13521.10000
+  origins: ["conceptDbSamples"]
+##  virus   ################################################################# ▃ 37%
+- terms: 
+  - term: virus
+    lang: en
+  freq: 13416.45000
+  origins: ["conceptDbSamples"]
+##  diamonds   ############################################################## ▃ 37%
+- terms: 
+  - term: diamonds
+    lang: en
+  freq: 12851.10000
+  origins: ["conceptDbSamples"]
+##  cars   ################################################################## ▃ 37%
+- terms: 
+  - term: cars
+    lang: en
+  freq: 12638.30000
+  origins: ["conceptDbSamples"]
+##  tricks   ################################################################ ▃ 37%
+- terms: 
+  - term: tricks
+    lang: en
+  freq: 12560.00000
+  origins: ["conceptDbSamples"]
+##  dad   ################################################################### ▃ 37%
+- terms: 
+  - term: dad
+    lang: en
+  freq: 12195.12000
+  origins: ["conceptDbSamples"]
+##  document   ############################################################## ▃ 37%
+- terms: 
+  - term: document
+    lang: en
+  freq: 11841.05000
+  origins: ["conceptDbSamples"]
+##  anymore   ############################################################### ▃ 37%
+- terms: 
+  - term: anymore
+    lang: en
+  freq: 11099.89700
+  origins: ["conceptDbSamples"]
+##  complicated   ########################################################### ▃ 37%
+- terms: 
+  - term: complicated
+    lang: en
+  freq: 10946.45000
+  origins: ["conceptDbSamples"]
+##  re   #################################################################### ▃ 37%
+- terms: 
+  - term: re
+    lang: en
+  freq: 10479.44000
+  origins: ["conceptDbSamples"]
+##  alert   ################################################################# ▃ 37%
+- terms: 
+  - term: alert
+    lang: en
+  freq: 10451.60000
+  origins: ["conceptDbSamples"]
+##  extract   ############################################################### ▃ 37%
+- terms: 
+  - term: extract
+    lang: en
+  freq: 10345.60000
+  origins: ["conceptDbSamples"]
+##  toy   ################################################################### ▃ 37%
+- terms: 
+  - term: toy
+    lang: en
+  freq: 10145.48500
+  origins: ["conceptDbSamples"]
+##  processing   ############################################################ ▃ 37%
+- terms: 
+  - term: processing
+    lang: en
+  freq: 10121.80000
+  origins: ["conceptDbSamples"]
+##  tons   ################################################################## ▃ 37%
+- terms: 
+  - term: tons
+    lang: en
+  freq: 10088.50000
+  origins: ["conceptDbSamples"]
+##  worried   ############################################################### ▃ 37%
+- terms: 
+  - term: worried
+    lang: en
+  freq: 9953.55000
+  origins: ["conceptDbSamples"]
+##  chapters   ############################################################## ▃ 37%
+- terms: 
+  - term: chapters
+    lang: en
+  freq: 9389.18000
+  origins: ["conceptDbSamples"]
+##  happening   ############################################################# ▃ 37%
+- terms: 
+  - term: happening
+    lang: en
+  freq: 9339.34000
+  origins: ["conceptDbSamples"]
+##  messages   ############################################################## ▃ 37%
+- terms: 
+  - term: messages
+    lang: en
+  freq: 9314.02000
+  origins: ["conceptDbSamples"]
+##  upset   ################################################################# ▃ 37%
+- terms: 
+  - term: upset
+    lang: en
+  freq: 9102.75000
+  origins: ["conceptDbSamples"]
+##  whoever   ############################################################### ▃ 37%
+- terms: 
+  - term: whoever
+    lang: en
+  freq: 8846.85000
+  origins: ["conceptDbSamples"]
+##  bean   ################################################################## ▃ 37%
+- terms: 
+  - term: bean
+    lang: en
+  freq: 8738.49500
+  origins: ["conceptDbSamples"]
+##  hello   ################################################################# ▃ 37%
+- terms: 
+  - term: hello
+    lang: en
+  freq: 8621.20050
+  origins: ["conceptDbSamples"]
+##  transport   ############################################################# ▃ 37%
+- terms: 
+  - term: transport
+    lang: en
+  freq: 8144.60000
+  origins: ["conceptDbSamples"]
+##  relaxed   ############################################################### ▃ 37%
+- terms: 
+  - term: relaxed
+    lang: en
+  freq: 7812.45000
+  origins: ["conceptDbSamples"]
+##  jungle   ################################################################ ▃ 37%
+- terms: 
+  - term: jungle
+    lang: en
+  freq: 7630.09500
+  origins: ["conceptDbSamples"]
+##  proving   ############################################################### ▃ 37%
+- terms: 
+  - term: proving
+    lang: en
+  freq: 7603.59000
+  origins: ["conceptDbSamples"]
+##  athletic   ############################################################## ▃ 37%
+- terms: 
+  - term: athletic
+    lang: en
+  freq: 7581.47000
+  origins: ["conceptDbSamples"]
+##  values   ################################################################ ▃ 37%
+- terms: 
+  - term: values
+    lang: en
+  freq: 7039.51000
+  origins: ["conceptDbSamples"]
+##  kid   ################################################################### ▃ 37%
+- terms: 
+  - term: kid
+    lang: en
+  freq: 6770.47000
+  origins: ["conceptDbSamples"]
+##  hen   ################################################################### ▃ 37%
+- terms: 
+  - term: hen
+    lang: en
+  freq: 6569.58000
+  origins: ["conceptDbSamples"]
+##  liar   ################################################################## ▃ 37%
+- terms: 
+  - term: liar
+    lang: en
+  freq: 6052.17000
+  origins: ["conceptDbSamples"]
+##  menu   ################################################################## ▃ 37%
+- terms: 
+  - term: menu
+    lang: en
+  freq: 5951.66500
+  origins: ["conceptDbSamples"]
+##  counts   ################################################################ ▃ 37%
+- terms: 
+  - term: counts
+    lang: en
+  freq: 5730.18000
+  origins: ["conceptDbSamples"]
+##  ll   #################################################################### ▃ 37%
+- terms: 
+  - term: ll
+    lang: en
+  freq: 5632.08000
+  origins: ["conceptDbSamples"]
+##  arrogant   ############################################################## ▃ 37%
+- terms: 
+  - term: arrogant
+    lang: en
+  freq: 4196.96000
+  origins: ["conceptDbSamples"]
+##  steak   ################################################################# ▃ 37%
+- terms: 
+  - term: steak
+    lang: en
+  freq: 4027.81500
+  origins: ["conceptDbSamples"]
+##  drivers   ############################################################### ▃ 37%
+- terms: 
+  - term: drivers
+    lang: en
+  freq: 3781.62000
+  origins: ["conceptDbSamples"]
+##  filter   ################################################################ ▃ 37%
+- terms: 
+  - term: filter
+    lang: en
+  freq: 3768.36500
+  origins: ["conceptDbSamples"]
+##  kids   ################################################################## ▃ 37%
+- terms: 
+  - term: kids
+    lang: en
+  freq: 3525.29000
+  origins: ["conceptDbSamples"]
+##  zero   ################################################################## ▃ 37%
+- terms: 
+  - term: zero
+    lang: en
+  freq: 2789.54000
+  origins: ["conceptDbSamples"]
+##  relaxing   ############################################################## ▃ 37%
+- terms: 
+  - term: relaxing
+    lang: en
+  freq: 1546.66000
+  origins: ["conceptDbSamples"]
+##  planetary   ############################################################# ▃ 37%
+- terms: 
+  - term: planetary
+    lang: en
+  freq: 1291.92000
+  origins: ["conceptDbSamples"]
+##  variants   ############################################################## ▃ 37%
+- terms: 
+  - term: variants
+    lang: en
+  freq: 778.47600
+  origins: ["conceptDbSamples"]
+##  suitcase   ############################################################## ▃ 37%
+- terms: 
+  - term: suitcase
+    lang: en
+  freq: 655.85000
+  origins: ["conceptDbSamples"]
+##  pointless   ############################################################# ▃ 37%
+- terms: 
+  - term: pointless
+    lang: en
+  freq: 492.87600
+  origins: ["conceptDbSamples"]
+##  noodles   ############################################################### ▃ 37%
+- terms: 
+  - term: noodles
+    lang: en
+  freq: 345.72500
+  origins: ["conceptDbSamples"]
+##  sat   ################################################################### ▃ 37%
+- terms: 
+  - term: sat
+    lang: en
+  freq: 166.13800
+  origins: ["conceptDbSamples"]
+##  beers   ################################################################# ▃ 37%
+- terms: 
+  - term: beers
+    lang: en
+  freq: 159.01800
+  origins: ["conceptDbSamples"]
+##  seafood   ############################################################### ▃ 37%
+- terms: 
+  - term: seafood
+    lang: en
+  freq: 27.68970
   origins: ["conceptDbSamples"]

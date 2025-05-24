@@ -82,7 +82,7 @@ public class WordsSource {
 		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
 		 a.run(supa)*/
 		new WordsSource().tap {
-			fromOwnSamples(5)
+			fromOwnSamples(100)
 		}
 		//a.fromCorups(500)
 
