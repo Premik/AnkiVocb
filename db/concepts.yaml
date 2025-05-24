@@ -51,7 +51,7 @@ concepts:
   - term: the
     lang: en
   state: ignore
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "JingleBells"]
 ##  of   ####################################################################
 - terms: 
   - term: of
@@ -107,7 +107,7 @@ concepts:
     tts: Kocka a pes.mp3
   img: and.jpeg
   freq: 20342628.50000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  to   ####################################################################
 - terms: 
   - term: to
@@ -129,7 +129,7 @@ concepts:
     tts: Jdi do loznice.mp3
   state: ignoreImage
   freq: 14906506.00000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  was   ###################################################################
 - terms: 
   - term: was
@@ -151,7 +151,7 @@ concepts:
     tts: Byl to verny pritel.mp3
   state: ignoreImage
   freq: 10078245.00000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  in   ####################################################################
 - terms: 
   - term: in
@@ -173,7 +173,7 @@ concepts:
     tts: Ne v mem meste.mp3
   img: in.jpeg
   freq: 8715316.00000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  is   ####################################################################
 - terms: 
   - term: is
@@ -192,7 +192,7 @@ concepts:
     tts: On je vyborny recnik.mp3
   state: ignoreImage
   freq: 7557477.00000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  it   ####################################################################
 - terms: 
   - term: it
@@ -211,7 +211,7 @@ concepts:
     tts: To je ono.mp3
   state: ignoreImage
   freq: 5965293.50000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  for   ###################################################################
 - terms: 
   - term: for
@@ -290,7 +290,7 @@ concepts:
     tts: Ale neni to jejich vina.mp3
   state: ignoreImage
   freq: 1957586.00000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  all   ###################################################################
 - terms: 
   - term: all
@@ -312,7 +312,7 @@ concepts:
     tts: Mate snad vsichni oci.mp3
   img: all.jpeg
   freq: 1940329.50000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  them   ##################################################################
 - terms: 
   - term: them
@@ -356,7 +356,7 @@ concepts:
     tts: Ty jsi smutny.mp3
   img: you.jpeg
   freq: 1540817.58700
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  one   ###################################################################
 - terms: 
   - term: one
@@ -378,7 +378,7 @@ concepts:
     tts: Musis vybrat jen jeden tvar.mp3
   img: one.jpeg
   freq: 1439082.50000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  false   #################################################################
 - terms: 
   - term: "false"
@@ -444,7 +444,7 @@ concepts:
     tts: Odvedte toho psa ven.mp3
   img: out.jpeg
   freq: 1058897.00000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
 ##  know   ##################################################################
 - terms: 
   - term: know
@@ -523,7 +523,7 @@ concepts:
     tts: A on te videl.mp3
   img: he.jpeg
   freq: 5653229.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  with   ##################################################################
 - terms: 
   - term: with
@@ -561,7 +561,7 @@ concepts:
     tts: To je jeho duch.mp3
   state: ignoreImage
   freq: 4409709.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  have   ##################################################################
 - terms: 
   - term: have
@@ -605,7 +605,7 @@ concepts:
     tts: Ucili jsme se ve tride jako obvykle.mp3
   state: ignoreImage
   freq: 3659513.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  at   ####################################################################
 - terms: 
   - term: at
@@ -734,7 +734,7 @@ concepts:
     tts: Salek caje nebo kavy.mp3
   img: or.jpeg
   freq: 2803803.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  her   ###################################################################
 - terms: 
   - term: her
@@ -762,7 +762,7 @@ concepts:
     lang: cs
   state: ignore
   freq: 2641417.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  said   ##################################################################
 - terms: 
   - term: said
@@ -828,7 +828,7 @@ concepts:
     tts: Hrajeme podle pravidel.mp3
   state: ignoreImage
   freq: 2546805.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  been   ##################################################################
 - terms: 
   - term: been
@@ -872,7 +872,7 @@ concepts:
     tts: Vite jak ho najit.mp3
   state: ignoreImage
   freq: 2324852.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  my   ####################################################################
 - terms: 
   - term: my
@@ -894,7 +894,7 @@ concepts:
     tts: Muj pokoj je v pohode.mp3
   img: my.jpeg
   freq: 2098760.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  this   ##################################################################
 - terms: 
   - term: this
@@ -916,7 +916,7 @@ concepts:
     tts: Tento tyden jsem napsal tri nove kapitoly.mp3
   img: this.jpeg
   freq: 2010471.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  their   #################################################################
 - terms: 
   - term: their
@@ -1130,7 +1130,7 @@ concepts:
     tts: Utikej do nejblizsiho mesta.mp3
   img: into.jpeg
   freq: 1186067.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  did   ###################################################################
 - terms: 
   - term: did
@@ -1347,7 +1347,7 @@ concepts:
     tts: Tak me nechte jit.mp3
   img: go.jpeg
   freq: 983790.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  its   ###################################################################
 - terms: 
   - term: its
@@ -1445,7 +1445,7 @@ concepts:
     tts: My chceme penize nazpet.mp3
   img: we.jpeg
   freq: 915268.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  then   ##################################################################
 - terms: 
   - term: then
@@ -1467,7 +1467,7 @@ concepts:
     tts: A pak jsme sli svoji cestou.mp3
   img: then.jpeg
   freq: 899806.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  see   ###################################################################
 - terms: 
   - term: see
@@ -1618,7 +1618,7 @@ concepts:
     tts: Vy dva, co tady delate.mp3
   img: two.jpeg
   freq: 802196.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  these   #################################################################
 - terms: 
   - term: these
@@ -1681,7 +1681,7 @@ concepts:
     tts: Mozna se muzem dostat ven.mp3
   img: get.jpeg
   freq: 778635.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  other   #################################################################
 - terms: 
   - term: other
@@ -1914,7 +1914,7 @@ concepts:
     tts: Sel jsem do nemocnice.mp3
   state: ignoreImage
   freq: 690186.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  great   #################################################################
 - terms: 
   - term: great
@@ -1958,7 +1958,7 @@ concepts:
     tts: Ted rekni dobrou noc.mp3
   img: now.jpeg
   freq: 668424.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  take   ##################################################################
 - terms: 
   - term: take
@@ -1980,7 +1980,7 @@ concepts:
     tts: Nemuze si ty penize vzit.mp3
   img: take.jpeg
   freq: 663615.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  little   ################################################################
 - terms: 
   - term: little
@@ -2021,7 +2021,7 @@ concepts:
     tts: Dejte mi jeste jeden den.mp3
   img: day.jpeg
   freq: 657552.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  eyes   ##################################################################
 - terms: 
   - term: eyes
@@ -2084,7 +2084,7 @@ concepts:
     tts: Musi se citit osamela.mp3
   state: ignoreImage
   freq: 639579.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  over   ##################################################################
 - terms: 
   - term: over
@@ -2191,7 +2191,7 @@ concepts:
     tts: Vidis co jsi zpusobil.mp3
   img: what.jpeg
   freq: 606801.75000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  before   ################################################################
 - terms: 
   - term: before
@@ -2838,7 +2838,7 @@ concepts:
     tts: Vypadalo to jako dobre misto.mp3
   state: ignoreImage
   freq: 447884.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  looked   ################################################################
 - terms: 
   - term: looked
@@ -2933,7 +2933,7 @@ concepts:
     tts: Byl to jediny jisty zpusob.mp3
   img: way.jpeg
   freq: 433315.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  got   ###################################################################
 - terms: 
   - term: got
@@ -2955,7 +2955,7 @@ concepts:
     tts: Prave jsem dostal praci.mp3
   state: ignoreImage
   freq: 432016.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  tell   ##################################################################
 - terms: 
   - term: tell
@@ -2977,7 +2977,7 @@ concepts:
     tts: Ty mne rekni proc.mp3
   state: ignoreImage
   freq: 431716.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  thing   #################################################################
 - terms: 
   - term: thing
@@ -3291,7 +3291,7 @@ concepts:
     tts: Ma krouzek skrz nos.mp3
   img: through.jpeg
   freq: 412381.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  world   #################################################################
 - terms: 
   - term: world
@@ -3474,7 +3474,7 @@ concepts:
     tts: Poloz se na zada.mp3
   img: back.jpeg
   freq: 379741.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  young   #################################################################
 - terms: 
   - term: young
@@ -3493,7 +3493,7 @@ concepts:
     tts: Ale mlady jsi jenom jednou.mp3
   img: young.jpeg
   freq: 375916.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  between   ###############################################################
 - terms: 
   - term: between
@@ -3578,7 +3578,7 @@ concepts:
     tts: Myslel sem, ze budes mit radost.mp3
   img: thought.jpeg
   freq: 363066.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  away   ##################################################################
 - terms: 
   - term: away
@@ -3600,7 +3600,7 @@ concepts:
     tts: Dej tu hracku pryc.mp3
   img: away.jpeg
   freq: 362907.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  yet   ###################################################################
 - terms: 
   - term: yet
@@ -4109,7 +4109,7 @@ concepts:
     tts: Jste na tomto seznamu.mp3
   img: on.jpeg
   freq: 2675121.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  no   ####################################################################
 - terms: 
   - term: "no"
@@ -4172,7 +4172,7 @@ concepts:
     tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
   img: while.jpeg
   freq: 321748.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  just   ##################################################################
 - terms: 
   - term: just
@@ -4194,7 +4194,7 @@ concepts:
     tts: Prave jsem prisla domu.mp3
   state: ignoreImage
   freq: 315132.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  stood   #################################################################
 - terms: 
   - term: stood
@@ -4464,7 +4464,7 @@ concepts:
     tts: To je tva strana.mp3
   img: side.jpeg
   freq: 279184.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  head   ##################################################################
 - terms: 
   - term: head
@@ -5480,7 +5480,7 @@ concepts:
     lang: en
   state: ignore
   freq: 230485.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  believe   ###############################################################
 - terms: 
   - term: believe
@@ -5930,7 +5930,7 @@ concepts:
     tts: Vsichni tady zijeme spolecne.mp3
   img: together.jpeg
   freq: 212070.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  here   ##################################################################
 - terms: 
   - term: here
@@ -5993,7 +5993,7 @@ concepts:
     tts: Vyroba drobnych i vetsich dilu.mp3
   img: making.jpeg
   freq: 210031.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  whose   #################################################################
 - terms: 
   - term: whose
@@ -6037,7 +6037,7 @@ concepts:
     tts: Skoro jsem spadl do vody.mp3
   img: fell.jpeg
   freq: 208344.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  school   ################################################################
 - terms: 
   - term: school
@@ -6353,7 +6353,7 @@ concepts:
     tts: Je prilis brzy.mp3
   img: soon.jpeg
   freq: 193680.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  nor   ###################################################################
 - terms: 
   - term: nor
@@ -7121,7 +7121,7 @@ concepts:
     tts: A co tvuj pribeh.mp3
   img: story.jpeg
   freq: 172290.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  works   #################################################################
 - terms: 
   - term: works
@@ -7364,7 +7364,7 @@ concepts:
     tts: Co se tam deje.mp3
   img: there.jpeg
   freq: 168331.60000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  company   ###############################################################
 - terms: 
   - term: company
@@ -7405,7 +7405,7 @@ concepts:
     tts: Moje auto bylo bile.mp3
   img: white.jpeg
   freq: 167140.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  book   ##################################################################
 - terms: 
   - term: book
@@ -7690,7 +7690,7 @@ concepts:
     tts: Schuze je otevrena vsem.mp3
   img: open.jpeg
   freq: 160795.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  order   #################################################################
 - terms: 
   - term: order
@@ -8579,7 +8579,7 @@ concepts:
     tts: Dopadl jsem na zem.mp3
   img: ground.jpeg
   freq: 143541.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  second   ################################################################
 - terms: 
   - term: second
@@ -9594,7 +9594,7 @@ concepts:
     tts: Davno.mp3
   state: ignoreImage
   freq: 127753.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  leave   #################################################################
 - terms: 
   - term: leave
@@ -10001,7 +10001,7 @@ concepts:
     tts: Moc to pro me znamena.mp3
   img: lot.jpeg
   freq: 122157.80000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells"]
 ##  evening   ###############################################################
 - terms: 
   - term: evening
@@ -12145,7 +12145,7 @@ concepts:
     tts: Ackoli ta pisen je velmi dobra.mp3
   img: song.jpeg
   freq: 54221.30000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "JingleBells"]
 ##  choice   ################################################################
 - terms: 
   - term: choice
@@ -12617,7 +12617,7 @@ concepts:
     tts: Ne kazdy s vami souhlasi.mp3
   img: everyone.jpeg
   freq: 45742.40000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "JingleBells"]
 ##  goods   #################################################################
 - terms: 
   - term: goods
@@ -13325,7 +13325,7 @@ concepts:
     tts: Ma krouzek skrz nos.mp3
   img: ring.jpeg
   freq: 33378.70000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "JingleBells"]
 ##  fault   #################################################################
 - terms: 
   - term: fault
@@ -14828,7 +14828,7 @@ concepts:
     lang: en
   state: ignore
   freq: 10479.44000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "JingleBells"]
 ##  alert   #################################################################
 - terms: 
   - term: alert
@@ -15333,7 +15333,7 @@ concepts:
     lang: en
   state: ignore
   freq: 5632.08000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "JingleBells"]
 ##  arrogant   ##############################################################
 - terms: 
   - term: arrogant
@@ -15639,3 +15639,267 @@ concepts:
   img: seafood.jpeg
   freq: 27.68970
   origins: ["conceptDbSamples"]
+##  laughed   ############################################################### ▃ 37%
+- terms: 
+  - term: laughed
+    lang: en
+  freq: 106591.00000
+  origins: ["JingleBells"]
+##  girls   ################################################################# ▃ 37%
+- terms: 
+  - term: girls
+    lang: en
+  freq: 93384.70000
+  origins: ["JingleBells"]
+##  horse   ################################################################# ▃ 37%
+- terms: 
+  - term: horse
+    lang: en
+  freq: 87507.50000
+  origins: ["JingleBells"]
+##  quickly   ############################################################### ▃ 37%
+- terms: 
+  - term: quickly
+    lang: en
+  freq: 77724.30000
+  origins: ["JingleBells"]
+##  oh   #################################################################### ▃ 37%
+- terms: 
+  - term: oh
+    lang: en
+  freq: 68285.00000
+  origins: ["JingleBells"]
+##  hills   ################################################################# ▃ 37%
+- terms: 
+  - term: hills
+    lang: en
+  freq: 66475.80000
+  origins: ["JingleBells"]
+##  bright   ################################################################ ▃ 37%
+- terms: 
+  - term: bright
+    lang: en
+  freq: 64276.95000
+  origins: ["JingleBells"]
+##  joy   ################################################################### ▃ 37%
+- terms: 
+  - term: joy
+    lang: en
+  freq: 63479.50000
+  origins: ["JingleBells"]
+##  bank   ################################################################## ▃ 37%
+- terms: 
+  - term: bank
+    lang: en
+  freq: 62986.70000
+  origins: ["JingleBells"]
+##  spirits   ############################################################### ▃ 37%
+- terms: 
+  - term: spirits
+    lang: en
+  freq: 62147.50000
+  origins: ["JingleBells"]
+##  laughing   ############################################################## ▃ 37%
+- terms: 
+  - term: laughing
+    lang: en
+  freq: 53113.60000
+  origins: ["JingleBells"]
+##  lead   ################################################################## ▃ 37%
+- terms: 
+  - term: lead
+    lang: en
+  freq: 51359.90000
+  origins: ["JingleBells"]
+##  lie   ################################################################### ▃ 37%
+- terms: 
+  - term: lie
+    lang: en
+  freq: 50477.75000
+  origins: ["JingleBells"]
+##  fields   ################################################################ ▃ 37%
+- terms: 
+  - term: fields
+    lang: en
+  freq: 50201.40000
+  origins: ["JingleBells"]
+##  drove   ################################################################# ▃ 37%
+- terms: 
+  - term: drove
+    lang: en
+  freq: 50184.80000
+  origins: ["JingleBells"]
+##  seated   ################################################################ ▃ 37%
+- terms: 
+  - term: seated
+    lang: en
+  freq: 49654.70000
+  origins: ["JingleBells"]
+##  sing   ################################################################## ▃ 37%
+- terms: 
+  - term: sing
+    lang: en
+  freq: 43453.10000
+  origins: ["JingleBells"]
+##  snow   ################################################################## ▃ 37%
+- terms: 
+  - term: snow
+    lang: en
+  freq: 41197.95000
+  origins: ["JingleBells"]
+##  sport   ################################################################# ▃ 37%
+- terms: 
+  - term: sport
+    lang: en
+  freq: 39797.20000
+  origins: ["JingleBells"]
+##  ride   ################################################################## ▃ 37%
+- terms: 
+  - term: ride
+    lang: en
+  freq: 34102.95000
+  origins: ["JingleBells"]
+##  bay   ################################################################### ▃ 37%
+- terms: 
+  - term: bay
+    lang: en
+  freq: 30210.75000
+  origins: ["JingleBells"]
+##  riding   ################################################################ ▃ 37%
+- terms: 
+  - term: riding
+    lang: en
+  freq: 29915.10000
+  origins: ["JingleBells"]
+##  forty   ################################################################# ▃ 37%
+- terms: 
+  - term: forty
+    lang: en
+  freq: 28797.55000
+  origins: ["JingleBells"]
+##  tonight   ############################################################### ▃ 37%
+- terms: 
+  - term: tonight
+    lang: en
+  freq: 28173.20500
+  origins: ["JingleBells"]
+##  misfortune   ############################################################ ▃ 37%
+- terms: 
+  - term: misfortune
+    lang: en
+  freq: 24711.00000
+  origins: ["JingleBells"]
+##  bob   ################################################################### ▃ 37%
+- terms: 
+  - term: bob
+    lang: en
+  freq: 24620.10000
+  origins: ["JingleBells"]
+##  speed   ################################################################# ▃ 37%
+- terms: 
+  - term: speed
+    lang: en
+  freq: 24154.15000
+  origins: ["JingleBells"]
+##  fun   ################################################################### ▃ 37%
+- terms: 
+  - term: fun
+    lang: en
+  freq: 22138.75000
+  origins: ["JingleBells"]
+##  lean   ################################################################## ▃ 37%
+- terms: 
+  - term: lean
+    lang: en
+  freq: 22063.05000
+  origins: ["JingleBells"]
+##  tail   ################################################################## ▃ 37%
+- terms: 
+  - term: tail
+    lang: en
+  freq: 20681.45000
+  origins: ["JingleBells"]
+##  bells   ################################################################# ▃ 37%
+- terms: 
+  - term: bells
+    lang: en
+  freq: 17904.10000
+  origins: ["JingleBells"]
+##  fanny   ################################################################# ▃ 37%
+- terms: 
+  - term: fanny
+    lang: en
+  freq: 17065.50000
+  origins: ["JingleBells"]
+##  hey   ################################################################### ▃ 37%
+- terms: 
+  - term: hey
+    lang: en
+  freq: 15244.04500
+  origins: ["JingleBells"]
+##  crack   ################################################################# ▃ 37%
+- terms: 
+  - term: crack
+    lang: en
+  freq: 10631.75000
+  origins: ["JingleBells"]
+##  drifted   ############################################################### ▃ 37%
+- terms: 
+  - term: drifted
+    lang: en
+  freq: 10470.60000
+  origins: ["JingleBells"]
+##  dashing   ############################################################### ▃ 37%
+- terms: 
+  - term: dashing
+    lang: en
+  freq: 7393.94000
+  origins: ["JingleBells"]
+##  ok   #################################################################### ▃ 37%
+- terms: 
+  - term: ok
+    lang: en
+  freq: 5734.77300
+  origins: ["JingleBells"]
+##  tho   ################################################################### ▃ 37%
+- terms: 
+  - term: tho
+    lang: en
+  freq: 3193.01000
+  origins: ["JingleBells"]
+##  sleigh   ################################################################ ▃ 37%
+- terms: 
+  - term: sleigh
+    lang: en
+  freq: 2972.29000
+  origins: ["JingleBells"]
+##  hitch   ################################################################# ▃ 37%
+- terms: 
+  - term: hitch
+    lang: en
+  freq: 2280.84000
+  origins: ["JingleBells"]
+##  gent   ################################################################## ▃ 37%
+- terms: 
+  - term: gent
+    lang: en
+  freq: 2127.36000
+  origins: ["JingleBells"]
+##  lank   ################################################################## ▃ 37%
+- terms: 
+  - term: lank
+    lang: en
+  freq: 2004.73000
+  origins: ["JingleBells"]
+##  lyrics   ################################################################ ▃ 37%
+- terms: 
+  - term: lyrics
+    lang: en
+  freq: 1880.52000
+  origins: ["JingleBells"]
+##  jingle   ################################################################ ▃ 37%
+- terms: 
+  - term: jingle
+    lang: en
+  freq: 1631.31000
+  origins: ["JingleBells"]
