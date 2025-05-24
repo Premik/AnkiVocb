@@ -59,8 +59,9 @@ public class Similarity {
 		if (len == 2) {
 			//Swapped letters in each pair
 			List<String> swpA = allSubstringsWithLen(a, 2).collect {"${it[1]}${it[0]}".toString()}
-			List<String> bSubs = allSubstringsWithLen(b, len)
-			ret = (2d*ret + similarWithLen(swpA, bSubs))/3d
+			List<String> bSubs = allSubstringsWithLen(b, len)			
+			//ret = (2d*ret + similarWithLen(swpA, bSubs))/3d
+			ret+= similarWithLen(swpA, bSubs)/5d //Similarty after swap has lower weight
 		}
 		return ret
 	}
@@ -71,7 +72,7 @@ public class Similarity {
 		int len = Math.min(a.length() ,b.length())
 		int lenDif = Math.abs(a.length() - b.length())
 		double s = (len..1).collect {similarWithLenSmart(a, b, it)*it }.sum()
-		return s+8*rateDistance(lenDif)
+		return s+10*rateDistance(lenDif)
 	}
 
 	double similar(CharSequence a, CharSequence b) {
@@ -106,7 +107,7 @@ public class Similarity {
 
 
 
-		String[] top = c.topX(10000)
+		String[] top = c.topX(16000)
 		def prinSim = {String word-> 
 			println top.sort {String a, String b ->
 				n.similar(word, b) <=> n.similar(word, a)
@@ -115,9 +116,12 @@ public class Similarity {
 		
 		prinSim("when")
 		prinSim("what")
-		prinSim("why")
+		prinSim("become")
 		prinSim("what")
 		prinSim("yesterday")
+		prinSim("wet")
+		prinSim("government")
+		
 
 		 
 		
