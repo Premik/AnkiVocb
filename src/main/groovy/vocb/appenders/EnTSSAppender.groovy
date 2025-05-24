@@ -20,7 +20,7 @@ public class EnTSSAppender {
 	]
 	int voiceCounter = 0
 	int limit = 5
-	int sleep = 500
+	int sleep = 1000
 
 	String getSomeVoice() {
 		voiceCounter++
@@ -41,7 +41,7 @@ public class EnTSSAppender {
 			}
 			if (!dbMan.linkedMediaExists(t.tts) ) {
 				i++
-				if (i > limit) {					
+				if (i > limit) {
 					return
 				}
 				t.tts = dbMan.resolveMedia(t.term, "mp3") { Path path ->
@@ -69,10 +69,14 @@ public class EnTSSAppender {
 			}
 
 			Term enSample = c.examples.values()[0]
-			if (enSample.lang != 'en' || enSample.tts) { continue}
-				i++
-			if (i > limit) break
-				String enWord = c.firstTerm
+			if (enSample.lang != 'en' || enSample.tts) {
+				continue
+			}
+			i++
+			if (i > limit) {
+				break
+			}
+			String enWord = c.firstTerm
 
 			String tts = enTts.SSMLEmphSubstr(enSample.term, enWord )
 			if (!dbMan.linkedMediaExists(enSample.term) ) {
@@ -89,9 +93,9 @@ public class EnTSSAppender {
 
 
 	public static void main(String[] args) {
-		EnTSSAppender a = new EnTSSAppender()
-		a.runTerms()
-		//a.runExamples()
+		EnTSSAppender a = new EnTSSAppender(limit:100)
+		//a.runTerms()
+		a.runExamples()
 		println "Done"
 	}
 }

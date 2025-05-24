@@ -24,10 +24,22 @@ class SSMLTest {
 		
 		GPathResult xml = Helper.parseXml(s)
 		assert xml		
+		println s		 
+		assert xml.prosody.'@rate' == "slow"
+		assert xml.prosody.prosody == "brown fox"		 
+	}
+	
+	@Test
+	void classSplit() {
+		String s = tts.SSMLEmphSubstr("We were studying in class as usual.", "as")		
+		GPathResult xml = Helper.parseXml(s)
+		assert xml
+		assert xml.prosody.prosody == "as" 
 		println s
-		assert xml.prosody.'@rate' == "slow" 
 		
 	}
+	
+	
 
 
 }

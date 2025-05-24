@@ -58,9 +58,9 @@ public class AwsCliPollyTTS {
 		assert text.toLowerCase().contains(substr.toLowerCase()) : "The '$text' doesn't contain the '$substr'"
 		assert normalMod
 		assert highlMod
-		final def (String a, String w, String b) =  Helper.splitBy(text, substr)
-		String innerSSML = SSMLWrapInner(w, highlMod)
-		SSMLWrap(a + innerSSML + b, normalMod)
+		final def (String a, String w, String b) =  Helper.splitByWord(text, substr)
+		String innerSSML = SSMLWrapInner(w.trim(), highlMod)
+		SSMLWrap(a.trim() + innerSSML + b.trim(), normalMod)
 
 	}
 

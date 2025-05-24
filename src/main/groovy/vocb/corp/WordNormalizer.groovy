@@ -12,8 +12,8 @@ public class WordNormalizer {
 	int maxLenght = 15
 
 	//Treat non-letter or non-digit as a space. Except underscore and hyphen.
-	@Lazy Pattern spacesPattern = {~ /[^\p{L}]+/ }()
-	@Lazy Pattern niceWordPatter = {~ /^[\p{L}]+/ }() //No digits in words etc
+	@Lazy Pattern spacesPattern = ~ /[^\p{L}]+/
+	@Lazy Pattern niceWordPatter = ~ /^[\p{L}]+/  //No digits in words etc
 
 	public Set<String> uniqueueTokens(CharSequence input) {
 		tokens(input).collect(Collectors.toSet())
