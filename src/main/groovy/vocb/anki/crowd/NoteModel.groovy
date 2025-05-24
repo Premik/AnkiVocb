@@ -1,20 +1,73 @@
-package vocb.anki.crowd;
+package vocb.anki.crowd
 
-import vocb.Helper
+import groovy.transform.ToString
 
-public class NoteModel {
+@ToString(
+includeNames=true,
+ignoreNulls=true,
+includePackage=false,
+includes=['name', 'flds']
+)
+public class NoteModel  {
 
-	String uuid
-	int fieldsCount
+
+	String __type__ = "Note"
+	String crowdanki_uuid	
+	String css	
+	List<FieldModel> flds = []
+	String latexPost
+	String latexPre
+	String name = "encz-0.0.1"
+	List req
+	int sortf
+	List<String> tags
+	List tmpls
+	int type
+	List vers
+	
+
+	private String[] getFieldNames() {
+		assertIsComplete()
+		flds.collect {it.name}
+	}
+	
+	public setFlds(Object newFlds) {		
+		assert newFlds
+		List l = newFlds as List
+		if (l.size() ==0) {
+			flds.clear()
+			return
+		}
+		flds = l.collect {
+			if (it instanceof FieldModel) return it
+			return new FieldModel(it)
+		}
+		
+	}
+
+	String getFielValue(Note note, String name) {
+		note.assertIsComplete()
+		return note[getFieldIndex(name)]
+	}
+
+	String getFieldIndex(String name) {
+		assert name
+		assertIsComplete()
+		return flds.findIndexOf {it.name = name }
+	}
 
 	public void assertIsComplete() {
-		assert uuid
-		assert fieldsCount
-	}
+		assert name
+		assert flds
+		
+		flds.sort { FieldModel fm1, FieldModel fm2 ->
+			return fm1.ord <=> fm2.ord
+		}
+		flds.eachWithIndex {FieldModel m, int i -> m.ord = i }
+		assert flds*.assertIsComplete()
 
-	@Override
-	public String toString() {
-		return "NoteModel [uuid=" + uuid + ", fieldsCount=" + fieldsCount + "]";
+		if (!crowdanki_uuid) {
+			crowdanki_uuid = "ankivoc-0.0.1-$name"
+		}
 	}
-
 }

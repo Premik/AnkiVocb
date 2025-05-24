@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit
 import groovy.json.JsonBuilder
 import vocb.anki.crowd.CrowdParser
 import vocb.anki.crowd.MediaMan
-import vocb.anki.crowd.NoteFields
+import vocb.anki.crowd.Note
 import vocb.anki.crowd.NoteModel
 import vocb.aws.AwsCliPollyTTS
 import vocb.aws.AwsTranslate
@@ -28,7 +28,7 @@ public class Supa {
 		parser.parse(deckPath.text)
 	}
 
-	NoteFields makeNoteFields(String enWord) {
+	Note makeNoteFields(String enWord) {
 		String czW =trn.trn(enWord)
 		File enSnd = mm.fileForWord(enWord)
 		if (!enSnd.exists()) {
@@ -42,7 +42,7 @@ public class Supa {
 		if (!parser.hasMedia(enSnd.name)) {
 			parser.appendMedia(enSnd.name)
 		}
-		return new NoteFields([enWord:enWord, enSoundRef:enSnd.name, czWord:czW])
+		return new Note([enWord:enWord, enSoundRef:enSnd.name, czWord:czW])
 	}
 
 
@@ -62,7 +62,7 @@ public class Supa {
 		int i =0
 
 		words.each {
-			NoteFields nf = makeNoteFields(it)
+			Note nf = makeNoteFields(it)
 			JsonBuilder b = parser.buildNote(nf, mod)
 			parser.appendNote(b.toPrettyString())
 			i++

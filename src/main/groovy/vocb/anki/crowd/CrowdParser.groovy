@@ -1,11 +1,10 @@
-package vocb.anki.crowd;
+package vocb.anki.crowd
 
-import groovy.json.JsonBuilder
 import vocb.Helper
 
 public class CrowdParser {
 
-	Object jsonRoot
+	Map jsonRoot
 
 
 	public void parse(String json) {
@@ -23,9 +22,15 @@ public class CrowdParser {
 
 	public NoteModel[] getNoteModels() {
 		assert jsonRoot : "Run parse() first"
-		return jsonRoot.note_models.collect {m->
-			new NoteModel([uuid:m.crowdanki_uuid, fieldsCount:m.flds.size() ])
+		return jsonRoot.note_models.collect { Map mJson->
+			new NoteModel(mJson)
 		}
+	}
+	
+	public void setNoteModels(List<NoteModel> cols) {
+		assert jsonRoot : "Run parse() first"
+		if (!cols) return
+		jsonRoot.note_models = Helper.parseJson(Helper.jsonToString(cols))
 	}
 
 	public Object getNotes() {
@@ -53,21 +58,6 @@ public class CrowdParser {
 		return ret
 	}
 
-	public JsonBuilder buildNote(NoteFields flds) {
-		flds.assertIsComplete()
-
-		JsonBuilder b = new groovy.json.JsonBuilder()
-		b {
-			__type__  "Note"
-			data flds.data
-			fields(flds.toRichFields())
-			flags flds.flags
-			guid flds.guid
-			note_model_uuid flds.model.uuid
-			tags flds.tags
-		}
-	}
-
 
 	public void appendMedia(String mediaKey) {
 		assert jsonRoot : "Run parse() first"
@@ -85,6 +75,4 @@ public class CrowdParser {
 		assert noteJson : "Failed to parse noteJsonString"
 		jsonRoot.notes+= noteJson
 	}
-
-
 }

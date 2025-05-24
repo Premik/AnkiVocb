@@ -7,7 +7,7 @@ import groovy.json.JsonBuilder
 import vocb.anki.ProfileSupport
 import vocb.anki.crowd.CrowdParser
 import vocb.anki.crowd.MediaMan
-import vocb.anki.crowd.NoteFields
+import vocb.anki.crowd.Note
 import vocb.anki.crowd.NoteModel
 import vocb.aws.AwsCliPollyTTS
 import vocb.aws.AwsTranslate
@@ -83,7 +83,7 @@ public class App {
 	}
 
 
-	NoteFields makeNoteFields(String enWord) {
+	Note makeNoteFields(String enWord) {
 		ensureCrowdExportExists()
 		String czW =trn.trn(enWord)
 		File enSnd = mm.fileForWord(enWord)
@@ -97,7 +97,7 @@ public class App {
 		if (!parser.hasMedia(enSnd.name)) {
 			parser.appendMedia(enSnd.name)
 		}
-		return new NoteFields([enWord:enWord, enSoundRef:enSnd.name, czWord:czW])
+		return new Note([enWord:enWord, enSoundRef:enSnd.name, czWord:czW])
 	}
 
 	List<String> findPopularUnknownWordsIn(String text) {
@@ -127,7 +127,7 @@ public class App {
 		int i =0
 
 		words.each {
-			NoteFields nf = makeNoteFields(it)
+			Note nf = makeNoteFields(it)
 			JsonBuilder b = parser.buildNote(nf, mod)
 			parser.appendNote(b.toPrettyString())
 			i++
