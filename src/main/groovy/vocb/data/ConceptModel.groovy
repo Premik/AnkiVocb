@@ -13,8 +13,10 @@ public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
 	List<Example> examples = []
-	
-	public List<Term> examplesByLang(String lng) { examples.collectMany {it.byLang(lng) }}
+
+	public List<Term> examplesByLang(String lng) {
+		examples.collectMany {it.byLang(lng) }
+	}
 }
 
 @Canonical
@@ -22,14 +24,17 @@ public class ConceptDb {
 @AutoClone
 public class Example {
 	List<Term> terms = []
-	public String getFirstTerm() {terms[0]?.term}
-	
+	public String getFirstTerm() {
+		terms[0]?.term
+	}
+
 	public Term getAt(int i) {
 		return terms[i]
 	}
-	
-	public List<Term> byLang(String lng) { terms.findAll {it.lang == lng }}
 
+	public List<Term> byLang(String lng) {
+		terms.findAll {it.lang == lng }
+	}
 }
 
 @EqualsAndHashCode
@@ -38,7 +43,7 @@ public class Example {
 public class Concept {
 	LinkedHashMap<String, Term> terms = [:]
 	//State state
-	
+
 	String state
 	String img
 	BigDecimal freq
@@ -54,28 +59,36 @@ public class Concept {
 		terms[cs] = Term.enTerm(cs)
 		if (csAlt) { terms[csAlt] = Term.enTerm(csAlt)}
 	}
-	
+
 	/*public Term getEnTerm() {
-		termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
-	}*/
-	
+	 termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
+	 }*/
+
 	public Object getExamples() {assert false : "Depricated" }
-	
+
 	public List<Term> examplesByLang(String lng) { assert false : "Depricated" }
-	public BigDecimal getCompleteness( ) {
-		if (state == "ignore") return 1
-		BigDecimal termsCp = terms.values()*.completeness*.div(terms.size()).sum()?:0
-		//BigDecimal exCp = examples.values()*.completeness*.div(examples.size()).sum()?:0
-		BigDecimal[] grp =	[
-			Math.min(terms.size(), 2)/2,
-			0.01+termsCp,			
-		].collect( Helper.&clamp01 )
-		//BigDecimal grpSum = grp.inject(1.0) {prod, v->prod*v }
-		BigDecimal grpSum = grp.sum() / grp.size()
-		BigDecimal fldSum = [state =="ignoreImage" ? "1" : img, freq].findAll().size()/2.0
-		(grpSum*2 + fldSum)/3
+
+	public List<String> validate(boolean appendTermWarnings=true ) {
+		List<String> ret = []
+		if (state == "ignore") return ret
+		if (!terms) {
+			ret.add("No terms")
+		}
+		else {
+			if (terms.size() < 3) ret.add("terms.size < 3")
+		}
+		if (state != "ignoreImage" && !img) ret.add("no img")
+		if (freq == null) ret.add("no freq")
+		if (!termsByLang("en")) ret.add("no en term")
+		if (!termsByLang("cs")) ret.add("no cs term")
+		if (appendTermWarnings) {
+			terms.values().eachWithIndex {Term t, Integer i->
+				ret.addAll(t.validate().collect{"t${i}:${it}"} )
+			}
+		}
+		return ret
 	}
-	
+
 	public Term getAt(int i) {
 		return terms[i]
 	}
@@ -86,7 +99,7 @@ public class Concept {
 }
 
 @Canonical
-@ToString(includePackage=false, ignoreNulls=true, excludes='completeness')
+@ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
 public class Term {
 	String term
@@ -94,8 +107,11 @@ public class Term {
 	String tts
 	String pron
 
-	public double getCompleteness() {
-		[term, lang, tts].findAll().size()/3.0
+	public List<String> validate() {
+		properties
+				.subMap (["term", "lang", "tts"])
+				.findAll{k, v->!v}
+				.collect {String k, v -> "$k:missing" }
 	}
 
 	public static Term csTerm(String t) {new Term(t, "cs")}

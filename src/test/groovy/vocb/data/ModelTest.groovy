@@ -24,68 +24,20 @@ class ModelTest {
 
 	@Test
 	void termCompletness() {
-		assert t1.completeness > 0.5
-		assert t1.completeness < 0.9
-		assert t2.completeness > 0.9
-		assert new Term().completeness < 0.01
+		assert t1.validate().size() == 1
+		assert t1.validate()[0] == "tts:missing"
+						
 	}
 
 	@Test
 	void conceptCompletness() {
-		assert new Concept().completeness < 0.1
-		assert c.completeness > 0.1
+		assert new Concept().validate().contains('no img')
+		assert c.validate().contains('no img')
 		//(0..10).each {println  "$it: ${Helper.progressBar(it/10)}" }
 	}
 
-	@Test
-	void compltNear() {
-		def j = new YamlSlurper().parseText '''\
-		  terms: 
-		  - term: be
-		    lang: en
-		  - term: být
-		    lang: cs
-		  examples: 
-		  - term: There must be a piano here.
-		    lang: en
-		  - term: Musí tu někdo být piáno.
-		    lang: cs
-		  state: ignoreImage
-		  freq: 9104176.00000
-		  origins: ["corpus"]'''.stripIndent()
-		assert j
-		new ConceptYamlStorage().tap {
-			Concept c = parseConcept(j)
-			assert c.completeness > 0.7
-			assert c.completeness < 0.9
-		}
-	}
-
-	@Test
-	void compltNoThere() {
-		def j = new YamlSlurper().parseText '''\
-		  terms: 
-		  - term: or
-		    lang: en
-		  - term: nebo
-		    lang: cs
-		    tts: nebo.mp3
-		  examples: 
-		  - term: A cup of tea or coffee.
-		    lang: en
-		  - term: Šálek čaje nebo kávy.
-		    lang: cs
-		    tts: Salek caje nebo kavy.mp3
-		  img: or.jpeg
-		  freq: 2803803.50000
-		  origins: ["corpus"]'''.stripIndent()
-		assert j
-		new ConceptYamlStorage().tap {
-			Concept c = parseConcept(j)
-			assert c.completeness < 0.99
-			assert c.completeness > 0.40
-		}
-	}
+	
+	
 
 	@Test
 	void complt() {
@@ -97,88 +49,21 @@ class ModelTest {
 			- term: jejich
 			  lang: cs
 			  tts: jejich.mp3
-			- term: své
-			examples:
-			- term: But it is not their fault.
-			  lang: en
-			  tts: But it is not their fault.mp3
-			- term: Ale není to jejich vina.
-			  lang: cs
-			  tts: Ale neni to jejich vina.mp3
+			- term: své			
 			state: ignoreImage
 			freq: 1951647.00000
-			origins: ["corpus"]'''.stripIndent())
-
+			origins: ["corpus"]'''.stripIndent())			
 		assert j
 
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
-			println c
-			assert c.completeness > 0.5
-			assert c.completeness < 0.99
+			assert c.validate() == ["t2:lang:missing", "t2:tts:missing"]
+			
 		}
 	}
 
-	@Test
-	void notCompl() {
-		def j = new YamlSlurper().parseText( '''\
-			terms:
-			- term: than
-			  lang: en
-			  tts: than.mp3
-			- term: než
-			  lang: cs
-			  tts: nez.mp3
-			examples:
-			- term: This is better than steak.
-			  lang: en
-			- term: Je to lepší než steak.
-			  lang: cs
-			img: than.jpeg
-			freq: 782249.00000
-			origins: ["corpus"]'''.stripIndent())
+	
 
-		assert j
-
-		new ConceptYamlStorage().tap {
-			Concept c = parseConcept(j)
-			println c
-			assert c.completeness > 0.5
-			assert c.completeness < 0.99
-		}
-	}
-
-	@Test
-	void notComplFull() {
-		def j = new YamlSlurper().parseText( '''\
-			terms:
-			- term: kitty
-			  lang: en
-			  tts: kitty.mp3
-			- term: koťátko
-			  lang: cs
-			  tts: kotatko.mp3
-			- term: kočička
-			  lang: cs
-			  tts: kocicka.mp3
-			examples:
-			- term: Kitty needs some attention.
-			  lang: en
-			  tts: Kitty needs some attention.mp3
-			- term: Koťátko potřebuje trochu pozornosti.
-			  lang: cs
-			  tts: Kotatko potrebuje trochu pozornosti.mp3
-			img: kitty.jpeg
-			freq: 278.47900'''.stripIndent())
-
-		assert j
-
-		new ConceptYamlStorage().tap {
-			Concept c = parseConcept(j)
-			println c
-			assert c.completeness > 0.98
-		}
-	}
 
 	@Test
 	void notComplFull2() {
@@ -192,12 +77,7 @@ class ModelTest {
 	    tts: jiz.mp3
 	  - term: už
 	    lang: cs
-	    tts: uz.mp3
-	  examples: 
-	  - term: I already regret it.
-	    lang: en
-	    tts: I already regret it.mp3
-	  - term: Už teď toho lituji.
+	    tts: uz.mp3	 
 	  state: ignoreImage
 	  freq: 189941.00000
 	  origins: ["corpus"]'''.stripIndent())
@@ -207,7 +87,7 @@ class ModelTest {
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			println c
-			assert c.completeness > 0.94
+			assert c.validate() == []
 		}
 	}
 }
