@@ -127,7 +127,7 @@ public class WordsSource {
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
-			sourceName = "MaryHadALittleLamb"
+			sourceName = "MyBonnie"
 			String tx = new File("/data/src/AnkiVocb/pkg/$sourceName/sentences.txt").text
 			
 			

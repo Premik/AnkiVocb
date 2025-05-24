@@ -10879,6 +10879,52 @@ concepts:
     tts: cs-terms/ovci vlna.mp3
   img: img/fleece.jpeg
   freq: 2219.00000
+##  sea   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: sea
+    lang: en
+  - term: moře
+    lang: cs
+  freq: 118822.00000
+##  winds   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: winds
+    lang: en
+  - term: větry
+    lang: cs
+  freq: 29930.00000
+##  ocean   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: ocean
+    lang: en
+  - term: oceán
+    lang: cs
+  freq: 26689.00000
+##  blown   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: blown
+    lang: en
+  - term: odfouknutý
+    lang: cs
+  - term: odvátý
+    lang: cs
+  freq: 14594.00000
+##  dreamt   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: dreamt
+    lang: en
+  - term: snil
+    lang: cs
+  - term: zdálo
+    lang: cs
+  freq: 4353.00000
+##  bonnie   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: bonnie
+    lang: en
+  - term: miláček
+    lang: cs
+  freq: 1992.00000
 
 examples: 
 - terms: 
