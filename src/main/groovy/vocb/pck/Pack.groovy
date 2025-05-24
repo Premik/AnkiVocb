@@ -5,7 +5,6 @@ import static vocb.Ansi.*
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-import java.util.stream.Collectors
 import java.util.stream.Stream
 
 import groovy.transform.CompileDynamic
@@ -29,6 +28,11 @@ public class Pack {
 
 	@Lazy
 	Path destRootFolder = cfgHelper.outPath.resolve("pkg")
+	
+	@Lazy
+	Path dbgOutPath = Paths.get("/tmp/work/vocbDebug").tap {
+		Files.createDirectories(it)
+	}
 
 
 	@Lazy
@@ -40,27 +44,26 @@ public class Pack {
 	//@Lazy ConfigObject cfg = cfgHelper.config
 
 	@Lazy
-	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
+	volatile TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
 	@Lazy
-	List<PackInfo> allPackInfos = {
-		treeConf.leafs.collect {
-			TreeConf<PackInfo> tc->
+	volatile List<PackInfo> allPackInfos = {
+		treeConf.leafs.collect { TreeConf<PackInfo> tc->
 
 			PackInfo pi = new PackInfo(
-			pack: this,
-			treeConf: tc).tap {
-				tc.obj= it
-			}
+					pack: this,
+					treeConf: tc).tap {
+						tc.obj= it
+					}
 
 			return pi
 		}
 	}()
 
 	@Lazy
-	Manager dbMan = {
+	volatile Manager dbMan = {
 		Manager.defaultInstance
-		//new Manager(defaultExamplesFileName:"examplesDraft.yaml", silent:silent).tap {load()}		
+		//new Manager(defaultExamplesFileName:"examplesDraft.yaml", silent:silent).tap {load()}
 	}()
 
 	WordNormalizer wn = WordNormalizer.instance
@@ -92,16 +95,45 @@ public class Pack {
 
 	Set<String> exportedWordsOf(String ... names) {
 		pkgsByName(names).parallelStream()
-		.filter {
-			it as Boolean
+				.filter {
+					it as Boolean
+				}
+				.map {
+					packExportOf(it)
+				}
+				.flatMap {
+					it.exportedWords.stream()
+				}
+				.toList() as LinkedHashSet
+	}
+
+
+	Map<String, Set<PackExport>> packExportsByExportedWord(String ... pkgNames) {
+		Map<String, Set<PackExport>> ret = [:].withDefault { [] as LinkedHashSet }
+		pkgsByName(pkgNames).parallelStream().map {
+			packExportOf(it).tap {
+				exportedWords //prefetch
+			}
+		}.forEach { PackExport pe->
+			pe.exportedWords.each { String w->
+				ret[w].add(pe)
+			}
 		}
-		.map {
-			packExportOf(it)
+		return ret
+	}
+
+	void savePackByWordList() {
+		Helper.startWatch()
+		dbgOutPath.resolve("word2pkg.txt").withPrintWriter("UTF8") { PrintWriter w->
+			packExportsByExportedWord()
+			.toSorted{Map.Entry<String, Set<PackExport>> e-> e.key.toLowerCase()}
+			.each { String k, Set<PackExport> v->
+				String s = "${k.padRight(20)} : ${v.collect{it.info.name.padRight(20)}.join(' ')}"
+				w.println(s)
+				println s
+			}
 		}
-		.flatMap {
-			it.exportedWords.stream()
-		}
-		.toList() as LinkedHashSet
+		Helper.printLapseTime()
 	}
 
 
@@ -126,41 +158,38 @@ public class Pack {
 		Helper.startWatch()
 
 		Set<Concept> allExp = exportedItemsFromPackages()
-		.map {
-			it.concept
-		}
-		.filter {
-			!it.ignore
-		}
-		.toSet()
-		.toSorted {
-			0-it.freq
-		}
-		.take(topx) as LinkedHashSet
+				.map {
+					it.concept
+				}
+				.filter {
+					!it.ignore
+				}
+				.toSet()
+				.toSorted {
+					0-it.freq
+				}
+				.take(topx) as LinkedHashSet
 		Helper.printLapseTime()
 		return allExp
 		//allExp.take(100).each {println it}
 	}
-	
+
 	void printBestExamplesFor() {
-		
-		
+
+
 		Collection<String> words='''		
 		resource 
 		  
 		'''.split(/\s+/).reverse().findAll()
-		
+
 		Helper.startWatch("allWordPackages")
 		//Set<String> knownWords = exportedWordsFromPackages()
 		Collection<String> knownWords = dbMan.db.concepts.toSorted{-1*(it.freq?:0)}.collect{it.firstTerm}
 		ExampleComparatorMatch.preferedWords = ( knownWords + ExampleComparatorMatch.preferedWords) as LinkedHashSet
 		Helper.printLapseTime("allWordPackages")
-		
-		
+
+
 		findBestExamplesFor(wn.expandBrackets(words), knownWords)
-		
-		
-		
 	}
 
 
@@ -171,8 +200,8 @@ public class Pack {
 		Concept[] topDbAr = dbMan.db.concepts.findAll {
 			!it.ignore
 		}.toArray() as Concept[]
-		Arrays.parallelSort(topDbAr, {
-			Concept a, Concept b-> (b.freq?:0) <=>(a.freq?:0)
+		Arrays.parallelSort(topDbAr, { Concept a, Concept b->
+			(b.freq?:0) <=>(a.freq?:0)
 		})
 
 		Set<String> topDb = topDbAr.take(x).collect {
@@ -182,9 +211,9 @@ public class Pack {
 		//Set<String> ignore =  []
 		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
 		//Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
-		Set<String> ignore = exportedWordsFromPackages()
-		
-		
+		Set<String> ignore = exportedWordsFromPackages() - exportedWordsOf("First" ) + exportedWordsOf("Basic" )
+
+
 		//Prefer the ignored (known) words
 		ExampleComparatorMatch.preferedWords = ( ignore + ExampleComparatorMatch.preferedWords) as LinkedHashSet
 
@@ -301,7 +330,6 @@ public class Pack {
 		//def l = exportedWordsOf("BasicWords")
 		println l
 		l.each {
-
 			new File("/tmp/work/BasicWordsNoSimple.txt") <<"$it\n"
 		}
 	}
@@ -344,6 +372,7 @@ public class Pack {
 
 
 	public List<PackInfo>  pkgsByName(String ... names) {
+		if (!names) return allPackInfos
 		Map<String, Boolean> matches = names.collectEntries {[it, false]}
 		List<PackInfo> ret = allPackInfos.findAll { PackInfo pi->
 			names.any {String name->
@@ -409,12 +438,14 @@ public class Pack {
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
-			
+
 			//p.exportByName("Simple")
 			//return
-			
+
 			silent=true
-						
+			//savePackByWordList()
+			//return
+
 			//return
 			/*findTopxNotInDb(1000).each {
 			 println it
@@ -422,11 +453,11 @@ public class Pack {
 			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/
-			//printFirstX()
+			printFirstX()
 			//ExampleComparatorMatch.preferedWords = Corpus.buildDef(25000).topX(25000) as LinkedHashSet
 			//printBestExamplesFor()
-			
-			packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))
+
+			//packExportsOf("Basic").first().debugDumpTo(dbgOutPath)
 
 			//printExamplesExport()
 			//p.export()
