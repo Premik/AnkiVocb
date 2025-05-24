@@ -20,21 +20,21 @@ class VocbModel {
 	
 
     @Lazy
-    CrowdParser parser = {
+    volatile CrowdParser parser = {
         InputStream deck = cfgHelper.resolveRes("deck.json")
         assert deck != null
         new CrowdParser(json: deck.text)
     }()
 
     @Lazy
-    NoteModel noteModel = {
+    volatile NoteModel noteModel = {
         NoteModel n = parser.defaultModel
         assert n: "Failed to find the ankivobc model. The model name must start with 'ankivocb' "
         return n
     }()
 
     @Lazy
-    List<Note> notes = {
+    volatile List<Note> notes = {
         parser.allNotes.each { assureNote(it) }
         return parser.allNotes
     }()

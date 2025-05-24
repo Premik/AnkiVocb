@@ -173,6 +173,10 @@ public class PackExport {
 		}
 		.collect(Collectors.toCollection(mc)) as Set<String>
 	}()
+	
+	public ProfileSupport profileSupport(String profile="Honzik") {
+		new ProfileSupport(selectedProfile: profile, deckName:info.name)
+	}
 
 	public List<List> cardsFieldsInDb(String deck=info.name, String profile="Honzik") {
 		new ProfileSupport(selectedProfile: profile, deckName:deck).ankivocbCards()

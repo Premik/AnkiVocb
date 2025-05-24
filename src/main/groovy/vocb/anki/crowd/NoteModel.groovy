@@ -1,5 +1,6 @@
 package vocb.anki.crowd
 
+import groovy.transform.Synchronized
 import groovy.transform.ToString
 
 @ToString(
@@ -32,6 +33,7 @@ public class NoteModel  {
 		flds.collect {it.name}
 	}
 	
+	@Synchronized
 	public setFlds(Object newFlds) {		
 		assert newFlds
 		List l = newFlds as List
@@ -42,7 +44,10 @@ public class NoteModel  {
 		flds = l.collect {
 			if (it instanceof FieldModel) return it
 			return new FieldModel(it)
-		}		
+		}
+		flds.sort { FieldModel fm1, FieldModel fm2 ->
+			fm1.ord <=> fm2.ord
+		}
 	}
 	
 	public setTmpls(Object newTmpls) {
@@ -85,9 +90,7 @@ public class NoteModel  {
 		assert name
 		assert flds
 		
-		flds.sort { FieldModel fm1, FieldModel fm2 ->
-			fm1.ord <=> fm2.ord
-		}
+		
 		flds.eachWithIndex {FieldModel m, int i -> m.ord = i }
 		assert flds*.assertIsComplete()
 		assert tmpls

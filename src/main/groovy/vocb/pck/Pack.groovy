@@ -11,6 +11,7 @@ import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import groovy.transform.Memoized
 import vocb.Helper
+import vocb.anki.ProfileSupport
 import vocb.anki.crowd.Data2Crowd
 import vocb.conf.ConfHelper
 import vocb.conf.TreeConf
@@ -87,7 +88,7 @@ public class Pack {
 		assert info
 		File pkgFile = info.treeConf.path.toFile()
 		packExportOf(info).with {
-			confHelper.extraLookupFolders.add(pkgFile)
+			confHelper.extraLookupFolders.add(pkgFile)			
 			data2crowd.export(export())
 			confHelper.extraLookupFolders.remove(pkgFile)
 		}
@@ -207,7 +208,7 @@ public class Pack {
 		Set<String> topDb = topDbAr.take(x).collect {
 			it.firstTerm
 		} as LinkedHashSet
-
+		
 		//Set<String> ignore =  []
 		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
 		//Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
@@ -436,19 +437,33 @@ public class Pack {
 	List<String> sentencesFromAllPackages(List<PackInfo> pkgInfos = allPackInfos) {
 		pkgInfos.collect {wn.sentences(it.sentences)}.flatten().toUnique().sort()
 	}
+	
+	private deleteDupFirst1k() {
+		//PackExport first100 = packExportsOf("First")[0]
+		//first100.cardsFieldsInDb().collect {List flds->flds[2]}
+		
+		Helper.startWatch()
+		exportedWordsOf("First", "Basic") //Prefetch in paral.		
+		
+		println ((exportedWordsOf("First" ) - exportedWordsOf("Basic" )).join(" OR "))
+		Helper.printLapseTime()
+	}
 
 
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
+			silent=true
+			//deleteDupFirst1k()
+			//return
 
-			/*p.exportByName("Simple")
-			packExportsOf("Simple").each {
+			p.exportByName("Basic1K")
+			packExportsOf("Basic1K").each {
 				it.debugDumpTo(dbgOutPath)
 			}
-			return*/
+			return
 
-			silent=true
+			
 			//savePackByWordList()
 			//return
 
@@ -471,4 +486,6 @@ public class Pack {
 		}
 		println "Done"
 	}
+
+	
 }
