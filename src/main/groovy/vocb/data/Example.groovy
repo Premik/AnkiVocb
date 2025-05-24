@@ -9,7 +9,9 @@ import groovy.transform.ToString
 @ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
 public class Example extends TermContainer {
-
+	
+	public static Example empty = new Example()
+	
 	@Override
 	public List<String> validate() {
 		List<String> ret = []

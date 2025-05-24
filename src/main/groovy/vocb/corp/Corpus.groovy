@@ -240,10 +240,8 @@ public class Corpus {
 		buildDef().with {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
-			//println topXOf(["i am", "hello"])
-			println it["success"]
-			
-
+			topX(2000).each  {println it }
+			//println it["success"]
 
 		}
 

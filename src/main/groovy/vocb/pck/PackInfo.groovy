@@ -61,6 +61,10 @@ public class PackInfo {
 		infoCfg.backgroundName = v
 	}
 	
+	public boolean getNoExamples() {
+		infoCfg.noExamples
+	}
+	
 	public String getUuid() {
 		if (!name) return ""	
 		String p = name.toLowerCase()*10
