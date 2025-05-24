@@ -16945,7 +16945,6 @@ concepts:
     tts: cs-terms/slavnostni.mp3
   - term: vážný
     lang: cs
-    tts: cs-terms/vazny.mp3
   freq: 1.87260
   profileName: relax
 - terms: 
@@ -17262,7 +17261,6 @@ concepts:
     pron: ˈɜːnɪstli
   - term: vážně
     lang: cs
-    tts: cs-terms/vazne.mp3
   - term: naléhavě
     lang: cs
     tts: cs-terms/nalehave.mp3
@@ -17583,7 +17581,6 @@ concepts:
     tts: cs-terms/citu.mp3
   - term: náklonnost
     lang: cs
-    tts: cs-terms/naklonnost.mp3
   freq: 0.98860
   profileName: relax
 - terms: 
@@ -24449,7 +24446,7 @@ concepts:
     tts: en-terms/email.mp3
   - term: email (elektronická pošta)
     lang: cs
-    tts: cs-terms/email.mp3
+    tts: cs-terms/email-cs.mp3
   freq: 754.85690
 ##  post   ################################################################## no img
 - terms: 
@@ -24482,7 +24479,7 @@ concepts:
     tts: en-terms/video.mp3
   - term: video
     lang: cs
-    tts: cs-terms/video.mp3
+    tts: cs-terms/video-cs.mp3
   freq: 621.31430
 ##  privacy   ############################################################### no img
 - terms: 
@@ -24509,7 +24506,7 @@ concepts:
     tts: en-terms/program.mp3
   - term: program
     lang: cs
-    tts: cs-terms/program.mp3
+    tts: cs-terms/program-cs.mp3
   freq: 521.46630
 ##  international   ######################################################### no img
 - terms: 
@@ -24659,7 +24656,7 @@ concepts:
     tts: en-terms/media.mp3
   - term: média
     lang: cs
-    tts: cs-terms/media.mp3
+    tts: cs-terms/media-cs.mp3
   - term: sdělovací prostředky
     lang: cs
     tts: cs-terms/sdelovaci prostredky.mp3
@@ -24926,7 +24923,7 @@ concepts:
     tts: en-terms/pc.mp3
   - term: pc
     lang: cs
-    tts: cs-terms/pc.mp3
+    tts: cs-terms/pc-cs.mp3
   - term: "(osobní) počítač"
     lang: cs
     tts: cs-terms/pocitac.mp3
@@ -25058,7 +25055,7 @@ concepts:
     tts: en-terms/park.mp3
   - term: park
     lang: cs
-    tts: cs-terms/park.mp3
+    tts: cs-terms/park-cs.mp3
   - term: zaparkovat
     lang: cs
     tts: cs-terms/zaparkovat.mp3
@@ -25340,7 +25337,7 @@ concepts:
     tts: en-terms/radio.mp3
   - term: rádio
     lang: cs
-    tts: cs-terms/radio.mp3
+    tts: cs-terms/radio-cs.mp3
   - term: vysílačka
     lang: cs
     tts: cs-terms/vysilacka.mp3
@@ -25469,7 +25466,7 @@ concepts:
     tts: en-terms/region.mp3
   - term: region
     lang: cs
-    tts: cs-terms/region.mp3
+    tts: cs-terms/region-cs.mp3
   - term: oblast
     lang: cs
     tts: cs-terms/oblast.mp3
@@ -25544,7 +25541,7 @@ concepts:
     tts: en-terms/material.mp3
   - term: materiál
     lang: cs
-    tts: cs-terms/material.mp3
+    tts: cs-terms/material-cs.mp3
   - term: hmotné
     lang: cs
     tts: cs-terms/hmotne.mp3
@@ -25607,7 +25604,7 @@ concepts:
     tts: en-terms/plus.mp3
   - term: plus
     lang: cs
-    tts: cs-terms/plus.mp3
+    tts: cs-terms/plus-cs.mp3
   freq: 161.07180
 ##  percent   ############################################################### no img
 - terms: 
@@ -25847,7 +25844,7 @@ concepts:
     tts: en-terms/limit.mp3
   - term: limit
     lang: cs
-    tts: cs-terms/limit.mp3
+    tts: cs-terms/limit-cs.mp3
   - term: omezit
     lang: cs
     tts: cs-terms/omezit.mp3

@@ -59,7 +59,7 @@ public class EnTSSAppender {
 	}
 
 	void runExamples() {
-		dbMan.load()
+		//dbMan.load()
 		List<Example> todo = dbMan.db.examples.collect().findAll { !it[0].tts}
 
 		println "Found ${color(todo.size().toString(), BOLD)} example terms with no tts"
@@ -99,7 +99,7 @@ public class EnTSSAppender {
 		new EnTSSAppender().with {
 			limit = 250
 			runTerms()
-			//runExamples()
+			runExamples()
 		}
 		println "Done"
 	}
