@@ -33,11 +33,17 @@ public class TreeConf {
 		//descendants.withIndex().each {TreeConf tf, int i-> tf.seq = i+1}
 		return ret
 	}()
+	
+	Stream<Path> thisFiles() { Files.list(path).filter(Files.&isRegularFile) }
+	
+	Stream<Path> files() {
+		if (isRoot) return thisFiles()
+		return Stream.concat(thisFiles(), parent.thisFiles())
+	}
 
 	@Lazy
 	Path confPath = {
-		List<Path> paths = Files.list(path)
-		.filter(Files.&isRegularFile)
+		List<Path> paths = thisFiles()		
 		.filter{it.fileName.toString().endsWith(".conf")}
 		.toList()
 		assert paths.size() <=1
@@ -51,6 +57,12 @@ public class TreeConf {
 
 	@Lazy
 	ConfigObject thisConf = {
+		if (!confPath) return new ConfigObject()
+		ConfHelper.parseString(confPath.text, binding)
+	}()
+	
+	@Lazy
+	ConfigObject conf = {
 		if (!confPath) return new ConfigObject()
 		ConfHelper.parseString(confPath.text, binding)
 	}()
@@ -103,6 +115,8 @@ public class TreeConf {
 	Stream<TreeConf> descendantsStream() {
 		Stream.concat(Stream.of(this), children.stream())
 	}
+	
+	
 	
 	List<TreeConf> getDescendants() {
 		List<TreeConf> dsd = children*.descendants.flatten() as List<TreeConf>

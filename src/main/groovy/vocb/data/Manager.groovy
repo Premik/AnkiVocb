@@ -1,15 +1,16 @@
 package vocb.data
 
+import static vocb.Ansi.*
 import static vocb.Helper.utf8
 
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.util.stream.Stream
 
 import groovy.transform.CompileStatic
 import vocb.Helper
 import vocb.corp.WordNormalizer
-import static vocb.Ansi.*
 
 @CompileStatic
 public class Manager {
@@ -123,6 +124,12 @@ public class Manager {
 	void withTermsByLang(String lang, boolean includeExamples=false, Closure cl) {
 		withTerms(includeExamples) { Concept c, Term t->
 			if (t.lang == lang) cl(c , t)
+		}
+	}
+	
+	Stream<String> termsStream(String lang="en") {
+		db.concepts.stream().flatMap{ Concept c ->
+			c.termsByLang(lang).collect {it.term}.stream()
 		}
 	}
 

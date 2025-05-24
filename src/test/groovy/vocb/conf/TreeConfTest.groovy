@@ -56,7 +56,16 @@ class TreeConfTest {
 		assert child1.thisConf.child1confKey == "child1confKey"
 		assert child1.thisConf.confkey1 == "child1"		
 		assert child1.parent.thisConf.parentConfKey == "parentConfKey"
+		assert !child1.thisConf.parentConfKey
 		
+		assert child1.conf.child1confKey == "child1confKey"
+		assert child1.conf.parentConfKey == "parentConfKey"
+		 
+	}
+	
+	@Test
+	void testFiles() {
 		
+	
 	}
 }
