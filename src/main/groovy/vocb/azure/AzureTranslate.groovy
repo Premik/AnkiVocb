@@ -16,7 +16,7 @@ public class AzureTranslate {
 	JsonSlurper jsonSlurper = new JsonSlurper()
 	JsonBuilder jsonBuilder = new JsonBuilder()
 
-	Map trnJsonrunTrn(String text, String srcLang="en", String destLang="cs") {
+	Map dictLookup(String text, String srcLang="en", String destLang="cs") {
 		//https://docs.microsoft.com/en-us/azure/cognitive-services/translator/reference/v3-0-dictionary-lookup
 		//http -v post "https://api.cognitive.microsofttranslator.com/dictionary/lookup?api-version=3.0&from=en&to=es" Ocp-Apim-Subscription-Key:$AZURE_KEY  <<< '[{"Text":"fly"}]'
 		//http -v post "https://api.cognitive.microsofttranslator.com/dictionary/lookup?api-version=3.0&from=en&to=es" Ocp-Apim-Subscription-Key:$AZURE_KEY  <<< '[{"Text":"fly"}]'

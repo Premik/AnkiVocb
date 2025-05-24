@@ -1,6 +1,7 @@
 package vocb.appenders
 
 import vocb.HttpHelper
+import vocb.aws.AwsTranslate
 import vocb.azure.AzureTranslate
 import vocb.data.Concept
 import vocb.data.Manager
@@ -10,6 +11,8 @@ public class TranslationAppender {
 
 
 	AzureTranslate trn = new AzureTranslate(httpHelper: new HttpHelper() )
+	AwsTranslate awsTrn = new AwsTranslate()
+	
 	int sleep =500
 	int limit= 100
 
@@ -23,7 +26,7 @@ public class TranslationAppender {
 		}
 		int i = 0
 		for (Concept c in noCs) {
-			Map trnJson = trn.trnJsonrunTrn(c.firstTerm)
+			Map trnJson = trn.dictLookup(c.firstTerm)
 			trn.extractTopTrns(trnJson).each {String csWord ->
 				c.terms.put(csWord, new Term(csWord, "cs"))
 			}
@@ -42,10 +45,12 @@ public class TranslationAppender {
 			it.terms && it.state!="ignore" && it.examplesByLang("en") && it.firstTerm && (!it.examplesByLang("cs"))  
 		}
 		int i = 0
+		println "Found ${noCs.size()} concept with missing cs trn"
 		for (Concept c in noCs) {
-			String enSam = c.examplesByLang("en")[0]
-			Map trnJson = trn.trnJsonrunTrn(enSam)
-			List<String> csSams =trn.extractTopTrns(trnJson)
+			String enSam = c.examplesByLang("en")[0]?.term
+			String[] csSams = [awsTrn.trn(enSam)]
+			//Map trnJson = trn.dictLookup(enSam)			
+			//List<String> csSams =trn.extractTopTrns(trnJson)
 			println "$c.firstTerm $enSam $csSams"
 			csSams.each {String csTrn ->
 				
