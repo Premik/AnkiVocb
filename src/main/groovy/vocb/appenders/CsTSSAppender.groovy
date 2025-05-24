@@ -17,7 +17,7 @@ import static vocb.Ansi.*
 public class CsTSSAppender {
 
 	//LocalTTS ttsCz = new LocalTTS()
-	AzureTTs ttsCz = new AzureTTs()
+	Object ttsCz = new AzureTTs()
 	Manager dbMan = new Manager()
 	int limit = 10
 	WordNormalizer wn = new WordNormalizer()
@@ -61,7 +61,9 @@ public class CsTSSAppender {
 
 	public static void main(String[] args) {
 		new CsTSSAppender().with {
-			limit = 2
+			limit = 10
+			//ttsCz = new LocalTTS()
+			//includeOnlyTerms = ["koutek", "kůň", "závodník" ]
 			synth()
 		}
 		println "Done"
