@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test
 
 class WordNormalizerTest {
 
-	WordNormalizer norm = new WordNormalizer()
+	WordNormalizer wn = new WordNormalizer()
 
 	@Test
 	void simple() {
-		List<String> t =  norm.tokens("123 aaa bbb fooBar a123 mm_word").collect(Collectors.toList())
+		List<String> t =  wn.tokens("123 aaa bbb fooBar a123 mm_word").collect(Collectors.toList())
 		assert t == [
 			"aaa",
 			"bbb",
@@ -24,7 +24,7 @@ class WordNormalizerTest {
 
 	@Test
 	void ampersand() {
-		List<String> t = norm.tokens("That's 'cause you're young").collect(Collectors.toList())
+		List<String> t = wn.tokens("That's 'cause you're young").collect(Collectors.toList())
 		assert t == [
 			"that's",
 			"'cause",
@@ -36,7 +36,7 @@ class WordNormalizerTest {
 
 	@Test
 	void stringSteam() {
-		List<String> res = norm.tokens(["aaa bbb", "ccc ddd"].stream()).collect(Collectors.toList())
+		List<String> res = wn.tokens(["aaa bbb", "ccc ddd"].stream()).collect(Collectors.toList())
 		assert res == ["aaa", "bbb", "ccc", "ddd"]
 	}
 
@@ -45,9 +45,9 @@ class WordNormalizerTest {
 		String[] w = ["a", "b", "c", "d", "e"]
 
 
-		assert norm.pairs(w.stream(),1).toList() == w
-		assert norm.pairs(w.stream(), 2).toList() == ['a b', 'b c', 'c d', 'd e']
-		assert norm.pairs(w.stream(), 3).toList() == ['a b c', 'b c d', 'c d e']
+		assert wn.pairs(w.stream(),1).toList() == w
+		assert wn.pairs(w.stream(), 2).toList() == ['a b', 'b c', 'c d', 'd e']
+		assert wn.pairs(w.stream(), 3).toList() == ['a b c', 'b c d', 'c d e']
 
 		//assert norm.pairs(w.stream(),1, 3).toList() == ['a', 'a b', 'b c', 'c d', 'd']
 	}
@@ -55,7 +55,7 @@ class WordNormalizerTest {
 	@Test
 	void phraseFreqs() {
 		List<String> w = ["a", "b", "a", "b", "e"]
-		Map<String , Integer> f = norm.phraseFreqs(w, 1, 4)
+		Map<String , Integer> f = wn.phraseFreqs(w, 1, 4)
 		assert f["a"] == 2
 		assert f["e"] == 1
 		assert f["a b"] == 2
@@ -66,13 +66,13 @@ class WordNormalizerTest {
 
 	@Test
 	void sentencesTriv() {
-		assert  norm.sentences("Hello world.") == ["Hello world"]
-		assert  norm.sentences("Hello world! Lazy dog?") == ["Hello world", "Lazy dog"]
+		assert  wn.sentences("Hello world.") == ["Hello world"]
+		assert  wn.sentences("Hello world! Lazy dog?") == ["Hello world", "Lazy dog"]
 	}
 
 	@Test
 	void sentencesSimpleMulti() {
-		String[] sts = norm.sentences('''
+		String[] sts = wn.sentences('''
 			The itsy bitsy spider climbed up the waterspout.
 			Down came the rain
 			and washed the spider out.
@@ -83,15 +83,15 @@ class WordNormalizerTest {
 
 	@Test
 	void sentencesI() {
-		assert norm.sentences('''You say I am sad.''').size() == 1
-		assert norm.sentences('''
+		assert wn.sentences('''You say I am sad.''').size() == 1
+		assert wn.sentences('''
               The story I must tell
              ''').size() == 1
 	}
 
 	@Test
 	void sentencesMultiNoDots() {
-		String[] sts = norm.sentences('''
+		String[] sts = wn.sentences('''
 			Now the ground is white
 			Go it while you're young,
 			Take the girls tonight
@@ -104,8 +104,8 @@ class WordNormalizerTest {
 
 	@Test
 	void sentencesNorm() {
-		assert norm.normalizeSentence("Hello world!") == "hello world"
-		assert norm.normalizeSentence("hello world") == "hello world"
+		assert wn.normalizeSentence("Hello world!") == "hello world"
+		assert wn.normalizeSentence("hello world") == "hello world"
 	}
 
 	@Test
@@ -128,42 +128,55 @@ class WordNormalizerTest {
 			'Worlded',
 			'Worlding',
 		] as LinkedHashSet
-		assert norm.uniqueueTokens("Hello world!", true) == exp
+		assert wn.uniqueueTokens("Hello world!", true) == exp
 	}
 	
 	@Test
 	void lemmSort() {
-		assert norm.wordVariants("ed")
-		assert norm.wordVariants("ing")
-		assert norm.wordVariants("s")
+		assert wn.wordVariants("ed")
+		assert wn.wordVariants("ing")
+		assert wn.wordVariants("s")
 	}
 
 	@Test
 	void variants() {
-		assert norm.wordVariants("cats") as Set == "cat cats catsed catsing Cat Cats Catsed Catsing".split() as Set
-		assert norm.wordVariants("cat") as Set == "cat cats cated cating Cat Cats Cated Cating".split() as Set
-		assert norm.wordVariants("Cat") as Set ==  norm.wordVariants("cat") as Set
-		assert norm.wordVariants("look") as Set ==  "look looks looked looking Look Looks Looked Looking".split() as Set
+		assert wn.wordVariants("cats") as Set == "cat cats catsed catsing Cat Cats Catsed Catsing".split() as Set
+		assert wn.wordVariants("cat") as Set == "cat cats cated cating Cat Cats Cated Cating".split() as Set
+		assert wn.wordVariants("Cat") as Set ==  wn.wordVariants("cat") as Set
+		assert wn.wordVariants("look") as Set ==  "look looks looked looking Look Looks Looked Looking".split() as Set
 		//assert norm.wordVariants("antiquities") as Set == "cat cats".split() as Set
 	}
 
 	@Test
 	void stripBrkSimple() {
-		assert norm.stripBracketsOut ("Hello (world)") == "Hello"
-		assert norm.stripBracketsOut ("Hello ( world ) there.") == "Hello there."
-		assert norm.stripBracketsOut ("Hello world.") == "Hello world."
+		assert wn.stripBracketsOut ("Hello (world)") == "Hello"
+		assert wn.stripBracketsOut ("Hello ( world ) there.") == "Hello there."
+		assert wn.stripBracketsOut ("Hello world.") == "Hello world."
 	}
 	
 	@Test
-	void splitBrk() {
-		assert norm.splitBrackets ("Hello (world)") == ["Hello", "world"] as Tuple2<String, String>
-		assert norm.splitBrackets ("Hello ( world ) there.") == ["Hello there.", "world"] as Tuple2<String, String>
-		assert norm.splitBrackets ("Hello world.") == ["Hello world.", ""] as Tuple2<String, String>
+	void splitBrk() {		
+		assert wn.splitBrackets ("Hello (world)") == ["Hello", "world"] as Tuple2<String, String>
+		assert wn.splitBrackets ("Hello ( world ) there.") == ["Hello there.", "world"] as Tuple2<String, String>
+		assert wn.splitBrackets ("Hello world.") == ["Hello world.", ""] as Tuple2<String, String>
 	}
 	
 	@Test
 	@Disabled
 	void stripMultiple() {
-		norm.stripBracketsOut ("(The) Hello (world)") == "Hello"		
+		wn.stripBracketsOut ("(The) Hello (world)") == "Hello"		
 	}
+	
+	@Test
+	void pairTokens() {
+		assert wn.tokensWithPairs("Hello").toList() == ["Hello"]		
+		List<String> tp = wn.tokensWithPairs("Hello big world").toList()
+		assert tp == ['Hello', 'Hello big', 'big', 'big Hello', 'big world', 'world', 'world big']
+	}
+	
+	@Test
+	void sortVariants() {
+		
+	}
+	
 }

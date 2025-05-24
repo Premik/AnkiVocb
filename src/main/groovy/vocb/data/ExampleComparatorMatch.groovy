@@ -19,16 +19,16 @@ public class ExampleComparatorMatch {
 	ExampleComparator b
 	
 	@Lazy
-	Set<String> commonWords = a.words.intersect(b.words) as LinkedHashSet
+	Collection<String> commonWords = a.words.intersect(b.words) as LinkedHashSet
 	
 	@Lazy
-	Set<String> commonWordVariants = a.wordVariants.intersect(b.wordVariants) as LinkedHashSet
+	Collection<String> commonWordVariants = a.wordVariants.intersect(b.wordVariants) as LinkedHashSet
 	
-	Set<String> getMissWords() { 
+	Collection<String> getMissWords() { 
 		(a.words + b.words) - commonWords
 	}
 	
-	Set<String> getMissWordVariants() {
+	Collection<String> getMissWordVariants() {
 		(a.wordVariants + b.wordVariants) - commonWordVariants
 	}
 	

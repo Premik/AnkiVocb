@@ -130,7 +130,7 @@ public class Pack {
 		println "${list.take(100).join(' ')} \nSize: ${list.size()}"
 		int lastDec = 0
 		while (list.size() > 0) {
-			dbMan.bestExampleForSentence(list.join(' ')).each {
+			dbMan.bestExampleForSentence(list).each {
 				println list.contains("you")
 				println list.find { it == "you" }
 				println it.commonWords.contains("you")

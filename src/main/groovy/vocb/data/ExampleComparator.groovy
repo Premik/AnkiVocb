@@ -10,34 +10,29 @@ import vocb.corp.WordNormalizer
 
 
 @CompileStatic
-@EqualsAndHashCode(includes=["sentence"])
+@EqualsAndHashCode(includes=["words"])
 public class ExampleComparator {
 	
 		
-	String sentence
+	
 	Example example
+	Collection<String> words = [] 
 	
 	@Lazy
-	Set<String> words = WordNormalizer.instance.uniqueueTokens(sentence)
+	Collection<String> wordVariants = words.collectMany {WordNormalizer.instance.wordVariants(it, true)} as LinkedHashSet
 	
-	@Lazy
-	Set<String> wordVariants = WordNormalizer.instance.uniqueueTokens(sentence, true)
+	String getSentence() {
+		words.join(" ").capitalize() + "."		
+	}
 	
 	void setSentence(String s) {		
 		example = null
-		sentence = s
-		clearCache()		
+		words = WordNormalizer.instance.uniqueueTokens(s)		
 	}
 	
 	void setExample(Example e) {		
-		example= e
 		sentence = e?.firstTerm
-		clearCache()
-	}
-	
-	void clearCache() {
-		this.@$words = null
-		this.@$wordVariants = null
+		example= e		
 	}
 	
 	
@@ -59,18 +54,6 @@ public class ExampleComparator {
 	}
 	
 	
-	
-	@Memoized
-	public static ExampleComparator of(String sentence) {		
-		assert sentence!= null
-		new ExampleComparator(sentence: sentence)
-	}
-	
-	@Memoized
-	public static ExampleComparator of(Example ex) {
-		new ExampleComparator(example: ex)
-	}
-
 	@Override
 	public String toString() {		
 		return "ExampleComparator(${sentence.take(100)})";
@@ -98,6 +81,17 @@ public class ExampleComparator {
 	
 	List<ExampleComparatorMatch> bestFromExamples(Stream<Example> ex) {
 		bestExamplesFrom(ex.map(ExampleComparator.&of))
+	}
+	
+	@Memoized
+	public static ExampleComparator of(String sentence) {
+		assert sentence!= null
+		new ExampleComparator(sentence: sentence)
+	}
+	
+	@Memoized
+	public static ExampleComparator of(Example ex) {
+		new ExampleComparator(example: ex)
 	}
 
 }
