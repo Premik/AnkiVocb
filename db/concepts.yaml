@@ -15420,12 +15420,10 @@ concepts:
     lang: en
   - term: čisté
     lang: cs
-  - term: cudný
-    lang: cs
+  
   - term: ryzí
     lang: cs
-  - term: čiré
-    lang: cs
+  
   freq: 41479.00000
 ##  file   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
@@ -15433,9 +15431,8 @@ concepts:
     lang: en
   - term: soubor
     lang: cs
-  - term: archiv
-    lang: cs
-  - term: spisu
+
+  - term: spis
     lang: cs
   freq: 41418.00000
 ##  ball   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
@@ -15444,14 +15441,8 @@ concepts:
     lang: en
   - term: míč
     lang: cs
-  - term: míček
-    lang: cs
-  - term: koule
-    lang: cs
-  - term: kuličková
-    lang: cs
-  - term: ples
-    lang: cs
+  
+  
   freq: 41346.00000
 ##  stairs   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
@@ -15459,10 +15450,7 @@ concepts:
     lang: en
   - term: schody
     lang: cs
-  - term: po schodech
-    lang: cs
-  - term: ze schodů
-    lang: cs
+
   freq: 41339.00000
 ##  writer   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
@@ -15472,25 +15460,18 @@ concepts:
     lang: cs
   - term: pisatel
     lang: cs
-  - term: scénář
-    lang: cs
-  - term: zápis
-    lang: cs
-  - term: prozaik
-    lang: cs
+  
   freq: 41302.00000
 ##  courage   ############################################################### 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: courage
     lang: en
-  - term: odvahu
+  - term: odvaha
     lang: cs
-  - term: odvaze
-    lang: cs
+  
   - term: kuráž
     lang: cs
-  - term: statečnost
-    lang: cs
+  
   freq: 41301.00000
 ##  wide   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
@@ -15498,27 +15479,19 @@ concepts:
     lang: en
   - term: široký
     lang: cs
-  - term: celou
-    lang: cs
-  - term: celé
-    lang: cs
+
   - term: rozsáhlé
     lang: cs
-  - term: šířku
-    lang: cs
+
   freq: 41233.00000
 ##  branches   ############################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: branches
     lang: en
-  - term: poboček
-    lang: cs
+  
   - term: větve
     lang: cs
-  - term: větví
-    lang: cs
-  - term: ratolesti
-    lang: cs
+  
   - term: odvětví
     lang: cs
   freq: 41195.00000
@@ -15528,12 +15501,7 @@ concepts:
     lang: en
   - term: dvakrát
     lang: cs
-  - term: dvojnásobek
-    lang: cs
-  - term: dvojím
-    lang: cs
-  - term: podruhé
-    lang: cs
+
   freq: 41171.00000
 ##  september   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
@@ -15555,8 +15523,7 @@ concepts:
     lang: en
   - term: dvanáct
     lang: cs
-  - term: dvanáctá
-    lang: cs
+
   freq: 41104.00000
 ##  rate   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
