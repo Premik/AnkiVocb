@@ -123,7 +123,7 @@ public class WordsSource {
 		new WordsSource().tap {
 			//fromOwnSamples(100)
 			//minFreq = 1
-			simulation = true
+			//simulation = true
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			String tx = getClass().getResource('/sources/JingleBells.txt').text
 			

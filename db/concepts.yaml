@@ -15639,267 +15639,263 @@ concepts:
   img: seafood.jpeg
   freq: 27.68970
   origins: ["conceptDbSamples"]
-##  laughed   ############################################################### ▃ 37%
-- terms: 
-  - term: laughed
-    lang: en
-  freq: 106591.00000
-  origins: ["JingleBells"]
-##  girls   ################################################################# ▃ 37%
-- terms: 
-  - term: girls
-    lang: en
-  freq: 93384.70000
-  origins: ["JingleBells"]
-##  horse   ################################################################# ▃ 37%
+##  horse   ################################################################# ▆ 64%
 - terms: 
   - term: horse
     lang: en
+  - term: kůň
+    lang: cs
+  - term: koně
+    lang: cs
+  - term: koni
+    lang: cs
+  - term: koňské
+    lang: cs
+  - term: koněm
+    lang: cs
+  examples: 
+  - term: The horse was lean.
+    lang: en
   freq: 87507.50000
   origins: ["JingleBells"]
-##  quickly   ############################################################### ▃ 37%
+##  quickly   ############################################################### ▆ 64%
 - terms: 
   - term: quickly
     lang: en
+  - term: rychle
+    lang: cs
+  - term: snadno
+    lang: cs
+  examples: 
+  - term: Quickly drove away.
+    lang: en
   freq: 77724.30000
   origins: ["JingleBells"]
-##  oh   #################################################################### ▃ 37%
+##  oh   ####################################################################
 - terms: 
   - term: oh
     lang: en
+  state: ignore
   freq: 68285.00000
   origins: ["JingleBells"]
-##  hills   ################################################################# ▃ 37%
-- terms: 
-  - term: hills
-    lang: en
-  freq: 66475.80000
-  origins: ["JingleBells"]
-##  bright   ################################################################ ▃ 37%
+##  bright   ################################################################ ▆ 64%
 - terms: 
   - term: bright
     lang: en
+  - term: jasné
+    lang: cs
+  - term: zářivě
+    lang: cs
+  examples: 
+  - term: Making spirits bright.
+    lang: en
   freq: 64276.95000
   origins: ["JingleBells"]
-##  joy   ################################################################### ▃ 37%
+##  joy   ################################################################### ▆ 64%
 - terms: 
   - term: joy
     lang: en
+  - term: radost
+    lang: cs
+  examples: 
+  - term: What joy it is to ride.
+    lang: en
   freq: 63479.50000
   origins: ["JingleBells"]
-##  bank   ################################################################## ▃ 37%
-- terms: 
-  - term: bank
-    lang: en
-  freq: 62986.70000
-  origins: ["JingleBells"]
-##  spirits   ############################################################### ▃ 37%
+##  spirits   ############################################################### ▆ 64%
 - terms: 
   - term: spirits
     lang: en
+  - term: lihoviny
+    lang: cs
+  - term: duchy
+    lang: cs
+  examples: 
+  - term: Making spirits bright.
+    lang: en
   freq: 62147.50000
   origins: ["JingleBells"]
-##  laughing   ############################################################## ▃ 37%
+##  laughing   ############################################################## ▆ 64%
 - terms: 
   - term: laughing
     lang: en
+  - term: smějící se
+    lang: cs
+  examples: 
+  - term: Laughing all the way.
+    lang: en
   freq: 53113.60000
   origins: ["JingleBells"]
-##  lead   ################################################################## ▃ 37%
-- terms: 
-  - term: lead
-    lang: en
-  freq: 51359.90000
-  origins: ["JingleBells"]
-##  lie   ################################################################### ▃ 37%
-- terms: 
-  - term: lie
-    lang: en
-  freq: 50477.75000
-  origins: ["JingleBells"]
-##  fields   ################################################################ ▃ 37%
-- terms: 
-  - term: fields
-    lang: en
-  freq: 50201.40000
-  origins: ["JingleBells"]
-##  drove   ################################################################# ▃ 37%
+##  drove   ################################################################# ▆ 64%
 - terms: 
   - term: drove
     lang: en
+  - term: odjel
+    lang: cs
+  - term: odvezl
+    lang: cs
+  examples: 
+  - term: Quickly drove away.
+    lang: en
   freq: 50184.80000
   origins: ["JingleBells"]
-##  seated   ################################################################ ▃ 37%
+##  seated   ################################################################ ▆ 64%
 - terms: 
   - term: seated
     lang: en
+  - term: usazeny
+    lang: cs
+  - term: seděla
+    lang: cs
+  examples: 
+  - term: Was seated by my side
+    lang: en
   freq: 49654.70000
   origins: ["JingleBells"]
-##  sing   ################################################################## ▃ 37%
+##  sing   ################################################################## ▆ 64%
 - terms: 
   - term: sing
     lang: en
+  - term: zpívat
+    lang: cs
+  examples: 
+  - term: To ride and sing.
+    lang: en
   freq: 43453.10000
   origins: ["JingleBells"]
-##  snow   ################################################################## ▃ 37%
+##  snow   ################################################################## ▆ 64%
 - terms: 
   - term: snow
     lang: en
+  - term: sníh
+    lang: cs
+  examples: 
+  - term: Dashing through the snow.
+    lang: en
   freq: 41197.95000
   origins: ["JingleBells"]
-##  sport   ################################################################# ▃ 37%
-- terms: 
-  - term: sport
-    lang: en
-  freq: 39797.20000
-  origins: ["JingleBells"]
-##  ride   ################################################################## ▃ 37%
+##  ride   ################################################################## ▆ 64%
 - terms: 
   - term: ride
     lang: en
+  - term: jízda
+    lang: cs
+  - term: projížďka
+    lang: cs
+  examples: 
+  - term: What joy it is to ride.
+    lang: en
   freq: 34102.95000
   origins: ["JingleBells"]
-##  bay   ################################################################### ▃ 37%
-- terms: 
-  - term: bay
-    lang: en
-  freq: 30210.75000
-  origins: ["JingleBells"]
-##  riding   ################################################################ ▃ 37%
-- terms: 
-  - term: riding
-    lang: en
-  freq: 29915.10000
-  origins: ["JingleBells"]
-##  forty   ################################################################# ▃ 37%
-- terms: 
-  - term: forty
-    lang: en
-  freq: 28797.55000
-  origins: ["JingleBells"]
-##  tonight   ############################################################### ▃ 37%
+##  tonight   ############################################################### ▆ 64%
 - terms: 
   - term: tonight
     lang: en
+  - term: večer
+    lang: cs
+  - term: dnešní večer
+    lang: cs
+  examples: 
+  - term: To sing a song tonight.
+    lang: en
   freq: 28173.20500
   origins: ["JingleBells"]
-##  misfortune   ############################################################ ▃ 37%
-- terms: 
-  - term: misfortune
-    lang: en
-  freq: 24711.00000
-  origins: ["JingleBells"]
-##  bob   ################################################################### ▃ 37%
-- terms: 
-  - term: bob
-    lang: en
-  freq: 24620.10000
-  origins: ["JingleBells"]
-##  speed   ################################################################# ▃ 37%
-- terms: 
-  - term: speed
-    lang: en
-  freq: 24154.15000
-  origins: ["JingleBells"]
-##  fun   ################################################################### ▃ 37%
+##  fun   ################################################################### ▆ 64%
 - terms: 
   - term: fun
     lang: en
+  - term: zábava
+    lang: cs
+  - term: legrace
+    lang: cs
+  examples: 
+  - term: What fun it is to ride.
+    lang: en
   freq: 22138.75000
   origins: ["JingleBells"]
-##  lean   ################################################################## ▃ 37%
+##  lean   ################################################################## ▆ 64%
 - terms: 
   - term: lean
     lang: en
+  - term: štíhlé
+    lang: cs
+  - term: hubený
+    lang: cs
+  examples: 
+  - term: The horse was lean.
+    lang: en
   freq: 22063.05000
   origins: ["JingleBells"]
-##  tail   ################################################################## ▃ 37%
+##  tail   ################################################################## ▆ 64%
 - terms: 
   - term: tail
     lang: en
+  - term: ocas
+    lang: cs
+  examples: 
+  - term: Bells on tail ring.
+    lang: en
   freq: 20681.45000
   origins: ["JingleBells"]
-##  bells   ################################################################# ▃ 37%
+##  bells   ################################################################# ▆ 64%
 - terms: 
   - term: bells
     lang: en
+  - term: zvony
+    lang: cs
+  - term: rolničky
+    lang: cs
+  examples: 
+  - term: Bells on tail ring.
+    lang: en
   freq: 17904.10000
   origins: ["JingleBells"]
-##  fanny   ################################################################# ▃ 37%
-- terms: 
-  - term: fanny
-    lang: en
-  freq: 17065.50000
-  origins: ["JingleBells"]
-##  hey   ################################################################### ▃ 37%
+##  hey   ###################################################################
 - terms: 
   - term: hey
     lang: en
-  freq: 15244.04500
-  origins: ["JingleBells"]
-##  crack   ################################################################# ▃ 37%
-- terms: 
-  - term: crack
-    lang: en
-  freq: 10631.75000
-  origins: ["JingleBells"]
-##  drifted   ############################################################### ▃ 37%
-- terms: 
-  - term: drifted
-    lang: en
-  freq: 10470.60000
-  origins: ["JingleBells"]
-##  dashing   ############################################################### ▃ 37%
+  state: ignore
+##  dashing   ############################################################### ▆ 64%
 - terms: 
   - term: dashing
     lang: en
+  - term: hnát se
+    lang: cs
+  - term: temperamentní
+    lang: cs
+  examples: 
+  - term: Dashing through the snow.
+    lang: en
   freq: 7393.94000
   origins: ["JingleBells"]
-##  ok   #################################################################### ▃ 37%
-- terms: 
-  - term: ok
-    lang: en
-  freq: 5734.77300
-  origins: ["JingleBells"]
-##  tho   ################################################################### ▃ 37%
+##  tho   ###################################################################
 - terms: 
   - term: tho
     lang: en
-  freq: 3193.01000
-  origins: ["JingleBells"]
-##  sleigh   ################################################################ ▃ 37%
+  state: ignore
+##  sleigh   ################################################################ ▆ 64%
 - terms: 
   - term: sleigh
     lang: en
+  - term: sáně
+    lang: cs
+  - term: sáňky
+    lang: cs
+  examples: 
+  - term: One-horse open sleigh.
+    lang: en
   freq: 2972.29000
   origins: ["JingleBells"]
-##  hitch   ################################################################# ▃ 37%
-- terms: 
-  - term: hitch
-    lang: en
-  freq: 2280.84000
-  origins: ["JingleBells"]
-##  gent   ################################################################## ▃ 37%
-- terms: 
-  - term: gent
-    lang: en
-  freq: 2127.36000
-  origins: ["JingleBells"]
-##  lank   ################################################################## ▃ 37%
-- terms: 
-  - term: lank
-    lang: en
-  freq: 2004.73000
-  origins: ["JingleBells"]
-##  lyrics   ################################################################ ▃ 37%
-- terms: 
-  - term: lyrics
-    lang: en
-  freq: 1880.52000
-  origins: ["JingleBells"]
-##  jingle   ################################################################ ▃ 37%
+##  jingle   ################################################################ ▆ 64%
 - terms: 
   - term: jingle
+    lang: cs
+  - term: cinkající
+    lang: cs
+  - term: cinkot
+    lang: cs
+  examples: 
+  - term: Jingle bells.
     lang: en
   freq: 1631.31000
   origins: ["JingleBells"]
