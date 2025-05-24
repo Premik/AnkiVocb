@@ -8,7 +8,7 @@ concepts:
     pron: ˈæpəl
   - term: jablko
     lang: cs
-    tts: jablko.mp3
+    tts: cs-terms/jablko.mp3
   examples: 
   - term: Apple helps clean teeth.
     lang: en
@@ -27,10 +27,10 @@ concepts:
     pron: ˈkɪti
   - term: koťátko
     lang: cs
-    tts: kotatko.mp3
+    tts: cs-terms/kotatko.mp3
   - term: kočička
     lang: cs
-    tts: kocicka.mp3
+    tts: cs-terms/kocicka.mp3
   examples: 
   - term: Kitty needs some attention.
     lang: en
@@ -60,7 +60,7 @@ concepts:
     pron: ʌv
   - term: z
     lang: cs
-    tts: z.mp3
+    tts: cs-terms/z.mp3
   examples: 
   - term: Take one of these.
     lang: en
@@ -78,7 +78,7 @@ concepts:
     tts: en-terms/i.mp3
   - term: já
     lang: cs
-    tts: ja.mp3
+    tts: cs-terms/ja.mp3
   examples: 
   - term: I am happy.
     lang: en
@@ -97,7 +97,7 @@ concepts:
     pron: ænd
   - term: a
     lang: cs
-    tts: a.mp3
+    tts: cs-terms/a.mp3
   examples: 
   - term: Cat and dog.
     lang: en
@@ -116,10 +116,10 @@ concepts:
     pron: tu
   - term: do
     lang: cs
-    tts: do-cs.mp3
+    tts: cs-terms/do-cs.mp3
   - term: aby
     lang: cs
-    tts: aby.mp3
+    tts: cs-terms/aby.mp3
   examples: 
   - term: Go to the bedroom.
     lang: en
@@ -138,10 +138,10 @@ concepts:
     pron: wʌz
   - term: byl
     lang: cs
-    tts: byl.mp3
+    tts: cs-terms/byl.mp3
   - term: byla
     lang: cs
-    tts: byla.mp3
+    tts: cs-terms/byla.mp3
   examples: 
   - term: He was a true friend.
     lang: en
@@ -160,10 +160,10 @@ concepts:
     pron: ɪn
   - term: v
     lang: cs
-    tts: v.mp3
+    tts: cs-terms/v.mp3
   - term: ve
     lang: cs
-    tts: ve.mp3
+    tts: cs-terms/ve.mp3
   examples: 
   - term: Not in my city.
     lang: en
@@ -182,7 +182,7 @@ concepts:
     pron: ɪz
   - term: je
     lang: cs
-    tts: je.mp3
+    tts: cs-terms/je.mp3
   examples: 
   - term: He is an excellent speaker.
     lang: en
@@ -201,7 +201,7 @@ concepts:
     pron: ɪt
   - term: to
     lang: cs
-    tts: to-cs.mp3
+    tts: cs-terms/to-cs.mp3
   examples: 
   - term: That is it.
     lang: en
@@ -220,7 +220,7 @@ concepts:
     pron: fɔr
   - term: pro
     lang: cs
-    tts: pro.mp3
+    tts: cs-terms/pro.mp3
   examples: 
   - term: For all the people.
     lang: en
@@ -239,7 +239,7 @@ concepts:
     pron: tru
   - term: pravda
     lang: cs
-    tts: pravda.mp3
+    tts: cs-terms/pravda.mp3
   examples: 
   - term: Then it's true.
     lang: en
@@ -258,10 +258,10 @@ concepts:
     pron: du
   - term: udělat
     lang: cs
-    tts: udelat.mp3
+    tts: cs-terms/udelat.mp3
   - term: dělat
     lang: cs
-    tts: delat.mp3
+    tts: cs-terms/delat.mp3
   examples: 
   - term: We had to do it.
     lang: en
@@ -280,7 +280,7 @@ concepts:
     pron: bʌt
   - term: ale
     lang: cs
-    tts: ale.mp3
+    tts: cs-terms/ale.mp3
   examples: 
   - term: But it is not their fault.
     lang: en
@@ -299,10 +299,10 @@ concepts:
     pron: ɔl
   - term: všichni
     lang: cs
-    tts: vsichni.mp3
+    tts: cs-terms/vsichni.mp3
   - term: vše
     lang: cs
-    tts: vse.mp3
+    tts: cs-terms/vse.mp3
   examples: 
   - term: You all got eyes.
     lang: en
@@ -321,10 +321,10 @@ concepts:
     pron: ðɛm
   - term: jim
     lang: cs
-    tts: jim.mp3
+    tts: cs-terms/jim.mp3
   - term: ně
     lang: cs
-    tts: ne.mp3
+    tts: cs-terms/ne.mp3
   examples: 
   - term: Tell them all.
     lang: en
@@ -343,10 +343,10 @@ concepts:
     pron: ju
   - term: ty
     lang: cs
-    tts: ty.mp3
+    tts: cs-terms/ty.mp3
   - term: vás
     lang: cs
-    tts: vas.mp3
+    tts: cs-terms/vas.mp3
   examples: 
   - term: You are sad.
     lang: en
@@ -365,10 +365,10 @@ concepts:
     pron: wʌn
   - term: jeden
     lang: cs
-    tts: jeden.mp3
+    tts: cs-terms/jeden.mp3
   - term: jednu
     lang: cs
-    tts: jednu.mp3
+    tts: cs-terms/jednu.mp3
   examples: 
   - term: You must select only one shape.
     lang: en
@@ -387,10 +387,10 @@ concepts:
     pron: fɔls
   - term: nepravdivý
     lang: cs
-    tts: nepravdivy.mp3
+    tts: cs-terms/nepravdivy.mp3
   - term: falešné
     lang: cs
-    tts: falesne.mp3
+    tts: cs-terms/falesne.mp3
   examples: 
   - term: False sense of happiness.
     lang: en
@@ -409,7 +409,7 @@ concepts:
     pron: taɪm
   - term: čas
     lang: cs
-    tts: cas.mp3
+    tts: cs-terms/cas.mp3
   - term: doba
     lang: cs
     tts: doba.mp3
@@ -939,15 +939,13 @@ concepts:
   state: ignoreImage
   freq: 1951647.00000
   origins: ["corpus", "conceptDbSamples"]
-##  me   ####################################################################
+##  me   #################################################################### █ 96%
 - terms: 
   - term: me
     lang: en
-    tts: en-terms/me.mp3
     pron: mi
   - term: mě
     lang: cs
-    tts: me.mp3
   - term: mi
     lang: cs
     tts: mi.mp3
