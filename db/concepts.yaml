@@ -10745,108 +10745,138 @@ concepts:
     tts: cs-terms/hlina.mp3
   img: img/clay.jpeg
   freq: 12342.00000
-##  mary   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  mary   ################################################################## t0:pron:missing
 - terms: 
   - term: mary
     lang: en
+    tts: en-terms/mary.mp3
   - term: marie
     lang: cs
+    tts: cs-terms/marie.mp3
   img: img/mary.jpeg
   freq: 108633.00000
-##  appear   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  appear   ################################################################ t0:pron:missing
 - terms: 
   - term: appear
     lang: en
+    tts: en-terms/appear.mp3
   - term: objeví
     lang: cs
+    tts: cs-terms/objevi.mp3
   - term: jeví
     lang: cs
+    tts: cs-terms/jevi.mp3
   img: img/appear.jpeg
   freq: 106357.00000
-##  teacher   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  teacher   ############################################################### t0:pron:missing
 - terms: 
   - term: teacher
     lang: en
+    tts: en-terms/teacher.mp3
   - term: učitel
     lang: cs
+    tts: cs-terms/ucitel.mp3
   - term: učitelka
     lang: cs
+    tts: cs-terms/ucitelka.mp3
   img: img/teacher.jpeg
   freq: 71114.00000
-##  reply   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  reply   ################################################################# t0:pron:missing
 - terms: 
   - term: reply
     lang: en
+    tts: en-terms/reply.mp3
   - term: odpovědět
     lang: cs
+    tts: cs-terms/odpovedet.mp3
   img: img/reply.jpeg
   freq: 48991.00000
-##  laugh   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  laugh   ################################################################# t0:pron:missing
 - terms: 
   - term: laugh
     lang: en
+    tts: en-terms/laugh.mp3
   - term: smích
     lang: cs
+    tts: cs-terms/smich.mp3
   - term: smát se
     lang: cs
+    tts: cs-terms/smat se.mp3
   img: img/laugh.jpeg
   freq: 46118.00000
-##  everywhere   ############################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  everywhere   ############################################################ t0:pron:missing
 - terms: 
   - term: everywhere
     lang: en
+    tts: en-terms/everywhere.mp3
   - term: všude
     lang: cs
+    tts: cs-terms/vsude.mp3
   - term: kamkoliv
     lang: cs
+    tts: cs-terms/kamkoliv.mp3
   img: img/everywhere.jpeg
   freq: 31501.00000
-##  eager   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  eager   ################################################################# t0:pron:missing
 - terms: 
   - term: eager
     lang: en
+    tts: en-terms/eager.mp3
   - term: dychtivý
     lang: cs
+    tts: cs-terms/dychtivy.mp3
   - term: nedočkavý
     lang: cs
+    tts: cs-terms/nedockavy.mp3
   img: img/eager.jpeg
   freq: 26773.00000
-##  lingered   ############################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  lingered   ############################################################## t0:pron:missing
 - terms: 
   - term: lingered
     lang: en
+    tts: en-terms/lingered.mp3
   - term: prodlévat
     lang: cs
+    tts: cs-terms/prodlevat.mp3
   - term: loudat se
     lang: cs
+    tts: cs-terms/loudat se.mp3
   img: img/lingered.jpeg
   freq: 12188.00000
-##  patiently   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  patiently   ############################################################# t0:pron:missing
 - terms: 
   - term: patiently
     lang: en
+    tts: en-terms/patiently.mp3
   - term: trpělivě
     lang: cs
+    tts: cs-terms/trpelive.mp3
   img: img/patiently.jpeg
   freq: 11901.00000
-##  lamb   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  lamb   ################################################################## t0:pron:missing
 - terms: 
   - term: lamb
     lang: en
+    tts: en-terms/lamb.mp3
   - term: beránek
     lang: cs
+    tts: cs-terms/beranek.mp3
   - term: jehně
     lang: cs
+    tts: cs-terms/jehne.mp3
   img: img/lamb.jpeg
   freq: 9863.00000
-##  fleece   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  fleece   ################################################################ t0:pron:missing
 - terms: 
   - term: fleece
     lang: en
+    tts: en-terms/fleece.mp3
   - term: rouno
     lang: cs
+    tts: cs-terms/rouno.mp3
   - term: ovčí vlna
     lang: cs
+    tts: cs-terms/ovci vlna.mp3
   img: img/fleece.jpeg
   freq: 2219.00000
 
@@ -14750,99 +14780,115 @@ examples:
   - term: Bude vykradeno.
     lang: cs
     tts: cs-terms/Bude vykradeno.mp3
-##  Mary had a little lamb.   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Mary had a little lamb.
     lang: en
+    tts: en-samples/Mary had a little lamb.mp3
   - term: Maruška měla malého beránka.
     lang: cs
-##  Whose fleece was white as snow.   ####################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Maruska mela maleho beranka.mp3
 - terms: 
   - term: Whose fleece was white as snow.
     lang: en
+    tts: en-samples/Whose fleece was white as snow.mp3
   - term: Jehož vlna byla bílá jak sníh.
     lang: cs
-##  And everywhere that Mary went,   ######################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Jehoz vlna byla bila jak snih.mp3
 - terms: 
   - term: And everywhere that Mary went,
     lang: en
+    tts: en-samples/And everywhere that Mary went,.mp3
   - term: A kamkoli Maruška šla,
     lang: cs
-##  The lamb was sure to go.   ############################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/A kamkoli Maruska sla,.mp3
 - terms: 
   - term: The lamb was sure to go.
     lang: en
+    tts: en-samples/The lamb was sure to go.mp3
   - term: Beránek šel jistě také.
     lang: cs
-##  He followed her to school one day.   #################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Beranek sel jiste take.mp3
 - terms: 
   - term: He followed her to school one day.
     lang: en
+    tts: en-samples/He followed her to school one day.mp3
   - term: Jednoho dne ji sledoval do školy.
     lang: cs
-##  Which was against the rules.   ########################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Jednoho dne ji sledoval do skoly.mp3
 - terms: 
   - term: Which was against the rules.
     lang: en
+    tts: en-samples/Which was against the rules.mp3
   - term: Což bylo proti pravidlům.
     lang: cs
-##  It made the children laugh and play.   ################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Coz bylo proti pravidlum.mp3
 - terms: 
   - term: It made the children laugh and play.
     lang: en
+    tts: en-samples/It made the children laugh and play.mp3
   - term: To děti rozesmálo a začaly si hrát.
     lang: cs
-##  To see a lamb at school.   ############################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/To deti rozesmalo a zacaly si hrat.mp3
 - terms: 
   - term: To see a lamb at school.
     lang: en
+    tts: en-samples/To see a lamb at school.mp3
   - term: Když viděly beránka ve škole.
     lang: cs
-##  And so the teacher turned him out.   #################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Kdyz videly beranka ve skole.mp3
 - terms: 
   - term: And so the teacher turned him out.
     lang: en
+    tts: en-samples/And so the teacher turned him out.mp3
   - term: A tak ho učitelka vyhodila.
     lang: cs
-##  But still he lingered near.   ########################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/A tak ho ucitelka vyhodila.mp3
 - terms: 
   - term: But still he lingered near.
     lang: en
+    tts: en-samples/But still he lingered near.mp3
   - term: Ale i tak se zdržoval poblíž.
     lang: cs
-##  He waited patiently about.   ############################################ t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Ale i tak se zdrzoval pobliz.mp3
 - terms: 
   - term: He waited patiently about.
     lang: en
+    tts: en-samples/He waited patiently about.mp3
   - term: Trpělivě vyčkával.
     lang: cs
-##  Till Mary did appear.   ################################################# t0:tts:missing|t1:tts:missing
+    tts: cs-terms/Trpelive vyckaval.mp3
 - terms: 
   - term: Till Mary did appear.
     lang: en
+    tts: en-samples/Till Mary did appear.mp3
   - term: Dokud se Mary neobjevila.
     lang: cs
-##  Why does the lamb love Mary so?   ####################################### t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Dokud se Mary neobjevila.mp3
 - terms: 
   - term: Why does the lamb love Mary so?
     lang: en
+    tts: en-samples/Why does the lamb love Mary so.mp3
   - term: Proč ten beránek tak miluje Marušku?
     lang: cs
-##  The eager children cried.   ############################################# t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Proc ten beranek tak miluje Marusku.mp3
 - terms: 
   - term: The eager children cried.
     lang: en
+    tts: en-samples/The eager children cried.mp3
   - term: Volaly děti dychtivě.
     lang: cs
-##  Mary loves the lamb.   ################################################## t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Volaly deti dychtive.mp3
 - terms: 
   - term: Mary loves the lamb.
     lang: en
+    tts: en-samples/Mary loves the lamb.mp3
   - term: Mary miluje beránka.
     lang: cs
-##  The teacher did reply.   ################################################ t0:tts:missing|t1:tts:missing
+    tts: cs-samples/Mary miluje beranka.mp3
 - terms: 
   - term: The teacher did reply.
     lang: en
+    tts: en-samples/The teacher did reply.mp3
   - term: Učitel odpověděl.
     lang: cs
+    tts: cs-terms/Ucitel odpovedel.mp3
