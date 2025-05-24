@@ -13,6 +13,7 @@ ignoreNulls=true,
 includePackage=false,
 includes=['fields']
 )
+@EqualsAndHashCode(excludes=["guid", "data", "model", "mediaLinks"])
 public class Note {
 
 	String __type__ = "Note"
@@ -26,16 +27,9 @@ public class Note {
 
 	String note_model_uuid
 	NoteModel model
+	final LinkedHashSet<String> mediaLinks = [] as LinkedHashSet
 
-	public String sndField(String soundRef) {
-		if (!soundRef) return ""
-		return "[sound:$soundRef]"
-	}
-
-	public String imgField(String ref) {
-		if (!ref) return ""
-		return """<img src=":$ref">"""
-	}
+	
 
 	@Deprecated
 	public List<String> toRichFields(boolean fitToModel=true) {

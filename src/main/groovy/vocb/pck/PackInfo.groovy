@@ -1,35 +1,64 @@
 package vocb.pck
 
-import groovy.transform.AutoClone
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
+
 import groovy.transform.Canonical
 import groovy.transform.CompileStatic
-import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
-import vocb.Helper
 
 
 @Canonical
 @CompileStatic
+@ToString(
+	includeNames=true,
+	ignoreNulls=true,
+	includePackage=false,
+	excludes=['sentences']
+	)
 public class PackInfo {
 	
-	String name
-	private String displayName
-	private String backgroundName
+	String name	
+	Path destRootFolder = Paths.get("/tmp/work")
+	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+	
+	
+	
+	@Lazy Path packagePath = packageRootPath.resolve(name)
+	@Lazy Path infoConfPath = packagePath.resolve("info.conf")
+	@Lazy ConfigObject infoCfg =  {
+		if (!Files.exists(infoConfPath)) return new ConfigObject()
+		return new ConfigSlurper().parse(infoConfPath.text)
+	}();
+	
+	@Lazy String sentences = packagePath.resolve("sentences.txt").text
+	
+	
+	
+	@Lazy Path destPath = {
+		assert destRootFolder
+		destRootFolder.resolve(name).tap {
+			toFile().mkdirs()
+		}
+	}()
+	
+	
 	
 	public String getDisplayName() {
-		displayName?:name?.replaceAll(/(\p{Lu})(\p{L})/, ' $1$2')?.trim()
+		infoCfg.displayName?:name?.replaceAll(/(\p{Lu})(\p{L})/, ' $1$2')?.trim()
 	}
 	
 	public void setDisplayName(String v) {
-		displayName = v
+		infoCfg.displayName = v		
 	}
 	
 	public String getBackgroundName() {
-		 "_${name}Background"
+		infoCfg.backgroundName?:"_${name}Background"
 	}
 	
 	public void setBackgroundName(String v) {
-		backgroundName = v
+		infoCfg.backgroundName = v
 	}
 	
 	public String getUuid() {

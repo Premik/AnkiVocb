@@ -19,29 +19,19 @@ import vocb.ord.OrderSolver
 //@CompileStatic
 public class Pack {
 
-	Path destFolder = Paths.get("/tmp/work")
+	Path destRootFolder = Paths.get("/tmp/work/pkg")
+	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
 	ConfHelper cfgHelper = ConfHelper.instance
 	@Lazy ConfigObject cfg = cfgHelper.cfg
 	
-	PackInfo info = new PackInfo()
-	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
-	@Lazy Path packagePath = packageRootPath.resolve(info.name)
+	@Lazy List<String> allPackageNames = packageRootPath.toFile().listFiles().collect {it.name}
 	
-
-	@Lazy String sentences = packagePath.resolve("sentences.txt").text
-
-	@Lazy Path destPath = {
-		destFolder.resolve(info.name).tap {
-			toFile().mkdirs()
-		}
-	}()
+	@Lazy Map<String, PackInfo> allPackages = allPackageNames.collectEntries {String name->
+		[name, new PackInfo(name:name, packageRootPath: packageRootPath, destRootFolder: destRootFolder) ]	
+	}
 	
 	
-
-	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString(), info : info)
-
-	@Lazy Manager dbMan = d2c.dbMan
-
+	
 
 
 	WordNormalizer wn = new WordNormalizer()
@@ -173,11 +163,19 @@ public class Pack {
 		}
 	}
 
-	void doExport() {
+	void doExport(PackInfo info) {
+		assert info
+		File pkgFile = info.packagePath.toFile()
+		cfgHelper.extraLookupFolders.add(pkgFile)
+		Data2Crowd d2c = new Data2Crowd (info : info)
+		exportSentences(info.sentences, d2c.dbMan)				
 		d2c.exportExamplesToCrowd(exportExamples)
+		cfgHelper.extraLookupFolders.remove(pkgFile)
+		
 	}
 
-	void exportSentences(String text=sentences) {
+	void exportSentences(String text, Manager dbMan) {
+		assert text
 		dbMan.withBestExample(text) { Example e, String sen, Set<String> com, Set<String> mis->
 
 			if (!mis)  {
@@ -194,52 +192,16 @@ public class Pack {
 			}
 			println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
-
-
-
 	}
-
+	
 
 
 	public static void main(String[] args) {
 		new Pack().with {
-			//info.name = "JingleBells"			
-			//info.name = "FiveLittleMonkeys"
-			//info.name = "LondonBridge"
-			//info.name = "MaryHadALittleLamb"
-			//info.displayName = "Mary Had a Little Lamb"
-			//info.name = "MyBonnie"
-			//info.name = "EverythingIsAwesome"
-			info.name = "ThomasAndFriends"
+			//allPackages.each {println it}
+			doExport(allPackages.values()[0]);
 			
-			
-			cfgHelper.lookupFoldersToConsider.add(packagePath.toString())
-		 
-			
-			exportSentences()
-			doExport()
-			//exportWordsWithDepc(["I"], 1)
-			//exportByOrigin(pkgName)
-			//findBestExamples().each {println "${it}"}
-			return
-
-			/*findConceptsCandidatesForGivenExample("the horse was lean", false).each {k,v->
-			 println "${v} ${v.examples.values()*.term}"
-			 }*/
-
-
-			//filterByStars (0..2)
-
-			//addDependencies(1)
-			forceBestExamplesReuse()
-
-
-			printExport()
-			return
-			sort()
-			printExport()
-			//_JingleBellsBackground.jpg
-			doExport()
+				
 		}
 
 	}

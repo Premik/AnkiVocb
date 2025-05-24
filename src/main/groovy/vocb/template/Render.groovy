@@ -29,12 +29,21 @@ class Render {
 
 
 	public Map getTemplBinding() {
-		[cfg:cfg, render: this, templates:this.templates, v:renderCfg.vars + extraVars] 
+		[cfg:cfg, render: this, templates:this.templates, v:renderCfg.vars + extraVars]
 	}
 
 	public ConfigObject getTemplates() {
 		renderCfg?.templates
 	}
+
+	public String sndField(String soundRef) {
+		Helper.sndField(soundRef, cfg)
+	}
+
+	public String imgField(String ref) {
+		Helper.imgField(ref, cfg)
+	}
+
 
 
 	public String expandTemplate(Object templRes, boolean expandAnkiInterpolations=false) {
@@ -44,33 +53,33 @@ class Render {
 			return ""
 		}
 		String templText = cfgHelper.resolveRes(templResName)?.text
-		if (!templText) {			
-			 throw new Exception("Failed to find the requested template '$templResName' in $cfgHelper.lookupFoldersToConsider")			 
+		if (!templText) {
+			throw new Exception("Failed to find the requested template '$templResName' in ${cfgHelper.lookupFolders + cfgHelper.extraLookupFolders}")
 		}
 		if (expandAnkiInterpolations)
 			templText = Helper.ankiInterpoaltion2GString(templText)
-		
+
 
 		Writable templ = templEngine.createTemplate(templText).make(templBinding)
 		return templ.toString()
 	}
-	
-	public String renderMarkdownText(String markDown) {	
+
+	public String renderMarkdownText(String markDown) {
 		mdRenderer.render(mdParser.parse(markDown))
 	}
-	
+
 	public String renderMarkdownTemplate(String templateName) {
 		String templ = expandTemplate(templateName)
 		return renderMarkdownText(templ)
 	}
-	
+
 	public String render(Map renderCfg) {
 		assert renderCfg
-		this.renderCfg = renderCfg				
+		this.renderCfg = renderCfg
 		assert templates?.main
-		
+
 		String mainTemplate = templates.main
-		
+
 		expandTemplate(mainTemplate)
 	}
 
@@ -88,7 +97,7 @@ class Render {
 		f.write(render(renderConfigName))
 		return f
 	}
-	
+
 	public void preview(File p) {
 		Map toRender = cfg.render
 		//toRender = toRender.findAll {String k, v-> k =="card2Preview"}
@@ -103,17 +112,17 @@ class Render {
 			//ssml
 		}
 	}
-	
-	
-	
+
+
+
 
 	static void main(String... args) {
-		 
+
 		new Render().with {
 			cfgHelper.lookupFoldersToConsider.add("/data/src/AnkiVocb/pkg/FiveLittleMonkeys")
 			preview(new File("/tmp/work/template"))
 		}
-		
+
 		println "Done"
 	}
 }

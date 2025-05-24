@@ -317,6 +317,19 @@ public class Helper {
 		}
 		return ret
 	}
+	
+	
+	public static String sndField(String soundRef, ConfigObject cfg) {
+		if (!soundRef) return ""
+		if (cfg.useRawNoteFields) return soundRef
+		return "[sound:$soundRef]"
+	}
+
+	public static String imgField(String ref, ConfigObject cfg) {
+		if (!ref) return ""
+		if (cfg.useRawNoteFields) return ref
+		return """<img src='$ref'>"""
+	}
 
 
 

@@ -9,7 +9,7 @@ public class CrowdParser {
 	String json
 
 	JsonGenerator noteGenerator = new JsonGenerator.Options()
-	.excludeFieldsByName("model", "fieldNames")
+	.excludeFieldsByName("model", "fieldNames", "mediaLinks")
 	.build()
 
 	@Lazy Map jsonRoot = {
