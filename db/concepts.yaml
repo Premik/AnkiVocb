@@ -173,7 +173,7 @@ concepts:
     tts: cs-samples/Ne v mem meste.mp3
   img: img/in.jpeg
   freq: 8715316.00000
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples"]
 ##  is   ####################################################################
 - terms: 
   - term: is
@@ -605,7 +605,7 @@ concepts:
     tts: cs-samples/Ucili jsme se ve tride jako obvykle.mp3
   state: ignoreImage
   freq: 3659513.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  at   ####################################################################
 - terms: 
   - term: at
@@ -872,7 +872,7 @@ concepts:
     tts: cs-samples/Vite jak ho najit.mp3
   state: ignoreImage
   freq: 2324852.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  my   ####################################################################
 - terms: 
   - term: my
@@ -916,7 +916,7 @@ concepts:
     tts: cs-samples/Tento tyden jsem napsal tri nove kapitoly.mp3
   img: img/this.jpeg
   freq: 2010471.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  their   #################################################################
 - terms: 
   - term: their
@@ -1130,7 +1130,7 @@ concepts:
     tts: cs-samples/Utikej do nejblizsiho mesta.mp3
   img: img/into.jpeg
   freq: 1186067.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  did   ###################################################################
 - terms: 
   - term: did
@@ -1467,7 +1467,7 @@ concepts:
     tts: cs-samples/A pak jsme sli svoji cestou.mp3
   img: img/then.jpeg
   freq: 899806.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  see   ###################################################################
 - terms: 
   - term: see
@@ -1610,12 +1610,12 @@ concepts:
     lang: cs
     tts: cs-terms/dve.mp3
   examples: 
-  - term: You two, what are you doing?
+  - term: A day or two ago.
     lang: en
-    tts: en-samples/You two, what are you doing.mp3
-  - term: Vy dva, co tady děláte?
+    tts: en-samples/A day or two ago.mp3
+  - term: Včera či před dvěma dny.
     lang: cs
-    tts: cs-samples/Vy dva, co tady delate.mp3
+    tts: cs-samples/Vcera ci pred dvema dny.mp3
   img: img/two.jpeg
   freq: 802196.50000
   origins: ["corpus", "conceptDbSamples", "JingleBells"]
@@ -1681,7 +1681,7 @@ concepts:
     tts: cs-samples/Mozna se muzem dostat ven.mp3
   img: img/get.jpeg
   freq: 778635.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  other   #################################################################
 - terms: 
   - term: other
@@ -1958,7 +1958,7 @@ concepts:
     tts: cs-samples/Ted rekni dobrou noc.mp3
   img: img/now.jpeg
   freq: 668424.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  take   ##################################################################
 - terms: 
   - term: take
@@ -1980,7 +1980,7 @@ concepts:
     tts: cs-samples/Nemuze si ty penize vzit.mp3
   img: img/take.jpeg
   freq: 663615.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  little   ################################################################
 - terms: 
   - term: little
@@ -2838,7 +2838,7 @@ concepts:
     tts: cs-samples/Vypadalo to jako dobre misto.mp3
   state: ignoreImage
   freq: 447884.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  looked   ################################################################
 - terms: 
   - term: looked
@@ -2977,7 +2977,7 @@ concepts:
     tts: cs-samples/Ty mne rekni proc.mp3
   state: ignoreImage
   freq: 431716.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  thing   #################################################################
 - terms: 
   - term: thing
@@ -3493,7 +3493,7 @@ concepts:
     tts: cs-samples/Ale mlady jsi jenom jednou.mp3
   img: img/young.jpeg
   freq: 375916.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  between   ###############################################################
 - terms: 
   - term: between
@@ -3578,7 +3578,7 @@ concepts:
     tts: cs-samples/Myslel sem, ze budes mit radost.mp3
   img: img/thought.jpeg
   freq: 363066.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  away   ##################################################################
 - terms: 
   - term: away
@@ -4172,7 +4172,7 @@ concepts:
     tts: cs-samples/Bud ostrazity pri pouzivani verejne dopravy.mp3
   img: img/while.jpeg
   freq: 321748.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  just   ##################################################################
 - terms: 
   - term: just
@@ -5930,7 +5930,7 @@ concepts:
     tts: cs-samples/Vsichni tady zijeme spolecne.mp3
   img: img/together.jpeg
   freq: 212070.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  here   ##################################################################
 - terms: 
   - term: here
@@ -6037,7 +6037,7 @@ concepts:
     tts: cs-samples/Skoro jsem spadl do vody.mp3
   img: img/fell.jpeg
   freq: 208344.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  school   ################################################################
 - terms: 
   - term: school
@@ -6353,7 +6353,7 @@ concepts:
     tts: cs-samples/Je prilis brzy.mp3
   img: img/soon.jpeg
   freq: 193680.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  nor   ###################################################################
 - terms: 
   - term: nor
@@ -7121,7 +7121,7 @@ concepts:
     tts: cs-samples/A co tvuj pribeh.mp3
   img: img/story.jpeg
   freq: 172290.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  works   #################################################################
 - terms: 
   - term: works
@@ -7364,7 +7364,7 @@ concepts:
     tts: cs-samples/Co se tam deje.mp3
   img: img/there.jpeg
   freq: 168331.60000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  company   ###############################################################
 - terms: 
   - term: company
@@ -7405,7 +7405,7 @@ concepts:
     tts: cs-samples/Moje auto bylo bile.mp3
   img: img/white.jpeg
   freq: 167140.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  book   ##################################################################
 - terms: 
   - term: book
@@ -8579,7 +8579,7 @@ concepts:
     tts: cs-samples/Dopadl jsem na zem.mp3
   img: img/ground.jpeg
   freq: 143541.00000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  second   ################################################################
 - terms: 
   - term: second
@@ -12617,7 +12617,7 @@ concepts:
     tts: cs-samples/Ne kazdy s vami souhlasi.mp3
   img: img/everyone.jpeg
   freq: 45742.40000
-  origins: ["conceptDbSamples", "JingleBells"]
+  origins: ["conceptDbSamples"]
 ##  goods   #################################################################
 - terms: 
   - term: goods

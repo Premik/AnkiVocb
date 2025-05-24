@@ -207,13 +207,14 @@ class OrderTest {
 		assert o2 != o
 		o2.load(tempFile)
 		
-		println o2
 		assert o2 == o
 		o2.ord.removeLast()
 		assert o2 != o
-		tempFile.withReader("UTF-8") {
-			o2.fromRootedYaml(it)
-		}
+		o2.save(tempFile)
+		o2= sol.ctx.createInitialOrder().mix()
+		o2.load(tempFile)
+		assert o2.ord.size() == o.ord.size()
+		assert o2.ord == o.ord
 		assert o2 == o		
 	}
 	

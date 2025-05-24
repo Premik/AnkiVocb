@@ -125,7 +125,7 @@ public class Data2Crowd {
 
 	}
 
-	void exportToCrowd(List<Concept> toExport) {
+	void exportToCrowd(Collection<Concept> toExport) {
 		vocbModel.notes.clear()
 		renderCardTemplate(cfg.renderCardTemplate)
 		vocbModel.copyMediaLinks(staticMedia)

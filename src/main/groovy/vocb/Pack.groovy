@@ -26,7 +26,7 @@ public class Pack {
 	}()
 
 	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString()).tap {
-		staticMedia.add "${pkgName}"
+		staticMedia.add "_${pkgName}Background.jpg"
 	}
 
 	@Lazy Manager dbMan = d2c.dbMan
@@ -36,6 +36,7 @@ public class Pack {
 	WordNormalizer wn = new WordNormalizer()
 
 	LinkedHashSet<Concept> export = [] as LinkedHashSet
+	Order lastOrder
 
 	List<Concept> conceptsFrom(List<String> enWords) {
 		enWords
@@ -97,20 +98,25 @@ public class Pack {
 	}
 
 	void sort() {
-		OrderSolver os = new OrderSolver(initialSelection: export as List<Concept>).tap {
-			maxGens = 1000
-			maxPopsize = 15000
+		OrderSolver os = new OrderSolver().tap {
+			maxGens = 5000
+			maxPopsize = 10000
+			crossAtOnce = 200
+			spawnNew = 200
+			dbStoragePath = d2c.dbMan.storagePath
+			initialSelection = export as List<Concept>
+			//loadInitialSelection(new File("/data/src/AnkiVocb/pkg/JingleBells/order.yaml").newReader())
 		}
-		os.runEpoch(30)
-		Order o = os.bestFirst[0]
-		export = o.ord.collect {ConceptExtra ce ->ce.c } as LinkedHashSet
+		/*os.runEpoch(5)
+		lastOrder = os.bestFirst[0]*/
+		lastOrder = os.ctx.createInitialOrder()
+		lastOrder.load(Paths.get("/data/src/AnkiVocb/pkg/JingleBells/order.yaml"))
+		export = lastOrder.ord.collect {ConceptExtra ce ->ce.c } as LinkedHashSet
 	}
 
 	void printExport() {
-		export.each {
-			println "${it.firstTerm.padRight(8)} ${dbMan.starsOf(it)} ${it.examples.values()[0]?.term } ${it.origins} "
-		}
-		println "[${export.size()}]"
+		if (lastOrder) OrderSolver.printDetails(lastOrder)
+			else OrderSolver.printDetails(export)
 	}
 
 	Map<String, Set<Concept>> findBestExamples() {
@@ -160,6 +166,11 @@ public class Pack {
 			}
 		}
 	}
+	
+	void export() {
+		d2c.vocbModel.parser.deckName = pkgName
+		d2c.exportToCrowd(export)
+	}
 
 
 
@@ -179,9 +190,11 @@ public class Pack {
 			//addDependencies(1)
 			forceBestExamplesReuse()
 
-			printExport()
-			//sort()
 			//printExport()
+			sort()
+			printExport()
+			//_JingleBellsBackground.jpg
+			export()
 
 		}
 

@@ -19,12 +19,12 @@ public class OrderSolver {
 	Path dbStoragePath
 	Path partResultPath=Paths.get("/tmp/work/part")
 	String dbConceptFilename
-	
+
 	List<Concept> initialSelection = []
-	
+
 	@Lazy Manager dbMan =  {
 		assert dbStoragePath
-		new Manager(storagePath: dbStoragePath).tap {			
+		new Manager(storagePath: dbStoragePath).tap {
 			if (dbConceptFilename) conceptFilename= dbConceptFilename
 			load()
 		}
@@ -33,9 +33,8 @@ public class OrderSolver {
 	@Lazy SolvingContext ctx = {
 		if (!initialSelection) {
 			initialSelection = dbMan.db.concepts.findAll{ it.state != "ignore"}
-		}		
+		}
 		new SolvingContext(initialSelection:initialSelection)
-		
 	}()
 
 
@@ -47,6 +46,18 @@ public class OrderSolver {
 	int initialSpawn = 100
 	int spawnNew = 10
 	int crossAtOnce=100
+
+	public void initialSelectionFromWordList(Collection<String> wordList) {
+		initialSelection = wordList.collect {
+			Concept c = dbMan.conceptByFirstTerm[it]
+			assert c : "The word $it is not in the concept db"
+			return c
+		}
+	}
+
+	public void loadInitialSelection(Reader r) {
+		initialSelectionFromWordList(Order.parseOrderYaml(r))
+	}
 
 
 	public List<Order> getBestFirst() {
@@ -60,14 +71,14 @@ public class OrderSolver {
 			ctx.createInitialOrder(genNum).mix()
 		})
 	}
-	
+
 	void loadLastResults() {
 		int i =0
 		partResultPath.toFile().eachFile { File f->
 			i++
 			Order o = ctx.createInitialOrder(genNum)
 			o.load(f.toPath())
-			population.add(o)			
+			population.add(o)
 		}
 		println "Loaded $i winners from previous runs"
 	}
@@ -117,7 +128,7 @@ public class OrderSolver {
 		println "Best freq fitness:${ctx.freqIdealOrder.freqFitness}. "
 		Date start0 = new Date()
 		Date start = new Date()
-		Order lastBest 
+		Order lastBest
 		for (int i=0;i<maxGens;i++) {
 			genNum++
 			crossSome(crossAtOnce)
@@ -127,15 +138,15 @@ public class OrderSolver {
 					removeWeakest()
 				}
 			}
-			
+
 			spawn(spawnNew)
-			
+
 			if (i % 100 == 1) {
 				Date stop = new Date()
 				List<Order> b = bestFirst
 				Order best = b[0]
 				if (best.fitness > stopAtFitness) break
-				printStat(b, TimeCategory.minus( stop, start ).toString())
+					printStat(b, TimeCategory.minus( stop, start ).toString())
 				if (best != lastBest) {
 					best.save(partResultPath.resolve("best-${best.fitness.round(3)}-${genNum}.yaml"))
 				}
@@ -147,17 +158,50 @@ public class OrderSolver {
 	}
 
 	void printStat(List<Order> b ,String timeInfo) {
-		
+
 		String fr = "${b[0].fitness.round(3)}..${b[-1].fitness.round(3)}"
 		println "$fr gen:($genNum) size:${b.size()} $timeInfo threads:${ForkJoinPool.commonPool().runningThreadCount}"
 
+	}
+
+	public static void printDetails(Collection concepts, Double fitnes=null) {
+		String fit = fitnes?.round(3)
+		if (fit) fit = "fitness: $fit"
+		println "Size:${concepts.size()} $fit"
+		concepts.each { Object o->
+			ConceptExtra ce
+			Concept c
+			if (o instanceof ConceptExtra) {
+				ce = o as ConceptExtra
+				c = ce.c
+			} else {
+				c = o as Concept
+			}
+			String stars = Manager.starsOf(c)
+			String sample = c.examples.values()[0]?.term
+			String term = c.firstTerm.padRight(8)
+
+			String sim = ce?.similarities.findAll{it.value > 0.23}.collect {it.key.firstTerm}.join(" ")
+			if (sim) sim = "<$sim>"
+
+			println "$term $stars $sim $sample ${c.origins} "
+		}
+
+	}
+
+	public static void printDetails(Order o) {
+		printDetails(o.ord, o.fitness)
 	}
 
 	//
 	static void main(String... args) {
 		//println "${vocb.ord.OrderSolver.class.hashCode()}"
 		new OrderSolver().tap {
-			runEpoch()
+			dbStoragePath = Paths.get("/data/src/AnkiVocb/db/")
+			//runEpoch()
+			loadInitialSelection(new File("/data/src/AnkiVocb/pkg/JingleBells/order.yaml").newReader())
+
+			printDetails (ctx.createInitialOrder())
 			//spawn()
 			//gen.each {println "${it}"}
 			//crossSome()
