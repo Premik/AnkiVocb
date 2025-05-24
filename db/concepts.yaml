@@ -14785,7 +14785,7 @@ concepts:
   img: img/freedom.jpeg
   freq: 66.15900
 - terms: 
-  - term: colour
+  - term: colour (color)
     lang: en
     tts: en-terms/colour.mp3
     pron: ˈkʌlə
@@ -24270,7 +24270,6 @@ concepts:
     tts: cs-terms/zminil.mp3
   img: img/mentioned.jpeg
   freq: 48.57180
-##  circumstances   ######################################################### no img
 - terms: 
   - term: circumstances
     lang: en
@@ -24278,8 +24277,8 @@ concepts:
   - term: okolnosti
     lang: cs
     tts: cs-terms/okolnosti.mp3
+  img: img/circumstances.jpeg
   freq: 40.66440
-##  declared   ############################################################## no img
 - terms: 
   - term: declared
     lang: en
@@ -24290,8 +24289,8 @@ concepts:
   - term: vyhlášen
     lang: cs
     tts: cs-terms/vyhlasen.mp3
+  img: img/declared.jpeg
   freq: 19.90720
-##  possessed   ############################################################# no img
 - terms: 
   - term: possessed
     lang: en
@@ -24302,8 +24301,8 @@ concepts:
   - term: vlastnil
     lang: cs
     tts: cs-terms/vlastnil.mp3
+  img: img/possessed.jpeg
   freq: 4.37540
-##  intended   ############################################################## no img
 - terms: 
   - term: intended
     lang: en
@@ -24314,8 +24313,8 @@ concepts:
   - term: zamýšlené
     lang: cs
     tts: cs-terms/zamyslene.mp3
+  img: img/intended.jpeg
   freq: 62.62350
-##  engaged   ############################################################### no img
 - terms: 
   - term: engaged
     lang: en
@@ -24326,8 +24325,8 @@ concepts:
   - term: angažovaný
     lang: cs
     tts: cs-terms/angazovany.mp3
+  img: img/engaged.jpeg
   freq: 20.95680
-##  tears   ################################################################# no img
 - terms: 
   - term: tears
     lang: en
@@ -24335,8 +24334,8 @@ concepts:
   - term: slzy
     lang: cs
     tts: cs-terms/slzy.mp3
+  img: img/tears.jpeg
   freq: 15.76910
-##  finished   ############################################################## no img
 - terms: 
   - term: finished
     lang: en
@@ -24347,8 +24346,8 @@ concepts:
   - term: skončil
     lang: cs
     tts: cs-terms/skoncil.mp3
+  img: img/finished.jpeg
   freq: 44.19960
-##  donations   ############################################################# no img
 - terms: 
   - term: donations
     lang: en
@@ -24356,6 +24355,7 @@ concepts:
   - term: dary
     lang: cs
     tts: cs-terms/dary.mp3
+  img: img/donations.jpeg
   freq: 25.39500
 - terms: 
   - term: etc
@@ -24364,7 +24364,6 @@ concepts:
     lang: cs
   freq: 10112.00000
   profileName: ignore
-##  obliged   ############################################################### no img
 - terms: 
   - term: obliged
     lang: en
@@ -24375,8 +24374,8 @@ concepts:
   - term: zavázán
     lang: cs
     tts: cs-terms/zavazan.mp3
+  img: img/obliged.jpeg
   freq: 4.28450
-##  afterwards   ############################################################ no img
 - terms: 
   - term: afterwards
     lang: en
@@ -24387,8 +24386,8 @@ concepts:
   - term: později
     lang: cs
     tts: cs-terms/pozdeji.mp3
+  img: img/afterwards.jpeg
   freq: 10.01140
-##  exclaimed   ############################################################# no img
 - terms: 
   - term: exclaimed
     lang: en
@@ -24399,5 +24398,6 @@ concepts:
   - term: vykřikl
     lang: cs
     tts: cs-terms/vykrikl.mp3
+  img: img/exclaimed.jpeg
   freq: 2.24450
 
