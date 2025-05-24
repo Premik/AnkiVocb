@@ -22,10 +22,9 @@ class ManagerTest {
 	Concept c = new Concept(
 	terms: [t1, t2],
 	state: "state", img:"",
-	
-	freq:1.1d,
-	origins:["o1", "o2"])
-	
+	freq:1.1d)
+
+
 	Example e = new Example(terms:[s1, s2])
 
 
@@ -93,16 +92,13 @@ class ManagerTest {
 		assert mediaLink ==  "grp2/term2.txt"
 	}
 
-	@Test	
+	@Test
 	void indexTest() {
 		m.db.concepts.add(c)
 		m.db.examples.add(e)
 		m.reindex()
-		assert m.conceptByFirstTerm["apple"] == c	
-		assert m.conceptsByEnWordsInSample	
+		assert m.conceptByFirstTerm["apple"] == c
+		assert m.conceptsByEnWordsInSample
 		assert m.conceptsByEnWordsInSample["apple"].contains(c)
-		
 	}
-	
-	
 }

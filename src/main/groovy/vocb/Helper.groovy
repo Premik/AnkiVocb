@@ -1,6 +1,7 @@
 package vocb
 
 import java.nio.charset.StandardCharsets
+import java.nio.file.Files
 import java.nio.file.Path
 import java.text.Normalizer
 import java.util.concurrent.TimeUnit
@@ -83,7 +84,7 @@ public class Helper {
 
 
 	}
-	
+
 	public static String shortHash(Object o) {
 		Integer.toHexString(o.hashCode())
 	}
@@ -275,7 +276,7 @@ public class Helper {
 			cutPaste(i, ni, col)
 			if (ni > i) {
 				//Moved forward. This item is a new one, rerun closure on this pos again in next cycle
-				continue 
+				continue
 			}
 			//ni <i
 			i = ni //Moved backwards, jump to this position a re-wind from there
@@ -308,8 +309,10 @@ public class Helper {
 	public static List<Path> matchingFiles(List<Path> roots, Object nameFilter) {
 		List<Path> ret =[]
 		roots.each { Path p->
-			p.toFile().traverse(type: FileType.FILES, nameFilter: nameFilter) { File f ->
-				ret.add(f.toPath())
+			if (Files.isDirectory(p)) {
+				p.toFile().traverse(type: FileType.FILES, nameFilter: nameFilter) { File f ->
+					ret.add(f.toPath())
+				}
 			}
 		}
 		return ret

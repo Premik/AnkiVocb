@@ -40,8 +40,6 @@ public class Manager {
 
 	Map<Integer, Set<Concept>> conceptsByStar = [:]
 
-	Map<String, Set<Concept>> conceptsByOrigin = [:]
-
 	Map<String, Set<Concept>> conceptsByEnWordsInSample = [:]
 
 	Map<String, Set<Example>> examplesByFirstTermWords = [:]
@@ -76,7 +74,6 @@ public class Manager {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
 		conceptsByTerm = [:].withDefault {[] as LinkedHashSet}
 		conceptsByStar = [:].withDefault {[] as LinkedHashSet}
-		conceptsByOrigin = [:].withDefault {[] as LinkedHashSet}
 		examplesByFirstTermWords = [:].withDefault {[] as LinkedHashSet}
 
 
@@ -92,9 +89,7 @@ public class Manager {
 			}
 			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
 			if (c.state == 'ignore') ignoreConcepts.add(c)
-			c.origins?.each {String o->
-				conceptsByOrigin[o].add(c)
-			}
+			
 		}
 
 		db.examples.each { Example e->
