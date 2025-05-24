@@ -19,14 +19,15 @@ class ManagerTest {
 	Term t2 = new Term("jablko", "cs")
 	Term s1 = new Term("Apple helps.", "en")
 	Term s2 = new Term("Jablko pomáhá", "cs")
-	Concept c = new Concept(
-	terms: [t1, t2],
-	state: "state", img:"",
-	freq:1.1d)
+	Concept c = new Concept(state: "state", img:"", freq:1.1d).tap {
+		terms.addAll([t1, t2])
+	}
+	
 
-
-	Example e = new Example(terms:[s1, s2])
-
+	Example e= new Example().tap {
+		terms.addAll([s1,s2])		
+	}
+	
 
 	void createBlank() {
 		m.save()

@@ -137,7 +137,8 @@ class YamlStorageTest {
 		state: state""".stripIndent()
 		Term t1 = new Term("apple", "en")
 		Term t2 = new Term("jablko", "cs")
-		Concept c = new Concept(terms: [t1, t2], state: "state", img:"", freq:null)
+		Concept c = new Concept(state: "state", img:"", freq:null)
+		c.terms.addAll([t1, t2])
 		println st.conceptToYaml(c)
 
 		TestUtils.compareString(st.conceptToYaml(c),y)

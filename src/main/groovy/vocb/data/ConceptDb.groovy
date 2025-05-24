@@ -11,7 +11,7 @@ public class ConceptDb {
 	LinkedHashSet<Example> examples = []
 
 	public List<Term> examplesByLang(String lng) {
-		examples.collectMany {it.byLang(lng) }
+		examples.collectMany {it.termsByLang(lng) }
 	}
 
 	public List<Term> conceptsByLang(String lng) {

@@ -1,5 +1,6 @@
 package vocb.data
 
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 import groovy.yaml.YamlSlurper
@@ -9,7 +10,11 @@ class ModelTest {
 	Term t1 = new Term("en1", "en")
 	Term t2 = new Term("cs1", "cs", "tts")
 	Term t3 = new Term("cs2", "cs")
-	Concept c = new Concept(terms: [t1, t2, t3])
+	Concept c = new Concept().tap {
+		 terms.addAll([t1, t2, t3])
+	}
+	
+	
 	
 	@Test constrHelper() {
 		assert t1 == t1
@@ -122,7 +127,31 @@ class ModelTest {
 		c.dirty = false
 		assert c.enTerm
 		c.enTerm.pron="changed"
-		assert !c.dirty
-		
+		assert !c.dirty		
+	}
+	
+	@Test
+	@Disabled
+	void setTermsTest() {
+		Concept c = new Concept()
+		c.img = "img"
+		c.terms = [t1]
+		assert c.img == "img"
+		assert c.terms
+		Example e = new Example()
+		e.terms = [t1,t2,t3]
+		assert e.terms
+	}
+	
+	@Test
+	void exampleDirtyComposite() {
+		Example e = new Example()
+		e.terms.addAll([t1,t2,t3])
+		 
+		assert e.dirty
+		e.dirty = false		
+		e.enTerm.pron="changed"
+		assert e.dirty				
+		assert e.enTerm.pron =="changed"
 	}
 }
