@@ -67,7 +67,8 @@ class VocbModel {
         parser.noteModels = [noteModel]
     }
 
-    void syncNoteFields() {
+	@CompileStatic
+	void syncNoteFields() {
         //println Helper.objectToJson(notes)
         notes.each { assureNote(it) }
         parser.jsonRoot.notes = notes
@@ -149,7 +150,8 @@ class VocbModel {
         parser.saveTo(deckJson.toFile())
     }
 
-    Note updateNoteHaving(String foreignTerm) {
+    @CompileStatic
+	Note updateNoteHaving(String foreignTerm) {
         assert foreignTerm
         Note n = notes.find { it['foreign'] == foreignTerm }
         if (!n) {

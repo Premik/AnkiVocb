@@ -51,9 +51,10 @@ public class WordNormalizer {
 			s
 		]
 		.toUnique()
-		.sort { String a, String b->			
+		.sort { String a, String b->
+			//Lower-cased first
 			Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
-			a.length() <=> b.length()
+			a.length() <=> b.length() //Shorter first
 			
 		}
 	}

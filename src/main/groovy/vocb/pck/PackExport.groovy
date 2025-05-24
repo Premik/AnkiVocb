@@ -1,10 +1,7 @@
 package vocb.pck
 
-
 import static vocb.Ansi.*
-
 import java.util.stream.Stream
-
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
 import vocb.corp.WordNormalizer
@@ -12,12 +9,10 @@ import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.Manager
 
-
-
 @ToString(
 includeNames=true,
 ignoreNulls=true,
-includePackage=false,
+includePackage=false
 )
 @CompileStatic
 public class PackExport {
@@ -69,10 +64,11 @@ public class PackExport {
 		assert dbMan
 		info.wordList.stream().map { String w->
 			//Concept c =dbMan.conceptByFirstTerm[w]
-			Concept c = wn.wordVariants(w).collect {String wv->dbMan.conceptByFirstTerm[wv]}.find()
-			
-			//if (c == null) println "Concept not found for word:'${color(w, BOLD)}'"
-			assert c : "Concept not found for word:'${color(w, BOLD)}'"
+			Concept c = dbMan.findConceptByFirstTermAnyVariant(w)
+
+
+			if (c == null) println "Concept not found for word:'${color(w, BOLD)}'"
+			//assert c : "Concept not found for word:'${color(w, BOLD)}'"
 			return c
 		}
 		.filter {it!=null}
@@ -80,9 +76,8 @@ public class PackExport {
 			new ExportItem(concept: c)
 		}
 	}
-	
+
 	Stream<ExportItem> export() {
 		Stream.concat(sentencesExport(), wordListExport())
 	}
-	
 }

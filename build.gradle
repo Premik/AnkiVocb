@@ -5,9 +5,10 @@ plugins {
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-mainClassName = "vocb.appenders.BingImageAppender"
+//mainClassName = "vocb.appenders.BingImageAppender"
+mainClassName = "vocb.pck.Pack"
 
-project.ext.groovyVersion='3.0.7'
+project.ext.groovyVersion='3.0.9'
 
 wrapper {
 	gradleVersion = '7.3.3'
