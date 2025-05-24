@@ -1,6 +1,7 @@
 version: 0.0.1
 concepts: 
 - terms: 
+
   - term: apple
     lang: en
 
@@ -10,11 +11,13 @@ concepts:
   origins: 
   - top500
 - terms: 
+
   - term: a
     lang: en
   state: ignore
   origins: []
 - terms: 
+
   - term: the
     lang: en
   state: ignore

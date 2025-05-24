@@ -120,7 +120,8 @@ class YamlStorageTest {
 	@Test
 	void conceptToYaml() {
 		String y="""\
-		terms: 
+		terms:
+ 
 		- term: apple
 		  lang: en
 
@@ -133,7 +134,7 @@ class YamlStorageTest {
 		Term t1 = new Term("apple", "en")
 		Term t2 = new Term("jablko", "cs")
 		Concept c = new Concept(terms: [t1, t2], state: "state", img:"", freq:null, origins:["o1", "o2"])
-		//println st.conceptToYaml(c)
+		println st.conceptToYaml(c)
 		
 		TestUtils.compareString(st.conceptToYaml(c),y)
 	}

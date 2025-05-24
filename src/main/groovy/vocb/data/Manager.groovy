@@ -1,6 +1,7 @@
 package vocb.data
 
 import java.nio.charset.StandardCharsets
+import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
@@ -50,14 +51,39 @@ public class Manager {
 		}
 	}
 	
-	
-
 	public void load() {
 		conceptsPath.withReader(StandardCharsets.UTF_8.toString()) { Reader r->
 			db =storage.parseDb(r)
 		}
 		assert db.version == "0.0.1" : "Not compatible db version"
 		reindex()
+	}
+	
+	
+	public void autoSave(Closure c) {
+		load()
+		try {
+			c(this)
+		} finally {
+			save()
+		}
+	}
+	
+	public String word2MediaLink(String mediaName, String mediaExt) {
+		assert mediaName : "The media name is blank"
+		"${Helper.word2Key(mediaName)}.$mediaExt"
+	}
+	
+	public String resolveMedia(String mediaName, String mediaExt, Closure whenNotFound) {
+		String mediaLink = word2MediaLink(mediaName, mediaExt)
+		if (linkedMediaExists(mediaLink)) return mediaLink
+		whenNotFound(p)
+		return mediaLink
+	}
+	
+	public boolean linkedMediaExists(String mediaLink) {
+		if (!mediaLink) return false
+		Files.exists(mediaPath.resolve(mediaLink).toAbsolutePath())		
 	}
 
 	public String save(Path path= conceptsPath) {
