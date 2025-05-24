@@ -11,7 +11,10 @@ import groovy.transform.CompileStatic
 import vocb.Helper
 
 
+//@Singleton(lazy=true, strict=false) //Doens't work in eclipse
 public class WordNormalizer {
+	
+	public static WordNormalizer instance = new WordNormalizer()
 
 	int minLenght = 2
 	int maxLenght = 20

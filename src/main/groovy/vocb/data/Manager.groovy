@@ -17,7 +17,7 @@ public class Manager {
 
 
 	Path defaultStoragePath = Paths.get("/data/src/AnkiVocb/db/")
-	WordNormalizer wn =new WordNormalizer()
+	WordNormalizer wn =WordNormalizer.instance
 
 	@Lazy
 	DataLocation defaultConceptsLocation = new DataLocation(storageRootPath:defaultStoragePath, filename:"concepts.yaml")
