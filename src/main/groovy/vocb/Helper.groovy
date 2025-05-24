@@ -150,4 +150,12 @@ public class Helper {
 		String afterDelimiter = toSplit.substring(offset + delimiter.length())
 		return new Tuple2<String, String>(beforeDelimiter, afterDelimiter)
 	}
+	
+	public static BigDecimal roundDecimal(BigDecimal d, int n=2) {
+		if (d == null) return null
+		return d.setScale(n, BigDecimal.ROUND_HALF_UP);
+	}
+	
 }
+
+
