@@ -65,6 +65,7 @@ concepts:
 - terms: 
   - term: in
     lang: en
+    tts: in.mp3
   img: in.jpeg
   freq: 8715316.00000
   origins: ["Supaplex"]
@@ -72,6 +73,7 @@ concepts:
 - terms: 
   - term: is
     lang: en
+    tts: is.mp3
   state: ignoreImage
   freq: 7557477.00000
   origins: ["Supaplex"]
@@ -79,6 +81,7 @@ concepts:
 - terms: 
   - term: it
     lang: en
+    tts: it.mp3
   state: ignoreImage
   freq: 5965293.50000
   origins: ["Supaplex"]
@@ -86,6 +89,7 @@ concepts:
 - terms: 
   - term: for
     lang: en
+    tts: for.mp3
   state: ignoreImage
   freq: 3556287.50000
   origins: ["Supaplex"]
@@ -93,6 +97,7 @@ concepts:
 - terms: 
   - term: true
     lang: en
+    tts: true.mp3
   img: true.jpeg
   freq: 2675121.50000
   origins: ["Supaplex"]
@@ -100,6 +105,7 @@ concepts:
 - terms: 
   - term: do
     lang: en
+    tts: do.mp3
   state: ignoreImage
   freq: 2126875.50000
   origins: ["Supaplex"]
@@ -107,6 +113,7 @@ concepts:
 - terms: 
   - term: but
     lang: en
+    tts: but.mp3
   state: ignoreImage
   freq: 1957586.00000
   origins: ["Supaplex"]
@@ -114,6 +121,7 @@ concepts:
 - terms: 
   - term: all
     lang: en
+    tts: all.mp3
   img: all.jpeg
   freq: 1940329.50000
   origins: ["Supaplex"]
@@ -121,6 +129,7 @@ concepts:
 - terms: 
   - term: them
     lang: en
+    tts: them.mp3
   img: them.jpeg
   freq: 1593893.50000
   origins: ["Supaplex"]
@@ -128,6 +137,7 @@ concepts:
 - terms: 
   - term: you
     lang: en
+    tts: you.mp3
   img: you.jpeg
   freq: 1540817.58700
   origins: ["Supaplex"]
@@ -135,6 +145,7 @@ concepts:
 - terms: 
   - term: one
     lang: en
+    tts: one.mp3
   img: one.jpeg
   freq: 1439082.50000
   origins: ["Supaplex"]
@@ -142,6 +153,7 @@ concepts:
 - terms: 
   - term: false
     lang: en
+    tts: false.mp3
   img: false.jpeg
   freq: 1123368.00000
   origins: ["Supaplex"]
@@ -149,6 +161,7 @@ concepts:
 - terms: 
   - term: time
     lang: en
+    tts: time.mp3
   img: time.jpeg
   freq: 1107169.00000
   origins: ["Supaplex"]
@@ -156,6 +169,7 @@ concepts:
 - terms: 
   - term: out
     lang: en
+    tts: out.mp3
   img: out.jpeg
   freq: 1058897.00000
   origins: ["Supaplex"]
