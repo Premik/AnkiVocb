@@ -105,7 +105,7 @@ public class Manager {
 		String mediaLink = termd2MediaLink(term, mediaExt)
 		Path mediaPath = mediaLinkPath(mediaLink, group)
 		if (Files.exists(mediaPath)) return mediaPath
-		mediaPath.toFile().mkdirs()
+		mediaPath.parent.toFile().mkdirs()
 		whenNotFound(mediaPath)
 		return mediaRootPath.relativize(mediaPath)
 	}
@@ -222,14 +222,17 @@ public class Manager {
 	public void moveToSubFolders() {
 		
 		WordNormalizer wn =new WordNormalizer()
-		groupByMedia().each { String mp, Set<Concept> cs->			
+		groupByMedia().take(1).each { String mp, Set<Concept> cs->			
 			Concept c = cs[0]
-			if (c.img == mp && !mp.contains("img/")) {		
-							
+			if (c.img == mp && !mp.contains("img/")) {								
 				c.img = "img/$mp"
 				println "$mp -> $c.img"
 				Files.move(mediaLinkPath(mp) , mediaLinkPath(c.img))
 			}
+			
+			c.termsByLang(lng)
+			
+			
 		}
 		save()
 	}
