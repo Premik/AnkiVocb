@@ -42,8 +42,9 @@ public class Manager {
 	Map<String, Set<Concept>> conceptsByOrigin = [:]
 
 	Map<String, Set<Concept>> conceptsByEnWordsInSample = [:]
+	
+	Map<String, Set<Example>> examplesByFirstTermWords = [:]
 
-	Map<String, Set<Concept>> conceptsByEnSample = [:]
 
 	List<Concept> ignoreConcepts = []
 
@@ -71,9 +72,9 @@ public class Manager {
 		conceptsByTerm = [:].withDefault {[] as LinkedHashSet}
 		conceptsByStar = [:].withDefault {[] as LinkedHashSet}
 		conceptsByOrigin = [:].withDefault {[] as LinkedHashSet}
-		conceptsByEnSample = [:].withDefault {[] as LinkedHashSet}
+		examplesByFirstTermWords = [:].withDefault {[] as LinkedHashSet}
 
-		conceptsByEnWordsInSample = conceptsByWordsInSample()
+		
 		ignoreConcepts.clear()
 		db.concepts.each { Concept c->
 			String ft = c.firstTerm
@@ -89,12 +90,16 @@ public class Manager {
 			c.origins?.each {String o->
 				conceptsByOrigin[o].add(c)
 			}
-			c.examplesByLang("en")
-					.collect {wn.normalizeSentence(it.term)}
-					.each {
-						conceptsByEnSample[it].add(c)
-					}
 		}
+		
+		db.examples.each { Example e->
+			wn.tokens(e.firstTerm).each {
+				examplesByFirstTermWords[it].add(e)
+			}
+		}
+		
+		conceptsByEnWordsInSample = conceptsByWordsInSample()
+
 	}
 
 	void withTerms(boolean includeExamples=false, Closure cl) {
@@ -177,13 +182,15 @@ public class Manager {
 
 
 			//ret[Filena c.img]+= c
-			(c.terms.values() + c.examples.values()).each { Term t->
+			c.terms.values().each { Term t->
 				if (t.tts) {
 					ret[t.tts].add(c)
 					if (stripExt) { ret[Helper.stripExt(t.tts)].add(c)}
 				}
 			}
 		}
+		
+		
 
 		return ret
 	}
@@ -191,16 +198,20 @@ public class Manager {
 	Map<String, Set<Concept>> conceptsByWordsInSample(String lang="en") {
 		Map<String, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
 
-		db.concepts.each {Concept c ->
-			wn.uniqueueTokens(c.examples.values()
-					.find {it.lang==lang}?.term ?: "")
-					.each { String word->
-						ret[word].add(c)
-					}
+		db.examplesByLang("en").each {Term t ->
+			wn.uniqueueTokens(t.term).each { String word->
+				assert lang == "en" : "not implemented"
+				Concept c=  conceptByFirstTerm[word]
+				if (!c) {
+					println "Unknown term '$word' used in the '$t.term' example."
+				}
+				ret[word].add(c)
+			}
 		}
 		return ret
 	}
-
+	
+	
 	public void findBrokenMedia() {
 
 		Map<CharSequence, Set<Concept>> grp = groupByMedia()
@@ -213,7 +224,7 @@ public class Manager {
 			}
 		}
 		println "${'-'*80}"
-		println "Not used:"
+		println "Not used (FIX:ME - subfolders:"
 		mediaRootPath.toFile().eachFile { File f->
 			if ( !grp.containsKey(f.name) && f.isFile()) {
 				println "rm -f '${f}'"
@@ -245,7 +256,10 @@ public class Manager {
 
 	List<String> allTextWithLang(String lang="cs") {
 		db.concepts.collectMany {Concept c ->
-			(c.termsByLang(lang) + c.examplesByLang(lang)).collect {it.term}
+			c.termsByLang(lang)*.term
+		} +
+		db.examples.collectMany {Example e ->
+			e.byLang(lang)*.term
 		}
 	}
 
@@ -276,23 +290,23 @@ public class Manager {
 			}
 
 			String pp = "cs-samples/"
-			c.examplesByLang("cs")
-					.findAll{it.tts == mp }
-					.findAll{!it.tts.contains(pp) }
-					.each {
-						it.tts = "$pp$mp"
-						println "$mp -> $it.tts"
-						if (linkedMediaExists(mp)) {
-							Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
-						}
-					}
+			/*c.examplesByLang("cs")
+			 .findAll{it.tts == mp }
+			 .findAll{!it.tts.contains(pp) }
+			 .each {
+			 it.tts = "$pp$mp"
+			 println "$mp -> $it.tts"
+			 if (linkedMediaExists(mp)) {
+			 Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
+			 }
+			 }*/
 
 
 		}
 		save()
 	}
 
-	void moveSamples() {
+	/*void moveSamples() {
 		LinkedHashSet<Example> ret  = [] as LinkedHashSet
 		db.concepts.each { Concept c->
 			if (c.examples) {
@@ -302,8 +316,8 @@ public class Manager {
 		//ret.sort {it.firstTerm}
 		db.examples = ret.collect()
 		db.concepts.each {it.examples.clear()}
-		
-	}
+
+	}*/
 
 
 	public static void main(String[] args) {
@@ -313,7 +327,7 @@ public class Manager {
 			printStats()
 			//moveToSubFolders()
 			//println allTextWithLang("en")
-			moveSamples()
+			//moveSamples()
 			save()
 
 			println "Resaved "

@@ -19,6 +19,7 @@ public class TranslationAppender {
 	Manager dbMan = new Manager()
 
 
+	@Deprecated
 	List<Concept> findTodo() {
 		dbMan.db.concepts.findAll {
 			it.terms && it.state!="ignore" && it.examplesByLang("en") && it.firstTerm && (!it.examplesByLang("cs"))
@@ -46,7 +47,7 @@ public class TranslationAppender {
 	}
 
 	void translateExamples() {
-
+		assert false: "Refactor"
 		dbMan.load()
 		List<Concept> noCs = findTodo()
 		int i = 0
@@ -71,6 +72,7 @@ public class TranslationAppender {
 		}
 	}
 
+	@Deprecated
 	void reuseTranlation() {
 		dbMan.load()
 		Map<String, Concept> byEnSample = dbMan.db.concepts

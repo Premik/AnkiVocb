@@ -114,12 +114,13 @@ public class ConceptYamlStorage {
 
 
 		String terms=listToYaml(c.terms.values().collect(this.&termToYaml))
-		String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
+		
+		//String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
 		assert ft : "Term list is blank for a conpcept $c"
 		appendBanner(ft, c.completeness, sb)
 		appendYamlHash("terms", terms, sb)
-		appendYamlHash("examples", examples, sb)
+		//appendYamlHash("examples", examples, sb)
 		/*sb.append("terms: ")
 		 if (terms.length() > 0) {
 		 sb.append("\n")

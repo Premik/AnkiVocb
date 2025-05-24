@@ -13,6 +13,8 @@ public class ConceptDb {
 	String version = "0.0.1"
 	List<Concept> concepts = []
 	List<Example> examples = []
+	
+	public List<Term> examplesByLang(String lng) { examples.collectMany {it.byLang(lng) }}
 }
 
 @Canonical
@@ -36,7 +38,7 @@ public class Example {
 public class Concept {
 	LinkedHashMap<String, Term> terms = [:]
 	//State state
-	LinkedHashMap<String, Term> examples = [:]
+	
 	String state
 	String img
 	BigDecimal freq
@@ -57,16 +59,16 @@ public class Concept {
 		termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
 	}*/
 	
-	public List<Term> examplesByLang(String lng) { examples?.values()?.findAll {it.lang == lng }}
+	public Object getExamples() {assert false : "Depricated" }
+	
+	public List<Term> examplesByLang(String lng) { assert false : "Depricated" }
 	public BigDecimal getCompleteness( ) {
 		if (state == "ignore") return 1
 		BigDecimal termsCp = terms.values()*.completeness*.div(terms.size()).sum()?:0
-		BigDecimal exCp = examples.values()*.completeness*.div(examples.size()).sum()?:0
+		//BigDecimal exCp = examples.values()*.completeness*.div(examples.size()).sum()?:0
 		BigDecimal[] grp =	[
 			Math.min(terms.size(), 2)/2,
-			0.01+ Math.min(examples.size(), 2)/2,
-			0.01+termsCp,
-			0.01+exCp,
+			0.01+termsCp,			
 		].collect( Helper.&clamp01 )
 		//BigDecimal grpSum = grp.inject(1.0) {prod, v->prod*v }
 		BigDecimal grpSum = grp.sum() / grp.size()
