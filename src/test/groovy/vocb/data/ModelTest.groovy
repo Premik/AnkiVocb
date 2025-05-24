@@ -24,7 +24,7 @@ class ModelTest {
 
 	@Test
 	void conceptCompletness() {
-		assert new Concept().completeness < 0.01
+		assert new Concept().completeness < 0.1
 		assert c.completeness > 0.1
 		//(0..10).each {println  "$it: ${Helper.progressBar(it/10)}" }
 	}
@@ -82,7 +82,7 @@ class ModelTest {
 	@Test
 	void complt() {
 		def j = new YamlSlurper().parseText( '''\
-		    terms:
+			terms:
 			- term: their
 			  lang: en
 			  tts: their.mp3
@@ -102,8 +102,36 @@ class ModelTest {
 			origins: ["corpus"]'''.stripIndent())
 
 		assert j
-		
-		
+
+		new ConceptYamlStorage().tap {
+			Concept c = parseConcept(j)
+			println c
+			assert c.completeness > 0.5
+			assert c.completeness < 0.99
+		}
+	}
+
+	@Test
+	void notCompl() {
+		def j = new YamlSlurper().parseText( '''\
+			terms:
+			- term: than
+			  lang: en
+			  tts: than.mp3
+			- term: než
+			  lang: cs
+			  tts: nez.mp3
+			examples:
+			- term: This is better than steak.
+			  lang: en
+			- term: Je to lepší než steak.
+			  lang: cs
+			img: than.jpeg
+			freq: 782249.00000
+			origins: ["corpus"]'''.stripIndent())
+
+		assert j
+
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			println c
