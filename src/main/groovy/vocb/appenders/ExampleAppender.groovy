@@ -25,7 +25,7 @@ public class ExampleAppender {
 
 	private List<Concept> findTodo() {
 		dbMan.db.concepts.findAll {
-			it.terms && it.state!="ignore" && (!it.examples) && it.firstTerm
+			it.terms && !it.ignore && (!it.examples) && it.firstTerm
 		}.findAll { Concept c ->
 			wn.tokens(c.firstTerm).count() <= 2  //Only single or two words phrases
 		}

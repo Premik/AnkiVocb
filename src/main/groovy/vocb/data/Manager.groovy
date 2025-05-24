@@ -98,7 +98,7 @@ public class Manager {
 				conceptsByTerm[t.term].add(c)
 			}
 			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
-			if (c.state == 'ignore') ignoreConcepts.add(c)
+			if (c.ignore) ignoreConcepts.add(c)
 		}
 
 		db.examples.each { Example e->
@@ -112,7 +112,7 @@ public class Manager {
 
 	void withTerms(boolean includeExamples=false, Closure cl) {
 		db.concepts.each { Concept c->
-			if (c.state != "ignore") {
+			if (!c.ignore) {
 				c.terms.collect { Term t->
 					cl(c, t)
 				}

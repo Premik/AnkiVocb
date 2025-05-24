@@ -20,17 +20,17 @@ public class Concept extends TermContainer  {
 	/*public Term getEnTerm() {
 	 termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
 	 }*/
-	
+
 	public ValidationProfile getValidationProfile() {
 		if (!profileName) return ValidationProfile.currentDefaultProfile
 		assert ValidationProfile.PredefinedProfiles[profileName]
 		return ValidationProfile.PredefinedProfiles[profileName]
 	}
-	
+
 	public boolean isIgnore() {
-		validationProfile.ignore
+		validationProfile.name == "ignore"
 	}
-	
+
 	public boolean isNoImg() {
 		!validationProfile.img
 	}
@@ -39,10 +39,10 @@ public class Concept extends TermContainer  {
 	public List<String> validate(ValidationProfile vp ) {
 		if (!validationProfile.isDefaultProfile()) {
 			//Local profile overrides the provided one, unless the local one is the default
-			vp = validationProfile 
+			vp = validationProfile
 		}
 		List<String> ret = super.validate(vp)
-		if (state == "ignore") return ret
+		if (ignore) return ret
 		if (!terms) {
 			ret.add("No terms")
 		}
@@ -50,7 +50,7 @@ public class Concept extends TermContainer  {
 			if (terms.size() < 2) ret.add("single term only")
 			if (terms.size() > 3) ret.add("${terms.size()} terms. Up to 3 supported only")
 		}
-		if (state != "ignoreImage" && vp.img && !img) ret.add("no img")
+		if (vp.img && !img) ret.add("no img")
 		if (vp.freq && freq == null) ret.add("no freq")
 		if (!termsByLang("en")) ret.add("no en term")
 		if (!termsByLang("cs")) ret.add("no cs term")
@@ -62,7 +62,4 @@ public class Concept extends TermContainer  {
 		}
 		return ret
 	}
-
-
-
 }

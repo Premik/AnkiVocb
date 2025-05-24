@@ -137,7 +137,7 @@ public class Pack {
 
 		Set<String> wordsToExport = d2c.dbMan.db.concepts
 				.findAll { Concept c->
-					if (c.state == 'ignore') return false
+					if (c.ignore) return false
 
 					return !pkgWords.contains(wn.stripBracketsOut(c.firstTerm))
 				}

@@ -135,10 +135,10 @@ class YamlStorageTest {
 		  lang: en
 		- term: jablko
 		  lang: cs
-		state: state""".stripIndent()
+		profileName: testProfile""".stripIndent()
 		Term t1 = new Term("apple", "en")
 		Term t2 = new Term("jablko", "cs")
-		Concept c = new Concept(state: "state", img:"", freq:null)
+		Concept c = new Concept(img:"", freq:null, profileName: "testProfile")
 		c.terms.addAll([t1, t2])
 		//println st.conceptToYaml(c)
 

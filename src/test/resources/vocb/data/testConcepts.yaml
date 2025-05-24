@@ -5,14 +5,13 @@ concepts:
   - term: apple
     lang: en
   - term: jablko
-    lang: cs
-  state: populate
+    lang: cs  
 - terms: 
   - term: a
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: the
     lang: en
-  state: ignore
+  profileName: ignore
   

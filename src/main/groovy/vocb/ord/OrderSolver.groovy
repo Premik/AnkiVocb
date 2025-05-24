@@ -32,7 +32,7 @@ public class OrderSolver {
 
 	@Lazy SolvingContext ctx = {
 		if (!initialSelection) {
-			initialSelection = dbMan.db.concepts.findAll{ it.state != "ignore"}
+			initialSelection = dbMan.db.concepts.findAll{ !it.ignore}
 		}
 		new SolvingContext(initialSelection:initialSelection)
 	}()

@@ -33,7 +33,7 @@ public class ConceptDb {
 	}
 
 	public List<Term> conceptsByLang(String lng) {
-		concepts.findAll {it.state != "ignore"}.collectMany {it.termsByLang(lng)}
+		concepts.findAll {!it.ignore}.collectMany {it.termsByLang(lng)}
 	}
 
 	@CompileDynamic

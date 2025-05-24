@@ -35,7 +35,7 @@ public class PronAppender {
 				.findAll {
 					Concept c=  dbMan.conceptByFirstTerm[it]
 					if (!c) return false
-					if (c.state == "ignore") return false
+					if (c.ignore) return false
 					Term enTrm = c.termsByLang("en")[0]
 					if (!enTrm) return
 						return !enTrm.pron

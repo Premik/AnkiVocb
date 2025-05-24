@@ -127,7 +127,7 @@ public class WordsSource {
 		corp.topX(2000)
 				.findAll {String s-> !s.contains("'")}
 				.findAll {String s->
-					dbMan.conceptsByTerm[s].any { Concept c-> c.state != "ignore" }
+					dbMan.conceptsByTerm[s].any { Concept c-> !c.ignore }
 				}.findAll { !simpleWords.contains(it) }
 				.each {
 					//println "${it} ${corp.wordFreq[it]}"

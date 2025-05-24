@@ -31,12 +31,21 @@ public class ConceptYamlStorage {
 	}
 
 	public Concept parseConcept(Map cjs) {
-		assert cjs 
+		assert cjs
+
 		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, profileName: cjs.profileName)
-		
 		cjs.terms.each {
 			Term t = parseTerm(it)
 			c.terms.add(t)
+		}
+		//Migration
+		if (c.validationProfile.isDefaultProfile()) {
+			if (c.state == "ignoreImage") {
+				c.profileName = ValidationProfile.strictNoImg.name
+			}
+			if (c.state == "ignore") {
+				c.profileName = ValidationProfile.ignore.name
+			}
 		}
 
 		/*cjs.examples.each {			
@@ -145,18 +154,18 @@ public class ConceptYamlStorage {
 		 }
 		 sb.append(terms)*/
 
-		appendYamlHash("state", c.state, sb)
+		//appendYamlHash("state", c.state, sb)
 		if (c.validationProfile.defaultProfile) {
 			if (c.state == 'ignore') {
-				c.profileName = ValidationProfile.ignore.name				
+				c.profileName = ValidationProfile.ignore.name
 			}
 			if (c.state == 'ignoreImg') {
-				c.profileName = ValidationProfile.strictNoImg.name				
-			}			
+				c.profileName = ValidationProfile.strictNoImg.name
+			}
 		}
-			
-		
-		
+
+
+
 		//if (c.is)
 		appendYamlHash("img", c.img,sb)
 		appendYamlHash("freq", Helper.roundDecimal(c.freq, 5), sb)

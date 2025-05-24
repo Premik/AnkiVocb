@@ -174,7 +174,7 @@ public class Data2Crowd {
 	void mapConcept(Concept c, Example e) {
 		assert c
 		assert e
-		if (c.state == "ignore") return
+		if (c.ignore) return
 			assert c?.firstTerm
 		println c
 		Note n = vocbModel.updateNoteHaving(c.firstTerm)
