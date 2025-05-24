@@ -11451,6 +11451,10 @@ concepts:
   img: img/joystick.jpeg
   freq: 11.00000
   origins: ["Supaplex"]
+- terms: 
+  - term: baba
+    lang: en
+  state: ignore
 
 examples: 
 - terms: 
@@ -15041,9 +15045,9 @@ examples:
   - term: Tough but possible.
     lang: en
     tts: en-samples/Tough but possible.mp3
-  - term: Trvdé, ale možné.
+  - term: Tvrdé, ale možné.
     lang: cs
-    tts: cs-samples/Trvde, ale mozne.mp3
+    tts: cs-samples/Tvrde, ale mozne.mp3
 - terms: 
   - term: Head hunter.
     lang: en
