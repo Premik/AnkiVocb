@@ -60,7 +60,7 @@ public class TreeConf<T> {
 	@Lazy
 	ConfigObject thisConf = {
 		if (!confPath) return new ConfigObject()
-			println " parsing $confPath.text" 
+		//println " parsing $confPath.text" 
 		ConfHelper.parseString(confPath.text, binding)
 	}()
 	

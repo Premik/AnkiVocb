@@ -66,10 +66,11 @@ public class Manager {
 	}
 
 	public static Integer numberOfStars(Concept c) {
+		if (c.ignore) return null
 		numberOfStarsFreq(c?.freq)
 	}
 
-	public static String starsOf(Concept c, boolean pad=true) {
+	public static String starsOf(Concept c, boolean pad=true) { 
 		String s = '🟊'*(numberOfStars(c)?:0)
 		if (pad) return s.padRight(10, '  ')
 		return pad
@@ -104,7 +105,7 @@ public class Manager {
 			c.terms.each { Term t->
 				conceptsByTerm[t.term].add(c)
 			}
-			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
+			conceptsByStar[numberOfStars(c)].add(c)
 			if (c.ignore) ignoreConcepts.add(c)
 		}
 
@@ -398,7 +399,7 @@ public class Manager {
 	void printStats() {
 		int accu=0
 		(5..0).each {
-			int sz = conceptsByStar[it].findAll{!it.ignore}.size()
+			int sz = conceptsByStar[it].size()
 			if (it == 0) sz+=conceptsByStar[null].size()
 			accu+=sz
 			String samples = conceptsByStar[it].take(40).collect {it.firstTerm}

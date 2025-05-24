@@ -29,6 +29,8 @@ public class PackExport {
 	LinkedHashSet<Example> examplesToExport = [] as LinkedHashSet
 	WordNormalizer wn = new WordNormalizer()
 	Data2Crowd data2crowd
+	boolean silent=false
+
 
 	Manager getDbMan() {
 		data2crowd?.dbMan
@@ -44,7 +46,9 @@ public class PackExport {
 
 			if (!mis)  {
 				//Exact match, jsut export
-				println color(sen, BOLD)
+				if (!silent) {
+					println color(sen, BOLD)
+				}
 				examplesToExport.add(e)
 				return
 			}
@@ -55,7 +59,9 @@ public class PackExport {
 			} else {
 				examplesToExport.add(e)
 			}
-			println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
+			if (!silent) {
+				println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
+			}
 		}
 	}
 
@@ -67,7 +73,7 @@ public class PackExport {
 				.flatMap {Example e->
 					dbMan.conceptsFromWordsInExample(e).stream().filter {Concept c->
 						//If strictlyWordlist, exclude concept which are not listed in the pack wordlist
-						!info.strictlyWordlist || info.wordList.contains(c.firstTerm)					
+						!info.strictlyWordlist || info.wordList.contains(c.firstTerm)
 					}
 					.filter {it!=null && !it.ignore}
 					.map { Concept c->
@@ -85,12 +91,12 @@ public class PackExport {
 			Concept c = dbMan.findConceptByFirstTermAnyVariant(w)
 
 
-			if (c == null) println "Concept not found for word:'${color(w, BOLD)}'"
+			if (c == null && !silent) println "Concept not found for word:'${color(w, BOLD)}'"
 			//assert c : "Concept not found for word:'${color(w, BOLD)}'"
 			return c
 		}
 		.filter {it!=null && !it.ignore}
-		.map { Concept c-> 
+		.map { Concept c->
 			new ExportItem(concept: c)
 		}
 	}
@@ -104,9 +110,7 @@ public class PackExport {
 		MethodClosure mc = LinkedHashSet.&new as MethodClosure
 		export().map { ExportItem ei->
 			ei.concept.firstTerm
-		}		
+		}
 		.collect(Collectors.toCollection(mc)) as Set<String>
-		 
-		
 	}()
 }
