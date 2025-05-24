@@ -1,9 +1,11 @@
-package vocb.azure;
+package vocb.azure
 
+import java.awt.image.BufferedImage
 import java.nio.charset.StandardCharsets
 
 import groovy.json.JsonSlurper
 import vocb.Helper
+import vocb.SimpleFileCache
 
 public class BingWebSearch {
 
@@ -12,6 +14,8 @@ public class BingWebSearch {
 	String AZURE_KEY_ENV="AZURE_KEY"
 	String baseUrl = "https://api.cognitive.microsoft.com/bing/v7.0/images/search"
 	String lastClientId
+
+	SimpleFileCache cache = new SimpleFileCache()
 
 	//https://docs.microsoft.com/en-us/rest/api/cognitiveservices-bingsearch/bing-web-api-v7-reference
 	URL buildSearchUrl(String q, int count=4, String imageType="Clipart", String license="Public") {
@@ -35,20 +39,43 @@ public class BingWebSearch {
 	Object search(URL url) {
 		assert url
 		Object ret
+		println "Searching $url"
 		Helper.withUrlGetResponse(httpHeaders, url) { BufferedInputStream res->
 			ret = new JsonSlurper().parse(res)
 		}
 		return ret
 	}
 
+	Object searchWithCache(URL url) {
+		String key = url.toString()
+		Object searchResult
+		if (cache.isCached(key)) {
+			println "Cache hit for $key"
+			cache.subPathForKey(key).withInputStream { InputStream istr ->
+				searchResult = new JsonSlurper().parse(istr)
+			}
+		} else { 
+			searchResult = search(url)
+			cache.subPathForKey(key) << Helper.jsonToString(searchResult)
+		}
+		return searchResult
+	}
+	
+	List<URL> thumbnailsFromSearchResult(Object searchResult) {
+		searchResult.value
+		.collect { it.thumbnailUrl}
+		.collect { new URL(it) }
+	}
+
 
 	static void main(String... args) {
 		BingWebSearch bs = new BingWebSearch()
-		println System.getenv(bs.AZURE_KEY_ENV)
-		println bs.buildSearchUrl("test")
-		println bs.getHttpHeaders()
-		Object res= bs.search(bs.buildSearchUrl("test"))
-		println Helper.jsonToString(res)
+		//println System.getenv(bs.AZURE_KEY_ENV)
+		//println bs.buildSearchUrl("test")
+		//println bs.getHttpHeaders()
+		//Object res= bs.search(bs.buildSearchUrl("test"))
+		bs.searchWithCache(bs.buildSearchUrl("test"))
+		println "Done"
 
 
 	}
