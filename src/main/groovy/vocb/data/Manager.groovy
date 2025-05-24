@@ -332,7 +332,8 @@ public class Manager {
 				.findAll()
 				.collect {it.toLowerCase()}
 				.collect { conceptByFirstTerm[it] }
-				.findAll { it.state != 'ignore'}
+				.findAll()
+				.findAll {it.state != 'ignore'}
 	}
 
 	List<Concept> conceptsFromWordsInSentence(CharSequence sen) {

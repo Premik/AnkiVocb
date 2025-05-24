@@ -29,20 +29,20 @@
                     4.0,
                     30.0
                 ],
-                "initialFactor": 2500,
+                "initialFactor": 3500,
                 "ints": [
                     1,
                     2,
                     7
                 ],
                 "order": 1,
-                "perDay": 5,
+                "perDay": 10,
                 "separate": true
             },
             "replayq": true,
             "rev": {
                 "bury": true,
-                "ease4": 1.3,
+                "ease4": 2,
                 "fuzz": 0.05,
                 "hardFactor": 1.2,
                 "ivlFct": 1,
