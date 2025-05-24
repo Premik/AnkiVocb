@@ -122,11 +122,20 @@ public class PackExport {
 						if (!info.strictlyWordlist ) return true
 						info.wn.wordVariantsWithBrackets(c.firstTerm).any {info.wordList.contains(it)}
 					}
-
 					.filter {it!=null && !it.ignore}
 					.map { Concept c->
 
 						new ExportItem(concept: c, example: e)
+					}
+				}
+	}
+	
+	Stream<Concept> ignoredConceptsFromExamples() {
+		if (!info.strictlyWordlist ) return Stream.empty()
+		sentencesForExport()
+				.flatMap {Example e->
+					dbMan.conceptsFromWordsInExample(e).stream().filter {Concept c->
+						!(info.wn.wordVariantsWithBrackets(c.firstTerm).any {info.wordList.contains(it)})
 					}
 				}
 	}
@@ -223,13 +232,14 @@ public class PackExport {
 		if (wordDups) {
 			pl("words-dups.txt", wordDups)
 		}
-		
+
 		pl("sentences-db.txt",
-			cardsFieldsInDb("First1000").collect {List flds->flds[2]}.toUnique())
+				cardsFieldsInDb("First1000").collect {List flds->flds[2]}.toUnique())
 		pl("words-db.txt",
-			cardsFieldsInDb("First1000").collect {List flds->flds[0]}.toUnique())
+				cardsFieldsInDb("First1000").collect {List flds->flds[0]}.toUnique())
 
 		pl("words-exported.txt", exportedWords)
+		pl("words-ignored.txt",ignoredConceptsFromExamples().map {it.firstTerm}.toList().toUnique())
 		pl("sentences-exported.txt",
 				sentencesExport()
 				.map {ExportItem ex->
@@ -238,7 +248,7 @@ public class PackExport {
 				.toList() as LinkedHashSet
 				)
 
-		
+
 		Helper.printLapseTime()
 		println "Dumped $fileCount files to the $trgPath"
 	}

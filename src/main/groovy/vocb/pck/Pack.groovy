@@ -439,7 +439,7 @@ public class Pack {
 
 		new Pack().tap { Pack p->
 
-			//p.exportByName("Simple")
+			//p.exportByName("SimpleW")
 			//return
 
 			silent=true
@@ -453,11 +453,11 @@ public class Pack {
 			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/
-			printFirstX()
+			//printFirstX()
 			//ExampleComparatorMatch.preferedWords = Corpus.buildDef(25000).topX(25000) as LinkedHashSet
 			//printBestExamplesFor()
 
-			//packExportsOf("Basic").first().debugDumpTo(dbgOutPath)
+			packExportsOf("Basic").first().debugDumpTo(dbgOutPath)
 
 			//printExamplesExport()
 			//p.export()
