@@ -10,6 +10,7 @@
 
 </head>
 
+
 <body>
 
 	<div class="container">
@@ -19,44 +20,44 @@
 	<main class="container">
 		<div id="qa_box" class="card card2">
 			<!-- --------------------------------------------------------------------------   -->
-			<main class="wrapper rounded shadow">
-				<header class="foreign foreignTerm">
+			<div class="wrapper rounded shadow">
+				<div class="foreign foreignTerm">
 					<span>{{foreign}}</span>[sound:{{foreignTTS}}]
-				</header>
+				</div>
 
 				<!-- 
 				<figure class="img"><div style="background-image: url('apple.jpeg')"></div></figure>
 				-->
-				<figure class="img"><img src="{{img}}"></span></figure>
+				<figure class="img"><img class="shadow" src="apple.jpeg"></span></figure>
 
 				<!--	<figure class="img"><img src="lightBulb.png"></figure>
 				<figure class="img"><img src="air.png"></figure>
 				<div class="img"><img src="above.jpeg"></div>-->
 
 
-				<section class="native native1">
-					<span>{{native}}</span>[sound:{{nativeTTS}}]
-				</section>
+				<div class="native native1">
+					{{native}}[sound:{{nativeTTS}}]
+				</div>
 
 				<!-- {{#nativeAlt}} -->
-				<section class="native native2">
-					<span>{{nativeAlt}}</span>[sound:{{nativeAltTTS}}]
-				</section>
+				<div class="native native2">
+					<span>{{nativeAlt}}</span> [sound:{{nativeAltTTS}}]
+				</div>
 				<!-- {{/nativeAlt}} -->
 
 				<!-- {{#foreignExample}} -->
-				<section class="foreign foreignExample">
-					<span>{{foreignExample}}</span>[sound:{{foreignExampleTTS}}]
-				</section>
+				<div class="foreign foreignExample">
+					<span>{{foreignExample}}</span> [sound:{{foreignExampleTTS}}]
+				</div>
 				<!-- {{/foreignExample}} -->
 
 				<!-- {{#nativeExample}} -->
-				<section class="native nativeExample">
-					<span>{{nativeExample}}</span>[sound:{{nativeExampleTTS}}]
-				</section>
+				<div class="native nativeExample">
+					<span>{{nativeExample}}</span> [sound:{{nativeExampleTTS}}]
+				</div>
 				<!-- {{/nativeExample}} -->
 
-			</main>
+			</div>
 			<!-- --------------------------------------------------------------------------   -->
 		</div>
 		<br>
