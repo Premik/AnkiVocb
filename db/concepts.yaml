@@ -5841,7 +5841,6 @@ concepts:
     tts: cs-terms/za.mp3
   img: img/behind.jpeg
   freq: 121776.00000
-##  cause   ################################################################# no img
 - terms: 
   - term: cause
     lang: en
@@ -5853,6 +5852,7 @@ concepts:
   - term: příčina
     lang: cs
     tts: cs-terms/pricina.mp3
+  img: img/cause.jpeg
   freq: 121764.50000
 - terms: 
   - term: six
@@ -5864,7 +5864,6 @@ concepts:
     tts: cs-terms/sest.mp3
   img: img/six.jpeg
   freq: 121091.50000
-##  fine   ################################################################## no img
 - terms: 
   - term: fine
     lang: en
@@ -5876,6 +5875,7 @@ concepts:
   - term: jemný
     lang: cs
     tts: cs-terms/jemny.mp3
+  img: img/fine.jpeg
   freq: 119116.50000
 - terms: 
   - term: million
@@ -6139,7 +6139,6 @@ concepts:
     tts: cs-terms/prestal.mp3
   img: img/stopped.jpeg
   freq: 106661.00000
-##  suddenly   ############################################################## no img
 - terms: 
   - term: suddenly
     lang: en
@@ -6151,6 +6150,7 @@ concepts:
   - term: najednou
     lang: cs
     tts: cs-terms/najednou.mp3
+  img: img/suddenly.jpeg
   freq: 104116.00000
 - terms: 
   - term: red
@@ -6414,7 +6414,6 @@ concepts:
     tts: cs-terms/trida.mp3
   img: img/class.jpeg
   freq: 84748.25000
-##  neither   ############################################################### no img
 - terms: 
   - term: neither
     lang: en
@@ -6423,6 +6422,7 @@ concepts:
   - term: ani
     lang: cs
     tts: cs-terms/ani.mp3
+  img: img/neither.jpeg
   freq: 84393.50000
 - terms: 
   - term: mine
@@ -6450,7 +6450,6 @@ concepts:
     tts: cs-terms/vytisky.mp3
   img: img/copies.jpeg
   freq: 81479.70000
-##  whatever   ############################################################## no img
 - terms: 
   - term: whatever
     lang: en
@@ -6462,6 +6461,7 @@ concepts:
   - term: jakékoli
     lang: cs
     tts: cs-terms/jakekoli.mp3
+  img: img/whatever.jpeg
   freq: 80374.50000
 - terms: 
   - term: distance
@@ -6486,7 +6486,6 @@ concepts:
     tts: cs-terms/situace.mp3
   img: img/situation.jpeg
   freq: 76627.20000
-##  finally   ############################################################### no img
 - terms: 
   - term: finally
     lang: en
@@ -6498,6 +6497,7 @@ concepts:
   - term: nakonec
     lang: cs
     tts: cs-terms/nakonec.mp3
+  img: img/finally.jpeg
   freq: 75984.75000
 - terms: 
   - term: doctor
@@ -6846,7 +6846,6 @@ concepts:
     tts: cs-terms/kohokoliv.mp3
   img: img/anyone.jpeg
   freq: 60607.90000
-##  usual   ################################################################# no img
 - terms: 
   - term: usual
     lang: en
@@ -6858,6 +6857,7 @@ concepts:
   - term: běžné
     lang: cs
     tts: cs-terms/bezne.mp3
+  img: img/usual.jpeg
   freq: 59858.50000
 - terms: 
   - term: main
@@ -6869,7 +6869,6 @@ concepts:
     tts: cs-terms/hlavni.mp3
   img: img/main.jpeg
   freq: 59778.50000
-##  someone   ############################################################### no img
 - terms: 
   - term: someone
     lang: en
@@ -6881,6 +6880,7 @@ concepts:
   - term: někoho
     lang: cs
     tts: cs-terms/nekoho.mp3
+  img: img/someone.jpeg
   freq: 59644.10000
 - terms: 
   - term: please
@@ -6908,7 +6908,6 @@ concepts:
     tts: cs-terms/zaber.mp3
   img: img/shot.jpeg
   freq: 58465.05000
-##  stay   ################################################################## no img
 - terms: 
   - term: stay
     lang: en
@@ -6920,6 +6919,7 @@ concepts:
   - term: pobyt
     lang: cs
     tts: cs-terms/pobyt.mp3
+  img: img/stay.jpeg
   freq: 57836.50000
 - terms: 
   - term: grown
@@ -7485,7 +7485,6 @@ concepts:
     tts: cs-terms/drive-cs.mp3
   img: img/earlier.jpeg
   freq: 40843.10000
-##  nobody   ################################################################ no img
 - terms: 
   - term: nobody
     lang: en
@@ -7497,6 +7496,7 @@ concepts:
   - term: nikoho
     lang: cs
     tts: cs-terms/nikoho.mp3
+  img: img/nobody.jpeg
   freq: 40420.30000
 - terms: 
   - term: hospital
@@ -8033,7 +8033,6 @@ concepts:
     tts: cs-terms/kamera.mp3
   img: img/camera.jpeg
   freq: 22397.35500
-##  that   ################################################################## no img
 - terms: 
   - term: that
     lang: en
@@ -8045,6 +8044,7 @@ concepts:
   - term: který
     lang: cs
     tts: cs-terms/ktery.mp3
+  state: ignoreImage
   freq: 21910.90650
 - terms: 
   - term: emotions
@@ -8210,7 +8210,6 @@ concepts:
     tts: cs-terms/kradeny.mp3
   img: img/stolen.jpeg
   freq: 19337.70000
-##  justified   ############################################################# no img
 - terms: 
   - term: justified
     lang: en
@@ -8222,6 +8221,7 @@ concepts:
   - term: oprávněné
     lang: cs
     tts: cs-terms/opravnene.mp3
+  img: img/justified.jpeg
   freq: 19003.80000
 - terms: 
   - term: funny
@@ -8527,7 +8527,6 @@ concepts:
     tts: cs-terms/doklad.mp3
   img: img/document.jpeg
   freq: 11841.05000
-##  anymore   ############################################################### no img
 - terms: 
   - term: anymore
     lang: en
@@ -8539,6 +8538,7 @@ concepts:
   - term: ještě
     lang: cs
     tts: cs-terms/jeste.mp3
+  img: img/anymore.jpeg
   freq: 11099.89700
 - terms: 
   - term: complicated
@@ -8676,7 +8676,6 @@ concepts:
     tts: cs-terms/rozcileny.mp3
   img: img/upset.jpeg
   freq: 9102.75000
-##  whoever   ############################################################### no img
 - terms: 
   - term: whoever
     lang: en
@@ -8685,6 +8684,7 @@ concepts:
   - term: kdokoli
     lang: cs
     tts: cs-terms/kdokoli.mp3
+  img: img/whoever.jpeg
   freq: 8846.85000
 - terms: 
   - term: bean
@@ -8963,7 +8963,6 @@ concepts:
     tts: cs-terms/kufr.mp3
   img: img/suitcase.jpeg
   freq: 655.85000
-##  pointless   ############################################################# no img
 - terms: 
   - term: pointless
     lang: en
@@ -8975,6 +8974,7 @@ concepts:
   - term: nesmyslné
     lang: cs
     tts: cs-terms/nesmyslne.mp3
+  img: img/pointless.jpeg
   freq: 492.87600
 - terms: 
   - term: noodles
