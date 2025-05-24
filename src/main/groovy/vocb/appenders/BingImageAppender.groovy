@@ -65,7 +65,7 @@ public class BingImageAppender {
 			imgSelector.with {
 				sd.q = trm
 				runSearch(sd)
-				title = "Pick the image. ($i/${noImgs.size()}) "
+				title = "Pick the image ${c.terms.values().collect{it.term}} ($i/${noImgs.size()}) "
 				runAsModal()
 			}
 			sd = imgSelector.searchData
