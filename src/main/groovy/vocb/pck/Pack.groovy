@@ -164,13 +164,13 @@ public class Pack {
 		export(pkgsByName(name))
 	}
 	
-	Set<String> wordsFromAllPackages() {
-		allPackInfos.collect {it.allWords}.flatten().sort() as Set<String>
+	Set<String> wordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
+		pkgInfos.collect {it.allWords}.flatten().sort() as Set<String>
 	}
 	
 	@CompileDynamic
-	List<String> sentencesFromAllPackages() {
-		allPackInfos.collect {wn.sentences(it.sentences)}.flatten().toUnique().sort()
+	List<String> sentencesFromAllPackages(List<PackInfo> pkgInfos = allPackInfos) {
+		pkgInfos.collect {wn.sentences(it.sentences)}.flatten().toUnique().sort()
 	}
 
 
