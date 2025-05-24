@@ -67,6 +67,10 @@ public class Manager {
 		if (pad) return s.padRight(10, '  ')
 		return pad
 	}
+	
+	public Concept findConceptByFirstTermAnyVariant(String firstTerm) {
+		wn.wordVariants(firstTerm).collect {conceptByFirstTerm[it] }.find()		
+	}
 
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
@@ -336,6 +340,22 @@ public class Manager {
 			//Example covering the most words in the give sentence
 			wn.commonWordOf(e.firstTerm, sentence).size()			
 		}		
+	}
+	
+	public void withBestExample(String text, Closure cl) {
+		List<String> snts = wn.sentences(text)
+		snts.each { String sen->
+			Example e = findBestExampleForSentence(sen)
+			String et = e?.firstTerm
+			if (wn.normalizeSentence(et) == wn.normalizeSentence(sen)) {
+				cl(e, sen, [] as Set, [] as Set)
+			} else {
+				Set<String> com = wn.commonWordOf(sen, e.firstTerm)
+				Set<String> mis = wn.uniqueueTokens(sen) + wn.uniqueueTokens(e.firstTerm) - com
+				cl(e, sen, com, mis)
+			}			
+		}
+		
 	}
 
 

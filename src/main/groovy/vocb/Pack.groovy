@@ -19,9 +19,9 @@ public class Pack {
 
 	Path destFolder = Paths.get("/tmp/work")
 	String pkgName ="basic0"
-	
+
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
-	
+
 	@Lazy String sentences = packageRootPath.resolve(pkgName).resolve("sentences.txt").text
 
 	@Lazy Path destPath = {
@@ -29,8 +29,8 @@ public class Pack {
 			toFile().mkdirs()
 		}
 	}()
-	
-	
+
+
 
 	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString()).tap {
 		staticMedia.add "_${pkgName}Background.jpg"
@@ -45,10 +45,10 @@ public class Pack {
 	@Deprecated
 	LinkedHashSet<Concept> export = [] as LinkedHashSet
 	LinkedHashSet<Example> exportExamples = [] as LinkedHashSet
-	
+
 	Order lastOrder
 
-	
+
 
 	void exportConceptsWithDepc(List<Concept> enConcepts, int depth=1) {
 		if (depth <= 0) return
@@ -112,7 +112,7 @@ public class Pack {
 			//loadInitialSelection(new File("/data/src/AnkiVocb/pkg/JingleBells/order.yaml").newReader())
 		}
 		/*os.runEpoch(5)
-		lastOrder = os.bestFirst[0]*/
+		 lastOrder = os.bestFirst[0]*/
 		lastOrder = os.ctx.createInitialOrder()
 		lastOrder.load(Paths.get("/data/src/AnkiVocb/pkg/JingleBells/order.yaml"))
 		export = lastOrder.ord.collect {ConceptExtra ce ->ce.c } as LinkedHashSet
@@ -120,12 +120,12 @@ public class Pack {
 
 	void printExport() {
 		if (lastOrder) OrderSolver.printDetails(lastOrder)
-			else OrderSolver.printDetails(export)
+		else OrderSolver.printDetails(export)
 	}
 
 	Map<String, Set<Concept>> findBestExamples() {
 		dbMan.conceptsByEnWordsInSample
-				.submap(export.collect{it.firstTerm})								
+				.submap(export.collect{it.firstTerm})
 				.sort {Entry<String, Set<Concept>> it->
 					Set<String> words = wn.uniqueueTokens(it.key)
 					int coverCount = export.count {it.firstTerm in words}
@@ -145,9 +145,9 @@ public class Pack {
 				.findAll{ String word, Concept c->
 					includeNonExported || export.contains(c)
 				}
-				/*.findAll { String word, Concept c->
-					includeAlreadyHavingSample || wn.normalizeSentence(c.examplesByLang("en")[0]?.term) != example
-				}*/
+		/*.findAll { String word, Concept c->
+		 includeAlreadyHavingSample || wn.normalizeSentence(c.examplesByLang("en")[0]?.term) != example
+		 }*/
 	}
 
 	void forceBestExamplesReuse() {
@@ -156,42 +156,42 @@ public class Pack {
 			Concept sourceCp = cps.find { wn.normalizeSentence(it.examplesByLang("en")[0]?.term) == normExample }
 			//assert sourceCp
 			if (sourceCp) {
-			findConceptsCandidatesForGivenExample(normExample).values()
-					.each { Concept c->
-						if (!(c in replaced)) {
-						//println "$c ${c.examplesByLang('en')[0]?.term} <- ${sourceCp.examplesByLang('en')[0].term} "
-							c.examples = sourceCp.examples.clone()
+				findConceptsCandidatesForGivenExample(normExample).values()
+						.each { Concept c->
+							if (!(c in replaced)) {
+								//println "$c ${c.examplesByLang('en')[0]?.term} <- ${sourceCp.examplesByLang('en')[0].term} "
+								c.examples = sourceCp.examples.clone()
+							}
+							replaced.add(c)
 						}
-						replaced.add(c)
-					}
 			}
 		}
 	}
-	
+
 	void doExport() {
 		d2c.vocbModel.parser.deckName = pkgName
 		d2c.exportExamplesToCrowd(exportExamples)
 	}
-	
+
 	void exportSentences(String text=sentences) {
-		List<String> snts = wn.sentences(text)
-		snts.each { String sen->
-			Example e = dbMan.findBestExampleForSentence(sen)
-			String et = e?.firstTerm
-			if (wn.normalizeSentence(et) == wn.normalizeSentence(sen)) {
+		dbMan.withBestExample(text) { Example e, String sen, Set<String> com, Set<String> mis->
+
+			if (!mis)  {
 				println color(sen, BOLD)
-			} else {
-				Set<String> com = wn.commonWordOf(sen, e.firstTerm)
-				Set<String> mis = wn.uniqueueTokens(sen) + wn.uniqueueTokens(e.firstTerm) - com
-				String col = NORMAL
-				if (mis.size() > 2)  {
-					col = RED
-				}
-				println "${color(sen, col)} -> ${color(et, BLUE)} ${color(mis.join(' '), MAGENTA)}"
+				exportExamples.add(e)
+				return
 			}
-			exportExamples.add(e)
+			String col = NORMAL
+			if (mis.size() > 2)  {
+				col = RED
+			} else {
+				exportExamples.add(e)
+			}
+			println "${color(sen, col)} -> ${color(e.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
-		
+
+
+
 	}
 
 
@@ -212,10 +212,10 @@ public class Pack {
 
 
 			//filterByStars (0..2)
-			
+
 			//addDependencies(1)
 			forceBestExamplesReuse()
-			
+
 
 			printExport()
 			return

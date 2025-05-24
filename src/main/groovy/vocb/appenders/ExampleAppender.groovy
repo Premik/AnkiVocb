@@ -6,9 +6,10 @@ import vocb.HttpHelper
 import vocb.azure.AzureTranslate
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
+import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
-
+import static vocb.Ansi.*
 
 
 public class ExampleAppender {
@@ -79,7 +80,7 @@ public class ExampleAppender {
 
 		if (loadSave) dbMan.load()
 		List<Concept> noEx = findTodo()
-		
+
 		int added = 0
 		for (Concept c in noEx) {
 			List<Concept> samples = dbMan.conceptsByEnWordsInSample[c.firstTerm]
@@ -97,25 +98,22 @@ public class ExampleAppender {
 	}
 
 	void fromCorpus(String text) {
-		Map<String, Set<String>> wordsInSentences = wn.wordsInSentences(text)
-
-		dbMan.load()
 		
-		List<Concept> noEx= findTodo()
-		int i=0
-		for (Concept c in noEx) {
-			if (i> limit) break
+		dbMan.load()
+		dbMan.withBestExample(text) { Example e, String sen, Set<String> com, Set<String> mis->
 
-				String enWord = c.firstTerm
-			Set<String> s = wordsInSentences[enWord]
-			if (!s) continue
-				println "'$c.firstTerm': $s"
-			c.examples.putAll (
-					s.collectEntries {
-						[it, new Term(it, "en")]}
-					)
-			i++		
-
+			if (!mis)  {
+				println color(sen, WHITE)
+				return
+			}			
+			if (mis.size() > 2)  {				
+				print color(sen, RED)
+				dbMan.db.examples.add(new Example(terms: [Term.enTerm(sen)] ))
+				dbMan.save()
+			} else {
+				print sen				
+			}
+			println "->${color(e.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
 		dbMan.save()
 
@@ -131,7 +129,7 @@ public class ExampleAppender {
 			String tx = getClass().getResource('/sources/JingleBells.txt').text
 			tx = new File("/data/src/AnkiVocb/pkg/JingleBells/sentences.txt").text
 			fromCorpus(tx)
-			
+
 			//reuseExisting()
 		}
 

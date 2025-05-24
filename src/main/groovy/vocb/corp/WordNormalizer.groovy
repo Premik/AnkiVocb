@@ -30,14 +30,19 @@ public class WordNormalizer {
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
 				.map {String s ->s.toLowerCase()}
 	}
-	
+
 	public Stream<String> lemming( Stream<String> inp) {
 		inp.flatMap { String s->
-			if (s.endsWith('s')) return [s, s[0..-2]].stream() //Remove 's'
-			return [s, "${s}s"].stream() //Add 's'
+			wordVariants(s).stream()			
 		}
-		
 	}
+
+	public List<String> wordVariants(String s) {
+		if (s.endsWith('s')) return [s, s[0..-2]] //Remove 's'
+		return [s, "${s}s"] //Add 's'
+	}
+
+
 
 	public String normalizeSentence(CharSequence sentence) {
 		if (!sentence) return ""
@@ -125,7 +130,7 @@ public class WordNormalizer {
 				.findAll {String w, Integer f-> f >=cutOff }
 				.sort { -it.value}
 	}
-	
+
 	public Set<String> commonWordOf(String sen, String sen2) {
 		uniqueueTokens(sen, true).intersect(uniqueueTokens(sen2, true))
 	}

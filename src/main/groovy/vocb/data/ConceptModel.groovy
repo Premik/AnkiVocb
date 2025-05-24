@@ -38,7 +38,8 @@ public class Example {
 	public String getFirstTerm() {
 		terms[0]?.term
 	}
-
+	
+	
 	public Term getAt(int i) {
 		return terms[i]
 	}
