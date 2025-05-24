@@ -8885,6 +8885,12 @@ concepts:
   img: img/wont.jpeg
   freq: 339.19542
 - terms: 
+  - term: should've (should have)
+  - term: měl by mít (zkráceně) 
+- terms: 
+  - term: could've
+  - term: mohl mít (zkráceně)
+- terms: 
   - term: that's (that is)
     tts: en-terms/thats.mp3
     pron: ðæts
@@ -8944,7 +8950,9 @@ concepts:
     pron: aɪm
   - term: Já jsem (zkráceně)
     tts: cs-terms/Ja jsem.mp3
-  img: img/Im.jpeg
+- terms: 
+  - term: I've (I have)
+  - term: Mám (zkráceně)
   freq: 311.38502
 - terms: 
   - term: you're (you are)

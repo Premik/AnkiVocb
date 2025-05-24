@@ -145,11 +145,11 @@ public class Pack {
 	void printBestExamplesFor() {
 		
 		Collection<String> words='''
-		available privacy general local download including account content provide sale credit categories advanced
-		topic financial below login legal options status browse range reference term original
-		common daily average region record environment district calendar update resource material adult
-		cheap third individual plus usually percent fast global subscribe various knowledge loan taken friday lake basic response
-		practice holiday loss higher kingdom storage across inside necessary according
+		privacy local provide categories
+		topic financial legal status range term original
+		common daily average region district calendar resource material adult
+		cheap plus fast subscribe knowledge taken friday lake basic response
+		practice holiday loss higher kingdom storage across inside
 		'''.split(/\s+/).reverse().findAll()
 		
 		Helper.startWatch("allWordPackages")
