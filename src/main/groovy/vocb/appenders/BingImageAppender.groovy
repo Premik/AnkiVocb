@@ -12,21 +12,22 @@ import vocb.ui.ImageSelector
 
 public class BingImageAppender {
 
-	ImageSelector imgSelector 
+	ImageSelector imgSelector
 
 	int searchResults=32
-	HttpHelper httpHelper = new HttpHelper()
-	BingWebSearch bingSearch = new BingWebSearch(httpHelper: httpHelper)
+	@Lazy HttpHelper httpHelper
+	@Lazy BingWebSearch bingSearch = {
+		new BingWebSearch(httpHelper: httpHelper)
+	}()
 
-	Manager dbMan = new Manager()
+	@Lazy Manager dbMan
 
 	void init() {
 		imgSelector = new ImageSelector()
 		imgSelector.open()
 		imgSelector.runSearch = { String newQ->
-			imgSelector.loadSearchResult(bingSearch.thumbnailSearch(newQ, searchResults), httpHelper)			
+			imgSelector.loadSearchResult(bingSearch.thumbnailSearch(newQ, searchResults), httpHelper)
 		}
-		
 	}
 
 	void run() {
@@ -39,8 +40,8 @@ public class BingImageAppender {
 				return
 			}
 			int i =0
-			
-			
+
+
 
 			for ( Concept c in noImgs) {
 				i++
@@ -60,7 +61,7 @@ public class BingImageAppender {
 				dbMan.resolveMedia(trm, "jpeg") { Path dbPath->
 					Files.move(resizedP, dbPath)
 					println "Stored $dbPath"
-				}				
+				}
 				c.img =  dbMan.termd2MediaLink(trm, "jpeg")
 				dbMan.save()
 			}

@@ -6,6 +6,7 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 import vocb.Helper
+import static vocb.Helper.utf8
 
 public class Manager {
 
@@ -52,7 +53,7 @@ public class Manager {
 	}
 	
 	public void load() {
-		conceptsPath.withReader(StandardCharsets.UTF_8.toString()) { Reader r->
+		conceptsPath.withReader(utf8) { Reader r->
 			db =storage.parseDb(r)
 		}
 		assert db.version == "0.0.1" : "Not compatible db version"

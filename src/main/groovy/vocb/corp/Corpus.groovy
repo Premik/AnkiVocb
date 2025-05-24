@@ -3,9 +3,9 @@ package vocb.corp
 import java.nio.charset.StandardCharsets
 import java.util.regex.Pattern
 
-import org.apache.commons.collections.map.HashedMap
-
 import com.xlson.groovycsv.CsvParser
+
+import static vocb.Helper.utf8
 
 public class Corpus {
 
@@ -31,7 +31,7 @@ public class Corpus {
 		Pattern wordPatter = ~/^\w+/
 		int groupIndex = 0
 
-		input.eachLine(StandardCharsets.UTF_8.toString()) { String line ->
+		input.eachLine(utf8) { String line ->
 
 			def blocMatcher = line =~  blockDeli
 			if (blocMatcher) {
@@ -56,7 +56,7 @@ public class Corpus {
 		//6of12.txt
 		Pattern phrasePatter = ~/^\w\w+\s\w\w+/
 
-		input.eachLine(StandardCharsets.UTF_8.toString()) { String line ->
+		input.eachLine(utf8) { String line ->
 
 			def phraseMatcher = line =~  phrasePatter
 			if (phraseMatcher) {

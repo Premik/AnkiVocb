@@ -1,13 +1,13 @@
 package vocb.azure
 
-import java.nio.charset.StandardCharsets
-
-import vocb.SearchData
+import vocb.Helper
+import static vocb.Helper.utf8
 
 public class AzureEnv {
 
 	String AZURE_KEY_ENV="AZURE_KEY"
 	String AZURE_ENDPOINT_ENV="AZURE_ENDPOINT"
+	//String "2823d6c4-78d7-11ea-bc55-0242ac130004"
 	String defaultBaseUrl = "https://api.cognitive.microsoft.com/bing/v7.0"
 	String lastClientId
 
@@ -30,13 +30,18 @@ public class AzureEnv {
 	}
 
 	public String urlParam(String key, Object val, String prefx="&") {
-		if (val == null || val == "") return ""
-		String utf8=StandardCharsets.UTF_8.toString()
+		if (val == null || val == "") return ""		
 		return "$prefx$key=${URLEncoder.encode(val.toString(), utf8)}"
 	}
 	
 	//https://docs.microsoft.com/en-us/rest/api/cognitiveservices-bingsearch/bing-web-api-v7-reference
 	URL imageSearchUrl(String q, int count, String imageType, String license)  {
 		"$baseUrl/images/search${urlParam('q', q, '?')}${urlParam('count', count)}${urlParam('imageType', imageType)}${urlParam('license', license)}".toURL()
+	}
+	
+	//https://docs.microsoft.com/en-us/azure/cognitive-services/translator/reference/v3-0-translate
+	URL translateUrl(String from="en", String to="cs")  {
+		String trBase = "https://api.cognitive.microsofttranslator.com/dictionary/lookup?api-version=3.0"
+		"$trBase${urlParam('from', from)}${urlParam('to', to)}".toURL()
 	}
 }

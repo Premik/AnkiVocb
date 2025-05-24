@@ -1,11 +1,14 @@
 package vocb
 
+import java.nio.charset.StandardCharsets
 import java.text.Normalizer
 
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 
 public class Helper {
+	
+	public static String utf8=StandardCharsets.UTF_8.toString()
 
 	static public void printProcOut(Process proc) {
 		StringBuffer b = new StringBuffer()

@@ -8,16 +8,18 @@ public class BingWebSearch {
 
 	// http -v  https://api.cognitive.microsoft.com/bing/v7.0/images/search\?q\=sailing+dinghies\&mkt\=en-us\&answerCount\=3 Ocp-Apim-Subscription-Key:$AZURE_KEY
 
-	AzureEnv azEnv = new AzureEnv()
-	HttpHelper httpHelper
-
+	@Lazy(soft=true) AzureEnv azEnv
+	@Lazy(soft=true) HttpHelper httpHelper
+	@Lazy JsonSlurper jsonSlurper
+	
+	
 		Object search(URL url) {
 		assert httpHelper
 		assert url
 		Object ret
 		println "Searching $url"
 		httpHelper.withDownloadResponse(azEnv.httpHeaders, url) { BufferedInputStream res->
-			ret = new JsonSlurper().parse(res)
+			ret = jsonSlurper.parse(res)
 		}
 		return ret
 	}
@@ -46,7 +48,8 @@ public class BingWebSearch {
 
 
 	static void main(String... args) {
-		BingWebSearch bs = new BingWebSearch(httpHelper: new HttpHelper())
+		BingWebSearch bs = new BingWebSearch()
+		bs.httpHelper = new HttpHelper()
 		//println System.getenv(bs.AZURE_KEY_ENV)
 		//println bs.buildSearchUrl("test")
 		//println bs.getHttpHeaders()

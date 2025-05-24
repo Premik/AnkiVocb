@@ -1,6 +1,7 @@
 package vocb;
 
 import java.nio.charset.StandardCharsets
+import static vocb.Helper.utf8
 
 public class LocalTTS {
 	
@@ -10,7 +11,7 @@ public class LocalTTS {
 		assert voiceId
 		assert outFile
 		assert text
-		String txtEnc = URLEncoder.encode(text, StandardCharsets.UTF_8.toString())
+		String txtEnc = URLEncoder.encode(text, utf8)
 
 		URL u = "http://bb1:8081/?text=$txtEnc&voice=$voiceId&format=mp3".toURL()
 		println u
