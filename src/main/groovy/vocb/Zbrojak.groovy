@@ -11,18 +11,38 @@ import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 import vocb.anki.crowd.CrowdParser
 import vocb.anki.crowd.Note
+import vocb.conf.ConfHelper
+import vocb.template.Render
 
 @CompileStatic
 public class Zbrojak {
 
-	Path ankiCrowdExportPath = Paths.get("/tmp/work/zbrojak")
+	Path origDeckJsonPath = Paths.get( Zbrojak.getResource('/zbrojak/deck.json').toURI())
+	Path origDesckRootPath = origDeckJsonPath.parent
+
+	ConfHelper cfg = ConfHelper.instance.tap {
+		extraLookupFolders.add(origDesckRootPath.toFile())
+		
+	}
+	String backgroundName = '_ZbrojakBackground.jpeg'
+	Path ankiCrowdExportPath = ConfHelper.resolveOutputPath("Zbrojak")
 	Path deckPath = ankiCrowdExportPath.resolve('deck.json')
 	Path deckMediaPath = deckPath.resolve("media")
+	Path backgroundPath = deckPath.resolve(backgroundName)
+	Path deckDescriptionPath = deckPath.resolve("readme.md")
+	
+	
 
-	Path origDeckJsonPath = Paths.get( Zbrojak.getResource('/zbrojak/deck.json').toURI())
-	Path desckRootPath = origDeckJsonPath.parent
-	Path htmlRootPath = desckRootPath.resolve("htmlCache")
 
+	Path htmlRootPath = origDesckRootPath.resolve("htmlCache")
+
+	@Lazy
+	Render render = {
+		new Render(cfgHelper: cfg).tap {
+			extraVars.putAll([
+				backgroundImg: backgroundName])
+		}
+	}()
 
 	@Lazy CrowdParser parser = new CrowdParser (defaultModelNamePrefix:"zbrojak", json: origDeckJsonPath.text)
 
@@ -44,23 +64,35 @@ public class Zbrojak {
 	}
 
 	Note addNewNote() {
-		Note n =new Note(model: parser.defaultModel)	
-		notes.add(n)		
+		Note n =new Note(model: parser.defaultModel)
+		notes.add(n)
 		return n
 	}
 
+	void syncMedia() {
+		Path mp = ankiCrowdExportPath.resolve("media")
+		/*if (!Files.exists(mp)) {
+		 Files.createSymbolicLink(mp, htmlRootPath)
+		 }*/
+		mp.toFile().mkdirs()
+		Closure sync = { Path p->
+			Path trg = mp.resolve(p.getFileName())
+			if (!Files.exists(trg)) {
+				Files.createSymbolicLink(trg, p)
+			}
+		}
+		sync(origDesckRootPath.resolve(backgroundName))
+		htmlRootPath.eachFileMatch(~/.*\.(jpe?g)|(png)/, sync)
+	}
+
 	void save() {
-		//syncMedia()
 		ankiCrowdExportPath.toFile().mkdirs()
 		notes.each { Note n-> assureNote(n) }
 		parser.jsonRoot.notes = notes
+		parser.deckDesc = render.render([templates:[main: "deck-description"]])
 		parser.saveTo(deckPath.toFile())
 		println "Saved notes to $deckPath"
-		Path mp = ankiCrowdExportPath.resolve("media")
-		if (!Files.exists(mp)) {
-			Files.createSymbolicLink(mp, htmlRootPath)
-		}
-
+		syncMedia()
 	}
 
 	Path scrape(String locPath) {
@@ -112,14 +144,12 @@ public class Zbrojak {
 			n.img = Helper.imgField(imgPath?.fileName?.toString(),  true)
 			n.a=a
 			n.b=b
-			n.c=c			
+			n.c=c
 			n.aRes = correctIndex == 0 ? "correct" : "wrong"
 			n.bRes = correctIndex == 1 ? "correct" : "wrong"
 			n.cRes = correctIndex == 2 ? "correct" : "wrong"
 			n.questionNumber = qNo+1
 		}
-
-
 	}
 
 	public static void main(String[] args) {
