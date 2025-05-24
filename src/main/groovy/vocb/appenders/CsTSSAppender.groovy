@@ -18,6 +18,7 @@ public class CsTSSAppender {
 	
 	//String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural", "cs-CZ-Jakub"]
 	String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural"]
+	//String[] voices = ["cs-CZ-AntoninNeural"]
 	int voiceCounter = 0
 	
 	String getSomeVoice() {
