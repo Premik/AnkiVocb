@@ -742,7 +742,7 @@ concepts:
   img: my.jpeg
   freq: 2098760.00000
   origins: ["corpus"]
-##  this   ################################################################## ▅ 61%
+##  this   ################################################################## ▇ 86%
 - terms: 
   - term: this
     lang: en
@@ -755,9 +755,10 @@ concepts:
     lang: en
   - term: Tento týden jsem napsal tři nové kapitoly.
     lang: cs
+  img: this.jpeg
   freq: 2010471.00000
   origins: ["corpus"]
-##  their   ################################################################# ▅ 56%
+##  their   ################################################################# ▇ 81%
 - terms: 
   - term: their
     lang: en
@@ -769,9 +770,10 @@ concepts:
     lang: en
   - term: Ale není to jejich vina.
     lang: cs
+  state: ignoreImage
   freq: 1951647.00000
   origins: ["corpus"]
-##  me   #################################################################### ▅ 61%
+##  me   #################################################################### ▇ 86%
 - terms: 
   - term: me
     lang: en
@@ -784,9 +786,10 @@ concepts:
     lang: en
   - term: Nech mě, ať ti pomůžu.
     lang: cs
+  img: me.jpeg
   freq: 1868378.50000
   origins: ["corpus"]
-##  who   ################################################################### ▅ 61%
+##  who   ################################################################### ▇ 86%
 - terms: 
   - term: who
     lang: en
@@ -799,9 +802,10 @@ concepts:
     lang: en
   - term: Kdo nemá rád nudle?
     lang: cs
+  state: ignoreImage
   freq: 1745473.00000
   origins: ["corpus"]
-##  would   ################################################################# ▃ 35%
+##  would   ################################################################# ▅ 60%
 - terms: 
   - term: would
     lang: en
@@ -809,9 +813,10 @@ concepts:
     lang: cs
   - term: bych
     lang: cs
+  state: ignoreImage
   freq: 1663186.50000
   origins: ["corpus"]
-##  has   ################################################################### ▆ 63%
+##  has   ################################################################### █ 88%
 - terms: 
   - term: has
     lang: en
@@ -822,9 +827,10 @@ concepts:
     lang: en
   - term: Má hrozně moc energie.
     lang: cs
+  state: ignoreImage
   freq: 1602329.00000
   origins: ["corpus"]
-##  so   #################################################################### ▅ 61%
+##  so   #################################################################### ▇ 86%
 - terms: 
   - term: so
     lang: en
@@ -837,9 +843,10 @@ concepts:
     lang: en
   - term: Tak mě nechte jít.
     lang: cs
+  state: ignoreImage
   freq: 1497187.00000
   origins: ["corpus"]
-##  if   #################################################################### ▅ 61%
+##  if   #################################################################### ▇ 86%
 - terms: 
   - term: if
     lang: en
@@ -852,9 +859,10 @@ concepts:
     lang: en
   - term: Pokud ano, nemůžeš pokračovat..
     lang: cs
+  state: ignoreImage
   freq: 1442322.00000
   origins: ["corpus"]
-##  say   ################################################################### ▅ 61%
+##  say   ################################################################### ▇ 86%
 - terms: 
   - term: say
     lang: en
@@ -867,6 +875,7 @@ concepts:
     lang: en
   - term: A co říkají ptáci?
     lang: cs
+  img: say.jpeg
   freq: 1351631.00000
   origins: ["corpus"]
 ##  made   ################################################################## ▅ 61%
