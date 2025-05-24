@@ -12,44 +12,45 @@ class SimilarityTest {
 	Similarity norm = new Similarity()
 
 	@Test
-	void allSubstrings() {		
+	void allSubstrings() {
 		assert norm.allSubstringsWithLen("abbcde", 2) ==['ab', 'bb', 'bc', 'cd', 'de']
 		assert norm.allSubstringsOf("abc") ==['abc', 'ab', 'bc', 'a', 'b', 'c']
 		assert norm.allSubstringsWithLen("ab", 5) ==[]
-		
 	}
-	
+
 	@Test
 	void distanceMatches() {
 		def a = ["a", "b", "c"]
-		def b= ["a","x", "b", 'y'] 
+		def b= ["a", "x", "b", 'y']
 		assert norm.distanceMatches(a, b) ==[0, 1, -1]
 		assert norm.distanceMatches(b, a) ==[0, -1, 1, -1]
 		assert norm.distanceMatches(a, []) ==[-1, -1, -1]
 		assert norm.distanceMatches([], []) ==[]
 	}
-	
-	@Test
-	@Disabled
-	void distancesWithLen() {
-		assert norm.similarWithLen("abc", "xaby", 2) == 0.5
-		assert norm.similarWithLen("abc", "xyz", 2) == 0
-	
-	}
 
-	
+
 	@Test
-	void similarSubstrings() {
+	void simSubs() {
 		norm.with {
 			String s = "abc"
-			assert similarSubstrings(s, "xabc") > similarSubstrings(s, "xaybc") 			
-			assert similarSubstrings(s, "abc") > similarSubstrings(s, "ab")
+			assert similarSubstrings(s, "xabc") > similarSubstrings(s, "xaybc")
 			assert similarSubstrings(s, "abc") > similarSubstrings(s, "ab")
 		}
-		
-		
-	
 	}
 
-	
+
+	@Test
+	void simBasic() {
+		norm.with {
+			assert similar("abc", "xabc") > similar("abc", "xaybc")
+			assert similar("abc", "bbb") >  similar("abc", "bbbb")
+		}
+	}
+
+	@Test
+	void simRelated() {
+		norm.with {
+			
+		}
+	}
 }

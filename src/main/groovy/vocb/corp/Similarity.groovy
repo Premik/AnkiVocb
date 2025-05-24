@@ -41,7 +41,7 @@ public class Similarity {
 	double similarWithLen(List<String> aSubs, List<String> bSubs) {
 		List<Integer> dst = distanceMatches(aSubs, bSubs, 1000)
 		dst.withIndex().collect {Integer dist, int indx->
-			if (indx==0) return 5*rateDistance(dist) //Match at the start makes words more similar 
+			if (indx==0) return 5*rateDistance(dist) //Match at the start makes words more similar
 			if (indx==1) return 3*rateDistance(dist)
 			return  rateDistance(dist)
 		}.average()
@@ -97,7 +97,7 @@ public class Similarity {
 	static void main(String... args) {
 		Similarity n = new Similarity()
 		Corpus c=  Corpus.buildDef()
-		String word ="when"
+		
 		println "you yours   ${n.similar("you", "yours")}"
 		println "where whenever  ${n.similar("when", "whenever")}"
 		println "cake cook  ${n.similar("cake", "cook")}"
@@ -106,12 +106,21 @@ public class Similarity {
 
 
 
-		String[] sorted = c.topX(10000).sort {String a, String b ->
-			n.similar(word, b) <=> n.similar(word, a)
-		}
+		String[] top = c.topX(10000)
+		def prinSim = {String word-> 
+			println top.sort {String a, String b ->
+				n.similar(word, b) <=> n.similar(word, a)
+			}.take(100).collect{"$it ${n.similar(word, it)}"}
+		} 
+		
+		prinSim("when")
+		prinSim("what")
+		prinSim("why")
+		prinSim("what")
+		prinSim("yesterday")
 
-		println word
-		println ( sorted.take(100).collect{"$it ${n.similar(word, it)} "})
+		 
+		
 
 		//bedroom
 
