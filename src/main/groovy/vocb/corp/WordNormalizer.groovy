@@ -42,6 +42,7 @@ public class WordNormalizer {
 	}
 
 	public List<String> wordVariants(String s) {
+		//if (s.endsWith('es')) return [s, s[0..-3]] //Remove 'es'
 		if (s.endsWith('s')) return [s, s[0..-2]] //Remove 's'
 		return [s, "${s}s" as String] //Add 's'
 	}
