@@ -7802,10 +7802,10 @@ concepts:
   state: ignore
   freq: 49305.00000
   origins: ["conceptDbSamples"]
-##  data   ################################################################## single term only|no en term
 - terms: 
   - term: data
     lang: en
+    tts: en-terms/data.mp3
   - term: data
     lang: cs
     tts: cs-terms/data-cs.mp3
