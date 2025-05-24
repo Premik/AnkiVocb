@@ -6,19 +6,21 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
+import groovy.transform.CompileStatic
 import vocb.Helper
 import vocb.corp.WordNormalizer
 
-
+@CompileStatic
 public class Manager {
 
 
 	Path storagePath = Paths.get("/data/src/AnkiVocb/db/")
+	WordNormalizer wn =new WordNormalizer()
 
 	@Lazy Path conceptsPath = {
-		storagePath.resolve(conceptFilename)
+		storagePath.resolve(conceptFilename.toString())
 	}()
-	String conceptFilename = "concepts.yaml"
+	CharSequence conceptFilename = "concepts.yaml"
 
 	@Lazy Path mediaRootPath = {
 		storagePath.resolve("media")
@@ -27,7 +29,7 @@ public class Manager {
 	ConceptYamlStorage storage =new ConceptYamlStorage()
 	ConceptDb db = new ConceptDb()
 	Path dbPath
-	
+
 
 	Map<String, Concept> conceptByFirstTerm = [:]
 
@@ -35,21 +37,41 @@ public class Manager {
 
 	Map<Integer, Set<Concept>> conceptsByStar = [:]
 
-	List<String> ignoreConcepts = []
+	Map<String, Set<Concept>> conceptsByOrigin = [:]
+
+	Map<String, Set<Concept>> conceptsByEnWordsInSample = [:]
+	
+	Map<String, Set<Concept>> conceptsByEnSample = [:]
+
+	List<Concept> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
-	BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, new BigDecimal("10e10")]
-	.collect{it*1000}
+	BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, 1000*1000]
+		.collect{it*1000 as BigDecimal} as BigDecimal[]
 
-	Integer numberOfStarts(BigDecimal freq) {
+	Integer numberOfStarsFreq(BigDecimal freq) {
 		if (!freq) return null
 		freqRanges.findIndexOf { freq < it} -1
 	}
 
+	Integer numberOfStars(Concept c) {
+		numberOfStarsFreq(c?.freq)
+	}
+
+	String starsOf(Concept c, boolean pad=true) {
+		String s = '🟊'*numberOfStars(c)
+		if (pad) return s.padRight(10, '  ')
+		return pad
+	}
+
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
-		conceptsByTerm = [:].withDefault {[]}
-		conceptsByStar = [:].withDefault {[]}
+		conceptsByTerm = [:].withDefault {[] as LinkedHashSet}
+		conceptsByStar = [:].withDefault {[] as LinkedHashSet}
+		conceptsByOrigin = [:].withDefault {[] as LinkedHashSet}
+		conceptsByEnSample = [:].withDefault {[] as LinkedHashSet}
+		
+		conceptsByEnWordsInSample = conceptsByWordsInSample()
 		ignoreConcepts.clear()
 		db.concepts.each { Concept c->
 			String ft = c.firstTerm
@@ -58,10 +80,18 @@ public class Manager {
 			}
 			if (ft) conceptByFirstTerm[ft] = c
 			c.terms.values().each { Term t->
-				conceptsByTerm[t.term] += t
+				conceptsByTerm[t.term].add(c)
 			}
-			conceptsByStar[numberOfStarts(c.freq)]+= c
+			conceptsByStar[numberOfStarsFreq(c.freq)].add(c)
 			if (c.state == 'ignore') ignoreConcepts.add(c)
+			c.origins?.each {String o->
+				conceptsByOrigin[o].add(c)
+			}
+			c.examplesByLang("en")
+			    .collect {wn.normalizeSentence(it.term)}
+				.each {
+					conceptsByEnSample[it].add(c)
+				}
 		}
 	}
 
@@ -110,11 +140,11 @@ public class Manager {
 		return mediaRootPath.relativize(mediaPath)
 	}
 
-	public Path mediaLinkPath(String mediaLink, String group="") {
-		mediaRootPath.resolve(group).resolve(mediaLink).toAbsolutePath()
+	public Path mediaLinkPath(CharSequence mediaLink, CharSequence group="") {
+		mediaRootPath.resolve(group.toString()).resolve(mediaLink.toString()).toAbsolutePath()
 	}
 
-	public boolean linkedMediaExists(String mediaLink, String group="") {
+	public boolean linkedMediaExists(CharSequence mediaLink, CharSequence group="") {
 		if (!mediaLink) return false
 		Files.exists(mediaLinkPath(mediaLink, group))
 	}
@@ -130,16 +160,16 @@ public class Manager {
 
 	public BigDecimal getCompleteness() {
 		if (db.concepts.size() ==0) return 0
-		db.concepts.sum {it.completeness} / db.concepts.size()
+		(db.concepts.sum {it.completeness}  as BigDecimal) / db.concepts.size()
 	}
 
-	public Map<String, Set<Concept>> groupByMedia(boolean stripExt=false, boolean includeImg=true) {
-		Map<String, List<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
+	public Map<CharSequence, Set<Concept>> groupByMedia(boolean stripExt=false, boolean includeImg=true) {
+		Map<CharSequence, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
 		db.concepts.each { Concept c->
 			if (c.img && includeImg) {
-				ret[c.img]+= c
+				ret[c.img].add(c)
 				if (stripExt) {
-					ret[Helper.stripExt(c.img)] +=c
+					ret[Helper.stripExt(c.img)].add(c)
 				}
 			}
 
@@ -147,8 +177,8 @@ public class Manager {
 			//ret[Filena c.img]+= c
 			(c.terms.values() + c.examples.values()).each { Term t->
 				if (t.tts) {
-					ret[t.tts]+= c
-					if (stripExt) { ret[Helper.stripExt(t.tts)] +=c}
+					ret[t.tts].add(c)
+					if (stripExt) { ret[Helper.stripExt(t.tts)].add(c)}
 				}
 			}
 		}
@@ -156,13 +186,26 @@ public class Manager {
 		return ret
 	}
 
+	Map<String, Set<Concept>> conceptsByWordsInSample(String lang="en") {
+		Map<String, Set<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
+		
+		db.concepts.each {Concept c ->		    
+			wn.uniqueueTokens(c.examples.values()
+					.find {it.lang==lang}?.term ?: "")
+					.each { String word->
+						ret[word].add(c)
+					}				
+		}
+		return ret
+	}
+
 	public void findBrokenMedia() {
 
-		Map<String, Set<Concept>> grp = groupByMedia()
+		Map<CharSequence, Set<Concept>> grp = groupByMedia()
 
 		println "${'-'*80}"
 		println "Missing:"
-		grp.each { String mp, Set<Concept> cs->
+		grp.each { CharSequence mp, Set<Concept> cs->
 			if (!linkedMediaExists(mp)) {
 				println "${mp} $cs"
 			}
@@ -177,7 +220,7 @@ public class Manager {
 		}
 		println "${'-'*80}"
 		println "Clashes"
-		grp.findAll{it.value.size() > 1} each {String ml, Set<Concept> cs->
+		grp.findAll{it.value.size() > 1} each {CharSequence ml, Set<Concept> cs->
 			List<Term> termsWithTts = cs.collectMany {it.terms.values().findAll {it.tts == ml} }
 			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
 				println "${cs.collect {it.firstTerm} }  $ml: ${termsWithTts}. $cs"
@@ -211,38 +254,38 @@ public class Manager {
 		(5..0).each {
 			int sz = conceptsByStar[it].size()
 			accu+=sz
-			println "${sz.toString().padRight(5)} ${('🟊'*it).padRight(10)} $accu"
+			println "${sz.toString().padRight(5)} ${starsOf(conceptsByStar[it][0])} $accu"
 		}
 	}
 
-	Collection<String> filterByStars(Collection<String> src, Range starRange = (0..2)) {
+	Collection<String> filterByStars(Collection<String> src, List<Integer> starRange = (0..2)) {
 		src.findAll { conceptsByStar[it] in starRange }
 	}
 
 	public void moveToSubFolders() {
-		
-		WordNormalizer wn =new WordNormalizer()
-		groupByMedia().each { String mp, Set<Concept> cs->			
+
+
+		groupByMedia().each { CharSequence mp, Set<Concept> cs->
 			Concept c = cs[0]
-			if (c.img == mp && !mp.contains("img/")) {								
+			if (c.img == mp && !mp.contains("img/")) {
 				c.img = "img/$mp"
 				println "$mp -> $c.img"
 				Files.move(mediaLinkPath(mp) , mediaLinkPath(c.img))
 			}
-			
+
 			String pp = "cs-samples/"
 			c.examplesByLang("cs")
-			  .findAll{it.tts == mp }
-			  .findAll{!it.tts.contains(pp) }
-			  .each {
-				it.tts = "$pp$mp"
-				println "$mp -> $it.tts"
-				if (linkedMediaExists(mp)) {
-					Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
-				}
-			}
-			
-			
+					.findAll{it.tts == mp }
+					.findAll{!it.tts.contains(pp) }
+					.each {
+						it.tts = "$pp$mp"
+						println "$mp -> $it.tts"
+						if (linkedMediaExists(mp)) {
+							Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
+						}
+					}
+
+
 		}
 		save()
 	}

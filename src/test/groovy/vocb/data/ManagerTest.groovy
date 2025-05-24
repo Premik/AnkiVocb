@@ -16,7 +16,14 @@ class ManagerTest {
 
 	Term t1 = new Term("apple", "en")
 	Term t2 = new Term("jablko", "cs")
-	Concept c = new Concept(terms: [apple:t1, jablko:t2], state: "state", img:"", freq:1.1d, origins:["o1", "o2"])
+	Term s1 = new Term("Apple helps.", "en")
+	Term s2 = new Term("Jablko pomáhá", "cs")
+	Concept c = new Concept(
+	terms: [apple:t1, jablko:t2],
+	state: "state", img:"",
+	examples: [(s1.term):s1, (s2.term): s2],
+	freq:1.1d,
+	origins:["o1", "o2"])
 
 
 	void createBlank() {
@@ -47,16 +54,16 @@ class ManagerTest {
 
 	@Test
 	void testNumberOfStars() {
-		assert m.numberOfStarts(0) ==null
-		assert m.numberOfStarts(10) == 0
-		assert m.numberOfStarts(20*1000) == 1
-		assert m.numberOfStarts(200*1000) == 2
-		assert m.numberOfStarts(400*1000) == 3
+		assert m.numberOfStarsFreq(0) ==null
+		assert m.numberOfStarsFreq(10) == 0
+		assert m.numberOfStarsFreq(20*1000) == 1
+		assert m.numberOfStarsFreq(200*1000) == 2
+		assert m.numberOfStarsFreq(400*1000) == 3
 
-		assert m.numberOfStarts(null) == null
+		assert m.numberOfStarsFreq(null) == null
 	}
 
-	@Test 
+	@Test
 	void mediaLinksBasic() {
 		assert m.termd2MediaLink("kočka?", "ext") == "kocka.ext"
 		assert m.mediaLinkPath("ml1") == tempDir.resolve('media').resolve("ml1")
@@ -64,13 +71,13 @@ class ManagerTest {
 		String mediaLink = m.resolveMedia("term1", "txt")  { Path p->
 			resolveCalled = true
 			assert p == tempDir.resolve('media').resolve("term1.txt")
-		}	
+		}
 		assert resolveCalled
 		assert mediaLink == "term1.txt"
 	}
-	
+
 	@Test
-	void mediaLinksGroup() {		
+	void mediaLinksGroup() {
 		assert m.mediaLinkPath("ml2", "grp") == tempDir.resolve('media').resolve("grp").resolve("ml2")
 		boolean resolveCalled =false
 		String mediaLink = m.resolveMedia("term2", "txt", "grp2")  { Path p->
@@ -81,6 +88,15 @@ class ManagerTest {
 		}
 		assert resolveCalled
 		assert mediaLink ==  "grp2/term2.txt"
-		
+	}
+
+	@Test
+	void indexTest() {
+		m.db.concepts.add(c)
+		m.reindex()
+		assert m.conceptByFirstTerm["apple"] == c
+		String sentenceNorm = m.wn.normalizeSentence(s1.term)
+		assert m.conceptsByEnSample[sentenceNorm]
+		assert m.conceptsByEnSample[sentenceNorm].contains(c)
 	}
 }

@@ -78,16 +78,12 @@ public class ExampleAppender {
 
 		if (loadSave) dbMan.load()
 		List<Concept> noEx = findTodo()
-		Map<String, Concept> enWords = dbMan.db.concepts.collectEntries {Concept c ->
-			wn.uniqueueTokens(c.examples.values().find {it.lang=="en"}?.term ?: "").collectEntries { String word->
-				[(word):c]
-			}
-		}
-
+		
 		int added = 0
 		for (Concept c in noEx) {
-			Concept fromC = enWords[c.firstTerm]
-			if (fromC) {
+			List<Concept> samples = dbMan.conceptsByEnWordsInSample[c.firstTerm]
+			if (samples) {
+				Concept fromC = samples[0]
 				println "'$c.firstTerm': ${fromC.examples.values()[0].term}"
 				c.examples = fromC.examples.values()*.clone().collectEntries {Term t->[(t.term): t] }
 				added++

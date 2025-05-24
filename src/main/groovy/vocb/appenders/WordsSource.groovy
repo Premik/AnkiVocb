@@ -51,7 +51,7 @@ public class WordsSource {
 
 			Term t = new Term(w, "en")
 			BigDecimal frq = Helper.roundDecimal((corp.wordFreq[w]?:0), 3)
-			String stars  = '🟊'*dbMan.numberOfStarts(frq)
+			String stars  = '🟊'*dbMan.numberOfStarsFreq(frq)
 			
 			Concept c= dbMan.conceptByFirstTerm[w]
 			if (c != null) {

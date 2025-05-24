@@ -71,4 +71,10 @@ class WordNormalizerTest {
 		sts.each {println "\n${it}"}
 		assert sts.size() == 3
 	}
+	
+	@Test
+	void sentencesNorm() {		
+		assert norm.normalizeSentence("Hello world!") == "hello world"
+		assert norm.normalizeSentence("hello world") == "hello world"
+	}
 }
