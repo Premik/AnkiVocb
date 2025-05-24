@@ -15751,7 +15751,7 @@ concepts:
   img: img/spirits.jpeg
   freq: 62147.50000
   origins: ["JingleBells"]
-##  laughing   ############################################################## █ 97%
+##  laughing   ##############################################################
 - terms: 
   - term: laughing
     lang: en
@@ -15765,128 +15765,148 @@ concepts:
     tts: en-samples/Laughing all the way.mp3
   - term: Celou cestu se smát.
     lang: cs
+    tts: cs-samples/Celou cestu se smat.mp3
   img: img/laughing.jpeg
   freq: 53113.60000
   origins: ["JingleBells"]
-##  drove   ################################################################# █ 94%
+##  drove   #################################################################
 - terms: 
   - term: drove
     lang: en
     tts: en-terms/drove.mp3
   - term: odjel
     lang: cs
+    tts: cs-terms/odjel.mp3
   - term: odvezl
     lang: cs
+    tts: cs-terms/odvezl.mp3
   examples: 
   - term: Quickly drove away.
     lang: en
     tts: /data/src/AnkiVocb/db/media/en-samples/Quickly drove away.mp3
   - term: Rychle odjel.
     lang: cs
+    tts: cs-terms/Rychle odjel.mp3
   img: img/drove.jpeg
   freq: 50184.80000
   origins: ["JingleBells"]
-##  seated   ################################################################ █ 94%
+##  seated   ################################################################
 - terms: 
   - term: seated
     lang: en
     tts: en-terms/seated.mp3
   - term: usazeny
     lang: cs
+    tts: cs-terms/usazeny.mp3
   - term: seděla
     lang: cs
+    tts: cs-terms/sedela.mp3
   examples: 
   - term: Was seated by my side
     lang: en
     tts: en-samples/Was seated by my side.mp3
   - term: Byla usazena po mém boku.
     lang: cs
+    tts: cs-samples/Byla usazena po mem boku.mp3
   img: img/seated.jpeg
   freq: 49654.70000
   origins: ["JingleBells"]
-##  sing   ################################################################## █ 95%
+##  sing   ##################################################################
 - terms: 
   - term: sing
     lang: en
     tts: en-terms/sing.mp3
   - term: zpívat
     lang: cs
+    tts: cs-terms/zpivat.mp3
   examples: 
   - term: To ride and sing.
     lang: en
     tts: en-samples/To ride and sing.mp3
   - term: Jezdit a zpívat.
     lang: cs
+    tts: cs-terms/Jezdit a zpivat.mp3
   img: img/sing.jpeg
   freq: 43453.10000
   origins: ["JingleBells"]
-##  snow   ################################################################## █ 95%
+##  snow   ##################################################################
 - terms: 
   - term: snow
     lang: en
     tts: en-terms/snow.mp3
   - term: sníh
     lang: cs
+    tts: cs-terms/snih.mp3
   examples: 
   - term: Dashing through the snow.
     lang: en
     tts: en-samples/Dashing through the snow.mp3
   - term: Prohánět se sněhem.
     lang: cs
+    tts: cs-samples/Prohanet se snehem.mp3
   img: img/snow.jpeg
   freq: 41197.95000
   origins: ["JingleBells"]
-##  ride   ################################################################## █ 94%
+##  ride   ##################################################################
 - terms: 
   - term: ride
     lang: en
     tts: en-terms/ride.mp3
   - term: jízda
     lang: cs
+    tts: cs-terms/jizda.mp3
   - term: projížďka
     lang: cs
+    tts: cs-terms/projizdka.mp3
   examples: 
   - term: What joy it is to ride.
     lang: en
     tts: /data/src/AnkiVocb/db/media/en-samples/What joy it is to ride.mp3
   - term: Jaká je to radost, jezdit.
     lang: cs
+    tts: cs-samples/Jaka je to radost, jezdit.mp3
   img: img/ride.jpeg
   freq: 34102.95000
   origins: ["JingleBells"]
-##  tonight   ############################################################### █ 94%
+##  tonight   ###############################################################
 - terms: 
   - term: tonight
     lang: en
     tts: en-terms/tonight.mp3
   - term: večer
     lang: cs
+    tts: /data/src/AnkiVocb/db/media/cs-terms/vecer.mp3
   - term: dnešní večer
     lang: cs
+    tts: cs-terms/dnesni vecer.mp3
   examples: 
   - term: To sing a song tonight.
     lang: en
     tts: en-samples/To sing a song tonight.mp3
   - term: Zazpívat dnes večer písničku.
     lang: cs
+    tts: cs-samples/Zazpivat dnes vecer pisnicku.mp3
   img: img/tonight.jpeg
   freq: 28173.20500
   origins: ["JingleBells"]
-##  fun   ################################################################### █ 94%
+##  fun   ###################################################################
 - terms: 
   - term: fun
     lang: en
     tts: en-terms/fun.mp3
   - term: zábava
     lang: cs
+    tts: cs-terms/zabava.mp3
   - term: legrace
     lang: cs
+    tts: cs-terms/legrace.mp3
   examples: 
   - term: What fun it is to ride.
     lang: en
     tts: en-samples/What fun it is to ride.mp3
   - term: Jaká je to zábava, jezdit.
     lang: cs
+    tts: cs-samples/Jaka je to zabava, jezdit.mp3
   img: img/fun.jpeg
   freq: 22138.75000
   origins: ["JingleBells"]
