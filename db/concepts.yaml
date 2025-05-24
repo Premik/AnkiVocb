@@ -11563,9 +11563,7 @@ concepts:
   - term: cares
     lang: en
   - term: zajímá
-    lang: cs
-  - term: laskání
-    lang: cs
+    lang: cs  
   - term: pečuje
     lang: cs
   freq: 20161.20000
@@ -11576,12 +11574,7 @@ concepts:
     lang: en
   - term: zrcadlo
     lang: cs
-  - term: zrcátko
-    lang: cs
-  - term: zcradlo
-    lang: cs
-  - term: zrcadlit
-    lang: cs
+  
   freq: 20145.65000
   origins: ["conceptDbSamples"]
 ##  rarely   ################################################################ ▄ 45%
@@ -11590,21 +11583,17 @@ concepts:
     lang: en
   - term: zřídka
     lang: cs
-  - term: jen zřídka
-    lang: cs
+  
   - term: málokdy
     lang: cs
-  - term: vzácně
-    lang: cs
-  - term: nedovařený
-    lang: cs
+  
   freq: 20081.70000
   origins: ["conceptDbSamples"]
 ##  beach   ################################################################# ▄ 45%
 - terms: 
   - term: beach
     lang: en
-  - term: pláže
+  - term: pláž
     lang: cs
   - term: pobřeží
     lang: cs
@@ -11616,8 +11605,7 @@ concepts:
     lang: en
   - term: ložnice
     lang: cs
-  - term: pokoj
-    lang: cs
+  
   freq: 19349.30000
   origins: ["conceptDbSamples"]
 ##  stolen   ################################################################ ▄ 45%
@@ -11626,8 +11614,6 @@ concepts:
     lang: en
   - term: ukradené
     lang: cs
-  - term: odcizení
-    lang: cs
   - term: kradený
     lang: cs
   freq: 19337.70000
@@ -11635,33 +11621,24 @@ concepts:
 ##  justified   ############################################################# ▄ 45%
 - terms: 
   - term: justified
-    lang: en
-  - term: odůvodněných
-    lang: cs
+    lang: en  
   - term: zdůvodněny
     lang: cs
   - term: oprávněné
     lang: cs
-  - term: opodstatněné
-    lang: cs
-  - term: zarovnaný
-    lang: cs
+  
   freq: 19003.80000
   origins: ["conceptDbSamples"]
 ##  funny   ################################################################# ▄ 45%
 - terms: 
   - term: funny
     lang: en
-  - term: legrační
-    lang: cs
   - term: vtipné
     lang: cs
-  - term: sranda
-    lang: cs
+  
   - term: zábavné
     lang: cs
-  - term: komický
-    lang: cs
+  
   freq: 18987.80000
   origins: ["conceptDbSamples"]
 ##  column   ################################################################ ▄ 45%
@@ -11670,8 +11647,7 @@ concepts:
     lang: en
   - term: sloupec
     lang: cs
-  - term: kolona
-    lang: cs
+
   freq: 18928.25000
   origins: ["conceptDbSamples"]
 ##  tool   ################################################################## ▄ 45%
@@ -11680,10 +11656,7 @@ concepts:
     lang: en
   - term: nástroj
     lang: cs
-  - term: jet
-    lang: cs
-  - term: nářadí
-    lang: cs
+  
   freq: 18451.52000
   origins: ["conceptDbSamples"]
 ##  device   ################################################################ ▄ 45%
@@ -11694,12 +11667,7 @@ concepts:
     lang: cs
   - term: přístroj
     lang: cs
-  - term: aparát
-    lang: cs
-  - term: pøístroj
-    lang: cs
-  - term: zaøízení
-    lang: cs
+  
   freq: 17951.45000
   origins: ["conceptDbSamples"]
 ##  appreciate   ############################################################ ▄ 45%
@@ -11707,15 +11675,10 @@ concepts:
   - term: appreciate
     lang: en
   - term: ocenit
-    lang: cs
-  - term: oceňuji
-    lang: cs
+    lang: cs  
   - term: vážíme
     lang: cs
-  - term: oceňovat
-    lang: cs
-  - term: zhodnocovat
-    lang: cs
+  
   freq: 17935.75000
   origins: ["conceptDbSamples"]
 ##  stores   ################################################################ ▄ 45%
@@ -11724,30 +11687,20 @@ concepts:
     lang: en
   - term: ukládá
     lang: cs
-  - term: obchody
+  - term: prodejny
     lang: cs
-  - term: uloží
-    lang: cs
-  - term: prodejnách
-    lang: cs
-  - term: oparuje
-    lang: cs
+  
   freq: 17677.90000
   origins: ["conceptDbSamples"]
 ##  select   ################################################################ ▄ 45%
 - terms: 
   - term: select
     lang: en
-  - term: vyberte
-    lang: cs
   - term: vybrat
     lang: cs
   - term: zvolte
     lang: cs
-  - term: zaškrtněte políčko
-    lang: cs
-  - term: vybírat
-    lang: cs
+
   freq: 17442.95000
   origins: ["conceptDbSamples"]
 ##  rejected   ############################################################## ▄ 45%
@@ -11772,9 +11725,9 @@ concepts:
 - terms: 
   - term: root
     lang: en
-  - term: kořenové
+  - term: kořen
     lang: cs
-  - term: uživatele root
+  - term: kořenový
     lang: cs
   freq: 15258.95000
   origins: ["conceptDbSamples"]
@@ -11786,12 +11739,7 @@ concepts:
     lang: cs
   - term: pozor
     lang: cs
-  - term: upozornění
-    lang: cs
-  - term: obezřelost
-    lang: cs
-  - term: postupujte opatrně
-    lang: cs
+  
   freq: 15246.70000
   origins: ["conceptDbSamples"]
 ##  ghost   ################################################################# ▄ 45%
@@ -11799,15 +11747,10 @@ concepts:
   - term: ghost
     lang: en
   - term: duch
-    lang: cs
-  - term: ducha
-    lang: cs
-  - term: duchů
-    lang: cs
+    lang: cs  
   - term: přízrak
     lang: cs
-  - term: neodstraněný
-    lang: cs
+  
   freq: 14563.95000
   origins: ["conceptDbSamples"]
 ##  speaker   ############################################################### ▄ 45%
@@ -11818,10 +11761,7 @@ concepts:
     lang: cs
   - term: mluvčí
     lang: cs
-  - term: řečník
-    lang: cs
-  - term: lektora
-    lang: cs
+  
   freq: 14417.15000
   origins: ["conceptDbSamples"]
 ##  neighbour   ############################################################# ▄ 45%
@@ -11830,8 +11770,7 @@ concepts:
     lang: en
   - term: soused
     lang: cs
-  - term: bližního
-    lang: cs
+  
   freq: 14405.70000
   origins: ["conceptDbSamples"]
 ##  wake   ################################################################## ▄ 45%
@@ -11840,14 +11779,7 @@ concepts:
     lang: en
   - term: vzbudit
     lang: cs
-  - term: probudit
-    lang: cs
-  - term: probuzení
-    lang: cs
-  - term: brázdě
-    lang: cs
-  - term: budit
-    lang: cs
+  
   freq: 13978.30000
   origins: ["conceptDbSamples"]
 ##  bath   ################################################################## ▄ 45%
@@ -11858,12 +11790,7 @@ concepts:
     lang: cs
   - term: lázeň
     lang: cs
-  - term: lázně
-    lang: cs
-  - term: vana
-    lang: cs
-  - term: vanou
-    lang: cs
+  
   freq: 13822.45000
   origins: ["conceptDbSamples"]
 ##  entry   ################################################################# ▄ 45%
@@ -11872,14 +11799,7 @@ concepts:
     lang: en
   - term: položka
     lang: cs
-  - term: vstupu
-    lang: cs
-  - term: záznam
-    lang: cs
-  - term: dveře
-    lang: cs
-  - term: zadávání
-    lang: cs
+  
   freq: 13709.10000
   origins: ["conceptDbSamples"]
 ##  studying   ############################################################## ▄ 45%
@@ -11888,14 +11808,7 @@ concepts:
     lang: en
   - term: studuje
     lang: cs
-  - term: studium
-    lang: cs
-  - term: studovat
-    lang: cs
-  - term: učila
-    lang: cs
-  - term: zkoumání
-    lang: cs
+  
   freq: 13662.80000
   origins: ["conceptDbSamples"]
 ##  piano   ################################################################# ▄ 45%
@@ -11911,15 +11824,10 @@ concepts:
 ##  virus   ################################################################# ▄ 45%
 - terms: 
   - term: virus
-    lang: cs
-  - term: virem
-    lang: cs
+    lang: cs  
   - term: vir
     lang: cs
-  - term: antivirové
-    lang: cs
-  - term: virové
-    lang: cs
+  
   freq: 13416.45000
   origins: ["conceptDbSamples"]
 ##  diamonds   ############################################################## ▄ 45%
@@ -11927,13 +11835,10 @@ concepts:
   - term: diamonds
     lang: en
   - term: diamanty
-    lang: cs
-  - term: káry
-    lang: cs
+    lang: cs  
   - term: brilianty
     lang: cs
-  - term: čtverečku
-    lang: cs
+  
   freq: 12851.10000
   origins: ["conceptDbSamples"]
 ##  cars   ################################################################## ▄ 45%
@@ -11946,10 +11851,7 @@ concepts:
     lang: cs
   - term: vozy
     lang: cs
-  - term: vozů
-    lang: cs
-  - term: aut
-    lang: cs
+  
   freq: 12638.30000
   origins: ["conceptDbSamples"]
 ##  tricks   ################################################################ ▄ 45%
@@ -11958,7 +11860,7 @@ concepts:
     lang: en
   - term: triky
     lang: cs
-  - term: podvodník
+  - term: podvody
     lang: cs
   freq: 12560.00000
   origins: ["conceptDbSamples"]
@@ -11970,21 +11872,16 @@ concepts:
     lang: cs
   - term: táta
     lang: cs
-  - term: tátou
-    lang: cs
-  - term: tátu
-    lang: cs
-  - term: otec
-    lang: cs
+  
   freq: 12195.12000
   origins: ["conceptDbSamples"]
 ##  document   ############################################################## ▄ 45%
 - terms: 
   - term: document
     lang: en
-  - term: dokumentu
+  - term: dokument
     lang: cs
-  - term: dokladu
+  - term: doklad
     lang: cs
   freq: 11841.05000
   origins: ["conceptDbSamples"]
@@ -11993,9 +11890,7 @@ concepts:
   - term: anymore
     lang: en
   - term: už
-    lang: cs
-  - term: ještì
-    lang: cs
+    lang: cs  
   - term: ještě
     lang: cs
   freq: 11099.89700
@@ -12008,50 +11903,31 @@ concepts:
     lang: cs
   - term: složité
     lang: cs
-  - term: komplikovanější
-    lang: cs
-  - term: složitého
-    lang: cs
+  
   freq: 10946.45000
   origins: ["conceptDbSamples"]
 ##  re   #################################################################### ▄ 45%
 - terms: 
   - term: re
-    lang: cs
-  - term: znovu
-    lang: cs
-  - term: opětovné
-    lang: cs
+    lang: en
+  state: ignore
   freq: 10479.44000
   origins: ["conceptDbSamples"]
 ##  alert   ################################################################# ▄ 45%
 - terms: 
   - term: alert
-    lang: en
-  - term: výstrahy
-    lang: cs
+    lang: en  
   - term: výstraha
     lang: cs
-  - term: upozornění
-    lang: cs
-  - term: ostražitý
-    lang: cs
-  - term: oznámení
-    lang: cs
+  
   freq: 10451.60000
   origins: ["conceptDbSamples"]
 ##  extract   ############################################################### ▄ 45%
 - terms: 
   - term: extract
     lang: en
-  - term: extrahovat
-    lang: cs
-  - term: extrakt
-    lang: cs
   - term: výpis
-    lang: cs
-  - term: citát
-    lang: cs
+    lang: cs  
   - term: výtažek
     lang: cs
   freq: 10345.60000
@@ -12062,12 +11938,7 @@ concepts:
     lang: en
   - term: hračka
     lang: cs
-  - term: báchorka
-    lang: cs
-  - term: hraček
-    lang: cs
-  - term: hračce
-    lang: cs
+  
   freq: 10145.48500
   origins: ["conceptDbSamples"]
 ##  processing   ############################################################ ▄ 45%
@@ -12075,13 +11946,10 @@ concepts:
   - term: processing
     lang: en
   - term: zpracování
-    lang: cs
-  - term: probíhá zpracování
-    lang: cs
+    lang: cs 
   - term: vyřizování
     lang: cs
-  - term: zpracovává
-    lang: cs
+ 
   freq: 10121.80000
   origins: ["conceptDbSamples"]
 ##  tons   ################################################################## ▄ 45%
@@ -12092,28 +11960,16 @@ concepts:
     lang: cs
   - term: tuny
     lang: cs
-  - term: tunami
-    lang: cs
-  - term: mandle
-    lang: cs
-  - term: tunách
-    lang: cs
+  
   freq: 10088.50000
   origins: ["conceptDbSamples"]
 ##  worried   ############################################################### ▄ 45%
 - terms: 
   - term: worried
     lang: en
-  - term: ustaraně
+  - term: ustaraný
     lang: cs
-  - term: strach
-    lang: cs
-  - term: obává
-    lang: cs
-  - term: starosti
-    lang: cs
-  - term: trápil
-    lang: cs
+  
   freq: 9953.55000
   origins: ["conceptDbSamples"]
 ##  chapters   ############################################################## ▄ 45%
@@ -12132,12 +11988,7 @@ concepts:
     lang: cs
   - term: dějí
     lang: cs
-  - term: dění
-    lang: cs
-  - term: stalo
-    lang: cs
-  - term: dít
-    lang: cs
+  
   freq: 9339.34000
   origins: ["conceptDbSamples"]
 ##  messages   ############################################################## ▄ 45%
@@ -12148,10 +11999,7 @@ concepts:
     lang: cs
   - term: vzkazy
     lang: cs
-  - term: poselstvi
-    lang: cs
-  - term: hlášení
-    lang: cs
+  
   freq: 9314.02000
   origins: ["conceptDbSamples"]
 ##  upset   ################################################################# ▄ 45%
@@ -12159,23 +12007,16 @@ concepts:
   - term: upset
     lang: en
   - term: rozrušený
-    lang: cs
-  - term: naštvaná
-    lang: cs
+    lang: cs  
   - term: rozčilený
     lang: cs
-  - term: nevolno
-    lang: cs
-  - term: rozrušilo
-    lang: cs
+  
   freq: 9102.75000
   origins: ["conceptDbSamples"]
 ##  whoever   ############################################################### ▄ 45%
 - terms: 
   - term: whoever
-    lang: en
-  - term: kdo
-    lang: cs
+    lang: en  
   - term: kdokoli
     lang: cs
   freq: 8846.85000
