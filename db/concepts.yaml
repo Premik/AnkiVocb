@@ -7411,7 +7411,7 @@ concepts:
   img: matter.jpeg
   freq: 154339.50000
   origins: ["corpus"]
-##  system   ################################################################ ▆ 67%
+##  system   ################################################################ █ 95%
 - terms: 
   - term: system
     lang: en
@@ -7419,6 +7419,11 @@ concepts:
   - term: soustava
     lang: cs
     tts: soustava.mp3
+  examples: 
+  - term: There are many known planetary systems.
+    lang: en
+  - term: Existuje mnoho známých planetárních systémů.
+    lang: cs
   img: system.jpeg
   freq: 153835.50000
   origins: ["corpus"]
@@ -7625,7 +7630,7 @@ concepts:
   state: ignoreImage
   freq: 150986.50000
   origins: ["corpus"]
-##  party   ################################################################# ▆ 67%
+##  party   ################################################################# █ 95%
 - terms: 
   - term: party
     lang: en
@@ -7633,6 +7638,11 @@ concepts:
   - term: oslava
     lang: cs
     tts: oslava.mp3
+  examples: 
+  - term: Let's go party!
+    lang: en
+  - term: Pojďme na párty!
+    lang: cs
   img: party.jpeg
   freq: 148515.00000
   origins: ["corpus"]
@@ -7744,12 +7754,17 @@ concepts:
   img: possible.jpeg
   freq: 147091.50000
   origins: ["corpus"]
-##  service   ############################################################### ▆ 64%
+##  service   ############################################################### █ 92%
 - terms: 
   - term: service
     lang: en
     tts: service.mp3
   - term: služba
+    lang: cs
+  examples: 
+  - term: At your service.
+    lang: en
+  - term: K vašim službám.
     lang: cs
   img: service.jpeg
   freq: 146302.50000
@@ -9093,7 +9108,6 @@ concepts:
     lang: en
   - term: Tyhle polštáře jsou moc tvrdé!
     lang: cs
- 
   img: hard.jpeg
   freq: 123625.50000
   origins: ["corpus"]
@@ -9109,12 +9123,10 @@ concepts:
     lang: cs
     tts: prihodilo.mp3
   examples: 
-
   - term: What happened to her?
     lang: en
   - term: Co se jí přihodilo?
     lang: cs
-  
   state: ignoreImage
   freq: 123421.00000
   origins: ["corpus"]
@@ -9134,7 +9146,6 @@ concepts:
     lang: en
   - term: Jen duch je skutečný.
     lang: cs
-  
   img: spirit.jpeg
   freq: 123099.50000
   origins: ["corpus"]
@@ -9150,12 +9161,10 @@ concepts:
     lang: cs
     tts: volny.mp3
   examples: 
- 
   - term: You can finally be free.
     lang: en
   - term: Konečně můžete být svobodní.
     lang: cs
- 
   img: free.jpeg
   freq: 122955.00000
   origins: ["corpus"]
@@ -9210,12 +9219,10 @@ concepts:
     lang: cs
     tts: kreslil.mp3
   examples: 
-  
   - term: I drew a face.
     lang: en
   - term: Nakreslil jsem obličej.
     lang: cs
-  
   img: drew.jpeg
   freq: 122264.00000
   origins: ["corpus"]
@@ -9266,7 +9273,6 @@ concepts:
     lang: en
   - term: Zítra večer v osm?
     lang: cs
- 
   img: evening.jpeg
   freq: 122106.00000
   origins: ["corpus"]
@@ -9282,12 +9288,10 @@ concepts:
     lang: cs
     tts: dopad.mp3
   examples: 
-
   - term: The effect is medium to strong.
     lang: en
   - term: Účinek je střední až silný.
     lang: cs
-  
   img: effect.jpeg
   freq: 122005.50000
   origins: ["corpus"]
@@ -9303,13 +9307,10 @@ concepts:
     lang: cs
     tts: pozemske.mp3
   examples: 
-
   - term: The green earth, you say?
     lang: en
   - term: Zelená země, říkáš?
     lang: cs
-
-  
   img: earth.jpeg
   freq: 121948.00000
   origins: ["corpus"]
@@ -9322,12 +9323,10 @@ concepts:
     lang: cs
     tts: za.mp3
   examples: 
-
   - term: They were right behind us.
     lang: en
   - term: Byli těsně za námi.
     lang: cs
- 
   img: behind.jpeg
   freq: 121776.00000
   origins: ["corpus"]
@@ -9342,12 +9341,10 @@ concepts:
     lang: cs
     tts: pricina.mp3
   examples: 
- 
   - term: Could either of them be the cause?
     lang: en
   - term: Mohl by některý z nich být tou příčinou?
     lang: cs
-  
   state: ignoreImage
   freq: 121764.50000
   origins: ["corpus"]

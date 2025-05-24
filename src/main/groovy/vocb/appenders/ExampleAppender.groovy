@@ -99,8 +99,8 @@ public class ExampleAppender {
 
 	public static void main(String[] args) {
 		ExampleAppender a = new ExampleAppender()		
-		//a.run()
-		a.reuseExisting()
+		a.run()
+		//a.reuseExisting()
 
 		println "Done"
 	}
