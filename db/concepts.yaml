@@ -11594,7 +11594,7 @@ concepts:
   state: ignore
   freq: 370.00000
   origins: ["Supaplex", "LondonBridge"]
-##  fair   ################################################################## no img|t0:pron:missing
+##  fair   ################################################################## t0:pron:missing
 - terms: 
   - term: fair
     lang: en
@@ -11605,9 +11605,10 @@ concepts:
   - term: krásná
     lang: cs
     tts: cs-terms/krasna.mp3
+  img: img/fair.jpeg
   freq: 86232.00000
   origins: ["LondonBridge"]
-##  wood   ################################################################## no img|t0:pron:missing
+##  wood   ################################################################## t0:pron:missing
 - terms: 
   - term: wood
     lang: en
@@ -11615,9 +11616,10 @@ concepts:
   - term: dřevo
     lang: cs
     tts: cs-terms/drevo.mp3
+  img: img/wood.jpeg
   freq: 65479.00000
   origins: ["LondonBridge"]
-##  build   ################################################################# no img|t0:pron:missing
+##  build   ################################################################# t0:pron:missing
 - terms: 
   - term: build
     lang: en
@@ -11628,9 +11630,10 @@ concepts:
   - term: vybudovat
     lang: cs
     tts: cs-terms/vybudovat.mp3
+  img: img/build.jpeg
   freq: 64867.00000
   origins: ["LondonBridge"]
-##  break   ################################################################# no img|t0:pron:missing
+##  break   ################################################################# t0:pron:missing
 - terms: 
   - term: break
     lang: en
@@ -11641,9 +11644,10 @@ concepts:
   - term: rozbít
     lang: cs
     tts: cs-terms/rozbit.mp3
+  img: img/break.jpeg
   freq: 61233.00000
   origins: ["LondonBridge"]
-##  falling   ############################################################### no img|t0:pron:missing
+##  falling   ############################################################### t0:pron:missing
 - terms: 
   - term: falling
     lang: en
@@ -11651,9 +11655,10 @@ concepts:
   - term: padající
     lang: cs
     tts: cs-terms/padajici.mp3
+  img: img/falling.jpeg
   freq: 51396.00000
   origins: ["LondonBridge"]
-##  silver   ################################################################ no img|t0:pron:missing
+##  silver   ################################################################ t0:pron:missing
 - terms: 
   - term: silver
     lang: en
@@ -11661,9 +11666,10 @@ concepts:
   - term: stříbro
     lang: cs
     tts: cs-terms/stribro.mp3
+  img: img/silver.jpeg
   freq: 44946.00000
   origins: ["LondonBridge"]
-##  iron   ################################################################## no img|t0:pron:missing
+##  iron   ################################################################## t0:pron:missing
 - terms: 
   - term: iron
     lang: en
@@ -11674,9 +11680,10 @@ concepts:
   - term: žehlička
     lang: cs
     tts: cs-terms/zehlicka.mp3
+  img: img/iron.jpeg
   freq: 43647.00000
   origins: ["LondonBridge"]
-##  bridge   ################################################################ no img|t0:pron:missing
+##  bridge   ################################################################ t0:pron:missing
 - terms: 
   - term: bridge
     lang: en
@@ -11684,9 +11691,10 @@ concepts:
   - term: most
     lang: cs
     tts: cs-terms/most.mp3
+  img: img/bridge.jpeg
   freq: 32320.00000
   origins: ["LondonBridge"]
-##  lady   ################################################################## no img|t0:pron:missing
+##  lady   ################################################################## t0:pron:missing
 - terms: 
   - term: lady
     lang: en
@@ -11697,9 +11705,10 @@ concepts:
   - term: paní
     lang: cs
     tts: cs-terms/pani.mp3
+  img: img/lady.jpeg
   freq: 21682.00000
   origins: ["LondonBridge"]
-##  wash   ################################################################## no img|t0:pron:missing
+##  wash   ################################################################## t0:pron:missing
 - terms: 
   - term: wash
     lang: en
@@ -11707,9 +11716,10 @@ concepts:
   - term: umýt
     lang: cs
     tts: cs-terms/umyt.mp3
+  img: img/wash.jpeg
   freq: 17869.00000
   origins: ["LondonBridge"]
-##  bend   ################################################################## no img|t0:pron:missing
+##  bend   ################################################################## t0:pron:missing
 - terms: 
   - term: bend
     lang: en
@@ -11717,9 +11727,10 @@ concepts:
   - term: ohnout
     lang: cs
     tts: cs-terms/ohnout.mp3
+  img: img/bend.jpeg
   freq: 16285.00000
   origins: ["LondonBridge"]
-##  bars   ################################################################## no img|t0:pron:missing
+##  bars   ################################################################## t0:pron:missing
 - terms: 
   - term: bars
     lang: en
@@ -11730,9 +11741,10 @@ concepts:
   - term: tyče
     lang: cs
     tts: cs-terms/tyce.mp3
+  img: img/bars.jpeg
   freq: 14391.00000
   origins: ["LondonBridge"]
-##  clay   ################################################################## no img|t0:pron:missing
+##  clay   ################################################################## t0:pron:missing
 - terms: 
   - term: clay
     lang: en
@@ -11743,6 +11755,7 @@ concepts:
   - term: hlína
     lang: cs
     tts: cs-terms/hlina.mp3
+  img: img/clay.jpeg
   freq: 12342.00000
   origins: ["LondonBridge"]
 
