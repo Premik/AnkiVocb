@@ -74,7 +74,9 @@ public class Data2Crowd {
 	}
 
 	void mapConcept(Concept c) {
+		if (c.state == "ignore") return
 		assert c?.firstTerm
+		println c
 		Note n = vocbModel.updateNoteHaving(c.firstTerm)
 		concept2CrowdNote(c, n)
 	}
@@ -83,7 +85,9 @@ public class Data2Crowd {
 	public static void main(String[] args) {
 		Data2Crowd a = new Data2Crowd()
 		a.vocbModel.notes.clear()
-		a.mapConcept(a.dbMan.db.concepts[0])
+		(0..5).each {
+			a.mapConcept(a.dbMan.db.concepts[it])
+		}
 		a.vocbModel.save()
 	}
 }
