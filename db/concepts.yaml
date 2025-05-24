@@ -20159,4 +20159,42 @@ concepts:
     tts: cs-terms/firmy.mp3
   img: img/businesses.jpeg
   freq: 82.32940
+##  economic   ############################################################## no img|t0:tts:missing
+- terms: 
+  - term: economic
+  - term: hospodářské
+    tts: cs-terms/hospodarske.mp3
+  - term: ekonomické
+    tts: cs-terms/ekonomicke.mp3
+  freq: 158.20520
+##  edit   ################################################################## no img|t0:tts:missing
+- terms: 
+  - term: edit
+  - term: upravovat
+    tts: cs-terms/upravovat.mp3
+  - term: editovat
+    tts: cs-terms/editovat.mp3
+  freq: 38.96650
+##  crisis   ################################################################ no img|t0:tts:missing
+- terms: 
+  - term: crisis
+  - term: krize
+    tts: cs-terms/krize.mp3
+  freq: 33.10690
+##  actor   ################################################################# no img|t0:tts:missing
+- terms: 
+  - term: actor
+  - term: herec
+    tts: cs-terms/herec.mp3
+  - term: činitel
+    tts: cs-terms/cinitel.mp3
+  freq: 27.68610
+##  comedian   ############################################################## no img|t0:tts:missing
+- terms: 
+  - term: comedian
+  - term: komik
+    tts: cs-terms/komik.mp3
+  - term: komediant
+    tts: cs-terms/komediant.mp3
+  freq: 2.42320
 
