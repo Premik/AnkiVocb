@@ -56,7 +56,6 @@ public class ExampleComparator {
 
 	void setSentence(String s) {
 		example = null
-		s= s?.uncapitalize()
 		words = WordNormalizer.instance.tokens(s, CaseHandling.OriginalPlusLower).toList() as LinkedHashSet
 	}
 
@@ -112,9 +111,9 @@ public class ExampleComparator {
 				it.similarityScore
 			}
 		}
-		//.toList()
-		//.toSorted {it.similarityScore}
-		.forEach { ExampleComparatorMatch m->
+		.toList()
+		.toSorted {-it.similarityScore}
+		/*.forEach { ExampleComparatorMatch m->
 			if (m.similarityScore > max) {
 				max = m.similarityScore
 				best.clear()
@@ -122,8 +121,8 @@ public class ExampleComparator {
 			if (m.similarityScore == max) {
 				best.add(m)
 			}
-		}
-		return best
+		}*/
+		
 	}
 
 	List<ExampleComparatorMatch> bestFromComparators(Iterable<ExampleComparator> bs) {
