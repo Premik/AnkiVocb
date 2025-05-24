@@ -32,8 +32,7 @@ public class ConceptYamlStorage {
 		cjs.terms.each {
 			Term t = parseTerm(it)
 			c.terms.put(t.term, t)
-		}
-		println c
+		}		
 		return c
 	}
 
@@ -68,7 +67,7 @@ public class ConceptYamlStorage {
 		//sb.append("terms: ").append(Helper.indentNextLines(terms,2))
 		//sb.append("#"*16 + "\n")
 
-		println c.terms.values().collect {println it.getClass()}
+		
 		String terms=listToYaml(c.terms.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
 		sb.append("##  ").append(ft).append('   ' + '#'*(70-ft.length())).append("\n")

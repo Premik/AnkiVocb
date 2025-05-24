@@ -34,6 +34,8 @@ concepts:
   - term: of
     lang: en
     tts: of.mp3
+  - term: z
+    lang: cs
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex"]
@@ -42,6 +44,8 @@ concepts:
   - term: and
     lang: en
     tts: and.mp3
+  - term: a
+    lang: cs
   img: and.jpeg
   freq: 20342628.50000
   origins: ["Supaplex"]
@@ -50,6 +54,10 @@ concepts:
   - term: to
     lang: en
     tts: to.mp3
+  - term: do
+    lang: cs
+  - term: aby
+    lang: cs
   state: ignoreImage
   freq: 14906506.00000
   origins: ["Supaplex"]
@@ -58,6 +66,10 @@ concepts:
   - term: was
     lang: en
     tts: was.mp3
+  - term: byl
+    lang: cs
+  - term: byla
+    lang: cs
   state: ignoreImage
   freq: 10078245.00000
   origins: ["Supaplex"]
@@ -66,6 +78,10 @@ concepts:
   - term: in
     lang: en
     tts: in.mp3
+  - term: v
+    lang: cs
+  - term: ve
+    lang: cs
   img: in.jpeg
   freq: 8715316.00000
   origins: ["Supaplex"]
@@ -74,6 +90,8 @@ concepts:
   - term: is
     lang: en
     tts: is.mp3
+  - term: je
+    lang: cs  
   state: ignoreImage
   freq: 7557477.00000
   origins: ["Supaplex"]
@@ -82,6 +100,8 @@ concepts:
   - term: it
     lang: en
     tts: it.mp3
+  - term: to
+    lang: cs  
   state: ignoreImage
   freq: 5965293.50000
   origins: ["Supaplex"]
@@ -90,6 +110,8 @@ concepts:
   - term: for
     lang: en
     tts: for.mp3
+  - term: pro
+    lang: cs  
   state: ignoreImage
   freq: 3556287.50000
   origins: ["Supaplex"]
@@ -98,6 +120,8 @@ concepts:
   - term: true
     lang: en
     tts: true.mp3
+  - term: pravda
+    lang: cs  
   img: true.jpeg
   freq: 2675121.50000
   origins: ["Supaplex"]
@@ -106,6 +130,10 @@ concepts:
   - term: do
     lang: en
     tts: do.mp3
+  - term: udělat
+    lang: cs
+  - term: dělat
+    lang: cs  
   state: ignoreImage
   freq: 2126875.50000
   origins: ["Supaplex"]
@@ -114,6 +142,8 @@ concepts:
   - term: but
     lang: en
     tts: but.mp3
+  - term: ale
+    lang: cs
   state: ignoreImage
   freq: 1957586.00000
   origins: ["Supaplex"]
@@ -122,6 +152,9 @@ concepts:
   - term: all
     lang: en
     tts: all.mp3
+  - term: všichni
+    lang: cs
+  - term: vše    
   img: all.jpeg
   freq: 1940329.50000
   origins: ["Supaplex"]
@@ -130,6 +163,10 @@ concepts:
   - term: them
     lang: en
     tts: them.mp3
+  - term: jim
+    lang: cs
+  - term: ně
+    lang: cs
   img: them.jpeg
   freq: 1593893.50000
   origins: ["Supaplex"]
@@ -138,6 +175,10 @@ concepts:
   - term: you
     lang: en
     tts: you.mp3
+  - term: ty
+    lang: cs
+  - term: vás
+    lang: cs  
   img: you.jpeg
   freq: 1540817.58700
   origins: ["Supaplex"]
@@ -146,14 +187,21 @@ concepts:
   - term: one
     lang: en
     tts: one.mp3
+  - term: jeden
+    lang: cs  
+  - term: jednu
+    lang: cs  
   img: one.jpeg
   freq: 1439082.50000
   origins: ["Supaplex"]
 ##  false   #################################################################
 - terms: 
   - term: false
-    lang: en
-    tts: false.mp3
+    lang: cs
+  - term: nepravdivý
+    lang: cs
+  - term: falešné
+    lang: cs
   img: false.jpeg
   freq: 1123368.00000
   origins: ["Supaplex"]
@@ -162,6 +210,10 @@ concepts:
   - term: time
     lang: en
     tts: time.mp3
+  - term: čas
+    lang: cs
+  - term: doba
+    lang: cs  
   img: time.jpeg
   freq: 1107169.00000
   origins: ["Supaplex"]
@@ -170,6 +222,10 @@ concepts:
   - term: out
     lang: en
     tts: out.mp3
+  - term: ven
+    lang: cs
+  - term: pryč
+    lang: cs
   img: out.jpeg
   freq: 1058897.00000
   origins: ["Supaplex"]
@@ -177,6 +233,10 @@ concepts:
 - terms: 
   - term: know
     lang: en
+  - term: vědět
+    lang: cs
+  - term: znát
+    lang: cs
   img: know.jpeg
   freq: 984073.50000
   origins: ["Supaplex"]

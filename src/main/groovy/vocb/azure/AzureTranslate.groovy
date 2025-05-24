@@ -34,7 +34,7 @@ public class AzureTranslate {
 		return ret[0]
 	}
 
-	public List<String> extractTopTrns(Map lookupResponse, double minConfidence=0.08, int maxCount=4) {
+	public List<String> extractTopTrns(Map lookupResponse, double minConfidence=0.05, int maxCount=5) {
 		assert lookupResponse
 		lookupResponse.translations
 				.findAll {it.confidence > minConfidence}
