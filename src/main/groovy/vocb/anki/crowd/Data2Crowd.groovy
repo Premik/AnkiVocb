@@ -75,7 +75,8 @@ public class Data2Crowd {
 			templatePath
 		]
 
-		List<Path> resolved = Helper.matchingFiles(lookupPaths, fn) //Exact match first
+		//Exact match first
+		List<Path> resolved = Helper.matchingFiles(lookupPaths, null, {it.toString().endsWith(mediaLink)}) 
 		if (!resolved) {
 			Pattern fnP = ~/${Pattern.quote(fn)}\.?(jpeg|jpg|png|mp3|gif)?/
 			resolved = Helper.matchingFiles(lookupPaths, fnP) //Any extension
@@ -83,10 +84,10 @@ public class Data2Crowd {
 		if (!resolved) { //Non-existing. Assume db/media
 			return dataPath.resolve("media").resolve(mediaLink)
 		}
-		//assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. $resolved"
-		if (resolved.size() > 1) {
+		assert resolved.size() == 1 : "The $mediaLink was found on multiple locations. $resolved"
+		/*if (resolved.size() > 1) {
 			println(color(mediaLink, BOLD) + color(" was found on multiple locations: ", YELLOW) + color(resolved.join("|"), BLUE))
-		}
+		}*/
 		return resolved[0]
 	}
 
