@@ -9,6 +9,7 @@ import java.nio.file.Paths
 import groovy.transform.CompileStatic
 import vocb.Helper
 import vocb.corp.WordNormalizer
+import static vocb.Ansi.*
 
 @CompileStatic
 public class Manager {
@@ -207,7 +208,7 @@ public class Manager {
 					else c=  conceptByFirstTerm["${word}s"]
 				} 
 				if (!c) {
-					println "Unknown term '$word' used in the '$t.term' example."
+					println "${color('Unknown term', YELLOW)} ${color(word, BOLD)} used in the ${color(t.term, BLUE)} example."
 				}
 				ret[word].add(c)
 			}

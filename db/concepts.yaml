@@ -37,7 +37,7 @@ concepts:
   - term: the
     lang: en
   state: ignore
-  origins: ["conceptDbSamples", "JingleBells"]
+  origins: ["conceptDbSamples", "JingleBells", "corpus"]
 ##  of   ####################################################################
 - terms: 
   - term: of
@@ -49,7 +49,7 @@ concepts:
     tts: cs-terms/z.mp3
   state: ignoreImage
   freq: 22146974.50000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "corpus"]
 ##  i   #####################################################################
 - terms: 
   - term: i
@@ -72,7 +72,7 @@ concepts:
     tts: cs-terms/a.mp3
   img: img/and.jpeg
   freq: 20342628.50000
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells", "corpus"]
 ##  to   ####################################################################
 - terms: 
   - term: to
@@ -102,7 +102,7 @@ concepts:
     tts: cs-terms/byla.mp3
   state: ignoreImage
   freq: 10078245.00000
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells", "corpus"]
 ##  in   ####################################################################
 - terms: 
   - term: in
@@ -117,7 +117,7 @@ concepts:
     tts: cs-terms/ve.mp3
   img: img/in.jpeg
   freq: 8715316.00000
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "corpus"]
 ##  is   ####################################################################
 - terms: 
   - term: is
@@ -141,7 +141,7 @@ concepts:
     tts: cs-terms/to-cs.mp3
   state: ignoreImage
   freq: 5965293.50000
-  origins: ["Supaplex", "conceptDbSamples", "JingleBells"]
+  origins: ["Supaplex", "conceptDbSamples", "JingleBells", "corpus"]
 ##  for   ###################################################################
 - terms: 
   - term: for
@@ -237,7 +237,7 @@ concepts:
     tts: cs-terms/vas.mp3
   img: img/you.jpeg
   freq: 1540817.58700
-  origins: ["Supaplex", "conceptDbSamples"]
+  origins: ["Supaplex", "conceptDbSamples", "corpus"]
 ##  one   ###################################################################
 - terms: 
   - term: one
@@ -7006,7 +7006,7 @@ concepts:
     tts: cs-terms/clovek.mp3
   img: img/human.jpeg
   freq: 114381.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  states   ################################################################
 - terms: 
   - term: states
@@ -7033,7 +7033,7 @@ concepts:
     tts: cs-terms/ano.mp3
   img: img/yes.jpeg
   freq: 113547.65000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  feel   ##################################################################
 - terms: 
   - term: feel
@@ -7063,7 +7063,7 @@ concepts:
     tts: cs-terms/casti.mp3
   img: img/parts.jpeg
   freq: 111194.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  talk   ##################################################################
 - terms: 
   - term: talk
@@ -8717,7 +8717,7 @@ concepts:
     tts: cs-terms/drive-cs.mp3
   img: img/earlier.jpeg
   freq: 40843.10000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  nobody   ################################################################
 - terms: 
   - term: nobody
@@ -8804,7 +8804,7 @@ concepts:
     tts: cs-terms/vcera.mp3
   img: img/yesterday.jpeg
   freq: 37019.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  phone   #################################################################
 - terms: 
   - term: phone
@@ -9310,7 +9310,7 @@ concepts:
     tts: cs-terms/pokracovat.mp3
   img: img/proceed.jpeg
   freq: 24123.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  hit   ################################################################### t0:tts:missing
 - terms: 
   - term: hit
@@ -9368,7 +9368,7 @@ concepts:
     tts: cs-terms/ktery.mp3
   state: ignoreImage
   freq: 21910.90650
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  emotions   ##############################################################
 - terms: 
   - term: emotions
@@ -9461,7 +9461,7 @@ concepts:
     tts: cs-terms/uzivatele.mp3
   img: img/user.jpeg
   freq: 20688.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  lonely   ################################################################
 - terms: 
   - term: lonely
@@ -9701,7 +9701,7 @@ concepts:
     tts: cs-terms/neter.mp3
   img: img/niece.jpeg
   freq: 15329.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  root   ##################################################################
 - terms: 
   - term: root
@@ -10030,7 +10030,7 @@ concepts:
     tts: cs-terms/tuny.mp3
   img: img/tons.jpeg
   freq: 10088.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  worried   ###############################################################
 - terms: 
   - term: worried
@@ -10042,7 +10042,7 @@ concepts:
     tts: cs-terms/ustarany.mp3
   img: img/worried.jpeg
   freq: 9953.55000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  chapters   ##############################################################
 - terms: 
   - term: chapters
@@ -10168,7 +10168,7 @@ concepts:
     tts: cs-terms/odpocinkovy.mp3
   img: img/relaxed.jpeg
   freq: 7812.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "corpus"]
 ##  jungle   ################################################################
 - terms: 
   - term: jungle
@@ -10791,6 +10791,90 @@ concepts:
   img: img/jingle.jpeg
   freq: 1631.31000
   origins: ["JingleBells"]
+##  example   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: example
+    lang: en
+  freq: 62028.40000
+  origins: ["corpus"]
+##  term   ################################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: term
+    lang: en
+  freq: 54088.85000
+  origins: ["corpus"]
+##  sad   ################################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: sad
+    lang: en
+  freq: 41879.55000
+  origins: ["corpus"]
+##  unknown   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: unknown
+    lang: en
+  freq: 34067.90000
+  origins: ["corpus"]
+##  chooses   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: chooses
+    lang: en
+  freq: 64872.00000
+  origins: ["corpus"]
+##  versions   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: versions
+    lang: en
+  freq: 31817.00000
+  origins: ["corpus"]
+##  levels   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: levels
+    lang: en
+  freq: 26427.00000
+  origins: ["corpus"]
+##  risks   ################################################################# single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: risks
+    lang: en
+  freq: 22810.00000
+  origins: ["corpus"]
+##  shields   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: shields
+    lang: en
+  freq: 19736.00000
+  origins: ["corpus"]
+##  weighs   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: weighs
+    lang: en
+  freq: 10946.00000
+  origins: ["corpus"]
+##  pillows   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: pillows
+    lang: en
+  freq: 10631.00000
+  origins: ["corpus"]
+##  ankles   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: ankles
+    lang: en
+  freq: 5801.00000
+  origins: ["corpus"]
+##  meters   ################################################################ single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: meters
+    lang: en
+  freq: 5786.00000
+  origins: ["corpus"]
+##  regenerates   ########################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: regenerates
+    lang: en
+  freq: 1344.00000
+  origins: ["corpus"]
 
 examples: 
 - terms: 
