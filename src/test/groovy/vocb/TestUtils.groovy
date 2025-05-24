@@ -10,6 +10,7 @@ public class TestUtils {
 		if (aText.readLines().collect{it.trim()} ==bText.readLines().collect{it.trim()}) {
 			return
 		}
+		println aText
 		String lastDiff = printLineDifference(aText, bText)
 		assert false, "Mismatch around line:$lastDiff"
 	}
@@ -40,7 +41,7 @@ public class TestUtils {
 			if (l < bl.size() ) lineB = bl[l]
 			if (l < al.size()) lineA = al[l]
 			println color(lineA, WHITE)
-			if (lineA != lineB) {
+			if (lineA.trim() != lineB.trim()) {
 
 				println "*"*80
 				println color(lineA, RED)

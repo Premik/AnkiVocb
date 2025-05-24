@@ -78,13 +78,13 @@ class YamlStorageTest {
 
 		assert  st.listToYaml(["aa", "bbb", "ccc"]) == y
 	}
-	
+
 	@Test
 	void singleStringListToYaml() {
-		assert  st.listToYaml(["aa"]) == "[aa]"
+		assert  st.listToYaml(["aa"]) == '["aa"]'
 	}
-	
-	
+
+
 
 	@Test
 	void objListToYaml() {
@@ -127,11 +127,10 @@ class YamlStorageTest {
 	@Test
 	void conceptToYaml() {
 		String y="""\
-		terms:
- 
+        ##  apple   #################################################################
+		terms: 
 		- term: apple
 		  lang: en
-
 		- term: jablko
 		  lang: cs
 		state: state
@@ -142,7 +141,7 @@ class YamlStorageTest {
 		Term t2 = new Term("jablko", "cs")
 		Concept c = new Concept(terms: [t1, t2], state: "state", img:"", freq:null, origins:["o1", "o2"])
 		println st.conceptToYaml(c)
-		
+
 		TestUtils.compareString(st.conceptToYaml(c),y)
 	}
 
@@ -152,14 +151,12 @@ class YamlStorageTest {
 		testConceptsUrl.withReader {
 			db = st.parseDb(it)
 		}
-		//new File("/tmp/work/db.yaml") << st.dbToYaml(db) 
+		//new File("/tmp/work/db.yaml") << st.dbToYaml(db)
 		//println st.dbToYaml(db)
 		TestUtils.compareString(st.dbToYaml(db), testConceptsUrl.text)
-		
+
 		//Concept c = db.firstTermIndex["apple"]
 		//assert c
 		//assert c.terms[0] == "apple"
 	}
-	
-	
 }

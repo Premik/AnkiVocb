@@ -46,6 +46,7 @@ public class ConceptYamlStorage {
 		return "$key: $value\n"
 	}
 
+
 	public StringBuilder appendYamlHash(String key, Object value, StringBuilder sb=new StringBuilder()) {
 		sb.append(yamlHash(key, value?.toString()))
 	}
@@ -60,47 +61,65 @@ public class ConceptYamlStorage {
 
 	public String conceptToYaml(Concept c) {
 		assert c
-		String origins = listToYaml(c.origins)
-		String terms=listToYaml(c.terms.collect(this.&termToYaml))
-		
+
+
+
 		StringBuilder sb = new StringBuilder()
 		//sb.append("terms: ").append(Helper.indentNextLines(terms,2))
 		//sb.append("#"*16 + "\n")
-		sb.append("terms: ")
-		if (terms.length() > 0) {
-			sb.append("\n")
-		}
-		sb.append(terms)
-		
+
+		String terms=listToYaml(c.terms.collect(this.&termToYaml))
+		String ft = c.firstTerm
+		sb.append("##  ").append(ft).append('   ' + '#'*(70-ft.length())).append("\n")
+		appendYamlHash("terms", terms, sb)
+		/*sb.append("terms: ")
+		 if (terms.length() > 0) {
+		 sb.append("\n")
+		 }
+		 sb.append(terms)*/
+
 		appendYamlHash("state", c.state, sb)
 		appendYamlHash("img", c.img,sb)
 		appendYamlHash("freq", Helper.roundDecimal(c.freq, 5), sb)
-		//sb.append("origins: ").append(Helper.indentNextLines(origins,2))
-		sb.append("origins: ").append(origins)
+		//sb.append("origins: ").append(origins)
+		appendYamlHash("origins", listToYaml(c.origins), sb)
 		return sb.toString()
 
 		/*"""\
-		terms: ${Helper.indentNextLines(terms,2)}
-		state: $c.state
-		img: $c.img
-		freq: $c.freq
-		origins: ${Helper.indentNextLines(origins,2)}""".stripIndent()*/
+		 terms: ${Helper.indentNextLines(terms,2)}
+		 state: $c.state
+		 img: $c.img
+		 freq: $c.freq
+		 origins: ${Helper.indentNextLines(origins,2)}""".stripIndent()*/
 	}
 
 	public CharSequence listToYaml(List<CharSequence> st) {
-		if (!st) return "[]"
-		if (st.size() <2 && !st.any {it?.contains('\n') && it?.length()> 20}) {
-			//Put short simple lists on one line
-			return "[${st.join(', ')}]"
-			
-		} 
+		//if (!st) return "[]"
+		if (!st) return null
+		if (st.size() <2) { //Short list
+			if ( !st.any {it?.contains('\n') || it?.length()> 20}) {
+				//Put short simple lists on one line
+				String ml = st.collect().collect{/"$it"/}join(', ')
+				//println "!! $ml ${ml.contains('\n')} !!"
+				return "[$ml]"
+			}
+		}
 		"\n" + st.collect(this.&toYamlListItem).join("\n")
 	}
 
 	public CharSequence toYamlListItem(CharSequence yaml) {
-		StringBuilder sb = new StringBuilder(Helper.indent(yaml, 2))
-		sb.setCharAt(0, '-' as char)
-		return sb
+		String indt= Helper.indent(yaml, 2)
+		boolean found = false
+		indt.split("\n")
+				.collect {new StringBuilder(it)}
+				.each { StringBuilder sb->
+					if (found) return
+						if (sb.length() && sb[0].allWhitespace) { //Found first non-comment line
+							found = true
+							sb.setCharAt(0, '-' as char)
+						}
+				}.join("\n")
+
 
 	}
 
@@ -112,4 +131,6 @@ public class ConceptYamlStorage {
 		appendYamlHash("tts", t.tts, sb)
 		return sb.toString()
 	}
+
+	
 }
