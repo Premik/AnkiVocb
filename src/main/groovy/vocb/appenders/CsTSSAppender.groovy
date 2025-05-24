@@ -58,7 +58,7 @@ public class CsTSSAppender {
 
 
 	public static void main(String[] args) {
-		new CsTSSAppender(limit:2).tap {
+		new CsTSSAppender(limit:10).tap {
 		  
 		}.run()
 		println "Done"

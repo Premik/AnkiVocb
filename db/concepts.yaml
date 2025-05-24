@@ -15663,21 +15663,24 @@ concepts:
   img: img/horse.jpeg
   freq: 87507.50000
   origins: ["JingleBells"]
-##  quickly   ############################################################### █ 94%
+##  quickly   ###############################################################
 - terms: 
   - term: quickly
     lang: en
     tts: en-terms/quickly.mp3
   - term: rychle
     lang: cs
+    tts: cs-terms/rychle.mp3
   - term: snadno
     lang: cs
+    tts: /data/src/AnkiVocb/db/media/cs-terms/snadno.mp3
   examples: 
   - term: Quickly drove away.
     lang: en
     tts: en-samples/Quickly drove away.mp3
   - term: Rychle odjel pryč.
     lang: cs
+    tts: cs-samples/Rychle odjel pryc.mp3
   img: img/quickly.jpeg
   freq: 77724.30000
   origins: ["JingleBells"]
@@ -15688,65 +15691,74 @@ concepts:
   state: ignore
   freq: 68285.00000
   origins: ["JingleBells"]
-##  bright   ################################################################ █ 94%
+##  bright   ################################################################
 - terms: 
   - term: bright
     lang: en
     tts: en-terms/bright.mp3
   - term: jasné
     lang: cs
+    tts: cs-terms/jasne.mp3
   - term: zářivě
     lang: cs
+    tts: cs-terms/zarive.mp3
   examples: 
   - term: Making spirits bright.
     lang: en
     tts: en-samples/Making spirits bright.mp3
-  - term: Vytváření duchů jasných.
+  - term: Rozjasňují náladu.
     lang: cs
+    tts: cs-terms/Rozjasnuji naladu.mp3
   img: img/bright.jpeg
   freq: 64276.95000
   origins: ["JingleBells"]
-##  joy   ################################################################### █ 95%
+##  joy   ###################################################################
 - terms: 
   - term: joy
     lang: en
     tts: en-terms/joy.mp3
   - term: radost
     lang: cs
+    tts: cs-terms/radost.mp3
   examples: 
   - term: What joy it is to ride.
     lang: en
     tts: en-samples/What joy it is to ride.mp3
   - term: Jaká radost je jezdit.
     lang: cs
+    tts: cs-samples/Jaka radost je jezdit.mp3
   img: img/joy.jpeg
   freq: 63479.50000
   origins: ["JingleBells"]
-##  spirits   ############################################################### █ 94%
+##  spirits   ###############################################################
 - terms: 
   - term: spirits
     lang: en
     tts: en-terms/spirits.mp3
   - term: nálada
     lang: cs
+    tts: cs-terms/nalada.mp3
   - term: duchy
     lang: cs
+    tts: cs-terms/duchy.mp3
   examples: 
   - term: Making spirits bright.
     lang: en
     tts: /data/src/AnkiVocb/db/media/en-samples/Making spirits bright.mp3
   - term: Rozjasňují náladu.
     lang: cs
+    tts: cs-terms/Rozjasnuji naladu.mp3
   img: img/spirits.jpeg
   freq: 62147.50000
   origins: ["JingleBells"]
-##  laughing   ############################################################## █ 95%
+##  laughing   ############################################################## █ 97%
 - terms: 
   - term: laughing
     lang: en
     tts: en-terms/laughing.mp3
   - term: smějící se
     lang: cs
+    tts: cs-terms/smejici se.mp3
   examples: 
   - term: Laughing all the way.
     lang: en
