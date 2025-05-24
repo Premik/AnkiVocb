@@ -3255,7 +3255,6 @@ concepts:
     tts: cs-terms/samozrejme.mp3
   img: img/course.jpeg
   freq: 224657.50000
-##  john   ################################################################## t1:tts:missing
 - terms: 
   - term: john
     lang: en
@@ -3263,6 +3262,7 @@ concepts:
     pron: ʤɑn
   - term: Jeník
     lang: cs
+    tts: cs-terms/Jenik.mp3
   - term: Honza
     lang: cs
     tts: cs-terms/Honza.mp3
@@ -16821,6 +16821,7 @@ concepts:
     pron: bɪˈjɒnd
   - term: nad rámec
     lang: cs
+    tts: cs-terms/nad ramec.mp3
   freq: 81690.00000
   profileName: relax
 - terms: 
@@ -16830,8 +16831,10 @@ concepts:
     pron: əˈfeəz
   - term: záležitosti
     lang: cs
+    tts: cs-terms/zalezitosti.mp3
   - term: dění
     lang: cs
+    tts: cs-terms/deni.mp3
   freq: 78788.00000
   profileName: relax
 - terms: 
@@ -16841,8 +16844,10 @@ concepts:
     pron: sɔːt
   - term: hledal
     lang: cs
+    tts: cs-terms/hledal.mp3
   - term: usiluje
     lang: cs
+    tts: cs-terms/usiluje.mp3
   freq: 69666.00000
   profileName: relax
 - terms: 
@@ -16852,8 +16857,10 @@ concepts:
     pron: ˈkærɪʤ
   - term: vagónu
     lang: cs
+    tts: cs-terms/vagonu.mp3
   - term: vozík
     lang: cs
+    tts: cs-terms/vozik.mp3
   freq: 61920.00000
   profileName: relax
 - terms: 
@@ -16863,8 +16870,10 @@ concepts:
     pron: əˈpɔɪntɪd
   - term: jmenován
     lang: cs
+    tts: cs-terms/jmenovan.mp3
   - term: pověřených
     lang: cs
+    tts: cs-terms/poverenych.mp3
   freq: 55847.00000
   profileName: relax
 - terms: 
@@ -16874,8 +16883,10 @@ concepts:
     pron: ˈsplɛndɪd
   - term: nádherné
     lang: cs
+    tts: cs-terms/nadherne.mp3
   - term: skvostného
     lang: cs
+    tts: cs-terms/skvostneho.mp3
   freq: 48752.00000
   profileName: relax
 - terms: 
@@ -16885,6 +16896,7 @@ concepts:
     pron: əˈkweɪntənsɪz
   - term: známosti
     lang: cs
+    tts: cs-terms/znamosti.mp3
   freq: 46877.00000
   profileName: relax
 - terms: 
@@ -16894,6 +16906,7 @@ concepts:
     pron: lɛst
   - term: jinak
     lang: cs
+    tts: cs-terms/jinak.mp3
   freq: 43949.00000
   profileName: relax
 - terms: 
@@ -16903,8 +16916,10 @@ concepts:
     pron: ˈkɒndʌkt
   - term: chování
     lang: cs
+    tts: cs-terms/chovani.mp3
   - term: provádět
     lang: cs
+    tts: cs-terms/provadet.mp3
   freq: 43820.00000
   profileName: relax
 - terms: 
@@ -16914,8 +16929,10 @@ concepts:
     pron: ˈdrɛdfʊl
   - term: strašné
     lang: cs
+    tts: cs-terms/strasne.mp3
   - term: příšerné
     lang: cs
+    tts: cs-terms/priserne.mp3
   freq: 42801.00000
   profileName: relax
 - terms: 
@@ -16925,8 +16942,10 @@ concepts:
     pron: ˈsɒləm
   - term: slavnostní
     lang: cs
+    tts: cs-terms/slavnostni.mp3
   - term: vážný
     lang: cs
+    tts: cs-terms/vazny.mp3
   freq: 42188.00000
   profileName: relax
 - terms: 
@@ -16936,8 +16955,10 @@ concepts:
     pron: ədˈmɪts
   - term: připouští
     lang: cs
+    tts: cs-terms/pripousti.mp3
   - term: přiznává
     lang: cs
+    tts: cs-terms/priznava.mp3
   freq: 41549.00000
   profileName: relax
 - terms: 
@@ -16947,8 +16968,10 @@ concepts:
     pron: ˈʌtəli
   - term: naprosto
     lang: cs
+    tts: cs-terms/naprosto.mp3
   - term: nadobro
     lang: cs
+    tts: cs-terms/nadobro.mp3
   freq: 41479.00000
   profileName: relax
 - terms: 
@@ -16958,8 +16981,10 @@ concepts:
     pron: ˈæŋkʃəs
   - term: úzkosti
     lang: cs
+    tts: cs-terms/uzkosti.mp3
   - term: bojácná
     lang: cs
+    tts: cs-terms/bojacna.mp3
   freq: 39068.00000
   profileName: relax
 - terms: 
@@ -16969,6 +16994,7 @@ concepts:
     pron: ˈʌtəd
   - term: pronesl
     lang: cs
+    tts: cs-terms/pronesl.mp3
   freq: 37142.00000
   profileName: relax
 - terms: 
@@ -16978,8 +17004,10 @@ concepts:
     pron: ˈʌtə
   - term: naprosté
     lang: cs
+    tts: cs-terms/naproste.mp3
   - term: vyslovit
     lang: cs
+    tts: cs-terms/vyslovit.mp3
   freq: 35777.00000
   profileName: relax
 - terms: 
@@ -16989,8 +17017,10 @@ concepts:
     pron: ˈvɜːtjuː
   - term: ctnost
     lang: cs
+    tts: cs-terms/ctnost.mp3
   - term: titulu
     lang: cs
+    tts: cs-terms/titulu.mp3
   freq: 34545.00000
   profileName: relax
 - terms: 
@@ -17000,6 +17030,7 @@ concepts:
     pron: dɪˈvaɪn
   - term: božské
     lang: cs
+    tts: cs-terms/bozske.mp3
   freq: 33269.00000
   profileName: relax
 - terms: 
@@ -17009,8 +17040,10 @@ concepts:
     pron: pəˈsjuːd
   - term: sleduje
     lang: cs
+    tts: cs-terms/sleduje.mp3
   - term: pronásledoval
     lang: cs
+    tts: cs-terms/pronasledoval.mp3
   freq: 33135.00000
   profileName: relax
 - terms: 
@@ -17020,8 +17053,10 @@ concepts:
     pron: ˈheɪstɪli
   - term: spěšně
     lang: cs
+    tts: cs-terms/spesne.mp3
   - term: chvatně
     lang: cs
+    tts: cs-terms/chvatne.mp3
   freq: 33032.00000
   profileName: relax
 - terms: 
@@ -17031,8 +17066,10 @@ concepts:
     pron: mɪdst
   - term: uprostřed
     lang: cs
+    tts: cs-terms/uprostred.mp3
   - term: středu
     lang: cs
+    tts: cs-terms/stredu.mp3
   freq: 31639.00000
   profileName: relax
 - terms: 
@@ -17042,8 +17079,10 @@ concepts:
     pron: dɪsˈtrɛs
   - term: tíseň
     lang: cs
+    tts: cs-terms/tisen.mp3
   - term: úzkost
     lang: cs
+    tts: cs-terms/uzkost.mp3
   freq: 31131.00000
   profileName: relax
 - terms: 
@@ -17053,6 +17092,7 @@ concepts:
     pron: əˈbændənd
   - term: opuštěné
     lang: cs
+    tts: cs-terms/opustene.mp3
   freq: 30312.00000
   profileName: relax
 - terms: 
@@ -17062,6 +17102,7 @@ concepts:
     pron: rɒθ
   - term: hněv
     lang: cs
+    tts: cs-terms/hnev.mp3
   freq: 29406.00000
   profileName: relax
 - terms: 
@@ -17071,8 +17112,10 @@ concepts:
     pron: ˈfɒli
   - term: pošetilost
     lang: cs
+    tts: cs-terms/posetilost.mp3
   - term: bláznovství
     lang: cs
+    tts: cs-terms/blaznovstvi.mp3
   freq: 29369.00000
   profileName: relax
 - terms: 
@@ -17082,8 +17125,10 @@ concepts:
     pron: ɪsˈteɪt
   - term: panství
     lang: cs
+    tts: cs-terms/panstvi.mp3
   - term: pozůstalosti
     lang: cs
+    tts: cs-terms/pozustalosti.mp3
   freq: 29275.00000
   profileName: relax
 - terms: 
@@ -17093,8 +17138,10 @@ concepts:
     pron: kənˈsiːld
   - term: ukrytý
     lang: cs
+    tts: cs-terms/ukryty.mp3
   - term: zakrývány
     lang: cs
+    tts: cs-terms/zakryvany.mp3
   freq: 28468.00000
   profileName: relax
 - terms: 
@@ -17104,8 +17151,10 @@ concepts:
     pron: diːd
   - term: skutek
     lang: cs
+    tts: cs-terms/skutek.mp3
   - term: čin
     lang: cs
+    tts: cs-terms/cin.mp3
   freq: 28114.00000
   profileName: relax
 - terms: 
@@ -17115,8 +17164,10 @@ concepts:
     pron: dɪˈzɜːtɪd
   - term: liduprázdná
     lang: cs
+    tts: cs-terms/liduprazdna.mp3
   - term: pustý
     lang: cs
+    tts: cs-terms/pusty.mp3
   freq: 28082.00000
   profileName: relax
 - terms: 
@@ -17126,8 +17177,10 @@ concepts:
     pron: kənˈfaɪnd
   - term: omezena
     lang: cs
+    tts: cs-terms/omezena.mp3
   - term: upoután
     lang: cs
+    tts: cs-terms/upoutan.mp3
   freq: 27737.00000
   profileName: relax
 - terms: 
@@ -17137,8 +17190,10 @@ concepts:
     pron: æpt
   - term: příhodný
     lang: cs
+    tts: cs-terms/prihodny.mp3
   - term: nakloněný
     lang: cs
+    tts: cs-terms/nakloneny.mp3
   freq: 27321.00000
   profileName: relax
 - terms: 
@@ -17148,8 +17203,10 @@ concepts:
     pron: fiːst
   - term: svátek
     lang: cs
+    tts: cs-terms/svatek.mp3
   - term: hody
     lang: cs
+    tts: cs-terms/hody.mp3
   freq: 26689.00000
   profileName: relax
 - terms: 
@@ -17159,8 +17216,10 @@ concepts:
     pron: feɪnt
   - term: slabý
     lang: cs
+    tts: cs-terms/slaby.mp3
   - term: omdlení
     lang: cs
+    tts: cs-terms/omdleni.mp3
   freq: 26485.00000
   profileName: relax
 - terms: 
@@ -17170,6 +17229,7 @@ concepts:
     pron: ˈkɒnʃəns
   - term: svědomí
     lang: cs
+    tts: cs-terms/svedomi.mp3
   freq: 26032.00000
   profileName: relax
 - terms: 
@@ -17179,6 +17239,7 @@ concepts:
     pron: ˈbrɛðrɪn
   - term: bratří
     lang: cs
+    tts: cs-terms/bratri.mp3
   freq: 25642.00000
   profileName: relax
 - terms: 
@@ -17188,8 +17249,10 @@ concepts:
     pron: ˈprɛʃəs
   - term: drahocenný
     lang: cs
+    tts: cs-terms/drahocenny.mp3
   - term: vzácné
     lang: cs
+    tts: cs-terms/vzacne.mp3
   freq: 25304.00000
   profileName: relax
 - terms: 
@@ -17199,8 +17262,10 @@ concepts:
     pron: ˈɜːnɪstli
   - term: vážně
     lang: cs
+    tts: cs-terms/vazne.mp3
   - term: naléhavě
     lang: cs
+    tts: cs-terms/nalehave.mp3
   freq: 25212.00000
   profileName: relax
 - terms: 
@@ -17210,6 +17275,7 @@ concepts:
     pron: pəˈsweɪdɪd
   - term: přesvědčil
     lang: cs
+    tts: cs-terms/presvedcil.mp3
   freq: 24952.00000
   profileName: relax
 - terms: 
@@ -17219,6 +17285,7 @@ concepts:
     pron: ˈprɒvɪdəns
   - term: prozřetelnost
     lang: cs
+    tts: cs-terms/prozretelnost.mp3
   freq: 24702.00000
   profileName: relax
 - terms: 
@@ -17228,8 +17295,10 @@ concepts:
     pron: gluːm
   - term: přítmí
     lang: cs
+    tts: cs-terms/pritmi.mp3
   - term: příšeří
     lang: cs
+    tts: cs-terms/priseri.mp3
   freq: 23980.00000
   profileName: relax
 - terms: 
@@ -17239,6 +17308,7 @@ concepts:
     pron: fəʊ
   - term: nepřítel
     lang: cs
+    tts: cs-terms/nepritel.mp3
   freq: 23628.00000
   profileName: relax
 - terms: 
@@ -17248,6 +17318,7 @@ concepts:
     pron: ˈslɛndə
   - term: štíhlé
     lang: cs
+    tts: cs-terms/stihle.mp3
   freq: 23570.00000
   profileName: relax
 - terms: 
@@ -17257,8 +17328,10 @@ concepts:
     pron: pəˈsiːvd
   - term: vnímána
     lang: cs
+    tts: cs-terms/vnimana.mp3
   - term: pociťované
     lang: cs
+    tts: cs-terms/pocitovane.mp3
   freq: 23538.00000
   profileName: relax
 - terms: 
@@ -17268,8 +17341,10 @@ concepts:
     pron: kənˈsɛnt
   - term: souhlas
     lang: cs
+    tts: cs-terms/souhlas.mp3
   - term: svolení
     lang: cs
+    tts: cs-terms/svoleni.mp3
   freq: 23524.00000
   profileName: relax
 - terms: 
@@ -17279,8 +17354,10 @@ concepts:
     pron: ˈswɪftli
   - term: rychle
     lang: cs
+    tts: cs-terms/rychle.mp3
   - term: urychleně
     lang: cs
+    tts: cs-terms/urychlene.mp3
   freq: 23299.00000
   profileName: relax
 - terms: 
@@ -17290,6 +17367,7 @@ concepts:
     pron: pəˈsiːv
   - term: vnímat
     lang: cs
+    tts: cs-terms/vnimat.mp3
   freq: 23241.00000
   profileName: relax
 - terms: 
@@ -17299,8 +17377,10 @@ concepts:
     pron: ziːl
   - term: horlivost
     lang: cs
+    tts: cs-terms/horlivost.mp3
   - term: nadšení
     lang: cs
+    tts: cs-terms/nadseni.mp3
   freq: 23168.00000
   profileName: relax
 - terms: 
@@ -17310,8 +17390,10 @@ concepts:
     pron: reɪʤ
   - term: vztek
     lang: cs
+    tts: cs-terms/vztek.mp3
   - term: zuřivosti
     lang: cs
+    tts: cs-terms/zurivosti.mp3
   freq: 22913.00000
   profileName: relax
 - terms: 
@@ -17321,8 +17403,10 @@ concepts:
     pron: skɔːn
   - term: opovržení
     lang: cs
+    tts: cs-terms/opovrzeni.mp3
   - term: pohrdání
     lang: cs
+    tts: cs-terms/pohrdani.mp3
   freq: 22638.00000
   profileName: relax
 - terms: 
@@ -17332,8 +17416,10 @@ concepts:
     pron: sɔː
   - term: bolavé
     lang: cs
+    tts: cs-terms/bolave.mp3
   - term: zduřený
     lang: cs
+    tts: cs-terms/zdureny.mp3
   freq: 22499.00000
   profileName: relax
 - terms: 
@@ -17343,6 +17429,7 @@ concepts:
     pron: ˈfɒrɪd
   - term: čelo
     lang: cs
+    tts: cs-terms/celo.mp3
   freq: 22252.00000
   profileName: relax
 - terms: 
@@ -17352,6 +17439,7 @@ concepts:
     pron: rɔː
   - term: řev
     lang: cs
+    tts: cs-terms/rev.mp3
   freq: 21378.00000
   profileName: relax
 - terms: 
@@ -17361,8 +17449,10 @@ concepts:
     pron: ˈkʌnɪŋ
   - term: mazaný
     lang: cs
+    tts: cs-terms/mazany.mp3
   - term: prohnaný
     lang: cs
+    tts: cs-terms/prohnany.mp3
   freq: 21027.00000
   profileName: relax
 - terms: 
@@ -17372,6 +17462,7 @@ concepts:
     pron: rɪˈpəʊz
   - term: klidu
     lang: cs
+    tts: cs-terms/klidu.mp3
   freq: 20701.00000
   profileName: relax
 - terms: 
@@ -17381,6 +17472,7 @@ concepts:
     pron: ˈkaʊns(ə)l
   - term: rada
     lang: cs
+    tts: cs-terms/rada.mp3
   freq: 20261.00000
   profileName: relax
 - terms: 
@@ -17390,6 +17482,7 @@ concepts:
     pron: ˈpaɪəs
   - term: zbožný
     lang: cs
+    tts: cs-terms/zbozny.mp3
   freq: 19900.00000
   profileName: relax
 - terms: 
@@ -17399,8 +17492,10 @@ concepts:
     pron: pəˈsjuː
   - term: pokračovat
     lang: cs
+    tts: cs-terms/pokracovat.mp3
   - term: prosazovat
     lang: cs
+    tts: cs-terms/prosazovat.mp3
   freq: 19628.00000
   profileName: relax
 - terms: 
@@ -17410,8 +17505,10 @@ concepts:
     pron: ˈvɛnʧə
   - term: podnik
     lang: cs
+    tts: cs-terms/podnik.mp3
   - term: rizikovému
     lang: cs
+    tts: cs-terms/rizikovemu.mp3
   freq: 19305.00000
   profileName: relax
 - terms: 
@@ -17421,8 +17518,10 @@ concepts:
     pron: ˈrɛmɪdi
   - term: prostředek
     lang: cs
+    tts: cs-terms/prostredek.mp3
   - term: opravení
     lang: cs
+    tts: cs-terms/opraveni.mp3
   freq: 19135.00000
   profileName: relax
 - terms: 
@@ -17432,8 +17531,10 @@ concepts:
     pron: wɔːd
   - term: oddělení
     lang: cs
+    tts: cs-terms/oddeleni.mp3
   - term: schovanec
     lang: cs
+    tts: cs-terms/schovanec.mp3
   freq: 19060.00000
   profileName: relax
 - terms: 
@@ -17443,8 +17544,10 @@ concepts:
     pron: əˈbaɪd
   - term: dodržovat
     lang: cs
+    tts: cs-terms/dodrzovat.mp3
   - term: zůstaňte
     lang: cs
+    tts: cs-terms/zustante.mp3
   freq: 18940.00000
   profileName: relax
 - terms: 
@@ -17454,6 +17557,7 @@ concepts:
     pron: ˈgærɪsn
   - term: posádka
     lang: cs
+    tts: cs-terms/posadka.mp3
   freq: 18525.00000
   profileName: relax
 - terms: 
@@ -17463,8 +17567,10 @@ concepts:
     pron: prəˈfaʊnd
   - term: hluboké
     lang: cs
+    tts: cs-terms/hluboke.mp3
   - term: zásadní
     lang: cs
+    tts: cs-terms/zasadni.mp3
   freq: 18510.00000
   profileName: relax
 - terms: 
@@ -17474,8 +17580,10 @@ concepts:
     pron: əˈfɛkʃ(ə)nz
   - term: citů
     lang: cs
+    tts: cs-terms/citu.mp3
   - term: náklonnost
     lang: cs
+    tts: cs-terms/naklonnost.mp3
   freq: 18389.00000
   profileName: relax
 - terms: 
@@ -17485,8 +17593,10 @@ concepts:
     pron: ˈæŋgwɪʃ
   - term: úzkosti
     lang: cs
+    tts: cs-terms/uzkosti.mp3
   - term: muka
     lang: cs
+    tts: cs-terms/muka.mp3
   freq: 18382.00000
   profileName: relax
 - terms: 
@@ -17496,8 +17606,10 @@ concepts:
     pron: wiːp
   - term: pláčou
     lang: cs
+    tts: cs-terms/placou.mp3
   - term: plakat
     lang: cs
+    tts: cs-terms/plakat.mp3
   freq: 18242.00000
   profileName: relax
 - terms: 
@@ -17507,6 +17619,7 @@ concepts:
     pron: əˈmɪdst
   - term: uprostřed
     lang: cs
+    tts: cs-terms/uprostred.mp3
   freq: 17989.00000
   profileName: relax
 - terms: 
@@ -17516,8 +17629,10 @@ concepts:
     pron: ɪnˈdjʊə
   - term: snášet
     lang: cs
+    tts: cs-terms/snaset.mp3
   - term: vydržet
     lang: cs
+    tts: cs-terms/vydrzet.mp3
   freq: 17777.00000
   profileName: relax
 - terms: 
@@ -17527,6 +17642,7 @@ concepts:
     pron: hiːd
   - term: dbej
     lang: cs
+    tts: cs-terms/dbej.mp3
   - term: pozornost
     lang: cs
   freq: 17636.00000
@@ -22262,44 +22378,49 @@ concepts:
   - term: nanejvýš
     lang: cs
   profileName: relax
-##  sit   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  sit   ################################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: sit
     lang: en
+    tts: en-terms/sit.mp3
   - term: sedět
     lang: cs
   - term: sednout
     lang: cs
   freq: 119701.00000
-##  provide   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  provide   ############################################################### no img|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: provide
     lang: en
+    tts: en-terms/provide.mp3
   - term: poskytnout
     lang: cs
   freq: 119226.00000
-##  general   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  general   ############################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: general
     lang: en
+    tts: en-terms/general.mp3
   - term: obecný
     lang: cs
   - term: generální
     lang: cs
   freq: 118867.00000
-##  common   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  common   ################################################################ no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: common
     lang: en
+    tts: en-terms/common.mp3
   - term: společné
     lang: cs
   - term: běžný
     lang: cs
   freq: 118000.00000
-##  character   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  character   ############################################################# no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: character
     lang: en
+    tts: en-terms/character.mp3
   - term: znak
     lang: cs
   - term: charakter
@@ -22643,19 +22764,11 @@ concepts:
     lang: cs
   freq: 96621.00000
   profileName: ignore
-##  carry   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  carry   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: carry
     lang: en
   - term: nést
-    lang: cs
-  - term: nesou
-    lang: cs
-  - term: nosit
-    lang: cs
-  - term: vykonávat
-    lang: cs
-  - term: přepravu
     lang: cs
   freq: 96435.00000
 ##  scarcely   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
