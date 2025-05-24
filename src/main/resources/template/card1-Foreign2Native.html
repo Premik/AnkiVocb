@@ -9,9 +9,7 @@ ${render.expandTemplate(templates.header)}
         <span>$v.foreign</span>$v.foreignTTS
     </div>
 
-    <div id="hintButton" >
-        <button class="buttonRounded" onclick="showHint()" type="button">HINT</button>
-        </div>
+    ${render.expandTemplate('hintButton.html')}
 
     <figure class="img hintCover"><img class="shadow" src="$v.img"></span></figure>
 

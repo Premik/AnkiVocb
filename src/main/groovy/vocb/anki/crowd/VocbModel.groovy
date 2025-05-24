@@ -62,7 +62,7 @@ class VocbModel {
 						n.foreignTTS,
 						n.foreignExampleTTS,
 						n.nativeTTS,
-						n.nativeTTS,
+						n.nativeAltTTS,
 						n.nativeExampleTTS
 					].findAll()
 				})
