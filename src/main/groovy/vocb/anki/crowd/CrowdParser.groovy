@@ -59,28 +59,15 @@ public class CrowdParser {
 		JsonBuilder b = new groovy.json.JsonBuilder()
 		b {
 			__type__  "Note"
-			fields(flds.toFields())
+			data flds.data
+			fields(flds.toRichFields())
+			flags flds.flags
 			guid flds.guid
 			note_model_uuid flds.model.uuid
-			tags(['ankiVocb'])
+			tags flds.tags
 		}
 	}
 
-	public JsonBuilder setNoteFields(NoteFields flds, Object noteJson) {
-		assert flds
-		assert model?.fieldsCount
-		// To avoid error on import if model expects more fields that we have
-		List<String> fLst = Helper.padList(flds.toFields().findAll(), "", model.fieldsCount)
-
-		JsonBuilder b = new groovy.json.JsonBuilder()
-		b {
-			__type__  "Note"
-			fields(fLst)
-			guid flds.guid
-			note_model_uuid model.uuid
-			tags(['ankiVocb'])
-		}
-	}
 
 	public void appendMedia(String mediaKey) {
 		assert jsonRoot : "Run parse() first"
