@@ -123,28 +123,46 @@ public class Pack {
 
 		Set<String> list = (topDb - ignore) as LinkedHashSet
 		Helper.printLapseTime()
-		/*Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
+		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
 			list.each {
 				w.println(it)
 			}
-		}*/
-		println "${list.take(100).join(' ')} \nSize: ${list.size()}"
+		}
+		findBestExamplesFor(list)
+	}
+
+	private LinkedHashSet findBestExamplesFor(Collection<String> wordList) {
+		println "${wordList.take(100).join(' ')} \nSize: ${wordList.size()}"
 		int lastDec = 0
-		while (list.size() > 0) {
-			dbMan.bestExampleForSentence(list).each { ExampleComparatorMatch m->			
+		Set<String> matchedVariants = [] as LinkedHashSet
+		List<String> matched = []
+		while (wordList.size() > 0) {
+			dbMan.bestExampleForSentence(wordList).each { ExampleComparatorMatch m->
 				println "-$lastDec ${m.toAnsiString()}"
 				//Collection<String> remove = m.commonWords.collectMany {WordNormalizer.instance.wordVariantsWithBrackets(it)}
 				//Collection<String> remove = m.commonWords
-				Collection<String> remove = m.commonWordVariants
-				lastDec = remove.size()
-				println remove.intersect(list)
-				list-=remove				
+				Collection<String> remove = m.a.wordsMatchingVariant(m.commonWords)
+				matchedVariants.addAll(m.commonWordVariants)
+				Collection<String> removed = remove.intersect(wordList)
+				matched.addAll(removed)
+				/*if (!removed) {
+				 //remove = m.a.wordsMatchingVariant(m.commonWordVariants)
+				 println "Removing variants"					
+				 removed = matchedVariants.intersect(list)
+				 }*/
+				println removed
+				lastDec = removed.size()
+				wordList-=removed
 			}
 			if (lastDec == 0) {
 				println "No more common words"
 				break
 			}
 		}
+		println "Matched: $matched"
+
+		println "Vars   : $matchedVariants"
+		println "Left   : ${wordList-matchedVariants}"		
 	}
 
 	void printExamplesExport() {
@@ -303,6 +321,13 @@ public class Pack {
 			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/
+			//printFirstX()
+			
+			findBestExamplesFor(["that's (that is)", "that is"])
+			return
+			
+			//findBestExamplesFor(["that is"])
+			ExampleComparatorMatch.preferedWords = Corpus.buildDef().topX(500) as LinkedHashSet
 			printFirstX()
 
 			//printExamplesExport()

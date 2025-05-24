@@ -212,8 +212,14 @@ class WordNormalizerTest {
 		assert !iAm.any { it.contains("[") }
 		assert iAm.containsAll("I", "am", "I'm", "i")
 		assert iAm.indexOf("I'm") < iAm.indexOf("I")
-		assert iAm.indexOf("I") < iAm.indexOf("am")
-		
+		assert iAm.indexOf("I") < iAm.indexOf("am")	
+	}
+	
+	@Test
+	void pairVariantsTest() {
+		assert wn.pairVariants("Hello", "world").containsAll("hello", "world", "hello world")
+		assert wn.pairVariants("Hello").containsAll("hello", "Hello")
+		assert wn.pairVariants("I'm (I am)").containsAll("I'm", "I am", "I", "am")
 	}
 	
 }
