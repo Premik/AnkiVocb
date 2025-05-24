@@ -1,5 +1,8 @@
 package vocb.appenders
 
+import java.math.BigDecimal
+
+import groovyjarjarantlr4.v4.runtime.tree.Trees
 import vocb.Helper
 import vocb.corp.Corpus
 import vocb.corp.WordNormalizer
@@ -11,7 +14,7 @@ public class WordsSource {
 
 	String sourceName
 	WordNormalizer wn = new WordNormalizer()
-	BigDecimal minFreq = 5*1000
+	BigDecimal minFreq = 0
 	@Lazy Corpus corp = Corpus.buildDef()
 
 
@@ -27,8 +30,8 @@ public class WordsSource {
 
 		dbMan.load()
 		words.take(20).each { String w->
-			
-			
+
+
 			Term t = new Term(w, "en")
 			Concept c = new Concept(terms: [w:t], freq:corp.wordFreq[w], origins:[sourceName])
 			if (dbMan.conceptByFirstTerm.containsKey(w)) {
@@ -45,12 +48,22 @@ public class WordsSource {
 		}
 	}
 
+	void fromCorups(int limit=100) {
+		Map<String, BigDecimal> wf = corp.wordFreq		
+		String[] top = wf.keySet().sort { String a, String b->
+			wf[b] <=> wf[a]
+		}.take(limit)
+		run(top.join(" "))
+		
+	}
 
 	public static void main(String[] args) {
-		WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)
+		/*WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)
+		 String supa = WordsSource.class.getResource('/Supaplex.txt').text
+		 a.run(supa)*/
+		WordsSource a = new WordsSource()
+		a.fromCorups(5)
 
-		String supa = WordsSource.class.getResource('/Supaplex.txt').text
-		a.run(supa)
 
 		println "Done"
 	}
