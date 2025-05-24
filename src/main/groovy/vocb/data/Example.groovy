@@ -8,8 +8,9 @@ import groovy.transform.ToString
 @ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
 public class Example extends TermContainer {
-	
-		public List<String> validate() {
+
+	@Override
+	public List<String> validate() {
 		List<String> ret = []
 		terms.eachWithIndex {Term t, Integer i->
 			ret.addAll(t.validate().collect{"t${i}:${it}"} )

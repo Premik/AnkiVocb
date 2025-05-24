@@ -31,7 +31,7 @@ public class Manager {
 
 	ConceptYamlStorage storage =new ConceptYamlStorage()
 	ConceptDb db = new ConceptDb()
-	Path dbPath
+	
 
 
 	Map<String, Concept> conceptByFirstTerm = [:]
@@ -127,12 +127,18 @@ public class Manager {
 		}
 	}
 
+	@Deprecated
 	public void load() {
 		conceptsPath.withReader(utf8) { Reader r->
 			db =storage.parseDb(r)
 		}
 		assert db.version == "0.0.1" : "Not compatible db version"
 		reindex()
+	}
+	
+	public void load(DataLocation loc) {
+		assert loc?.storageRootPath
+		assert loc.storagePath
 	}
 
 

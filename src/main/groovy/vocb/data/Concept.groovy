@@ -8,18 +8,19 @@ import vocb.Helper
 //@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
 @ToString(includePackage=false, ignoreNulls=true, includes=['firstTerm', 'state', 'freq'])
 public class Concept extends TermContainer  {
-	
+
 
 	String state
 	String img
 	BigDecimal freq
-	
 
-	
+
+
 	/*public Term getEnTerm() {
 	 termsByLang("en").withDefault { .tap {terms[t] = this} }[0]
 	 }*/
 
+	@Override
 	public List<String> validate(boolean appendTermWarnings=true ) {
 		List<String> ret = []
 		if (state == "ignore") return ret
@@ -43,6 +44,6 @@ public class Concept extends TermContainer  {
 		return ret
 	}
 
-	
+
 
 }
