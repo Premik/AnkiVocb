@@ -6,14 +6,18 @@ import java.util.stream.Collectors
 import java.util.stream.Stream
 
 import org.apache.commons.collections4.queue.CircularFifoQueue
+import org.apache.commons.lang3.NotImplementedException
 
+import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
+import groovy.transform.Field
 import vocb.Helper
 
 
 //@Singleton(lazy=true, strict=false) //Doens't work in eclipse
+@CompileStatic
 public class WordNormalizer {
-	
+
 	public static WordNormalizer instance = new WordNormalizer()
 
 	int minLenght = 1
@@ -26,11 +30,12 @@ public class WordNormalizer {
 	@Lazy Pattern brkPattern = ~ /\s*[()]\s*/
 
 
+	@CompileDynamic
 	public Set<String> uniqueueTokens(CharSequence input, boolean doLemming=false) {
 		if (!input) return [] as Set
 		Stream<String> stream = tokens(input)
 		if (doLemming) stream = lemming(stream)
-		stream.collect(Collectors.toCollection( LinkedHashSet.&new ) )
+		stream.collect(Collectors.toCollection( LinkedHashSet.&new ))
 	}
 
 	public Stream<String> tokens(CharSequence input) {
@@ -39,15 +44,34 @@ public class WordNormalizer {
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
 				.map {String s ->s.toLowerCase()}
 	}
-	
+
 
 	public Stream<String> tokensWithPairs(CharSequence input) {
-		String last = ""
-		spacesPattern.splitAsStream(input)
-				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
+		//Hack, statful
+		String last = ""		
+		Stream<String> strm = Stream.concat(spacesPattern.splitAsStream(input), Stream.of(null))
+		strm
+				.filter {String s ->
+					s==null || (s.length() >= minLenght && s.length() <=maxLenght)
+				}
 				.flatMap { String w->
-					[[last, w].findAll().join(' '), w, [w, last].findAll().join(' ')].toUnique().tap {last=w}.stream() 
-				} //Hack, statful, no para
+					if (w==null) { //EOS. Append the last(if any)
+						if (last) return Stream.of(last)
+						return Stream.empty()
+					}
+					if (!last) {
+						last = w
+						return Stream.empty()
+					}
+					return [
+						[last, w].findAll().join(' '),
+						[w, last].findAll().join(' '),
+						last
+					]
+					.toUnique()
+					.tap {last=w}.stream()
+				}.map {it as String}				
+		
 	}
 
 	public Stream<String> lemming( Stream<String> inp, boolean preferOrigialWord=false) {
@@ -55,33 +79,33 @@ public class WordNormalizer {
 			wordVariants(s).stream()
 		}
 	}
-	
+
 	public List<String> sortWordVariants(List<String> variants) {
 		variants.toUnique()
-		//.tap {println it}
-		.sort { String a, String b->
-			//Lower-cased first
-			Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
-					a.length() <=> b.length() //Shorter first
-		}		
+				//.tap {println it}
+				.sort { String a, String b->
+					//Lower-cased first
+					Character.isUpperCase(a[0] as Character) <=> Character.isUpperCase(b[0] as Character)?:
+							a.length() <=> b.length() //Shorter first
+				}
 	}
-	
+
 	public List<String> wordVariantUnsorted(String s) {
 		if (!s) return []
 		String cap = swapCapitalFirstLetter(s)
 		[
-			swapPluralSingular(cap),
+			s,
 			swapPluralSingular(s),
-			*ingVariants(cap),
 			*ingVariants(s),
-			*edVariants(cap),
 			*edVariants(s),
-			cap,
-			s
-		]	
+			swapPluralSingular(cap),			
+			*ingVariants(cap),			
+			*edVariants(cap),			
+			cap,			
+		]as List<String>
 	}
 
-	public List<String> wordVariants(String s, boolean preferOrigialWord=false) {		
+	public List<String> wordVariants(String s, boolean preferOrigialWord=false) {
 		List<String> variants = sortWordVariants(wordVariantUnsorted(s))
 		if (preferOrigialWord) {
 			//The exact word first,
@@ -91,10 +115,12 @@ public class WordNormalizer {
 	}
 
 	public String swapPluralSingular(String s) {
-		if (s.length() < 2) return [s] // I -x> is
-		//Removes or adds 's'
+		if (s.length() < 2) return s // I -x> is
+		if (s.endsWith("'s")) {
+			return s[0..<-2] as String
+		}
 		if (s.endsWith('s')) {
-			if (s.length() <3) return [s] // is -x> I  
+			if (s.length() <3) return s // is -x> I
 			return s[0..<-1] as String
 		}
 		return "${s}s" as String //Add 's'
@@ -118,7 +144,10 @@ public class WordNormalizer {
 		if (s.endsWith('e')) return ["${s}d" as String]
 		if (s.endsWith('ed')) {
 			if (s.length() > 4) {
-				return [s[0..<-2] as String, s[0..<-1] as String]
+				return [
+					s[0..<-2] as String,
+					s[0..<-1] as String
+				]
 			} else {
 				return [s[0..<-1] as String]
 			}
@@ -141,13 +170,16 @@ public class WordNormalizer {
 		}
 		return ["${s}ing" as String]
 	}
-	
+
 	public List<String> wordVariantsWithBrackets(String s) {
 		def (String a, String b) = splitBrackets(s)
-		if (!b) return wordVariants(s, true) //No brackets
-		
-		List<String> exact = wordVariantUnsorted(a) + wordVariantUnsorted(b)	
-		
+		//if (!b) return wordVariants(s, true) //No brackets
+		List<String> exact = wordVariantUnsorted(a) + wordVariantUnsorted(b)
+		Closure<List<String>> pair = { String w->
+			tokensWithPairs(w).flatMap {wordVariantUnsorted(it).stream()}.toList()
+		}
+		List<String> pairs = pair(a) + pair(b)
+		return (exact + pairs).toUnique()
 	}
 
 
@@ -159,6 +191,7 @@ public class WordNormalizer {
 
 
 
+	@CompileDynamic
 	public List<String> sentences(CharSequence input) {
 		int start
 		BreakIterator iterator = BreakIterator.getSentenceInstance(Locale.US).tap {
@@ -175,11 +208,12 @@ public class WordNormalizer {
 		}
 		ret
 				.collectMany {  it.split(/[,;:]\s(=\s*)/) as List} //Split on non-full sentences
-				.collectMany { it.split(/\s+(?=[\p{Lu}&&[^I]])/) as List } //Missing dots, but capital letter next (but ignore capital I)
-				.collect {it.trim()}
+				.collectMany { it.split(/\s+(?=[\p{Lu}&&[^I]])/) as List}//Missing dots, but capital letter next (but ignore capital I)
+				.collect {it.trim()}				
 				.collect {it.replaceAll(/[!?;.,"'":]$/, "") } //Remove sentence terminators
 				.collect {it.trim()}
-				.collect {it.replaceAll("[\n\r]+", " ")} //remove newlines
+				.collect {String s->s.replaceAll("[\n\r]+", " ")} //remove newlines
+				
 	}
 
 	public Map<String, Set<String>> wordsInSentences(List<String> sentences) {
@@ -203,11 +237,11 @@ public class WordNormalizer {
 		return listOfString.flatMap(this.&tokens)
 	}
 
-	public Stream<String> pairs(Stream<CharSequence> listOfString, int sz=2) {
+	public Stream<String> tuples(Stream<CharSequence> listOfString, int sz=2) {
 		//Side effect, don't run in  parallel, consumes the stream
 		CircularFifoQueue<String> prevs= new CircularFifoQueue(sz)
 		listOfString.map { CharSequence s->
-			prevs.add(s)
+			prevs.add(s as String)
 			//println "B: ${prevs} ${prevs.getClass()} ${prevs.size()} ${prevs.maxSize()}"
 			//(1..maxSz).inject([]) { ret, it-> ret += prevs.collate(it, 1, false)}
 			prevs.collate(sz, 1, false)
@@ -222,7 +256,7 @@ public class WordNormalizer {
 	public Map<String , Integer> phraseFreqs(Collection<CharSequence> words, int minSz=1, int maxSz=4) {
 		Map<String , Integer> ret = [:].withDefault {0}
 		for (int sz = minSz;sz<=maxSz;sz++) {
-			for(String s in pairs(words.stream(), sz )) {
+			for(String s in tuples(words.stream(), sz )) {
 				ret[s]++
 			}
 		}
@@ -230,7 +264,7 @@ public class WordNormalizer {
 	}
 
 	public Map<String , Integer> phraseFreqs(CharSequence input, int minSz=1, int maxSz=4) {
-		phraseFreqs (tokens( input).toList(), minSz, maxSz)
+		phraseFreqs (tokens( input).toList() as List<CharSequence>, minSz, maxSz)
 	}
 
 	public Map<String , Integer> topPhrases(Map<String , Integer> phraseFreq, int cutOff=2) {
@@ -247,13 +281,13 @@ public class WordNormalizer {
 		def (String a, String b) = splitBrackets(tx)
 		return a
 	}
-	
+
 	public Tuple2<String, String> splitBrackets(String tx) {
 		def (String a, String b, String c) = Helper.splitByRex(tx, stripBrkPattern)
-		if (a == null) return [tx, ""]
+		if (a == null) return [tx, ""] as Tuple2<String, String>
 		b = b.replaceAll(brkPattern, "")
 		//return ["${a.trim()} ${c.trim()}" as String, b]
-		return [[a,c].findAll().join(" "), b]
+		return [[a, c].findAll().join(" "), b] as Tuple2<String, String>
 	}
 
 	static void main(String... args) {

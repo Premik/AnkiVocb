@@ -45,9 +45,9 @@ class WordNormalizerTest {
 		String[] w = ["a", "b", "c", "d", "e"]
 
 
-		assert wn.pairs(w.stream(),1).toList() == w
-		assert wn.pairs(w.stream(), 2).toList() == ['a b', 'b c', 'c d', 'd e']
-		assert wn.pairs(w.stream(), 3).toList() == ['a b c', 'b c d', 'c d e']
+		assert wn.tuples(w.stream(),1).toList() == w
+		assert wn.tuples(w.stream(), 2).toList() == ['a b', 'b c', 'c d', 'd e']
+		assert wn.tuples(w.stream(), 3).toList() == ['a b c', 'b c d', 'c d e']
 
 		//assert norm.pairs(w.stream(),1, 3).toList() == ['a', 'a b', 'b c', 'c d', 'd']
 	}
@@ -146,6 +146,14 @@ class WordNormalizerTest {
 		assert wn.wordVariants("look") as Set ==  "look looks looked looking Look Looks Looked Looking".split() as Set
 		//assert norm.wordVariants("antiquities") as Set == "cat cats".split() as Set
 	}
+	
+	@Test
+	void variantsCornet() {
+		assert !wn.wordVariantUnsorted("I").any{it.contains("[")}
+		
+	}
+	
+	
 
 	@Test
 	void stripBrkSimple() {
@@ -171,11 +179,39 @@ class WordNormalizerTest {
 	void pairTokens() {
 		assert wn.tokensWithPairs("Hello").toList() == ["Hello"]		
 		List<String> tp = wn.tokensWithPairs("Hello big world").toList()
-		assert tp == ['Hello', 'Hello big', 'big', 'big Hello', 'big world', 'world', 'world big']
+		assert tp == ['Hello big', 'big Hello', 'Hello', 'big world', 'world big', 'big', 'world']
+	}
+	
+		
+		
+	@Test
+	void sortVariantsBasic() {
+		assert wn.sortWordVariants(["Hello", "world"]) == ["world", "Hello"] 
+		assert wn.sortWordVariants(["abc", "def"]) == ["abc", "def"]
+		assert wn.sortWordVariants(["def", "abc"]) == ["def", "abc"]
+		assert wn.sortWordVariants(["abcd", "efg"]) == ["efg", "abcd"]
+		assert wn.sortWordVariants(["abcd", "efg", "hij"]) == ["efg", "hij", "abcd"]
+		assert wn.sortWordVariants(["abcd", "hij", "efg"]) == ["hij", "efg", "abcd"]
 	}
 	
 	@Test
-	void sortVariants() {
+	void variantBracketsSimple() {
+		assert wn.wordVariantsWithBrackets("cats").containsAll("cat", "cats")		
+		List<String> catDog = wn.wordVariantsWithBrackets("cat (dog)")
+		assert !catDog.any { it.contains("[") }
+		assert catDog.containsAll("cat", "cats", "dog", "dogs")
+		assert catDog.indexOf("cat") < catDog.indexOf("cats")
+		assert catDog.indexOf("dog") < catDog.indexOf("dogs")
+		assert catDog.indexOf("cat") < catDog.indexOf("dog")		
+	}
+	
+	@Test
+	void variantBracketsPairs() {		
+		List<String> iAm = wn.wordVariantsWithBrackets("I'm (I am)")
+		assert !iAm.any { it.contains("[") }
+		assert iAm.containsAll("I", "am", "I'm", "i")
+		assert iAm.indexOf("I'm") < iAm.indexOf("I")
+		assert iAm.indexOf("I") < iAm.indexOf("am")
 		
 	}
 	
