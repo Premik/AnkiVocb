@@ -16,6 +16,8 @@ import vocb.corp.WordNormalizer
 @CompileStatic
 public class Manager {
 	
+	boolean silent=false
+	
 	ConfHelper cfgHelper = ConfHelper.instance
 	ConfigObject cfg = cfgHelper.config
 
@@ -314,7 +316,7 @@ public class Manager {
 				assert lang == "en" : "not implemented"
 				Concept c = findConceptByFirstTermAnyVariant(word)
 
-				if (!c && !word.contains("'")) {
+				if (!c && !word.contains("'") && !silent) {
 					//if (!c) {
 					println "${color('Unknown term', YELLOW)} ${color(word, BOLD)} used in the ${color(t.term, BLUE)} example."
 				}

@@ -27,7 +27,7 @@ public class ExampleAppender {
 	Manager dbMan = new Manager(defaultExamplesFileName:"examplesDraft.yaml")
 	
 	int sleep=500
-	int limit = 5
+	int limit = 5000
 	int maxLength = 60
 
 	Stream<Concept> todo

@@ -42,21 +42,26 @@ public class Pack {
 	@Lazy
 	TreeConf<PackInfo> treeConf = new TreeConf<PackInfo>(subFolderFilter:this.&isFolderPackage, path: packageRootPath)
 
-	@Lazy 
+	@Lazy
 	List<PackInfo> allPackInfos = {
-		treeConf.leafs.collect { TreeConf<PackInfo> tc->
+		treeConf.leafs.collect {
+			TreeConf<PackInfo> tc->
 
 			PackInfo pi = new PackInfo(
-					pack: this,
-					treeConf: tc).tap {
-						tc.obj= it
-					}
+			pack: this,
+			treeConf: tc).tap {
+				tc.obj= it
+			}
 
 			return pi
 		}
 	}()
 
-
+	@Lazy
+	Manager dbMan = {
+		//Manager.defaultInstance
+		new Manager(defaultExamplesFileName:"examplesDraft.yaml", silent:silent).tap {load()}		
+	}()
 
 	WordNormalizer wn = WordNormalizer.instance
 
@@ -65,12 +70,14 @@ public class Pack {
 	PackExport packExportOf(PackInfo info) {
 		assert info
 		ConfHelper cfgHelper = new ConfHelper()
-		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
+		Data2Crowd d2c = new Data2Crowd (info : info, dbMan : dbMan, cfgHelper:cfgHelper)
 		return new PackExport(data2crowd: d2c, info:info, silent:silent)
 	}
-	
+
 	public List<PackExport>  packExportsOf(String ... names) {
-		pkgsByName(names).collect {packExportOf(it)}
+		pkgsByName(names).collect {
+			packExportOf(it)
+		}
 	}
 
 	void doExport(PackInfo info) {
@@ -85,38 +92,77 @@ public class Pack {
 
 	Set<String> exportedWordsOf(String ... names) {
 		pkgsByName(names).parallelStream()
-				.filter {it as Boolean}
-				.map {packExportOf(it)}
-				.flatMap { it.exportedWords.stream() }
-				.toList() as LinkedHashSet
+		.filter {
+			it as Boolean
+		}
+		.map {
+			packExportOf(it)
+		}
+		.flatMap {
+			it.exportedWords.stream()
+		}
+		.toList() as LinkedHashSet
 	}
 
-	Manager getDbMan() {
-		//Manager dbMan = new Manager(defaultExamplesFileName:"examplesDraft.yaml")
-		packExportOf(allPackInfos.first()).dbMan
-	}
 
 	Set<String> findTopWordsNotInDb(int topx=1000) {
 		Set<String> top = Corpus.buildDef().topX(topx) as LinkedHashSet
 		//Set<String> topInDb = top.collectMany { dbMan.findConceptsByFirstTermAllVariant(it) }.collect {it.firstTerm} as LinkedHashSet
-		top.findAll { !dbMan.findConceptsByFirstTermAllVariant(it)}
-		.findAll {!it.contains("'")}
-		.findAll {!it.contains(".")}
-		.findAll {it.size()>1} as LinkedHashSet
+		top.findAll {
+			!dbMan.findConceptsByFirstTermAllVariant(it)
+		}
+		.findAll {
+			!it.contains("'")
+		}
+		.findAll {
+			!it.contains(".")
+		}
+		.findAll {
+			it.size()>1
+		} as LinkedHashSet
 	}
 
 	Set<Concept> findTopConceptsFromAllPackages(int topx) {
 		Helper.startWatch()
 
 		Set<Concept> allExp = exportedItemsFromPackages()
-				.map {it.concept}
-				.filter {!it.ignore}
-				.toSet()
-				.toSorted {0-it.freq}
-				.take(topx) as LinkedHashSet
+		.map {
+			it.concept
+		}
+		.filter {
+			!it.ignore
+		}
+		.toSet()
+		.toSorted {
+			0-it.freq
+		}
+		.take(topx) as LinkedHashSet
 		Helper.printLapseTime()
 		return allExp
 		//allExp.take(100).each {println it}
+	}
+	
+	void printBestExamplesFor() {
+		
+		Collection<String> words='''
+		available privacy general development local section security total download media including location account content provide sale credit categories advanced application
+		topic comment financial below mobile login legal options status browse issue range request professional reference term original
+		common display daily natural official average technical region record environment district calendar update resource material written adult requirements via
+		cheap third individual plus usually percent fast function global subscribe various knowledge error currently construction loan taken friday lake basic response
+		practice holiday chat speed loss discount higher political kingdom storage across inside solution necessary according particular
+		'''.split(/\s+/).reverse().findAll()
+		
+		Helper.startWatch("allWordPackages")
+		//Set<String> knownWords = exportedWordsFromPackages()
+		Collection<String> knownWords = dbMan.db.concepts.toSorted{-1*(it.freq?:0)}.collect{it.firstTerm}
+		ExampleComparatorMatch.preferedWords = ( knownWords + ExampleComparatorMatch.preferedWords) as LinkedHashSet
+		Helper.printLapseTime("allWordPackages")
+		
+		
+		findBestExamplesFor(wn.expandBrackets(words), knownWords)
+		
+		
+		
 	}
 
 
@@ -124,15 +170,22 @@ public class Pack {
 	void printFirstX(int x=1000) {
 		Helper.startWatch()
 		//Arrays.parallelSo
-		Concept[] topDbAr = dbMan.db.concepts.findAll {!it.ignore}.toArray() as Concept[]
-		Arrays.parallelSort(topDbAr, {Concept a, Concept b-> (b.freq?:0) <=>(a.freq?:0)})
+		Concept[] topDbAr = dbMan.db.concepts.findAll {
+			!it.ignore
+		}.toArray() as Concept[]
+		Arrays.parallelSort(topDbAr, {
+			Concept a, Concept b-> (b.freq?:0) <=>(a.freq?:0)
+		})
 
-		Set<String> topDb = topDbAr.take(x).collect {it.firstTerm} as LinkedHashSet
+		Set<String> topDb = topDbAr.take(x).collect {
+			it.firstTerm
+		} as LinkedHashSet
 
 		//Set<String> ignore =  []
 		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
 		//Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
 		Set<String> ignore = exportedWordsFromPackages()
+		
 		
 		//Prefer the ignored (known) words
 		ExampleComparatorMatch.preferedWords = ( ignore + ExampleComparatorMatch.preferedWords) as LinkedHashSet
@@ -148,7 +201,7 @@ public class Pack {
 	}
 
 	private void findBestExamplesFor(Collection<String> wordList, Collection<String> highligh=[]) {
-		println "${wordList.take(100).join(' ')} \nSize: ${wordList.size()}"
+		println "${wordList.take(20).join(' ')} \nSize: ${wordList.size()}"
 		int lastDec = 0
 		//Set<String> matchedVariants = [] as LinkedHashSet
 		List<String> matched = []
@@ -358,6 +411,7 @@ public class Pack {
 	public static void main(String[] args) {
 
 		new Pack().tap { Pack p->
+			
 			//p.exportByName("Simple")
 			//return
 			
@@ -371,11 +425,12 @@ public class Pack {
 			 println it
 			 }*/
 			//printFirstX()
-			ExampleComparatorMatch.preferedWords = Corpus.buildDef(1500).topX(1000) as LinkedHashSet
+			ExampleComparatorMatch.preferedWords = Corpus.buildDef(25000).topX(25000) as LinkedHashSet
+			
 			//findBestExamplesFor(["that's (that is)", "that is"])
 			//return
-			printFirstX()
-			packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))
+			printBestExamplesFor()
+			//packExportsOf("Basic").first().debugDumpTo(Paths.get("/tmp/work/vocbDebug"))
 
 			//printExamplesExport()
 			//p.export()
