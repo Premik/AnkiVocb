@@ -138,13 +138,13 @@ public class AwsCliPollyTTS {
 	static void main(String... args) {
 		AwsCliPollyTTS tts = new AwsCliPollyTTS()
 
-		tts.voices.each { String v->
-			String tx = "Hello world."
-			Process p = tts.synth(tx, "neural", v, "text", "/tmp/work/${v}.mp3")
-			Helper.printProcOut(p)
-			p.waitFor(5, TimeUnit.SECONDS)
-		}
-		return
+//		tts.voices.each { String v->
+//			String tx = "Hello world."
+//			Process p = tts.synth(tx, "neural", v, "text", "/tmp/work/${v}.mp3")
+//			Helper.printProcOut(p)
+//			p.waitFor(5, TimeUnit.SECONDS)
+//		}
+//		return
 		//Process p = tts.synth(tx, "neural", v, "text", "/tmp/work/${v}.mp3")
 		String dialog = '''Gregory: "Mushroom soup is delicious."
 							Ivy: "I don't think so. Mushrooms are poisonous."
