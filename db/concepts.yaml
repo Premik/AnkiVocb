@@ -419,47 +419,80 @@ concepts:
   img: know.jpeg
   freq: 984073.50000
   origins: ["Supaplex"]
-##  be   #################################################################### ▃ 35%
+##  be   #################################################################### ▆ 63%
 - terms: 
   - term: be
     lang: en
   - term: být
     lang: cs
+  examples: 
+  - term: There must be a piano here.
+    lang: en
+  - term: Musí tu někdo být piáno.
+    lang: cs
   freq: 9104176.00000
   origins: ["corpus"]
-##  had   ################################################################### ▃ 35%
+##  had   ################################################################### ▆ 63%
 - terms: 
   - term: had
     lang: en
   - term: měl
     lang: cs
+  examples: 
+  - term: You had the number.
+    lang: en
+  - term: Tys to číslo měl.
+    lang: cs
   freq: 6139336.00000
   origins: ["corpus"]
-##  he   #################################################################### ▃ 35%
+##  he   #################################################################### ▆ 63%
 - terms: 
   - term: he
     lang: en
   - term: "on"
     lang: cs
+  examples: 
+  - term: And he saw you?
+    lang: en
+  - term: A on tě viděl?
+    lang: cs
   freq: 5653229.50000
   origins: ["corpus"]
-##  with   ################################################################## ▃ 35%
+##  with   ################################################################## ▆ 63%
 - terms: 
   - term: with
     lang: en
   - term: s
     lang: cs
+  examples: 
+  - term: Let me help you with that.
+    lang: en
+  - term: Pomůžu vám s tím.
+    lang: cs
+  - term: Wait here with the others.
+    lang: en
+  - term: Počkejte tu s ostatními.
+    lang: cs
   freq: 5204263.00000
   origins: ["corpus"]
-##  his   ################################################################### ▃ 35%
+##  his   ################################################################### ▆ 63%
 - terms: 
   - term: his
     lang: en
   - term: jeho
     lang: cs
+  examples: 
+  - term: It is his ghost.
+    lang: en
+  - term: To je jeho duch.
+    lang: cs
+  - term: The game is his life.
+    lang: en
+  - term: Ta hra je jeho život.
+    lang: cs
   freq: 4409709.00000
   origins: ["corpus"]
-##  have   ################################################################## ▃ 35%
+##  have   ################################################################## ▅ 61%
 - terms: 
   - term: have
     lang: en
@@ -467,15 +500,25 @@ concepts:
     lang: cs
   - term: mají
     lang: cs
+  examples: 
+  - term: You must have permission from the doctor.
+    lang: en
+  - term: Musíte mít povolení od doktora.
+    lang: cs
   freq: 4325227.50000
   origins: ["corpus"]
-##  as   #################################################################### ▃ 35%
+##  as   #################################################################### ▅ 61%
 - terms: 
   - term: as
     lang: en
   - term: jako
     lang: cs
   - term: jak
+    lang: cs
+  examples: 
+  - term: We were studying in class as usual.
+    lang: en
+  - term: Učili jsme se ve třídě jako obvykle.
     lang: cs
   freq: 3659513.00000
   origins: ["corpus"]
@@ -490,7 +533,7 @@ concepts:
   state: ignore
   freq: 3429739.50000
   origins: ["corpus"]
-##  were   ################################################################## ▃ 35%
+##  were   ################################################################## ▅ 61%
 - terms: 
   - term: were
     lang: en
@@ -498,15 +541,25 @@ concepts:
     lang: cs
   - term: byli
     lang: cs
+  examples: 
+  - term: There were three more.
+    lang: en
+  - term: Byly tu tři další.
+    lang: cs
   freq: 3323884.00000
   origins: ["corpus"]
-##  are   ################################################################### ▃ 35%
+##  are   ################################################################### ▅ 61%
 - terms: 
   - term: are
     lang: en
   - term: jsou
     lang: cs
   - term: jsi
+    lang: cs
+  examples: 
+  - term: Stores are full of goods.
+    lang: en
+  - term: Obchody jsou plné zboží.
     lang: cs
   freq: 3224178.00000
   origins: ["corpus"]
@@ -521,7 +574,7 @@ concepts:
   state: ignore
   freq: 2876549.00000
   origins: ["corpus"]
-##  from   ################################################################## ▃ 35%
+##  from   ################################################################## ▅ 61%
 - terms: 
   - term: from
     lang: en
@@ -529,23 +582,38 @@ concepts:
     lang: cs
   - term: od
     lang: cs
+  examples: 
+  - term: An extract from a book.
+    lang: en
+  - term: Výpis z knihy.
+    lang: cs
   freq: 2872012.50000
   origins: ["corpus"]
-##  or   #################################################################### ▃ 35%
+##  or   #################################################################### ▆ 63%
 - terms: 
   - term: or
     lang: en
   - term: nebo
     lang: cs
+  examples: 
+  - term: A cup of tea or coffee.
+    lang: en
+  - term: Šálek čaje nebo kávy.
+    lang: cs
   freq: 2803803.50000
   origins: ["corpus"]
-##  her   ################################################################### ▃ 33%
+##  her   ################################################################### ▅ 56%
 - terms: 
   - term: her
     lang: en
   - term: její
     lang: cs
   - term: ji
+  examples: 
+  - term: That's her suitcase.
+    lang: en
+  - term: To je její kufr.
+    lang: cs
   freq: 2800225.50000
   origins: ["corpus"]
 ##  an   ####################################################################
