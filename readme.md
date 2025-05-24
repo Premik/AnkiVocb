@@ -20,7 +20,7 @@ Sada balíčků pro učení anglických slovíček a vět do programu Anki.
 
 * Nainstalujte si program [Anki](https://apps.ankiweb.net/), který je pro PC a Android zadarmo. Dá se používat i čistě webová verze. Postup zde není popsán, [najděte si nějaký návod na internetu](https://duckduckgo.com/?q=anki+n%C3%A1vod).
 
-* Balíčky jsou ke stažení vpravo v odkazu [Releases](releases). Stáhněte buď archív všech balíčků `Ankivocb.apkg` nebo `Ankivocb.crowd.7z` (je třeba `CrowdAnki` plugin) a naimportujte do Anki.
+* Balíčky jsou ke stažení vpravo v odkazu [Releases](https://github.com/Premik/AnkiVocb/releases). Stáhněte buď archív všech balíčků `Ankivocb.apkg` nebo `Ankivocb.crowd.7z` (je třeba `CrowdAnki` plugin) a naimportujte do Anki.
 
 Tip: neimportujte všechny balíčky zároveň. Ideální je načít 2-3 balíčky a až po jejich naučení postupně importovat další. Učení je tak pestřejší.
 A taky některé (pokročilé) balíčky předpokládají znalosti z předchozích balíčků. Ale většina balíčků je "samostatných". Proto se některá slova opakovaně vyskytují ve více různých balíčcích. Hlavně ty hodně časté.
