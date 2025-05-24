@@ -1,33 +1,25 @@
 package vocb.anki.crowd
 
+import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
 import vocb.ConfHelper
-import vocb.corp.Similarity
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
 import vocb.template.Render
 
 public class Data2Crowd {
-	
+
 	ConfHelper cfgHelper = ConfHelper.instance
 	@Lazy ConfigObject cfg = cfgHelper.cfg
 
 	Path dataPath= Paths.get("/data/src/AnkiVocb/db/")
-	String destCrowdRootFolder = "/tmp/work/test"	
+	String destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = new Render(cfgHelper:cfgHelper)
 
-	BigDecimal[] freqRanges = [
-		0,
-		11000,
-		151000,
-		1511000,
-		2121000,
-		2811000,
-		new BigDecimal("10e10")
-	]
+	BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 2121000, 2811000, new BigDecimal("10e10")]
 
 	Integer numberOfStarts(BigDecimal freq) {
 		if (!freq) return null
@@ -47,7 +39,14 @@ public class Data2Crowd {
 		new VocbModel(
 				destCrowdRootFolder: Paths.get(destCrowdRootFolder),
 				resolveMediaLink: {String mediaLink ->
-					Paths.get("/data/src/AnkiVocb/db/media").resolve(mediaLink)
+					Path lnk = Paths.get("/data/src/AnkiVocb/db/media").resolve(mediaLink)
+					if (!Files.exists(lnk)) {
+						Path tmlpLnk = Paths.get("/data/src/AnkiVocb/src/main/resources/template").resolve(mediaLink)
+						if (Files.exists(tmlpLnk)) {
+							return tmlpLnk
+						}
+					}
+					return lnk
 				})
 	}()
 
@@ -75,7 +74,7 @@ public class Data2Crowd {
 			nativeAltTTS= cst2?.tts
 			nativeExample= csx?.term
 			nativeExampleTTS = csx?.tts
-			
+
 			(1..5).each {tags.remove(star*it)}
 			if (stars >0) {
 				tags.add(star*stars)
@@ -91,29 +90,37 @@ public class Data2Crowd {
 		Note n = vocbModel.updateNoteHaving(c.firstTerm)
 		concept2CrowdNote(c, n)
 	}
-	
-	NoteModel renderCardTemplate( ConfigObject renderCardTemplate, NoteModel targetM=vocbModel.noteModel) {		
+
+	NoteModel renderCardTemplate( ConfigObject renderCardTemplate, NoteModel targetM=vocbModel.noteModel) {
 		targetM.css = render.render(renderCardTemplate.css)
+
 		List cards = renderCardTemplate.cards
-		assert cards			
+		assert cards
 		//Ensure target list as at least same number of elements as the source
 		List<TemplateModel> padded = targetM.tmpls.withEagerDefault { new TemplateModel() }
 		padded[cards.size()-1] //Pad with new template models if needed
+		padded.take(cards.size())
 		//assert cards.size() == targetM.tmpls.size()
-		 
-		[cards, targetM.tmpls ].transpose().each {Map card, TemplateModel m-> 
-			m.name = card.name
-			m.afmt = render.render( card.afmt)
+
+		[cards, targetM.tmpls].transpose().each {Map card, TemplateModel m->
+			println "$card.name -> $m"
+			m.name = card.name			
 			m.qfmt = render.render( card.qfmt)
+			m.afmt = render.render( card.afmt)
+			m.bqfmt = card.bqfmt
 			m.bafmt = card.bafmt
-			m.bqfmt = card.bqfmt			
+			
 		}
+		targetM.tmpls = padded
 		return  targetM
-		 
+
 	}
 
 	void exportToCrowd(int limit=10, int mult=1) {
 		vocbModel.notes.clear()
+		renderCardTemplate(cfg.renderCardTemplate)
+		vocbModel.copyMediaLinks(["_lightBulb.png"])
+
 		(0..limit).collect{it*mult} each {
 			mapConcept(dbMan.db.concepts[it])
 		}
@@ -122,8 +129,10 @@ public class Data2Crowd {
 
 
 	public static void main(String[] args) {
-		Data2Crowd a = new Data2Crowd()
-		a.exportToCrowd(10, 1)
+
+		new Data2Crowd().with {
+			exportToCrowd(10, 1)
+		}
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
 

@@ -9,7 +9,7 @@ public class CrowdParser {
 	String json
 
 	JsonGenerator noteGenerator = new JsonGenerator.Options()
-	.excludeFieldsByName("model")	
+	.excludeFieldsByName("model", "fieldNames")	
 	.build()
 
 	@Lazy Map jsonRoot = {
@@ -59,6 +59,7 @@ public class CrowdParser {
 	}
 
 	public void saveTo(File deckJson) {
+		println ankivocbModel
 		deckJson.write( toJsonString())
 	}
 

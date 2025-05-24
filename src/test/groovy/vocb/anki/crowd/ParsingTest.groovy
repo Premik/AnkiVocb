@@ -16,6 +16,7 @@ class ParsingTest {
 		assert Helper.jsonToString(Helper.parseJson(smallDeck)) == smallDeck
 	}
 	
+	
 	def equiv(List a, List b) {
 		a.toSet() == b.toSet()
 	}
@@ -47,7 +48,21 @@ class ParsingTest {
 		Map oldJson = Helper.parseJson(smallDeck)
 		//assertMapEq(newJson, oldJson)
 		//assertMapEq(oldJson, newJson)
-
+	}
+	
+	@Test
+	void templEdit() {
+		NoteModel m = p.ankivocbModel
+		m.css = "edited"
+		//p.saveTo(new File("/tmp/work/m.json"))
+		String json = p.toJsonString()
+		CrowdParser p2 = new CrowdParser(json:json)
+		NoteModel m2 = p.ankivocbModel
+		assert m.css == m2.css
+		assert m2.css == "edited"
+		
+		//assertMapEq(newJson, oldJson)
+		//assertMapEq(oldJson, newJson)
 	}
 
 	@Test

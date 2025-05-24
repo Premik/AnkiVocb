@@ -39,11 +39,16 @@ class Data2CrowdTest {
 	void renderCardTemplate() {
 		ConfigObject  renderCardTemplate= dc.cfg.renderCardTemplate
 		NoteModel nm = dc.renderCardTemplate(renderCardTemplate)
-		assert nm
-		nm.tmpls.each {
-			println "${it}"
-		}
+		assert nm		
 		nm.assureIsComplete()
+		String css = nm.css
+		assert css
+		assert nm === dc.vocbModel.noteModel
+		assert nm === dc.vocbModel.parser.ankivocbModel
+		dc.vocbModel.syncNoteModels()
+		String json = dc.vocbModel.parser.toJsonString()
+		CrowdParser p2 = new CrowdParser(json:json)
+		assert p2.ankivocbModel.css == css
 	
 	}
 }
