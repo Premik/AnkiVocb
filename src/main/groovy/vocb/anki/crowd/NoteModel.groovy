@@ -51,10 +51,10 @@ public class NoteModel  {
 		return note[getFieldIndex(name)]
 	}
 	
-	String setFielValue(Note note, String name, String value) {
+	String setFielValue(Note note, String name, Object value) {
 		assert name
 		note.assertIsComplete()
-		note[getFieldIndex(name)] = value
+		note[getFieldIndex(name)] = value?.toString()?:""
 	}
 
 	int getFieldIndex(String name, boolean mustExists=true) {
