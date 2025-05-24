@@ -1374,12 +1374,6 @@ concepts:
     lang: cs
   - term: trvalo
     lang: cs
-  - term: převzal
-    lang: cs
-  - term: bral
-    lang: cs
-  - term: uchopil
-    lang: cs
   freq: 501669.00000
   origins: ["corpus"]
 ##  might   ################################################################# ▃ 35%
@@ -1387,10 +1381,6 @@ concepts:
   - term: might
     lang: en
   - term: by mohlo
-    lang: cs
-  - term: může
-    lang: cs
-  - term: mohl
     lang: cs
   freq: 498257.00000
   origins: ["corpus"]
@@ -1400,13 +1390,7 @@ concepts:
     lang: en
   - term: první
     lang: cs
-  - term: nejprve
-    lang: cs
-  - term: nejdříve
-    lang: cs
   - term: poprvé
-    lang: cs
-  - term: za prvé
     lang: cs
   freq: 497764.00000
   origins: ["corpus"]
@@ -1415,8 +1399,6 @@ concepts:
   - term: without
     lang: en
   - term: bez
-    lang: cs
-  - term: aniž by
     lang: cs
   freq: 496066.00000
   origins: ["corpus"]
@@ -1428,24 +1410,17 @@ concepts:
     lang: cs
   - term: dobrý
     lang: cs
-  - term: dobrou
-    lang: cs
-  - term: dobrá
-    lang: cs
-  - term: blaho
-    lang: cs
   freq: 490930.50000
   origins: ["corpus"]
-##  himself   ############################################################### ▃ 35%
+##  himself   ###############################################################
 - terms: 
   - term: himself
     lang: en
-  - term: sám
-    lang: cs
   - term: sám sebe
     lang: cs
   - term: sebe
     lang: cs
+  state: ignore
   freq: 486383.00000
   origins: ["corpus"]
 ##  own   ################################################################### ▃ 35%
@@ -1456,10 +1431,6 @@ concepts:
     lang: cs
   - term: vlastnit
     lang: cs
-  - term: drahý
-    lang: cs
-  - term: sám
-    lang: cs
   freq: 478353.50000
   origins: ["corpus"]
 ##  again   ################################################################# ▃ 35%
@@ -1468,13 +1439,7 @@ concepts:
     lang: en
   - term: znovu
     lang: cs
-  - term: opět
-    lang: cs
   - term: zase
-    lang: cs
-  - term: zas
-    lang: cs
-  - term: opakujte
     lang: cs
   freq: 476062.50000
   origins: ["corpus"]
@@ -1486,12 +1451,6 @@ concepts:
     lang: cs
   - term: dej
     lang: cs
-  - term: dejte
-    lang: cs
-  - term: dávají
-    lang: cs
-  - term: darovat
-    lang: cs
   freq: 469253.00000
   origins: ["corpus"]
 ##  new   ################################################################### ▃ 35%
@@ -1501,12 +1460,6 @@ concepts:
   - term: nové
     lang: cs
   - term: nový
-    lang: cs
-  - term: nových
-    lang: cs
-  - term: nového
-    lang: cs
-  - term: nová
     lang: cs
   freq: 467016.50000
   origins: ["corpus"]
@@ -1518,8 +1471,6 @@ concepts:
     lang: cs
   - term: každé
     lang: cs
-  - term: každou
-    lang: cs
   freq: 458591.50000
   origins: ["corpus"]
 ##  same   ################################################################## ▃ 35%
@@ -1528,17 +1479,11 @@ concepts:
     lang: en
   - term: stejné
     lang: cs
-  - term: týž
-    lang: cs
-  - term: téhož
-    lang: cs
-  - term: totéž
-    lang: cs
-  - term: téže
+  - term: stejně
     lang: cs
   freq: 456106.00000
   origins: ["corpus"]
-##  shall   ################################################################# ▃ 35%
+##  shall   #################################################################
 - terms: 
   - term: shall
     lang: en
@@ -1546,19 +1491,16 @@ concepts:
     lang: cs
   - term: se
     lang: cs
+  state: ignore
   freq: 449921.50000
   origins: ["corpus"]
 ##  seemed   ################################################################ ▃ 35%
 - terms: 
   - term: seemed
     lang: en
-  - term: zdálo
+  - term: zdálo se
     lang: cs
   - term: vypadalo
-    lang: cs
-  - term: připadalo
-    lang: cs
-  - term: zřejmě
     lang: cs
   freq: 447884.00000
   origins: ["corpus"]
@@ -1570,12 +1512,6 @@ concepts:
     lang: cs
   - term: podíval
     lang: cs
-  - term: díval
-    lang: cs
-  - term: pohlédl
-    lang: cs
-  - term: hledal
-    lang: cs
   freq: 447491.00000
   origins: ["corpus"]
 ##  called   ################################################################ ▃ 35%
@@ -1585,12 +1521,6 @@ concepts:
   - term: nazývá
     lang: cs
   - term: volal
-    lang: cs
-  - term: s názvem
-    lang: cs
-  - term: nazvaný
-    lang: cs
-  - term: zvané
     lang: cs
   freq: 445602.00000
   origins: ["corpus"]
@@ -1602,18 +1532,13 @@ concepts:
     lang: cs
   - term: chtít
     lang: cs
-  - term: potřeba
-    lang: cs
-  - term: chceš
-    lang: cs
-  - term: chci
-    lang: cs
   freq: 434592.00000
   origins: ["corpus"]
-##  de   #################################################################### ▃ 30%
+##  de   ####################################################################
 - terms: 
   - term: de
     lang: cs
+  state: ignore
   freq: 433393.00000
   origins: ["corpus"]
 ##  way   ################################################################### ▃ 35%
@@ -1622,30 +1547,21 @@ concepts:
     lang: en
   - term: způsob
     lang: cs
-  - term: cestu
-    lang: cs
-  - term: cestě
-    lang: cs
   - term: cesta
-    lang: cs
-  - term: mimochodem
     lang: cs
   freq: 433315.50000
   origins: ["corpus"]
-##  got   ################################################################### ▃ 35%
+##  got   ###################################################################
 - terms: 
   - term: got
     lang: en
   - term: dostal
     lang: cs
-  - term: mám
-    lang: cs
-  - term: máš
-    lang: cs
   - term: získal
     lang: cs
   - term: má
     lang: cs
+  state: ignore
   freq: 432016.00000
   origins: ["corpus"]
 ##  tell   ################################################################## ▃ 35%
@@ -1656,12 +1572,6 @@ concepts:
     lang: cs
   - term: řekni
     lang: cs
-  - term: řekněte
-    lang: cs
-  - term: pověz
-    lang: cs
-  - term: vyprávět
-    lang: cs
   freq: 431716.00000
   origins: ["corpus"]
 ##  thing   ################################################################# ▃ 35%
@@ -1669,14 +1579,6 @@ concepts:
   - term: thing
     lang: en
   - term: věc
-    lang: cs
-  - term: věci
-    lang: cs
-  - term: ta věc
-    lang: cs
-  - term: majetek
-    lang: cs
-  - term: ještě jedna věc
     lang: cs
   freq: 431098.00000
   origins: ["corpus"]
@@ -1686,13 +1588,7 @@ concepts:
     lang: en
   - term: dobře
     lang: cs
-  - term: "no"
-    lang: cs
   - term: dobrá
-    lang: cs
-  - term: tak
-    lang: cs
-  - term: i
     lang: cs
   freq: 430407.50000
   origins: ["corpus"]
@@ -1702,13 +1598,7 @@ concepts:
     lang: en
   - term: udělal
     lang: cs
-  - term: provedeno
-    lang: cs
   - term: hotovo
-    lang: cs
-  - term: provádí
-    lang: cs
-  - term: vykonáno
     lang: cs
   freq: 430389.00000
   origins: ["corpus"]
@@ -1720,23 +1610,15 @@ concepts:
     lang: cs
   - term: zaslechl
     lang: cs
-  - term: neslyšeli
-    lang: cs
-  - term: vyslechnut
-    lang: cs
   freq: 429972.00000
   origins: ["corpus"]
 ##  days   ################################################################## ▃ 35%
 - terms: 
   - term: days
     lang: en
-  - term: dní
-    lang: cs
-  - term: dnů
-    lang: cs
   - term: dny
     lang: cs
-  - term: dnech
+  - term: dnů
     lang: cs
   freq: 426104.00000
   origins: ["corpus"]
@@ -1746,13 +1628,7 @@ concepts:
     lang: en
   - term: řekl
     lang: cs
-  - term: říkal
-    lang: cs
-  - term: mi řečeno
-    lang: cs
   - term: řečeno
-    lang: cs
-  - term: vyprávěl
     lang: cs
   freq: 424696.00000
   origins: ["corpus"]
@@ -1761,14 +1637,6 @@ concepts:
   - term: lord
     lang: en
   - term: pán
-    lang: cs
-  - term: pána
-    lang: cs
-  - term: lorde
-    lang: cs
-  - term: hospodin
-    lang: cs
-  - term: pánu
     lang: cs
   freq: 422407.00000
   origins: ["corpus"]
@@ -1780,20 +1648,12 @@ concepts:
     lang: cs
   - term: zeptal
     lang: cs
-  - term: ptal
-    lang: cs
-  - term: žádal
-    lang: cs
-  - term: vyzváni
-    lang: cs
   freq: 420044.00000
   origins: ["corpus"]
-##  going   ################################################################# ▃ 35%
+##  going   #################################################################
 - terms: 
   - term: going
     lang: en
-  - term: chystáte
-    lang: cs
   - term: jít
     lang: cs
   - term: děje
@@ -1802,9 +1662,10 @@ concepts:
     lang: cs
   - term: půjdete
     lang: cs
+  state: ignore
   freq: 419315.00000
   origins: ["corpus"]
-##  seen   ################################################################## ▃ 35%
+##  seen   ##################################################################
 - terms: 
   - term: seen
     lang: en
@@ -1818,9 +1679,10 @@ concepts:
     lang: cs
   - term: pohlížet
     lang: cs
+  state: ignore
   freq: 418862.00000
   origins: ["corpus"]
-##  having   ################################################################ ▃ 35%
+##  having   ################################################################
 - terms: 
   - term: having
     lang: en
@@ -1834,6 +1696,7 @@ concepts:
     lang: cs
   - term: má
     lang: cs
+  state: ignore
   freq: 415355.00000
   origins: ["corpus"]
 ##  even   ################################################################## ▃ 35%
@@ -1842,11 +1705,7 @@ concepts:
     lang: en
   - term: dokonce
     lang: cs
-  - term: i
-    lang: cs
-  - term: ještě
-    lang: cs
-  - term: ani
+  - term: sudý
     lang: cs
   freq: 414918.50000
   origins: ["corpus"]
@@ -1856,13 +1715,7 @@ concepts:
     lang: en
   - term: najít
     lang: cs
-  - term: nalézt
-    lang: cs
   - term: vyhledat
-    lang: cs
-  - term: najdete
-    lang: cs
-  - term: hledání
     lang: cs
   freq: 413161.50000
   origins: ["corpus"]
@@ -1874,12 +1727,6 @@ concepts:
     lang: cs
   - term: znal
     lang: cs
-  - term: nevěděl
-    lang: cs
-  - term: neznal
-    lang: cs
-  - term: nepoznal
-    lang: cs
   freq: 413101.00000
   origins: ["corpus"]
 ##  through   ############################################################### ▃ 35%
@@ -1887,8 +1734,6 @@ concepts:
   - term: through
     lang: en
   - term: prostřednictvím
-    lang: cs
-  - term: přes
     lang: cs
   - term: skrze
     lang: cs
@@ -1898,15 +1743,7 @@ concepts:
 - terms: 
   - term: world
     lang: en
-  - term: světě
-    lang: cs
   - term: svět
-    lang: cs
-  - term: světa
-    lang: cs
-  - term: světové
-    lang: cs
-  - term: světu
     lang: cs
   freq: 410531.50000
   origins: ["corpus"]
@@ -1918,12 +1755,6 @@ concepts:
     lang: cs
   - term: bytost
     lang: cs
-  - term: být
-    lang: cs
-  - term: je
-    lang: cs
-  - term: právě
-    lang: cs
   freq: 406957.50000
   origins: ["corpus"]
 ##  long   ################################################################## ▃ 35%
@@ -1934,23 +1765,13 @@ concepts:
     lang: cs
   - term: dlouho
     lang: cs
-  - term: dávno
-    lang: cs
-  - term: delší
-    lang: cs
   freq: 405456.50000
   origins: ["corpus"]
 ##  am   #################################################################### ▃ 35%
 - terms: 
   - term: am
-    lang: cs
-  - term: m
-    lang: cs
-  - term: dop
-    lang: cs
-  - term: pm
-    lang: cs
-  - term: hodin
+    lang: en
+  - term: jsem
     lang: cs
   freq: 398204.00000
   origins: ["corpus"]
@@ -1960,8 +1781,6 @@ concepts:
     lang: en
   - term: proti
     lang: cs
-  - term: vůči
-    lang: cs
   freq: 386919.00000
   origins: ["corpus"]
 ##  hands   ################################################################# ▃ 35%
@@ -1970,12 +1789,6 @@ concepts:
     lang: en
   - term: ruce
     lang: cs
-  - term: rukou
-    lang: cs
-  - term: rukama
-    lang: cs
-  - term: rukách
-    lang: cs
   freq: 385081.00000
   origins: ["corpus"]
 ##  three   ################################################################# ▃ 35%
@@ -1983,12 +1796,6 @@ concepts:
   - term: three
     lang: en
   - term: tři
-    lang: cs
-  - term: třech
-    lang: cs
-  - term: třemi
-    lang: cs
-  - term: před třemi
     lang: cs
   - term: trojka
     lang: cs
@@ -2000,8 +1807,6 @@ concepts:
     lang: en
   - term: slova
     lang: cs
-  - term: řečeno
-    lang: cs
   freq: 380328.00000
   origins: ["corpus"]
 ##  back   ################################################################## ▃ 35%
@@ -2009,12 +1814,6 @@ concepts:
   - term: back
     lang: en
   - term: zpět
-    lang: cs
-  - term: zpátky
-    lang: cs
-  - term: zadní
-    lang: cs
-  - term: bek
     lang: cs
   - term: záda
     lang: cs
@@ -2025,10 +1824,6 @@ concepts:
   - term: young
     lang: en
   - term: mladý
-    lang: cs
-  - term: malé
-    lang: cs
-  - term: malých
     lang: cs
   freq: 375916.00000
   origins: ["corpus"]
@@ -2046,13 +1841,7 @@ concepts:
     lang: en
   - term: dal
     lang: cs
-  - term: dala
-    lang: cs
   - term: dali
-    lang: cs
-  - term: kladívko
-    lang: cs
-  - term: dával
     lang: cs
   freq: 369036.00000
   origins: ["corpus"]
@@ -2060,15 +1849,9 @@ concepts:
 - terms: 
   - term: put
     lang: en
+  - term: položit
+    lang: cs
   - term: dát
-    lang: cs
-  - term: dal
-    lang: cs
-  - term: dejte
-    lang: cs
-  - term: kladen
-    lang: cs
-  - term: umístit
     lang: cs
   freq: 366334.50000
   origins: ["corpus"]
@@ -5414,226 +5197,514 @@ concepts:
     lang: cs
   freq: 146302.50000
   origins: ["corpus"]
-##  lay   ################################################################### ▃ 30%
+##  lay   ################################################################### ▃ 35%
 - terms: 
   - term: lay
     lang: en
+  - term: ležel
+    lang: cs
+  - term: položit
+    lang: cs
+  - term: laičtí
+    lang: cs
+  - term: kladou
+    lang: cs
+  - term: snášet
+    lang: cs
   freq: 146055.50000
   origins: ["corpus"]
-##  meet   ################################################################## ▃ 30%
+##  meet   ################################################################## ▃ 35%
 - terms: 
   - term: meet
     lang: en
+  - term: splňují
+    lang: cs
+  - term: setkat
+    lang: cs
+  - term: poznávejte
+    lang: cs
+  - term: schází
+    lang: cs
+  - term: seznamte se s
+    lang: cs
   freq: 145712.00000
   origins: ["corpus"]
-##  art   ################################################################### ▃ 30%
+##  art   ################################################################### ▃ 35%
 - terms: 
   - term: art
     lang: en
+  - term: umění
+    lang: cs
+  - term: umělecké
+    lang: cs
+  - term: výtvarné
+    lang: cs
+  - term: dovednost
+    lang: cs
   freq: 145697.50000
   origins: ["corpus"]
-##  london   ################################################################ ▃ 30%
+##  london   ################################################################ ▃ 35%
 - terms: 
   - term: london
     lang: en
+  - term: londýn
+    lang: cs
   freq: 145606.00000
   origins: ["corpus"]
-##  laid   ################################################################## ▃ 30%
+##  laid   ################################################################## ▃ 35%
 - terms: 
   - term: laid
     lang: en
+  - term: položil
+    lang: cs
+  - term: stanovena
+    lang: cs
+  - term: stanovených
+    lang: cs
+  - term: kladen
+    lang: cs
   freq: 145490.00000
   origins: ["corpus"]
-##  led   ################################################################### ▃ 30%
+##  led   ################################################################### ▃ 35%
 - terms: 
   - term: led
-    lang: en
+    lang: cs
+  - term: vedl
+    lang: cs
+  - term: vedeni
+    lang: cs
+  - term: přivedla
+    lang: cs
+  - term: dovedl
+    lang: cs
   freq: 145393.00000
   origins: ["corpus"]
-##  copyright   ############################################################# ▃ 30%
+##  copyright   ############################################################# ▃ 35%
 - terms: 
   - term: copyright
-    lang: en
+    lang: cs
+  - term: autorských práv
+    lang: cs
+  - term: o autorských právech
+    lang: cs
   freq: 145244.00000
   origins: ["corpus"]
-##  group   ################################################################# ▃ 30%
+##  group   ################################################################# ▃ 35%
 - terms: 
   - term: group
     lang: en
+  - term: skupiny
+    lang: cs
+  - term: seskupit
+    lang: cs
   freq: 145209.00000
   origins: ["corpus"]
-##  doing   ################################################################# ▃ 30%
+##  doing   ################################################################# ▃ 35%
 - terms: 
   - term: doing
     lang: en
+  - term: dělá
+    lang: cs
+  - term: jednání
+    lang: cs
+  - term: daří
+    lang: cs
+  - term: tom
+    lang: cs
+  - term: vede
+    lang: cs
   freq: 145131.00000
   origins: ["corpus"]
-##  bad   ################################################################### ▃ 30%
+##  bad   ################################################################### ▃ 35%
 - terms: 
   - term: bad
     lang: en
+  - term: špatné
+    lang: cs
+  - term: chybný
+    lang: cs
+  - term: zlé
+    lang: cs
+  - term: bolavý
+    lang: cs
+  - term: zlý
+    lang: cs
   freq: 143899.50000
   origins: ["corpus"]
-##  help   ################################################################## ▃ 30%
+##  help   ################################################################## ▃ 35%
 - terms: 
   - term: help
     lang: en
+  - term: nápověda
+    lang: cs
+  - term: pomoci
+    lang: cs
+  - term: pomoc
+    lang: cs
+  - term: pomáhají
+    lang: cs
+  - term: pomozte
+    lang: cs
   freq: 143716.50000
   origins: ["corpus"]
-##  opened   ################################################################ ▃ 30%
+##  opened   ################################################################ ▃ 35%
 - terms: 
   - term: opened
     lang: en
+  - term: otevřít
+    lang: cs
+  - term: otevírat
+    lang: cs
+  - term: nechráněný
+    lang: cs
+  - term: zahájena
+    lang: cs
   freq: 143625.00000
   origins: ["corpus"]
-##  ground   ################################################################ ▃ 30%
+##  ground   ################################################################ ▃ 35%
 - terms: 
   - term: ground
     lang: en
+  - term: zem
+    lang: cs
+  - term: pozemní
+    lang: cs
+  - term: zemi
+    lang: cs
+  - term: mleté
+    lang: cs
+  - term: vozovkou
+    lang: cs
   freq: 143541.00000
   origins: ["corpus"]
-##  second   ################################################################ ▃ 30%
+##  second   ################################################################ ▃ 35%
 - terms: 
   - term: second
     lang: en
+  - term: druhé
+    lang: cs
+  - term: druhý
+    lang: cs
+  - term: druhá
+    lang: cs
+  - term: druhou
+    lang: cs
+  - term: sekundu
+    lang: cs
   freq: 143161.00000
   origins: ["corpus"]
-##  call   ################################################################## ▃ 30%
+##  call   ################################################################## ▃ 35%
 - terms: 
   - term: call
     lang: en
+  - term: volání
+    lang: cs
+  - term: zavolat
+    lang: cs
+  - term: volat
+    lang: cs
+  - term: hovor
+    lang: cs
+  - term: volejte
+    lang: cs
   freq: 143102.00000
   origins: ["corpus"]
-##  town   ################################################################## ▃ 30%
+##  town   ################################################################## ▃ 35%
 - terms: 
   - term: town
     lang: en
+  - term: město
+    lang: cs
+  - term: městě
+    lang: cs
+  - term: města
+    lang: cs
+  - term: městské
+    lang: cs
   freq: 142754.00000
   origins: ["corpus"]
-##  near   ################################################################## ▃ 30%
+##  near   ################################################################## ▃ 35%
 - terms: 
   - term: near
     lang: en
+  - term: poblíž
+    lang: cs
   freq: 142483.50000
   origins: ["corpus"]
-##  strong   ################################################################ ▃ 30%
+##  strong   ################################################################ ▃ 35%
 - terms: 
   - term: strong
     lang: en
+  - term: silné
+    lang: cs
+  - term: pevné
+    lang: cs
+  - term: výrazný
+    lang: cs
   freq: 141950.50000
   origins: ["corpus"]
-##  along   ################################################################# ▃ 30%
+##  along   ################################################################# ▃ 35%
 - terms: 
   - term: along
     lang: en
+  - term: podél
+    lang: cs
   freq: 141819.00000
   origins: ["corpus"]
-##  public   ################################################################ ▃ 30%
+##  public   ################################################################ ▃ 35%
 - terms: 
   - term: public
     lang: en
+  - term: veřejné
+    lang: cs
+  - term: veřejnosti
+    lang: cs
+  - term: oblasti veřejného
+    lang: cs
+  - term: státní
+    lang: cs
   freq: 141621.00000
   origins: ["corpus"]
-##  hath   ################################################################## ▃ 30%
+##  hath   ################################################################## ▃ 35%
 - terms: 
   - term: hath
     lang: en
+  - term: kterýž
+    lang: cs
+  - term: jest
+    lang: cs
   freq: 141246.00000
   origins: ["corpus"]
-##  wanted   ################################################################ ▃ 30%
+##  wanted   ################################################################ ▃ 35%
 - terms: 
   - term: wanted
     lang: en
+  - term: chtěl
+    lang: cs
+  - term: hledaný
+    lang: cs
+  - term: potřeboval
+    lang: cs
+  - term: potøeboval
+    lang: cs
+  - term: nechtěl
+    lang: cs
   freq: 140608.00000
   origins: ["corpus"]
-##  return   ################################################################ ▃ 30%
+##  return   ################################################################ ▃ 35%
 - terms: 
   - term: return
     lang: en
+  - term: návrat
+    lang: cs
+  - term: vrátit
+    lang: cs
+  - term: vratky
+    lang: cs
+  - term: vrácení
+    lang: cs
+  - term: vrácená
+    lang: cs
   freq: 140295.50000
   origins: ["corpus"]
-##  need   ################################################################## ▃ 30%
+##  need   ################################################################## ▃ 35%
 - terms: 
   - term: need
     lang: en
+  - term: potřebovat
+    lang: cs
+  - term: potřeba
+    lang: cs
+  - term: třeba
+    lang: cs
+  - term: nutnosti
+    lang: cs
+  - term: zapotřebí
+    lang: cs
   freq: 139916.00000
   origins: ["corpus"]
-##  dear   ################################################################## ▃ 30%
+##  dear   ################################################################## ▃ 35%
 - terms: 
   - term: dear
     lang: en
+  - term: vážení
+    lang: cs
+  - term: drahá
+    lang: cs
+  - term: milý
+    lang: cs
+  - term: drahý
+    lang: cs
+  - term: drahoušku
+    lang: cs
   freq: 139827.00000
   origins: ["corpus"]
-##  dead   ################################################################## ▃ 30%
+##  dead   ################################################################## ▃ 35%
 - terms: 
   - term: dead
     lang: en
+  - term: mrtvý
+    lang: cs
+  - term: mrtvé
+    lang: cs
+  - term: mrtvá
+    lang: cs
+  - term: mrtví
+    lang: cs
+  - term: mrtev
+    lang: cs
   freq: 139580.00000
   origins: ["corpus"]
-##  makes   ################################################################# ▃ 30%
+##  makes   ################################################################# ▃ 35%
 - terms: 
   - term: makes
     lang: en
+  - term: dělá
+    lang: cs
+  - term: činí
+    lang: cs
+  - term: umožňuje
+    lang: cs
+  - term: díla
+    lang: cs
+  - term: neposkytuje
+    lang: cs
   freq: 139167.00000
   origins: ["corpus"]
-##  real   ################################################################## ▃ 30%
+##  real   ################################################################## ▃ 35%
 - terms: 
   - term: real
     lang: en
+  - term: reálném
+    lang: cs
+  - term: skutečné
+    lang: cs
+  - term: fyzický
+    lang: cs
+  - term: opravdu
+    lang: cs
+  - term: pravé
+    lang: cs
   freq: 139116.50000
   origins: ["corpus"]
-##  case   ################################################################## ▃ 30%
+##  case   ################################################################## ▃ 35%
 - terms: 
   - term: case
     lang: en
+  - term: případě
+    lang: cs
+  - term: bedna
+    lang: cs
+  - term: věc
+    lang: cs
+  - term: pouzdro
+    lang: cs
+  - term: věci
+    lang: cs
   freq: 138689.50000
   origins: ["corpus"]
-##  student   ############################################################### ▃ 30%
+##  student   ############################################################### ▃ 35%
 - terms: 
   - term: student
-    lang: en
+    lang: cs
+  - term: žák
+    lang: cs
   freq: 138627.05000
   origins: ["corpus"]
-##  thousand   ############################################################## ▃ 30%
+##  thousand   ############################################################## ▃ 35%
 - terms: 
   - term: thousand
     lang: en
+  - term: tisíc
+    lang: cs
+  - term: tis
+    lang: cs
   freq: 138465.00000
   origins: ["corpus"]
-##  important   ############################################################# ▃ 30%
+##  important   ############################################################# ▃ 35%
 - terms: 
   - term: important
     lang: en
+  - term: důležité
+    lang: cs
+  - term: významné
+    lang: cs
   freq: 138241.00000
   origins: ["corpus"]
-##  change   ################################################################ ▃ 30%
+##  change   ################################################################ ▃ 35%
 - terms: 
   - term: change
     lang: en
+  - term: změnit
+    lang: cs
+  - term: změna
+    lang: cs
+  - term: změnu
+    lang: cs
+  - term: měnit
+    lang: cs
+  - term: změňte
+    lang: cs
   freq: 137970.00000
   origins: ["corpus"]
-##  high   ################################################################## ▃ 30%
+##  high   ################################################################## ▃ 35%
 - terms: 
   - term: high
     lang: en
+  - term: vysoké
+    lang: cs
+  - term: vysoce
+    lang: cs
+  - term: s vysokým
+    lang: cs
+  - term: střední
+    lang: cs
   freq: 137721.50000
   origins: ["corpus"]
-##  interest   ############################################################## ▃ 30%
+##  interest   ############################################################## ▃ 35%
 - terms: 
   - term: interest
     lang: en
+  - term: úrokové
+    lang: cs
+  - term: zájmu
+    lang: cs
+  - term: zájem
+    lang: cs
+  - term: úroky
+    lang: cs
+  - term: úroků
+    lang: cs
   freq: 137310.50000
   origins: ["corpus"]
-##  therefore   ############################################################# ▃ 30%
+##  therefore   ############################################################# ▃ 35%
 - terms: 
   - term: therefore
     lang: en
+  - term: proto
+    lang: cs
+  - term: tedy
+    lang: cs
+  - term: tudíž
+    lang: cs
+  - term: důvodu
+    lang: cs
   freq: 137061.50000
   origins: ["corpus"]
-##  write   ################################################################# ▃ 30%
+##  write   ################################################################# ▃ 35%
 - terms: 
   - term: write
     lang: en
+  - term: napsat
+    lang: cs
+  - term: psát
+    lang: cs
+  - term: zápis
+    lang: cs
+  - term: napište
+    lang: cs
+  - term: zapsat
+    lang: cs
   freq: 137054.50000
   origins: ["corpus"]
 ##  english   ############################################################### ▃ 30%
@@ -5642,309 +5713,689 @@ concepts:
     lang: en
   freq: 136965.50000
   origins: ["corpus"]
-##  tried   ################################################################# ▃ 30%
+##  tried   ################################################################# ▃ 35%
 - terms: 
   - term: tried
     lang: en
+  - term: zkoušeli
+    lang: cs
+  - term: snažil
+    lang: cs
+  - term: zkusil
+    lang: cs
+  - term: pokusil
+    lang: cs
+  - term: vyzkoušel
+    lang: cs
   freq: 136507.00000
   origins: ["corpus"]
-##  dr   #################################################################### ▃ 30%
+##  dr   #################################################################### ▃ 35%
 - terms: 
   - term: dr
-    lang: en
+    lang: cs
+  - term: doktor
+    lang: cs
   freq: 135902.00000
   origins: ["corpus"]
-##  lived   ################################################################# ▃ 30%
+##  lived   ################################################################# ▃ 35%
 - terms: 
   - term: lived
     lang: en
+  - term: žil
+    lang: cs
+  - term: bydlel
+    lang: cs
+  - term: nežil
+    lang: cs
+  - term: prožil
+    lang: cs
   freq: 135512.00000
   origins: ["corpus"]
-##  show   ################################################################## ▃ 30%
+##  show   ################################################################## ▃ 35%
 - terms: 
   - term: show
     lang: en
+  - term: ukázat
+    lang: cs
+  - term: zobrazit
+    lang: cs
+  - term: pořad
+    lang: cs
+  - term: ukazují
+    lang: cs
+  - term: ukaž
+    lang: cs
   freq: 135451.00000
   origins: ["corpus"]
-##  sure   ################################################################## ▃ 30%
+##  sure   ################################################################## ▃ 35%
 - terms: 
   - term: sure
     lang: en
+  - term: jistý
+    lang: cs
+  - term: určitě
+    lang: cs
+  - term: jasně
+    lang: cs
+  - term: si jista
+    lang: cs
+  - term: ujistěte
+    lang: cs
   freq: 135369.50000
   origins: ["corpus"]
-##  everything   ############################################################ ▃ 30%
+##  everything   ############################################################ ▃ 35%
 - terms: 
   - term: everything
     lang: en
+  - term: všechno
+    lang: cs
+  - term: vše
+    lang: cs
+  - term: vším
+    lang: cs
+  - term: všeho
+    lang: cs
+  - term: všemu
+    lang: cs
   freq: 134993.00000
   origins: ["corpus"]
-##  known   ################################################################# ▃ 30%
+##  known   ################################################################# ▃ 35%
 - terms: 
   - term: known
     lang: en
+  - term: známý
+    lang: cs
+  - term: známé
+    lang: cs
+  - term: známo
+    lang: cs
+  - term: známá
+    lang: cs
+  - term: znám
+    lang: cs
   freq: 134231.50000
   origins: ["corpus"]
-##  unto   ################################################################## ▃ 30%
+##  unto   ################################################################## ▃ 35%
 - terms: 
   - term: unto
     lang: en
+  - term: ke
+    lang: cs
   freq: 134048.00000
   origins: ["corpus"]
-##  land   ################################################################## ▃ 30%
+##  land   ################################################################## ▃ 35%
 - terms: 
   - term: land
     lang: en
+  - term: pozemků
+    lang: cs
+  - term: půdy
+    lang: cs
+  - term: přistát
+    lang: cs
+  - term: zemi
+    lang: cs
+  - term: země
+    lang: cs
   freq: 133539.00000
   origins: ["corpus"]
-##  placed   ################################################################ ▃ 30%
+##  placed   ################################################################ ▃ 35%
 - terms: 
   - term: placed
     lang: en
+  - term: umístěny
+    lang: cs
+  - term: uváděny
+    lang: cs
+  - term: kladen
+    lang: cs
+  - term: uvedeny
+    lang: cs
+  - term: vloženy
+    lang: cs
   freq: 133084.00000
   origins: ["corpus"]
-##  fire   ################################################################## ▃ 30%
+##  fire   ################################################################## ▃ 35%
 - terms: 
   - term: fire
     lang: en
+  - term: požáru
+    lang: cs
+  - term: oheň
+    lang: cs
+  - term: ohně
+    lang: cs
+  - term: ohni
+    lang: cs
+  - term: palbu
+    lang: cs
   freq: 133021.00000
   origins: ["corpus"]
-##  letters   ############################################################### ▃ 30%
+##  letters   ############################################################### ▃ 35%
 - terms: 
   - term: letters
     lang: en
+  - term: dopisy
+    lang: cs
+  - term: písmena
+    lang: cs
   freq: 132785.00000
   origins: ["corpus"]
-##  greater   ############################################################### ▃ 30%
+##  greater   ############################################################### ▃ 35%
 - terms: 
   - term: greater
     lang: en
+  - term: větší
+    lang: cs
+  - term: vyšší
+    lang: cs
+  - term: delší
+    lang: cs
   freq: 132045.00000
   origins: ["corpus"]
-##  else   ################################################################## ▃ 30%
+##  else   ################################################################## ▃ 35%
 - terms: 
   - term: else
     lang: en
+  - term: jiného
+    lang: cs
+  - term: jiný
+    lang: cs
+  - term: jinde
+    lang: cs
+  - term: jinak
+    lang: cs
+  - term: ostatní
+    lang: cs
   freq: 131928.00000
   origins: ["corpus"]
-##  month   ################################################################# ▃ 30%
+##  month   ################################################################# ▃ 35%
 - terms: 
   - term: month
     lang: en
+  - term: měsíc
+    lang: cs
   freq: 131861.00000
   origins: ["corpus"]
-##  either   ################################################################ ▃ 30%
+##  either   ################################################################ ▃ 35%
 - terms: 
   - term: either
     lang: en
+  - term: buď
+    lang: cs
   freq: 130841.50000
   origins: ["corpus"]
-##  ran   ################################################################### ▃ 30%
+##  ran   ################################################################### ▃ 35%
 - terms: 
   - term: ran
     lang: en
+  - term: běžel
+    lang: cs
+  - term: spustili
+    lang: cs
+  - term: vyběhl
+    lang: cs
+  - term: rozběhl
+    lang: cs
+  - term: utíkal
+    lang: cs
   freq: 130394.00000
   origins: ["corpus"]
-##  toward   ################################################################ ▃ 30%
+##  toward   ################################################################ ▃ 35%
 - terms: 
   - term: toward
     lang: en
+  - term: k
+    lang: cs
   freq: 129478.00000
   origins: ["corpus"]
-##  lips   ################################################################## ▃ 30%
+##  lips   ################################################################## ▃ 35%
 - terms: 
   - term: lips
     lang: en
+  - term: rty
+    lang: cs
+  - term: rtů
+    lang: cs
+  - term: rtech
+    lang: cs
+  - term: pysky
+    lang: cs
+  - term: stydké pysky
+    lang: cs
   freq: 129473.00000
   origins: ["corpus"]
-##  remained   ############################################################## ▃ 30%
+##  remained   ############################################################## ▃ 35%
 - terms: 
   - term: remained
     lang: en
+  - term: zůstal
+    lang: cs
+  - term: udržel
+    lang: cs
+  - term: mrtvola
+    lang: cs
   freq: 129411.00000
   origins: ["corpus"]
-##  truth   ################################################################# ▃ 30%
+##  truth   ################################################################# ▃ 35%
 - terms: 
   - term: truth
     lang: en
+  - term: pravdu
+    lang: cs
+  - term: po pravdě řečeno
+    lang: cs
   freq: 128851.50000
   origins: ["corpus"]
-##  history   ############################################################### ▃ 30%
+##  history   ############################################################### ▃ 35%
 - terms: 
   - term: history
     lang: en
+  - term: historie
+    lang: cs
+  - term: dějiny
+    lang: cs
+  - term: anamnéze
+    lang: cs
+  - term: dějepisu
+    lang: cs
+  - term: minulost
+    lang: cs
   freq: 128431.00000
   origins: ["corpus"]
-##  remember   ############################################################## ▃ 30%
+##  remember   ############################################################## ▃ 35%
 - terms: 
   - term: remember
     lang: en
+  - term: pamatujte
+    lang: cs
+  - term: vzpomenout
+    lang: cs
+  - term: nezapomeňte
+    lang: cs
+  - term: zapamatovat
+    lang: cs
+  - term: si uvědomit
+    lang: cs
   freq: 128101.00000
   origins: ["corpus"]
-##  sometimes   ############################################################# ▃ 30%
+##  sometimes   ############################################################# ▃ 35%
 - terms: 
   - term: sometimes
     lang: en
+  - term: někdy
+    lang: cs
+  - term: občas
+    lang: cs
   freq: 128077.00000
   origins: ["corpus"]
-##  care   ################################################################## ▃ 30%
+##  care   ################################################################## ▃ 35%
 - terms: 
   - term: care
     lang: en
+  - term: péče
+    lang: cs
+  - term: péči
+    lang: cs
+  - term: péče o
+    lang: cs
+  - term: líbit
+    lang: cs
+  - term: starat
+    lang: cs
   freq: 128025.00000
   origins: ["corpus"]
-##  ago   ################################################################### ▃ 30%
+##  ago   ################################################################### ▃ 35%
 - terms: 
   - term: ago
     lang: en
+  - term: lety
+    lang: cs
+  - term: dávno
+    lang: cs
   freq: 127753.50000
   origins: ["corpus"]
-##  leave   ################################################################# ▃ 30%
+##  leave   ################################################################# ▃ 35%
 - terms: 
   - term: leave
     lang: en
+  - term: opustit
+    lang: cs
+  - term: nechat
+    lang: cs
+  - term: odejít
+    lang: cs
+  - term: ponechat
+    lang: cs
+  - term: nechte
+    lang: cs
   freq: 127075.00000
   origins: ["corpus"]
-##  united   ################################################################ ▃ 30%
+##  united   ################################################################ ▃ 35%
 - terms: 
   - term: united
     lang: en
+  - term: velká
+    lang: cs
+  - term: spojené
+    lang: cs
+  - term: česká
+    lang: cs
+  - term: sjednocené
+    lang: cs
   freq: 126674.50000
   origins: ["corpus"]
-##  trees   ################################################################# ▃ 30%
+##  trees   ################################################################# ▃ 35%
 - terms: 
   - term: trees
     lang: en
+  - term: stromy
+    lang: cs
+  - term: dřevin
+    lang: cs
+  - term: větví
+    lang: cs
   freq: 126469.00000
   origins: ["corpus"]
-##  books   ################################################################# ▃ 30%
+##  books   ################################################################# ▃ 35%
 - terms: 
   - term: books
     lang: en
+  - term: knihy
+    lang: cs
+  - term: knížky
+    lang: cs
+  - term: účetní knihy
+    lang: cs
+  - term: seznamů
+    lang: cs
   freq: 125827.00000
   origins: ["corpus"]
-##  office   ################################################################ ▃ 30%
+##  office   ################################################################ ▃ 35%
 - terms: 
   - term: office
-    lang: en
+    lang: cs
+  - term: kancelář
+    lang: cs
+  - term: sady office
+    lang: cs
+  - term: bohoslužba
+    lang: cs
+  - term: úřad
+    lang: cs
   freq: 125703.50000
   origins: ["corpus"]
-##  manner   ################################################################ ▃ 30%
+##  manner   ################################################################ ▃ 35%
 - terms: 
   - term: manner
     lang: en
+  - term: způsobem
+    lang: cs
+  - term: obyčej
+    lang: cs
   freq: 125206.50000
   origins: ["corpus"]
-##  wish   ################################################################## ▃ 30%
+##  wish   ################################################################## ▃ 35%
 - terms: 
   - term: wish
     lang: en
+  - term: přání
+    lang: cs
+  - term: přát
+    lang: cs
+  - term: přejeme
+    lang: cs
+  - term: přeji
+    lang: cs
+  - term: popřát
+    lang: cs
   freq: 124440.00000
   origins: ["corpus"]
-##  although   ############################################################## ▃ 30%
+##  although   ############################################################## ▃ 35%
 - terms: 
   - term: although
     lang: en
+  - term: ačkoli
+    lang: cs
+  - term: i když
+    lang: cs
+  - term: přestože
+    lang: cs
   freq: 124296.00000
   origins: ["corpus"]
-##  early   ################################################################# ▃ 30%
+##  early   ################################################################# ▃ 35%
 - terms: 
   - term: early
     lang: en
+  - term: brzy
+    lang: cs
+  - term: počátku
+    lang: cs
+  - term: rané
+    lang: cs
+  - term: včasné
+    lang: cs
+  - term: časných
+    lang: cs
   freq: 124036.00000
   origins: ["corpus"]
-##  persons   ############################################################### ▃ 30%
+##  persons   ############################################################### ▃ 35%
 - terms: 
   - term: persons
     lang: en
+  - term: osob
+    lang: cs
+  - term: osoby
+    lang: cs
+  - term: osobám
+    lang: cs
   freq: 123820.00000
   origins: ["corpus"]
 ##  blockquote   ############################################################ ▃ 30%
 - terms: 
   - term: blockquote
-    lang: en
+    lang: cs
   freq: 123703.00000
   origins: ["corpus"]
-##  hard   ################################################################## ▃ 30%
+##  hard   ################################################################## ▃ 35%
 - terms: 
   - term: hard
     lang: en
+  - term: pevného
+    lang: cs
+  - term: pevný
+    lang: cs
+  - term: těžké
+    lang: cs
+  - term: tvrdé
+    lang: cs
+  - term: tvrdý
+    lang: cs
   freq: 123625.50000
   origins: ["corpus"]
-##  happened   ############################################################## ▃ 30%
+##  happened   ############################################################## ▃ 35%
 - terms: 
   - term: happened
     lang: en
+  - term: stalo
+    lang: cs
+  - term: nestalo
+    lang: cs
+  - term: náhodou
+    lang: cs
+  - term: přihodilo
+    lang: cs
+  - term: nedělo
+    lang: cs
   freq: 123421.00000
   origins: ["corpus"]
-##  spirit   ################################################################ ▃ 30%
+##  spirit   ################################################################ ▃ 35%
 - terms: 
   - term: spirit
     lang: en
+  - term: ducha
+    lang: cs
+  - term: duchu
+    lang: cs
+  - term: duch
+    lang: cs
+  - term: duchem
+    lang: cs
+  - term: líh
+    lang: cs
   freq: 123099.50000
   origins: ["corpus"]
-##  free   ################################################################## ▃ 30%
+##  free   ################################################################## ▃ 35%
 - terms: 
   - term: free
     lang: en
+  - term: zdarma
+    lang: cs
+  - term: volný
+    lang: cs
+  - term: bezplatné
+    lang: cs
+  - term: drzý
+    lang: cs
+  - term: svobodný
+    lang: cs
   freq: 122955.00000
   origins: ["corpus"]
-##  answer   ################################################################ ▃ 30%
+##  answer   ################################################################ ▃ 35%
 - terms: 
   - term: answer
     lang: en
+  - term: odpověď
+    lang: cs
+  - term: odpovědět
+    lang: cs
+  - term: zodpovězení
+    lang: cs
   freq: 122924.00000
   origins: ["corpus"]
-##  table   ################################################################# ▃ 30%
+##  table   ################################################################# ▃ 35%
 - terms: 
   - term: table
     lang: en
+  - term: tabulka
+    lang: cs
+  - term: stolu
+    lang: cs
+  - term: stůl
+    lang: cs
+  - term: častovat
+    lang: cs
   freq: 122685.50000
   origins: ["corpus"]
-##  drew   ################################################################## ▃ 30%
+##  drew   ################################################################## ▃ 35%
 - terms: 
   - term: drew
-    lang: en
+    lang: cs
+  - term: kreslil
+    lang: cs
+  - term: čerpal
+    lang: cs
+  - term: přitáhl
+    lang: cs
+  - term: drewe
+    lang: cs
   freq: 122264.00000
   origins: ["corpus"]
-##  minutes   ############################################################### ▃ 30%
+##  minutes   ############################################################### ▃ 35%
 - terms: 
   - term: minutes
     lang: en
+  - term: minut
+    lang: cs
+  - term: zápisy
+    lang: cs
+  - term: několika minut
+    lang: cs
+  - term: min
+    lang: cs
   freq: 122201.00000
   origins: ["corpus"]
-##  lot   ################################################################### ▃ 30%
+##  lot   ################################################################### ▃ 35%
 - terms: 
   - term: lot
     lang: en
+  - term: mnoho
+    lang: cs
+  - term: šarže
+    lang: cs
+  - term: mnohem
+    lang: cs
+  - term: šarži
+    lang: cs
+  - term: moc
+    lang: cs
   freq: 122157.80000
   origins: ["corpus"]
-##  evening   ############################################################### ▃ 30%
+##  evening   ############################################################### ▃ 35%
 - terms: 
   - term: evening
     lang: en
+  - term: večer
+    lang: cs
+  - term: dnes večer
+    lang: cs
   freq: 122106.00000
   origins: ["corpus"]
-##  effect   ################################################################ ▃ 30%
+##  effect   ################################################################ ▃ 35%
 - terms: 
   - term: effect
     lang: en
+  - term: účinek
+    lang: cs
+  - term: efekt
+    lang: cs
+  - term: vliv
+    lang: cs
+  - term: dopad
+    lang: cs
+  - term: následek
+    lang: cs
   freq: 122005.50000
   origins: ["corpus"]
-##  earth   ################################################################# ▃ 30%
+##  earth   ################################################################# ▃ 35%
 - terms: 
   - term: earth
     lang: en
+  - term: zemi
+    lang: cs
+  - term: země
+    lang: cs
+  - term: doupě
+    lang: cs
+  - term: zem
+    lang: cs
+  - term: pozemské
+    lang: cs
   freq: 121948.00000
   origins: ["corpus"]
-##  behind   ################################################################ ▃ 30%
+##  behind   ################################################################ ▃ 35%
 - terms: 
   - term: behind
     lang: en
+  - term: za
+    lang: cs
+  - term: za sebou
+    lang: cs
   freq: 121776.00000
   origins: ["corpus"]
-##  cause   ################################################################# ▃ 30%
+##  cause   ################################################################# ▃ 35%
 - terms: 
   - term: cause
     lang: en
+  - term: způsobit
+    lang: cs
+  - term: příčinou
+    lang: cs
+  - term: být příčinou
+    lang: cs
+  - term: vyvolat
+    lang: cs
+  - term: důvod
+    lang: cs
   freq: 121764.50000
   origins: ["corpus"]
