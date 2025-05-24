@@ -1,0 +1,177 @@
+{
+    "normalizedSource": "clip",
+    "displaySource": "clip",
+    "translations": [
+        {
+            "normalizedTarget": "klip",
+            "displayTarget": "klip",
+            "posTag": "NOUN",
+            "confidence": 0.5158,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "clip",
+                    "displayText": "clip",
+                    "numExamples": 15,
+                    "frequencyCount": 863
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "sponka",
+            "displayTarget": "sponka",
+            "posTag": "NOUN",
+            "confidence": 0.1008,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "clip",
+                    "displayText": "clip",
+                    "numExamples": 2,
+                    "frequencyCount": 10
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "svorku",
+            "displayTarget": "svorku",
+            "posTag": "NOUN",
+            "confidence": 0.0828,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "clamp",
+                    "displayText": "clamp",
+                    "numExamples": 5,
+                    "frequencyCount": 36
+                },
+                {
+                    "normalizedText": "clip",
+                    "displayText": "clip",
+                    "numExamples": 6,
+                    "frequencyCount": 14
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "spona",
+            "displayTarget": "spona",
+            "posTag": "NOUN",
+            "confidence": 0.0778,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "clip",
+                    "displayText": "clip",
+                    "numExamples": 7,
+                    "frequencyCount": 17
+                },
+                {
+                    "normalizedText": "buckle",
+                    "displayText": "buckle",
+                    "numExamples": 5,
+                    "frequencyCount": 14
+                },
+                {
+                    "normalizedText": "clasp",
+                    "displayText": "clasp",
+                    "numExamples": 5,
+                    "frequencyCount": 9
+                },
+                {
+                    "normalizedText": "clamp",
+                    "displayText": "clamp",
+                    "numExamples": 0,
+                    "frequencyCount": 6
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "galerie",
+            "displayTarget": "galerie",
+            "posTag": "NOUN",
+            "confidence": 0.0772,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "gallery",
+                    "displayText": "gallery",
+                    "numExamples": 15,
+                    "frequencyCount": 3688
+                },
+                {
+                    "normalizedText": "clip",
+                    "displayText": "clip",
+                    "numExamples": 15,
+                    "frequencyCount": 77
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "\u010dmajznout",
+            "displayTarget": "\u010dmajznout",
+            "posTag": "NOUN",
+            "confidence": 0.0752,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "clips",
+                    "displayText": "clips",
+                    "numExamples": 10,
+                    "frequencyCount": 39
+                },
+                {
+                    "normalizedText": "clip",
+                    "displayText": "clip",
+                    "numExamples": 7,
+                    "frequencyCount": 15
+                },
+                {
+                    "normalizedText": "clipped",
+                    "displayText": "clipped",
+                    "numExamples": 1,
+                    "frequencyCount": 3
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "o\u0159\u00edznout",
+            "displayTarget": "o\u0159\u00edznout",
+            "posTag": "NOUN",
+            "confidence": 0.0705,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "crop",
+                    "displayText": "crop",
+                    "numExamples": 15,
+                    "frequencyCount": 150
+                },
+                {
+                    "normalizedText": "trim",
+                    "displayText": "trim",
+                    "numExamples": 15,
+                    "frequencyCount": 51
+                },
+                {
+                    "normalizedText": "clip",
+                    "displayText": "clip",
+                    "numExamples": 7,
+                    "frequencyCount": 20
+                },
+                {
+                    "normalizedText": "cropped",
+                    "displayText": "cropped",
+                    "numExamples": 5,
+                    "frequencyCount": 13
+                },
+                {
+                    "normalizedText": "clipped",
+                    "displayText": "clipped",
+                    "numExamples": 4,
+                    "frequencyCount": 6
+                }
+            ]
+        }
+    ]
+}

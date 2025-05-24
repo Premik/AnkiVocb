@@ -1,32 +1,27 @@
 package vocb.azure
 
-import vocb.Helper
 import static vocb.Helper.utf8
 
+import vocb.ConfHelper
+
 public class AzureEnv {
+	
+	@Lazy ConfigObject cfg = ConfHelper.cfg
+	
+	String lastClientId = "df5978d6-eb16-4b61-aa72-d89c665dd8ef"
 
-	String AZURE_KEY_ENV="AZURE_KEY"
-	String AZURE_ENDPOINT_ENV="AZURE_ENDPOINT"
-	//String "2823d6c4-78d7-11ea-bc55-0242ac130004"
-	String defaultBaseUrl = "https://api.cognitive.microsoft.com/bing/v7.0"
-	String lastClientId
-
-	@Lazy String baseUrl = {
-		String endpointUrl = System.getenv(AZURE_ENDPOINT_ENV)
-		if (endpointUrl) return endpointUrl
-		return "https://api.cognitive.microsoft.com/bing/v7.0"
-	}()
-
-	public String getAzureKey() {
-		String key = System.getenv(AZURE_KEY_ENV)
-		assert key: "Please export env variable $AZURE_KEY_ENV with the api key"
-		return key
-	}
-
-	public Map<String,String> getHttpHeaders() {
+	private Map<String,String> buildHttpHeaders(String azureKey) {
 		Map<String,String> ret = ["Ocp-Apim-Subscription-Key": azureKey]
 		if (lastClientId) ret += ["X-MSEdge-ClientID": lastClientId]
 		return ret
+	}
+	
+	public Map<String,String> getImgSearchHttpHeaders() {
+		buildHttpHeaders(cfg.azure.imageSearch.key)
+	}
+	
+	public Map<String,String> getDictLookupHttpHeaders() {
+		buildHttpHeaders(cfg.azure.dictLookup.key)
 	}
 
 	public String urlParam(String key, Object val, String prefx="&") {
@@ -36,12 +31,13 @@ public class AzureEnv {
 	
 	//https://docs.microsoft.com/en-us/rest/api/cognitiveservices-bingsearch/bing-web-api-v7-reference
 	URL imageSearchUrl(String q, int count, String imageType, String license)  {
+		String baseUrl = cfg.azure.imageSearch.baseUrl
 		"$baseUrl/images/search${urlParam('q', q, '?')}${urlParam('count', count)}${urlParam('imageType', imageType)}${urlParam('license', license)}".toURL()
 	}
 	
 	//https://docs.microsoft.com/en-us/azure/cognitive-services/translator/reference/v3-0-translate
 	URL translateUrl(String from="en", String to="cs")  {
-		String trBase = "https://api.cognitive.microsofttranslator.com/dictionary/lookup?api-version=3.0"
-		"$trBase${urlParam('from', from)}${urlParam('to', to)}".toURL()
+		String baseUrl = cfg.azure.dictLookup.baseUrl
+		"$baseUrl${urlParam('from', from)}${urlParam('to', to)}".toURL()
 	}
 }

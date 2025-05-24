@@ -36,5 +36,12 @@ public class AwsCliPollyTTS {
 		Process p = tts.synth("Hello world")
 		p.waitFor(5, TimeUnit.SECONDS)
 		Helper.printProcOut(p)
+		/*
+		 * <speak>
+<prosody volume="-8dB">Hi! My</prosody><prosody rate="x-slow">name is</prosody><prosody volume="-8dB">Joanna.</prosody>
+
+</speak>
+
+		 */
 	}
 }

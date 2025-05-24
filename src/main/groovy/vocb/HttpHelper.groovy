@@ -24,23 +24,26 @@ public class HttpHelper {
 
 	public void withUrlPostResponse(Map hdrs=[:], URL u, String payload, Closure<InputStream> c) {
 		assert u
-		println u
 		HttpURLConnection conn = u.openConnection()
 		conn.with {
 			requestMethod = "POST"
 			doOutput = true
 			connectTimeout = connectionProps.connectTimeout
 			readTimeout = connectionProps.readTimeout
-			hdrs + ["Content-Type": "application/json"].each {
-				String k, v->
+			(hdrs + ["Content-Type": "application/json"]).each { String k, v->
 				setRequestProperty(k, v.toString())
+				//println "$k: $v"
 			}
+			println """\
+				$u
+				$payload
+			""".stripIndent()
 
 			outputStream.write(payload.getBytes(utf8))
 			//println inputStream.text
 			assert responseCode >=200 && responseCode< 300 : "Http error $responseCode $errorStream.text"
 		}
-		
+
 		c(conn.inputStream)
 	}
 
@@ -49,19 +52,16 @@ public class HttpHelper {
 		String key = url.toString()
 		if (cache.isCached(key)) {
 			println "Cache hit for $key"
-			cache.subPathForKey(key).withInputStream {
-				BufferedInputStream rsp->
+			cache.subPathForKey(key).withInputStream { BufferedInputStream rsp->
 				c(rsp)
 			}
 			return
 		}
-		withUrlGetResponse(hdrs, url) {
-			BufferedInputStream res->
+		withUrlGetResponse(hdrs, url) { BufferedInputStream res->
 			println url
 			cache.subPathForKey(key) << res
 		}
-		cache.subPathForKey(key).withInputStream {
-			BufferedInputStream imgStr->
+		cache.subPathForKey(key).withInputStream { BufferedInputStream imgStr->
 			c(imgStr)
 		}
 	}
