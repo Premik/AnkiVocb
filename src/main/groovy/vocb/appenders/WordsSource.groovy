@@ -17,8 +17,9 @@ public class WordsSource {
 	WordNormalizer wn = new WordNormalizer()
 	
 	 
-	@Lazy Corpus corp = Corpus.buildDef()
-	BigDecimal minFreq= 0
+	@Lazy 
+	Corpus corp = Corpus.buildDef()
+	BigDecimal minFreq= null
 	BigDecimal maxFreq= 10e10
 	int limit=0
 	
@@ -37,8 +38,10 @@ public class WordsSource {
 		
 		
 		List<String> words = new ArrayList(wn.uniqueueTokens(text))
-				.findAll {String s ->					
-					corp[s] > minFreq && corp[s] < maxFreq }
+				.findAll {String s ->
+					BigInteger f = corp[s]
+					f == minFreq || (f > minFreq && f < maxFreq) 
+				}
 				.sort{ String a, String b->
 					-(corp[a]?:0) <=> -(corp[b]?:0)
 				}
@@ -58,7 +61,7 @@ public class WordsSource {
 
 			Term t = new Term(w, "en")
 			BigDecimal frq = Helper.roundDecimal((corp[w]?:0), 3)
-			String stars  = color('🟊'*dbMan.numberOfStarsFreq(frq), YELLOW )
+			String stars  = color('🟊'*(dbMan.numberOfStarsFreq(frq)?:0), YELLOW )
 			
 			Concept c= dbMan.findConceptByFirstTermAnyVariant(w)
 			if (c != null) {
