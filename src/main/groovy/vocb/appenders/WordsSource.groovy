@@ -1,5 +1,7 @@
 package vocb.appenders
 
+import static vocb.Ansi.*
+
 import vocb.Helper
 import vocb.corp.Corpus
 import vocb.corp.Similarity
@@ -7,7 +9,7 @@ import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
-import static vocb.Ansi.*
+import vocb.pck.Pack
 
 public class WordsSource {
 
@@ -22,6 +24,7 @@ public class WordsSource {
 	
 	Similarity sim = new Similarity()
 	boolean simulation = false
+	Pack pack = new Pack()
 
 
 	@Lazy Manager dbMan = {
@@ -89,13 +92,9 @@ public class WordsSource {
 		fromText(dbMan.allTextWithLang("en").join("\n"))
 	}
 
-	void decomposition() {
-		
+	void decomposition() {		
 		dbMan.db
-		dbMan.db.concepts.stream()
-				.flatMap{ Concept c ->
-					c.termsByLang("en").collect {it.term}.stream()
-				}
+		termsStream
 				.flatMap { String s->
 					wn.tokens(s) //Phrases by words
 				}
@@ -118,6 +117,20 @@ public class WordsSource {
 					println "${it} ${corp.wordFreq[it]}"
 				}
 	}
+	
+	void basicWords() {
+		dbMan.db
+		Set<String> simpleWords = new File("/data/src/AnkiVocb/pkg/SimpleWords/words.txt").readLines().toSet()
+		corp.topX(2000)
+				.findAll {String s-> !s.contains("'")}
+				.findAll {String s->
+					dbMan.conceptsByTerm[s].any { Concept c-> c.state != "ignore" }
+				}.findAll { !simpleWords.contains(it) }
+				.each {
+					//println "${it} ${corp.wordFreq[it]}"
+					println it
+				}
+	}
 
 	public static void main(String[] args) {
 		/*WordsSource a = new WordsSource(sourceName:"Supaplex", minFreq:2*1000)		 
@@ -131,13 +144,12 @@ public class WordsSource {
 			//String tx = ''''''
 			
 			//String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
-			String tx = new File("/data/src/AnkiVocb/pkg/SimpleWords/words.txt").text
-			
-			                                             
+			//String tx = new File("/data/src/AnkiVocb/pkg/SimpleWords/words.txt").text
 			
 			
-			fromText(tx)
+			//fromText(tx)
 			//fromOwnSamples()
+			basicWords()
 			return
 			wn.phraseFreqs(tx,2, 3)
 			   .collectEntries{ String w, BigDecimal fqInText-> [w, corp.phraseFreq(w)*fqInText]}
