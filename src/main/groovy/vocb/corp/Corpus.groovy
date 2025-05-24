@@ -199,7 +199,13 @@ public class Corpus {
 			"frosting":3735,
 			"smelling":41717,
 			"bouncy":81717,
-			"antiquities":500,			
+			"antiquities":500,					
+			"you're":2382497,
+			"i'm":4082139,
+			"what's":408213,
+			"let's":41000,
+			"everyone's":5735,
+
 		])
 
 	}
@@ -222,7 +228,8 @@ public class Corpus {
 			//load12Dicts()
 			//phrases.take(30).each {println "${it}"}
 			//println topXOf(["i am", "hello"])
-			println it["easy"]
+			println it["what"]
+
 			
 		}
 

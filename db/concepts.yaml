@@ -11379,6 +11379,169 @@ concepts:
     tts: cs-terms/pamatky.mp3
   img: img/antiquities.jpeg
   freq: 500.00000
+##  I'll   ################################################################## t0:pron:missing
+- terms: 
+  - term: I'll
+    lang: en
+    tts: en-terms/Ill.mp3
+  - term: Já budu
+    lang: cs
+    tts: cs-terms/Ja budu.mp3
+  img: img/Ill.jpeg
+  freq: 218372.00000
+##  can't   ################################################################# t0:pron:missing
+- terms: 
+  - term: can't
+    lang: en
+    tts: en-terms/cant.mp3
+  - term: nemohu
+    lang: cs
+    tts: cs-terms/nemohu.mp3
+  - term: neumět
+    lang: cs
+    tts: cs-terms/neumet.mp3
+  img: img/cant.jpeg
+  freq: 176728.00000
+##  I've   ################################################################## t0:pron:missing
+- terms: 
+  - term: I've
+    lang: en
+    tts: en-terms/Ive.mp3
+  - term: Já mám
+    lang: cs
+    tts: cs-terms/Ja mam.mp3
+  img: img/Ive.jpeg
+  freq: 157210.00000
+##  won't   ################################################################# t0:pron:missing
+- terms: 
+  - term: won't
+    lang: en
+    tts: en-terms/wont.mp3
+  - term: nebude
+    lang: cs
+    tts: cs-terms/nebude.mp3
+  img: img/wont.jpeg
+  freq: 116568.00000
+##  that's   ################################################################ t0:pron:missing
+- terms: 
+  - term: that's
+    lang: en
+    tts: en-terms/thats.mp3
+  - term: ten je
+    lang: cs
+    tts: cs-terms/ten je.mp3
+  img: img/thats.jpeg
+  freq: 93912.00000
+##  he's   ################################################################## t0:pron:missing
+- terms: 
+  - term: he's
+    lang: en
+    tts: en-terms/hes.mp3
+  - term: on je
+    lang: cs
+    tts: cs-terms/on je.mp3
+  img: img/hes.jpeg
+  freq: 74505.00000
+##  there's   ############################################################### t0:pron:missing
+- terms: 
+  - term: there's
+    lang: en
+    tts: en-terms/theres.mp3
+  - term: tady je
+    lang: cs
+    tts: cs-terms/tady je.mp3
+  img: img/theres.jpeg
+  freq: 65017.00000
+##  you'd   ################################################################# t0:pron:missing
+- terms: 
+  - term: you'd
+    lang: en
+    tts: en-terms/youd.mp3
+  - term: ty bys
+    lang: cs
+    tts: cs-terms/ty bys.mp3
+  img: img/youd.jpeg
+  freq: 33008.00000
+##  we're   ################################################################# t0:pron:missing
+- terms: 
+  - term: we're
+    lang: en
+    tts: en-terms/were.mp3
+  - term: my jsme
+    lang: cs
+    tts: cs-terms/my jsme.mp3
+  img: img/were.jpeg
+  freq: 23376.00000
+##  'cause   ################################################################ t0:pron:missing
+- terms: 
+  - term: "'cause"
+    lang: en
+    tts: en-terms/cause.mp3
+  - term: protože
+    lang: cs
+    tts: cs-terms/protoze.mp3
+  img: img/cause.jpeg
+  freq: 4355.00000
+- terms: 
+  - term: could've
+    lang: en
+  state: ignore
+  freq: 22.00000
+- terms: 
+  - term: should've
+    lang: en
+  state: ignore
+  freq: 18.00000
+##  I'm   ################################################################### t0:pron:missing
+- terms: 
+  - term: I'm
+    lang: en
+    tts: en-terms/Im.mp3
+  - term: Já jsem
+    lang: cs
+    tts: cs-terms/Ja jsem.mp3
+  img: img/Im.jpeg
+  freq: 4082139.00000
+##  you're   ################################################################ t0:pron:missing
+- terms: 
+  - term: you're
+    lang: en
+    tts: en-terms/youre.mp3
+  - term: Ty jsi
+    lang: cs
+    tts: cs-terms/Ty jsi.mp3
+  img: img/youre.jpeg
+  freq: 2382497.00000
+##  what's   ################################################################ t0:pron:missing
+- terms: 
+  - term: what's
+    lang: en
+    tts: en-terms/whats.mp3
+  - term: Co je
+    lang: cs
+    tts: cs-terms/Co je.mp3
+  img: img/whats.jpeg
+  freq: 408213.00000
+##  let's   ################################################################# t0:pron:missing
+- terms: 
+  - term: let's
+    lang: en
+    tts: en-terms/lets.mp3
+  - term: pojďme
+    lang: cs
+    tts: cs-terms/pojdme.mp3
+  - term: ať
+    lang: cs
+    tts: cs-terms/at.mp3
+  img: img/lets.jpeg
+  freq: 41000.00000
+- terms: 
+  - term: everyone's
+    lang: en
+  - term: everyones
+    lang: cs
+  state: ignore
+  freq: 5735.00000
 
 examples: 
 - terms: 
