@@ -21,6 +21,7 @@ public class CsTSSAppender {
 	Manager dbMan = new Manager()
 	int limit = 10
 	WordNormalizer wn = new WordNormalizer()
+	int sleep = 1000
 
 	void synth() {
 		dbMan.load()
@@ -37,6 +38,7 @@ public class CsTSSAppender {
 				ttsCz.synth(t.term, p.toString() )
 				i++;
 				dbMan.save()
+				Thread.sleep(sleep)
 			}
 			String folder
 			if (wn.uniqueueTokens(t.term).size() > 2) folder = "cs-samples"
@@ -57,7 +59,7 @@ public class CsTSSAppender {
 
 	public static void main(String[] args) {
 		new CsTSSAppender().with {
-			limit = 5
+			limit = 1
 			synth()
 		}
 		println "Done"
