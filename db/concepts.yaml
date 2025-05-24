@@ -21576,13 +21576,13 @@ concepts:
   - term: nadace
     tts: cs-terms/nadace.mp3
   freq: 110.10180
-##  eg   #################################################################### no img
 - terms: 
   - term: eg
     tts: en-terms/eg.mp3
   - term: například
     tts: cs-terms/napriklad.mp3
   freq: 109.83390
+  profileName: ignore
 ##  friendly   ############################################################## no img
 - terms: 
   - term: friendly

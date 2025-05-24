@@ -16,9 +16,9 @@ import vocb.corp.WordNormalizer
 
 @CompileStatic
 public class Manager {
-	
+
 	boolean silent=false
-	
+
 	ConfHelper cfgHelper = ConfHelper.instance
 	ConfigObject cfg = cfgHelper.config
 
@@ -27,10 +27,10 @@ public class Manager {
 	String defaultConceptsFileName = cfg["db"]["concepts"] as String
 	String defaultExamplesFileName = cfg["db"]["examples"] as String
 	WordNormalizer wn =WordNormalizer.instance
-	
+
 	@Lazy
 	public static Manager defaultInstance = new Manager().tap { load() }
-		
+
 	@Lazy
 	DataLocation defaultConceptsLocation = new DataLocation(storageRootPath:defaultStoragePath, filename:defaultConceptsFileName)
 	@Lazy
@@ -82,7 +82,7 @@ public class Manager {
 		numberOfStarsFreq(c?.freq)
 	}
 
-	public static String starsOf(Concept c, boolean pad=true) { 
+	public static String starsOf(Concept c, boolean pad=true) {
 		String s = '🟊'*(numberOfStars(c)?:0)
 		if (pad) return s.padRight(10, '  ')
 		return pad
@@ -94,12 +94,12 @@ public class Manager {
 
 	public Collection<Concept> findConceptsByFirstTermAllVariant(String firstTerm) {
 		/*if (firstTerm == "i") {
-			println "I"
-		}*/
+		 println "I"
+		 }*/
 		List<String> variants = wn.wordVariantsWithBrackets(firstTerm)
 		Collection<Concept> sourceVars = variants.findResults {conceptByFirstTerm[it] }
 		if (sourceVars) return sourceVars
-		db.concepts.parallelStream().map{ Concept c-> 			
+		db.concepts.parallelStream().map{ Concept c->
 			List<String> vars = wn.wordVariantsWithBrackets(c.firstTerm)
 			new Tuple2<Concept, List<String >>(c, vars)
 		}.filter { Tuple2<Concept, List<String >> t->
@@ -107,7 +107,6 @@ public class Manager {
 		}.map { Tuple2<Concept, List<String >> t->
 			t.v1
 		}.toList()
-				
 	}
 
 
@@ -170,11 +169,14 @@ public class Manager {
 			c.termsByLang(lang).collect {it.term}.stream()
 		}
 	}
+	
+	
 
 
 	public void load() {
 		load(defaultConceptsLocation, true)
 		load(defaultExamplesLocation, true)
+		//loadIgnoreList()
 		reindex()
 	}
 
@@ -197,6 +199,21 @@ public class Manager {
 			reindex()
 		}
 		return cdb
+	}
+	
+	public void loadIgnoreList() {
+		Path p = defaultConceptsLocation.storageRootPath.resolve("ignoreList.txt")
+		p.withReader(utf8) { Reader r->
+			r.readLines().each{ String line->
+				Concept c = new Concept()
+				c.addEnCsTerms(line.trim(), null)
+				c.profileName="ignore"
+				//c.location=new DataLocation()
+				db.concepts.add(c)
+			}			
+		}
+		
+		
 	}
 
 
@@ -227,9 +244,9 @@ public class Manager {
 	public void save(boolean forceSaveAll=true) {
 		reindex()
 
-		assert db.dataLocations
+		assert db.dataLocation
 		db.dataLocations
-				.findAll { DataLocation dl-> dl.dirty || forceSaveAll }
+				.findAll { DataLocation dl-> dl.dirty || forceSaveAll }				
 				.each { DataLocation dl->
 					save(dl)
 				}
@@ -238,7 +255,18 @@ public class Manager {
 	public String save(DataLocation loc) {
 		assert loc
 		String yaml = storage.dbToYaml(db) {TermContainer t->
-			t.location === loc
+			if (t.location !== loc) {
+				return false
+			}
+			if (!t.location) {
+				return false
+			}
+			if (t instanceof Concept) { //Don't save ignore profile as those are not in separate ignoreList.txt
+				Concept c = t as Concept
+				return c.profileName != "ignore"
+			}
+			return true
+			
 		}
 		loc.storagePath.write(yaml)
 		println "Saved $loc"
@@ -467,13 +495,13 @@ public class Manager {
 			wn.commonWordOf(e.firstTerm, sentence).size()*100 - e.firstTerm.length()
 		}
 	}
-	
-	
+
+
 	public List<ExampleComparatorMatch> bestExampleForSentence(String sentence) {
 		ExampleComparator.of(sentence).bestFromExamples(db.examples.stream())
 	}
-	
-	public List<ExampleComparatorMatch> bestExampleForSentence(Collection<String> words) {		
+
+	public List<ExampleComparatorMatch> bestExampleForSentence(Collection<String> words) {
 		new ExampleComparator(words:words).bestFromExamples(db.examples.stream())
 	}
 
@@ -539,7 +567,7 @@ public class Manager {
 			load()
 
 			validate()
-			printStats()
+			//printStats()
 			//allTextWithLang("cs").each {println it}
 			//allTextWithLang("en").each {println it}
 
@@ -547,8 +575,12 @@ public class Manager {
 			//moveToSubFolders()
 			//println allTextWithLang("en")
 			//moveSamples()
-			save()
 
+//			new File("/tmp/work/ignore.txt") <<
+//			db.concepts.findAll{it.validationProfile == ValidationProfile.ignore}
+//			.collect {it.firstTerm}
+//			.join("\n")
+			save()
 			println "Resaved "
 		}
 
