@@ -10879,28 +10879,31 @@ concepts:
     tts: cs-terms/ovci vlna.mp3
   img: img/fleece.jpeg
   freq: 2219.00000
-##  sea   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  sea   ################################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: sea
     lang: en
   - term: moře
     lang: cs
+  img: img/sea.jpeg
   freq: 118822.00000
-##  winds   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  winds   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: winds
     lang: en
   - term: větry
     lang: cs
+  img: img/winds.jpeg
   freq: 29930.00000
-##  ocean   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  ocean   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: ocean
     lang: en
   - term: oceán
     lang: cs
+  img: img/ocean.jpeg
   freq: 26689.00000
-##  blown   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  blown   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: blown
     lang: en
@@ -10908,8 +10911,9 @@ concepts:
     lang: cs
   - term: odvátý
     lang: cs
+  img: img/blown.jpeg
   freq: 14594.00000
-##  dreamt   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  dreamt   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: dreamt
     lang: en
@@ -10917,13 +10921,15 @@ concepts:
     lang: cs
   - term: zdálo
     lang: cs
+  img: img/dreamt.jpeg
   freq: 4353.00000
-##  bonnie   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  bonnie   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: bonnie
     lang: en
   - term: miláček
     lang: cs
+  img: img/bonnie.jpeg
   freq: 1992.00000
 
 examples: 
