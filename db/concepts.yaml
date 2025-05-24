@@ -6370,7 +6370,7 @@ concepts:
   state: ignoreImage
   freq: 162328.00000
   origins: ["corpus"]
-##  itself   ################################################################ ▅ 50%
+##  itself   ################################################################ ▆ 67%
 - terms: 
   - term: itself
     lang: en
@@ -6378,9 +6378,10 @@ concepts:
   - term: samo o sobě
     lang: cs
     tts: samo o sobe.mp3
+  img: itself.jpeg
   freq: 161172.50000
   origins: ["corpus"]
-##  open   ################################################################## ▅ 50%
+##  open   ################################################################## ▆ 67%
 - terms: 
   - term: open
     lang: en
@@ -6391,9 +6392,10 @@ concepts:
   - term: otevřené
     lang: cs
     tts: otevrene.mp3
+  img: open.jpeg
   freq: 160795.50000
   origins: ["corpus"]
-##  order   ################################################################# ▅ 50%
+##  order   ################################################################# ▆ 67%
 - terms: 
   - term: order
     lang: en
@@ -6404,9 +6406,10 @@ concepts:
   - term: pořadí
     lang: cs
     tts: poradi.mp3
+  img: order.jpeg
   freq: 160771.50000
   origins: ["corpus"]
-##  taking   ################################################################ ▅ 50%
+##  taking   ################################################################ ▆ 67%
 - terms: 
   - term: taking
     lang: en
@@ -6417,9 +6420,10 @@ concepts:
   - term: užívání
     lang: cs
     tts: uzivani.mp3
+  img: taking.jpeg
   freq: 160626.00000
   origins: ["corpus"]
-##  around   ################################################################ ▅ 50%
+##  around   ################################################################ ▆ 67%
 - terms: 
   - term: around
     lang: en
@@ -6430,9 +6434,10 @@ concepts:
   - term: dokola
     lang: cs
     tts: dokola.mp3
+  img: around.jpeg
   freq: 159191.50000
   origins: ["corpus"]
-##  understand   ############################################################ ▅ 50%
+##  understand   ############################################################ ▆ 67%
 - terms: 
   - term: understand
     lang: en
@@ -6443,9 +6448,10 @@ concepts:
   - term: rozumět
     lang: cs
     tts: rozumet.mp3
+  img: understand.jpeg
   freq: 159041.50000
   origins: ["corpus"]
-##  half   ################################################################## ▅ 50%
+##  half   ################################################################## ▆ 67%
 - terms: 
   - term: half
     lang: en
@@ -6456,18 +6462,20 @@ concepts:
   - term: půl
     lang: cs
     tts: pul.mp3
+  img: half.jpeg
   freq: 157947.50000
   origins: ["corpus"]
-##  within   ################################################################ ▄ 48%
+##  within   ################################################################ ▆ 64%
 - terms: 
   - term: within
     lang: en
     tts: within.mp3
   - term: v rámci
     lang: uvnitř
+  img: within.jpeg
   freq: 156154.00000
   origins: ["corpus"]
-##  entered   ############################################################### ▅ 50%
+##  entered   ############################################################### ▆ 67%
 - terms: 
   - term: entered
     lang: en
@@ -6478,9 +6486,10 @@ concepts:
   - term: zadali
     lang: cs
     tts: zadali.mp3
+  state: ignoreImage
   freq: 155480.00000
   origins: ["corpus"]
-##  begin   ################################################################# ▅ 50%
+##  begin   ################################################################# ▆ 67%
 - terms: 
   - term: begin
     lang: en
@@ -6491,9 +6500,10 @@ concepts:
   - term: začátek
     lang: cs
     tts: zacatek.mp3
+  img: begin.jpeg
   freq: 154912.25000
   origins: ["corpus"]
-##  till   ################################################################## ▅ 50%
+##  till   ################################################################## ▆ 67%
 - terms: 
   - term: till
     lang: en
@@ -6501,6 +6511,7 @@ concepts:
   - term: až do
     lang: cs
     tts: az do.mp3
+  state: ignoreImage
   freq: 154907.00000
   origins: ["corpus"]
 ##  la   #################################################################### ▄ 42%
