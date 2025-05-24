@@ -4,8 +4,6 @@ import java.util.stream.Collectors
 
 import org.junit.jupiter.api.Test
 
-import vocb.corp.WordNormalizer
-
 class WordNormalizerTest {
 
 	WordNormalizer norm = new WordNormalizer()
@@ -21,5 +19,29 @@ class WordNormalizerTest {
 	void stringSteam() {
 		List<String> res = norm.tokens(["aaa bbb", "ccc ddd"].stream()).collect(Collectors.toList())
 		assert res == ["aaa", "bbb", "ccc", "ddd"]
+	}
+
+	@Test
+	void pairs() {
+		String[] w = ["a", "b", "c", "d", "e"]
+
+
+		assert norm.pairs(w.stream(),1).toList() == w
+		assert norm.pairs(w.stream(), 2).toList() == ['a b', 'b c', 'c d', 'd e']
+		assert norm.pairs(w.stream(), 3).toList() == ['a b c', 'b c d', 'c d e']
+
+		//assert norm.pairs(w.stream(),1, 3).toList() == ['a', 'a b', 'b c', 'c d', 'd']
+	}
+	
+	@Test
+	void phraseFreqs() {
+		List<String> w = ["a", "b", "a", "b", "e"]
+		 Map<String , Integer> f = norm.phraseFreqs(w, 1, 4)
+		 assert f["a"] == 2
+		 assert f["e"] == 1
+		 assert f["a b"] == 2
+		 assert f["b a b e"] == 1
+		 //println "${f}"
+		//assert norm.pairs(w.stream(),1, 3).toList() == ['a', 'a b', 'b c', 'c d', 'd']
 	}
 }
