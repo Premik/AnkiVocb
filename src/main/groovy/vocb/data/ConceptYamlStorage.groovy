@@ -76,9 +76,8 @@ public class ConceptYamlStorage {
 	public String dbToYaml(ConceptDb db) {
 		assert db
 		String concepts=listToYaml(db.concepts.collect(this.&conceptToYaml))
-
-		"version: $db.version\n" +
-				"concepts: " +concepts
+		String samples=listToYaml(db.examples.collect(this.&termToYaml))
+		"version: $db.version\n${yamlHash('concepts', concepts)}\n${yamlHash('samples', samples)}"
 	}
 
 	void appendBanner(String label, BigDecimal progress, StringBuilder sb, int width=70) {

@@ -17,10 +17,12 @@ public class Manager {
 	Path storagePath = Paths.get("/data/src/AnkiVocb/db/")
 	WordNormalizer wn =new WordNormalizer()
 
-	@Lazy Path conceptsPath = {
+	Path getConceptsPath()  {
 		storagePath.resolve(conceptFilename.toString())
-	}()
+	}
+	
 	CharSequence conceptFilename = "concepts.yaml"
+	
 
 	@Lazy Path mediaRootPath = {
 		storagePath.resolve("media")
@@ -150,7 +152,7 @@ public class Manager {
 	}
 
 	public String save(Path path= conceptsPath) {
-		reindex()
+		reindex()		
 		assert path : "Not opened"
 		String yaml = storage.dbToYaml(db)
 		path.write(yaml)
