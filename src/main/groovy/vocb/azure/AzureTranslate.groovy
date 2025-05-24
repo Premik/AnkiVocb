@@ -1,11 +1,11 @@
 package vocb.azure
 
+import static vocb.Helper.utf8
+
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 import vocb.Helper
 import vocb.HttpHelper
-import vocb.SearchData
-import static vocb.Helper.utf8
 
 public class AzureTranslate {
 
@@ -43,11 +43,42 @@ public class AzureTranslate {
 				.collect {it.normalizedTarget}
 	}
 
+	Map exampleJsonRun(String srcWord, String destWord, String srcLang="en", String destLang="cs") {
+		List ret
+
+		JsonBuilder jsonBuilder = new JsonBuilder()
+		def rq= jsonBuilder ([
+			[ "text": srcWord,
+				"translation": destWord]
+		])
+
+		URL trnUrl = azEnv.dictExampleUrl(srcLang, destLang)
+		httpHelper.withUrlPostResponse(azEnv.dictLookupHttpHeaders, trnUrl, Helper.jsonToString(rq)) {InputStream inp ->
+			ret = jsonSlurper.parse(inp, utf8)
+
+		}
+		assert ret?.size() : "Blank response"
+		return ret[0]
+	}
+
+	public List<Tuple2<String, String>> extractExamples(Map exampleResponse) {
+		assert lookupResponse
+		lookupResponse.examples.collect {
+			[
+				"$it.sourcePrefix $it.sourceTerm $it.sourceSuffix",
+				"$it.targetPrefix $it.targetTerm $it.targetSuffix"
+			]
+		}
+
+	}
+
 
 	static void main(String... args) {
 		AzureTranslate bs = new AzureTranslate(httpHelper: new HttpHelper() )
 
-		println Helper.jsonToString(bs.trnJsonrunTrn("prefix"))
+		//println Helper.jsonToString(bs.trnJsonrunTrn("prefix"))
+		println Helper.jsonToString(bs.exampleJsonRun("kitty", "koťátko"))
+
 		//println Helper.jsonToString(bs.trnJsonrunTrn("Well done"))
 
 	}

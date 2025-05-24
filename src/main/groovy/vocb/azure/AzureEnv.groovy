@@ -40,4 +40,10 @@ public class AzureEnv {
 		String baseUrl = cfg.azure.dictLookup.baseUrl
 		"$baseUrl${urlParam('from', from)}${urlParam('to', to)}".toURL()
 	}
+	
+	//https://docs.microsoft.com/en-us/rest/api/cognitiveservices/translatortext/translator/dictionaryexamples
+	URL dictExampleUrl(String from="en", String to="cs")  {
+		String baseUrl = cfg.azure.dictExample.baseUrl
+		"$baseUrl${urlParam('from', from)}${urlParam('to', to)}".toURL()
+	}
 }
