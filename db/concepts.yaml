@@ -405,6 +405,7 @@ concepts:
 - terms: 
   - term: know
     lang: en
+    tts: know.mp3
   - term: vědět
     lang: cs
     tts: vedet.mp3
@@ -420,10 +421,11 @@ concepts:
   img: know.jpeg
   freq: 984073.50000
   origins: ["Supaplex"]
-##  be   #################################################################### █ 97%
+##  be   ####################################################################
 - terms: 
   - term: be
     lang: en
+    tts: be.mp3
   - term: být
     lang: cs
     tts: byt.mp3
@@ -436,10 +438,11 @@ concepts:
   state: ignoreImage
   freq: 9104176.00000
   origins: ["corpus"]
-##  had   ################################################################### █ 97%
+##  had   ###################################################################
 - terms: 
   - term: had
     lang: en
+    tts: had.mp3
   - term: měl
     lang: cs
     tts: mel.mp3
@@ -452,10 +455,11 @@ concepts:
   state: ignoreImage
   freq: 6139336.00000
   origins: ["corpus"]
-##  he   #################################################################### █ 97%
+##  he   ####################################################################
 - terms: 
   - term: he
     lang: en
+    tts: he.mp3
   - term: "on"
     lang: cs
     tts: on.mp3
@@ -468,10 +472,11 @@ concepts:
   img: he.jpeg
   freq: 5653229.50000
   origins: ["corpus"]
-##  with   ################################################################## █ 97%
+##  with   ##################################################################
 - terms: 
   - term: with
     lang: en
+    tts: with.mp3
   - term: s
     lang: cs
     tts: s.mp3
@@ -484,10 +489,11 @@ concepts:
   state: ignoreImage
   freq: 5204263.00000
   origins: ["corpus"]
-##  his   ################################################################### █ 97%
+##  his   ###################################################################
 - terms: 
   - term: his
     lang: en
+    tts: his.mp3
   - term: jeho
     lang: cs
     tts: jeho.mp3
@@ -504,6 +510,7 @@ concepts:
 - terms: 
   - term: have
     lang: en
+    tts: have.mp3
   - term: mít
     lang: cs
     tts: mit.mp3
@@ -523,6 +530,7 @@ concepts:
 - terms: 
   - term: as
     lang: en
+    tts: as.mp3
   - term: jako
     lang: cs
     tts: jako.mp3
@@ -542,6 +550,7 @@ concepts:
 - terms: 
   - term: at
     lang: en
+    tts: at.mp3
   - term: na
     lang: cs
     tts: na.mp3
@@ -561,6 +570,7 @@ concepts:
 - terms: 
   - term: were
     lang: en
+    tts: were.mp3
   - term: byly
     lang: cs
     tts: byly.mp3
@@ -580,6 +590,7 @@ concepts:
 - terms: 
   - term: are
     lang: en
+    tts: are.mp3
   - term: jsou
     lang: cs
     tts: jsou.mp3
@@ -599,6 +610,7 @@ concepts:
 - terms: 
   - term: not
     lang: en
+    tts: not.mp3
   - term: ne
     lang: cs
     tts: ne.mp3
@@ -618,6 +630,7 @@ concepts:
 - terms: 
   - term: from
     lang: en
+    tts: from.mp3
   - term: z
     lang: cs
     tts: z.mp3
