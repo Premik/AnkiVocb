@@ -196,7 +196,7 @@ public class ExampleAppender {
 			//String tx  = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
 			
 			
-			String tx = "storage"
+			String tx = "James Michael French pre coming actually shown"
 
 			dbMan.load()
 			todoFromText(tx)
