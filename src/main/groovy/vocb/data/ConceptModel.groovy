@@ -54,6 +54,7 @@ public class Term {
 	String term
 	String lang
 	String tts
+	String pron
 
 	public double getCompleteness() {
 		[term, lang, tts].findAll().size()/3.0
