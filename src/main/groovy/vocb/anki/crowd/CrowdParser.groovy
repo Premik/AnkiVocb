@@ -7,6 +7,7 @@ import vocb.Helper
 public class CrowdParser {
 
 	String json
+	String defaultModelNamePrefix = "ankivocb"
 
 	JsonGenerator noteGenerator = new JsonGenerator.Options()
 	.excludeFieldsByName("model", "fieldNames", "mediaLinks")
@@ -72,9 +73,9 @@ public class CrowdParser {
 	}
 
 
-	public NoteModel getAnkivocbModel() {
+	public NoteModel getDefaultModel() {
 		noteModels.find { NoteModel m ->
-			m.name.toLowerCase().startsWith("ankivocb")
+			m.name.toLowerCase().startsWith(defaultModelNamePrefix)
 		}
 	}
 
@@ -85,7 +86,7 @@ public class CrowdParser {
 	}
 
 	public void saveTo(File deckJson) {
-		println ankivocbModel
+		//println ankivocbModel
 		deckJson.write( toJsonString())
 	}
 

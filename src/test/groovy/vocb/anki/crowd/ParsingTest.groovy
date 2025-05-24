@@ -52,12 +52,12 @@ class ParsingTest {
 	
 	@Test
 	void templEdit() {
-		NoteModel m = p.ankivocbModel
+		NoteModel m = p.defaultModel
 		m.css = "edited"
 		//p.saveTo(new File("/tmp/work/m.json"))
 		String json = p.toJsonString()
 		CrowdParser p2 = new CrowdParser(json:json)
-		NoteModel m2 = p.ankivocbModel
+		NoteModel m2 = p.defaultModel
 		assert m.css == m2.css
 		assert m2.css == "edited"
 		
@@ -70,7 +70,7 @@ class ParsingTest {
 		NoteModel[] mods = p.noteModels
 		assert mods
 		assert mods.size() == 3
-		assert p.ankivocbModel
+		assert p.defaultModel
 		
 	}
 

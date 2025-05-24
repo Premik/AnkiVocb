@@ -62,11 +62,11 @@ class Data2CrowdTest {
         String css = nm.css
         assert css
         assert nm === dc.vocbModel.noteModel
-        assert nm === dc.vocbModel.parser.ankivocbModel
+        assert nm === dc.vocbModel.parser.defaultModel
         dc.vocbModel.syncNoteModels()
         String json = dc.vocbModel.parser.toJsonString()
         CrowdParser p2 = new CrowdParser(json: json)
-        assert p2.ankivocbModel.css == css
+        assert p2.defaultModel.css == css
 
     }
 }
