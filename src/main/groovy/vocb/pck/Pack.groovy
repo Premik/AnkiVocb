@@ -2,6 +2,7 @@ package vocb.pck
 
 import static vocb.Ansi.*
 
+import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Map.Entry
@@ -167,8 +168,12 @@ public class Pack {
 		File pkgFile = info.packagePath.toFile()
 		cfgHelper.extraLookupFolders.add(pkgFile)
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
-		exportSentences(info.sentences, d2c.dbMan)
-		d2c.exportExamplesToCrowd(exportExamples)
+		if (Files.exists(info.sentences)) {
+			exportSentences(info.sentences, d2c.dbMan)
+			d2c.exportExamplesToCrowd(exportExamples)
+		}
+
+		
 		cfgHelper.extraLookupFolders.remove(pkgFile)
 
 	}
