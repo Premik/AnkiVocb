@@ -12,8 +12,7 @@ class YamlStorageTest {
 
 	URL testConceptsUrl = getClass().getResource('/vocb/data/testConcepts.yaml')
 
-	def simpleTermGen = {
-		int i=0->
+	def simpleTermGen = { int i=0->
 		slurper.parseText("""\
 		term: term$i
 		lang: lang$i
@@ -78,7 +77,14 @@ class YamlStorageTest {
 		- ee
 		- ff""".stripIndent()
 
-		assert  st.listToYaml(["aa", "bb", "cc", "dd", "ee",  "ff"]) == y
+		assert  st.listToYaml([
+			"aa",
+			"bb",
+			"cc",
+			"dd",
+			"ee",
+			"ff"
+		]) == y
 	}
 
 	@Test
@@ -129,7 +135,7 @@ class YamlStorageTest {
 	@Test
 	void conceptToYaml() {
 		String y="""\
-        ##  apple   ################################################################# no img|no freq|t0:tts:missing|t0:pron:missing|t1:tts:missing
+        ##  apple   ################################################################# no img|no freq|t0:tts:missing|t1:tts:missing
 		terms: 
 		- term: apple
 		  lang: en
@@ -148,6 +154,7 @@ class YamlStorageTest {
 	@Test
 	void conceptToYamlRelaxValidation() {
 		String y="""\
+		##  apple   ################################################################# no freq
 		terms: 
 		- term: apple
 		  lang: en
@@ -177,7 +184,7 @@ class YamlStorageTest {
 		//assert c
 		//assert c.terms[0] == "apple"
 	}
-	
+
 	@Test
 	void fullParseWithExamples() {
 		URL ys = getClass().getResource('/vocb/data/withExample.yaml')

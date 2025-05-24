@@ -1,6 +1,7 @@
 package vocb
 import static vocb.Ansi.*
 
+import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
@@ -20,7 +21,10 @@ public class TestUtils {
 		assert false, "Mismatch around line:$lastDiff"
 	}
 
-	public static void compareFiles(File a, File b) {
+	public static void compareFiles(Path a, Path b, int maxLines=2000) {
+		compareFiles(a.toFile(), b.toFile(), maxLines)
+	}
+	public static void compareFiles(File a, File b, int maxLines=200) {
 		String aText = a.text
 		String bText = b.text
 		//Compare by lines to ignore line endings
@@ -28,12 +32,14 @@ public class TestUtils {
 			return
 		}
 		String name = "${new File(a.parent).name}/$a.name"
+		def encIt = {File f->  URLEncoder.encode(f.toURI().toString(), "UTF-8") 	}
 		println "Mismatch in file ${color(name, BOLD)} \n $a.absolutePath \n $b.absolutePath "
-		String lastDiff = printLineDifference(aText, bText)
+		println "bcompare '$a.absolutePath'  '$b.absolutePath'"
+		String lastDiff = printLineDifference(aText, bText, maxLines)
 		assert false, "File \n$a and \n$b are different at:$lastDiff"
 	}
 
-	public static String printLineDifference(String a, String b) {
+	public static String printLineDifference(String a, String b,int maxLines=200) {
 		List<String> al = a.readLines()
 		List<String> bl = b.readLines()
 		int lines = Math.min(al.size(), bl.size())
@@ -52,7 +58,12 @@ public class TestUtils {
 				println color(lineA, RED)
 				println color(lineB, RED)
 				println "*"*80
-				lastDiff = "$l"
+				lastDiff = "$l \n'$lineA'\n'$lineB'"
+			}
+			if (l > maxLines) {
+				println color("${'.'*20} SKIPPED ${'.'*20}", RED)
+
+				break
 			}
 		}
 		println color("-"*80, WHITE)

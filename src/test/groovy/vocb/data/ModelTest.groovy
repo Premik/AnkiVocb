@@ -68,7 +68,7 @@ class ModelTest {
 
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
-			assert c.validate(vp) == ["t0:pron:missing", "t2:lang:missing", "t2:tts:missing"]
+			assert c.validate(vp) == ["t2:lang:missing", "t2:tts:missing"]
 			
 		}
 	}
@@ -89,7 +89,6 @@ class ModelTest {
 	  - term: už
 	    lang: cs
 	    tts: uz.mp3	 
-	  state: ignoreImage
 	  freq: 189941.00000
 	  origins: ["corpus"]'''.stripIndent())
 
@@ -98,7 +97,7 @@ class ModelTest {
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			println c
-			assert c.validate(vp).collect{it.toString()}.contains("t0:pron:missing")
+			assert c.validate(vp).collect{it.toString()}.contains("no img")
 		}
 	}
 	
