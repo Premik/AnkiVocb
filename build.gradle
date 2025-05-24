@@ -8,7 +8,7 @@ targetCompatibility = 1.8
 //mainClassName = "vocb.appenders.BingImageAppender"
 mainClassName = "vocb.pck.Pack"
 
-project.ext.groovyVersion='3.0.9'
+project.ext.groovyVersion='4.0.1'
 
 wrapper {
 	gradleVersion = '7.3.3'
@@ -45,15 +45,15 @@ task(renderTemplate, dependsOn: 'classes', type: JavaExec) {
 
 dependencies {
 
-	implementation "org.codehaus.groovy:groovy:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-xml:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-json:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-nio:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-test:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-sql:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-yaml:$groovyVersion"
-	implementation "org.codehaus.groovy:groovy-templates:$groovyVersion"
-	//implementation "org.codehaus.groovy:groovy-dateutil:$groovyVersion"
+	implementation "org.apache.groovy:groovy:$groovyVersion"
+	implementation "org.apache.groovy:groovy-xml:$groovyVersion"
+	implementation "org.apache.groovy:groovy-json:$groovyVersion"
+	implementation "org.apache.groovy:groovy-nio:$groovyVersion"
+	implementation "org.apache.groovy:groovy-test:$groovyVersion"
+	implementation "org.apache.groovy:groovy-sql:$groovyVersion"
+	implementation "org.apache.groovy:groovy-yaml:$groovyVersion"
+	implementation "org.apache.groovy:groovy-templates:$groovyVersion"
+	//implementation "org.apache.groovy:groovy-dateutil:$groovyVersion"
 	implementation "org.apache.commons:commons-collections4:4.4"
 	
 	
@@ -74,7 +74,7 @@ dependencies {
 
 	testImplementation "org.junit.jupiter:junit-jupiter:5.6.1"
 	//testImplementation "org.junit-pioneer:junit-pioneer:0.9.0"
-	testImplementation "org.codehaus.groovy:groovy-test:$groovyVersion"
+	testImplementation "org.apache.groovy:groovy-test:$groovyVersion"
 	//https://stackoverflow.com/questions/61801256/exception-in-thread-main-java-lang-noclassdeffounderror-org-junit-platform-co
 	testRuntimeOnly "org.junit.platform:junit-platform-commons:1.7.0"
 
