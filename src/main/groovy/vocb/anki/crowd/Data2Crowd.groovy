@@ -142,9 +142,9 @@ public class Data2Crowd {
 	}
 
 
-	void exportToCrowd(int limit=10) {
+	void exportToCrowd(int limit=10, int mult=1) {
 		vocbModel.notes.clear()
-		(0..limit).each {
+		(0..limit).collect{it*mult} each {
 			mapConcept(dbMan.db.concepts[it])
 		}
 		vocbModel.save()
@@ -153,7 +153,7 @@ public class Data2Crowd {
 
 	public static void main(String[] args) {
 		Data2Crowd a = new Data2Crowd()
-		a.exportToCrowd(20)
+		a.exportToCrowd(10, 1)
 		//println a.dbMan.db.concepts.take(40).collect {it.firstTerm}
 		//println a.optimizeOrder().take(40).collect {it.firstTerm}
 

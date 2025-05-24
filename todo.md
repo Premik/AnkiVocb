@@ -1,7 +1,6 @@
 # Todo
 
 ## UI
-- Na andro. se nezobrazuje native nativeAlt text, jen tts
 - Vetsi Hinto tlacitko/icon (spatne se trefuje)
 - Vetsi text (a barvu?) pro otazku nez odpoved. Nebo pro foreign?
 - Zobrazit hvezdicky z tagu
