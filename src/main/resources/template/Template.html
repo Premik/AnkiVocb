@@ -25,7 +25,8 @@
 				<div><img src="{{img}}"></div>
 
 				<div class="question">{{foreign}}</div>
-				{{foreignTTS}}
+				[sound:{{foreignTTS}}]
+				
 
 				<div class="hintPane">					
 						<div id="hint"></div>
@@ -33,7 +34,22 @@
 				<hr>
 
 
-				<div class="answer">{{foreign}}</div>
+				<div class="answer">{{native}}</div>
+				[sound:{{nativeTTS}}]
+
+				{{#nativeAlt}}
+				<div class="answer">{{nativeAlt}}</div>
+				[sound:{{nativeTTSAlt}}]
+				{{/nativeAlt}}
+
+				[sound:{{foreignTTS}}]
+				{{#foreignExample}}
+				<hr>
+				<div class="answer">{{foreignExample}}</div>
+				[sound:{{foreignExampleTTS}}]
+				{{/foreignExample}}
+				
+
 			</div>
 
 			<script>
@@ -53,7 +69,7 @@
 				}
 				function showHint() {
 					var hint = document.getElementById("hint");
-					hint.innerText = coverWord("{{Back}}");
+					hint.innerText = coverWord("{{native}}");
 					document.getElementById("hintButton").style.display = "none";
 				}
 			</script>
