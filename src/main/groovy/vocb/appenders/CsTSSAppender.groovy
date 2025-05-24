@@ -28,7 +28,10 @@ public class CsTSSAppender {
 		dbMan.load()
 		int i = 0
 		//dbMan.withTermsByLang("cs", false) {Concept c, Term t->
-		Collection<Term> terms = dbMan.db.conceptsByLang("cs") + dbMan.db.examplesByLang("cs")
+		Closure filter = { Concept c->
+			c.validationProfile.termRequiredFields.contains("tts")
+		}
+		Collection<Term> terms = dbMan.db.conceptsByLang("cs", filter) + dbMan.db.examplesByLang("cs")
 		if (includeOnlyTerms) terms = terms.findAll {includeOnlyTerms.contains(it.term) } 
 		for (Term t in terms) {
 			if (i >limit) {

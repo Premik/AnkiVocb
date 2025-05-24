@@ -45,8 +45,8 @@ public class BingImageAppender {
 	void run() {
 		dbMan.load()
 
-		List<Concept> noImgs = dbMan.db.concepts.findAll {
-			(!it.img) && it.terms && !it.noImg
+		List<Concept> noImgs = dbMan.db.concepts.findAll { Concept c->			
+			(!c.img) && c.terms && !c.noImg
 		}
 		if (noImgs.size() <1) {
 			println "All concepts have an image"

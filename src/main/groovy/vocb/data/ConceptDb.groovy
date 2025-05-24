@@ -32,8 +32,8 @@ public class ConceptDb {
 		examples.collectMany {it.termsByLang(lng) }
 	}
 
-	public List<Term> conceptsByLang(String lng) {
-		concepts.findAll {!it.ignore}.collectMany {it.termsByLang(lng)}
+	public List<Term> conceptsByLang(String lng, Closure conceptFilter= {Concept c->!c.ignore}) {
+		concepts.findAll(conceptFilter).collectMany {it.termsByLang(lng)}
 	}
 
 	@CompileDynamic
