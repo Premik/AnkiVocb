@@ -1,13 +1,17 @@
 ${render.expandTemplate(templates.header)}
 
 
-<button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
+
 <div class="wrapper rounded shadow">
+
+    <div class="tags">$v.tags</div>
 
        
     <div class="question foreignTerm">
         <span>$v.foreign</span>$v.foreignTTS
     </div>
+
+    <button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
 
 
     <figure class="img hintCover"><img class="shadow" src="$v.img"></span></figure>
@@ -15,16 +19,21 @@ ${render.expandTemplate(templates.header)}
     <div class="answer native1 hintCover hint">$v.native</div>
     
     
-    <!-- {{#nativeAlt}} -->
+    
     <div class="answer native2 hintCover hint">$v.nativeAlt</div>
-    <!-- {{/nativeAlt}} -->
- 
+    
 
-    <!-- {{#foreignExample}} -->
+     
+    <div class="answer nativeExample hintCover">
+        <span>$v.nativeExample</span>
+    </div>
+    
+
+    
     <div class="question foreignExample">
         <span>$v.foreignExample</span>$v.foreignExampleTTS
     </div>
-    <!-- {{/foreignExample}} -->
+    
 
 
 
@@ -50,12 +59,17 @@ ${render.expandTemplate(templates.header)}
         
         var hints = document.getElementsByClassName('hint');
         for (var i = 0; i < hints.length; i++) {
-            console.log(i);
             var covered = coverWord(hints[i].textContent);
-            console.log(i);
             hints[i].textContent = covered;
             hints[i].classList.remove('hintCover');
-        };        
+        };
+        setTimeout(function() { 
+            var imgCover = document.getElementsByClassName('hintCover');
+            for (var i = 0; i < imgCover.length; i++) {                
+                imgCover[i].classList.add('hintUncover');
+                imgCover[i].classList.remove('hintCover');
+            }
+        }, 5000);
         document.getElementById("hintButton").style.display = "none";
     }
 

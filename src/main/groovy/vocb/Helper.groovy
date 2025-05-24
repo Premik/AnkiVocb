@@ -30,9 +30,12 @@ public class Helper {
 	public static GStringTemplateEngine templEngine = new GStringTemplateEngine()
 	public static Tuple3 null3 = [null, null, null]
 
-	static public void printProcOut(Process proc) {
+	static public void printProcOut(Process proc, int waitSec=0) {
 		StringBuffer b = new StringBuffer()
 		proc.consumeProcessErrorStream(b)
+		if (waitSec > 0) {
+			proc.waitFor(waitSec, TimeUnit.SECONDS)
+		}		
 		println(proc.text)
 		System.err.println( b)
 	}

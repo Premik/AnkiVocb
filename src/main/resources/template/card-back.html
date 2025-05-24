@@ -1,52 +1,49 @@
-${render.expandTemplate(template.header)}
+${render.expandTemplate(templates.header)}
 
-${
-    boolean hint = true
-    render.templateVisibility += [
-     "hintButton.html": hint,
-     "script.js" : hint,
-     "hintPanel.html": hint
-    ]
-    ""
-}
+
 
 <div class="wrapper rounded shadow">
 
-    <div class="foreign foreignTerm">
-        <span>{{foreign}}</span>[sound:{{foreignTTS}}]
+    <div class="tags">$v.tags</div>
+        
+
+    <div class="question foreignTerm">
+        <span>$v.foreign</span>$v.foreignTTS
     </div>
 
+    
 
-    <figure class="img"><img class="shadow" src="{{img}}"></span></figure>
 
-    <div class="native native1">
-        {{native}}[sound:{{nativeTTS}}]
+    <figure class="img"><img class="shadow" src="$v.img"></span></figure>
+
+    <div class="answer native1">
+        <!-- $v.nativeShow -->    
+        <span>$v.native</span>$v.nativeTTS
+        <!-- $v.nativeShowEnd -->        
     </div>
 
-    <!-- {{#nativeAlt}} -->
-    <div class="native native2 hintCover">
-        <span>{{nativeAlt}}</span> [sound:{{nativeAltTTS}}]
+    
+    <div class="answer native2">
+        <!-- $v.nativeAltShow -->    
+        <span>$v.nativeAlt</span>$v.nativeAltTTS
+        <!-- $v.nativeAltShowEnd -->
     </div>
-    <!-- {{/nativeAlt}} -->
+    
 
-    <!-- {{#nativeExample}} -->
-    <div class="native nativeExample">
-        <span>{{nativeExample}}</span> [sound:{{nativeExampleTTS}}]
+    
+    <div class="answer nativeExample">
+        <span>$v.nativeExample</span>$v.nativeExampleTTS
     </div>
-    <!-- {{/nativeExample}} -->
+    
 
-    <!-- {{#foreignExample}} -->
-    <div class="foreign foreignExample">
-        <span>{{foreignExample}}</span> [sound:{{foreignExampleTTS}}]
+    
+    <div class="question foreignExample">        
+        <span>$v.foreignExample</span>$v.foreignExampleTTS
     </div>
-    <!-- {{/foreignExample}} -->
+    
 
     
 
 </div>
 
-<script>
-${render.expandTemplate("script.js")}
-</script>  
-
-${render.expandTemplate(template.footer)}
+${render.expandTemplate(templates.footer)}

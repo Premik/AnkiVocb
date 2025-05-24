@@ -6,6 +6,7 @@ import java.nio.file.Paths
 import javax.naming.LimitExceededException
 
 import groovy.transform.Memoized
+import vocb.ConfHelper
 import vocb.Helper
 import vocb.corp.Similarity
 import vocb.data.Concept
@@ -13,6 +14,9 @@ import vocb.data.Manager
 import vocb.data.Term
 
 public class Data2Crowd {
+	
+	ConfHelper cfgHelper = ConfHelper.instance
+	@Lazy ConfigObject cfg = cfgHelper.cfg
 
 	Path dataPath= Paths.get("/data/src/AnkiVocb/db/")
 	String destCrowdRootFolder = "/tmp/work/test"
@@ -73,9 +77,10 @@ public class Data2Crowd {
 			nativeAltTTS= cst2?.tts
 			nativeExample= csx?.term
 			nativeExampleTTS = csx?.tts
-			(1..5).each {tags.remove('🟊'*it)}
+			String star = cfg.starSymbol?:"🟊"
+			(1..5).each {tags.remove(star*it)}
 			if (stars >0) {
-				tags.add('🟊'*stars)
+				tags.add(star*stars)
 			}
 		}
 	}
