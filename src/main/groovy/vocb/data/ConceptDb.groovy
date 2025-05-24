@@ -62,7 +62,7 @@ public class ConceptDb {
 	
 	public void assignDataLocationToAll(DataLocation dl) {
 		concepts*.location = dl
-		concepts*.location = dl
+		examples*.location = dl
 		flush()
 	}
 	
