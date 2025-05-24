@@ -9,6 +9,7 @@ public class AzureEnv {
 	@Lazy ConfigObject cfg = ConfHelper.cfg
 
 	String lastClientId = "df5978d6-eb16-4b61-aa72-d89c665dd8ef"
+	
 
 	private Map<String,String> buildHttpHeaders(String azureKey) {
 		Map<String,String> ret = ["Ocp-Apim-Subscription-Key": azureKey, "Content-Type": "application/json"]
@@ -23,10 +24,28 @@ public class AzureEnv {
 	public Map<String,String> getDictLookupHttpHeaders() {
 		buildHttpHeaders(cfg.azure.dictLookup.key)
 	}
-
+	
+	public Map<String,String> getTtsTokenHttpHeaders() {
+		buildHttpHeaders(cfg.azure.tts.key) + ["Content-Type": "application/x-www-form-urlencoded"]
+	}
+	
+	public Map<String,String> ttsHeaders(String token, contentType="application/ssml+xml") {
+		Map<String,String> ret = [
+			"Authorization": "Bearer $token", 
+			"Content-Type": contentType,
+			"X-Microsoft-OutputFormat": cfg.azure.tts.outFormat?:"audio-16khz-64kbitrate-mono-mp3"]
+		if (lastClientId) ret += ["X-MSEdge-ClientID": lastClientId]
+		return ret
+	}
+	
+	
 	public String urlParam(String key, Object val, String prefx="&") {
 		if (val == null || val == "") return ""
 		return "$prefx$key=${URLEncoder.encode(val.toString(), utf8)}"
+	}
+	
+	URL tokenUrl(String regionId="northeurope")  {
+		"https://${regionId}.api.cognitive.microsoft.com/sts/v1.0/issueToken".toURL()
 	}
 
 	//https://docs.microsoft.com/en-us/rest/api/cognitiveservices-bingsearch/bing-web-api-v7-reference
@@ -46,4 +65,17 @@ public class AzureEnv {
 		String baseUrl = cfg.azure.dictExample.baseUrl
 		"$baseUrl${urlParam('from', from)}${urlParam('to', to)}".toURL()
 	}
+	
+	//https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-text-to-speech
+	URL ttsUrl()  {		
+		"https://${cfg.azure.tts.region}.tts.speech.microsoft.com/cognitiveservices/v1".toURL()
+		             
+	}
+	
+	URL getTTSListVoiceUrl()  {		
+		"https://${cfg.azure.tts.region}.tts.speech.microsoft.com/cognitiveservices/voices/list".toURL()
+		             
+	}
+	
+	
 }

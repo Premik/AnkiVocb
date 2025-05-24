@@ -22,7 +22,7 @@ public class HttpHelper {
 		b.withCloseable(c)
 	}
 
-	public void withUrlPostResponse(Map hdrs=[:], URL u, String payload, Closure<InputStream> c) {
+	public void withUrlPostResponse(Map hdrs=[:], URL u, String payload="", Closure<InputStream> c) {
 		assert u
 		HttpURLConnection conn = u.openConnection()
 		conn.with {
@@ -32,7 +32,7 @@ public class HttpHelper {
 			readTimeout = connectionProps.readTimeout
 			hdrs.each { String k, v->
 				setRequestProperty(k, v.toString())
-				//println "$k: $v"
+				println "$k: $v"
 			}
 			println """\
 				$u
@@ -41,7 +41,7 @@ public class HttpHelper {
 
 			outputStream.write(payload.getBytes(utf8))
 			//println inputStream.text
-			assert responseCode >=200 && responseCode< 300 : "Http error $responseCode $errorStream.text"
+			assert responseCode >=200 && responseCode< 300 : "Http error $responseCode $errorStream?.text"
 		}
 
 		c(conn.inputStream)
