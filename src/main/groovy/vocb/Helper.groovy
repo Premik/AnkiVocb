@@ -44,19 +44,24 @@ public class Helper {
 	}
 
 	public static Object parseJson(String jsonString) {
+		assert jsonString
 		try {
+			//Thread.currentThread().setContextClassLoader( getClass().getClassLoader() );
 			return new JsonSlurper().parseText(jsonString)
 		}
 		catch (Exception e) {
+			e.printStackTrace()
 			return null
 		}
 	}
 
 	public static GPathResult parseXml(String xmlString) {
+		assert xmlString
 		try {
 			return new XmlSlurper().parseText( xmlString)
 		}
 		catch (Exception e) {
+			e.printStackTrace()
 			return null
 		}
 	}

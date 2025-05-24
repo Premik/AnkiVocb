@@ -19,7 +19,7 @@ import vocb.template.Render
 //@CompileStatic
 public class Data2Crowd {
 
-	ConfHelper cfgHelper = new ConfHelper()
+	ConfHelper cfgHelper = ConfHelper.instance
 	@Lazy
 	ConfigObject cfg = cfgHelper.config
 
@@ -203,7 +203,9 @@ public class Data2Crowd {
 		vocbModel.parser.deckDesc = render.render(deckDescriptionPreview)
 	}
 
+	
 	private void prepareVocbModel() {
+
 		String pfx = cfg.packageRootPrefix?:"Vocb::"
 		vocbModel.parser.deckName =   "${pfx}${info.displayName}"
 		vocbModel.parser.deckCrowdUuid = info.uuid

@@ -10,7 +10,6 @@ import groovy.transform.ToString
 
 
 @Canonical
-@CompileStatic
 @ToString(
 	includeNames=true,
 	ignoreNulls=true,
@@ -20,7 +19,8 @@ import groovy.transform.ToString
 public class PackInfo {
 	
 	String name	
-	Path packagePath
+	//Path packagePath
+	@Lazy Path packagePath = packageRootPath.resolve(name)
 	ParentInfo parent
 	
 	Path destRootFolder = Paths.get("/tmp/work")

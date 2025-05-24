@@ -7,6 +7,7 @@ import java.nio.file.Paths
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
+import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import vocb.Ansi
 import vocb.pck.Pack
@@ -46,6 +47,7 @@ class TreeConfTest {
 	}
 	
 	@Test
+	@CompileDynamic
 	void testConf() {		
 		TreeConf tc = new TreeConf(path:pkgRoot)
 		TreeConf child1 = tc.findByName("child1")
