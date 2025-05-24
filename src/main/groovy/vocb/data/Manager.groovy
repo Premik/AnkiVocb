@@ -540,12 +540,13 @@ public class Manager {
 			validate()
 			printStats()
 			//allTextWithLang("cs").each {println it}
+			allTextWithLang("en").each {println it}
 
 
 			//moveToSubFolders()
 			//println allTextWithLang("en")
 			//moveSamples()
-			save()
+			//save()
 
 			println "Resaved "
 		}
