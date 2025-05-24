@@ -7805,6 +7805,8 @@ concepts:
 ##  data   ################################################################## single term only|no en term
 - terms: 
   - term: data
+    lang: en
+  - term: data
     lang: cs
     tts: cs-terms/data-cs.mp3
   img: img/data.jpeg

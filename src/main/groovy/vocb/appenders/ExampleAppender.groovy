@@ -38,7 +38,7 @@ public class ExampleAppender {
 		int i =0
 		for (Concept c in noEx) {
 			String enWord = c.firstTerm
-			String[] czWords = c.terms.values()
+			String[] czWords = c.terms
 					.findAll {it.lang == "cs"}
 					*.term
 					.findAll()

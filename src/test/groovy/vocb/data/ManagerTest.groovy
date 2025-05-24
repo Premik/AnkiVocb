@@ -20,7 +20,7 @@ class ManagerTest {
 	Term s1 = new Term("Apple helps.", "en")
 	Term s2 = new Term("Jablko pomáhá", "cs")
 	Concept c = new Concept(
-	terms: [apple:t1, jablko:t2],
+	terms: [t1, t2],
 	state: "state", img:"",
 	
 	freq:1.1d,

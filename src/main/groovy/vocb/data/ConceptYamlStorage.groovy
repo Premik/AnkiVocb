@@ -33,7 +33,7 @@ public class ConceptYamlStorage {
 		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, origins:cjs.origins)
 		cjs.terms.each {
 			Term t = parseTerm(it)
-			c.terms.put(t.term, t)
+			c.terms.add(t)
 		}
 
 		/*cjs.examples.each {			
@@ -115,7 +115,7 @@ public class ConceptYamlStorage {
 		//sb.append("#"*16 + "\n")
 
 
-		String terms=listToYaml(c.terms.values().collect(this.&termToYaml))
+		String terms=listToYaml(c.terms.collect(this.&termToYaml))
 		
 		//String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
