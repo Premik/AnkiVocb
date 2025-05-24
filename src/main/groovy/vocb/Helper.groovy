@@ -113,10 +113,7 @@ public class Helper {
 	public static Tuple2<String, String> splitFileNameExt(String filename) {
 		if (!filename.contains(".")) return [filename, ""] //No ext
 		int dot = filename.lastIndexOf('.')
-		return [
-			filename.take(dot),
-			filename.substring(dot+ 1)
-		]
+		return [filename.take(dot), filename.substring(dot+ 1)]
 	}
 
 	public static String indent(String s, int indent=1, String indChr=" ", String ignorePfxs='#|$' ) {
@@ -219,9 +216,9 @@ public class Helper {
 	}
 	//https://stackoverflow.com/questions/16656651/does-java-have-a-clamp-function
 	public static <T extends Comparable<T>> T clamp(T val, T min, T max) {
-		if (val.compareTo(min) < 0) return min;
-		else if (val.compareTo(max) > 0) return max;
-		else return val;
+		if (val.compareTo(min) < 0) return min
+		else if (val.compareTo(max) > 0) return max
+		else return val
 	}
 
 	public static <T extends Comparable<T>> T clamp01(T val) {
@@ -243,17 +240,32 @@ public class Helper {
 		}
 	}
 
+	public static  <T>  List<T>  cutPaste(int from, int to, List<T> col) {
+		assert from >=0 && from < col.size()
+		assert to >=0 && to < col.size()
+		if (to == from) {
+			return col
+		}
+		int d = Math.signum(to-from) as int
+		int count = Math.abs(to-from)
+		for (int i=0;i<count;i++) {
+			col.swap(from,from+d)
+			from+=d
+		}
+		return col
+	}
+
 	public static <T> void withAllPairs(List<T> coll, int limit=coll.size()-1,@ClosureParams(value= FromString, options=["int,T,T"] )  Closure c) {
 		for (int i=limit-1;i>0;i--) {
 			withEachPairInDistance(coll, i, c)
 		}
 	}
-	
+
 	public static BigDecimal lerp(BigDecimal point1, BigDecimal point2, BigDecimal alpha)
 	{
 		point1 + alpha * (point2 - point1)
 	}
-	
+
 	public static String stripExt(String fn) {
 		fn?.replaceFirst(~/\.[^\.]+$/, '')?: ""
 	}

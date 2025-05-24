@@ -1,0 +1,516 @@
+version: 0.0.1
+concepts: 
+##  apple   #################################################################
+- terms: 
+  - term: apple
+    lang: en
+    tts: apple.mp3
+    pron: ˈæpəl
+  - term: jablko
+    lang: cs
+    tts: jablko.mp3
+  examples: 
+  - term: Apple helps clean teeth.
+    lang: en
+    tts: Apple helps clean teeth.mp3
+  - term: Jablko pomáhá čistit zuby.
+    lang: cs
+    tts: Jablko pomaha cistit zuby.mp3
+  img: apple.jpeg
+  freq: 13506.05000
+  origins: ["top500", "conceptDbSamples"]
+##  kitty   #################################################################
+- terms: 
+  - term: kitty
+    lang: en
+    tts: kitty.mp3
+    pron: ˈkɪti
+  - term: koťátko
+    lang: cs
+    tts: kotatko.mp3
+  - term: kočička
+    lang: cs
+    tts: kocicka.mp3
+  examples: 
+  - term: Kitty needs some attention.
+    lang: en
+    tts: Kitty needs some attention.mp3
+  - term: Koťátko potřebuje trochu pozornosti.
+    lang: cs
+    tts: Kotatko potrebuje trochu pozornosti.mp3
+  img: kitty.jpeg
+  freq: 278.47900
+  origins: ["conceptDbSamples"]
+##  the   ###################################################################
+- terms: 
+  - term: the
+    lang: en
+  state: ignore
+  origins: ["conceptDbSamples"]
+##  of   ####################################################################
+- terms: 
+  - term: of
+    lang: en
+    tts: of.mp3
+    pron: ʌv
+  - term: z
+    lang: cs
+    tts: z.mp3
+  examples: 
+  - term: Take one of these.
+    lang: en
+    tts: Take one of these.mp3
+  - term: Vezměte si jednu z těchto.
+    lang: cs
+    tts: Vezmete si jednu z techto.mp3
+  state: ignoreImage
+  freq: 22146974.50000
+  origins: ["Supaplex", "conceptDbSamples"]
+##  and   ###################################################################
+- terms: 
+  - term: and
+    lang: en
+    tts: and.mp3
+    pron: ænd
+  - term: a
+    lang: cs
+    tts: a.mp3
+  examples: 
+  - term: Cat and dog.
+    lang: en
+    tts: Cat and dog.mp3
+  - term: Kočka a pes.
+    lang: cs
+    tts: Kocka a pes.mp3
+  img: and.jpeg
+  freq: 20342628.50000
+  origins: ["Supaplex", "conceptDbSamples"]
+##  to   ####################################################################
+- terms: 
+  - term: to
+    lang: en
+    tts: to.mp3
+    pron: tu
+  - term: do
+    lang: cs
+    tts: do-cs.mp3
+  - term: aby
+    lang: cs
+    tts: aby.mp3
+  examples: 
+  - term: Go to the bedroom.
+    lang: en
+    tts: Go to the bedroom.mp3
+  - term: Jdi do ložnice.
+    lang: cs
+    tts: Jdi do loznice.mp3
+  state: ignoreImage
+  freq: 14906506.00000
+  origins: ["Supaplex", "conceptDbSamples"]
+##  before   ################################################################
+- terms: 
+  - term: before
+    lang: en
+    tts: before.mp3
+    pron: bɪˈfɔr
+  - term: před
+    lang: cs
+    tts: pred.mp3
+  - term: dříve
+    lang: cs
+    tts: drive-cs.mp3
+  examples: 
+  - term: Read the instructions before use.
+    lang: en
+    tts: Read the instructions before use.mp3
+  - term: Před použitím si přečtěte pokyny.
+    lang: cs
+    tts: Pred pouzitim si prectete pokyny.mp3
+  img: before.jpeg
+  freq: 586348.50000
+  origins: ["corpus", "conceptDbSamples"]
+
+##  ever   ##################################################################
+- terms: 
+  - term: ever
+    lang: en
+    tts: ever.mp3
+    pron: ˈɛvər
+  - term: někdy
+    lang: cs
+    tts: nekdy.mp3
+  - term: vůbec
+    lang: cs
+    tts: vubec.mp3
+  examples: 
+  - term: Will this day ever end?
+    lang: en
+    tts: Will this day ever end.mp3
+  - term: Skončí tenhle den vůbec?
+    lang: cs
+    tts: Skonci tenhle den vubec.mp3
+  img: ever.jpeg
+  freq: 347490.50000
+  origins: ["corpus", "conceptDbSamples"]
+##  means   #################################################################
+- terms: 
+  - term: means
+    lang: en
+    tts: means.mp3
+    pron: minz
+  - term: znamená
+    lang: cs
+    tts: znamena.mp3
+  - term: prostředky
+    lang: cs
+    tts: prostredky.mp3
+  examples: 
+  - term: It means a lot to me.
+    lang: en
+    tts: It means a lot to me.mp3
+  - term: Moc to pro mě znamená.
+    lang: cs
+    tts: Moc to pro me znamena.mp3
+  img: means.jpeg
+  freq: 284431.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  once   ##################################################################
+- terms: 
+  - term: once
+    lang: en
+    tts: once.mp3
+    pron: wʌns
+  - term: jednou
+    lang: cs
+    tts: jednou.mp3
+  - term: kdysi
+    lang: cs
+    tts: kdysi.mp3
+  examples: 
+  - term: You told it to me once.
+    lang: en
+    tts: You told it to me once.mp3
+  - term: Řekl jsi mi to kdysi.
+    lang: cs
+    tts: Rekl jsi mi to kdysi.mp3
+  img: once.jpeg
+  freq: 283167.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  love   ##################################################################
+- terms: 
+  - term: love
+    lang: en
+    tts: love.mp3
+    pron: lʌv
+  - term: láska
+    lang: cs
+    tts: laska.mp3
+  - term: milovat
+    lang: cs
+    tts: milovat.mp3
+  examples: 
+  - term: He was my first love!
+    lang: en
+    tts: He was my first love.mp3
+  - term: Byl moje první láska!
+    lang: cs
+    tts: Byl moje prvni laska.mp3
+  img: love.jpeg
+  freq: 281995.50000
+  origins: ["corpus", "conceptDbSamples"]
+##  passed   ################################################################
+- terms: 
+  - term: passed
+    lang: en
+    tts: passed.mp3
+    pron: pæst
+  - term: předán
+    lang: cs
+    tts: predan.mp3
+  - term: prošel
+    lang: cs
+    tts: prosel.mp3
+  examples: 
+  - term: But you passed the test.
+    lang: en
+    tts: But you passed the test.mp3
+  - term: Ale zkouškou jste prošel.
+    lang: cs
+    tts: Ale zkouskou jste prosel.mp3
+  img: passed.jpeg
+  freq: 279864.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  feet   ##################################################################
+- terms: 
+  - term: feet
+    lang: en
+    tts: feet.mp3
+    pron: fit
+  - term: chodidla
+    lang: cs
+    tts: chodidla.mp3
+  examples: 
+  - term: Your feet and your ankles are relaxed.
+    lang: en
+    tts: Your feet and your ankles are relaxed.mp3
+  - term: Chodidla a zápěstí máš uvolněná.
+    lang: cs
+    tts: Chodidla a zapesti mas uvolnena.mp3
+  img: feet.jpeg
+  freq: 279821.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  side   ##################################################################
+- terms: 
+  - term: side
+    lang: en
+    tts: side.mp3
+    pron: saɪd
+  - term: strana
+    lang: cs
+    tts: strana.mp3
+  - term: boční
+    lang: cs
+    tts: bocni.mp3
+  examples: 
+  - term: That's your side!
+    lang: en
+    tts: Thats your side.mp3
+  - term: To je tvá strana!
+    lang: cs
+    tts: To je tva strana.mp3
+  img: side.jpeg
+  freq: 279184.50000
+  origins: ["corpus", "conceptDbSamples"]
+##  head   ##################################################################
+- terms: 
+  - term: head
+    lang: en
+    tts: head.mp3
+    pron: hɛd
+  - term: hlava
+    lang: cs
+    tts: hlava.mp3
+  examples: 
+  - term: My head is empty.
+    lang: en
+    tts: My head is empty.mp3
+  - term: Moje hlava je prázdná.
+    lang: cs
+    tts: Moje hlava je prazdna.mp3
+  img: head.jpeg
+  freq: 277069.50000
+  origins: ["corpus", "conceptDbSamples"]
+##  heart   #################################################################
+- terms: 
+  - term: heart
+    lang: en
+    tts: heart.mp3
+    pron: hɑrt
+  - term: srdce
+    lang: cs
+    tts: srdce.mp3
+  examples: 
+  - term: My heart has stopped.
+    lang: en
+    tts: My heart has stopped.mp3
+  - term: Zastavilo se mi srdce.
+    lang: cs
+    tts: Zastavilo se mi srdce.mp3
+  img: heart.jpeg
+  freq: 275846.50000
+  origins: ["corpus", "conceptDbSamples"]
+##  children   ##############################################################
+- terms: 
+  - term: children
+    lang: en
+    tts: children.mp3
+    pron: ˈʧɪldrən
+  - term: děti
+    lang: cs
+    tts: deti.mp3
+  examples: 
+  - term: That's for children.
+    lang: en
+    tts: Thats for children.mp3
+  - term: To je pro děti.
+    lang: cs
+    tts: To je pro deti.mp3
+  img: children.jpeg
+  freq: 275607.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  another   ###############################################################
+- terms: 
+  - term: another
+    lang: en
+    tts: another.mp3
+    pron: əˈnʌðər
+  - term: další
+    lang: cs
+    tts: dalsi.mp3
+  examples: 
+  - term: I really want another kid.
+    lang: en
+    tts: I really want another kid.mp3
+  - term: Vážně chci další dítě.
+    lang: cs
+    tts: Vazne chci dalsi dite.mp3
+  img: another.jpeg
+  freq: 274213.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  friends   ###############################################################
+- terms: 
+  - term: friends
+    lang: en
+    tts: friends.mp3
+    pron: frɛndz
+  - term: přátel
+    lang: cs
+    tts: pratel.mp3
+  - term: kamarády
+    lang: cs
+    tts: kamarady.mp3
+  examples: 
+  - term: I brought my friends.
+    lang: en
+    tts: I brought my friends.mp3
+  - term: Přivedl jsem si kamarády.
+    lang: cs
+    tts: Privedl jsem si kamarady.mp3
+  img: friends.jpeg
+  freq: 237481.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  since   #################################################################
+- terms: 
+  - term: since
+    lang: en
+    tts: since.mp3
+    pron: sɪns
+  - term: od té doby
+    lang: cs
+    tts: od te doby.mp3
+  examples: 
+  - term: I've been worried since yesterday.
+    lang: en
+    tts: Ive been worried since yesterday.mp3
+  - term: Mám starosti od včerejška.
+    lang: cs
+    tts: Mam starosti od vcerejska.mp3
+  state: ignoreImage
+  freq: 168360.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  earth   #################################################################
+- terms: 
+  - term: earth
+    lang: en
+    tts: earth.mp3
+    pron: ɜrθ
+  - term: země
+    lang: cs
+    tts: zeme.mp3
+  - term: pozemské
+    lang: cs
+    tts: pozemske.mp3
+  examples: 
+  - term: The green earth, you say?
+    lang: en
+    tts: The green earth, you say.mp3
+  - term: Zelená země, říkáš?
+    lang: cs
+    tts: Zelena zeme, rikas.mp3
+  img: earth.jpeg
+  freq: 121948.00000
+  origins: ["corpus", "conceptDbSamples"]
+##  behind   ################################################################
+- terms: 
+  - term: behind
+    lang: en
+    tts: behind.mp3
+    pron: bɪˈhaɪnd
+  - term: za
+    lang: cs
+    tts: za.mp3
+  examples: 
+  - term: They were right behind us.
+    lang: en
+    tts: They were right behind us.mp3
+  - term: Byli těsně za námi.
+    lang: cs
+    tts: Byli tesne za nami.mp3
+  img: behind.jpeg
+  freq: 121776.00000
+  origins: ["corpus", "conceptDbSamples"]
+
+##  months   ################################################################ ▆ 67%
+- terms: 
+  - term: months
+    lang: en
+    tts: months.mp3
+    pron: mʌnθs
+  - term: měsíce
+    lang: cs
+    tts: mesice.mp3
+  img: months.jpeg
+  freq: 116955.00000
+  origins: ["conceptDbSamples"]
+##  ready   ################################################################# ▆ 67%
+- terms: 
+  - term: ready
+    lang: en
+    tts: ready.mp3
+    pron: ˈrɛdi
+  - term: připraven
+    lang: cs
+    tts: pripraven.mp3
+  img: ready.jpeg
+  freq: 116349.50000
+  origins: ["conceptDbSamples"]
+##  remarkable   ############################################################ ▅ 50%
+- terms: 
+  - term: remarkable
+    lang: en
+    tts: remarkable.mp3
+    pron: rɪˈmɑrkəbəl
+  - term: pozoruhodné
+    lang: cs
+    tts: pozoruhodne.mp3
+  - term: mimořádný
+    lang: cs
+    tts: mimoradny.mp3
+  freq: 35244.40000
+  origins: ["conceptDbSamples"]
+##  movie   ################################################################# ▅ 50%
+- terms: 
+  - term: movie
+    lang: en
+    tts: movie.mp3
+    pron: ˈmuvi
+  - term: film
+    lang: cs
+    tts: film-cs.mp3
+  freq: 35083.52900
+  origins: ["conceptDbSamples"]
+##  nose   ################################################################## ▅ 50%
+- terms: 
+  - term: nose
+    lang: en
+    tts: nose.mp3
+    pron: noʊz
+  - term: nos
+    lang: cs
+    tts: nos.mp3
+  freq: 34998.90000
+  origins: ["conceptDbSamples"]
+##  seafood   ############################################################### ▅ 50%
+- terms: 
+  - term: seafood
+    lang: en
+    tts: seafood.mp3
+    pron: ˈsiˌfud
+  - term: mořské plody
+    lang: cs
+    tts: morske plody.mp3
+  - term: plody moře
+    lang: cs
+    tts: plody more.mp3
+  freq: 27.68970
+  origins: ["conceptDbSamples"]
