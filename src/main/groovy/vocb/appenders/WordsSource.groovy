@@ -144,7 +144,7 @@ public class WordsSource {
 			//String tx = ''''''
 			
 			//String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
-			String tx = new File("/data/src/AnkiVocb/pkg/SimpleVerbs/words.txt").text
+			String tx = new File("/data/src/AnkiVocb/pkg/Uncommon/words.txt").text
 			
 			
 			fromText(tx)
