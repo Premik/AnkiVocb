@@ -52,8 +52,10 @@ public class ExampleComparatorMatch {
 		}.join(" ")		
 	}
 	
-	public String toAnsiString() {				
-		return "${sentenceToAnsiString()} -> ${inverted().sentenceToAnsiString(NORMAL)}"	
+	public String toAnsiString() {
+		String inv = inverted().sentenceToAnsiString(NORMAL).take(1000).padRight(120)
+		String tx= sentenceToAnsiString().take(1000)				
+		return "'$inv' ${color('<-',BLUE)} $tx ${color("", NORMAL)}"	
 	}
 	
 	public ExampleComparatorMatch inverted() {

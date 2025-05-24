@@ -75,9 +75,12 @@ public class WordNormalizer {
 	}
 
 	public String swapPluralSingular(String s) {
-		if (s.length() < 2) return [s]
+		if (s.length() < 2) return [s] // I -x> is
 		//Removes or adds 's'
-		if (s.endsWith('s')) return s[0..<-1]
+		if (s.endsWith('s')) {
+			if (s.length() <3) return [s] // is -x> I  
+			return s[0..<-1] as String
+		}
 		return "${s}s" as String //Add 's'
 	}
 
@@ -99,9 +102,9 @@ public class WordNormalizer {
 		if (s.endsWith('e')) return ["${s}d" as String]
 		if (s.endsWith('ed')) {
 			if (s.length() > 4) {
-				return [s[0..<-2], s[0..<-1]]
+				return [s[0..<-2] as String, s[0..<-1] as String]
 			} else {
-				return [s[0..<-1]]
+				return [s[0..<-1] as String]
 			}
 		}
 		return ["${s}ed" as String]
