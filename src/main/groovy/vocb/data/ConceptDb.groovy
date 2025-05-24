@@ -18,14 +18,15 @@ public class ConceptDb {
 	List<Concept> concepts = []
 	List<Example> examples = []
 
-	@Lazy 
-	List<DataLocation> dataLocations = termContainers
+	 
+	List<DataLocation> getDataLocations() {  termContainers
 					.map {
 						assert it.location
 						it.location
 						}
 					//.filter {it}
 					.collect(Collectors.toSet()).toList()
+	}
 
 	public List<Term> examplesByLang(String lng) {
 		examples.collectMany {it.termsByLang(lng) }
@@ -57,7 +58,7 @@ public class ConceptDb {
 	public boolean flush() {
 		concepts*.updateDataLocationDirty()
 		examples*.updateDataLocationDirty()
-		this.@$dataLocations = null
+		//this.@$dataLocations = null
 	}
 	
 	public void assignDataLocationToAll(DataLocation dl) {
