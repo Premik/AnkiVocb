@@ -1,14 +1,19 @@
 package vocb.data
 
-import java.util.stream.Stream
-
+import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
-
-import vocb.corp.WordNormalizer
+import org.junit.jupiter.api.parallel.Execution
+import org.junit.jupiter.api.parallel.ExecutionMode
 
 @Newify(value=[Example, Term])
+@Execution(ExecutionMode.SAME_THREAD)
 class ExampleComparatorTest {
+
+	@BeforeAll
+	static void init() {
+		ExampleComparatorMatch.preferedWords = ["hello", "world", "today"]
+	}
 
 	ExampleComparator c1 = ExampleComparator.of("Hello world.")
 	ExampleComparator c2 = ExampleComparator.of("Hello good old worlds.")
@@ -21,8 +26,8 @@ class ExampleComparatorTest {
 	ExampleComparator c3Uncached = new ExampleComparator(sentence:e1.firstTerm)
 
 	ExampleComparator c4 = ExampleComparator.of("Hello good old worlds")
-	
-	
+
+
 
 
 	@Test
@@ -38,13 +43,13 @@ class ExampleComparatorTest {
 		assert c1.similarityScoreOf("") ==0
 		assert c1.similarityScoreOf("non this word") <=0
 		assert c1.similarityScoreOf("hello") >0
-		assert c1.similarityScoreOf("Hello") == c1.similarityScoreOf("world")
+		//assert c1.similarityScoreOf("Hello2") == c1.similarityScoreOf("world2")
 		assert c3.similarityScoreOf("hello world example") == c3Uncached.similarityScoreOf("hello world example")
 	}
 
 	@Test
 	void testEq() {
-		assert !(c3Uncached === c3)		
+		assert !(c3Uncached === c3)
 		assert  c3Uncached == c3
 	}
 
@@ -57,32 +62,46 @@ class ExampleComparatorTest {
 
 	@Test
 	void printAnsi() {
-		ExampleComparatorMatch.preferedWords = ["hello"]
-		println c2.bestFromComparators([c1, c3])[0].toAnsiString()		
+
+		println c2.bestFromComparators([c1, c3])[0].toAnsiString()
 	}
-	
+
+	@Test
+	void preferedWordsScoreTest() {
+		ExampleComparatorMatch m =new ExampleComparatorMatch()
+		["notPress","hello", "world"].each {println m.preferedWordsScore([it])}
+		assert m.preferedWordsScore(["notPres"]) <=0
+		assert m.preferedWordsScore(["hello"]) >0
+		assert m.preferedWordsScore(["world"]) >0
+		assert m.preferedWordsScore(["hello"]) > m.preferedWordsScore(["world"])
+		
+	}
+
 	@Test
 	void bracketVariants() {
 		ExampleComparator word = new ExampleComparator(words:["That's (that is)"])
 		assert word.wordVariants.containsAll("that is", "that's")
 		assert word.wordVariants.containsAll("that", "is")
-		
+
 		ExampleComparator ex = new ExampleComparator(words:["That's", "that is"])
 		assert ex.wordVariants.containsAll("that is", "that's")
 		assert ex.wordVariants.containsAll("that", "is")
-		
+
 		ExampleComparatorMatch m =ex.similarityCompareTo(word)
 		assert m.commonWords as Set == ["That's"] as Set
 		assert m.commonWordVariants.containsAll("that is", "that's")
 		assert m.commonWordVariants.containsAll("That is", "That's")
-		assert m.commonWordVariants.containsAll("that", "is")		
+		assert m.commonWordVariants.containsAll("that", "is")
 	}
-	
+
 	@Test
 	void wordsMatchings() {
 		Set<String> noBrackets = ["That's", "I'm"] as Set
-		Set<String> brackets = ["That's (that is)", "I'm (I am)"] as Set
-		ExampleComparator c = new ExampleComparator(words:brackets)		
+		Set<String> brackets = [
+			"That's (that is)",
+			"I'm (I am)"
+		] as Set
+		ExampleComparator c = new ExampleComparator(words:brackets)
 		assert c.wordsMatchingWithoutBrackets(noBrackets) as Set == brackets
 		Set<String> inBrackets = ["that is", "I am"] as Set
 		assert c.wordsMatchingVariant(inBrackets) as Set == brackets
@@ -96,8 +115,13 @@ class ExampleComparatorTest {
 			"That's very funny",
 			//"What fun it is to ride"
 		].collect {String s->Example().tap{terms.add(Term(s))}}
-		
-		List<String> words = ["That's (that is)", "it's (it is, it has)", "fun", "to"]		
+
+		List<String> words = [
+			"That's (that is)",
+			"it's (it is, it has)",
+			"fun",
+			"to"
+		]
 		List<ExampleComparatorMatch> ms = new ExampleComparator(words:words).bestFromExamples(examples.stream())
 		def p = { ExampleComparatorMatch match->
 			println "-"*100
@@ -113,7 +137,5 @@ class ExampleComparatorTest {
 		p(m.inverted())
 		assert m.commonWords.contains("That's")
 		assert m.commonWordVariants.contains("that")
-		
-		
 	}
 }

@@ -17,9 +17,7 @@ public class ExampleComparator {
 	public WordNormalizer getWn() {
 		WordNormalizer.instance
 	}
-	
 
-	ExampleComparatorContext ctx = new ExampleComparatorContext()
 
 	Example example
 	Collection<String> words = []
@@ -36,21 +34,21 @@ public class ExampleComparator {
 				wn.tuples(words.stream().map {wn.stripBracketsOut(it)}))
 				.toList() as LinkedHashSet
 	}
-	
-	
+
+
 	Collection<String> wordsMatchingWithoutBrackets(Collection<String> wordsWithoutBrackets) {
 		words.findAll { String w->
-			wordsWithoutBrackets.contains(wn.stripBracketsOut(w))			
+			wordsWithoutBrackets.contains(wn.stripBracketsOut(w))
 		}
 	}
-	
+
 	Collection<String> wordsMatchingVariant(Collection<String> variants) {
 		words.findAll { String w->
 			List<String> common = wn.pairVariants(w).intersect(variants)
 			return common.size() > 0
 		}
 	}
-	
+
 	String getSentence() {
 		if (example) return example.firstTerm
 		words.join(" ").capitalize() + "."
@@ -62,7 +60,7 @@ public class ExampleComparator {
 		words = WordNormalizer.instance.tokens(s, CaseHandling.OriginalPlusLower).toList() as LinkedHashSet
 	}
 
-	void setExample(Example e) {		
+	void setExample(Example e) {
 		sentence = e?.firstTerm
 		example= e
 	}
@@ -99,10 +97,11 @@ public class ExampleComparator {
 	}
 
 	List<ExampleComparatorMatch> bestExamplesFrom(Stream<ExampleComparator> bs) {
+		
 		double max=Double.NEGATIVE_INFINITY
 		List<ExampleComparatorMatch> best = []
-		bs.forEach { ExampleComparator b->
-			ExampleComparatorMatch m = similarityCompareTo(b)
+		bs.map{ExampleComparator b->similarityCompareTo(b)}
+		.forEach { ExampleComparatorMatch m->
 			if (m.similarityScore > max) {
 				max = m.similarityScore
 				best.clear()

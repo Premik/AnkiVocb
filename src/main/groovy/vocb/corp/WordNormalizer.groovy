@@ -11,6 +11,7 @@ import org.apache.commons.lang3.NotImplementedException
 import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import groovy.transform.Field
+import groovy.transform.Memoized
 import vocb.Helper
 
 
@@ -188,6 +189,8 @@ public class WordNormalizer {
 		return ["${s}ing" as String]
 	}
 
+	@CompileDynamic
+	//@Memoized
 	public List<String> wordVariantsWithBrackets(String s) {
 		def (String a, String b) = splitBrackets(s)
 		//if (!b) return wordVariants(s, true) //No brackets
@@ -201,6 +204,7 @@ public class WordNormalizer {
 
 
 
+	@CompileDynamic
 	public String normalizeSentence(CharSequence sentence) {
 		if (!sentence) return ""
 		tokens(sentence).collect( Collectors.joining( " ") )
@@ -298,11 +302,13 @@ public class WordNormalizer {
 		uniqueueTokens(sen, true).intersect(uniqueueTokens(sen2, true))
 	}
 
+	@CompileDynamic
 	public String stripBracketsOut(String tx) {
 		def (String a, String b) = splitBrackets(tx)
 		return a
 	}
 
+	@CompileDynamic
 	public Tuple2<String, String> splitBrackets(String tx) {
 		def (String a, String b, String c) = Helper.splitByRex(tx, stripBrkPattern)
 		if (a == null) return [tx, ""] as Tuple2<String, String>
