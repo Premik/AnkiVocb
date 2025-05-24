@@ -14,7 +14,7 @@ public class BingImageAppender {
 
 	ImageSelector imgSelector
 
-	int searchResults=32
+	int searchResults=64
 	@Lazy HttpHelper httpHelper
 	@Lazy BingWebSearch bingSearch = {
 		new BingWebSearch(httpHelper: httpHelper)
