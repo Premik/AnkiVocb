@@ -209,13 +209,13 @@ public class Pack {
 		int cnt = new Pack().allPackages.size()
 		(0..cnt-1).stream().parallel()
 				.forEach( {int p->
-					if (p == 0)
+					//if (p == 0)
 					new Pack().with {
 						//allPackages.each {println it}
 						Collection<PackInfo>  pkgs
 						synchronized (Pack.class ) {
-							//pkgs = [allPackages.values()[p]]
-							pkgs = [allPackages["MaryHadALittleLamb"]]
+							pkgs = [allPackages.values()[p]]
+							//pkgs = [allPackages["MaryHadALittleLamb"]]
 							//pkgs = [allPackages.values()[p]]
 						}
 						

@@ -5,7 +5,8 @@ import static java.lang.System.getenv
 
 class ConfHelper {
 
-	
+
+	public final configRootFolder="Ankivocb"
 	public  final List<String> resExplicitExtensions = ['.conf', '.html']
 	public  final List<String> cpFolders = [
 		'',
@@ -33,15 +34,17 @@ class ConfHelper {
 	}()
 
 	public  String ensureEndSlash(String s) {
+		if (!s) return ""
 		if (s.endsWith(File.separator)) return s
 		return s + File.separator
 	}
 
 	public  List<String> lookupFoldersToConsider =
 	[
-		"${ensureEndSlash(getProperty('user.home'))}.local${File.separator}share${File.separator}Ankivocb",
-		"${ensureEndSlash(windowsHomePath)}${File.separator}Ankivocb",
-		"${ensureEndSlash(getProperty('user.dir'))}conf"
+		"${ensureEndSlash(getenv('XDG_CONFIG_HOME'))}${File.separator}$configRootFolder",
+		"${ensureEndSlash(getProperty('user.home'))}.config${File.separator}$configRootFolder",
+		"${ensureEndSlash(windowsHomePath)}${File.separator}$configRootFolder",
+		"${ensureEndSlash(getProperty('user.dir'))}$configRootFolder"
 	]
 
 	@Lazy public  List<File> lookupFolders = {
@@ -169,8 +172,13 @@ class ConfHelper {
 
 
 	public static void main(String[] args) {
-		println ConfHelper.instance.lookupFolders
-		println ConfHelper.instance.prettyPrintCfg()
+		new ConfHelper().with {
+			println lookupFoldersToConsider
+			println lookupFolders
+			
+			println prettyPrintCfg()
+		}
+		
 	}
 
 
