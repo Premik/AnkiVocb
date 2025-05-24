@@ -71,7 +71,7 @@ concepts:
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex", "conceptDbSamples"]
-##  i   ##################################################################### ▇ 83%
+##  i   #####################################################################
 - terms: 
   - term: i
     lang: en
@@ -86,6 +86,7 @@ concepts:
   - term: Já jsem šťastný.
     lang: cs
     tts: Ja jsem stastny.mp3
+  img: i.jpeg
   freq: 7871531.00000
   origins: ["Manualy"]
 ##  and   ###################################################################
@@ -12381,7 +12382,7 @@ concepts:
   img: fees.jpeg
   freq: 49820.10000
   origins: ["conceptDbSamples"]
-##  fill   ################################################################## ▇ 83%
+##  fill   ##################################################################
 - terms: 
   - term: fill
     lang: en
@@ -12400,9 +12401,10 @@ concepts:
   - term: Vyplňte prosím následující údaje!
     lang: cs
     tts: Vyplnte prosim nasledujici udaje.mp3
+  img: fill.jpeg
   freq: 49413.45000
   origins: ["conceptDbSamples"]
-##  cup   ################################################################### ▇ 83%
+##  cup   ###################################################################
 - terms: 
   - term: cup
     lang: en
@@ -12421,6 +12423,7 @@ concepts:
   - term: Šálek čaje nebo kávy.
     lang: cs
     tts: Salek caje nebo kavy.mp3
+  img: cup.jpeg
   freq: 49370.15000
   origins: ["conceptDbSamples"]
 ##  worst   ################################################################# ▇ 83%
@@ -13444,7 +13447,7 @@ concepts:
     tts: Byl jste vzhuru celou noc.mp3
   freq: 31165.90000
   origins: ["conceptDbSamples"]
-##  scale   ################################################################# ▇ 82%
+##  scale   ################################################################# ▇ 83%
 - terms: 
   - term: scale
     lang: en
@@ -13455,6 +13458,7 @@ concepts:
     tts: meritko.mp3
   - term: rozsah
     lang: cs
+    tts: rozsah.mp3
   examples: 
   - term: It has been happening on a very large scale.
     lang: en
