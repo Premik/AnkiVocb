@@ -26,6 +26,7 @@ public class Helper {
 
 	public static String utf8=StandardCharsets.UTF_8.toString()
 	public static GStringTemplateEngine templEngine = new GStringTemplateEngine()
+	public static Tuple3 null3 = [null, null, null]
 
 	static public void printProcOut(Process proc) {
 		StringBuffer b = new StringBuffer()
@@ -149,11 +150,11 @@ public class Helper {
 	 */
 	public static Tuple3<String, String, String> splitBy(String toSplit, String delimiter) {
 		if (!toSplit || !delimiter) {
-			return null
+			return null3
 		}
 		int offset = toSplit.toLowerCase().indexOf(delimiter.toLowerCase())
 		if (offset < 0) {
-			return null
+			return null3
 		}
 
 		String beforeDelimiter = toSplit.substring(0, offset)
@@ -165,24 +166,26 @@ public class Helper {
 
 	public static Tuple3<String, String, String> splitByRex(String toSplit, Pattern delimiter) {
 		if (!toSplit || !delimiter) {
-			return null
+			return null3
 		}
 		String[] matches = toSplit.findAll(delimiter)
-		if (!matches) return null
+		if (!matches) return null3
 		assert matches.size() == 1 : "Found multiple matches of the '$delimiter'. ${matches}"
 		return splitBy(toSplit, matches[0])
 	}
 
 	public static Tuple3<String, String, String> splitByWord(String toSplit, String word) {
 		if (!toSplit || !word) {
-			return null
+			return null3
 		}
 
 		String del = /\s.,;?!:"'/
-		Pattern rx = ~/(?i)([$del]+)(${Pattern.quote(word)})([$del]+)/
+		Pattern rx = ~/(?i)([$del]+|^)(${Pattern.quote(word)})([$del]+|$)/
 
 		def (a,b,c) = splitByRex(toSplit, rx)
+		if (a == null) return null3
 		def (b1,b2,b3) = splitBy(b, word) //Don't include the special characters to the middle word but to the borders
+		if (b1 == null) return null3
 		return [a+b1, b2, b3+c]
 	}
 

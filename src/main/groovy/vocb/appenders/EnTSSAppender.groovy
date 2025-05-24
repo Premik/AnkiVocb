@@ -93,7 +93,7 @@ public class EnTSSAppender {
 
 
 	public static void main(String[] args) {
-		EnTSSAppender a = new EnTSSAppender(limit:100)
+		EnTSSAppender a = new EnTSSAppender(limit:10)
 		//a.runTerms()
 		a.runExamples()
 		println "Done"
