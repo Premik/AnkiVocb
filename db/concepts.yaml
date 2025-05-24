@@ -19978,7 +19978,6 @@ concepts:
     tts: cs-terms/konkretni.mp3
   img: img/specific.jpeg
   freq: 183.27040
-##  existing   ############################################################## no img
 - terms: 
   - term: existing
     tts: en-terms/existing.mp3
@@ -19986,34 +19985,35 @@ concepts:
     tts: cs-terms/stavajici.mp3
   - term: existující
     tts: cs-terms/existujici.mp3
+  img: img/existing.jpeg
   freq: 99.98410
-##  settings   ############################################################## no img
 - terms: 
   - term: settings
     tts: en-terms/settings.mp3
   - term: nastavení
     tts: cs-terms/nastaveni.mp3
+  img: img/settings.jpeg
   freq: 78.80530
-##  backup   ################################################################ no img
 - terms: 
   - term: backup
     tts: en-terms/backup.mp3
   - term: záloha
     tts: cs-terms/zaloha.mp3
+  img: img/backup.jpeg
   freq: 41.83430
-##  transaction   ########################################################### no img
 - terms: 
   - term: transaction
     tts: en-terms/transaction.mp3
   - term: transakce
     tts: cs-terms/transakce.mp3
+  img: img/transaction.jpeg
   freq: 37.34380
-##  romantic   ############################################################## no img
 - terms: 
   - term: romantic
     tts: en-terms/romantic.mp3
   - term: romantické
     tts: cs-terms/romanticke.mp3
+  img: img/romantic.jpeg
   freq: 22.19910
 ##  identifies   ############################################################ no img
 - terms: 
