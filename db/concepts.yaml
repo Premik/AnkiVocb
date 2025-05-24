@@ -19954,13 +19954,9 @@ concepts:
 - terms: 
   - term: existing
   freq: 99.98410
-##  businesses   ############################################################ single term only|no img|no cs term|t0:tts:missing
-- terms: 
-  - term: businesses
-  freq: 82.32940
 ##  setting   ############################################################### single term only|no img|no cs term|t0:tts:missing
 - terms: 
-  - term: setting
+  - term: settings
   freq: 78.80530
 ##  backup   ################################################################ single term only|no img|no cs term|t0:tts:missing
 - terms: 
@@ -19978,9 +19974,7 @@ concepts:
 - terms: 
   - term: identifies
   freq: 11.12010
-##  'yes'   ################################################################# single term only|no img|no freq|no cs term|t0:tts:missing
-- terms: 
-  - term: "'yes'"
+
 ##  online   ################################################################ single term only|no img|no cs term|t0:tts:missing
 - terms: 
   - term: online
@@ -19991,7 +19985,7 @@ concepts:
   freq: 143.50630
 ##  sellers   ############################################################### single term only|no img|no cs term|t0:tts:missing
 - terms: 
-  - term: sellers
+  - term: seller
   freq: 119.49440
 ##  channel   ############################################################### single term only|no img|no cs term|t0:tts:missing
 - terms: 
@@ -19999,7 +19993,7 @@ concepts:
   freq: 114.52120
 ##  blogs   ################################################################# single term only|no img|no cs term|t0:tts:missing
 - terms: 
-  - term: blogs
+  - term: blog
   freq: 79.87810
 ##  monthly   ############################################################### single term only|no img|no cs term|t0:tts:missing
 - terms: 
