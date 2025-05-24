@@ -168,9 +168,13 @@ public class Pack {
 		File pkgFile = info.packagePath.toFile()
 		cfgHelper.extraLookupFolders.add(pkgFile)
 		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
-		if (Files.exists(info.sentences)) {
+		if (info.sentences) {
 			exportSentences(info.sentences, d2c.dbMan)
 			d2c.exportExamplesToCrowd(exportExamples)
+		}
+		
+		if (info.wordList) {
+			d2c.exportWordsToCrowd(info.wordList)
 		}
 
 		
@@ -205,17 +209,17 @@ public class Pack {
 		int cnt = new Pack().allPackages.size()
 		(0..cnt-1).stream().parallel()
 				.forEach( {int p->
-					if (2 == 2)
+					if (p == 0)
 					new Pack().with {
 						//allPackages.each {println it}
 						Collection<PackInfo>  pkgs
 						synchronized (Pack.class ) {
-							//pkgs = allPackages.values()
-							pkgs = [allPackages.values()[p]]
+							//pkgs = [allPackages.values()[p]]
+							pkgs = [allPackages["SimpleWords"]]
+							//pkgs = [allPackages.values()[p]]
 						}
 						
-						//Collection<PackInfo> pkgs = [allPackages["DuckTales"]]
-						//Collection<PackInfo> pkgs = [allPackages.values()[p]]
+						
 						pkgs.each { PackInfo i->
 							println '*'*100
 							println "* ${i.name}"

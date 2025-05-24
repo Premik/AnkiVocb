@@ -15,7 +15,7 @@ import groovy.transform.ToString
 	includeNames=true,
 	ignoreNulls=true,
 	includePackage=false,
-	excludes=['sentences']
+	excludes=['sentences', 'wordList'],	
 	)
 public class PackInfo {
 	
@@ -27,13 +27,22 @@ public class PackInfo {
 	
 	@Lazy Path packagePath = packageRootPath.resolve(name)
 	@Lazy Path infoConfPath = packagePath.resolve("info.conf")
+	@Lazy Path sentencesPath = packagePath.resolve("sentences.txt")
+	@Lazy Path wordsPath= packagePath.resolve("words.txt")
 	@Lazy ConfigObject infoCfg =  {
 		if (!Files.exists(infoConfPath)) return new ConfigObject()
 		return new ConfigSlurper().parse(infoConfPath.text)
 	}();
 	
-	@Lazy String sentences = packagePath.resolve("sentences.txt").text
-	@Lazy String wordList = packagePath.resolve("words.txt").text
+	@Lazy String sentences = {
+		if (!Files.exists(sentencesPath)) return ""
+		return sentencesPath.text
+	}()
+	
+	@Lazy List<String> wordList = {
+		if (!Files.exists(wordsPath)) return [] as List<String>
+		return wordsPath.text.split(/\s+/) as List<String>
+	}()
 	
 	
 	
