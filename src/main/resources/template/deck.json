@@ -36,19 +36,19 @@
                     7
                 ],
                 "order": 1,
-                "perDay": 10,
+                "perDay": 6,
                 "separate": true
             },
             "replayq": true,
             "rev": {
                 "bury": true,
-                "ease4": 2,
+                "ease4": 3,
                 "fuzz": 0.05,
                 "hardFactor": 1.2,
                 "ivlFct": 1,
                 "maxIvl": 36500,
                 "minSpace": 1,
-                "perDay": 60
+                "perDay": 40
             },
             "timer": 0
         }

@@ -6,7 +6,7 @@ import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Map.Entry
 
-import groovy.transform.CompileStatic
+import vocb.ConfHelper
 import vocb.anki.crowd.Data2Crowd
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
@@ -20,11 +20,15 @@ import vocb.ord.OrderSolver
 public class Pack {
 
 	Path destFolder = Paths.get("/tmp/work")
-	PackInfo info = new PackInfo()
+	ConfHelper cfgHelper = ConfHelper.instance
+	@Lazy ConfigObject cfg = cfgHelper.cfg
 	
+	PackInfo info = new PackInfo()
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+	@Lazy Path packagePath = packageRootPath.resolve(info.name)
+	
 
-	@Lazy String sentences = packageRootPath.resolve(info.name).resolve("sentences.txt").text
+	@Lazy String sentences = packagePath.resolve("sentences.txt").text
 
 	@Lazy Path destPath = {
 		destFolder.resolve(info.name).tap {
@@ -201,8 +205,10 @@ public class Pack {
 		new Pack().with {
 			//info.name = "JingleBells"			
 			//info.name = "FiveLittleMonkeys"
-			info.name = "Supaplex"
+			info.name = "LondonBridge"
+			cfgHelper.lookupFoldersToConsider.add(packagePath)
 		 
+			
 			exportSentences()
 			doExport()
 			//exportWordsWithDepc(["I"], 1)

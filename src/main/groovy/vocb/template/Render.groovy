@@ -3,6 +3,9 @@
  */
 package vocb.template
 
+import org.commonmark.parser.Parser
+import org.commonmark.renderer.html.HtmlRenderer
+
 import groovy.text.GStringTemplateEngine
 import vocb.ConfHelper
 import vocb.Helper
@@ -21,6 +24,8 @@ class Render {
 	ConfigObject renderCfg
 	Map<String, Boolean> templateVisibility = [:].withDefault {true}
 	Map extraVars = [:]
+	@Lazy Parser mdParser = Parser.builder().build()
+	@Lazy HtmlRenderer mdRenderer = HtmlRenderer.builder().build()
 
 
 	public Map getTemplBinding() {
@@ -39,13 +44,24 @@ class Render {
 			return ""
 		}
 		String templText = cfgHelper.resolveRes(templResName)?.text
-		if (!templText) throw new FileNotFoundException("Failed to find the requested template '$templResName'", cfgHelper.lookupFolders as String)
+		if (!templText) {			
+			 throw new Exception("Failed to find the requested template '$templResName' in $cfgHelper.lookupFoldersToConsider")			 
+		}
 		if (expandAnkiInterpolations)
 			templText = Helper.ankiInterpoaltion2GString(templText)
 		
 
 		Writable templ = templEngine.createTemplate(templText).make(templBinding)
-		templ.toString()
+		return templ.toString()
+	}
+	
+	public String renderMarkdownText(String markDown) {	
+		mdRenderer.render(mdParser.parse(markDown))
+	}
+	
+	public String renderMarkdownTemplate(String templateName) {
+		String templ = expandTemplate(templateName)
+		return renderMarkdownText(templ)
 	}
 	
 	public String render(Map renderCfg) {
@@ -60,7 +76,7 @@ class Render {
 
 	public String render(String renderConfigName) {
 		renderCfg = cfg.render[renderConfigName]
-		assert renderCfg : "render.$renderConfigName cont found in config"
+		assert renderCfg : "render.$renderConfigName not found in config"
 		return render(renderCfg).trim()
 	}
 
@@ -94,6 +110,7 @@ class Render {
 	static void main(String... args) {
 		 
 		new Render().with {
+			cfgHelper.lookupFoldersToConsider.add("/data/src/AnkiVocb/pkg/FiveLittleMonkeys")
 			preview(new File("/tmp/work/template"))
 		}
 		

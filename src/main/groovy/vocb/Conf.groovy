@@ -9,8 +9,18 @@ class ConfHelper {
 	@Lazy public static ConfigObject cfg = instance.config
 
 	public  final List<String> resExplicitExtensions = ['.conf', '.html']
-	public  final List<String> cpFolders = ['', 'data', 'conf', 'wiki', 'vocb', 'template', 'vocb/data', 'vocb/conf', 
-		'vocb/wiki', 'vocb/template']
+	public  final List<String> cpFolders = [
+		'',
+		'data',
+		'conf',
+		'wiki',
+		'vocb',
+		'template',
+		'vocb/data',
+		'vocb/conf',
+		'vocb/wiki',
+		'vocb/template'
+	]
 	private  String windowsHomePath = "${getenv('HOMEDRIVE')}${getenv('HOMEPATH')}"
 
 
@@ -29,12 +39,15 @@ class ConfHelper {
 		return s + File.separator
 	}
 
+	public  List<File> lookupFoldersToConsider =
+	[
+		"${ensureEndSlash(getProperty('user.home'))}.local${File.separator}share${File.separator}Ankivocb",
+		"${ensureEndSlash(windowsHomePath)}${File.separator}Ankivocb",
+		"${ensureEndSlash(getProperty('user.dir'))}conf"
+	]
+
 	@Lazy public  List<File> lookupFolders = {
-		[
-			"${ensureEndSlash(getProperty('user.home'))}.local${File.separator}share${File.separator}Ankivocb",
-			"${ensureEndSlash(windowsHomePath)}${File.separator}Ankivocb",
-			"${ensureEndSlash(getProperty('user.dir'))}conf",
-		].unique().findAll(this.&isLookupFolderValid) as File[]
+		lookupFoldersToConsider.unique().findAll(this.&isLookupFolderValid) as File[]
 	}()
 
 	public  boolean  isLookupFolderValid(String path) {
@@ -94,10 +107,10 @@ class ConfHelper {
 		].findAll {it}.collect { ClassLoader cl ->
 			cpFolders.collectMany {["$it/$resName", "/$it/$resName"]}
 			.collect{ String cpPath ->
-				//println cpPath				
+				//println cpPath
 				cl.getResourceAsStream(cpPath)
-				}.find {it}
-				
+			}.find {it}
+
 		}.find {it}
 		return is
 	}
