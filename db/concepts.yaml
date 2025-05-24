@@ -20224,453 +20224,762 @@ concepts:
     tts: cs-terms/pripevnit.mp3
   img: img/fix.jpeg
   freq: 54.97830
-##  review   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  review   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: review
+  - term: recenze
+  - term: posudek
+  - term: kritika
   freq: 576.52410
-##  university   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  university   ############################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: university
+  - term: vysoká škola
+  - term: univerzita
   freq: 529.43570
-##  map   ################################################################### single term only|no img|no cs term|t0:tts:missing
+##  map   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: map
+  - term: mapa
+  - term: plán
+  - term: rozvržení
   freq: 526.54960
-##  management   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  management   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: management
+  - term: řízení
+  - term: správa
+  - term: vedení
   freq: 517.23980
-##  design   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  design   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: design
+  - term: návrh
+  - term: vzor
+  - term: plán
   freq: 449.64710
-##  shipping   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  shipping   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: shipping
+  - term: doprava
+  - term: odeslání
+  - term: expedice
   freq: 436.16860
-##  reserved   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  reserved   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: reserved
+  - term: rezervovaný
+  - term: zdrženlivý
+  - term: odtažitý
   freq: 436.03560
-##  index   ################################################################# single term only|no img|no cs term|t0:tts:missing
+##  index   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: index
+  - term: rejstřík
+  - term: ukazatel
+  - term: index
   freq: 412.88260
-##  insurance   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  insurance   ############################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: insurance
+  - term: pojištění
+  - term: zajištění
   freq: 328.62330
-##  canada   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  canada   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: canada
+  - term: Kanada
+  - term: javorový list
   freq: 301.21860
-##  teen   ################################################################## single term only|no img|no cs term|t0:tts:missing
+##  teen   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: teen
+  - term: náctiletý
+  - term: dospívající
+  - term: puberťák
   freq: 299.76910
-##  category   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  category   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: category
+  - term: kategorie
+  - term: druh
+  - term: skupina
   freq: 283.63390
-##  gallery   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  gallery   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: gallery
+  - term: galerie
+  - term: sbírka
+  - term: pavlač
   freq: 281.69500
-##  register   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  register   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: register
+  - term: zapsat
+  - term: evidence
+  - term: rejstřík
   freq: 280.27150
-##  model   ################################################################# single term only|no img|no cs term|t0:tts:missing
+##  model   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: model
+  - term: model
+  - term: vzor
+  - term: typ
   freq: 274.10150
-##  features   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  features   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: features
+  - term: vlastnosti
+  - term: funkce
+  - term: rysy
   freq: 273.68550
-##  industry   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  industry   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: industry
+  - term: průmysl
+  - term: odvětví
+  - term: obor
   freq: 273.43310
-##  accessories   ########################################################### single term only|no img|no cs term|t0:tts:missing
+##  accessories   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: accessories
+  - term: doplňky
+  - term: příslušenství
+  - term: součásti
   freq: 270.32090
-##  server   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  server   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: server
+  - term: server
+  - term: počítačový server
   freq: 261.48990
-##  feedback   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  feedback   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: feedback
+  - term: zpětná vazba
+  - term: ohlas
+  - term: reakce
   freq: 256.76220
-##  standard   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  standard   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: standard
+  - term: norma
+  - term: úroveň
+  - term: měřítko
   freq: 250.24850
-##  analysis   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  analysis   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: analysis
+  - term: rozbor
+  - term: analýza
+  - term: zkoumání
   freq: 212.45430
-##  china   ################################################################# single term only|no img|no cs term|t0:tts:missing
+##  china   ################################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: china
+  - term: Čína
+  - term: porcelán
   freq: 211.64250
-##  committee   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  committee   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: committee
+  - term: výbor
+  - term: komise
+  - term: rada
   freq: 206.32690
-##  companies   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  companies   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: companies
+  - term: společnosti
+  - term: firmy
+  - term: podniky
   freq: 200.81830
-##  self   ################################################################## single term only|no img|no cs term|t0:tts:missing
+##  self   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: self
+  - term: já
+  - term: sebe
+  - term: vlastní
   freq: 191.96990
-##  council   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  council   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: council
+  - term: rada
+  - term: porada
+  - term: sněm
   freq: 191.95560
-##  australia   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  australia   ############################################################# no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: australia
+  - term: Austrálie
   freq: 190.77140
-##  format   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  format   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: format
+  - term: formát
+  - term: úprava
+  - term: rozvržení
   freq: 189.21110
-##  edition   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  edition   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: edition
+  - term: vydání
+  - term: edice
+  - term: provedení
   freq: 187.12280
-##  association   ########################################################### single term only|no img|no cs term|t0:tts:missing
+##  association   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: association
+  - term: sdružení
+  - term: spolek
+  - term: asociace
   freq: 186.04300
-##  planning   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  planning   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: planning
+  - term: plánování
+  - term: rozvrhování
+  - term: projektování
   freq: 176.62710
-##  database   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  database   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: database
+  - term: databáze
+  - term: báze dat
+  - term: úložiště dat
   freq: 176.37710
-##  conference   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  conference   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: conference
+  - term: konference
+  - term: sjezd
+  - term: porada
   freq: 173.41180
-##  statement   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  statement   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: statement
+  - term: prohlášení
+  - term: tvrzení
+  - term: vyjádření
   freq: 171.50960
-##  federal   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  federal   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: federal
+  - term: federální
+  - term: spolkový
   freq: 166.35530
-##  hosting   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  hosting   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: hosting
+  - term: hosting
+  - term: hostování
+  - term: webhosting
   freq: 166.20260
-##  nude   ################################################################## single term only|no img|no cs term|t0:tts:missing
+##  nude   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: nude
+  - term: nahý
+  - term: akt
+  - term: obnažený
   freq: 164.47850
-##  finance   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  finance   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: finance
+  - term: finance
+  - term: peníze
+  - term: financování
   freq: 164.17310
-##  lyrics   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  lyrics   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: lyrics
+  - term: text
+  - term: slova písně
+  - term: písňový text
   freq: 157.41530
-##  submit   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  submit   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: submit
+  - term: odevzdat
+  - term: podat
+  - term: předložit
   freq: 157.16330
-##  production   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  production   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: production
+  - term: výroba
+  - term: produkce
+  - term: tvorba
   freq: 154.07070
-##  commercial   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  commercial   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: commercial
+  - term: reklamní
+  - term: obchodní
+  - term: komerční
   freq: 153.97250
-##  advertising   ########################################################### single term only|no img|no cs term|t0:tts:missing
+##  advertising   ########################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: advertising
+  - term: reklama
+  - term: propagace
   freq: 153.38650
-##  newsletter   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  newsletter   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: newsletter
+  - term: informační bulletin
+  - term: e-mailový zpravodaj
+  - term: novinky e-mailem
   freq: 152.73730
-##  magazine   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  magazine   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: magazine
+  - term: časopis
+  - term: zásobník
   freq: 152.59360
-##  domain   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  domain   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: domain
+  - term: doména
+  - term: oblast
+  - term: působnost
   freq: 149.79380
-##  manager   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  manager   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: manager
+  - term: vedoucí
+  - term: ředitel
+  - term: manažer
   freq: 148.67900
-##  engineering   ########################################################### single term only|no img|no cs term|t0:tts:missing
+##  engineering   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: engineering
+  - term: inženýrství
+  - term: technika
+  - term: strojírenství
   freq: 146.16750
-##  wireless   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  wireless   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: wireless
+  - term: bezdrátový
+  - term: bezdrátově
   freq: 145.09440
-##  license   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  license   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: license
+  - term: povolení
+  - term: licence
+  - term: oprávnění
   freq: 145.08310
-##  annual   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  annual   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: annual
+  - term: roční
+  - term: každoroční
   freq: 144.60160
-##  corporate   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  corporate   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: corporate
+  - term: firemní
+  - term: podnikový
+  - term: společný
   freq: 144.01320
-##  purchase   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  purchase   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: purchase
+  - term: nákup
+  - term: koupě
+  - term: pořízení
   freq: 143.39350
-##  hardware   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  hardware   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: hardware
+  - term: hardware
+  - term: železo
+  - term: technické vybavení
   freq: 142.83110
-##  japan   ################################################################# single term only|no img|no cs term|t0:tts:missing
+##  japan   ################################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: japan
+  - term: Japonsko
+  - term: Japonský
   freq: 137.91430
-##  availability   ########################################################## single term only|no img|no cs term|t0:tts:missing
+##  availability   ########################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: availability
+  - term: dostupnost
+  - term: přístupnost
+  - term: využitelnost
   freq: 137.01850
-##  africa   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  africa   ################################################################ no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: africa
+  - term: Afrika
   freq: 136.98960
-##  summary   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  summary   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: summary
+  - term: shrnutí
+  - term: souhrn
+  - term: rekapitulace
   freq: 136.92110
-##  agency   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  agency   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: agency
+  - term: agentura
+  - term: zprostředkovatelství
+  - term: pověřenectví
   freq: 135.88210
-##  monday   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  monday   ################################################################ no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: monday
+  - term: pondělí
   freq: 135.51080
-##  european   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  european   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: european
+  - term: evropský
+  - term: Evropan
   freq: 135.45740
-##  western   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  western   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: western
+  - term: západní
+  - term: western
   freq: 134.75950
-##  income   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  income   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: income
+  - term: příjem
+  - term: důchod
+  - term: výdělek
   freq: 134.73430
-##  cash   ################################################################## single term only|no img|no cs term|t0:tts:missing
+##  cash   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: cash
+  - term: hotovost
+  - term: peníze v hotovosti
+  - term: keš
   freq: 134.61940
-##  employment   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  employment   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: employment
+  - term: zaměstnání
+  - term: práce
+  - term: uplatnění
   freq: 134.50420
-##  overall   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  overall   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: overall
+  - term: celkový
+  - term: převážně
+  - term: všeobecně
   freq: 134.31290
-##  bay   ################################################################### single term only|no img|no cs term|t0:tts:missing
+##  bay   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: bay
+  - term: zátoka
+  - term: lať
+  - term: štěkot
   freq: 134.26950
-##  commission   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  commission   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: commission
+  - term: provize
+  - term: zakázka
+  - term: pověření
   freq: 134.01500
-##  package   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  package   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: package
+  - term: balík
+  - term: balíček
+  - term: soubor
   freq: 133.34120
-##  port   ################################################################## single term only|no img|no cs term|t0:tts:missing
+##  port   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: port
+  - term: přístav
+  - term: brána
+  - term: víno portské
   freq: 132.71310
-##  album   ################################################################# single term only|no img|no cs term|t0:tts:missing
+##  album   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: album
+  - term: album
+  - term: deska
+  - term: sbírka
   freq: 132.47940
-##  regional   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  regional   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: regional
+  - term: krajský
+  - term: oblastní
+  - term: místní
   freq: 132.20470
-##  supplies   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  supplies   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: supplies
+  - term: zásoby
+  - term: potřeby
+  - term: materiál
   freq: 131.90210
-##  administration   ######################################################## single term only|no img|no cs term|t0:tts:missing
+##  administration   ######################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: administration
+  - term: správa
+  - term: řízení
+  - term: administrativa
   freq: 131.80070
-##  institute   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  institute   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: institute
+  - term: ústav
+  - term: zavést
+  - term: ustanovit
   freq: 131.52500
-##  double   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  double   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: double
+  - term: dvojitý
+  - term: zdvojnásobit
+  - term: dvakrát
   freq: 131.41370
-##  screen   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  screen   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: screen
+  - term: obrazovka
+  - term: plátno
+  - term: síto
   freq: 131.23730
-##  exchange   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  exchange   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: exchange
+  - term: výměna
+  - term: směna
+  - term: obchod
   freq: 131.05980
-##  sponsored   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  sponsored   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: sponsored
+  - term: sponzorovaný
+  - term: podporovaný
+  - term: financovaný
   freq: 130.67840
-##  benefits   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  benefits   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: benefits
+  - term: výhody
+  - term: dávky
+  - term: prospěch
   freq: 130.21220
-##  printer   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  printer   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: printer
+  - term: tiskárna
+  - term: tiskové zařízení
   freq: 129.18490
-##  effective   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  effective   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: effective
+  - term: účinný
+  - term: efektivní
+  - term: platný
   freq: 129.15780
-##  organization   ########################################################## single term only|no img|no cs term|t0:tts:missing
+##  organization   ########################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: organization
+  - term: organizace
+  - term: uspořádání
+  - term: struktura
   freq: 128.55120
-##  selection   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  selection   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: selection
+  - term: výběr
+  - term: volba
+  - term: sortiment
   freq: 127.85860
-##  casino   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  casino   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: casino
+  - term: kasino
+  - term: herna
   freq: 127.17760
-##  tour   ################################################################## single term only|no img|no cs term|t0:tts:missing
+##  tour   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: tour
+  - term: prohlídka
+  - term: okružní jízda
+  - term: turné
   freq: 127.01820
-##  volume   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  volume   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: volume
+  - term: objem
+  - term: hlasitost
+  - term: svazek
   freq: 126.30580
-##  mortgage   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  mortgage   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: mortgage
+  - term: hypotéka
+  - term: zástavní úvěr
   freq: 126.09740
-##  corporation   ########################################################### single term only|no img|no cs term|t0:tts:missing
+##  corporation   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: corporation
+  - term: společnost
+  - term: korporace
+  - term: firma
   freq: 125.94850
-##  mature   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  mature   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: mature
+  - term: dospělý
+  - term: vyzrálý
+  - term: uzrát
   freq: 125.61480
-##  addition   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  addition   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: addition
+  - term: sčítání
+  - term: přidání
+  - term: přídavek
   freq: 124.86220
-##  supply   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  supply   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: supply
+  - term: zásobovat
+  - term: dodávka
+  - term: nabídka
   freq: 124.49840
-##  executive   ############################################################# single term only|no img|no cs term|t0:tts:missing
+##  executive   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: executive
+  - term: vedoucí pracovník
+  - term: manažer
+  - term: ředitel
   freq: 124.14170
-##  running   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  running   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: running
+  - term: běhání
+  - term: provoz
+  - term: chodu
   freq: 123.91840
-##  union   ################################################################# single term only|no img|no cs term|t0:tts:missing
+##  union   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: union
+  - term: svaz
+  - term: spojení
+  - term: unie
   freq: 123.44990
-##  jewelry   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  jewelry   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: jewelry
+  - term: šperky
+  - term: klenoty
   freq: 123.40370
-##  clothing   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  clothing   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: clothing
+  - term: oblečení
+  - term: oděv
+  - term: šatstvo
   freq: 123.19840
-##  homepage   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  homepage   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: homepage
+  - term: domovská stránka
+  - term: úvodní stránka
+  - term: hlavní stránka
   freq: 122.10800
-##  gas   ################################################################### single term only|no img|no cs term|t0:tts:missing
+##  gas   ################################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: gas
+  - term: plyn
+  - term: benzín
   freq: 121.60500
-##  bush   ################################################################## single term only|no img|no cs term|t0:tts:missing
+##  bush   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: bush
+  - term: keř
+  - term: křoví
+  - term: pouzdro
   freq: 121.21430
-##  advice   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  advice   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: advice
+  - term: rada
+  - term: doporučení
   freq: 121.17970
-##  career   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  career   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: career
+  - term: kariéra
+  - term: profese
+  - term: povolání
   freq: 121.14580
-##  rental   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  rental   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: rental
+  - term: pronájem
+  - term: půjčovna
   freq: 120.74590
-##  decision   ############################################################## single term only|no img|no cs term|t0:tts:missing
+##  decision   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: decision
+  - term: rozhodnutí
+  - term: usnesení
+  - term: volba
   freq: 120.73380
-##  british   ############################################################### single term only|no img|no cs term|t0:tts:missing
+##  british   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: british
+  - term: britský
+  - term: anglický
   freq: 120.57400
-##  facilities   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  facilities   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: facilities
+  - term: vybavení
+  - term: zařízení
+  - term: prostory
   freq: 120.03440
-##  zip   ################################################################### single term only|no img|no cs term|t0:tts:missing
+##  zip   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: zip
+  - term: zip
+  - term: bleskový uzávěr
+  - term: rozepnout
   freq: 119.95980
-##  bid   ################################################################### single term only|no img|no cs term|t0:tts:missing
+##  bid   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: bid
+  - term: nabídka
+  - term: dražba
+  - term: licitace
   freq: 119.74870
-##  middle   ################################################################ single term only|no img|no cs term|t0:tts:missing
+##  middle   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: middle
+  - term: uprostřed
+  - term: střed
+  - term: prostředek
   freq: 119.30290
-##  cable   ################################################################# single term only|no img|no cs term|t0:tts:missing
+##  cable   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: cable
+  - term: kabel
+  - term: lano
+  - term: šňůra
   freq: 119.16290
-##  opportunities   ######################################################### single term only|no img|no cs term|t0:tts:missing
+##  opportunities   ######################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: opportunities
+  - term: příležitosti
+  - term: možnosti
+  - term: šance
   freq: 119.07960
 ##  division   ############################################################## single term only|no img|no cs term|t0:tts:missing
 - terms: 
@@ -22980,7 +23289,7 @@ concepts:
 - terms: 
   - term: netherlands
   freq: 52.15270
-##  consulting   ############################################################ single term only|no img|no cs term|t0:tts:missing
+##  consultingoutput = output.replaceAll(/```json/, '')   ################### single term only|no img|no cs term|t0:tts:missing
 - terms: 
   - term: consultingoutput = output.replaceAll(/```json/, '')
   freq: 52.13630
