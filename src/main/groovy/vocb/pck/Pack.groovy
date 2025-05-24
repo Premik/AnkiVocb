@@ -121,7 +121,9 @@ public class Pack {
 
 		Set<String> topDb = topDbAr.take(x).collect {it.firstTerm} as LinkedHashSet
 		
-		Set<String> ignore = exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
+		//Set<String> ignore =  []
+		//Set<String> ignore =  exportedWordsOf("Simple", "Supa", "Uncomm", "Basic", "First")
+		Set<String> ignore =  exportedWordsOf("Simple", "Basic1K" )
 		
 		Set<String> list = (topDb - ignore) as LinkedHashSet
 		Helper.printLapseTime()
@@ -142,7 +144,11 @@ public class Pack {
 		while (wordList.size() > 0) {
 
 			List<ExampleComparatorMatch> ms = dbMan.bestExampleForSentence(wordList)
-			ms.take(20).each {println it.toAnsiString()}
+			ms.take(4).each { ExampleComparatorMatch m->
+				println m.toAnsiString()
+				println "${m.b.example?.firstTerm}"
+				println "${m.commonWords.join('\n')}\n"
+			}
 			//Collection<String> all = ms.collectMany { it.commonWords }.toUnique()
 			Collection<String> all = ms.collectMany {it.matchesWordlist(wordList)}.toUnique()			
 			(wordList - all).each {
