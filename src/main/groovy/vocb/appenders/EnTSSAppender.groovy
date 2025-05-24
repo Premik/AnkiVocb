@@ -14,15 +14,15 @@ public class EnTSSAppender {
 	AwsCliPollyTTS enTts = new AwsCliPollyTTS()
 	Manager dbMan = new Manager()
 
-	void run() {	
-		dbMan.autoSave {
-			dbMan.withTermsByLang("en") {Concept c, Term t->				
-				if (!dbMan.linkedMediaExists(t.tts) ) {
-					t.tts = dbMan.resolveMedia(t.term, "mp3") { Path path ->
-						Process p=  enTts.synth(t.term, "neural", "Emma", path.toString())
-						Helper.printProcOut(p)
-						p.waitFor(5, TimeUnit.SECONDS)
-					}
+	void run() {
+		dbMan.load()
+		dbMan.withTermsByLang("en") {Concept c, Term t->
+			if (!dbMan.linkedMediaExists(t.tts) ) {
+				t.tts = dbMan.resolveMedia(t.term, "mp3") { Path path ->
+					Process p=  enTts.synth(t.term, "neural", "Emma", path.toString())
+					Helper.printProcOut(p)
+					p.waitFor(5, TimeUnit.SECONDS)
+					dbMan.save()
 				}
 			}
 		}

@@ -3,7 +3,9 @@ package vocb.appenders
 import vocb.Helper
 import vocb.corp.Corpus
 import vocb.corp.WordNormalizer
+import vocb.data.Concept
 import vocb.data.Manager
+import vocb.data.Term
 
 public class WordsSource {
 
@@ -23,10 +25,17 @@ public class WordsSource {
 				}
 
 
-		dbMan.autoSave {
-			words.each {
-				println "$it: ${Helper.roundDecimal((corp.wordFreq[it]?:0)/1000, 3)}"
+		dbMan.load()
+		words.take(20).each { String w->
+			if (dbMan.conceptByFirstTerm.containsKey(w)) {
+				println "X $w"
+				return
 			}
+			println "$w: ${Helper.roundDecimal((corp.wordFreq[w]?:0)/1000, 3)}"
+			Term t = new Term(w, "en")
+			Concept c = new Concept(terms: [t], freq:corp.wordFreq[w], origins:[sourceName])
+			dbMan.db.concepts.add(c)
+			dbMan.save()
 		}
 	}
 

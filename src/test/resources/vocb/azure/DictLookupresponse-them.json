@@ -1,0 +1,105 @@
+{
+    "normalizedSource": "them",
+    "displaySource": "them",
+    "translations": [
+        {
+            "normalizedTarget": "jim",
+            "displayTarget": "jim",
+            "posTag": "PRON",
+            "confidence": 0.2541,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "them",
+                    "displayText": "them",
+                    "numExamples": 15,
+                    "frequencyCount": 8282
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "nich",
+            "displayTarget": "nich",
+            "posTag": "PRON",
+            "confidence": 0.2411,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "them",
+                    "displayText": "them",
+                    "numExamples": 15,
+                    "frequencyCount": 8135
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "nimi",
+            "displayTarget": "nimi",
+            "posTag": "PRON",
+            "confidence": 0.192,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "them",
+                    "displayText": "them",
+                    "numExamples": 15,
+                    "frequencyCount": 3610
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "ně",
+            "displayTarget": "ně",
+            "posTag": "PRON",
+            "confidence": 0.1841,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "them",
+                    "displayText": "them",
+                    "numExamples": 15,
+                    "frequencyCount": 3422
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "je",
+            "displayTarget": "je",
+            "posTag": "PRON",
+            "confidence": 0.1287,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "is",
+                    "displayText": "is",
+                    "numExamples": 15,
+                    "frequencyCount": 612505
+                },
+                {
+                    "normalizedText": "them",
+                    "displayText": "them",
+                    "numExamples": 15,
+                    "frequencyCount": 15431
+                },
+                {
+                    "normalizedText": "are",
+                    "displayText": "are",
+                    "numExamples": 15,
+                    "frequencyCount": 13585
+                },
+                {
+                    "normalizedText": "you",
+                    "displayText": "you",
+                    "numExamples": 15,
+                    "frequencyCount": 12058
+                },
+                {
+                    "normalizedText": "it",
+                    "displayText": "it",
+                    "numExamples": 15,
+                    "frequencyCount": 8804
+                }
+            ]
+        }
+    ]
+}

@@ -61,15 +61,6 @@ public class Manager {
 	}
 	
 	
-	public void autoSave(Closure c) {
-		load()
-		try {
-			c(this)
-		} finally {
-			save()
-		}
-	}
-	
 	public String termd2MediaLink(String mediaName, String mediaExt) {
 		assert mediaName : "The media name is blank"
 		"${Helper.word2Key(mediaName)}.$mediaExt"

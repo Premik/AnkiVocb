@@ -1,0 +1,90 @@
+{
+    "normalizedSource": "prefix",
+    "displaySource": "prefix",
+    "translations": [
+        {
+            "normalizedTarget": "předponu",
+            "displayTarget": "předponu",
+            "posTag": "NOUN",
+            "confidence": 0.594,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "prefix",
+                    "displayText": "prefix",
+                    "numExamples": 15,
+                    "frequencyCount": 356
+                },
+                {
+                    "normalizedText": "prefixed",
+                    "displayText": "prefixed",
+                    "numExamples": 0,
+                    "frequencyCount": 4
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "předčíslí",
+            "displayTarget": "předčíslí",
+            "posTag": "NOUN",
+            "confidence": 0.1869,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "prefix",
+                    "displayText": "prefix",
+                    "numExamples": 12,
+                    "frequencyCount": 42
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "prefixu",
+            "displayTarget": "prefixu",
+            "posTag": "NOUN",
+            "confidence": 0.1637,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "prefix",
+                    "displayText": "prefix",
+                    "numExamples": 4,
+                    "frequencyCount": 17
+                },
+                {
+                    "normalizedText": "prefixing",
+                    "displayText": "prefixing",
+                    "numExamples": 1,
+                    "frequencyCount": 4
+                }
+            ]
+        },
+        {
+            "normalizedTarget": "předvolbu",
+            "displayTarget": "předvolbu",
+            "posTag": "NOUN",
+            "confidence": 0.0554,
+            "prefixWord": "",
+            "backTranslations": [
+                {
+                    "normalizedText": "preset",
+                    "displayText": "preset",
+                    "numExamples": 15,
+                    "frequencyCount": 57
+                },
+                {
+                    "normalizedText": "preference",
+                    "displayText": "preference",
+                    "numExamples": 15,
+                    "frequencyCount": 35
+                },
+                {
+                    "normalizedText": "prefix",
+                    "displayText": "prefix",
+                    "numExamples": 2,
+                    "frequencyCount": 6
+                }
+            ]
+        }
+    ]
+}
