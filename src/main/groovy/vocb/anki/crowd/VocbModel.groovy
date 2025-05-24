@@ -4,6 +4,9 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
+import vocb.Helper
+import static vocb.Ansi.*
+
 class VocbModel {
 
 	String version = "ankivocb1"
@@ -32,7 +35,13 @@ class VocbModel {
 		/*if (!n.hasTagWithPrefix(version)) {
 		 n.tags.add(version)
 		 }*/
-		n.guid = "avcb_${n.foreign?:n.hashCode() }"
+		String h = Helper.shortHash(noteIdentity(n))
+		n.guid = "avcb_${n.foreign?:""}_$h"
+	}
+	
+	String noteIdentity(Note n) {
+		assert n
+		return "$n.foreign $n.foreignExample"
 	}
 
 	void syncNoteModels() {
@@ -67,12 +76,11 @@ class VocbModel {
 					].findAll()
 				})
 	}
-
-
-
+	
+	
 
 	String mediaLink2CrowdLink(String mediaLink) {
-		if (!mediaLink) return null
+		if (!mediaLink) return null		
 		return new File(mediaLink).name
 	}
 
@@ -81,10 +89,11 @@ class VocbModel {
 		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
 		assert resolveMediaLink : "Set a closure to resolve the mediaLink to file path"
 		links.each { String mediaLink->
+			
 			Path crowdPath = corwdMediaPath.resolve(mediaLink2CrowdLink(mediaLink))
 			if (!Files.exists(crowdPath)) {
 				println "$mediaLink: copy"
-				Path sourcePath =resolveMediaLink(mediaLink)
+				Path sourcePath =resolveMediaLink(mediaLink)				
 				assert ignoreMissingMedia ||  Files.exists(sourcePath)
 				if (Files.exists(sourcePath)) {
 					Files.copy(sourcePath, crowdPath)
@@ -93,12 +102,14 @@ class VocbModel {
 			}
 		}
 	}
+	
+	
 
 	void save() {
 		assureCrowdDest()
 		syncNoteFields()
 		syncNoteModels()
-		syncMedia()
+		syncMedia()		
 		Path deckJson = destCrowdRootFolder.resolve("${destCrowdRootFolder.fileName}.json")
 		parser.saveTo(deckJson.toFile())
 	}

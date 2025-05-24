@@ -1,6 +1,8 @@
 package vocb.anki.crowd
 
-import groovy.transform.AutoClone
+import org.apache.commons.lang3.builder.HashCodeExclude
+
+import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 import vocb.Helper
 
@@ -91,8 +93,7 @@ public class Note {
 		assertIsComplete()
 		fields[index] = value
 	}
-
-
-
+	
+	
 
 }

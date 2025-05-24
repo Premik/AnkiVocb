@@ -33,8 +33,8 @@ public class Pack {
 	
 	
 
-	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString(), pkgName : pkgName).tap {
-		staticMedia.add backgroundName
+	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString(), pkgName : pkgName).tap {		
+		//staticMedia.add backgroundName
 		
 	}
 

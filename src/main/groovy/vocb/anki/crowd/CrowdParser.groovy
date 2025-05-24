@@ -43,6 +43,16 @@ public class CrowdParser {
 	void setDeckName(String name) {
 		jsonRoot.name = name
 	}
+	
+	String getDeckCrowdUuid() {
+		jsonRoot.crowdanki_uuid
+	}
+	
+	void setDeckCrowdUuid(String id) {
+		jsonRoot.crowdanki_uuid = id
+	}
+	
+	
 
 	Set<String> notesAllFieldValues() {
 		assert jsonRoot : "Run parse() first"
