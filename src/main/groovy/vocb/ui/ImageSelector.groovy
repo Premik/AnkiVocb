@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicInteger
 
 import javax.imageio.ImageIO
+import javax.naming.directory.SearchResult
 import javax.swing.BoxLayout
 import javax.swing.ImageIcon
 import javax.swing.JButton
@@ -140,8 +141,8 @@ public class ImageSelector   {
 			toolTipText = "Search string"
 			addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent e) {
-							JTextField f= e.source
-							runSearch(f.text)
+							searchData.q = searchTextField.text
+							runSearch(searchData)
 						}
 					})
 		}
@@ -151,7 +152,8 @@ public class ImageSelector   {
 			addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent e) {
 							searchData.count=128
-							runSearch(searchTextField.text)
+							searchData.q = searchTextField.text
+							runSearch(searchData)
 						}
 					})
 			icon = UIManager.getIcon("FileChooser.listViewIcon")
@@ -171,8 +173,9 @@ public class ImageSelector   {
 
 						@Override
 						public void itemStateChanged(ItemEvent e) {
-							searchData.clipArt = chckbxClipart.selected
-							runSearch(searchTextField.text)
+							searchData.q = searchTextField.text
+							searchData.imageType = chckbxClipart.selected ? "Clipart" : null
+							runSearch(searchData)
 
 						}
 					})
@@ -251,25 +254,33 @@ public class ImageSelector   {
 	}
 
 	public loadSearchResult(SearchData s, HttpHelper hh) {
-		println searchCounter.getAndIncrement()
+		final int myCounter = searchCounter.incrementAndGet()
 		//assert s
 		searchData = s
 		println "Loading ${s.results.size()} thumbnails"
 		searchTextField.text = s.q
-		chckbxClipart.selected = searchData.clipArt
+		chckbxClipart.selected = searchData.imageType == 'Clipart'
 
 		Thread.start {
 			synchronized (searchLock) {
-				final int  myCounter = searchCounter.get()
+				//final int  myCounter = searchCounter.get()
 				print "me"
-				println myCounter 
+				println myCounter
+				if (myCounter != searchCounter.get()) {
+					println "Search cannceled"
+					return
+				}
 				gridPanel.removeAll()
 				precreateImageLabels(s.results.size())
 				println "Found: ${s.results.size()}"
 
 				Component[] components = gridPanel.components
 				s.results.eachWithIndex { URL u, int i->
-					if (myCounter != searchCounter.get()) return
+					if (myCounter != searchCounter.get()) {
+						println "Search cannceled"
+						return
+
+					}
 					//Thread.sleep(1000)
 					EventQueue.invokeAndWait {
 						hh.withDownloadResponse(u) {BufferedInputStream res->
@@ -320,14 +331,13 @@ public class ImageSelector   {
 		ImageSelector s = new ImageSelector()
 		s.open()
 
-		int searchResults=4
+		
 		HttpHelper hh = new HttpHelper()
 		BingWebSearch bs = new BingWebSearch(httpHelper: hh)
-		s.runSearch = { String newQ->
-
-			s.loadSearchResult(bs.thumbnailSearch(newQ, searchResults), hh)
+		s.runSearch = { SearchData sd->
+			s.loadSearchResult(bs.thumbnailSearch(sd), hh)
 		}
-		s.runSearch("test")
+		s.runSearch(new SearchData(q:"test"))
 		s.runAsModal()
 
 		println "Done. Selected: $s.searchData.selected"
