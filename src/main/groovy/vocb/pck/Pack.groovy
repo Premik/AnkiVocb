@@ -199,7 +199,16 @@ public class Pack {
 	public static void main(String[] args) {
 		new Pack().with {
 			//allPackages.each {println it}
-			doExport(allPackages.values()[0]);
+			//Collection<PackInfo> pkgs = allPackages.values()
+			Collection<PackInfo> pkgs = [allPackages["FiveLittleMonkeys"]]
+			pkgs.each { PackInfo i->
+				println '*'*100
+				println "* ${i.name}"
+				println '*'*100
+				 
+				doExport(i);
+			}
+			println "Done"
 			
 				
 		}

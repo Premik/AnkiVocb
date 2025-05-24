@@ -58,7 +58,7 @@ public class Data2Crowd {
 
 	@Lazy VocbModel vocbModel = {
 		assert info?.destPath
-		new VocbModel(destCrowdRootFolder: info.destRootFolder).tap {
+		new VocbModel(destCrowdFolder: info.destPath).tap {
 			resolveMediaLink = thisObject.&resolveMediaLink
 		}
 	}()
@@ -108,12 +108,13 @@ public class Data2Crowd {
 		Closure<String> link = vocbModel.&mediaLink2CrowdLink
 		Closure<String> sndField = { String s->
 			n.mediaLinks.add(s)
-			Helper.sndField(link(s), cfg);
+			
+			Helper.sndField(link(s), !cfg.useRawNoteFields);
 		}
 		
 		Closure<String> imgField = { String s->
 			n.mediaLinks.add(s)
-			Helper.imgField(link(s), cfg);
+			Helper.imgField(link(s), !cfg.useRawNoteFields);
 		}
 		
 		

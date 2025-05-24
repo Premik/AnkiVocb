@@ -36,12 +36,12 @@ class Render {
 		renderCfg?.templates
 	}
 
-	public String sndField(String soundRef) {
-		Helper.sndField(soundRef, cfg)
+	public String sndField(String ref) {		
+		Helper.sndField(ref, cfg.useRawNoteFields)
 	}
 
 	public String imgField(String ref) {
-		Helper.imgField(ref, cfg)
+		Helper.imgField(ref, cfg.useRawNoteFields)
 	}
 
 

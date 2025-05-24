@@ -13,7 +13,7 @@ class VocbModel {
 	String version = "ankivocb1"
 	boolean ignoreMissingMedia = false
 	URL crowdJsonUrl = getClass().getResource('/template/deck.json')
-	Path destCrowdRootFolder
+	Path destCrowdFolder
 	Closure<Path> resolveMediaLink
 
 	@Lazy CrowdParser parser = new CrowdParser(json:crowdJsonUrl.text)
@@ -58,15 +58,18 @@ class VocbModel {
 	}
 
 	void assureCrowdDest() {
-		assert destCrowdRootFolder
-		assert Files.isDirectory(destCrowdRootFolder)
-		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
+		assert destCrowdFolder
+		assert Files.isDirectory(destCrowdFolder)
+		Path corwdMediaPath = destCrowdFolder.resolve( "media")
 		corwdMediaPath.toFile().mkdirs()
 	}
 
 	void syncMedia() {
 		copyMediaLinks(
-				notes.collectMany { Note n->
+			notes.collectMany { Note n->
+				n.mediaLinks
+			}.findAll() 
+				/*notes.collectMany { Note n->
 					[
 						n.img,
 						n.foreignTTS,
@@ -74,8 +77,8 @@ class VocbModel {
 						n.nativeTTS,
 						n.nativeAltTTS,
 						n.nativeExampleTTS
-					].findAll()
-				})
+					].findAll()*/
+				)
 	}
 	
 	
@@ -87,10 +90,9 @@ class VocbModel {
 
 	void copyMediaLinks(List<CharSequence> links) {
 		assureCrowdDest()
-		Path corwdMediaPath = destCrowdRootFolder.resolve( "media")
+		Path corwdMediaPath = destCrowdFolder.resolve( "media")
 		assert resolveMediaLink : "Set a closure to resolve the mediaLink to file path"
-		links.each { CharSequence mediaLink->
-			
+		links.each { CharSequence mediaLink->			
 			Path crowdPath = corwdMediaPath.resolve(mediaLink2CrowdLink(mediaLink))
 			if (!Files.exists(crowdPath)) {
 				println "$mediaLink: copy"
@@ -111,7 +113,7 @@ class VocbModel {
 		syncNoteFields()
 		syncNoteModels()
 		syncMedia()		
-		Path deckJson = destCrowdRootFolder.resolve("${destCrowdRootFolder.fileName}.json")
+		Path deckJson = destCrowdFolder.resolve("${destCrowdFolder.fileName}.json")
 		parser.saveTo(deckJson.toFile())
 	}
 
@@ -130,7 +132,7 @@ class VocbModel {
 
 	static void main(String... args) {
 		new VocbModel(
-				destCrowdRootFolder: Paths.get("/tmp/work/test"),
+				destCrowdFolder: Paths.get("/tmp/work/test"),
 				ignoreMissingMedia : true,
 				resolveMediaLink: {String mediaLink ->
 					Paths.get("/data/src/AnkiVocb/db/media").resolve(mediaLink)
