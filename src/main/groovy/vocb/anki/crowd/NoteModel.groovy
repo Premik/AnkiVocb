@@ -60,9 +60,9 @@ public class NoteModel  {
 	int getFieldIndex(String name, boolean mustExists=true) {
 		assert name
 		assureIsComplete()
-		int i = flds.findIndexOf {it.name = name }
+		int i = flds.findIndexOf {it.name == name }
 		if (mustExists) {
-		assert i >-1 : "Field $name not found. Fields: $flds"
+		assert i >-1 : "The field '$name' not found. Fields in the model: ${flds.collect{it.name}}"
 		}
 		return i 
 	}
@@ -72,7 +72,7 @@ public class NoteModel  {
 		assert flds
 		
 		flds.sort { FieldModel fm1, FieldModel fm2 ->
-			return fm1.ord <=> fm2.ord
+			fm1.ord <=> fm2.ord
 		}
 		flds.eachWithIndex {FieldModel m, int i -> m.ord = i }
 		assert flds*.assertIsComplete()

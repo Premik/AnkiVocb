@@ -1,6 +1,8 @@
 {
     "__type__": "Deck",
-    "children": [],
+    "children": [
+        
+    ],
     "crowdanki_uuid": "aca40470-8082-11ea-b853-d8cb8a536b75",
     "deck_config_uuid": "0f934c16-70f8-11ea-a10e-d8cb8a536b75",
     "deck_configurations": [
@@ -54,7 +56,9 @@
     "dyn": 0,
     "extendNew": 10,
     "extendRev": 50,
-    "media_files": [],
+    "media_files": [
+        
+    ],
     "name": "ankivocbTemplate",
     "note_models": [
         {
@@ -64,7 +68,9 @@
             "flds": [
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "img",
                     "ord": 0,
                     "rtl": false,
@@ -73,7 +79,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "freq",
                     "ord": 1,
                     "rtl": false,
@@ -82,7 +90,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "foreign",
                     "ord": 2,
                     "rtl": false,
@@ -91,7 +101,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "foreignTTS",
                     "ord": 3,
                     "rtl": false,
@@ -100,7 +112,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "foreignExample",
                     "ord": 4,
                     "rtl": false,
@@ -109,7 +123,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "foreignExampleTTS",
                     "ord": 5,
                     "rtl": false,
@@ -118,7 +134,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "native",
                     "ord": 6,
                     "rtl": false,
@@ -127,7 +145,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "nativeTTS",
                     "ord": 7,
                     "rtl": false,
@@ -136,7 +156,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "nativeAlt",
                     "ord": 8,
                     "rtl": false,
@@ -145,7 +167,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "nativeAltTTS",
                     "ord": 9,
                     "rtl": false,
@@ -154,7 +178,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "nativeExample",
                     "ord": 10,
                     "rtl": false,
@@ -163,7 +189,9 @@
                 },
                 {
                     "font": "Liberation Sans",
-                    "media": [],
+                    "media": [
+                        
+                    ],
                     "name": "nativeExampleTTS",
                     "ord": 11,
                     "rtl": false,
@@ -187,7 +215,9 @@
                 ]
             ],
             "sortf": 2,
-            "tags": [],
+            "tags": [
+                
+            ],
             "tmpls": [
                 {
                     "afmt": "<div class=\"rounded shadow\">\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<div><img src=\"{{img}}\"></div>\n\n\t\t\t\t<div class=\"question\">{{foreign}}</div>\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t\t<hr>\n\n\n\t\t\t\t<div class=\"answer\">{{native}}</div>\n\t\t\t\t[sound:{{nativeTTS}}]\n\n\t\t\t\t{{#nativeAlt}}\n\t\t\t\t<div class=\"answer\">{{nativeAlt}}</div>\n\t\t\t\t[sound:{{nativeTTSAlt}}]\n\t\t\t\t{{/nativeAlt}}\n\n\t\t\t\t[sound:{{foreignTTS}}]\n\t\t\t\t{{#foreignExample}}\n\t\t\t\t<hr>\n\t\t\t\t<div class=\"answer\">{{foreignExample}}</div>\n\t\t\t\t[sound:{{foreignExampleTTS}}]\n\t\t\t\t{{/foreignExample}}\n\t\t\t\t\n\n\t\t\t</div>\n\n\t\t\t",
@@ -200,13 +230,14 @@
                 }
             ],
             "type": 0,
-            "vers": []
+            "vers": [
+                
+            ]
         }
     ],
     "notes": [
         {
             "__type__": "Note",
-            "data": "",
             "fields": [
                 "img",
                 "freq",
@@ -221,10 +252,13 @@
                 "nativeExample",
                 "nativeExampleTTS"
             ],
-            "flags": 0,
-            "guid": "ankivobFullModel1",
             "note_model_uuid": "ankivocb-8082-11ea-b853-d8cb8a536b75",
-            "tags": []
+            "data": "",
+            "tags": [
+                "ankivocb 1"
+            ],
+            "guid": "ankivobFullModel1",
+            "flags": 0
         }
     ]
 }
