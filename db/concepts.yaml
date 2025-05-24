@@ -14778,235 +14778,351 @@ examples:
   - term: Dejte ty opice rovnou zpátky do postele.
     lang: cs
     tts: cs-samples/Dejte ty opice rovnou zpatky do postele.mp3
-##  Warm up   ############################################################### t0:tts:missing
+##  Warm up.   ############################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Warm up
+  - term: Warm up.
     lang: en
-##  Down they fall   ######################################################## t0:tts:missing
+  - term: Rozcvička.
+    lang: cs
+##  Down they fall   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Down they fall
     lang: en
-##  Go through   ############################################################ t0:tts:missing
+  - term: Padají dolů.
+    lang: cs
+##  Go through.   ########################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Go through
+  - term: Go through.
     lang: en
-##  Get those too   ######################################################### t0:tts:missing
+  - term: Jdi skrz.
+    lang: cs
+##  Get those too.   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Get those too
+  - term: Get those too.
     lang: en
-##  Bug funny   ############################################################# t0:tts:missing
+  - term: Získejte i tyto.
+    lang: cs
+##  Bug funny.   ############################################################ t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Bug funny
+  - term: Bug funny.
     lang: en
-##  Easy come, easy go   #################################################### t0:tts:missing
+  - term: Brouková legrace.
+    lang: cs
+##  Easy come, easy go.   ################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Easy come, easy go
+  - term: Easy come, easy go.
     lang: en
-##  Run for life   ########################################################## t0:tts:missing
+  - term: Lehce nabyl, lehce pozbyl.
+    lang: cs
+##  Run for life.   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Run for life
+  - term: Run for life.
     lang: en
-##  Ignore them   ########################################################### t0:tts:missing
+  - term: Běh o život.
+    lang: cs
+##  Ignore them   ########################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Ignore them
     lang: en
-##  Fall out   ############################################################## t0:tts:missing
+  - term: Přehlížej je.
+    lang: cs
+##  Fall out.   ############################################################# t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Fall out
+  - term: Fall out.
     lang: en
-##  One thing   ############################################################# t0:tts:missing
+  - term: Vypadnout.
+    lang: cs
+##  One thing   ############################################################# t0:tts:missing|t1:tts:missing
 - terms: 
   - term: One thing
     lang: en
-##  Just do it   ############################################################ t0:tts:missing
+  - term: Jedna věc.
+    lang: cs
+##  Just do it.   ########################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Just do it
+  - term: Just do it.
     lang: en
-##  Up and down   ########################################################### t0:tts:missing
+  - term: Prostě to udělej.
+    lang: cs
+##  Up and down.   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Up and down
+  - term: Up and down.
     lang: en
-##  Bomb time. 200 moving objects   ######################################### t0:tts:missing
+  - term: Nahoru a dolů.
+    lang: cs
+##  Bomb time.   ############################################################ t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Bomb time. 200 moving objects
+  - term: Bomb time.
     lang: en
-##  Once around   ########################################################### t0:tts:missing
+  - term: Čas na bombu.
+    lang: cs
+##  Once around.   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Once around
+  - term: Once around.
     lang: en
-##  Baba's work   ########################################################### t0:tts:missing
+  - term: Jednou kolem.
+    lang: cs
+##  Baba's work.   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Baba's work
+  - term: Baba's work.
     lang: en
-##  No problem   ############################################################ t0:tts:missing
+  - term: Práce pro bábovku.
+    lang: cs
+##  No problem.   ########################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: No problem
+  - term: No problem.
     lang: en
-##  Easy business   ######################################################### t0:tts:missing
+  - term: Žádný problém.
+    lang: cs
+##  Easy business.   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Easy business
+  - term: Easy business.
     lang: en
-##  Easy rider   ############################################################ t0:tts:missing
+  - term: Snadná záležitost.
+    lang: cs
+##  Easy rider.   ########################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Easy rider
+  - term: Easy rider.
     lang: en
-##  No miracle   ############################################################ t0:tts:missing
+  - term: Klidný jezdec.
+    lang: cs
+##  No miracle.   ########################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: No miracle
+  - term: No miracle.
     lang: en
-##  Mind the stones   ####################################################### t0:tts:missing
+  - term: Žádný zázrak.
+    lang: cs
+##  Mind the stones.   ###################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Mind the stones
+  - term: Mind the stones.
     lang: en
-##  Time runner   ########################################################### t0:tts:missing
+  - term: Pozor na kameny.
+    lang: cs
+##  Time runner.   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Time runner
+  - term: Time runner.
     lang: en
-##  Little pleasure   ####################################################### t0:tts:missing
+  - term: Časový běžec
+    lang: cs
+##  Little pleasure.   ###################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Little pleasure
+  - term: Little pleasure.
     lang: en
-##  Easy work   ############################################################# t0:tts:missing
+  - term: Malé potěšení.
+    lang: cs
+##  Easy work.   ############################################################ t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Easy work
+  - term: Easy work.
     lang: en
-##  Ready steady go   ####################################################### t0:tts:missing
+  - term: Snadná práce
+    lang: cs
+##  Ready steady go.   ###################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Ready steady go
+  - term: Ready steady go.
     lang: en
-##  Fall festival   ######################################################### t0:tts:missing
+  - term: Připravit, pozor, teď.
+    lang: cs
+##  Fall festival   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Fall festival
     lang: en
-##  Don't worry   ########################################################### t0:tts:missing
+  - term: Podzimní festival.
+    lang: cs
+##  Don't worry   ########################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Don't worry
     lang: en
-##  State of mind   ######################################################### t0:tts:missing
+  - term: Neměj obavy.
+    lang: cs
+##  State of mind.   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: State of mind
+  - term: State of mind.
     lang: en
-##  Do it yourself   ######################################################## t0:tts:missing
+  - term: Stav mysli.
+    lang: cs
+##  Do it yourself.   ####################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Do it yourself
+  - term: Do it yourself.
     lang: en
-##  Fill in   ############################################################### t0:tts:missing
+  - term: Udělej si sám.
+    lang: cs
+##  Fill in.   ############################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Fill in
+  - term: Fill in.
     lang: en
-##  Keep cool   ############################################################# t0:tts:missing
+  - term: Vyplnit.
+    lang: cs
+##  Keep cool.   ############################################################ t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Keep cool
+  - term: Keep cool.
     lang: en
-##  Those we like   ######################################################### t0:tts:missing
+  - term: Zachovej chladnou hlavu.
+    lang: cs
+##  Those we like.   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Those we like
+  - term: Those we like.
     lang: en
-##  All together   ########################################################## t0:tts:missing
+  - term: Ty, které se nám líbí.
+    lang: cs
+##  All together.   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: All together
+  - term: All together.
     lang: en
-##  Phil's first   ########################################################## t0:tts:missing
+  - term: Všichni dohromady.
+    lang: cs
+##  Phil's first   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: Phil's first
     lang: en
-##  There you go   ########################################################## t0:tts:missing
+  - term: Filipovo první.
+    lang: cs
+##  There you go.   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: There you go
+  - term: There you go.
     lang: en
-##  Get them out   ########################################################## t0:tts:missing
+  - term: Tady to máš.
+    lang: cs
+##  Get them out.   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Get them out
+  - term: Get them out.
     lang: en
-##  Tough going   ########################################################### t0:tts:missing
+  - term: Dostaň je ven.
+    lang: cs
+##  Tough going.   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Tough going
+  - term: Tough going.
     lang: en
-##  Hurry up   ############################################################## t0:tts:missing
+  - term: Těžký průběh.
+    lang: cs
+##  Hurry up.   ############################################################# t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Hurry up
+  - term: Hurry up.
     lang: en
-##  Tough but possible   #################################################### t0:tts:missing
+  - term: Pospěš si.
+    lang: cs
+##  Tough but possible.   ################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Tough but possible
+  - term: Tough but possible.
     lang: en
-##  Head hunter   ########################################################### t0:tts:missing
+  - term: Trvdé, ale možné.
+    lang: cs
+##  Head hunter.   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Head hunter
+  - term: Head hunter.
     lang: en
-##  Community work   ######################################################## t0:tts:missing
+  - term: Lovec hlav.
+    lang: cs
+##  Community work.   ####################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Community work
+  - term: Community work.
     lang: en
-##  One way   ############################################################### t0:tts:missing
+  - term: Veřejné práce.
+    lang: cs
+##  One way.   ############################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: One way
+  - term: One way.
     lang: en
-##  All the family   ######################################################## t0:tts:missing
+  - term: Jednosměrka.
+    lang: cs
+##  All the family.   ####################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: All the family
+  - term: All the family.
     lang: en
-##  Little detail   ######################################################### t0:tts:missing
+  - term: Celá rodina.
+    lang: cs
+##  Little detail.   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Little detail
+  - term: Little detail.
     lang: en
-##  Transport it   ########################################################## t0:tts:missing
+  - term: Malá drobnost.
+    lang: cs
+##  Transport it.   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Transport it
+  - term: Transport it.
     lang: en
-##  Don't waste them   ###################################################### t0:tts:missing
+  - term: Přeprav to.
+    lang: cs
+##  Don't waste them.   ##################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Don't waste them
+  - term: Don't waste them.
     lang: en
-##  Time is info   ########################################################## t0:tts:missing
+  - term: Nevyplýtvej je.
+    lang: cs
+##  Time is info.   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Time is info
+  - term: Time is info.
     lang: en
-##  All that fuss   ######################################################### t0:tts:missing
+  - term: Čas jsou informace.
+    lang: cs
+##  All that fuss.   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: All that fuss
+  - term: All that fuss.
     lang: en
-##  A pro's work   ########################################################## t0:tts:missing
+  - term: Všechen ten povyk.
+    lang: cs
+##  A pro's work.   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: A pro's work
+  - term: A pro's work.
     lang: en
-##  See you tomorrow   ###################################################### t0:tts:missing
+  - term: Profi práce.
+    lang: cs
+##  See you tomorrow.   ##################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: See you tomorrow
+  - term: See you tomorrow.
     lang: en
-##  Flip and flop   ######################################################### t0:tts:missing
+  - term: Uvidíme se zítra.
+    lang: cs
+##  Flip and flop.   ######################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Flip and flop
+  - term: Flip and flop.
     lang: en
-##  Know that   ############################################################# t0:tts:missing
+  - term: Překlopit a žuchnout.
+    lang: cs
+##  Know that   ############################################################# t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Know that
+  - term: Know that.
     lang: en
-##  Ham and cheese sandwich   ############################################### t0:tts:missing
+  - term: Vím to.
+    lang: cs
+##  Ham and cheese sandwich   ############################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Ham and cheese sandwich
+  - term: Ham and cheese sandwich.
     lang: en
-##  Good luck   ############################################################# t0:tts:missing
+  - term: Sendvič se šunkou a sýrem.
+    lang: cs
+##  Good luck   ############################################################# t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Good luck
+  - term: Good luck.
     lang: en
-##  Good job   ############################################################## t0:tts:missing
+  - term: Hodně štěstí.
+    lang: cs
+##  Good job   ############################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Good job
+  - term: Good job.
     lang: en
-##  On-off   ################################################################ t0:tts:missing
+  - term: Dobrá práce.
+    lang: cs
+##  On-off   ################################################################ t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: On-off
+  - term: On off.
     lang: en
-##  One's missing   ######################################################### t0:tts:missing
+  - term: Zapnout vypnout.
+    lang: cs
+##  One's missing   ######################################################### t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: One's missing
+  - term: One's missing.
     lang: en
-##  Watch out   ############################################################# t0:tts:missing
+  - term: Jeden chybí.
+    lang: cs
+##  Watch out   ############################################################# t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Watch out
+  - term: Watch out.
     lang: en
-##  Find the way   ########################################################## t0:tts:missing
+  - term: Dávej pozor.
+    lang: cs
+##  Find the way   ########################################################## t0:tts:missing|t1:tts:missing
 - terms: 
-  - term: Find the way
+  - term: Find the way.
     lang: en
+  - term: Najdi cestu.
+    lang: cs

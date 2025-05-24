@@ -19,6 +19,7 @@ public class WordNormalizer {
 
 
 	public Set<String> uniqueueTokens(CharSequence input, boolean doLemming=false) {
+		if (!input) return [] as Set
 		Stream<String> stream = tokens(input)
 		if (doLemming) stream = lemming(stream)
 		stream.collect(Collectors.toCollection( LinkedHashSet.&new ) )
