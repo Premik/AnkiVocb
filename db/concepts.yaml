@@ -10339,508 +10339,801 @@ concepts:
   img: img/bumped.jpeg
   freq: 1000.00000
   origins: ["conceptDbSamples"]
-##  problem   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  problem   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: problem
     lang: en
+  - term: problém
+    lang: cs
+  - term: potíže
+    lang: cs
+  
   freq: 217728.00000
   origins: ["Supaplex"]
-##  nearly   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  nearly   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: nearly
     lang: en
+  - term: téměř
+    lang: cs
+  - term: skoro
+    lang: cs
+ 
   freq: 109430.00000
   origins: ["Supaplex"]
-##  music   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  music   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: music
     lang: en
+  - term: hudba
+    lang: cs
   freq: 98470.00000
   origins: ["Supaplex"]
-##  fall   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  fall   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: fall
     lang: en
+  - term: podzim
+    lang: cs   
+  - term: spadnout
+    lang: cs
   freq: 93128.00000
   origins: ["Supaplex"]
-##  age   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  age   ################################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: age
     lang: en
+  - term: věk
+    lang: cs  
+  - term: stáří
+    lang: cs
+  
   freq: 91662.00000
   origins: ["Supaplex"]
-##  yourself   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  yourself   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: yourself
     lang: en
+  - term: sami
+    lang: cs
+  - term: sebe
+    lang: cs
   freq: 87509.00000
   origins: ["Supaplex"]
-##  deal   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  deal   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: deal
     lang: en
+  - term: vypořádat
+    lang: cs
+  - term: dohoda
+    lang: cs  
   freq: 84580.00000
   origins: ["Supaplex"]
-##  community   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  community   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: community
     lang: en
+  - term: společenství
+    lang: cs
+  - term: komunita
+    lang: cs  
   freq: 83260.00000
   origins: ["Supaplex"]
-##  pleasure   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  pleasure   ############################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: pleasure
     lang: en
+  - term: potěšení
+    lang: cs
+  - term: radost
+    lang: cs  
   freq: 81025.00000
   origins: ["Supaplex"]
-##  difficult   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  difficult   ############################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: difficult
     lang: en
+  - term: obtížné
+    lang: cs    
+  - term: složité
+    lang: cs  
   freq: 77166.00000
   origins: ["Supaplex"]
-##  simple   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  simple   ################################################################ 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: simple
     lang: en
+  - term: jednoduché
+    lang: cs
+  - term: prosté
+    lang: cs  
   freq: 76734.00000
   origins: ["Supaplex"]
-##  stone   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  stone   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: stone
     lang: en
+  - term: kámen
+    lang: cs  
   freq: 65802.00000
   origins: ["Supaplex"]
-##  trouble   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  trouble   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: trouble
     lang: en
+  - term: potíže
+    lang: cs
+  - term: problém
+    lang: cs  
   freq: 65531.00000
   origins: ["Supaplex"]
-##  outside   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  outside   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: outside
     lang: en
+  - term: mimo
+    lang: cs
+  - term: venku
+    lang: cs  
   freq: 64323.00000
   origins: ["Supaplex"]
-##  corner   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  corner   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: corner
     lang: en
+  - term: roh
+    lang: cs  
+  - term: koutek
+    lang: cs  
   freq: 60040.00000
   origins: ["Supaplex"]
-##  island   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  island   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: island
     lang: en
+  - term: ostrov
+    lang: cs  
   freq: 53142.00000
   origins: ["Supaplex"]
-##  moving   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  moving   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: moving
     lang: en
+  - term: pohybující
+    lang: cs  
+  - term: stěhování
+    lang: cs  
   freq: 52512.00000
   origins: ["Supaplex"]
-##  watch   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  watch   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: watch
     lang: en
+  - term: sledovat
+    lang: cs
+  - term: hodinky
+    lang: cs  
   freq: 50534.00000
   origins: ["Supaplex"]
-##  stones   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  stones   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: stones
     lang: en
+  - term: kameny
+    lang: cs
   freq: 49887.00000
   origins: ["Supaplex"]
-##  objects   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  objects   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: objects
     lang: en
+  - term: objekty
+    lang: cs
+  - term: předměty
+    lang: cs
   freq: 49571.00000
   origins: ["Supaplex"]
-##  harry   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  harry   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: harry
     lang: en
+  - term: sužovat
+    lang: cs
+  - term: pustošit
+    lang: cs
   freq: 48809.00000
   origins: ["Supaplex"]
-##  warm   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  warm   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: warm
     lang: en
+  - term: teplé
+    lang: cs
+  - term: hřejivý
+    lang: cs  
   freq: 42596.00000
   origins: ["Supaplex"]
-##  push   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  push   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: push
-    lang: en
+    lang: en  
+  - term: tlačit
+    lang: cs  
   freq: 36430.00000
   origins: ["Supaplex"]
-##  detail   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  detail   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: detail
     lang: en
+  - term: podrobnost
+    lang: cs
+  - term: detail
+    lang: cs
+    tts:  cs-terms/detail-cs.mp3
   freq: 32419.00000
   origins: ["Supaplex"]
-##  ahead   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  ahead   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: ahead
     lang: en
+  - term: napřed
+    lang: cs
+  - term: před námi
+    lang: cs  
   freq: 29659.00000
   origins: ["Supaplex"]
-##  chamber   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  chamber   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: chamber
     lang: en
+  - term: komora
+    lang: cs  
+  - term: komnata
+    lang: cs  
   freq: 29544.00000
   origins: ["Supaplex"]
-##  inside   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  inside   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: inside
     lang: en
+  - term: uvnitř
+    lang: cs
+  - term: dovnitř
+    lang: cs
   freq: 29539.00000
   origins: ["Supaplex"]
-##  favourite   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  favourite   ############################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: favourite
     lang: en
+  - term: oblíbená
+    lang: cs  
   freq: 27258.00000
   origins: ["Supaplex"]
-##  confusion   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  confusion   ############################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: confusion
     lang: en
+  - term: zmatek
+    lang: cs  
+  - term: nejasnosti
+    lang: cs 
   freq: 24311.00000
   origins: ["Supaplex"]
-##  waste   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  waste   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: waste
     lang: en
+  - term: odpad
+    lang: cs
+  - term: plýtvat
+    lang: cs  
   freq: 24060.00000
   origins: ["Supaplex"]
-##  tough   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  tough   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: tough
     lang: en
+  - term: houževnatý
+    lang: cs
+  - term: tvrdý
+    lang: cs  
   freq: 23915.00000
   origins: ["Supaplex"]
-##  luck   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  luck   ################################################################## 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: luck
-    lang: en
+    lang: en  
+  - term: štěstí
+    lang: cs
+  - term: náhoda
+    lang: cs
   freq: 23887.00000
   origins: ["Supaplex"]
-##  steady   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  steady   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: steady
-    lang: en
+    lang: en  
+  - term: stabilní
+    lang: cs  
+  - term: setrvalý
+    lang: cs
   freq: 20840.00000
   origins: ["Supaplex"]
-##  vice   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  vice   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: vice
     lang: en
-  freq: 19294.00000
+  state: ignore
   origins: ["Supaplex"]
-##  mixed   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  mixed   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: mixed
     lang: en
+  - term: smíšené
+    lang: cs  
+  - term: míchané
+    lang: cs  
   freq: 19003.00000
   origins: ["Supaplex"]
-##  crazy   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  crazy   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: crazy
     lang: en
+  - term: šílené
+    lang: cs
+  - term: bláznivý
+    lang: cs  
   freq: 17098.00000
   origins: ["Supaplex"]
-##  ignore   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  ignore   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: ignore
-    lang: en
+    lang: en   
+  - term: ignorovat
+    lang: cs
+  - term: přehlížet
+    lang: cs
   freq: 16119.00000
   origins: ["Supaplex"]
-##  cheese   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  cheese   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: cheese
     lang: en
+  - term: sýr
+    lang: cs  
   freq: 15035.00000
   origins: ["Supaplex"]
-##  entertainment   ######################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  entertainment   ######################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: entertainment
     lang: en
+  - term: zábava
+    lang: cs  
   freq: 14681.00000
   origins: ["Supaplex"]
-##  phil   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  phil   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: phil
     lang: en
-  freq: 13609.00000
+  state: ignore
   origins: ["Supaplex"]
-##  miracle   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  miracle   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: miracle
     lang: en
+  - term: zázrak
+    lang: cs
   freq: 12755.00000
   origins: ["Supaplex"]
-##  downstairs   ############################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  downstairs   ############################################################ 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: downstairs
-    lang: en
+    lang: en  
+  - term: přízemí
+    lang: cs
+  - term: dolů po schodech
+    lang: cs  
   freq: 12638.00000
   origins: ["Supaplex"]
-##  upstairs   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  upstairs   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: upstairs
     lang: en
+  - term: v poschodí
+    lang: cs  
+  - term: nahoru po schodech
+    lang: cs
   freq: 12572.00000
   origins: ["Supaplex"]
-##  worry   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  worry   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: worry
     lang: en
+  - term: starosti
+    lang: cs  
+  - term: obávat se
+    lang: cs  
   freq: 12270.00000
   origins: ["Supaplex"]
-##  missing   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  missing   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: missing
     lang: en
+  - term: chybějící
+    lang: cs
+  - term: chybí
+    lang: cs  
   freq: 11830.00000
   origins: ["Supaplex"]
-##  hunter   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  hunter   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: hunter
-    lang: en
+    lang: en  
+  - term: lovec
+    lang: cs
   freq: 11270.00000
   origins: ["Supaplex"]
-##  gravity   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  gravity   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: gravity
     lang: en
+  - term: gravitace
+    lang: cs  
   freq: 11200.00000
   origins: ["Supaplex"]
-##  easy   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  easy   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: easy
     lang: en
+  - term: snadné
+    lang: cs  
+  - term: lehké
+    lang: cs
   freq: 10790.00000
   origins: ["Supaplex"]
-##  classic   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  classic   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: classic
     lang: en
+  - term: klasické
+    lang: cs
   freq: 10356.00000
   origins: ["Supaplex"]
-##  festival   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  festival   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: festival
     lang: en
+  - term: festival
+    lang: cs
+  - term: slavnost
+    lang: cs
   freq: 9783.00000
   origins: ["Supaplex"]
-##  crash   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  crash   ################################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: crash
     lang: en
+  - term: havárie
+    lang: cs
+  - term: krach
+    lang: cs  
   freq: 9543.00000
   origins: ["Supaplex"]
-##  salad   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  salad   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: salad
     lang: en
+  - term: salát
+    lang: cs
   freq: 8267.00000
   origins: ["Supaplex"]
-##  rider   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  rider   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: rider
     lang: en
+  - term: jezdec
+    lang: cs
   freq: 8223.00000
   origins: ["Supaplex"]
-##  fork   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  fork   ################################################################## 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: fork
     lang: en
+  - term: vidlice
+    lang: cs
+  - term: rozvětvení
+    lang: cs
   freq: 7980.00000
   origins: ["Supaplex"]
-##  handling   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  handling   ############################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: handling
     lang: en
+  - term: zacházení
+    lang: cs
+  - term: vyřizování
+    lang: cs
   freq: 7719.00000
   origins: ["Supaplex"]
-##  chaos   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  chaos   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: chaos
     lang: en
+  - term: chaos
+    lang: cs
+    tts: cs-terms/chaos-cs.mp3
+  - term: zmatek
+    lang: cs
   freq: 6957.00000
   origins: ["Supaplex"]
-##  anonymous   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  anonymous   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: anonymous
     lang: en
+  - term: anonymní
+    lang: cs
+  - term: bezejmenný
+    lang: cs  
   freq: 6638.00000
   origins: ["Supaplex"]
-##  exit   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  exit   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: exit
-    lang: en
+    lang: en  
+  - term: výjezd
+    lang: cs  
+  - term: východ
+    lang: cs  
   freq: 6292.00000
   origins: ["Supaplex"]
-##  fuss   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  fuss   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: fuss
     lang: en
+  - term: povyk
+    lang: cs
+  - term: poprask
+    lang: cs  
   freq: 6200.00000
   origins: ["Supaplex"]
-##  pro   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  pro   ################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: pro
     lang: en
+  - term: profík
+    lang: cs
+  - term: profesionální
+    lang: cs  
   freq: 5662.00000
   origins: ["Supaplex"]
-##  bug   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  bug   ################################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: bug
     lang: en
+  - term: chyba
+    lang: cs  
+  - term: brouk
+    lang: cs
   freq: 5403.00000
   origins: ["Supaplex"]
-##  collector   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  collector   ############################################################# 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: collector
     lang: en
+  - term: sběratel
+    lang: cs
+  - term: kolektor
+    lang: cs  
   freq: 5236.00000
   origins: ["Supaplex"]
-##  ham   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  ham   ################################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: ham
     lang: en
+  - term: šunka
+    lang: cs  
   freq: 5057.00000
   origins: ["Supaplex"]
-##  sub   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  sub   ################################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: sub
     lang: en
+  - term: dílčí
+    lang: cs
+  - term: podřízené
+    lang: cs
   freq: 4918.00000
   origins: ["Supaplex"]
-##  sandwich   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  sandwich   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: sandwich
     lang: en
+  - term: sendvič
+    lang: cs
+  - term: chlebíček
+    lang: cs
   freq: 4822.00000
   origins: ["Supaplex"]
-##  runner   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  runner   ################################################################ 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: runner
     lang: en
+  - term: běžec
+    lang: cs
+  - term: závodník
+    lang: cs
   freq: 4498.00000
   origins: ["Supaplex"]
-##  bomb   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  bomb   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: bomb
     lang: en
+  - term: bomba
+    lang: cs  
   freq: 4241.00000
   origins: ["Supaplex"]
-##  bang   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  bang   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: bang
-    lang: en
+    lang: en 
+  - term: třesk
+    lang: cs  
+  - term: prásk
+    lang: cs
   freq: 4075.00000
   origins: ["Supaplex"]
-##  timing   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  timing   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: timing
     lang: en
+  - term: načasování
+    lang: cs
   freq: 3905.00000
   origins: ["Supaplex"]
-##  flip   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  flip   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: flip
     lang: en
+  - term: překlopit
+    lang: cs
+  - term: převrátit
+    lang: cs  
   freq: 3878.00000
   origins: ["Supaplex"]
-##  triple   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  triple   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: triple
-    lang: en
+    lang: en  
+  - term: trojitý
+    lang: cs
+  - term: ztrojnásobit
+    lang: cs
   freq: 3858.00000
   origins: ["Supaplex"]
-##  boring   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  boring   ################################################################ 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: boring
     lang: en
+  - term: nudný
+    lang: cs  
   freq: 3595.00000
   origins: ["Supaplex"]
-##  yawn   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  yawn   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: yawn
     lang: en
+  - term: zívnutí
+    lang: cs
+  - term: zívat
+    lang: cs    
   freq: 2763.00000
   origins: ["Supaplex"]
-##  diagonal   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  diagonal   ############################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: diagonal
-    lang: en
+    lang: en  
+  - term: úhlopříčka
+    lang: cs
+  - term: diagonální
+    lang: cs  
   freq: 1155.00000
   origins: ["Supaplex"]
-##  cracker   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  cracker   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: cracker
-    lang: en
+    lang: en  
+  - term: suchar
+    lang: cs
+  - term: prskavka
+    lang: cs  
   freq: 1119.00000
   origins: ["Supaplex"]
-##  pre   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  pre   ################################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: pre
-    lang: en
+    lang: en  
+  - term: předběžné
+    lang: cs  
+  - term: před
+    lang: cs  
   freq: 644.00000
   origins: ["Supaplex"]
-##  bombastic   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  bombastic   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: bombastic
     lang: en
+  - term: bombastický
+    lang: cs
   freq: 564.00000
   origins: ["Supaplex"]
-##  hopper   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  hopper   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: hopper
     lang: en
+  - term: pendlák
+    lang: cs
+  - term: násypka
+    lang: cs  
   freq: 544.00000
   origins: ["Supaplex"]
-##  flop   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  flop   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: flop
     lang: en
+  - term: žuchnout
+    lang: cs
+  - term: propadák
+    lang: cs
   freq: 535.00000
   origins: ["Supaplex"]
-##  ignition   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  ignition   ############################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: ignition
     lang: en
+  - term: zapalování
+    lang: cs  
+  - term: zážeh
+    lang: cs  
   freq: 512.00000
   origins: ["Supaplex"]
-##  telepathy   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  telepathy   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
   - term: telepathy
     lang: en
+  - term: telepatie
+    lang: cs
+  - term: přenos myšlenek
+    lang: cs  
   freq: 437.00000
   origins: ["Supaplex"]
-##  info   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  info   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: info
-    lang: en
+    lang: en  
+  - term: informace
+    lang: cs
+  - term: údaje
+    lang: cs
   freq: 177.00000
   origins: ["Supaplex"]
-##  anti   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+##  anti   ################################################################## 6 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
 - terms: 
   - term: anti
-    lang: en
+    lang: en  
+  - term: proti
+    lang: cs
+  - term: opak
+    lang: cs  
   freq: 143.00000
   origins: ["Supaplex"]
 ##  clockwise   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: clockwise
     lang: en
+  - term: po směru hodinových ručiček
+    lang: cs      
   freq: 44.00000
   origins: ["Supaplex"]
 ##  joystick   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
