@@ -48,7 +48,6 @@ concepts:
     tts: cs-terms/z.mp3
   img: img/of.jpeg
   freq: 22362.52530
-##  I   ##################################################################### no freq
 - terms: 
   - term: I
     lang: en
@@ -58,7 +57,7 @@ concepts:
     lang: cs
     tts: cs-terms/ja.mp3
   img: img/i.jpeg
-  freq: 1311.89345
+  freq: 5247.57380
 - terms: 
   - term: and
     lang: en
@@ -441,7 +440,7 @@ concepts:
     lang: en
   - term: k
     lang: cs
-  freq: 2641417.00000
+  freq: 2581.54080
   profileName: ignore
 - terms: 
   - term: said
@@ -1030,7 +1029,7 @@ concepts:
 - terms: 
   - term: def
     lang: en
-  freq: 748992.00000
+  freq: 27.01540
   profileName: ignore
 - terms: 
   - term: she
@@ -1073,7 +1072,7 @@ concepts:
     lang: en
   - term: na
     lang: cs
-  freq: 740814.00000
+  freq: 176.69940
   profileName: ignore
 - terms: 
   - term: only
@@ -1634,7 +1633,7 @@ concepts:
   - term: shall
     lang: en
     tts: en-terms/shall.mp3
-  freq: 449921.50000
+  freq: 326.40020
   profileName: ignore
 - terms: 
   - term: seemed
@@ -1691,7 +1690,7 @@ concepts:
 - terms: 
   - term: de
     lang: cs
-  freq: 433393.00000
+  freq: 534.90960
   profileName: ignore
 - terms: 
   - term: way
@@ -2110,7 +2109,7 @@ concepts:
     lang: en
   - term: ty
     lang: cs
-  freq: 355857.00000
+  freq: 19.84120
   profileName: ignore
 - terms: 
   - term: cannot
@@ -2220,8 +2219,8 @@ concepts:
   - term: převzaty
     lang: cs
     tts: cs-terms/prevzaty.mp3
-  freq: 335210.00000
-  profileName: ignore
+  img: img/taken.jpeg
+  freq: 147.96170
 - terms: 
   - term: night
     lang: en
@@ -2317,7 +2316,7 @@ concepts:
 - terms: 
   - term: gutenberg
     lang: en
-  freq: 328324.00000
+  freq: 5.03960
   profileName: ignore
 - terms: 
   - term: still
@@ -2471,7 +2470,7 @@ concepts:
     lang: en
   - term: tvé
     lang: cs
-  freq: 304489.00000
+  freq: 17.03290
   profileName: ignore
 - terms: 
   - term: though
@@ -2711,7 +2710,7 @@ concepts:
     lang: en
   - term: tobě
     lang: cs
-  freq: 269414.00000
+  freq: 14.56220
   profileName: ignore
 - terms: 
   - term: each
@@ -3169,7 +3168,7 @@ concepts:
 - terms: 
   - term: er
     lang: en
-  freq: 230485.00000
+  freq: 29.26690
   profileName: ignore
 - terms: 
   - term: believe
@@ -3369,7 +3368,7 @@ concepts:
     lang: cs
     tts: cs-terms/anglie.mp3
   img: img/england.jpeg
-  freq: 29.16920
+  freq: 116.67680
 - terms: 
   - term: fact
     lang: en
@@ -3612,7 +3611,7 @@ concepts:
 - terms: 
   - term: sn
     lang: en
-  freq: 198498.00000
+  freq: 10.33810
   profileName: ignore
 - terms: 
   - term: four
@@ -3868,7 +3867,7 @@ concepts:
     lang: en
   - term: vy
     lang: cs
-  freq: 182978.00000
+  freq: 16.95630
   profileName: ignore
 - terms: 
   - term: poor
@@ -4219,7 +4218,7 @@ concepts:
 - terms: 
   - term: ety
     lang: en
-  freq: 168713.00000
+  freq: 0.29040
   profileName: ignore
 - terms: 
   - term: hundred
@@ -4382,7 +4381,7 @@ concepts:
     lang: cs
   - term: mílí
     lang: cs
-  freq: 163341.00000
+  freq: 170.05340
   profileName: ignore
 - terms: 
   - term: state
@@ -4573,7 +4572,7 @@ concepts:
 - terms: 
   - term: la
     lang: en
-  freq: 154457.00000
+  freq: 268.58340
   profileName: ignore
 - terms: 
   - term: matter
@@ -4708,7 +4707,7 @@ concepts:
     lang: cs
     tts: cs-terms/francie.mp3
   img: img/france.jpeg
-  freq: 43.65495
+  freq: 174.61980
 - terms: 
   - term: indeed
     lang: en
@@ -4859,7 +4858,7 @@ concepts:
     lang: cs
     tts: cs-terms/londyn.mp3
   img: img/london.jpeg
-  freq: 51.46843
+  freq: 205.87370
 - terms: 
   - term: laid
     lang: en
@@ -4893,7 +4892,7 @@ concepts:
     lang: cs
   - term: o autorských právech
     lang: cs
-  freq: 145244.00000
+  freq: 635.76150
   profileName: ignore
 - terms: 
   - term: group
@@ -5062,7 +5061,7 @@ concepts:
     lang: cs
   - term: jest
     lang: cs
-  freq: 141246.00000
+  freq: 7.24810
   profileName: ignore
 - terms: 
   - term: wanted
@@ -5288,7 +5287,7 @@ concepts:
     lang: cs
   - term: doktor
     lang: cs
-  freq: 135902.00000
+  freq: 78.80310
   profileName: ignore
 - terms: 
   - term: lived
@@ -5354,7 +5353,7 @@ concepts:
     lang: en
   - term: ke
     lang: cs
-  freq: 134048.00000
+  freq: 16.20950
   profileName: ignore
 - terms: 
   - term: land
@@ -5472,7 +5471,7 @@ concepts:
     lang: en
   - term: k
     lang: cs
-  freq: 129478.00000
+  freq: 51.05140
   profileName: ignore
 - terms: 
   - term: lips
@@ -5491,7 +5490,7 @@ concepts:
     lang: cs
   - term: trval
     lang: cs
-  freq: 129411.00000
+  freq: 19.37040
   profileName: ignore
 - terms: 
   - term: truth
@@ -5689,7 +5688,7 @@ concepts:
 - terms: 
   - term: blockquote
     lang: en
-  freq: 123703.00000
+  freq: 0.56760
   profileName: ignore
 - terms: 
   - term: hard
@@ -6371,7 +6370,7 @@ concepts:
     lang: cs
     tts: cs-terms/amerika.mp3
   img: img/america.jpeg
-  freq: 57.90220
+  freq: 231.60880
 - terms: 
   - term: agree
     lang: en
@@ -7205,7 +7204,7 @@ concepts:
 - terms: 
   - term: don
     lang: en
-  freq: 49305.00000
+  freq: 44.21460
   profileName: ignore
 - terms: 
   - term: data
@@ -8560,7 +8559,7 @@ concepts:
 - terms: 
   - term: re
     lang: en
-  freq: 10479.44000
+  freq: 732.57920
   profileName: ignore
 - terms: 
   - term: alert
@@ -8847,7 +8846,7 @@ concepts:
 - terms: 
   - term: ll
     lang: en
-  freq: 5632.08000
+  freq: 21.36320
   profileName: ignore
 - terms: 
   - term: arrogant
@@ -9052,7 +9051,7 @@ concepts:
 - terms: 
   - term: oh
     lang: en
-  freq: 68285.00000
+  freq: 138.16600
   profileName: ignore
 - terms: 
   - term: bright
@@ -10601,7 +10600,7 @@ concepts:
 - terms: 
   - term: einstein
     lang: en
-  freq: 370.00000
+  freq: 8.08260
   profileName: ignore
 - terms: 
   - term: fair
@@ -10763,7 +10762,7 @@ concepts:
     lang: cs
     tts: cs-terms/marie.mp3
   img: img/mary.jpeg
-  freq: 23.13223
+  freq: 92.52890
 - terms: 
   - term: appear
     lang: en
@@ -11317,7 +11316,7 @@ concepts:
 - terms: 
   - term: gonna
     lang: en
-  freq: 400.00000
+  freq: 23.02600
   profileName: ignore
 - terms: 
   - term: possum
@@ -11338,7 +11337,7 @@ concepts:
     lang: cs
     tts: cs-terms/nobelova.mp3
   img: img/nobel.jpeg
-  freq: 1.44408
+  freq: 5.77630
 - terms: 
   - term: bouncy
     lang: en
@@ -11397,7 +11396,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ja budu.mp3
   img: img/Ill.jpeg
-  freq: 576.53365
+  freq: 377.68542
 - terms: 
   - term: can't (can not)
     lang: en
@@ -11410,7 +11409,7 @@ concepts:
     lang: cs
     tts: cs-terms/neumet.mp3
   img: img/cant.jpeg
-  freq: 82.37653
+  freq: 329.50613
 - terms: 
   - term: I've (I have)
     lang: en
@@ -11420,7 +11419,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ja mam.mp3
   img: img/Ive.jpeg
-  freq: 664.91173
+  freq: 395.36104
 - terms: 
   - term: won't (will not)
     lang: en
@@ -11430,7 +11429,7 @@ concepts:
     lang: cs
     tts: cs-terms/nebude.mp3
   img: img/wont.jpeg
-  freq: 84.79885
+  freq: 339.19542
 - terms: 
   - term: that's (that is)
     lang: en
@@ -11440,7 +11439,7 @@ concepts:
     lang: cs
     tts: cs-terms/ten je.mp3
   img: img/thats.jpeg
-  freq: 172.28025
+  freq: 689.12099
 - terms: 
   - term: he's (he is)
     lang: en
@@ -11450,7 +11449,7 @@ concepts:
     lang: cs
     tts: cs-terms/on je.mp3
   img: img/hes.jpeg
-  freq: 117.92983
+  freq: 471.71931
 - terms: 
   - term: there's (there is)
     lang: en
@@ -11460,7 +11459,7 @@ concepts:
     lang: cs
     tts: cs-terms/tady je.mp3
   img: img/theres.jpeg
-  freq: 114.91862
+  freq: 459.67449
 - terms: 
   - term: you'd (you would)
     lang: en
@@ -11470,7 +11469,7 @@ concepts:
     lang: cs
     tts: cs-terms/ty bys.mp3
   img: img/youd.jpeg
-  freq: 75.85186
+  freq: 303.40743
 - terms: 
   - term: we're (we are)
     lang: en
@@ -11480,7 +11479,7 @@ concepts:
     lang: cs
     tts: cs-terms/my jsme.mp3
   img: img/were.jpeg
-  freq: 80.43107
+  freq: 321.72428
 - terms: 
   - term: "'cause (because)"
     lang: en
@@ -11490,16 +11489,14 @@ concepts:
     lang: cs
     tts: cs-terms/protoze.mp3
   img: img/cause.jpeg
-  freq: 115.33448
+  freq: 461.33790
 - terms: 
   - term: could've
     lang: en
-  freq: 22.00000
   profileName: ignore
 - terms: 
   - term: should've
     lang: en
-  freq: 18.00000
   profileName: ignore
 - terms: 
   - term: I'm (I am)
@@ -11510,7 +11507,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ja jsem.mp3
   img: img/Im.jpeg
-  freq: 245.03165
+  freq: 311.38502
 - terms: 
   - term: you're (you are)
     lang: en
@@ -11520,7 +11517,7 @@ concepts:
     lang: cs
     tts: cs-terms/Ty jsi.mp3
   img: img/youre.jpeg
-  freq: 114.55479
+  freq: 458.21918
 - terms: 
   - term: what's (what is)
     lang: en
@@ -11530,7 +11527,7 @@ concepts:
     lang: cs
     tts: cs-terms/Co je.mp3
   img: img/whats.jpeg
-  freq: 117.28261
+  freq: 469.13043
 - terms: 
   - term: let's (let us)
     lang: en
@@ -11543,11 +11540,10 @@ concepts:
     lang: cs
     tts: cs-terms/at.mp3
   img: img/lets.jpeg
-  freq: 29.16423
+  freq: 116.65691
 - terms: 
   - term: everyone's
     lang: en
-  freq: 5735.00000
   profileName: ignore
 - terms: 
   - term: learned
@@ -11623,7 +11619,7 @@ concepts:
     lang: cs
     tts: cs-terms/Tomas.mp3
   img: img/Thomas.jpeg
-  freq: 27.70410
+  freq: 110.81640
 - terms: 
   - term: share
     lang: en
@@ -11695,7 +11691,7 @@ concepts:
     lang: cs
     tts: cs-terms/oni jsou.mp3
   img: img/theyre.jpeg
-  freq: 69.64597
+  freq: 278.58390
 - terms: 
   - term: thunders
     lang: en
@@ -11964,7 +11960,7 @@ concepts:
 - terms: 
   - term: wah
     lang: en
-  freq: 274.00000
+  freq: 2.41960
   profileName: ignore
 - terms: 
   - term: wipers
@@ -12028,7 +12024,7 @@ concepts:
     lang: cs
     tts: cs-terms/sve.mp3
   img: img/its.jpeg
-  freq: 120.91824
+  freq: 483.67297
 - terms: 
   - term: danger
     lang: en
@@ -12306,7 +12302,7 @@ concepts:
     lang: cs
     tts: cs-terms/bavlnene ocasy.mp3
   img: img/cottontails.jpeg
-  freq: 0.36279
+  freq: 1.45116
 - terms: 
   - term: ponytails
     lang: en
@@ -12979,7 +12975,7 @@ concepts:
     lang: cs
     tts: cs-terms/evropa.mp3
   img: img/europe.jpeg
-  freq: 40.54138
+  freq: 162.16550
 - terms: 
   - term: support
     lang: en
@@ -14568,7 +14564,7 @@ concepts:
     lang: cs
     tts: cs-terms/nemecko.mp3
   img: img/germany.jpeg
-  freq: 39.17185
+  freq: 156.68740
 - terms: 
   - term: forest
     lang: en
@@ -14802,7 +14798,7 @@ concepts:
     lang: cs
     tts: cs-terms/barva.mp3
   img: img/colour.jpeg
-  freq: 3.01839
+  freq: 12.07355
 - terms: 
   - term: crime
     lang: en
@@ -14907,7 +14903,7 @@ concepts:
     lang: cs
     tts: cs-terms/indie.mp3
   img: img/india.jpeg
-  freq: 37.14855
+  freq: 148.59420
 - terms: 
   - term: lower
     lang: en
@@ -15602,7 +15598,7 @@ concepts:
     lang: cs
     tts: cs-terms/egyptCs.mp3
   img: img/egypt.jpeg
-  freq: 8.47045
+  freq: 33.88180
 - terms: 
   - term: director
     lang: en
@@ -16042,7 +16038,7 @@ concepts:
     lang: cs
     tts: cs-terms/irsko.mp3
   img: img/ireland.jpeg
-  freq: 24.14653
+  freq: 96.58610
 - terms: 
   - term: twelve
     lang: en
@@ -21858,7 +21854,7 @@ concepts:
     tts: en-terms/estranging.mp3
   - term: odcizující
     lang: cs
-  freq: 0.00563
+  freq: 0.02250
   profileName: relax
 - terms: 
   - term: puppeteers
@@ -22568,7 +22564,7 @@ concepts:
     lang: cs
     tts: cs-terms/Pariz.mp3
   img: img/Paris.jpeg
-  freq: 20.75728
+  freq: 83.02910
 - terms: 
   - term: probably
     lang: en
@@ -22608,7 +22604,7 @@ concepts:
 - terms: 
   - term: seeing
     lang: en
-  freq: 112889.00000
+  freq: 44.75600
   profileName: ignore
 - terms: 
   - term: send
@@ -22636,7 +22632,7 @@ concepts:
     lang: cs
     tts: cs-terms/Jiri.mp3
   img: img/George.jpeg
-  freq: 29.01683
+  freq: 116.06730
 - terms: 
   - term: coming
     lang: en
@@ -22731,7 +22727,7 @@ concepts:
     lang: cs
     tts: cs-terms/francouzstina.mp3
   img: img/French.jpeg
-  freq: 34.60015
+  freq: 138.40060
 - terms: 
   - term: grew
     lang: en
@@ -22760,7 +22756,7 @@ concepts:
   - term: getting
     lang: en
   - term: získání
-  freq: 103981.00000
+  freq: 158.95170
   profileName: ignore
 - terms: 
   - term: social
@@ -22846,7 +22842,7 @@ concepts:
 - terms: 
   - term: william
     lang: en
-  freq: 101780.00000
+  freq: 101.68660
   profileName: ignore
 - terms: 
   - term: duke
@@ -22898,7 +22894,7 @@ concepts:
     lang: cs
     tts: cs-terms/Kristus.mp3
   img: img/Christ.jpeg
-  freq: 12.07420
+  freq: 48.29680
 - terms: 
   - term: noble
     lang: en
@@ -22982,13 +22978,13 @@ concepts:
     lang: cs
     tts: cs-terms/samec.mp3
   img: img/Tom.jpeg
-  freq: 20.30833
+  freq: 81.23330
 - terms: 
   - term: ought
     lang: en
   - term: by měl
     lang: cs
-  freq: 96621.00000
+  freq: 12.79190
   profileName: ignore
 - terms: 
   - term: carry
@@ -23031,7 +23027,7 @@ concepts:
     lang: cs
     tts: cs-terms/Karel.mp3
   img: img/Charles.jpeg
-  freq: 18.90165
+  freq: 75.60660
 - terms: 
   - term: written
     lang: en
@@ -23118,7 +23114,7 @@ concepts:
     lang: cs
     tts: cs-terms/Jindrich.mp3
   img: img/Henry.jpeg
-  freq: 12.22918
+  freq: 48.91670
 - terms: 
   - term: education
     lang: en
@@ -23289,7 +23285,7 @@ concepts:
     lang: cs
     tts: cs-terms/Rim.mp3
   img: img/Rome.jpeg
-  freq: 8.93655
+  freq: 35.74620
 - terms: 
   - term: opinion
     lang: en
@@ -23386,7 +23382,7 @@ concepts:
 - terms: 
   - term: et
     lang: en
-  freq: 79225.00000
+  freq: 177.26030
   profileName: ignore
 - terms: 
   - term: threw
@@ -23555,7 +23551,7 @@ concepts:
     lang: cs
     tts: cs-terms/Jakub.mp3
   img: img/James.jpeg
-  freq: 38.48493
+  freq: 153.93970
 - terms: 
   - term: hart
     lang: en
@@ -23603,7 +23599,7 @@ concepts:
     lang: en
   - term: za
     lang: cs
-  freq: 75273.00000
+  freq: 372.27790
   profileName: ignore
 - terms: 
   - term: private
@@ -23736,7 +23732,7 @@ concepts:
     lang: cs
     tts: cs-terms/Petr.mp3
   img: img/Peter.jpeg
-  freq: 25.31003
+  freq: 101.24010
 - terms: 
   - term: slowly
     lang: en
@@ -23829,7 +23825,7 @@ concepts:
     lang: cs
     tts: cs-terms/Jezis.mp3
   img: img/Jesus.jpeg
-  freq: 14.84765
+  freq: 59.39060
 - terms: 
   - term: born
     lang: en
@@ -23892,7 +23888,7 @@ concepts:
     lang: cs
     tts: cs-terms/Michael-cs.mp3
   img: img/Michael.jpeg
-  freq: 36.78110
+  freq: 147.12440
 - terms: 
   - term: generally
     lang: en
@@ -24369,7 +24365,7 @@ concepts:
     lang: en
   - term: atd
     lang: cs
-  freq: 10112.00000
+  freq: 87.61040
   profileName: ignore
 - terms: 
   - term: obliged
@@ -24928,7 +24924,7 @@ concepts:
     lang: cs
     tts: cs-terms/pocitac.mp3
   img: img/pc (personal computer).jpeg
-  freq: 8.39263
+  freq: 33.57052
 - terms: 
   - term: application
     lang: en
