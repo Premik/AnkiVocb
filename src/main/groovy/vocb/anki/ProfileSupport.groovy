@@ -20,7 +20,7 @@ public class ProfileSupport {
 	Path profilePath = Paths.get(System.getProperty("user.home"), ".local", "share", "Anki2")
 	String selectedProfile = "test"
 	String nodeModelName = "ankivocb-en2cs-1"
-	String deckName = "JingleBells"
+	String deckName = ""
 
 	@Lazy VocbModel vocbModel = new VocbModel()
 
@@ -54,6 +54,7 @@ public class ProfileSupport {
 		flds.split( (0x1f as Character).toString())
 	}
 
+	@Deprecated
 	public Map loadModelsJson() {
 		List<String> modelDbs
 		withProfileCollectionDb(selectedProfile) { Sql sql->
@@ -68,6 +69,7 @@ public class ProfileSupport {
 		return ret
 	}
 
+	@Deprecated
 	public Map loadDecksJson() {
 		List<String> deckJsons
 		withProfileCollectionDb(selectedProfile) { Sql sql->
@@ -83,28 +85,43 @@ public class ProfileSupport {
 	}
 
 	public Map<String, Map> getNodeModelsByName() {
-		loadModelsJson().collectEntries {
+		/*loadModelsJson().collectEntries {
 			[it.value.name, it.value]
+		}*/
+		Map<String, Map> ret
+		withProfileCollectionDb(selectedProfile) { Sql sql->
+			ret = sql.rows("select * from notetypes").collectEntries { GroovyRowResult r ->
+				[r.name, r]
+			}
 		}
+		return ret
 	}
 
 	public Map getAnkivocbModel() {
+		assert nodeModelsByName[nodeModelName]
 		nodeModelsByName[nodeModelName]
 	}
 
-	public Long getAnkivocbModelId() {
-		assert ankivocbModel.id : "Failed to find the $nodeModelName model "
+	public Long getAnkivocbModelId() {		
 		return ankivocbModel.id
 	}
 
 	public Map<String, Map> getDecksByName() {
-		loadDecksJson().collectEntries {
+		/*loadDecksJson().collectEntries {
 			[it.value.name, it.value]
+		}*/
+		Map<String, Map> ret
+		withProfileCollectionDb(selectedProfile) { Sql sql->
+			ret = sql.rows("select * from decks").collectEntries { GroovyRowResult r ->
+				[splitFields(r.name)[-1], r]			
+			}
 		}
+		return ret
 	}
 
 	public Long getSelectedDeckId() {
-		decksByName[deckName]?.id
+		assert !deckName || decksByName[deckName] : "Deck '$deckName' not found. Decks:\n ${decksByName.keySet().join('\n ')}"
+		return decksByName[deckName]?.id
 	}
 
 
@@ -203,18 +220,20 @@ public class ProfileSupport {
 			println listProfiles()
 			//selectedProfile = "test"
 			selectedProfile = "Honzik"
-			println decksByName.keySet()
-			//deckName = "Supaplex"
+			//println decksByName.keySet()
+			deckName = "First1000"
 			//deckName = "Jingle Bells"
 			//deckName = "Five Little Monkeys"
 			//deckName = "Mary Had a Little Lamb"
-			fixGuids()
+			//fixGuids()
 
 			//println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
 
 
 
-			//ankivocbCards().each { println it}
+			ankivocbCards().each { 
+				println it.flds[2]
+			}
 			println "Done"
 
 

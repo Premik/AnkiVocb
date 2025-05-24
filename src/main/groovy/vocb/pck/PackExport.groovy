@@ -11,9 +11,11 @@ import java.util.stream.Stream
 
 import org.codehaus.groovy.runtime.MethodClosure
 
+import groovy.sql.GroovyRowResult
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
 import vocb.Helper
+import vocb.anki.ProfileSupport
 import vocb.anki.crowd.Data2Crowd
 import vocb.conf.ConfHelper
 import vocb.corp.WordNormalizer
@@ -48,7 +50,7 @@ public class PackExport {
 	}
 
 	Stream<Example> sentencesForExport() {
-		info.sentences.parallelStream().map {String s->			
+		info.sentences.parallelStream().map {String s->
 			ExampleComparatorMatch m = dbMan.bestExampleForSentence(s)[0]
 			dbMan.silent
 			if (!m && !dbMan.silent) {
@@ -112,18 +114,18 @@ public class PackExport {
 	Stream<ExportItem> sentencesExport() {
 		if (!info?.sentences) return Stream.empty()
 		assert dbMan
-		sentencesForExport()		
+		sentencesForExport()
 				.flatMap {Example e->
-										
+
 					dbMan.conceptsFromWordsInExample(e).stream().filter {Concept c->
 						//If strictlyWordlist, exclude concept which are not listed in the pack wordlist
-						if (!info.strictlyWordlist ) return true 												
-						info.wn.wordVariantsWithBrackets(c.firstTerm).any {info.wordList.contains(it)}						
+						if (!info.strictlyWordlist ) return true
+						info.wn.wordVariantsWithBrackets(c.firstTerm).any {info.wordList.contains(it)}
 					}
-					
+
 					.filter {it!=null && !it.ignore}
 					.map { Concept c->
-						
+
 						new ExportItem(concept: c, example: e)
 					}
 				}
@@ -151,54 +153,58 @@ public class PackExport {
 
 	Stream<ExportItem> export() {
 		Stream.concat(sentencesExport(), wordListExport())
-		
 	}
 
 	@Lazy
 	Set<String> exportedWords = {
 		MethodClosure mc = LinkedHashSet.&new as MethodClosure
 		export().map { ExportItem ei->
-						
+
 			ei.concept.firstTerm
 		}
 		.collect(Collectors.toCollection(mc)) as Set<String>
 	}()
 
-	public debugDumpTo(Path folder) {
+	public List<List> cardsFieldsInDb(String deck=info.name, String profile="Honzik") {
+		new ProfileSupport(selectedProfile: profile, deckName:deck).ankivocbCards()
+		.collect {Map card->card["flds"]} as List<List>
+	}
+
+	public void debugDumpTo(Path folder) {
 		//silent = false
 		Helper.startWatch()
 		int fileCount=0
 		assert folder
-		Path trgPath = folder.resolve(info.treeConf.relativePath)		
+		Path trgPath = folder.resolve(info.treeConf.relativePath)
 		Files.createDirectories(trgPath.resolve("sorted"))
 		Closure<Path> pw = { String name, Closure c->
 			fileCount++
 			Path t = trgPath.resolve(name)
 			t.withPrintWriter(Helper.utf8, c)
-			return t			
+			return t
 		}
-		
+
 		Closure cps = { Path p->
 			assert Files.exists(p)
 			pw("sorted/$p.fileName") {PrintWriter w->
-				p.withReader(Helper.utf8) { Reader r->  
+				p.withReader(Helper.utf8) { Reader r->
 					r.readLines().toSorted().each {
 						w.println(it)
 					}
 				}
-			}		
+			}
 		}
 		Closure cp = { Path p->
 			if (!Files.exists(p)) return
-			Path t = trgPath.resolve(p.fileName)
-			Files.copy(p, t, StandardCopyOption.REPLACE_EXISTING)			
+				Path t = trgPath.resolve(p.fileName)
+			Files.copy(p, t, StandardCopyOption.REPLACE_EXISTING)
 			fileCount++
 			cps(t)
 		}
 		Closure pws = { String name, Closure c->
 			cps(pw(name, c))
 		}
-		
+
 
 		Closure pl = { String name, Iterable it->
 			pws(name) { PrintWriter w->
@@ -210,13 +216,18 @@ public class PackExport {
 
 		cp(info.sentencesPath)
 		cp(info.wordsPath)
-		pl("sentences-reparsed.txt", info.sentences)		
+		pl("sentences-reparsed.txt", info.sentences)
 
 		List<String> wordDups = info.wordList.groupBy { it }.findAll { k,v-> v.size() >1 }.collect{k,v->v[0]}
 
 		if (wordDups) {
 			pl("words-dups.txt", wordDups)
 		}
+		
+		pl("sentences-db.txt",
+			cardsFieldsInDb("First1000").collect {List flds->flds[2]}.toUnique())
+		pl("words-db.txt",
+			cardsFieldsInDb("First1000").collect {List flds->flds[0]}.toUnique())
 
 		pl("words-exported.txt", exportedWords)
 		pl("sentences-exported.txt",
@@ -226,6 +237,8 @@ public class PackExport {
 				}
 				.toList() as LinkedHashSet
 				)
+
+		
 		Helper.printLapseTime()
 		println "Dumped $fileCount files to the $trgPath"
 	}
