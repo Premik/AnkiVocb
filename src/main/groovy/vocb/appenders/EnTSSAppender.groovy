@@ -16,25 +16,27 @@ import static vocb.Ansi.*
 
 public class EnTSSAppender {
 
-	String[] voices = ["Emma", "Amy", "Brian", "Joanna", "Matthew", "Joey", "Kimberly", "Ayanda", "Olivia", "Aria"]
+
+
 	int voiceCounter = 0
 	int limit = 5
 	int sleep = 1000
 	WordNormalizer wn = new WordNormalizer()
+	AwsCliPollyTTS enTts = new AwsCliPollyTTS()
 
 	String getSomeVoice() {
 		voiceCounter++
-		voices[voiceCounter%(voices.length)]
+		enTts.voices[voiceCounter%(enTts.voices.length)]
 	}
 
-	AwsCliPollyTTS enTts = new AwsCliPollyTTS()
+	
 	Manager dbMan = new Manager()
 	int i =0
 	void runTerms() {
 		dbMan.load()
 
 
-		dbMan.withTermsByLang("en") {Concept c, Term t->
+		dbMan.withTermsByLang("en") { Concept c, Term t->
 			if (c.terms.size() >3) {
 				println color("Ignoring: $c", WHITE)
 				return
@@ -60,7 +62,9 @@ public class EnTSSAppender {
 
 	void runExamples() {
 		//dbMan.load()
-		List<Example> todo = dbMan.db.examples.collect().findAll { !it[0].tts}
+		List<Example> todo = dbMan.db.examples.collect().findAll {
+			!it[0].tts
+		}
 
 		println "Found ${color(todo.size().toString(), BOLD)} example terms with no tts"
 		int i =0
@@ -80,8 +84,8 @@ public class EnTSSAppender {
 			//
 
 			e[0].tts = dbMan.resolveMedia(e.firstTerm, "mp3", "en-samples") { Path path ->
-				
-  			    String trm = wn.stripBracketsOut(e.firstTerm)
+
+				String trm = wn.stripBracketsOut(e.firstTerm)
 				//String tts = enTts.SSMLEmphSubstr(e.term, enWord )
 				//Process p=  enTts.synth(tts, "neural", someVoice, "ssml", path.toString())
 				Process p=  enTts.synth(trm, "neural", someVoice, "text", path.toString())
