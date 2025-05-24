@@ -130,7 +130,9 @@ public class WordsSource {
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
 			
-			String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
+			//String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
+			String tx = new File("/data/src/AnkiVocb/pkg/SimpleWords/words.txt").text
+			
 			                                             
 			
 			
