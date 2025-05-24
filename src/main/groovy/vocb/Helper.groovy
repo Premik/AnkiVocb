@@ -392,6 +392,13 @@ public class Helper {
 		
 	}
 	
+	public static String padRightAnsi(String st, int pad) {
+		if (!st) return st.padRight(pad)
+		String noAnsi = Ansi.removeAnsi(st)
+		int extraLen = st.length() - noAnsi.length()
+		return st.padRight(pad+extraLen)
+	}
+	
 
 }
 

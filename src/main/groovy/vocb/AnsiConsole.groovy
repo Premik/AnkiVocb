@@ -6,6 +6,8 @@ import static org.junit.Assert.*
 // Author: Ted Vinke
 import static vocb.Ansi.*
 
+import java.util.regex.Pattern
+
 /**
  * Small ANSI coloring utility.
  *
@@ -44,6 +46,14 @@ public class Ansi {
 	static String color(String text, String ansiValue) {
 		ansiValue + text + NORMAL
 	}
+	
+	//https://stackoverflow.com/questions/25245716/remove-all-ansi-colors-styles-from-strings
+	//https://stackoverflow.com/questions/25189651/how-to-remove-ansi-control-chars-vt100-from-a-java-string
+	//static final Pattern ansiPattern = ~/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/
+	static final Pattern ansiPattern = ~/\u001B\[[\d;]*[^\d;]/
+	public static String removeAnsi(String st) {
+		st.replaceAll(ansiPattern, "")
+	}	
 
 }
 
@@ -93,6 +103,9 @@ def test() {
 				color(pair.first(), pair.last())
 			}.join(' ')
 			)
+			
+			
+	println removeAnsi(color("unBOLD", Ansi.BOLD))
 
 }
 
