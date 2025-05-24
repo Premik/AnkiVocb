@@ -10,7 +10,7 @@ class YamlStorageTest {
 	ConceptYamlStorage st = new ConceptYamlStorage()
 	YamlSlurper slurper = new YamlSlurper()
 
-	URL testConceptsUrl = getClass().getResource('/anki/data/testConcepts.yaml')
+	URL testConceptsUrl = getClass().getResource('/vocb/data/testConcepts.yaml')
 
 	def simpleTermGen = {int i=0->
 		slurper.parseText("""\

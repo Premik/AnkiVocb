@@ -1,19 +1,20 @@
 package vocb
 
-import org.codehaus.groovy.control.CompilerConfiguration
 import static java.lang.System.getProperty
 import static java.lang.System.getenv
 
-
 class ConfHelper {
 
-	public static final List<String> resExplicitExtensions = ['.conf']
-	private static String windowsHomePath = "${getenv('HOMEDRIVE')}${getenv('HOMEPATH')}"
+	public static ConfHelper instance = new ConfHelper()
+	@Lazy public static ConfigObject cfg = instance.config
+
+	public  final List<String> resExplicitExtensions = ['.conf']
+	private  String windowsHomePath = "${getenv('HOMEDRIVE')}${getenv('HOMEPATH')}"
 
 
-	private static ConfigObject mergedCfg
+	private  ConfigObject mergedCfg
 
-	@Lazy  public static ConfigObject cfg = {
+	@Lazy  public  ConfigObject config = {
 		if (mergedCfg == null) {
 			mergedCfg = new ConfigObject()
 			loadAll()
@@ -21,34 +22,34 @@ class ConfHelper {
 		return mergedCfg
 	}()
 
-	public static String ensureEndSlash(String s) {
+	public  String ensureEndSlash(String s) {
 		if (s.endsWith(File.separator)) return s
 		return s + File.separator
 	}
 
-	@Lazy public static List<File> lookupFolders = {
+	@Lazy public  List<File> lookupFolders = {
 		[
 			"${ensureEndSlash(getProperty('user.home'))}.local${File.separator}share${File.separator}Ankivocb",
 			"${ensureEndSlash(windowsHomePath)}${File.separator}Ankivocb",
 			"${ensureEndSlash(getProperty('user.dir'))}conf",
-		].unique().findAll(ConfHelper.&isLookupFolderValid) as File[]
+		].unique().findAll(this.&isLookupFolderValid) as File[]
 	}()
 
-	public static boolean  isLookupFolderValid(String path) {
+	public  boolean  isLookupFolderValid(String path) {
 		if (!path) return false
 		File f= new File(path)
 		return f.exists() && f.isDirectory()
 	}
 
 
-	public static ConfigObject parseString(String cfgString, Map binding =[:]) {
+	public  ConfigObject parseString(String cfgString, Map binding =[:]) {
 		assert cfgString
 		ConfigSlurper cfgSlurper = new ConfigSlurper()
 		cfgSlurper.setBinding(binding)
 		return cfgSlurper.parse(cfgString)
 	}
 
-	public static ConfigObject parseMap(Map<String, String> mapProps, Map binding =[:]) {
+	public  ConfigObject parseMap(Map<String, String> mapProps, Map binding =[:]) {
 		ConfigSlurper cfgSlurper = new ConfigSlurper()
 		Objects.requireNonNull(mapProps)
 		Properties p = new Properties()
@@ -57,21 +58,21 @@ class ConfHelper {
 		return cfgSlurper.parse(p)
 	}
 
-	public static ConfigObject loadConfig(String configName, Map binding = null) {
+	public  ConfigObject loadConfig(String configName, Map binding = null) {
 		String cfgStr = resolveRes( configName)?.text
 		if (cfgStr == null) return null
 		if (binding == null) binding = mergedCfg
-		return ConfHelper.parseString(cfgStr, binding)
+		return parseString(cfgStr, binding)
 	}
 
-	public  static ConfigObject loadAndMergeConfig(String configName, Map binding = null) {
+	public   ConfigObject loadAndMergeConfig(String configName, Map binding = null) {
 		ConfigObject c = loadConfig(configName, binding)
 		if (!c) return c
 		if (mergedCfg != null) mergedCfg.merge(c)
 		return c
 	}
 
-	public static BufferedInputStream resolveResExactName(String resName, File[] lookupPaths = []) {
+	public InputStream resolveResExactName(String resName, File[] lookupPaths =lookupFolders) {
 		if (!resName) return null
 		//First try to find a file. Take the first match
 		File file = lookupPaths.findResult { File pf->
@@ -91,24 +92,30 @@ class ConfHelper {
 		].findAll {it}.collect { ClassLoader cl ->
 			return [
 				"conf/$resName",
-				resName
-			].collect{cl.getResourceAsStream(it)}.find {it}
+				"data/$resName",
+				"/$resName",
+				"vocb/conf/$resName",
+				"vocb/data/$resName",
+				"vocb/$resName",
+			].collect{				
+				cl.getResourceAsStream(it)
+				}.find {it}
 		}.find {it}
 		return is
 	}
 
-	public static BufferedInputStream resolveRes(String resName, File[] lookupPaths = lookupFolders) {
+	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders) {
 		resolveRes(resName, lookupPaths, this.&resolveResExactName)
 	}
 
-	public static BufferedInputStream resolveRes(String resName, File[] lookupPaths = lookupFolders, Closure cb) {
+	public  InputStream resolveRes(String resName, File[] lookupPaths = lookupFolders, Closure cb) {
 		(['']+ resExplicitExtensions).findResult {
 			cb("$resName$it", lookupPaths)
 		}
 	}
 
 
-	public static StringBuilder prettyPrintCfg(obj=mergedCfg, int level = 0, StringBuilder sb = new StringBuilder()) {
+	public  StringBuilder prettyPrintCfg(obj=mergedCfg, int level = 0, StringBuilder sb = new StringBuilder()) {
 		//https://stackoverflow.com/questions/7898068/pretty-print-for-a-groovy-configobject
 		Closure indent = { lev -> sb.append("  " * lev) }
 		if(obj instanceof Map){
@@ -140,7 +147,7 @@ class ConfHelper {
 	}
 
 
-	public static loadAll() {
+	public  loadAll() {
 		assert loadAndMergeConfig("ankivocb-default") : "Failed to load the inbuilt default config"
 		ConfigObject c=  loadAndMergeConfig("ankivocb")
 		if (!c) System.print("Couldn't find the custom ankivocb.conf file. Using the default.\n")
@@ -148,9 +155,7 @@ class ConfHelper {
 
 
 	public static void main(String[] args) {
-		println getLookupFolders()
-		println cfg.azure
-		println prettyPrintCfg()
+		println ConfHelper.instance.lookupFolders
 	}
 
 

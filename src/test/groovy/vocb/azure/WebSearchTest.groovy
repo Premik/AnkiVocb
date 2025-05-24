@@ -13,7 +13,7 @@ class WebSearchTest {
 	HttpHelper httpHelper= new HttpHelper(cache: new SimpleFileCache([rootPath : Paths.get('/tmp/test')]))
 
 	BingWebSearch search = new BingWebSearch(httpHelper:httpHelper )
-	String imgResultStr = getClass().getResource('/anki/azure/ImageSearchResponse.json').text
+	String imgResultStr = getClass().getResource('/vocb/azure/ImageSearchResponse.json').text
 	Object imgRes = new JsonSlurper().parseText(imgResultStr)
 	
 	@Test
