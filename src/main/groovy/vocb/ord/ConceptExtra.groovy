@@ -10,21 +10,22 @@ import vocb.data.Concept
 public class ConceptExtra {
 
 	Concept c
-	Object solver
+	SolvingContext ctx
+	int id
 
 	@Lazy int difficulty = {
 		assert c
-		assert solver
-		solver.dfc.conceptDifficulty(c)
+		assert ctx
+		ctx.dfc.conceptDifficulty(c)
 	}()
 
 	@Lazy LinkedHashMap<Concept, Double> similarities=  {
 		assert c
-		assert solver
+		assert ctx
 		//println "${solver.class.hashCode()} ${vocb.ord.OrderSolver.class.hashCode()}"
 			
-		solver.initialSelection
-		.collectEntries {[it, solver.sm.conceptSimilarityNorm(c, it)]}
+		ctx.initialSelection
+		.collectEntries {[it, ctx.sm.conceptSimilarityNorm(c, it)]}
 		.findAll {Concept c, Double d -> d > 0.15d && d <0.99 }
 		.sort {Entry<Concept, Double>  a, Entry<Concept, Double>  b ->
 			b.value <=> a.value
@@ -33,7 +34,7 @@ public class ConceptExtra {
 
 	@Override
 	public String toString() {
-		"$c.firstTerm($difficulty, ${similarities.keySet().take(50).collect{it.firstTerm} })"
+		"$c?.firstTerm($difficulty, ${similarities.keySet().take(50).collect{it?.firstTerm} })"
 	}
 }
 
