@@ -170,7 +170,7 @@ public class Manager {
 		println "${'-'*80}"
 		println "Not used:"
 		mediaRootPath.toFile().eachFile { File f->
-			if ( !grp.containsKey(f.name)) {
+			if ( !grp.containsKey(f.name) && f.isFile()) {
 				println "rm -f '${f}'"
 
 			}
@@ -222,7 +222,7 @@ public class Manager {
 	public void moveToSubFolders() {
 		
 		WordNormalizer wn =new WordNormalizer()
-		groupByMedia().take(1).each { String mp, Set<Concept> cs->			
+		groupByMedia().take(10).each { String mp, Set<Concept> cs->			
 			Concept c = cs[0]
 			if (c.img == mp && !mp.contains("img/")) {								
 				c.img = "img/$mp"
@@ -230,7 +230,11 @@ public class Manager {
 				Files.move(mediaLinkPath(mp) , mediaLinkPath(c.img))
 			}
 			
-			c.termsByLang(lng)
+			c.termsByLang("en").findAll{it.tts == mp }.each {
+				it.tts = "en-terms/$mp"
+				println "$mp -> $it.tts"
+				Files.move(mediaLinkPath(mp) , mediaLinkPath(it.tts))
+			}
 			
 			
 		}
