@@ -15,6 +15,15 @@ import vocb.tts.LocalTTS
 import static vocb.Ansi.*
 
 public class CsTSSAppender {
+	
+	//String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural", "cs-CZ-Jakub"]
+	String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural"]
+	int voiceCounter = 0
+	
+	String getSomeVoice() {
+		voiceCounter++
+		voices[voiceCounter%(voices.length)]
+	}
 
 	//LocalTTS ttsCz = new LocalTTS()
 	Object ttsCz = new AzureTTs()
@@ -41,7 +50,7 @@ public class CsTSSAppender {
 
 			String trm = wn.stripBracketsOut(t.term);
 			Closure synthIt = { Path p ->
-				ttsCz.synth(trm, p.toString() )
+				ttsCz.synth(trm, p.toString(), someVoice )
 				i++
 				dbMan.save()
 				Thread.sleep(sleep)
