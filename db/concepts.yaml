@@ -25201,7 +25201,6 @@ concepts:
     tts: cs-terms/vydani.mp3
   img: img/release.jpeg
   freq: 213.11970
-##  request   ############################################################### no img
 - terms: 
   - term: request
     lang: en
@@ -25212,8 +25211,8 @@ concepts:
   - term: žádost
     lang: cs
     tts: cs-terms/zadost.mp3
+  img: img/request.jpeg
   freq: 211.89460
-##  professional   ########################################################## no img
 - terms: 
   - term: professional
     lang: en
@@ -25224,8 +25223,8 @@ concepts:
   - term: odborné
     lang: cs
     tts: cs-terms/odborne.mp3
+  img: img/professional.jpeg
   freq: 209.41600
-##  major   ################################################################# no img
 - terms: 
   - term: major
     lang: en
@@ -25236,8 +25235,8 @@ concepts:
   - term: důležitý
     lang: cs
     tts: cs-terms/dulezity.mp3
+  img: img/major.jpeg
   freq: 208.44620
-##  similar   ############################################################### no img
 - terms: 
   - term: similar
     lang: en
@@ -25245,8 +25244,8 @@ concepts:
   - term: podobné
     lang: cs
     tts: cs-terms/podobne.mp3
+  img: img/similar.jpeg
   freq: 202.59460
-##  reference   ############################################################# no img
 - terms: 
   - term: reference
     lang: en
@@ -25257,8 +25256,8 @@ concepts:
   - term: odkaz
     lang: cs
     tts: cs-terms/odkaz.mp3
+  img: img/reference.jpeg
   freq: 200.85490
-##  delivery   ############################################################## no img
 - terms: 
   - term: delivery
     lang: en
@@ -25266,8 +25265,8 @@ concepts:
   - term: doručení
     lang: cs
     tts: cs-terms/doruceni.mp3
+  img: img/delivery.jpeg
   freq: 199.14070
-##  net   ################################################################### no img
 - terms: 
   - term: net
     lang: en
@@ -25275,8 +25274,8 @@ concepts:
   - term: síť
     lang: cs
     tts: cs-terms/sit.mp3
+  img: img/net.jpeg
   freq: 198.73960
-##  popular   ############################################################### no img
 - terms: 
   - term: popular
     lang: en
@@ -25287,8 +25286,8 @@ concepts:
   - term: oblíbená
     lang: cs
     tts: cs-terms/oblibena.mp3
+  img: img/popular.jpeg
   freq: 198.08010
-##  journal   ############################################################### no img
 - terms: 
   - term: journal
     lang: en
@@ -25299,8 +25298,8 @@ concepts:
   - term: časopis
     lang: cs
     tts: cs-terms/casopis.mp3
+  img: img/journal.jpeg
   freq: 194.74150
-##  welcome   ############################################################### no img
 - terms: 
   - term: welcome
     lang: en
@@ -25308,8 +25307,8 @@ concepts:
   - term: vítejte
     lang: cs
     tts: cs-terms/vitejte.mp3
+  img: img/welcome.jpeg
   freq: 193.87970
-##  original   ############################################################## no img
 - terms: 
   - term: original
     lang: en
@@ -25320,8 +25319,8 @@ concepts:
   - term: originální
     lang: cs
     tts: cs-terms/originalni.mp3
+  img: img/original.jpeg
   freq: 192.90680
-##  radio   ################################################################# no img
 - terms: 
   - term: radio
     lang: en
@@ -25332,8 +25331,8 @@ concepts:
   - term: vysílačka
     lang: cs
     tts: cs-terms/vysilacka.mp3
+  img: img/radio.jpeg
   freq: 192.62190
-##  cell   ################################################################## no img
 - terms: 
   - term: cell
     lang: en
@@ -25341,8 +25340,8 @@ concepts:
   - term: buňka
     lang: cs
     tts: cs-terms/bunka.mp3
+  img: img/cell.jpeg
   freq: 192.25120
-##  track   ################################################################# no img
 - terms: 
   - term: track
     lang: en
@@ -25353,8 +25352,8 @@ concepts:
   - term: trať
     lang: cs
     tts: cs-terms/trat.mp3
+  img: img/track.jpeg
   freq: 191.09100
-##  discussion   ############################################################ no img
 - terms: 
   - term: discussion
     lang: en
@@ -25365,8 +25364,8 @@ concepts:
   - term: debata
     lang: cs
     tts: cs-terms/debata.mp3
+  img: img/discussion.jpeg
   freq: 190.39080
-##  archive   ############################################################### no img
 - terms: 
   - term: archive
     lang: en
@@ -25374,8 +25373,8 @@ concepts:
   - term: archiv
     lang: cs
     tts: cs-terms/archiv.mp3
+  img: img/archive.jpeg
   freq: 190.38810
-##  log   ################################################################### no img
 - terms: 
   - term: log
     lang: en
@@ -25386,8 +25385,8 @@ concepts:
   - term: kláda
     lang: cs
     tts: cs-terms/klada.mp3
+  img: img/log.jpeg
   freq: 189.02530
-##  studies   ############################################################### no img
 - terms: 
   - term: studies
     lang: en
@@ -25395,8 +25394,8 @@ concepts:
   - term: studie
     lang: cs
     tts: cs-terms/studie.mp3
+  img: img/studies.jpeg
   freq: 183.67690
-##  display   ############################################################### no img
 - terms: 
   - term: display
     lang: en
@@ -25407,8 +25406,8 @@ concepts:
   - term: displej
     lang: cs
     tts: cs-terms/displej.mp3
+  img: img/display.jpeg
   freq: 180.81650
-##  daily   ################################################################# no img
 - terms: 
   - term: daily
     lang: en
@@ -25416,8 +25415,8 @@ concepts:
   - term: denně
     lang: cs
     tts: cs-terms/denne.mp3
+  img: img/daily.jpeg
   freq: 179.95820
-##  official   ############################################################## no img
 - terms: 
   - term: official
     lang: en
@@ -25428,8 +25427,8 @@ concepts:
   - term: oficiální
     lang: cs
     tts: cs-terms/oficialni.mp3
+  img: img/official.jpeg
   freq: 176.01900
-##  average   ############################################################### no img
 - terms: 
   - term: average
     lang: en
@@ -25437,8 +25436,8 @@ concepts:
   - term: průměr
     lang: cs
     tts: cs-terms/prumer.mp3
+  img: img/average.jpeg
   freq: 174.85690
-##  technical   ############################################################# no img
 - terms: 
   - term: technical
     lang: en
@@ -25449,6 +25448,7 @@ concepts:
   - term: odborný
     lang: cs
     tts: cs-terms/odborny.mp3
+  img: img/technical.jpeg
   freq: 174.78090
 ##  region   ################################################################ no img
 - terms: 
