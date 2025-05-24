@@ -51,9 +51,10 @@ class SimpleParsing {
 
 	@Test
 	void bldNote() {
-		NoteFields nf = new NoteFields([enWord:"enw", enSoundRef:"rf"] )
 		NoteModel m = new NoteModel([uuid:"123", fieldsCount:4 ])
-		String js= p.buildNote(nf,  m )
-		assert js == '''{"__type__":"Note","fields":["enw","[sound:rf]","",""],"guid":"vocb_enw","note_model_uuid":"123","tags":["ankiVocb"]}'''
+		NoteFields nf = new NoteFields([enWord:"enw", czWord:"czw", enSoundRef:"rf", model:m] )
+		nf.assertIsComplete()
+		String js= p.buildNote(nf)
+		assert js == '''{"__type__":"Note","fields":["enw","[sound:rf]","czw",""],"guid":"vocb_enw","note_model_uuid":"123","tags":["ankiVocb"]}'''
 	}
 }

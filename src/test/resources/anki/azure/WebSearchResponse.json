@@ -1,0 +1,361 @@
+{
+    "_type": "SearchResponse",
+    "queryContext": {
+        "originalQuery": "test"
+    },
+    "webPages": {
+        "webSearchUrl": "https://www.bing.com/search?q=test",
+        "totalEstimatedMatches": 986000000,
+        "value": [
+            {
+                "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.0",
+                "name": "Speedtest by Ookla - The Global Broadband Speed Test",
+                "url": "https://www.speedtest.net/",
+                "about": [
+                    {
+                        "name": "Speedtest.net"
+                    }
+                ],
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.speedtest.net",
+                "snippet": "At Ookla, we are committed to ensuring that individuals with disabilities can access all of the content at www.speedtest.net. We also strive to make all content in Speedtest apps accessible. If you are having trouble accessing www.speedtest.net or Speedtest apps, please email legal@ziffdavis.com for assistance. Please put \"ADA Inquiry\" in the ...",
+                "deepLinks": [
+                    {
+                        "name": "AR",
+                        "url": "https://www.speedtest.net/ar"
+                    },
+                    {
+                        "name": "Settings",
+                        "url": "https://www.speedtest.net/settings"
+                    },
+                    {
+                        "name": "Speedtest for Your Desktop",
+                        "url": "https://www.speedtest.net/apps/desktop"
+                    },
+                    {
+                        "name": "Results",
+                        "url": "https://www.speedtest.net/"
+                    },
+                    {
+                        "name": "zh-Hans",
+                        "url": "https://www.speedtest.net/zh-Hans"
+                    },
+                    {
+                        "name": "Speedtest by Ookla",
+                        "url": "https://www.speedtest.net/run"
+                    }
+                ],
+                "dateLastCrawled": "2020-03-29T15:01:00.0000000Z",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.1",
+                "name": "Stiftung Warentest",
+                "url": "https://www.test.de/",
+                "about": [
+                    {
+                        "name": "Stiftung Warentest"
+                    }
+                ],
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.test.de",
+                "snippet": "test.de verwendet Cookies, um verschiedene Funktionalit\u00e4ten anzubieten. Au\u00dferdem werden Cookies zur statistischen Messung der Nutzung der Website und zur Messung des Erfolgs von Werbeanzeigen, welche die Stiftung Warentest auf anderen Webseiten geschaltet hat, eingesetzt.",
+                "deepLinks": [
+                    {
+                        "name": "\ufeffEinloggen",
+                        "url": "https://www.test.de/meintest/login/"
+                    },
+                    {
+                        "name": "Geldanlage + Banken",
+                        "url": "https://www.test.de/geldanlage-banken/"
+                    },
+                    {
+                        "name": "Essen + Trinken",
+                        "url": "https://www.test.de/essen-trinken/"
+                    },
+                    {
+                        "name": "Schlafst\u00f6rungen, Schlaf\u00adMittel",
+                        "url": "https://www.test.de/thema/schlafstoerungen/"
+                    },
+                    {
+                        "name": "Geschirrsp\u00fcler Im Test",
+                        "url": "https://www.test.de/Geschirrspueler-im-Test-4685888-0/"
+                    },
+                    {
+                        "name": "Vegetarische Wurst",
+                        "url": "https://www.test.de/Vegetarische-Wurst-im-Test-5439749-0/"
+                    }
+                ],
+                "dateLastCrawled": "2020-03-28T23:11:00.0000000Z",
+                "language": "de",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.2",
+                "name": "Test park \u2013 online testy zdarma",
+                "url": "http://www.testpark.cz/",
+                "isFamilyFriendly": true,
+                "displayUrl": "www.testpark.cz",
+                "snippet": "Jste zde: Testpark \u2013 \u00favodn\u00ed str\u00e1nka Testpark.cz \u2013 online testy zdarma. Najdete tu v\u011bdomostn\u00ed testy, IQ testy a n\u011bkolik her.V\u0161echny testy i hry jsou zdarma a online.. A\u0165 u\u017e chod\u00edte do \u0161koly nebo se u\u010d\u00edte jen pro radost, snad tu najdete vhodn\u00fd test, kter\u00fd v\u00e1m roz\u0161\u00ed\u0159\u00ed pot\u0159ebn\u00e9 v\u011bdomosti.. Test dne",
+                "dateLastCrawled": "2020-03-29T11:12:00.0000000Z",
+                "language": "cs",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.3",
+                "name": "dTest: Nez\u00e1visl\u00e9 testy, v\u00edc ne\u017e jen recenze",
+                "url": "https://www.dtest.cz/",
+                "about": [
+                    {
+                        "name": "dTest"
+                    },
+                    {
+                        "name": "dTest"
+                    }
+                ],
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.dtest.cz",
+                "snippet": "\u010casopis dTest: Testy v\u00fdrobk\u016f, rady pro v\u00fdb\u011br, upozorn\u011bn\u00ed na nebezpe\u010dn\u00e9 v\u00fdrobky, \u0159e\u0161en\u00ed probl\u00e9m\u016f spot\u0159ebitel\u016f a je\u0161t\u011b v\u00edc. Objektivn\u011b, nez\u00e1visle, bez reklam.",
+                "dateLastCrawled": "2020-03-29T06:32:00.0000000Z",
+                "language": "cs",
+                "isNavigational": false
+            }
+        ]
+    },
+    "news": {
+        "id": "https://api.cognitive.microsoft.com/api/v7/#News",
+        "readLink": "https://api.cognitive.microsoft.com/api/v7/news/search?q=test",
+        "value": [
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "YAHOO!"
+                    }
+                ],
+                "name": "The Test\u2019s the Thing",
+                "url": "https://news.yahoo.com/test-thing-103009372.html",
+                "image": {
+                    "contentUrl": "https://s.yimg.com/ny/api/res/1.2/o.IPPSnawfMBfSCYhmy2UQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyODA7aD03NDYuMjU-/https://s.yimg.com/uu/api/res/1.2/ConJm49fOljEtJ1FACSbeQ--~B/aD01OTc7dz0xMDI0O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-US/the_national_review_738/6dfb1f5a3a0e3ed65e9b3a3296cefd4b",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=ON.87114EBFCA6E7C4352D1A620B9499670&pid=News",
+                        "width": 700,
+                        "height": 408
+                    }
+                },
+                "description": "The White House is now balancing the risk to public health and the risk to economic welfare posed by the coronavirus crisis. Yet a solution could be on the horizon. The key is to make cheap, rapid testing available to every individual,",
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "YAHOO!",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=AR_e1eef5681737e5676d7a09990b13411a&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2020-03-31T10:37:00.0000000Z"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "YAHOO!"
+                    }
+                ],
+                "name": "QIAGEN Receives U.S. FDA EUA for QIAstat-Dx test kit ...",
+                "url": "https://finance.yahoo.com/news/qiagen-receives-u-fda-eua-080500564.html",
+                "description": "The QIAstat-Dx test kit can differentiate the SARS-CoV-2 coronavirus from 21 other serious respiratory infections in patients who may have similar symptoms in a single testing run of about one hour. It is a multiplexed nucleic acid test that evaluates samples such as nasopharyngeal swabs obtained from individuals suspected of respiratory tract ...",
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "YAHOO!"
+                    }
+                ],
+                "datePublished": "2020-03-31T11:05:00.0000000Z"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "WRAL"
+                    }
+                ],
+                "name": "Apex man diaries 13-day struggle with cough, fever, wait ...",
+                "url": "https://www.wral.com/coronavirus/apex-man-diaries-13-day-struggle-with-cough-fever-wait-for-coronavirus-test-results/19035486/",
+                "image": {
+                    "contentUrl": "https://wwwcache.wral.com/asset/lifestyles/healthteam/2020/02/28/18981938/75052-Coronavirus_Plasma_Doctor-DMID1-5m1tn4m5x-640x480.jpg",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=ON.31D4913A6851786F6FA317E2B94770B3&pid=News",
+                        "width": 640,
+                        "height": 480
+                    }
+                },
+                "description": "Tim McLain, an Apex man, sent in his day-by-day account of a painful wait for COVID-19 test results. Headache and a 100.3 fever, plus light cough. Nothing too bad, but took over master bedroom to hunker down,",
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "WRAL",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=AR_033dcda7c6ad4712743f53c3f95c8c48&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2020-03-31T10:10:00.0000000Z"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "YAHOO!"
+                    }
+                ],
+                "name": "MotoGP manufacturers planning extra pre-season test",
+                "url": "https://sports.yahoo.com/motogp-manufacturers-planning-extra-pre-101450551.html",
+                "description": "KTM MotoGP boss Pit Beirer says that the premier class manufacturers have agreed to hold an extra pre-season test before the coronavirus-delayed 2020 season gets underway.",
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "YAHOO!",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=AR_e1eef5681737e5676d7a09990b13411a&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2020-03-31T10:31:00.0000000Z"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "Sky Sports"
+                    }
+                ],
+                "name": "Steve Waugh Masterclass: Former Australia captain on the ...",
+                "url": "https://www.skysports.com/cricket/news/12175/11965355/steve-waugh-masterclass-former-australia-captain-on-the-art-of-test-batting-and-his-supreme-career",
+                "image": {
+                    "contentUrl": "https://e1.365dm.com/20/03/1600x900/skysports-steve-waugh-australia_4957793.jpg",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=ON.3081857E51310F5D643EEAD554562DDA&pid=News",
+                        "width": 700,
+                        "height": 393
+                    }
+                },
+                "description": "Steve Waugh captained Australia to unparalleled success, earning 168 Test caps along the way. When it comes to talking Test batting there are few better experts and so it proved when we invited \"Tugger\" into the The Zone during last summer's Ashes series. Every Tuesday we are looking back at",
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "Sky Sports",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=AR_8109441b5b15db7352b367b584bc4ee7&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2020-03-31T11:05:00.0000000Z"
+            }
+        ]
+    },
+    "relatedSearches": {
+        "id": "https://api.cognitive.microsoft.com/api/v7/#RelatedSearches",
+        "value": [
+            {
+                "text": "internet speed test",
+                "displayText": "internet speed test",
+                "webSearchUrl": "https://www.bing.com/search?q=internet+speed+test"
+            },
+            {
+                "text": "free personality quizzes for adults",
+                "displayText": "free personality quizzes for adults",
+                "webSearchUrl": "https://www.bing.com/search?q=free+personality+quizzes+for+adults"
+            },
+            {
+                "text": "tests about yourself",
+                "displayText": "tests about yourself",
+                "webSearchUrl": "https://www.bing.com/search?q=tests+about+yourself"
+            },
+            {
+                "text": "practice iq test",
+                "displayText": "practice iq test",
+                "webSearchUrl": "https://www.bing.com/search?q=practice+iq+test"
+            },
+            {
+                "text": "online quizzes",
+                "displayText": "online quizzes",
+                "webSearchUrl": "https://www.bing.com/search?q=online+quizzes"
+            },
+            {
+                "text": "test guide free practice tests",
+                "displayText": "test guide free practice tests",
+                "webSearchUrl": "https://www.bing.com/search?q=test+guide+free+practice+tests"
+            },
+            {
+                "text": "speed of my internet test",
+                "displayText": "speed of my internet test",
+                "webSearchUrl": "https://www.bing.com/search?q=speed+of+my+internet+test"
+            },
+            {
+                "text": "what's my internet speed",
+                "displayText": "what's my internet speed",
+                "webSearchUrl": "https://www.bing.com/search?q=what%27s+my+internet+speed"
+            }
+        ]
+    },
+    "rankingResponse": {
+        "mainline": {
+            "items": [
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.0"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 1,
+                    "value": {
+                        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.1"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 2,
+                    "value": {
+                        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.2"
+                    }
+                },
+                {
+                    "answerType": "News",
+                    "value": {
+                        "id": "https://api.cognitive.microsoft.com/api/v7/#News"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 3,
+                    "value": {
+                        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.3"
+                    }
+                }
+            ]
+        },
+        "sidebar": {
+            "items": [
+                {
+                    "answerType": "RelatedSearches",
+                    "value": {
+                        "id": "https://api.cognitive.microsoft.com/api/v7/#RelatedSearches"
+                    }
+                }
+            ]
+        }
+    }
+}

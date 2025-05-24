@@ -1,0 +1,132 @@
+{
+    "_type": "Images",
+    "instrumentation": {
+        "_type": "ResponseInstrumentation"
+    },
+    "readLink": "https://api.cognitive.microsoft.com/api/v7/images/search?q=test",
+    "webSearchUrl": "https://www.bing.com/images/search?q=test&FORM=OIIARP",
+    "queryContext": {
+        "originalQuery": "test",
+        "alterationDisplayQuery": "test",
+        "alterationOverrideQuery": "+test",
+        "alterationMethod": "AM_JustChangeIt",
+        "alterationType": "CombinedAlterationsChained"
+    },
+    "totalEstimatedMatches": 100,
+    "nextOffset": 8,
+    "currentOffset": 0,
+    "value": [
+        {
+            "webSearchUrl": "https://www.bing.com/images/search?view=detailv2&FORM=OIIRPO&q=test&id=B988DD2EC2BBF88BD9E0A74AE2C32F3AE827FB58&simid=608028843111549606",
+            "name": "Free illustration: Road Sign, Right Of Way, Test - Free ...",
+            "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.MSGPEQThAr2cHnsmxxBTjQHaFO&pid=Api",
+            "datePublished": "2001-01-01T00:00:00.0000000Z",
+            "isFamilyFriendly": true,
+            "creativeCommons": "PublicNoRightsReserved",
+            "contentUrl": "https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361513_960_720.jpg",
+            "hostPageUrl": "https://pixabay.com/en/road-sign-right-of-way-test-361513/",
+            "contentSize": "125301 B",
+            "encodingFormat": "jpeg",
+            "hostPageDisplayUrl": "https://pixabay.com/en/road-sign-right-of-way-test-361513",
+            "width": 960,
+            "height": 678,
+            "hostPageFavIconUrl": "https://www.bing.com/th?id=ODF.D2xO1oObGb6cvqYCWBNRGQ&pid=Api",
+            "hostPageDomainFriendlyName": "Pixabay",
+            "thumbnail": {
+                "width": 474,
+                "height": 334
+            },
+            "imageInsightsToken": "ccid_MSGPEQTh*mid_B988DD2EC2BBF88BD9E0A74AE2C32F3AE827FB58*simid_608028843111549606*thid_OIP.MSGPEQThAr2cHnsmxxBTjQHaFO",
+            "insightsMetadata": {
+                "pagesIncludingCount": 130,
+                "availableSizesCount": 59
+            },
+            "imageId": "B988DD2EC2BBF88BD9E0A74AE2C32F3AE827FB58",
+            "accentColor": "BB101B"
+        },
+        {
+            "webSearchUrl": "https://www.bing.com/images/search?view=detailv2&FORM=OIIRPO&q=test&id=33974052CA0EC2CD16703318402E009B2635D7C6&simid=608043884112252844",
+            "name": "Road Sign Right Of Way Test \u00b7 Free image on Pixabay",
+            "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.C4zCIzZ6U_EX904HV5Bh1wHaGg&pid=Api",
+            "datePublished": "2018-12-12T03:30:00.0000000Z",
+            "isFamilyFriendly": true,
+            "creativeCommons": "PublicNoRightsReserved",
+            "contentUrl": "https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png",
+            "hostPageUrl": "https://pixabay.com/en/road-sign-right-of-way-test-361514/",
+            "contentSize": "83094 B",
+            "encodingFormat": "png",
+            "hostPageDisplayUrl": "https://pixabay.com/en/road-sign-right-of-way-test-361514",
+            "width": 819,
+            "height": 720,
+            "hostPageFavIconUrl": "https://www.bing.com/th?id=ODF.D2xO1oObGb6cvqYCWBNRGQ&pid=Api",
+            "hostPageDomainFriendlyName": "Pixabay",
+            "thumbnail": {
+                "width": 474,
+                "height": 416
+            },
+            "imageInsightsToken": "ccid_C4zCIzZ6*mid_33974052CA0EC2CD16703318402E009B2635D7C6*simid_608043884112252844*thid_OIP.C4zCIzZ6U!_EX904HV5Bh1wHaGg",
+            "insightsMetadata": {
+                "pagesIncludingCount": 84,
+                "availableSizesCount": 33
+            },
+            "imageId": "33974052CA0EC2CD16703318402E009B2635D7C6",
+            "accentColor": "BB101A"
+        },
+        {
+            "webSearchUrl": "https://www.bing.com/images/search?view=detailv2&FORM=OIIRPO&q=test&id=A590EC84D901BB6C37B21F701E3A2530EC825399&simid=608016409237389774",
+            "name": "Test Clock Deadline \u00b7 Free image on Pixabay",
+            "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.BGG81o_pG-HlLd2SAADhaAHaHa&pid=Api",
+            "datePublished": "2019-02-03T06:02:00.0000000Z",
+            "isFamilyFriendly": true,
+            "creativeCommons": "PublicNoRightsReserved",
+            "contentUrl": "https://cdn.pixabay.com/photo/2014/06/03/19/38/test-361512_640.jpg",
+            "hostPageUrl": "https://pixabay.com/en/test-clock-deadline-time-period-361512/",
+            "contentSize": "26369 B",
+            "encodingFormat": "jpeg",
+            "hostPageDisplayUrl": "https://pixabay.com/en/test-clock-deadline-time-period-361512",
+            "width": 640,
+            "height": 640,
+            "hostPageFavIconUrl": "https://www.bing.com/th?id=ODF.D2xO1oObGb6cvqYCWBNRGQ&pid=Api",
+            "hostPageDomainFriendlyName": "Pixabay",
+            "thumbnail": {
+                "width": 474,
+                "height": 474
+            },
+            "imageInsightsToken": "ccid_BGG81o/p*mid_A590EC84D901BB6C37B21F701E3A2530EC825399*simid_608016409237389774*thid_OIP.BGG81o!_pG-HlLd2SAADhaAHaHa",
+            "insightsMetadata": {
+                "pagesIncludingCount": 91,
+                "availableSizesCount": 29
+            },
+            "imageId": "A590EC84D901BB6C37B21F701E3A2530EC825399",
+            "accentColor": "BA1111"
+        },
+        {
+            "webSearchUrl": "https://www.bing.com/images/search?view=detailv2&FORM=OIIRPO&q=test&id=DDD2EE6B2335CEE68A284778A69D30CD7BBF7DB8&simid=608045048058217177",
+            "name": "Test Testing Sign \u00b7 Free image on Pixabay",
+            "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.tffvS83tAg5rY70pAveWNwHaC9&pid=Api",
+            "datePublished": "2018-07-19T00:04:00.0000000Z",
+            "isFamilyFriendly": true,
+            "creativeCommons": "PublicNoRightsReserved",
+            "contentUrl": "https://cdn.pixabay.com/photo/2015/03/12/12/43/test-670091_640.png",
+            "hostPageUrl": "https://pixabay.com/en/test-testing-sign-laboratory-670091/",
+            "contentSize": "19067 B",
+            "encodingFormat": "png",
+            "hostPageDisplayUrl": "https://pixabay.com/en/test-testing-sign-laboratory-670091",
+            "width": 640,
+            "height": 256,
+            "hostPageFavIconUrl": "https://www.bing.com/th?id=ODF.D2xO1oObGb6cvqYCWBNRGQ&pid=Api",
+            "hostPageDomainFriendlyName": "Pixabay",
+            "thumbnail": {
+                "width": 474,
+                "height": 189
+            },
+            "imageInsightsToken": "ccid_tffvS83t*mid_DDD2EE6B2335CEE68A284778A69D30CD7BBF7DB8*simid_608045048058217177*thid_OIP.tffvS83tAg5rY70pAveWNwHaC9",
+            "insightsMetadata": {
+                "pagesIncludingCount": 49,
+                "availableSizesCount": 22
+            },
+            "imageId": "DDD2EE6B2335CEE68A284778A69D30CD7BBF7DB8",
+            "accentColor": "CC1100"
+        }
+    ]
+}

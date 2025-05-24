@@ -53,18 +53,29 @@ public class CrowdParser {
 		return ret
 	}
 
-	public JsonBuilder buildNote(NoteFields flds, NoteModel model=null) {
-		if (!model) model = noteModels[0]
-		assert model?.uuid
-		assert model?.fieldsCount
-		// To avoid error on import if model expects more fields that we have
-		List<String> fLst = flds.toFields().findAll()
-		fLst.addAll([""]*model.fieldsCount)
-		String[] fldsAr = fLst.take(model.fieldsCount)
+	public JsonBuilder buildNote(NoteFields flds) {
+		flds.assertIsComplete()
+
 		JsonBuilder b = new groovy.json.JsonBuilder()
 		b {
 			__type__  "Note"
-			fields(fldsAr)
+			fields(flds.toFields())
+			guid flds.guid
+			note_model_uuid flds.model.uuid
+			tags(['ankiVocb'])
+		}
+	}
+
+	public JsonBuilder setNoteFields(NoteFields flds, Object noteJson) {
+		assert flds
+		assert model?.fieldsCount
+		// To avoid error on import if model expects more fields that we have
+		List<String> fLst = Helper.padList(flds.toFields().findAll(), "", model.fieldsCount)
+
+		JsonBuilder b = new groovy.json.JsonBuilder()
+		b {
+			__type__  "Note"
+			fields(fLst)
 			guid flds.guid
 			note_model_uuid model.uuid
 			tags(['ankiVocb'])
