@@ -2,9 +2,10 @@ package vocb.data
 
 import groovy.transform.AutoClone
 import groovy.transform.Canonical
+import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
-@Canonical
+@EqualsAndHashCode(callSuper=true)
 @ToString(includePackage=false, ignoreNulls=true)
 @AutoClone
 public class Example extends TermContainer {

@@ -4,7 +4,7 @@ import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 import vocb.Helper
 
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper=true)
 //@ToString(includePackage=false, ignoreNulls=true, excludes=['completeness', 'terms', 'examples'])
 @ToString(includePackage=false, ignoreNulls=true, includes=['firstTerm', 'state', 'freq'])
 public class Concept extends TermContainer  {
