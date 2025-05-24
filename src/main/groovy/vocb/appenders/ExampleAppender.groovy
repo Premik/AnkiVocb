@@ -22,14 +22,18 @@ public class ExampleAppender {
 	int limit = 10
 	int maxLength = 40
 
-	void run() {
-
-		dbMan.load()
-		List<Concept> noEx = dbMan.db.concepts.findAll {
+	private List<Concept> findTodo() {
+		dbMan.db.concepts.findAll {
 			it.terms && it.state!="ignore" && (!it.examples) && it.firstTerm
 		}.findAll { Concept c ->
 			wn.tokens(c.firstTerm).count() <= 2  //Only single or two words phrases
 		}
+	}
+
+	void run() {
+
+		dbMan.load()
+		List<Concept> noEx= findTodo()
 
 		int i =0
 		for (Concept c in noEx) {
@@ -38,10 +42,11 @@ public class ExampleAppender {
 					.findAll {it.lang == "cs"}
 					*.term
 					.findAll()
-					.collectMany {String term-> //Any word of the two-words phrase
+					.collectMany {String term->
+						//Any word of the two-words phrase
 						wn.tokens(term).collect(Collectors.toList())
 					}.unique()
-					//println czWords
+			//println czWords
 
 			List<Tuple2<String, String>> xtractedSamples = czWords // Each alt translation
 					.collect { String czWord ->
@@ -54,13 +59,13 @@ public class ExampleAppender {
 					}
 
 			xtractedSamples
-			.findAll { Tuple2<String, String> t->
-				t[0].length() < maxLength 				
-			}			
-			.each {Tuple2<String, String> t ->
-				c.examples.put(t[0], new Term(t[0], "en"))
-				c.examples.put(t[1], new Term(t[1], "cs"))
-			}			
+					.findAll { Tuple2<String, String> t->
+						t[0].length() < maxLength
+					}
+					.each {Tuple2<String, String> t ->
+						c.examples.put(t[0], new Term(t[0], "en"))
+						c.examples.put(t[1], new Term(t[1], "cs"))
+					}
 			dbMan.save()
 			Thread.sleep(sleep)
 			if (i>limit) break
@@ -69,10 +74,26 @@ public class ExampleAppender {
 		dbMan.save()
 	}
 
+	void reuseExisting() {
+
+		dbMan.load()
+		List<Concept> noEx = findTodo()
+		Map<String, Concept> enWords = noEx.collectEntries {Concept c ->
+			println "${c.examples}"
+			[:]
+		}
+		for (Concept c in noEx) {
+			
+		}
+
+		dbMan.save()
+	}
+
 
 	public static void main(String[] args) {
 		ExampleAppender a = new ExampleAppender()
-		a.run()
+		//a.run()
+		a.reuseExisting()
 
 		println "Done"
 	}
