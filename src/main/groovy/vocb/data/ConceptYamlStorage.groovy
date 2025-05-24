@@ -47,8 +47,10 @@ public class ConceptYamlStorage {
 
 	public String yamlHash(String key, String value) {
 		if (!key || !value) return ""
-		boolean quote = value in ['true', 'false', "Yes", "No", "yes", "no", "off", "on"]
-		if (quote) { return """$key: "$value"\n"""}
+		boolean reserved = value in ['true', 'false', "Yes", "No", "yes", "no", "off", "on"]
+		boolean specialChar = value[0] in  ('''!@#$%^&*("')''' as List)
+		
+		if (reserved || specialChar) { return """$key: "$value"\n"""}
 		return "$key: $value\n"
 	}
 

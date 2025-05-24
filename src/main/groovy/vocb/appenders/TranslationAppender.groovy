@@ -10,6 +10,7 @@ public class TranslationAppender {
 
 
 	AzureTranslate trn = new AzureTranslate(httpHelper: new HttpHelper() )
+	int sleep =500
 
 	Manager dbMan = new Manager()
 
@@ -26,6 +27,7 @@ public class TranslationAppender {
 				c.terms.put(csWord, new Term(csWord, "cs"))
 			}
 			dbMan.save()
+			Thread.sleep(sleep)
 			//break
 		}
 	}
