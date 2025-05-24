@@ -58,6 +58,7 @@ public class Data2Crowd {
 		assert c?.firstTerm
 		assert n
 		int stars = numberOfStarts(c?.freq)
+		String star = cfg.starSymbol?:"🟊"
 		n.with {
 			Term ent = c.terms.values()[0]
 			Term cst1 = c.terms.values()[1]
@@ -77,7 +78,7 @@ public class Data2Crowd {
 			nativeAltTTS= cst2?.tts
 			nativeExample= csx?.term
 			nativeExampleTTS = csx?.tts
-			String star = cfg.starSymbol?:"🟊"
+			
 			(1..5).each {tags.remove(star*it)}
 			if (stars >0) {
 				tags.add(star*stars)
