@@ -65,7 +65,7 @@ public class CsTSSAppender {
 
 	public static void main(String[] args) {
 		new CsTSSAppender().with {
-			limit = 20
+			limit = 100
 			//ttsCz = new LocalTTS()
 			//includeOnlyTerms = ["koutek", "kůň", "závodník" ]
 			synth()

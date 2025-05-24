@@ -25378,448 +25378,523 @@ concepts:
     lang: cs
     tts: cs-terms/debata.mp3
   freq: 190.39080
-##  archive   ############################################################### no img|t1:tts:missing
+##  archive   ############################################################### no img
 - terms: 
   - term: archive
     lang: en
     tts: en-terms/archive.mp3
   - term: archiv
     lang: cs
+    tts: cs-terms/archiv.mp3
   freq: 190.38810
-##  log   ################################################################### no img|t1:tts:missing|t2:tts:missing
+##  log   ################################################################### no img
 - terms: 
   - term: log
     lang: en
     tts: en-terms/log.mp3
   - term: protokol
     lang: cs
+    tts: cs-terms/protokol.mp3
   - term: kláda
     lang: cs
+    tts: cs-terms/klada.mp3
   freq: 189.02530
-##  studies   ############################################################### no img|t1:tts:missing
+##  studies   ############################################################### no img
 - terms: 
   - term: studies
     lang: en
     tts: en-terms/studies.mp3
   - term: studie
     lang: cs
+    tts: cs-terms/studie.mp3
   freq: 183.67690
-##  display   ############################################################### no img|t1:tts:missing|t2:tts:missing
+##  display   ############################################################### no img
 - terms: 
   - term: display
     lang: en
     tts: en-terms/display.mp3
   - term: zobrazení
     lang: cs
+    tts: cs-terms/zobrazeni.mp3
   - term: displej
     lang: cs
+    tts: cs-terms/displej.mp3
   freq: 180.81650
-##  daily   ################################################################# no img|t1:tts:missing
+##  daily   ################################################################# no img
 - terms: 
   - term: daily
     lang: en
     tts: en-terms/daily.mp3
   - term: denně
     lang: cs
+    tts: cs-terms/denne.mp3
   freq: 179.95820
-##  official   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  official   ############################################################## no img
 - terms: 
   - term: official
     lang: en
     tts: en-terms/official.mp3
   - term: úřední
     lang: cs
+    tts: cs-terms/uredni.mp3
   - term: oficiální
     lang: cs
+    tts: cs-terms/oficialni.mp3
   freq: 176.01900
-##  average   ############################################################### no img|t1:tts:missing
+##  average   ############################################################### no img
 - terms: 
   - term: average
     lang: en
     tts: en-terms/average.mp3
   - term: průměr
     lang: cs
+    tts: cs-terms/prumer.mp3
   freq: 174.85690
-##  technical   ############################################################# no img|t1:tts:missing|t2:tts:missing
+##  technical   ############################################################# no img
 - terms: 
   - term: technical
     lang: en
     tts: en-terms/technical.mp3
   - term: technický
     lang: cs
+    tts: cs-terms/technicky.mp3
   - term: odborný
     lang: cs
+    tts: cs-terms/odborny.mp3
   freq: 174.78090
-##  region   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  region   ################################################################ no img
 - terms: 
   - term: region
     lang: en
     tts: en-terms/region.mp3
   - term: region
     lang: cs
+    tts: cs-terms/region.mp3
   - term: oblast
     lang: cs
+    tts: cs-terms/oblast.mp3
   freq: 174.37190
-##  record   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  record   ################################################################ no img
 - terms: 
   - term: record
     lang: en
     tts: en-terms/record.mp3
   - term: záznam
     lang: cs
+    tts: cs-terms/zaznam.mp3
   - term: rekord
     lang: cs
+    tts: cs-terms/rekord.mp3
   freq: 173.83190
-##  environment   ########################################################### no img|t1:tts:missing
+##  environment   ########################################################### no img
 - terms: 
   - term: environment
     lang: en
     tts: en-terms/environment.mp3
   - term: prostředí
     lang: cs
+    tts: cs-terms/prostredi.mp3
   freq: 173.36350
-##  district   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  district   ############################################################## no img
 - terms: 
   - term: district
     lang: en
     tts: en-terms/district.mp3
   - term: okres
     lang: cs
+    tts: cs-terms/okres.mp3
   - term: čtvrť
     lang: cs
+    tts: cs-terms/ctvrt.mp3
   freq: 172.28630
-##  calendar   ############################################################## no img|t1:tts:missing
+##  calendar   ############################################################## no img
 - terms: 
   - term: calendar
     lang: en
     tts: en-terms/calendar.mp3
   - term: kalendář
     lang: cs
+    tts: cs-terms/kalendar.mp3
   freq: 172.24900
-##  update   ################################################################ no img|t1:tts:missing
+##  update   ################################################################ no img
 - terms: 
   - term: update
     lang: en
     tts: en-terms/update.mp3
   - term: aktualizovat
     lang: cs
+    tts: cs-terms/aktualizovat.mp3
   freq: 171.33320
-##  resource   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  resource   ############################################################## no img
 - terms: 
   - term: resource
     lang: en
     tts: en-terms/resource.mp3
   - term: prostředky
     lang: cs
+    tts: cs-terms/prostredky.mp3
   - term: suroviny
     lang: cs
+    tts: cs-terms/suroviny.mp3
   freq: 169.97100
-##  material   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  material   ############################################################## no img
 - terms: 
   - term: material
     lang: en
     tts: en-terms/material.mp3
   - term: materiál
     lang: cs
+    tts: cs-terms/material.mp3
   - term: hmotné
     lang: cs
+    tts: cs-terms/hmotne.mp3
   freq: 167.52980
-##  adult   ################################################################# no img|t1:tts:missing
+##  adult   ################################################################# no img
 - terms: 
   - term: adult
     lang: en
     tts: en-terms/adult.mp3
   - term: dospělý
     lang: cs
+    tts: cs-terms/dospely.mp3
   freq: 165.92260
-##  centre   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  centre   ################################################################ no img
 - terms: 
   - term: centre
     lang: en
     tts: en-terms/centre.mp3
   - term: centrum
     lang: cs
+    tts: cs-terms/centrum.mp3
   - term: středisko
     lang: cs
+    tts: cs-terms/stredisko.mp3
   freq: 165.37020
-##  requirements   ########################################################## no img|t1:tts:missing
+##  requirements   ########################################################## no img
 - terms: 
   - term: requirements
     lang: en
     tts: en-terms/requirements.mp3
   - term: požadavky
     lang: cs
+    tts: cs-terms/pozadavky.mp3
   freq: 165.32840
-##  via   ################################################################### no img|t1:tts:missing|t2:tts:missing
+##  via   ################################################################### no img
 - terms: 
   - term: via
     lang: en
     tts: en-terms/via.mp3
   - term: přes
     lang: cs
+    tts: cs-terms/pres.mp3
   - term: prostřednictvím
     lang: cs
+    tts: cs-terms/prostrednictvim.mp3
   freq: 165.21530
-##  cheap   ################################################################# no img|t1:tts:missing
+##  cheap   ################################################################# no img
 - terms: 
   - term: cheap
     lang: en
     tts: en-terms/cheap.mp3
   - term: levné
     lang: cs
+    tts: cs-terms/levne.mp3
   freq: 165.01580
-##  plus   ################################################################## no img|t1:tts:missing
+##  plus   ################################################################## no img
 - terms: 
   - term: plus
     lang: en
     tts: en-terms/plus.mp3
   - term: plus
     lang: cs
+    tts: cs-terms/plus.mp3
   freq: 161.07180
-##  percent   ############################################################### no img|t1:tts:missing
+##  percent   ############################################################### no img
 - terms: 
   - term: percent
     lang: en
     tts: en-terms/percent.mp3
   - term: procent (%)
     lang: cs
+    tts: cs-terms/procent.mp3
   freq: 159.89190
-##  fast   ################################################################## no img|t1:tts:missing
+##  fast   ################################################################## no img
 - terms: 
   - term: fast
     lang: en
     tts: en-terms/fast.mp3
   - term: rychle
     lang: cs
+    tts: cs-terms/rychle.mp3
   freq: 159.73070
-##  function   ############################################################## no img|t1:tts:missing
+##  function   ############################################################## no img
 - terms: 
   - term: function
     lang: en
     tts: en-terms/function.mp3
   - term: funkce
     lang: cs
+    tts: cs-terms/funkce.mp3
   freq: 159.62420
-##  global   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  global   ################################################################ no img
 - terms: 
   - term: global
     lang: en
     tts: en-terms/global.mp3
   - term: globální
     lang: cs
+    tts: cs-terms/globalni.mp3
   - term: celosvětové
     lang: cs
+    tts: cs-terms/celosvetove.mp3
   freq: 158.89600
-##  subscribe   ############################################################# no img|t1:tts:missing|t2:tts:missing
+##  subscribe   ############################################################# no img
 - terms: 
   - term: subscribe
     lang: en
     tts: en-terms/subscribe.mp3
   - term: odebírat
     lang: cs
+    tts: cs-terms/odebirat.mp3
   - term: předplatit
     lang: cs
+    tts: cs-terms/predplatit.mp3
   freq: 157.20530
-##  error   ################################################################# no img|t1:tts:missing
+##  error   ################################################################# no img
 - terms: 
   - term: error
     lang: en
     tts: en-terms/error.mp3
   - term: chyba
     lang: cs
+    tts: cs-terms/chyba.mp3
   freq: 152.00270
-##  currently   ############################################################# no img|t1:tts:missing|t2:tts:missing
+##  currently   ############################################################# no img
 - terms: 
   - term: currently
     lang: en
     tts: en-terms/currently.mp3
   - term: aktuálně
     lang: cs
+    tts: cs-terms/aktualne.mp3
   - term: momentálně
     lang: cs
+    tts: cs-terms/momentalne.mp3
   freq: 151.45780
-##  construction   ########################################################## no img|t1:tts:missing|t2:tts:missing
+##  construction   ########################################################## no img
 - terms: 
   - term: construction
     lang: en
     tts: en-terms/construction.mp3
   - term: stavební
     lang: cs
+    tts: cs-terms/stavebni.mp3
   - term: konstrukce
     lang: cs
+    tts: cs-terms/konstrukce.mp3
   freq: 150.93760
-##  loan   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  loan   ################################################################## no img
 - terms: 
   - term: loan
     lang: en
     tts: en-terms/loan.mp3
   - term: úvěr
     lang: cs
+    tts: cs-terms/uver.mp3
   - term: půjčka
     lang: cs
+    tts: cs-terms/pujcka.mp3
   freq: 149.26360
-##  friday   ################################################################ no img|t1:tts:missing
+##  friday   ################################################################ no img
 - terms: 
   - term: friday
     lang: en
     tts: en-terms/friday.mp3
   - term: pátek
     lang: cs
+    tts: cs-terms/patek.mp3
   freq: 144.94390
-##  lake   ################################################################## no img|t1:tts:missing
+##  lake   ################################################################## no img
 - terms: 
   - term: lake
     lang: en
     tts: en-terms/lake.mp3
   - term: jezero
     lang: cs
+    tts: cs-terms/jezero.mp3
   freq: 144.93790
-##  basic   ################################################################# no img|t1:tts:missing
+##  basic   ################################################################# no img
 - terms: 
   - term: basic
     lang: en
     tts: en-terms/basic.mp3
   - term: základní
     lang: cs
+    tts: cs-terms/zakladni.mp3
   freq: 144.25560
-##  response   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  response   ############################################################## no img
 - terms: 
   - term: response
     lang: en
     tts: en-terms/response.mp3
   - term: reakce
     lang: cs
+    tts: cs-terms/reakce.mp3
   - term: odpověď
     lang: cs
+    tts: cs-terms/odpoved.mp3
   freq: 142.93800
-##  practice   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  practice   ############################################################## no img
 - terms: 
   - term: practice
     lang: en
     tts: en-terms/practice.mp3
   - term: zvyklosti
     lang: cs
+    tts: cs-terms/zvyklosti.mp3
   - term: procvičování
     lang: cs
+    tts: cs-terms/procvicovani.mp3
   freq: 142.89130
-##  holiday   ############################################################### no img|t1:tts:missing|t2:tts:missing
+##  holiday   ############################################################### no img
 - terms: 
   - term: holiday
     lang: en
     tts: en-terms/holiday.mp3
   - term: prázdniny
     lang: cs
+    tts: cs-terms/prazdniny.mp3
   - term: svátek
     lang: cs
+    tts: cs-terms/svatek.mp3
   freq: 142.26880
-##  chat   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  chat   ################################################################## no img
 - terms: 
   - term: chat
     lang: en
     tts: en-terms/chat.mp3
   - term: povídání
     lang: cs
+    tts: cs-terms/povidani.mp3
   - term: hovořit
     lang: cs
+    tts: cs-terms/hovorit.mp3
   freq: 142.19040
-##  speed   ################################################################# no img|t1:tts:missing
+##  speed   ################################################################# no img
 - terms: 
   - term: speed
     lang: en
     tts: en-terms/speed.mp3
   - term: rychlost
     lang: cs
+    tts: cs-terms/rychlost.mp3
   freq: 141.35750
-##  loss   ################################################################## no img|t1:tts:missing|t2:tts:missing
+##  loss   ################################################################## no img
 - terms: 
   - term: loss
     lang: en
     tts: en-terms/loss.mp3
   - term: ztráta
     lang: cs
+    tts: cs-terms/ztrata.mp3
   - term: prohra
     lang: cs
+    tts: cs-terms/prohra.mp3
   freq: 141.15370
-##  discount   ############################################################## no img|t1:tts:missing
+##  discount   ############################################################## no img
 - terms: 
   - term: discount
     lang: en
     tts: en-terms/discount.mp3
   - term: sleva
     lang: cs
+    tts: cs-terms/sleva.mp3
   freq: 140.52640
-##  kingdom   ############################################################### no img|t1:tts:missing
+##  kingdom   ############################################################### no img
 - terms: 
   - term: kingdom
     lang: en
     tts: en-terms/kingdom.mp3
   - term: království
     lang: cs
+    tts: cs-terms/kralovstvi.mp3
   freq: 139.27900
-##  storage   ############################################################### no img|t1:tts:missing
+##  storage   ############################################################### no img
 - terms: 
   - term: storage
     lang: en
     tts: en-terms/storage.mp3
   - term: skladiště
     lang: cs
+    tts: cs-terms/skladiste.mp3
   freq: 138.27090
-##  solution   ############################################################## no img|t1:tts:missing|t2:tts:missing
+##  solution   ############################################################## no img
 - terms: 
   - term: solution
     lang: en
     tts: en-terms/solution.mp3
   - term: řešení
     lang: cs
+    tts: cs-terms/reseni.mp3
   - term: roztok
     lang: cs
+    tts: cs-terms/roztok.mp3
   freq: 125.82480
-##  limit   ################################################################# no img|t1:tts:missing|t2:tts:missing
+##  limit   ################################################################# no img
 - terms: 
   - term: limit
     lang: en
     tts: en-terms/limit.mp3
   - term: limit
     lang: cs
+    tts: cs-terms/limit.mp3
   - term: omezit
     lang: cs
+    tts: cs-terms/omezit.mp3
   freq: 65.10580
-##  wire   ################################################################## no img|t1:tts:missing
+##  wire   ################################################################## no img
 - terms: 
   - term: wire
     lang: en
     tts: en-terms/wire.mp3
   - term: drát
     lang: cs
+    tts: cs-terms/drat.mp3
   freq: 52.90230
-##  tip   ################################################################### no img|t1:tts:missing|t2:tts:missing
+##  tip   ################################################################### no img
 - terms: 
   - term: tip
     lang: en
     tts: en-terms/tip.mp3
   - term: špička
     lang: cs
+    tts: cs-terms/spicka.mp3
   - term: hrot
     lang: cs
+    tts: cs-terms/hrot.mp3
   freq: 48.98660
-##  ticket   ################################################################ no img|t1:tts:missing|t2:tts:missing
+##  ticket   ################################################################ no img
 - terms: 
   - term: ticket
     lang: en
     tts: en-terms/ticket.mp3
   - term: lístek
     lang: cs
+    tts: cs-terms/listek.mp3
   - term: jízdenka
     lang: cs
+    tts: cs-terms/jizdenka.mp3
   freq: 48.91390
-##  publish   ############################################################### no img|t1:tts:missing|t2:tts:missing
+##  publish   ############################################################### no img
 - terms: 
   - term: publish
     lang: en
     tts: en-terms/publish.mp3
   - term: publikovat
     lang: cs
+    tts: cs-terms/publikovat.mp3
   - term: zveřejnit
     lang: cs
+    tts: cs-terms/zverejnit.mp3
   freq: 24.23920
 
