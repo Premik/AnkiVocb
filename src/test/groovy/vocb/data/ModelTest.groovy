@@ -52,4 +52,30 @@ class ModelTest {
 			assert c.completeness > 0.7
 		}
 	}
+	
+	@Test
+	void compltNoThere() {
+		def j = new YamlSlurper().parseText '''\
+		  terms: 
+		  - term: or
+		    lang: en
+		  - term: nebo
+		    lang: cs
+		    tts: nebo.mp3
+		  examples: 
+		  - term: A cup of tea or coffee.
+		    lang: en
+		  - term: Šálek čaje nebo kávy.
+		    lang: cs
+		    tts: Salek caje nebo kavy.mp3
+		  img: or.jpeg
+		  freq: 2803803.50000
+		  origins: ["corpus"]
+		'''.stripIndent()
+		assert j
+		new ConceptYamlStorage().tap {
+			Concept c = parseConcept(j)
+			assert c.completeness < 0.99
+		}
+	}
 }
