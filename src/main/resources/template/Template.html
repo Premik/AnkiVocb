@@ -19,60 +19,44 @@
 	<main class="container">
 		<div id="qa_box" class="card card2">
 			<!-- --------------------------------------------------------------------------   -->
-			<div class="rounded shadow" id="rootContainer">
-					<button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
-				
-				<div><img src="{{img}}"></div>
+			<main class="wrapper rounded shadow">
+				<header class="foreign foreignTerm">
+					<span>{{foreign}}</span>[sound:{{foreignTTS}}]
+				</header>
 
-				<div class="question">{{foreign}}</div>
-				[sound:{{foreignTTS}}]
-				
+				<!-- 
+				<figure class="img"><div style="background-image: url('apple.jpeg')"></div></figure>
+				-->
+				<figure class="img"><img src="{{img}}"></span></figure>
 
-				<div class="hintPane">					
-						<div id="hint"></div>
-					</div>
-				<hr>
+				<!--	<figure class="img"><img src="lightBulb.png"></figure>
+				<figure class="img"><img src="air.png"></figure>
+				<div class="img"><img src="above.jpeg"></div>-->
 
 
-				<div class="answer">{{native}}</div>
-				[sound:{{nativeTTS}}]
+				<section class="native native1">
+					<span>{{native}}</span>[sound:{{nativeTTS}}]
+				</section>
 
-				{{#nativeAlt}}
-				<div class="answer">{{nativeAlt}}</div>
-				[sound:{{nativeAltTTS}}]
-				{{/nativeAlt}}
+				<!-- {{#nativeAlt}} -->
+				<section class="native native2">
+					<span>{{nativeAlt}}</span>[sound:{{nativeAltTTS}}]
+				</section>
+				<!-- {{/nativeAlt}} -->
 
-				[sound:{{foreignTTS}}]
-				{{#foreignExample}}
-				<hr>
-				<div class="answer">{{foreignExample}}</div>
-				[sound:{{foreignExampleTTS}}]
-				{{/foreignExample}}
-				
+				<!-- {{#foreignExample}} -->
+				<section class="foreign foreignExample">
+					<span>{{foreignExample}}</span>[sound:{{foreignExampleTTS}}]
+				</section>
+				<!-- {{/foreignExample}} -->
 
-			</div>
+				<!-- {{#nativeExample}} -->
+				<section class="native nativeExample">
+					<span>{{nativeExample}}</span>[sound:{{nativeExampleTTS}}]
+				</section>
+				<!-- {{/nativeExample}} -->
 
-			<script>
-				function coverWord(w) {
-					var placeholder = '-';
-					var chrs = Array.from(w)
-					var end = chrs.length;
-					var start = 0;
-					if (chrs.length > 1) start++;
-					if (chrs.length > 5) end--;
-					if (chrs.length > 8) start++;
-
-					for (var i = start; i < end; i++) {
-						chrs[i] = placeholder;
-					}
-					return chrs.join("");
-				}
-				function showHint() {
-					var hint = document.getElementById("hint");
-					hint.innerText = coverWord("{{native}}");
-					document.getElementById("hintButton").style.display = "none";
-				}
-			</script>
+			</main>
 			<!-- --------------------------------------------------------------------------   -->
 		</div>
 		<br>
