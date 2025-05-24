@@ -19,6 +19,12 @@ public class Corpus {
 	Map<String, BigDecimal> wordFreq = new HashMap(5000)
 	Set<String> phrases = new HashSet<String>(2000)
 
+	@Lazy public String[] sortedByFreq = {
+		wordFreq.keySet().sort { String a, String b->
+			wordFreq[b] <=> wordFreq[a]
+		}
+	}()
+
 
 	//https://www.wordfrequency.info/free.asp
 	void importCsvCorpus(Map parserArgs = [:], Reader reader) {

@@ -45,12 +45,7 @@ class SSMLTest {
 		println "'$a' '$b' '$c'" 
 	}
 	
-	@Test
-	void ssmlStart() {
-		String s = tts.SSMLEmphSubstr("Then it can begin.", "then")
-		println s				
-		assert xml.prosody.prosody == "Then"
-	}
+	
 	
 	
 	

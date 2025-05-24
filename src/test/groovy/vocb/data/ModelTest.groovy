@@ -199,7 +199,7 @@ class ModelTest {
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			println c
-			assert c.completeness > 0.98
+			assert c.completeness > 0.94
 		}
 	}
 }

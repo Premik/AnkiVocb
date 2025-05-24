@@ -73,10 +73,13 @@ class YamlStorageTest {
 	void stringListToYaml() {
 		String y="""
 		- aa
-		- bbb
-		- ccc""".stripIndent()
+		- bb
+		- cc
+		- dd
+		- ee
+		- ff""".stripIndent()
 
-		assert  st.listToYaml(["aa", "bbb", "ccc"]) == y
+		assert  st.listToYaml(["aa", "bb", "cc", "dd", "ee",  "ff"]) == y
 	}
 
 	@Test
@@ -134,9 +137,7 @@ class YamlStorageTest {
 		- term: jablko
 		  lang: cs
 		state: state
-		origins: 
-		- o1
-		- o2""".stripIndent()
+		origins: ["o1", "o2"]""".stripIndent()
 		Term t1 = new Term("apple", "en")
 		Term t2 = new Term("jablko", "cs")
 		Concept c = new Concept(terms: [apple:t1, jablko:t2], state: "state", img:"", freq:null, origins:["o1", "o2"])
