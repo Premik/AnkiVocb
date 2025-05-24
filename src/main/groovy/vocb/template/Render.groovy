@@ -74,7 +74,8 @@ class Render {
 	
 	public void preview(File p) {
 		Map toRender = cfg.render
-		toRender = toRender.findAll {String k, v-> k =="card2Preview"}
+		//toRender = toRender.findAll {String k, v-> k =="card2Preview"}
+		//toRender = toRender.findAll {String k, v-> k =="cardBackPreview"}
 		toRender.each { String name, Map r ->
 			File outF = renderToFile(name, p)
 			if (r.runWith) {
