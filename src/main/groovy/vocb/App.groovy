@@ -15,6 +15,7 @@ import vocb.corp.WordNormalizer
 import vocb.tts.AwsCliPollyTTS
 import vocb.tts.LocalTTS
 
+@Deprecated
 public class App {
 
 	File ankiCrowdExportPath

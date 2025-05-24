@@ -23,6 +23,7 @@ public class ConceptExtra {
 	@Lazy LinkedHashMap<Concept, Double> similarities=  {
 		assert c
 		assert ctx
+		assert ctx.initialSelection
 		//println "${solver.class.hashCode()} ${vocb.ord.OrderSolver.class.hashCode()}"
 
 		ctx.initialSelection

@@ -170,7 +170,10 @@ public class Corpus {
 
 	static void main(String... args) {
 
-		Corpus c= buildDef()
+		buildDef().with {
+			load12Dicts()
+			phrases.take(30).each {println "${it}"}
+		}
 
 		//n.importCsvCorpus(getClass().getResource('/wordFreq.csv').openStream())
 		//n.import12WordFreq(getClass().getResource('/2+2+3frq.txt').openStream())

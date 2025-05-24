@@ -33,7 +33,7 @@ public class Similarity {
 	}
 
 	double rateDistance(long distance) {
-		// [1.0, 0.44, 0.25, 0.16, 0.11, 0.08, 0.06, 0.05, 0.04, 0.03]
+		// [err, 1.0, 0.44, 0.25, 0.16, 0.11, 0.08, 0.06, 0.05, 0.04, 0.03]
 		assert distance >=0
 		double d=distance+2
 		return 4/(d*d)

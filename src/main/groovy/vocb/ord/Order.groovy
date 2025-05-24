@@ -1,13 +1,21 @@
 package vocb.ord
 
+import java.nio.file.Path
+
 import vocb.Helper
 
 public class Order {
+	
+	static int maxDist = 20
+	static double[] rateDis = (0..maxDist).collect{ 1-(it/40) }
+	// [1, 0.975, 0.95, 0.925, 0.9, 0.875, 0.85, 0.825, 0.8, 0.775, 0.75, 0.725, 0.7, 0.675, 0.65, 0.625, 0.6, 0.575, 0.55, 0.525, 0.5]
 
 	SolvingContext ctx
 
 	List<ConceptExtra> ord
 	int genNum
+	
+	
 	
 
 	@Lazy double freqFitness = {
@@ -46,11 +54,33 @@ public class Order {
 		assert ctx
 		assert ord
 		
+		double sum = 0
+		for (int i=0;i<ord.size()-1;i++) {
+			sum += similarityFitnessAt(i)			
+		}
+		return sum		
 	}()
+	
+	double similarityFitnessAt(int indx) {
+		ConceptExtra a = ord[indx]
+		assert a
+		double sum = 0
+		//More similar words should have bigger distance
+		for (int dist=1;dist<maxDist;dist++) {
+			ConceptExtra b = ord[indx+dist]
+			if (!b) break
+			Double sim = a.similarities[b.c]
+			if (!sim) continue
+			sum+= 1-sim*rateDis[dist]
+		}
+		
+		return sum/maxDist
+	}
 	
 	
 	double getFitness() {
-		return freqFitness
+		(freqFitness +
+		similarityFitness*3)/4
 	}
 	
 	public void finalizeOrder() {
@@ -130,6 +160,13 @@ public class Order {
 		}
 	}
 	
+	public void save(Path p) {
+		p.getParent().toFile().mkdirs()		
+		p.withPrintWriter("UTF-8") {
+			toRootedYaml(it)
+		}
+	}
+	
 	public void fromRootedYaml(Reader r) {
 		LinkedHashSet newOrd = new LinkedHashSet()		
 		r.splitEachLine(/\s*-\s+/) {
@@ -143,10 +180,13 @@ public class Order {
 			leftOver.remove(ce)
 			return ce
 		}
-		ord.addAll(leftOver)
-		 
-		  
-		
+		ord.addAll(leftOver)		 
+	}
+	
+	public void load(Path p) {
+		p.withReader("UTF-8") {
+			fromRootedYaml(it)
+		}
 	}
 	
 }

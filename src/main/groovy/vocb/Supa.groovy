@@ -11,6 +11,7 @@ import vocb.aws.AwsTranslate
 import vocb.corp.WordNormalizer
 import vocb.tts.AwsCliPollyTTS
 
+@Deprecated
 public class Supa {
 
 	File ankiCrowdExportPath = new File("/tmp/work/Supa1")

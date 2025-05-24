@@ -9,6 +9,7 @@ import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 
 import vocb.Helper
+import vocb.data.Concept
 
 class OrderTest {
 
@@ -198,16 +199,14 @@ class OrderTest {
 		Order o= sol.ctx.createInitialOrder().mix()
 		Path tempFile = Files.createTempFile("vobctest", ".yaml")
 		println tempFile
-		tempFile.withPrintWriter("UTF-8") {
-			o.toRootedYaml(it)
-		}
+		o.save(tempFile)
+		
 		Order o2= sol.ctx.createInitialOrder().mix()
 		
 		
 		assert o2 != o
-		tempFile.withReader("UTF-8") {
-			o2.fromRootedYaml(it)
-		}
+		o2.load(tempFile)
+		
 		println o2
 		assert o2 == o
 		o2.ord.removeLast()
@@ -215,7 +214,32 @@ class OrderTest {
 		tempFile.withReader("UTF-8") {
 			o2.fromRootedYaml(it)
 		}
-		assert o2 == o
+		assert o2 == o		
+	}
+	
+	@Test
+	void simFitnessSingle() {
+		Order o= sol.ctx.createInitialOrder()
+		assert o[2].c.firstTerm == "of"
+		assert o[4].c.firstTerm == "to"
+		Order farther = o.clone()
+		farther.lerpToPosition(2, 0, 1d)
+		assert 	farther[0].c.firstTerm == 'of'
+		assert o.similarityFitness < farther.similarityFitness
+		/*o.ord.each {
+			String sim = it.similarities.take(5).collect{k,v-> "${v.round(2)} $k.firstTerm"}
+			println "${it} $sim  "
+		}*/
+	}
+	
+	@Test
+	void simFitness() {
+		Order o= sol.ctx.createInitialOrder()
+		
+		/*o.ord.each {
+			String sim = it.similarities.take(5).collect{k,v-> "${v.round(2)} $k.firstTerm"}
+			println "${it} $sim  "
+		}*/
 		
 	}
 }
