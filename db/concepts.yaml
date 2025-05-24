@@ -10508,7 +10508,7 @@ concepts:
   - term: roh
     lang: cs
     tts: cs-terms/roh.mp3
-  - term: koutek
+  - term: k-outek
     lang: cs
     tts: cs-terms/koutek.mp3
   freq: 60040.00000
@@ -10546,149 +10546,175 @@ concepts:
     tts: cs-terms/hodinky.mp3
   freq: 50534.00000
   origins: ["Supaplex"]
-##  stones   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  stones   ################################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: stones
     lang: en
   - term: kameny
     lang: cs
+    tts: cs-terms/kameny.mp3
   freq: 49887.00000
   origins: ["Supaplex"]
-##  objects   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  objects   ############################################################### no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: objects
     lang: en
   - term: objekty
     lang: cs
+    tts: cs-terms/objekty.mp3
   - term: předměty
     lang: cs
+    tts: cs-terms/predmety.mp3
   freq: 49571.00000
   origins: ["Supaplex"]
-##  harry   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  harry   ################################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: harry
     lang: en
   - term: sužovat
     lang: cs
+    tts: cs-terms/suzovat.mp3
   - term: pustošit
     lang: cs
+    tts: cs-terms/pustosit.mp3
   freq: 48809.00000
   origins: ["Supaplex"]
-##  warm   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  warm   ################################################################## no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: warm
     lang: en
   - term: teplé
     lang: cs
+    tts: cs-terms/teple.mp3
   - term: hřejivý
     lang: cs
+    tts: cs-terms/hrejivy.mp3
   freq: 42596.00000
   origins: ["Supaplex"]
-##  push   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  push   ################################################################## no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: push
     lang: en
   - term: tlačit
     lang: cs
+    tts: cs-terms/tlacit.mp3
   freq: 36430.00000
   origins: ["Supaplex"]
-##  detail   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  detail   ################################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: detail
     lang: en
   - term: podrobnost
     lang: cs
+    tts: cs-terms/podrobnost.mp3
   - term: detail
     lang: cs
     tts: cs-terms/detail-cs.mp3
   freq: 32419.00000
   origins: ["Supaplex"]
-##  ahead   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  ahead   ################################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: ahead
     lang: en
   - term: napřed
     lang: cs
+    tts: cs-terms/napred.mp3
   - term: před námi
     lang: cs
+    tts: cs-terms/pred nami.mp3
   freq: 29659.00000
   origins: ["Supaplex"]
-##  chamber   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  chamber   ############################################################### no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: chamber
     lang: en
   - term: komora
     lang: cs
+    tts: cs-terms/komora.mp3
   - term: komnata
     lang: cs
+    tts: cs-terms/komnata.mp3
   freq: 29544.00000
   origins: ["Supaplex"]
-##  inside   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  inside   ################################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: inside
     lang: en
   - term: uvnitř
     lang: cs
+    tts: cs-terms/uvnitr.mp3
   - term: dovnitř
     lang: cs
+    tts: cs-terms/dovnitr.mp3
   freq: 29539.00000
   origins: ["Supaplex"]
-##  favourite   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  favourite   ############################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: favourite
     lang: en
   - term: oblíbená
     lang: cs
+    tts: cs-terms/oblibena.mp3
   freq: 27258.00000
   origins: ["Supaplex"]
-##  confusion   ############################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  confusion   ############################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: confusion
     lang: en
   - term: zmatek
     lang: cs
+    tts: cs-terms/zmatek.mp3
   - term: nejasnosti
     lang: cs
+    tts: cs-terms/nejasnosti.mp3
   freq: 24311.00000
   origins: ["Supaplex"]
-##  waste   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  waste   ################################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: waste
     lang: en
   - term: odpad
     lang: cs
+    tts: cs-terms/odpad.mp3
   - term: plýtvat
     lang: cs
+    tts: cs-terms/plytvat.mp3
   freq: 24060.00000
   origins: ["Supaplex"]
-##  tough   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  tough   ################################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: tough
     lang: en
   - term: houževnatý
     lang: cs
+    tts: cs-terms/houzevnaty.mp3
   - term: tvrdý
     lang: cs
+    tts: cs-terms/tvrdy.mp3
   freq: 23915.00000
   origins: ["Supaplex"]
-##  luck   ################################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  luck   ################################################################## no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: luck
     lang: en
   - term: štěstí
     lang: cs
+    tts: cs-terms/stesti.mp3
   - term: náhoda
     lang: cs
+    tts: cs-terms/nahoda.mp3
   freq: 23887.00000
   origins: ["Supaplex"]
-##  steady   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  steady   ################################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: steady
     lang: en
   - term: stabilní
     lang: cs
+    tts: cs-terms/stabilni.mp3
   - term: setrvalý
     lang: cs
+    tts: cs-terms/setrvaly.mp3
   freq: 20840.00000
   origins: ["Supaplex"]
 - terms: 
@@ -10696,50 +10722,58 @@ concepts:
     lang: en
   state: ignore
   origins: ["Supaplex"]
-##  mixed   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  mixed   ################################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: mixed
     lang: en
   - term: smíšené
     lang: cs
+    tts: cs-terms/smisene.mp3
   - term: míchané
     lang: cs
+    tts: cs-terms/michane.mp3
   freq: 19003.00000
   origins: ["Supaplex"]
-##  crazy   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  crazy   ################################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: crazy
     lang: en
   - term: šílené
     lang: cs
+    tts: cs-terms/silene.mp3
   - term: bláznivý
     lang: cs
+    tts: cs-terms/blaznivy.mp3
   freq: 17098.00000
   origins: ["Supaplex"]
-##  ignore   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  ignore   ################################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: ignore
     lang: en
   - term: ignorovat
     lang: cs
+    tts: cs-terms/ignorovat.mp3
   - term: přehlížet
     lang: cs
+    tts: cs-terms/prehlizet.mp3
   freq: 16119.00000
   origins: ["Supaplex"]
-##  cheese   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  cheese   ################################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: cheese
     lang: en
   - term: sýr
     lang: cs
+    tts: cs-terms/syr.mp3
   freq: 15035.00000
   origins: ["Supaplex"]
-##  entertainment   ######################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  entertainment   ######################################################### no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: entertainment
     lang: en
   - term: zábava
     lang: cs
+    tts: cs-terms/zabava.mp3
   freq: 14681.00000
   origins: ["Supaplex"]
 - terms: 
@@ -10747,52 +10781,61 @@ concepts:
     lang: en
   state: ignore
   origins: ["Supaplex"]
-##  miracle   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  miracle   ############################################################### no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: miracle
     lang: en
   - term: zázrak
     lang: cs
+    tts: cs-terms/zazrak.mp3
   freq: 12755.00000
   origins: ["Supaplex"]
-##  downstairs   ############################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  downstairs   ############################################################ no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: downstairs
     lang: en
   - term: přízemí
     lang: cs
+    tts: cs-terms/prizemi.mp3
   - term: dolů po schodech
     lang: cs
+    tts: cs-samples/dolu po schodech.mp3
   freq: 12638.00000
   origins: ["Supaplex"]
-##  upstairs   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  upstairs   ############################################################## no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: upstairs
     lang: en
   - term: v poschodí
     lang: cs
+    tts: cs-terms/v poschodi.mp3
   - term: nahoru po schodech
     lang: cs
+    tts: cs-samples/nahoru po schodech.mp3
   freq: 12572.00000
   origins: ["Supaplex"]
-##  worry   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  worry   ################################################################# no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: worry
     lang: en
   - term: starosti
     lang: cs
+    tts: cs-terms/starosti.mp3
   - term: obávat se
     lang: cs
+    tts: cs-terms/obavat se.mp3
   freq: 12270.00000
   origins: ["Supaplex"]
-##  missing   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  missing   ############################################################### no img|t0:tts:missing|t0:pron:missing
 - terms: 
   - term: missing
     lang: en
   - term: chybějící
     lang: cs
+    tts: cs-terms/chybejici.mp3
   - term: chybí
     lang: cs
+    tts: cs-terms/chybi.mp3
   freq: 11830.00000
   origins: ["Supaplex"]
 ##  hunter   ################################################################ no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
