@@ -1,5 +1,6 @@
 package vocb.data
 
+import groovy.transform.AutoClone
 import groovy.transform.Canonical
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
@@ -47,6 +48,7 @@ public class Concept {
 
 @Canonical
 @ToString(includePackage=false, ignoreNulls=true, excludes='completeness')
+@AutoClone
 public class Term {
 	String term
 	String lang
