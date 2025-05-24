@@ -40,7 +40,10 @@ public class TranslationAppender {
 				c.terms.put(csWord, new Term(csWord, "cs"))
 			}
 			dbMan.save()
-			if (i>limit) break
+			if (i>limit) {
+				println color("Limit reached", RED)
+				break
+			}
 				i++
 			Thread.sleep(sleep)
 			//break
