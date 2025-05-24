@@ -38,7 +38,7 @@ concepts:
   - term: the
     lang: en
   state: ignore
-  origins: ["conceptDbSamples", "JingleBells", "corpus"]
+  origins: ["conceptDbSamples", "JingleBells", "corpus", "Supaplex"]
 - terms: 
   - term: of
     lang: en
@@ -846,7 +846,7 @@ concepts:
     tts: cs-terms/jdi.mp3
   img: img/go.jpeg
   freq: 983790.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: its
     lang: en
@@ -871,7 +871,7 @@ concepts:
     tts: cs-terms/nahoru.mp3
   img: img/up.jpeg
   freq: 939235.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: they
     lang: en
@@ -882,7 +882,7 @@ concepts:
     tts: cs-terms/oni.mp3
   img: img/they.jpeg
   freq: 937391.63000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: men
     lang: en
@@ -904,7 +904,7 @@ concepts:
     tts: cs-terms/my-cs.mp3
   img: img/we.jpeg
   freq: 915268.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: then
     lang: en
@@ -929,7 +929,7 @@ concepts:
     tts: cs-terms/videt.mp3
   img: img/see.jpeg
   freq: 873965.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: came
     lang: en
@@ -1052,7 +1052,7 @@ concepts:
     tts: cs-terms/obdrzet.mp3
   img: img/get.jpeg
   freq: 778635.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: other
     lang: en
@@ -1108,7 +1108,7 @@ concepts:
     tts: cs-terms/pojd.mp3
   img: img/come.jpeg
   freq: 750630.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: def
     lang: en
@@ -1259,7 +1259,7 @@ concepts:
     tts: cs-terms/male.mp3
   img: img/little.jpeg
   freq: 659529.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: day
     lang: en
@@ -1295,7 +1295,7 @@ concepts:
     tts: cs-terms/rad.mp3
   img: img/like.jpeg
   freq: 646931.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: must
     lang: en
@@ -1337,7 +1337,7 @@ concepts:
     tts: cs-terms/temi.mp3
   state: ignoreImage
   freq: 628314.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: such
     lang: en
@@ -1423,7 +1423,7 @@ concepts:
     tts: cs-terms/zivot.mp3
   img: img/life.jpeg
   freq: 579285.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: much
     lang: en
@@ -1571,7 +1571,7 @@ concepts:
     tts: cs-terms/taky.mp3
   state: ignoreImage
   freq: 519626.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: down
     lang: en
@@ -1585,7 +1585,7 @@ concepts:
     tts: cs-terms/dole.mp3
   img: img/down.jpeg
   freq: 514720.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: work
     lang: en
@@ -1599,7 +1599,7 @@ concepts:
     tts: cs-terms/fungovat.mp3
   img: img/work.jpeg
   freq: 508678.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: took
     lang: en
@@ -1638,7 +1638,7 @@ concepts:
     tts: cs-terms/poprve.mp3
   img: img/first.jpeg
   freq: 497764.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: without
     lang: en
@@ -1663,7 +1663,7 @@ concepts:
     tts: cs-terms/dobry.mp3
   img: img/good.jpeg
   freq: 490930.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: himself
     lang: en
@@ -1844,7 +1844,7 @@ concepts:
     tts: cs-terms/cesta.mp3
   img: img/way.jpeg
   freq: 433315.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: got
     lang: en
@@ -1883,7 +1883,7 @@ concepts:
     tts: cs-terms/vec.mp3
   state: ignoreImage
   freq: 431098.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: well
     lang: en
@@ -1992,7 +1992,7 @@ concepts:
     tts: cs-terms/jit.mp3
   img: img/going.jpeg
   freq: 419315.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: seen
     lang: en
@@ -2045,7 +2045,7 @@ concepts:
     tts: cs-terms/vyhledat.mp3
   img: img/find.jpeg
   freq: 413161.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: knew
     lang: en
@@ -2073,7 +2073,7 @@ concepts:
     tts: cs-terms/skrze.mp3
   img: img/through.jpeg
   freq: 412381.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: world
     lang: en
@@ -2587,7 +2587,7 @@ concepts:
     tts: cs-terms/zapnuto.mp3
   img: img/on.jpeg
   freq: 2675121.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: "no"
     lang: en
@@ -2598,7 +2598,7 @@ concepts:
     tts: cs-terms/ne.mp3
   img: img/no.jpeg
   freq: 1123368.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: "off"
     lang: en
@@ -2612,7 +2612,7 @@ concepts:
     tts: cs-terms/pryc.mp3
   img: img/off.jpeg
   freq: 324977.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: while
     lang: en
@@ -2640,7 +2640,7 @@ concepts:
     tts: cs-terms/proste.mp3
   state: ignoreImage
   freq: 315132.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: stood
     lang: en
@@ -2760,7 +2760,7 @@ concepts:
     tts: cs-terms/kdysi.mp3
   img: img/once.jpeg
   freq: 283167.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: love
     lang: en
@@ -2824,7 +2824,7 @@ concepts:
     tts: cs-terms/hlava.mp3
   img: img/head.jpeg
   freq: 277069.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: heart
     lang: en
@@ -2901,7 +2901,7 @@ concepts:
     tts: cs-terms/jak.mp3
   img: img/how.jpeg
   freq: 269931.46500
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: room
     lang: en
@@ -3084,7 +3084,7 @@ concepts:
     tts: cs-terms/zachovat.mp3
   img: img/keep.jpeg
   freq: 260532.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: home
     lang: en
@@ -3162,7 +3162,7 @@ concepts:
     tts: cs-terms/vzhled.mp3
   img: img/look.jpeg
   freq: 247532.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: better
     lang: en
@@ -3223,7 +3223,7 @@ concepts:
     tts: cs-terms/vadit.mp3
   img: img/mind.jpeg
   freq: 243845.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: become
     lang: en
@@ -3429,7 +3429,7 @@ concepts:
     tts: cs-terms/rodina.mp3
   img: img/family.jpeg
   freq: 230692.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: er
     lang: en
@@ -3717,7 +3717,7 @@ concepts:
     tts: cs-terms/dohromady.mp3
   img: img/together.jpeg
   freq: 212070.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: here
     lang: en
@@ -3965,7 +3965,7 @@ concepts:
     tts: cs-terms/podnikani.mp3
   img: img/business.jpeg
   freq: 193813.00000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: soon
     lang: en
@@ -4623,7 +4623,7 @@ concepts:
     tts: cs-terms/tamhle.mp3
   img: img/there.jpeg
   freq: 168331.60000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: company
     lang: en
@@ -4764,7 +4764,7 @@ concepts:
     tts: cs-terms/stav.mp3
   img: img/state.jpeg
   freq: 162829.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: government
     lang: en
@@ -4828,7 +4828,7 @@ concepts:
     tts: cs-terms/otevrene.mp3
   img: img/open.jpeg
   freq: 160795.50000
-  origins: ["corpus", "conceptDbSamples", "JingleBells"]
+  origins: ["corpus", "conceptDbSamples", "JingleBells", "Supaplex"]
 - terms: 
   - term: order
     lang: en
@@ -4870,7 +4870,7 @@ concepts:
     tts: cs-terms/dokola.mp3
   img: img/around.jpeg
   freq: 159191.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: understand
     lang: en
@@ -5205,7 +5205,7 @@ concepts:
     tts: cs-terms/mozne.mp3
   img: img/possible.jpeg
   freq: 147091.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: service
     lang: en
@@ -6310,7 +6310,7 @@ concepts:
     tts: cs-terms/dopad.mp3
   img: img/effect.jpeg
   freq: 122005.50000
-  origins: ["corpus", "conceptDbSamples"]
+  origins: ["corpus", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: earth
     lang: en
@@ -6457,7 +6457,7 @@ concepts:
     tts: cs-terms/pripraven.mp3
   img: img/ready.jpeg
   freq: 116349.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: following
     lang: en
@@ -6767,7 +6767,7 @@ concepts:
     tts: cs-terms/prace.mp3
   img: img/job.jpeg
   freq: 95596.85000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: trying
     lang: en
@@ -6870,7 +6870,7 @@ concepts:
     tts: cs-terms/bezet.mp3
   img: img/run.jpeg
   freq: 88006.50000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: single
     lang: en
@@ -7723,7 +7723,7 @@ concepts:
     tts: cs-terms/prijemne.mp3
   img: img/nice.jpeg
   freq: 50915.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: start
     lang: en
@@ -7776,7 +7776,7 @@ concepts:
     tts: cs-terms/naplnte.mp3
   img: img/fill.jpeg
   freq: 49413.45000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cup
     lang: en
@@ -7810,7 +7810,7 @@ concepts:
     lang: en
   state: ignore
   freq: 49305.00000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: data
     lang: en
@@ -8577,7 +8577,7 @@ concepts:
     tts: cs-terms/chladne.mp3
   img: img/cool.jpeg
   freq: 26142.55000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: cat
     lang: en
@@ -8725,7 +8725,7 @@ concepts:
     tts: cs-terms/ktery.mp3
   state: ignoreImage
   freq: 21910.90650
-  origins: ["conceptDbSamples", "corpus"]
+  origins: ["conceptDbSamples", "corpus", "Supaplex"]
 - terms: 
   - term: emotions
     lang: en
@@ -8775,7 +8775,7 @@ concepts:
     tts: cs-terms/zitra.mp3
   img: img/tomorrow.jpeg
   freq: 21349.20000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: hurry
     lang: en
@@ -8789,7 +8789,7 @@ concepts:
     tts: cs-terms/naspech.mp3
   img: img/hurry.jpeg
   freq: 21059.55000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: regret
     lang: en
@@ -8931,7 +8931,7 @@ concepts:
     tts: cs-terms/zabavne.mp3
   img: img/funny.jpeg
   freq: 18987.80000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: column
     lang: en
@@ -9458,7 +9458,7 @@ concepts:
     tts: cs-terms/prenos.mp3
   img: img/transport.jpeg
   freq: 8144.60000
-  origins: ["conceptDbSamples"]
+  origins: ["conceptDbSamples", "Supaplex"]
 - terms: 
   - term: relaxed
     lang: en
@@ -9957,7 +9957,7 @@ concepts:
     tts: cs-terms/legrace.mp3
   img: img/fun.jpeg
   freq: 22138.75000
-  origins: ["JingleBells", "conceptDbSamples"]
+  origins: ["JingleBells", "conceptDbSamples", "Supaplex"]
 - terms: 
   - term: lean
     lang: en
@@ -10339,6 +10339,516 @@ concepts:
   img: img/bumped.jpeg
   freq: 1000.00000
   origins: ["conceptDbSamples"]
+##  problem   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: problem
+    lang: en
+  freq: 217728.00000
+  origins: ["Supaplex"]
+##  nearly   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: nearly
+    lang: en
+  freq: 109430.00000
+  origins: ["Supaplex"]
+##  music   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: music
+    lang: en
+  freq: 98470.00000
+  origins: ["Supaplex"]
+##  fall   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: fall
+    lang: en
+  freq: 93128.00000
+  origins: ["Supaplex"]
+##  age   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: age
+    lang: en
+  freq: 91662.00000
+  origins: ["Supaplex"]
+##  yourself   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: yourself
+    lang: en
+  freq: 87509.00000
+  origins: ["Supaplex"]
+##  deal   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: deal
+    lang: en
+  freq: 84580.00000
+  origins: ["Supaplex"]
+##  community   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: community
+    lang: en
+  freq: 83260.00000
+  origins: ["Supaplex"]
+##  pleasure   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: pleasure
+    lang: en
+  freq: 81025.00000
+  origins: ["Supaplex"]
+##  difficult   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: difficult
+    lang: en
+  freq: 77166.00000
+  origins: ["Supaplex"]
+##  simple   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: simple
+    lang: en
+  freq: 76734.00000
+  origins: ["Supaplex"]
+##  stone   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: stone
+    lang: en
+  freq: 65802.00000
+  origins: ["Supaplex"]
+##  trouble   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: trouble
+    lang: en
+  freq: 65531.00000
+  origins: ["Supaplex"]
+##  outside   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: outside
+    lang: en
+  freq: 64323.00000
+  origins: ["Supaplex"]
+##  corner   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: corner
+    lang: en
+  freq: 60040.00000
+  origins: ["Supaplex"]
+##  island   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: island
+    lang: en
+  freq: 53142.00000
+  origins: ["Supaplex"]
+##  moving   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: moving
+    lang: en
+  freq: 52512.00000
+  origins: ["Supaplex"]
+##  watch   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: watch
+    lang: en
+  freq: 50534.00000
+  origins: ["Supaplex"]
+##  stones   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: stones
+    lang: en
+  freq: 49887.00000
+  origins: ["Supaplex"]
+##  objects   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: objects
+    lang: en
+  freq: 49571.00000
+  origins: ["Supaplex"]
+##  harry   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: harry
+    lang: en
+  freq: 48809.00000
+  origins: ["Supaplex"]
+##  warm   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: warm
+    lang: en
+  freq: 42596.00000
+  origins: ["Supaplex"]
+##  push   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: push
+    lang: en
+  freq: 36430.00000
+  origins: ["Supaplex"]
+##  detail   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: detail
+    lang: en
+  freq: 32419.00000
+  origins: ["Supaplex"]
+##  ahead   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: ahead
+    lang: en
+  freq: 29659.00000
+  origins: ["Supaplex"]
+##  chamber   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: chamber
+    lang: en
+  freq: 29544.00000
+  origins: ["Supaplex"]
+##  inside   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: inside
+    lang: en
+  freq: 29539.00000
+  origins: ["Supaplex"]
+##  favourite   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: favourite
+    lang: en
+  freq: 27258.00000
+  origins: ["Supaplex"]
+##  confusion   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: confusion
+    lang: en
+  freq: 24311.00000
+  origins: ["Supaplex"]
+##  waste   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: waste
+    lang: en
+  freq: 24060.00000
+  origins: ["Supaplex"]
+##  tough   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: tough
+    lang: en
+  freq: 23915.00000
+  origins: ["Supaplex"]
+##  luck   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: luck
+    lang: en
+  freq: 23887.00000
+  origins: ["Supaplex"]
+##  steady   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: steady
+    lang: en
+  freq: 20840.00000
+  origins: ["Supaplex"]
+##  vice   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: vice
+    lang: en
+  freq: 19294.00000
+  origins: ["Supaplex"]
+##  mixed   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: mixed
+    lang: en
+  freq: 19003.00000
+  origins: ["Supaplex"]
+##  crazy   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: crazy
+    lang: en
+  freq: 17098.00000
+  origins: ["Supaplex"]
+##  ignore   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: ignore
+    lang: en
+  freq: 16119.00000
+  origins: ["Supaplex"]
+##  cheese   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: cheese
+    lang: en
+  freq: 15035.00000
+  origins: ["Supaplex"]
+##  entertainment   ######################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: entertainment
+    lang: en
+  freq: 14681.00000
+  origins: ["Supaplex"]
+##  phil   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: phil
+    lang: en
+  freq: 13609.00000
+  origins: ["Supaplex"]
+##  miracle   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: miracle
+    lang: en
+  freq: 12755.00000
+  origins: ["Supaplex"]
+##  downstairs   ############################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: downstairs
+    lang: en
+  freq: 12638.00000
+  origins: ["Supaplex"]
+##  upstairs   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: upstairs
+    lang: en
+  freq: 12572.00000
+  origins: ["Supaplex"]
+##  worry   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: worry
+    lang: en
+  freq: 12270.00000
+  origins: ["Supaplex"]
+##  missing   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: missing
+    lang: en
+  freq: 11830.00000
+  origins: ["Supaplex"]
+##  hunter   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: hunter
+    lang: en
+  freq: 11270.00000
+  origins: ["Supaplex"]
+##  gravity   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: gravity
+    lang: en
+  freq: 11200.00000
+  origins: ["Supaplex"]
+##  easy   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: easy
+    lang: en
+  freq: 10790.00000
+  origins: ["Supaplex"]
+##  classic   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: classic
+    lang: en
+  freq: 10356.00000
+  origins: ["Supaplex"]
+##  festival   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: festival
+    lang: en
+  freq: 9783.00000
+  origins: ["Supaplex"]
+##  crash   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: crash
+    lang: en
+  freq: 9543.00000
+  origins: ["Supaplex"]
+##  salad   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: salad
+    lang: en
+  freq: 8267.00000
+  origins: ["Supaplex"]
+##  rider   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: rider
+    lang: en
+  freq: 8223.00000
+  origins: ["Supaplex"]
+##  fork   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: fork
+    lang: en
+  freq: 7980.00000
+  origins: ["Supaplex"]
+##  handling   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: handling
+    lang: en
+  freq: 7719.00000
+  origins: ["Supaplex"]
+##  chaos   ################################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: chaos
+    lang: en
+  freq: 6957.00000
+  origins: ["Supaplex"]
+##  anonymous   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: anonymous
+    lang: en
+  freq: 6638.00000
+  origins: ["Supaplex"]
+##  exit   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: exit
+    lang: en
+  freq: 6292.00000
+  origins: ["Supaplex"]
+##  fuss   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: fuss
+    lang: en
+  freq: 6200.00000
+  origins: ["Supaplex"]
+##  pro   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: pro
+    lang: en
+  freq: 5662.00000
+  origins: ["Supaplex"]
+##  bug   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: bug
+    lang: en
+  freq: 5403.00000
+  origins: ["Supaplex"]
+##  collector   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: collector
+    lang: en
+  freq: 5236.00000
+  origins: ["Supaplex"]
+##  ham   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: ham
+    lang: en
+  freq: 5057.00000
+  origins: ["Supaplex"]
+##  sub   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: sub
+    lang: en
+  freq: 4918.00000
+  origins: ["Supaplex"]
+##  sandwich   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: sandwich
+    lang: en
+  freq: 4822.00000
+  origins: ["Supaplex"]
+##  runner   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: runner
+    lang: en
+  freq: 4498.00000
+  origins: ["Supaplex"]
+##  bomb   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: bomb
+    lang: en
+  freq: 4241.00000
+  origins: ["Supaplex"]
+##  bang   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: bang
+    lang: en
+  freq: 4075.00000
+  origins: ["Supaplex"]
+##  timing   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: timing
+    lang: en
+  freq: 3905.00000
+  origins: ["Supaplex"]
+##  flip   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: flip
+    lang: en
+  freq: 3878.00000
+  origins: ["Supaplex"]
+##  triple   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: triple
+    lang: en
+  freq: 3858.00000
+  origins: ["Supaplex"]
+##  boring   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: boring
+    lang: en
+  freq: 3595.00000
+  origins: ["Supaplex"]
+##  yawn   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: yawn
+    lang: en
+  freq: 2763.00000
+  origins: ["Supaplex"]
+##  diagonal   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: diagonal
+    lang: en
+  freq: 1155.00000
+  origins: ["Supaplex"]
+##  cracker   ############################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: cracker
+    lang: en
+  freq: 1119.00000
+  origins: ["Supaplex"]
+##  pre   ################################################################### single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: pre
+    lang: en
+  freq: 644.00000
+  origins: ["Supaplex"]
+##  bombastic   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: bombastic
+    lang: en
+  freq: 564.00000
+  origins: ["Supaplex"]
+##  hopper   ################################################################ single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: hopper
+    lang: en
+  freq: 544.00000
+  origins: ["Supaplex"]
+##  flop   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: flop
+    lang: en
+  freq: 535.00000
+  origins: ["Supaplex"]
+##  ignition   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: ignition
+    lang: en
+  freq: 512.00000
+  origins: ["Supaplex"]
+##  telepathy   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: telepathy
+    lang: en
+  freq: 437.00000
+  origins: ["Supaplex"]
+##  info   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: info
+    lang: en
+  freq: 177.00000
+  origins: ["Supaplex"]
+##  anti   ################################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: anti
+    lang: en
+  freq: 143.00000
+  origins: ["Supaplex"]
+##  clockwise   ############################################################# single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: clockwise
+    lang: en
+  freq: 44.00000
+  origins: ["Supaplex"]
+##  joystick   ############################################################## single term only|no img|no cs term|t0:tts:missing|t0:pron:missing
+- terms: 
+  - term: joystick
+    lang: en
+  freq: 11.00000
+  origins: ["Supaplex"]
 
 examples: 
 - terms: 
