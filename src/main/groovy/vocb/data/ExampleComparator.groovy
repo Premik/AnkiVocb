@@ -92,8 +92,12 @@ public class ExampleComparator {
 		return best
 	}
 	
-	List<ExampleComparatorMatch> bestExamplesFrom(Iterable<ExampleComparator> bs) {
+	List<ExampleComparatorMatch> bestFromComparators(Iterable<ExampleComparator> bs) {
 		bestExamplesFrom(bs.stream())
+	}
+	
+	List<ExampleComparatorMatch> bestFromExamples(Stream<Example> ex) {
+		bestExamplesFrom(ex.map(ExampleComparator.&of))
 	}
 
 }

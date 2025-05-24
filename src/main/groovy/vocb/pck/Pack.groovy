@@ -126,7 +126,7 @@ public class Pack {
 			}
 		}
 		println "Size: ${list.size()}" 
-		dbMan.withBestExample(INVISIBLE_TEXT) {  }
+		
 		
 	}
 

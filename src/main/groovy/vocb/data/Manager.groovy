@@ -430,6 +430,7 @@ public class Manager {
 		conceptsFromWordsInSentence(e.firstTerm)
 	}
 
+	@Deprecated
 	public Example findBestExampleForSentence(String sentence) {
 		Set<String> words = wn.uniqueueTokens(sentence)
 		Set<Example> cand =  words.collectMany {String w->
@@ -441,7 +442,13 @@ public class Manager {
 			wn.commonWordOf(e.firstTerm, sentence).size()*100 - e.firstTerm.length()
 		}
 	}
+	
+	
+	public List<ExampleComparatorMatch> bestExampleForSentence(String sentence) {
+		ExampleComparator.of(sentence).bestFromExamples(db.examples.stream())
+	}
 
+	@Deprecated
 	public void withBestExample(String text, Closure cl) {
 		List<String> snts = wn.sentences(text)
 		assert snts

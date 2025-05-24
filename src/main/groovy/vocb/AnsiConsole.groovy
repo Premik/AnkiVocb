@@ -1,56 +1,11 @@
 package vocb;
 
+import static org.junit.Assert.*
 // https://gist.github.com/tvinke/db4d21dfdbdae49e6f92dcf1ca6120de
 // Ansi colors in Groovy
 // Author: Ted Vinke
 import static vocb.Ansi.*
 
-def test() {
-	println color("BOLD", AnsiConsole.BOLD)
-	println color("ITALIC", AnsiConsole.ITALIC)
-	println color("UNDERLINE", AnsiConsole.UNDERLINE)
-	println color("BLINK", AnsiConsole.BLINK)
-	println color("RAPID_BLINK", AnsiConsole.RAPID_BLINK)
-	println color("REVERSE_VIDEO", AnsiConsole.REVERSE_VIDEO)
-	println color("INVISIBLE_TEXT", AnsiConsole.INVISIBLE_TEXT)
-
-	println color("RED", AnsiConsole.RED)
-	println color("BLACK", AnsiConsole.BLACK)
-	println color("BOLD", AnsiConsole.BOLD)
-	println color("GREEN", AnsiConsole.GREEN)
-	println color("YELLOW", AnsiConsole.YELLOW)
-	println color("BLUE", AnsiConsole.BLUE)
-	println color("MAGENTA", AnsiConsole.MAGENTA)
-	println color("CYAN", AnsiConsole.CYAN)
-	println color("WHITE", AnsiConsole.WHITE)
-	println color("DARK_GRAY", AnsiConsole.DARK_GRAY)
-	println color("LIGHT_BLUE", AnsiConsole.LIGHT_BLUE)
-	println color("LIGHT_GREEN", AnsiConsole.LIGHT_GREEN)
-	println color("LIGHT_CYAN", AnsiConsole.LIGHT_CYAN)
-	println color("LIGHT_RED", AnsiConsole.LIGHT_RED)
-	println color("LIGHT_PURPLE", AnsiConsole.LIGHT_PURPLE)
-	println color("LIGHT_YELLOW", AnsiConsole.LIGHT_YELLOW)
-
-	println(
-			[
-				'Look',
-				AnsiConsole.LIGHT_RED,
-				'ma',
-				AnsiConsole.REVERSE_VIDEO,
-				',',
-				AnsiConsole.GREEN,
-				'no ',
-				AnsiConsole.MAGENTA,
-				'hands!',
-				AnsiConsole.LIGHT_YELLOW
-			]
-			.collate(2)
-			.collect { pair ->
-				color(pair.first(), pair.last())
-			}.join(' ')
-			)
-
-}
 /**
  * Small ANSI coloring utility.
  *
@@ -91,3 +46,53 @@ public class Ansi {
 	}
 
 }
+
+
+def test() {
+	println color("BOLD", Ansi.BOLD)
+	println color("ITALIC", Ansi.ITALIC)
+	println color("UNDERLINE", Ansi.UNDERLINE)
+	println color("BLINK", Ansi.BLINK)
+	println color("RAPID_BLINK", Ansi.RAPID_BLINK)
+	println color("REVERSE_VIDEO", Ansi.REVERSE_VIDEO)
+	println color("INVISIBLE_TEXT", Ansi.INVISIBLE_TEXT)
+
+	println color("RED", Ansi.RED)
+	println color("BLACK", Ansi.BLACK)
+	println color("BOLD", Ansi.BOLD)
+	println color("GREEN", Ansi.GREEN)
+	println color("YELLOW", Ansi.YELLOW)
+	println color("BLUE", Ansi.BLUE)
+	println color("MAGENTA", Ansi.MAGENTA)
+	println color("CYAN", Ansi.CYAN)
+	println color("WHITE", Ansi.WHITE)
+	println color("DARK_GRAY", Ansi.DARK_GRAY)
+	println color("LIGHT_BLUE", Ansi.LIGHT_BLUE)
+	println color("LIGHT_GREEN", Ansi.LIGHT_GREEN)
+	println color("LIGHT_CYAN", Ansi.LIGHT_CYAN)
+	println color("LIGHT_RED", Ansi.LIGHT_RED)
+	println color("LIGHT_PURPLE", Ansi.LIGHT_PURPLE)
+	println color("LIGHT_YELLOW", Ansi.LIGHT_YELLOW)
+
+	println(
+			[
+				'Look',
+				Ansi.LIGHT_RED,
+				'ma',
+				Ansi.REVERSE_VIDEO,
+				',',
+				Ansi.GREEN,
+				'no ',
+				Ansi.MAGENTA,
+				'hands!',
+				Ansi.LIGHT_YELLOW
+			]
+			.collate(2)
+			.collect { pair ->
+				color(pair.first(), pair.last())
+			}.join(' ')
+			)
+
+}
+
+test()
