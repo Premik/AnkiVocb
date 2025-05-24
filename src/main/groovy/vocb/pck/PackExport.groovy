@@ -50,7 +50,7 @@ public class PackExport {
 		if (!info?.sentences) return Stream.empty()
 		collectSentencesForExport(info.sentencesText)
 		assert dbMan
-		return  examplesToExport.stream()
+		examplesToExport.stream()
 				.flatMap {Example e->
 					dbMan.conceptsFromWordsInExample(e).stream().filter {Concept c->
 						//If strictlyWordlist, exclude concept which are not listed in the pack wordlist
@@ -69,7 +69,9 @@ public class PackExport {
 			Concept c =dbMan.conceptByFirstTerm[w]
 			if (c == null) println "Concept not found for word:'${color(w, BOLD)}'"
 			return c
-		}.map { Concept c->
+		}
+		.filter {it!=null}
+		.map { Concept c->
 			new ExportItem(concept: c)
 		}
 	}

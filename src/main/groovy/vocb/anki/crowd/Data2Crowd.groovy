@@ -8,6 +8,7 @@ import java.nio.file.Paths
 import java.util.regex.Pattern
 import java.util.stream.Stream
 
+import groovy.transform.CompileStatic
 import vocb.Helper
 import vocb.conf.ConfHelper
 import vocb.data.Concept
@@ -171,6 +172,8 @@ public class Data2Crowd {
 
 
 	void mapConcept(Concept c, Example e) {
+		assert c
+		assert e
 		if (c.state == "ignore") return
 			assert c?.firstTerm
 		println c
@@ -205,7 +208,7 @@ public class Data2Crowd {
 		return targetM
 	}
 
-	void renderDeckDescriptionTemplate(ConfigObject deckDescriptionPreview = cfg.render.deckDescriptionRender) {
+	void renderDeckDescriptionTemplate(ConfigObject deckDescriptionPreview = cfg.render.deckDescriptionRender) {		
 		assert deckDescriptionPreview
 		vocbModel.parser.deckDesc = render.render(deckDescriptionPreview)
 	}
@@ -273,11 +276,12 @@ public class Data2Crowd {
 		exportConceptsToCrowd(cps)
 	}
 
+	@CompileStatic
 	void export(Stream<ExportItem> exp) {
 		assert exp
 		prepareVocbModel()
 		exp.forEach(this.&mapConcept)
-
+		
 		vocbModel.save()
 	}
 
