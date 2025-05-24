@@ -35,8 +35,14 @@ class SSMLTest {
 		GPathResult xml = Helper.parseXml(s)
 		assert xml
 		assert xml.prosody.prosody == "as" 
-		println s
-		
+		println s		
+	}
+	
+	@Test
+	void splitStrange() {
+		def (a,b,c) =  Helper.splitBy("Film was shot using hand-held camera.", "held")
+		assert b == "held"
+		println "'$a' '$b' '$c'" 
 	}
 	
 	
