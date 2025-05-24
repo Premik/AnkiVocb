@@ -57,7 +57,7 @@ public class CsTSSAppender {
 
 	public static void main(String[] args) {
 		new CsTSSAppender().with {
-			limit = 1
+			limit = 5
 			synth()
 		}
 		println "Done"
