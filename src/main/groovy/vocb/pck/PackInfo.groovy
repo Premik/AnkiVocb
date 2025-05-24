@@ -20,15 +20,18 @@ import groovy.transform.ToString
 public class PackInfo {
 	
 	String name	
+	Path packagePath
+	ParentInfo parent
+	
 	Path destRootFolder = Paths.get("/tmp/work")
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
 	
 	
 	
-	@Lazy Path packagePath = packageRootPath.resolve(name)
 	@Lazy Path infoConfPath = packagePath.resolve("info.conf")
 	@Lazy Path sentencesPath = packagePath.resolve("sentences.txt")
 	@Lazy Path wordsPath= packagePath.resolve("words.txt")
+	
 	@Lazy ConfigObject infoCfg =  {
 		if (!Files.exists(infoConfPath)) return new ConfigObject()
 		return new ConfigSlurper().parse(infoConfPath.text)
@@ -82,5 +85,7 @@ public class PackInfo {
 		//return "ankivocb-${p[0..3]}-${p[4..7]}-${p[8..11]}-${p[11..22]}"
 		return "ankivocb-2020-${p[0..21]}"
 	}
+	
+	
 		
 }

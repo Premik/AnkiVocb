@@ -348,10 +348,12 @@ public class Helper {
 		owner.@"$propName" = propValue
 	}
 	
+	public static Closure<Boolean> subFolderFilter = { File f->
+		f.isDirectory() && !f.isHidden() && ![".", ".."].contains(f.name)
+	}
+	
 	public static int subFolderCountIn(Path p) {
-		p.toFile().listFiles().count { File f->
-			f.isDirectory() && !f.isHidden() && ![".", ".."].contains(f.name) 
-		}
+		p.toFile().listFiles().count (subFolderFilter)
 	}
 	
 	
