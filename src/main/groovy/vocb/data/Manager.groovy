@@ -67,7 +67,9 @@ public class Manager {
 	}
 
 	public Concept findConceptByFirstTermAnyVariant(String firstTerm) {
-		wn.wordVariants(firstTerm).collect {conceptByFirstTerm[it] }.find()
+		wn.wordVariants(wn.stripBracketsOut(firstTerm))
+		.collect {conceptByFirstTerm[it] }
+		.find()
 	}
 
 	void reindex() {
@@ -79,7 +81,7 @@ public class Manager {
 
 		ignoreConcepts.clear()
 		db.concepts.each { Concept c->
-			String ft = c.firstTerm
+			String ft = wn.stripBracketsOut(c.firstTerm)
 			if (conceptByFirstTerm.containsKey(ft)) {
 				System.err.println("Warninig: duplicate word '$ft'")
 			}
