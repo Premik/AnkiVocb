@@ -25,14 +25,20 @@ public class CsTSSAppender {
 				//println "Ignoring: $c"
 				return
 			}
-			if (!dbMan.linkedMediaExists(t.tts) && i <limit ) {
-				i++;
-				t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
-					ttsCz.synth(t.term, "violka", p.toString() )
-					dbMan.save()
-				}
+			if (i >limit) {
+
+				return
 			}
+
+			
+			t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
+				ttsCz.synth(t.term, "violka", p.toString() )
+				i++;
+				dbMan.save()
+			}
+			
 		}
+		dbMan.save()
 	}
 
 

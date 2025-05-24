@@ -79,22 +79,22 @@ public class EnTSSAppender {
 			String enWord = c.firstTerm
 
 			String tts = enTts.SSMLEmphSubstr(enSample.term, enWord )
-			if (!dbMan.linkedMediaExists(enSample.term) ) {
-				enSample.tts = dbMan.resolveMedia(enSample.term, "mp3") { Path path ->
-					Process p=  enTts.synth(tts, "neural", someVoice, "ssml", path.toString())
-					Helper.printProcOut(p)
-					p.waitFor(10, TimeUnit.SECONDS)
-					dbMan.save()
-					Thread.sleep(sleep)
-				}
+
+			enSample.tts = dbMan.resolveMedia(enSample.term, "mp3") { Path path ->
+				Process p=  enTts.synth(tts, "neural", someVoice, "ssml", path.toString())
+				Helper.printProcOut(p)
+				p.waitFor(10, TimeUnit.SECONDS)
+				dbMan.save()
+				Thread.sleep(sleep)
 			}
 		}
+		dbMan.save()
 	}
 
 
 	public static void main(String[] args) {
 		EnTSSAppender a = new EnTSSAppender(limit:100)
-		//a.runTerms()
+		a.runTerms()
 		a.runExamples()
 		println "Done"
 	}

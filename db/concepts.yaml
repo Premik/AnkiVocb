@@ -1524,7 +1524,7 @@ concepts:
   img: two.jpeg
   freq: 802196.50000
   origins: ["corpus"]
-##  these   ################################################################# █ 96%
+##  these   #################################################################
 - terms: 
   - term: these
     lang: en
@@ -1533,6 +1533,8 @@ concepts:
     lang: cs
     tts: tyto.mp3
   - term: těchto
+    lang: cs
+    tts: techto.mp3
   examples: 
   - term: What do these messages mean?
     lang: en
@@ -1582,7 +1584,7 @@ concepts:
   img: get.jpeg
   freq: 778635.00000
   origins: ["corpus"]
-##  other   ################################################################# █ 96%
+##  other   #################################################################
 - terms: 
   - term: other
     lang: en
@@ -1591,6 +1593,8 @@ concepts:
     lang: cs
     tts: jine.mp3
   - term: další
+    lang: cs
+    tts: dalsi.mp3
   examples: 
   - term: Are there other variants?
     lang: en
@@ -1601,7 +1605,7 @@ concepts:
   img: other.jpeg
   freq: 773847.50000
   origins: ["corpus"]
-##  us   #################################################################### █ 96%
+##  us   ####################################################################
 - terms: 
   - term: us
     lang: en
@@ -1610,6 +1614,8 @@ concepts:
     lang: cs
     tts: nas.mp3
   - term: nám
+    lang: cs
+    tts: nam.mp3
   examples: 
   - term: Hurry before he finds us.
     lang: en
@@ -2124,7 +2130,7 @@ concepts:
   img: never.jpeg
   freq: 581128.50000
   origins: ["corpus"]
-##  life   ################################################################## █ 95%
+##  life   ##################################################################
 - terms: 
   - term: life
     lang: en
@@ -2133,14 +2139,12 @@ concepts:
     lang: cs
     tts: zivot.mp3
   examples: 
-  - term: The game is his life.
+  - term: We are trying to save her life!
     lang: en
-  - term: Ta hra je jeho život.
-    lang: cs
-  - term: Trying to save her life!
-    lang: en
+    tts: We are trying to save her life.mp3
   - term: Snažíme se jí zachránit život!
     lang: cs
+    tts: Snazime se ji zachranit zivot.mp3
   img: life.jpeg
   freq: 579285.00000
   origins: ["corpus"]
@@ -2662,7 +2666,7 @@ concepts:
   state: ignoreImage
   freq: 449921.50000
   origins: ["corpus"]
-##  seemed   ################################################################ █ 95%
+##  seemed   ################################################################
 - terms: 
   - term: seemed
     lang: en
@@ -2676,8 +2680,10 @@ concepts:
   examples: 
   - term: It seemed like a good place.
     lang: en
+    tts: It seemed like a good place.mp3
   - term: Vypadalo to jako dobré místo.
     lang: cs
+    tts: Vypadalo to jako dobre misto.mp3
   state: ignoreImage
   freq: 447884.00000
   origins: ["corpus"]
@@ -7053,7 +7059,7 @@ concepts:
     tts: za.mp3
   freq: 121776.00000
   origins: ["corpus"]
-##  cause   ################################################################# ▄ 47%
+##  cause   ################################################################# ▄ 49%
 - terms: 
   - term: cause
     lang: en
@@ -7062,5 +7068,6 @@ concepts:
     tts: zpusobit.mp3
   - term: příčina
     lang: cs
+    tts: pricina.mp3
   freq: 121764.50000
   origins: ["corpus"]
