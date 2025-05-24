@@ -2,6 +2,7 @@ package vocb.anki.crowd
 
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.util.regex.Pattern
 
 import vocb.ConfHelper
 import vocb.Helper
@@ -21,7 +22,12 @@ public class Data2Crowd {
 	Path rootPath= Paths.get("/data/src/AnkiVocb")
 	Path dataPath= rootPath.resolve("db")
 	Path templatePath = ["src", "main", "resources", "template"].inject(rootPath) { Path p, String ch-> p.resolve(ch)}
+	String pkgName
+	@Lazy Path pkgPath = rootPath.resolve("pkg").resolve(pkgName)
+	@Lazy String backgroundName = "_${pkgName}Background"
+	
 	List<CharSequence> staticMedia = ["_lightBulb.png" as CharSequence]
+	
 
 	CharSequence destCrowdRootFolder = "/tmp/work/test"
 	@Lazy Render render = new Render(cfgHelper:cfgHelper)
@@ -41,7 +47,13 @@ public class Data2Crowd {
 				destCrowdRootFolder: Paths.get(destCrowdRootFolder),
 				resolveMediaLink: {String mediaLink ->
 					String fn = new File(mediaLink).name
-					List<Path> resolved = Helper.matchingFiles([dataPath, templatePath], fn)
+					List<String> lookupPaths = [pkgPath, dataPath, templatePath]
+					
+					List<Path> resolved = Helper.matchingFiles(lookupPaths, fn) //Exact match first
+					if (!resolved) {
+						Pattern fnP = ~/${Pattern.quote(fn)}\.?(jpeg|jpg|png|mp3|gif)?/
+						resolved = Helper.matchingFiles(lookupPaths, fnP) //Any extension						
+					}
 					if (!resolved) { //Non-existing. Assume db/media
 						return dataPath.resolve("media").resolve(mediaLink)
 					}
@@ -76,6 +88,7 @@ public class Data2Crowd {
 
 			img= link(c?.img)
 			freq= stars
+			background = thisObject.backgroundName
 			foreign= ent.term
 			foreignTTS= link(ent?.tts)
 			foreignExample= enx?.term
