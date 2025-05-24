@@ -207,7 +207,7 @@ public class Data2Crowd {
 	}
 
 	@CompileDynamic
-	void renderDeckDescriptionTemplate(ConfigObject deckDescriptionPreview = cfg.render.deckDescriptionRender) {		
+	void renderDeckDescriptionTemplate(ConfigObject deckDescriptionPreview = cfgHelper.config.render.deckDescriptionRender) {		
 		assert deckDescriptionPreview
 		vocbModel.parser.deckDesc = render.render(deckDescriptionPreview)
 	}
@@ -216,13 +216,13 @@ public class Data2Crowd {
 	@CompileDynamic
 	private void prepareVocbModel() {
 
-		String pfx = cfg.packageRootPrefix?:"Vocb::"
+		String pfx = cfgHelper.config.packageRootPrefix?:"Vocb::"
 		vocbModel.parser.deckName =   "${pfx}${info.displayName}"
 		vocbModel.parser.deckCrowdUuid = info.uuid
 		renderDeckDescriptionTemplate()
 
 		vocbModel.notes.clear()
-		renderCardTemplate(cfg.renderCardTemplate)
+		renderCardTemplate(cfgHelper.config.renderCardTemplate)
 
 		Path bckg = resolveMediaLink(addExtensionToMediaLink(info.backgroundName))
 		if (!bckg) {
