@@ -81,7 +81,7 @@ public class Manager {
 
 	public String termd2MediaLink(String mediaName, String mediaExt="", String[] groups=[]) {
 		assert mediaName : "The media name is blank"
-		if (mediaExt) mediaExt = ".$mediaExt" 
+		if (mediaExt) mediaExt = ".$mediaExt"
 		"${Helper.word2Key(mediaName)}$mediaExt"
 	}
 
@@ -115,8 +115,8 @@ public class Manager {
 		db.concepts.sum {it.completeness} / db.concepts.size()
 	}
 
-	public Map<String, List<Concept>> groupByMedia(boolean stripExt=false, boolean includeImg=true) {
-		Map<String, List<Concept>> ret = [:].withDefault {[]}
+	public Map<String, Set<Concept>> groupByMedia(boolean stripExt=false, boolean includeImg=true) {
+		Map<String, List<Concept>> ret = [:].withDefault {[] as LinkedHashSet}
 		db.concepts.each { Concept c->
 			if (c.img && includeImg) {
 				ret[c.img]+= c
@@ -139,20 +139,34 @@ public class Manager {
 	}
 
 	public void findBrokenMedia() {
-		Map<String, List<Concept>> grp = groupByMedia()
-		grp.each { String mp, List<Concept> cs->
+
+		Map<String, Set<Concept>> grp = groupByMedia()
+
+		println "${'-'*80}"
+		println "Missing:"
+		grp.each { String mp, Set<Concept> cs->
 			if (!linkedMediaExists(mp)) {
-				println "${mp} not found. $cs"
+				println "${mp} $cs"
 			}
 		}
+		println "${'-'*80}"
 		println "Not used:"
 		mediaPath.toFile().eachFile { File f->
 			if ( !grp.containsKey(f.name)) {
 				println "rm -f ${f}"
-				
-			}  
+
+			}
 		}
-		
+		println "${'-'*80}"
+		println "Clashes"
+		grp.findAll{it.value.size() > 1} each {String ml, Set<Concept> cs->
+			List<Term> termsWithTts = cs.collectMany {it.terms.values().findAll {it.tts == ml} }
+			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
+				println "${cs.collect {it.firstTerm} }  $ml: ${termsWithTts}. $cs"
+			}
+		}
+		println "${'-'*80}"
+
 
 	}
 
