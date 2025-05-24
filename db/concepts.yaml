@@ -11761,7 +11761,7 @@ concepts:
     pron: meɪl
   - term: mail
     lang: cs
-    tts: cs-terms/mail.mp3
+    tts: cs-terms/pošta.mp3
   - term: pošta
     lang: cs
     tts: cs-terms/posta.mp3
@@ -11790,7 +11790,6 @@ concepts:
     tts: cs-terms/naklad.mp3
   img: img/freight.jpeg
   freq: 6525.00000
-##  puffs   ################################################################# no img
 - terms: 
   - term: puffs
     lang: en
@@ -11802,8 +11801,8 @@ concepts:
   - term: bafá
     lang: cs
     tts: cs-terms/bafa.mp3
+  img: img/puffs.jpeg
   freq: 4673.00000
-##  shunting   ############################################################## no img
 - terms: 
   - term: shunting
     lang: en
@@ -11812,8 +11811,8 @@ concepts:
   - term: odstavovat na vedlejší kolej
     lang: cs
     tts: cs-samples/odstavovat na vedlejsi kolej.mp3
+  img: img/shunting.jpeg
   freq: 2000.00000
-##  huffs   ################################################################# no img
 - terms: 
   - term: huffs
     lang: en
@@ -11822,8 +11821,8 @@ concepts:
   - term: funí
     lang: cs
     tts: cs-terms/funi.mp3
+  img: img/huffs.jpeg
   freq: 488.00000
-##  cheeky   ################################################################ no img
 - terms: 
   - term: cheeky
     lang: en
@@ -11835,8 +11834,8 @@ concepts:
   - term: hubatý
     lang: cs
     tts: cs-terms/hubaty.mp3
+  img: img/cheeky.jpeg
   freq: 276.00000
-##  hauling   ############################################################### no img
 - terms: 
   - term: hauling
     lang: en
@@ -11848,8 +11847,8 @@ concepts:
   - term: přepravuje
     lang: cs
     tts: cs-terms/prepravuje.mp3
+  img: img/hauling.jpeg
   freq: 120.00000
-##  toots   ################################################################# no img
 - terms: 
   - term: toots
     lang: en
@@ -11861,8 +11860,8 @@ concepts:
   - term: houká
     lang: cs
     tts: cs-terms/houka.mp3
+  img: img/toots.jpeg
   freq: 63.00000
-##  diesel   ################################################################ no img
 - terms: 
   - term: diesel
     lang: en
@@ -11874,6 +11873,7 @@ concepts:
   - term: vznětový
     lang: cs
     tts: cs-terms/vznetovy.mp3
+  img: img/diesel.jpeg
   freq: 22.00000
 
 examples: 
