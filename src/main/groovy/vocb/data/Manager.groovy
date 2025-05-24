@@ -217,8 +217,9 @@ public class Manager {
 	
 	
 	
-	public void findBrokenMedia() {
-
+	public void validate() {
+		
+		db.validate().each {println it}
 		Map<CharSequence, Set<Concept>> grp = groupByMedia()
 
 		println "${'-'*80}"
@@ -330,24 +331,12 @@ public class Manager {
 		save()
 	}
 
-	/*void moveSamples() {
-		LinkedHashSet<Example> ret  = [] as LinkedHashSet
-		db.concepts.each { Concept c->
-			if (c.examples) {
-				ret.addAll( new Example(terms: c.examples.values().collect()))
-			}
-		}
-		//ret.sort {it.firstTerm}
-		db.examples = ret.collect()
-		db.concepts.each {it.examples.clear()}
-
-	}*/
 
 
 	public static void main(String[] args) {
 		new Manager().tap {
 			load()
-			findBrokenMedia()
+			validate()
 			printStats()
 			
 			//moveToSubFolders()

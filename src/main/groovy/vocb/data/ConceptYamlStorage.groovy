@@ -81,7 +81,7 @@ public class ConceptYamlStorage {
 		"version: $db.version\n${yamlHash('concepts', concepts)}\n${yamlHash('examples', samples)}"
 	}
 
-	void appendBanner(String label, String warnings, StringBuilder sb, int width=70) {
+	void appendBanner(String label, String warnings, StringBuilder sb, int width=70) {		
 		if (!label) return
 			sb.append("##  ")
 		sb.append(label)
@@ -99,6 +99,8 @@ public class ConceptYamlStorage {
 		String ft = e.firstTerm
 		assert ft : "Term list is blank for a sample $e"
 
+		String v = e.validate().join("|")
+		if (v) appendBanner(ft, v, sb)
 		appendYamlHash("terms", examples, sb)
 		return sb.toString()
 	}
