@@ -26,15 +26,15 @@ concepts:
 - terms: 
   - term: a
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: ve
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: the
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: of
     lang: en
@@ -437,8 +437,8 @@ concepts:
     lang: en
   - term: k
     lang: cs
-  state: ignore
   freq: 2641417.00000
+  profileName: ignore
 - terms: 
   - term: said
     lang: en
@@ -580,8 +580,8 @@ concepts:
   - term: bych
     lang: cs
     tts: cs-terms/bych.mp3
-  state: ignoreImage
   freq: 1663186.50000
+  profileName: strictNoImg
 - terms: 
   - term: has
     lang: en
@@ -1026,8 +1026,8 @@ concepts:
 - terms: 
   - term: def
     lang: en
-  state: ignore
   freq: 748992.00000
+  profileName: ignore
 - terms: 
   - term: she
     lang: en
@@ -1069,8 +1069,8 @@ concepts:
     lang: en
   - term: na
     lang: cs
-  state: ignore
   freq: 740814.00000
+  profileName: ignore
 - terms: 
   - term: only
     lang: en
@@ -1630,8 +1630,8 @@ concepts:
   - term: shall
     lang: en
     tts: en-terms/shall.mp3
-  state: ignore
   freq: 449921.50000
+  profileName: ignore
 - terms: 
   - term: seemed
     lang: en
@@ -1687,8 +1687,8 @@ concepts:
 - terms: 
   - term: de
     lang: cs
-  state: ignore
   freq: 433393.00000
+  profileName: ignore
 - terms: 
   - term: way
     lang: en
@@ -2106,8 +2106,8 @@ concepts:
     lang: en
   - term: ty
     lang: cs
-  state: ignore
   freq: 355857.00000
+  profileName: ignore
 - terms: 
   - term: cannot
     lang: en
@@ -2216,8 +2216,8 @@ concepts:
   - term: převzaty
     lang: cs
     tts: cs-terms/prevzaty.mp3
-  state: ignore
   freq: 335210.00000
+  profileName: ignore
 - terms: 
   - term: night
     lang: en
@@ -2313,8 +2313,8 @@ concepts:
 - terms: 
   - term: gutenberg
     lang: en
-  state: ignore
   freq: 328324.00000
+  profileName: ignore
 - terms: 
   - term: still
     lang: en
@@ -2467,8 +2467,8 @@ concepts:
     lang: en
   - term: tvé
     lang: cs
-  state: ignore
   freq: 304489.00000
+  profileName: ignore
 - terms: 
   - term: though
     lang: en
@@ -2707,8 +2707,8 @@ concepts:
     lang: en
   - term: tobě
     lang: cs
-  state: ignore
   freq: 269414.00000
+  profileName: ignore
 - terms: 
   - term: each
     lang: en
@@ -3165,8 +3165,8 @@ concepts:
 - terms: 
   - term: er
     lang: en
-  state: ignore
   freq: 230485.00000
+  profileName: ignore
 - terms: 
   - term: believe
     lang: en
@@ -3608,8 +3608,8 @@ concepts:
 - terms: 
   - term: sn
     lang: en
-  state: ignore
   freq: 198498.00000
+  profileName: ignore
 - terms: 
   - term: four
     lang: en
@@ -3864,8 +3864,8 @@ concepts:
     lang: en
   - term: vy
     lang: cs
-  state: ignore
   freq: 182978.00000
+  profileName: ignore
 - terms: 
   - term: poor
     lang: en
@@ -4215,8 +4215,8 @@ concepts:
 - terms: 
   - term: ety
     lang: en
-  state: ignore
   freq: 168713.00000
+  profileName: ignore
 - terms: 
   - term: hundred
     lang: en
@@ -4378,8 +4378,8 @@ concepts:
     lang: cs
   - term: mílí
     lang: cs
-  state: ignore
   freq: 163341.00000
+  profileName: ignore
 - terms: 
   - term: state
     lang: en
@@ -4569,8 +4569,8 @@ concepts:
 - terms: 
   - term: la
     lang: en
-  state: ignore
   freq: 154457.00000
+  profileName: ignore
 - terms: 
   - term: matter
     lang: en
@@ -4889,8 +4889,8 @@ concepts:
     lang: cs
   - term: o autorských právech
     lang: cs
-  state: ignore
   freq: 145244.00000
+  profileName: ignore
 - terms: 
   - term: group
     lang: en
@@ -5058,8 +5058,8 @@ concepts:
     lang: cs
   - term: jest
     lang: cs
-  state: ignore
   freq: 141246.00000
+  profileName: ignore
 - terms: 
   - term: wanted
     lang: en
@@ -5284,8 +5284,8 @@ concepts:
     lang: cs
   - term: doktor
     lang: cs
-  state: ignore
   freq: 135902.00000
+  profileName: ignore
 - terms: 
   - term: lived
     lang: en
@@ -5350,8 +5350,8 @@ concepts:
     lang: en
   - term: ke
     lang: cs
-  state: ignore
   freq: 134048.00000
+  profileName: ignore
 - terms: 
   - term: land
     lang: en
@@ -5468,8 +5468,8 @@ concepts:
     lang: en
   - term: k
     lang: cs
-  state: ignore
   freq: 129478.00000
+  profileName: ignore
 - terms: 
   - term: lips
     lang: en
@@ -5487,8 +5487,8 @@ concepts:
     lang: cs
   - term: trval
     lang: cs
-  state: ignore
   freq: 129411.00000
+  profileName: ignore
 - terms: 
   - term: truth
     lang: en
@@ -5685,8 +5685,8 @@ concepts:
 - terms: 
   - term: blockquote
     lang: en
-  state: ignore
   freq: 123703.00000
+  profileName: ignore
 - terms: 
   - term: hard
     lang: en
@@ -7201,8 +7201,8 @@ concepts:
 - terms: 
   - term: don
     lang: en
-  state: ignore
   freq: 49305.00000
+  profileName: ignore
 - terms: 
   - term: data
     lang: en
@@ -8044,8 +8044,8 @@ concepts:
   - term: který
     lang: cs
     tts: cs-terms/ktery.mp3
-  state: ignoreImage
   freq: 21910.90650
+  profileName: strictNoImg
 - terms: 
   - term: emotions
     lang: en
@@ -8556,8 +8556,8 @@ concepts:
 - terms: 
   - term: re
     lang: en
-  state: ignore
   freq: 10479.44000
+  profileName: ignore
 - terms: 
   - term: alert
     lang: en
@@ -8843,8 +8843,8 @@ concepts:
 - terms: 
   - term: ll
     lang: en
-  state: ignore
   freq: 5632.08000
+  profileName: ignore
 - terms: 
   - term: arrogant
     lang: en
@@ -9048,8 +9048,8 @@ concepts:
 - terms: 
   - term: oh
     lang: en
-  state: ignore
   freq: 68285.00000
+  profileName: ignore
 - terms: 
   - term: bright
     lang: en
@@ -9223,7 +9223,7 @@ concepts:
 - terms: 
   - term: hey
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: dashing
     lang: en
@@ -9240,7 +9240,7 @@ concepts:
 - terms: 
   - term: tho
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: sleigh
     lang: en
@@ -9946,7 +9946,7 @@ concepts:
 - terms: 
   - term: vice
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: mixed
     lang: en
@@ -10009,7 +10009,7 @@ concepts:
 - terms: 
   - term: phil
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: miracle
     lang: en
@@ -10562,7 +10562,7 @@ concepts:
 - terms: 
   - term: baba
     lang: en
-  state: ignore
+  profileName: ignore
 - terms: 
   - term: path
     lang: en
@@ -10592,8 +10592,8 @@ concepts:
 - terms: 
   - term: einstein
     lang: en
-  state: ignore
   freq: 370.00000
+  profileName: ignore
 - terms: 
   - term: fair
     lang: en
@@ -11308,8 +11308,8 @@ concepts:
 - terms: 
   - term: gonna
     lang: en
-  state: ignore
   freq: 400.00000
+  profileName: ignore
 - terms: 
   - term: possum
     lang: en
@@ -11485,13 +11485,13 @@ concepts:
 - terms: 
   - term: could've
     lang: en
-  state: ignore
   freq: 22.00000
+  profileName: ignore
 - terms: 
   - term: should've
     lang: en
-  state: ignore
   freq: 18.00000
+  profileName: ignore
 - terms: 
   - term: I'm (I am)
     lang: en
@@ -11540,8 +11540,8 @@ concepts:
     lang: en
   - term: everyones
     lang: cs
-  state: ignore
   freq: 5735.00000
+  profileName: ignore
 - terms: 
   - term: learned
     lang: en
@@ -11959,8 +11959,8 @@ concepts:
     lang: en
   - term: wah
     lang: cs
-  state: ignore
   freq: 274.00000
+  profileName: ignore
 - terms: 
   - term: wipers
     lang: en
@@ -16825,8 +16825,8 @@ concepts:
     pron: bɪˈjɒnd
   - term: nad rámec
     lang: cs
-  state: ignoreImage
   freq: 81690.00000
+  profileName: relax
 - terms: 
   - term: affairs
     lang: en
@@ -16837,6 +16837,7 @@ concepts:
   - term: dění
     lang: cs
   freq: 78788.00000
+  profileName: relax
 - terms: 
   - term: sought
     lang: en
@@ -16847,6 +16848,7 @@ concepts:
   - term: usiluje
     lang: cs
   freq: 69666.00000
+  profileName: relax
 - terms: 
   - term: carriage
     lang: en
@@ -16857,6 +16859,7 @@ concepts:
   - term: vozík
     lang: cs
   freq: 61920.00000
+  profileName: relax
 - terms: 
   - term: appointed
     lang: en
@@ -16867,6 +16870,7 @@ concepts:
   - term: pověřených
     lang: cs
   freq: 55847.00000
+  profileName: relax
 - terms: 
   - term: splendid
     lang: en
@@ -16877,6 +16881,7 @@ concepts:
   - term: skvostného
     lang: cs
   freq: 48752.00000
+  profileName: relax
 - terms: 
   - term: acquaintances
     lang: en
@@ -16885,6 +16890,7 @@ concepts:
   - term: známosti
     lang: cs
   freq: 46877.00000
+  profileName: relax
 - terms: 
   - term: lest
     lang: en
@@ -16893,6 +16899,7 @@ concepts:
   - term: jinak
     lang: cs
   freq: 43949.00000
+  profileName: relax
 - terms: 
   - term: conduct
     lang: en
@@ -16903,6 +16910,7 @@ concepts:
   - term: provádět
     lang: cs
   freq: 43820.00000
+  profileName: relax
 - terms: 
   - term: dreadful
     lang: en
@@ -16913,6 +16921,7 @@ concepts:
   - term: příšerné
     lang: cs
   freq: 42801.00000
+  profileName: relax
 - terms: 
   - term: solemn
     lang: en
@@ -16923,6 +16932,7 @@ concepts:
   - term: vážný
     lang: cs
   freq: 42188.00000
+  profileName: relax
 - terms: 
   - term: admits
     lang: en
@@ -16933,6 +16943,7 @@ concepts:
   - term: přiznává
     lang: cs
   freq: 41549.00000
+  profileName: relax
 - terms: 
   - term: utterly
     lang: en
@@ -16943,6 +16954,7 @@ concepts:
   - term: nadobro
     lang: cs
   freq: 41479.00000
+  profileName: relax
 - terms: 
   - term: anxious
     lang: en
@@ -16953,6 +16965,7 @@ concepts:
   - term: bojácná
     lang: cs
   freq: 39068.00000
+  profileName: relax
 - terms: 
   - term: uttered
     lang: en
@@ -16961,6 +16974,7 @@ concepts:
   - term: pronesl
     lang: cs
   freq: 37142.00000
+  profileName: relax
 - terms: 
   - term: utter
     lang: en
@@ -16971,6 +16985,7 @@ concepts:
   - term: vyslovit
     lang: cs
   freq: 35777.00000
+  profileName: relax
 - terms: 
   - term: virtue
     lang: en
@@ -16981,6 +16996,7 @@ concepts:
   - term: titulu
     lang: cs
   freq: 34545.00000
+  profileName: relax
 - terms: 
   - term: divine
     lang: en
@@ -16989,6 +17005,7 @@ concepts:
   - term: božské
     lang: cs
   freq: 33269.00000
+  profileName: relax
 - terms: 
   - term: pursued
     lang: en
@@ -16999,6 +17016,7 @@ concepts:
   - term: pronásledoval
     lang: cs
   freq: 33135.00000
+  profileName: relax
 - terms: 
   - term: hastily
     lang: en
@@ -17009,6 +17027,7 @@ concepts:
   - term: chvatně
     lang: cs
   freq: 33032.00000
+  profileName: relax
 - terms: 
   - term: midst
     lang: en
@@ -17019,6 +17038,7 @@ concepts:
   - term: středu
     lang: cs
   freq: 31639.00000
+  profileName: relax
 - terms: 
   - term: distress
     lang: en
@@ -17029,6 +17049,7 @@ concepts:
   - term: úzkost
     lang: cs
   freq: 31131.00000
+  profileName: relax
 - terms: 
   - term: abandoned
     lang: en
@@ -17037,6 +17058,7 @@ concepts:
   - term: opuštěné
     lang: cs
   freq: 30312.00000
+  profileName: relax
 - terms: 
   - term: wrath
     lang: en
@@ -17045,6 +17067,7 @@ concepts:
   - term: hněv
     lang: cs
   freq: 29406.00000
+  profileName: relax
 - terms: 
   - term: folly
     lang: en
@@ -17055,6 +17078,7 @@ concepts:
   - term: bláznovství
     lang: cs
   freq: 29369.00000
+  profileName: relax
 - terms: 
   - term: estate
     lang: en
@@ -17065,6 +17089,7 @@ concepts:
   - term: pozůstalosti
     lang: cs
   freq: 29275.00000
+  profileName: relax
 - terms: 
   - term: concealed
     lang: en
@@ -17075,6 +17100,7 @@ concepts:
   - term: zakrývány
     lang: cs
   freq: 28468.00000
+  profileName: relax
 - terms: 
   - term: deed
     lang: en
@@ -17085,6 +17111,7 @@ concepts:
   - term: čin
     lang: cs
   freq: 28114.00000
+  profileName: relax
 - terms: 
   - term: deserted
     lang: en
@@ -17095,6 +17122,7 @@ concepts:
   - term: pustý
     lang: cs
   freq: 28082.00000
+  profileName: relax
 - terms: 
   - term: confined
     lang: en
@@ -17105,6 +17133,7 @@ concepts:
   - term: upoután
     lang: cs
   freq: 27737.00000
+  profileName: relax
 - terms: 
   - term: apt
     lang: en
@@ -17115,6 +17144,7 @@ concepts:
   - term: nakloněný
     lang: cs
   freq: 27321.00000
+  profileName: relax
 - terms: 
   - term: feast
     lang: en
@@ -17125,6 +17155,7 @@ concepts:
   - term: hody
     lang: cs
   freq: 26689.00000
+  profileName: relax
 - terms: 
   - term: faint
     lang: en
@@ -17135,6 +17166,7 @@ concepts:
   - term: omdlení
     lang: cs
   freq: 26485.00000
+  profileName: relax
 - terms: 
   - term: conscience
     lang: en
@@ -17143,6 +17175,7 @@ concepts:
   - term: svědomí
     lang: cs
   freq: 26032.00000
+  profileName: relax
 - terms: 
   - term: brethren
     lang: en
@@ -17151,6 +17184,7 @@ concepts:
   - term: bratří
     lang: cs
   freq: 25642.00000
+  profileName: relax
 - terms: 
   - term: precious
     lang: en
@@ -17161,6 +17195,7 @@ concepts:
   - term: vzácné
     lang: cs
   freq: 25304.00000
+  profileName: relax
 - terms: 
   - term: earnestly
     lang: en
@@ -17171,6 +17206,7 @@ concepts:
   - term: naléhavě
     lang: cs
   freq: 25212.00000
+  profileName: relax
 - terms: 
   - term: persuaded
     lang: en
@@ -17179,6 +17215,7 @@ concepts:
   - term: přesvědčil
     lang: cs
   freq: 24952.00000
+  profileName: relax
 - terms: 
   - term: providence
     lang: en
@@ -17187,6 +17224,7 @@ concepts:
   - term: prozřetelnost
     lang: cs
   freq: 24702.00000
+  profileName: relax
 - terms: 
   - term: gloom
     lang: en
@@ -17197,6 +17235,7 @@ concepts:
   - term: příšeří
     lang: cs
   freq: 23980.00000
+  profileName: relax
 - terms: 
   - term: foe
     lang: en
@@ -17205,6 +17244,7 @@ concepts:
   - term: nepřítel
     lang: cs
   freq: 23628.00000
+  profileName: relax
 - terms: 
   - term: slender
     lang: en
@@ -17213,6 +17253,7 @@ concepts:
   - term: štíhlé
     lang: cs
   freq: 23570.00000
+  profileName: relax
 - terms: 
   - term: perceived
     lang: en
@@ -17223,6 +17264,7 @@ concepts:
   - term: pociťované
     lang: cs
   freq: 23538.00000
+  profileName: relax
 - terms: 
   - term: consent
     lang: en
@@ -17233,6 +17275,7 @@ concepts:
   - term: svolení
     lang: cs
   freq: 23524.00000
+  profileName: relax
 - terms: 
   - term: swiftly
     lang: en
@@ -17243,6 +17286,7 @@ concepts:
   - term: urychleně
     lang: cs
   freq: 23299.00000
+  profileName: relax
 - terms: 
   - term: perceive
     lang: en
@@ -17251,6 +17295,7 @@ concepts:
   - term: vnímat
     lang: cs
   freq: 23241.00000
+  profileName: relax
 - terms: 
   - term: zeal
     lang: en
@@ -17261,6 +17306,7 @@ concepts:
   - term: nadšení
     lang: cs
   freq: 23168.00000
+  profileName: relax
 - terms: 
   - term: rage
     lang: en
@@ -17271,6 +17317,7 @@ concepts:
   - term: zuřivosti
     lang: cs
   freq: 22913.00000
+  profileName: relax
 - terms: 
   - term: scorn
     lang: en
@@ -17281,6 +17328,7 @@ concepts:
   - term: pohrdání
     lang: cs
   freq: 22638.00000
+  profileName: relax
 - terms: 
   - term: sore
     lang: en
@@ -17291,6 +17339,7 @@ concepts:
   - term: zduřený
     lang: cs
   freq: 22499.00000
+  profileName: relax
 - terms: 
   - term: forehead
     lang: en
@@ -17299,6 +17348,7 @@ concepts:
   - term: čelo
     lang: cs
   freq: 22252.00000
+  profileName: relax
 - terms: 
   - term: roar
     lang: en
@@ -17307,6 +17357,7 @@ concepts:
   - term: řev
     lang: cs
   freq: 21378.00000
+  profileName: relax
 - terms: 
   - term: cunning
     lang: en
@@ -17317,6 +17368,7 @@ concepts:
   - term: prohnaný
     lang: cs
   freq: 21027.00000
+  profileName: relax
 - terms: 
   - term: repose
     lang: en
@@ -17325,6 +17377,7 @@ concepts:
   - term: klidu
     lang: cs
   freq: 20701.00000
+  profileName: relax
 - terms: 
   - term: counsel
     lang: en
@@ -17333,6 +17386,7 @@ concepts:
   - term: rada
     lang: cs
   freq: 20261.00000
+  profileName: relax
 - terms: 
   - term: pious
     lang: en
@@ -17341,6 +17395,7 @@ concepts:
   - term: zbožný
     lang: cs
   freq: 19900.00000
+  profileName: relax
 - terms: 
   - term: pursue
     lang: en
@@ -17351,6 +17406,7 @@ concepts:
   - term: prosazovat
     lang: cs
   freq: 19628.00000
+  profileName: relax
 - terms: 
   - term: venture
     lang: en
@@ -17361,6 +17417,7 @@ concepts:
   - term: rizikovému
     lang: cs
   freq: 19305.00000
+  profileName: relax
 - terms: 
   - term: remedy
     lang: en
@@ -17371,6 +17428,7 @@ concepts:
   - term: opravení
     lang: cs
   freq: 19135.00000
+  profileName: relax
 - terms: 
   - term: ward
     lang: en
@@ -17381,6 +17439,7 @@ concepts:
   - term: schovanec
     lang: cs
   freq: 19060.00000
+  profileName: relax
 - terms: 
   - term: abide
     lang: en
@@ -17391,6 +17450,7 @@ concepts:
   - term: zůstaňte
     lang: cs
   freq: 18940.00000
+  profileName: relax
 - terms: 
   - term: garrison
     lang: en
@@ -17399,6 +17459,7 @@ concepts:
   - term: posádka
     lang: cs
   freq: 18525.00000
+  profileName: relax
 - terms: 
   - term: profound
     lang: en
@@ -17409,6 +17470,7 @@ concepts:
   - term: zásadní
     lang: cs
   freq: 18510.00000
+  profileName: relax
 - terms: 
   - term: affections
     lang: en
@@ -17419,6 +17481,7 @@ concepts:
   - term: náklonnost
     lang: cs
   freq: 18389.00000
+  profileName: relax
 - terms: 
   - term: anguish
     lang: en
@@ -17429,6 +17492,7 @@ concepts:
   - term: muka
     lang: cs
   freq: 18382.00000
+  profileName: relax
 - terms: 
   - term: weep
     lang: en
@@ -17439,6 +17503,7 @@ concepts:
   - term: plakat
     lang: cs
   freq: 18242.00000
+  profileName: relax
 - terms: 
   - term: amidst
     lang: en
@@ -17447,6 +17512,7 @@ concepts:
   - term: uprostřed
     lang: cs
   freq: 17989.00000
+  profileName: relax
 - terms: 
   - term: endure
     lang: en
@@ -17457,6 +17523,7 @@ concepts:
   - term: vydržet
     lang: cs
   freq: 17777.00000
+  profileName: relax
 - terms: 
   - term: heed
     lang: en
@@ -17467,6 +17534,7 @@ concepts:
   - term: pozornost
     lang: cs
   freq: 17636.00000
+  profileName: relax
 - terms: 
   - term: woe
     lang: en
@@ -17475,6 +17543,7 @@ concepts:
   - term: běda
     lang: cs
   freq: 17614.00000
+  profileName: relax
 - terms: 
   - term: eloquence
     lang: en
@@ -17483,6 +17552,7 @@ concepts:
   - term: výmluvnost
     lang: cs
   freq: 17537.00000
+  profileName: relax
 - terms: 
   - term: perish
     lang: en
@@ -17491,6 +17561,7 @@ concepts:
   - term: zahynout
     lang: cs
   freq: 17420.00000
+  profileName: relax
 - terms: 
   - term: consented
     lang: en
@@ -17499,6 +17570,7 @@ concepts:
   - term: souhlasil
     lang: cs
   freq: 17122.00000
+  profileName: relax
 - terms: 
   - term: prudence
     lang: en
@@ -17509,6 +17581,7 @@ concepts:
   - term: rozvážnost
     lang: cs
   freq: 17103.00000
+  profileName: relax
 - terms: 
   - term: exempt
     lang: en
@@ -17519,6 +17592,7 @@ concepts:
   - term: vyňaty
     lang: cs
   freq: 17056.00000
+  profileName: relax
 - terms: 
   - term: abundant
     lang: en
@@ -17529,6 +17603,7 @@ concepts:
   - term: vydatnými
     lang: cs
   freq: 16940.00000
+  profileName: relax
 - terms: 
   - term: clergy
     lang: en
@@ -17539,6 +17614,7 @@ concepts:
   - term: kněží
     lang: cs
   freq: 16848.00000
+  profileName: relax
 - terms: 
   - term: strain
     lang: en
@@ -17549,6 +17625,7 @@ concepts:
   - term: namáhání
     lang: cs
   freq: 16600.00000
+  profileName: relax
 - terms: 
   - term: unworthy
     lang: en
@@ -17559,6 +17636,7 @@ concepts:
   - term: nedůstojný
     lang: cs
   freq: 16547.00000
+  profileName: relax
 - terms: 
   - term: conspicuous
     lang: en
@@ -17569,6 +17647,7 @@ concepts:
   - term: okázalá
     lang: cs
   freq: 16129.00000
+  profileName: relax
 - terms: 
   - term: mob
     lang: en
@@ -17579,6 +17658,7 @@ concepts:
   - term: lůza
     lang: cs
   freq: 16028.00000
+  profileName: relax
 - terms: 
   - term: embrace
     lang: en
@@ -17589,6 +17669,7 @@ concepts:
   - term: náruč
     lang: cs
   freq: 15807.00000
+  profileName: relax
 - terms: 
   - term: oppose
     lang: en
@@ -17599,6 +17680,7 @@ concepts:
   - term: proti
     lang: cs
   freq: 15772.00000
+  profileName: relax
 - terms: 
   - term: ardent
     lang: en
@@ -17609,6 +17691,7 @@ concepts:
   - term: vroucí
     lang: cs
   freq: 15674.00000
+  profileName: relax
 - terms: 
   - term: lieutenant
     lang: en
@@ -17619,6 +17702,7 @@ concepts:
   - term: nadporučík
     lang: cs
   freq: 15641.00000
+  profileName: relax
 - terms: 
   - term: contemporary
     lang: en
@@ -17629,6 +17713,7 @@ concepts:
   - term: soudobé
     lang: cs
   freq: 15581.00000
+  profileName: relax
 - terms: 
   - term: sermon
     lang: en
@@ -17637,6 +17722,7 @@ concepts:
   - term: kázání
     lang: cs
   freq: 15389.00000
+  profileName: relax
 - terms: 
   - term: flock
     lang: en
@@ -17647,6 +17733,7 @@ concepts:
   - term: hejno
     lang: cs
   freq: 15329.00000
+  profileName: relax
 - terms: 
   - term: prudent
     lang: en
@@ -17657,6 +17744,7 @@ concepts:
   - term: uvážlivý
     lang: cs
   freq: 15248.00000
+  profileName: relax
 - terms: 
   - term: refuges
     lang: en
@@ -17667,6 +17755,7 @@ concepts:
   - term: útočiště
     lang: cs
   freq: 15111.00000
+  profileName: relax
 - terms: 
   - term: attain
     lang: en
@@ -17677,6 +17766,7 @@ concepts:
   - term: dosáhnout
     lang: cs
   freq: 14618.00000
+  profileName: relax
 - terms: 
   - term: lodge
     lang: en
@@ -17687,6 +17777,7 @@ concepts:
   - term: doupě
     lang: cs
   freq: 14209.00000
+  profileName: relax
 - terms: 
   - term: exalted
     lang: en
@@ -17697,6 +17788,7 @@ concepts:
   - term: povýšil
     lang: cs
   freq: 14179.00000
+  profileName: relax
 - terms: 
   - term: clad
     lang: en
@@ -17707,6 +17799,7 @@ concepts:
   - term: oděný
     lang: cs
   freq: 13992.00000
+  profileName: relax
 - terms: 
   - term: accord
     lang: en
@@ -17717,6 +17810,7 @@ concepts:
   - term: shodě
     lang: cs
   freq: 13965.00000
+  profileName: relax
 - terms: 
   - term: tread
     lang: en
@@ -17727,6 +17821,7 @@ concepts:
   - term: dezénu
     lang: cs
   freq: 13729.00000
+  profileName: relax
 - terms: 
   - term: bliss
     lang: en
@@ -17737,6 +17832,7 @@ concepts:
   - term: sladká
     lang: cs
   freq: 13536.00000
+  profileName: relax
 - terms: 
   - term: oppressed
     lang: en
@@ -17747,6 +17843,7 @@ concepts:
   - term: utiskovaný
     lang: cs
   freq: 13418.00000
+  profileName: relax
 - terms: 
   - term: pertaining
     lang: en
@@ -17757,6 +17854,7 @@ concepts:
   - term: náležející
     lang: cs
   freq: 13333.00000
+  profileName: relax
 - terms: 
   - term: porch
     lang: en
@@ -17765,6 +17863,7 @@ concepts:
   - term: veranda
     lang: cs
   freq: 13269.00000
+  profileName: relax
 - terms: 
   - term: stake
     lang: en
@@ -17775,6 +17874,7 @@ concepts:
   - term: sázka
     lang: cs
   freq: 13170.00000
+  profileName: relax
 - terms: 
   - term: endured
     lang: en
@@ -17785,6 +17885,7 @@ concepts:
   - term: snášel
     lang: cs
   freq: 13128.00000
+  profileName: relax
 - terms: 
   - term: righteous
     lang: en
@@ -17795,6 +17896,7 @@ concepts:
   - term: čestný
     lang: cs
   freq: 13065.00000
+  profileName: relax
 - terms: 
   - term: haunted
     lang: en
@@ -17805,6 +17907,7 @@ concepts:
   - term: pronásledovaly
     lang: cs
   freq: 13041.00000
+  profileName: relax
 - terms: 
   - term: vicinity
     lang: en
@@ -17815,6 +17918,7 @@ concepts:
   - term: sousedství
     lang: cs
   freq: 12992.00000
+  profileName: relax
 - terms: 
   - term: lantern
     lang: en
@@ -17823,6 +17927,7 @@ concepts:
   - term: lucerna
     lang: cs
   freq: 12957.00000
+  profileName: relax
 - terms: 
   - term: vacant
     lang: en
@@ -17833,6 +17938,7 @@ concepts:
   - term: neobsazeno
     lang: cs
   freq: 12837.00000
+  profileName: relax
 - terms: 
   - term: despise
     lang: en
@@ -17843,6 +17949,7 @@ concepts:
   - term: opovrhovat
     lang: cs
   freq: 12826.00000
+  profileName: relax
 - terms: 
   - term: malice
     lang: en
@@ -17853,6 +17960,7 @@ concepts:
   - term: zášť
     lang: cs
   freq: 12708.00000
+  profileName: relax
 - terms: 
   - term: plagues
     lang: en
@@ -17861,6 +17969,7 @@ concepts:
   - term: zamořují
     lang: cs
   freq: 12612.00000
+  profileName: relax
 - terms: 
   - term: utterances
     lang: en
@@ -17869,6 +17978,7 @@ concepts:
   - term: výroky
     lang: cs
   freq: 12518.00000
+  profileName: relax
 - terms: 
   - term: utterance
     lang: en
@@ -17879,6 +17989,7 @@ concepts:
   - term: projev
     lang: cs
   freq: 12518.00000
+  profileName: relax
 - terms: 
   - term: slay
     lang: en
@@ -17887,6 +17998,7 @@ concepts:
   - term: zabít
     lang: cs
   freq: 12164.00000
+  profileName: relax
 - terms: 
   - term: wickedness
     lang: en
@@ -17895,6 +18007,7 @@ concepts:
   - term: špatnosti
     lang: cs
   freq: 11785.00000
+  profileName: relax
 - terms: 
   - term: interfere
     lang: en
@@ -17905,6 +18018,7 @@ concepts:
   - term: rušit
     lang: cs
   freq: 11728.00000
+  profileName: relax
 - terms: 
   - term: creeds
     lang: en
@@ -17915,6 +18029,7 @@ concepts:
   - term: víry
     lang: cs
   freq: 11666.00000
+  profileName: relax
 - terms: 
   - term: wheat
     lang: en
@@ -17925,6 +18040,7 @@ concepts:
   - term: obilí
     lang: cs
   freq: 11542.00000
+  profileName: relax
 - terms: 
   - term: remorse
     lang: en
@@ -17935,6 +18051,7 @@ concepts:
   - term: lítost
     lang: cs
   freq: 11537.00000
+  profileName: relax
 - terms: 
   - term: dew
     lang: en
@@ -17943,6 +18060,7 @@ concepts:
   - term: rosa
     lang: cs
   freq: 11524.00000
+  profileName: relax
 - terms: 
   - term: preliminary
     lang: en
@@ -17953,6 +18071,7 @@ concepts:
   - term: úvodní
     lang: cs
   freq: 11510.00000
+  profileName: relax
 - terms: 
   - term: esteemed
     lang: en
@@ -17961,6 +18080,7 @@ concepts:
   - term: vážený
     lang: cs
   freq: 11461.00000
+  profileName: relax
 - terms: 
   - term: startling
     lang: en
@@ -17971,6 +18091,7 @@ concepts:
   - term: zarážející
     lang: cs
   freq: 11427.00000
+  profileName: relax
 - terms: 
   - term: timber
     lang: en
@@ -17981,6 +18102,7 @@ concepts:
   - term: dříví
     lang: cs
   freq: 11402.00000
+  profileName: relax
 - terms: 
   - term: onward
     lang: en
@@ -17989,6 +18111,7 @@ concepts:
   - term: kupředu
     lang: cs
   freq: 11316.00000
+  profileName: relax
 - terms: 
   - term: endowed
     lang: en
@@ -17999,6 +18122,7 @@ concepts:
   - term: obdařen
     lang: cs
   freq: 11266.00000
+  profileName: relax
 - terms: 
   - term: wander
     lang: en
@@ -18009,6 +18133,7 @@ concepts:
   - term: bloudit
     lang: cs
   freq: 11175.00000
+  profileName: relax
 - terms: 
   - term: laden
     lang: en
@@ -18019,6 +18144,7 @@ concepts:
   - term: obtěžkaný
     lang: cs
   freq: 10992.00000
+  profileName: relax
 - terms: 
   - term: celestial
     lang: en
@@ -18029,6 +18155,7 @@ concepts:
   - term: nebeském
     lang: cs
   freq: 10655.00000
+  profileName: relax
 - terms: 
   - term: realm
     lang: en
@@ -18039,6 +18166,7 @@ concepts:
   - term: říše
     lang: cs
   freq: 10651.00000
+  profileName: relax
 - terms: 
   - term: traitors
     lang: en
@@ -18047,6 +18175,7 @@ concepts:
   - term: zrádci
     lang: cs
   freq: 10609.00000
+  profileName: relax
 - terms: 
   - term: ridge
     lang: en
@@ -18057,6 +18186,7 @@ concepts:
   - term: hřbet
     lang: cs
   freq: 10515.00000
+  profileName: relax
 - terms: 
   - term: bud
     lang: en
@@ -18067,6 +18197,7 @@ concepts:
   - term: rašit
     lang: cs
   freq: 10439.00000
+  profileName: relax
 - terms: 
   - term: hail
     lang: en
@@ -18077,6 +18208,7 @@ concepts:
   - term: zdar
     lang: cs
   freq: 10423.00000
+  profileName: relax
 - terms: 
   - term: statesman
     lang: en
@@ -18085,6 +18217,7 @@ concepts:
   - term: státník
     lang: cs
   freq: 10295.00000
+  profileName: relax
 - terms: 
   - term: delights
     lang: en
@@ -18095,6 +18228,7 @@ concepts:
   - term: lahůdky
     lang: cs
   freq: 9964.00000
+  profileName: relax
 - terms: 
   - term: flee
     lang: en
@@ -18105,6 +18239,7 @@ concepts:
   - term: prchat
     lang: cs
   freq: 9936.00000
+  profileName: relax
 - terms: 
   - term: strive
     lang: en
@@ -18115,6 +18250,7 @@ concepts:
   - term: snažit se
     lang: cs
   freq: 9902.00000
+  profileName: relax
 - terms: 
   - term: mantle
     lang: en
@@ -18123,6 +18259,7 @@ concepts:
   - term: plášť
     lang: cs
   freq: 9848.00000
+  profileName: relax
 - terms: 
   - term: verily
     lang: en
@@ -18131,6 +18268,7 @@ concepts:
   - term: vpravdě
     lang: cs
   freq: 9829.00000
+  profileName: relax
 - terms: 
   - term: pitiful
     lang: en
@@ -18141,6 +18279,7 @@ concepts:
   - term: ubohý
     lang: cs
   freq: 9649.00000
+  profileName: relax
 - terms: 
   - term: requisite
     lang: en
@@ -18151,6 +18290,7 @@ concepts:
   - term: potřebné
     lang: cs
   freq: 9647.00000
+  profileName: relax
 - terms: 
   - term: devote
     lang: en
@@ -18161,6 +18301,7 @@ concepts:
   - term: věnují
     lang: cs
   freq: 9520.00000
+  profileName: relax
 - terms: 
   - term: attentive
     lang: en
@@ -18171,6 +18312,7 @@ concepts:
   - term: ochotný
     lang: cs
   freq: 9376.00000
+  profileName: relax
 - terms: 
   - term: mock
     lang: en
@@ -18181,6 +18323,7 @@ concepts:
   - term: vysmívat
     lang: cs
   freq: 9320.00000
+  profileName: relax
 - terms: 
   - term: afflictions
     lang: en
@@ -18189,6 +18332,7 @@ concepts:
   - term: utrpení
     lang: cs
   freq: 9099.00000
+  profileName: relax
 - terms: 
   - term: pulpit
     lang: en
@@ -18199,6 +18343,7 @@ concepts:
   - term: tribuny
     lang: cs
   freq: 9036.00000
+  profileName: relax
 - terms: 
   - term: desolation
     lang: en
@@ -18209,6 +18354,7 @@ concepts:
   - term: zoufalství
     lang: cs
   freq: 9015.00000
+  profileName: relax
 - terms: 
   - term: allegiance
     lang: en
@@ -18219,6 +18365,7 @@ concepts:
   - term: oddanost
     lang: cs
   freq: 8891.00000
+  profileName: relax
 - terms: 
   - term: prevail
     lang: en
@@ -18229,6 +18376,7 @@ concepts:
   - term: prosadily
     lang: cs
   freq: 8750.00000
+  profileName: relax
 - terms: 
   - term: sanctuary
     lang: en
@@ -18239,6 +18387,7 @@ concepts:
   - term: útočiště
     lang: cs
   freq: 8734.00000
+  profileName: relax
 - terms: 
   - term: diverse
     lang: en
@@ -18249,6 +18398,7 @@ concepts:
   - term: různorodé
     lang: cs
   freq: 8685.00000
+  profileName: relax
 - terms: 
   - term: lame
     lang: en
@@ -18259,6 +18409,7 @@ concepts:
   - term: kulhaví
     lang: cs
   freq: 8640.00000
+  profileName: relax
 - terms: 
   - term: cradle
     lang: en
@@ -18269,6 +18420,7 @@ concepts:
   - term: stojan
     lang: cs
   freq: 8594.00000
+  profileName: relax
 - terms: 
   - term: apron
     lang: en
@@ -18279,6 +18431,7 @@ concepts:
   - term: nárazník
     lang: cs
   freq: 8513.00000
+  profileName: relax
 - terms: 
   - term: pamphlet
     lang: en
@@ -18289,6 +18442,7 @@ concepts:
   - term: brožura
     lang: cs
   freq: 8499.00000
+  profileName: relax
 - terms: 
   - term: neatly
     lang: en
@@ -18299,6 +18453,7 @@ concepts:
   - term: přehledně
     lang: cs
   freq: 8441.00000
+  profileName: relax
 - terms: 
   - term: beseech
     lang: en
@@ -18307,6 +18462,7 @@ concepts:
   - term: prosím
     lang: cs
   freq: 8375.00000
+  profileName: relax
 - terms: 
   - term: disdain
     lang: en
@@ -18317,6 +18473,7 @@ concepts:
   - term: pohrdání
     lang: cs
   freq: 8345.00000
+  profileName: relax
 - terms: 
   - term: disastrous
     lang: en
@@ -18327,6 +18484,7 @@ concepts:
   - term: nešťastný
     lang: cs
   freq: 8211.00000
+  profileName: relax
 - terms: 
   - term: ordained
     lang: en
@@ -18337,6 +18495,7 @@ concepts:
   - term: ustanovil
     lang: cs
   freq: 8198.00000
+  profileName: relax
 - terms: 
   - term: devout
     lang: en
@@ -18347,6 +18506,7 @@ concepts:
   - term: oddaný
     lang: cs
   freq: 8181.00000
+  profileName: relax
 - terms: 
   - term: industrious
     lang: en
@@ -18357,6 +18517,7 @@ concepts:
   - term: pilný
     lang: cs
   freq: 8105.00000
+  profileName: relax
 - terms: 
   - term: adversary
     lang: en
@@ -18367,6 +18528,7 @@ concepts:
   - term: nepřítel
     lang: cs
   freq: 8060.00000
+  profileName: relax
 - terms: 
   - term: summon
     lang: en
@@ -18377,6 +18539,7 @@ concepts:
   - term: svolat
     lang: cs
   freq: 7991.00000
+  profileName: relax
 - terms: 
   - term: reluctantly
     lang: en
@@ -18387,6 +18550,7 @@ concepts:
   - term: zdráhavě
     lang: cs
   freq: 7956.00000
+  profileName: relax
 - terms: 
   - term: thereupon
     lang: en
@@ -18395,6 +18559,7 @@ concepts:
   - term: načež
     lang: cs
   freq: 7820.00000
+  profileName: relax
 - terms: 
   - term: premises
     lang: en
@@ -18405,6 +18570,7 @@ concepts:
   - term: areál
     lang: cs
   freq: 7694.00000
+  profileName: relax
 - terms: 
   - term: condemn
     lang: en
@@ -18413,6 +18579,7 @@ concepts:
   - term: odsoudit
     lang: cs
   freq: 7682.00000
+  profileName: relax
 - terms: 
   - term: stubborn
     lang: en
@@ -18423,6 +18590,7 @@ concepts:
   - term: paličatý
     lang: cs
   freq: 7673.00000
+  profileName: relax
 - terms: 
   - term: forbade
     lang: en
@@ -18431,6 +18599,7 @@ concepts:
   - term: zakázal
     lang: cs
   freq: 7579.00000
+  profileName: relax
 - terms: 
   - term: diligence
     lang: en
@@ -18441,6 +18610,7 @@ concepts:
   - term: pracovitost
     lang: cs
   freq: 7505.00000
+  profileName: relax
 - terms: 
   - term: incense
     lang: en
@@ -18449,6 +18619,7 @@ concepts:
   - term: kadidlo
     lang: cs
   freq: 7438.00000
+  profileName: relax
 - terms: 
   - term: comprehension
     lang: en
@@ -18459,6 +18630,7 @@ concepts:
   - term: porozumění
     lang: cs
   freq: 7250.00000
+  profileName: relax
 - terms: 
   - term: abyss
     lang: en
@@ -18467,6 +18639,7 @@ concepts:
   - term: propasti
     lang: cs
   freq: 7246.00000
+  profileName: relax
 - terms: 
   - term: incentive
     lang: en
@@ -18477,6 +18650,7 @@ concepts:
   - term: pobídku
     lang: cs
   freq: 7242.00000
+  profileName: relax
 - terms: 
   - term: abominable
     lang: en
@@ -18487,6 +18661,7 @@ concepts:
   - term: odporný
     lang: cs
   freq: 7235.00000
+  profileName: relax
 - terms: 
   - term: incessantly
     lang: en
@@ -18497,6 +18672,7 @@ concepts:
   - term: nepřetržitě
     lang: cs
   freq: 7226.00000
+  profileName: relax
 - terms: 
   - term: improbable
     lang: en
@@ -18505,6 +18681,7 @@ concepts:
   - term: nepravděpodobné
     lang: cs
   freq: 7221.00000
+  profileName: relax
 - terms: 
   - term: signify
     lang: en
@@ -18515,6 +18692,7 @@ concepts:
   - term: označit
     lang: cs
   freq: 7120.00000
+  profileName: relax
 - terms: 
   - term: deity
     lang: en
@@ -18523,6 +18701,7 @@ concepts:
   - term: božstvo
     lang: cs
   freq: 7051.00000
+  profileName: relax
 - terms: 
   - term: mound
     lang: en
@@ -18533,6 +18712,7 @@ concepts:
   - term: pahorek
     lang: cs
   freq: 6889.00000
+  profileName: relax
 - terms: 
   - term: rebuke
     lang: en
@@ -18543,6 +18723,7 @@ concepts:
   - term: pohrůžka
     lang: cs
   freq: 6796.00000
+  profileName: relax
 - terms: 
   - term: abolished
     lang: en
@@ -18553,6 +18734,7 @@ concepts:
   - term: ruší
     lang: cs
   freq: 6793.00000
+  profileName: relax
 - terms: 
   - term: cope
     lang: en
@@ -18563,6 +18745,7 @@ concepts:
   - term: vypořádat
     lang: cs
   freq: 6789.00000
+  profileName: relax
 - terms: 
   - term: strand
     lang: en
@@ -18573,6 +18756,7 @@ concepts:
   - term: vlákno
     lang: cs
   freq: 6761.00000
+  profileName: relax
 - terms: 
   - term: brink
     lang: en
@@ -18583,6 +18767,7 @@ concepts:
   - term: kraj
     lang: cs
   freq: 6734.00000
+  profileName: relax
 - terms: 
   - term: perils
     lang: en
@@ -18593,6 +18778,7 @@ concepts:
   - term: úskalí
     lang: cs
   freq: 6727.00000
+  profileName: relax
 - terms: 
   - term: exert
     lang: en
@@ -18603,6 +18789,7 @@ concepts:
   - term: uplatňovat
     lang: cs
   freq: 6672.00000
+  profileName: relax
 - terms: 
   - term: alleged
     lang: en
@@ -18613,6 +18800,7 @@ concepts:
   - term: domnělému
     lang: cs
   freq: 6658.00000
+  profileName: relax
 - terms: 
   - term: condemnation
     lang: en
@@ -18623,6 +18811,7 @@ concepts:
   - term: zavržení
     lang: cs
   freq: 6653.00000
+  profileName: relax
 - terms: 
   - term: plea
     lang: en
@@ -18633,6 +18822,7 @@ concepts:
   - term: obhajoba
     lang: cs
   freq: 6614.00000
+  profileName: relax
 - terms: 
   - term: abolition
     lang: en
@@ -18641,6 +18831,7 @@ concepts:
   - term: zrušení
     lang: cs
   freq: 6585.00000
+  profileName: relax
 - terms: 
   - term: astray
     lang: en
@@ -18649,6 +18840,7 @@ concepts:
   - term: scestí
     lang: cs
   freq: 6571.00000
+  profileName: relax
 - terms: 
   - term: precipice
     lang: en
@@ -18657,6 +18849,7 @@ concepts:
   - term: propastí
     lang: cs
   freq: 6528.00000
+  profileName: relax
 - terms: 
   - term: cowardice
     lang: en
@@ -18665,6 +18858,7 @@ concepts:
   - term: zbabělost
     lang: cs
   freq: 6522.00000
+  profileName: relax
 - terms: 
   - term: denounced
     lang: en
@@ -18675,6 +18869,7 @@ concepts:
   - term: vypovězena
     lang: cs
   freq: 6503.00000
+  profileName: relax
 - terms: 
   - term: dire
     lang: en
@@ -18685,6 +18880,7 @@ concepts:
   - term: katastrofální
     lang: cs
   freq: 6493.00000
+  profileName: relax
 - terms: 
   - term: afresh
     lang: en
@@ -18693,6 +18889,7 @@ concepts:
   - term: znovu
     lang: cs
   freq: 6246.00000
+  profileName: relax
 - terms: 
   - term: sow
     lang: en
@@ -18703,6 +18900,7 @@ concepts:
   - term: svině
     lang: cs
   freq: 6237.00000
+  profileName: relax
 - terms: 
   - term: apparitions
     lang: en
@@ -18711,6 +18909,7 @@ concepts:
   - term: zjevení
     lang: cs
   freq: 6158.00000
+  profileName: relax
 - terms: 
   - term: renounce
     lang: en
@@ -18719,6 +18918,7 @@ concepts:
   - term: vzdát
     lang: cs
   freq: 6155.00000
+  profileName: relax
 - terms: 
   - term: ferocious
     lang: en
@@ -18729,6 +18929,7 @@ concepts:
   - term: divoký
     lang: cs
   freq: 6111.00000
+  profileName: relax
 - terms: 
   - term: inexplicable
     lang: en
@@ -18737,6 +18938,7 @@ concepts:
   - term: nevysvětlitelné
     lang: cs
   freq: 6052.00000
+  profileName: relax
 - terms: 
   - term: pagan
     lang: en
@@ -18745,6 +18947,7 @@ concepts:
   - term: pohanský
     lang: cs
   freq: 6042.00000
+  profileName: relax
 - terms: 
   - term: concession
     lang: en
@@ -18755,6 +18958,7 @@ concepts:
   - term: úlevy
     lang: cs
   freq: 5965.00000
+  profileName: relax
 - terms: 
   - term: penance
     lang: en
@@ -18763,6 +18967,7 @@ concepts:
   - term: pokání
     lang: cs
   freq: 5946.00000
+  profileName: relax
 - terms: 
   - term: devour
     lang: en
@@ -18773,6 +18978,7 @@ concepts:
   - term: sežrat
     lang: cs
   freq: 5937.00000
+  profileName: relax
 - terms: 
   - term: riots
     lang: en
@@ -18783,6 +18989,7 @@ concepts:
   - term: vzpoury
     lang: cs
   freq: 5937.00000
+  profileName: relax
 - terms: 
   - term: scrutiny
     lang: en
@@ -18793,6 +19000,7 @@ concepts:
   - term: počlivá prohlídka
     lang: cs
   freq: 5924.00000
+  profileName: relax
 - terms: 
   - term: imperious
     lang: en
@@ -18801,6 +19009,7 @@ concepts:
   - term: panovačný
     lang: cs
   freq: 5889.00000
+  profileName: relax
 - terms: 
   - term: redemption
     lang: en
@@ -18811,6 +19020,7 @@ concepts:
   - term: splacení
     lang: cs
   freq: 5881.00000
+  profileName: relax
 - terms: 
   - term: abound
     lang: en
@@ -18821,6 +19031,7 @@ concepts:
   - term: oplývají
     lang: cs
   freq: 5864.00000
+  profileName: relax
 - terms: 
   - term: avowed
     lang: en
@@ -18831,6 +19042,7 @@ concepts:
   - term: přiznaným
     lang: cs
   freq: 5816.00000
+  profileName: relax
 - terms: 
   - term: barley
     lang: en
@@ -18841,6 +19053,7 @@ concepts:
   - term: ječný
     lang: cs
   freq: 5764.00000
+  profileName: relax
 - terms: 
   - term: befall
     lang: en
@@ -18849,6 +19062,7 @@ concepts:
   - term: postihnou
     lang: cs
   freq: 5683.00000
+  profileName: relax
 - terms: 
   - term: mingle
     lang: en
@@ -18859,6 +19073,7 @@ concepts:
   - term: vmísit
     lang: cs
   freq: 5609.00000
+  profileName: relax
 - terms: 
   - term: tenor
     lang: en
@@ -18867,6 +19082,7 @@ concepts:
   - term: znění
     lang: cs
   freq: 5598.00000
+  profileName: relax
 - terms: 
   - term: averted
     lang: en
@@ -18875,6 +19091,7 @@ concepts:
   - term: odvrácena
     lang: cs
   freq: 5572.00000
+  profileName: relax
 - terms: 
   - term: adverse
     lang: en
@@ -18885,6 +19102,7 @@ concepts:
   - term: nežádoucí
     lang: cs
   freq: 5545.00000
+  profileName: relax
 - terms: 
   - term: distorted
     lang: en
@@ -18895,6 +19113,7 @@ concepts:
   - term: deformovaný
     lang: cs
   freq: 5538.00000
+  profileName: relax
 - terms: 
   - term: obliging
     lang: en
@@ -18905,6 +19124,7 @@ concepts:
   - term: ochotný
     lang: cs
   freq: 5525.00000
+  profileName: relax
 - terms: 
   - term: reap
     lang: en
@@ -18915,6 +19135,7 @@ concepts:
   - term: těžit
     lang: cs
   freq: 5431.00000
+  profileName: relax
 - terms: 
   - term: fringe
     lang: en
@@ -18925,6 +19146,7 @@ concepts:
   - term: okrajové
     lang: cs
   freq: 5423.00000
+  profileName: relax
 - terms: 
   - term: subdue
     lang: en
@@ -18935,6 +19157,7 @@ concepts:
   - term: potlačit
     lang: cs
   freq: 5394.00000
+  profileName: relax
 - terms: 
   - term: martyrs
     lang: en
@@ -18943,6 +19166,7 @@ concepts:
   - term: mučedníků
     lang: cs
   freq: 5369.00000
+  profileName: relax
 - terms: 
   - term: martyr
     lang: en
@@ -18951,6 +19175,7 @@ concepts:
   - term: mučedník
     lang: cs
   freq: 5369.00000
+  profileName: relax
 - terms: 
   - term: snare
     lang: en
@@ -18961,6 +19186,7 @@ concepts:
   - term: nástraha
     lang: cs
   freq: 5220.00000
+  profileName: relax
 - terms: 
   - term: contrive
     lang: en
@@ -18971,6 +19197,7 @@ concepts:
   - term: vynalézt
     lang: cs
   freq: 5206.00000
+  profileName: relax
 - terms: 
   - term: thorns
     lang: en
@@ -18979,6 +19206,7 @@ concepts:
   - term: trny
     lang: cs
   freq: 5196.00000
+  profileName: relax
 - terms: 
   - term: sentinels
     lang: en
@@ -18987,6 +19215,7 @@ concepts:
   - term: strážci
     lang: cs
   freq: 5055.00000
+  profileName: relax
 - terms: 
   - term: veneration
     lang: en
@@ -18995,6 +19224,7 @@ concepts:
   - term: uctívání
     lang: cs
   freq: 5038.00000
+  profileName: relax
 - terms: 
   - term: blunt
     lang: en
@@ -19003,6 +19233,7 @@ concepts:
   - term: tupé
     lang: cs
   freq: 4939.00000
+  profileName: relax
 - terms: 
   - term: scant
     lang: en
@@ -19013,6 +19244,7 @@ concepts:
   - term: nepatrný
     lang: cs
   freq: 4871.00000
+  profileName: relax
 - terms: 
   - term: coup
     lang: en
@@ -19023,6 +19255,7 @@ concepts:
   - term: puč
     lang: cs
   freq: 4803.00000
+  profileName: relax
 - terms: 
   - term: deplorable
     lang: en
@@ -19033,6 +19266,7 @@ concepts:
   - term: odsouzeníhodné
     lang: cs
   freq: 4776.00000
+  profileName: relax
 - terms: 
   - term: allegation
     lang: en
@@ -19043,6 +19277,7 @@ concepts:
   - term: obvinění
     lang: cs
   freq: 4714.00000
+  profileName: relax
 - terms: 
   - term: defiant
     lang: en
@@ -19051,6 +19286,7 @@ concepts:
   - term: vzdorný
     lang: cs
   freq: 4691.00000
+  profileName: relax
 - terms: 
   - term: foresaw
     lang: en
@@ -19059,6 +19295,7 @@ concepts:
   - term: předvídal
     lang: cs
   freq: 4664.00000
+  profileName: relax
 - terms: 
   - term: pestilence
     lang: en
@@ -19067,6 +19304,7 @@ concepts:
   - term: mor
     lang: cs
   freq: 4618.00000
+  profileName: relax
 - terms: 
   - term: infamy
     lang: en
@@ -19077,6 +19315,7 @@ concepts:
   - term: hanebnost
     lang: cs
   freq: 4541.00000
+  profileName: relax
 - terms: 
   - term: scourge
     lang: en
@@ -19087,6 +19326,7 @@ concepts:
   - term: bič
     lang: cs
   freq: 4508.00000
+  profileName: relax
 - terms: 
   - term: avert
     lang: en
@@ -19095,6 +19335,7 @@ concepts:
   - term: odvrátit
     lang: cs
   freq: 4489.00000
+  profileName: relax
 - terms: 
   - term: concedes
     lang: en
@@ -19103,6 +19344,7 @@ concepts:
   - term: připouští
     lang: cs
   freq: 4441.00000
+  profileName: relax
 - terms: 
   - term: snuff
     lang: en
@@ -19111,6 +19353,7 @@ concepts:
   - term: šňupací
     lang: cs
   freq: 4431.00000
+  profileName: relax
 - terms: 
   - term: abandonment
     lang: en
@@ -19119,6 +19362,7 @@ concepts:
   - term: opuštění
     lang: cs
   freq: 4385.00000
+  profileName: relax
 - terms: 
   - term: curb
     lang: en
@@ -19129,6 +19373,7 @@ concepts:
   - term: krotit
     lang: cs
   freq: 4340.00000
+  profileName: relax
 - terms: 
   - term: muzzle
     lang: en
@@ -19139,6 +19384,7 @@ concepts:
   - term: náhubek
     lang: cs
   freq: 4297.00000
+  profileName: relax
 - terms: 
   - term: foretold
     lang: en
@@ -19147,6 +19393,7 @@ concepts:
   - term: předpověděl
     lang: cs
   freq: 4250.00000
+  profileName: relax
 - terms: 
   - term: turmoil
     lang: en
@@ -19157,6 +19404,7 @@ concepts:
   - term: vřava
     lang: cs
   freq: 4218.00000
+  profileName: relax
 - terms: 
   - term: chasm
     lang: en
@@ -19165,6 +19413,7 @@ concepts:
   - term: propast
     lang: cs
   freq: 4214.00000
+  profileName: relax
 - terms: 
   - term: fervently
     lang: en
@@ -19175,6 +19424,7 @@ concepts:
   - term: horlivě
     lang: cs
   freq: 4206.00000
+  profileName: relax
 - terms: 
   - term: brace
     lang: en
@@ -19185,6 +19435,7 @@ concepts:
   - term: rovnátka
     lang: cs
   freq: 4192.00000
+  profileName: relax
 - terms: 
   - term: restlessness
     lang: en
@@ -19193,6 +19444,7 @@ concepts:
   - term: neklid
     lang: cs
   freq: 4140.00000
+  profileName: relax
 - terms: 
   - term: smite
     lang: en
@@ -19203,6 +19455,7 @@ concepts:
   - term: potrestat
     lang: cs
   freq: 4093.00000
+  profileName: relax
 - terms: 
   - term: atonement
     lang: en
@@ -19213,6 +19466,7 @@ concepts:
   - term: odčinění
     lang: cs
   freq: 4082.00000
+  profileName: relax
 - terms: 
   - term: crumbling
     lang: en
@@ -19223,6 +19477,7 @@ concepts:
   - term: hroutí
     lang: cs
   freq: 4026.00000
+  profileName: relax
 - terms: 
   - term: havoc
     lang: en
@@ -19233,6 +19488,7 @@ concepts:
   - term: spoušť
     lang: cs
   freq: 3915.00000
+  profileName: relax
 - terms: 
   - term: forge
     lang: en
@@ -19241,6 +19497,7 @@ concepts:
   - term: kovárna
     lang: cs
   freq: 3893.00000
+  profileName: relax
 - terms: 
   - term: vigilant
     lang: en
@@ -19251,6 +19508,7 @@ concepts:
   - term: bdělí
     lang: cs
   freq: 3869.00000
+  profileName: relax
 - terms: 
   - term: debris
     lang: en
@@ -19261,6 +19519,7 @@ concepts:
   - term: sutě
     lang: cs
   freq: 3854.00000
+  profileName: relax
 - terms: 
   - term: abated
     lang: en
@@ -19269,6 +19528,7 @@ concepts:
   - term: zmírnil
     lang: cs
   freq: 3827.00000
+  profileName: relax
 - terms: 
   - term: peals
     lang: en
@@ -19279,6 +19539,7 @@ concepts:
   - term: zvoní
     lang: cs
   freq: 3706.00000
+  profileName: relax
 - terms: 
   - term: conflagration
     lang: en
@@ -19287,6 +19548,7 @@ concepts:
   - term: požár
     lang: cs
   freq: 3670.00000
+  profileName: relax
 - terms: 
   - term: aspire
     lang: en
@@ -19297,6 +19559,7 @@ concepts:
   - term: toužit
     lang: cs
   freq: 3643.00000
+  profileName: relax
 - terms: 
   - term: prodigal
     lang: en
@@ -19305,6 +19568,7 @@ concepts:
   - term: marnotratném
     lang: cs
   freq: 3621.00000
+  profileName: relax
 - terms: 
   - term: aperture
     lang: en
@@ -19315,6 +19579,7 @@ concepts:
   - term: světelnost
     lang: cs
   freq: 3585.00000
+  profileName: relax
 - terms: 
   - term: accomplice
     lang: en
@@ -19323,6 +19588,7 @@ concepts:
   - term: komplic
     lang: cs
   freq: 3559.00000
+  profileName: relax
 - terms: 
   - term: arid
     lang: en
@@ -19333,6 +19599,7 @@ concepts:
   - term: suchých
     lang: cs
   freq: 3461.00000
+  profileName: relax
 - terms: 
   - term: outwardly
     lang: en
@@ -19341,6 +19608,7 @@ concepts:
   - term: navenek
     lang: cs
   freq: 3427.00000
+  profileName: relax
 - terms: 
   - term: paramount
     lang: en
@@ -19351,6 +19619,7 @@ concepts:
   - term: rozhodující
     lang: cs
   freq: 3396.00000
+  profileName: relax
 - terms: 
   - term: retribution
     lang: en
@@ -19359,6 +19628,7 @@ concepts:
   - term: odplata
     lang: cs
   freq: 3301.00000
+  profileName: relax
 - terms: 
   - term: presumptuous
     lang: en
@@ -19369,6 +19639,7 @@ concepts:
   - term: troufalý
     lang: cs
   freq: 3243.00000
+  profileName: relax
 - terms: 
   - term: entrepreneur
     lang: en
@@ -19379,6 +19650,7 @@ concepts:
   - term: živnostník
     lang: cs
   freq: 3186.00000
+  profileName: relax
 - terms: 
   - term: census
     lang: en
@@ -19387,6 +19659,7 @@ concepts:
   - term: sčítání lidu
     lang: cs
   freq: 3130.00000
+  profileName: relax
 - terms: 
   - term: sustenance
     lang: en
@@ -19397,6 +19670,7 @@ concepts:
   - term: výživa
     lang: cs
   freq: 3126.00000
+  profileName: relax
 - terms: 
   - term: blasphemy
     lang: en
@@ -19405,6 +19679,7 @@ concepts:
   - term: rouhání
     lang: cs
   freq: 3117.00000
+  profileName: relax
 - terms: 
   - term: aback
     lang: en
@@ -19413,6 +19688,7 @@ concepts:
   - term: dozadu
     lang: cs
   freq: 3117.00000
+  profileName: relax
 - terms: 
   - term: flax
     lang: en
@@ -19421,6 +19697,7 @@ concepts:
   - term: len
     lang: cs
   freq: 3113.00000
+  profileName: relax
 - terms: 
   - term: perplexing
     lang: en
@@ -19431,6 +19708,7 @@ concepts:
   - term: matoucí
     lang: cs
   freq: 3078.00000
+  profileName: relax
 - terms: 
   - term: ensue
     lang: en
@@ -19441,6 +19719,7 @@ concepts:
   - term: vyplývat
     lang: cs
   freq: 3054.00000
+  profileName: relax
 - terms: 
   - term: bereft
     lang: en
@@ -19449,6 +19728,7 @@ concepts:
   - term: zbavený
     lang: cs
   freq: 2996.00000
+  profileName: relax
 - terms: 
   - term: fraternity
     lang: en
@@ -19457,6 +19737,7 @@ concepts:
   - term: bratrství
     lang: cs
   freq: 2977.00000
+  profileName: relax
 - terms: 
   - term: admonition
     lang: en
@@ -19467,6 +19748,7 @@ concepts:
   - term: výtka
     lang: cs
   freq: 2976.00000
+  profileName: relax
 - terms: 
   - term: designate
     lang: en
@@ -19477,6 +19759,7 @@ concepts:
   - term: určit
     lang: cs
   freq: 2910.00000
+  profileName: relax
 - terms: 
   - term: maize
     lang: en
@@ -19485,6 +19768,7 @@ concepts:
   - term: kukuřice
     lang: cs
   freq: 2903.00000
+  profileName: relax
 - terms: 
   - term: gutter
     lang: en
@@ -19495,6 +19779,7 @@ concepts:
   - term: stoka
     lang: cs
   freq: 2882.00000
+  profileName: relax
 - terms: 
   - term: vestige
     lang: en
@@ -19503,6 +19788,7 @@ concepts:
   - term: pozůstatek
     lang: cs
   freq: 2871.00000
+  profileName: relax
 - terms: 
   - term: prop
     lang: en
@@ -19513,6 +19799,7 @@ concepts:
   - term: podpěra
     lang: cs
   freq: 2858.00000
+  profileName: relax
 - terms: 
   - term: hurl
     lang: en
@@ -19521,6 +19808,7 @@ concepts:
   - term: vrhnout
     lang: cs
   freq: 2855.00000
+  profileName: relax
 - terms: 
   - term: adherence
     lang: en
@@ -19531,6 +19819,7 @@ concepts:
   - term: lpění
     lang: cs
   freq: 2829.00000
+  profileName: relax
 - terms: 
   - term: dairy
     lang: en
@@ -19539,6 +19828,7 @@ concepts:
   - term: mléčné
     lang: cs
   freq: 2805.00000
+  profileName: relax
 - terms: 
   - term: contagious
     lang: en
@@ -19549,6 +19839,7 @@ concepts:
   - term: infekční
     lang: cs
   freq: 2786.00000
+  profileName: relax
 - terms: 
   - term: unforeseen
     lang: en
@@ -19559,6 +19850,7 @@ concepts:
   - term: nenadálé
     lang: cs
   freq: 2774.00000
+  profileName: relax
 - terms: 
   - term: insistence
     lang: en
@@ -19569,6 +19861,7 @@ concepts:
   - term: trvání
     lang: cs
   freq: 2764.00000
+  profileName: relax
 - terms: 
   - term: rye
     lang: en
@@ -19577,6 +19870,7 @@ concepts:
   - term: žito
     lang: cs
   freq: 2738.00000
+  profileName: relax
 - terms: 
   - term: beverage
     lang: en
@@ -19585,6 +19879,7 @@ concepts:
   - term: nápoje
     lang: cs
   freq: 2738.00000
+  profileName: relax
 - terms: 
   - term: wield
     lang: en
@@ -19595,6 +19890,7 @@ concepts:
   - term: ovládat
     lang: cs
   freq: 2727.00000
+  profileName: relax
 - terms: 
   - term: indicative
     lang: en
@@ -19605,6 +19901,7 @@ concepts:
   - term: předběžné
     lang: cs
   freq: 2696.00000
+  profileName: relax
 - terms: 
   - term: exhortation
     lang: en
@@ -19615,6 +19912,7 @@ concepts:
   - term: napomenutí
     lang: cs
   freq: 2671.00000
+  profileName: relax
 - terms: 
   - term: abominations
     lang: en
@@ -19623,6 +19921,7 @@ concepts:
   - term: ohavnosti
     lang: cs
   freq: 2649.00000
+  profileName: relax
 - terms: 
   - term: tainted
     lang: en
@@ -19633,6 +19932,7 @@ concepts:
   - term: poskvrněný
     lang: cs
   freq: 2612.00000
+  profileName: relax
 - terms: 
   - term: denunciation
     lang: en
@@ -19641,6 +19941,7 @@ concepts:
   - term: vypovězení
     lang: cs
   freq: 2608.00000
+  profileName: relax
 - terms: 
   - term: ponder
     lang: en
@@ -19651,6 +19952,7 @@ concepts:
   - term: hloubat
     lang: cs
   freq: 2590.00000
+  profileName: relax
 - terms: 
   - term: usher
     lang: en
@@ -19661,6 +19963,7 @@ concepts:
   - term: ohlašovat
     lang: cs
   freq: 2587.00000
+  profileName: relax
 - terms: 
   - term: deafening
     lang: en
@@ -19669,6 +19972,7 @@ concepts:
   - term: ohlušující
     lang: cs
   freq: 2583.00000
+  profileName: relax
 - terms: 
   - term: natal
     lang: en
@@ -19679,6 +19983,7 @@ concepts:
   - term: rodný
     lang: cs
   freq: 2510.00000
+  profileName: relax
 - terms: 
   - term: staunch
     lang: en
@@ -19689,6 +19994,7 @@ concepts:
   - term: spolehlivý
     lang: cs
   freq: 2499.00000
+  profileName: relax
 - terms: 
   - term: perdition
     lang: en
@@ -19699,6 +20005,7 @@ concepts:
   - term: zatracení
     lang: cs
   freq: 2481.00000
+  profileName: relax
 - terms: 
   - term: nourish
     lang: en
@@ -19707,6 +20014,7 @@ concepts:
   - term: vyživují
     lang: cs
   freq: 2479.00000
+  profileName: relax
 - terms: 
   - term: sacrilege
     lang: en
@@ -19715,6 +20023,7 @@ concepts:
   - term: svatokrádež
     lang: cs
   freq: 2444.00000
+  profileName: relax
 - terms: 
   - term: immaterial
     lang: en
@@ -19725,6 +20034,7 @@ concepts:
   - term: nepodstatný
     lang: cs
   freq: 2388.00000
+  profileName: relax
 - terms: 
   - term: immaculate
     lang: en
@@ -19733,6 +20043,7 @@ concepts:
   - term: neposkvrněné
     lang: cs
   freq: 2361.00000
+  profileName: relax
 - terms: 
   - term: discerning
     lang: en
@@ -19743,6 +20054,7 @@ concepts:
   - term: kritický
     lang: cs
   freq: 2352.00000
+  profileName: relax
 - terms: 
   - term: vindication
     lang: en
@@ -19753,6 +20065,7 @@ concepts:
   - term: rehabilitace
     lang: cs
   freq: 2344.00000
+  profileName: relax
 - terms: 
   - term: progeny
     lang: en
@@ -19761,6 +20074,7 @@ concepts:
   - term: potomstvo
     lang: cs
   freq: 2240.00000
+  profileName: relax
 - terms: 
   - term: tribulation
     lang: en
@@ -19769,6 +20083,7 @@ concepts:
   - term: soužení
     lang: cs
   freq: 2200.00000
+  profileName: relax
 - terms: 
   - term: elude
     lang: en
@@ -19779,6 +20094,7 @@ concepts:
   - term: vyhýbání se
     lang: cs
   freq: 2170.00000
+  profileName: relax
 - terms: 
   - term: bruises
     lang: en
@@ -19789,6 +20105,7 @@ concepts:
   - term: pohmožděniny
     lang: cs
   freq: 2159.00000
+  profileName: relax
 - terms: 
   - term: pebble
     lang: en
@@ -19797,6 +20114,7 @@ concepts:
   - term: oblázek
     lang: cs
   freq: 2123.00000
+  profileName: relax
 - terms: 
   - term: loathes
     lang: en
@@ -19807,6 +20125,7 @@ concepts:
   - term: nenávidí
     lang: cs
   freq: 2106.00000
+  profileName: relax
 - terms: 
   - term: detriment
     lang: en
@@ -19817,6 +20136,7 @@ concepts:
   - term: újma
     lang: cs
   freq: 2086.00000
+  profileName: relax
 - terms: 
   - term: misconduct
     lang: en
@@ -19827,6 +20147,7 @@ concepts:
   - term: provinění
     lang: cs
   freq: 2084.00000
+  profileName: relax
 - terms: 
   - term: heartfelt
     lang: en
@@ -19837,6 +20158,7 @@ concepts:
   - term: upřímné
     lang: cs
   freq: 2024.00000
+  profileName: relax
 - terms: 
   - term: precipitation
     lang: en
@@ -19847,6 +20169,7 @@ concepts:
   - term: ukvapení
     lang: cs
   freq: 1997.00000
+  profileName: relax
 - terms: 
   - term: bribery
     lang: en
@@ -19855,6 +20178,7 @@ concepts:
   - term: podplácení
     lang: cs
   freq: 1996.00000
+  profileName: relax
 - terms: 
   - term: dais
     lang: en
@@ -19863,6 +20187,7 @@ concepts:
   - term: pódium
     lang: cs
   freq: 1971.00000
+  profileName: relax
 - terms: 
   - term: purgatory
     lang: en
@@ -19871,6 +20196,7 @@ concepts:
   - term: očistec
     lang: cs
   freq: 1939.00000
+  profileName: relax
 - terms: 
   - term: thaw
     lang: en
@@ -19881,6 +20207,7 @@ concepts:
   - term: tání
     lang: cs
   freq: 1939.00000
+  profileName: relax
 - terms: 
   - term: theologian
     lang: en
@@ -19889,6 +20216,7 @@ concepts:
   - term: teolog
     lang: cs
   freq: 1936.00000
+  profileName: relax
 - terms: 
   - term: impiety
     lang: en
@@ -19897,6 +20225,7 @@ concepts:
   - term: bezbožnost
     lang: cs
   freq: 1925.00000
+  profileName: relax
 - terms: 
   - term: insinuates
     lang: en
@@ -19905,6 +20234,7 @@ concepts:
   - term: naznačuje
     lang: cs
   freq: 1870.00000
+  profileName: relax
 - terms: 
   - term: deceptive
     lang: en
@@ -19915,6 +20245,7 @@ concepts:
   - term: podvodný
     lang: cs
   freq: 1869.00000
+  profileName: relax
 - terms: 
   - term: uprising
     lang: en
@@ -19923,6 +20254,7 @@ concepts:
   - term: povstání
     lang: cs
   freq: 1858.00000
+  profileName: relax
 - terms: 
   - term: coax
     lang: en
@@ -19933,6 +20265,7 @@ concepts:
   - term: uchlácholit
     lang: cs
   freq: 1857.00000
+  profileName: relax
 - terms: 
   - term: falter
     lang: en
@@ -19943,6 +20276,7 @@ concepts:
   - term: kolísat
     lang: cs
   freq: 1791.00000
+  profileName: relax
 - terms: 
   - term: lukewarm
     lang: en
@@ -19953,6 +20287,7 @@ concepts:
   - term: netečný
     lang: cs
   freq: 1784.00000
+  profileName: relax
 - terms: 
   - term: ecclesiastics
     lang: en
@@ -19961,6 +20296,7 @@ concepts:
   - term: církevní
     lang: cs
   freq: 1781.00000
+  profileName: relax
 - terms: 
   - term: blasphemous
     lang: en
@@ -19969,6 +20305,7 @@ concepts:
   - term: rouhání
     lang: cs
   freq: 1773.00000
+  profileName: relax
 - terms: 
   - term: inundation
     lang: en
@@ -19977,6 +20314,7 @@ concepts:
   - term: zaplavení
     lang: cs
   freq: 1771.00000
+  profileName: relax
 - terms: 
   - term: tentative
     lang: en
@@ -19987,6 +20325,7 @@ concepts:
   - term: provizorní
     lang: cs
   freq: 1765.00000
+  profileName: relax
 - terms: 
   - term: baleful
     lang: en
@@ -19995,6 +20334,7 @@ concepts:
   - term: zlověstný
     lang: cs
   freq: 1748.00000
+  profileName: relax
 - terms: 
   - term: quell
     lang: en
@@ -20003,6 +20343,7 @@ concepts:
   - term: potlačit
     lang: cs
   freq: 1694.00000
+  profileName: relax
 - terms: 
   - term: laity
     lang: en
@@ -20011,6 +20352,7 @@ concepts:
   - term: laiky
     lang: cs
   freq: 1666.00000
+  profileName: relax
 - terms: 
   - term: exhort
     lang: en
@@ -20021,6 +20363,7 @@ concepts:
   - term: povzbuzovat
     lang: cs
   freq: 1662.00000
+  profileName: relax
 - terms: 
   - term: missive
     lang: en
@@ -20029,6 +20372,7 @@ concepts:
   - term: úřední dopis
     lang: cs
   freq: 1646.00000
+  profileName: relax
 - terms: 
   - term: pertinent
     lang: en
@@ -20039,6 +20383,7 @@ concepts:
   - term: příslušné
     lang: cs
   freq: 1629.00000
+  profileName: relax
 - terms: 
   - term: sift
     lang: en
@@ -20049,6 +20394,7 @@ concepts:
   - term: prosít
     lang: cs
   freq: 1621.00000
+  profileName: relax
 - terms: 
   - term: crumble
     lang: en
@@ -20059,6 +20405,7 @@ concepts:
   - term: hroutit
     lang: cs
   freq: 1621.00000
+  profileName: relax
 - terms: 
   - term: coercion
     lang: en
@@ -20069,6 +20416,7 @@ concepts:
   - term: donucování
     lang: cs
   freq: 1608.00000
+  profileName: relax
 - terms: 
   - term: wreak
     lang: en
@@ -20079,6 +20427,7 @@ concepts:
   - term: vylít si (zlost)
     lang: cs
   freq: 1559.00000
+  profileName: relax
 - terms: 
   - term: cassock
     lang: en
@@ -20089,6 +20438,7 @@ concepts:
   - term: sutana
     lang: cs
   freq: 1555.00000
+  profileName: relax
 - terms: 
   - term: incongruity
     lang: en
@@ -20099,6 +20449,7 @@ concepts:
   - term: rozpor
     lang: cs
   freq: 1504.00000
+  profileName: relax
 - terms: 
   - term: laymen
     lang: en
@@ -20107,6 +20458,7 @@ concepts:
   - term: laiky
     lang: cs
   freq: 1499.00000
+  profileName: relax
 - terms: 
   - term: docility
     lang: en
@@ -20117,6 +20469,7 @@ concepts:
   - term: poddajnost
     lang: cs
   freq: 1487.00000
+  profileName: relax
 - terms: 
   - term: upheaval
     lang: en
@@ -20127,6 +20480,7 @@ concepts:
   - term: otřesy
     lang: cs
   freq: 1462.00000
+  profileName: relax
 - terms: 
   - term: virulent
     lang: en
@@ -20137,6 +20491,7 @@ concepts:
   - term: prudký
     lang: cs
   freq: 1456.00000
+  profileName: relax
 - terms: 
   - term: barque
     lang: en
@@ -20145,6 +20500,7 @@ concepts:
   - term: bárka
     lang: cs
   freq: 1441.00000
+  profileName: relax
 - terms: 
   - term: posthumous
     lang: en
@@ -20153,6 +20509,7 @@ concepts:
   - term: posmrtné
     lang: cs
   freq: 1427.00000
+  profileName: relax
 - terms: 
   - term: aggravate
     lang: en
@@ -20161,6 +20518,7 @@ concepts:
   - term: zhoršit
     lang: cs
   freq: 1424.00000
+  profileName: relax
 - terms: 
   - term: obliterate
     lang: en
@@ -20171,6 +20529,7 @@ concepts:
   - term: zničit
     lang: cs
   freq: 1395.00000
+  profileName: relax
 - terms: 
   - term: clandestine
     lang: en
@@ -20181,6 +20540,7 @@ concepts:
   - term: ilegální
     lang: cs
   freq: 1373.00000
+  profileName: relax
 - terms: 
   - term: behest
     lang: en
@@ -20191,6 +20551,7 @@ concepts:
   - term: příkaz
     lang: cs
   freq: 1364.00000
+  profileName: relax
 - terms: 
   - term: ooze
     lang: en
@@ -20201,6 +20562,7 @@ concepts:
   - term: kal
     lang: cs
   freq: 1361.00000
+  profileName: relax
 - terms: 
   - term: sapling
     lang: en
@@ -20211,6 +20573,7 @@ concepts:
   - term: kal
     lang: cs
   freq: 1350.00000
+  profileName: relax
 - terms: 
   - term: stampede
     lang: en
@@ -20221,6 +20584,7 @@ concepts:
   - term: panika
     lang: cs
   freq: 1340.00000
+  profileName: relax
 - terms: 
   - term: deranged
     lang: en
@@ -20231,6 +20595,7 @@ concepts:
   - term: nepříčetný
     lang: cs
   freq: 1306.00000
+  profileName: relax
 - terms: 
   - term: adherents
     lang: en
@@ -20241,6 +20606,7 @@ concepts:
   - term: stoupenci
     lang: cs
   freq: 1291.00000
+  profileName: relax
 - terms: 
   - term: espouse
     lang: en
@@ -20251,6 +20617,7 @@ concepts:
   - term: obhajovat
     lang: cs
   freq: 1291.00000
+  profileName: relax
 - terms: 
   - term: insincere
     lang: en
@@ -20259,6 +20626,7 @@ concepts:
   - term: neupřímný
     lang: cs
   freq: 1273.00000
+  profileName: relax
 - terms: 
   - term: captors
     lang: en
@@ -20267,6 +20635,7 @@ concepts:
   - term: únosci
     lang: cs
   freq: 1266.00000
+  profileName: relax
 - terms: 
   - term: surreptitiously
     lang: en
@@ -20275,6 +20644,7 @@ concepts:
   - term: tajně
     lang: cs
   freq: 1261.00000
+  profileName: relax
 - terms: 
   - term: divulge
     lang: en
@@ -20283,6 +20653,7 @@ concepts:
   - term: prozradit
     lang: cs
   freq: 1241.00000
+  profileName: relax
 - terms: 
   - term: inalienable
     lang: en
@@ -20291,6 +20662,7 @@ concepts:
   - term: nezcizitelný
     lang: cs
   freq: 1215.00000
+  profileName: relax
 - terms: 
   - term: abhorrent
     lang: en
@@ -20299,6 +20671,7 @@ concepts:
   - term: odporný
     lang: cs
   freq: 1213.00000
+  profileName: relax
 - terms: 
   - term: unequivocal
     lang: en
@@ -20307,6 +20680,7 @@ concepts:
   - term: jednoznačný
     lang: cs
   freq: 1209.00000
+  profileName: relax
 - terms: 
   - term: cursory
     lang: en
@@ -20315,6 +20689,7 @@ concepts:
   - term: zběžný
     lang: cs
   freq: 1208.00000
+  profileName: relax
 - terms: 
   - term: sacerdotal
     lang: en
@@ -20323,6 +20698,7 @@ concepts:
   - term: kněžský
     lang: cs
   freq: 1196.00000
+  profileName: relax
 - terms: 
   - term: seduction
     lang: en
@@ -20333,6 +20709,7 @@ concepts:
   - term: svůdnost
     lang: cs
   freq: 1183.00000
+  profileName: relax
 - terms: 
   - term: elicit
     lang: en
@@ -20343,6 +20720,7 @@ concepts:
   - term: vylákat
     lang: cs
   freq: 1118.00000
+  profileName: relax
 - terms: 
   - term: wile
     lang: en
@@ -20351,6 +20729,7 @@ concepts:
   - term: lest
     lang: cs
   freq: 1109.00000
+  profileName: relax
 - terms: 
   - term: decoy
     lang: en
@@ -20359,6 +20738,7 @@ concepts:
   - term: návnada
     lang: cs
   freq: 1108.00000
+  profileName: relax
 - terms: 
   - term: shatter
     lang: en
@@ -20369,6 +20749,7 @@ concepts:
   - term: roztříštit
     lang: cs
   freq: 1106.00000
+  profileName: relax
 - terms: 
   - term: doers
     lang: en
@@ -20377,6 +20758,7 @@ concepts:
   - term: dělníci
     lang: cs
   freq: 1080.00000
+  profileName: relax
 - terms: 
   - term: apostasy
     lang: en
@@ -20385,6 +20767,7 @@ concepts:
   - term: odpadlictví
     lang: cs
   freq: 1019.00000
+  profileName: relax
 - terms: 
   - term: smear
     lang: en
@@ -20395,6 +20778,7 @@ concepts:
   - term: skvrna
     lang: cs
   freq: 1011.00000
+  profileName: relax
 - terms: 
   - term: corroboration
     lang: en
@@ -20405,6 +20789,7 @@ concepts:
   - term: podepření
     lang: cs
   freq: 984.00000
+  profileName: relax
 - terms: 
   - term: rancor
     lang: en
@@ -20415,6 +20800,7 @@ concepts:
   - term: zášť
     lang: cs
   freq: 941.00000
+  profileName: relax
 - terms: 
   - term: rabid
     lang: en
@@ -20425,6 +20811,7 @@ concepts:
   - term: zuřivý
     lang: cs
   freq: 925.00000
+  profileName: relax
 - terms: 
   - term: aggravation
     lang: en
@@ -20433,6 +20820,7 @@ concepts:
   - term: zhoršení
     lang: cs
   freq: 909.00000
+  profileName: relax
 - terms: 
   - term: gnat
     lang: en
@@ -20441,6 +20829,7 @@ concepts:
   - term: komár
     lang: cs
   freq: 905.00000
+  profileName: relax
 - terms: 
   - term: pave
     lang: en
@@ -20449,6 +20838,7 @@ concepts:
   - term: dláždit
     lang: cs
   freq: 899.00000
+  profileName: relax
 - terms: 
   - term: lice
     lang: en
@@ -20457,6 +20847,7 @@ concepts:
   - term: vši
     lang: cs
   freq: 897.00000
+  profileName: relax
 - terms: 
   - term: elucidate
     lang: en
@@ -20465,6 +20856,7 @@ concepts:
   - term: objasnění
     lang: cs
   freq: 876.00000
+  profileName: relax
 - terms: 
   - term: prowls
     lang: en
@@ -20475,6 +20867,7 @@ concepts:
   - term: potuluje se
     lang: cs
   freq: 870.00000
+  profileName: relax
 - terms: 
   - term: slur
     lang: en
@@ -20483,6 +20876,7 @@ concepts:
   - term: pomluva
     lang: cs
   freq: 858.00000
+  profileName: relax
 - terms: 
   - term: tandem
     lang: en
@@ -20493,6 +20887,7 @@ concepts:
   - term: spojitosti
     lang: cs
   freq: 848.00000
+  profileName: relax
 - terms: 
   - term: subvert
     lang: en
@@ -20503,6 +20898,7 @@ concepts:
   - term: narušující
     lang: cs
   freq: 796.00000
+  profileName: relax
 - terms: 
   - term: impeach
     lang: en
@@ -20511,6 +20907,7 @@ concepts:
   - term: obvinit
     lang: cs
   freq: 794.00000
+  profileName: relax
 - terms: 
   - term: coerce
     lang: en
@@ -20521,6 +20918,7 @@ concepts:
   - term: přinutit
     lang: cs
   freq: 791.00000
+  profileName: relax
 - terms: 
   - term: loafers
     lang: en
@@ -20529,6 +20927,7 @@ concepts:
   - term: mokasíny
     lang: cs
   freq: 757.00000
+  profileName: relax
 - terms: 
   - term: flail
     lang: en
@@ -20539,6 +20938,7 @@ concepts:
   - term: cep
     lang: cs
   freq: 722.00000
+  profileName: relax
 - terms: 
   - term: extirpation
     lang: en
@@ -20547,6 +20947,7 @@ concepts:
   - term: vykořenení
     lang: cs
   freq: 685.00000
+  profileName: relax
 - terms: 
   - term: diphtheria
     lang: en
@@ -20555,6 +20956,7 @@ concepts:
   - term: záškrtu
     lang: cs
   freq: 664.00000
+  profileName: relax
 - terms: 
   - term: gloat
     lang: en
@@ -20563,6 +20965,7 @@ concepts:
   - term: jásot
     lang: cs
   freq: 644.00000
+  profileName: relax
 - terms: 
   - term: continence
     lang: en
@@ -20571,6 +20974,7 @@ concepts:
   - term: zdrženlivost
     lang: cs
   freq: 621.00000
+  profileName: relax
 - terms: 
   - term: effusive
     lang: en
@@ -20581,6 +20985,7 @@ concepts:
   - term: hojný
     lang: cs
   freq: 621.00000
+  profileName: relax
 - terms: 
   - term: gleeful
     lang: en
@@ -20591,6 +20996,7 @@ concepts:
   - term: radnostný
     lang: cs
   freq: 609.00000
+  profileName: relax
 - terms: 
   - term: syringe
     lang: en
@@ -20599,6 +21005,7 @@ concepts:
   - term: stříkača
     lang: cs
   freq: 582.00000
+  profileName: relax
 - terms: 
   - term: obituary
     lang: en
@@ -20607,6 +21014,7 @@ concepts:
   - term: nekrolog
     lang: cs
   freq: 578.00000
+  profileName: relax
 - terms: 
   - term: aberrations
     lang: en
@@ -20617,6 +21025,7 @@ concepts:
   - term: odchylky
     lang: cs
   freq: 570.00000
+  profileName: relax
 - terms: 
   - term: crony
     lang: en
@@ -20625,6 +21034,7 @@ concepts:
   - term: kamarád
     lang: cs
   freq: 549.00000
+  profileName: relax
 - terms: 
   - term: heterodox
     lang: en
@@ -20633,6 +21043,7 @@ concepts:
   - term: jinověrný
     lang: cs
   freq: 532.00000
+  profileName: relax
 - terms: 
   - term: engulf
     lang: en
@@ -20641,6 +21052,7 @@ concepts:
   - term: pohltí
     lang: cs
   freq: 507.00000
+  profileName: relax
 - terms: 
   - term: innuendo
     lang: en
@@ -20649,6 +21061,7 @@ concepts:
   - term: narážky
     lang: cs
   freq: 494.00000
+  profileName: relax
 - terms: 
   - term: pervasive
     lang: en
@@ -20659,6 +21072,7 @@ concepts:
   - term: prostupující
     lang: cs
   freq: 493.00000
+  profileName: relax
 - terms: 
   - term: impeccable
     lang: en
@@ -20669,6 +21083,7 @@ concepts:
   - term: dokonalé
     lang: cs
   freq: 445.00000
+  profileName: relax
 - terms: 
   - term: bedridden
     lang: en
@@ -20677,6 +21092,7 @@ concepts:
   - term: upoutaný na lůžko
     lang: cs
   freq: 440.00000
+  profileName: relax
 - terms: 
   - term: curfew
     lang: en
@@ -20687,6 +21103,7 @@ concepts:
   - term: večerka
     lang: cs
   freq: 428.00000
+  profileName: relax
 - terms: 
   - term: prevarication
     lang: en
@@ -20697,6 +21114,7 @@ concepts:
   - term: vykrucování
     lang: cs
   freq: 397.00000
+  profileName: relax
 - terms: 
   - term: castigation
     lang: en
@@ -20705,6 +21123,7 @@ concepts:
   - term: kárání
     lang: cs
   freq: 359.00000
+  profileName: relax
 - terms: 
   - term: indict
     lang: en
@@ -20713,6 +21132,7 @@ concepts:
   - term: obvinit
     lang: cs
   freq: 329.00000
+  profileName: relax
 - terms: 
   - term: inebriated
     lang: en
@@ -20721,6 +21141,7 @@ concepts:
   - term: opilý
     lang: cs
   freq: 325.00000
+  profileName: relax
 - terms: 
   - term: amalgamate
     lang: en
@@ -20731,6 +21152,7 @@ concepts:
   - term: fůzovat
     lang: cs
   freq: 318.00000
+  profileName: relax
 - terms: 
   - term: lineament
     lang: en
@@ -20739,6 +21161,7 @@ concepts:
   - term: rys
     lang: cs
   freq: 306.00000
+  profileName: relax
 - terms: 
   - term: femur
     lang: en
@@ -20747,6 +21170,7 @@ concepts:
   - term: stehenní kosti
     lang: cs
   freq: 290.00000
+  profileName: relax
 - terms: 
   - term: episcopacy
     lang: en
@@ -20755,6 +21179,7 @@ concepts:
   - term: biskupství
     lang: cs
   freq: 288.00000
+  profileName: relax
 - terms: 
   - term: corroborates
     lang: en
@@ -20763,6 +21188,7 @@ concepts:
   - term: potvrzuje
     lang: cs
   freq: 287.00000
+  profileName: relax
 - terms: 
   - term: precipitously
     lang: en
@@ -20771,6 +21197,7 @@ concepts:
   - term: strmě
     lang: cs
   freq: 248.00000
+  profileName: relax
 - terms: 
   - term: culpability
     lang: en
@@ -20781,6 +21208,7 @@ concepts:
   - term: trestuhodnost
     lang: cs
   freq: 238.00000
+  profileName: relax
 - terms: 
   - term: espousal
     lang: en
@@ -20791,6 +21219,7 @@ concepts:
   - term: podpora
     lang: cs
   freq: 230.00000
+  profileName: relax
 - terms: 
   - term: imposter
     lang: en
@@ -20799,6 +21228,7 @@ concepts:
   - term: podvodník
     lang: cs
   freq: 196.00000
+  profileName: relax
 - terms: 
   - term: lacerations
     lang: en
@@ -20807,6 +21237,7 @@ concepts:
   - term: tržná rána
     lang: cs
   freq: 183.00000
+  profileName: relax
 - terms: 
   - term: potable
     lang: en
@@ -20815,6 +21246,7 @@ concepts:
   - term: pitný
     lang: cs
   freq: 167.00000
+  profileName: relax
 - terms: 
   - term: detractor
     lang: en
@@ -20825,6 +21257,7 @@ concepts:
   - term: pomlouvač
     lang: cs
   freq: 158.00000
+  profileName: relax
 - terms: 
   - term: expatriate
     lang: en
@@ -20835,6 +21268,7 @@ concepts:
   - term: emigrant
     lang: cs
   freq: 148.00000
+  profileName: relax
 - terms: 
   - term: caret
     lang: en
@@ -20845,6 +21279,7 @@ concepts:
   - term: vsuvka
     lang: cs
   freq: 124.00000
+  profileName: relax
 - terms: 
   - term: ploy
     lang: en
@@ -20853,6 +21288,7 @@ concepts:
   - term: trik
     lang: cs
   freq: 121.00000
+  profileName: relax
 - terms: 
   - term: squelch
     lang: en
@@ -20861,6 +21297,7 @@ concepts:
   - term: mlaskat
     lang: cs
   freq: 121.00000
+  profileName: relax
 - terms: 
   - term: splurge
     lang: en
@@ -20871,6 +21308,7 @@ concepts:
   - term: utrácet
     lang: cs
   freq: 113.00000
+  profileName: relax
 - terms: 
   - term: canard
     lang: en
@@ -20881,6 +21319,7 @@ concepts:
   - term: blud
     lang: cs
   freq: 110.00000
+  profileName: relax
 - terms: 
   - term: vilification
     lang: en
@@ -20891,6 +21330,7 @@ concepts:
   - term: pomlouvání
     lang: cs
   freq: 106.00000
+  profileName: relax
 - terms: 
   - term: doodle
     lang: en
@@ -20901,6 +21341,7 @@ concepts:
   - term: čmáranice
     lang: cs
   freq: 102.00000
+  profileName: relax
 - terms: 
   - term: licit
     lang: en
@@ -20911,6 +21352,7 @@ concepts:
   - term: popisovat
     lang: cs
   freq: 72.00000
+  profileName: relax
 - terms: 
   - term: proponent
     lang: en
@@ -20921,6 +21363,7 @@ concepts:
   - term: podpůrce
     lang: cs
   freq: 37.00000
+  profileName: relax
 - terms: 
   - term: intransigent
     lang: en
@@ -20931,6 +21374,7 @@ concepts:
   - term: neústupný
     lang: cs
   freq: 36.00000
+  profileName: relax
 - terms: 
   - term: probative
     lang: en
@@ -20939,6 +21383,7 @@ concepts:
   - term: důkazní
     lang: cs
   freq: 32.00000
+  profileName: relax
 - terms: 
   - term: blows
     lang: en
@@ -20948,18 +21393,21 @@ concepts:
   - term: rány
     lang: cs
   freq: 21851.00000
+  profileName: relax
 - terms: 
   - term: chastisement
     lang: en
     tts: en-terms/chastisement.mp3
   - term: trestání
     lang: cs
+  profileName: relax
 - terms: 
   - term: intercession
     lang: en
     tts: en-terms/intercession.mp3
   - term: přímluvu
     lang: cs
+  profileName: relax
 - terms: 
   - term: harassed
     lang: en
@@ -20968,12 +21416,14 @@ concepts:
     lang: cs
   - term: pronásledováni
     lang: cs
+  profileName: relax
 - terms: 
   - term: miseries
     lang: en
     tts: en-terms/miseries.mp3
   - term: utrpení
     lang: cs
+  profileName: relax
 - terms: 
   - term: undermined
     lang: en
@@ -20982,6 +21432,7 @@ concepts:
     lang: cs
   - term: narušena
     lang: cs
+  profileName: relax
 - terms: 
   - term: wavering
     lang: en
@@ -20990,12 +21441,14 @@ concepts:
     lang: cs
   - term: váhání
     lang: cs
+  profileName: relax
 - terms: 
   - term: wreckers
     lang: en
     tts: en-terms/wreckers.mp3
   - term: záškodníci
     lang: cs
+  profileName: relax
 - terms: 
   - term: fleeing
     lang: en
@@ -21004,36 +21457,42 @@ concepts:
     lang: cs
   - term: utíkají
     lang: cs
+  profileName: relax
 - terms: 
   - term: immersed
     lang: en
     tts: en-terms/immersed.mp3
   - term: ponoří do
     lang: cs
+  profileName: relax
 - terms: 
   - term: godliness
     lang: en
     tts: en-terms/godliness.mp3
   - term: zbožnost
     lang: cs
+  profileName: relax
 - terms: 
   - term: kneaded
     lang: en
     tts: en-terms/kneaded.mp3
   - term: hnětený
     lang: cs
+  profileName: relax
 - terms: 
   - term: perpetrated
     lang: en
     tts: en-terms/perpetrated.mp3
   - term: spáchán
     lang: cs
+  profileName: relax
 - terms: 
   - term: irreverence
     lang: en
     tts: en-terms/irreverence.mp3
   - term: neuctivost
     lang: cs
+  profileName: relax
 - terms: 
   - term: stifle
     lang: en
@@ -21042,6 +21501,7 @@ concepts:
     lang: cs
   - term: umlčet
     lang: cs
+  profileName: relax
 - terms: 
   - term: engulfed
     lang: en
@@ -21050,12 +21510,14 @@ concepts:
     lang: cs
   - term: pohltila
     lang: cs
+  profileName: relax
 - terms: 
   - term: insistently
     lang: en
     tts: en-terms/insistently.mp3
   - term: naléhavě
     lang: cs
+  profileName: relax
 - terms: 
   - term: staggering
     lang: en
@@ -21064,6 +21526,7 @@ concepts:
     lang: cs
   - term: závratná
     lang: cs
+  profileName: relax
 - terms: 
   - term: comforted
     lang: en
@@ -21072,6 +21535,7 @@ concepts:
     lang: cs
   - term: utěšoval
     lang: cs
+  profileName: relax
 - terms: 
   - term: lured
     lang: en
@@ -21080,18 +21544,21 @@ concepts:
     lang: cs
   - term: vábil
     lang: cs
+  profileName: relax
 - terms: 
   - term: tepidity
     lang: en
     tts: en-terms/tepidity.mp3
   - term: vlažnost
     lang: cs
+  profileName: relax
 - terms: 
   - term: implored
     lang: en
     tts: en-terms/implored.mp3
   - term: prosil
     lang: cs
+  profileName: relax
 - terms: 
   - term: resplendent
     lang: en
@@ -21100,12 +21567,14 @@ concepts:
     lang: cs
   - term: zářivý
     lang: cs
+  profileName: relax
 - terms: 
   - term: aridity
     lang: en
     tts: en-terms/aridity.mp3
   - term: vyprahlost
     lang: cs
+  profileName: relax
 - terms: 
   - term: expiated
     lang: en
@@ -21114,6 +21583,7 @@ concepts:
     lang: cs
   - term: odčiněný
     lang: cs
+  profileName: relax
 - terms: 
   - term: grievously
     lang: en
@@ -21122,6 +21592,7 @@ concepts:
     lang: cs
   - term: bolestně
     lang: cs
+  profileName: relax
 - terms: 
   - term: acquiesced
     lang: en
@@ -21130,24 +21601,28 @@ concepts:
     lang: cs
   - term: podvolil
     lang: cs
+  profileName: relax
 - terms: 
   - term: spelled
     lang: en
     tts: en-terms/spelled.mp3
   - term: špalda
     lang: cs
+  profileName: relax
 - terms: 
   - term: emanated
     lang: en
     tts: en-terms/emanated.mp3
   - term: pocházely
     lang: cs
+  profileName: relax
 - terms: 
   - term: redemptive
     lang: en
     tts: en-terms/redemptive.mp3
   - term: vykupitelské
     lang: cs
+  profileName: relax
 - terms: 
   - term: shedding
     lang: en
@@ -21156,6 +21631,7 @@ concepts:
     lang: cs
   - term: ubývání
     lang: cs
+  profileName: relax
 - terms: 
   - term: deficiencies
     lang: en
@@ -21164,12 +21640,14 @@ concepts:
     lang: cs
   - term: závady
     lang: cs
+  profileName: relax
 - terms: 
   - term: lamented
     lang: en
     tts: en-terms/lamented.mp3
   - term: bědoval
     lang: cs
+  profileName: relax
 - terms: 
   - term: cherish
     lang: en
@@ -21178,12 +21656,14 @@ concepts:
     lang: cs
   - term: střežit
     lang: cs
+  profileName: relax
 - terms: 
   - term: martyred
     lang: en
     tts: en-terms/martyred.mp3
   - term: umučena
     lang: cs
+  profileName: relax
 - terms: 
   - term: repercussions
     lang: en
@@ -21192,6 +21672,7 @@ concepts:
     lang: cs
   - term: následky
     lang: cs
+  profileName: relax
 - terms: 
   - term: intrinsically
     lang: en
@@ -21200,30 +21681,35 @@ concepts:
     lang: cs
   - term: vnitřně
     lang: cs
+  profileName: relax
 - terms: 
   - term: perplexities
     lang: en
     tts: en-terms/perplexities.mp3
   - term: rozpaky
     lang: cs
+  profileName: relax
 - terms: 
   - term: dissensions
     lang: en
     tts: en-terms/dissensions.mp3
   - term: neshody
     lang: cs
+  profileName: relax
 - terms: 
   - term: estranging
     lang: en
     tts: en-terms/estranging.mp3
   - term: odcizující
     lang: cs
+  profileName: relax
 - terms: 
   - term: puppeteers
     lang: en
     tts: en-terms/puppeteers.mp3
   - term: loutkáři
     lang: cs
+  profileName: relax
 - terms: 
   - term: quashed
     lang: en
@@ -21232,24 +21718,28 @@ concepts:
     lang: cs
   - term: zrušil
     lang: cs
+  profileName: relax
 - terms: 
   - term: rabidly
     lang: en
     tts: en-terms/rabidly.mp3
   - term: fanaticky
     lang: cs
+  profileName: relax
 - terms: 
   - term: extrauterine
     lang: en
     tts: en-terms/extrauterine.mp3
   - term: mimoděložní
     lang: cs
+  profileName: relax
 - terms: 
   - term: proffered
     lang: en
     tts: en-terms/proffered.mp3
   - term: nabídl
     lang: cs
+  profileName: relax
 - terms: 
   - term: hampered
     lang: en
@@ -21258,6 +21748,7 @@ concepts:
     lang: cs
   - term: brání
     lang: cs
+  profileName: relax
 - terms: 
   - term: obviate
     lang: en
@@ -21266,6 +21757,7 @@ concepts:
     lang: cs
   - term: vyhnout se
     lang: cs
+  profileName: relax
 - terms: 
   - term: wheezing
     lang: en
@@ -21274,48 +21766,56 @@ concepts:
     lang: cs
   - term: dušnost
     lang: cs
+  profileName: relax
 - terms: 
   - term: stomping
     lang: en
     tts: en-terms/stomping.mp3
   - term: dupání
     lang: cs
+  profileName: relax
 - terms: 
   - term: conflating
     lang: en
     tts: en-terms/conflating.mp3
   - term: slučování
     lang: cs
+  profileName: relax
 - terms: 
   - term: phony
     lang: en
     tts: en-terms/phony.mp3
   - term: falešné
     lang: cs
+  profileName: relax
 - terms: 
   - term: disbanding
     lang: en
     tts: en-terms/disbanding.mp3
   - term: rozpouštění
     lang: cs
+  profileName: relax
 - terms: 
   - term: promulgating
     lang: en
     tts: en-terms/promulgating.mp3
   - term: vyhlašující
     lang: cs
+  profileName: relax
 - terms: 
   - term: eradicte
     lang: en
     tts: en-terms/eradicte.mp3
   - term: vymýtit
     lang: cs
+  profileName: relax
 - terms: 
   - term: imbued
     lang: en
     tts: en-terms/imbued.mp3
   - term: prodchnutý
     lang: cs
+  profileName: relax
 - terms: 
   - term: fetched
     lang: en
@@ -21324,18 +21824,21 @@ concepts:
     lang: cs
   - term: přitažené za vlasy
     lang: cs
+  profileName: relax
 - terms: 
   - term: instill
     lang: en
     tts: en-terms/instill.mp3
   - term: vštípit
     lang: cs
+  profileName: relax
 - terms: 
   - term: permeated
     lang: en
     tts: en-terms/permeated.mp3
   - term: prostoupené
     lang: cs
+  profileName: relax
 - terms: 
   - term: clearsighted
     lang: en
@@ -21344,18 +21847,21 @@ concepts:
     lang: cs
   - term: prozíravý
     lang: cs
+  profileName: relax
 - terms: 
   - term: swirled
     lang: en
     tts: en-terms/swirled.mp3
   - term: zavířil
     lang: cs
+  profileName: relax
 - terms: 
   - term: waged
     lang: en
     tts: en-terms/waged.mp3
   - term: vedeny
     lang: cs
+  profileName: relax
 - terms: 
   - term: ilustrious
     lang: en
@@ -21364,6 +21870,7 @@ concepts:
     lang: cs
   - term: význačný
     lang: cs
+  profileName: relax
 - terms: 
   - term: raving
     lang: en
@@ -21372,6 +21879,7 @@ concepts:
     lang: cs
   - term: nepříčetný
     lang: cs
+  profileName: relax
 - terms: 
   - term: expiation
     lang: en
@@ -21380,6 +21888,7 @@ concepts:
     lang: cs
   - term: pokání
     lang: cs
+  profileName: relax
 - terms: 
   - term: dissuaded
     lang: en
@@ -21388,6 +21897,7 @@ concepts:
     lang: cs
   - term: rozmluvit
     lang: cs
+  profileName: relax
 - terms: 
   - term: corral
     lang: en
@@ -21396,6 +21906,7 @@ concepts:
     lang: cs
   - term: ohrada (pro dobytek)
     lang: cs
+  profileName: relax
 - terms: 
   - term: disdainfully
     lang: en
@@ -21404,12 +21915,14 @@ concepts:
     lang: cs
   - term: opovržlivě
     lang: cs
+  profileName: relax
 - terms: 
   - term: clique
     lang: en
     tts: en-terms/clique.mp3
   - term: klika
     lang: cs
+  profileName: relax
 - terms: 
   - term: wreaking
     lang: en
@@ -21418,18 +21931,21 @@ concepts:
     lang: cs
   - term: zchladit si (zlost)
     lang: cs
+  profileName: relax
 - terms: 
   - term: anathematize
     lang: en
     tts: en-terms/anathematize.mp3
   - term: proklet
     lang: cs
+  profileName: relax
 - terms: 
   - term: ostracized
     lang: en
     tts: en-terms/ostracized.mp3
   - term: vyobcovat
     lang: cs
+  profileName: relax
 - terms: 
   - term: infatuated
     lang: en
@@ -21438,12 +21954,14 @@ concepts:
     lang: cs
   - term: zabouchnutý
     lang: cs
+  profileName: relax
 - terms: 
   - term: censer
     lang: en
     tts: en-terms/censer.mp3
   - term: kadidelnice
     lang: cs
+  profileName: relax
 - terms: 
   - term: rumbling
     lang: en
@@ -21452,6 +21970,7 @@ concepts:
     lang: cs
   - term: dunění
     lang: cs
+  profileName: relax
 - terms: 
   - term: consigned
     lang: en
@@ -21460,12 +21979,14 @@ concepts:
     lang: cs
   - term: svěřený
     lang: cs
+  profileName: relax
 - terms: 
   - term: betrothed
     lang: en
     tts: en-terms/betrothed.mp3
   - term: zasnoubena
     lang: cs
+  profileName: relax
 - terms: 
   - term: filial
     lang: en
@@ -21474,6 +21995,7 @@ concepts:
     lang: cs
   - term: dceřiný
     lang: cs
+  profileName: relax
 - terms: 
   - term: anticipated
     lang: en
@@ -21482,12 +22004,14 @@ concepts:
     lang: cs
   - term: předpokládané
     lang: cs
+  profileName: relax
 - terms: 
   - term: idolatrous
     lang: en
     tts: en-terms/idolatrous.mp3
   - term: modlářské
     lang: cs
+  profileName: relax
 - terms: 
   - term: decries
     lang: en
@@ -21496,6 +22020,7 @@ concepts:
     lang: cs
   - term: pomlouvá
     lang: cs
+  profileName: relax
 - terms: 
   - term: concealing
     lang: en
@@ -21504,18 +22029,21 @@ concepts:
     lang: cs
   - term: zatajování
     lang: cs
+  profileName: relax
 - terms: 
   - term: purportedly
     lang: en
     tts: en-terms/purportedly.mp3
   - term: údajně
     lang: cs
+  profileName: relax
 - terms: 
   - term: enmeshed
     lang: en
     tts: en-terms/enmeshed.mp3
   - term: zapletený
     lang: cs
+  profileName: relax
 - terms: 
   - term: vying
     lang: en
@@ -21524,18 +22052,21 @@ concepts:
     lang: cs
   - term: závodění
     lang: cs
+  profileName: relax
 - terms: 
   - term: ruthlessness
     lang: en
     tts: en-terms/ruthlessness.mp3
   - term: bezohlednost
     lang: cs
+  profileName: relax
 - terms: 
   - term: scattershot
     lang: en
     tts: en-terms/scattershot.mp3
   - term: rozptylka
     lang: cs
+  profileName: relax
 - terms: 
   - term: marginalized
     lang: en
@@ -21544,12 +22075,14 @@ concepts:
     lang: cs
   - term: opomíjené
     lang: cs
+  profileName: relax
 - terms: 
   - term: entourage
     lang: en
     tts: en-terms/entourage.mp3
   - term: doprovod
     lang: cs
+  profileName: relax
 - terms: 
   - term: levied
     lang: en
@@ -21558,6 +22091,7 @@ concepts:
     lang: cs
   - term: postihující
     lang: cs
+  profileName: relax
 - terms: 
   - term: enacted
     lang: en
@@ -21566,12 +22100,14 @@ concepts:
     lang: cs
   - term: schválené
     lang: cs
+  profileName: relax
 - terms: 
   - term: contagiousness
     lang: en
     tts: en-terms/contagiousness.mp3
   - term: nakažlivost
     lang: cs
+  profileName: relax
 - terms: 
   - term: imposition
     lang: en
@@ -21580,6 +22116,7 @@ concepts:
     lang: cs
   - term: zavedení
     lang: cs
+  profileName: relax
 - terms: 
   - term: looming
     lang: en
@@ -21588,6 +22125,7 @@ concepts:
     lang: cs
   - term: hrozící
     lang: cs
+  profileName: relax
 - terms: 
   - term: aligned
     lang: en
@@ -21596,12 +22134,14 @@ concepts:
     lang: cs
   - term: sladěna
     lang: cs
+  profileName: relax
 - terms: 
   - term: surrende
     lang: en
     tts: en-terms/surrende.mp3
   - term: kapitulace
     lang: cs
+  profileName: relax
 - terms: 
   - term: unearthed
     lang: en
@@ -21610,12 +22150,14 @@ concepts:
     lang: cs
   - term: objevil
     lang: cs
+  profileName: relax
 - terms: 
   - term: subpar
     lang: en
     tts: en-terms/subpar.mp3
   - term: pododdíl
     lang: cs
+  profileName: relax
 - terms: 
   - term: subtly
     lang: en
@@ -21624,6 +22166,7 @@ concepts:
     lang: cs
   - term: nepatrně
     lang: cs
+  profileName: relax
 - terms: 
   - term: despised
     lang: en
@@ -21632,30 +22175,35 @@ concepts:
     lang: cs
   - term: opovrhoval
     lang: cs
+  profileName: relax
 - terms: 
   - term: malady
     lang: en
     tts: en-terms/malady.mp3
   - term: nemoc
     lang: cs
+  profileName: relax
 - terms: 
   - term: foretaste
     lang: en
     tts: en-terms/foretaste.mp3
   - term: předzvěst
     lang: cs
+  profileName: relax
 - terms: 
   - term: germinate
     lang: en
     tts: en-terms/germinate.mp3
   - term: klíčit
     lang: cs
+  profileName: relax
 - terms: 
   - term: irrigate
     lang: en
     tts: en-terms/irrigate.mp3
   - term: zavlažování
     lang: cs
+  profileName: relax
 - terms: 
   - term: intrigued
     lang: en
@@ -21664,30 +22212,35 @@ concepts:
     lang: cs
   - term: fascinován
     lang: cs
+  profileName: relax
 - terms: 
   - term: appreciably
     lang: en
     tts: en-terms/appreciably.mp3
   - term: znatelně
     lang: cs
+  profileName: relax
 - terms: 
   - term: prevailing
     lang: en
     tts: en-terms/prevailing.mp3
   - term: převládající
     lang: cs
+  profileName: relax
 - terms: 
   - term: corrugated
     lang: en
     tts: en-terms/corrugated.mp3
   - term: vlnité
     lang: cs
+  profileName: relax
 - terms: 
   - term: mustering
     lang: en
     tts: en-terms/mustering.mp3
   - term: shromažďování
     lang: cs
+  profileName: relax
 - terms: 
   - term: cloak
     lang: en
@@ -21696,12 +22249,14 @@ concepts:
     lang: cs
   - term: zástěrka
     lang: cs
+  profileName: relax
 - terms: 
   - term: ere
     lang: en
     tts: en-terms/ere.mp3
   - term: dříve
     lang: cs
+  profileName: relax
 - terms: 
   - term: uttermost
     lang: en
@@ -21710,4 +22265,5 @@ concepts:
     lang: cs
   - term: nanejvýš
     lang: cs
+  profileName: relax
 

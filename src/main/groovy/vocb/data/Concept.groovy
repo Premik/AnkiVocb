@@ -37,11 +37,20 @@ public class Concept extends TermContainer  {
 
 	@Override
 	public List<String> validate(ValidationProfile vp ) {
-		if (!validationProfile.isDefaultProfile()) {
+
+		
+		
+		if (!validationProfile.defaultProfile) {
 			//Local profile overrides the provided one, unless the local one is the default
 			vp = validationProfile
+			
 		}
 		List<String> ret = super.validate(vp)
+		/*if (!img && terms[0].tts && terms[1] && !terms[1].tts) {
+		 Migration
+			profileName = "relax"
+		}*/
+		
 		if (ignore) return ret
 		if (!terms) {
 			ret.add("No terms")
