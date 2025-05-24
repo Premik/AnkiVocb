@@ -148,9 +148,16 @@ class WordNormalizerTest {
 
 	@Test
 	void stripBrkSimple() {
-		norm.stripBracketsOut ("Hello (world)") == "Hello"
-		norm.stripBracketsOut ("Hello ( world ) there.") == "Hello there."
-		norm.stripBracketsOut ("Hello world.") == "Hello world."
+		assert norm.stripBracketsOut ("Hello (world)") == "Hello"
+		assert norm.stripBracketsOut ("Hello ( world ) there.") == "Hello there."
+		assert norm.stripBracketsOut ("Hello world.") == "Hello world."
+	}
+	
+	@Test
+	void splitBrk() {
+		assert norm.splitBrackets ("Hello (world)") == ["Hello", "world"] as Tuple2<String, String>
+		assert norm.splitBrackets ("Hello ( world ) there.") == ["Hello there.", "world"] as Tuple2<String, String>
+		assert norm.splitBrackets ("Hello world.") == ["Hello world.", ""] as Tuple2<String, String>
 	}
 	
 	@Test
