@@ -31,8 +31,11 @@ public class Manager {
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
 		db.concepts.each { Concept c->
-			
-			if (c.firstTerm) conceptByFirstTerm[c.firstTerm] = c
+			String ft = c.firstTerm
+			if (conceptByFirstTerm.containsKey(ft)) {
+				System.err.println("Warninig: duplicate word '$ft'")
+			}			
+			if (ft) conceptByFirstTerm[ft] = c
 		}
 	}
 
