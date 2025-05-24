@@ -151,8 +151,8 @@ public class WordsSource {
 	
 			
 			
-			fromText(tx)
-			//fromOwnSamples()
+			//fromText(tx)
+			fromOwnSamples()
 			//basicWords()
 			return
 			wn.phraseFreqs(tx,2, 3)

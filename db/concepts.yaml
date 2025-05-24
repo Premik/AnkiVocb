@@ -19924,4 +19924,24 @@ concepts:
     tts: cs-terms/zverejnit.mp3
   img: img/publish.jpeg
   freq: 24.23920
+##  internet   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: internet
+  freq: 448.50600
+##  default   ############################################################### single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: default
+  freq: 90.98700
+##  identify   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: identify
+  freq: 60.96350
+##  redirect   ############################################################## single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: redirect
+  freq: 3.53350
+##  blink   ################################################################# single term only|no img|no cs term|t0:tts:missing
+- terms: 
+  - term: blink
+  freq: 0.75490
 
