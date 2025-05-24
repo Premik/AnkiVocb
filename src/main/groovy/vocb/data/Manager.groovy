@@ -38,7 +38,7 @@ public class Manager {
 	List<String> ignoreConcepts = []
 
 	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
-	BigDecimal[] freqRanges = [0, 10, 100, 250, 500, 1800, new BigDecimal("10e10")]
+	BigDecimal[] freqRanges = [0, 16, 100, 250, 500, 1800, new BigDecimal("10e10")]
 	 .collect{it*1000}
 
 	Integer numberOfStarts(BigDecimal freq) {
