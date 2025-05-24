@@ -25,7 +25,7 @@ public class ExampleAppender {
 
 	//Manager dbMan = new Manager()
 	Manager dbMan = new Manager(defaultExamplesFileName:"examplesDraft.yaml")
-	
+
 	int sleep=500
 	int limit = 5000
 	int maxLength = 60
@@ -81,9 +81,9 @@ public class ExampleAppender {
 					String s = t[0]
 					s.length() < maxLength
 				}.collect { Tuple2<String, String> t->
-					new Example().tap { 
+					new Example().tap {
 						terms.add(Term.enTerm(t[0] as String))
-						terms.add(Term.csTerm(t[1] as String))						
+						terms.add(Term.csTerm(t[1] as String))
 					}
 				}
 	}
@@ -95,37 +95,39 @@ public class ExampleAppender {
 		rootPath.resolve("enSamples.txt").withPrintWriter(Helper.utf8) { PrintWriter enPw->
 			rootPath.resolve("czSamples.txt").withPrintWriter(Helper.utf8) { PrintWriter czPw->
 				todo
-				.flatMap { Concept c->
-					azureDictSampleForConcept(c).stream()
-				}.forEachOrdered { Tuple2<String, String> sample ->
-					enPw.println(sample[0])
-					czPw.println(sample[1])
-					ln++
-				}
+						.flatMap { Concept c->
+							azureDictSampleForConcept(c).stream()
+						}.forEachOrdered { Tuple2<String, String> sample ->
+							enPw.println(sample[0])
+							czPw.println(sample[1])
+							ln++
+						}
 			}
 		}
 		println "Saved $ln lines to $rootPath"
 	}
 
 	@CompileStatic
-	void loadFromAzureDict(Manager dbMan=dbMan) {	
-		
+	void loadFromAzureDict(Manager dbMan=dbMan, int skip=0) {
+		int index = 0
 		todo
-		.limit(limit)
-		.flatMap { Concept c->			
-			List<Example> ex = azureDictSampleForConcept(c)
-			if (!ex) {
-				println "${color('No example found for', RED)} ${color(c.toString(), BOLD)}"
-			}
-			dbMan.save()
-			Thread.sleep(sleep)
-			return ex.stream()
-		}
-		.forEachOrdered { Example e ->
-			dbMan.db.examples.add(e)
-			e.location = dbMan.defaultExamplesLocation
-			
-		}
+				.limit(limit)
+				.skip(skip)
+				.flatMap { Concept c->
+					println index
+					index++
+					List<Example> ex = azureDictSampleForConcept(c)
+					if (!ex) {
+						println "${color('No example found for', RED)} ${color(c.toString(), BOLD)}"
+					}
+					dbMan.save()
+					Thread.sleep(sleep)
+					return ex.stream()
+				}
+				.forEachOrdered { Example e ->
+					dbMan.db.examples.add(e)
+					e.location = dbMan.defaultExamplesLocation
+				}
 		dbMan.db.dedup()
 		dbMan.save()
 	}
@@ -191,7 +193,18 @@ public class ExampleAppender {
             common display daily natural official average technical region record environment district calendar update resource material written adult requirements via 
 			cheap third individual plus usually percent fast function global subscribe various knowledge error currently construction loan taken friday lake basic response 
 			practice holiday chat speed loss discount higher political kingdom storage across inside solution necessary according particular
-			'''.split(/\s+/).reverse().join(" ")						
+			'''.split(/\s+/).reverse().join(" ")
+
+			String tx2 = '''
+			available privacy general development local download including location account content provide sale credit categories advanced
+		topic financial below login legal options status browse range request reference term original
+		common daily natural average region record environment district calendar update resource material adult
+		cheap third individual plus usually percent fast global subscribe various knowledge loan taken friday lake basic response
+		practice holiday loss higher kingdom storage across inside necessary according
+			'''
+			
+			tx = "available privacy general development local download including location account content provide sale"
+
 			dbMan.load()
 			todoFromText(tx)
 			loadFromAzureDict()
