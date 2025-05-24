@@ -203,6 +203,10 @@ public class Manager {
 				assert lang == "en" : "not implemented"
 				Concept c=  conceptByFirstTerm[word]
 				if (!c) {
+					if (word.endsWith("s")) c = conceptByFirstTerm[word[0..-2]]
+					else c=  conceptByFirstTerm["${word}s"]
+				} 
+				if (!c) {
 					println "Unknown term '$word' used in the '$t.term' example."
 				}
 				ret[word].add(c)
@@ -277,7 +281,26 @@ public class Manager {
 	Collection<String> filterByStars(Collection<String> src, List<Integer> starRange = (0..2)) {
 		src.findAll { conceptsByStar[it] in starRange }
 	}
+	
+	List<Concept> conceptsFromWordList(Collection<String> enWords) {
+		enWords
+				.findAll()
+				.collect {it.toLowerCase()}
+				.collect { conceptByFirstTerm[it] }
+				.findAll { it.state != 'ignore'}
+	}
+	
+	List<Concept> conceptsFromWordsInSentence(CharSequence sen) {
+		Set<String> words = wn.uniqueueTokens(wn.normalizeSentence(sen))
+		return conceptsFromWordList(words)
+	}
 
+	
+	List<Concept> conceptsFromWordsInExample(Example e) {
+		conceptsFromWordsInSentence(e.firstTerm)
+	}
+	
+	
 	public void moveToSubFolders() {
 
 

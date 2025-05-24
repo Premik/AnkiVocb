@@ -36,10 +36,11 @@ public class ConceptYamlStorage {
 			c.terms.put(t.term, t)
 		}
 
-		cjs.examples.each {
+		/*cjs.examples.each {			
 			Term t = parseTerm(it)
 			c.examples.put(t.term, t)
-		}
+		}*/
+		assert !cjs.examples : "Depricated example found on $c"
 		return c
 	}
 

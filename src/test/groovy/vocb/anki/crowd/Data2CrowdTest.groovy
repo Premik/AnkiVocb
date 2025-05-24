@@ -5,24 +5,23 @@ import org.junit.jupiter.api.Test
 import vocb.data.Concept
 import vocb.data.ConceptDb
 import vocb.data.ConceptYamlStorage
-import vocb.data.Manager
+import vocb.data.Example
 
 class Data2CrowdTest {
 
 	Data2Crowd dc = new Data2Crowd()
 	URL testConceptsUrl = getClass().getResource('/vocb/data/fullyPopulated.yaml')
 	
-
+	@Lazy ConceptDb db =  new ConceptYamlStorage().parseDb(testConceptsUrl.newReader())
 		
-	@Lazy Concept firstConcept= {
-		ConceptDb db =  new ConceptYamlStorage().parseDb(testConceptsUrl.newReader())
-		db.concepts[0]		
-	}()
+	@Lazy Concept firstConcept= db.concepts[0]		
+	@Lazy Example firstExample = db.examples[0]
+	
 
 	@Test
 	void mapConcept() {		
 		Note n = new Note(model:dc.vocbModel.noteModel)
-		dc.concept2CrowdNote(firstConcept, n)
+		dc.concept2CrowdNote(firstConcept, firstExample, n)
 		assert n.fields == ['in.jpeg', '5', 'in', 'in.mp3', 'Not in my city.', 'Not in my city.mp3', 'v', 'v.mp3', 've', 've.mp3', 'Ne v mém městě.', 'Ne v mem meste.mp3']
 	
 	}

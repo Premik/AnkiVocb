@@ -128,8 +128,10 @@ public class ProfileSupport {
 
 	public List<Long> nodeIdsMissingNativeAlt(List<GroovyRowResult> rows) {
 		int indx = vocbModel.noteModel.getFieldIndex("nativeAlt")
-		rows.findAll { GroovyRowResult r-> !r?.flds[indx] }
-		.collect {it.cid as Long}
+		rows
+				.findAll { GroovyRowResult r-> !r?.flds[indx] }
+				.findAll { GroovyRowResult r-> r.ord == 2  }
+				.collect {it.cid as Long}
 	}
 
 	public void dropCardsByIdList(List<Long> ids) {
@@ -149,12 +151,13 @@ public class ProfileSupport {
 	static void main(String... args) {
 		new ProfileSupport().with {
 			//println listProfiles()
+			selectedProfile = "test2"
 			println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
 
 
 			List<Long> toDelete = nodeIdsMissingNativeAlt(ankivocbCards())
 			println toDelete
-			dropCardsByIdList(toDelete)
+			//dropCardsByIdList(toDelete)
 			//println selectedDeckId
 		}
 	}
