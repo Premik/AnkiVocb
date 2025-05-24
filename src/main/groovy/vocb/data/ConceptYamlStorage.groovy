@@ -28,6 +28,7 @@ public class ConceptYamlStorage {
 	}
 
 	public Concept parseConcept(Map cjs) {
+		assert cjs
 		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, origins:cjs.origins)
 		cjs.terms.each {
 			Term t = parseTerm(it)

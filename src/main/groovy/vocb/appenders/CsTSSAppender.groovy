@@ -15,20 +15,23 @@ public class CsTSSAppender {
 
 	LocalTTS ttsCz = new LocalTTS()
 	Manager dbMan = new Manager()
+	int limit = 10
 
 	void run() {
 		dbMan.load()
 		int i = 0;
 		dbMan.withTermsByLang("cs", true) {Concept c, Term t->
-						
-				if (!dbMan.linkedMediaExists(t.tts) && i <10 ) {
-					i++;
-					t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
-						ttsCz.synth(t.term, "violka", p.toString() )
-						dbMan.save()
-					}
+			if (c.terms.size() >3 || c.examples.size()>2) {
+				println "Ignoring: $c"
+				return
+			}
+			if (!dbMan.linkedMediaExists(t.tts) && i <limit ) {
+				i++;
+				t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
+					ttsCz.synth(t.term, "violka", p.toString() )
+					dbMan.save()
 				}
-			
+			}
 		}
 	}
 

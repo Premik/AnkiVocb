@@ -5,8 +5,10 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
+import groovy.transform.CompileStatic
 import vocb.Helper
 import static vocb.Helper.utf8
+
 
 public class Manager {
 
@@ -99,10 +101,17 @@ public class Manager {
 		return yaml
 	}
 	
+	public BigDecimal getCompleteness() {
+		if (db.concepts.size() ==0) return 0
+		 db.concepts.sum {it.completeness} / db.concepts.size()
+	}
+	
 	public static void main(String[] args) {
 		Manager dbMan = new Manager()
-		dbMan.load()		
-		dbMan.save() 
+		dbMan.load()
+		dbMan.save()		
+		println "${Helper.roundDecimal(dbMan.completeness*100, 0)}% completed"
+		
 
 		println "Resaved "
 	}
