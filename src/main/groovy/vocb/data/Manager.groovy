@@ -448,7 +448,7 @@ public class Manager {
 		ExampleComparator.of(sentence).bestFromExamples(db.examples.stream())
 	}
 	
-	public List<ExampleComparatorMatch> bestExampleForSentence(Collection<String> words) {
+	public List<ExampleComparatorMatch> bestExampleForSentence(Collection<String> words) {		
 		new ExampleComparator(words:words).bestFromExamples(db.examples.stream())
 	}
 

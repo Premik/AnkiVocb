@@ -61,7 +61,7 @@ public class ExampleComparator {
 	}
 
 	void setExample(Example e) {
-		sentence = e?.firstTerm
+		sentence = e?.firstTerm		
 		example= e
 	}
 
@@ -100,7 +100,20 @@ public class ExampleComparator {
 		
 		double max=Double.NEGATIVE_INFINITY
 		List<ExampleComparatorMatch> best = []
-		bs.map{ExampleComparator b->similarityCompareTo(b)}
+		bs.parallel().map{ExampleComparator b->
+			/*if (b?.example?.firstTerm?.contains("I'll")) {
+				if (wordsWithoutBrackets.contains("I'll")) {
+				println b
+				println this
+			}
+			}*/
+			
+			similarityCompareTo(b).tap {
+				it.similarityScore
+			}
+		}
+		//.toList()
+		//.toSorted {it.similarityScore}
 		.forEach { ExampleComparatorMatch m->
 			if (m.similarityScore > max) {
 				max = m.similarityScore
