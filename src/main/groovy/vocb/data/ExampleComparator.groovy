@@ -65,7 +65,9 @@ public class ExampleComparator {
 	}
 
 	Collection<String> getWordsWithoutBrackets() {
-		words.collect{WordNormalizer.instance.stripBracketsOut(it)}
+		//words.collect{wn.stripBracketsOut(it)}
+		wn.expandBrackets(words)
+		
 	}
 
 	/*Collection<String> getWordsVariantWithPairs() {

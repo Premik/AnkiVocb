@@ -50,15 +50,15 @@ public class ExampleComparatorMatch {
 	@Lazy
 	public double similarityScore = {
 
-		Number pairs = commonWords.count {it.contains(" ") || it.contains("'")} //Composed/pairs higher
-		double longWordMatch = (commonWords.sum {it.length()}?:0) as double //Long exact match word is better
+		Number pairs = commonWordVariants.count {it.contains(" ")} //Composed/pairs higher
+		double longWordMatch = (commonWordVariants.sum {it.length()}?:0) as double //Long exact match word is better
 		double exactMatches = commonWords.size()*500 //Exact word matches
 		double variants = commonWordVariants.size()
 		double sentenceLen = b.wordsWithoutBrackets.size() //Prefer shorter sentences		
 		double prefered = preferedWordsScore(commonWords.intersect(preferedWords))
 		double preferedVars = preferedWordsScore(commonWordVariants.intersect(preferedWords))
 
-		return pairs*1000 + longWordMatch*3 + exactMatches*500 + variants*50 - sentenceLen + prefered*40 + preferedVars*30
+		return pairs*500 + longWordMatch*5 + exactMatches*100 + variants*50 - sentenceLen + prefered*40 + preferedVars*30
 	}()
 
 	public String sentenceToAnsiString(String defaultColor=RED, boolean printMiss=true) {

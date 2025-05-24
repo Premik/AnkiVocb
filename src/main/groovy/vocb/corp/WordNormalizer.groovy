@@ -316,6 +316,10 @@ public class WordNormalizer {
 		//return ["${a.trim()} ${c.trim()}" as String, b]
 		return [[a, c].findAll().join(" "), b] as Tuple2<String, String>
 	}
+	
+	public List<String> expandBrackets(Collection<String> words) {
+		words.collectMany{ splitBrackets(it).toUnique().findAll()}		
+	}
 
 	static void main(String... args) {
 		new WordNormalizer().with {
