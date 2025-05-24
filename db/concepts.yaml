@@ -15768,20 +15768,20 @@ concepts:
     tts: cs-terms/chut.mp3
   img: img/taste.jpeg
   freq: 42332.00000
-##  weather   ############################################################### t0:tts:missing
 - terms: 
   - term: weather
     lang: en
+    tts: en-terms/weather.mp3
     pron: ˈwɛðə
   - term: počasí
     lang: cs
     tts: cs-terms/pocasi.mp3
   img: img/weather.jpeg
   freq: 42239.00000
-##  famous   ################################################################ t0:tts:missing
 - terms: 
   - term: famous
     lang: en
+    tts: en-terms/famous.mp3
     pron: ˈfeɪməs
   - term: slavné
     lang: cs
@@ -15791,10 +15791,10 @@ concepts:
     tts: cs-terms/zname.mp3
   img: img/famous.jpeg
   freq: 42237.00000
-##  breast   ################################################################ t0:tts:missing
 - terms: 
   - term: breast
     lang: en
+    tts: en-terms/breast.mp3
     pron: brɛst
   - term: prsa
     lang: cs
@@ -15804,40 +15804,40 @@ concepts:
     tts: cs-terms/prsni.mp3
   img: img/breast.jpeg
   freq: 42074.00000
-##  kissed   ################################################################ t0:tts:missing
 - terms: 
   - term: kissed
     lang: en
+    tts: en-terms/kissed.mp3
     pron: kɪst
   - term: políbil
     lang: cs
     tts: cs-terms/polibil.mp3
   img: img/kissed.jpeg
   freq: 41987.00000
-##  active   ################################################################ t0:tts:missing
 - terms: 
   - term: active
     lang: en
+    tts: en-terms/active.mp3
     pron: ˈæktɪv
   - term: aktivní
     lang: cs
     tts: cs-terms/aktivni.mp3
   img: img/active.jpeg
   freq: 41978.00000
-##  access   ################################################################ t0:tts:missing
 - terms: 
   - term: access
     lang: en
+    tts: en-terms/access.mp3
     pron: ˈæksɛs
   - term: přístup
     lang: cs
     tts: cs-terms/pristup.mp3
   img: img/access.jpeg
   freq: 41869.00000
-##  fit   ################################################################### t0:tts:missing
 - terms: 
   - term: fit
     lang: en
+    tts: en-terms/fit.mp3
     pron: fɪt
   - term: vejít (se)
     lang: cs
@@ -15847,10 +15847,10 @@ concepts:
     tts: cs-terms/zapadaji.mp3
   img: img/fit.jpeg
   freq: 41728.00000
-##  angry   ################################################################# t0:tts:missing
 - terms: 
   - term: angry
     lang: en
+    tts: en-terms/angry.mp3
     pron: ˈæŋgri
   - term: naštvaný
     lang: cs
@@ -15860,10 +15860,10 @@ concepts:
     tts: cs-terms/rozhnevany.mp3
   img: img/angry.jpeg
   freq: 41725.00000
-##  miserable   ############################################################# t0:tts:missing
 - terms: 
   - term: miserable
     lang: en
+    tts: en-terms/miserable.mp3
     pron: ˈmɪzərəbl
   - term: mizerně
     lang: cs
@@ -15873,10 +15873,11 @@ concepts:
     tts: cs-terms/bidny.mp3
   img: img/miserable.jpeg
   freq: 41704.00000
-##  lad   ################################################################### no freq|t0:tts:missing
+##  lad   ################################################################### no freq
 - terms: 
   - term: lad
     lang: en
+    tts: en-terms/lad.mp3
     pron: læd
   - term: mladík
     lang: cs
@@ -15885,20 +15886,20 @@ concepts:
     lang: cs
     tts: cs-terms/hoch.mp3
   img: img/lad.jpeg
-##  shadow   ################################################################ t0:tts:missing
 - terms: 
   - term: shadow
     lang: en
+    tts: en-terms/shadow.mp3
     pron: ˈʃædəʊ
   - term: stín
     lang: cs
     tts: cs-terms/stin.mp3
   img: img/shadow.jpeg
   freq: 41602.00000
-##  occur   ################################################################# t0:tts:missing
 - terms: 
   - term: occur
     lang: en
+    tts: en-terms/occur.mp3
     pron: əˈkɜː
   - term: nastat
     lang: cs
@@ -15908,10 +15909,10 @@ concepts:
     tts: cs-terms/vyskytovat.mp3
   img: img/occur.jpeg
   freq: 41583.00000
-##  pure   ################################################################## t0:tts:missing
 - terms: 
   - term: pure
     lang: en
+    tts: en-terms/pure.mp3
     pron: pjʊə
   - term: čisté
     lang: cs
@@ -15921,10 +15922,10 @@ concepts:
     tts: cs-terms/ryzi.mp3
   img: img/pure.jpeg
   freq: 41479.00000
-##  file   ################################################################## t0:tts:missing
 - terms: 
   - term: file
     lang: en
+    tts: en-terms/file.mp3
     pron: faɪl
   - term: soubor
     lang: cs
@@ -15934,30 +15935,30 @@ concepts:
     tts: cs-terms/spis.mp3
   img: img/file.jpeg
   freq: 41418.00000
-##  ball   ################################################################## t0:tts:missing
 - terms: 
   - term: ball
     lang: en
+    tts: en-terms/ball.mp3
     pron: bɔːl
   - term: míč
     lang: cs
     tts: cs-terms/mic.mp3
   img: img/ball.jpeg
   freq: 41346.00000
-##  stairs   ################################################################ t0:tts:missing
 - terms: 
   - term: stairs
     lang: en
+    tts: en-terms/stairs.mp3
     pron: steəz
   - term: schody
     lang: cs
     tts: cs-terms/schody.mp3
   img: img/stairs.jpeg
   freq: 41339.00000
-##  writer   ################################################################ t0:tts:missing
 - terms: 
   - term: writer
     lang: en
+    tts: en-terms/writer.mp3
     pron: ˈraɪtə
   - term: spisovatel
     lang: cs
@@ -15967,10 +15968,10 @@ concepts:
     tts: cs-terms/pisatel.mp3
   img: img/writer.jpeg
   freq: 41302.00000
-##  courage   ############################################################### t0:tts:missing
 - terms: 
   - term: courage
     lang: en
+    tts: en-terms/courage.mp3
     pron: ˈkʌrɪʤ
   - term: odvaha
     lang: cs
@@ -15980,10 +15981,10 @@ concepts:
     tts: cs-terms/kuraz.mp3
   img: img/courage.jpeg
   freq: 41301.00000
-##  wide   ################################################################## t0:tts:missing
 - terms: 
   - term: wide
     lang: en
+    tts: en-terms/wide.mp3
     pron: waɪd
   - term: široký
     lang: cs
@@ -15993,10 +15994,10 @@ concepts:
     tts: cs-terms/rozsahle.mp3
   img: img/wide.jpeg
   freq: 41233.00000
-##  branches   ############################################################## t0:tts:missing
 - terms: 
   - term: branches
     lang: en
+    tts: en-terms/branches.mp3
     pron: ˈbrɑːnʧɪz
   - term: větve
     lang: cs
@@ -16006,50 +16007,50 @@ concepts:
     tts: cs-terms/odvetvi.mp3
   img: img/branches.jpeg
   freq: 41195.00000
-##  twice   ################################################################# t0:tts:missing
 - terms: 
   - term: twice
     lang: en
+    tts: en-terms/twice.mp3
     pron: twaɪs
   - term: dvakrát
     lang: cs
     tts: cs-terms/dvakrat.mp3
   img: img/twice.jpeg
   freq: 41171.00000
-##  september   ############################################################# t0:tts:missing
 - terms: 
   - term: september
     lang: en
+    tts: en-terms/september.mp3
     pron: sɛpˈtɛmbə
   - term: září
     lang: cs
     tts: cs-terms/zari.mp3
   img: img/september.jpeg
   freq: 41145.00000
-##  ireland   ############################################################### t0:tts:missing
 - terms: 
   - term: ireland
     lang: en
+    tts: en-terms/ireland.mp3
     pron: ˈaɪələnd
   - term: irsko
     lang: cs
     tts: cs-terms/irsko.mp3
   img: img/ireland.jpeg
   freq: 41105.00000
-##  twelve   ################################################################ t0:tts:missing
 - terms: 
   - term: twelve
     lang: en
+    tts: en-terms/twelve.mp3
     pron: twɛlv
   - term: dvanáct
     lang: cs
     tts: cs-terms/dvanact.mp3
   img: img/twelve.jpeg
   freq: 41104.00000
-##  rate   ################################################################## t0:tts:missing
 - terms: 
   - term: rate
     lang: en
+    tts: en-terms/rate.mp3
     pron: reɪt
   - term: poměr (k)
     lang: cs
@@ -16059,20 +16060,20 @@ concepts:
     tts: cs-terms/mira.mp3
   img: img/rate.jpeg
   freq: 40966.00000
-##  gate   ################################################################## t0:tts:missing
 - terms: 
   - term: gate
     lang: en
+    tts: en-terms/gate.mp3
     pron: geɪt
   - term: brána
     lang: cs
     tts: cs-terms/brana.mp3
   img: img/gate.jpeg
   freq: 40925.00000
-##  text   ################################################################## t0:tts:missing
 - terms: 
   - term: text
     lang: en
+    tts: en-terms/text.mp3
     pron: tɛkst
   - term: text
     lang: cs
@@ -16082,30 +16083,30 @@ concepts:
     tts: cs-terms/textovka.mp3
   img: img/text.jpeg
   freq: 40869.00000
-##  hotel   ################################################################# t0:tts:missing
 - terms: 
   - term: hotel
     lang: en
+    tts: en-terms/hotel.mp3
     pron: həʊˈtɛl
   - term: hotel
     lang: cs
     tts: cs-terms/hotel.mp3
   img: img/hotel.jpeg
   freq: 40857.00000
-##  yellow   ################################################################ t0:tts:missing
 - terms: 
   - term: yellow
     lang: en
+    tts: en-terms/yellow.mp3
     pron: ˈjɛləʊ
   - term: žluté
     lang: cs
     tts: cs-terms/zlute.mp3
   img: img/yellow.jpeg
   freq: 40751.00000
-##  stream   ################################################################ t0:tts:missing
 - terms: 
   - term: stream
     lang: en
+    tts: en-terms/stream.mp3
     pron: striːm
   - term: proud (vody)
     lang: cs
@@ -16115,20 +16116,20 @@ concepts:
     tts: cs-terms/tok.mp3
   img: img/stream.jpeg
   freq: 40701.00000
-##  sword   ################################################################# t0:tts:missing
 - terms: 
   - term: sword
     lang: en
+    tts: en-terms/sword.mp3
     pron: sɔːd
   - term: meč
     lang: cs
     tts: cs-terms/mec.mp3
   img: img/sword.jpeg
   freq: 40685.00000
-##  familiar   ############################################################## t0:tts:missing
 - terms: 
   - term: familiar
     lang: en
+    tts: en-terms/familiar.mp3
     pron: fəˈmɪliə
   - term: povědomý
     lang: cs
@@ -16138,10 +16139,10 @@ concepts:
     tts: cs-terms/zname.mp3
   img: img/familiar.jpeg
   freq: 40675.00000
-##  base   ################################################################## t0:tts:missing
 - terms: 
   - term: base
     lang: en
+    tts: en-terms/base.mp3
     pron: beɪs
   - term: základna
     lang: cs
@@ -16151,10 +16152,10 @@ concepts:
     tts: cs-terms/podstavec.mp3
   img: img/base.jpeg
   freq: 40527.00000
-##  title   ################################################################# t0:tts:missing
 - terms: 
   - term: title
     lang: en
+    tts: en-terms/title.mp3
     pron: ˈtaɪtl
   - term: titul
     lang: cs
@@ -16164,20 +16165,20 @@ concepts:
     tts: cs-terms/nadpis.mp3
   img: img/title.jpeg
   freq: 40493.00000
-##  grass   ################################################################# t0:tts:missing
 - terms: 
   - term: grass
     lang: en
+    tts: en-terms/grass.mp3
     pron: grɑːs
   - term: tráva
     lang: cs
     tts: cs-terms/trava.mp3
   img: img/grass.jpeg
   freq: 40432.00000
-##  pressure   ############################################################## t0:tts:missing
 - terms: 
   - term: pressure
     lang: en
+    tts: en-terms/pressure.mp3
     pron: ˈprɛʃə
   - term: tlak
     lang: cs
@@ -16187,10 +16188,10 @@ concepts:
     tts: cs-terms/natlak.mp3
   img: img/pressure.jpeg
   freq: 40396.00000
-##  crowd   ################################################################# t0:tts:missing
 - terms: 
   - term: crowd
     lang: en
+    tts: en-terms/crowd.mp3
     pron: kraʊd
   - term: dav
     lang: cs
@@ -16200,20 +16201,20 @@ concepts:
     tts: cs-terms/zastup.mp3
   img: img/crowd.jpeg
   freq: 40252.00000
-##  seat   ################################################################## t0:tts:missing
 - terms: 
   - term: seat
     lang: en
+    tts: en-terms/seat.mp3
     pron: siːt
   - term: sedadlo
     lang: cs
     tts: cs-terms/sedadlo.mp3
   img: img/seat.jpeg
   freq: 40246.00000
-##  safety   ################################################################ t0:tts:missing
 - terms: 
   - term: safety
     lang: en
+    tts: en-terms/safety.mp3
     pron: ˈseɪfti
   - term: bezpečnost
     lang: cs
@@ -16223,10 +16224,10 @@ concepts:
     tts: cs-terms/ochranne.mp3
   img: img/safety.jpeg
   freq: 40190.00000
-##  direct   ################################################################ t0:tts:missing
 - terms: 
   - term: direct
     lang: en
+    tts: en-terms/direct.mp3
     pron: dɪˈrɛkt
   - term: přímé
     lang: cs
@@ -16236,50 +16237,50 @@ concepts:
     tts: cs-terms/nasmerovat.mp3
   img: img/direct.jpeg
   freq: 40026.00000
-##  wings   ################################################################# t0:tts:missing
 - terms: 
   - term: wings
     lang: en
+    tts: en-terms/wings.mp3
     pron: wɪŋz
   - term: křídla
     lang: cs
     tts: cs-terms/kridla.mp3
   img: img/wings.jpeg
   freq: 40014.00000
-##  dozen   ################################################################# t0:tts:missing
 - terms: 
   - term: dozen
     lang: en
+    tts: en-terms/dozen.mp3
     pron: ˈdʌzn
   - term: tucet (malý počet, 12)
     lang: cs
     tts: cs-terms/tucet.mp3
   img: img/dozen.jpeg
   freq: 39975.00000
-##  golden   ################################################################ t0:tts:missing
 - terms: 
   - term: golden
     lang: en
+    tts: en-terms/golden.mp3
     pron: ˈgəʊldən
   - term: zlatý
     lang: cs
     tts: cs-terms/zlaty.mp3
   img: img/golden.jpeg
   freq: 39910.00000
-##  kitchen   ############################################################### t0:tts:missing
 - terms: 
   - term: kitchen
     lang: en
+    tts: en-terms/kitchen.mp3
     pron: ˈkɪʧɪn
   - term: kuchyně
     lang: cs
     tts: cs-terms/kuchyne.mp3
   img: img/kitchen.jpeg
   freq: 39907.00000
-##  maid   ################################################################## t0:tts:missing
 - terms: 
   - term: maid
     lang: en
+    tts: en-terms/maid.mp3
     pron: meɪd
   - term: služka
     lang: cs
@@ -16289,40 +16290,40 @@ concepts:
     tts: cs-terms/pokojska.mp3
   img: img/maid.jpeg
   freq: 39847.00000
-##  gray   ################################################################## t0:tts:missing
 - terms: 
   - term: gray
     lang: en
+    tts: en-terms/gray.mp3
     pron: greɪ
   - term: šedé
     lang: cs
     tts: cs-terms/sede.mp3
   img: img/gray.jpeg
   freq: 39804.00000
-##  sport   ################################################################# t0:tts:missing
 - terms: 
   - term: sport
     lang: en
+    tts: en-terms/sport.mp3
     pron: spɔːt
   - term: sport
     lang: cs
     tts: cs-terms/sport.mp3
   img: img/sport.jpeg
   freq: 39797.00000
-##  increase   ############################################################## t0:tts:missing
 - terms: 
   - term: increase
     lang: en
+    tts: en-terms/increase.mp3
     pron: ˈɪnkriːs
   - term: zvýšit
     lang: cs
     tts: cs-terms/zvysit.mp3
   img: img/increase.jpeg
   freq: 39722.00000
-##  prisoners   ############################################################# t0:tts:missing
 - terms: 
   - term: prisoners
     lang: en
+    tts: en-terms/prisoners.mp3
     pron: ˈprɪznəz
   - term: vězni
     lang: cs
@@ -16332,20 +16333,20 @@ concepts:
     tts: cs-terms/zajatci.mp3
   img: img/prisoners.jpeg
   freq: 39576.00000
-##  dry   ################################################################### t0:tts:missing
 - terms: 
   - term: dry
     lang: en
+    tts: en-terms/dry.mp3
     pron: draɪ
   - term: suché
     lang: cs
     tts: cs-terms/suche.mp3
   img: img/dry.jpeg
   freq: 39560.00000
-##  glory   ################################################################# t0:tts:missing
 - terms: 
   - term: glory
     lang: en
+    tts: en-terms/glory.mp3
     pron: ˈglɔːri
   - term: sláva
     lang: cs
@@ -16355,30 +16356,30 @@ concepts:
     tts: cs-terms/nadhera.mp3
   img: img/glory.jpeg
   freq: 39543.00000
-##  thirty   ################################################################ t0:tts:missing
 - terms: 
   - term: thirty
     lang: en
+    tts: en-terms/thirty.mp3
     pron: ˈθɜːti
   - term: třicet
     lang: cs
     tts: cs-terms/tricet.mp3
   img: img/thirty.jpeg
   freq: 39433.00000
-##  sharp   ################################################################# t0:tts:missing
 - terms: 
   - term: sharp
     lang: en
+    tts: en-terms/sharp.mp3
     pron: ʃɑːp
   - term: ostrý
     lang: cs
     tts: cs-terms/ostry.mp3
   img: img/sharp.jpeg
   freq: 39249.00000
-##  bottom   ################################################################ t0:tts:missing
 - terms: 
   - term: bottom
     lang: en
+    tts: en-terms/bottom.mp3
     pron: ˈbɒtəm
   - term: spodní
     lang: cs
@@ -16388,10 +16389,10 @@ concepts:
     tts: cs-terms/dno.mp3
   img: img/bottom.jpeg
   freq: 38907.00000
-##  shoot   ################################################################# t0:tts:missing
 - terms: 
   - term: shoot
     lang: en
+    tts: en-terms/shoot.mp3
     pron: ʃuːt
   - term: střílet
     lang: cs
@@ -16401,20 +16402,20 @@ concepts:
     tts: cs-terms/natocit.mp3
   img: img/shoot.jpeg
   freq: 38906.00000
-##  holy   ################################################################## t0:tts:missing
 - terms: 
   - term: holy
     lang: en
+    tts: en-terms/holy.mp3
     pron: ˈhəʊli
   - term: svatý
     lang: cs
     tts: cs-terms/svaty.mp3
   img: img/holy.jpeg
   freq: 38899.00000
-##  central   ############################################################### t0:tts:missing
 - terms: 
   - term: central
     lang: en
+    tts: en-terms/central.mp3
     pron: ˈsɛntrəl
   - term: centrální
     lang: cs
@@ -16424,40 +16425,40 @@ concepts:
     tts: cs-terms/ustredni.mp3
   img: img/central.jpeg
   freq: 38755.00000
-##  fate   ################################################################## t0:tts:missing
 - terms: 
   - term: fate
     lang: en
+    tts: en-terms/fate.mp3
     pron: feɪt
   - term: osud
     lang: cs
     tts: cs-terms/osud.mp3
   img: img/fate.jpeg
   freq: 38733.00000
-##  pocket   ################################################################ t0:tts:missing
 - terms: 
   - term: pocket
     lang: en
+    tts: en-terms/pocket.mp3
     pron: ˈpɒkɪt
   - term: kapsa
     lang: cs
     tts: cs-terms/kapsa.mp3
   img: img/pocket.jpeg
   freq: 38681.00000
-##  birth   ################################################################# t0:tts:missing
 - terms: 
   - term: birth
     lang: en
+    tts: en-terms/birth.mp3
     pron: bɜːθ
   - term: narození
     lang: cs
     tts: cs-terms/narozeni.mp3
   img: img/birth.jpeg
   freq: 38609.00000
-##  pair   ################################################################## t0:tts:missing
 - terms: 
   - term: pair
     lang: en
+    tts: en-terms/pair.mp3
     pron: peə
   - term: dvojice
     lang: cs
@@ -16467,10 +16468,10 @@ concepts:
     tts: cs-terms/par.mp3
   img: img/pair.jpeg
   freq: 38553.00000
-##  operation   ############################################################# t0:tts:missing
 - terms: 
   - term: operation
     lang: en
+    tts: en-terms/operation.mp3
     pron: ˌɒpəˈreɪʃən
   - term: operace
     lang: cs
@@ -16480,30 +16481,30 @@ concepts:
     tts: cs-terms/provoz.mp3
   img: img/operation.jpeg
   freq: 38459.00000
-##  sin   ################################################################### t0:tts:missing
 - terms: 
   - term: sin
     lang: en
+    tts: en-terms/sin.mp3
     pron: sɪn
   - term: hřích
     lang: cs
     tts: cs-terms/hrich.mp3
   img: img/sin.jpeg
   freq: 38318.00000
-##  storm   ################################################################# t0:tts:missing
 - terms: 
   - term: storm
     lang: en
+    tts: en-terms/storm.mp3
     pron: stɔːm
   - term: bouřka
     lang: cs
     tts: cs-terms/bourka.mp3
   img: img/storm.jpeg
   freq: 38285.00000
-##  truly   ################################################################# t0:tts:missing
 - terms: 
   - term: truly
     lang: en
+    tts: en-terms/truly.mp3
     pron: ˈtruːli
   - term: opravdu
     lang: cs
@@ -16513,30 +16514,30 @@ concepts:
     tts: cs-terms/skutecne.mp3
   img: img/truly.jpeg
   freq: 38176.00000
-##  february   ############################################################## t0:tts:missing
 - terms: 
   - term: february
     lang: en
+    tts: en-terms/february.mp3
     pron: ˈfɛbrʊəri
   - term: únor
     lang: cs
     tts: cs-terms/unor.mp3
   img: img/february.jpeg
   freq: 38131.00000
-##  weak   ################################################################## t0:tts:missing
 - terms: 
   - term: weak
     lang: en
+    tts: en-terms/weak.mp3
     pron: wiːk
   - term: slabý
     lang: cs
     tts: cs-terms/slaby.mp3
   img: img/weak.jpeg
   freq: 38069.00000
-##  vision   ################################################################ t0:tts:missing
 - terms: 
   - term: vision
     lang: en
+    tts: en-terms/vision.mp3
     pron: ˈvɪʒən
   - term: vize
     lang: cs
@@ -16546,10 +16547,10 @@ concepts:
     tts: cs-terms/zrak.mp3
   img: img/vision.jpeg
   freq: 37981.00000
-##  wealth   ################################################################ t0:tts:missing
 - terms: 
   - term: wealth
     lang: en
+    tts: en-terms/wealth.mp3
     pron: wɛlθ
   - term: bohatství
     lang: cs
@@ -16559,10 +16560,10 @@ concepts:
     tts: cs-terms/jmeni.mp3
   img: img/wealth.jpeg
   freq: 37976.00000
-##  worker   ################################################################ t0:tts:missing
 - terms: 
   - term: worker
     lang: en
+    tts: en-terms/worker.mp3
     pron: ˈwɜːkə
   - term: pracovník
     lang: cs
@@ -16572,10 +16573,10 @@ concepts:
     tts: cs-terms/delnik.mp3
   img: img/worker.jpeg
   freq: 37963.00000
-##  habits   ################################################################ t0:tts:missing
 - terms: 
   - term: habits
     lang: en
+    tts: en-terms/habits.mp3
     pron: ˈhæbɪts
   - term: návyky
     lang: cs
@@ -16585,70 +16586,70 @@ concepts:
     tts: cs-terms/zvyky.mp3
   img: img/habits.jpeg
   freq: 37913.00000
-##  prison   ################################################################ t0:tts:missing
 - terms: 
   - term: prison
     lang: en
+    tts: en-terms/prison.mp3
     pron: ˈprɪzn
   - term: vězení
     lang: cs
     tts: cs-terms/vezeni.mp3
   img: img/prison.jpeg
   freq: 37744.00000
-##  shake   ################################################################# t0:tts:missing
 - terms: 
   - term: shake
     lang: en
+    tts: en-terms/shake.mp3
     pron: ʃeɪk
   - term: třást
     lang: cs
     tts: cs-terms/trast.mp3
   img: img/shake.jpeg
   freq: 37530.00000
-##  waves   ################################################################# t0:tts:missing
 - terms: 
   - term: waves
     lang: en
+    tts: en-terms/waves.mp3
     pron: weɪvz
   - term: vlny
     lang: cs
     tts: cs-terms/vlny.mp3
   img: img/waves.jpeg
   freq: 37462.00000
-##  pray   ################################################################## t0:tts:missing
 - terms: 
   - term: pray
     lang: en
+    tts: en-terms/pray.mp3
     pron: preɪ
   - term: modlit (se)
     lang: cs
     tts: cs-terms/modlit.mp3
   img: img/pray.jpeg
   freq: 37279.00000
-##  hang   ################################################################## t0:tts:missing
 - terms: 
   - term: hang
     lang: en
+    tts: en-terms/hang.mp3
     pron: hæŋ
   - term: pověsit
     lang: cs
     tts: cs-terms/povesit.mp3
   img: img/hang.jpeg
   freq: 37222.00000
-##  violence   ############################################################## t0:tts:missing
 - terms: 
   - term: violence
     lang: en
+    tts: en-terms/violence.mp3
     pron: ˈvaɪələns
   - term: násilí
     lang: cs
     tts: cs-terms/nasili.mp3
   img: img/violence.jpeg
   freq: 37215.00000
-##  fruit   ################################################################# t0:tts:missing
 - terms: 
   - term: fruit
     lang: en
+    tts: en-terms/fruit.mp3
     pron: fruːt
   - term: ovoce
     lang: cs
@@ -16658,60 +16659,60 @@ concepts:
     tts: cs-terms/plod.mp3
   img: img/fruit.jpeg
   freq: 37037.00000
-##  flight   ################################################################ t0:tts:missing
 - terms: 
   - term: flight
     lang: en
+    tts: en-terms/flight.mp3
     pron: flaɪt
   - term: let
     lang: cs
     tts: cs-terms/let.mp3
   img: img/flight.jpeg
   freq: 36994.00000
-##  protection   ############################################################ t0:tts:missing
 - terms: 
   - term: protection
     lang: en
+    tts: en-terms/protection.mp3
     pron: prəˈtɛkʃən
   - term: ochrana
     lang: cs
     tts: cs-terms/ochrana.mp3
   img: img/protection.jpeg
   freq: 36980.00000
-##  victory   ############################################################### t0:tts:missing
 - terms: 
   - term: victory
     lang: en
+    tts: en-terms/victory.mp3
     pron: ˈvɪktəri
   - term: vítězství
     lang: cs
     tts: cs-terms/vitezstvi.mp3
   img: img/victory.jpeg
   freq: 36976.00000
-##  lawyer   ################################################################ t0:tts:missing
 - terms: 
   - term: lawyer
     lang: en
+    tts: en-terms/lawyer.mp3
     pron: ˈlɔːjə
   - term: právník
     lang: cs
     tts: cs-terms/pravnik.mp3
   img: img/lawyer.jpeg
   freq: 36973.00000
-##  tongue   ################################################################ t0:tts:missing
 - terms: 
   - term: tongue
     lang: en
+    tts: en-terms/tongue.mp3
     pron: tʌŋ
   - term: jazyk (v puse)
     lang: cs
     tts: cs-terms/jazyk.mp3
   img: img/tongue.jpeg
   freq: 36896.00000
-##  comfort   ############################################################### t0:tts:missing
 - terms: 
   - term: comfort
     lang: en
+    tts: en-terms/comfort.mp3
     pron: ˈkʌmfət
   - term: pohodlí
     lang: cs
@@ -16721,10 +16722,10 @@ concepts:
     tts: cs-terms/komfort.mp3
   img: img/comfort.jpeg
   freq: 36869.00000
-##  defense   ############################################################### t0:tts:missing
 - terms: 
   - term: defense
     lang: en
+    tts: en-terms/defense.mp3
     pron: dɪˈfɛns
   - term: obrana
     lang: cs
@@ -16734,10 +16735,10 @@ concepts:
     tts: cs-terms/obhajoba.mp3
   img: img/defense.jpeg
   freq: 36712.00000
-##  soil   ################################################################## t0:tts:missing
 - terms: 
   - term: soil
     lang: en
+    tts: en-terms/soil.mp3
     pron: sɔɪl
   - term: půda (hlína)
     lang: cs
@@ -16747,10 +16748,10 @@ concepts:
     tts: cs-terms/zemina.mp3
   img: img/soil.jpeg
   freq: 36508.00000
-##  noise   ################################################################# t0:tts:missing
 - terms: 
   - term: noise
     lang: en
+    tts: en-terms/noise.mp3
     pron: nɔɪz
   - term: hluk
     lang: cs
@@ -16760,20 +16761,20 @@ concepts:
     tts: cs-terms/sum.mp3
   img: img/noise.jpeg
   freq: 36377.00000
-##  moon   ################################################################## t0:tts:missing
 - terms: 
   - term: moon
     lang: en
+    tts: en-terms/moon.mp3
     pron: muːn
   - term: měsíc (na obloze)
     lang: cs
     tts: cs-terms/mesic.mp3
   img: img/moon.jpeg
   freq: 36359.00000
-##  address   ############################################################### t0:tts:missing
 - terms: 
   - term: address
     lang: en
+    tts: en-terms/address.mp3
     pron: əˈdrɛs
   - term: adresa
     lang: cs
@@ -16783,10 +16784,10 @@ concepts:
     tts: cs-terms/zabyvat.mp3
   img: img/address.jpeg
   freq: 36330.00000
-##  cross   ################################################################# t0:tts:missing
 - terms: 
   - term: cross
     lang: en
+    tts: en-terms/cross.mp3
     pron: krɒs
   - term: kříž
     lang: cs
@@ -16796,20 +16797,20 @@ concepts:
     tts: cs-terms/napric.mp3
   img: img/cross.jpeg
   freq: 36305.00000
-##  height   ################################################################ t0:tts:missing
 - terms: 
   - term: height
     lang: en
+    tts: en-terms/height.mp3
     pron: haɪt
   - term: výška
     lang: cs
     tts: cs-terms/vyska.mp3
   img: img/height.jpeg
   freq: 36282.00000
-##  spanish   ############################################################### t0:tts:missing
 - terms: 
   - term: spanish
     lang: en
+    tts: en-terms/spanish.mp3
     pron: ˈspænɪʃ
   - term: španělština
     lang: cs
