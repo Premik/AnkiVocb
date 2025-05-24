@@ -16734,7 +16734,7 @@ concepts:
     tts: cs-terms/obhajoba.mp3
   img: img/defense.jpeg
   freq: 36712.00000
-##  soil   ################################################################## t0:tts:missing|t2:tts:missing
+##  soil   ################################################################## t0:tts:missing
 - terms: 
   - term: soil
     lang: en
@@ -16744,6 +16744,7 @@ concepts:
     tts: cs-terms/puda.mp3
   - term: zemina
     lang: cs
+    tts: cs-terms/zemina.mp3
   img: img/soil.jpeg
   freq: 36508.00000
 ##  noise   ################################################################# t0:tts:missing
