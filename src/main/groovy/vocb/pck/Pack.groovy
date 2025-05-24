@@ -346,6 +346,13 @@ public class Pack {
 			new File("/tmp/work/BasicWordsNoSimple.txt") <<"$it\n"
 		}
 	}
+	
+	void Basic2kWords() {
+		Set<String> words = exportedWordsFromPackages(allPackInfos)				
+		words.each {
+			new File("/tmp/work/words2K.txt") <<"$it\n"
+		}
+	}
 
 
 	static Pack buildFromRootPath(Path path) {
@@ -487,9 +494,8 @@ public class Pack {
 			println(p.packageRootPath)
 			silent=true
 			saveGeneralDescription()
-			//print(allPackInfos.collect { it.displayName })
+			print(allPackInfos.collect { it.displayName })
 			//p.exportByName("DuckTales")
-
 
 			//deleteDupFirst1k()
 			//return
@@ -506,9 +512,9 @@ public class Pack {
 			//return
 
 			//return
-			/*findTopxNotInDb(1000).each {
+			findTopWordsNotInDb(3000).each {
 			 println it
-			 }*/
+			 }
 			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/

@@ -95,7 +95,7 @@ public class WordsSource {
 		fromText(dbMan.allTextWithLang("en").join("\n"))
 	}
 
-	void decomposition() {		
+	void decomposition() {
 		dbMan.db
 		termsStream
 				.flatMap { String s->
@@ -149,13 +149,13 @@ public class WordsSource {
 			//String tx = ''''''
 			
 			//String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
-			//String tx = new File("/data/src/AnkiVocb/pkg/First1000/words.txt").text
-			String tx= "actor comedian edited economic crisis actor comedian edited economic crisis"
+			String tx = new File("/wrk/dev/AnkiVocb/pkg/Basic/Basic3K/words.txt").text
+			//String tx= "actor comedian edited economic crisis actor comedian edited economic crisis"
 	
 			
 			
-			//fromText(tx)
-			fromOwnSamples()
+			fromText(tx)
+			//fromOwnSamples()
 			//basicWords()
 			return
 			wn.phraseFreqs(tx,2, 3)
