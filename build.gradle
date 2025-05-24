@@ -2,17 +2,15 @@ plugins {
 	id "groovy"
 	id 'application'
 	id "com.github.johnrengelman.shadow" version "5.2.0"
-	id 'java'
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 mainClassName = "vocb.appenders.BingImageAppender"
 
-project.ext.groovyVersion='3.0.3'
-//project.ext.groovyVersion='2.5.10'
+project.ext.groovyVersion='3.0.7'
 
 wrapper {
-	gradleVersion = '6.3'
+	gradleVersion = '6.8.3'
 }
 
 repositories {
