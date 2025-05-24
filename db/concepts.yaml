@@ -8884,19 +8884,19 @@ concepts:
     tts: cs-terms/nebude.mp3
   img: img/wont.jpeg
   freq: 339.19542
-##  should've (should have)   ############################################### no freq
 - terms: 
   - term: should've (should have)
     tts: en-terms/shouldve.mp3
   - term: měl by mít (zkráceně)
     tts: cs-samples/mel by mit.mp3
+  freq: 167.16119
   profileName: strictNoImg
-##  could've   ############################################################## no freq
 - terms: 
   - term: could've
     tts: en-terms/couldve.mp3
   - term: mohl mít (zkráceně)
     tts: cs-terms/mohl mit.mp3
+  freq: 100.00000
   profileName: strictNoImg
 - terms: 
   - term: that's (that is)
