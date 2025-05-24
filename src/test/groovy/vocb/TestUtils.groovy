@@ -58,4 +58,11 @@ public class TestUtils {
 		println color("-"*80, WHITE)
 		return lastDiff
 	}
+	
+	@Lazy
+	public static Path projectRootPath = {
+		assert TestUtils.getResource('/resourceRoot.txt')
+		URL r = TestUtils.getResource('/resourceRoot.txt')
+		Paths.get( TestUtils.getResource('/resourceRoot.txt').toURI())
+	}()
 }

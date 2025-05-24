@@ -7,6 +7,7 @@ import java.nio.file.Paths
 import groovy.transform.Canonical
 import groovy.transform.CompileStatic
 import groovy.transform.ToString
+import vocb.conf.TreeConf
 
 
 @Canonical
@@ -18,24 +19,13 @@ import groovy.transform.ToString
 	)
 public class PackInfo {
 	
-	String name	
-	//Path packagePath
-	@Lazy Path packagePath = packageRootPath.resolve(name)
-	ParentInfo parent
 	
-	Path destRootFolder = Paths.get("/tmp/work")
-	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+	TreeConf treeConf	
+	Pack pack
+		
+	@Lazy Path sentencesPath = treeConf.path.resolve("sentences.txt")
+	@Lazy Path wordsPath= treeConf.path.resolve("words.txt")
 	
-	
-	
-	@Lazy Path infoConfPath = packagePath.resolve("info.conf")
-	@Lazy Path sentencesPath = packagePath.resolve("sentences.txt")
-	@Lazy Path wordsPath= packagePath.resolve("words.txt")
-	
-	@Lazy ConfigObject infoCfg =  {
-		if (!Files.exists(infoConfPath)) return new ConfigObject()
-		return new ConfigSlurper().parse(infoConfPath.text)
-	}();
 	
 	@Lazy String sentences = {
 		if (!Files.exists(sentencesPath)) return ""
@@ -47,35 +37,36 @@ public class PackInfo {
 		return wordsPath.text.split(/\s+/) as List<String>
 	}()
 	
-	
-	
+		
 	@Lazy Path destPath = {
-		assert destRootFolder
-		destRootFolder.resolve(name).tap {
+		assert pack.destRootFolder 
+		pack.destRootFolder.resolve(name?:displayName).tap {
 			toFile().mkdirs()
 		}
 	}()
 	
-	
+	public String getName() {
+		treeConf.name
+	}
 	
 	public String getDisplayName() {
-		infoCfg.displayName?:name?.replaceAll(/(\p{Lu})(\p{L})/, ' $1$2')?.trim()
+		treeConf.conf.displayName?:name?.replaceAll(/(\p{Lu})(\p{L})/, ' $1$2')?.trim()
 	}
 	
 	public void setDisplayName(String v) {
-		infoCfg.displayName = v		
+		treeConf.conf.displayName = v		
 	}
 	
 	public String getBackgroundName() {
-		infoCfg.backgroundName?:"_${name}Background"
+		treeConf.conf.backgroundName?:"_${name}Background"
 	}
 	
 	public void setBackgroundName(String v) {
-		infoCfg.backgroundName = v
+		treeConf.conf.backgroundName = v
 	}
 	
 	public boolean getNoExamples() {
-		infoCfg.noExamples
+		treeConf.conf.noExamples
 	}
 	
 	public String getUuid() {

@@ -9,10 +9,11 @@ import groovy.transform.CompileStatic
 import vocb.Helper
 
 @CompileStatic
-public class TreeConf {
+public class TreeConf<T> {
 
 	Path path
 	TreeConf parent
+	T obj
 	
 	@Lazy
 	List<TreeConf> children = {

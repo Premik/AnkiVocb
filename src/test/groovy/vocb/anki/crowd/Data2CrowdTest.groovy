@@ -1,21 +1,34 @@
 package vocb.anki.crowd
 
+import java.nio.file.Path
+import java.nio.file.Paths
+
 import org.junit.jupiter.api.Test
 
 import vocb.conf.ConfHelper
+import vocb.conf.TreeConf
 import vocb.data.Concept
 import vocb.data.ConceptDb
 import vocb.data.ConceptYamlStorage
 import vocb.data.Example
+import vocb.pck.Pack
 import vocb.pck.PackInfo
 
 class Data2CrowdTest {
+	
+	Path tmpDir = Paths.get(System.getProperty("java.io.tmpdir")).resolve("ankivocbData2Crowd")
 
 	ConfHelper cfgHelper = new ConfHelper()
 	ConfigObject cfg = cfgHelper.config
+	
+	Pack pack = new Pack(destRootFolder: tmpDir)
+	TreeConf treeConf = new TreeConf().tap {
+		it.@$conf = new ConfigObject()
+	}
+	
 	Data2Crowd dc = new Data2Crowd(cfgHelper:cfgHelper).tap {		
 		//delegate.metaClass.setAttribute(delegate, '$cfg', cfg)
-        info = new PackInfo(name: "test")
+        info = new PackInfo(treeConf: treeConf, displayName: "test", pack:pack)
     }
     
     URL testConceptsUrl = getClass().getResource('/vocb/data/fullyPopulated.yaml')
