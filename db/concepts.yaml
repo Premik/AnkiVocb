@@ -2436,7 +2436,7 @@ concepts:
   state: ignoreImage
   freq: 501669.00000
   origins: ["corpus"]
-##  might   ################################################################# █ 97%
+##  might   #################################################################
 - terms: 
   - term: might
     lang: en
@@ -2447,6 +2447,7 @@ concepts:
   examples: 
   - term: He said he might be late.
     lang: en
+    tts: He said he might be late.mp3
   - term: Řekl, že by se mohl opozdit.
     lang: cs
     tts: Rekl, ze by se mohl opozdit.mp3
@@ -2691,7 +2692,7 @@ concepts:
   state: ignoreImage
   freq: 447884.00000
   origins: ["corpus"]
-##  looked   ################################################################ █ 97%
+##  looked   ################################################################
 - terms: 
   - term: looked
     lang: en
@@ -2705,13 +2706,14 @@ concepts:
   examples: 
   - term: I looked different then.
     lang: en
+    tts: I looked different then.mp3
   - term: Tehdy jsem vypadal jinak.
     lang: cs
     tts: Tehdy jsem vypadal jinak.mp3
   state: ignoreImage
   freq: 447491.00000
   origins: ["corpus"]
-##  called   ################################################################ █ 97%
+##  called   ################################################################
 - terms: 
   - term: called
     lang: en
@@ -2725,13 +2727,14 @@ concepts:
   examples: 
   - term: I called you six times.
     lang: en
+    tts: I called you six times.mp3
   - term: Volal jsem ti šestkrát.
     lang: cs
     tts: Volal jsem ti sestkrat.mp3
   img: called.jpeg
   freq: 445602.00000
   origins: ["corpus"]
-##  want   ################################################################## █ 97%
+##  want   ##################################################################
 - terms: 
   - term: want
     lang: en
@@ -2745,6 +2748,7 @@ concepts:
   examples: 
   - term: They just want to meet you.
     lang: en
+    tts: They just want to meet you.mp3
   - term: Prostě se s vámi chtějí setkat.
     lang: cs
     tts: Proste se s vami chteji setkat.mp3
@@ -2758,7 +2762,7 @@ concepts:
   state: ignore
   freq: 433393.00000
   origins: ["corpus"]
-##  way   ################################################################### █ 97%
+##  way   ###################################################################
 - terms: 
   - term: way
     lang: en
@@ -2772,13 +2776,14 @@ concepts:
   examples: 
   - term: It was the only sure way.
     lang: en
+    tts: It was the only sure way.mp3
   - term: Byl to jediný jistý způsob.
     lang: cs
     tts: Byl to jediny jisty zpusob.mp3
   img: way.jpeg
   freq: 433315.50000
   origins: ["corpus"]
-##  got   ################################################################### █ 97%
+##  got   ###################################################################
 - terms: 
   - term: got
     lang: en
@@ -2792,13 +2797,14 @@ concepts:
   examples: 
   - term: I just got a job.
     lang: en
+    tts: I just got a job.mp3
   - term: Právě jsem dostal práci.
     lang: cs
     tts: Prave jsem dostal praci.mp3
   state: ignoreImage
   freq: 432016.00000
   origins: ["corpus"]
-##  tell   ################################################################## █ 97%
+##  tell   ##################################################################
 - terms: 
   - term: tell
     lang: en
@@ -2812,13 +2818,14 @@ concepts:
   examples: 
   - term: You tell me why!
     lang: en
+    tts: You tell me why.mp3
   - term: Ty mně řekni proč!
     lang: cs
     tts: Ty mne rekni proc.mp3
   state: ignoreImage
   freq: 431716.00000
   origins: ["corpus"]
-##  thing   ################################################################# █ 97%
+##  thing   #################################################################
 - terms: 
   - term: thing
     lang: en
@@ -2829,13 +2836,14 @@ concepts:
   examples: 
   - term: Can you really drive this thing?
     lang: en
+    tts: Can you really drive this thing.mp3
   - term: Opravdu umíš řídit tuhle věc?
     lang: cs
     tts: Opravdu umis ridit tuhle vec.mp3
   state: ignoreImage
   freq: 431098.00000
   origins: ["corpus"]
-##  well   ################################################################## █ 97%
+##  well   ##################################################################
 - terms: 
   - term: well
     lang: en
@@ -2849,13 +2857,14 @@ concepts:
   examples: 
   - term: You know this well.
     lang: en
+    tts: You know this well.mp3
   - term: Vy to dobře znáte.
     lang: cs
     tts: Vy to dobre znate.mp3
   img: well.jpeg
   freq: 430407.50000
   origins: ["corpus"]
-##  done   ################################################################## █ 97%
+##  done   ##################################################################
 - terms: 
   - term: done
     lang: en
@@ -2869,13 +2878,14 @@ concepts:
   examples: 
   - term: Why have you done that?
     lang: en
+    tts: Why have you done that.mp3
   - term: Proč jsi to udělal?
     lang: cs
     tts: Proc jsi to udelal.mp3
   img: done.jpeg
   freq: 430389.00000
   origins: ["corpus"]
-##  heard   ################################################################# █ 97%
+##  heard   #################################################################
 - terms: 
   - term: heard
     lang: en
@@ -2889,13 +2899,14 @@ concepts:
   examples: 
   - term: I heard your voice!
     lang: en
+    tts: I heard your voice.mp3
   - term: Slyšel jsem tvůj hlas!
     lang: cs
     tts: Slysel jsem tvuj hlas.mp3
   img: heard.jpeg
   freq: 429972.00000
   origins: ["corpus"]
-##  days   ################################################################## █ 97%
+##  days   ##################################################################
 - terms: 
   - term: days
     lang: en
@@ -2909,13 +2920,14 @@ concepts:
   examples: 
   - term: Those days are over.
     lang: en
+    tts: Those days are over.mp3
   - term: Ty dny jsou pryč.
     lang: cs
     tts: Ty dny jsou pryc.mp3
   img: days.jpeg
   freq: 426104.00000
   origins: ["corpus"]
-##  told   ################################################################## █ 97%
+##  told   ##################################################################
 - terms: 
   - term: told
     lang: en
@@ -2929,6 +2941,7 @@ concepts:
   examples: 
   - term: Because he told me.
     lang: en
+    tts: Because he told me.mp3
   - term: Protože mi to řekl.
     lang: cs
     tts: Protoze mi to rekl.mp3
@@ -2947,7 +2960,7 @@ concepts:
   img: lord.jpeg
   freq: 422407.00000
   origins: ["corpus"]
-##  asked   ################################################################# █ 97%
+##  asked   #################################################################
 - terms: 
   - term: asked
     lang: en
@@ -2961,13 +2974,14 @@ concepts:
   examples: 
   - term: I asked for help.
     lang: en
+    tts: I asked for help.mp3
   - term: Požádal jsem o pomoc.
     lang: cs
     tts: Pozadal jsem o pomoc.mp3
   img: asked.jpeg
   freq: 420044.00000
   origins: ["corpus"]
-##  going   ################################################################# █ 97%
+##  going   #################################################################
 - terms: 
   - term: going
     lang: en
@@ -2981,13 +2995,14 @@ concepts:
   examples: 
   - term: What's going on?
     lang: en
+    tts: Whats going on.mp3
   - term: Co se děje?
     lang: cs
     tts: Co se deje.mp3
   img: going.jpeg
   freq: 419315.00000
   origins: ["corpus"]
-##  seen   ################################################################## █ 97%
+##  seen   ##################################################################
 - terms: 
   - term: seen
     lang: en
@@ -3001,13 +3016,14 @@ concepts:
   examples: 
   - term: Have you seen the movie yet?
     lang: en
+    tts: Have you seen the movie yet.mp3
   - term: Už jste ten film viděli?
     lang: cs
     tts: Uz jste ten film videli.mp3
   state: ignoreImage
   freq: 418862.00000
   origins: ["corpus"]
-##  having   ################################################################ █ 97%
+##  having   ################################################################
 - terms: 
   - term: having
     lang: en
@@ -3018,13 +3034,14 @@ concepts:
   examples: 
   - term: We were having a good time.
     lang: en
+    tts: We were having a good time.mp3
   - term: Měli jsme se dobře.
     lang: cs
     tts: Meli jsme se dobre.mp3
   state: ignoreImage
   freq: 415355.00000
   origins: ["corpus"]
-##  even   ################################################################## █ 97%
+##  even   ##################################################################
 - terms: 
   - term: even
     lang: en
@@ -3038,13 +3055,14 @@ concepts:
   examples: 
   - term: They might even win.
     lang: en
+    tts: They might even win.mp3
   - term: Možná že dokonce zvítězí.
     lang: cs
     tts: Mozna ze dokonce zvitezi.mp3
   img: even.jpeg
   freq: 414918.50000
   origins: ["corpus"]
-##  find   ################################################################## █ 97%
+##  find   ##################################################################
 - terms: 
   - term: find
     lang: en
@@ -3058,13 +3076,14 @@ concepts:
   examples: 
   - term: I need to find a job.
     lang: en
+    tts: I need to find a job.mp3
   - term: Musím si najít práci.
     lang: cs
     tts: Musim si najit praci.mp3
   img: find.jpeg
   freq: 413161.50000
   origins: ["corpus"]
-##  knew   ################################################################## █ 97%
+##  knew   ##################################################################
 - terms: 
   - term: knew
     lang: en
@@ -3078,13 +3097,14 @@ concepts:
   examples: 
   - term: My friend knew her.
     lang: en
+    tts: My friend knew her.mp3
   - term: Znal ji můj kamarád.
     lang: cs
     tts: Znal ji muj kamarad.mp3
   img: knew.jpeg
   freq: 413101.00000
   origins: ["corpus"]
-##  through   ############################################################### █ 97%
+##  through   ###############################################################
 - terms: 
   - term: through
     lang: en
@@ -3098,13 +3118,14 @@ concepts:
   examples: 
   - term: He has a ring through his nose.
     lang: en
+    tts: He has a ring through his nose.mp3
   - term: Má kroužek skrz nos.
     lang: cs
     tts: Ma krouzek skrz nos.mp3
   img: through.jpeg
   freq: 412381.50000
   origins: ["corpus"]
-##  world   ################################################################# █ 97%
+##  world   #################################################################
 - terms: 
   - term: world
     lang: en
@@ -3115,13 +3136,14 @@ concepts:
   examples: 
   - term: He was worth nothing to the world.
     lang: en
+    tts: He was worth nothing to the world.mp3
   - term: Neměl pro svět žádnou cenu.
     lang: cs
     tts: Nemel pro svet zadnou cenu.mp3
   img: world.jpeg
   freq: 410531.50000
   origins: ["corpus"]
-##  being   ################################################################# █ 97%
+##  being   #################################################################
 - terms: 
   - term: being
     lang: en
@@ -3135,13 +3157,14 @@ concepts:
   examples: 
   - term: Man is a strange being.
     lang: en
+    tts: Man is a strange being.mp3
   - term: Člověk je podivná bytost.
     lang: cs
     tts: Clovek je podivna bytost.mp3
   state: ignoreImage
   freq: 406957.50000
   origins: ["corpus"]
-##  long   ################################################################## █ 97%
+##  long   ##################################################################
 - terms: 
   - term: long
     lang: en
@@ -3155,13 +3178,14 @@ concepts:
   examples: 
   - term: But he's long gone now.
     lang: en
+    tts: But hes long gone now.mp3
   - term: Ale on už je dlouho pryč.
     lang: cs
     tts: Ale on uz je dlouho pryc.mp3
   img: long.jpeg
   freq: 405456.50000
   origins: ["corpus"]
-##  am   #################################################################### █ 97%
+##  am   ####################################################################
 - terms: 
   - term: am
     lang: en
@@ -3172,13 +3196,14 @@ concepts:
   examples: 
   - term: I am late.
     lang: en
+    tts: I am late.mp3
   - term: Jdu pozdě
     lang: cs
     tts: Jdu pozde.mp3
   state: ignoreImage
   freq: 398204.00000
   origins: ["corpus"]
-##  against   ############################################################### █ 97%
+##  against   ###############################################################
 - terms: 
   - term: against
     lang: en
@@ -3189,13 +3214,14 @@ concepts:
   examples: 
   - term: I was against it.
     lang: en
+    tts: I was against it.mp3
   - term: Já byl proti tomu.
     lang: cs
     tts: Ja byl proti tomu.mp3
   img: against.jpeg
   freq: 386919.00000
   origins: ["corpus"]
-##  hands   ################################################################# █ 97%
+##  hands   #################################################################
 - terms: 
   - term: hands
     lang: en
@@ -3206,13 +3232,14 @@ concepts:
   examples: 
   - term: Please take my hands.
     lang: en
+    tts: Please take my hands.mp3
   - term: Prosím vemte mě za ruce.
     lang: cs
     tts: Prosim vemte me za ruce.mp3
   img: hands.jpeg
   freq: 385081.00000
   origins: ["corpus"]
-##  three   ################################################################# █ 97%
+##  three   #################################################################
 - terms: 
   - term: three
     lang: en
@@ -3226,13 +3253,14 @@ concepts:
   examples: 
   - term: All three of them?
     lang: en
+    tts: All three of them.mp3
   - term: Všichni tři?
     lang: cs
     tts: Vsichni tri.mp3
   img: three.jpeg
   freq: 384445.00000
   origins: ["corpus"]
-##  words   ################################################################# █ 97%
+##  words   #################################################################
 - terms: 
   - term: words
     lang: en
@@ -3243,13 +3271,14 @@ concepts:
   examples: 
   - term: Those are my words.
     lang: en
+    tts: Those are my words.mp3
   - term: To jsou moje slova.
     lang: cs
     tts: To jsou moje slova.mp3
   img: words.jpeg
   freq: 380328.00000
   origins: ["corpus"]
-##  back   ################################################################## █ 97%
+##  back   ##################################################################
 - terms: 
   - term: back
     lang: en
@@ -3263,13 +3292,14 @@ concepts:
   examples: 
   - term: Get on your back.
     lang: en
+    tts: Get on your back.mp3
   - term: Polož se na záda.
     lang: cs
     tts: Poloz se na zada.mp3
   img: back.jpeg
   freq: 379741.50000
   origins: ["corpus"]
-##  young   ################################################################# █ 97%
+##  young   #################################################################
 - terms: 
   - term: young
     lang: en
@@ -3280,13 +3310,14 @@ concepts:
   examples: 
   - term: But you're young only once.
     lang: en
+    tts: But youre young only once.mp3
   - term: Ale mladý jsi jenom jednou.
     lang: cs
     tts: Ale mlady jsi jenom jednou.mp3
   img: young.jpeg
   freq: 375916.00000
   origins: ["corpus"]
-##  between   ############################################################### █ 97%
+##  between   ###############################################################
 - terms: 
   - term: between
     lang: en
@@ -3297,13 +3328,14 @@ concepts:
   examples: 
   - term: Distance between patient and doctor.
     lang: en
+    tts: Distance between patient and doctor.mp3
   - term: Vzdálenost mezi pacientem a lékařem.
     lang: cs
     tts: Vzdalenost mezi pacientem a lekarem.mp3
   img: between.jpeg
   freq: 371596.00000
   origins: ["corpus"]
-##  gave   ################################################################## █ 97%
+##  gave   ##################################################################
 - terms: 
   - term: gave
     lang: en
@@ -3317,13 +3349,14 @@ concepts:
   examples: 
   - term: My dad gave it to me.
     lang: en
+    tts: My dad gave it to me.mp3
   - term: Dal mi to můj táta.
     lang: cs
     tts: Dal mi to muj tata.mp3
   img: gave.jpeg
   freq: 369036.00000
   origins: ["corpus"]
-##  put   ################################################################### █ 97%
+##  put   ###################################################################
 - terms: 
   - term: put
     lang: en
@@ -3337,13 +3370,14 @@ concepts:
   examples: 
   - term: You can put that in your book.
     lang: en
+    tts: You can put that in your book.mp3
   - term: Můžeš to dát do své knihy.
     lang: cs
     tts: Muzes to dat do sve knihy.mp3
   img: put.jpeg
   freq: 366334.50000
   origins: ["corpus"]
-##  thought   ############################################################### █ 97%
+##  thought   ###############################################################
 - terms: 
   - term: thought
     lang: en
@@ -3357,13 +3391,14 @@ concepts:
   examples: 
   - term: I thought you'd be happy.
     lang: en
+    tts: I thought youd be happy.mp3
   - term: Myslel sem, že budeš mít radost.
     lang: cs
     tts: Myslel sem, ze budes mit radost.mp3
   img: thought.jpeg
   freq: 363066.00000
   origins: ["corpus"]
-##  away   ################################################################## █ 97%
+##  away   ##################################################################
 - terms: 
   - term: away
     lang: en
@@ -3377,13 +3412,14 @@ concepts:
   examples: 
   - term: Put that toy away.
     lang: en
+    tts: Put that toy away.mp3
   - term: Dej tu hračku pryč.
     lang: cs
     tts: Dej tu hracku pryc.mp3
   img: away.jpeg
   freq: 362907.50000
   origins: ["corpus"]
-##  yet   ################################################################### █ 97%
+##  yet   ###################################################################
 - terms: 
   - term: yet
     lang: en
@@ -3397,6 +3433,7 @@ concepts:
   examples: 
   - term: It's not ready yet.
     lang: en
+    tts: Its not ready yet.mp3
   - term: Není to ještě hotové.
     lang: cs
     tts: Neni to jeste hotove.mp3
@@ -3412,7 +3449,7 @@ concepts:
   state: ignore
   freq: 355857.00000
   origins: ["corpus"]
-##  cannot   ################################################################ █ 97%
+##  cannot   ################################################################
 - terms: 
   - term: cannot
     lang: en
@@ -3426,13 +3463,14 @@ concepts:
   examples: 
   - term: He cannot take that money.
     lang: en
+    tts: He cannot take that money.mp3
   - term: Nemůže si ty peníze vzít.
     lang: cs
     tts: Nemuze si ty penize vzit.mp3
   state: ignoreImage
   freq: 355656.00000
   origins: ["corpus"]
-##  brought   ############################################################### █ 97%
+##  brought   ###############################################################
 - terms: 
   - term: brought
     lang: en
@@ -3446,13 +3484,14 @@ concepts:
   examples: 
   - term: I brought you coffee.
     lang: en
+    tts: I brought you coffee.mp3
   - term: Přinesl jsem ti kafe.
     lang: cs
     tts: Prinesl jsem ti kafe.mp3
   state: ignoreImage
   freq: 349925.00000
   origins: ["corpus"]
-##  ever   ################################################################## █ 97%
+##  ever   ##################################################################
 - terms: 
   - term: ever
     lang: en
@@ -3466,13 +3505,14 @@ concepts:
   examples: 
   - term: Will this day ever end?
     lang: en
+    tts: Will this day ever end.mp3
   - term: Skončí tenhle den vůbec?
     lang: cs
     tts: Skonci tenhle den vubec.mp3
   img: ever.jpeg
   freq: 347490.50000
   origins: ["corpus"]
-##  under   ################################################################# █ 97%
+##  under   #################################################################
 - terms: 
   - term: under
     lang: en
@@ -3483,13 +3523,14 @@ concepts:
   examples: 
   - term: Who is under my table?
     lang: en
+    tts: Who is under my table.mp3
   - term: Kdo to je pod mým stolem?
     lang: cs
     tts: Kdo to je pod mym stolem.mp3
   img: under.jpeg
   freq: 346344.50000
   origins: ["corpus"]
-##  last   ################################################################## █ 97%
+##  last   ##################################################################
 - terms: 
   - term: last
     lang: en
@@ -3503,13 +3544,14 @@ concepts:
   examples: 
   - term: That was last week.
     lang: en
+    tts: That was last week.mp3
   - term: To bylo minulý týden.
     lang: cs
     tts: To bylo minuly tyden.mp3
   img: last.jpeg
   freq: 344624.00000
   origins: ["corpus"]
-##  place   ################################################################# █ 97%
+##  place   #################################################################
 - terms: 
   - term: place
     lang: en
@@ -3520,13 +3562,14 @@ concepts:
   examples: 
   - term: That's a nice place.
     lang: en
+    tts: Thats a nice place.mp3
   - term: To je hezké místo.
     lang: cs
     tts: To je hezke misto.mp3
   img: place.jpeg
   freq: 341350.00000
   origins: ["corpus"]
-##  always   ################################################################ █ 97%
+##  always   ################################################################
 - terms: 
   - term: always
     lang: en
@@ -3540,13 +3583,14 @@ concepts:
   examples: 
   - term: I always wanted to do that.
     lang: en
+    tts: I always wanted to do that.mp3
   - term: To jsem vždy toužil udělat.
     lang: cs
     tts: To jsem vzdy touzil udelat.mp3
   state: ignoreImage
   freq: 337654.00000
   origins: ["corpus"]
-##  turned   ################################################################ █ 97%
+##  turned   ################################################################
 - terms: 
   - term: turned
     lang: en
@@ -3560,6 +3604,7 @@ concepts:
   examples: 
   - term: Suddenly he turned back.
     lang: en
+    tts: Suddenly he turned back.mp3
   - term: Náhle se obrátil zpět.
     lang: cs
     tts: Nahle se obratil zpet.mp3
@@ -3580,7 +3625,7 @@ concepts:
   state: ignore
   freq: 335210.00000
   origins: ["corpus"]
-##  night   ################################################################# █ 97%
+##  night   #################################################################
 - terms: 
   - term: night
     lang: en
@@ -3591,13 +3636,14 @@ concepts:
   examples: 
   - term: You stayed up all night?
     lang: en
+    tts: You stayed up all night.mp3
   - term: Byl jste vzhůru celou noc?
     lang: cs
     tts: Byl jste vzhuru celou noc.mp3
   img: night.jpeg
   freq: 334694.50000
   origins: ["corpus"]
-##  does   ################################################################## █ 97%
+##  does   ##################################################################
 - terms: 
   - term: does
     lang: en
@@ -3608,13 +3654,14 @@ concepts:
   examples: 
   - term: You know what he does?
     lang: en
+    tts: You know what he does.mp3
   - term: Víš, co dělá?
     lang: cs
     tts: Vis, co dela.mp3
   state: ignoreImage
   freq: 334332.00000
   origins: ["corpus"]
-##  nothing   ############################################################### █ 97%
+##  nothing   ###############################################################
 - terms: 
   - term: nothing
     lang: en
@@ -3625,13 +3672,14 @@ concepts:
   examples: 
   - term: There's nothing to see.
     lang: en
+    tts: Theres nothing to see.mp3
   - term: Není tu nic k vidění.
     lang: cs
     tts: Neni tu nic k videni.mp3
   img: nothing.jpeg
   freq: 334204.50000
   origins: ["corpus"]
-##  found   ################################################################# █ 97%
+##  found   #################################################################
 - terms: 
   - term: found
     lang: en
@@ -3645,13 +3693,14 @@ concepts:
   examples: 
   - term: I found it in the jungle.
     lang: en
+    tts: I found it in the jungle.mp3
   - term: Našel jsem to v džungli.
     lang: cs
     tts: Nasel jsem to v dzungli.mp3
   img: found.jpeg
   freq: 333444.00000
   origins: ["corpus"]
-##  hand   ################################################################## █ 97%
+##  hand   ##################################################################
 - terms: 
   - term: hand
     lang: en
@@ -3662,13 +3711,14 @@ concepts:
   examples: 
   - term: Let me see your hand.
     lang: en
+    tts: Let me see your hand.mp3
   - term: Ukaž mi svou ruku.
     lang: cs
     tts: Ukaz mi svou ruku.mp3
   img: hand.jpeg
   freq: 333229.00000
   origins: ["corpus"]
-##  let   ################################################################### █ 97%
+##  let   ###################################################################
 - terms: 
   - term: let
     lang: en
@@ -3682,13 +3732,14 @@ concepts:
   examples: 
   - term: Just let him go.
     lang: en
+    tts: Just let him go.mp3
   - term: Jen ať si jde.
     lang: cs
     tts: Jen at si jde.mp3
   state: ignoreImage
   freq: 332310.00000
   origins: ["corpus"]
-##  few   ################################################################### █ 97%
+##  few   ###################################################################
 - terms: 
   - term: few
     lang: en
@@ -3702,13 +3753,14 @@ concepts:
   examples: 
   - term: This may take few minutes.
     lang: en
+    tts: This may take few minutes.mp3
   - term: To může trvat několik minut.
     lang: cs
     tts: To muze trvat nekolik minut.mp3
   state: ignoreImage
   freq: 331802.00000
   origins: ["corpus"]
-##  right   ################################################################# █ 97%
+##  right   #################################################################
 - terms: 
   - term: right
     lang: en
@@ -3722,6 +3774,7 @@ concepts:
   examples: 
   - term: Always do the right thing.
     lang: en
+    tts: Always do the right thing.mp3
   - term: Vždy dělej správné věci.
     lang: cs
     tts: Vzdy delej spravne veci.mp3
@@ -3735,7 +3788,7 @@ concepts:
   state: ignore
   freq: 328324.00000
   origins: ["corpus"]
-##  still   ################################################################# █ 97%
+##  still   #################################################################
 - terms: 
   - term: still
     lang: en
@@ -3749,13 +3802,14 @@ concepts:
   examples: 
   - term: I can still do my job.
     lang: en
+    tts: I can still do my job.mp3
   - term: Mohu stále dělat svoji práci.
     lang: cs
     tts: Mohu stale delat svoji praci.mp3
   state: ignoreImage
   freq: 327187.50000
   origins: ["corpus"]
-##  something   ############################################################# █ 97%
+##  something   #############################################################
 - terms: 
   - term: something
     lang: en
@@ -3766,13 +3820,14 @@ concepts:
   examples: 
   - term: I want you to know something.
     lang: en
+    tts: I want you to know something.mp3
   - term: Chci, abyste něco věděl.
     lang: cs
     tts: Chci, abyste neco vedel.mp3
   state: ignoreImage
   freq: 326818.50000
   origins: ["corpus"]
-##  felt   ################################################################## █ 97%
+##  felt   ##################################################################
 - terms: 
   - term: felt
     lang: en
@@ -3783,13 +3838,14 @@ concepts:
   examples: 
   - term: Have you felt any other emotions?
     lang: en
+    tts: Have you felt any other emotions.mp3
   - term: Cítil jste I jiné emoce?
     lang: cs
     tts: Citil jste I jine emoce.mp3
   img: felt.jpeg
   freq: 326524.00000
   origins: ["corpus"]
-##  began   ################################################################# █ 97%
+##  began   #################################################################
 - terms: 
   - term: began
     lang: en
@@ -3803,13 +3859,14 @@ concepts:
   examples: 
   - term: I began to learn.
     lang: en
+    tts: I began to learn.mp3
   - term: Začal jsem se učit.
     lang: cs
     tts: Zacal jsem se ucit.mp3
   state: ignoreImage
   freq: 325327.00000
   origins: ["corpus"]
-##  country   ############################################################### █ 97%
+##  country   ###############################################################
 - terms: 
   - term: country
     lang: en
@@ -3823,13 +3880,14 @@ concepts:
   examples: 
   - term: Have you ever lived in a foreign country?
     lang: en
+    tts: Have you ever lived in a foreign country.mp3
   - term: Žili jste někdy v cizí zemi?
     lang: cs
     tts: Zili jste nekdy v cizi zemi.mp3
   img: country.jpeg
   freq: 321963.00000
   origins: ["corpus"]
-##  on   #################################################################### █ 97%
+##  on   ####################################################################
 - terms: 
   - term: "on"
     lang: en
@@ -3840,13 +3898,14 @@ concepts:
   examples: 
   - term: Are you on the list?
     lang: en
+    tts: Are you on the list.mp3
   - term: Jste na tomto seznamu?
     lang: cs
     tts: Jste na tomto seznamu.mp3
   img: on.jpeg
   freq: 2675121.50000
   origins: ["corpus"]
-##  no   #################################################################### █ 97%
+##  no   ####################################################################
 - terms: 
   - term: "no"
     lang: en
@@ -3857,13 +3916,14 @@ concepts:
   examples: 
   - term: The answer is clearly no.
     lang: en
+    tts: The answer is clearly no.mp3
   - term: Odpověď zní jednoznačně ne.
     lang: cs
     tts: Odpoved zni jednoznacne ne.mp3
   img: no.jpeg
   freq: 1123368.00000
   origins: ["corpus"]
-##  off   ################################################################### █ 97%
+##  off   ###################################################################
 - terms: 
   - term: "off"
     lang: en
@@ -3877,13 +3937,14 @@ concepts:
   examples: 
   - term: I need to get off!
     lang: en
+    tts: I need to get off.mp3
   - term: Musím se dostat pryč!
     lang: cs
     tts: Musim se dostat pryc.mp3
   img: off.jpeg
   freq: 324977.00000
   origins: ["corpus"]
-##  while   ################################################################# █ 97%
+##  while   #################################################################
 - terms: 
   - term: while
     lang: en
@@ -3897,13 +3958,14 @@ concepts:
   examples: 
   - term: Be alert while using public transport.
     lang: en
+    tts: Be alert while using public transport.mp3
   - term: Buď ostražitý při používání veřejné dopravy.
     lang: cs
     tts: Bud ostrazity pri pouzivani verejne dopravy.mp3
   img: while.jpeg
   freq: 321748.50000
   origins: ["corpus"]
-##  just   ################################################################## █ 97%
+##  just   ##################################################################
 - terms: 
   - term: just
     lang: en
@@ -3917,13 +3979,14 @@ concepts:
   examples: 
   - term: I just got home.
     lang: en
+    tts: I just got home.mp3
   - term: Právě jsem přišla domů.
     lang: cs
     tts: Prave jsem prisla domu.mp3
   state: ignoreImage
   freq: 315132.00000
   origins: ["corpus"]
-##  stood   ################################################################# █ 97%
+##  stood   #################################################################
 - terms: 
   - term: stood
     lang: en
@@ -3937,13 +4000,14 @@ concepts:
   examples: 
   - term: He stood at the door.
     lang: en
+    tts: He stood at the door.mp3
   - term: Postavil se ve dveřích.
     lang: cs
     tts: Postavil se ve dverich.mp3
   img: stood.jpeg
   freq: 308025.00000
   origins: ["corpus"]
-##  face   ################################################################## █ 97%
+##  face   ##################################################################
 - terms: 
   - term: face
     lang: en
@@ -3957,6 +4021,7 @@ concepts:
   examples: 
   - term: I will face my fear.
     lang: en
+    tts: I will face my fear.mp3
   - term: Budu čelit svému strachu.
     lang: cs
     tts: Budu celit svemu strachu.mp3
@@ -3972,7 +4037,7 @@ concepts:
   state: ignore
   freq: 304489.00000
   origins: ["corpus"]
-##  though   ################################################################ █ 97%
+##  though   ################################################################
 - terms: 
   - term: though
     lang: en
@@ -3984,15 +4049,16 @@ concepts:
     lang: cs
     tts: ackoli.mp3
   examples: 
-  - term: That song is very good, though.
+  - term: That song is very good though.
     lang: en
+    tts: That song is very good though.mp3
   - term: Ačkoli ta píseň je velmi dobrá.
     lang: cs
     tts: Ackoli ta pisen je velmi dobra.mp3
   state: ignoreImage
   freq: 291475.00000
   origins: ["corpus"]
-##  left   ################################################################## █ 97%
+##  left   ##################################################################
 - terms: 
   - term: left
     lang: en
@@ -4006,13 +4072,14 @@ concepts:
   examples: 
   - term: Is it my neighbour on the left?
     lang: en
+    tts: Is it my neighbour on the left.mp3
   - term: Je to můj soused vlevo?
     lang: cs
     tts: Je to muj soused vlevo.mp3
   img: left.jpeg
   freq: 291138.00000
   origins: ["corpus"]
-##  child   ################################################################# █ 97%
+##  child   #################################################################
 - terms: 
   - term: child
     lang: en
@@ -4026,13 +4093,14 @@ concepts:
   examples: 
   - term: Where is my child?
     lang: en
+    tts: Where is my child.mp3
   - term: Kde je mé dítě!
     lang: cs
     tts: Kde je me dite.mp3
   img: child.jpeg
   freq: 288025.00000
   origins: ["corpus"]
-##  sent   ################################################################## █ 97%
+##  sent   ##################################################################
 - terms: 
   - term: sent
     lang: en
@@ -4046,13 +4114,14 @@ concepts:
   examples: 
   - term: Who sent you here?
     lang: en
+    tts: Who sent you here.mp3
   - term: Kdo Vás sem poslal?
     lang: cs
     tts: Kdo Vas sem poslal.mp3
   img: sent.jpeg
   freq: 287876.00000
   origins: ["corpus"]
-##  means   ################################################################# █ 97%
+##  means   #################################################################
 - terms: 
   - term: means
     lang: en
@@ -4066,13 +4135,14 @@ concepts:
   examples: 
   - term: It means a lot to me.
     lang: en
+    tts: It means a lot to me.mp3
   - term: Moc to pro mě znamená.
     lang: cs
     tts: Moc to pro me znamena.mp3
   img: means.jpeg
   freq: 284431.00000
   origins: ["corpus"]
-##  once   ################################################################## █ 97%
+##  once   ##################################################################
 - terms: 
   - term: once
     lang: en
@@ -4086,13 +4156,14 @@ concepts:
   examples: 
   - term: You told it to me once.
     lang: en
+    tts: You told it to me once.mp3
   - term: Řekl jsi mi to kdysi.
     lang: cs
     tts: Rekl jsi mi to kdysi.mp3
   img: once.jpeg
   freq: 283167.00000
   origins: ["corpus"]
-##  love   ################################################################## █ 97%
+##  love   ##################################################################
 - terms: 
   - term: love
     lang: en
@@ -4106,13 +4177,14 @@ concepts:
   examples: 
   - term: He was my first love!
     lang: en
+    tts: He was my first love.mp3
   - term: Byl moje první láska!
     lang: cs
     tts: Byl moje prvni laska.mp3
   img: love.jpeg
   freq: 281995.50000
   origins: ["corpus"]
-##  passed   ################################################################ █ 97%
+##  passed   ################################################################
 - terms: 
   - term: passed
     lang: en
@@ -4126,13 +4198,14 @@ concepts:
   examples: 
   - term: But you passed the test.
     lang: en
+    tts: But you passed the test.mp3
   - term: Ale zkouškou jste prošel.
     lang: cs
     tts: Ale zkouskou jste prosel.mp3
   img: passed.jpeg
   freq: 279864.00000
   origins: ["corpus"]
-##  feet   ################################################################## █ 97%
+##  feet   ##################################################################
 - terms: 
   - term: feet
     lang: en
@@ -4143,13 +4216,14 @@ concepts:
   examples: 
   - term: Your feet and your ankles are relaxed.
     lang: en
+    tts: Your feet and your ankles are relaxed.mp3
   - term: Chodidla a zápěstí máš uvolněná.
     lang: cs
     tts: Chodidla a zapesti mas uvolnena.mp3
   img: feet.jpeg
   freq: 279821.00000
   origins: ["corpus"]
-##  side   ################################################################## █ 97%
+##  side   ##################################################################
 - terms: 
   - term: side
     lang: en
@@ -4163,13 +4237,14 @@ concepts:
   examples: 
   - term: That's your side!
     lang: en
+    tts: Thats your side.mp3
   - term: To je tvá strana!
     lang: cs
     tts: To je tva strana.mp3
   img: side.jpeg
   freq: 279184.50000
   origins: ["corpus"]
-##  head   ################################################################## █ 97%
+##  head   ##################################################################
 - terms: 
   - term: head
     lang: en
@@ -4180,13 +4255,14 @@ concepts:
   examples: 
   - term: My head is empty.
     lang: en
+    tts: My head is empty.mp3
   - term: Moje hlava je prázdná.
     lang: cs
     tts: Moje hlava je prazdna.mp3
   img: head.jpeg
   freq: 277069.50000
   origins: ["corpus"]
-##  heart   ################################################################# █ 97%
+##  heart   #################################################################
 - terms: 
   - term: heart
     lang: en
@@ -4197,13 +4273,14 @@ concepts:
   examples: 
   - term: My heart has stopped.
     lang: en
+    tts: My heart has stopped.mp3
   - term: Zastavilo se mi srdce.
     lang: cs
     tts: Zastavilo se mi srdce.mp3
   img: heart.jpeg
   freq: 275846.50000
   origins: ["corpus"]
-##  children   ############################################################## █ 91%
+##  children   ############################################################## █ 97%
 - terms: 
   - term: children
     lang: en
@@ -4214,13 +4291,13 @@ concepts:
   examples: 
   - term: That's for children.
     lang: en
+    tts: Thats for children.mp3
   - term: To je pro děti.
     lang: cs
-
   img: children.jpeg
   freq: 275607.00000
   origins: ["corpus"]
-##  another   ############################################################### █ 97%
+##  another   ###############################################################
 - terms: 
   - term: another
     lang: en
@@ -4231,13 +4308,14 @@ concepts:
   examples: 
   - term: I really want another kid.
     lang: en
+    tts: I really want another kid.mp3
   - term: Vážně chci další dítě.
     lang: cs
     tts: Vazne chci dalsi dite.mp3
   img: another.jpeg
   freq: 274213.00000
   origins: ["corpus"]
-##  small   ################################################################# █ 97%
+##  small   #################################################################
 - terms: 
   - term: small
     lang: en
@@ -4248,13 +4326,14 @@ concepts:
   examples: 
   - term: Do you have any idea how small you are?
     lang: en
+    tts: Do you have any idea how small you are.mp3
   - term: Víš vůbec, jak jsi malý?
     lang: cs
     tts: Vis vubec, jak jsi maly.mp3
   img: small.jpeg
   freq: 272716.50000
   origins: ["corpus"]
-##  mother   ################################################################ █ 97%
+##  mother   ################################################################
 - terms: 
   - term: mother
     lang: en
@@ -4265,13 +4344,14 @@ concepts:
   examples: 
   - term: This is my mother.
     lang: en
+    tts: This is my mother.mp3
   - term: Je to moje matka!
     lang: cs
     tts: Je to moje matka.mp3
   img: mother.jpeg
   freq: 271652.50000
   origins: ["corpus"]
-##  because   ############################################################### █ 97%
+##  because   ###############################################################
 - terms: 
   - term: because
     lang: en
@@ -4282,13 +4362,14 @@ concepts:
   examples: 
   - term: Because you want to marry me.
     lang: en
+    tts: Because you want to marry me.mp3
   - term: Protože si mě chceš vzít.
     lang: cs
     tts: Protoze si me chces vzit.mp3
   state: ignoreImage
   freq: 271351.50000
   origins: ["corpus"]
-##  how   ################################################################### █ 97%
+##  how   ###################################################################
 - terms: 
   - term: how
     lang: en
@@ -4299,13 +4380,14 @@ concepts:
   examples: 
   - term: How far can you fly?
     lang: en
+    tts: How far can you fly.mp3
   - term: Jak daleko můžete létat?
     lang: cs
     tts: Jak daleko muzete letat.mp3
   img: how.jpeg
   freq: 269931.46500
   origins: ["corpus"]
-##  room   ################################################################## █ 97%
+##  room   ##################################################################
 - terms: 
   - term: room
     lang: en
@@ -4319,13 +4401,14 @@ concepts:
   examples: 
   - term: This is your room.
     lang: en
+    tts: This is your room.mp3
   - term: Toto je tvůj pokoj.
     lang: cs
     tts: Toto je tvuj pokoj.mp3
   img: room.jpeg
   freq: 269595.50000
   origins: ["corpus"]
-##  both   ################################################################## █ 97%
+##  both   ##################################################################
 - terms: 
   - term: both
     lang: en
@@ -4339,6 +4422,7 @@ concepts:
   examples: 
   - term: And we both know why.
     lang: en
+    tts: And we both know why.mp3
   - term: A oba víme proč.
     lang: cs
     tts: A oba vime proc.mp3
@@ -4354,7 +4438,7 @@ concepts:
   state: ignore
   freq: 269414.00000
   origins: ["corpus"]
-##  each   ################################################################## █ 97%
+##  each   ##################################################################
 - terms: 
   - term: each
     lang: en
@@ -4365,13 +4449,14 @@ concepts:
   examples: 
   - term: Enter values for each column.
     lang: en
+    tts: Enter values for each column.mp3
   - term: Zadejte hodnoty pro každý sloupec.
     lang: cs
     tts: Zadejte hodnoty pro kazdy sloupec.mp3
   img: each.jpeg
   freq: 269131.00000
   origins: ["corpus"]
-##  says   ################################################################## █ 97%
+##  says   ##################################################################
 - terms: 
   - term: says
     lang: en
@@ -4382,13 +4467,14 @@ concepts:
   examples: 
   - term: Whoever says this is a liar.
     lang: en
+    tts: Whoever says this is a liar.mp3
   - term: Kdokoli to říká, je lhář.
     lang: cs
     tts: Kdokoli to rika, je lhar.mp3
   img: says.jpeg
   freq: 268542.00000
   origins: ["corpus"]
-##  mrs   ################################################################### █ 97%
+##  mrs   ###################################################################
 - terms: 
   - term: mrs
     lang: en
@@ -4397,15 +4483,16 @@ concepts:
     lang: cs
     tts: pani.mp3
   examples: 
-  - term: You may take my word on it, Mrs.
+  - term: You may take my word on it Mrs.
     lang: en
+    tts: You may take my word on it Mrs.mp3
   - term: Věřte mi to, paní.
     lang: cs
     tts: Verte mi to, pani.mp3
   img: mrs.jpeg
   freq: 267994.00000
   origins: ["corpus"]
-##  father   ################################################################ █ 97%
+##  father   ################################################################
 - terms: 
   - term: father
     lang: en
@@ -4416,13 +4503,14 @@ concepts:
   examples: 
   - term: What would your father say?
     lang: en
+    tts: What would your father say.mp3
   - term: Co by tomu řekl tvůj otec?
     lang: cs
     tts: Co by tomu rekl tvuj otec.mp3
   img: father.jpeg
   freq: 266420.50000
   origins: ["corpus"]
-##  part   ################################################################## █ 97%
+##  part   ##################################################################
 - terms: 
   - term: part
     lang: en
@@ -4436,13 +4524,14 @@ concepts:
   examples: 
   - term: How to find the right part?
     lang: en
+    tts: How to find the right part.mp3
   - term: Jak najít správný díl?
     lang: cs
     tts: Jak najit spravny dil.mp3
   img: part.jpeg
   freq: 265820.00000
   origins: ["corpus"]
-##  house   ################################################################# █ 97%
+##  house   #################################################################
 - terms: 
   - term: house
     lang: en
@@ -4453,13 +4542,14 @@ concepts:
   examples: 
   - term: I have to sell my house.
     lang: en
+    tts: I have to sell my house.mp3
   - term: Budu muset prodat dům.
     lang: cs
     tts: Budu muset prodat dum.mp3
   img: house.jpeg
   freq: 264916.00000
   origins: ["corpus"]
-##  received   ############################################################## █ 97%
+##  received   ##############################################################
 - terms: 
   - term: received
     lang: en
@@ -4473,13 +4563,14 @@ concepts:
   examples: 
   - term: I received this thing this morning.
     lang: en
+    tts: I received this thing this morning.mp3
   - term: Tuto věc jsem obdržel ráno.
     lang: cs
     tts: Tuto vec jsem obdrzel rano.mp3
   img: received.jpeg
   freq: 264606.00000
   origins: ["corpus"]
-##  gone   ################################################################## █ 97%
+##  gone   ##################################################################
 - terms: 
   - term: gone
     lang: en
@@ -4493,13 +4584,14 @@ concepts:
   examples: 
   - term: His boat was gone.
     lang: en
+    tts: His boat was gone.mp3
   - term: Jeho člun zmizel.
     lang: cs
     tts: Jeho clun zmizel.mp3
   img: gone.jpeg
   freq: 263585.00000
   origins: ["corpus"]
-##  among   ################################################################# █ 97%
+##  among   #################################################################
 - terms: 
   - term: among
     lang: en
@@ -4510,13 +4602,14 @@ concepts:
   examples: 
   - term: We have people among you.
     lang: en
+    tts: We have people among you.mp3
   - term: Máme mezi vámi lidi.
     lang: cs
     tts: Mame mezi vami lidi.mp3
   img: among.jpeg
   freq: 262870.50000
   origins: ["corpus"]
-##  water   ################################################################# █ 97%
+##  water   #################################################################
 - terms: 
   - term: water
     lang: en
@@ -4527,6 +4620,7 @@ concepts:
   examples: 
   - term: There's only water out there.
     lang: en
+    tts: Theres only water out there.mp3
   - term: Tam venku je jen voda.
     lang: cs
     tts: Tam venku je jen voda.mp3
