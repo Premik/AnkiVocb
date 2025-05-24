@@ -4,66 +4,29 @@ package vocb.ord
 
 import java.util.Map.Entry
 
-import groovy.transform.Canonical
 import vocb.corp.Difficulty
 import vocb.corp.Similarity
 import vocb.data.Concept
 import vocb.data.Manager
 
 
-
 public class OrderSolver {
-
-	Similarity sm = new Similarity()
-	Difficulty dfc = new Difficulty()
-
-	@Lazy Manager dbMan = {
-		new Manager().tap {
-			load()
-		}
-	}()
-
-	@Lazy Concept[] initialSelection = {
-		dbMan.db.concepts
-	}()
 	
-	@Lazy ConceptExtra[] concepts = {
-		initialSelection.collect {new ConceptExtra(c:it)}
-	}()
+	SolvingContext ctx = new SolvingContext()
 
-	@Canonical
-	public class ConceptExtra {
-		Concept c
-
-		@Lazy int difficulty = { dfc.conceptDifficulty(c) }()
-
-		@Lazy LinkedHashMap<Concept, Double> similarities=  {			
-			(initialSelection as Concept[])
-			.collectEntries {[it, sm.conceptSimilarityNorm(c, it)]}
-			.findAll {Concept c, Double d -> d > 0.15d && d <0.99 }
-			.sort {Entry<Concept, Double>  a, Entry<Concept, Double>  b ->				
-				b.value <=> a.value
-			}.take(20)
-		}()
-
-
-
-		@Override
-		public String toString() {
-			"$c.firstTerm($difficulty, ${similarities.keySet().take(50).collect{it.firstTerm} })"
-		}
+	
+	Order createInitialOrder() {
+		return new Order(ord: ctx.concepts)
 	}
-
-
-
-
-
-
 
 	//
 	static void main(String... args) {
+		//println "${vocb.ord.OrderSolver.class.hashCode()}"
 		new OrderSolver().tap {
-			concepts.take(100).each {println "${it}"}
+			ctx.concepts.take(5).each {println "${it}"}
+			println createInitialOrder()
+			println ctx.freqIdealOrder
+			
 			
 			
 
