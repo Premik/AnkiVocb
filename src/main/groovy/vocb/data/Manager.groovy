@@ -1,15 +1,13 @@
 package vocb.data
 
-import java.nio.charset.StandardCharsets
+import static vocb.Helper.utf8
+
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.util.stream.Stream
 
-import org.apache.commons.lang3.StringUtils
-
-import groovy.transform.CompileStatic
 import vocb.Helper
-import static vocb.Helper.utf8
 
 
 public class Manager {
@@ -168,11 +166,9 @@ public class Manager {
 		println "${'-'*80}"
 	}
 	
-	void printCsText() {
-		db.concepts.each {Concept c ->
-			(c.termsByLang("cs") + c.exsamplesByLang("cs")).each {
-				println it.term
-			}
+	List<String> allTextWithLang(String lang="cs") {
+		db.concepts.collectMany {Concept c ->
+			(c.termsByLang(lang) + c.examplesByLang(lang)).collect {it.term}
 		}
 	}
 
@@ -182,6 +178,7 @@ public class Manager {
 		Manager dbMan = new Manager()
 		dbMan.load()
 		dbMan.findBrokenMedia()
+		
 		
 		//dbMan.save()
 		//println "${Helper.roundDecimal(dbMan.completeness*100, 0)}% completed"

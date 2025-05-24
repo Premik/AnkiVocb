@@ -27,7 +27,7 @@ public class Concept {
 
 	public String getFirstTerm() {terms.values()[0]?.term}
 	public List<Term> termsByLang(String lng) { terms?.values()?.findAll {it.lang == lng }}
-	public List<Term> exsamplesByLang(String lng) { examples?.values()?.findAll {it.lang == lng }}
+	public List<Term> examplesByLang(String lng) { examples?.values()?.findAll {it.lang == lng }}
 	public BigDecimal getCompleteness( ) {
 		if (state == "ignore") return 1
 		BigDecimal termsCp = terms.values()*.completeness*.div(terms.size()).sum()?:0
