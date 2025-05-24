@@ -94,8 +94,8 @@ public class EnTSSAppender {
 
 	public static void main(String[] args) {
 		EnTSSAppender a = new EnTSSAppender(limit:100)
-		//a.runTerms()
-		a.runExamples()
+		a.runTerms()
+		//a.runExamples()
 		println "Done"
 	}
 }
