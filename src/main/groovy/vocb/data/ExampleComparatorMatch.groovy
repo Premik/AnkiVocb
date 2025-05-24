@@ -58,7 +58,7 @@ public class ExampleComparatorMatch {
 		double prefered = preferedWordsScore(commonWords.intersect(preferedWords))
 		double preferedVars = preferedWordsScore(commonWordVariants.intersect(preferedWords))
 
-		return pairs*500 + longWordMatch*5 + exactMatches*100 + variants*70 - sentenceLen + prefered*80 + preferedVars*70
+		return pairs*500 + longWordMatch*5 + exactMatches*250 + variants*70 - sentenceLen + prefered*80 + preferedVars*70
 	}()
 
 	public static Closure<String> defaultColors = {ExampleComparatorMatch self, String word, String defaultColor ->
