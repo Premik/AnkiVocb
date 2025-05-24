@@ -59,8 +59,8 @@ class ManagerTest {
 		assert m.numberOfStarsFreq(0) ==null
 		assert m.numberOfStarsFreq(10) == 0
 		assert m.numberOfStarsFreq(20*1000) == 1
-		assert m.numberOfStarsFreq(200*1000) == 2
-		assert m.numberOfStarsFreq(400*1000) == 3
+		assert m.numberOfStarsFreq(60*1000) == 2
+		assert m.numberOfStarsFreq(200*1000) == 3
 
 		assert m.numberOfStarsFreq(null) == null
 	}
