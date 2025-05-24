@@ -97,7 +97,7 @@ public class BingImageAppender {
 				String editorCmd = ConfHelper.cfg?.ui?.editor
 				assert editorCmd : "No editor configured in the ankivocb.conf/ui/editor path"
 				
-				Helper.runCommand(editorCmd, [path:dbMan.mediaLinkPath(c.img), searchData:sd], 1)
+				Helper.runCommand(editorCmd, [path:dbMan.mediaLinkPath(c.img, "img"), searchData:sd], 1)
 			}
 			
 			
