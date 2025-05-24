@@ -15,6 +15,6 @@ class AzureTrnTest {
 	void thumbnailsFromSearchResultTest() {
 		List<String> tl =trn.extractTopTrns(Helper.parseJson(clipRps))
 		assert tl
-		assert tl == ["klip", "sponka", "svorku"]
+		assert tl == ["klip", "sponka", "svorku", "spona", "galerie"]
 	}
 }
