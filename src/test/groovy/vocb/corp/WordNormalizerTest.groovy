@@ -16,6 +16,7 @@ class WordNormalizerTest {
 			"aaa",
 			"bbb",
 			"foobar",
+			"a",
 			"mm",
 			"word"
 		]

@@ -16,7 +16,7 @@ public class WordNormalizer {
 	
 	public static WordNormalizer instance = new WordNormalizer()
 
-	int minLenght = 2
+	int minLenght = 1
 	int maxLenght = 20
 
 	//Treat non-letter or non-digit as a space. Except single quote
