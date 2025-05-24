@@ -11133,7 +11133,6 @@ concepts:
   img: img/bug.jpeg
   freq: 5403.00000
   origins: ["Supaplex"]
-##  collector   ############################################################# no img
 - terms: 
   - term: collector
     lang: en
@@ -11145,9 +11144,9 @@ concepts:
   - term: kolektor
     lang: cs
     tts: cs-terms/kolektor.mp3
+  img: img/collector.jpeg
   freq: 5236.00000
   origins: ["Supaplex"]
-##  ham   ################################################################### no img
 - terms: 
   - term: ham
     lang: en
@@ -11156,9 +11155,9 @@ concepts:
   - term: šunka
     lang: cs
     tts: cs-terms/sunka.mp3
+  img: img/ham.jpeg
   freq: 5057.00000
   origins: ["Supaplex"]
-##  sub   ################################################################### no img
 - terms: 
   - term: sub
     lang: en
@@ -11170,9 +11169,9 @@ concepts:
   - term: podřízené
     lang: cs
     tts: cs-terms/podrizene.mp3
+  img: img/sub.jpeg
   freq: 4918.00000
   origins: ["Supaplex"]
-##  sandwich   ############################################################## no img
 - terms: 
   - term: sandwich
     lang: en
@@ -11184,9 +11183,9 @@ concepts:
   - term: chlebíček
     lang: cs
     tts: cs-terms/chlebicek.mp3
+  img: img/sandwich.jpeg
   freq: 4822.00000
   origins: ["Supaplex"]
-##  runner   ################################################################ no img
 - terms: 
   - term: runner
     lang: en
@@ -11198,9 +11197,9 @@ concepts:
   - term: závodník
     lang: cs
     tts: cs-terms/zavodnik.mp3
+  img: img/runner.jpeg
   freq: 4498.00000
   origins: ["Supaplex"]
-##  bomb   ################################################################## no img
 - terms: 
   - term: bomb
     lang: en
@@ -11209,9 +11208,9 @@ concepts:
   - term: bomba
     lang: cs
     tts: cs-terms/bomba.mp3
+  img: img/bomb.jpeg
   freq: 4241.00000
   origins: ["Supaplex"]
-##  bang   ################################################################## no img
 - terms: 
   - term: bang
     lang: en
@@ -11223,9 +11222,9 @@ concepts:
   - term: prásk
     lang: cs
     tts: cs-terms/prask.mp3
+  img: img/bang.jpeg
   freq: 4075.00000
   origins: ["Supaplex"]
-##  timing   ################################################################ no img
 - terms: 
   - term: timing
     lang: en
@@ -11234,9 +11233,9 @@ concepts:
   - term: načasování
     lang: cs
     tts: cs-terms/nacasovani.mp3
+  img: img/timing.jpeg
   freq: 3905.00000
   origins: ["Supaplex"]
-##  flip   ################################################################## no img
 - terms: 
   - term: flip
     lang: en
@@ -11248,9 +11247,9 @@ concepts:
   - term: převrátit
     lang: cs
     tts: cs-terms/prevratit.mp3
+  img: img/flip.jpeg
   freq: 3878.00000
   origins: ["Supaplex"]
-##  triple   ################################################################ no img
 - terms: 
   - term: triple
     lang: en
@@ -11262,9 +11261,9 @@ concepts:
   - term: ztrojnásobit
     lang: cs
     tts: cs-terms/ztrojnasobit.mp3
+  img: img/triple.jpeg
   freq: 3858.00000
   origins: ["Supaplex"]
-##  boring   ################################################################ no img
 - terms: 
   - term: boring
     lang: en
@@ -11273,9 +11272,9 @@ concepts:
   - term: nudný
     lang: cs
     tts: cs-terms/nudny.mp3
+  img: img/boring.jpeg
   freq: 3595.00000
   origins: ["Supaplex"]
-##  yawn   ################################################################## no img
 - terms: 
   - term: yawn
     lang: en
@@ -11287,9 +11286,9 @@ concepts:
   - term: zívat
     lang: cs
     tts: cs-terms/zivat.mp3
+  img: img/yawn.jpeg
   freq: 2763.00000
   origins: ["Supaplex"]
-##  diagonal   ############################################################## no img
 - terms: 
   - term: diagonal
     lang: en
@@ -11301,9 +11300,9 @@ concepts:
   - term: diagonální
     lang: cs
     tts: cs-terms/diagonalni.mp3
+  img: img/diagonal.jpeg
   freq: 1155.00000
   origins: ["Supaplex"]
-##  cracker   ############################################################### no img
 - terms: 
   - term: cracker
     lang: en
@@ -11315,9 +11314,9 @@ concepts:
   - term: prskavka
     lang: cs
     tts: cs-terms/prskavka.mp3
+  img: img/cracker.jpeg
   freq: 1119.00000
   origins: ["Supaplex"]
-##  pre   ################################################################### no img
 - terms: 
   - term: pre
     lang: en
@@ -11329,9 +11328,9 @@ concepts:
   - term: před
     lang: cs
     tts: cs-terms/pred.mp3
+  img: img/pre.jpeg
   freq: 644.00000
   origins: ["Supaplex"]
-##  bombastic   ############################################################# no img
 - terms: 
   - term: bombastic
     lang: en
@@ -11340,9 +11339,9 @@ concepts:
   - term: bombastický
     lang: cs
     tts: cs-terms/bombasticky.mp3
+  img: img/bombastic.jpeg
   freq: 564.00000
   origins: ["Supaplex"]
-##  hopper   ################################################################ no img
 - terms: 
   - term: hopper
     lang: en
@@ -11354,9 +11353,9 @@ concepts:
   - term: násypka
     lang: cs
     tts: cs-terms/nasypka.mp3
+  img: img/hopper.jpeg
   freq: 544.00000
   origins: ["Supaplex"]
-##  flop   ################################################################## no img
 - terms: 
   - term: flop
     lang: en
@@ -11368,9 +11367,9 @@ concepts:
   - term: propadák
     lang: cs
     tts: cs-terms/propadak.mp3
+  img: img/flop.jpeg
   freq: 535.00000
   origins: ["Supaplex"]
-##  ignition   ############################################################## no img
 - terms: 
   - term: ignition
     lang: en
@@ -11382,9 +11381,9 @@ concepts:
   - term: zážeh
     lang: cs
     tts: cs-terms/zazeh.mp3
+  img: img/ignition.jpeg
   freq: 512.00000
   origins: ["Supaplex"]
-##  telepathy   ############################################################# no img
 - terms: 
   - term: telepathy
     lang: en
@@ -11396,9 +11395,9 @@ concepts:
   - term: přenos myšlenek
     lang: cs
     tts: cs-terms/prenos myslenek.mp3
+  img: img/telepathy.jpeg
   freq: 437.00000
   origins: ["Supaplex"]
-##  info   ################################################################## no img
 - terms: 
   - term: info
     lang: en
@@ -11410,9 +11409,9 @@ concepts:
   - term: údaje
     lang: cs
     tts: cs-terms/udaje.mp3
+  img: img/info.jpeg
   freq: 177.00000
   origins: ["Supaplex"]
-##  anti   ################################################################## no img
 - terms: 
   - term: anti
     lang: en
@@ -11424,9 +11423,9 @@ concepts:
   - term: opak
     lang: cs
     tts: cs-terms/opak.mp3
+  img: img/anti.jpeg
   freq: 143.00000
   origins: ["Supaplex"]
-##  clockwise   ############################################################# no img
 - terms: 
   - term: clockwise
     lang: en
@@ -11435,9 +11434,9 @@ concepts:
   - term: po směru hodinových ručiček
     lang: cs
     tts: cs-samples/po smeru hodinovych rucicek.mp3
+  img: img/clockwise.jpeg
   freq: 44.00000
   origins: ["Supaplex"]
-##  joystick   ############################################################## no img
 - terms: 
   - term: joystick
     lang: en
@@ -11449,6 +11448,7 @@ concepts:
   - term: ovládací páka
     lang: cs
     tts: cs-terms/ovladaci paka.mp3
+  img: img/joystick.jpeg
   freq: 11.00000
   origins: ["Supaplex"]
 
@@ -14778,3 +14778,235 @@ examples:
   - term: Dejte ty opice rovnou zpátky do postele.
     lang: cs
     tts: cs-samples/Dejte ty opice rovnou zpatky do postele.mp3
+##  Warm up   ############################################################### t0:tts:missing
+- terms: 
+  - term: Warm up
+    lang: en
+##  Down they fall   ######################################################## t0:tts:missing
+- terms: 
+  - term: Down they fall
+    lang: en
+##  Go through   ############################################################ t0:tts:missing
+- terms: 
+  - term: Go through
+    lang: en
+##  Get those too   ######################################################### t0:tts:missing
+- terms: 
+  - term: Get those too
+    lang: en
+##  Bug funny   ############################################################# t0:tts:missing
+- terms: 
+  - term: Bug funny
+    lang: en
+##  Easy come, easy go   #################################################### t0:tts:missing
+- terms: 
+  - term: Easy come, easy go
+    lang: en
+##  Run for life   ########################################################## t0:tts:missing
+- terms: 
+  - term: Run for life
+    lang: en
+##  Ignore them   ########################################################### t0:tts:missing
+- terms: 
+  - term: Ignore them
+    lang: en
+##  Fall out   ############################################################## t0:tts:missing
+- terms: 
+  - term: Fall out
+    lang: en
+##  One thing   ############################################################# t0:tts:missing
+- terms: 
+  - term: One thing
+    lang: en
+##  Just do it   ############################################################ t0:tts:missing
+- terms: 
+  - term: Just do it
+    lang: en
+##  Up and down   ########################################################### t0:tts:missing
+- terms: 
+  - term: Up and down
+    lang: en
+##  Bomb time. 200 moving objects   ######################################### t0:tts:missing
+- terms: 
+  - term: Bomb time. 200 moving objects
+    lang: en
+##  Once around   ########################################################### t0:tts:missing
+- terms: 
+  - term: Once around
+    lang: en
+##  Baba's work   ########################################################### t0:tts:missing
+- terms: 
+  - term: Baba's work
+    lang: en
+##  No problem   ############################################################ t0:tts:missing
+- terms: 
+  - term: No problem
+    lang: en
+##  Easy business   ######################################################### t0:tts:missing
+- terms: 
+  - term: Easy business
+    lang: en
+##  Easy rider   ############################################################ t0:tts:missing
+- terms: 
+  - term: Easy rider
+    lang: en
+##  No miracle   ############################################################ t0:tts:missing
+- terms: 
+  - term: No miracle
+    lang: en
+##  Mind the stones   ####################################################### t0:tts:missing
+- terms: 
+  - term: Mind the stones
+    lang: en
+##  Time runner   ########################################################### t0:tts:missing
+- terms: 
+  - term: Time runner
+    lang: en
+##  Little pleasure   ####################################################### t0:tts:missing
+- terms: 
+  - term: Little pleasure
+    lang: en
+##  Easy work   ############################################################# t0:tts:missing
+- terms: 
+  - term: Easy work
+    lang: en
+##  Ready steady go   ####################################################### t0:tts:missing
+- terms: 
+  - term: Ready steady go
+    lang: en
+##  Fall festival   ######################################################### t0:tts:missing
+- terms: 
+  - term: Fall festival
+    lang: en
+##  Don't worry   ########################################################### t0:tts:missing
+- terms: 
+  - term: Don't worry
+    lang: en
+##  State of mind   ######################################################### t0:tts:missing
+- terms: 
+  - term: State of mind
+    lang: en
+##  Do it yourself   ######################################################## t0:tts:missing
+- terms: 
+  - term: Do it yourself
+    lang: en
+##  Fill in   ############################################################### t0:tts:missing
+- terms: 
+  - term: Fill in
+    lang: en
+##  Keep cool   ############################################################# t0:tts:missing
+- terms: 
+  - term: Keep cool
+    lang: en
+##  Those we like   ######################################################### t0:tts:missing
+- terms: 
+  - term: Those we like
+    lang: en
+##  All together   ########################################################## t0:tts:missing
+- terms: 
+  - term: All together
+    lang: en
+##  Phil's first   ########################################################## t0:tts:missing
+- terms: 
+  - term: Phil's first
+    lang: en
+##  There you go   ########################################################## t0:tts:missing
+- terms: 
+  - term: There you go
+    lang: en
+##  Get them out   ########################################################## t0:tts:missing
+- terms: 
+  - term: Get them out
+    lang: en
+##  Tough going   ########################################################### t0:tts:missing
+- terms: 
+  - term: Tough going
+    lang: en
+##  Hurry up   ############################################################## t0:tts:missing
+- terms: 
+  - term: Hurry up
+    lang: en
+##  Tough but possible   #################################################### t0:tts:missing
+- terms: 
+  - term: Tough but possible
+    lang: en
+##  Head hunter   ########################################################### t0:tts:missing
+- terms: 
+  - term: Head hunter
+    lang: en
+##  Community work   ######################################################## t0:tts:missing
+- terms: 
+  - term: Community work
+    lang: en
+##  One way   ############################################################### t0:tts:missing
+- terms: 
+  - term: One way
+    lang: en
+##  All the family   ######################################################## t0:tts:missing
+- terms: 
+  - term: All the family
+    lang: en
+##  Little detail   ######################################################### t0:tts:missing
+- terms: 
+  - term: Little detail
+    lang: en
+##  Transport it   ########################################################## t0:tts:missing
+- terms: 
+  - term: Transport it
+    lang: en
+##  Don't waste them   ###################################################### t0:tts:missing
+- terms: 
+  - term: Don't waste them
+    lang: en
+##  Time is info   ########################################################## t0:tts:missing
+- terms: 
+  - term: Time is info
+    lang: en
+##  All that fuss   ######################################################### t0:tts:missing
+- terms: 
+  - term: All that fuss
+    lang: en
+##  A pro's work   ########################################################## t0:tts:missing
+- terms: 
+  - term: A pro's work
+    lang: en
+##  See you tomorrow   ###################################################### t0:tts:missing
+- terms: 
+  - term: See you tomorrow
+    lang: en
+##  Flip and flop   ######################################################### t0:tts:missing
+- terms: 
+  - term: Flip and flop
+    lang: en
+##  Know that   ############################################################# t0:tts:missing
+- terms: 
+  - term: Know that
+    lang: en
+##  Ham and cheese sandwich   ############################################### t0:tts:missing
+- terms: 
+  - term: Ham and cheese sandwich
+    lang: en
+##  Good luck   ############################################################# t0:tts:missing
+- terms: 
+  - term: Good luck
+    lang: en
+##  Good job   ############################################################## t0:tts:missing
+- terms: 
+  - term: Good job
+    lang: en
+##  On-off   ################################################################ t0:tts:missing
+- terms: 
+  - term: On-off
+    lang: en
+##  One's missing   ######################################################### t0:tts:missing
+- terms: 
+  - term: One's missing
+    lang: en
+##  Watch out   ############################################################# t0:tts:missing
+- terms: 
+  - term: Watch out
+    lang: en
+##  Find the way   ########################################################## t0:tts:missing
+- terms: 
+  - term: Find the way
+    lang: en

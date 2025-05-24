@@ -113,7 +113,7 @@ public class ExampleAppender {
 			} else {
 				print sen				
 			}
-			println "->${color(e.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
+			println "->${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
 		dbMan.save()
 
