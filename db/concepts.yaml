@@ -1678,7 +1678,6 @@ concepts:
     lang: en
   - term: Ona jede se mnou.
     lang: cs
-  
   img: she.jpeg
   freq: 747484.30000
   origins: ["corpus"]
@@ -1698,7 +1697,6 @@ concepts:
     lang: en
   - term: To je velice zábavné.
     lang: cs
-  
   state: ignoreImage
   freq: 747094.50000
   origins: ["corpus"]
@@ -1714,12 +1712,10 @@ concepts:
     lang: cs
     tts: premyslet.mp3
   examples: 
- 
   - term: Just let me think.
     lang: en
   - term: Jenom mě nech přemýšlet.
     lang: cs
-  
   img: think.jpeg
   freq: 744283.50000
   origins: ["corpus"]
@@ -1743,7 +1739,7 @@ concepts:
   - term: jenom
     lang: cs
     tts: jenom.mp3
-  examples:   
+  examples: 
   - term: She's only eight months.
     lang: en
   - term: Je jí jenom osm měsíců.
@@ -1762,12 +1758,11 @@ concepts:
   - term: osoby
     lang: cs
     tts: osoby.mp3
-  examples:   
+  examples: 
   - term: There's people down there.
     lang: en
   - term: Tam dole jsou lidé.
     lang: cs
-  
   img: people.jpeg
   freq: 696604.50000
   origins: ["corpus"]
@@ -1782,12 +1777,11 @@ concepts:
   - term: šli
     lang: cs
     tts: sli.mp3
-  examples:     
+  examples: 
   - term: I went to the hospital.
     lang: en
   - term: Šel jsem do nemocnice.
     lang: cs
-  
   state: ignoreImage
   freq: 690186.00000
   origins: ["corpus"]
@@ -1807,7 +1801,6 @@ concepts:
     lang: en
   - term: Myslím, že to bude skvělé.
     lang: cs
-  
   img: great.jpeg
   freq: 672584.00000
   origins: ["corpus"]
@@ -1822,12 +1815,11 @@ concepts:
   - term: teď
     lang: cs
     tts: ted.mp3
-  examples:   
+  examples: 
   - term: Now say good night.
     lang: en
   - term: Teď řekni dobrou noc!
     lang: cs
-  
   img: now.jpeg
   freq: 668424.50000
   origins: ["corpus"]
@@ -1842,16 +1834,15 @@ concepts:
   - term: brát
     lang: cs
     tts: brat.mp3
-  examples:   
+  examples: 
   - term: He can't take that money.
     lang: en
   - term: Nemůže si ty peníze vzít.
     lang: cs
-  
   img: take.jpeg
   freq: 663615.50000
   origins: ["corpus"]
-##  little   ################################################################ ▆ 67%
+##  little   ################################################################ █ 95%
 - terms: 
   - term: little
     lang: en
@@ -1862,10 +1853,15 @@ concepts:
   - term: malé
     lang: cs
     tts: male.mp3
+  examples: 
+  - term: Just a little better.
+    lang: en
+  - term: Jen o trochu líp.
+    lang: cs
   img: little.jpeg
   freq: 659529.00000
   origins: ["corpus"]
-##  day   ################################################################### ▆ 67%
+##  day   ################################################################### █ 95%
 - terms: 
   - term: day
     lang: en
@@ -1873,10 +1869,15 @@ concepts:
   - term: den
     lang: cs
     tts: den.mp3
+  examples: 
+  - term: Give me one more day.
+    lang: en
+  - term: Dejte mi ještě jeden den.
+    lang: cs
   img: day.jpeg
   freq: 657552.00000
   origins: ["corpus"]
-##  eyes   ################################################################## ▆ 67%
+##  eyes   ################################################################## █ 95%
 - terms: 
   - term: eyes
     lang: en
@@ -1884,10 +1885,15 @@ concepts:
   - term: oči
     lang: cs
     tts: oci.mp3
+  examples: 
+  - term: I want to see your eyes.
+    lang: en
+  - term: Chci vidět tvý oči.
+    lang: cs
   img: eyes.jpeg
   freq: 647788.00000
   origins: ["corpus"]
-##  like   ################################################################## ▆ 67%
+##  like   ################################################################## █ 95%
 - terms: 
   - term: like
     lang: en
@@ -1898,10 +1904,15 @@ concepts:
   - term: rád
     lang: cs
     tts: rad.mp3
+  examples: 
+  - term: Do you like seafood?
+    lang: en
+  - term: Máš rád mořské jídlo?
+    lang: cs
   img: like.jpeg
   freq: 646931.50000
   origins: ["corpus"]
-##  must   ################################################################## ▆ 67%
+##  must   ################################################################## █ 95%
 - terms: 
   - term: must
     lang: en
@@ -1912,10 +1923,15 @@ concepts:
   - term: muset
     lang: cs
     tts: muset.mp3
+  examples: 
+  - term: She must feel lonely.
+    lang: en
+  - term: Musí se cítit osamělá.
+    lang: cs
   state: ignoreImage
   freq: 639579.50000
   origins: ["corpus"]
-##  over   ################################################################## ▆ 67%
+##  over   ################################################################## █ 95%
 - terms: 
   - term: over
     lang: en
@@ -1926,10 +1942,15 @@ concepts:
   - term: přes
     lang: cs
     tts: pres.mp3
+  examples: 
+  - term: It weighs over five tons.
+    lang: en
+  - term: Váží to přes pět tun.
+    lang: cs
   img: over.jpeg
   freq: 632459.50000
   origins: ["corpus"]
-##  those   ################################################################# ▆ 67%
+##  those   ################################################################# █ 95%
 - terms: 
   - term: those
     lang: en
@@ -1940,10 +1961,15 @@ concepts:
   - term: těmi
     lang: cs
     tts: temi.mp3
+  examples: 
+  - term: Those early days were remarkable.
+    lang: en
+  - term: Tyto první dny byly pozoruhodné.
+    lang: cs
   state: ignoreImage
   freq: 628314.00000
   origins: ["corpus"]
-##  such   ################################################################## ▆ 67%
+##  such   ################################################################## █ 95%
 - terms: 
   - term: such
     lang: en
@@ -1951,10 +1977,15 @@ concepts:
   - term: takové
     lang: cs
     tts: takove.mp3
+  examples: 
+  - term: There is no such device.
+    lang: en
+  - term: Není zde žádné takové zařízení.
+    lang: cs
   state: ignoreImage
   freq: 627941.00000
   origins: ["corpus"]
-##  can   ################################################################### ▆ 67%
+##  can   ################################################################### █ 95%
 - terms: 
   - term: can
     lang: en
@@ -1965,10 +1996,15 @@ concepts:
   - term: mohou
     lang: cs
     tts: mohou.mp3
+  examples: 
+  - term: And they can be dangerous.
+    lang: en
+  - term: A mohou být nebezpeční.
+    lang: cs
   img: can.jpeg
   freq: 610396.00000
   origins: ["corpus"]
-##  what   ################################################################## ▆ 67%
+##  what   ################################################################## █ 95%
 - terms: 
   - term: what
     lang: en
@@ -1979,10 +2015,15 @@ concepts:
   - term: jaké
     lang: cs
     tts: jake.mp3
+  examples: 
+  - term: You see what you did?
+    lang: en
+  - term: Vidíš co jsi způsobil?
+    lang: cs
   img: what.jpeg
   freq: 606801.75000
   origins: ["corpus"]
-##  before   ################################################################ ▆ 67%
+##  before   ################################################################ █ 95%
 - terms: 
   - term: before
     lang: en
@@ -1993,10 +2034,15 @@ concepts:
   - term: dříve
     lang: cs
     tts: drive.mp3
+  examples: 
+  - term: Read the instructions before use.
+    lang: en
+  - term: Před použitím si přečtěte pokyny.
+    lang: cs
   img: before.jpeg
   freq: 586348.50000
   origins: ["corpus"]
-##  mr   #################################################################### ▆ 67%
+##  mr   #################################################################### █ 95%
 - terms: 
   - term: mr
     lang: en
@@ -2004,10 +2050,15 @@ concepts:
   - term: pan
     lang: cs
     tts: pan.mp3
+  examples: 
+  - term: Hello Mr. Bean
+    lang: en
+  - term: Zdravím, pane Bín.
+    lang: cs
   img: mr.jpeg
   freq: 581487.00000
   origins: ["corpus"]
-##  never   ################################################################# ▆ 67%
+##  never   ################################################################# █ 95%
 - terms: 
   - term: never
     lang: en
@@ -2015,10 +2066,15 @@ concepts:
   - term: nikdy
     lang: cs
     tts: nikdy.mp3
+  examples: 
+  - term: I never heard of him.
+    lang: en
+  - term: Nikdy jsem o něm neslyšel.
+    lang: cs
   img: never.jpeg
   freq: 581128.50000
   origins: ["corpus"]
-##  life   ################################################################## ▆ 67%
+##  life   ################################################################## █ 95%
 - terms: 
   - term: life
     lang: en
@@ -2026,10 +2082,19 @@ concepts:
   - term: život
     lang: cs
     tts: zivot.mp3
+  examples: 
+  - term: The game is his life.
+    lang: en
+  - term: Ta hra je jeho život.
+    lang: cs
+  - term: Trying to save her life!
+    lang: en
+  - term: Snažíme se jí zachránit život!
+    lang: cs
   img: life.jpeg
   freq: 579285.00000
   origins: ["corpus"]
-##  much   ################################################################## ▆ 67%
+##  much   ################################################################## █ 95%
 - terms: 
   - term: much
     lang: en
@@ -2040,10 +2105,15 @@ concepts:
   - term: moc
     lang: cs
     tts: moc.mp3
+  examples: 
+  - term: His brain is much smaller.
+    lang: en
+  - term: Jeho mozek je o hodně menší.
+    lang: cs
   state: ignoreImage
   freq: 573925.50000
   origins: ["corpus"]
-##  things   ################################################################ ▆ 67%
+##  things   ################################################################ █ 95%
 - terms: 
   - term: things
     lang: en
@@ -2051,10 +2121,15 @@ concepts:
   - term: věci
     lang: cs
     tts: veci.mp3
+  examples: 
+  - term: Look at those things!
+    lang: en
+  - term: Podívejte se na ty věci!
+    lang: cs
   img: things.jpeg
   freq: 567559.00000
   origins: ["corpus"]
-##  many   ################################################################## ▆ 67%
+##  many   ################################################################## █ 95%
 - terms: 
   - term: many
     lang: en
@@ -2065,10 +2140,15 @@ concepts:
   - term: mnozí
     lang: cs
     tts: mnozi.mp3
+  examples: 
+  - term: It has many levels.
+    lang: en
+  - term: Má to mnoho úrovní.
+    lang: cs
   img: many.jpeg
   freq: 564758.00000
   origins: ["corpus"]
-##  old   ################################################################### ▆ 67%
+##  old   ################################################################### █ 95%
 - terms: 
   - term: old
     lang: en
@@ -2079,10 +2159,15 @@ concepts:
   - term: starý
     lang: cs
     tts: stary.mp3
+  examples: 
+  - term: He's old and tired.
+    lang: en
+  - term: Je starý a unavený.
+    lang: cs
   img: old.jpeg
   freq: 562247.00000
   origins: ["corpus"]
-##  after   ################################################################# ▆ 67%
+##  after   ################################################################# █ 95%
 - terms: 
   - term: after
     lang: en
@@ -2093,10 +2178,11 @@ concepts:
   - term: poté
     lang: cs
     tts: pote.mp3
+ 
   state: ignoreImage
   freq: 560432.00000
   origins: ["corpus"]
-##  years   ################################################################# ▆ 67%
+##  years   ################################################################# █ 95%
 - terms: 
   - term: years
     lang: en
@@ -2107,10 +2193,79 @@ concepts:
   - term: léta
     lang: cs
     tts: leta.mp3
+  examples: 
+  - term: I did, for four years.
+    lang: en
+  - term: Věřila jsem ti čtyři roky.
+    lang: cs
+  - term: I waited years for it.
+    lang: en
+  - term: Léta jsem na to čekal.
+    lang: cs
+  - term: He's done it for years.
+    lang: en
+  - term: Dělá to už léta.
+    lang: cs
+  - term: I'd known her for years.
+    lang: en
+  - term: Znal jsem ji léta.
+    lang: cs
+  - term: Is four years a long time?
+    lang: en
+  - term: Je to dlouho čtyři roky?
+    lang: cs
+  - term: Unchanged after two years.
+    lang: en
+  - term: Za ty dva roky se nezměnil.
+    lang: cs
+  - term: My parents did it for years.
+    lang: en
+  - term: Mí rodiče to tak dělali léta.
+    lang: cs
+  - term: We tried actually, for years.
+    lang: en
+  - term: Vlastně jsme se o něj léta pokoušeli.
+    lang: cs
+  - term: Were those years really yours?
+    lang: en
+  - term: Byla všechna ta léta opravdu vaše?
+    lang: cs
+  - term: I thought it would take years.
+    lang: en
+  - term: Myslela jsem, že to bude trvat léta.
+    lang: cs
+  - term: We lived with him for two years.
+    lang: en
+  - term: Žili jsme s ním 2 roky.
+    lang: cs
+  - term: Those men were with me for years.
+    lang: en
+  - term: Ti muži byly v mé jednotce roky.
+    lang: cs
+  - term: You were with him for three years.
+    lang: en
+  - term: Byla jste s ním tři roky.
+    lang: cs
+  - term: He's looking at two years minimum.
+    lang: en
+  - term: Hrozí mu nejméně dva roky.
+    lang: cs
+  - term: I worked downtown for three years.
+    lang: en
+  - term: V centru jsem byl tři roky.
+    lang: cs
+  - term: He remembers those vanished years.
+    lang: en
+  - term: Vzpomíná na ty ztracená léta.
+    lang: cs
+  - term: Waste all those years of training.
+    lang: en
+  - term: Takhle zahodit všechna ta léta tréninku.
+    lang: cs
   img: years.jpeg
   freq: 547420.00000
   origins: ["corpus"]
-##  most   ################################################################## ▆ 67%
+##  most   ################################################################## █ 95%
 - terms: 
   - term: most
     lang: en
@@ -2121,10 +2276,39 @@ concepts:
   - term: nejvíc
     lang: cs
     tts: nejvic.mp3
+  examples: 
+  - term: Works like the most!
+    lang: en
+  - term: Funguje to stejně jako většina!
+    lang: cs
+  - term: Most of them were dark.
+    lang: en
+  - term: Většina z nich byla temná.
+    lang: cs
+  - term: I want you most of all.
+    lang: en
+  - term: Tebe chci nejvíc ze všech.
+    lang: cs
+  - term: And most of all, is it real?
+    lang: en
+  - term: A ze všeho nejvíc, je to reálné?
+    lang: cs
+  - term: What's the most you ever got?
+    lang: en
+  - term: Kolik jsi kdy nejvíc vzal?
+    lang: cs
+  - term: Where there's the most firing.
+    lang: en
+  - term: Tam se bude střílet nejvíc.
+    lang: cs
+  - term: Who has won the most of contests?
+    lang: en
+  - term: Kdo vyhrál nejvíc soutěží ?
+    lang: cs
   state: ignoreImage
   freq: 543388.50000
   origins: ["corpus"]
-##  also   ################################################################## ▆ 67%
+##  also   ################################################################## █ 95%
 - terms: 
   - term: also
     lang: en
@@ -2135,10 +2319,27 @@ concepts:
   - term: taky
     lang: cs
     tts: taky.mp3
+  examples: 
+  - term: Also called bit rate.
+    lang: en
+  - term: Označuje se také jako přenosová rychlost.
+    lang: cs
+  - term: Also thanks to you lar.
+    lang: en
+  - term: Také díky vám lar.
+    lang: cs
+  - term: We also focus on prevention.
+    lang: en
+  - term: Zaměřujeme se také na prevenci.
+    lang: cs
+  - term: You can also create a new menu.
+    lang: en
+  - term: Můžete také vytvořit novou nabídku.
+    lang: cs
   state: ignoreImage
   freq: 536324.00000
   origins: ["corpus"]
-##  year   ################################################################## ▆ 67%
+##  year   ################################################################## █ 95%
 - terms: 
   - term: year
     lang: en
@@ -2146,10 +2347,47 @@ concepts:
   - term: rok
     lang: cs
     tts: rok.mp3
+  examples: 
+  - term: See ya next year.
+    lang: en
+  - term: Uvidíme se příští rok.
+    lang: cs
+  - term: He's another year older.
+    lang: en
+  - term: Je zas o rok starší.
+    lang: cs
+  - term: Only wait a year or two.
+    lang: en
+  - term: Jen počkej takhle za rok nebo za dva.
+    lang: cs
+  - term: They can stay for a year.
+    lang: en
+  - term: Mohou zůstat ještě rok.
+    lang: cs
+  - term: You guys had a great year.
+    lang: en
+  - term: Měli jste skvělý rok.
+    lang: cs
+  - term: Evidently they do it each year.
+    lang: en
+  - term: Zřejmě se to každý rok.
+    lang: cs
+  - term: Add the year to the date string.
+    lang: en
+  - term: Přidat rok do řetězce data.
+    lang: cs
+  - term: Statistics for the previous year.
+    lang: en
+  - term: Statistiky za předcházející rok.
+    lang: cs
+  - term: Each year is better than the last.
+    lang: en
+  - term: Každý rok je to lepší než minulý.
+    lang: cs
   img: year.jpeg
   freq: 532499.50000
   origins: ["corpus"]
-##  saw   ################################################################### ▆ 67%
+##  saw   ################################################################### █ 95%
 - terms: 
   - term: saw
     lang: en
@@ -2160,10 +2398,87 @@ concepts:
   - term: pila
     lang: cs
     tts: pila.mp3
+  examples: 
+  - term: I saw it too.
+    lang: en
+  - term: Já ho taky viděl.
+    lang: cs
+  - term: And he saw you?
+    lang: en
+  - term: A on tě viděl?
+    lang: cs
+  - term: I saw the cheque.
+    lang: en
+  - term: Viděl jsem ten šek.
+    lang: cs
+  - term: Maybe you saw her?
+    lang: en
+  - term: Možná jste ji viděl?
+    lang: cs
+  - term: I saw you walk in.
+    lang: en
+  - term: Viděl jsem tě vejít.
+    lang: cs
+  - term: You saw that implant.
+    lang: en
+  - term: Viděl jsi ten implantát.
+    lang: cs
+  - term: I saw me as he saw me.
+    lang: en
+  - term: Já viděla jak on mě viděl.
+    lang: cs
+  - term: Sounds like a power saw.
+    lang: en
+  - term: Znělo to jako motorová pila.
+    lang: cs
+  - term: I saw the first two acts.
+    lang: en
+  - term: Viděl jsem první dvě jednání.
+    lang: cs
+  - term: I saw them in the mirror.
+    lang: en
+  - term: Viděl jsem je v zrcadle.
+    lang: cs
+  - term: I saw you and got scared.
+    lang: en
+  - term: Viděl jsem tě a být strach.
+    lang: cs
+  - term: I saw a huge amount of ...
+    lang: en
+  - term: JÁ pila jeden ohromný činit of ...
+    lang: cs
+  - term: What do you mean, you saw us?
+    lang: en
+  - term: Jak to myslíš,že si nás viděl?
+    lang: cs
+  - term: His breath sounded like a saw.
+    lang: en
+  - term: Jeho dech zněl jako pila.
+    lang: cs
+  - term: I saw what happened last night.
+    lang: en
+  - term: Viděl jsem, co se stalo včera večer.
+    lang: cs
+  - term: I just saw it with my own eyes.
+    lang: en
+  - term: Viděl jsem to právě na vlastní oči.
+    lang: cs
+  - term: You can bet it was a chain saw.
+    lang: en
+  - term: Určitě to byla motorová pila.
+    lang: cs
+  - term: The saw chain starts immediately.
+    lang: en
+  - term: Řetězová pila se okamžitě spustí.
+    lang: cs
+  - term: There was only a saw mill before.
+    lang: en
+  - term: Před tím zde stávala pouze pila.
+    lang: cs
   img: saw.jpeg
   freq: 520922.00000
   origins: ["corpus"]
-##  too   ################################################################### ▆ 67%
+##  too   ################################################################### █ 95%
 - terms: 
   - term: too
     lang: en
@@ -2174,10 +2489,95 @@ concepts:
   - term: taky
     lang: cs
     tts: taky.mp3
+  examples: 
+  - term: I see it too.
+    lang: en
+  - term: Já to taky vidím.
+    lang: cs
+  - term: It's cold too.
+    lang: en
+  - term: Taky je tu zima.
+    lang: cs
+  - term: I liked her too!
+    lang: en
+  - term: Já ji měl taky rád!
+    lang: cs
+  - term: Was he here too?
+    lang: en
+  - term: On tu byl taky?
+    lang: cs
+  - term: Is fire alive too?
+    lang: en
+  - term: Je oheň taky živý?
+    lang: cs
+  - term: I got punched too.
+    lang: en
+  - term: Taky jsem dostal ránu.
+    lang: cs
+  - term: We know people too.
+    lang: en
+  - term: My máme taky známý.
+    lang: cs
+  - term: We care about you too.
+    lang: en
+  - term: Nám na tobě taky záleží.
+    lang: cs
+  - term: My fingers are too big.
+    lang: en
+  - term: Moje prsty jsou příliš velké.
+    lang: cs
+  - term: I make too good a target.
+    lang: en
+  - term: Sám jsem až příliš dobrý terč.
+    lang: cs
+  - term: And bring me a plate too.
+    lang: en
+  - term: A přines mi taky talíř.
+    lang: cs
+  - term: It's too radical for them!
+    lang: en
+  - term: Je to pro ně příliš radikální!
+    lang: cs
+  - term: Maybe you should wait too.
+    lang: en
+  - term: Možná, že bys měl taky počkat.
+    lang: cs
+  - term: He saved my life too once.
+    lang: en
+  - term: Taky mi jednou zachránil život.
+    lang: cs
+  - term: And get one for yourself too.
+    lang: en
+  - term: A sám si taky jedno vem.
+    lang: cs
+  - term: The category name is too long.
+    lang: en
+  - term: Název kategorie je příliš dlouhý.
+    lang: cs
+  - term: Your name comes from mine, too.
+    lang: en
+  - term: Tvé jméno ostatně z mého pochází taky.
+    lang: cs
+  - term: Too close means you get touched.
+    lang: en
+  - term: Příliš blízko znamená, dostanete se dotkl.
+    lang: cs
+  - term: Is it just too ordinary for you?
+    lang: en
+  - term: Je pro tebe příliš obyčejný?
+    lang: cs
+  - term: I put my home number on there too.
+    lang: en
+  - term: Nechám vám taky svoje číslo domů.
+    lang: cs
+  - term: This should be your happiness too.
+    lang: en
+  - term: Mělo by to být taky tvoje štěstí.
+    lang: cs
   state: ignoreImage
   freq: 519626.00000
   origins: ["corpus"]
-##  down   ################################################################## ▆ 67%
+##  down   ################################################################## █ 95%
 - terms: 
   - term: down
     lang: en
@@ -2188,10 +2588,87 @@ concepts:
   - term: dole
     lang: cs
     tts: dole.mp3
+  examples: 
+  - term: Move one line down.
+    lang: en
+  - term: Přesunutí o jeden řádek dolů
+    lang: cs
+  - term: Pull down that wall!
+    lang: en
+  - term: Dolů s tou zdí!
+    lang: cs
+  - term: All clear down here.
+    lang: en
+  - term: Dole je vše čisté.
+    lang: cs
+  - term: Right down the middle.
+    lang: en
+  - term: Vpravo dolů na střed.
+    lang: cs
+  - term: Yes down at the beach.
+    lang: en
+  - term: Ano, dole na pláži.
+    lang: cs
+  - term: It's just down the hall.
+    lang: en
+  - term: Je to dole v hale.
+    lang: cs
+  - term: I should sleep down here.
+    lang: en
+  - term: Měl bych spát dole.
+    lang: cs
+  - term: There's people down there.
+    lang: en
+  - term: Tam dole jsou lidé.
+    lang: cs
+  - term: It was very dark down here.
+    lang: en
+  - term: Dole byla mimořádná tma.
+    lang: cs
+  - term: Fifty yards right down there.
+    lang: en
+  - term: Přímo tam dole, asi padesát metrů.
+    lang: cs
+  - term: There's something down there.
+    lang: en
+  - term: Tam dole něco je.
+    lang: cs
+  - term: What are you doing down here?
+    lang: en
+  - term: Co děláš tady dole?
+    lang: cs
+  - term: This key moves the block down.
+    lang: en
+  - term: Tato klávesa přesune blok dolů.
+    lang: cs
+  - term: I thought you were coming down.
+    lang: en
+  - term: Myslel jsem, že jsi šel dolů.
+    lang: cs
+  - term: He's down the hall to the right.
+    lang: en
+  - term: Je dole v hale napravo.
+    lang: cs
+  - term: We need a medical team down here!
+    lang: en
+  - term: Potřebujeme lékařský tým sem dolů!
+    lang: cs
+  - term: Move the selection down one item.
+    lang: en
+  - term: Přesun výběru o jednu položku dolů
+    lang: cs
+  - term: And my family are all down there.
+    lang: en
+  - term: Moje rodina je tam dole.
+    lang: cs
+  - term: Just come down to the supermarket.
+    lang: en
+  - term: Jen pojďte dolů do supermarketu.
+    lang: cs
   img: down.jpeg
   freq: 514720.50000
   origins: ["corpus"]
-##  work   ################################################################## ▆ 67%
+##  work   ################################################################## █ 95%
 - terms: 
   - term: work
     lang: en
@@ -2202,10 +2679,61 @@ concepts:
   - term: fungovat
     lang: cs
     tts: fungovat.mp3
+  examples: 
+  - term: The work was good.
+    lang: en
+  - term: Byla to dobrá práce.
+    lang: cs
+  - term: Work in this place!
+    lang: en
+  - term: Práce na tomto místě!
+    lang: cs
+  - term: This will never work.
+    lang: en
+  - term: To nebude nikdy fungovat.
+    lang: cs
+  - term: Toto nebude nikdy fungovat.
+    lang: cs
+  - term: I got to work for you.
+    lang: en
+  - term: I dostal se do práce pro vás.
+    lang: cs
+  - term: It's just got to work.
+    lang: en
+  - term: To prostě musí fungovat!
+    lang: cs
+  - term: This will be my work now.
+    lang: en
+  - term: Tohle teď bude moje práce.
+    lang: cs
+  - term: Rotten to be out of work.
+    lang: en
+  - term: Je hrozný být bez práce.
+    lang: cs
+  - term: Do you think it will work?
+    lang: en
+  - term: Myslíš, že to bude fungovat?
+    lang: cs
+  - term: It's just not going to work.
+    lang: en
+  - term: To už nikdy nebude fungovat.
+    lang: cs
+  - term: This is never going to work.
+    lang: en
+  - term: Tohle nikdy nebude fungovat.
+    lang: cs
+  - term: The risk is that it won't work.
+    lang: en
+  - term: Riziko je v tom, že to nemusí fungovat.
+    lang: cs
+  - term: But they will not work for long.
+    lang: en
+  - term: Nebudou však fungovat dlouho.
+    lang: cs
   img: work.jpeg
   freq: 508678.00000
   origins: ["corpus"]
-##  took   ################################################################## ▆ 67%
+##  took   ################################################################## █ 95%
 - terms: 
   - term: took
     lang: en
@@ -2216,6 +2744,75 @@ concepts:
   - term: trvalo
     lang: cs
     tts: trvalo.mp3
+  examples: 
+  - term: He took her hands.
+    lang: en
+  - term: Vzal ji za ruku.
+    lang: cs
+  - term: It took me awhile.
+    lang: en
+  - term: Chvíli mi to trvalo.
+    lang: cs
+  - term: I took her with me.
+    lang: en
+  - term: Vzal jsem ji s sebou.
+    lang: cs
+  - term: It took two minutes.
+    lang: en
+  - term: Trvalo to dvě minuty.
+    lang: cs
+  - term: Took you long enough.
+    lang: en
+  - term: Trvalo ti to dlouho.
+    lang: cs
+  - term: Two years it took me.
+    lang: en
+  - term: Trvalo mi to dva roky.
+    lang: cs
+  - term: What took you so long?
+    lang: en
+  - term: Co Vám tak dlouho trvalo?
+    lang: cs
+  - term: It took me quite a while.
+    lang: en
+  - term: To mi nějakou dobu trvalo.
+    lang: cs
+  - term: It only took three months.
+    lang: en
+  - term: Trvalo to jen tři měsíce.
+    lang: cs
+  - term: I took one last assignment.
+    lang: en
+  - term: Vzal jsem poslední úkol.
+    lang: cs
+  - term: It only took her a few minutes.
+    lang: en
+  - term: Trvalo to jen několik minut.
+    lang: cs
+  - term: You know how long that took me?
+    lang: en
+  - term: Víš, jak dlouho mi to trvalo?
+    lang: cs
+  - term: It took me a long time to forget.
+    lang: en
+  - term: Dlouho mi trvalo zapomenout na to.
+    lang: cs
+  - term: You took this kid under your wing.
+    lang: en
+  - term: Vzal jsi ho pod svou ochranu.
+    lang: cs
+  - term: He took her with him off the roof.
+    lang: en
+  - term: Vzal ji sebou na střechu.
+    lang: cs
+  - term: He took the clip in his left hand.
+    lang: en
+  - term: Vzal zásobník do levé ruky.
+    lang: cs
+  - term: He took the piano, or someone did.
+    lang: en
+  - term: Vzal piano nebo někdo jiný.
+    lang: cs
   state: ignoreImage
   freq: 501669.00000
   origins: ["corpus"]
@@ -2230,7 +2827,7 @@ concepts:
   img: might.jpeg
   freq: 498257.00000
   origins: ["corpus"]
-##  first   ################################################################# ▆ 67%
+##  first   ################################################################# █ 95%
 - terms: 
   - term: first
     lang: en
@@ -2241,10 +2838,75 @@ concepts:
   - term: poprvé
     lang: cs
     tts: poprve.mp3
+  examples: 
+  - term: My first and only.
+    lang: en
+  - term: Můj první a jediný.
+    lang: cs
+  - term: It's my first time.
+    lang: en
+  - term: To je moje poprvé.
+    lang: cs
+  - term: It's his first time!
+    lang: en
+  - term: Tak to je poprvé!
+    lang: cs
+  - term: His first big mistake.
+    lang: en
+  - term: Jeho první velká chyba.
+    lang: cs
+  - term: This is my first coffee.
+    lang: en
+  - term: To je moje první káva.
+    lang: cs
+  - term: This is her first night.
+    lang: en
+  - term: Je to její první noc.
+    lang: cs
+  - term: It's his first birthday.
+    lang: en
+  - term: Jsou to jeho první narozeniny.
+    lang: cs
+  - term: First time in long time.
+    lang: en
+  - term: Poprvé po dlouhé době.
+    lang: cs
+  - term: When did it first happen?
+    lang: en
+  - term: Kdy se to stalo poprvé?
+    lang: cs
+  - term: When did you first notice it?
+    lang: en
+  - term: Kdy sis toho všimla poprvé?
+    lang: cs
+  - term: This was just the first stage.
+    lang: en
+  - term: To byla teprve první etapa.
+    lang: cs
+  - term: Your first game is on the house!
+    lang: en
+  - term: Váš první zápas je na dům!
+    lang: cs
+  - term: I know, this is your first time.
+    lang: en
+  - term: Vím, že to je pro tebe poprvé.
+    lang: cs
+  - term: Can you remember your first bike?
+    lang: en
+  - term: Vzpomenete si na své první kolo?
+    lang: cs
+  - term: The first time, it happened there.
+    lang: en
+  - term: Poprvé se to stalo tam.
+    lang: cs
+  - term: Evidently it's her first time too.
+    lang: en
+  - term: Pro ni je to zřejmě taky poprvé.
+    lang: cs
   img: first.jpeg
   freq: 497764.00000
   origins: ["corpus"]
-##  without   ############################################################### ▆ 67%
+##  without   ############################################################### █ 95%
 - terms: 
   - term: without
     lang: en
@@ -2252,10 +2914,35 @@ concepts:
   - term: bez
     lang: cs
     tts: bez.mp3
+  examples: 
+  - term: I can't go on without him.
+    lang: en
+  - term: Bez něho nemohu žít.
+    lang: cs
+  - term: One link without unpacking.
+    lang: en
+  - term: Jeden odkaz bez rozbalení.
+    lang: cs
+  - term: She will do without us easily.
+    lang: en
+  - term: Snadno si bez nás poradí.
+    lang: cs
+  - term: Without a uniform you're nothing.
+    lang: en
+  - term: Bez ní seš nula.
+    lang: cs
+  - term: Insert record without validation?
+    lang: en
+  - term: Chcete vložit záznam bez potvrzení?
+    lang: cs
+  - term: Close the query without saving it.
+    lang: en
+  - term: Zavřete dotaz bez uložení.
+    lang: cs
   img: without.jpeg
   freq: 496066.00000
   origins: ["corpus"]
-##  good   ################################################################## ▆ 67%
+##  good   ################################################################## █ 95%
 - terms: 
   - term: good
     lang: en
@@ -2266,10 +2953,99 @@ concepts:
   - term: dobrý
     lang: cs
     tts: dobry.mp3
+  examples: 
+  - term: I'd be good at that.
+    lang: en
+  - term: Byl bych v tom dobrý.
+    lang: cs
+  - term: Well that's good news.
+    lang: en
+  - term: Výborně, to jsou dobré zprávy!
+    lang: cs
+  - term: That was a good start.
+    lang: en
+  - term: To byl dobrý začátek.
+    lang: cs
+  - term: That's not good enough.
+    lang: en
+  - term: To není dost dobré.
+    lang: cs
+  - term: This is really good ye!
+    lang: en
+  - term: To je opravdu dobrý tě!
+    lang: cs
+  - term: It would be good timing.
+    lang: en
+  - term: Bylo by to dobré načasování.
+    lang: cs
+  - term: How's that for good news?
+    lang: en
+  - term: Jak to, že pro dobré zprávy?
+    lang: cs
+  - term: I have good news for you.
+    lang: en
+  - term: Mám pro vás dobré zprávy.
+    lang: cs
+  - term: Have you had a good look?
+    lang: en
+  - term: Měl jste dobrý výhled?
+    lang: cs
+  - term: I make too good a target.
+    lang: en
+  - term: Sám jsem až příliš dobrý terč.
+    lang: cs
+  - term: Another good tip marhgil!
+    lang: en
+  - term: Další dobrý tip marhgil!
+    lang: cs
+  - term: This is a good omen, what?
+    lang: en
+  - term: To je dobré znamení, že?
+    lang: cs
+  - term: Not a good idea right now.
+    lang: en
+  - term: Teď to není dobrý nápad.
+    lang: cs
+  - term: That's a good, solid life.
+    lang: en
+  - term: To je dobrý, solidní život.
+    lang: cs
+  - term: That was a good confession.
+    lang: en
+  - term: To bylo dobré vyznání.
+    lang: cs
+  - term: Nothing's good enough for you.
+    lang: en
+  - term: Pro tebe není nic dost dobré.
+    lang: cs
+  - term: Tell me, you are a good judge.
+    lang: en
+  - term: Řekni mi, máš dobrý úsudek.
+    lang: cs
+  - term: I have good news for my friends.
+    lang: en
+  - term: Mám dobré zprávy pro svoje přátele.
+    lang: cs
+  - term: It's not good to talk about them.
+    lang: en
+  - term: Není dobré o nich mluvit.
+    lang: cs
+  - term: Are you sure this is a good idea?
+    lang: en
+  - term: Jsi si jistý, že je to dobrý nápad?
+    lang: cs
+  - term: Did you find a body in good shape?
+    lang: en
+  - term: Našli jste tělo v dobrý kondici?
+    lang: cs
+  - term: Why is it such a good moisturizer?
+    lang: en
+  - term: Proč je to takový dobrý hydratační krém?
+    lang: cs
   img: good.jpeg
   freq: 490930.50000
   origins: ["corpus"]
-##  himself   ############################################################### ▆ 67%
+##  himself   ############################################################### █ 95%
 - terms: 
   - term: himself
     lang: en
@@ -2280,10 +3056,95 @@ concepts:
   - term: sebe
     lang: cs
     tts: sebe.mp3
+  examples: 
+  - term: He did it himself?
+    lang: en
+  - term: Udělal si to sám?
+    lang: cs
+  - term: He told me himself.
+    lang: en
+  - term: Sám mi to řekl.
+    lang: cs
+  - term: He can handle himself.
+    lang: en
+  - term: On to zvládne sám.
+    lang: cs
+  - term: Every man for himself!
+    lang: en
+  - term: Každý sám za sebe.
+    lang: cs
+  - term: He could go by himself.
+    lang: en
+  - term: Prý může jít sám.
+    lang: cs
+  - term: He decorated it himself.
+    lang: en
+  - term: Zařídil si ji sám.
+    lang: cs
+  - term: Every moose for himself.
+    lang: en
+  - term: Každý los sám za sebe.
+    lang: cs
+  - term: He may find out by himself.
+    lang: en
+  - term: Možná to zjistí sám.
+    lang: cs
+  - term: He thought only of himself.
+    lang: en
+  - term: Myslel jen na sebe.
+    lang: cs
+  - term: And he owed himself to her.
+    lang: en
+  - term: A dluží jí sebe.
+    lang: cs
+  - term: It's what he did to himself.
+    lang: en
+  - term: To si udělal sám.
+    lang: cs
+  - term: Perhaps he wrote it himself!
+    lang: en
+  - term: Třeba si ji napsal sám!
+    lang: cs
+  - term: He was pleased with himself.
+    lang: en
+  - term: Byl sám se sebou zjevně spokojen.
+    lang: cs
+  - term: He could play all by himself.
+    lang: en
+  - term: On může hrát klidně sám.
+    lang: cs
+  - term: Through the forest by himself?
+    lang: en
+  - term: Sám skrz celý prales?
+    lang: cs
+  - term: Chef prepares the menu himself.
+    lang: en
+  - term: Menu sestavuje sám šéfkuchař.
+    lang: cs
+  - term: He was teaching us and himself.
+    lang: en
+  - term: - Učil nás i sebe.
+    lang: cs
+  - term: He probably called them himself.
+    lang: en
+  - term: Asi je sám zavolal.
+    lang: cs
+  - term: He took it, but not for himself.
+    lang: en
+  - term: Bral si jej, ale ne pro sebe.
+    lang: cs
+  - term: His concern was for himself alone.
+    lang: en
+  - term: Zajímal se jen o sebe.
+    lang: cs
+  - term: Each man decides that for himself.
+    lang: en
+  - term: Každý se rozhoduje za sebe.
+    lang: cs
   state: ignoreImage
   freq: 486383.00000
   origins: ["corpus"]
-##  own   ################################################################### ▆ 67%
+##  own   ################################################################### █ 95%
 - terms: 
   - term: own
     lang: en
@@ -2294,10 +3155,43 @@ concepts:
   - term: vlastnit
     lang: cs
     tts: vlastnit.mp3
+  examples: 
+  - term: I want to own it.
+    lang: en
+  - term: Já ho chci vlastnit.
+    lang: cs
+  - term: Make your own mistakes.
+    lang: en
+  - term: Udělej si své vlastní chyby.
+    lang: cs
+  - term: No man can own a forest!
+    lang: en
+  - term: Les nemůže nikdo vlastnit.
+    lang: cs
+  - term: Proceed at your own risks.
+    lang: en
+  - term: Pokračujte na vlastní nebezpečí.
+    lang: cs
+  - term: A clone can't own anything.
+    lang: en
+  - term: Klon nemůže nic vlastnit.
+    lang: cs
+  - term: Make your own business card!
+    lang: en
+  - term: Vytvořte si vlastní vizitku!
+    lang: cs
+  - term: I want to create my own future.
+    lang: en
+  - term: Chci svou vlastní budoucnost.
+    lang: cs
+  - term: I can find my way on my own ship!
+    lang: en
+  - term: Dokážu najít cestu na své vlastní lodi!
+    lang: cs
   state: ignoreImage
   freq: 478353.50000
   origins: ["corpus"]
-##  again   ################################################################# ▆ 67%
+##  again   ################################################################# █ 95%
 - terms: 
   - term: again
     lang: en
@@ -2308,10 +3202,79 @@ concepts:
   - term: zase
     lang: cs
     tts: zase.mp3
+  examples: 
+  - term: You did it again?
+    lang: en
+  - term: Udělal jsi to znovu?
+    lang: cs
+  - term: There it is again.
+    lang: en
+  - term: Tady je to zase.
+    lang: cs
+  - term: He's studying again.
+    lang: en
+  - term: Už se zase učí.
+    lang: cs
+  - term: Here they come again!
+    lang: en
+  - term: Už jsou tu zase!
+    lang: cs
+  - term: I lost cohesion again.
+    lang: en
+  - term: Zase se mi ztratila soudržnost.
+    lang: cs
+  - term: His heart stopped again.
+    lang: en
+  - term: Jeho srdce se zase zastavilo.
+    lang: cs
+  - term: You feel up to it again?
+    lang: en
+  - term: Už se na to zase cítíš?
+    lang: cs
+  - term: I stopped to think again.
+    lang: en
+  - term: Přestal jsem myslet znovu.
+    lang: cs
+  - term: Now he's all right again.
+    lang: en
+  - term: Už je zase v pořádku.
+    lang: cs
+  - term: Are we going to move again?
+    lang: en
+  - term: Budeme se zase stěhovat?
+    lang: cs
+  - term: Did you lose your car again?
+    lang: en
+  - term: Už jsi zase přišel o auto?
+    lang: cs
+  - term: Were you up all night again?
+    lang: en
+  - term: Zase jsi byla vzhůru celou noc?
+    lang: cs
+  - term: Try to upload the file again.
+    lang: en
+  - term: Pokuste se soubor odeslat znovu.
+    lang: cs
+  - term: You will soon be sound again.
+    lang: en
+  - term: Brzy budeš zase zdráv.
+    lang: cs
+  - term: Close all objects and try again.
+    lang: en
+  - term: Zavřete všechny objekty a proveďte operaci znovu.
+    lang: cs
+  - term: You going to be nice to me again?
+    lang: en
+  - term: Budeš na mě zase hodná?
+    lang: cs
+  - term: Is your head feeling rotten again?
+    lang: en
+  - term: Zase tě bolí hlava?
+    lang: cs
   img: again.jpeg
   freq: 476062.50000
   origins: ["corpus"]
-##  give   ################################################################## ▆ 67%
+##  give   ################################################################## █ 95%
 - terms: 
   - term: give
     lang: en
@@ -2322,6 +3285,71 @@ concepts:
   - term: dej
     lang: cs
     tts: dej.mp3
+  examples: 
+  - term: Give me my phone!
+    lang: en
+  - term: Můžeš mi dát telefon?
+    lang: cs
+  - term: Give me that ring.
+    lang: en
+  - term: Dej mi ten prsten.
+    lang: cs
+  - term: Give me the money.
+    lang: en
+  - term: Dej mi ty peníze.
+    lang: cs
+  - term: Give me the helmet.
+    lang: en
+  - term: Dej mi tu helmu.
+    lang: cs
+  - term: Just give it to us.
+    lang: en
+  - term: Prostě nám ho dej.
+    lang: cs
+  - term: I can give him that.
+    lang: en
+  - term: Já mu to dát můžu.
+    lang: cs
+  - term: Come on, give it to me.
+    lang: en
+  - term: No pojď, Dej mně to.
+    lang: cs
+  - term: Just give me the thing!
+    lang: en
+  - term: Dej mi tu věc.
+    lang: cs
+  - term: Give me your handcuffs.
+    lang: en
+  - term: Dej mi svá pouta.
+    lang: cs
+  - term: Give me another bullet.
+    lang: en
+  - term: Dej mi další náboj.
+    lang: cs
+  - term: You can't give him that.
+    lang: en
+  - term: To mu nemůžeš dát.
+    lang: cs
+  - term: Just give me a few days.
+    lang: en
+  - term: Dej mi jen pár dní.
+    lang: cs
+  - term: That ring, give it here!
+    lang: en
+  - term: Ten prsten, dej ho sem!
+    lang: cs
+  - term: Could you give this to him?
+    lang: en
+  - term: Mohl byste mu to dát?
+    lang: cs
+  - term: You can give it to someone else.
+    lang: en
+  - term: Můžeš to dát někomu jinému.
+    lang: cs
+  - term: Then you must give him the horse.
+    lang: en
+  - term: Tak mu musíš dát koně.
+    lang: cs
   img: give.jpeg
   freq: 469253.00000
   origins: ["corpus"]

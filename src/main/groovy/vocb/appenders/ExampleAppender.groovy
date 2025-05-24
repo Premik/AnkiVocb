@@ -54,7 +54,7 @@ public class ExampleAppender {
 					}
 
 			xtractedSamples
-			.collect { Tuple2<String, String> t->
+			.findAll { Tuple2<String, String> t->
 				t[0].length() < maxLength 				
 			}			
 			.each {Tuple2<String, String> t ->
