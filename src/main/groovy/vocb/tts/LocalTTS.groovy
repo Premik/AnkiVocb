@@ -1,6 +1,10 @@
-package vocb;
+package vocb.tts;
 
 import java.nio.charset.StandardCharsets
+
+import vocb.Helper
+import vocb.HttpHelper
+
 import static vocb.Helper.utf8
 
 public class LocalTTS {

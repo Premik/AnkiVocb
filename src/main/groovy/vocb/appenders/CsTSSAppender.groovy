@@ -4,12 +4,12 @@ import java.nio.file.Files
 import java.nio.file.Path
 
 import vocb.Helper
-import vocb.LocalTTS
-import vocb.aws.AwsCliPollyTTS
 import vocb.aws.AwsTranslate
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
+import vocb.tts.AwsCliPollyTTS
+import vocb.tts.LocalTTS
 
 public class CsTSSAppender {
 

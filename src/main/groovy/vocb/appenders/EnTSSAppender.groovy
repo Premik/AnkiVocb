@@ -4,10 +4,10 @@ import java.nio.file.Path
 import java.util.concurrent.TimeUnit
 
 import vocb.Helper
-import vocb.aws.AwsCliPollyTTS
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
+import vocb.tts.AwsCliPollyTTS
 
 public class EnTSSAppender {
 

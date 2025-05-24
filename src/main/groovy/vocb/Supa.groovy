@@ -7,9 +7,9 @@ import vocb.anki.crowd.CrowdParser
 import vocb.anki.crowd.MediaMan
 import vocb.anki.crowd.Note
 import vocb.anki.crowd.NoteModel
-import vocb.aws.AwsCliPollyTTS
 import vocb.aws.AwsTranslate
 import vocb.corp.WordNormalizer
+import vocb.tts.AwsCliPollyTTS
 
 public class Supa {
 
