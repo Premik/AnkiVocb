@@ -15847,7 +15847,7 @@ concepts:
   img: fun.jpeg
   freq: 22138.75000
   origins: ["JingleBells"]
-##  lean   ################################################################## ▆ 73%
+##  lean   ################################################################## █ 89%
 - terms: 
   - term: lean
     lang: en
@@ -15860,9 +15860,10 @@ concepts:
     lang: en
   - term: Kůň byl štíhlý.
     lang: cs
+  img: lean.jpeg
   freq: 22063.05000
   origins: ["JingleBells"]
-##  tail   ################################################################## ▆ 73%
+##  tail   ################################################################## █ 89%
 - terms: 
   - term: tail
     lang: en
@@ -15875,9 +15876,10 @@ concepts:
     lang: en
   - term: Zvonky na oháňce zvoní.
     lang: cs
+  img: tail.jpeg
   freq: 20681.45000
   origins: ["JingleBells"]
-##  bells   ################################################################# ▆ 73%
+##  bells   ################################################################# █ 89%
 - terms: 
   - term: bells
     lang: en
@@ -15890,6 +15892,7 @@ concepts:
     lang: en
   - term: Zvonky na oháňce zvoní.
     lang: cs
+  img: bells.jpeg
   freq: 17904.10000
   origins: ["JingleBells"]
 ##  hey   ###################################################################
@@ -15897,7 +15900,7 @@ concepts:
   - term: hey
     lang: en
   state: ignore
-##  dashing   ############################################################### ▆ 73%
+##  dashing   ############################################################### █ 89%
 - terms: 
   - term: dashing
     lang: en
@@ -15910,6 +15913,7 @@ concepts:
     lang: en
   - term: Prohánět se sněhem.
     lang: cs
+  img: dashing.jpeg
   freq: 7393.94000
   origins: ["JingleBells"]
 ##  tho   ###################################################################
@@ -15917,7 +15921,7 @@ concepts:
   - term: tho
     lang: en
   state: ignore
-##  sleigh   ################################################################ ▆ 73%
+##  sleigh   ################################################################ █ 89%
 - terms: 
   - term: sleigh
     lang: en
@@ -15930,9 +15934,10 @@ concepts:
     lang: en
   - term: Otevřené sáně s jedním koňem.
     lang: cs
+  img: sleigh.jpeg
   freq: 2972.29000
   origins: ["JingleBells"]
-##  jingle   ################################################################ ▆ 73%
+##  jingle   ################################################################ █ 89%
 - terms: 
   - term: jingle
     lang: cs
@@ -15945,5 +15950,6 @@ concepts:
     lang: en
   - term: Rolničky.
     lang: cs
+  img: jingle.jpeg
   freq: 1631.31000
   origins: ["JingleBells"]
