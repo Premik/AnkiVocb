@@ -17,6 +17,11 @@ public class ConceptDb {
 	public List<Term> examplesByLang(String lng) {
 		examples.collectMany {it.byLang(lng) }
 	}
+	
+	public List<Term> conceptsByLang(String lng) {
+		concepts.collectMany {it.termsByLang(lng)}
+	}
+
 
 	public List<String> validate() {
 		List<String> ret = []
