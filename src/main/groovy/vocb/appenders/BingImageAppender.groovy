@@ -61,7 +61,7 @@ public class BingImageAppender {
 			sd =new SearchData(count:16)
 			i++
 			init()
-			String trm = c.terms[0].term
+			String trm = c.firstTerm
 			imgSelector.with {
 				sd.q = trm
 				runSearch(sd)
