@@ -141,8 +141,14 @@ public class Corpus {
 
 		commonWords.each { String w->
 			f1[w] = (f1[w] + f2[w]) /2
-			
+
 		}
+	}
+
+	String[] topX(int x=100) {
+		wordFreq.keySet().sort { String a, String b->
+			wordFreq[b] <=> wordFreq[a]
+		}.take(x)
 	}
 
 	static Corpus buildDef() {

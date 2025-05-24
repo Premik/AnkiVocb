@@ -1,10 +1,6 @@
 package vocb.corp
 
-import java.util.concurrent.CountDownLatch
-import java.util.function.Function
-import java.util.regex.Pattern
-import java.util.stream.Collectors
-import java.util.stream.Stream
+import groovy.transform.Memoized
 
 
 public class Similarity {
@@ -45,11 +41,12 @@ public class Similarity {
 
 	BigDecimal similarWithLen(CharSequence a, CharSequence b, int len) {
 		List<String> aSubs = allSubstringsWithLen(a, len)
-		List<String> bSubs = allSubstringsWithLen(b, len)		
+		List<String> bSubs = allSubstringsWithLen(b, len)
 		List<Integer> dst = distanceMatches(aSubs, bSubs, 1000) + distanceMatches(bSubs, aSubs, 1000)
-		dst.collect{ (it+1) as BigDecimal}.collect {1/(it*it)}.collect {(it < 0.01) ? 0 : it }.sum()		
+		dst.collect{ (it+1) as BigDecimal}.collect {1/(it*it)}.collect {(it < 0.01) ? 0 : it }.sum()
 	}
-	
+
+	@Memoized
 	BigDecimal similarSubstrings(CharSequence a, CharSequence b) {
 		assert a
 		assert b
@@ -66,9 +63,17 @@ public class Similarity {
 	static void main(String... args) {
 		Similarity n = new Similarity()
 		Corpus c=  Corpus.buildDef()
+		String word ="when"
+		println n.similarSubstrings("you", "yours")
+		String[] sorted = c.topX(10000).sort {String a, String b ->
+			n.similarSubstrings(word, b) <=> n.similarSubstrings(word, a)
+		}
 		
+		println word
+		println ( sorted.take(20).collect{"$it ${n.similarSubstrings(word, it)} "})
+
 		//bedroom
-		
+
 
 	}
 
