@@ -415,6 +415,7 @@ concepts:
   examples: 
   - term: How would they know?
     lang: en
+    tts: How would they know.mp3
   - term: Jak by to mohli vědět?
     lang: cs
     tts: Jak by to mohli vedet.mp3
@@ -646,10 +647,11 @@ concepts:
   state: ignoreImage
   freq: 2872012.50000
   origins: ["corpus"]
-##  or   #################################################################### █ 97%
+##  or   ####################################################################
 - terms: 
   - term: or
     lang: en
+    tts: or.mp3
   - term: nebo
     lang: cs
     tts: nebo.mp3
@@ -662,10 +664,11 @@ concepts:
   img: or.jpeg
   freq: 2803803.50000
   origins: ["corpus"]
-##  her   ################################################################### █ 88%
+##  her   ################################################################### █ 94%
 - terms: 
   - term: her
     lang: en
+    tts: her.mp3
   - term: její
     lang: cs
     tts: jeji.mp3
@@ -692,6 +695,7 @@ concepts:
 - terms: 
   - term: said
     lang: en
+    tts: said.mp3
   - term: řekl
     lang: cs
     tts: rekl.mp3
@@ -707,10 +711,11 @@ concepts:
   img: said.jpeg
   freq: 2637136.00000
   origins: ["corpus"]
-##  which   ################################################################# █ 88%
+##  which   ################################################################# █ 94%
 - terms: 
   - term: which
     lang: en
+    tts: which.mp3
   - term: který
     lang: cs
     tts: ktery.mp3
@@ -728,6 +733,7 @@ concepts:
 - terms: 
   - term: by
     lang: en
+    tts: by.mp3
   - term: podle
     lang: cs
     tts: podle.mp3
@@ -747,6 +753,7 @@ concepts:
 - terms: 
   - term: been
     lang: en
+    tts: been.mp3
   - term: byl
     lang: cs
     tts: byl.mp3
@@ -766,6 +773,7 @@ concepts:
 - terms: 
   - term: him
     lang: en
+    tts: him.mp3
   - term: ho
     lang: cs
     tts: ho.mp3
@@ -785,6 +793,7 @@ concepts:
 - terms: 
   - term: my
     lang: en
+    tts: my.mp3
   - term: můj
     lang: cs
     tts: muj.mp3
@@ -804,6 +813,7 @@ concepts:
 - terms: 
   - term: this
     lang: en
+    tts: this.mp3
   - term: tento
     lang: cs
     tts: tento.mp3
@@ -819,10 +829,11 @@ concepts:
   img: this.jpeg
   freq: 2010471.00000
   origins: ["corpus"]
-##  their   ################################################################# █ 88%
+##  their   ################################################################# █ 94%
 - terms: 
   - term: their
     lang: en
+    tts: their.mp3
   - term: jejich
     lang: cs
     tts: jejich.mp3
@@ -840,6 +851,7 @@ concepts:
 - terms: 
   - term: me
     lang: en
+    tts: me.mp3
   - term: mě
     lang: cs
     tts: me.mp3
@@ -859,6 +871,7 @@ concepts:
 - terms: 
   - term: who
     lang: en
+    tts: who.mp3
   - term: kdo
     lang: cs
     tts: kdo.mp3
@@ -874,10 +887,11 @@ concepts:
   state: ignoreImage
   freq: 1745473.00000
   origins: ["corpus"]
-##  would   ################################################################# ▅ 62%
+##  would   ################################################################# ▆ 63%
 - terms: 
   - term: would
     lang: en
+    tts: would.mp3
   - term: bychom
     lang: cs
     tts: bychom.mp3
@@ -887,10 +901,11 @@ concepts:
   state: ignoreImage
   freq: 1663186.50000
   origins: ["corpus"]
-##  has   ################################################################### █ 97%
+##  has   ###################################################################
 - terms: 
   - term: has
     lang: en
+    tts: has.mp3
   - term: má
     lang: cs
     tts: ma.mp3
@@ -907,6 +922,7 @@ concepts:
 - terms: 
   - term: so
     lang: en
+    tts: so.mp3
   - term: tak
     lang: cs
     tts: tak.mp3
@@ -926,6 +942,7 @@ concepts:
 - terms: 
   - term: if
     lang: en
+    tts: if.mp3
   - term: pokud
     lang: cs
     tts: pokud.mp3
@@ -945,6 +962,7 @@ concepts:
 - terms: 
   - term: say
     lang: en
+    tts: say.mp3
   - term: říkají
     lang: cs
     tts: rikaji.mp3
@@ -964,6 +982,7 @@ concepts:
 - terms: 
   - term: made
     lang: en
+    tts: made.mp3
   - term: vyrobeny
     lang: cs
     tts: vyrobeny.mp3
@@ -979,10 +998,11 @@ concepts:
   img: made.jpeg
   freq: 1188501.00000
   origins: ["corpus"]
-##  into   ################################################################## █ 97%
+##  into   ##################################################################
 - terms: 
   - term: into
     lang: en
+    tts: into.mp3
   - term: do
     lang: cs
     tts: do.mp3
@@ -999,6 +1019,7 @@ concepts:
 - terms: 
   - term: did
     lang: en
+    tts: did.mp3
   - term: udělal
     lang: cs
     tts: udelal.mp3
@@ -1018,6 +1039,7 @@ concepts:
 - terms: 
   - term: will
     lang: en
+    tts: will.mp3
   - term: bude
     lang: cs
     tts: bude.mp3
@@ -1033,10 +1055,11 @@ concepts:
   state: ignoreImage
   freq: 1172186.50000
   origins: ["corpus"]
-##  more   ################################################################## █ 97%
+##  more   ##################################################################
 - terms: 
   - term: more
     lang: en
+    tts: more.mp3
   - term: více
     lang: cs
     tts: vice.mp3
@@ -1049,10 +1072,11 @@ concepts:
   img: more.jpeg
   freq: 1159978.50000
   origins: ["corpus"]
-##  your   ################################################################## █ 91%
+##  your   ################################################################## █ 92%
 - terms: 
   - term: your
     lang: en
+    tts: your.mp3
   - term: vaše
     lang: cs
     tts: vase.mp3
@@ -1066,10 +1090,11 @@ concepts:
   img: your.jpeg
   freq: 1159087.50000
   origins: ["corpus"]
-##  when   ################################################################## ▅ 62%
+##  when   ################################################################## ▆ 63%
 - terms: 
   - term: when
     lang: en
+    tts: when.mp3
   - term: když
     lang: cs
     tts: kdyz.mp3
@@ -1079,10 +1104,11 @@ concepts:
   img: when.jpeg
   freq: 1124132.50000
   origins: ["corpus"]
-##  could   ################################################################# ▅ 62%
+##  could   ################################################################# ▆ 63%
 - terms: 
   - term: could
     lang: en
+    tts: could.mp3
   - term: mohl by
     lang: cs
     tts: mohl by.mp3
@@ -1092,10 +1118,11 @@ concepts:
   state: ignoreImage
   freq: 1094521.00000
   origins: ["corpus"]
-##  some   ################################################################## ▅ 62%
+##  some   ################################################################## ▆ 63%
 - terms: 
   - term: some
     lang: en
+    tts: some.mp3
   - term: některé
     lang: cs
     tts: nektere.mp3
@@ -1105,10 +1132,11 @@ concepts:
   img: some.jpeg
   freq: 1075480.00000
   origins: ["corpus"]
-##  our   ################################################################### ▅ 62%
+##  our   ################################################################### ▆ 63%
 - terms: 
   - term: our
     lang: en
+    tts: our.mp3
   - term: naše
     lang: cs
     tts: nase.mp3
@@ -1118,10 +1146,11 @@ concepts:
   state: ignoreImage
   freq: 1011790.00000
   origins: ["corpus"]
-##  man   ################################################################### ▅ 60%
+##  man   ################################################################### ▅ 61%
 - terms: 
   - term: man
     lang: en
+    tts: man.mp3
   - term: muž
     lang: cs
     tts: muz.mp3
@@ -1129,10 +1158,11 @@ concepts:
   img: man.jpeg
   freq: 991438.50000
   origins: ["corpus"]
-##  go   #################################################################### ▅ 62%
+##  go   #################################################################### ▆ 63%
 - terms: 
   - term: go
     lang: en
+    tts: go.mp3
   - term: jít
     lang: cs
     tts: jit.mp3
@@ -1142,10 +1172,11 @@ concepts:
   img: go.jpeg
   freq: 983790.50000
   origins: ["corpus"]
-##  its   ################################################################### ▅ 62%
+##  its   ################################################################### ▆ 63%
 - terms: 
   - term: its
     lang: en
+    tts: its.mp3
   - term: jeho
     lang: cs
     tts: jeho.mp3
@@ -1155,50 +1186,55 @@ concepts:
   state: ignoreImage
   freq: 956494.50000
   origins: ["corpus"]
-##  up   #################################################################### ▅ 62%
+##  up   #################################################################### ▆ 63%
 - terms: 
   - term: up
     lang: en
+    tts: up.mp3
   - term: nahoru
     lang: cs
     tts: nahoru.mp3
   img: up.jpeg
   freq: 939235.50000
   origins: ["corpus"]
-##  they   ################################################################## ▅ 62%
+##  they   ################################################################## ▆ 63%
 - terms: 
   - term: they
     lang: en
+    tts: they.mp3
   - term: oni
     lang: cs
     tts: oni.mp3
   img: they.jpeg
   freq: 937391.63000
   origins: ["corpus"]
-##  men   ################################################################### ▅ 62%
+##  men   ################################################################### ▆ 63%
 - terms: 
   - term: men
     lang: en
+    tts: men.mp3
   - term: muži
     lang: cs
     tts: muzi.mp3
   img: men.jpeg
   freq: 923053.00000
   origins: ["corpus"]
-##  we   #################################################################### ▅ 62%
+##  we   #################################################################### ▆ 63%
 - terms: 
   - term: we
     lang: en
+    tts: we.mp3
   - term: my
     lang: cs
     tts: my.mp3
   img: we.jpeg
   freq: 915268.50000
   origins: ["corpus"]
-##  then   ################################################################## ▅ 62%
+##  then   ################################################################## ▆ 63%
 - terms: 
   - term: then
     lang: en
+    tts: then.mp3
   - term: pak
     lang: cs
     tts: pak.mp3
@@ -1208,20 +1244,22 @@ concepts:
   img: then.jpeg
   freq: 899806.50000
   origins: ["corpus"]
-##  see   ################################################################### ▅ 62%
+##  see   ################################################################### ▆ 63%
 - terms: 
   - term: see
     lang: en
+    tts: see.mp3
   - term: vidět
     lang: cs
     tts: videt.mp3
   img: see.jpeg
   freq: 873965.50000
   origins: ["corpus"]
-##  came   ################################################################## ▅ 62%
+##  came   ################################################################## ▆ 63%
 - terms: 
   - term: came
     lang: en
+    tts: came.mp3
   - term: přišel
     lang: cs
     tts: prisel.mp3
@@ -1231,10 +1269,11 @@ concepts:
   state: ignoreImage
   freq: 873144.00000
   origins: ["corpus"]
-##  may   ################################################################### ▅ 62%
+##  may   ################################################################### ▆ 63%
 - terms: 
   - term: may
     lang: en
+    tts: may.mp3
   - term: mohu
     lang: cs
     tts: mohu.mp3
@@ -1244,10 +1283,11 @@ concepts:
   state: ignoreImage
   freq: 862605.50000
   origins: ["corpus"]
-##  any   ################################################################### ▅ 62%
+##  any   ################################################################### ▆ 63%
 - terms: 
   - term: any
     lang: en
+    tts: any.mp3
   - term: jakékoli
     lang: cs
     tts: jakekoli.mp3
@@ -1257,10 +1297,11 @@ concepts:
   img: any.jpeg
   freq: 835359.00000
   origins: ["corpus"]
-##  make   ################################################################## ▅ 62%
+##  make   ################################################################## ▆ 63%
 - terms: 
   - term: make
     lang: en
+    tts: make.mp3
   - term: sestavit
     lang: cs
     tts: sestavit.mp3
@@ -1270,10 +1311,11 @@ concepts:
   img: make.jpeg
   freq: 832384.00000
   origins: ["corpus"]
-##  about   ################################################################# ▅ 62%
+##  about   ################################################################# ▆ 63%
 - terms: 
   - term: about
     lang: en
+    tts: about.mp3
   - term: o
     lang: cs
     tts: o.mp3
@@ -1283,10 +1325,11 @@ concepts:
   img: about.jpeg
   freq: 811618.50000
   origins: ["corpus"]
-##  two   ################################################################### ▅ 62%
+##  two   ################################################################### ▆ 63%
 - terms: 
   - term: two
     lang: en
+    tts: two.mp3
   - term: dva
     lang: cs
     tts: dva.mp3
@@ -1296,10 +1339,11 @@ concepts:
   img: two.jpeg
   freq: 802196.50000
   origins: ["corpus"]
-##  these   ################################################################# ▅ 60%
+##  these   ################################################################# ▅ 61%
 - terms: 
   - term: these
     lang: en
+    tts: these.mp3
   - term: tyto
     lang: cs
     tts: tyto.mp3
@@ -1307,20 +1351,22 @@ concepts:
   state: ignoreImage
   freq: 802187.00000
   origins: ["corpus"]
-##  than   ################################################################## ▅ 62%
+##  than   ################################################################## ▆ 63%
 - terms: 
   - term: than
     lang: en
+    tts: than.mp3
   - term: než
     lang: cs
     tts: nez.mp3
   img: than.jpeg
   freq: 782249.00000
   origins: ["corpus"]
-##  get   ################################################################### ▅ 62%
+##  get   ################################################################### ▆ 63%
 - terms: 
   - term: get
     lang: en
+    tts: get.mp3
   - term: dostat
     lang: cs
     tts: dostat.mp3
@@ -1330,10 +1376,11 @@ concepts:
   img: get.jpeg
   freq: 778635.00000
   origins: ["corpus"]
-##  other   ################################################################# ▅ 60%
+##  other   ################################################################# ▅ 61%
 - terms: 
   - term: other
     lang: en
+    tts: other.mp3
   - term: jiné
     lang: cs
     tts: jine.mp3
@@ -1341,10 +1388,11 @@ concepts:
   img: other.jpeg
   freq: 773847.50000
   origins: ["corpus"]
-##  us   #################################################################### ▅ 60%
+##  us   #################################################################### ▅ 61%
 - terms: 
   - term: us
     lang: en
+    tts: us.mp3
   - term: nás
     lang: cs
     tts: nas.mp3
@@ -1352,10 +1400,11 @@ concepts:
   state: ignoreImage
   freq: 761415.00000
   origins: ["corpus"]
-##  should   ################################################################ ▅ 62%
+##  should   ################################################################ ▆ 63%
 - terms: 
   - term: should
     lang: en
+    tts: should.mp3
   - term: měl by
     lang: cs
     tts: mel by.mp3
@@ -1365,10 +1414,11 @@ concepts:
   state: ignoreImage
   freq: 751209.50000
   origins: ["corpus"]
-##  come   ################################################################## ▅ 62%
+##  come   ################################################################## ▆ 63%
 - terms: 
   - term: come
     lang: en
+    tts: come.mp3
   - term: přijít
     lang: cs
     tts: prijit.mp3
@@ -1387,20 +1437,22 @@ concepts:
   state: ignore
   freq: 748992.00000
   origins: ["corpus"]
-##  she   ################################################################### ▅ 62%
+##  she   ################################################################### ▆ 63%
 - terms: 
   - term: she
     lang: en
+    tts: she.mp3
   - term: ona
     lang: cs
     tts: ona.mp3
   img: she.jpeg
   freq: 747484.30000
   origins: ["corpus"]
-##  very   ################################################################## ▅ 62%
+##  very   ################################################################## ▆ 63%
 - terms: 
   - term: very
     lang: en
+    tts: very.mp3
   - term: velmi
     lang: cs
     tts: velmi.mp3
@@ -1410,10 +1462,11 @@ concepts:
   state: ignoreImage
   freq: 747094.50000
   origins: ["corpus"]
-##  think   ################################################################# ▅ 62%
+##  think   ################################################################# ▆ 63%
 - terms: 
   - term: think
     lang: en
+    tts: think.mp3
   - term: myslet
     lang: cs
     tts: myslet.mp3
@@ -1432,10 +1485,11 @@ concepts:
   state: ignore
   freq: 740814.00000
   origins: ["corpus"]
-##  only   ################################################################## ▅ 62%
+##  only   ################################################################## ▆ 63%
 - terms: 
   - term: only
     lang: en
+    tts: only.mp3
   - term: pouze
     lang: cs
     tts: pouze.mp3
@@ -1445,10 +1499,11 @@ concepts:
   state: ignoreImage
   freq: 718033.50000
   origins: ["corpus"]
-##  people   ################################################################ ▅ 62%
+##  people   ################################################################ ▆ 63%
 - terms: 
   - term: people
     lang: en
+    tts: people.mp3
   - term: lidé
     lang: cs
     tts: lide.mp3
@@ -1458,10 +1513,11 @@ concepts:
   img: people.jpeg
   freq: 696604.50000
   origins: ["corpus"]
-##  went   ################################################################## ▅ 62%
+##  went   ################################################################## ▆ 63%
 - terms: 
   - term: went
     lang: en
+    tts: went.mp3
   - term: šel
     lang: cs
     tts: sel.mp3
@@ -1471,10 +1527,11 @@ concepts:
   state: ignoreImage
   freq: 690186.00000
   origins: ["corpus"]
-##  great   ################################################################# ▅ 62%
+##  great   ################################################################# ▆ 63%
 - terms: 
   - term: great
     lang: en
+    tts: great.mp3
   - term: skvělé
     lang: cs
     tts: skvele.mp3
@@ -1484,10 +1541,11 @@ concepts:
   img: great.jpeg
   freq: 672584.00000
   origins: ["corpus"]
-##  now   ################################################################### ▅ 62%
+##  now   ################################################################### ▆ 63%
 - terms: 
   - term: now
     lang: en
+    tts: now.mp3
   - term: nyní
     lang: cs
     tts: nyni.mp3
@@ -1497,10 +1555,11 @@ concepts:
   img: now.jpeg
   freq: 668424.50000
   origins: ["corpus"]
-##  take   ################################################################## ▅ 62%
+##  take   ################################################################## ▆ 63%
 - terms: 
   - term: take
     lang: en
+    tts: take.mp3
   - term: vzít
     lang: cs
     tts: vzit.mp3
@@ -1510,10 +1569,11 @@ concepts:
   img: take.jpeg
   freq: 663615.50000
   origins: ["corpus"]
-##  little   ################################################################ ▅ 62%
+##  little   ################################################################ ▆ 63%
 - terms: 
   - term: little
     lang: en
+    tts: little.mp3
   - term: trochu
     lang: cs
     tts: trochu.mp3
@@ -1523,30 +1583,33 @@ concepts:
   img: little.jpeg
   freq: 659529.00000
   origins: ["corpus"]
-##  day   ################################################################### ▅ 62%
+##  day   ################################################################### ▆ 63%
 - terms: 
   - term: day
     lang: en
+    tts: day.mp3
   - term: den
     lang: cs
     tts: den.mp3
   img: day.jpeg
   freq: 657552.00000
   origins: ["corpus"]
-##  eyes   ################################################################## ▅ 62%
+##  eyes   ################################################################## ▆ 63%
 - terms: 
   - term: eyes
     lang: en
+    tts: eyes.mp3
   - term: oči
     lang: cs
     tts: oci.mp3
   img: eyes.jpeg
   freq: 647788.00000
   origins: ["corpus"]
-##  like   ################################################################## ▅ 62%
+##  like   ################################################################## ▆ 63%
 - terms: 
   - term: like
     lang: en
+    tts: like.mp3
   - term: jako
     lang: cs
     tts: jako.mp3
@@ -1556,10 +1619,11 @@ concepts:
   img: like.jpeg
   freq: 646931.50000
   origins: ["corpus"]
-##  must   ################################################################## ▅ 62%
+##  must   ################################################################## ▆ 63%
 - terms: 
   - term: must
     lang: en
+    tts: must.mp3
   - term: musí
     lang: cs
     tts: musi.mp3
@@ -1569,10 +1633,11 @@ concepts:
   state: ignoreImage
   freq: 639579.50000
   origins: ["corpus"]
-##  over   ################################################################## ▅ 62%
+##  over   ################################################################## ▆ 63%
 - terms: 
   - term: over
     lang: en
+    tts: over.mp3
   - term: nad
     lang: cs
     tts: nad.mp3
@@ -1582,10 +1647,11 @@ concepts:
   img: over.jpeg
   freq: 632459.50000
   origins: ["corpus"]
-##  those   ################################################################# ▅ 62%
+##  those   ################################################################# ▆ 63%
 - terms: 
   - term: those
     lang: en
+    tts: those.mp3
   - term: těch
     lang: cs
     tts: tech.mp3
@@ -1595,20 +1661,22 @@ concepts:
   state: ignoreImage
   freq: 628314.00000
   origins: ["corpus"]
-##  such   ################################################################## ▅ 62%
+##  such   ################################################################## ▆ 63%
 - terms: 
   - term: such
     lang: en
+    tts: such.mp3
   - term: takové
     lang: cs
     tts: takove.mp3
   state: ignoreImage
   freq: 627941.00000
   origins: ["corpus"]
-##  can   ################################################################### ▅ 62%
+##  can   ################################################################### ▆ 63%
 - terms: 
   - term: can
     lang: en
+    tts: can.mp3
   - term: může
     lang: cs
     tts: muze.mp3
@@ -1618,10 +1686,11 @@ concepts:
   img: can.jpeg
   freq: 610396.00000
   origins: ["corpus"]
-##  what   ################################################################## ▅ 62%
+##  what   ################################################################## ▆ 63%
 - terms: 
   - term: what
     lang: en
+    tts: what.mp3
   - term: co
     lang: cs
     tts: co.mp3
@@ -1631,10 +1700,11 @@ concepts:
   img: what.jpeg
   freq: 606801.75000
   origins: ["corpus"]
-##  before   ################################################################ ▅ 62%
+##  before   ################################################################ ▆ 63%
 - terms: 
   - term: before
     lang: en
+    tts: before.mp3
   - term: před
     lang: cs
     tts: pred.mp3
@@ -1644,40 +1714,44 @@ concepts:
   img: before.jpeg
   freq: 586348.50000
   origins: ["corpus"]
-##  mr   #################################################################### ▅ 62%
+##  mr   #################################################################### ▆ 63%
 - terms: 
   - term: mr
     lang: en
+    tts: mr.mp3
   - term: pan
     lang: cs
     tts: pan.mp3
   img: mr.jpeg
   freq: 581487.00000
   origins: ["corpus"]
-##  never   ################################################################# ▅ 62%
+##  never   ################################################################# ▆ 63%
 - terms: 
   - term: never
     lang: en
+    tts: never.mp3
   - term: nikdy
     lang: cs
     tts: nikdy.mp3
   img: never.jpeg
   freq: 581128.50000
   origins: ["corpus"]
-##  life   ################################################################## ▅ 62%
+##  life   ################################################################## ▆ 63%
 - terms: 
   - term: life
     lang: en
+    tts: life.mp3
   - term: život
     lang: cs
     tts: zivot.mp3
   img: life.jpeg
   freq: 579285.00000
   origins: ["corpus"]
-##  much   ################################################################## ▅ 62%
+##  much   ################################################################## ▆ 63%
 - terms: 
   - term: much
     lang: en
+    tts: much.mp3
   - term: hodně
     lang: cs
     tts: hodne.mp3
@@ -1687,20 +1761,22 @@ concepts:
   state: ignoreImage
   freq: 573925.50000
   origins: ["corpus"]
-##  things   ################################################################ ▅ 62%
+##  things   ################################################################ ▆ 63%
 - terms: 
   - term: things
     lang: en
+    tts: things.mp3
   - term: věci
     lang: cs
     tts: veci.mp3
   img: things.jpeg
   freq: 567559.00000
   origins: ["corpus"]
-##  many   ################################################################## ▅ 62%
+##  many   ################################################################## ▆ 63%
 - terms: 
   - term: many
     lang: en
+    tts: many.mp3
   - term: mnoho
     lang: cs
     tts: mnoho.mp3
@@ -1710,10 +1786,11 @@ concepts:
   img: many.jpeg
   freq: 564758.00000
   origins: ["corpus"]
-##  old   ################################################################### ▅ 62%
+##  old   ################################################################### ▆ 63%
 - terms: 
   - term: old
     lang: en
+    tts: old.mp3
   - term: staré
     lang: cs
     tts: stare.mp3
@@ -1723,10 +1800,11 @@ concepts:
   img: old.jpeg
   freq: 562247.00000
   origins: ["corpus"]
-##  after   ################################################################# ▅ 62%
+##  after   ################################################################# ▆ 63%
 - terms: 
   - term: after
     lang: en
+    tts: after.mp3
   - term: po
     lang: cs
     tts: po.mp3
@@ -1736,10 +1814,11 @@ concepts:
   state: ignoreImage
   freq: 560432.00000
   origins: ["corpus"]
-##  years   ################################################################# ▅ 62%
+##  years   ################################################################# ▆ 63%
 - terms: 
   - term: years
     lang: en
+    tts: years.mp3
   - term: roky
     lang: cs
     tts: roky.mp3
@@ -1749,10 +1828,11 @@ concepts:
   img: years.jpeg
   freq: 547420.00000
   origins: ["corpus"]
-##  most   ################################################################## ▅ 62%
+##  most   ################################################################## ▆ 63%
 - terms: 
   - term: most
     lang: en
+    tts: most.mp3
   - term: většina
     lang: cs
     tts: vetsina.mp3
@@ -1762,10 +1842,11 @@ concepts:
   state: ignoreImage
   freq: 543388.50000
   origins: ["corpus"]
-##  also   ################################################################## ▅ 62%
+##  also   ################################################################## ▆ 63%
 - terms: 
   - term: also
     lang: en
+    tts: also.mp3
   - term: také
     lang: cs
     tts: take.mp3
@@ -1775,20 +1856,22 @@ concepts:
   state: ignoreImage
   freq: 536324.00000
   origins: ["corpus"]
-##  year   ################################################################## ▅ 62%
+##  year   ################################################################## ▆ 63%
 - terms: 
   - term: year
     lang: en
+    tts: year.mp3
   - term: rok
     lang: cs
     tts: rok.mp3
   img: year.jpeg
   freq: 532499.50000
   origins: ["corpus"]
-##  saw   ################################################################### ▅ 62%
+##  saw   ################################################################### ▆ 63%
 - terms: 
   - term: saw
     lang: en
+    tts: saw.mp3
   - term: viděl
     lang: cs
     tts: videl.mp3
@@ -1798,10 +1881,11 @@ concepts:
   img: saw.jpeg
   freq: 520922.00000
   origins: ["corpus"]
-##  too   ################################################################### ▅ 62%
+##  too   ################################################################### ▆ 63%
 - terms: 
   - term: too
     lang: en
+    tts: too.mp3
   - term: příliš
     lang: cs
     tts: prilis.mp3
@@ -1811,10 +1895,11 @@ concepts:
   state: ignoreImage
   freq: 519626.00000
   origins: ["corpus"]
-##  down   ################################################################## ▅ 62%
+##  down   ################################################################## ▆ 63%
 - terms: 
   - term: down
     lang: en
+    tts: down.mp3
   - term: dolů
     lang: cs
     tts: dolu.mp3
@@ -1824,10 +1909,11 @@ concepts:
   img: down.jpeg
   freq: 514720.50000
   origins: ["corpus"]
-##  work   ################################################################## ▅ 62%
+##  work   ################################################################## ▆ 63%
 - terms: 
   - term: work
     lang: en
+    tts: work.mp3
   - term: práce
     lang: cs
     tts: prace.mp3
@@ -1837,10 +1923,11 @@ concepts:
   img: work.jpeg
   freq: 508678.00000
   origins: ["corpus"]
-##  took   ################################################################## ▅ 62%
+##  took   ################################################################## ▆ 63%
 - terms: 
   - term: took
     lang: en
+    tts: took.mp3
   - term: vzal
     lang: cs
     tts: vzal.mp3
@@ -1850,20 +1937,22 @@ concepts:
   state: ignoreImage
   freq: 501669.00000
   origins: ["corpus"]
-##  might   ################################################################# ▅ 62%
+##  might   ################################################################# ▆ 63%
 - terms: 
   - term: might
     lang: en
+    tts: might.mp3
   - term: by mohlo
     lang: cs
     tts: by mohlo.mp3
   img: might.jpeg
   freq: 498257.00000
   origins: ["corpus"]
-##  first   ################################################################# ▅ 62%
+##  first   ################################################################# ▆ 63%
 - terms: 
   - term: first
     lang: en
+    tts: first.mp3
   - term: první
     lang: cs
     tts: prvni.mp3
@@ -1873,20 +1962,22 @@ concepts:
   img: first.jpeg
   freq: 497764.00000
   origins: ["corpus"]
-##  without   ############################################################### ▅ 62%
+##  without   ############################################################### ▆ 63%
 - terms: 
   - term: without
     lang: en
+    tts: without.mp3
   - term: bez
     lang: cs
     tts: bez.mp3
   img: without.jpeg
   freq: 496066.00000
   origins: ["corpus"]
-##  good   ################################################################## ▅ 62%
+##  good   ################################################################## ▆ 63%
 - terms: 
   - term: good
     lang: en
+    tts: good.mp3
   - term: dobré
     lang: cs
     tts: dobre.mp3
@@ -1896,10 +1987,11 @@ concepts:
   img: good.jpeg
   freq: 490930.50000
   origins: ["corpus"]
-##  himself   ############################################################### ▅ 62%
+##  himself   ############################################################### ▆ 63%
 - terms: 
   - term: himself
     lang: en
+    tts: himself.mp3
   - term: sám sebe
     lang: cs
     tts: sam sebe.mp3
@@ -1909,10 +2001,11 @@ concepts:
   state: ignoreImage
   freq: 486383.00000
   origins: ["corpus"]
-##  own   ################################################################### ▅ 62%
+##  own   ################################################################### ▆ 63%
 - terms: 
   - term: own
     lang: en
+    tts: own.mp3
   - term: vlastní
     lang: cs
     tts: vlastni.mp3
@@ -1922,10 +2015,11 @@ concepts:
   state: ignoreImage
   freq: 478353.50000
   origins: ["corpus"]
-##  again   ################################################################# ▅ 62%
+##  again   ################################################################# ▆ 63%
 - terms: 
   - term: again
     lang: en
+    tts: again.mp3
   - term: znovu
     lang: cs
     tts: znovu.mp3
@@ -1935,10 +2029,11 @@ concepts:
   img: again.jpeg
   freq: 476062.50000
   origins: ["corpus"]
-##  give   ################################################################## ▅ 62%
+##  give   ################################################################## ▆ 63%
 - terms: 
   - term: give
     lang: en
+    tts: give.mp3
   - term: dát
     lang: cs
     tts: dat.mp3
@@ -1948,10 +2043,11 @@ concepts:
   img: give.jpeg
   freq: 469253.00000
   origins: ["corpus"]
-##  new   ################################################################### ▅ 62%
+##  new   ################################################################### ▆ 63%
 - terms: 
   - term: new
     lang: en
+    tts: new.mp3
   - term: nové
     lang: cs
     tts: nove.mp3
@@ -1961,10 +2057,11 @@ concepts:
   img: new.jpeg
   freq: 467016.50000
   origins: ["corpus"]
-##  every   ################################################################# ▅ 62%
+##  every   ################################################################# ▆ 63%
 - terms: 
   - term: every
     lang: en
+    tts: every.mp3
   - term: každý
     lang: cs
     tts: kazdy.mp3
@@ -1974,10 +2071,11 @@ concepts:
   state: ignoreImage
   freq: 458591.50000
   origins: ["corpus"]
-##  same   ################################################################## ▅ 62%
+##  same   ################################################################## ▆ 63%
 - terms: 
   - term: same
     lang: en
+    tts: same.mp3
   - term: stejné
     lang: cs
     tts: stejne.mp3
@@ -1987,10 +2085,11 @@ concepts:
   img: same.jpeg
   freq: 456106.00000
   origins: ["corpus"]
-##  shall   ################################################################# ▅ 62%
+##  shall   ################################################################# ▆ 63%
 - terms: 
   - term: shall
     lang: en
+    tts: shall.mp3
   - term: musí
     lang: cs
     tts: musi.mp3
@@ -2000,10 +2099,11 @@ concepts:
   state: ignoreImage
   freq: 449921.50000
   origins: ["corpus"]
-##  seemed   ################################################################ ▅ 62%
+##  seemed   ################################################################ ▆ 63%
 - terms: 
   - term: seemed
     lang: en
+    tts: seemed.mp3
   - term: zdálo se
     lang: cs
     tts: zdalo se.mp3
