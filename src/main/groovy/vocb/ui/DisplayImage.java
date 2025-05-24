@@ -68,16 +68,14 @@ public class DisplayImage {
 		JPanel topPanel = new JPanel();
 		frmPickImage.getContentPane().add(topPanel);
 		GridBagLayout topPanelLayout = new GridBagLayout();
-		topPanelLayout.columnWidths = new int[] {30, 30, 30, 30, 0, 0, 108};
-		topPanelLayout.rowHeights = new int[] {30, 30};
-		topPanelLayout.columnWeights = new double[]{1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+		topPanelLayout.columnWeights = new double[]{1.0, 0.0, 0.0, 0.0};
 		topPanelLayout.rowWeights = new double[]{1.0, 0.0};
 		topPanel.setLayout(topPanelLayout);
 		
 		searchTextField = new JTextField();
 		GridBagConstraints gbc_searchTextField = new GridBagConstraints();
 		gbc_searchTextField.insets = new Insets(0, 0, 5, 5);
-		gbc_searchTextField.weightx = 0.6;
+		gbc_searchTextField.weightx = 1.0;
 		gbc_searchTextField.fill = GridBagConstraints.BOTH;
 		gbc_searchTextField.gridx = 0;
 		gbc_searchTextField.gridy = 0;
@@ -99,7 +97,7 @@ public class DisplayImage {
 		searchMoreButton.setIcon(UIManager.getIcon("FileChooser.listViewIcon"));
 		searchMoreButton.setToolTipText("Search again with more results enabled");
 		GridBagConstraints gbc_searchMoreButton = new GridBagConstraints();
-		gbc_searchMoreButton.insets = new Insets(0, 0, 5, 5);
+		gbc_searchMoreButton.weightx = 0.1;
 		gbc_searchMoreButton.gridx = 1;
 		gbc_searchMoreButton.gridy = 0;
 		topPanel.add(searchMoreButton, gbc_searchMoreButton);
@@ -111,6 +109,7 @@ public class DisplayImage {
 		});
 		chckbxClipart.setToolTipText("Search with ClipArt filter enabled");
 		GridBagConstraints gbc_chckbxClipart = new GridBagConstraints();
+		gbc_chckbxClipart.weightx = 0.1;
 		gbc_chckbxClipart.insets = new Insets(0, 0, 5, 5);
 		gbc_chckbxClipart.gridx = 2;
 		gbc_chckbxClipart.gridy = 0;
@@ -125,7 +124,7 @@ public class DisplayImage {
 		asBlankButton.setIcon(UIManager.getIcon("Tree.leafIcon"));
 		GridBagConstraints gbc_asBlankButton = new GridBagConstraints();
 		gbc_asBlankButton.insets = new Insets(0, 0, 5, 5);
-		gbc_asBlankButton.weightx = 0.5;
+		gbc_asBlankButton.weightx = 0.1;
 		gbc_asBlankButton.gridx = 3;
 		gbc_asBlankButton.gridy = 0;
 		topPanel.add(asBlankButton, gbc_asBlankButton);
@@ -188,6 +187,12 @@ public class DisplayImage {
 		JLabel label_2 = new JLabel("");
 		panel_1.add(label_2);
 		lbl = new JLabel();
+		lbl.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent e) {
+			
+			}
+		});
 		lbl.setSize(new Dimension(110, 110));
 		panel_1.add(lbl);
 		lbl.addMouseListener(new MouseAdapter() {
@@ -220,7 +225,7 @@ public class DisplayImage {
 			public void keyReleased(KeyEvent arg0) {
 			}
 		});
-		frmPickImage.setSize(1101, 746);
+		frmPickImage.setSize(1783, 787);
 		
 		frmPickImage.setVisible(true);
 		frmPickImage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

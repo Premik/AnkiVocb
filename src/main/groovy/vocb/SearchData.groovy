@@ -10,4 +10,5 @@ public class SearchData {
 	String license="Public"
 	List<URL> results=[]
 	int selected=-1
+	boolean useBlank=false
 }

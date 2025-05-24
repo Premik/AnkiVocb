@@ -13,6 +13,8 @@ import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import java.awt.event.ItemEvent
 import java.awt.event.ItemListener
+import java.awt.event.KeyAdapter
+import java.awt.event.KeyEvent
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
 import java.awt.event.WindowAdapter
@@ -20,21 +22,21 @@ import java.awt.event.WindowEvent
 import java.awt.geom.AffineTransform
 import java.awt.image.AffineTransformOp
 import java.awt.image.BufferedImage
-import java.util.concurrent.Semaphore
-import java.util.concurrent.TimeUnit
+import java.nio.file.Path
 import java.util.concurrent.atomic.AtomicInteger
 
 import javax.imageio.ImageIO
-import javax.naming.directory.SearchResult
 import javax.swing.BoxLayout
 import javax.swing.ImageIcon
 import javax.swing.JButton
 import javax.swing.JCheckBox
+import javax.swing.JFormattedTextField
 import javax.swing.JFrame
 import javax.swing.JLabel
 import javax.swing.JPanel
 import javax.swing.JScrollPane
 import javax.swing.JTextField
+import javax.swing.SwingUtilities
 import javax.swing.UIManager
 import javax.swing.border.BevelBorder
 import javax.swing.border.MatteBorder
@@ -59,6 +61,7 @@ public class ImageSelector   {
 
 	SearchData searchData
 	Closure runSearch
+	Closure runEditor
 
 	MouseAdapter imageMouseAdapter = new MouseAdapter() {
 
@@ -75,12 +78,30 @@ public class ImageSelector   {
 		public void mouseClicked(MouseEvent e) {
 			JLabel l= e.source
 			int selected = l.name as Integer
-			println selected
 			searchData.selected = selected
-			frame.visible = false
-			synchronized (lock) {
-				lock.notify()
+			if (SwingUtilities.isLeftMouseButton(e)) {
+				
+				closeFrame()
+				return
 			}
+			if (SwingUtilities.isRightMouseButton(e)) {
+				runEditor(searchData)
+			}
+			
+		}
+	}
+
+	KeyAdapter imageKeyAdapter = new KeyAdapter() {
+		@Override
+		public void keyReleased(KeyEvent e) {
+			println e
+		}
+	}
+
+	void closeFrame() {
+		frame.visible = false
+		synchronized (lock) {
+			lock.notify()
 		}
 	}
 
@@ -106,18 +127,14 @@ public class ImageSelector   {
 		container.add(topPanel)
 		GridBagLayout topPanelLayout = new GridBagLayout()
 		topPanelLayout.with {
-			columnWidths = [30, 30, 30, 30, 0, 0, 108]
-			rowHeights = [30, 30]
-			columnWeights = [
-				1.0,
-				0.0,
-				0.0,
-				0.0,
-				0.0,
-				0.0,
-				0.0
-			]
-			rowWeights = [1.0, 0.0]
+			/*columnWidths = [100, 30, 30, 30]
+			 rowHeights = [30, 20]
+			 columnWeights = [
+			 0.0,
+			 0.0,
+			 0.0,
+			 0.0,
+			 ]*/
 		}
 		topPanel.setLayout(topPanelLayout)
 
@@ -128,7 +145,7 @@ public class ImageSelector   {
 		GridBagConstraints gbc_searchTextField = new GridBagConstraints()
 		gbc_searchTextField.with {
 			insets = new Insets(0, 0, 5, 5)
-			weightx = 0.6
+			weightx = 0.8
 			fill = GridBagConstraints.BOTH
 			gridx = 0
 			gridy = 0
@@ -164,6 +181,7 @@ public class ImageSelector   {
 			insets = new Insets(0, 0, 5, 5)
 			gridx = 1
 			gridy = 0
+			weightx = 0.1
 		}
 		topPanel.add(searchMoreButton, gbc_searchMoreButton)
 
@@ -186,8 +204,45 @@ public class ImageSelector   {
 			insets = new Insets(0, 0, 5, 5)
 			gridx = 2
 			gridy = 0
+			weightx = 0.1
 		}
 		topPanel.add(chckbxClipart, gbc_chckbxClipart)
+
+		JButton asBlankButton = new JButton("Ignore this one")
+		asBlankButton.with {
+			addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent e) {
+							searchData.useBlank = true
+							closeFrame()
+						}
+					})
+			toolTipText = "Don't use image for this term"
+			icon = UIManager.getIcon("Tree.leafIcon")
+		}
+		GridBagConstraints gbc_asBlankButton = new GridBagConstraints()
+		gbc_asBlankButton.with {
+			insets = new Insets(0, 0, 5, 5)
+			weightx = 0.5
+			gridx = 3
+			gridy = 0
+			weightx = 0.1
+		}
+		topPanel.add(asBlankButton, gbc_asBlankButton)
+
+		JFormattedTextField helpText = new JFormattedTextField()
+		helpText.with {
+			text = "Press left mouse to select press right button to edit with an external editor"
+			editable = false
+		}
+		GridBagConstraints gbc_helpText = new GridBagConstraints()
+		gbc_helpText.with {
+			gridwidth = 4
+			insets = new Insets(0, 0, 0, 5)
+			fill = GridBagConstraints.HORIZONTAL
+			gridx = 0
+			gridy = 1
+		}
+		topPanel.add(helpText, gbc_helpText)
 
 
 
@@ -331,11 +386,16 @@ public class ImageSelector   {
 		ImageSelector s = new ImageSelector()
 		s.open()
 
-		
+
 		HttpHelper hh = new HttpHelper()
 		BingWebSearch bs = new BingWebSearch(httpHelper: hh)
 		s.runSearch = { SearchData sd->
 			s.loadSearchResult(bs.thumbnailSearch(sd), hh)
+		}
+		s.runEditor = { SearchData sd->
+			URL selectedUrl = sd.results[sd.selected] 
+			Path p = hh.cache.subPathForKey(selectedUrl.toString())
+			println "gimp '$p'"
 		}
 		s.runSearch(new SearchData(q:"test"))
 		s.runAsModal()

@@ -3,8 +3,12 @@ package vocb.appenders
 import java.nio.file.Files
 import java.nio.file.Path
 
+import groovy.text.GStringTemplateEngine
+import vocb.ConfHelper
+import vocb.Helper
 import vocb.HttpHelper
 import vocb.ImgTrn
+import vocb.SearchData
 import vocb.azure.BingWebSearch
 import vocb.data.Concept
 import vocb.data.Manager
@@ -24,17 +28,31 @@ public class BingImageAppender {
 
 	void init() {
 		imgSelector = new ImageSelector()
-		imgSelector.open()
-		imgSelector.runSearch = { String newQ->
-			imgSelector.loadSearchResult(bingSearch.thumbnailSearch(newQ, searchResults), httpHelper)
+		imgSelector.with {
+			open()
+			runSearch = { String newQ->
+				loadSearchResult(bingSearch.thumbnailSearch(newQ, searchResults), httpHelper)
+			}
+			runEditor = { SearchData sd->
+				URL selectedUrl = sd.results[sd.selected]
+				Path p = pathForSelected(sd)
+				String editorCmd = ConfHelper.cfg?.ui?.editor
+				assert editorCmd : "No editor configured in the ankivocb.conf/ui/editor path"
+				Helper.runCommand(editorCmd, [path:p, searchData:sd], 1)				
+			}
 		}
+	}
+	
+	Path pathForSelected(SearchData sd) {
+		if (!sd || sd.selected<0) return null		
+		httpHelper.cache.subPathForKey(sd.results[sd.selected].toString())
 	}
 
 	void run() {
 		dbMan.load()
 
 		List<Concept> noImgs = dbMan.db.concepts.findAll {
-			(!it.img) && it.terms && it.state!="ignore"
+			(!it.img) && it.terms && it.state!="ignore" && it.state!="ignoreImage"
 		}
 		if (noImgs.size() <1) {
 			println "All concepts have an image"
@@ -48,15 +66,23 @@ public class BingImageAppender {
 			i++
 			init()
 			String trm = c.terms[0].term
-			imgSelector.runSearch(trm)
-			imgSelector.title = "Pick the image. ($i/${noImgs.size()}) "
-			imgSelector.runAsModal()
-			int selIndx = imgSelector.searchData.selected
-			if (selIndx<=-1) {
+			imgSelector.with {
+				runSearch(trm)
+				title = "Pick the image. ($i/${noImgs.size()}) "
+				runAsModal()
+			}
+			SearchData sd = imgSelector.searchData
+			if (sd.useBlank) {
+				c.state = "ignoreImage"
+				dbMan.save()
+			}
+
+			if (sd.selected<=-1) {
 				println "cancelled"
 				break
 			}
-			Path selectedImg = httpHelper.cache.subPathForKey(imgSelector.searchData.results[selIndx].toString())
+
+			Path selectedImg = pathForSelected(sd)
 			assert Files.exists(selectedImg)
 			Path resizedP = ImgTrn.resizeImage(selectedImg, 320, 200)
 			dbMan.resolveMedia(trm, "jpeg") { Path dbPath->
@@ -70,6 +96,7 @@ public class BingImageAppender {
 
 
 	public static void main(String[] args) {
+		new groovy.text.GStringTemplateEngine()
 		BingImageAppender a = new BingImageAppender()
 		a.run()
 		println "Done"

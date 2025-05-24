@@ -2,6 +2,7 @@ package vocb
 
 import java.nio.charset.StandardCharsets
 import java.text.Normalizer
+import java.util.concurrent.TimeUnit
 
 import javax.xml.transform.OutputKeys
 import javax.xml.transform.Source
@@ -14,6 +15,7 @@ import org.apache.groovy.io.StringBuilderWriter
 
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
+import groovy.text.GStringTemplateEngine
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
 
@@ -21,6 +23,7 @@ import groovy.xml.slurpersupport.GPathResult
 public class Helper {
 
 	public static String utf8=StandardCharsets.UTF_8.toString()
+	public static GStringTemplateEngine templEngine = new GStringTemplateEngine()
 
 	static public void printProcOut(Process proc) {
 		StringBuffer b = new StringBuffer()
@@ -155,6 +158,24 @@ public class Helper {
 	public static BigDecimal roundDecimal(BigDecimal d, int n=2) {
 		if (d == null) return null
 		return d.setScale(n, BigDecimal.ROUND_HALF_UP);
+	}
+	
+	public static String expandTemplate(String templText, ctx=[:]) {
+		if (!templText) return ""
+		Writable templ = templEngine.createTemplate(templText).make(ctx.cfg)
+		String ret = templ.toString()
+	}
+	
+	public static Process runCommand(String templatedCmd, ctx=[:], int maxWaitSeconds=5) {
+		String cmd = expandTemplate(templatedCmd, ctx)
+		assert cmd : "No templated cmld provided"
+		Process p = templatedCmd.execute()
+		p.waitFor(maxWaitSeconds, TimeUnit.SECONDS)
+		if (p.exitValue() != 0)  {
+			Helper.printProcOut(p)
+			throw new IllegalArgumentException("Error code ${p.exitValue()}.")
+		}
+		return p
 	}
 	
 }
