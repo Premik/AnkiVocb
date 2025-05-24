@@ -65,6 +65,7 @@ public class TranslationAppender {
 
 			dbMan.save()
 			if (i>=limit) {
+				println color("Limit reached", RED)
 				break
 			}
 			i++

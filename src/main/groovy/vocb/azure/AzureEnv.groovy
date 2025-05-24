@@ -3,6 +3,7 @@ package vocb.azure
 import static vocb.Helper.utf8
 
 import vocb.ConfHelper
+import static vocb.Ansi.*
 
 public class AzureEnv {
 
