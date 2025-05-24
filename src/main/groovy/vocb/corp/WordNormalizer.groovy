@@ -47,6 +47,8 @@ public class WordNormalizer {
 		[
 			swapPluralSingular(cap),
 			swapPluralSingular(s),
+			*ingVariants(cap),
+			*ingVariants(s),
 			*edVariants(cap),
 			*edVariants(s),
 			cap,
@@ -81,9 +83,15 @@ public class WordNormalizer {
 	
 	public List<String> edVariants(String s) {
 		//Drop 'ed' and just 'd'		
-		if (s.endsWith('ed')) return [s[0..<-2] as String, s[0..<-1] as String] 
+		if (s.endsWith('ed')) return [s[0..<-2], s[0..<-1]] 
 		if (s.endsWith('e')) return ["${s}d" as String]
 		return ["${s}ed" as String]
+	}
+	
+	public List<String> ingVariants(String s) {		
+		if (s.endsWith('ing')) return [s[0..<-3], "${s[0..<-3]}e" as String]
+		if (s.endsWith('e')) return ["${s[0..<-1]}ing" as String]
+		return ["${s}ing" as String] 
 	}
 
 
