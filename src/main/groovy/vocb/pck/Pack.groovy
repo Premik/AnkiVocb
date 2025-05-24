@@ -19,6 +19,7 @@ import vocb.corp.Corpus
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
 import vocb.data.Example
+import vocb.data.ExampleComparatorMatch
 import vocb.data.Manager
 
 @CompileStatic
@@ -122,18 +123,22 @@ public class Pack {
 
 		Set<String> list = (topDb - ignore) as LinkedHashSet
 		Helper.printLapseTime()
-		Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
+		/*Paths.get("/tmp/work/first${x}.txt").withPrintWriter { PrintWriter w->
 			list.each {
 				w.println(it)
 			}
-		}
+		}*/
 		println "${list.take(100).join(' ')} \nSize: ${list.size()}"
 		int lastDec = 0
 		while (list.size() > 0) {
-			dbMan.bestExampleForSentence(list).each {			
-				println "-$lastDec ${it.toAnsiString()}"
-				lastDec = it.commonWords.size()				
-				list-=it.commonWords
+			dbMan.bestExampleForSentence(list).each { ExampleComparatorMatch m->			
+				println "-$lastDec ${m.toAnsiString()}"
+				//Collection<String> remove = m.commonWords.collectMany {WordNormalizer.instance.wordVariantsWithBrackets(it)}
+				//Collection<String> remove = m.commonWords
+				Collection<String> remove = m.commonWordVariants
+				lastDec = remove.size()
+				println remove.intersect(list)
+				list-=remove				
 			}
 			if (lastDec == 0) {
 				println "No more common words"

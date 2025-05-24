@@ -33,7 +33,7 @@ public class ExampleComparatorMatch {
 	}
 	
 	@Lazy	
-	public int similarityScore =commonWords.size()*1000 + commonWordVariants.size()*10 - b.wordsWithoutBrackets.size()
+	public int similarityScore =commonWords.size()*500 + commonWordVariants.size()*50 - b.wordsWithoutBrackets.size()
 
 	public String sentenceToAnsiString(String defaultColor=RED, boolean printMiss=true) {
 		if (!missWords) { //Exact match
