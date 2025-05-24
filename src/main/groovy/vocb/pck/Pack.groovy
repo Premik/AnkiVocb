@@ -23,15 +23,14 @@ public class Pack {
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
 	ConfHelper cfgHelper = ConfHelper.instance
 	@Lazy ConfigObject cfg = cfgHelper.cfg
-	
+
 	@Lazy List<String> allPackageNames = packageRootPath.toFile().listFiles().collect {it.name}
-	
+
 	@Lazy Map<String, PackInfo> allPackages = allPackageNames.collectEntries {String name->
-		[name, new PackInfo(name:name, packageRootPath: packageRootPath, destRootFolder: destRootFolder) ]	
-	}
-	
-	
-	
+		[name, new PackInfo(name:name, packageRootPath: packageRootPath, destRootFolder: destRootFolder)]}
+
+
+
 
 
 	WordNormalizer wn = new WordNormalizer()
@@ -168,10 +167,10 @@ public class Pack {
 		File pkgFile = info.packagePath.toFile()
 		cfgHelper.extraLookupFolders.add(pkgFile)
 		Data2Crowd d2c = new Data2Crowd (info : info)
-		exportSentences(info.sentences, d2c.dbMan)				
+		exportSentences(info.sentences, d2c.dbMan)
 		d2c.exportExamplesToCrowd(exportExamples)
 		cfgHelper.extraLookupFolders.remove(pkgFile)
-		
+
 	}
 
 	void exportSentences(String text, Manager dbMan) {
@@ -183,7 +182,7 @@ public class Pack {
 				exportExamples.add(e)
 				return
 			}
-		
+
 			String col = NORMAL
 			if (mis.size() > 1 || !e)  {
 				col = RED
@@ -193,25 +192,27 @@ public class Pack {
 			println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
 		}
 	}
-	
+
 
 
 	public static void main(String[] args) {
-		new Pack().with {
-			//allPackages.each {println it}
-			Collection<PackInfo> pkgs = allPackages.values()
-			//Collection<PackInfo> pkgs = [allPackages["Supaplex"]]
-			pkgs.each { PackInfo i->
-				println '*'*100
-				println "* ${i.name}"
-				println '*'*100
-				 
-				doExport(i);
+		for (int p=0;p<8;p++) {
+			new Pack().with {
+				//allPackages.each {println it}
+				//Collection<PackInfo> pkgs = allPackages.values()
+				//Collection<PackInfo> pkgs = [allPackages["Supaplex"]]
+				Collection<PackInfo> pkgs = [allPackages.values()[p]]
+				pkgs.each { PackInfo i->
+					println '*'*100
+					println "* ${i.name}"
+					println '*'*100
+
+					doExport(i)
+				}
+
 			}
-			println "Done"
-			
-				
 		}
+		println "Done"
 
 	}
 }
