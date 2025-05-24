@@ -123,12 +123,12 @@ public class WordsSource {
 		new WordsSource().tap {
 			//fromOwnSamples()
 			//minFreq = 1
-			//simulation = true
+			simulation = true
 			//String tx = getClass().getResource('/Supaplex.txt').text
 			//String tx = getClass().getResource('/sources/JingleBells.txt').text
 			//String tx = ''''''
 			
-			String tx = new File("/data/src/AnkiVocb/pkg/WheelsOnTheBus/sentences.txt").text
+			String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
 			                                             
 			
 			
