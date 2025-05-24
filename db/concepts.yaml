@@ -91,7 +91,7 @@ concepts:
     tts: to.mp3
   - term: do
     lang: cs
-    tts: do.mp3
+    tts: do-cs.mp3
   - term: aby
     lang: cs
     tts: aby.mp3
@@ -172,7 +172,7 @@ concepts:
     tts: it.mp3
   - term: to
     lang: cs
-    tts: to.mp3
+    tts: to-cs.mp3
   examples: 
   - term: That is it.
     lang: en
@@ -469,7 +469,7 @@ concepts:
     tts: he.mp3
   - term: "on"
     lang: cs
-    tts: on.mp3
+    tts: on-cs.mp3
   examples: 
   - term: And he saw you?
     lang: en
@@ -1048,7 +1048,7 @@ concepts:
     tts: into.mp3
   - term: do
     lang: cs
-    tts: do.mp3
+    tts: do-cs.mp3
   examples: 
   - term: Run into the nearest town.
     lang: en
@@ -1348,7 +1348,7 @@ concepts:
     tts: we.mp3
   - term: my
     lang: cs
-    tts: my.mp3
+    tts: my-cs.mp3
   examples: 
   - term: We want the money back!
     lang: en
@@ -2299,7 +2299,7 @@ concepts:
     tts: also.mp3
   - term: také
     lang: cs
-    tts: take.mp3
+    tts: take-cs.mp3
   - term: taky
     lang: cs
     tts: taky.mp3
@@ -3726,7 +3726,7 @@ concepts:
     tts: nechat.mp3
   - term: ať
     lang: cs
-    tts: at.mp3
+    tts: at-cs.mp3
   examples: 
   - term: Just let him go.
     lang: en
@@ -7065,10 +7065,11 @@ concepts:
   img: book.jpeg
   freq: 166876.00000
   origins: ["corpus"]
-##  thus   ################################################################## ▇ 82%
+##  thus   ################################################################## ▇ 83%
 - terms: 
   - term: thus
     lang: en
+    tts: thus.mp3
   - term: tedy
     lang: cs
     tts: tedy.mp3
