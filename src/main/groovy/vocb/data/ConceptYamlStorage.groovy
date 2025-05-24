@@ -146,6 +146,17 @@ public class ConceptYamlStorage {
 		 sb.append(terms)*/
 
 		appendYamlHash("state", c.state, sb)
+		if (c.validationProfile.defaultProfile) {
+			if (c.state == 'ignore') {
+				c.profileName = ValidationProfile.ignore.name				
+			}
+			if (c.state == 'ignoreImg') {
+				c.profileName = ValidationProfile.strictNoImg.name				
+			}			
+		}
+			
+		
+		
 		//if (c.is)
 		appendYamlHash("img", c.img,sb)
 		appendYamlHash("freq", Helper.roundDecimal(c.freq, 5), sb)

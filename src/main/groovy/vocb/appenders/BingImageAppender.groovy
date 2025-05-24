@@ -12,6 +12,7 @@ import vocb.azure.BingWebSearch
 import vocb.conf.ConfHelper
 import vocb.data.Concept
 import vocb.data.Manager
+import vocb.data.ValidationProfile
 import vocb.ui.ImageSelector
 
 public class BingImageAppender {
@@ -45,7 +46,7 @@ public class BingImageAppender {
 		dbMan.load()
 
 		List<Concept> noImgs = dbMan.db.concepts.findAll {
-			(!it.img) && it.terms && it.state!="ignore" && it.state!="ignoreImage"
+			(!it.img) && it.terms && !it.noImg
 		}
 		if (noImgs.size() <1) {
 			println "All concepts have an image"
@@ -70,7 +71,7 @@ public class BingImageAppender {
 			}
 			sd = imgSelector.searchData
 			if (sd.useBlank) {
-				c.state = "ignoreImage"
+				c.profileName = ValidationProfile.strictNoImg.name
 				dbMan.save()
 				continue
 			}
