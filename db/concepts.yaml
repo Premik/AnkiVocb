@@ -5430,7 +5430,7 @@ concepts:
   - term: I rarely use the car.
     lang: en
   - term: Auto používám málokdy.
-    lang: cs  
+    lang: cs
   state: ignoreImage
   freq: 215223.50000
   origins: ["corpus"]
@@ -5447,7 +5447,6 @@ concepts:
     lang: en
   - term: Už přijela její neteř z Anglie?
     lang: cs
- 
   img: england.jpeg
   freq: 214339.00000
   origins: ["corpus"]
@@ -5460,12 +5459,10 @@ concepts:
     lang: cs
     tts: skutecnost.mp3
   examples: 
-
   - term: This is an important fact.
     lang: en
   - term: To je významná skutečnost.
     lang: cs
- 
   img: fact.jpeg
   freq: 214007.00000
   origins: ["corpus"]
@@ -5485,7 +5482,6 @@ concepts:
     lang: en
   - term: Řekl jsem že to stačí.
     lang: cs
- 
   img: enough.jpeg
   freq: 213322.00000
   origins: ["corpus"]
@@ -5501,12 +5497,10 @@ concepts:
     lang: cs
     tts: pocet.mp3
   examples: 
-
   - term: Enter the number of copies to print.
     lang: en
   - term: Zadejte počet kopií, které chcete vytisknout.
     lang: cs
- 
   img: number.jpeg
   freq: 212369.50000
   origins: ["corpus"]
@@ -5526,7 +5520,6 @@ concepts:
     lang: en
   - term: Škola byla během dne zavřená.
     lang: cs
-  
   state: ignoreImage
   freq: 212250.00000
   origins: ["corpus"]
@@ -5542,12 +5535,10 @@ concepts:
     lang: cs
     tts: dohromady.mp3
   examples: 
-
   - term: We all live here together.
     lang: en
   - term: Všichni tady žijeme společně.
     lang: cs
- 
   img: together.jpeg
   freq: 212070.50000
   origins: ["corpus"]
@@ -5567,7 +5558,6 @@ concepts:
     lang: en
   - term: Řekl jsem, zůstaň tady!
     lang: cs
-  
   img: here.jpeg
   freq: 210897.97500
   origins: ["corpus"]
@@ -5580,12 +5570,10 @@ concepts:
     lang: cs
     tts: docela.mp3
   examples: 
-
   - term: Now that was quite funny.
     lang: en
   - term: Tak to bylo docela vtipné.
     lang: cs
-  
   img: quite.jpeg
   freq: 210251.50000
   origins: ["corpus"]
@@ -5601,16 +5589,14 @@ concepts:
     lang: cs
     tts: vyroba.mp3
   examples: 
-
   - term: Making of small and bigger parts.
     lang: en
   - term: Výroba drobných i větších dílů.
     lang: cs
-  
   img: making.jpeg
   freq: 210031.00000
   origins: ["corpus"]
-##  whose   ################################################################# █ 95%
+##  whose   ################################################################# █ 92%
 - terms: 
   - term: whose
     lang: en
@@ -5624,7 +5610,7 @@ concepts:
   examples: 
   - term: Whose name is it?
     lang: en
-  - term: Čí je to jméno?    
+  - term: Čí je to jméno?
   state: ignoreImage
   freq: 209645.50000
   origins: ["corpus"]
@@ -5640,16 +5626,14 @@ concepts:
     lang: cs
     tts: padal.mp3
   examples: 
-
   - term: I almost fell in the water.
     lang: en
   - term: Skoro jsem spadl do vody.
     lang: cs
- 
   img: fell.jpeg
   freq: 208344.00000
   origins: ["corpus"]
-##  school   ################################################################ ▆ 67%
+##  school   ################################################################ █ 95%
 - terms: 
   - term: school
     lang: en
@@ -5658,12 +5642,10 @@ concepts:
     lang: cs
     tts: skola.mp3
   examples: 
-
   - term: She ran to school every morning.
     lang: en
   - term: Běžela každé ráno do školy.
     lang: cs
-    
   img: school.jpeg
   freq: 206442.00000
   origins: ["corpus"]
@@ -5683,7 +5665,6 @@ concepts:
     lang: en
   - term: Měl byste to zkusit.
     lang: cs
- 
   img: try.jpeg
   freq: 206441.50000
   origins: ["corpus"]
@@ -5699,12 +5680,10 @@ concepts:
     lang: cs
     tts: udrzovany.mp3
   examples: 
-
   - term: How long is your data kept?
     lang: en
   - term: Jak dlouho jsou vaše data uchovávány?
     lang: cs
-  
   state: ignoreImage
   freq: 206329.00000
   origins: ["corpus"]
@@ -5721,7 +5700,6 @@ concepts:
     lang: en
   - term: To je ten hlas.
     lang: cs
- 
   img: voice.jpeg
   freq: 206124.50000
   origins: ["corpus"]
@@ -5738,7 +5716,6 @@ concepts:
     lang: en
   - term: Dívali se na sebe do zrcadla
     lang: cs
-  
   img: themselves.jpeg
   freq: 205524.50000
   origins: ["corpus"]
@@ -5755,8 +5732,6 @@ concepts:
     lang: en
   - term: Můžeš si objednat cokoliv.
     lang: cs
-  
-
   state: ignoreImage
   freq: 205144.50000
   origins: ["corpus"]
@@ -5772,12 +5747,10 @@ concepts:
     lang: cs
     tts: potkal.mp3
   examples: 
-
   - term: I met one of them.
     lang: en
   - term: Jednoho z nich jsem potkal.
     lang: cs
-  
   img: met.jpeg
   freq: 203956.00000
   origins: ["corpus"]
@@ -5793,12 +5766,10 @@ concepts:
     lang: cs
     tts: vratil.mp3
   examples: 
-
   - term: He returned in ten minutes.
     lang: en
   - term: Vrátil se za deset minut.
     lang: cs
-
   img: returned.jpeg
   freq: 202041.00000
   origins: ["corpus"]
@@ -5811,20 +5782,29 @@ concepts:
     lang: cs
     tts: smrt.mp3
   examples: 
-
   - term: Not even death will stop me.
     lang: en
   - term: Ani smrt mě nezastaví.
     lang: cs
- 
   img: death.jpeg
   freq: 201437.50000
   origins: ["corpus"]
-##  city   ################################################################## ▅ 59%
+##  city   ################################################################## █ 90%
 - terms: 
   - term: city
     lang: en
     tts: city.mp3
+  - term: město
+    lang: cs
+  - term: městské
+    lang: cs
+  examples: 
+
+  - term: She's still in the city.
+    lang: en
+  - term: Je pořád ve městě.
+    lang: cs
+ 
   img: city.jpeg
   freq: 198911.00000
   origins: ["corpus"]
@@ -5837,7 +5817,7 @@ concepts:
   state: ignore
   freq: 198498.00000
   origins: ["corpus"]
-##  four   ################################################################## ▆ 67%
+##  four   ################################################################## █ 95%
 - terms: 
   - term: four
     lang: en
@@ -5845,10 +5825,16 @@ concepts:
   - term: čtyři
     lang: cs
     tts: ctyri.mp3
+  examples: 
+  - term: I said four beers.
+    lang: en
+  - term: Říkal jsem čtyři piva.
+    lang: cs
+  
   img: four.jpeg
   freq: 196372.50000
   origins: ["corpus"]
-##  arms   ################################################################## ▆ 67%
+##  arms   ################################################################## █ 95%
 - terms: 
   - term: arms
     lang: en
@@ -5859,10 +5845,17 @@ concepts:
   - term: paže
     lang: cs
     tts: paze.mp3
+  examples: 
+
+  - term: The arms are athletic.
+    lang: en
+  - term: Ppaže jsou silné.
+    lang: cs
+  
   img: arms.jpeg
   freq: 194298.00000
   origins: ["corpus"]
-##  myself   ################################################################ ▆ 67%
+##  myself   ################################################################ █ 95%
 - terms: 
   - term: myself
     lang: en
@@ -5870,10 +5863,17 @@ concepts:
   - term: sám sebe
     lang: cs
     tts: sam sebe.mp3
+  examples: 
+
+  - term: I should've done it myself.
+    lang: en
+  - term: Měl jsem to udělat sám.
+    lang: cs
+  
   img: myself.jpeg
   freq: 194173.00000
   origins: ["corpus"]
-##  business   ############################################################## ▆ 67%
+##  business   ############################################################## █ 95%
 - terms: 
   - term: business
     lang: en
@@ -5884,10 +5884,17 @@ concepts:
   - term: podnikání
     lang: cs
     tts: podnikani.mp3
+  examples: 
+
+  - term: This is a business meeting.
+    lang: en
+  - term: Tohle je obchodní setkání.
+    lang: cs
+ 
   img: business.jpeg
   freq: 193813.00000
   origins: ["corpus"]
-##  soon   ################################################################## ▆ 67%
+##  soon   ################################################################## █ 95%
 - terms: 
   - term: soon
     lang: en
@@ -5898,10 +5905,16 @@ concepts:
   - term: brzo
     lang: cs
     tts: brzo.mp3
+  examples: 
+  - term: It's too soon.
+    lang: en
+  - term: Je příliš brzy.
+    lang: cs
+ 
   img: soon.jpeg
   freq: 193680.00000
   origins: ["corpus"]
-##  nor   ################################################################### ▆ 67%
+##  nor   ################################################################### █ 95%
 - terms: 
   - term: nor
     lang: en
@@ -5909,10 +5922,17 @@ concepts:
   - term: ani
     lang: cs
     tts: ani.mp3
+  examples: 
+
+  - term: You are neither here nor there.
+    lang: en
+  - term: Nejste ani tady, ani tam.
+    lang: cs
+  
   state: ignoreImage
   freq: 193460.50000
   origins: ["corpus"]
-##  seems   ################################################################# ▆ 67%
+##  seems   ################################################################# █ 95%
 - terms: 
   - term: seems
     lang: en
@@ -5923,10 +5943,17 @@ concepts:
   - term: jeví se
     lang: cs
     tts: jevi se.mp3
+  examples: 
+ 
+  - term: It seems your caution was justified.
+    lang: en
+  - term: Zdá se, že vaše opatrnost byla oprávněná.
+    lang: cs
+  
   state: ignoreImage
   freq: 192229.00000
   origins: ["corpus"]
-##  least   ################################################################# ▆ 67%
+##  least   ################################################################# █ 95%
 - terms: 
   - term: least
     lang: en
@@ -5937,10 +5964,16 @@ concepts:
   - term: alespoň
     lang: cs
     tts: alespon.mp3
+  examples: 
+
+  - term: What do you like the least?
+    lang: en
+  - term: Co se ti líbí nejméně?
+    lang: cs  
   img: least.jpeg
   freq: 191938.50000
   origins: ["corpus"]
-##  person   ################################################################ ▆ 67%
+##  person   ################################################################ █ 95%
 - terms: 
   - term: person
     lang: en
@@ -5951,10 +5984,16 @@ concepts:
   - term: člověk
     lang: cs
     tts: clovek.mp3
+  examples: 
+  - term: He was a good person.
+    lang: en
+  - term: Byl to dobrý člověk.
+    lang: cs
+  
   img: person.jpeg
   freq: 190764.00000
   origins: ["corpus"]
-##  followed   ############################################################## ▆ 67%
+##  followed   ############################################################## █ 95%
 - terms: 
   - term: followed
     lang: en
@@ -5965,6 +6004,13 @@ concepts:
   - term: postupovali
     lang: cs
     tts: postupovali.mp3
+  examples: 
+
+  - term: We followed your instructions.
+    lang: en
+  - term: Postupovali jsme podle tvých instrukcí.
+    lang: cs
+  
   img: followed.jpeg
   freq: 190649.00000
   origins: ["corpus"]
@@ -5979,10 +6025,16 @@ concepts:
   - term: připadat
     lang: cs
     tts: pripadat.mp3
+  examples: 
+  - term: Did he seem upset?
+    lang: en
+  - term: Vypadal rozrušeně?
+    lang: cs
+    
   state: ignoreImage
   freq: 190588.00000
   origins: ["corpus"]
-##  read   ################################################################## ▆ 67%
+##  read   ################################################################## █ 95%
 - terms: 
   - term: read
     lang: en
@@ -5990,10 +6042,17 @@ concepts:
   - term: číst
     lang: cs
     tts: cist.mp3
+  examples: 
+
+  - term: I can read and write.
+    lang: en
+  - term: Umím číst I psát.
+    lang: cs
+  
   img: read.jpeg
   freq: 190020.50000
   origins: ["corpus"]
-##  already   ############################################################### ▆ 67%
+##  already   ############################################################### █ 95%
 - terms: 
   - term: already
     lang: en
@@ -6004,10 +6063,15 @@ concepts:
   - term: už
     lang: cs
     tts: uz.mp3
+  examples: 
+  - term: I already regret it.
+    lang: en
+  - term: Už teď toho lituji.
+ 
   state: ignoreImage
   freq: 189941.00000
   origins: ["corpus"]
-##  woman   ################################################################# ▆ 67%
+##  woman   ################################################################# █ 95%
 - terms: 
   - term: woman
     lang: en
@@ -6015,10 +6079,17 @@ concepts:
   - term: žena
     lang: cs
     tts: zena.mp3
+  examples: 
+
+  - term: The woman and her children.
+    lang: en
+  - term: Žena a její děti.
+    lang: cs
+ 
   img: woman.jpeg
   freq: 189429.60000
   origins: ["corpus"]
-##  less   ################################################################## ▆ 67%
+##  less   ################################################################## █ 95%
 - terms: 
   - term: less
     lang: en
@@ -6026,10 +6097,17 @@ concepts:
   - term: méně
     lang: cs
     tts: mene.mp3
+  examples: 
+
+  - term: Less than two hours to home.
+    lang: en
+  - term: Méně než dvě hodiny domů.
+    lang: cs
+  
   img: less.jpeg
   freq: 189322.00000
   origins: ["corpus"]
-##  body   ################################################################## ▆ 67%
+##  body   ################################################################## █ 95%
 - terms: 
   - term: body
     lang: en
@@ -6037,10 +6115,16 @@ concepts:
   - term: tělo
     lang: cs
     tts: telo.mp3
+  examples: 
+  - term: The human body.
+    lang: en
+  - term: Lidské tělo.
+    lang: cs
+  
   img: body.jpeg
   freq: 188988.50000
   origins: ["corpus"]
-##  law   ################################################################### ▆ 67%
+##  law   ################################################################### █ 95%
 - terms: 
   - term: law
     lang: en
@@ -6051,10 +6135,17 @@ concepts:
   - term: práva
     lang: cs
     tts: prava.mp3
+  examples: 
+ 
+  - term: Are we above the law?
+    lang: en
+  - term: Jsme víc než zákon?
+    lang: cs
+  
   img: law.jpeg
   freq: 188922.00000
   origins: ["corpus"]
-##  best   ################################################################## ▆ 67%
+##  best   ################################################################## █ 95%
 - terms: 
   - term: best
     lang: en
@@ -6065,10 +6156,17 @@ concepts:
   - term: nejvhodnější
     lang: cs
     tts: nejvhodnejsi.mp3
+  examples: 
+
+  - term: Is that the best you can do?
+    lang: en
+  - term: To je to nejlepší co dokážeš udělat?
+    lang: cs
+ 
   img: best.jpeg
   freq: 188751.50000
   origins: ["corpus"]
-##  hour   ################################################################## ▆ 67%
+##  hour   ################################################################## █ 95%
 - terms: 
   - term: hour
     lang: en
@@ -6076,10 +6174,17 @@ concepts:
   - term: hodina
     lang: cs
     tts: hodina.mp3
+  examples: 
+
+  - term: But every hour counts.
+    lang: en
+  - term: Ale každá hodina se počítá.
+    lang: cs
+ 
   img: hour.jpeg
   freq: 188459.50000
   origins: ["corpus"]
-##  different   ############################################################# ▆ 67%
+##  different   ############################################################# █ 95%
 - terms: 
   - term: different
     lang: en
@@ -6090,6 +6195,11 @@ concepts:
   - term: odlišné
     lang: cs
     tts: odlisne.mp3
+  examples: 
+  - term: He wanted to do something different.
+    lang: en
+  - term: Chtěl udělat něco jiného.
+    lang: cs  
   img: different.jpeg
   freq: 186727.00000
   origins: ["corpus"]
@@ -6815,13 +6925,17 @@ concepts:
   img: half.jpeg
   freq: 157947.50000
   origins: ["corpus"]
-##  within   ################################################################ ▆ 64%
+##  within   ################################################################ ▆ 63%
 - terms: 
   - term: within
     lang: en
     tts: within.mp3
   - term: v rámci
     lang: uvnitř
+  - term: uvnitř
+    lang: cs
+  - term: v
+    lang: cs
   img: within.jpeg
   freq: 156154.00000
   origins: ["corpus"]
