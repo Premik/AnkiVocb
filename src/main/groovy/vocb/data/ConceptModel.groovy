@@ -19,6 +19,7 @@ public class ConceptDb {
 public class Concept {
 	LinkedHashMap<String, Term> terms = [:]
 	//State state
+	LinkedHashMap<String, Term> examples = [:]
 	String state
 	String img
 	BigDecimal freq

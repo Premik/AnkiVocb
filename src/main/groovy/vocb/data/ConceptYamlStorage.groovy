@@ -32,7 +32,12 @@ public class ConceptYamlStorage {
 		cjs.terms.each {
 			Term t = parseTerm(it)
 			c.terms.put(t.term, t)
-		}		
+		}
+		
+		cjs.examples.each {
+			Term t = parseTerm(it)
+			c.examples.put(t.term, t)
+		}
 		return c
 	}
 
@@ -69,9 +74,12 @@ public class ConceptYamlStorage {
 
 		
 		String terms=listToYaml(c.terms.values().collect(this.&termToYaml))
+		String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
+		assert ft : "Term list is blank for a conpcept $c"
 		sb.append("##  ").append(ft).append('   ' + '#'*(70-ft.length())).append("\n")
 		appendYamlHash("terms", terms, sb)
+		appendYamlHash("examples", examples, sb)
 		/*sb.append("terms: ")
 		 if (terms.length() > 0) {
 		 sb.append("\n")
