@@ -193,11 +193,14 @@ public class WordNormalizer {
 	@CompileDynamic
 	@Memoized
 	public List<String> wordVariantsWithBrackets(String s) {
+		if (!s) {
+			return []
+		}		
 		def (String a, String b) = splitBrackets(s)
 		//if (!b) return wordVariants(s, true) //No brackets
 		List<String> exact = wordVariantUnsorted(a) + wordVariantUnsorted(b)
-		Closure<List<String>> pair = { String w->
-			tokensWithPairs(w).flatMap {wordVariantUnsorted(it).stream()}.toList()
+		Closure<List<String>> pair = { String w->			
+			tokensWithPairs(w).flatMap {wordVariantUnsorted(it).stream()}.toList()			
 		}
 		List<String> pairs = pair(a) + pair(b)
 		return (exact + pairs).toUnique()

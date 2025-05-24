@@ -9,16 +9,21 @@ import vocb.data.Concept
 import vocb.data.Example
 import vocb.data.Manager
 import vocb.data.Term
+import vocb.translator.PythonTranslation
+import vocb.translator.Translator
 
 public class TranslationAppender {
 
 
-	AzureTranslate trn = new AzureTranslate(httpHelper: new HttpHelper() )
+	AzureTranslate azTrn = new AzureTranslate(httpHelper: new HttpHelper() )
 	AwsTranslate awsTrn = new AwsTranslate()
+	PythonTranslation pyTrn = new PythonTranslation()
+	Translator trn = pyTrn
 
 	int sleep =500
-	int limit= 100
+	int limit= 2
 
+	@Lazy
 	Manager dbMan = new Manager()
 
 
@@ -30,9 +35,9 @@ public class TranslationAppender {
 			it.terms && !it.ignore && (!it.termsByLang("cs"))
 		}
 		int i = 0
-		for (Concept c in noCs) {
-			Map trnJson = trn.dictLookup(c.firstTerm)
-			trn.extractTopTrns(trnJson).each {String csWord ->
+		for (Concept c in noCs) {			
+		 	List<String> translations = trn.translations(c.firstTerm) 
+			translations.each {String csWord ->
 				c.terms.add(new Term(csWord, "cs"))
 			}
 			dbMan.save()
@@ -98,9 +103,7 @@ public class TranslationAppender {
 
 
 	public static void main(String[] args) {
-		new TranslationAppender().with {
-
-			limit = 50
+		new TranslationAppender().with {			
 			translateWords()
 			//reuseTranlation()
 			//translateExamples()
