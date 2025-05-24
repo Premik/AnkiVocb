@@ -49,6 +49,7 @@ concepts:
   state: ignoreImage
   freq: 22146974.50000
   origins: ["Supaplex", "conceptDbSamples", "corpus"]
+##  i   ##################################################################### t0:pron:missing
 - terms: 
   - term: i
     lang: en
@@ -4246,6 +4247,7 @@ concepts:
   - term: bigger
     lang: en
     tts: en-terms/bigger.mp3
+    pron: ˈbɪgə
   - term: větší
     lang: cs
     tts: cs-terms/vetsi.mp3
@@ -5279,6 +5281,7 @@ concepts:
   - term: led
     lang: en
     tts: en-terms/led.mp3
+    pron: lɛd
   - term: vedl
     lang: cs
     tts: cs-terms/vedl.mp3
@@ -5594,6 +5597,7 @@ concepts:
   - term: student
     lang: en
     tts: en-terms/student.mp3
+    pron: ˈstjuːdənt
   - term: žák
     lang: cs
     tts: cs-terms/zak.mp3
@@ -7474,6 +7478,7 @@ concepts:
   - term: shot
     lang: en
     tts: en-terms/shot.mp3
+    pron: ʃɒt
   - term: výstřel
     lang: cs
     tts: cs-terms/vystrel.mp3
@@ -7806,6 +7811,7 @@ concepts:
   - term: data
     lang: en
     tts: en-terms/data.mp3
+    pron: ˈdeɪtə
   - term: data
     lang: cs
     tts: cs-terms/data-cs.mp3
@@ -8230,6 +8236,7 @@ concepts:
   - term: film
     lang: en
     tts: en-terms/film.mp3
+    pron: fɪlm
   - term: fólie
     lang: cs
     tts: cs-terms/folie.mp3
@@ -8312,6 +8319,7 @@ concepts:
   - term: test
     lang: en
     tts: en-terms/test.mp3
+    pron: tɛst
   - term: zkouška
     lang: cs
     tts: cs-terms/zkouska.mp3
@@ -8662,6 +8670,7 @@ concepts:
   - term: hit
     lang: en
     tts: en-terms/hit.mp3
+    pron: hɪt
   - term: uhodit
     lang: cs
     tts: cs-terms/uhodit.mp3
@@ -9157,6 +9166,7 @@ concepts:
   - term: virus
     lang: en
     tts: en-terms/virus.mp3
+    pron: ˈvaɪərəs
   - term: vir
     lang: cs
     tts: cs-terms/vir.mp3
@@ -10040,6 +10050,7 @@ concepts:
   - term: example
     lang: en
     tts: en-terms/example.mp3
+    pron: ɪgˈzɑːmpl
   - term: příklad
     lang: cs
     tts: cs-terms/priklad.mp3
@@ -10053,6 +10064,7 @@ concepts:
   - term: term
     lang: en
     tts: en-terms/term.mp3
+    pron: tɜːm
   - term: termín
     lang: cs
     tts: cs-terms/termin.mp3
@@ -10066,6 +10078,7 @@ concepts:
   - term: sad
     lang: en
     tts: en-terms/sad.mp3
+    pron: sæd
   - term: smutné
     lang: cs
     tts: cs-terms/smutne.mp3
@@ -10079,6 +10092,7 @@ concepts:
   - term: unknown
     lang: en
     tts: en-terms/unknown.mp3
+    pron: ʌnˈnəʊn
   - term: neznámý
     lang: cs
     tts: cs-terms/neznamy.mp3
@@ -10089,6 +10103,7 @@ concepts:
   - term: chooses
     lang: en
     tts: en-terms/chooses.mp3
+    pron: ˈʧuːzɪz
   - term: zvolí
     lang: cs
     tts: cs-terms/zvoli.mp3
@@ -10102,6 +10117,7 @@ concepts:
   - term: version
     lang: en
     tts: en-terms/version.mp3
+    pron: ˈvɜːʃən
   - term: verze
     lang: cs
     tts: cs-terms/verze.mp3
@@ -10112,6 +10128,7 @@ concepts:
   - term: level
     lang: en
     tts: en-terms/level.mp3
+    pron: ˈlɛvl
   - term: úroveň
     lang: cs
     tts: cs-terms/uroven.mp3
@@ -10125,6 +10142,7 @@ concepts:
   - term: risk
     lang: en
     tts: en-terms/risk.mp3
+    pron: rɪsk
   - term: riziko
     lang: cs
     tts: cs-terms/riziko.mp3
@@ -10138,6 +10156,7 @@ concepts:
   - term: shields
     lang: en
     tts: en-terms/shields.mp3
+    pron: ʃiːldz
   - term: štíty
     lang: cs
     tts: cs-terms/stity.mp3
@@ -10151,6 +10170,7 @@ concepts:
   - term: weighs
     lang: en
     tts: en-terms/weighs.mp3
+    pron: weɪz
   - term: váží
     lang: cs
     tts: cs-terms/vazi.mp3
@@ -10161,6 +10181,7 @@ concepts:
   - term: pillow
     lang: en
     tts: en-terms/pillow.mp3
+    pron: ˈpɪləʊ
   - term: polštář
     lang: cs
     tts: cs-terms/polstar.mp3
@@ -10174,6 +10195,7 @@ concepts:
   - term: ankle
     lang: en
     tts: en-terms/ankle.mp3
+    pron: ˈæŋkl
   - term: kotník
     lang: cs
     tts: cs-terms/kotnik.mp3
@@ -10184,6 +10206,7 @@ concepts:
   - term: meters
     lang: en
     tts: en-terms/meters.mp3
+    pron: ˈmiːtəz
   - term: metry
     lang: cs
     tts: cs-terms/metry.mp3
@@ -10197,6 +10220,7 @@ concepts:
   - term: regenerates
     lang: en
     tts: en-terms/regenerates.mp3
+    pron: rɪˈʤɛnərɪts
   - term: regeneruje
     lang: cs
     tts: cs-terms/regeneruje.mp3
@@ -10210,6 +10234,7 @@ concepts:
   - term: arrived
     lang: en
     tts: en-terms/arrived.mp3
+    pron: əˈraɪvd
   - term: přijel
     lang: cs
     tts: cs-terms/prijel.mp3
