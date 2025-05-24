@@ -19,18 +19,6 @@ concepts:
   img: img/kitty.jpeg
   freq: 10.90740
 - terms: 
-  - term: a
-  freq: 15440.91260
-  profileName: ignore
-- terms: 
-  - term: ve
-  freq: 12.86040
-  profileName: ignore
-- terms: 
-  - term: the
-  freq: 39338.37510
-  profileName: ignore
-- terms: 
   - term: of
     tts: en-terms/of.mp3
     pron: ʌv
@@ -340,11 +328,6 @@ concepts:
     tts: cs-terms/jeji.mp3
   img: img/her.jpeg
   freq: 666.45960
-- terms: 
-  - term: an
-  - term: k
-  freq: 2581.54080
-  profileName: ignore
 - terms: 
   - term: said
     tts: en-terms/said.mp3
@@ -798,10 +781,6 @@ concepts:
   img: img/come.jpeg
   freq: 262.40400
 - terms: 
-  - term: def
-  freq: 27.01540
-  profileName: ignore
-- terms: 
   - term: she
     tts: en-terms/she.mp3
     pron: ʃi
@@ -829,11 +808,6 @@ concepts:
     tts: cs-terms/premyslet.mp3
   img: img/think.jpeg
   freq: 370.42610
-- terms: 
-  - term: upon
-  - term: na
-  freq: 176.69940
-  profileName: ignore
 - terms: 
   - term: only
     tts: en-terms/only.mp3
@@ -1265,11 +1239,6 @@ concepts:
   img: img/same.jpeg
   freq: 399.27380
 - terms: 
-  - term: shall
-    tts: en-terms/shall.mp3
-  freq: 326.40020
-  profileName: ignore
-- terms: 
   - term: seemed
     tts: en-terms/seemed.mp3
     pron: simd
@@ -1309,11 +1278,6 @@ concepts:
     tts: cs-terms/chtit.mp3
   img: img/want.jpeg
   freq: 439.85660
-- terms: 
-  - term: de
-    lang: cs
-  freq: 534.90960
-  profileName: ignore
 - terms: 
   - term: way
     tts: en-terms/way.mp3
@@ -1635,11 +1599,6 @@ concepts:
   img: img/yet.jpeg
   freq: 209.41240
 - terms: 
-  - term: thou
-  - term: ty
-  freq: 19.84120
-  profileName: ignore
-- terms: 
   - term: cannot
     tts: en-terms/cannot.mp3
     pron: ˈkænɑt
@@ -1797,10 +1756,6 @@ concepts:
   img: img/right.jpeg
   freq: 465.24250
 - terms: 
-  - term: gutenberg
-  freq: 5.03960
-  profileName: ignore
-- terms: 
   - term: still
     tts: en-terms/still.mp3
     pron: stɪl
@@ -1914,11 +1869,6 @@ concepts:
     tts: cs-terms/celit.mp3
   img: img/face.jpeg
   freq: 140.80010
-- terms: 
-  - term: thy
-  - term: tvé
-  freq: 17.03290
-  profileName: ignore
 - terms: 
   - term: though
     tts: en-terms/though.mp3
@@ -2101,11 +2051,6 @@ concepts:
     tts: cs-terms/obe.mp3
   img: img/both.jpeg
   freq: 388.77590
-- terms: 
-  - term: thee
-  - term: tobě
-  freq: 14.56220
-  profileName: ignore
 - terms: 
   - term: each
     tts: en-terms/each.mp3
@@ -2461,10 +2406,6 @@ concepts:
   img: img/family.jpeg
   freq: 432.16050
 - terms: 
-  - term: er
-  freq: 29.26690
-  profileName: ignore
-- terms: 
   - term: believe
     tts: en-terms/believe.mp3
     pron: bɪˈliv
@@ -2805,10 +2746,6 @@ concepts:
   img: img/city.jpeg
   freq: 664.08560
 - terms: 
-  - term: sn
-  freq: 10.33810
-  profileName: ignore
-- terms: 
   - term: four
     tts: en-terms/four.mp3
     pron: fɔr
@@ -3002,11 +2939,6 @@ concepts:
     tts: cs-terms/holka.mp3
   img: img/girl.jpeg
   freq: 151.56510
-- terms: 
-  - term: ye
-  - term: vy
-  freq: 16.95630
-  profileName: ignore
 - terms: 
   - term: poor
     tts: en-terms/poor.mp3
@@ -3276,10 +3208,6 @@ concepts:
   img: img/eye.jpeg
   freq: 89.58770
 - terms: 
-  - term: ety
-  freq: 0.29040
-  profileName: ignore
-- terms: 
   - term: hundred
     tts: en-terms/hundred.mp3
     pron: ˈhʌndrəd
@@ -3399,12 +3327,6 @@ concepts:
     tts: cs-terms/pet.mp3
   img: img/five.jpeg
   freq: 177.11530
-- terms: 
-  - term: miles
-  - term: mil
-  - term: mílí
-  freq: 170.05340
-  profileName: ignore
 - terms: 
   - term: state
     tts: en-terms/state.mp3
@@ -3549,10 +3471,6 @@ concepts:
     tts: cs-terms/az do.mp3
   img: img/till.jpeg
   freq: 27.84570
-- terms: 
-  - term: la
-  freq: 268.58340
-  profileName: ignore
 - terms: 
   - term: matter
     tts: en-terms/matter.mp3
@@ -3796,13 +3714,6 @@ concepts:
   img: img/led.jpeg
   freq: 80.27490
 - terms: 
-  - term: copyright
-    lang: cs
-  - term: autorských práv
-  - term: o autorských právech
-  freq: 635.76150
-  profileName: ignore
-- terms: 
   - term: group
     tts: en-terms/group.mp3
     pron: grup
@@ -3926,12 +3837,6 @@ concepts:
     tts: cs-terms/verejnost.mp3
   img: img/public.jpeg
   freq: 593.89860
-- terms: 
-  - term: hath
-  - term: kterýž
-  - term: jest
-  freq: 7.24810
-  profileName: ignore
 - terms: 
   - term: wanted
     tts: en-terms/wanted.mp3
@@ -4103,12 +4008,6 @@ concepts:
   img: img/tried.jpeg
   freq: 58.15400
 - terms: 
-  - term: dr
-    lang: cs
-  - term: doktor
-  freq: 78.80310
-  profileName: ignore
-- terms: 
   - term: lived
     tts: en-terms/lived.mp3
     pron: laɪvd
@@ -4154,11 +4053,6 @@ concepts:
     tts: cs-terms/znamy.mp3
   img: img/known.jpeg
   freq: 146.90020
-- terms: 
-  - term: unto
-  - term: ke
-  freq: 16.20950
-  profileName: ignore
 - terms: 
   - term: land
     tts: en-terms/land.mp3
@@ -4246,11 +4140,6 @@ concepts:
   img: img/ran.jpeg
   freq: 27.70070
 - terms: 
-  - term: toward
-  - term: k
-  freq: 51.05140
-  profileName: ignore
-- terms: 
   - term: lips
     tts: en-terms/lips.mp3
     pron: lɪps
@@ -4258,12 +4147,6 @@ concepts:
     tts: cs-terms/rty.mp3
   img: img/lips.jpeg
   freq: 15.69130
-- terms: 
-  - term: remained
-  - term: zůstal
-  - term: trval
-  freq: 19.37040
-  profileName: ignore
 - terms: 
   - term: truth
     tts: en-terms/truth.mp3
@@ -4414,10 +4297,6 @@ concepts:
     tts: cs-terms/osoby.mp3
   img: img/persons.jpeg
   freq: 72.15540
-- terms: 
-  - term: blockquote
-  freq: 0.56760
-  profileName: ignore
 - terms: 
   - term: hard
     tts: en-terms/hard.mp3
@@ -5593,10 +5472,6 @@ concepts:
   img: img/worst.jpeg
   freq: 28.86350
 - terms: 
-  - term: don
-  freq: 44.21460
-  profileName: ignore
-- terms: 
   - term: data
     tts: en-terms/data.mp3
     pron: ˈdeɪtə
@@ -6649,10 +6524,6 @@ concepts:
   img: img/complicated.jpeg
   freq: 14.32260
 - terms: 
-  - term: re
-  freq: 732.57920
-  profileName: ignore
-- terms: 
   - term: alert
     tts: en-terms/alert.mp3
     pron: əˈlɜrt
@@ -6873,10 +6744,6 @@ concepts:
   img: img/counts.jpeg
   freq: 26.06510
 - terms: 
-  - term: ll
-  freq: 21.36320
-  profileName: ignore
-- terms: 
   - term: arrogant
     tts: en-terms/arrogant.mp3
     pron: ˈɛrəgənt
@@ -7033,10 +6900,6 @@ concepts:
   img: img/quickly.jpeg
   freq: 68.28750
 - terms: 
-  - term: oh
-  freq: 138.16600
-  profileName: ignore
-- terms: 
   - term: bright
     tts: en-terms/bright.mp3
     pron: braɪt
@@ -7169,10 +7032,6 @@ concepts:
   img: img/bells.jpeg
   freq: 8.06610
 - terms: 
-  - term: hey
-  freq: 47.04000
-  profileName: ignore
-- terms: 
   - term: dashing
     tts: en-terms/dashing.mp3
     pron: ˈdæʃɪŋ
@@ -7182,10 +7041,6 @@ concepts:
     tts: cs-terms/temperamentni.mp3
   img: img/dashing.jpeg
   freq: 0.80050
-- terms: 
-  - term: tho
-  freq: 4.19800
-  profileName: ignore
 - terms: 
   - term: sleigh
     tts: en-terms/sleigh.mp3
@@ -7731,10 +7586,6 @@ concepts:
   img: img/steady.jpeg
   freq: 13.93270
 - terms: 
-  - term: vice
-  freq: 54.78510
-  profileName: ignore
-- terms: 
   - term: mixed
     tts: en-terms/mixed.mp3
     pron: mɪkst
@@ -7780,10 +7631,6 @@ concepts:
     tts: cs-terms/zabava.mp3
   img: img/entertainment.jpeg
   freq: 189.40700
-- terms: 
-  - term: phil
-  freq: 24.88850
-  profileName: ignore
 - terms: 
   - term: miracle
     tts: en-terms/miracle.mp3
@@ -8211,10 +8058,6 @@ concepts:
   img: img/joystick.jpeg
   freq: 2.86970
 - terms: 
-  - term: baba
-  freq: 2.28130
-  profileName: ignore
-- terms: 
   - term: path
     tts: en-terms/path.mp3
     pron: pɑːθ
@@ -8234,10 +8077,6 @@ concepts:
     tts: cs-terms/nalezce.mp3
   img: img/finder.jpeg
   freq: 34.52220
-- terms: 
-  - term: Einstein
-  freq: 8.08260
-  profileName: ignore
 - terms: 
   - term: fair
     tts: en-terms/fair.mp3
@@ -8793,10 +8632,6 @@ concepts:
   img: img/awesome.jpeg
   freq: 26.10010
 - terms: 
-  - term: gonna
-  freq: 23.02600
-  profileName: ignore
-- terms: 
   - term: possum
     tts: en-terms/possum.mp3
     pron: ˈpɒsəm
@@ -8994,9 +8829,6 @@ concepts:
     tts: cs-terms/at.mp3
   img: img/lets.jpeg
   freq: 116.65691
-- terms: 
-  - term: everyone's
-  profileName: ignore
 - terms: 
   - term: learned
     tts: en-terms/learned.mp3
@@ -9317,10 +9149,6 @@ concepts:
     tts: cs-terms/svistet.mp3
   img: img/swish.jpeg
   freq: 1.61370
-- terms: 
-  - term: wah
-  freq: 2.41960
-  profileName: ignore
 - terms: 
   - term: wipers
     tts: en-terms/wipers.mp3
@@ -17436,10 +17264,6 @@ concepts:
   img: img/national.jpeg
   freq: 452.92580
 - terms: 
-  - term: seeing
-  freq: 44.75600
-  profileName: ignore
-- terms: 
   - term: send
     tts: en-terms/send.mp3
   - term: poslat
@@ -17495,10 +17319,6 @@ concepts:
   img: img/american.jpeg
   freq: 386.88250
 - terms: 
-  - term: york
-  freq: 308.70380
-  profileName: ignore
-- terms: 
   - term: necessary
     tts: en-terms/necessary.mp3
   - term: nezbytný
@@ -17550,11 +17370,6 @@ concepts:
     tts: cs-terms/predevsim.mp3
   img: img/especially.jpeg
   freq: 100.89090
-- terms: 
-  - term: getting
-  - term: získání
-  freq: 158.95170
-  profileName: ignore
 - terms: 
   - term: social
     tts: en-terms/social.mp3
@@ -17616,10 +17431,6 @@ concepts:
     tts: cs-terms/vedomosti.mp3
   img: img/knowledge.jpeg
   freq: 152.60270
-- terms: 
-  - term: William
-  freq: 101.68660
-  profileName: ignore
 - terms: 
   - term: duke
     tts: en-terms/duke.mp3
@@ -17722,11 +17533,6 @@ concepts:
     tts: cs-terms/samec.mp3
   img: img/Tom.jpeg
   freq: 81.23330
-- terms: 
-  - term: ought
-  - term: by měl
-  freq: 12.79190
-  profileName: ignore
 - terms: 
   - term: carry
     tts: en-terms/carry.mp3
@@ -18025,10 +17831,6 @@ concepts:
   img: img/produce.jpeg
   freq: 60.16260
 - terms: 
-  - term: et
-  freq: 177.26030
-  profileName: ignore
-- terms: 
   - term: threw
     tts: en-terms/threw.mp3
   - term: hodil
@@ -18187,11 +17989,6 @@ concepts:
     tts: cs-terms/proste.mp3
   img: img/simply.jpeg
   freq: 105.44200
-- terms: 
-  - term: per
-  - term: za
-  freq: 372.27790
-  profileName: ignore
 - terms: 
   - term: private
     tts: en-terms/private.mp3
@@ -18769,11 +18566,6 @@ concepts:
     tts: cs-terms/dary.mp3
   img: img/donations.jpeg
   freq: 25.39500
-- terms: 
-  - term: etc
-  - term: atd
-  freq: 87.61040
-  profileName: ignore
 - terms: 
   - term: obliged
     tts: en-terms/obliged.mp3
@@ -20031,10 +19823,6 @@ concepts:
   img: img/identifies.jpeg
   freq: 11.12010
 - terms: 
-  - term: online
-  freq: 1022.43210
-  profileName: ignore
-- terms: 
   - term: method
     tts: en-terms/method.mp3
   - term: metoda
@@ -20057,10 +19845,6 @@ concepts:
     tts: cs-terms/kanal.mp3
   img: img/channel.jpeg
   freq: 114.52120
-- terms: 
-  - term: blog
-  freq: 79.87810
-  profileName: ignore
 - terms: 
   - term: monthly
     tts: en-terms/monthly.mp3
@@ -21576,13 +21360,6 @@ concepts:
   - term: nadace
     tts: cs-terms/nadace.mp3
   freq: 110.10180
-- terms: 
-  - term: eg
-    tts: en-terms/eg.mp3
-  - term: například
-    tts: cs-terms/napriklad.mp3
-  freq: 109.83390
-  profileName: ignore
 ##  friendly   ############################################################## no img
 - terms: 
   - term: friendly
@@ -21655,11 +21432,6 @@ concepts:
   - term: žebříček
     tts: cs-terms/zebricek.mp3
   freq: 108.44130
-- terms: 
-  - term: chicago
-  - term: Chicago
-  freq: 108.40340
-  profileName: ignore
 ##  smith   ################################################################# no img
 - terms: 
   - term: smith
@@ -22751,11 +22523,6 @@ concepts:
   - term: podán
     tts: cs-terms/podan.mp3
   freq: 87.37530
-- terms: 
-  - term: boston
-  - term: Boston
-  freq: 87.37480
-  profileName: ignore
 ##  debt   ################################################################## no img
 - terms: 
   - term: debt
@@ -23914,11 +23681,6 @@ concepts:
   - term: růžový
     tts: cs-terms/ruzovy.mp3
   freq: 70.91110
-- terms: 
-  - term: zealand
-  - term: Zéland
-  freq: 70.86490
-  profileName: ignore
 ##  balance   ############################################################### no img
 - terms: 
   - term: balance
@@ -24170,11 +23932,6 @@ concepts:
   - term: pokolení
     tts: cs-terms/pokoleni.mp3
   freq: 67.86360
-- terms: 
-  - term: kansas
-  - term: Kansas
-  freq: 67.86140
-  profileName: ignore
 ##  chemical   ############################################################## no img
 - terms: 
   - term: chemical

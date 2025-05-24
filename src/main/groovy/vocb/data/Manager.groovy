@@ -169,14 +169,14 @@ public class Manager {
 			c.termsByLang(lang).collect {it.term}.stream()
 		}
 	}
-	
-	
+
+
 
 
 	public void load() {
 		load(defaultConceptsLocation, true)
 		load(defaultExamplesLocation, true)
-		//loadIgnoreList()
+		loadIgnoreList()
 		reindex()
 	}
 
@@ -200,7 +200,7 @@ public class Manager {
 		}
 		return cdb
 	}
-	
+
 	public void loadIgnoreList() {
 		Path p = defaultConceptsLocation.storageRootPath.resolve("ignoreList.txt")
 		p.withReader(utf8) { Reader r->
@@ -210,10 +210,8 @@ public class Manager {
 				c.profileName="ignore"
 				//c.location=new DataLocation()
 				db.concepts.add(c)
-			}			
+			}
 		}
-		
-		
 	}
 
 
@@ -244,9 +242,9 @@ public class Manager {
 	public void save(boolean forceSaveAll=true) {
 		reindex()
 
-		assert db.dataLocation
+		assert db.dataLocations
 		db.dataLocations
-				.findAll { DataLocation dl-> dl.dirty || forceSaveAll }				
+				.findAll { DataLocation dl-> dl.dirty || forceSaveAll }
 				.each { DataLocation dl->
 					save(dl)
 				}
@@ -255,18 +253,7 @@ public class Manager {
 	public String save(DataLocation loc) {
 		assert loc
 		String yaml = storage.dbToYaml(db) {TermContainer t->
-			if (t.location !== loc) {
-				return false
-			}
-			if (!t.location) {
-				return false
-			}
-			if (t instanceof Concept) { //Don't save ignore profile as those are not in separate ignoreList.txt
-				Concept c = t as Concept
-				return c.profileName != "ignore"
-			}
-			return true
-			
+			t.location === loc
 		}
 		loc.storagePath.write(yaml)
 		println "Saved $loc"
@@ -576,10 +563,10 @@ public class Manager {
 			//println allTextWithLang("en")
 			//moveSamples()
 
-//			new File("/tmp/work/ignore.txt") <<
-//			db.concepts.findAll{it.validationProfile == ValidationProfile.ignore}
-//			.collect {it.firstTerm}
-//			.join("\n")
+			//			new File("/tmp/work/ignore.txt") <<
+			//			db.concepts.findAll{it.validationProfile == ValidationProfile.ignore}
+			//			.collect {it.firstTerm}
+			//			.join("\n")
 			save()
 			println "Resaved "
 		}

@@ -21,10 +21,10 @@ public class ConceptDb {
 	 
 	List<DataLocation> getDataLocations() {  termContainers
 					.map {
-						assert it.location
+						//assert it.location
 						it.location
 						}
-					//.filter {it}
+					.filter {it != null}
 					.collect(Collectors.toSet()).toList()
 	}
 	
