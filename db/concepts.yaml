@@ -13404,7 +13404,7 @@ concepts:
     tts: cs-terms/autor.mp3
   img: img/author.jpeg
   freq: 72146.00000
-##  bear   ################################################################## 4 terms. Up to 3 supported only|t0:tts:missing
+##  bear   ################################################################## t0:tts:missing
 - terms: 
   - term: bear
     lang: en
@@ -13412,9 +13412,6 @@ concepts:
   - term: medvěd
     lang: cs
     tts: cs-terms/medved.mp3
-  - term: nést
-    lang: cs
-    tts: cs-terms/nest.mp3
   - term: snést
     lang: cs
     tts: cs-terms/snest.mp3
@@ -14465,7 +14462,6 @@ concepts:
     tts: cs-terms/plocha.mp3
   img: img/surface.jpeg
   freq: 51542.00000
-##  rocks   ################################################################# t2:lang:missing|t2:tts:missing
 - terms: 
   - term: rocks
     lang: en
@@ -14474,7 +14470,6 @@ concepts:
   - term: skály
     lang: cs
     tts: cs-terms/skaly.mp3
-  - term: kameny
   img: img/rocks.jpeg
   freq: 51540.00000
 - terms: 
@@ -15597,7 +15592,7 @@ concepts:
     pron: ˈiːʤɪpt
   - term: egypt
     lang: cs
-    tts: cs-terms/egypt.mp3
+    tts: cs-terms/egyptCs.mp3
   img: img/egypt.jpeg
   freq: 43529.00000
 - terms: 
@@ -16077,7 +16072,7 @@ concepts:
     pron: tɛkst
   - term: text
     lang: cs
-    tts: cs-terms/text.mp3
+    tts: cs-terms/textCs.mp3
   - term: textovka (SMS)
     lang: cs
     tts: cs-terms/textovka.mp3
@@ -16090,7 +16085,7 @@ concepts:
     pron: həʊˈtɛl
   - term: hotel
     lang: cs
-    tts: cs-terms/hotel.mp3
+    tts: cs-terms/hotelCs.mp3
   img: img/hotel.jpeg
   freq: 40857.00000
 - terms: 
@@ -16307,7 +16302,7 @@ concepts:
     pron: spɔːt
   - term: sport
     lang: cs
-    tts: cs-terms/sport.mp3
+    tts: cs-terms/sportCs.mp3
   img: img/sport.jpeg
   freq: 39797.00000
 - terms: 
