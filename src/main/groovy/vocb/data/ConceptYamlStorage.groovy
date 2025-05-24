@@ -1,6 +1,7 @@
 package vocb.data
 
 import groovy.json.JsonGenerator
+import groovy.transform.CompileStatic
 import groovy.yaml.YamlSlurper
 import vocb.Helper
 
@@ -34,8 +35,8 @@ public class ConceptYamlStorage {
 		assert cjs
 
 		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, profileName: cjs.profileName)
-		cjs.terms.each {
-			Term t = parseTerm(it)
+		cjs.terms.eachWithIndex { Map tjson, int i ->
+			Term t = parseTerm(tjson, i)
 			c.terms.add(t)
 		}
 		//Migration
@@ -59,13 +60,21 @@ public class ConceptYamlStorage {
 	public Example parseExample(Map exList) {
 		assert exList
 		new Example().tap{ Example e->
-			e.terms.addAll( exList.terms.collect(this.&parseTerm))
+			e.terms.addAll( exList.terms
+					.withIndex()
+					.collect{ Map termJson, int i->
+						parseTerm(termJson, i)
+					})
 		}
 	}
 
 
-	public Term parseTerm(Map term) {
-		new Term(term)
+	public Term parseTerm(Map term, int i) {
+		new Term(term).tap {
+			if (!lang) {
+				lang = vp.termsDefaultLanguages[i]
+			}
+		}
 	}
 
 	public String yamlHash(String key, String value) {
@@ -121,7 +130,14 @@ public class ConceptYamlStorage {
 		assert e
 		StringBuilder sb = new StringBuilder()
 
-		String examples=listToYaml(e.terms.collect(this.&termToYaml))
+		String examples=listToYaml(e.terms
+				.withIndex()
+				.collect { Term t, int i->
+					termToYaml(t,i)
+				})
+
+
+
 		String ft = e.firstTerm
 		assert ft : "Term list is blank for a sample $e"
 
@@ -131,6 +147,7 @@ public class ConceptYamlStorage {
 		return sb.toString()
 	}
 
+	@CompileStatic
 	public String conceptToYaml(Concept c) {
 		assert c
 
@@ -140,7 +157,12 @@ public class ConceptYamlStorage {
 		//sb.append("#"*16 + "\n")
 
 
-		String terms=listToYaml(c.terms.collect(this.&termToYaml))
+		String terms=listToYaml(c.terms
+				.withIndex()
+				.collect { Term t, int i->
+					termToYaml(t,i)
+				})
+
 
 		//String examples=listToYaml(c.examples.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
@@ -214,11 +236,13 @@ public class ConceptYamlStorage {
 				}.join("\n")
 	}
 
-	public CharSequence termToYaml(Term t) {
+	public CharSequence termToYaml(Term t, int i) {
 		assert t
 		StringBuilder sb = new StringBuilder()
 		appendYamlHash("term", t.term, sb)
-		appendYamlHash("lang", t.lang,sb)
+		if (t.lang != vp.termsDefaultLanguages[i]) { //Only save when different from the default
+			appendYamlHash("lang", t.lang,sb)
+		}
 		appendYamlHash("tts", t.tts, sb)
 		appendYamlHash("pron", t.pron, sb)
 		return sb.toString()

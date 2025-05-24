@@ -37,6 +37,7 @@ public class ValidationProfile {
 	boolean requiredNativeTerm = true //Concept with only foreign term is effectively ignored 
 	boolean validateTerms = true
 	List<String> termRequiredFields = ["term", "lang", "tts"]
+	List<String> termsDefaultLanguages = ["en", "cs"].withDefault { "cs" } //Firs term en, rest cs
 	
 	public boolean isDefaultProfile() {
 		return this == currentDefaultProfile

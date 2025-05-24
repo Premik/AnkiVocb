@@ -46,6 +46,7 @@ public class WordNormalizer {
 	}
 
 	public Stream<String> tokens(CharSequence input, CaseHandling caseHadling=CaseHandling.Lower) {
+		if (!input) return Stream.empty()
 		Stream<String> ret =spacesPattern.splitAsStream(input)
 				//.filter {String s -> (s=~ niceWordPatter).size() > 0 }
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
