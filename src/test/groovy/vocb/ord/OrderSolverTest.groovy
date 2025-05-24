@@ -32,13 +32,39 @@ class OrderSolverTest {
 	}
 	
 	@Test
-	void freqOrder() {
+	void orderDeltas() {
 		sol.with {
 			Order o = ctx.createInitialOrder()			
 			assert o == ctx.createInitialOrder()
-			assert ctx.freqIdealOrder != o
-			 
+			ctx.freqIdealOrder.deltasFromFreqIdealOrder.every {it == 0}
+			o.deltasFromFreqIdealOrder.any{it != 0} 
+		}
+	}
+	
+	@Test
+	@Disa
+	void orderDeltaFinding() {
+		sol.with {
+			Order o = ctx.createInitialOrder()
+			Order o2 = ctx.freqIdealOrder
+			List<Integer> Δ = o2.deltasFrom(o)
+			println "${o}"
+			println "${Δ}"
+			println "${o2}"
+			Δ.withIndex().each {int d, int i->				
+				 assert o[i] == o2[i+d]
+			} 
+		}
+	}
+	
+	@Test
+	void freqOrder() {
+		sol.with {
+			Order o = ctx.createInitialOrder()			
+			assert o.ctx.freqIdealOrder.freqFitness == 1
+			assert o.ctx.freqWorstOrder.freqFitness < 0.01
 			assert o.freqFitness < ctx.freqIdealOrder.freqFitness
+			assert o.freqFitness > ctx.freqWorstOrder.freqFitness			
 		}
 	}
 }
