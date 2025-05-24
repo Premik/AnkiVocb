@@ -19,7 +19,7 @@ public class ExampleAppender {
 
 	Manager dbMan = new Manager()
 	int sleep=500
-	int limit = 5
+	int limit = 10
 	int maxLength = 40
 
 	void run() {
