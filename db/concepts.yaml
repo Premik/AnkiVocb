@@ -4,15 +4,23 @@ concepts:
 - terms: 
   - term: apple
     lang: en
-    tts: apple.mp3 
+    tts: apple.mp3
+  - term: jablko
+    lang: cs
   img: apple.jpeg
+  freq: 13506.05000
   origins: ["top500"]
 ##  kitty   #################################################################
 - terms: 
   - term: kitty
     lang: en
-    tts: kitty.mp3  
+    tts: kitty.mp3
+  - term: koťátko
+    lang: cs
+  - term: kočička
+    lang: cs
   img: kitty.jpeg
+  freq: 278.47900
 ##  a   #####################################################################
 - terms: 
   - term: a
