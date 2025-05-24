@@ -11,7 +11,7 @@ import groovy.transform.ToString
 public class ValidationProfile {
 
 	public static final ValidationProfile strict = new ValidationProfile (name:"strict")
-	public static final ValidationProfile strictNoImg = strict.clone().tap {
+	@Lazy public static final ValidationProfile noImg = currentDefaultProfile.clone().tap {
 		name="strictNoImg"
 		img=false
 	}
@@ -25,7 +25,7 @@ public class ValidationProfile {
 	public static ValidationProfile currentDefaultProfile =  strict
 	public static ValidationProfile testDefaultProfile =  currentDefaultProfile.clone().tap {name="testProfile" }
 
-	public static final Map<String, ValidationProfile> PredefinedProfiles = [strict, strictNoImg, relax, ignore, testDefaultProfile].collectEntries {
+	public static final Map<String, ValidationProfile> PredefinedProfiles = [strict, noImg, relax, ignore, testDefaultProfile].collectEntries {
 		[(it.name): it]
 	}
 

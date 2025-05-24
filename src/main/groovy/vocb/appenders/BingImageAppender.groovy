@@ -71,7 +71,7 @@ public class BingImageAppender {
 			}
 			sd = imgSelector.searchData
 			if (sd.useBlank) {
-				c.profileName = ValidationProfile.strictNoImg.name
+				c.profileName = ValidationProfile.noImg.name
 				dbMan.save()
 				continue
 			}
