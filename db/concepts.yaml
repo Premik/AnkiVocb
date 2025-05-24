@@ -201,7 +201,7 @@ concepts:
   origins: ["Supaplex"]
 ##  true   ##################################################################
 - terms: 
-  - term: true
+  - term: "true"
     lang: en
     tts: true.mp3
   - term: pravda
@@ -340,7 +340,7 @@ concepts:
   origins: ["Supaplex"]
 ##  false   #################################################################
 - terms: 
-  - term: false
+  - term: "false"
     lang: cs
     tts: false.mp3
   - term: nepravdivý
@@ -643,7 +643,7 @@ concepts:
   origins: ["corpus"]
 ##  false   ################################################################# ▃ 30%
 - terms: 
-  - term: false
+  - term: "false"
     lang: en
   freq: 1123368.00000
   origins: ["corpus"]
@@ -1477,7 +1477,7 @@ concepts:
   origins: ["corpus"]
 ##  false   ################################################################# ▃ 30%
 - terms: 
-  - term: false
+  - term: "false"
     lang: en
   freq: 324977.00000
   origins: ["corpus"]
@@ -1495,7 +1495,7 @@ concepts:
   origins: ["corpus"]
 ##  no   #################################################################### ▃ 30%
 - terms: 
-  - term: no
+  - term: "no"
     lang: en
   freq: 1123368.00000
   origins: ["corpus"]
