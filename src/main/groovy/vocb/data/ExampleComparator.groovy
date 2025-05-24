@@ -6,6 +6,7 @@ import groovy.transform.CompileStatic
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.Memoized
 import vocb.corp.WordNormalizer
+import vocb.corp.WordNormalizer.CaseHandling
 
 
 
@@ -16,6 +17,9 @@ public class ExampleComparator {
 	public WordNormalizer getWn() {
 		WordNormalizer.instance
 	}
+	
+
+	ExampleComparatorContext ctx = new ExampleComparatorContext()
 
 	Example example
 	Collection<String> words = []
@@ -55,7 +59,7 @@ public class ExampleComparator {
 	void setSentence(String s) {
 		example = null
 		s= s?.uncapitalize()
-		words = WordNormalizer.instance.tokens(s, false).toList() as LinkedHashSet
+		words = WordNormalizer.instance.tokens(s, CaseHandling.OriginalPlusLower).toList() as LinkedHashSet
 	}
 
 	void setExample(Example e) {		

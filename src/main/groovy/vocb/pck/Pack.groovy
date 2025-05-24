@@ -319,12 +319,12 @@ public class Pack {
 			 println it
 			 }*/
 			//printFirstX()
-
+			ExampleComparatorMatch.preferedWords = Corpus.buildDef(1500).topX(1000) as LinkedHashSet
 			findBestExamplesFor(["that's (that is)", "that is"])
 			return
 
 			//findBestExamplesFor(["that is"])
-			ExampleComparatorMatch.preferedWords = Corpus.buildDef().topX(500) as LinkedHashSet
+			
 			printFirstX()
 
 			//printExamplesExport()

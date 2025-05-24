@@ -5,12 +5,14 @@ import java.util.stream.Collectors
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
+import vocb.corp.WordNormalizer.CaseHandling
+
 class WordNormalizerTest {
 
 	WordNormalizer wn = new WordNormalizer()
 
 	@Test
-	void simple() {
+	void tokensSimple() {
 		List<String> t =  wn.tokens("123 aaa bbb fooBar a123 mm_word").collect(Collectors.toList())
 		assert t == [
 			"aaa",
@@ -20,6 +22,12 @@ class WordNormalizerTest {
 			"mm",
 			"word"
 		]
+	}
+	
+	@Test
+	void tokensCae() {
+		wn.tokens("Hello World!", CaseHandling.OriginalPlusLower ).toList() == ["Hello hello World world"]
+		
 	}
 
 	@Test

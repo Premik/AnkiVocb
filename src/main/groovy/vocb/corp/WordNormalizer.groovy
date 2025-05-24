@@ -18,6 +18,12 @@ import vocb.Helper
 @CompileStatic
 public class WordNormalizer {
 
+	public enum CaseHandling {
+		Original,
+		Lower,
+		OriginalPlusLower
+	}
+
 	public static WordNormalizer instance = new WordNormalizer()
 
 	int minLenght = 1
@@ -38,14 +44,22 @@ public class WordNormalizer {
 		stream.collect(Collectors.toCollection( LinkedHashSet.&new ))
 	}
 
-	public Stream<String> tokens(CharSequence input, boolean lowerCase=true) {
+	public Stream<String> tokens(CharSequence input, CaseHandling caseHadling=CaseHandling.Lower) {
 		Stream<String> ret =spacesPattern.splitAsStream(input)
 				//.filter {String s -> (s=~ niceWordPatter).size() > 0 }
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
-		if (!lowerCase) {
+		if (caseHadling == CaseHandling.Original) {
 			return ret
 		}
-		return ret.map {String s ->s.toLowerCase()}
+		if (caseHadling == CaseHandling.Lower) {
+			return ret.map {String s ->s.toLowerCase()}
+		}
+		if (caseHadling == CaseHandling.OriginalPlusLower) {
+			return ret.flatMap {String s ->
+				[s, s.toLowerCase()].toUnique().stream()				
+			}
+		}
+		throw new IllegalArgumentException("$caseHadling not supported")
 	}
 
 
@@ -254,10 +268,10 @@ public class WordNormalizer {
 		//.map {Collection<List<String>> s-> s.collect { it.join(' ')} }
 		.map {List<String> s -> s.join(' ') }
 	}
-	
+
 	public List<String> pairVariants(String w, String w2="") {
 		String pair = [w, w2].collect {stripBracketsOut(it)}.findAll().join(" ")
-		 [w, w2, pair ].collectMany { wordVariantsWithBrackets(it) }
+		[w, w2, pair].collectMany { wordVariantsWithBrackets(it) }
 	}
 
 	public Map<String , Integer> phraseFreqs(Collection<String> words, int minSz=1, int maxSz=4) {
