@@ -13,8 +13,19 @@ public class CrowdParser {
 		jsonRoot = Helper.parseJson(json)
 	}
 
-	public String getCrowdankiUuuid() {
-		jsonRoot.crowdanki_uuid
+	public String toJsonString() {
+		Helper.jsonToString(jsonRoot)
+	}
+
+	public void saveTo(File deckJson) {
+		deckJson.write( toJsonString())
+	}
+
+
+	public NoteModel[] getNoteModels() {
+		return jsonRoot.note_models.collect {m->
+			new NoteModel([uuid:m.uuid, fieldsCount:m.flds.size() ])
+		}
 	}
 
 	public Object getNotes() {
@@ -29,19 +40,39 @@ public class CrowdParser {
 			//if (!n.tags) return
 		}
 		return ret
-
 	}
 
-
-	public JsonBuilder buildNote(NoteFields flds, String modeluuid) {
+	public JsonBuilder buildNote(NoteFields flds, NoteModel model=null) {
+		if (!model) model = noteModels[0]
+		assert model?.uuid
+		assert model?.fieldsCount
+		// To avoid error on import if model expects more fields that we have
+		List<String> fLst = flds.toFields().findAll()
+		fLst.addAll([""]*model.fieldsCount)
+		String[] fldsAr = fLst.take(model.fieldsCount)
 		JsonBuilder b = new groovy.json.JsonBuilder()
 		b {
 			__type__  "Note"
-			fields(flds.toFields())
+			fields(fldsAr)
 			guid flds.guid
-			note_model_uuid modeluuid
+			note_model_uuid model.uuid
 			tags(['ankiVocb'])
 		}
+	}
+
+	public void appendMedia(String mediaKey) {
+		jsonRoot.media_files+=mediaKey
+	}
+
+	public boolean hasMedia(String mediaKey) {
+		if (jsonRoot.media_files == null) return false
+		return (boolean)jsonRoot.media_files.find { it == mediaKey}
+	}
+
+	public void appendNote(String noteJsonString) {
+		def noteJson = Helper.parseJson(noteJsonString)
+		assert noteJson
+		jsonRoot.notes+= noteJson
 	}
 
 
