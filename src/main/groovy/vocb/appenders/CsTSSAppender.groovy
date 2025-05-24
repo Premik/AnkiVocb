@@ -18,7 +18,8 @@ public class CsTSSAppender {
 	
 	//String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural", "cs-CZ-Jakub"]
 	String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural"]
-	//String[] voices = ["cs-CZ-AntoninNeural"]
+	//String[] voices = ["cs-CZ-Jakub"]
+	//asiat
 	int voiceCounter = 0
 	
 	String getSomeVoice() {
@@ -75,7 +76,7 @@ public class CsTSSAppender {
 
 	public static void main(String[] args) {
 		new CsTSSAppender().with {
-			limit = 100
+			limit = 200
 			//ttsCz = new LocalTTS()
 			//includeOnlyTerms = ["koutek", "kůň", "závodník" ]
 			synth()
