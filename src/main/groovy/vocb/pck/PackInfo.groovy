@@ -90,6 +90,11 @@ public class PackInfo {
 		treeConf.conf.noExamples
 	}
 	
+	public boolean getStrictlyWordlist() {
+		treeConf.conf.strictlyWordlist
+	}
+	
+	
 	public String getUuid() {
 		if (!name) return ""	
 		String p = name.toLowerCase()*10
