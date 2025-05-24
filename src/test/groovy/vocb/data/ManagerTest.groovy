@@ -2,6 +2,7 @@ package vocb.data
 
 import java.nio.file.Files
 import java.nio.file.Path
+import java.nio.file.Paths
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
@@ -13,14 +14,14 @@ class ManagerTest {
 
 
 	Path tempDir = Files.createTempDirectory("ankivocbTest")
-	DataLocation location = new DataLocation(storageRootPath: tempDir)
-	Manager m = new Manager(storagePath: tempDir )
+	
+	Manager m = new Manager(defaultStoragePath: tempDir )
 
 	Term t1 = new Term("apple", "en")
 	Term t2 = new Term("jablko", "cs")
 	Term s1 = new Term("Apple helps.", "en")
 	Term s2 = new Term("Jablko pomáhá", "cs")
-	Concept c = new Concept(state: "state", img:"", freq:1.1d).tap {
+	Concept c = new Concept(state: "state", img:"", freq:1.1d, location: m.defaultConceptsLocation).tap {
 		terms.addAll([t1, t2])
 	}
 	
@@ -30,27 +31,18 @@ class ManagerTest {
 	}
 	
 
-	void createBlank() {
-		m.save()
-		m.load()
-	}
-
-
-	@Test
-	void resaveBlank() {
-		createBlank()
-		m.save()
-	}
-
 	@Test
 	void addData() {
-		createBlank()
 		m.db.concepts.add(c)
-		String saved1 =  m.save()
+		m.save()
 		m.load()
-		Path tempFile2 = Files.createTempFile("tempfiles", ".yaml")
-		String saved2 =  m.save(tempFile2)
-		TestUtils.compareFiles(m.conceptsPath.toFile(), tempFile2.toFile())
+		Path cp1 = m.defaultConceptsLocation.storagePath
+		Path tempFile2 =  Files.createTempDirectory("ankivocbTestReload")
+		m.defaultConceptsLocation.storageRootPath = tempFile2		
+		m.save()
+		Path cp2 = m.defaultConceptsLocation.storagePath
+		
+		TestUtils.compareFiles(cp1.toFile(), cp2.toFile())
 		//assert saved1 == saved2
 	}
 

@@ -92,7 +92,7 @@ class ModelTest {
 		new ConceptYamlStorage().tap {
 			Concept c = parseConcept(j)
 			println c
-			assert c.validate() == ["t0:pron:missing"]
+			assert c.validate().collect{it.toString()}.contains("t0:pron:missing")
 		}
 	}
 	

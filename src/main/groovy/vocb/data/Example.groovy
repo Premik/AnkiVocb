@@ -1,5 +1,7 @@
 package vocb.data
 
+import org.apache.groovy.parser.antlr4.GroovyParser.SuperPrmrAltContext
+
 import groovy.transform.AutoClone
 import groovy.transform.Canonical
 import groovy.transform.EqualsAndHashCode
@@ -14,7 +16,7 @@ public class Example extends TermContainer {
 	
 	@Override
 	public List<String> validate() {
-		List<String> ret = []
+		List<String> ret = super.validate()
 		terms.eachWithIndex {Term t, Integer i->
 			ret.addAll(t.validate().collect{"t${i}:${it}"} )
 		}
