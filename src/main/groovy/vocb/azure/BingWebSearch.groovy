@@ -4,7 +4,8 @@ import java.nio.charset.StandardCharsets
 
 import groovy.json.JsonSlurper
 import vocb.Helper
-import vocb.SimpleFileCache
+import vocb.HttpHelper
+import vocb.SearchData
 
 public class BingWebSearch {
 
@@ -14,16 +15,16 @@ public class BingWebSearch {
 	String baseUrl = "https://api.cognitive.microsoft.com/bing/v7.0/images/search"
 	String lastClientId
 
-	SimpleFileCache cache = new SimpleFileCache()
+	HttpHelper httpHelper
 
 	//https://docs.microsoft.com/en-us/rest/api/cognitiveservices-bingsearch/bing-web-api-v7-reference
-	URL buildSearchUrl(String q, int count=3, String imageType="Clipart", String license="Public") {
+	URL buildSearchUrl(SearchData s)  {
 		String utf8=StandardCharsets.UTF_8.toString()
 		def u = { String key, Object val, String prefx="&"->
 			if (val == null || val == "") return ""
 			return "$prefx$key=${URLEncoder.encode(val.toString(), utf8)}"
 		}
-		return "$baseUrl${u 'q', q, '?'}${u 'count', count}${u 'imageType', imageType}${u 'license', license}".toURL()
+		return "$baseUrl${u 'q', s.q, '?'}${u 'count', s.count}${u 'imageType', s.imageType}${u 'license', s.license}".toURL()
 	}
 
 	Map<String,String> getHttpHeaders() {
@@ -36,48 +37,17 @@ public class BingWebSearch {
 	}
 
 	Object search(URL url) {
+		assert httpHelper
 		assert url
 		Object ret
 		println "Searching $url"
-		Helper.withUrlGetResponse(httpHeaders, url) { BufferedInputStream res->
+		httpHelper.withDownloadResponse(httpHeaders, url) { BufferedInputStream res->
 			ret = new JsonSlurper().parse(res)
 		}
 		return ret
 	}
 
-	Object searchTryCache(URL url) {
-		String key = url.toString()
-		Object searchResult
-		if (cache.isCached(key)) {
-			println "Cache hit for $key"
-			cache.subPathForKey(key).withInputStream { InputStream istr ->
-				searchResult = new JsonSlurper().parse(istr)
-			}
-		} else {
-			searchResult = search(url)
-			cache.subPathForKey(key) << Helper.jsonToString(searchResult)
-		}
-		return searchResult
-	}
 
-	void downloadTryCacheWithInputStream(URL url, Closure c) {
-		assert url
-		String key = url.toString()
-		if (cache.isCached(key)) {
-			println "Cache hit for $key"
-			cache.subPathForKey(key).withInputStream { BufferedInputStream imgStr->
-				c(imgStr, url)
-			}
-			return
-		}
-		Helper.withUrlGetResponse(url) {BufferedInputStream res->
-			println url
-			cache.subPathForKey(key) << res
-		}
-		cache.subPathForKey(key).withInputStream {BufferedInputStream imgStr->
-			c(imgStr, url)			
-		}
-	}
 
 	List<URL> thumbnailsFromSearchResult(Object searchResult) {
 		searchResult.value
@@ -85,28 +55,29 @@ public class BingWebSearch {
 				.collect { new URL(it) }
 	}
 
-	void withEachThumbnailStream(String q, int count=3, String imageType="Clipart", String license="Public", Closure c) {
-		URL sUrl = buildSearchUrl(q, count, imageType,license)
-		Object resulJson = searchTryCache(sUrl)
+	SearchData thumbnailSearch(SearchData s) {
+		assert s
+		assert s.q
+		URL sUrl = buildSearchUrl(s)
+		Object resulJson = search(sUrl)
 		List<URL> urls = thumbnailsFromSearchResult(resulJson)
-		urls.each {
-			downloadTryCacheWithInputStream(it, c)			
-		}
+		s.results = urls
+		return s
+	}
+	
+	SearchData thumbnailSearch(String q, int count=3) {
+		return thumbnailSearch(new SearchData(q:q, count:count))
+		
 	}
 
 
-
-
 	static void main(String... args) {
-		BingWebSearch bs = new BingWebSearch()
+		BingWebSearch bs = new BingWebSearch(httpHelper: new HttpHelper())
 		//println System.getenv(bs.AZURE_KEY_ENV)
 		//println bs.buildSearchUrl("test")
 		//println bs.getHttpHeaders()
 		//Object res= bs.search(bs.buildSearchUrl("test"))
-		bs.withEachThumbnailStream("test", 5) {BufferedInputStream bis, URL url ->
-			println "Got stream for $url"
-			
-		}
-		
+		println bs.thumbnailSearch(new SearchData(q:"test"))
+
 	}
 }
