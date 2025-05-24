@@ -280,7 +280,7 @@ public class Manager {
 					if (word.endsWith("s")) c = conceptByFirstTerm[word[0..-2]]
 					else c=  conceptByFirstTerm["${word}s"]
 				}
-				if (!c) {
+				if (!c && !word.contains("'")) {
 					println "${color('Unknown term', YELLOW)} ${color(word, BOLD)} used in the ${color(t.term, BLUE)} example."
 				}
 				ret[word].add(c)
