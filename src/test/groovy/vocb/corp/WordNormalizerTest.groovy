@@ -139,9 +139,14 @@ class WordNormalizerTest {
 	}
 
 	@Test
-	void stripBrk() {
+	void stripBrkSimple() {
 		norm.stripBracketsOut ("Hello (world)") == "Hello"
 		norm.stripBracketsOut ("Hello ( world ) there.") == "Hello there."
 		norm.stripBracketsOut ("Hello world.") == "Hello world."
+	}
+	
+	@Test
+	void stripMultiple() {
+		norm.stripBracketsOut ("(The) Hello (world)") == "Hello"		
 	}
 }
