@@ -3255,14 +3255,14 @@ concepts:
     tts: cs-terms/samozrejme.mp3
   img: img/course.jpeg
   freq: 224657.50000
+##  john   ################################################################## t1:tts:missing
 - terms: 
   - term: john
     lang: en
     tts: en-terms/john.mp3
     pron: ʤɑn
-  - term: Jenkík
+  - term: Jeník
     lang: cs
-    tts: cs-terms/Jenkik.mp3
   - term: Honza
     lang: cs
     tts: cs-terms/Honza.mp3
@@ -3357,11 +3357,11 @@ concepts:
   img: img/use.jpeg
   freq: 215223.50000
 - terms: 
-  - term: england
+  - term: England
     lang: en
     tts: en-terms/england.mp3
     pron: ˈɪŋglənd
-  - term: anglie
+  - term: Anglie
     lang: cs
     tts: cs-terms/anglie.mp3
   img: img/england.jpeg
@@ -4696,11 +4696,11 @@ concepts:
   img: img/letter.jpeg
   freq: 151273.50000
 - terms: 
-  - term: france
+  - term: France
     lang: en
     tts: en-terms/france.mp3
     pron: fræns
-  - term: francie
+  - term: Francie
     lang: cs
     tts: cs-terms/francie.mp3
   img: img/france.jpeg
@@ -4847,11 +4847,11 @@ concepts:
   img: img/art.jpeg
   freq: 145697.50000
 - terms: 
-  - term: london
+  - term: London
     lang: en
     tts: en-terms/london.mp3
     pron: ˈlʌndən
-  - term: londýn
+  - term: Londýn
     lang: cs
     tts: cs-terms/londyn.mp3
   img: img/london.jpeg
@@ -6359,11 +6359,11 @@ concepts:
   img: img/late.jpeg
   freq: 87283.50000
 - terms: 
-  - term: america
+  - term: America
     lang: en
     tts: en-terms/america.mp3
     pron: əˈmɛrəkə
-  - term: amerika
+  - term: Amerika
     lang: cs
     tts: cs-terms/amerika.mp3
   img: img/america.jpeg
@@ -8447,7 +8447,7 @@ concepts:
   - term: klavír
     lang: cs
     tts: cs-terms/klavir.mp3
-  - term: piáno
+  - term: piano
     lang: cs
     tts: cs-terms/piano-cs.mp3
   img: img/piano.jpeg
@@ -10746,11 +10746,11 @@ concepts:
   img: img/clay.jpeg
   freq: 12342.00000
 - terms: 
-  - term: mary
+  - term: Mary
     lang: en
     tts: en-terms/mary.mp3
     pron: ˈmeəri
-  - term: marie
+  - term: Marie
     lang: cs
     tts: cs-terms/marie.mp3
   img: img/mary.jpeg
@@ -11321,11 +11321,11 @@ concepts:
   img: img/possum.jpeg
   freq: 344.00000
 - terms: 
-  - term: nobel
+  - term: Nobel
     lang: en
     tts: en-terms/nobel.mp3
     pron: nəʊˈbɛl
-  - term: nobelova
+  - term: Nobelova
     lang: cs
     tts: cs-terms/nobelova.mp3
   img: img/nobel.jpeg
@@ -11538,8 +11538,6 @@ concepts:
 - terms: 
   - term: everyone's
     lang: en
-  - term: everyones
-    lang: cs
   freq: 5735.00000
   profileName: ignore
 - terms: 
@@ -11957,8 +11955,6 @@ concepts:
 - terms: 
   - term: wah
     lang: en
-  - term: wah
-    lang: cs
   freq: 274.00000
   profileName: ignore
 - terms: 
@@ -12966,11 +12962,11 @@ concepts:
   img: img/agreement.jpeg
   freq: 84110.00000
 - terms: 
-  - term: europe
+  - term: Europe
     lang: en
     tts: en-terms/europe.mp3
     pron: ˈjʊərəp
-  - term: evropa
+  - term: Evropa
     lang: cs
     tts: cs-terms/evropa.mp3
   img: img/europe.jpeg
@@ -13091,7 +13087,7 @@ concepts:
   - term: "(např. firemní) zásady"
     lang: cs
     tts: cs-terms/zasady.mp3
-  - term: "(např. zharaniční) politika"
+  - term: "(např. zahraniční) politika"
     lang: cs
     tts: cs-terms/politika.mp3
   img: img/policy.jpeg
@@ -14555,11 +14551,11 @@ concepts:
   img: img/station.jpeg
   freq: 50925.00000
 - terms: 
-  - term: germany
+  - term: Germany
     lang: en
     tts: en-terms/germany.mp3
     pron: ˈʤɜːməni
-  - term: německo
+  - term: Německo
     lang: cs
     tts: cs-terms/nemecko.mp3
   img: img/germany.jpeg
@@ -14894,11 +14890,11 @@ concepts:
   img: img/offer.jpeg
   freq: 47429.00000
 - terms: 
-  - term: india
+  - term: India
     lang: en
     tts: en-terms/india.mp3
     pron: ˈɪndɪə
-  - term: indie
+  - term: Indie
     lang: cs
     tts: cs-terms/indie.mp3
   img: img/india.jpeg
@@ -15589,11 +15585,11 @@ concepts:
   img: img/staff.jpeg
   freq: 43606.00000
 - terms: 
-  - term: egypt
+  - term: Egypt
     lang: en
     tts: en-terms/egypt.mp3
     pron: ˈiːʤɪpt
-  - term: egypt
+  - term: Egypt
     lang: cs
     tts: cs-terms/egyptCs.mp3
   img: img/egypt.jpeg
@@ -16029,11 +16025,11 @@ concepts:
   img: img/september.jpeg
   freq: 41145.00000
 - terms: 
-  - term: ireland
+  - term: Ireland
     lang: en
     tts: en-terms/ireland.mp3
     pron: ˈaɪələnd
-  - term: irsko
+  - term: Irsko
     lang: cs
     tts: cs-terms/irsko.mp3
   img: img/ireland.jpeg
@@ -17033,7 +17029,7 @@ concepts:
     lang: en
     tts: en-terms/midst.mp3
     pron: mɪdst
-  - term: prostřed
+  - term: uprostřed
     lang: cs
   - term: středu
     lang: cs
@@ -18349,7 +18345,7 @@ concepts:
     lang: en
     tts: en-terms/desolation.mp3
     pron: ˌdɛsəˈleɪʃən
-  - term: zpuštění
+  - term: spuštění
     lang: cs
   - term: zoufalství
     lang: cs
@@ -18997,7 +18993,7 @@ concepts:
     pron: ˈskruːtɪni
   - term: přezkoumání
     lang: cs
-  - term: počlivá prohlídka
+  - term: pečlivá prohlídka
     lang: cs
   freq: 5924.00000
   profileName: relax
@@ -19310,7 +19306,7 @@ concepts:
     lang: en
     tts: en-terms/infamy.mp3
     pron: ˈɪnfəmi
-  - term: hamba
+  - term: hanba
     lang: cs
   - term: hanebnost
     lang: cs
@@ -20944,7 +20940,7 @@ concepts:
     lang: en
     tts: en-terms/extirpation.mp3
     pron: ˌɛkstɜːˈpeɪʃən
-  - term: vykořenení
+  - term: vykořenění
     lang: cs
   freq: 685.00000
   profileName: relax
@@ -20993,7 +20989,7 @@ concepts:
     pron: ˈgliːfʊl
   - term: veselý
     lang: cs
-  - term: radnostný
+  - term: radostný
     lang: cs
   freq: 609.00000
   profileName: relax
@@ -21002,7 +20998,7 @@ concepts:
     lang: en
     tts: en-terms/syringe.mp3
     pron: ˈsɪrɪnʤ
-  - term: stříkača
+  - term: stříkačka
     lang: cs
   freq: 582.00000
   profileName: relax
@@ -21020,7 +21016,7 @@ concepts:
     lang: en
     tts: en-terms/aberrations.mp3
     pron: ˌæbəˈreɪʃ(ə)nz
-  - term: poblouznení
+  - term: poblouznění
     lang: cs
   - term: odchylky
     lang: cs
@@ -21149,7 +21145,7 @@ concepts:
     pron: əˈmælgəmeɪt
   - term: sloučit se
     lang: cs
-  - term: fůzovat
+  - term: fúzovat
     lang: cs
   freq: 318.00000
   profileName: relax
@@ -21252,7 +21248,7 @@ concepts:
     lang: en
     tts: en-terms/detractor.mp3
     pron: dɪˈtræktə
-  - term: krityk
+  - term: kritik
     lang: cs
   - term: pomlouvač
     lang: cs
@@ -21325,7 +21321,7 @@ concepts:
     lang: en
     tts: en-terms/vilification.mp3
     pron: ˌvɪlɪfɪˈkeɪʃən
-  - term: očeňování
+  - term: očerňování
     lang: cs
   - term: pomlouvání
     lang: cs
@@ -21652,7 +21648,7 @@ concepts:
   - term: cherish
     lang: en
     tts: en-terms/cherish.mp3
-  - term: chovat (v sdrci)
+  - term: chovat (v srdci)
     lang: cs
   - term: střežit
     lang: cs
@@ -22316,11 +22312,11 @@ concepts:
   - term: politický
     lang: cs
   freq: 117424.00000
-##  paris   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
+##  Paris   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
-  - term: paris
+  - term: Paris
     lang: en
-  - term: paříž
+  - term: Paříž
     lang: cs
   freq: 116402.00000
 ##  probably   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
@@ -22662,17 +22658,13 @@ concepts:
   - term: přepravu
     lang: cs
   freq: 96435.00000
-##  scarcely   ############################################################## 5 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
+##  scarcely   ############################################################## no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: scarcely
     lang: en
   - term: sotva
     lang: cs
   - term: stěží
-    lang: cs
-  - term: jen stěží
-    lang: cs
-  - term: těžko
     lang: cs
   freq: 95979.00000
 ##  ex   #################################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
@@ -22684,15 +22676,11 @@ concepts:
   - term: bývalý
     lang: cs
   freq: 95127.00000
-##  charles   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  Charles   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing
 - terms: 
-  - term: charles
+  - term: Charles
     lang: en
-  - term: charles
-    lang: cs
-  - term: karlovy
-    lang: cs
-  - term: karel
+  - term: Karel
     lang: cs
   freq: 95049.00000
 ##  written   ############################################################### no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
@@ -22962,8 +22950,6 @@ concepts:
 - terms: 
   - term: et
     lang: en
-  - term: et
-    lang: cs
   freq: 79225.00000
   profileName: ignore
 ##  threw   ################################################################# no img|t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
@@ -23186,7 +23172,7 @@ concepts:
 - terms: 
   - term: jack
     lang: en
-  - term: zvedkák
+  - term: zvedák
     lang: cs
   - term: žolík
     lang: cs
