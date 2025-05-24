@@ -21,8 +21,8 @@ public class Pack {
 
 	Path destRootFolder = Paths.get("/tmp/work/pkg")
 	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
-	ConfHelper cfgHelper = ConfHelper.instance
-	@Lazy ConfigObject cfg = cfgHelper.cfg
+	ConfHelper cfgHelper = new ConfHelper()
+	@Lazy ConfigObject cfg = cfgHelper.config
 
 	@Lazy List<String> allPackageNames = packageRootPath.toFile().listFiles().collect {it.name}
 
@@ -200,11 +200,15 @@ public class Pack {
 		
 		(0..7).stream().parallel()
 				.forEach( {int p->
-					if (p == 2)
+					if (2 == 2)
 					new Pack().with {
 						//allPackages.each {println it}
-						//Collection<PackInfo> pkgs = allPackages.values()
-						Collection<PackInfo> pkgs = [allPackages["DuckTales"]]
+						Collection<PackInfo>  pkgs
+						synchronized (Pack.class ) {
+							pkgs = allPackages.values()
+						}
+						
+						//Collection<PackInfo> pkgs = [allPackages["DuckTales"]]
 						//Collection<PackInfo> pkgs = [allPackages.values()[p]]
 						pkgs.each { PackInfo i->
 							println '*'*100

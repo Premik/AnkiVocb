@@ -18,6 +18,8 @@ public class Corpus {
 	Map<String, BigDecimal> wordFreq = new HashMap(5000)
 	Set<String> phrases = new HashSet<String>(2000)
 	WordNormalizer wn = new WordNormalizer()
+	
+	ConfHelper cfgHelper = new ConfHelper()
 
 	@Lazy public String[] sortedByFreq = {
 		wordFreq.keySet().sort { String a, String b->
@@ -120,10 +122,10 @@ public class Corpus {
 	}
 
 	void loadWiki() {
-		importWikiWordList(ConfHelper.instance.resolveRes("Wiktionary_Frequency lists_PG_2006_04_1-10000 - Wiktionary"))
-		importWikiWordList(ConfHelper.instance.resolveRes("Wiktionary Frequency lists_PG_2006_04_10001-20000 - Wiktionary"))
-		importWikiWordList(ConfHelper.instance.resolveRes("Wiktionary Frequency lists_PG_2006_04_20001-30000 - Wiktionary"))
-		importWikiWordList(ConfHelper.instance.resolveRes("Wiktionary Frequency lists_PG_2006_04_30001-40000 - Wiktionary"))
+		importWikiWordList(cfgHelper.resolveRes("Wiktionary_Frequency lists_PG_2006_04_1-10000 - Wiktionary"))
+		importWikiWordList(cfgHelper.resolveRes("Wiktionary Frequency lists_PG_2006_04_10001-20000 - Wiktionary"))
+		importWikiWordList(cfgHelper.resolveRes("Wiktionary Frequency lists_PG_2006_04_20001-30000 - Wiktionary"))
+		importWikiWordList(cfgHelper.resolveRes("Wiktionary Frequency lists_PG_2006_04_30001-40000 - Wiktionary"))
 	}
 
 	void load12Dicts() {

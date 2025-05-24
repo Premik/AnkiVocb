@@ -8,7 +8,7 @@ class ConfTest {
 
 
 	@Test void resolvePlainCpRes() {	 
-		assert ConfHelper.instance.resolveResExactName("Plaintext.txt")?.text == "test"
+		assert new ConfHelper().resolveResExactName("Plaintext.txt")?.text == "test"
 	}
 	
 	//twoFilesArchive

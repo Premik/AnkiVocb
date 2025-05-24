@@ -5,9 +5,7 @@ import static java.lang.System.getenv
 
 class ConfHelper {
 
-	public static ConfHelper instance = new ConfHelper()
-	@Lazy public static ConfigObject cfg = instance.config
-
+	
 	public  final List<String> resExplicitExtensions = ['.conf', '.html']
 	public  final List<String> cpFolders = [
 		'',

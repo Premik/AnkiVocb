@@ -21,9 +21,9 @@ import vocb.template.Render
 //@CompileStatic
 public class Data2Crowd {
 
-    ConfHelper cfgHelper = ConfHelper.instance
+    ConfHelper cfgHelper = new ConfHelper()
     @Lazy
-    ConfigObject cfg = cfgHelper.cfg
+    ConfigObject cfg = cfgHelper.config
 
     Path rootPath = Paths.get("/data/src/AnkiVocb")
     Path dataPath = rootPath.resolve("db")
@@ -36,7 +36,7 @@ public class Data2Crowd {
 
     @Lazy
     Render render = {
-        new Render(cfgHelper: cfgHelper).tap {
+        new Render(cfgHelper: cfgHelper).tap {			
             assert info?.backgroundName
             extraVars.putAll([
                     info         : info,
