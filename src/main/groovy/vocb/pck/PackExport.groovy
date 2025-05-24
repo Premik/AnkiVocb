@@ -239,8 +239,8 @@ public class PackExport {
 
 		String pkgName = info.displayName
 		//pkgName= "First1000"
-		pl("sentences-db.txt", cardsFieldsInDb(pkgName).collect {List flds->flds[2]}.toUnique())
-		pl("words-db.txt", cardsFieldsInDb(pkgName).collect {List flds->flds[0]}.toUnique())
+		//pl("sentences-db.txt", cardsFieldsInDb(pkgName).collect {List flds->flds[2]}.toUnique())
+		//pl("words-db.txt", cardsFieldsInDb(pkgName).collect {List flds->flds[0]}.toUnique())
 
 		pl("words-exported.txt", exportedWords)
 		pl("words-ignored.txt",ignoredConceptsFromExamples().map {it.firstTerm}.toList().toUnique())

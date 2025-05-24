@@ -216,8 +216,9 @@ public class Data2Crowd {
 	@CompileDynamic
 	private void prepareVocbModel() {
 
-		String pfx = cfgHelper.config.packageRootPrefix?:"Vocb::"
-		vocbModel.parser.deckName =   "${pfx}${info.displayName}"
+		String rootPfx = cfgHelper.config.packageRootPrefix?:"Vocb"
+		vocbModel.parser.deckName=[rootPfx, info.groupName, info.displayName].findAll().join("::") 
+		
 		vocbModel.parser.deckCrowdUuid = info.uuid
 		renderDeckDescriptionTemplate()
 

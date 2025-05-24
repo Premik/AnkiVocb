@@ -71,6 +71,11 @@ public class PackInfo {
 
 	@Lazy public String name = treeConf.name
 	
+	@Lazy public String groupName= {
+		if (treeConf.isRoot) return ""
+		return treeConf.parent.name
+	}()
+	
 
 	@Deprecated
 	public List<String> getExcludeWordsFromPackageNames() {
