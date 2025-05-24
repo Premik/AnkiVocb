@@ -44,9 +44,9 @@ public class PackInfo {
 		wn.sentences(sentencesText)
 	}
 
-	@Lazy List<String> wordList = {
+	@Lazy Collection<String> wordList = {
 		if (!Files.exists(wordsPath)) return [] as List<String>
-		return wordsPath.toFile().text.split(/\s+/) as List<String>
+		return wordsPath.toFile().text.split(/\s+/) as LinkedHashSet<String>
 	}()
 
 	@Lazy Set<String> allSentenceWords = {
