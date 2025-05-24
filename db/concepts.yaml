@@ -547,6 +547,7 @@ concepts:
   examples: 
   - term: We were studying in class as usual.
     lang: en
+    tts: We were studying in class as usual.mp3
   - term: Učili jsme se ve třídě jako obvykle.
     lang: cs
     tts: Ucili jsme se ve tride jako obvykle.mp3
@@ -903,6 +904,7 @@ concepts:
   examples: 
   - term: Who does not like noodles?
     lang: en
+    tts: Who does not like noodles.mp3
   - term: Kdo nemá rád nudle?
     lang: cs
     tts: Kdo nema rad nudle.mp3
@@ -932,8 +934,9 @@ concepts:
     lang: cs
     tts: ma.mp3
   examples: 
-  - term: He's got a lot of energy.
+  - term: He has got a lot of energy.
     lang: en
+    tts: He has got a lot of energy.mp3
   - term: Má hrozně moc energie.
     lang: cs
     tts: Ma hrozne moc energie.mp3
@@ -954,6 +957,7 @@ concepts:
   examples: 
   - term: So let me go.
     lang: en
+    tts: So let me go.mp3
   - term: Tak mě nechte jít.
     lang: cs
     tts: Tak me nechte jit.mp3
@@ -974,6 +978,7 @@ concepts:
   examples: 
   - term: If so, you cannot proceed..
     lang: en
+    tts: If so, you cannot proceed.mp3
   - term: Pokud ano, nemůžeš pokračovat..
     lang: cs
     tts: Pokud ano, nemuzes pokracovat.mp3
@@ -994,6 +999,7 @@ concepts:
   examples: 
   - term: And what do the birds say?
     lang: en
+    tts: And what do the birds say.mp3
   - term: A co říkají ptáci?
     lang: cs
     tts: A co rikaji ptaci.mp3
@@ -1014,6 +1020,7 @@ concepts:
   examples: 
   - term: It could be made of gold and diamonds.
     lang: en
+    tts: It could be made of gold and diamonds.mp3
   - term: Mohly by být vyrobeny ze zlata a drahých kamenů.
     lang: cs
     tts: Mohly by byt vyrobeny ze zlata a drahych kamenu.mp3
@@ -1031,6 +1038,7 @@ concepts:
   examples: 
   - term: Run into the nearest town.
     lang: en
+    tts: Run into the nearest town.mp3
   - term: Utíkej do nejbližšího města?
     lang: cs
     tts: Utikej do nejblizsiho mesta.mp3
@@ -1051,6 +1059,7 @@ concepts:
   examples: 
   - term: So you did do it?
     lang: en
+    tts: So you did do it.mp3
   - term: Takže jsi to udělal?
     lang: cs
     tts: Takze jsi to udelal.mp3
