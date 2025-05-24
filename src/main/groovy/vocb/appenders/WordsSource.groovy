@@ -131,8 +131,8 @@ public class WordsSource {
 			String tx = new File("/data/src/AnkiVocb/pkg/$sourceName/sentences.txt").text
 			
 			
-			////fromText(tx)
-			fromOwnSamples()
+			fromText(tx)
+			//fromOwnSamples()
 			return
 			wn.phraseFreqs(tx,2, 3)
 			   .collectEntries{ String w, BigDecimal fqInText-> [w, corp.phraseFreq(w)*fqInText]}

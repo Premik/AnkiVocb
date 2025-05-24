@@ -10745,6 +10745,110 @@ concepts:
     tts: cs-terms/hlina.mp3
   img: img/clay.jpeg
   freq: 12342.00000
+##  mary   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: mary
+    lang: en
+  - term: marie
+    lang: cs
+  img: img/mary.jpeg
+  freq: 108633.00000
+##  appear   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: appear
+    lang: en
+  - term: objeví
+    lang: cs
+  - term: jeví
+    lang: cs
+  img: img/appear.jpeg
+  freq: 106357.00000
+##  teacher   ############################################################### t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: teacher
+    lang: en
+  - term: učitel
+    lang: cs
+  - term: učitelka
+    lang: cs
+  img: img/teacher.jpeg
+  freq: 71114.00000
+##  reply   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: reply
+    lang: en
+  - term: odpovědět
+    lang: cs
+  img: img/reply.jpeg
+  freq: 48991.00000
+##  laugh   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: laugh
+    lang: en
+  - term: smích
+    lang: cs
+  - term: smát se
+    lang: cs
+  img: img/laugh.jpeg
+  freq: 46118.00000
+##  everywhere   ############################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: everywhere
+    lang: en
+  - term: všude
+    lang: cs
+  - term: kamkoliv
+    lang: cs
+  img: img/everywhere.jpeg
+  freq: 31501.00000
+##  eager   ################################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: eager
+    lang: en
+  - term: dychtivý
+    lang: cs
+  - term: nedočkavý
+    lang: cs
+  img: img/eager.jpeg
+  freq: 26773.00000
+##  lingered   ############################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: lingered
+    lang: en
+  - term: prodlévat
+    lang: cs
+  - term: loudat se
+    lang: cs
+  img: img/lingered.jpeg
+  freq: 12188.00000
+##  patiently   ############################################################# t0:tts:missing|t0:pron:missing|t1:tts:missing
+- terms: 
+  - term: patiently
+    lang: en
+  - term: trpělivě
+    lang: cs
+  img: img/patiently.jpeg
+  freq: 11901.00000
+##  lamb   ################################################################## t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: lamb
+    lang: en
+  - term: beránek
+    lang: cs
+  - term: jehně
+    lang: cs
+  img: img/lamb.jpeg
+  freq: 9863.00000
+##  fleece   ################################################################ t0:tts:missing|t0:pron:missing|t1:tts:missing|t2:tts:missing
+- terms: 
+  - term: fleece
+    lang: en
+  - term: rouno
+    lang: cs
+  - term: ovčí vlna
+    lang: cs
+  img: img/fleece.jpeg
+  freq: 2219.00000
 
 examples: 
 - terms: 
