@@ -21,7 +21,7 @@ public class TranslationAppender {
 	Translator trn = pyTrn
 
 	int sleep =0
-	int limit= 100
+	int limit= 0
 
 	@Lazy
 	Manager dbMan = new Manager()
@@ -44,7 +44,7 @@ public class TranslationAppender {
 				dbMan.save()				
 			}
 			
-			if (i>limit) {
+			if (i>limit && limit>0) {
 				println color("Limit reached", RED)
 				break
 			}
