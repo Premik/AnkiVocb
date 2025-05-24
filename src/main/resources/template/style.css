@@ -3,19 +3,19 @@
   box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.68);
  }
  
-/*#backgroundImg {*/
-.card:after {
+#backgroundImg {
+/*.card:after {*/
     
   content: ' ';
   display: block;
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
+  width: 99%;
+  height: 97%;
   z-index: -1;
-  opacity: 0.3;
-  background-image: url('_JingleBells.jpg');
+  opacity: 0.4;  
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
@@ -24,6 +24,10 @@
   -webkit-background-size: cover;
   background-size: cover;
 
+}
+
+.card {
+  background-color: transparent;
 }
 
  .wrapper {
@@ -36,9 +40,6 @@
    -webkit-flex-flow: row wrap;	
        -ms-flex-flow: row wrap;	
            flex-flow: row wrap;
-  /* justify-content: center;
-    justify-content: space-between;
-   align-items: center; */
    -webkit-box-align: center;
    -webkit-align-items: center;
        -ms-flex-align: center;
@@ -51,12 +52,7 @@
    line-height: 28px;
    text-align: center;
    text-shadow: 2px 2px 3px  #121f1fee, -1px 0 10px #ffffffaf;
-   /*z-index: -2;*/
    
-   /*opacity: 0.9;
-   filter: alpha(opacity=9);*/
-   
-  
  }
  
  .wrapper > * {
@@ -64,33 +60,19 @@
    -webkit-flex: 1 100%;
        -ms-flex: 1 100%;
            flex: 1 100%;
-   /*margin: auto;*/
+  
    margin: 5px;
-   
-  /* min-height: 80px;
-  line-height: 80px; */
-  /* background-color: aqua;*/
   
-  
-   
-   /*vertical-align: middle;*/
  }
  
  
- .foreign {
-   /*background-image: url("ukFlagBlur.png");
-   background-size: contain;
-   background-repeat: no-repeat;*/
+ .foreign {  
    color:rgb(255, 50, 50);
  
    
  }
  
- .native {
-   /*background-image: url("csFlagBlur.png");
-   background-size: 100% 100%;*
-   background-size: contain;
-   background-repeat: no-repeat;*/
+ .native {   
    color:rgb(50, 255, 50);
  }
  
@@ -106,7 +88,6 @@
  
  
  .hintCover {
-   /*display: none;*/
    visibility:hidden;
  }
  
@@ -131,23 +112,14 @@
  }
  
  .rounded {
-   /* border: 1px 1px 1px 0px black;  */
    border-radius: 18px;
    -moz-border-radius: 18px;
    -webkit-border-radius: 18px;
    border: 0px solid #000000;   
  }
  
- /*
- .native1, .native2 {  
-   line-height: 200px; 
-   background-color: #2600ffe8;  
- }*/
- 
  .tags {
    color: yellow;
-  /* font-size: 1.6em;*/
-  /*z-index: 0;*/  
   font-size: 1.3em;
   
  }
@@ -222,7 +194,13 @@
  }
  
  
- .buttonRounded {
+ #hintButton button {
+   background-image: url('_lightBulb.png');
+   background-repeat: no-repeat;
+   background-color: #e0e0e0ff;
+   background-position: center; 
+   /*width: 80px;*/
+   cursor: pointer;
    border: none;
    padding: 30px;
    text-align: center;
@@ -231,18 +209,6 @@
    font-size: 16px;
    margin: 4px 2px;
    border-radius: 50%;
- 
- }
- 
- #hintButton button {
-   background-image: url('_lightBulb.png');
-   background-repeat: no-repeat;
-   background-color: #e0e0e0ff;
-   background-position: center; 
-   /*width: 80px;*/
-   cursor: pointer;
-   
-   /*float: right;*/
   
  }
    

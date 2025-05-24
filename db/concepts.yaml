@@ -33,6 +33,7 @@ concepts:
   - term: ve
     lang: en
   state: ignore
+  origins: ["conceptDbSamples"]
 - terms: 
   - term: the
     lang: en
@@ -10245,7 +10246,7 @@ concepts:
     tts: cs-terms/prijela.mp3
   img: img/arrived.jpeg
   freq: 35735.00000
-  origins: ["corpus"]
+  origins: ["corpus", "conceptDbSamples"]
 ##  riding   ################################################################ t0:pron:missing
 - terms: 
   - term: riding
@@ -10270,6 +10271,65 @@ concepts:
     tts: cs-terms/pan.mp3
   img: img/gent.jpeg
   freq: 2127.00000
+  origins: ["conceptDbSamples"]
+##  straight   ############################################################## no img|t0:pron:missing
+- terms: 
+  - term: straight
+    lang: en
+    tts: en-terms/straight.mp3
+  - term: rovně
+    lang: cs
+    tts: cs-terms/rovne.mp3
+  - term: přímo
+    lang: cs
+    tts: cs-terms/primo.mp3
+  freq: 49112.00000
+  origins: ["conceptDbSamples"]
+##  jumping   ############################################################### no img|t0:pron:missing
+- terms: 
+  - term: jumping
+    lang: en
+    tts: en-terms/jumping.mp3
+  - term: skákání
+    lang: cs
+    tts: cs-terms/skakani.mp3
+  - term: skáčou
+    lang: cs
+    tts: cs-terms/skacou.mp3
+  freq: 6974.00000
+  origins: ["conceptDbSamples"]
+##  monkeys   ############################################################### no img|t0:pron:missing
+- terms: 
+  - term: monkeys
+    lang: en
+    tts: en-terms/monkeys.mp3
+  - term: opice
+    lang: cs
+    tts: cs-terms/opice.mp3
+  freq: 4518.00000
+  origins: ["conceptDbSamples"]
+##  mama   ################################################################## no img|t0:pron:missing
+- terms: 
+  - term: mama
+    lang: en
+    tts: en-terms/mama.mp3
+  - term: máma
+    lang: cs
+    tts: cs-terms/mama-cs.mp3
+  freq: 1931.00000
+  origins: ["conceptDbSamples"]
+##  bumped   ################################################################ no img|t0:pron:missing
+- terms: 
+  - term: bumped
+    lang: en
+    tts: en-terms/bumped.mp3
+  - term: narazil
+    lang: cs
+    tts: cs-terms/narazil.mp3
+  - term: vrazil
+    lang: cs
+    tts: cs-terms/vrazil.mp3
+  freq: 1000.00000
   origins: ["conceptDbSamples"]
 
 examples: 
@@ -13535,3 +13595,66 @@ examples:
   - term: Země je bílá.
     lang: cs
     tts: cs-samples/Zeme je bila.mp3
+- terms: 
+  - term: Five little monkeys.
+    lang: en
+    tts: en-samples/Five little monkeys.mp3
+  - term: Pět malých opic.
+    lang: cs
+    tts: cs-samples/Pet malych opic.mp3
+- terms: 
+  - term: Jumping on the bed.
+    lang: en
+    tts: en-samples/Jumping on the bed.mp3
+  - term: Skákají na posteli.
+    lang: cs
+    tts: cs-samples/Skakaji na posteli.mp3
+- terms: 
+  - term: One fell down.
+    lang: en
+    tts: en-samples/One fell down.mp3
+  - term: Jeden spadl dolů.
+    lang: cs
+    tts: cs-samples/Jeden spadl dolu.mp3
+- terms: 
+  - term: Bumped his head.
+    lang: en
+    tts: en-samples/Bumped his head.mp3
+  - term: Narazil si hlavu.
+    lang: cs
+    tts: cs-samples/Narazil si hlavu.mp3
+- terms: 
+  - term: Mama called the doctor.
+    lang: en
+    tts: en-samples/Mama called the doctor.mp3
+  - term: Máma zavolala doktorovi.
+    lang: cs
+    tts: cs-samples/Mama zavolala doktorovi.mp3
+- terms: 
+  - term: "And the doctor said:"
+    lang: en
+    tts: en-samples/And the doctor said.mp3
+  - term: "A doktor řekl:"
+    lang: cs
+    tts: cs-terms/A doktor rekl.mp3
+- terms: 
+  - term: No more monkeys jumping on the bed.
+    lang: en
+    tts: en-samples/No more monkeys jumping on the bed.mp3
+  - term: Už žádné další opice skákající na posteli.
+    lang: cs
+    tts: cs-samples/Uz zadne dalsi opice skakajici na posteli.mp3
+- terms: 
+  - term: No little monkeys.
+    lang: en
+    tts: en-samples/No little monkeys.mp3
+  - term: Žádné malé opice.
+    lang: cs
+    tts: cs-samples/Zadne male opice.mp3
+- terms: 
+  - term: Put those monkeys straight back to the bed.
+    lang: en
+    tts: en-samples/Put those monkeys straight back to the bed.mp3
+  - term: Dejte ty opice rovnou zpátky do postele.
+    lang: cs
+    tts: cs-samples/Dejte ty opice rovnou zpatky do postele.mp3
