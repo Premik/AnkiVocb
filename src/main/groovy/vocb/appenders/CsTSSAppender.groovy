@@ -20,15 +20,15 @@ public class CsTSSAppender {
 		dbMan.load()
 		int i = 0;
 		dbMan.withTermsByLang("cs", true) {Concept c, Term t->
-			i++;
-			if (i < 10) {
-				if (!dbMan.linkedMediaExists(t.tts) ) {
+						
+				if (!dbMan.linkedMediaExists(t.tts) && i <10 ) {
+					i++;
 					t.tts = dbMan.resolveMedia(t.term, "mp3") { Path p ->
 						ttsCz.synth(t.term, "violka", p.toString() )
 						dbMan.save()
 					}
 				}
-			}
+			
 		}
 	}
 
