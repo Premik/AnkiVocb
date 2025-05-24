@@ -4,14 +4,16 @@ import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import groovy.test.GroovyAssert
 
-class DomainTest {
+class CrowdModelTest {
 	
 	VocbModel vocbModel = new VocbModel()
+	
+	TemplateModel tmp1 = new TemplateModel(name: "test", afmt: "answer formaate", qfmt: "questionFormat")
 
 	NoteModel testModel = new NoteModel(name:"testModel", flds: [
 		new FieldModel(name:"f1"),
 		new FieldModel(name:"f2")
-	])
+	], tmpls: [tmp1])
 
 
 	
