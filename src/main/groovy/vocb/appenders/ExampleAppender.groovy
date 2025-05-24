@@ -98,7 +98,7 @@ public class ExampleAppender {
 
 
 	public static void main(String[] args) {
-		ExampleAppender a = new ExampleAppender()
+		ExampleAppender a = new ExampleAppender()		
 		//a.run()
 		a.reuseExisting()
 
