@@ -150,21 +150,18 @@ public class ProfileSupport {
 	}
 
 
-
-
-
-
 	static void main(String... args) {
 		new ProfileSupport().with {
 			//println listProfiles()
-			selectedProfile = "tets4"
-			deckName = "JingleBells"
+			selectedProfile = "Honzik"
+			deckName = "Jingle Bells"
+			//deckName = "Five Little Monkeys"
 			println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
 
 
 			List<Long> toDelete = nodeIdsMissingNativeAlt(ankivocbCards())
 			println toDelete
-			//dropCardsByIdList(toDelete)
+			dropCardsByIdList(toDelete)
 			//println selectedDeckId
 		}
 	}

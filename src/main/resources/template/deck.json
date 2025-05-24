@@ -4,12 +4,12 @@
         
     ],
     "crowdanki_uuid": "aca40470-8082-11ea-b853-d8cb8a536b75",
-    "deck_config_uuid": "0f934c16-70f8-11ea-a10e-d8cb8a536b75",
+    "deck_config_uuid": "ankivocb-2020-11ea-a10e-d8cb8a536b75",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
             "autoplay": true,
-            "crowdanki_uuid": "0f934c16-70f8-11ea-a10e-d8cb8a536b75",
+            "crowdanki_uuid": "ankivocb-2020-11ea-a10e-d8cb8a536b75",
             "dyn": false,
             "lapse": {
                 "delays": [
@@ -21,7 +21,7 @@
                 "mult": 0.4
             },
             "maxTaken": 60,
-            "name": "Default",
+            "name": "AnkiVocb",
             "new": {
                 "bury": true,
                 "delays": [

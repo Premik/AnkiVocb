@@ -198,7 +198,7 @@ public class Pack {
 
 	public static void main(String[] args) {
 		new Pack().with {
-			//pkgName = "JingleBells"			
+			//info.name = "JingleBells"			
 			info.name = "FiveLittleMonkeys"
 		 
 			exportSentences()
