@@ -34,7 +34,7 @@ public class ExampleComparator {
 	}
 	
 	
-	Collection<String> wordsMatchingPairs(Collection<String> wordsWithoutBrackets) {
+	Collection<String> wordsMatchingWithoutBrackets(Collection<String> wordsWithoutBrackets) {
 		words.findAll { String w->
 			wordsWithoutBrackets.contains(wn.stripBracketsOut(w))			
 		}
@@ -54,11 +54,12 @@ public class ExampleComparator {
 
 	void setSentence(String s) {
 		example = null
+		s= s?.uncapitalize()
 		words = WordNormalizer.instance.tokens(s, false).toList() as LinkedHashSet
 	}
 
 	void setExample(Example e) {		
-		sentence = e?.firstTerm?.uncapitalize()
+		sentence = e?.firstTerm
 		example= e
 	}
 

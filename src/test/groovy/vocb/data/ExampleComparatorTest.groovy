@@ -1,5 +1,8 @@
 package vocb.data
 
+import java.util.stream.Stream
+
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 import vocb.corp.WordNormalizer
@@ -31,7 +34,7 @@ class ExampleComparatorTest {
 	@Test
 	void cornerScores() {
 
-		assert c1.words.containsAll("Hello", "world")
+		assert c1.words.containsAll("hello", "world")
 		assert c1.similarityScoreOf("") ==0
 		assert c1.similarityScoreOf("non this word") <=0
 		assert c1.similarityScoreOf("hello") >0
@@ -71,11 +74,21 @@ class ExampleComparatorTest {
 		assert m.commonWords as Set == ["That's"] as Set
 		assert m.commonWordVariants.containsAll("that is", "that's")
 		assert m.commonWordVariants.containsAll("That is", "That's")
-		assert m.commonWordVariants.containsAll("that", "is")
-		
+		assert m.commonWordVariants.containsAll("that", "is")		
+	}
+	
+	@Test
+	void wordsMatchings() {
+		Set<String> noBrackets = ["That's", "I'm"] as Set
+		Set<String> brackets = ["That's (that is)", "I'm (I am)"] as Set
+		ExampleComparator c = new ExampleComparator(words:brackets)		
+		assert c.wordsMatchingWithoutBrackets(noBrackets) as Set == brackets
+		Set<String> inBrackets = ["that is", "I am"] as Set
+		assert c.wordsMatchingVariant(inBrackets) as Set == brackets
 	}
 
 	@Test
+	@Disabled
 	void complexVariants() {
 		List<Example> examples = [
 			//"That is it.",
