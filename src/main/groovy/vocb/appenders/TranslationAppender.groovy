@@ -6,6 +6,7 @@ import vocb.azure.AzureTranslate
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.data.Term
+import static vocb.Ansi.*
 
 public class TranslationAppender {
 
@@ -100,10 +101,10 @@ public class TranslationAppender {
 	public static void main(String[] args) {
 		new TranslationAppender().with {
 
-			limit = 1
-			//a.translateWords()
-			reuseTranlation()
-			translateExamples()
+			//limit = 1
+			translateWords()
+			//reuseTranlation()
+			//translateExamples()
 
 		}
 

@@ -82,6 +82,7 @@ public class ConceptYamlStorage {
 	}
 
 	void appendBanner(String label, String warnings, StringBuilder sb, int width=70) {		
+		if (!warnings) return
 		if (!label) return
 			sb.append("##  ")
 		sb.append(label)
