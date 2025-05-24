@@ -67,7 +67,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "img",
+                    "name": "foreign",
                     "ord": 0,
                     "rtl": false,
                     "size": 20,
@@ -76,7 +76,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "freq",
+                    "name": "foreignTTS",
                     "ord": 1,
                     "rtl": false,
                     "size": 20,
@@ -85,7 +85,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "foreign",
+                    "name": "foreignExample",
                     "ord": 2,
                     "rtl": false,
                     "size": 20,
@@ -94,7 +94,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "foreignTTS",
+                    "name": "foreignExampleTTS",
                     "ord": 3,
                     "rtl": false,
                     "size": 20,
@@ -103,7 +103,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "foreignExample",
+                    "name": "native",
                     "ord": 4,
                     "rtl": false,
                     "size": 20,
@@ -112,7 +112,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "foreignExampleTTS",
+                    "name": "nativeTTS",
                     "ord": 5,
                     "rtl": false,
                     "size": 20,
@@ -121,7 +121,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "native",
+                    "name": "nativeAlt",
                     "ord": 6,
                     "rtl": false,
                     "size": 20,
@@ -130,7 +130,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "nativeTTS",
+                    "name": "nativeAltTTS",
                     "ord": 7,
                     "rtl": false,
                     "size": 20,
@@ -139,7 +139,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "nativeAlt",
+                    "name": "nativeExample",
                     "ord": 8,
                     "rtl": false,
                     "size": 20,
@@ -148,7 +148,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "nativeAltTTS",
+                    "name": "nativeExampleTTS",
                     "ord": 9,
                     "rtl": false,
                     "size": 20,
@@ -157,7 +157,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "nativeExample",
+                    "name": "img",
                     "ord": 10,
                     "rtl": false,
                     "size": 20,
@@ -166,7 +166,7 @@
                 {
                     "font": "Liberation Sans",
                     "media": [],
-                    "name": "nativeExampleTTS",
+                    "name": "freq",
                     "ord": 11,
                     "rtl": false,
                     "size": 20,
@@ -182,10 +182,10 @@
                     "any",
                     [
                         0,
+                        1,
                         2,
                         3,
                         4,
-                        5,
                         6,
                         8,
                         10
@@ -200,8 +200,8 @@
                         4,
                         6,
                         8,
-                        10,
-                        11
+                        9,
+                        10
                     ]
                 ],
                 [
@@ -213,12 +213,12 @@
                         4,
                         6,
                         8,
-                        10,
-                        11
+                        9,
+                        10
                     ]
                 ]
             ],
-            "sortf": 2,
+            "sortf": 0,
             "tags": [],
             "tmpls": [
                 {
@@ -257,8 +257,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "img",
-                "freq",
                 "foreign",
                 "foreignTTS",
                 "foreignExample",
@@ -268,7 +266,9 @@
                 "nativeAlt",
                 "nativeTTS",
                 "nativeExample",
-                "nativeExampleTTS"
+                "nativeExampleTTS",
+                "img",
+                "freq"
             ],
             "note_model_uuid": "ankivocb-8082-11ea-b853-d8cb8a536b75",
             "data": "",
