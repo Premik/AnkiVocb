@@ -23019,7 +23019,7 @@ concepts:
     lang: cs
   img: img/effort.jpeg
   freq: 86364.00000
-##  understood   ############################################################ no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  understood   ############################################################ t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: understood
     lang: en
@@ -23028,8 +23028,9 @@ concepts:
     lang: cs
   - term: uvědomoval
     lang: cs
+  img: img/understood.jpeg
   freq: 86271.00000
-##  various   ############################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  various   ############################################################### t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: various
     lang: en
@@ -23038,8 +23039,9 @@ concepts:
     lang: cs
   - term: mnohostranný
     lang: cs
+  img: img/various.jpeg
   freq: 85891.00000
-##  drawn   ################################################################# no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
+##  drawn   ################################################################# t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: drawn
     lang: en
@@ -23048,6 +23050,7 @@ concepts:
     lang: cs
   - term: čerpané
     lang: cs
+  img: img/drawn.jpeg
   freq: 85701.00000
 ##  suppose   ############################################################### no img|t0:pron:missing|t1:tts:missing|t2:tts:missing
 - terms: 
