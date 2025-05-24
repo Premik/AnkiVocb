@@ -100,7 +100,7 @@ public class TranslationAppender {
 	public static void main(String[] args) {
 		new TranslationAppender().with {
 
-			limit = 50
+			limit = 20
 			translateWords()
 			//reuseTranlation()
 			translateExamples()
