@@ -27,7 +27,7 @@ class Render {
 	}
 
 	public ConfigObject getTemplates() {
-		renderCfg.templates
+		renderCfg?.templates
 	}
 
 
@@ -47,10 +47,13 @@ class Render {
 		templ.toString()
 	}
 	
-	public String render(ConfigObject renderCfg) {
-		this.renderCfg = renderCfg		
+	public String render(Map renderCfg) {
+		assert renderCfg
+		this.renderCfg = renderCfg				
+		assert templates?.main
+		
 		String mainTemplate = templates.main
-		assert  mainTemplate
+		
 		expandTemplate(mainTemplate)
 	}
 

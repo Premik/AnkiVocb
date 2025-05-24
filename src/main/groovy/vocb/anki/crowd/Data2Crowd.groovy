@@ -17,7 +17,7 @@ public class Data2Crowd {
 
 	Path dataPath= Paths.get("/data/src/AnkiVocb/db/")
 	String destCrowdRootFolder = "/tmp/work/test"	
-	@Lazy Render render = new Render(cfg:cfg)
+	@Lazy Render render = new Render(cfgHelper:cfgHelper)
 
 	BigDecimal[] freqRanges = [
 		0,
@@ -92,11 +92,23 @@ public class Data2Crowd {
 		concept2CrowdNote(c, n)
 	}
 	
-	void renderCardTemplate( ConfigObject renderCardTemplate, NoteModel targetM=vocbModel.noteModel) {		
+	NoteModel renderCardTemplate( ConfigObject renderCardTemplate, NoteModel targetM=vocbModel.noteModel) {		
 		targetM.css = render.render(renderCardTemplate.css)
-		renderCardTemplate.cards.each {
-			println "${it}"
+		List cards = renderCardTemplate.cards
+		assert cards			
+		//Ensure target list as at least same number of elements as the source
+		List<TemplateModel> padded = targetM.tmpls.withEagerDefault { new TemplateModel() }
+		padded[cards.size()-1] //Pad with new template models if needed
+		//assert cards.size() == targetM.tmpls.size()
+		 
+		[cards, targetM.tmpls ].transpose().each {Map card, TemplateModel m-> 
+			m.name = card.name
+			m.afmt = render.render( card.afmt)
+			m.qfmt = render.render( card.qfmt)
+			m.bafmt = card.bafmt
+			m.bqfmt = card.bqfmt			
 		}
+		return  targetM
 		 
 	}
 
