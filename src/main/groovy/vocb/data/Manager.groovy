@@ -2,11 +2,9 @@ package vocb.data
 
 import static vocb.Helper.utf8
 
-import java.math.BigDecimal
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-import java.util.stream.Stream
 
 import vocb.Helper
 
@@ -21,7 +19,7 @@ public class Manager {
 	}()
 	String conceptFilename = "concepts.yaml"
 
-	@Lazy Path mediaPath = {
+	@Lazy Path mediaRootPath = {
 		storagePath.resolve("media")
 	}()
 
@@ -95,26 +93,28 @@ public class Manager {
 	}
 
 
-	public String termd2MediaLink(String mediaName, String mediaExt="", String[] groups=[]) {
+	public String termd2MediaLink(String mediaName, String mediaExt="") {
 		assert mediaName : "The media name is blank"
 		if (mediaExt) mediaExt = ".$mediaExt"
 		"${Helper.word2Key(mediaName)}$mediaExt"
 	}
 
-	public String resolveMedia(String mediaName, String mediaExt, Closure whenNotFound) {
-		String mediaLink = termd2MediaLink(mediaName, mediaExt)
-		if (linkedMediaExists(mediaLink)) return mediaLink
-		whenNotFound(mediaLinkPath(mediaLink))
-		return mediaLink
+	public String resolveMedia(String term, String mediaExt, String group="", Closure whenNotFound) {
+		String mediaLink = termd2MediaLink(term, mediaExt)
+		Path mediaPath = mediaLinkPath(mediaLink, group)
+		if (Files.exists(mediaPath)) return mediaPath
+		mediaPath.toFile().mkdirs()
+		whenNotFound(mediaPath)		
+		return mediaRootPath.relativize(mediaPath)
 	}
 
-	public Path mediaLinkPath(String mediaLink) {
-		mediaPath.resolve(mediaLink).toAbsolutePath()
+	public Path mediaLinkPath(String mediaLink, String group="") {
+		mediaRootPath.resolve(group).resolve(mediaLink).toAbsolutePath()
 	}
 
-	public boolean linkedMediaExists(String mediaLink) {
+	public boolean linkedMediaExists(String mediaLink, String group="") {
 		if (!mediaLink) return false
-		Files.exists(mediaLinkPath(mediaLink))
+		Files.exists(mediaLinkPath(mediaLink, group))
 	}
 
 	public String save(Path path= conceptsPath) {
@@ -167,7 +167,7 @@ public class Manager {
 		}
 		println "${'-'*80}"
 		println "Not used:"
-		mediaPath.toFile().eachFile { File f->
+		mediaRootPath.toFile().eachFile { File f->
 			if ( !grp.containsKey(f.name)) {
 				println "rm -f '${f}'"
 
@@ -192,6 +192,7 @@ public class Manager {
 		 println singular
 		 }
 		 }*/
+		
 		println "${'-'*80}"
 	}
 
