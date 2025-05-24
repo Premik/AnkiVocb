@@ -1,9 +1,10 @@
-package vocb
+package vocb.pck
 
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.Map.Entry
 
+import vocb.Ansi
 import vocb.anki.crowd.Data2Crowd
 import vocb.corp.WordNormalizer
 import vocb.data.Concept
@@ -35,7 +36,7 @@ public class Pack {
 
 	@Lazy Data2Crowd d2c = new Data2Crowd (destCrowdRootFolder: destPath.toString(), pkgName : pkgName).tap {		
 		//staticMedia.add backgroundName
-		
+		render.extraVars.add( pkgName: pkgName, pkgDisplayName:pkgDisplayName )
 	}
 
 	@Lazy Manager dbMan = d2c.dbMan
