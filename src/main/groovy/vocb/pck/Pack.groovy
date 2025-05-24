@@ -45,7 +45,7 @@ public class Pack {
 					treeConf: tc).tap {
 						tc.obj= it
 					}
-					
+
 			return pi
 		}
 	}()
@@ -53,109 +53,66 @@ public class Pack {
 
 
 	WordNormalizer wn = new WordNormalizer()
-	
-	
-	
+
+
+	@Memoized
+	PackExport packExportOf(PackInfo info) {
+		assert info
+		ConfHelper cfgHelper = new ConfHelper()
+		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
+		return new PackExport(data2crowd: d2c, info:info)
+	}
 
 	void doExport(PackInfo info) {
 		assert info
 		File pkgFile = info.treeConf.path.toFile()
-		ConfHelper cfgHelper = new ConfHelper()
-		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
-		PackExport pe = new PackExport(dbMan: d2c.dbMan, info:info)
-		cfgHelper.extraLookupFolders.add(pkgFile)
-		d2c.export(pe.export())
-		cfgHelper.extraLookupFolders.remove(pkgFile)
-	}
-	
-	@Deprecated
-	@CompileDynamic
-	void doExportOld(PackInfo info) {
-		assert info
-		File pkgFile = info.treeConf.path.toFile()
-		cfgHelper.extraLookupFolders.add(pkgFile)
-		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
-		LinkedHashSet<Example> exportExamples = [] as LinkedHashSet
-		//if (info.name == first100) exportFirst1000(d2c)
-		if (info.sentences) {
-			collectSentencesForExport(info.sentencesText, d2c.dbMan, exportExamples)//Collect best example sentences
-			if (info.strictlyWordlist) {
-				//Don't add new words from sentences, only exports words in the wordlist
-				d2c.exportExamplesToCrowdStrict(exportExamples, info.wordList as HashSet<String>)
-			} else {
-				//Export all words from sentences
-				d2c.exportExamplesToCrowd(exportExamples)
-			}
-		}
-		if (info.wordList && !info.strictlyWordlist) {
-			//Word list (with no examples)
-			d2c.exportWordsToCrowd(info.wordList)
-		}
-		cfgHelper.extraLookupFolders.remove(pkgFile)
-	}
-
-	@Deprecated
-	@CompileDynamic
-	void collectSentencesForExport(String text, Manager dbMan, LinkedHashSet<Example> exportExamples ) {
-		assert text
-		dbMan.withBestExample(text) { Example e, String sen, Set<String> com, Set<String> mis->
-
-			if (!mis)  { //Exact match, jsut export
-				println color(sen, BOLD)
-				exportExamples.add(e)
-				return
-			}
-
-			String col = NORMAL
-			if (mis.size() > 1 || !e)  {
-				col = RED
-			} else {
-				exportExamples.add(e)
-			}
-			println "${color(sen, col)} -> ${color(e?.firstTerm, BLUE)} ${color(mis.join(' '), MAGENTA)}"
+		packExportOf(info).with {
+			confHelper.extraLookupFolders.add(pkgFile)
+			data2crowd.export(export())
+			confHelper.extraLookupFolders.remove(pkgFile)
 		}
 	}
 
+	Set<String> exportedWordsOf(String ... names) {
+		names
+				.collectMany {pkgsByName(it)}
+				.findAll()
+				.collect {packExportOf(it)}
+				.collectMany { it.exportedWords } as LinkedHashSet				
+				
+	}
 
 
 	void findFirst1000() {
-		PackInfo info = pkgsByName(first100)?.first()
+		Set<String> includeWords = exportedWordsFromAllPackages()
+		Set<String> exlucedWords = exportedWordsOf(first100, "Supa")		
+		println "-"*100
+
 		
-		assert info : "$first100 pkg not found"
-		ConfHelper cfgHelper = new ConfHelper()
-		Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
-		//Words from the whole db without words from any package
-		Set<String> pkgWords = wn.lemming(wordsFromAllPackages(allPackInfos - info).stream())
-				.collect(Collectors.toSet())
-				
-		//pkgWords.findAll {it.startsWith("cer")}
-		//.each {println it}
-				println "-"*100
-		println findAllPacksWithWord("cert")
-		return
-
-
-		Set<String> wordsToExport = d2c.dbMan.db.concepts
-				.findAll { Concept c->
-					if (c.ignore) return false
-
-					return !pkgWords.contains(wn.stripBracketsOut(c.firstTerm))
-				}
-				.collect {it.firstTerm}
-				.toSet()
-
-
-		wordsToExport.each {println it}
-		//d2c.info.@$wordList = wordsToExport as List<String>
-		//Example candidates. Any example from db which contains a word-to-export
-		List<String> exCand = wordsToExport
-				.collect {d2c.dbMan.examplesByFirstTermWords[it].collect{it.firstTerm}}
-				.flatten()
-				.toUnique() as List<String>
-		exCand.each {println it}
-		//Compose the "sentences.txt"
-		//d2c.info.@$sentences= exCand.join("\n")
+		
 	}
+
+	/*Stream<String> wordsFromPackages(List<PackInfo> infos) {
+	 ConfHelper cfgHelper = new ConfHelper()
+	 infos.stream()
+	 .flatMap { PackInfo info->
+	 Data2Crowd d2c = new Data2Crowd (info : info, cfgHelper:cfgHelper)
+	 //Words from the whole db without words from any package
+	 //wn.lemming(wordsFromAllPackages(packs).stream())
+	 }
+	 }*/
+
+
+	void findBasicWords() {
+		//def l = exportedWordsOf("Basic") - exportedWordsOf("Simple")
+		def l = exportedWordsOf("SimpleWords")
+		println l
+		 l.each {
+			
+			new File("/tmp/work/1.txt") <<"$it\n"
+		 } 
+	}
+
 
 	static Pack buildFromRootPath(Path path) {
 		assert path
@@ -191,10 +148,12 @@ public class Pack {
 
 		println "Done"
 	}
-	
 
-	public List<PackInfo>  pkgsByName(String name) {
-		allPackInfos.findAll {it.treeConf.name.containsIgnoreCase(name)}
+
+	public List<PackInfo>  pkgsByName(String ... names) {
+		allPackInfos.findAll { PackInfo pi->
+			names.any {String name-> pi.treeConf.name.containsIgnoreCase(name)}
+		}
 	}
 
 
@@ -202,20 +161,26 @@ public class Pack {
 		export(pkgsByName(name))
 	}
 
-	Set<String> wordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
-		pkgInfos.collect {it.allWords}.flatten().sort() as Set<String>
-	}
 	
 	Set<String> exportedWordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
-		pkgInfos.collect {it.allWords}.flatten().sort() as Set<String>
+		pkgInfos.collect {packExportOf(it)}
+		.collectMany { it.exportedWords }
+		.toSet()		
 	}
 	
+	Set<String> wordsFromAllPackages( List<PackInfo> pkgInfos = allPackInfos) {
+		pkgInfos.collectMany {it.allWords}.toSet()
+	}
+	
+	
+	@Deprecated
 	List<PackInfo> findAllPacksWithAnyWord(List<PackInfo> pkgInfos = allPackInfos, Closure wordFilter) {
 		pkgInfos.findAll { PackInfo pi->
 			pi.allWords.any (wordFilter)
 		}
 	}
-	
+
+	@Deprecated
 	List<PackInfo> findAllPacksWithWord(String word, List<PackInfo> pkgInfos = allPackInfos) {
 		findAllPacksWithAnyWord(pkgInfos) { String w->
 			w.containsIgnoreCase(word)
@@ -229,14 +194,15 @@ public class Pack {
 
 
 	public static void main(String[] args) {
-		
+
 		new Pack().tap { Pack p->
-			
 
 
-			//p.exportByName("Basic")
+
+			//p.exportByName("a")
 			//findFirst1000()
-			p.export()
+			//p.export()
+			findBasicWords()
 		}
 		println "Done"
 	}
