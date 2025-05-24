@@ -9623,1605 +9623,2928 @@ concepts:
   state: ignoreImage
   freq: 121764.50000
   origins: ["corpus", "conceptDbSamples"]
-##  six   ################################################################### ▃ 37%
+##  six   ################################################################### ▄ 45%
 - terms: 
   - term: six
     lang: en
+  - term: šest
+    lang: cs  
   freq: 121091.50000
   origins: ["conceptDbSamples"]
-##  fine   ################################################################## ▃ 37%
+##  fine   ################################################################## ▄ 45%
 - terms: 
   - term: fine
-    lang: en
+    lang: en  
+  - term: pořádku
+    lang: cs  
+  - term: jemný
+    lang: cs
+  
   freq: 119116.50000
   origins: ["conceptDbSamples"]
-##  million   ############################################################### ▃ 37%
+##  million   ############################################################### ▄ 45%
 - terms: 
   - term: million
     lang: en
+  - term: milion
+    lang: cs
   freq: 118823.90000
   origins: ["conceptDbSamples"]
-##  bed   ################################################################### ▃ 37%
+##  bed   ################################################################### ▄ 45%
 - terms: 
   - term: bed
     lang: en
+  - term: postel
+    lang: cs
+  
   freq: 118469.50000
   origins: ["conceptDbSamples"]
-##  wrote   ################################################################# ▃ 37%
+##  wrote   ################################################################# ▄ 45%
 - terms: 
   - term: wrote
     lang: en
+  - term: napsal
+    lang: cs  
+  
   freq: 118114.00000
   origins: ["conceptDbSamples"]
-##  road   ################################################################## ▃ 37%
+##  road   ################################################################## ▄ 45%
 - terms: 
   - term: road
     lang: en
+  - term: silnice
+    lang: cs
+  - term: cesta
+    lang: cs
+  
   freq: 117982.00000
   origins: ["conceptDbSamples"]
-##  lost   ################################################################## ▃ 37%
+##  lost   ################################################################## ▄ 45%
 - terms: 
   - term: lost
-    lang: en
+    lang: en  
+  - term: ztratil
+    lang: cs
+  - term: prohrál
+    lang: cs
+
   freq: 117075.00000
   origins: ["conceptDbSamples"]
-##  months   ################################################################ ▃ 37%
+##  months   ################################################################ ▄ 45%
 - terms: 
   - term: months
     lang: en
+  - term: měsíce
+    lang: cs
   freq: 116955.00000
   origins: ["conceptDbSamples"]
-##  ready   ################################################################# ▃ 37%
+##  ready   ################################################################# ▄ 45%
 - terms: 
   - term: ready
     lang: en
+  - term: připraven
+    lang: cs
+  
   freq: 116349.50000
   origins: ["conceptDbSamples"]
-##  following   ############################################################# ▃ 37%
+##  following   ############################################################# ▄ 45%
 - terms: 
   - term: following
     lang: en
+  - term: následující
+    lang: cs
+  
   freq: 116148.00000
   origins: ["conceptDbSamples"]
-##  ten   ################################################################### ▃ 37%
+##  ten   ################################################################### ▄ 45%
 - terms: 
   - term: ten
     lang: en
+  - term: deset
+    lang: cs
+  
   freq: 115719.50000
   origins: ["conceptDbSamples"]
-##  mean   ################################################################## ▃ 37%
+##  mean   ################################################################## ▄ 45%
 - terms: 
   - term: mean
-    lang: en
+    lang: en  
+  - term: znamená
+    lang: cs  
+  - term: střední
+    lang: cs
   freq: 115545.50000
   origins: ["conceptDbSamples"]
-##  question   ############################################################## ▃ 37%
+##  question   ############################################################## ▄ 45%
 - terms: 
   - term: question
     lang: en
+  - term: otázka
+    lang: cs
+  - term: dotaz
+    lang: cs
+  
   freq: 115524.00000
   origins: ["conceptDbSamples"]
-##  human   ################################################################# ▃ 37%
+##  human   ################################################################# ▄ 45%
 - terms: 
   - term: human
     lang: en
+  - term: lidské
+    lang: cs
+  - term: člověk
+    lang: cs
+  
   freq: 114381.00000
   origins: ["conceptDbSamples"]
-##  states   ################################################################ ▃ 37%
+##  states   ################################################################ ▄ 45%
 - terms: 
   - term: states
     lang: en
+  - term: státy
+    lang: cs  
+  - term: stavy
+    lang: cs
+  
   freq: 113807.00000
   origins: ["conceptDbSamples"]
-##  yes   ################################################################### ▃ 37%
+##  yes   ################################################################### ▄ 45%
 - terms: 
   - term: "yes"
     lang: en
+  - term: ano
+    lang: cs
+  
   freq: 113547.65000
   origins: ["conceptDbSamples"]
-##  feel   ################################################################## ▃ 37%
+##  feel   ################################################################## ▄ 45%
 - terms: 
   - term: feel
     lang: en
+  - term: cítit
+    lang: cs
+  - term: pocit
+    lang: cs
+  
   freq: 111647.50000
   origins: ["conceptDbSamples"]
-##  parts   ################################################################# ▃ 37%
+##  parts   ################################################################# ▄ 45%
 - terms: 
   - term: parts
     lang: en
+  - term: díly
+    lang: cs
+  - term: části
+    lang: cs
+  
   freq: 111194.00000
   origins: ["conceptDbSamples"]
-##  talk   ################################################################## ▃ 37%
+##  talk   ################################################################## ▄ 45%
 - terms: 
   - term: talk
     lang: en
+  - term: mluvit
+    lang: cs
+  - term: hovořit
+    lang: cs
+  
   freq: 111072.00000
   origins: ["conceptDbSamples"]
-##  fear   ################################################################## ▃ 37%
+##  fear   ################################################################## ▄ 45%
 - terms: 
   - term: fear
     lang: en
+  - term: strach
+    lang: cs  
+  - term: obava
+    lang: cs
+  
   freq: 109036.00000
   origins: ["conceptDbSamples"]
-##  live   ################################################################## ▃ 37%
+##  live   ################################################################## ▄ 45%
 - terms: 
   - term: live
-    lang: en
+    lang: cs
+  - term: žít
+    lang: cs
+    
+  - term: žijí
+    lang: cs
   freq: 108511.50000
   origins: ["conceptDbSamples"]
-##  learn   ################################################################# ▃ 37%
+##  learn   ################################################################# ▄ 45%
 - terms: 
   - term: learn
     lang: en
+  - term: naučit
+    lang: cs
+  - term: učit
+    lang: cs
+  
   freq: 107429.85000
   origins: ["conceptDbSamples"]
-##  happy   ################################################################# ▃ 37%
+##  happy   ################################################################# ▄ 45%
 - terms: 
   - term: happy
     lang: en
+  - term: šťastný
+    lang: cs
+  - term: spokojeni
+    lang: cs
+
   freq: 106887.00000
   origins: ["conceptDbSamples"]
-##  stopped   ############################################################### ▃ 37%
+##  stopped   ############################################################### ▄ 45%
 - terms: 
   - term: stopped
     lang: en
+  - term: zastavil
+    lang: cs
+  - term: přestal
+    lang: cs
+
   freq: 106661.00000
   origins: ["conceptDbSamples"]
-##  suddenly   ############################################################## ▃ 37%
+##  suddenly   ############################################################## ▄ 45%
 - terms: 
   - term: suddenly
     lang: en
+  - term: náhle
+    lang: cs
+  - term: najednou
+    lang: cs
+
   freq: 104116.00000
   origins: ["conceptDbSamples"]
-##  red   ################################################################### ▃ 37%
+##  red   ################################################################### ▄ 45%
 - terms: 
   - term: red
     lang: en
+  - term: červené
+    lang: cs
+  - term: červená
+    lang: cs
+  
   freq: 103902.50000
   origins: ["conceptDbSamples"]
-##  dark   ################################################################## ▃ 37%
+##  dark   ################################################################## ▄ 45%
 - terms: 
   - term: dark
     lang: en
+  - term: tmavý
+    lang: cs
+  - term: temné
+    lang: cs
+  
   freq: 102590.50000
   origins: ["conceptDbSamples"]
-##  sense   ################################################################# ▃ 37%
+##  sense   ################################################################# ▄ 45%
 - terms: 
   - term: sense
     lang: en
+  - term: smysl
+    lang: cs
+  
   freq: 101208.00000
   origins: ["conceptDbSamples"]
-##  attention   ############################################################# ▃ 37%
+##  attention   ############################################################# ▄ 45%
 - terms: 
   - term: attention
     lang: en
+  - term: pozornost
+    lang: cs  
+  - term: upozornění
+    lang: cs
   freq: 99764.00000
   origins: ["conceptDbSamples"]
-##  wait   ################################################################## ▃ 37%
+##  wait   ################################################################## ▄ 45%
 - terms: 
   - term: wait
     lang: en
+  - term: počkejte
+    lang: cs
+  - term: čekat
+    lang: cs
+  
   freq: 98993.45000
   origins: ["conceptDbSamples"]
-##  where   ################################################################# ▃ 37%
+##  where   ################################################################# ▄ 45%
 - terms: 
   - term: where
     lang: en
+  - term: kde
+    lang: cs
+  - term: kam
+    lang: cs
   freq: 98596.79500
   origins: ["conceptDbSamples"]
-##  job   ################################################################### ▃ 37%
+##  job   ################################################################### ▄ 45%
 - terms: 
   - term: job
     lang: en
+  - term: úloha
+    lang: cs  
+  - term: práce
+    lang: cs
+  
   freq: 95596.85000
   origins: ["conceptDbSamples"]
-##  trying   ################################################################ ▃ 37%
+##  trying   ################################################################ ▄ 45%
 - terms: 
   - term: trying
-    lang: en
+    lang: en  
+  - term: zkouším
+    lang: cs  
+  - term: pokouší
+    lang: cs
   freq: 94706.70000
   origins: ["conceptDbSamples"]
-##  strange   ############################################################### ▃ 37%
+##  strange   ############################################################### ▄ 45%
 - terms: 
   - term: strange
     lang: en
+  - term: podivné
+    lang: cs  
+  - term: zvláštní
+    lang: cs
+  
   freq: 93945.50000
   origins: ["conceptDbSamples"]
-##  car   ################################################################### ▃ 37%
+##  car   ################################################################### ▄ 45%
 - terms: 
   - term: car
     lang: en
+  - term: auto
+    lang: cs  
   freq: 90131.05000
   origins: ["conceptDbSamples"]
-##  play   ################################################################## ▃ 37%
+##  play   ################################################################## ▄ 45%
 - terms: 
   - term: play
     lang: en
+  - term: hrát
+    lang: cs
+  - term: přehrát
+    lang: cs
+  
   freq: 89945.00000
   origins: ["conceptDbSamples"]
-##  save   ################################################################## ▃ 37%
+##  save   ################################################################## ▄ 45%
 - terms: 
   - term: save
     lang: en
+  - term: uložit
+    lang: cs
+  - term: zachránit
+    lang: cs
+  
   freq: 89433.00000
   origins: ["conceptDbSamples"]
-##  add   ################################################################### ▃ 37%
+##  add   ################################################################### ▄ 45%
 - terms: 
   - term: add
     lang: en
+  - term: přidat
+    lang: cs
+  
   freq: 89244.75000
   origins: ["conceptDbSamples"]
-##  continued   ############################################################# ▃ 37%
+##  continued   ############################################################# ▄ 45%
 - terms: 
   - term: continued
     lang: en
+  - term: pokračoval
+    lang: cs
+  
   freq: 89244.00000
   origins: ["conceptDbSamples"]
-##  run   ################################################################### ▃ 37%
+##  run   ################################################################### ▄ 45%
 - terms: 
   - term: run
     lang: en
+  - term: spustit
+    lang: cs
+  - term: běžet
+    lang: cs
+  
   freq: 88006.50000
   origins: ["conceptDbSamples"]
-##  single   ################################################################ ▃ 37%
+##  single   ################################################################ ▄ 45%
 - terms: 
   - term: single
     lang: en
+  - term: jediný
+    lang: cs
+  
   freq: 87988.50000
   origins: ["conceptDbSamples"]
-##  late   ################################################################## ▃ 37%
+##  late   ################################################################## ▄ 45%
 - terms: 
   - term: late
     lang: en
+  - term: pozdní
+    lang: cs
+  - term: pozdě
+    lang: cs
+  
   freq: 87283.50000
   origins: ["conceptDbSamples"]
-##  america   ############################################################### ▃ 37%
+##  america   ############################################################### ▄ 45%
 - terms: 
   - term: america
     lang: en
+  - term: amerika
+    lang: cs
   freq: 87195.60000
   origins: ["conceptDbSamples"]
-##  agree   ################################################################# ▃ 37%
+##  agree   ################################################################# ▄ 45%
 - terms: 
   - term: agree
     lang: en
+  - term: souhlasit
+    lang: cs  
+  - term: shodují
+    lang: cs  
   freq: 86583.45000
   origins: ["conceptDbSamples"]
-##  talking   ############################################################### ▃ 37%
+##  talking   ############################################################### ▄ 45%
 - terms: 
   - term: talking
-    lang: en
+    lang: en  
+  - term: povídání
+    lang: cs
+  - term: hovoří
+    lang: cs
+  
   freq: 85391.10000
   origins: ["conceptDbSamples"]
-##  gold   ################################################################## ▃ 37%
+##  gold   ################################################################## ▄ 45%
 - terms: 
   - term: gold
     lang: en
+  - term: zlato
+    lang: cs
   freq: 85222.00000
   origins: ["conceptDbSamples"]
-##  class   ################################################################# ▃ 37%
+##  class   ################################################################# ▄ 45%
 - terms: 
   - term: class
     lang: en
+  - term: třída
+    lang: cs
   freq: 84748.25000
   origins: ["conceptDbSamples"]
-##  neither   ############################################################### ▃ 37%
+##  neither   ############################################################### ▄ 45%
 - terms: 
   - term: neither
     lang: en
+  - term: ani
+    lang: cs
   freq: 84393.50000
   origins: ["conceptDbSamples"]
-##  mine   ################################################################## ▃ 37%
+##  mine   ################################################################## ▄ 45%
 - terms: 
   - term: mine
     lang: en
+  - term: důl
+    lang: cs
+  - term: moje
+    lang: cs
   freq: 83382.00000
   origins: ["conceptDbSamples"]
-##  copies   ################################################################ ▃ 37%
+##  copies   ################################################################ ▄ 45%
 - terms: 
   - term: copies
-    lang: en
+    lang: en  
+  - term: kopie
+    lang: cs
+  - term: výtisky
+    lang: cs
+  
   freq: 81479.70000
   origins: ["conceptDbSamples"]
-##  whatever   ############################################################## ▃ 37%
+##  whatever   ############################################################## ▄ 45%
 - terms: 
   - term: whatever
     lang: en
+  - term: cokoliv
+    lang: cs  
+  - term: jakékoli
+    lang: cs
   freq: 80374.50000
   origins: ["conceptDbSamples"]
-##  distance   ############################################################## ▃ 37%
+##  distance   ############################################################## ▄ 45%
 - terms: 
   - term: distance
     lang: en
+  - term: vzdálenost
+    lang: cs
+  - term: dálka
+    lang: cs
+  
   freq: 80213.00000
   origins: ["conceptDbSamples"]
-##  situation   ############################################################# ▃ 37%
+##  situation   ############################################################# ▄ 45%
 - terms: 
   - term: situation
     lang: en
+  - term: situace
+    lang: cs
+  
   freq: 76627.20000
   origins: ["conceptDbSamples"]
-##  finally   ############################################################### ▃ 37%
+##  finally   ############################################################### ▄ 45%
 - terms: 
   - term: finally
     lang: en
+  - term: konečně
+    lang: cs
+  - term: nakonec
+    lang: cs
+  
   freq: 75984.75000
   origins: ["conceptDbSamples"]
-##  doctor   ################################################################ ▃ 37%
+##  doctor   ################################################################ ▄ 45%
 - terms: 
   - term: doctor
     lang: en
+  - term: lékař
+    lang: cs
+  - term: doktor
+    lang: cs
+  
   freq: 73863.95000
   origins: ["conceptDbSamples"]
-##  visit   ################################################################# ▃ 37%
+##  visit   ################################################################# ▄ 45%
 - terms: 
   - term: visit
-    lang: en
+    lang: en  
+  - term: návštěva
+    lang: cs
+  
   freq: 72403.50000
   origins: ["conceptDbSamples"]
-##  afraid   ################################################################ ▃ 37%
+##  afraid   ################################################################ ▄ 45%
 - terms: 
   - term: afraid
     lang: en
+  - term: strach
+    lang: cs
+  - term: polekaný
+    lang: cs
   freq: 72097.00000
   origins: ["conceptDbSamples"]
-##  using   ################################################################# ▃ 37%
+##  using   ################################################################# ▄ 45%
 - terms: 
   - term: using
     lang: en
+  - term: pomocí
+    lang: cs  
+  - term: s využitím
+    lang: cs  
   freq: 71751.90000
   origins: ["conceptDbSamples"]
-##  green   ################################################################# ▃ 37%
+##  green   ################################################################# ▄ 45%
 - terms: 
   - term: green
     lang: en
+  - term: zelené
+    lang: cs
+  - term: zelená
+    lang: cs
   freq: 71603.50000
   origins: ["conceptDbSamples"]
-##  create   ################################################################ ▃ 37%
+##  create   ################################################################ ▄ 45%
 - terms: 
   - term: create
     lang: en
+  - term: vytvořit
+    lang: cs
+
   freq: 71339.15000
   origins: ["conceptDbSamples"]
-##  easily   ################################################################ ▃ 37%
+##  easily   ################################################################ ▄ 45%
 - terms: 
   - term: easily
     lang: en
+  - term: snadno
+    lang: cs
+  - term: jednoduše
+    lang: cs  
   freq: 69383.50000
   origins: ["conceptDbSamples"]
-##  plan   ################################################################## ▃ 37%
+##  plan   ################################################################## ▄ 45%
 - terms: 
   - term: plan
     lang: en
+  - term: plánovat
+    lang: cs
+  - term: záměr
+    lang: cs
   freq: 67949.45000
   origins: ["conceptDbSamples"]
-##  fresh   ################################################################# ▃ 37%
+##  fresh   ################################################################# ▄ 45%
 - terms: 
   - term: fresh
     lang: en
+  - term: čerstvé
+    lang: cs
+  - term: svěží
+    lang: cs  
   freq: 67814.20000
   origins: ["conceptDbSamples"]
-##  lies   ################################################################## ▃ 37%
+##  lies   ################################################################## ▄ 45%
 - terms: 
   - term: lies
     lang: en
+  - term: leží
+    lang: cs  
+  - term: spočívá
+    lang: cs
+  
   freq: 67551.00000
   origins: ["conceptDbSamples"]
-##  eight   ################################################################# ▃ 37%
+##  eight   ################################################################# ▄ 45%
 - terms: 
   - term: eight
     lang: en
+  - term: osm
+    lang: cs
+  
   freq: 67362.45000
   origins: ["conceptDbSamples"]
-##  explain   ############################################################### ▃ 37%
+##  explain   ############################################################### ▄ 45%
 - terms: 
   - term: explain
     lang: en
+  - term: vysvětlit
+    lang: cs  
+  - term: objasnit
+    lang: cs
+  
   freq: 66041.10000
   origins: ["conceptDbSamples"]
-##  meeting   ############################################################### ▃ 37%
+##  meeting   ############################################################### ▄ 45%
 - terms: 
   - term: meeting
     lang: en
+  - term: schůzka
+    lang: cs
+  - term: setkání
+    lang: cs
+  
   freq: 65939.15000
   origins: ["conceptDbSamples"]
-##  fingers   ############################################################### ▃ 37%
+##  fingers   ############################################################### ▄ 45%
 - terms: 
   - term: fingers
     lang: en
+  - term: prsty
+    lang: cs
+  
   freq: 65564.40000
   origins: ["conceptDbSamples"]
-##  step   ################################################################## ▃ 37%
+##  step   ################################################################## ▄ 45%
 - terms: 
   - term: step
     lang: en
+  - term: krok
+    lang: cs
+  
   freq: 65474.00000
   origins: ["conceptDbSamples"]
-##  boat   ################################################################## ▃ 37%
+##  boat   ################################################################## ▄ 45%
 - terms: 
   - term: boat
     lang: en
+  - term: loď
+    lang: cs
+  - term: člun
+    lang: cs
+  
   freq: 65417.75000
   origins: ["conceptDbSamples"]
-##  married   ############################################################### ▃ 37%
+##  married   ############################################################### ▄ 45%
 - terms: 
   - term: married
     lang: en
+  - term: ženatý
+    lang: cs
+  - term: vdaná
+    lang: cs
+  
   freq: 65385.50000
   origins: ["conceptDbSamples"]
-##  garden   ################################################################ ▃ 37%
+##  garden   ################################################################ ▄ 45%
 - terms: 
   - term: garden
     lang: en
+  - term: zahrada
+    lang: cs
   freq: 65096.30000
   origins: ["conceptDbSamples"]
-##  secret   ################################################################ ▃ 37%
+##  secret   ################################################################ ▄ 45%
 - terms: 
   - term: secret
     lang: en
+  - term: tajné
+    lang: cs
+  - term: tajemství
+    lang: cs
+  
   freq: 64491.50000
   origins: ["conceptDbSamples"]
-##  enter   ################################################################# ▃ 37%
+##  enter   ################################################################# ▄ 45%
 - terms: 
   - term: enter
     lang: en
+  - term: zadejte
+    lang: cs
+  - term: vstoupit
+    lang: cs
+  
   freq: 64435.45000
   origins: ["conceptDbSamples"]
-##  sell   ################################################################## ▃ 37%
+##  sell   ################################################################## ▄ 45%
 - terms: 
   - term: sell
     lang: en
+  - term: prodat
+    lang: cs
+  
   freq: 64174.45000
   origins: ["conceptDbSamples"]
-##  dog   ################################################################### ▃ 37%
+##  dog   ################################################################### ▄ 45%
 - terms: 
   - term: dog
     lang: en
+  - term: pes
+    lang: cs
+  
   freq: 64110.75000
   origins: ["conceptDbSamples"]
-##  maybe   ################################################################# ▃ 37%
+##  maybe   ################################################################# ▄ 45%
 - terms: 
   - term: maybe
     lang: en
+  - term: možná
+    lang: cs
+  
   freq: 64096.10000
   origins: ["conceptDbSamples"]
-##  foreign   ############################################################### ▃ 37%
+##  foreign   ############################################################### ▄ 45%
 - terms: 
   - term: foreign
     lang: en
+  - term: zahraniční
+    lang: cs
+  - term: cizí
+    lang: cs
+  
   freq: 64074.75000
   origins: ["conceptDbSamples"]
-##  birds   ################################################################# ▃ 37%
+##  birds   ################################################################# ▄ 45%
 - terms: 
   - term: birds
     lang: en
+  - term: ptáci
+    lang: cs  
+  - term: ptactvo
+    lang: cs
   freq: 63162.60000
   origins: ["conceptDbSamples"]
-##  waited   ################################################################ ▃ 37%
+##  waited   ################################################################ ▄ 45%
 - terms: 
   - term: waited
     lang: en
+  - term: čekal
+    lang: cs
+  - term: vyčkávala
+    lang: cs
+  
   freq: 62808.10000
   origins: ["conceptDbSamples"]
-##  walk   ################################################################## ▃ 37%
+##  walk   ################################################################## ▄ 45%
 - terms: 
   - term: walk
     lang: en
+  - term: procházka
+    lang: cs
+  
+  - term: projít
+    lang: cs
   freq: 61245.00000
   origins: ["conceptDbSamples"]
-##  enemies   ############################################################### ▃ 37%
+##  enemies   ############################################################### ▄ 45%
 - terms: 
   - term: enemies
     lang: en
+  - term: nepřátele
+    lang: cs
+  
   freq: 60982.20000
   origins: ["conceptDbSamples"]
-##  anyone   ################################################################ ▃ 37%
+##  anyone   ################################################################ ▄ 45%
 - terms: 
   - term: anyone
-    lang: en
+    lang: en  
+  - term: kdokoli
+    lang: cs  
+  - term: kohokoliv
+    lang: cs
+  
   freq: 60607.90000
   origins: ["conceptDbSamples"]
-##  usual   ################################################################# ▃ 37%
+##  usual   ################################################################# ▄ 45%
 - terms: 
   - term: usual
     lang: en
+  - term: obvykle
+    lang: cs  
+  - term: běžné
+    lang: cs
+  
   freq: 59858.50000
   origins: ["conceptDbSamples"]
-##  main   ################################################################## ▃ 37%
+##  main   ################################################################## ▄ 45%
 - terms: 
   - term: main
     lang: en
+  - term: hlavní
+    lang: cs
   freq: 59778.50000
   origins: ["conceptDbSamples"]
-##  someone   ############################################################### ▃ 37%
+##  someone   ############################################################### ▄ 45%
 - terms: 
   - term: someone
     lang: en
+  - term: někdo
+    lang: cs
+  - term: někoho
+    lang: cs
+
   freq: 59644.10000
   origins: ["conceptDbSamples"]
-##  please   ################################################################ ▃ 37%
+##  please   ################################################################ ▄ 45%
 - terms: 
   - term: please
     lang: en
+  - term: prosím
+    lang: cs
+  - term: potěšit
+    lang: cs
+
   freq: 58839.50000
   origins: ["conceptDbSamples"]
-##  shot   ################################################################## ▃ 37%
+##  shot   ################################################################## ▄ 45%
 - terms: 
   - term: shot
-    lang: en
+    lang: cs
+  - term: výstřel
+    lang: cs  
+  - term: záběr
+    lang: cs
   freq: 58465.05000
   origins: ["conceptDbSamples"]
-##  stay   ################################################################## ▃ 37%
+##  stay   ################################################################## ▄ 45%
 - terms: 
   - term: stay
     lang: en
+  - term: zůstat
+    lang: cs
+  - term: pobyt
+    lang: cs
   freq: 57836.50000
   origins: ["conceptDbSamples"]
-##  grown   ################################################################# ▃ 37%
+##  grown   ################################################################# ▄ 45%
 - terms: 
   - term: grown
-    lang: en
+    lang: en  
+  - term: dospělý
+    lang: cs
+  - term: vypěstovány
+    lang: cs
+  
   freq: 57772.60000
   origins: ["conceptDbSamples"]
-##  safe   ################################################################## ▃ 37%
+##  safe   ################################################################## ▄ 45%
 - terms: 
   - term: safe
     lang: en
+  - term: bezpečné
+    lang: cs  
+  - term: trezor
+    lang: cs
+ 
   freq: 57432.25000
   origins: ["conceptDbSamples"]
-##  worth   ################################################################# ▃ 37%
+##  worth   ################################################################# ▄ 45%
 - terms: 
   - term: worth
     lang: en
+  - term: stojí za
+    lang: cs    
+  - term: hodnota
+    lang: cs
   freq: 57291.50000
   origins: ["conceptDbSamples"]
-##  pull   ################################################################## ▃ 37%
+##  pull   ################################################################## ▄ 45%
 - terms: 
   - term: pull
     lang: en
+  - term: vytáhnout
+    lang: cs  
+  - term: tahat
+    lang: cs
+  
   freq: 57029.25000
   origins: ["conceptDbSamples"]
-##  clearly   ############################################################### ▃ 37%
+##  clearly   ############################################################### ▄ 45%
 - terms: 
   - term: clearly
     lang: en
+  
+  - term: zřetelně
+    lang: cs
+  
+  - term: zřejmé
+    lang: cs
   freq: 56615.20000
   origins: ["conceptDbSamples"]
-##  energy   ################################################################ ▃ 37%
+##  energy   ################################################################ ▄ 45%
 - terms: 
   - term: energy
     lang: en
+  - term: energie
+    lang: cs
   freq: 55273.45000
   origins: ["conceptDbSamples"]
-##  directly   ############################################################## ▃ 37%
+##  directly   ############################################################## ▄ 45%
 - terms: 
   - term: directly
     lang: en
+  - term: přímo
+    lang: cs
+  - term: bezprostředně
+    lang: cs
   freq: 55211.70000
   origins: ["conceptDbSamples"]
-##  song   ################################################################## ▃ 37%
+##  song   ################################################################## ▄ 45%
 - terms: 
   - term: song
     lang: en
+  - term: píseň
+    lang: cs  
+  - term: skladba
+    lang: cs
   freq: 54221.30000
   origins: ["conceptDbSamples"]
-##  choice   ################################################################ ▃ 37%
+##  choice   ################################################################ ▄ 45%
 - terms: 
   - term: choice
     lang: en
+  - term: volba
+    lang: cs
+  - term: výběr
+    lang: cs
+  
   freq: 54079.15000
   origins: ["conceptDbSamples"]
-##  size   ################################################################## ▃ 37%
+##  size   ################################################################## ▄ 45%
 - terms: 
   - term: size
     lang: en
+  - term: velikost
+    lang: cs
+  - term: rozměry
+    lang: cs
   freq: 53495.50000
   origins: ["conceptDbSamples"]
-##  rules   ################################################################# ▃ 37%
+##  rules   ################################################################# ▄ 45%
 - terms: 
   - term: rules
     lang: en
+  - term: pravidla
+    lang: cs
+  - term: předpisy
+    lang: cs
+  
   freq: 53386.50000
   origins: ["conceptDbSamples"]
-##  value   ################################################################# ▃ 37%
+##  value   ################################################################# ▄ 45%
 - terms: 
   - term: value
     lang: en
+  - term: hodnota
+    lang: cs
+  
   freq: 52616.40000
   origins: ["conceptDbSamples"]
-##  teeth   ################################################################# ▃ 37%
+##  teeth   ################################################################# ▄ 45%
 - terms: 
   - term: teeth
     lang: en
+  - term: zuby
+    lang: cs
+  
+  - term: chrup
+    lang: cs
   freq: 52449.00000
   origins: ["conceptDbSamples"]
-##  permission   ############################################################ ▃ 37%
+##  permission   ############################################################ ▄ 45%
 - terms: 
   - term: permission
     lang: en
+  - term: oprávnění
+    lang: cs
+  - term: povolení
+    lang: cs
+  
   freq: 52344.50000
   origins: ["conceptDbSamples"]
-##  won   ################################################################### ▃ 37%
+##  won   ################################################################### ▄ 45%
 - terms: 
   - term: won
     lang: en
+  - term: vyhrál
+    lang: cs  
+  - term: zvítězil
+    lang: cs
+  
   freq: 51798.70000
   origins: ["conceptDbSamples"]
-##  nice   ################################################################## ▃ 37%
+##  nice   ################################################################## ▄ 45%
 - terms: 
   - term: nice
     lang: en
+  - term: pěkné
+    lang: cs  
+  - term: příjemné
+    lang: cs
+  
   freq: 50915.20000
   origins: ["conceptDbSamples"]
-##  start   ################################################################# ▃ 37%
+##  start   ################################################################# ▄ 45%
 - terms: 
   - term: start
-    lang: en
+    lang: en  
+  - term: začátek
+    lang: cs
+  - term: zahájení
+    lang: cs
+  
   freq: 50331.95000
   origins: ["conceptDbSamples"]
-##  marry   ################################################################# ▃ 37%
+##  marry   ################################################################# ▄ 45%
 - terms: 
   - term: marry
     lang: en
+  - term: oženit
+    lang: cs
+  - term: provdat
+    lang: cs
+  
   freq: 49835.45000
   origins: ["conceptDbSamples"]
-##  fees   ################################################################## ▃ 37%
+##  fees   ################################################################## ▄ 45%
 - terms: 
   - term: fees
     lang: en
+  - term: poplatky
+    lang: cs
+  
   freq: 49820.10000
   origins: ["conceptDbSamples"]
-##  fill   ################################################################## ▃ 37%
+##  fill   ################################################################## ▄ 45%
 - terms: 
   - term: fill
     lang: en
+  - term: vyplnit
+    lang: cs
+  - term: naplňte
+    lang: cs
+  
   freq: 49413.45000
   origins: ["conceptDbSamples"]
-##  cup   ################################################################### ▃ 37%
+##  cup   ################################################################### ▄ 45%
 - terms: 
   - term: cup
     lang: en
+  - term: pohár
+    lang: cs  
+  - term: šálek
+    lang: cs
+  
   freq: 49370.15000
   origins: ["conceptDbSamples"]
-##  worst   ################################################################# ▃ 37%
+##  worst   ################################################################# ▄ 45%
 - terms: 
   - term: worst
     lang: en
+  - term: nejhorší
+    lang: cs
+  - term: nejhůře
+    lang: cs
   freq: 49369.10000
   origins: ["conceptDbSamples"]
-##  don   ################################################################### ▃ 37%
+##  don   ################################################################### ▄ 45%
 - terms: 
   - term: don
     lang: en
+  state: ignore
   freq: 49305.00000
   origins: ["conceptDbSamples"]
-##  data   ################################################################## ▃ 37%
+##  data   ################################################################## ▄ 45%
 - terms: 
   - term: data
     lang: en
+  - term: data
+    lang: cs
+    tts: data-cs.mp3  
   freq: 48658.45000
   origins: ["conceptDbSamples"]
-##  additional   ############################################################ ▃ 37%
+##  additional   ############################################################ ▄ 45%
 - terms: 
   - term: additional
     lang: en
+  - term: dodatečné
+    lang: cs  
+  - term: přídavné
+    lang: cs
   freq: 47705.70000
   origins: ["conceptDbSamples"]
-##  needs   ################################################################# ▃ 37%
+##  needs   ################################################################# ▄ 45%
 - terms: 
   - term: needs
     lang: en
+  - term: potřebuje
+    lang: cs
+  - term: potřeby
+    lang: cs
+  
   freq: 47619.10000
   origins: ["conceptDbSamples"]
-##  happiness   ############################################################# ▃ 37%
+##  happiness   ############################################################# ▄ 45%
 - terms: 
   - term: happiness
     lang: en
+  - term: štěstí
+    lang: cs
   freq: 47520.50000
   origins: ["conceptDbSamples"]
-##  stop   ################################################################## ▃ 37%
+##  stop   ################################################################## ▄ 45%
 - terms: 
   - term: stop
     lang: en
+  - term: zastavit
+    lang: cs 
+  - term: stůj
+    lang: cs
   freq: 46709.35000
   origins: ["conceptDbSamples"]
-##  thinks   ################################################################ ▃ 37%
+##  thinks   ################################################################ ▄ 45%
 - terms: 
   - term: thinks
     lang: en
+  - term: myslí
+    lang: cs
+  - term: přemýšlí
+    lang: cs
+  
   freq: 46053.50000
   origins: ["conceptDbSamples"]
-##  medium   ################################################################ ▃ 37%
+##  medium   ################################################################ ▄ 45%
 - terms: 
   - term: medium
     lang: en
+  - term: střední
+    lang: cs  
+    
   freq: 45868.70000
   origins: ["conceptDbSamples"]
-##  everyone   ############################################################## ▃ 37%
+##  everyone   ############################################################## ▄ 45%
 - terms: 
   - term: everyone
     lang: en
+  - term: všichni
+    lang: cs
+  - term: každý
+    lang: cs
+
   freq: 45742.40000
   origins: ["conceptDbSamples"]
-##  goods   ################################################################# ▃ 37%
+##  goods   ################################################################# ▄ 45%
 - terms: 
   - term: goods
     lang: en
+  - term: zboží
+    lang: cs
+
   freq: 45735.40000
   origins: ["conceptDbSamples"]
-##  closed   ################################################################ ▃ 37%
+##  closed   ################################################################ ▄ 45%
 - terms: 
   - term: closed
     lang: en
+  - term: uzavřené
+    lang: cs
+
   freq: 45657.15000
   origins: ["conceptDbSamples"]
-##  claim   ################################################################# ▃ 37%
+##  claim   ################################################################# ▄ 45%
 - terms: 
   - term: claim
     lang: en
+  - term: tvrzení
+    lang: cs
+  - term: nárok
+    lang: cs
+
   freq: 44928.50000
   origins: ["conceptDbSamples"]
-##  rule   ################################################################## ▃ 37%
+##  rule   ################################################################## ▄ 45%
 - terms: 
   - term: rule
     lang: en
+  - term: pravidlo
+    lang: cs
+
   freq: 44844.25000
   origins: ["conceptDbSamples"]
-##  required   ############################################################## ▃ 37%
+##  required   ############################################################## ▄ 45%
 - terms: 
   - term: required
     lang: en
+  - term: požadované
+    lang: cs
+  - term: vyžadováno
+    lang: cs
+  
   freq: 44600.85000
   origins: ["conceptDbSamples"]
-##  asking   ################################################################ ▃ 37%
+##  asking   ################################################################ ▄ 45%
 - terms: 
   - term: asking
-    lang: en
+    lang: en  
+  - term: žádají
+    lang: cs
+  - term: ptá se
+    lang: cs 
   freq: 44097.80000
   origins: ["conceptDbSamples"]
-##  nine   ################################################################## ▃ 37%
+##  nine   ################################################################## ▄ 45%
 - terms: 
   - term: nine
     lang: en
+  - term: devět
+    lang: cs
+  
   freq: 43944.95000
   origins: ["conceptDbSamples"]
-##  apply   ################################################################# ▃ 37%
+##  apply   ################################################################# ▄ 45%
 - terms: 
   - term: apply
     lang: en
+  - term: použít
+    lang: cs
+  - term: aplikovat
+    lang: cs
+  
   freq: 43667.25000
   origins: ["conceptDbSamples"]
-##  excellent   ############################################################# ▃ 37%
+##  excellent   ############################################################# ▄ 45%
 - terms: 
   - term: excellent
     lang: en
+  - term: vynikající
+    lang: cs
+  - term: výborný
+    lang: cs
+  
   freq: 43273.45000
   origins: ["conceptDbSamples"]
-##  brain   ################################################################# ▃ 37%
+##  brain   ################################################################# ▄ 45%
 - terms: 
   - term: brain
-    lang: en
+    lang: en  
+  - term: mozek
+    lang: cs
+  
   freq: 42478.85000
   origins: ["conceptDbSamples"]
-##  alive   ################################################################# ▃ 37%
+##  alive   ################################################################# ▄ 45%
 - terms: 
   - term: alive
     lang: en
+  - term: naživu
+    lang: cs  
+  - term: zaživa
+    lang: cs
+  
   freq: 41908.25000
   origins: ["conceptDbSamples"]
-##  dangerous   ############################################################# ▃ 37%
+##  dangerous   ############################################################# ▄ 45%
 - terms: 
   - term: dangerous
     lang: en
+  - term: nebezpečné
+    lang: cs
   freq: 41231.15000
   origins: ["conceptDbSamples"]
-##  working   ############################################################### ▃ 37%
+##  working   ############################################################### ▄ 45%
 - terms: 
   - term: working
     lang: en
+  - term: pracovní
+    lang: cs
+  - term: fungující
+    lang: cs  
+  
   freq: 41121.15000
   origins: ["conceptDbSamples"]
-##  drive   ################################################################# ▃ 37%
+##  drive   ################################################################# ▄ 45%
 - terms: 
   - term: drive
     lang: en
+  - term: řídit
+    lang: cs
+  - term: pohon
+    lang: cs
+  
   freq: 40999.60000
   origins: ["conceptDbSamples"]
-##  brother   ############################################################### ▃ 37%
+##  brother   ############################################################### ▄ 45%
 - terms: 
   - term: brother
     lang: en
+  - term: bratr
+    lang: cs
+  
   freq: 40977.45000
   origins: ["conceptDbSamples"]
-##  earlier   ############################################################### ▃ 37%
+##  earlier   ############################################################### ▄ 45%
 - terms: 
   - term: earlier
     lang: en
+  - term: dřívější
+    lang: cs
+  - term: dříve
+    lang: cs
+  
   freq: 40843.10000
   origins: ["conceptDbSamples"]
-##  nobody   ################################################################ ▃ 37%
+##  nobody   ################################################################ ▄ 45%
 - terms: 
   - term: nobody
     lang: en
+  - term: nikdo
+    lang: cs
+  - term: nikoho
+    lang: cs
+  
   freq: 40420.30000
   origins: ["conceptDbSamples"]
-##  hospital   ############################################################## ▃ 37%
+##  hospital   ############################################################## ▄ 45%
 - terms: 
   - term: hospital
     lang: en
+  - term: nemocnice
+    lang: cs
+  
   freq: 40282.20000
   origins: ["conceptDbSamples"]
-##  tired   ################################################################# ▃ 37%
+##  tired   ################################################################# ▄ 45%
 - terms: 
   - term: tired
     lang: en
+  - term: unavený
+    lang: cs
+  
   freq: 39561.35000
   origins: ["conceptDbSamples"]
-##  successful   ############################################################ ▃ 37%
+##  successful   ############################################################ ▄ 45%
 - terms: 
   - term: successful
     lang: en
+  - term: úspěšné
+    lang: cs
+  
   freq: 39535.10000
   origins: ["conceptDbSamples"]
-##  empty   ################################################################# ▃ 37%
+##  empty   ################################################################# ▄ 45%
 - terms: 
   - term: empty
     lang: en
+  - term: prázdné
+    lang: cs
+  
   freq: 38692.60000
   origins: ["conceptDbSamples"]
-##  list   ################################################################## ▃ 37%
+##  list   ################################################################## ▄ 45%
 - terms: 
   - term: list
     lang: en
+  - term: seznam
+    lang: cs  
+  
   freq: 37150.75000
   origins: ["conceptDbSamples"]
-##  yesterday   ############################################################# ▃ 37%
+##  yesterday   ############################################################# ▄ 45%
 - terms: 
   - term: yesterday
     lang: en
+  - term: včera
+    lang: cs
+  
   freq: 37019.50000
   origins: ["conceptDbSamples"]
-##  phone   ################################################################# ▃ 37%
+##  phone   ################################################################# ▄ 45%
 - terms: 
   - term: phone
     lang: en
+  - term: telefon
+    lang: cs
+  
   freq: 36947.43500
   origins: ["conceptDbSamples"]
-##  mistake   ############################################################### ▃ 37%
+##  mistake   ############################################################### ▄ 45%
 - terms: 
   - term: mistake
     lang: en
+  - term: omyl
+    lang: cs
+  - term: chyba
+    lang: cs
+  
   freq: 36424.35000
   origins: ["conceptDbSamples"]
-##  busy   ################################################################## ▃ 37%
+##  busy   ################################################################## ▄ 45%
 - terms: 
   - term: busy
     lang: en
+  - term: zaneprázdněn
+    lang: cs
+  - term: rušný
+    lang: cs
+  
   freq: 35453.55000
   origins: ["conceptDbSamples"]
-##  film   ################################################################## ▃ 37%
+##  film   ################################################################## ▄ 45%
 - terms: 
   - term: film
     lang: en
+  - term: fólie
+    lang: cs
+  - term: film
+    lang: cs
+    tts: film-cs.mp3
+    
   freq: 35325.20000
   origins: ["conceptDbSamples"]
-##  remarkable   ############################################################ ▃ 37%
+##  remarkable   ############################################################ ▄ 45%
 - terms: 
   - term: remarkable
     lang: en
+  - term: pozoruhodné
+    lang: cs
+  - term: mimořádný
+    lang: cs
   freq: 35244.40000
   origins: ["conceptDbSamples"]
-##  movie   ################################################################# ▃ 37%
+##  movie   ################################################################# ▄ 45%
 - terms: 
   - term: movie
     lang: en
+  - term: film
+    lang: cs
+    tts: film-cs.mp3
   freq: 35083.52900
   origins: ["conceptDbSamples"]
-##  nose   ################################################################## ▃ 37%
+##  nose   ################################################################## ▄ 45%
 - terms: 
   - term: nose
     lang: en
+  - term: nos
+    lang: cs
+  
   freq: 34998.90000
   origins: ["conceptDbSamples"]
-##  hide   ################################################################## ▃ 37%
+##  hide   ################################################################## ▄ 45%
 - terms: 
   - term: hide
     lang: en
+  - term: skrýt
+    lang: cs
+  - term: schovat
+    lang: cs
+  
   freq: 34760.90000
   origins: ["conceptDbSamples"]
-##  explanation   ########################################################### ▃ 37%
+##  explanation   ########################################################### ▄ 45%
 - terms: 
   - term: explanation
     lang: en
+  - term: vysvětlení
+    lang: cs
+  
   freq: 34381.15000
   origins: ["conceptDbSamples"]
-##  tea   ################################################################### ▃ 37%
+##  tea   ################################################################### ▄ 45%
 - terms: 
   - term: tea
     lang: en
+  - term: čaj
+    lang: cs
+  
   freq: 33960.05000
   origins: ["conceptDbSamples"]
-##  test   ################################################################## ▃ 37%
+##  test   ################################################################## ▄ 45%
 - terms: 
   - term: test
-    lang: en
+    lang: cs
+  - term: zkouška
+    lang: cs
+  - term: test
+    lang: cs
+    tts: test-cs.mp3  
   freq: 33664.05000
   origins: ["conceptDbSamples"]
-##  ring   ################################################################## ▃ 37%
+##  ring   ################################################################## ▄ 45%
 - terms: 
   - term: ring
     lang: en
+  - term: prsten
+    lang: cs
+  - term: kroužek
+    lang: cs
+
   freq: 33378.70000
   origins: ["conceptDbSamples"]
-##  fault   ################################################################# ▃ 37%
+##  fault   ################################################################# ▄ 45%
 - terms: 
   - term: fault
     lang: en
+  - term: vina
+    lang: cs
+  - term: porucha
+    lang: cs
+  
   freq: 33363.20000
   origins: ["conceptDbSamples"]
-##  clean   ################################################################# ▃ 37%
+##  clean   ################################################################# ▄ 45%
 - terms: 
   - term: clean
     lang: en
+  - term: čisté
+    lang: cs
+  - term: vyčistit
+    lang: cs
+  
   freq: 33343.65000
   origins: ["conceptDbSamples"]
-##  shape   ################################################################# ▃ 37%
+##  shape   ################################################################# ▄ 45%
 - terms: 
   - term: shape
     lang: en
+  - term: obrazec
+    lang: cs
+  - term: tvar
+    lang: cs
+  
   freq: 33284.95000
   origins: ["conceptDbSamples"]
-##  eggs   ################################################################## ▃ 37%
+##  eggs   ################################################################## ▄ 45%
 - terms: 
   - term: eggs
     lang: en
+  - term: vejce
+    lang: cs  
+  - term: vajíčka
+    lang: cs
+  
   freq: 33059.90000
   origins: ["conceptDbSamples"]
-##  smaller   ############################################################### ▃ 37%
+##  smaller   ############################################################### ▄ 45%
 - terms: 
   - term: smaller
     lang: en
+  - term: menší
+    lang: cs
+
   freq: 32668.30000
   origins: ["conceptDbSamples"]
-##  finds   ################################################################# ▃ 37%
+##  finds   ################################################################# ▄ 45%
 - terms: 
   - term: finds
     lang: en
+  - term: najde
+    lang: cs
+  - term: vyhledá
+    lang: cs
+  
   freq: 31934.90000
   origins: ["conceptDbSamples"]
-##  unable   ################################################################ ▃ 37%
+##  unable   ################################################################ ▄ 45%
 - terms: 
   - term: unable
-    lang: en
+    lang: en  
+  - term: neschopný
+    lang: cs  
+  - term: nemůže
+    lang: cs
   freq: 31745.05000
   origins: ["conceptDbSamples"]
-##  stayed   ################################################################ ▃ 37%
+##  stayed   ################################################################ ▄ 45%
 - terms: 
   - term: stayed
     lang: en
+  - term: zůstal
+    lang: cs
+  - term: pobýval
+    lang: cs
+  
   freq: 31165.90000
   origins: ["conceptDbSamples"]
-##  scale   ################################################################# ▃ 37%
+##  scale   ################################################################# ▄ 45%
 - terms: 
   - term: scale
     lang: en
+  - term: měřítko
+    lang: cs
+  - term: rozsahu
+    lang: cs
+  
   freq: 30427.90000
   origins: ["conceptDbSamples"]
-##  process   ############################################################### ▃ 37%
+##  process   ############################################################### ▄ 45%
 - terms: 
   - term: process
     lang: en
+  - term: proces
+    lang: cs  
+  - term: postup
+    lang: cs
   freq: 30250.70000
   origins: ["conceptDbSamples"]
-##  nearest   ############################################################### ▃ 37%
+##  nearest   ############################################################### ▄ 45%
 - terms: 
   - term: nearest
     lang: en
+  - term: nejbližší
+    lang: cs
+  
   freq: 29094.70000
   origins: ["conceptDbSamples"]
-##  coffee   ################################################################ ▃ 37%
+##  coffee   ################################################################ ▄ 45%
 - terms: 
   - term: coffee
     lang: en
+  - term: káva
+    lang: cs
+  
   freq: 29061.35000
   origins: ["conceptDbSamples"]
-##  fly   ################################################################### ▃ 37%
+##  fly   ################################################################### ▄ 45%
 - terms: 
   - term: fly
     lang: en
+  - term: létat
+    lang: cs 
+  - term: let
+    lang: cs
   freq: 28502.95000
   origins: ["conceptDbSamples"]
-##  visible   ############################################################### ▃ 37%
+##  visible   ############################################################### ▄ 45%
 - terms: 
   - term: visible
     lang: en
+  - term: viditelné
+    lang: cs
+  
   freq: 28287.60000
   origins: ["conceptDbSamples"]
-##  library   ############################################################### ▃ 37%
+##  library   ############################################################### ▄ 45%
 - terms: 
   - term: library
     lang: en
+  - term: knihovna
+    lang: cs
   freq: 28114.95000
   origins: ["conceptDbSamples"]
-##  catch   ################################################################# ▃ 37%
+##  catch   ################################################################# ▄ 45%
 - terms: 
   - term: catch
     lang: en
+  - term: chytit
+    lang: cs
+  - term: úlovek
+    lang: cs
+  
   freq: 28047.90000
   origins: ["conceptDbSamples"]
-##  instructions   ########################################################## ▃ 37%
+##  instructions   ########################################################## ▄ 45%
 - terms: 
   - term: instructions
     lang: en
+  - term: pokyny
+    lang: cs
+  - term: instrukce
+    lang: cs
+  
   freq: 26838.40000
   origins: ["conceptDbSamples"]
-##  cool   ################################################################## ▃ 37%
+##  cool   ################################################################## ▄ 45%
 - terms: 
   - term: cool
-    lang: en
+    lang: cs  
+  - term: chladné
+    lang: cs  
   freq: 26142.55000
   origins: ["conceptDbSamples"]
-##  cat   ################################################################### ▃ 37%
+##  cat   ################################################################### ▄ 45%
 - terms: 
   - term: cat
     lang: en
+  - term: kočka
+    lang: cs
+  
   freq: 25867.60000
   origins: ["conceptDbSamples"]
-##  repeat   ################################################################ ▃ 37%
+##  repeat   ################################################################ ▄ 45%
 - terms: 
   - term: repeat
     lang: en
+  
+  - term: opakovat
+    lang: cs
+  
   freq: 25063.25000
   origins: ["conceptDbSamples"]
-##  advantages   ############################################################ ▃ 37%
+##  advantages   ############################################################ ▄ 45%
 - terms: 
   - term: advantages
     lang: en
+  - term: výhody
+    lang: cs
+  - term: přednosti
+    lang: cs
   freq: 24802.80000
   origins: ["conceptDbSamples"]
-##  win   ################################################################### ▃ 37%
+##  win   ################################################################### ▄ 45%
 - terms: 
   - term: win
     lang: en
+  - term: vyhrát
+    lang: cs
+  - term: vítězství
+    lang: cs
+  
   freq: 24721.45000
   origins: ["conceptDbSamples"]
-##  patient   ############################################################### ▃ 37%
+##  patient   ############################################################### ▄ 45%
 - terms: 
   - term: patient
     lang: en
+  - term: pacient
+    lang: cs
+  - term: trpělivý
+    lang: cs
+  - term: pacient
+    lang: cs
+  
   freq: 24442.10000
   origins: ["conceptDbSamples"]
-##  locked   ################################################################ ▃ 37%
+##  locked   ################################################################ ▄ 45%
 - terms: 
   - term: locked
     lang: en
+  - term: uzamčený
+    lang: cs
+  - term: zamčený
+    lang: cs
+  
   freq: 24438.10000
   origins: ["conceptDbSamples"]
-##  proceed   ############################################################### ▃ 37%
+##  proceed   ############################################################### ▄ 45%
 - terms: 
   - term: proceed
     lang: en
+  - term: postupovat
+    lang: cs
+  - term: pokračovat
+    lang: cs
+  
   freq: 24123.80000
   origins: ["conceptDbSamples"]
-##  hit   ################################################################### ▃ 37%
+##  hit   ################################################################### ▄ 45%
 - terms: 
   - term: hit
-    lang: en
+    lang: cs
+  - term: uhodit
+    lang: cs
+  - term: zasáhnout
+    lang: cs
+  
   freq: 23745.60000
   origins: ["conceptDbSamples"]
-##  egg   ################################################################### ▃ 37%
+##  egg   ################################################################### ▄ 45%
 - terms: 
   - term: egg
     lang: en
+  - term: vejce
+    lang: cs
+  - term: vajíčko
+    lang: cs
+  
   freq: 22506.70000
   origins: ["conceptDbSamples"]
-##  camera   ################################################################ ▃ 37%
+##  camera   ################################################################ ▄ 45%
 - terms: 
   - term: camera
     lang: en
+  - term: fotoaparát
+    lang: cs
+  - term: kamera
+    lang: cs
   freq: 22397.35500
   origins: ["conceptDbSamples"]
-##  that   ################################################################## ▃ 37%
+##  that   ################################################################## ▄ 45%
 - terms: 
   - term: that
     lang: en
+  - term: že
+    lang: cs
+  - term: který
+    lang: cs
+  
   freq: 21910.90650
   origins: ["conceptDbSamples"]
-##  emotions   ############################################################## ▃ 37%
+##  emotions   ############################################################## ▄ 45%
 - terms: 
   - term: emotions
     lang: en
+  - term: emoce
+    lang: cs  
+  - term: pocity
+    lang: cs
+  
   freq: 21695.20000
   origins: ["conceptDbSamples"]
-##  tables   ################################################################ ▃ 37%
+##  tables   ################################################################ ▄ 45%
 - terms: 
   - term: tables
     lang: en
+  - term: tabulky
+    lang: cs
+  - term: stoly
+    lang: cs
   freq: 21432.60000
   origins: ["conceptDbSamples"]
-##  print   ################################################################# ▃ 37%
+##  print   ################################################################# ▄ 45%
 - terms: 
   - term: print
     lang: en
+  - term: vytisknout
+    lang: cs  
+
   freq: 21355.55000
   origins: ["conceptDbSamples"]
-##  tomorrow   ############################################################## ▃ 37%
+##  tomorrow   ############################################################## ▄ 45%
 - terms: 
   - term: tomorrow
     lang: en
+  - term: zítra
+    lang: cs
+
   freq: 21349.20000
   origins: ["conceptDbSamples"]
-##  hurry   ################################################################# ▃ 37%
+##  hurry   ################################################################# ▄ 45%
 - terms: 
   - term: hurry
     lang: en
+  - term: spěch
+    lang: cs  
+  - term: naspěch
+    lang: cs
   freq: 21059.55000
   origins: ["conceptDbSamples"]
-##  regret   ################################################################ ▃ 37%
+##  regret   ################################################################ ▄ 45%
 - terms: 
   - term: regret
     lang: en
+  - term: litovat
+    lang: cs
+  
   freq: 20930.45000
   origins: ["conceptDbSamples"]
-##  user   ################################################################## ▃ 37%
+##  user   ################################################################## ▄ 45%
 - terms: 
   - term: user
     lang: en
+  - term: uživatele
+    lang: cs
+  
   freq: 20688.50000
   origins: ["conceptDbSamples"]
-##  lonely   ################################################################ ▃ 37%
+##  lonely   ################################################################ ▄ 45%
 - terms: 
   - term: lonely
     lang: en
+  - term: osamělý
+    lang: cs
+  
+  - term: opuštěný
+    lang: cs
+  
   freq: 20598.05000
   origins: ["conceptDbSamples"]
-##  cares   ################################################################# ▃ 37%
+##  cares   ################################################################# ▄ 45%
 - terms: 
   - term: cares
     lang: en
+  - term: zajímá
+    lang: cs
+  - term: laskání
+    lang: cs
+  - term: pečuje
+    lang: cs
   freq: 20161.20000
   origins: ["conceptDbSamples"]
-##  mirror   ################################################################ ▃ 37%
+##  mirror   ################################################################ ▄ 45%
 - terms: 
   - term: mirror
     lang: en
+  - term: zrcadlo
+    lang: cs
+  - term: zrcátko
+    lang: cs
+  - term: zcradlo
+    lang: cs
+  - term: zrcadlit
+    lang: cs
   freq: 20145.65000
   origins: ["conceptDbSamples"]
-##  rarely   ################################################################ ▃ 37%
+##  rarely   ################################################################ ▄ 45%
 - terms: 
   - term: rarely
     lang: en
+  - term: zřídka
+    lang: cs
+  - term: jen zřídka
+    lang: cs
+  - term: málokdy
+    lang: cs
+  - term: vzácně
+    lang: cs
+  - term: nedovařený
+    lang: cs
   freq: 20081.70000
   origins: ["conceptDbSamples"]
-##  beach   ################################################################# ▃ 37%
+##  beach   ################################################################# ▄ 45%
 - terms: 
   - term: beach
     lang: en
+  - term: pláže
+    lang: cs
+  - term: pobřeží
+    lang: cs
   freq: 19941.40000
   origins: ["conceptDbSamples"]
-##  bedroom   ############################################################### ▃ 37%
+##  bedroom   ############################################################### ▄ 45%
 - terms: 
   - term: bedroom
     lang: en
+  - term: ložnice
+    lang: cs
+  - term: pokoj
+    lang: cs
   freq: 19349.30000
   origins: ["conceptDbSamples"]
-##  stolen   ################################################################ ▃ 37%
+##  stolen   ################################################################ ▄ 45%
 - terms: 
   - term: stolen
     lang: en
+  - term: ukradené
+    lang: cs
+  - term: odcizení
+    lang: cs
+  - term: kradený
+    lang: cs
   freq: 19337.70000
   origins: ["conceptDbSamples"]
-##  justified   ############################################################# ▃ 37%
+##  justified   ############################################################# ▄ 45%
 - terms: 
   - term: justified
     lang: en
+  - term: odůvodněných
+    lang: cs
+  - term: zdůvodněny
+    lang: cs
+  - term: oprávněné
+    lang: cs
+  - term: opodstatněné
+    lang: cs
+  - term: zarovnaný
+    lang: cs
   freq: 19003.80000
   origins: ["conceptDbSamples"]
-##  funny   ################################################################# ▃ 37%
+##  funny   ################################################################# ▄ 45%
 - terms: 
   - term: funny
     lang: en
+  - term: legrační
+    lang: cs
+  - term: vtipné
+    lang: cs
+  - term: sranda
+    lang: cs
+  - term: zábavné
+    lang: cs
+  - term: komický
+    lang: cs
   freq: 18987.80000
   origins: ["conceptDbSamples"]
-##  column   ################################################################ ▃ 37%
+##  column   ################################################################ ▄ 45%
 - terms: 
   - term: column
     lang: en
+  - term: sloupec
+    lang: cs
+  - term: kolona
+    lang: cs
   freq: 18928.25000
   origins: ["conceptDbSamples"]
-##  tool   ################################################################## ▃ 37%
+##  tool   ################################################################## ▄ 45%
 - terms: 
   - term: tool
     lang: en
+  - term: nástroj
+    lang: cs
+  - term: jet
+    lang: cs
+  - term: nářadí
+    lang: cs
   freq: 18451.52000
   origins: ["conceptDbSamples"]
-##  device   ################################################################ ▃ 37%
+##  device   ################################################################ ▄ 45%
 - terms: 
   - term: device
     lang: en
+  - term: zařízení
+    lang: cs
+  - term: přístroj
+    lang: cs
+  - term: aparát
+    lang: cs
+  - term: pøístroj
+    lang: cs
+  - term: zaøízení
+    lang: cs
   freq: 17951.45000
   origins: ["conceptDbSamples"]
-##  appreciate   ############################################################ ▃ 37%
+##  appreciate   ############################################################ ▄ 45%
 - terms: 
   - term: appreciate
     lang: en
+  - term: ocenit
+    lang: cs
+  - term: oceňuji
+    lang: cs
+  - term: vážíme
+    lang: cs
+  - term: oceňovat
+    lang: cs
+  - term: zhodnocovat
+    lang: cs
   freq: 17935.75000
   origins: ["conceptDbSamples"]
-##  stores   ################################################################ ▃ 37%
+##  stores   ################################################################ ▄ 45%
 - terms: 
   - term: stores
     lang: en
+  - term: ukládá
+    lang: cs
+  - term: obchody
+    lang: cs
+  - term: uloží
+    lang: cs
+  - term: prodejnách
+    lang: cs
+  - term: oparuje
+    lang: cs
   freq: 17677.90000
   origins: ["conceptDbSamples"]
-##  select   ################################################################ ▃ 37%
+##  select   ################################################################ ▄ 45%
 - terms: 
   - term: select
     lang: en
+  - term: vyberte
+    lang: cs
+  - term: vybrat
+    lang: cs
+  - term: zvolte
+    lang: cs
+  - term: zaškrtněte políčko
+    lang: cs
+  - term: vybírat
+    lang: cs
   freq: 17442.95000
   origins: ["conceptDbSamples"]
-##  rejected   ############################################################## ▃ 37%
+##  rejected   ############################################################## ▄ 45%
 - terms: 
   - term: rejected
     lang: en
+  - term: zamítnuta
+    lang: cs
+  - term: odmítl
+    lang: cs
   freq: 16802.10000
   origins: ["conceptDbSamples"]
-##  niece   ################################################################# ▃ 37%
+##  niece   ################################################################# ▄ 45%
 - terms: 
   - term: niece
     lang: en
+  - term: neteř
+    lang: cs
   freq: 15329.80000
   origins: ["conceptDbSamples"]
-##  root   ################################################################## ▃ 37%
+##  root   ################################################################## ▄ 45%
 - terms: 
   - term: root
     lang: en
+  - term: kořenové
+    lang: cs
+  - term: uživatele root
+    lang: cs
   freq: 15258.95000
   origins: ["conceptDbSamples"]
-##  caution   ############################################################### ▃ 37%
+##  caution   ############################################################### ▄ 45%
 - terms: 
   - term: caution
     lang: en
+  - term: opatrnost
+    lang: cs
+  - term: pozor
+    lang: cs
+  - term: upozornění
+    lang: cs
+  - term: obezřelost
+    lang: cs
+  - term: postupujte opatrně
+    lang: cs
   freq: 15246.70000
   origins: ["conceptDbSamples"]
-##  ghost   ################################################################# ▃ 37%
+##  ghost   ################################################################# ▄ 45%
 - terms: 
   - term: ghost
     lang: en
+  - term: duch
+    lang: cs
+  - term: ducha
+    lang: cs
+  - term: duchů
+    lang: cs
+  - term: přízrak
+    lang: cs
+  - term: neodstraněný
+    lang: cs
   freq: 14563.95000
   origins: ["conceptDbSamples"]
-##  speaker   ############################################################### ▃ 37%
+##  speaker   ############################################################### ▄ 45%
 - terms: 
   - term: speaker
     lang: en
+  - term: reproduktor
+    lang: cs
+  - term: mluvčí
+    lang: cs
+  - term: řečník
+    lang: cs
+  - term: lektora
+    lang: cs
   freq: 14417.15000
   origins: ["conceptDbSamples"]
-##  neighbour   ############################################################# ▃ 37%
+##  neighbour   ############################################################# ▄ 45%
 - terms: 
   - term: neighbour
     lang: en
+  - term: soused
+    lang: cs
+  - term: bližního
+    lang: cs
   freq: 14405.70000
   origins: ["conceptDbSamples"]
-##  wake   ################################################################## ▃ 37%
+##  wake   ################################################################## ▄ 45%
 - terms: 
   - term: wake
     lang: en
+  - term: vzbudit
+    lang: cs
+  - term: probudit
+    lang: cs
+  - term: probuzení
+    lang: cs
+  - term: brázdě
+    lang: cs
+  - term: budit
+    lang: cs
   freq: 13978.30000
   origins: ["conceptDbSamples"]
-##  bath   ################################################################## ▃ 37%
+##  bath   ################################################################## ▄ 45%
 - terms: 
   - term: bath
     lang: en
+  - term: koupel
+    lang: cs
+  - term: lázeň
+    lang: cs
+  - term: lázně
+    lang: cs
+  - term: vana
+    lang: cs
+  - term: vanou
+    lang: cs
   freq: 13822.45000
   origins: ["conceptDbSamples"]
-##  entry   ################################################################# ▃ 37%
+##  entry   ################################################################# ▄ 45%
 - terms: 
   - term: entry
     lang: en
+  - term: položka
+    lang: cs
+  - term: vstupu
+    lang: cs
+  - term: záznam
+    lang: cs
+  - term: dveře
+    lang: cs
+  - term: zadávání
+    lang: cs
   freq: 13709.10000
   origins: ["conceptDbSamples"]
-##  studying   ############################################################## ▃ 37%
+##  studying   ############################################################## ▄ 45%
 - terms: 
   - term: studying
     lang: en
+  - term: studuje
+    lang: cs
+  - term: studium
+    lang: cs
+  - term: studovat
+    lang: cs
+  - term: učila
+    lang: cs
+  - term: zkoumání
+    lang: cs
   freq: 13662.80000
   origins: ["conceptDbSamples"]
-##  piano   ################################################################# ▃ 37%
+##  piano   ################################################################# ▄ 45%
 - terms: 
   - term: piano
     lang: en
+  - term: klavír
+    lang: cs
+  - term: piáno
+    lang: cs
   freq: 13521.10000
   origins: ["conceptDbSamples"]
-##  virus   ################################################################# ▃ 37%
+##  virus   ################################################################# ▄ 45%
 - terms: 
   - term: virus
-    lang: en
+    lang: cs
+  - term: virem
+    lang: cs
+  - term: vir
+    lang: cs
+  - term: antivirové
+    lang: cs
+  - term: virové
+    lang: cs
   freq: 13416.45000
   origins: ["conceptDbSamples"]
-##  diamonds   ############################################################## ▃ 37%
+##  diamonds   ############################################################## ▄ 45%
 - terms: 
   - term: diamonds
     lang: en
+  - term: diamanty
+    lang: cs
+  - term: káry
+    lang: cs
+  - term: brilianty
+    lang: cs
+  - term: čtverečku
+    lang: cs
   freq: 12851.10000
   origins: ["conceptDbSamples"]
-##  cars   ################################################################## ▃ 37%
+##  cars   ################################################################## ▄ 45%
 - terms: 
   - term: cars
     lang: en
+  - term: automobily
+    lang: cs
+  - term: auta
+    lang: cs
+  - term: vozy
+    lang: cs
+  - term: vozů
+    lang: cs
+  - term: aut
+    lang: cs
   freq: 12638.30000
   origins: ["conceptDbSamples"]
-##  tricks   ################################################################ ▃ 37%
+##  tricks   ################################################################ ▄ 45%
 - terms: 
   - term: tricks
     lang: en
+  - term: triky
+    lang: cs
+  - term: podvodník
+    lang: cs
   freq: 12560.00000
   origins: ["conceptDbSamples"]
-##  dad   ################################################################### ▃ 37%
+##  dad   ################################################################### ▄ 45%
 - terms: 
   - term: dad
     lang: en
+  - term: tati
+    lang: cs
+  - term: táta
+    lang: cs
+  - term: tátou
+    lang: cs
+  - term: tátu
+    lang: cs
+  - term: otec
+    lang: cs
   freq: 12195.12000
   origins: ["conceptDbSamples"]
-##  document   ############################################################## ▃ 37%
+##  document   ############################################################## ▄ 45%
 - terms: 
   - term: document
     lang: en
+  - term: dokumentu
+    lang: cs
+  - term: dokladu
+    lang: cs
   freq: 11841.05000
   origins: ["conceptDbSamples"]
-##  anymore   ############################################################### ▃ 37%
+##  anymore   ############################################################### ▄ 45%
 - terms: 
   - term: anymore
     lang: en
+  - term: už
+    lang: cs
+  - term: ještì
+    lang: cs
+  - term: ještě
+    lang: cs
   freq: 11099.89700
   origins: ["conceptDbSamples"]
-##  complicated   ########################################################### ▃ 37%
+##  complicated   ########################################################### ▄ 45%
 - terms: 
   - term: complicated
     lang: en
+  - term: komplikované
+    lang: cs
+  - term: složité
+    lang: cs
+  - term: komplikovanější
+    lang: cs
+  - term: složitého
+    lang: cs
   freq: 10946.45000
   origins: ["conceptDbSamples"]
-##  re   #################################################################### ▃ 37%
+##  re   #################################################################### ▄ 45%
 - terms: 
   - term: re
-    lang: en
+    lang: cs
+  - term: znovu
+    lang: cs
+  - term: opětovné
+    lang: cs
   freq: 10479.44000
   origins: ["conceptDbSamples"]
-##  alert   ################################################################# ▃ 37%
+##  alert   ################################################################# ▄ 45%
 - terms: 
   - term: alert
     lang: en
+  - term: výstrahy
+    lang: cs
+  - term: výstraha
+    lang: cs
+  - term: upozornění
+    lang: cs
+  - term: ostražitý
+    lang: cs
+  - term: oznámení
+    lang: cs
   freq: 10451.60000
   origins: ["conceptDbSamples"]
-##  extract   ############################################################### ▃ 37%
+##  extract   ############################################################### ▄ 45%
 - terms: 
   - term: extract
     lang: en
+  - term: extrahovat
+    lang: cs
+  - term: extrakt
+    lang: cs
+  - term: výpis
+    lang: cs
+  - term: citát
+    lang: cs
+  - term: výtažek
+    lang: cs
   freq: 10345.60000
   origins: ["conceptDbSamples"]
-##  toy   ################################################################### ▃ 37%
+##  toy   ################################################################### ▄ 45%
 - terms: 
   - term: toy
     lang: en
+  - term: hračka
+    lang: cs
+  - term: báchorka
+    lang: cs
+  - term: hraček
+    lang: cs
+  - term: hračce
+    lang: cs
   freq: 10145.48500
   origins: ["conceptDbSamples"]
-##  processing   ############################################################ ▃ 37%
+##  processing   ############################################################ ▄ 45%
 - terms: 
   - term: processing
     lang: en
+  - term: zpracování
+    lang: cs
+  - term: probíhá zpracování
+    lang: cs
+  - term: vyřizování
+    lang: cs
+  - term: zpracovává
+    lang: cs
   freq: 10121.80000
   origins: ["conceptDbSamples"]
-##  tons   ################################################################## ▃ 37%
+##  tons   ################################################################## ▄ 45%
 - terms: 
   - term: tons
     lang: en
+  - term: tun
+    lang: cs
+  - term: tuny
+    lang: cs
+  - term: tunami
+    lang: cs
+  - term: mandle
+    lang: cs
+  - term: tunách
+    lang: cs
   freq: 10088.50000
   origins: ["conceptDbSamples"]
-##  worried   ############################################################### ▃ 37%
+##  worried   ############################################################### ▄ 45%
 - terms: 
   - term: worried
     lang: en
+  - term: ustaraně
+    lang: cs
+  - term: strach
+    lang: cs
+  - term: obává
+    lang: cs
+  - term: starosti
+    lang: cs
+  - term: trápil
+    lang: cs
   freq: 9953.55000
   origins: ["conceptDbSamples"]
-##  chapters   ############################################################## ▃ 37%
+##  chapters   ############################################################## ▄ 45%
 - terms: 
   - term: chapters
     lang: en
+  - term: kapitoly
+    lang: cs
   freq: 9389.18000
   origins: ["conceptDbSamples"]
-##  happening   ############################################################# ▃ 37%
+##  happening   ############################################################# ▄ 45%
 - terms: 
   - term: happening
     lang: en
+  - term: děje
+    lang: cs
+  - term: dějí
+    lang: cs
+  - term: dění
+    lang: cs
+  - term: stalo
+    lang: cs
+  - term: dít
+    lang: cs
   freq: 9339.34000
   origins: ["conceptDbSamples"]
-##  messages   ############################################################## ▃ 37%
+##  messages   ############################################################## ▄ 45%
 - terms: 
   - term: messages
     lang: en
+  - term: zprávy
+    lang: cs
+  - term: vzkazy
+    lang: cs
+  - term: poselstvi
+    lang: cs
+  - term: hlášení
+    lang: cs
   freq: 9314.02000
   origins: ["conceptDbSamples"]
-##  upset   ################################################################# ▃ 37%
+##  upset   ################################################################# ▄ 45%
 - terms: 
   - term: upset
     lang: en
+  - term: rozrušený
+    lang: cs
+  - term: naštvaná
+    lang: cs
+  - term: rozčilený
+    lang: cs
+  - term: nevolno
+    lang: cs
+  - term: rozrušilo
+    lang: cs
   freq: 9102.75000
   origins: ["conceptDbSamples"]
-##  whoever   ############################################################### ▃ 37%
+##  whoever   ############################################################### ▄ 45%
 - terms: 
   - term: whoever
     lang: en
+  - term: kdo
+    lang: cs
+  - term: kdokoli
+    lang: cs
   freq: 8846.85000
   origins: ["conceptDbSamples"]
-##  bean   ################################################################## ▃ 37%
+##  bean   ################################################################## ▄ 45%
 - terms: 
   - term: bean
     lang: en
+  - term: fazole
+    lang: cs
+  - term: bobů
+    lang: cs
+  - term: beana
+    lang: cs
+  - term: beane
+    lang: cs
+  - term: luštěniny
+    lang: cs
   freq: 8738.49500
   origins: ["conceptDbSamples"]
-##  hello   ################################################################# ▃ 37%
+##  hello   ################################################################# ▄ 45%
 - terms: 
   - term: hello
     lang: en
+  - term: dobrý den
+    lang: cs
+  - term: ahoj
+    lang: cs
+  - term: haló
+    lang: cs
+  - term: zdravím
+    lang: cs
+  - term: nazdar
+    lang: cs
   freq: 8621.20050
   origins: ["conceptDbSamples"]
-##  transport   ############################################################# ▃ 37%
+##  transport   ############################################################# ▄ 45%
 - terms: 
   - term: transport
     lang: en
+  - term: dopravy
+    lang: cs
+  - term: přepravu
+    lang: cs
+  - term: transportní
+    lang: cs
+  - term: přenosu
+    lang: cs
   freq: 8144.60000
   origins: ["conceptDbSamples"]
-##  relaxed   ############################################################### ▃ 37%
+##  relaxed   ############################################################### ▄ 45%
 - terms: 
   - term: relaxed
     lang: en
+  - term: uvolněné
+    lang: cs
+  - term: pohodovou
+    lang: cs
+  - term: zmírněny
+    lang: cs
+  - term: odpočinkový
+    lang: cs
+  - term: obveselit
+    lang: cs
   freq: 7812.45000
   origins: ["conceptDbSamples"]
-##  jungle   ################################################################ ▃ 37%
+##  jungle   ################################################################ ▄ 45%
 - terms: 
   - term: jungle
     lang: en
+  - term: džungle
+    lang: cs
   freq: 7630.09500
   origins: ["conceptDbSamples"]
-##  proving   ############################################################### ▃ 37%
+##  proving   ############################################################### ▄ 45%
 - terms: 
   - term: proving
     lang: en
+  - term: prokazující
+    lang: cs
+  - term: dokazování
+    lang: cs
+  - term: prověrka
+    lang: cs
+  - term: ukázala
+    lang: cs
+  - term: které prokazují
+    lang: cs
   freq: 7603.59000
   origins: ["conceptDbSamples"]
-##  athletic   ############################################################## ▃ 37%
+##  athletic   ############################################################## ▄ 45%
 - terms: 
   - term: athletic
     lang: en
+  - term: atletické
+    lang: cs
+  - term: sportovní
+    lang: cs
+  - term: lehhoatletický
+    lang: cs
   freq: 7581.47000
   origins: ["conceptDbSamples"]
-##  values   ################################################################ ▃ 37%
+##  values   ################################################################ ▄ 45%
 - terms: 
   - term: values
     lang: en
+  - term: hodnoty
+    lang: cs
   freq: 7039.51000
   origins: ["conceptDbSamples"]
-##  kid   ################################################################### ▃ 37%
+##  kid   ################################################################### ▄ 45%
 - terms: 
   - term: kid
     lang: en
+  - term: kluk
+    lang: cs
+  - term: dítě
+    lang: cs
+  - term: chlapče
+    lang: cs
+  - term: děcko
+    lang: cs
+  - term: kide
+    lang: cs
   freq: 6770.47000
   origins: ["conceptDbSamples"]
-##  hen   ################################################################### ▃ 37%
+##  hen   ################################################################### ▄ 45%
 - terms: 
   - term: hen
     lang: en
+  - term: slepice
+    lang: cs
+  - term: nosnici
+    lang: cs
+  - term: slepic
+    lang: cs
   freq: 6569.58000
   origins: ["conceptDbSamples"]
-##  liar   ################################################################## ▃ 37%
+##  liar   ################################################################## ▄ 45%
 - terms: 
   - term: liar
     lang: en
+  - term: lhář
+    lang: cs
   freq: 6052.17000
   origins: ["conceptDbSamples"]
-##  menu   ################################################################## ▃ 37%
+##  menu   ################################################################## ▄ 45%
 - terms: 
   - term: menu
     lang: en
+  - term: nabídky
+    lang: cs
+  - term: jídelní lístek
+    lang: cs
   freq: 5951.66500
   origins: ["conceptDbSamples"]
-##  counts   ################################################################ ▃ 37%
+##  counts   ################################################################ ▄ 45%
 - terms: 
   - term: counts
     lang: en
+  - term: počítá
+    lang: cs
+  - term: počty
+    lang: cs
+  - term: spočítá
+    lang: cs
+  - term: započítává
+    lang: cs
+  - term: hrabat
+    lang: cs
   freq: 5730.18000
   origins: ["conceptDbSamples"]
-##  ll   #################################################################### ▃ 37%
+##  ll   #################################################################### ▄ 45%
 - terms: 
   - term: ll
-    lang: en
+    lang: cs
+  - term: chny
+    lang: cs
+  - term: vš
+    lang: cs
   freq: 5632.08000
   origins: ["conceptDbSamples"]
-##  arrogant   ############################################################## ▃ 37%
+##  arrogant   ############################################################## ▄ 45%
 - terms: 
   - term: arrogant
     lang: en
+  - term: arogantní
+    lang: cs
   freq: 4196.96000
   origins: ["conceptDbSamples"]
-##  steak   ################################################################# ▃ 37%
+##  steak   ################################################################# ▄ 45%
 - terms: 
   - term: steak
-    lang: en
+    lang: cs
+  - term: biftek
+    lang: cs
+  - term: řízek
+    lang: cs
+  - term: stejk
+    lang: cs
+  - term: plátek
+    lang: cs
   freq: 4027.81500
   origins: ["conceptDbSamples"]
-##  drivers   ############################################################### ▃ 37%
+##  drivers   ############################################################### ▄ 45%
 - terms: 
   - term: drivers
     lang: en
+  - term: ovladače
+    lang: cs
+  - term: řidiči
+    lang: cs
+  - term: jezdci
+    lang: cs
   freq: 3781.62000
   origins: ["conceptDbSamples"]
-##  filter   ################################################################ ▃ 37%
+##  filter   ################################################################ ▄ 45%
 - terms: 
   - term: filter
     lang: en
+  - term: filtr
+    lang: cs
+  - term: filtrovat
+    lang: cs
+  - term: zfiltruje
+    lang: cs
   freq: 3768.36500
   origins: ["conceptDbSamples"]
-##  kids   ################################################################## ▃ 37%
+##  kids   ################################################################## ▄ 45%
 - terms: 
   - term: kids
     lang: en
+  - term: děti
+    lang: cs
+  - term: děcka
+    lang: cs
+  - term: kozinky
+    lang: cs
+  - term: dětmi
+    lang: cs
+  - term: dětem
+    lang: cs
   freq: 3525.29000
   origins: ["conceptDbSamples"]
-##  zero   ################################################################## ▃ 37%
+##  zero   ################################################################## ▄ 45%
 - terms: 
   - term: zero
     lang: en
+  - term: nula
+    lang: cs
+  - term: nulové
+    lang: cs
+  - term: nulu
+    lang: cs
+  - term: nule
+    lang: cs
+  - term: nuly
+    lang: cs
   freq: 2789.54000
   origins: ["conceptDbSamples"]
-##  relaxing   ############################################################## ▃ 37%
+##  relaxing   ############################################################## ▄ 45%
 - terms: 
   - term: relaxing
     lang: en
+  - term: relaxační
+    lang: cs
+  - term: relaxaci
+    lang: cs
+  - term: pohodovou
+    lang: cs
+  - term: uvolňující
+    lang: cs
+  - term: odpočinkové
+    lang: cs
   freq: 1546.66000
   origins: ["conceptDbSamples"]
-##  planetary   ############################################################# ▃ 37%
+##  planetary   ############################################################# ▄ 45%
 - terms: 
   - term: planetary
     lang: en
+  - term: planetární
+    lang: cs
   freq: 1291.92000
   origins: ["conceptDbSamples"]
-##  variants   ############################################################## ▃ 37%
+##  variants   ############################################################## ▄ 45%
 - terms: 
   - term: variants
     lang: en
+  - term: varianty
+    lang: cs
+  - term: lišící se
+    lang: cs
+  - term: okruhů
+    lang: cs
   freq: 778.47600
   origins: ["conceptDbSamples"]
-##  suitcase   ############################################################## ▃ 37%
+##  suitcase   ############################################################## ▄ 45%
 - terms: 
   - term: suitcase
     lang: en
+  - term: kufr
+    lang: cs
+  - term: kufru
+    lang: cs
+  - term: kufrem
+    lang: cs
+  - term: kufřík
+    lang: cs
   freq: 655.85000
   origins: ["conceptDbSamples"]
-##  pointless   ############################################################# ▃ 37%
+##  pointless   ############################################################# ▄ 45%
 - terms: 
   - term: pointless
     lang: en
+  - term: zbytečné
+    lang: cs
+  - term: nesmyslné
+    lang: cs
   freq: 492.87600
   origins: ["conceptDbSamples"]
-##  noodles   ############################################################### ▃ 37%
+##  noodles   ############################################################### ▄ 45%
 - terms: 
   - term: noodles
     lang: en
+  - term: nudle
+    lang: cs
+  - term: těstoviny
+    lang: cs
   freq: 345.72500
   origins: ["conceptDbSamples"]
-##  sat   ################################################################### ▃ 37%
+##  sat   ################################################################### ▄ 45%
 - terms: 
   - term: sat
     lang: en
+  - term: seděl
+    lang: cs
+  - term: so
+    lang: cs
+  - term: posadil
+    lang: cs
+  - term: sedl
+    lang: cs
+  - term: usedl
+    lang: cs
   freq: 166.13800
   origins: ["conceptDbSamples"]
-##  beers   ################################################################# ▃ 37%
+##  beers   ################################################################# ▄ 45%
 - terms: 
   - term: beers
     lang: en
+  - term: piv
+    lang: cs
+  - term: piva
+    lang: cs
+  - term: pivo
+    lang: cs
+  - term: pivem
+    lang: cs
   freq: 159.01800
   origins: ["conceptDbSamples"]
-##  seafood   ############################################################### ▃ 37%
+##  seafood   ############################################################### ▄ 45%
 - terms: 
   - term: seafood
     lang: en
+  - term: mořské plody
+    lang: cs
+  - term: plody moře
+    lang: cs
+  - term: rybí
+    lang: cs
   freq: 27.68970
   origins: ["conceptDbSamples"]
