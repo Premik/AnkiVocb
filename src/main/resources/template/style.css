@@ -46,22 +46,32 @@
 
 
 .foreign {
-  background-image: url("ukFlagBlur.png");
+  /*background-image: url("ukFlagBlur.png");*/
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .native {
-  background-image: url("csFlagBlur.png");
+  /*background-image: url("csFlagBlur.png");*/
   background-size: 100% 100%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 
-.native1, .native2, .foreignTerm, #hint {
+.native1, .native2, .foreignTerm, .hint {
   font-size: 1.6em;
   text-transform: uppercase;
+}
+
+.hint {
+font-family: 'Courier New', Courier, monospace;
+  color: green;
+}
+
+.question {
+  color:red;
+
 }
 
 .hintCover {
@@ -128,12 +138,8 @@
   background-position: center; 
   /*float: right;*/
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 40px;
+  top: 40px;
 }
   
 
-#hint {
-  font-family: 'Courier New', Courier, monospace;
-  color: green;
-}

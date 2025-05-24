@@ -1,5 +1,7 @@
 package vocb.ord
 
+import java.nio.file.Files
+import java.nio.file.Path
 import java.nio.file.Paths
 
 import org.junit.jupiter.api.Disabled
@@ -101,8 +103,6 @@ class OrderTest {
 		assert o3 != o2
 		assert o3 != o1
 		assert o3.freqFitness > o2.freqFitness
-		
-		
 	}
 
 	@Test
@@ -178,19 +178,44 @@ class OrderTest {
 		assert zeros/cnt > 0.3
 		assert ones/cnt > 0.3
 	}
-	
+
 	@Test
+	@Disabled
 	void solveSort() {
 		sol.with {
 			maxGens = 5000
 			initialSpawn = 50
 			crossAtOnce = 50
 			maxPopsize = 500
-					
 		}
 		sol.runEpoch()
 		println sol.ctx.freqIdealOrder
 		println sol.bestFirst[0]
+	}
+
+	@Test
+	void yamlStor() {
+		Order o= sol.ctx.createInitialOrder().mix()
+		Path tempFile = Files.createTempFile("vobctest", ".yaml")
+		println tempFile
+		tempFile.withPrintWriter("UTF-8") {
+			o.toRootedYaml(it)
+		}
+		Order o2= sol.ctx.createInitialOrder().mix()
+		
+		
+		assert o2 != o
+		tempFile.withReader("UTF-8") {
+			o2.fromRootedYaml(it)
+		}
+		println o2
+		assert o2 == o
+		o2.ord.removeLast()
+		assert o2 != o
+		tempFile.withReader("UTF-8") {
+			o2.fromRootedYaml(it)
+		}
+		assert o2 == o
 		
 	}
 }

@@ -1,0 +1,64 @@
+${render.expandTemplate(template.header)}
+
+
+<button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
+<div class="wrapper rounded shadow">
+
+    <div class="foreign foreignTerm">
+        <span>{{foreign}}</span>[sound:{{foreignTTS}}]
+    </div>
+
+
+    <figure class="img hintCover"><img class="shadow" src="{{img}}"></span></figure>
+
+    <div class="native native1 hintCover hint">{{native}}</div>
+    
+    
+    <!-- {{#nativeAlt}} -->
+    <div class="native native2 hintCover hint">{{nativeAlt}}</div>
+    <!-- {{/nativeAlt}} -->
+ 
+
+    <!-- {{#foreignExample}} -->
+    <div class="foreign foreignExample">
+        <span>{{foreignExample}}</span> [sound:{{foreignExampleTTS}}]
+    </div>
+    <!-- {{/foreignExample}} -->
+
+
+
+</div>
+
+<script>
+
+    function coverWord(w) {
+        var placeholder = '-';
+        var chrs = Array.from(w)
+        var end = chrs.length;
+        var start = 0;
+        if (chrs.length > 1) start++;
+        if (chrs.length > 4) end--;
+        if (chrs.length > 7) start++;
+
+        for (var i = start; i < end; i++) {
+            chrs[i] = placeholder;
+        }
+        return chrs.join("");
+    }
+    function showHint() {
+        
+        var hints = document.getElementsByClassName('hint');
+        for (var i = 0; i < hints.length; i++) {
+            console.log(i);
+            var covered = coverWord(hints[i].textContent);
+            console.log(i);
+            hints[i].textContent = covered;
+            hints[i].classList.remove('hintCover');
+        };        
+        document.getElementById("hintButton").style.display = "none";
+    }
+
+
+</script>
+
+${render.expandTemplate(template.footer)}

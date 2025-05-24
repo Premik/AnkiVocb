@@ -8,6 +8,7 @@ public class Order {
 
 	List<ConceptExtra> ord
 	int genNum
+	
 
 	@Lazy double freqFitness = {
 		assert ctx
@@ -41,15 +42,22 @@ public class Order {
 		return ret
 	}
 	
+	@Lazy double similarityFitness = {
+		assert ctx
+		assert ord
+		
+	}()
+	
+	
+	double getFitness() {
+		return freqFitness
+	}
+	
 	public void finalizeOrder() {
 		ord = ord.asImmutable()
 	}
 
 
-
-	double getFitness() {
-		return freqFitness
-	}
 
 	public ConceptExtra getAt(int i) {
 		assert ord
@@ -115,4 +123,30 @@ public class Order {
 	public int hashCode() {
 		return ord.hashCode()
 	}
+	
+	public void toRootedYaml(PrintWriter pw) {
+		ord.each {			 
+			pw.println "- ${it.c.firstTerm}" 
+		}
+	}
+	
+	public void fromRootedYaml(Reader r) {
+		LinkedHashSet newOrd = new LinkedHashSet()		
+		r.splitEachLine(/\s*-\s+/) {
+			assert it[1]
+			newOrd.add(it[1])
+		}
+		//newOrd.addAll(ord)
+		List<Order> leftOver = new LinkedList(ord)
+		ord = newOrd.collect { String trm->			 
+			ConceptExtra ce = ctx.byFirstTerm[trm]
+			leftOver.remove(ce)
+			return ce
+		}
+		ord.addAll(leftOver)
+		 
+		  
+		
+	}
+	
 }

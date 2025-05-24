@@ -49,6 +49,12 @@ public class SolvingContext {
 		})
 	}()
 	
+	@Lazy Map<String, ConceptExtra> byFirstTerm = {
+		concepts.collectEntries {
+			[it.c.firstTerm, it]
+		}
+	}()
+	
 	@Lazy Order freqWorstOrder= new Order(ord:freqIdealOrder.ord.reverse(), ctx:this) 
 	
 	@Lazy Order initialOrder = createInitialOrder()

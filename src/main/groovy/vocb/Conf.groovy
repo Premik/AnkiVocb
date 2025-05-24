@@ -9,7 +9,8 @@ class ConfHelper {
 	@Lazy public static ConfigObject cfg = instance.config
 
 	public  final List<String> resExplicitExtensions = ['.conf', '.html']
-	public  final List<String> cpFolders = ['', 'data', 'conf', 'wiki', 'vocb', 'vocb/data', 'vocb/conf', 'vocb/wiki']
+	public  final List<String> cpFolders = ['', 'data', 'conf', 'wiki', 'vocb', 'template', 'vocb/data', 'vocb/conf', 
+		'vocb/wiki', 'vocb/template']
 	private  String windowsHomePath = "${getenv('HOMEDRIVE')}${getenv('HOMEPATH')}"
 
 

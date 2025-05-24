@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="styleDefault.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<div class="container">
+		<span class="align-middle"></span>
+	</div>
+
+	<main class="container">
+		<div id="qa_box" class="card card2">
+			<!-- --------------------------------------------------------------------------   -->
+			<div class="rounded shadow" id="rootContainer">
+					<button id="hintButton" class="buttonRounded" onclick="showHint()" type="button">HINT</button>
+				
+				<div><!--<img src="{{img}}"> -->
+					<img src="apple.jpeg">
+				</div>
+				
+
+				<div class="question">{{foreign}}</div>
+				[sound:{{foreignTTS}}]
+				 
+
+				<div class="hintPane">					
+						<div id="hint"></div>
+					</div>
+				<hr>
+
+
+				<div class="answer">{{native}}</div>
+				[sound:{{nativeTTS}}]
+
+				{{#nativeAlt}}
+				<div class="answer">{{nativeAlt}}</div>
+				[sound:{{nativeAltTTS}}]
+				{{/nativeAlt}}
+
+				[sound:{{foreignTTS}}]
+				{{#foreignExample}}
+				<hr>
+				<div class="answer">{{foreignExample}}</div>
+				[sound:{{foreignExampleTTS}}]
+				{{/foreignExample}}
+				
+
+			</div>
+
+			<script>
+				function coverWord(w) {
+					var placeholder = '-';
+					var chrs = Array.from(w)
+					var end = chrs.length;
+					var start = 0;
+					if (chrs.length > 1) start++;
+					if (chrs.length > 5) end--;
+					if (chrs.length > 8) start++;
+
+					for (var i = start; i < end; i++) {
+						chrs[i] = placeholder;
+					}
+					return chrs.join("");
+				}
+				function showHint() {
+					var hint = document.getElementById("hint");
+					hint.innerText = coverWord("{{native}}");
+					document.getElementById("hintButton").style.display = "none";
+				}
+			</script>
+			<!-- --------------------------------------------------------------------------   -->
+		</div>
+		<br>
+		</div>
+	</main>
+</body>
+
+</html>

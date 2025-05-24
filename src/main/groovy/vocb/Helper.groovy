@@ -123,7 +123,7 @@ public class Helper {
 
 	public static String indentNextLines(String s, int indent=1, int ingnoreFirstLines=1, String indChr=" " ) {
 		List<String> lines = []
-		s.eachLine(0) {String l, int i ->
+		s.eachLine(0) { String l, int i ->
 			lines+= "${i>=ingnoreFirstLines ? indChr*indent : ""}$l"
 		}
 		return lines.join("\n")
@@ -269,6 +269,15 @@ public class Helper {
 	public static String stripExt(String fn) {
 		fn?.replaceFirst(~/\.[^\.]+$/, '')?: ""
 	}
+
+	public static String ankiInterpoaltion2GString(String st) {
+		st = st.replaceAll(/\{\{/, /\$\{cfg.ankiVars.'/)
+		st = st .replaceAll(/\}\}/, /'\}/)
+		st = st .replaceAll(/\[sound:/, /\[/)
+		return st
+	}
+
+
 }
 
 
