@@ -522,7 +522,7 @@ concepts:
     lang: cs
   freq: 3659513.00000
   origins: ["corpus"]
-##  at   ####################################################################
+##  at   #################################################################### ▃ 35%
 - terms: 
   - term: at
     lang: en
@@ -530,7 +530,6 @@ concepts:
     lang: cs
   - term: v
     lang: cs
-  state: ignore
   freq: 3429739.50000
   origins: ["corpus"]
 ##  were   ################################################################## ▅ 61%
@@ -563,7 +562,7 @@ concepts:
     lang: cs
   freq: 3224178.00000
   origins: ["corpus"]
-##  not   ###################################################################
+##  not   ################################################################### ▃ 35%
 - terms: 
   - term: not
     lang: en
@@ -571,7 +570,6 @@ concepts:
     lang: cs
   - term: není
     lang: cs
-  state: ignore
   freq: 2876549.00000
   origins: ["corpus"]
 ##  from   ################################################################## ▅ 61%
@@ -625,7 +623,7 @@ concepts:
   state: ignore
   freq: 2641417.00000
   origins: ["corpus"]
-##  said   ################################################################## ▃ 35%
+##  said   ################################################################## ▅ 61%
 - terms: 
   - term: said
     lang: en
@@ -633,18 +631,28 @@ concepts:
     lang: cs
   - term: říkal
     lang: cs
+  examples: 
+  - term: I said stay here!
+    lang: en
+  - term: Řekl jsem, zůstaň tady!
+    lang: cs
   freq: 2637136.00000
   origins: ["corpus"]
-##  which   ################################################################# ▃ 33%
+##  which   ################################################################# ▅ 56%
 - terms: 
   - term: which
     lang: en
   - term: který
     lang: cs
   - term: které
+  examples: 
+  - term: So which one is the best?
+    lang: en
+  - term: Tak který z nich je nejlepší?
+    lang: cs
   freq: 2633444.00000
   origins: ["corpus"]
-##  by   #################################################################### ▃ 35%
+##  by   #################################################################### ▅ 61%
 - terms: 
   - term: by
     lang: en
@@ -652,9 +660,14 @@ concepts:
     lang: cs
   - term: od
     lang: cs
+  examples: 
+  - term: We play by the rules.
+    lang: en
+  - term: Hrajeme podle pravidel.
+    lang: cs
   freq: 2546805.00000
   origins: ["corpus"]
-##  been   ################################################################## ▃ 35%
+##  been   ################################################################## ▅ 61%
 - terms: 
   - term: been
     lang: en
@@ -662,9 +675,14 @@ concepts:
     lang: cs
   - term: býval
     lang: cs
+  examples: 
+  - term: Have you ever been married?
+    lang: en
+  - term: Byl jste někdy ženatý?
+    lang: cs
   freq: 2357654.00000
   origins: ["corpus"]
-##  him   ################################################################### ▃ 35%
+##  him   ################################################################### ▅ 61%
 - terms: 
   - term: him
     lang: en
@@ -672,9 +690,14 @@ concepts:
     lang: cs
   - term: mu
     lang: cs
+  examples: 
+  - term: Do you know how to find him?
+    lang: en
+  - term: Víte jak ho najít?
+    lang: cs
   freq: 2324852.00000
   origins: ["corpus"]
-##  my   #################################################################### ▃ 35%
+##  my   #################################################################### ▅ 61%
 - terms: 
   - term: my
     lang: en
@@ -682,9 +705,14 @@ concepts:
     lang: cs
   - term: moje
     lang: cs
+  examples: 
+  - term: My room is fine.
+    lang: en
+  - term: Můj pokoj je v pohodě.
+    lang: cs
   freq: 2098760.00000
   origins: ["corpus"]
-##  this   ################################################################## ▃ 35%
+##  this   ################################################################## ▅ 61%
 - terms: 
   - term: this
     lang: en
@@ -692,18 +720,28 @@ concepts:
     lang: cs
   - term: toto
     lang: cs
+  examples: 
+  - term: I wrote three new chapters this week.
+    lang: en
+  - term: Tento týden jsem napsal tři nové kapitoly.
+    lang: cs
   freq: 2010471.00000
   origins: ["corpus"]
-##  their   ################################################################# ▃ 33%
+##  their   ################################################################# ▅ 56%
 - terms: 
   - term: their
     lang: en
   - term: jejich
     lang: cs
   - term: své
+  examples: 
+  - term: But it is not their fault.
+    lang: en
+  - term: Ale není to jejich vina.
+    lang: cs
   freq: 1951647.00000
   origins: ["corpus"]
-##  me   #################################################################### ▃ 35%
+##  me   #################################################################### ▅ 61%
 - terms: 
   - term: me
     lang: en
@@ -711,15 +749,25 @@ concepts:
     lang: cs
   - term: mi
     lang: cs
+  examples: 
+  - term: Let me help you.
+    lang: en
+  - term: Nech mě, ať ti pomůžu.
+    lang: cs
   freq: 1868378.50000
   origins: ["corpus"]
-##  who   ################################################################### ▃ 35%
+##  who   ################################################################### ▅ 61%
 - terms: 
   - term: who
     lang: en
   - term: kdo
     lang: cs
   - term: který
+    lang: cs
+  examples: 
+  - term: Who does not like noodles?
+    lang: en
+  - term: Kdo nemá rád nudle?
     lang: cs
   freq: 1745473.00000
   origins: ["corpus"]
@@ -733,22 +781,78 @@ concepts:
     lang: cs
   freq: 1663186.50000
   origins: ["corpus"]
-##  has   ###################################################################
+##  has   ################################################################### ▃ 35%
 - terms: 
   - term: has
     lang: en
   - term: má
     lang: cs
-  state: ignore
   freq: 1602329.00000
   origins: ["corpus"]
-##  so   #################################################################### ▃ 35%
+##  so   #################################################################### ▆ 63%
 - terms: 
   - term: so
     lang: en
   - term: tak
     lang: cs
   - term: takže
+    lang: cs
+  examples: 
+  - term: And so forth and so on.
+    lang: en
+  - term: A tak podobně a tak dále.
+    lang: cs
+  - term: So they like the same women now too.
+    lang: en
+  - term: Tak teď oba milují stejnou ženu.
+    lang: cs
+  - term: The other way is so traditionally.
+    lang: en
+  - term: Druhým způsobem je tak tradičně.
+    lang: cs
+  - term: So let me go.
+    lang: en
+  - term: Tak mě nechte jít.
+    lang: cs
+  - term: So you're saying you would forbid me from going?
+    lang: en
+  - term: Tak ty říkáš že bys mi zakázal odjet?
+    lang: cs
+  - term: I can't be without you for so long.
+    lang: en
+  - term: Nemůžu bez Tebe být tak dlouho.
+    lang: cs
+  - term: So how about you, dear reader?
+    lang: en
+  - term: Tak co vy, milí čtenáři?
+    lang: cs
+  - term: Even so void is your false heart of truth.
+    lang: en
+  - term: Zrovna tak prázdné pravdy máte srdce.
+    lang: cs
+  - term: So what do we want?
+    lang: en
+  - term: Tak co tedy chceme?
+    lang: cs
+  - term: But the problem is not so simple.
+    lang: en
+  - term: Tak jednoduchý však problém není.
+    lang: cs
+  - term: Did you know you were so powerful?
+    lang: en
+  - term: Věděli jste, že byla tak mocná?
+    lang: cs
+  - term: So will it be with you.
+    lang: en
+  - term: Tak to bude I s tebou.
+    lang: cs
+  - term: It was so romantic.
+    lang: en
+  - term: Bylo to tak romantické.
+    lang: cs
+  - term: So secretly, everyone knows it.
+    lang: en
+  - term: Tak tajně, že to každý ví.
     lang: cs
   freq: 1497187.00000
   origins: ["corpus"]
@@ -1480,7 +1584,7 @@ concepts:
     lang: cs
   freq: 490930.50000
   origins: ["corpus"]
-##  himself   ###############################################################
+##  himself   ############################################################### ▃ 35%
 - terms: 
   - term: himself
     lang: en
@@ -1488,7 +1592,6 @@ concepts:
     lang: cs
   - term: sebe
     lang: cs
-  state: ignore
   freq: 486383.00000
   origins: ["corpus"]
 ##  own   ################################################################### ▃ 35%
@@ -1551,7 +1654,7 @@ concepts:
     lang: cs
   freq: 456106.00000
   origins: ["corpus"]
-##  shall   #################################################################
+##  shall   ################################################################# ▃ 35%
 - terms: 
   - term: shall
     lang: en
@@ -1559,7 +1662,6 @@ concepts:
     lang: cs
   - term: se
     lang: cs
-  state: ignore
   freq: 449921.50000
   origins: ["corpus"]
 ##  seemed   ################################################################ ▃ 35%
@@ -1619,7 +1721,7 @@ concepts:
     lang: cs
   freq: 433315.50000
   origins: ["corpus"]
-##  got   ###################################################################
+##  got   ################################################################### ▃ 35%
 - terms: 
   - term: got
     lang: en
@@ -1629,7 +1731,6 @@ concepts:
     lang: cs
   - term: má
     lang: cs
-  state: ignore
   freq: 432016.00000
   origins: ["corpus"]
 ##  tell   ################################################################## ▃ 35%
@@ -1718,53 +1819,32 @@ concepts:
     lang: cs
   freq: 420044.00000
   origins: ["corpus"]
-##  going   #################################################################
+##  going   ################################################################# ▃ 35%
 - terms: 
   - term: going
     lang: en
+  - term: děje se
+    lang: cs
   - term: jít
     lang: cs
-  - term: děje
-    lang: cs
-  - term: bude
-    lang: cs
-  - term: půjdete
-    lang: cs
-  state: ignore
   freq: 419315.00000
   origins: ["corpus"]
-##  seen   ##################################################################
+##  seen   ################################################################## ▃ 35%
 - terms: 
   - term: seen
     lang: en
-  - term: viděl
+  - term: viděn
     lang: cs
-  - term: neviděl
+  - term: spatřen
     lang: cs
-  - term: vnímána
-    lang: cs
-  - term: patrné
-    lang: cs
-  - term: pohlížet
-    lang: cs
-  state: ignore
   freq: 418862.00000
   origins: ["corpus"]
-##  having   ################################################################
+##  having   ################################################################ ▃ 35%
 - terms: 
   - term: having
     lang: en
-  - term: s
+  - term: mající
     lang: cs
-  - term: mají
-    lang: cs
-  - term: mít
-    lang: cs
-  - term: nutnosti
-    lang: cs
-  - term: má
-    lang: cs
-  state: ignore
   freq: 415355.00000
   origins: ["corpus"]
 ##  even   ################################################################## ▃ 35%
