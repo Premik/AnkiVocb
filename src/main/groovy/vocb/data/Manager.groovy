@@ -2,6 +2,7 @@ package vocb.data
 
 import static vocb.Helper.utf8
 
+import java.math.BigDecimal
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -31,10 +32,25 @@ public class Manager {
 	Map<String, Concept> conceptByFirstTerm = [:]
 
 	Map<String, Set<Concept>> conceptsByTerm = [:]
+	
+	Map<Integer, Set<Concept>> conceptsByStar = [:]
+	
+	List<String> ignoreConcepts = []
+
+	//BigDecimal[] freqRanges = [0, 11000, 151000, 1511000, 1121000, 2811000, new BigDecimal("10e10")]
+	BigDecimal[] freqRanges = [0, 10, 100, 250, 500, 1800, new BigDecimal("10e10")]
+	 .collect{it*1000}
+
+	Integer numberOfStarts(BigDecimal freq) {
+		if (!freq) return null
+		freqRanges.findIndexOf { freq < it} -1
+	}
 
 	void reindex() {
 		conceptByFirstTerm = new HashMap<String, Concept>(db.concepts.size())
 		conceptsByTerm = [:].withDefault {[]}
+		conceptsByStar = [:].withDefault {[]}
+		ignoreConcepts.clear()
 		db.concepts.each { Concept c->
 			String ft = c.firstTerm
 			if (conceptByFirstTerm.containsKey(ft)) {
@@ -44,6 +60,8 @@ public class Manager {
 			c.terms.values().each { Term t->
 				conceptsByTerm[t.term] += t
 			}
+			conceptsByStar[numberOfStarts(c.freq)]+= c
+			if (c.state == 'ignore') ignoreConcepts.add(c)
 		}
 	}
 
@@ -164,16 +182,16 @@ public class Manager {
 			}
 		}
 		println "${'-'*80}"
-		println "Plurals:"
-		db.concepts
-		  .collectMany { Concept c-> c.termsByLang("en")}
-		  .findAll {Term t -> t.term.endsWith("s")}
-		  .collect {Term t-> t.term.dropRight(1) }
-		  .each { String singular ->
-			  if (conceptByFirstTerm.containsKey(singular)) {
-				  println singular
-			  }
-		  }
+		/*println "Plurals:"
+		 db.concepts
+		 .collectMany { Concept c-> c.termsByLang("en")}
+		 .findAll {Term t -> t.term.endsWith("s")}
+		 .collect {Term t-> t.term.dropRight(1) }
+		 .each { String singular ->
+		 if (conceptByFirstTerm.containsKey(singular)) {
+		 println singular
+		 }
+		 }*/
 		println "${'-'*80}"
 	}
 
@@ -182,14 +200,29 @@ public class Manager {
 			(c.termsByLang(lang) + c.examplesByLang(lang)).collect {it.term}
 		}
 	}
+	
+	
 
+	void printStats() {		
+		int accu=0
+		(5..0).each {
+			int sz = conceptsByStar[it].size()
+			accu+=sz			
+			println "${sz.toString().padRight(5)} ${('🟊'*it).padRight(10)} $accu"			
+		}
+	}
+	
+	Collection<String> filterByStars(Collection<String> src, Range starRange = (0..2)) {
+		src.findAll { conceptsByStar[it] in starRange }
+	}
 
 
 	public static void main(String[] args) {
 		new Manager().tap {
-		load()
-		findBrokenMedia()
-		//println allTextWithLang("en")
+			load()
+			findBrokenMedia()
+			printStats()
+			//println allTextWithLang("en")
 		}
 
 

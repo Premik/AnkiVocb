@@ -1,5 +1,6 @@
 package vocb.corp
 
+import java.text.BreakIterator
 import java.util.regex.Pattern
 import java.util.stream.Collectors
 import java.util.stream.Stream
@@ -16,6 +17,7 @@ public class WordNormalizer {
 	@Lazy Pattern spacesPattern = ~ /[^\p{L}]+/
 	@Lazy Pattern niceWordPatter = ~ /^[\p{L}]+/  //No digits in words etc
 
+	
 	public Set<String> uniqueueTokens(CharSequence input) {
 		tokens(input).collect(Collectors.toSet())
 	}
@@ -25,6 +27,17 @@ public class WordNormalizer {
 				//.filter {String s -> (s=~ niceWordPatter).size() > 0 }
 				.filter {String s -> s.length() >= minLenght && s.length() <=maxLenght}
 				.map {String s ->s.toLowerCase()}
+	}
+	
+	
+	
+	public Stream<String> sentences(CharSequence input) {
+		BreakIterator iterator = BreakIterator.getSentenceInstance(Locale.US);	
+		iterator.setText(source);
+	int start = iterator.first();
+	/*for (int end = iterator.next();end != BreakIterator.DONE;start = end, end = iterator.next()) {
+	  System.out.println(source.substring(start,end));
+	}*/
 	}
 
 	public Stream<String> tokens(Stream<CharSequence> listOfString) {
@@ -62,8 +75,6 @@ public class WordNormalizer {
 	}
 	
 	public Map<String , Integer> topPhrases(Map<String , Integer> phraseFreq, int cutOff=2) {
-		
-				
 		phraseFreq
 		  .findAll {String w, Integer f-> f >=cutOff }
 		  .sort { -it.value}
