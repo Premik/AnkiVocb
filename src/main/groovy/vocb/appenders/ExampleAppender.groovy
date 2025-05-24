@@ -196,7 +196,7 @@ public class ExampleAppender {
 			//String tx  = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
 			
 			
-			String tx = "Michael French George allow hold simply evidence built anti perfect Peter especially beautiful forward authority considered charge instead opinion consider born unless except character youth beginning Paris unknown Tom lord"
+			String tx = "simply anti especially considered instead consider unless except beginning"
 
 			dbMan.load()
 			todoFromText(tx)
