@@ -101,8 +101,8 @@ class Render {
 	public void preview(File p) {
 		Map toRender = cfg.render
 		//toRender = toRender.findAll {String k, v-> k =="card2Preview"}
-		toRender = toRender.findAll {String k, v-> k =="cardBackPreview"}
-		//toRender = toRender.findAll {String k, v-> k =="deckDescriptionPreview"}
+		//toRender = toRender.findAll {String k, v-> k =="cardBackPreview"}
+		toRender = toRender.findAll {String k, v-> k =="deckDescriptionPreview"}
 		toRender.each { String name, Map r ->
 			File outF = renderToFile(name, p)
 			if (r.runWith) {
@@ -119,7 +119,9 @@ class Render {
 	static void main(String... args) {
 
 		new Render().with {
-			cfgHelper.lookupFoldersToConsider.add("/data/src/AnkiVocb/pkg/FiveLittleMonkeys")
+			//cfgHelper.lookupFoldersToConsider.add("/data/src/AnkiVocb/pkg/FiveLittleMonkeys")
+			cfgHelper.lookupFoldersToConsider.add("/data/src/AnkiVocb/src/main/resources/zbrojak")
+			
 			preview(new File("/tmp/work/template"))
 		}
 
