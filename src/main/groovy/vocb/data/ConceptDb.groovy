@@ -43,6 +43,7 @@ public class ConceptDb {
 
 
 	public List<String> validate(ValidationProfile vp) {
+		assert vp
 		List<String> ret = []
 		termContainers.forEach { o->
 			List<String> innerVal = o.validate(vp)

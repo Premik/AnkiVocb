@@ -22,6 +22,7 @@ public class Concept extends TermContainer  {
 
 	@Override
 	public List<String> validate(ValidationProfile vp ) {
+		assert vp
 		List<String> ret = super.validate()
 		if (state == "ignore") return ret
 		if (!terms) {
@@ -32,13 +33,13 @@ public class Concept extends TermContainer  {
 			if (terms.size() > 3) ret.add("${terms.size()} terms. Up to 3 supported only")
 		}
 		if (state != "ignoreImage" && vp.img && !img) ret.add("no img")
-		if (freq == null) ret.add("no freq")
+		if (vp.freq && freq == null) ret.add("no freq")
 		if (!termsByLang("en")) ret.add("no en term")
 		if (!termsByLang("cs")) ret.add("no cs term")
 		if (vp.validateTerms) {
 			terms.eachWithIndex {Term t, Integer i->
 				ret.addAll(t.validate(vp).collect{"t${i}:${it}"} )
-				if (!t.pron && t.lang=="en") ret.add("t${i}:pron:missing")
+				if (vp.pron && !t.pron && t.lang=="en") ret.add("t${i}:pron:missing")
 			}
 		}
 		return ret
