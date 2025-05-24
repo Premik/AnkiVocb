@@ -27,13 +27,19 @@ public class WordsSource {
 
 		dbMan.load()
 		words.take(20).each { String w->
+			
+			
+			Term t = new Term(w, "en")
+			Concept c = new Concept(terms: [w:t], freq:corp.wordFreq[w], origins:[sourceName])
 			if (dbMan.conceptByFirstTerm.containsKey(w)) {
 				println "X $w"
+				if (!c.origins.contains(sourceName)) {
+					c.origins.add(sourceName)
+					dbMan.save()
+				}
 				return
 			}
 			println "$w: ${Helper.roundDecimal((corp.wordFreq[w]?:0)/1000, 3)}"
-			Term t = new Term(w, "en")
-			Concept c = new Concept(terms: [t], freq:corp.wordFreq[w], origins:[sourceName])
 			dbMan.db.concepts.add(c)
 			dbMan.save()
 		}

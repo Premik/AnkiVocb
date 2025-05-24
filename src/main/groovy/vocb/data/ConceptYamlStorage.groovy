@@ -1,9 +1,5 @@
 package vocb.data
 
-import javax.xml.stream.events.Characters
-
-import org.apache.commons.collections.functors.InstanceofPredicate
-
 import groovy.json.JsonGenerator
 import groovy.yaml.YamlSlurper
 import vocb.Helper
@@ -31,9 +27,13 @@ public class ConceptYamlStorage {
 		return db
 	}
 
-	public Concept parseConcept(Map concept) {
-		Concept c = new Concept(concept)
-		c.terms =  concept.terms.collect(this.&parseTerm)
+	public Concept parseConcept(Map cjs) {
+		Concept c = new Concept(state:cjs.state, img:cjs.img, freq:cjs.freq, origins:cjs.origins)		
+		cjs.terms.each {
+			Term t = parseTerm(it)
+			c.terms.put(t.term, t)
+		}
+		println c
 		return c
 	}
 
@@ -68,7 +68,8 @@ public class ConceptYamlStorage {
 		//sb.append("terms: ").append(Helper.indentNextLines(terms,2))
 		//sb.append("#"*16 + "\n")
 
-		String terms=listToYaml(c.terms.collect(this.&termToYaml))
+		println c.terms.values().collect {println it.getClass()}
+		String terms=listToYaml(c.terms.values().collect(this.&termToYaml))
 		String ft = c.firstTerm
 		sb.append("##  ").append(ft).append('   ' + '#'*(70-ft.length())).append("\n")
 		appendYamlHash("terms", terms, sb)
@@ -82,7 +83,7 @@ public class ConceptYamlStorage {
 		appendYamlHash("img", c.img,sb)
 		appendYamlHash("freq", Helper.roundDecimal(c.freq, 5), sb)
 		//sb.append("origins: ").append(origins)
-		appendYamlHash("origins", listToYaml(c.origins), sb)
+		appendYamlHash("origins", listToYaml(c.origins as List<String>), sb)
 		return sb.toString()
 
 		/*"""\
@@ -132,5 +133,5 @@ public class ConceptYamlStorage {
 		return sb.toString()
 	}
 
-	
+
 }
