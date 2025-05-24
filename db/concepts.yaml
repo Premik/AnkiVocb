@@ -23554,7 +23554,6 @@ concepts:
     tts: cs-terms/hodnotny.mp3
   img: img/worthy.jpeg
   freq: 73622.00000
-##  jack   ################################################################## no img
 - terms: 
   - term: jack
     lang: en
@@ -23565,8 +23564,8 @@ concepts:
   - term: junek
     lang: cs
     tts: cs-terms/junek.mp3
+  img: img/jack.jpeg
   freq: 73527.00000
-##  shook   ################################################################# no img
 - terms: 
   - term: shook
     lang: en
@@ -23574,8 +23573,8 @@ concepts:
   - term: otřásl
     lang: cs
     tts: cs-terms/otrasl.mp3
+  img: img/shook.jpeg
   freq: 73338.00000
-##  mighty   ################################################################ no img
 - terms: 
   - term: mighty
     lang: en
@@ -23586,8 +23585,8 @@ concepts:
   - term: mohutný
     lang: cs
     tts: cs-terms/mohutny.mp3
+  img: img/mighty.jpeg
   freq: 73313.00000
-##  instead   ############################################################### no img
 - terms: 
   - term: instead
     lang: en
@@ -23598,8 +23597,8 @@ concepts:
   - term: namísto (něčeho)
     lang: cs
     tts: cs-terms/namisto.mp3
+  img: img/instead.jpeg
   freq: 73042.00000
-##  desire   ################################################################ no img
 - terms: 
   - term: desire
     lang: en
@@ -23610,8 +23609,8 @@ concepts:
   - term: bažit
     lang: cs
     tts: cs-terms/bazit.mp3
+  img: img/desire.jpeg
   freq: 72871.00000
-##  Peter   ################################################################# no img
 - terms: 
   - term: Peter
     lang: en
@@ -23619,8 +23618,8 @@ concepts:
   - term: Petr
     lang: cs
     tts: cs-terms/Petr.mp3
+  img: img/Peter.jpeg
   freq: 72509.00000
-##  slowly   ################################################################ no img
 - terms: 
   - term: slowly
     lang: en
@@ -23631,8 +23630,8 @@ concepts:
   - term: zvolna
     lang: cs
     tts: cs-terms/zvolna.mp3
+  img: img/slowly.jpeg
   freq: 71951.00000
-##  sweet   ################################################################# no img
 - terms: 
   - term: sweet
     lang: en
@@ -23643,8 +23642,8 @@ concepts:
   - term: roztomilé
     lang: cs
     tts: cs-terms/roztomile.mp3
+  img: img/sweet.jpeg
   freq: 71298.00000
-##  hardly   ################################################################ no img
 - terms: 
   - term: hardly
     lang: en
@@ -23655,8 +23654,8 @@ concepts:
   - term: těžko
     lang: cs
     tts: cs-terms/tezko.mp3
+  img: img/hardly.jpeg
   freq: 71180.00000
-##  thank   ################################################################# no img
 - terms: 
   - term: thank
     lang: en
@@ -23667,8 +23666,8 @@ concepts:
   - term: díky
     lang: cs
     tts: cs-terms/diky.mp3
+  img: img/thank.jpeg
   freq: 70993.00000
-##  unless   ################################################################ no img
 - terms: 
   - term: unless
     lang: en
@@ -23679,6 +23678,7 @@ concepts:
   - term: ledaže
     lang: cs
     tts: cs-terms/ledaze.mp3
+  img: img/unless.jpeg
   freq: 70981.00000
 ##  fellow   ################################################################ no img
 - terms: 
