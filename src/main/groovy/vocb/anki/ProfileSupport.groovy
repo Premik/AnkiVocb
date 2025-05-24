@@ -7,7 +7,8 @@ import java.nio.file.Paths
 import groovy.sql.GroovyRowResult
 import groovy.sql.Sql
 import vocb.Helper
-import vocb.anki.crowd.CrowdParser
+import vocb.anki.crowd.Note
+import vocb.anki.crowd.NoteModel
 import vocb.anki.crowd.VocbModel
 
 public class ProfileSupport {
@@ -20,7 +21,7 @@ public class ProfileSupport {
 	String deckName = "JingleBells"
 
 	@Lazy VocbModel vocbModel = new VocbModel()
- 
+
 
 	public Sql withProfileCollectionDb(String profileName, Closure<Sql> cl) {
 		assert profileName
@@ -105,36 +106,52 @@ public class ProfileSupport {
 	}
 
 
+	private GroovyRowResult expandNoteFields(GroovyRowResult r) {
+		r.type = [0:"new", 1:"learning", 2:"due", 3:"relearning"][r.type]
+		r.flds = splitFields(r.flds)
+		return r
+	}
 
+	private String getDeckWhereCond() {
+		if (!selectedDeckId) return ""
+		return "and did = $selectedDeckId"
+	}
 
 	public List<GroovyRowResult> ankivocbCards() {
 		List<GroovyRowResult> ret
 
 		withProfileCollectionDb(selectedProfile) { Sql sql->
-			String did = ""
-			if (selectedDeckId) did = "and did = $selectedDeckId"
 			String select = """
                   select c.id as cid, c.nid, c.did, c.ord, c.due, c.type, n.mid, n.guid, n.tags, n.flds from cards as c 
                         left join  notes as n on c.nid = n.id where 
                           mid = $ankivocbModelId
-                          $did
+                          ${deckWhereCond}
                   """
 			//println "${select}"
-			ret =sql.rows(select) //
-					.collect { GroovyRowResult r ->
-						r.type = [0:"new", 1:"learning", 2:"due", 3:"relearning"][r.type]
-						r.flds = splitFields(r.flds)
-						return r
-					}
+			ret =sql.rows(select).collect { expandNoteFields(it)}
 		}
 		return ret
 	}
-	
-	public void ankivocbCards(List<GroovyRowResult> interleaveAltCards) {
-		
+
+	public List<GroovyRowResult> ankivocbNotes() {
+		List<GroovyRowResult> ret
+
+		withProfileCollectionDb(selectedProfile) { Sql sql->
+			String select = """
+                  select id, guid, mid, tags, csum, flds from notes 
+                   where mid = $ankivocbModelId				   
+                  """
+			//println "${select}"
+			ret =sql.rows(select).collect { GroovyRowResult r ->
+				r.flds = splitFields(r.flds)
+				return r
+			}
+		}
+		return ret
 	}
-	
-	
+
+
+
 
 	public List<Long> nodeIdsMissingNativeAlt(List<GroovyRowResult> rows) {
 		int indx = vocbModel.noteModel.getFieldIndex("nativeAlt")
@@ -152,21 +169,51 @@ public class ProfileSupport {
 			sql.execute(s)
 		}
 	}
+	
+	public void fixGuids() {
+		NoteModel model = new VocbModel().noteModel
+		ankivocbNotes().each { GroovyRowResult r->			
+			Note n =new Note(model: model, fields: r.flds)
+			String newGuid = VocbModel.noteGuid(n)
+			String guid = r.guid
+			if (guid != newGuid) {
+			  println "${guid.padLeft(30)} ${newGuid.padLeft(30)} $r"
+			}
+			
+		}
+		
+		
+		
+	}
 
 
 	static void main(String... args) {
 		new ProfileSupport().with {
-			//println listProfiles()
-			selectedProfile = "Honzik" 
+			println listProfiles()
+			selectedProfile = "test4"
+			println decksByName.keySet()
 			//deckName = "Supaplex"
 			//deckName = "Jingle Bells"
 			//deckName = "Five Little Monkeys"
-			println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
+			deckName = "Mary Had a Little Lamb"
+			fixGuids()
+
+			//println "mid($nodeModelName)=$ankivocbModelId did($deckName)=$selectedDeckId  "
 
 
-			List<Long> toDelete = nodeIdsMissingNativeAlt(ankivocbCards())
-			println toDelete
-			dropCardsByIdList(toDelete)
+
+			//ankivocbCards().each { println it}
+			
+			
+			
+		
+			
+			
+			
+			
+			//List<Long> toDelete = nodeIdsMissingNativeAlt(ankivocbCards())
+			//println toDelete
+			//dropCardsByIdList(toDelete)
 			//println selectedDeckId
 		}
 	}

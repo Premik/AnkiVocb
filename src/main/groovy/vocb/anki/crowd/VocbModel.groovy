@@ -43,12 +43,18 @@ class VocbModel {
         n.tags.remove("ankivocb1") //Legacy tag
         /*if (!n.hasTagWithPrefix(version)) {
          n.tags.add(version)
-         }*/
-        String h = Helper.shortHash(noteIdentity(n))
-        n.guid = "avcb_${n['foreign'] ?: ''}_$h"
+         }*/      
+        n.guid = noteGuid(n)
     }
+	
+	static String noteGuid(Note n) {
+		String h = Helper.shortHash(noteIdentity(n))
+		return "avcb_${n['foreign'] ?: ''}_$h"
+	}
+	
+	
 
-    String noteIdentity(Note n) {
+    static String noteIdentity(Note n) {
         assert n
         return "$n['foreign'] $n.['foreignExample']"
     }

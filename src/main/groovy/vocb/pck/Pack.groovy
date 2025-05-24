@@ -196,22 +196,26 @@ public class Pack {
 
 
 	public static void main(String[] args) {
-		for (int p=0;p<8;p++) {
-			new Pack().with {
-				//allPackages.each {println it}
-				//Collection<PackInfo> pkgs = allPackages.values()
-				//Collection<PackInfo> pkgs = [allPackages["Supaplex"]]
-				Collection<PackInfo> pkgs = [allPackages.values()[p]]
-				pkgs.each { PackInfo i->
-					println '*'*100
-					println "* ${i.name}"
-					println '*'*100
+		
+		(0..7).stream().parallel()
+				.forEach( {int p->
+					if (p == 2)
+					new Pack().with {
+						//allPackages.each {println it}
+						//Collection<PackInfo> pkgs = allPackages.values()
+						//Collection<PackInfo> pkgs = [allPackages["Supaplex"]]
+						Collection<PackInfo> pkgs = [allPackages.values()[p]]
+						pkgs.each { PackInfo i->
+							println '*'*100
+							println "* ${i.name}"
+							println '*'*100
 
-					doExport(i)
-				}
+							doExport(i)
+						}
 
-			}
-		}
+					}
+				})
+
 		println "Done"
 
 	}
