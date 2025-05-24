@@ -24183,7 +24183,6 @@ concepts:
     tts: cs-terms/slibil.mp3
   img: img/promised.jpeg
   freq: 12.17920
-##  discovered   ############################################################ no img
 - terms: 
   - term: discovered
     lang: en
@@ -24191,8 +24190,8 @@ concepts:
   - term: objevil
     lang: cs
     tts: cs-terms/objevil.mp3
+  img: img/discovered.jpeg
   freq: 27.28430
-##  removed   ############################################################### no img
 - terms: 
   - term: removed
     lang: en
@@ -24203,8 +24202,8 @@ concepts:
   - term: odebrán
     lang: cs
     tts: cs-terms/odebran.mp3
+  img: img/removed.jpeg
   freq: 50.34680
-##  obtained   ############################################################## no img
 - terms: 
   - term: obtained
     lang: en
@@ -24215,8 +24214,8 @@ concepts:
   - term: dosaženo
     lang: cs
     tts: cs-terms/dosazeno.mp3
+  img: img/obtained.jpeg
   freq: 56.93740
-##  determined   ############################################################ no img
 - terms: 
   - term: determined
     lang: en
@@ -24227,8 +24226,8 @@ concepts:
   - term: určena
     lang: cs
     tts: cs-terms/urcena.mp3
+  img: img/determined.jpeg
   freq: 58.83270
-##  covered   ############################################################### no img
 - terms: 
   - term: covered
     lang: en
@@ -24239,8 +24238,8 @@ concepts:
   - term: kryté
     lang: cs
     tts: cs-terms/kryte.mp3
+  img: img/covered.jpeg
   freq: 64.03770
-##  observed   ############################################################## no img
 - terms: 
   - term: observed
     lang: en
@@ -24248,8 +24247,8 @@ concepts:
   - term: pozorovány
     lang: cs
     tts: cs-terms/pozorovany.mp3
+  img: img/observed.jpeg
   freq: 40.12020
-##  settled   ############################################################### no img
 - terms: 
   - term: settled
     lang: en
@@ -24260,8 +24259,8 @@ concepts:
   - term: vypořádáno
     lang: cs
     tts: cs-terms/vyporadano.mp3
+  img: img/settled.jpeg
   freq: 12.21410
-##  mentioned   ############################################################# no img
 - terms: 
   - term: mentioned
     lang: en
@@ -24269,6 +24268,7 @@ concepts:
   - term: zmínil
     lang: cs
     tts: cs-terms/zminil.mp3
+  img: img/mentioned.jpeg
   freq: 48.57180
 ##  circumstances   ######################################################### no img
 - terms: 
