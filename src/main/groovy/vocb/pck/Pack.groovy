@@ -25,12 +25,14 @@ import vocb.data.Manager
 @CompileStatic
 public class Pack {
 
+	ConfHelper cfgHelper = ConfHelper.instance
+
+	@Lazy
+	Path destRootFolder = cfgHelper.outPath.resolve("pkg")
 
 
-	Path destRootFolder = Paths.get("/tmp/work/pkg")
-
-
-	Path packageRootPath = Paths.get("/data/src/AnkiVocb/pkg/")
+	@Lazy
+	Path packageRootPath = cfgHelper.pkgPath
 	boolean silent=false
 
 
@@ -90,6 +92,7 @@ public class Pack {
 	}
 
 	Manager getDbMan() {
+		//Manager dbMan = new Manager(defaultExamplesFileName:"examplesDraft.yaml")
 		packExportOf(allPackInfos.first()).dbMan
 	}
 

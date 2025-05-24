@@ -24,17 +24,10 @@ import vocb.template.Render
 public class Data2Crowd {
 
 	ConfHelper cfgHelper = ConfHelper.instance
+	
+	
 	@Lazy
-	ConfigObject cfg = cfgHelper.config
-
-	Path rootPath = Paths.get("/data/src/AnkiVocb")
-	Path dataPath = rootPath.resolve("db")
-	Path templatePath = [
-		"src",
-		"main",
-		"resources",
-		"templates"
-	].inject(rootPath) { Path p, String ch -> p.resolve(ch) }
+	Path templatePath = Paths.get("${cfgHelper.config.rootPath}/src/main/resources/templates")
 	PackInfo info
 
 
@@ -55,13 +48,7 @@ public class Data2Crowd {
 
 
 	@Lazy
-	Manager dbMan = {
-		assert dataPath
-		assert info
-		new Manager(defaultStoragePath: dataPath).tap {
-			load()
-		}
-	}()
+	Manager dbMan = Manager.defaultInstance 
 
 	@Lazy
 	VocbModel vocbModel = {
@@ -73,7 +60,14 @@ public class Data2Crowd {
 		if (!mediaLink) return null
 		String fn = new File(mediaLink).name
 
-		Path pkgPath = rootPath.resolve("pkg").resolve(info.name)
+		
+		
+		Path dataPath = cfgHelper.storagePath		
+		assert Files.isDirectory(dataPath)
+		assert Files.isDirectory(templatePath)
+		assert Files.isDirectory(cfgHelper.pkgPath)		
+		Path pkgPath = cfgHelper.pkgPath.resolve(info.name)
+		
 		List<Path> lookupPaths = [
 			pkgPath,
 			dataPath,
@@ -120,7 +114,7 @@ public class Data2Crowd {
 		String trg = "$pfx${nm}-${s.lang}-ankivocb.$ex"
 
 		Path p = vocbModel.copyToMedia(srcPath, trg)
-		return Helper.sndField(trg, !cfg.useRawNoteFields);
+		return Helper.sndField(trg, !cfgHelper.config.useRawNoteFields);
 	}
 
 	@CompileDynamic
@@ -130,7 +124,7 @@ public class Data2Crowd {
 		def (String nm, String ex) = Helper.splitFileNameExt(srcPath)
 		String trg = "$pfx${nm}-ankivocb.${ex}"
 		Path p = vocbModel.copyToMedia(resolveMediaLink(s), trg)
-		return Helper.imgField(trg, !cfg.useRawNoteFields)
+		return Helper.imgField(trg, !cfgHelper.config.useRawNoteFields)
 	}
 
 
@@ -143,7 +137,7 @@ public class Data2Crowd {
 
 		String undPfx = ""
 		if (stars > 1) undPfx = "_" //Prefix quite common words with underscore to get it cross-package shared
-		String star = cfg.starSymbol ?: "🟊"
+		String star = cfgHelper.config.starSymbol ?: "🟊"
 
 
 		n.with {
