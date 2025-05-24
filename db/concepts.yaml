@@ -15910,57 +15910,66 @@ concepts:
   img: img/fun.jpeg
   freq: 22138.75000
   origins: ["JingleBells"]
-##  lean   ################################################################## █ 94%
+##  lean   ##################################################################
 - terms: 
   - term: lean
     lang: en
     tts: en-terms/lean.mp3
   - term: štíhlé
     lang: cs
+    tts: /data/src/AnkiVocb/db/media/cs-terms/stihle.mp3
   - term: hubený
     lang: cs
+    tts: cs-terms/hubeny.mp3
   examples: 
   - term: The horse was lean.
     lang: en
     tts: /data/src/AnkiVocb/db/media/en-samples/The horse was lean.mp3
   - term: Kůň byl štíhlý.
     lang: cs
+    tts: /data/src/AnkiVocb/db/media/cs-samples/Kun byl stihly.mp3
   img: img/lean.jpeg
   freq: 22063.05000
   origins: ["JingleBells"]
-##  tail   ################################################################## █ 94%
+##  tail   ##################################################################
 - terms: 
   - term: tail
     lang: en
     tts: en-terms/tail.mp3
   - term: ocas
     lang: cs
+    tts: cs-terms/ocas.mp3
   - term: ohon
     lang: cs
+    tts: cs-terms/ohon.mp3
   examples: 
   - term: Bells on tail ring.
     lang: en
     tts: en-samples/Bells on tail ring.mp3
   - term: Zvonky na oháňce zvoní.
     lang: cs
+    tts: cs-samples/Zvonky na ohance zvoni.mp3
   img: img/tail.jpeg
   freq: 20681.45000
   origins: ["JingleBells"]
-##  bells   ################################################################# █ 94%
+##  bells   #################################################################
 - terms: 
   - term: bells
     lang: en
     tts: en-terms/bells.mp3
   - term: zvony
     lang: cs
+    tts: cs-terms/zvony.mp3
   - term: rolničky
     lang: cs
+    tts: cs-terms/rolnicky.mp3
   examples: 
   - term: Bells on tail ring.
     lang: en
     tts: /data/src/AnkiVocb/db/media/en-samples/Bells on tail ring.mp3
   - term: Zvonky na oháňce zvoní.
     lang: cs
+    tts: /data/src/AnkiVocb/db/media/cs-samples/Zvonky na ohance zvoni.mp3
   img: img/bells.jpeg
   freq: 17904.10000
   origins: ["JingleBells"]
@@ -15969,21 +15978,24 @@ concepts:
   - term: hey
     lang: en
   state: ignore
-##  dashing   ############################################################### █ 94%
+##  dashing   ###############################################################
 - terms: 
   - term: dashing
     lang: en
     tts: en-terms/dashing.mp3
   - term: hnát se
     lang: cs
+    tts: cs-terms/hnat se.mp3
   - term: temperamentní
     lang: cs
+    tts: cs-terms/temperamentni.mp3
   examples: 
   - term: Dashing through the snow.
     lang: en
     tts: /data/src/AnkiVocb/db/media/en-samples/Dashing through the snow.mp3
   - term: Prohánět se sněhem.
     lang: cs
+    tts: /data/src/AnkiVocb/db/media/cs-samples/Prohanet se snehem.mp3
   img: img/dashing.jpeg
   freq: 7393.94000
   origins: ["JingleBells"]
@@ -15992,37 +16004,43 @@ concepts:
   - term: tho
     lang: en
   state: ignore
-##  sleigh   ################################################################ █ 92%
+##  sleigh   ################################################################ █ 98%
 - terms: 
   - term: sleigh
     lang: en
   - term: sáně
     lang: cs
+    tts: cs-terms/sane.mp3
   - term: sáňky
     lang: cs
+    tts: cs-terms/sanky.mp3
   examples: 
   - term: One-horse open sleigh.
     lang: en
     tts: en-samples/One-horse open sleigh.mp3
   - term: Otevřené sáně s jedním koňem.
     lang: cs
+    tts: cs-samples/Otevrene sane s jednim konem.mp3
   img: img/sleigh.jpeg
   freq: 2972.29000
   origins: ["JingleBells"]
-##  jingle   ################################################################ █ 92%
+##  jingle   ################################################################
 - terms: 
   - term: jingle
-    lang: cs
+    lang: en
   - term: cinkající
     lang: cs
+    tts: cs-terms/cinkajici.mp3
   - term: cinkot
     lang: cs
+    tts: cs-terms/cinkot.mp3
   examples: 
   - term: Jingle bells.
     lang: en
     tts: en-samples/Jingle bells.mp3
   - term: Rolničky.
     lang: cs
+    tts: cs-terms/rolnicky.mp3
   img: img/jingle.jpeg
   freq: 1631.31000
   origins: ["JingleBells"]
