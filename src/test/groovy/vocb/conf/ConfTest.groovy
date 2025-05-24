@@ -1,7 +1,9 @@
-package vocb;
+package vocb.conf;
 
 
 import org.junit.jupiter.api.Test
+
+import vocb.conf.ConfHelper
 
 
 class ConfTest {

@@ -7,8 +7,8 @@ import org.commonmark.parser.Parser
 import org.commonmark.renderer.html.HtmlRenderer
 
 import groovy.text.GStringTemplateEngine
-import vocb.ConfHelper
 import vocb.Helper
+import vocb.conf.ConfHelper
 
 /**
  * @author premik

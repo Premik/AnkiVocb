@@ -2,7 +2,7 @@ package vocb.anki.crowd
 
 import org.junit.jupiter.api.Test
 
-import vocb.ConfHelper
+import vocb.conf.ConfHelper
 import vocb.data.Concept
 import vocb.data.ConceptDb
 import vocb.data.ConceptYamlStorage

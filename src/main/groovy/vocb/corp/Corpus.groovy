@@ -9,7 +9,8 @@ import com.xlson.groovycsv.CsvParser
 
 import groovy.xml.XmlSlurper
 import groovy.xml.slurpersupport.GPathResult
-import vocb.ConfHelper
+import vocb.conf.ConfHelper
+
 import static vocb.Ansi.*
 
 public class Corpus {

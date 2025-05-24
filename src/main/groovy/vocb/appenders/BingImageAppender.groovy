@@ -4,12 +4,12 @@ import java.nio.file.Files
 import java.nio.file.Path
 
 import groovy.text.GStringTemplateEngine
-import vocb.ConfHelper
 import vocb.Helper
 import vocb.HttpHelper
 import vocb.ImgTrn
 import vocb.SearchData
 import vocb.azure.BingWebSearch
+import vocb.conf.ConfHelper
 import vocb.data.Concept
 import vocb.data.Manager
 import vocb.ui.ImageSelector
