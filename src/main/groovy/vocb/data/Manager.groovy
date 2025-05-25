@@ -175,8 +175,9 @@ public class Manager {
 
 	public void load() {
 		load(defaultConceptsLocation, true)
-		load(defaultExamplesLocation, true)
 		loadIgnoreList()
+		load(defaultExamplesLocation, true)
+		
 		reindex()
 	}
 

@@ -512,7 +512,7 @@ public class Pack {
 			//return
 
 			//return
-			findTopWordsNotInDb(3000).each {
+			findTopWordsNotInDb(5000).each {
 			 println it
 			 }
 			/*exportedWordsOf("Jing").each {
