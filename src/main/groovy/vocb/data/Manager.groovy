@@ -396,6 +396,17 @@ public class Manager {
 				println "${cs.collect {it.firstTerm} }  $mediaLink: ${termsWithTts}. $cs"
 			}
 		}
+
+		println "Media clashes"
+		tGrp.each { CharSequence mediaLink, Set<Term> terms ->
+			Set<Term> csTerms = terms.findAll { it.lang == 'cs' }
+			if (csTerms.size() > 1) {
+				Set<String> termStrings = csTerms.collect { it.term }.toSet()
+				if (termStrings.size() > 1) {
+					println "$mediaLink: $csTerms"
+				}
+			}
+		}
 		println "${'-'*80}"
 		println "Example dups"
 		Map<String, Example> ex = [:]
