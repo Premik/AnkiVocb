@@ -398,10 +398,11 @@ public class Manager {
 		}
 
 		println "Media clashes"
+		
 		tGrp.each { CharSequence mediaLink, Set<Term> terms ->
 			Set<Term> csTerms = terms.findAll { it.lang == 'cs' }
 			if (csTerms.size() > 1) {
-				Set<String> termStrings = csTerms.collect { it.term }.toSet()
+				Set<String> termStrings = csTerms.collect { wn.stripBracketsOut(it.term) }.toSet()
 				if (termStrings.size() > 1) {
 					println "$mediaLink: $csTerms"
 				}

@@ -755,7 +755,7 @@ concepts:
     tts: en-terms/us.mp3
     pron: ʌs
   - term: nás
-    tts: cs-terms/nas.mp3
+    tts: cs-terms/nas2.mp3
   - term: nám
     tts: cs-terms/nam.mp3
   img: img/us.jpeg
@@ -1321,7 +1321,7 @@ concepts:
     tts: en-terms/well.mp3
     pron: wɛl
   - term: dobře
-    tts: cs-terms/dobre.mp3
+    tts: cs-terms/dobre2.mp3
   - term: dobrá
     tts: cs-terms/dobra.mp3
   img: img/well.jpeg
@@ -3904,7 +3904,7 @@ concepts:
   - term: reálném
     tts: cs-terms/realnem.mp3
   - term: skutečné
-    tts: cs-terms/skutecne.mp3
+    tts: cs-terms/skutecne2.mp3
   img: img/real.jpeg
   freq: 506.14220
 - terms: 
@@ -4962,7 +4962,7 @@ concepts:
     tts: en-terms/using.mp3
     pron: ˈjuzɪŋ
   - term: pomocí
-    tts: cs-terms/pomoci.mp3
+    tts: cs-terms/pomoci2.mp3
   - term: s využitím
     tts: cs-terms/s vyuzitim.mp3
   img: img/using.jpeg
@@ -9252,7 +9252,7 @@ concepts:
     tts: en-terms/final.mp3
     pron: ˈfaɪnl
   - term: konečné
-    tts: cs-terms/konecne.mp3
+    tts: cs-terms/konecne2.mp3
   - term: závěrečná
     tts: cs-terms/zaverecna.mp3
   img: img/final.jpeg
@@ -10004,7 +10004,7 @@ concepts:
   - term: do jisté míry
     tts: cs-samples/do jiste miry.mp3
   - term: pěkně
-    tts: cs-terms/pekne.mp3
+    tts: cs-terms/pekne2.mp3
   img: img/pretty.jpeg
   freq: 87.77240
 - terms: 
@@ -10392,7 +10392,7 @@ concepts:
     tts: en-terms/wrong.mp3
     pron: rɒŋ
   - term: špatně
-    tts: cs-terms/spatne.mp3
+    tts: cs-terms/spatne2.mp3
   img: img/wrong.jpeg
   freq: 83.58240
 - terms: 
@@ -17503,7 +17503,7 @@ concepts:
   - term: jistě
     tts: cs-terms/jiste.mp3
   - term: určitě
-    tts: cs-terms/urcite.mp3
+    tts: cs-terms/urcite2.mp3
   img: img/certainly.jpeg
   freq: 45.88160
 - terms: 
@@ -19428,7 +19428,7 @@ concepts:
   - term: okres
     tts: cs-terms/okres.mp3
   - term: čtvrť
-    tts: cs-terms/ctvrt.mp3
+    tts: cs-terms/ctvrt2.mp3
   img: img/district.jpeg
   freq: 172.28630
 - terms: 
@@ -20891,7 +20891,7 @@ concepts:
   - term: britský
     tts: cs-terms/britsky.mp3
   - term: anglický
-    tts: cs-terms/anglicky.mp3
+    tts: cs-terms/anglicky2.mp3
   freq: 120.57400
 ##  facilities   ############################################################ no img
 - terms: 
@@ -21218,7 +21218,7 @@ concepts:
   - term: located
     tts: en-terms/located.mp3
   - term: umístěný
-    tts: cs-terms/umisteny.mp3
+    tts: cs-terms/umisteny2.mp3
   - term: situovaný
     tts: cs-terms/situovany.mp3
   freq: 112.64560
@@ -21869,7 +21869,7 @@ concepts:
   - term: program
     tts: cs-terms/program.mp3
   - term: pořad
-    tts: cs-terms/porad.mp3
+    tts: cs-terms/porad2.mp3
   freq: 97.27950
 ##  input   ################################################################# no img
 - terms: 
@@ -22956,7 +22956,7 @@ concepts:
   - term: flat
     tts: en-terms/flat.mp3
   - term: byt
-    tts: cs-terms/byt.mp3
+    tts: cs-terms/byt2.mp3
   - term: plochý
     tts: cs-terms/plochy.mp3
   freq: 79.38470
@@ -23290,7 +23290,7 @@ concepts:
   - term: species
     tts: en-terms/species.mp3
   - term: druhy
-    tts: cs-terms/druhy.mp3
+    tts: cs-terms/druhy2.mp3
   - term: rody
     tts: cs-terms/rody.mp3
   freq: 75.08490
@@ -23652,7 +23652,7 @@ concepts:
   - term: poster
     tts: en-terms/poster.mp3
   - term: plakát
-    tts: cs-terms/plakat.mp3
+    tts: cs-terms/plakat2.mp3
   - term: reklamní tabule
     tts: cs-terms/reklamni tabule.mp3
   freq: 71.23250
@@ -24922,7 +24922,7 @@ concepts:
   - term: zcela
     tts: cs-terms/zcela.mp3
   - term: úplně
-    tts: cs-terms/uplne.mp3
+    tts: cs-terms/uplne2.mp3
   freq: 58.46570
 ##  fort   ################################################################## no img
 - terms: 
@@ -25063,7 +25063,7 @@ concepts:
   - term: taxes
     tts: en-terms/taxes.mp3
   - term: daně
-    tts: cs-terms/dane.mp3
+    tts: cs-terms/dane2.mp3
   freq: 57.25780
 ##  mouse   ################################################################# no img
 - terms: 
@@ -25205,7 +25205,7 @@ concepts:
   - term: vazba
     tts: cs-terms/vazba.mp3
   - term: závazný
-    tts: cs-terms/zavazny.mp3
+    tts: cs-terms/zavazny2.mp3
   freq: 55.43670
 ##  brief   ################################################################# no img
 - terms: 
@@ -25999,7 +25999,7 @@ concepts:
   - term: row
     tts: en-terms/row.mp3
   - term: řada
-    tts: cs-terms/rada.mp3
+    tts: cs-terms/rada2.mp3
   - term: hádka
     tts: cs-terms/hadka.mp3
   freq: 50.41380
@@ -26298,7 +26298,7 @@ concepts:
   - term: pláštěnka
     tts: cs-terms/plastenka.mp3
   - term: mys (na moři)
-    tts: cs-terms/mys.mp3
+    tts: cs-terms/mys2.mp3
   freq: 49.04780
 ##  secondary   ############################################################# no img
 - terms: 
@@ -26395,7 +26395,7 @@ concepts:
   - term: automatic
     tts: en-terms/automatic.mp3
   - term: automatický
-    tts: cs-terms/automaticky.mp3
+    tts: cs-terms/automaticky2.mp3
   - term: samočinný
     tts: cs-terms/samocinny.mp3
   freq: 48.54590
