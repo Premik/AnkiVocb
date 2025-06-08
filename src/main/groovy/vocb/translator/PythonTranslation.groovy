@@ -61,7 +61,7 @@ class PythonTranslation implements Translator {
 	@Override
     public List<String> translations(String word) {
         String query = QUERY_TEMPLATE.replace("{}", word)
-        Process process = ["python", pythonScript, "--provider", "openrouter", "--model", "google/gemini-2.5-flash-preview-05-20", "-q", query].execute()
+        Process process = ["python", pythonScript, "--provider", "openrouter", "--model", "google/gemini-2.5-flash-preview-05-20", "--seed", "1", "-q", query].execute()
         String output = process.text?.trim()
 		output = output.replaceAll(/```json/, '')
         output = output.replaceAll(/```/, '')
