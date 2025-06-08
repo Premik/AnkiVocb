@@ -11287,7 +11287,7 @@ concepts:
   - term: quick
     tts: en-terms/quick.mp3
     pron: kwɪk
-  - term: rychlé
+  - term: rychle
     tts: cs-terms/rychle.mp3
   img: img/quick.jpeg
   freq: 145.52130
@@ -20590,6 +20590,7 @@ concepts:
 ##  album   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing
 - terms: 
   - term: album
+    tts: en-terms/album.mp3
   - term: album
     tts: cs-terms/album.mp3
   - term: deska (gramofonová)
@@ -20975,6 +20976,7 @@ concepts:
 ##  logo   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing
 - terms: 
   - term: logo
+    tts: en-terms/logo.mp3  
   - term: logo
     tts: cs-terms/logo.mp3
   - term: značka
@@ -20985,6 +20987,7 @@ concepts:
 ##  score   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing
 - terms: 
   - term: score
+    tts: en-terms/score.mp3  
   - term: skóre
     tts: cs-terms/skore.mp3
   - term: bodovat
@@ -21002,6 +21005,7 @@ concepts:
 ##  client   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing
 - terms: 
   - term: client
+    tts: en-terms/client.mp3
   - term: klient
     tts: cs-terms/klient.mp3
   - term: zákazník
@@ -21546,6 +21550,7 @@ concepts:
 ##  publications   ########################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing
 - terms: 
   - term: publications
+    tts: en-terms/publikace.mp3
   - term: publikace
     tts: cs-terms/publikace.mp3
   - term: vydání
