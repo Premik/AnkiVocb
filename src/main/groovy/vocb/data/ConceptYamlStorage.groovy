@@ -87,7 +87,8 @@ public class ConceptYamlStorage {
 			"yes",
 			"no",
 			"off",
-			"on"
+			"on",
+			'null'
 		]
 		boolean specialChar = value[0] in  ('''!@#$%^&*("')''' as List)
 		boolean middleChar = false
