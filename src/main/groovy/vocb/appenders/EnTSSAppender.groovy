@@ -37,10 +37,13 @@ public class EnTSSAppender {
 
 
 		dbMan.withTermsByLang("en") { Concept c, Term t->
+			
 			if (c.terms.size() >3) {
-				println color("Ignoring: $c", WHITE)
+				println color("Ignoring: $t", WHITE)
 				return
 			}
+			//println(t)
+			
 			if (!dbMan.linkedMediaExists(t.tts) ) {
 				i++
 				if (i > limit) {

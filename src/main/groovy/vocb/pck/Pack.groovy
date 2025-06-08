@@ -494,8 +494,8 @@ public class Pack {
 			println(p.packageRootPath)
 			silent=true
 			saveGeneralDescription()
-			//print(allPackInfos.collect { it.displayName })
-			//p.exportByName("Basic3K")
+			print(allPackInfos.collect { it.displayName })
+			p.exportByName("Basic3K")
 
 			//deleteDupFirst1k()
 			//return
@@ -512,9 +512,9 @@ public class Pack {
 			//return
 
 			//return
-			findTopWordsNotInDb(5000).each {
-			 println it
-			 }
+//			findTopWordsNotInDb(5000).each {
+//			 println it
+//			 }
 			/*exportedWordsOf("Jing").each {
 			 println it
 			 }*/

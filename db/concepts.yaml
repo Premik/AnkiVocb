@@ -20587,14 +20587,12 @@ concepts:
   - term: přístav
     tts: cs-terms/pristav.mp3
   freq: 132.71310
-##  album   ################################################################# 4 terms. Up to 3 supported only|no img
+##  album   ################################################################# no img
 - terms: 
   - term: album
     tts: en-terms/album.mp3
   - term: album
     tts: cs-terms/album.mp3
-  - term: deska (gramofonová)
-    tts: cs-terms/deska.mp3
   - term: sbírka
     tts: cs-terms/sbirka.mp3
   freq: 132.47940
@@ -20973,18 +20971,14 @@ concepts:
   - term: patřičný
     tts: cs-terms/patricny.mp3
   freq: 118.46340
-##  logo   ################################################################## 4 terms. Up to 3 supported only|no img
+##  logo   ################################################################## no img
 - terms: 
   - term: logo
     tts: en-terms/logo.mp3
   - term: logo
     tts: cs-terms/logo.mp3
-  - term: značka
-    tts: cs-terms/znacka.mp3
-  - term: symbol
-    tts: cs-terms/symbol.mp3
   freq: 118.22330
-##  score   ################################################################# 4 terms. Up to 3 supported only|no img
+##  score   ################################################################# no img
 - terms: 
   - term: score
     tts: en-terms/score.mp3
@@ -20992,8 +20986,6 @@ concepts:
     tts: cs-terms/skore.mp3
   - term: bodovat
     tts: cs-terms/bodovat.mp3
-  - term: výsledek
-    tts: cs-terms/vysledek.mp3
   freq: 117.85780
 ##  statistics   ############################################################ no img
 - terms: 
@@ -21002,7 +20994,7 @@ concepts:
   - term: statistika
     tts: cs-terms/statistika.mp3
   freq: 117.65280
-##  client   ################################################################ 4 terms. Up to 3 supported only|no img
+##  client   ################################################################ no img
 - terms: 
   - term: client
     tts: en-terms/client.mp3
@@ -21010,8 +21002,6 @@ concepts:
     tts: cs-terms/klient.mp3
   - term: zákazník
     tts: cs-terms/zakaznik.mp3
-  - term: odběratel
-    tts: cs-terms/odberatel.mp3
   freq: 117.64440
 ##  capital   ############################################################### no img
 - terms: 
@@ -21547,14 +21537,12 @@ concepts:
   - term: poslední dobou
     tts: cs-terms/posledni dobou.mp3
   freq: 104.80000
-##  publications   ########################################################## 4 terms. Up to 3 supported only|no img
+##  publications   ########################################################## no img
 - terms: 
   - term: publications
-    tts: en-terms/publikace.mp3
+    tts: en-terms/publications.mp3
   - term: publikace
     tts: cs-terms/publikace.mp3
-  - term: vydání
-    tts: cs-terms/vydani.mp3
   - term: tiskoviny
     tts: cs-terms/tiskoviny.mp3
   freq: 104.57360

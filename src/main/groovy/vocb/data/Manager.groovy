@@ -177,7 +177,7 @@ public class Manager {
 		load(defaultConceptsLocation, true)
 		loadIgnoreList()
 		load(defaultExamplesLocation, true)
-		
+
 		reindex()
 	}
 
@@ -398,7 +398,7 @@ public class Manager {
 		}
 
 		println "Media clashes"
-		
+
 		tGrp.each { CharSequence mediaLink, Set<Term> terms ->
 			Set<Term> csTerms = terms.findAll { it.lang == 'cs' }
 			if (csTerms.size() > 1) {
