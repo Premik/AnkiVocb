@@ -27168,17 +27168,15 @@ concepts:
   - term: tendence
     tts: cs-terms/tendence.mp3
   freq: 44.00410
-##  software   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  software   ############################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: software
-  - term: programové vybavení
-  - term: program
+  - term: programové vybavení (software)
   freq: 629.99790
-##  project   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  project   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: project
   - term: projekt
-  - term: záměr
   - term: promítat
   freq: 400.02190
 ##  digital   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
@@ -27193,73 +27191,54 @@ concepts:
   - term: pohrabáč
   - term: poker
   freq: 219.43460
-##  stories   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  stories   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: stories
   - term: příběhy
-  - term: patra
-  - term: zprávy
+  - term: patra (obchodního domu)
   freq: 196.39500
-##  auto   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  auto   ################################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: auto
   - term: auto
-  - term: automobil
-  - term: vůz
+  - term: automaticky
   freq: 161.02100
 ##  golf   ################################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: golf
   - term: golf
   freq: 150.19440
-##  environmental   ######################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  environmental   ######################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: environmental
   - term: environmentální
-  - term: ekologický
-  - term: životního prostředí
+  - term: "(týkající se) životního prostředí"
   freq: 138.73990
-##  inn   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  inn   ################################################################### no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: inn
-  - term: hostinec
   - term: hospoda
-  - term: ubytovna
   freq: 112.23400
-##  galleries   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  galleries   ############################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: galleries
   - term: galerie
-  - term: sbírky
   - term: výstavy
   freq: 79.57520
-##  apparel   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  apparel   ############################################################### no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: apparel
   - term: oděv
-  - term: oblečení
-  - term: šaty
   freq: 68.85960
-##  election   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  election   ############################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: election
   - term: volby
-  - term: hlasování
-  - term: volba
   freq: 62.44980
-##  baseball   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
-- terms: 
-  - term: baseball
-  - term: baseball
-  - term: americký baseball
-  - term: pálkovaná
-  freq: 59.62750
-##  protocol   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  protocol   ############################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: protocol
   - term: protokol
-  - term: dohoda
-  - term: pravidla
   freq: 53.21480
 ##  editorial   ############################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -27267,32 +27246,27 @@ concepts:
   - term: úvodník
   - term: redakční
   freq: 53.10810
-##  equity   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  equity   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: equity
   - term: spravedlnost
-  - term: nestrannost
-  - term: vlastní kapitál
+  - term: "(vlastní) kapitál"
   freq: 52.97970
-##  bytes   ################################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  bytes   ################################################################# no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: bytes
   - term: bajty
-  - term: oktety
   freq: 52.45220
-##  null   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  null   ################################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: "null"
-  - term: prázdný
   - term: nulový
-  - term: nic
   freq: 52.26640
-##  consulting   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  consulting   ############################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: consulting
   - term: poradenství
   - term: konzultace
-  - term: rada
   freq: 52.13630
 ##  lingerie   ############################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -27300,126 +27274,103 @@ concepts:
   - term: spodní prádlo
   - term: dámské prádlo
   freq: 50.92450
-##  jazz   ################################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  jazz   ################################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: jazz
   - term: jazz
-  - term: džez
   freq: 50.87500
-##  boxes   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  boxes   ################################################################# no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: boxes
   - term: krabice
-  - term: bedny
-  - term: boxy
   freq: 43.84740
 ##  fourth   ################################################################ no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: fourth
   - term: čtvrtý
   freq: 43.80610
-##  advisor   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  advisor   ############################################################### no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: advisor
   - term: poradce
-  - term: konzultant
   freq: 43.73220
-##  marketplace   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  marketplace   ########################################################### no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: marketplace
   - term: tržiště
-  - term: trh
-  - term: náměstí
   freq: 43.71620
-##  aware   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  aware   ################################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: aware
-  - term: vědomý si
-  - term: informovaný
+  - term: vědomý si (něčeho)
   - term: znající
   freq: 43.69880
-##  evolution   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  evolution   ############################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: evolution
   - term: evoluce
   - term: vývoj
-  - term: rozvoj
   freq: 43.64230
-##  objectives   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  objectives   ############################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: objectives
   - term: cíle
-  - term: účely
   - term: záměry
   freq: 43.58030
-##  remains   ############################################################### 6 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing|t5:tts:missing
+##  remains   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: remains
   - term: pozůstatky
-  - term: zůstatek
   - term: ostatky
-  - term: torzo
-  - term: zbyť
   freq: 43.46180
-##  concerned   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  concerned   ############################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: concerned
   - term: znepokojený
-  - term: dotčený
   - term: starostlivý
   freq: 43.34190
-##  euro   ################################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  euro   ################################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: euro
   - term: euro
-  - term: eur
   freq: 43.31500
-##  generic   ############################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  generic   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: generic
   - term: obecný
-  - term: všeobecný
-  - term: univerzální
+  - term: obyčejný
   freq: 43.29830
-##  encyclopedia   ########################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  encyclopedia   ########################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: encyclopedia
   - term: encyklopedie
-  - term: slovník
   freq: 43.27540
-##  usage   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  usage   ################################################################# no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: usage
   - term: použití
-  - term: využití
-  - term: spotřeba
   freq: 43.25690
-##  cap   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  cap   ################################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: cap
   - term: čepice
   - term: víčko
-  - term: limit
   freq: 43.24970
-##  ink   ################################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  ink   ################################################################### no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: ink
   - term: inkoust
-  - term: tuš
   freq: 43.24850
-##  continuing   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  continuing   ############################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: continuing
   - term: pokračující
-  - term: trvalý
   - term: průběžný
   freq: 43.23830
-##  peak   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
+##  peak   ################################################################## no img|t0:tts:missing|t1:tts:missing
 - terms: 
   - term: peak
   - term: vrchol
-  - term: špička
-  - term: dosažení vrcholu
   freq: 43.15350
 ##  competitive   ########################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -27443,61 +27394,49 @@ concepts:
   - term: compact
   - term: kompaktní
   - term: úsporný
-  - term: útlý
   freq: 43.04760
 ##  poetry   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: poetry
-  - term: poezie
-  - term: básnictví
+  - term: poezie  
   - term: verše
   freq: 43.03730
 ##  preparation   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: preparation
   - term: příprava
-  - term: přípravy
-  - term: přípráva
   freq: 42.96540
 ##  attempt   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: attempt
-  - term: pokus
-  - term: snažit se
+  - term: pokusit se
   freq: 42.93630
 ##  accordance   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: accordance
   - term: shoda
   - term: soulad
-  - term: dle
   freq: 42.83900
 ##  width   ################################################################# no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: width
-  - term: šířka
-  - term: rozpětí
+  - term: šířka  
   freq: 42.81830
 ##  forget   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: forget
   - term: zapomenout
-  - term: opomenout
   freq: 42.78420
 ##  array   ################################################################# 5 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: array
   - term: pole
-  - term: řada
-  - term: seskupení
-  - term: přehlídka
+  - term: řada  
   freq: 42.76310
 ##  accurate   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: accurate
-  - term: přesný
-  - term: precizní
-  - term: správný
+  - term: přesný  
   freq: 42.75370
 ##  climate   ############################################################### no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -27515,116 +27454,96 @@ concepts:
 - terms: 
   - term: alcohol
   - term: alkohol
-  - term: líh
-  - term: chlast
+  - term: líh  
   freq: 42.61280
 ##  annotation   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: annotation
   - term: poznámka
-  - term: anotace
-  - term: vysvětlivka
+  - term: anotace  
   freq: 42.58760
 ##  raw   ################################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: raw
   - term: syrový
-  - term: nezpracovaný
-  - term: surový
+  - term: nezpracovaný  
   freq: 42.53210
 ##  extent   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
-  - term: extent
-  - term: rozsah
+  - term: extent  
   - term: míra
   - term: rozsah (prostorový, plošný)
   freq: 42.36750
 ##  lane   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
-  - term: lane
-  - term: pruh
+  - term: lane  
   - term: ulička
   - term: dráha
   freq: 42.30560
 ##  compensation   ########################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: compensation
-  - term: odškodné
-  - term: náhrada
+  - term: odškodné  
   - term: kompenzace
   freq: 42.15050
 ##  export   ################################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: export
-  - term: vývoz
-  - term: exportovat
+  - term: vývoz  
   freq: 42.10380
 ##  aircraft   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: aircraft
-  - term: letadlo
-  - term: letoun
-  - term: aeroplán
+  - term: letadlo  
   freq: 42.07570
 ##  conflict   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: conflict
   - term: konflikt
-  - term: spor
-  - term: neshoda
+  - term: spor  
   freq: 42.01340
 ##  employer   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: employer
   - term: zaměstnavatel
-  - term: firma
-  - term: společnost
   freq: 41.96570
 ##  percentage   ############################################################ no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: percentage
   - term: procento
-  - term: procentuální podíl
   freq: 41.94560
 ##  heritage   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: heritage
   - term: dědictví
   - term: odkaz
-  - term: kulturní dědictví
   freq: 41.75760
 ##  immediate   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: immediate
   - term: okamžitý
   - term: bezprostřední
-  - term: nynější
   freq: 41.70960
 ##  spread   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
-  - term: spread
-  - term: rozšířit
-  - term: natřít
+  - term: spread  
+  - term: roztírat
   - term: šířit
   freq: 41.69280
 ##  coach   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: coach
   - term: trenér
-  - term: autobus
   - term: kouč
   freq: 41.68330
 ##  agricultural   ########################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: agricultural
-  - term: zemědělský
-  - term: rolnický
-  - term: agrární
+  - term: zemědělský  
   freq: 41.67340
 ##  expand   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
-  - term: expand
-  - term: rozšířit
+  - term: expand  
   - term: zvětšit
   - term: rozvinout
   freq: 41.62940
@@ -27633,40 +27552,31 @@ concepts:
   - term: audience
   - term: publikum
   - term: posluchači
-  - term: násluch
   freq: 41.61140
 ##  assigned   ############################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: assigned
   - term: přiřazený
-  - term: určený
   - term: zadaný
   freq: 41.56170
 ##  participate   ########################################################### 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: participate
-  - term: účastnit se
-  - term: zapojit se
-  - term: podílet se
+  - term: účastnit se  
   freq: 41.53980
 ##  plug   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: plug
-  - term: zástrčka
-  - term: ucpat
-  - term: konec
+  - term: zástrčka  
   freq: 41.53860
 ##  specialist   ############################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: specialist
-  - term: specialista
-  - term: odborník
-  - term: expert
+  - term: specialista  
   freq: 41.52070
 ##  virgin   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
 - terms: 
   - term: virgin
-  - term: panna
   - term: panenský
   - term: nedotčený
   freq: 41.49830
@@ -27674,16 +27584,12 @@ concepts:
 - terms: 
   - term: affect
   - term: ovlivnit
-  - term: postihnout
-  - term: změnit
+  - term: postihnout  
   freq: 41.49830
 ##  investigation   ######################################################### 5 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing|t4:tts:missing
 - terms: 
   - term: investigation
-  - term: vyšetřování
-  - term: šetření
-  - term: prošetřování
-  - term: pátrání
+  - term: vyšetřování  
   freq: 41.48760
 ##  bike   ################################################################## no img|t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
@@ -29728,7 +29634,7 @@ concepts:
 - terms: 
   - term: banner
   - term: prapor
-  - term:  transparent
+  - term: transparent
   - term: titulek
   freq: 32.64680
 ##  applicant   ############################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing|t1:tts:missing|t2:tts:missing|t3:tts:missing
