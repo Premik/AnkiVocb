@@ -149,8 +149,8 @@ public class WordsSource {
 			//String tx = ''''''
 			
 			//String tx = new File("/data/src/AnkiVocb/pkg/DuckTales/sentences.txt").text
-			String tx = new File("/wrk/dev/AnkiVocb/pkg/Basic/Basic3K/words.txt").text
-			//String tx= "actor comedian edited economic crisis actor comedian edited economic crisis"
+			String tx = new File("/wrk/dev/AnkiVocb/pkg/Basic/Basic5K/words.txt").text
+			//String tx= "actor comedian edited economic cXrisis actor comedian edited economic crisis"
 	
 			
 			
