@@ -15,13 +15,16 @@ import vocb.tts.LocalTTS
 import static vocb.Ansi.*
 
 public class CsTSSAppender {
-	
+
 	//String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural", "cs-CZ-Jakub"]
-	String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural"]
+	String[] voices = [
+		"cs-CZ-AntoninNeural",
+		"cs-CZ-VlastaNeural"
+	]
 	//String[] voices = ["cs-CZ-Jakub"]
 	//asiat
 	int voiceCounter = 0
-	
+
 	String getSomeVoice() {
 		voiceCounter++
 		voices[voiceCounter%(voices.length)]
@@ -39,20 +42,39 @@ public class CsTSSAppender {
 		dbMan.load()
 		int i = 0
 		//dbMan.withTermsByLang("cs", false) {Concept c, Term t->
-		Closure filter = { Concept c->
+		Closure filter = { Concept c ->
 			c.validationProfile.termRequiredFields.contains("tts")
 		}
 		Collection<Term> terms = dbMan.db.conceptsByLang("cs", filter) + dbMan.db.examplesByLang("cs")
-		if (includeOnlyTerms) terms = terms.findAll {includeOnlyTerms.contains(it.term) } 
+		if (includeOnlyTerms) terms = terms.findAll { includeOnlyTerms.contains(it.term) }
+
+		Map<String, String> term2mediaTerm = [:]
+		Map<String, List<Term>> clashes = terms.groupBy { dbMan.termd2MediaLink(it.term) }
+		clashes.values()
+				.findAll { it.size() > 1 }
+				.each { List<Term> clashingTerms ->
+					clashingTerms.eachWithIndex { Term t, int j ->
+						if (j > 0) {
+							String originalTerm = t.term
+							String newTerm = "${t.term}${j + 1}"
+							term2mediaTerm[originalTerm] = newTerm
+							println "  Remapping ${originalTerm} to ${newTerm} for media generation"
+						}
+					}
+				}
+
+
 		for (Term t in terms) {
-			if (i >limit) {
+			if (i > limit) {
 				println color("Limit reached", RED)
 				break
 			}
 
 			String trm = wn.stripBracketsOut(t.term);
+			String trmTranslated = term2mediaTerm.get(t.term, trm)
+
 			Closure synthIt = { Path p ->
-				ttsCz.synth(trm, p.toString(), someVoice )
+				ttsCz.synth(trm, p.toString(), someVoice)
 				i++
 				dbMan.save()
 				Thread.sleep(sleep)
@@ -61,14 +83,13 @@ public class CsTSSAppender {
 			if (wn.uniqueueTokens(trm).size() > 2) folder = "cs-samples"
 			else folder = "cs-terms"
 			if (!t.tts) {
-				t.tts = dbMan.resolveMedia(trm, "mp3", folder, synthIt)
-			} else { //has medialink
-				//but doesn't exist
+				t.tts = dbMan.resolveMedia(trmTranslated, "mp3", folder, synthIt)
+			} else {
+				//has medialink but doesn't exist
 				if (!dbMan.linkedMediaExists(t.tts)) {
 					synthIt(dbMan.mediaLinkPath(t.tts))
 				}
 			}
-
 		}
 		dbMan.save()
 	}
@@ -76,7 +97,7 @@ public class CsTSSAppender {
 
 	public static void main(String[] args) {
 		new CsTSSAppender().with {
-			limit = 200
+			limit = 1
 			//ttsCz = new LocalTTS()
 			//includeOnlyTerms = ["koutek", "kůň", "závodník" ]
 			synth()
