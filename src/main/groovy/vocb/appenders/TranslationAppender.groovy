@@ -109,7 +109,8 @@ public class TranslationAppender {
 
 
 	public static void main(String[] args) {
-		new TranslationAppender().with {			
+		new TranslationAppender().with {
+			//limit= 2
 			translateWords()
 			//reuseTranlation()
 			//translateExamples()
