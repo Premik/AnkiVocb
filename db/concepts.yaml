@@ -20587,7 +20587,7 @@ concepts:
   - term: přístav
     tts: cs-terms/pristav.mp3
   freq: 132.71310
-##  album   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing
+##  album   ################################################################# 4 terms. Up to 3 supported only|no img
 - terms: 
   - term: album
     tts: en-terms/album.mp3
@@ -20973,10 +20973,10 @@ concepts:
   - term: patřičný
     tts: cs-terms/patricny.mp3
   freq: 118.46340
-##  logo   ################################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing
+##  logo   ################################################################## 4 terms. Up to 3 supported only|no img
 - terms: 
   - term: logo
-    tts: en-terms/logo.mp3  
+    tts: en-terms/logo.mp3
   - term: logo
     tts: cs-terms/logo.mp3
   - term: značka
@@ -20984,10 +20984,10 @@ concepts:
   - term: symbol
     tts: cs-terms/symbol.mp3
   freq: 118.22330
-##  score   ################################################################# 4 terms. Up to 3 supported only|no img|t0:tts:missing
+##  score   ################################################################# 4 terms. Up to 3 supported only|no img
 - terms: 
   - term: score
-    tts: en-terms/score.mp3  
+    tts: en-terms/score.mp3
   - term: skóre
     tts: cs-terms/skore.mp3
   - term: bodovat
@@ -21002,7 +21002,7 @@ concepts:
   - term: statistika
     tts: cs-terms/statistika.mp3
   freq: 117.65280
-##  client   ################################################################ 4 terms. Up to 3 supported only|no img|t0:tts:missing
+##  client   ################################################################ 4 terms. Up to 3 supported only|no img
 - terms: 
   - term: client
     tts: en-terms/client.mp3
@@ -21547,7 +21547,7 @@ concepts:
   - term: poslední dobou
     tts: cs-terms/posledni dobou.mp3
   freq: 104.80000
-##  publications   ########################################################## 4 terms. Up to 3 supported only|no img|t0:tts:missing
+##  publications   ########################################################## 4 terms. Up to 3 supported only|no img
 - terms: 
   - term: publications
     tts: en-terms/publikace.mp3
