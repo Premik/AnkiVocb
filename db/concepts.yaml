@@ -26372,43 +26372,53 @@ concepts:
   - term: patra (obchodního domu)
     tts: cs-terms/patra.mp3
   freq: 196.39500
-##  auto   ################################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  auto   ################################################################## t0:tts:missing
 - terms: 
   - term: auto
   - term: auto
+    tts: cs-terms/auto.mp3
   - term: automaticky
+    tts: cs-terms/automaticky.mp3
   freq: 161.02100
-##  golf   ################################################################## t0:tts:missing|t1:tts:missing
+##  golf   ################################################################## t0:tts:missing
 - terms: 
   - term: golf
   - term: golf
+    tts: cs-terms/golf.mp3
   freq: 150.19440
-##  environmental   ######################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  environmental   ######################################################### t0:tts:missing
 - terms: 
   - term: environmental
   - term: environmentální
+    tts: cs-terms/environmentalni.mp3
   - term: "(týkající se) životního prostředí"
+    tts: cs-terms/zivotniho prostredi.mp3
   freq: 138.73990
-##  inn   ################################################################### t0:tts:missing|t1:tts:missing
+##  inn   ################################################################### t0:tts:missing
 - terms: 
   - term: inn
   - term: hospoda
+    tts: cs-terms/hospoda.mp3
   freq: 112.23400
-##  galleries   ############################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  galleries   ############################################################# t0:tts:missing
 - terms: 
   - term: galleries
   - term: galerie
+    tts: cs-terms/galerie.mp3
   - term: výstavy
+    tts: cs-terms/vystavy.mp3
   freq: 79.57520
-##  apparel   ############################################################### t0:tts:missing|t1:tts:missing
+##  apparel   ############################################################### t0:tts:missing
 - terms: 
   - term: apparel
   - term: oděv
+    tts: cs-terms/odev.mp3
   freq: 68.85960
-##  election   ############################################################## t0:tts:missing|t1:tts:missing
+##  election   ############################################################## t0:tts:missing
 - terms: 
   - term: election
   - term: volby
+    tts: cs-terms/volby.mp3
   freq: 62.44980
 ##  protocol   ############################################################## t0:tts:missing|t1:tts:missing
 - terms: 
