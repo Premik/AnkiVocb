@@ -12,13 +12,13 @@ public class LocalTTS {
 	HttpHelper httpHelper = new HttpHelper()
 	TTSConf conf = new TTSConf( voiceId:"violka")
 
-	void synth(String text, String outFile="/tmp/work/1.mp3") {
+	void synth(String text, String outFile="/tmp/work/1.mp3", String voice) {
 		assert conf.voiceId
 		assert outFile
 		assert text
 		String txtEnc = URLEncoder.encode(text, utf8)
 
-		URL u = "http://bb1:8081/?text=$txtEnc&voice=$conf.voiceId&format=mp3".toURL()
+		URL u = "http://r9:8081/?text=$txtEnc&voice=$conf.voiceId&format=mp3".toURL()
 		println u
 		httpHelper.withUrlGetResponse(u) {
 			new File(outFile) << it

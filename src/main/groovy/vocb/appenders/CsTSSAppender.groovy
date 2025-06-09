@@ -17,11 +17,11 @@ import static vocb.Ansi.*
 public class CsTSSAppender {
 
 	//String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural", "cs-CZ-Jakub"]
-//	String[] voices = [
-//		"cs-CZ-AntoninNeural",
-//		"cs-CZ-VlastaNeural"
-//	]
-	String[] voices = ["zh-CN-YunfanMultilingualNeural"]
+	String[] voices = [
+		"cs-CZ-AntoninNeural",
+		"cs-CZ-VlastaNeural"
+	]
+	//String[] voices = ["zh-CN-YunfanMultilingualNeural"]
 	//zh-CN-YunfanMultilingualNeural
 	//asiat
 	int voiceCounter = 0
@@ -31,8 +31,8 @@ public class CsTSSAppender {
 		voices[voiceCounter%(voices.length)]
 	}
 
-	//LocalTTS ttsCz = new LocalTTS()
-	Object ttsCz = new AzureTTs()
+	LocalTTS ttsCz = new LocalTTS()
+	//Object ttsCz = new AzureTTs()
 	Manager dbMan = new Manager()
 	int limit = 10
 	WordNormalizer wn = new WordNormalizer()
