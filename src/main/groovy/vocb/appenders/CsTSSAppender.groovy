@@ -50,21 +50,23 @@ public class CsTSSAppender {
 
 		Map<String, String> term2mediaTerm = [:]
 		Map<String, List<Term>> clashes = terms.groupBy { dbMan.termd2MediaLink(it.term) }
-		clashes.values()
-				.findAll { it.size() > 1 }
-				.findAll { List<Term> clashingTerms-> clashingTerms.any { !it.tts } }
+		clashes.values()				
+				.findAll { List<Term> clashingTerms-> clashingTerms.any { !it.tts } }				
+				.findAll { List<Term> clashingTerms-> (clashingTerms.collect { wn.stripBracketsOut(it.term) } as Set).size()>1 }
 				.each { List<Term> clashingTerms ->
-					clashingTerms.eachWithIndex { Term t, int j ->
+					clashingTerms
+					.findAll {!it.tts}
+					.eachWithIndex { Term t, int j ->
 						if (j > 0) {
 							String originalTerm = t.term
 							String newTerm = "${t.term}${j + 1}"
 							term2mediaTerm[originalTerm] = newTerm
-							println "  Remapping ${originalTerm} to ${newTerm} for media generation"
+							println "  Remapping to $newTerm for media generation $clashingTerms"
 						}
 					}
 				}
 				
-		return
+		
 
 
 		for (Term t in terms) {
@@ -100,7 +102,7 @@ public class CsTSSAppender {
 
 	public static void main(String[] args) {
 		new CsTSSAppender().with {
-			limit = 1
+			limit = 5
 			//ttsCz = new LocalTTS()
 			//includeOnlyTerms = ["koutek", "kůň", "závodník" ]
 			synth()
