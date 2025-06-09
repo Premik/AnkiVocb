@@ -10,7 +10,7 @@ import groovy.transform.ToString
 @CompileStatic
 public class ValidationProfile {
 
-	public static final ValidationProfile strict = new ValidationProfile (name:"strict")
+	public static final ValidationProfile strict = new ValidationProfile (name:"strict", img: false)
 	
 	@Lazy public static final ValidationProfile noImg = currentDefaultProfile.clone().tap {
 		name="strictNoImg"

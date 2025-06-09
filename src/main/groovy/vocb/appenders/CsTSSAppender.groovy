@@ -52,6 +52,7 @@ public class CsTSSAppender {
 		Map<String, List<Term>> clashes = terms.groupBy { dbMan.termd2MediaLink(it.term) }
 		clashes.values()
 				.findAll { it.size() > 1 }
+				.findAll { List<Term> clashingTerms-> clashingTerms.any { !it.tts } }
 				.each { List<Term> clashingTerms ->
 					clashingTerms.eachWithIndex { Term t, int j ->
 						if (j > 0) {
@@ -62,6 +63,8 @@ public class CsTSSAppender {
 						}
 					}
 				}
+				
+		return
 
 
 		for (Term t in terms) {
