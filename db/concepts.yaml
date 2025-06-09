@@ -26488,45 +26488,57 @@ concepts:
   - term: čtvrtý
     tts: cs-terms/ctvrty.mp3
   freq: 43.80610
-##  advisor   ############################################################### t0:tts:missing|t1:tts:missing
+##  advisor   ############################################################### t0:tts:missing
 - terms: 
   - term: advisor
   - term: poradce
+    tts: cs-terms/poradce.mp3
   freq: 43.73220
-##  marketplace   ########################################################### t0:tts:missing|t1:tts:missing
+##  marketplace   ########################################################### t0:tts:missing
 - terms: 
   - term: marketplace
   - term: tržiště
+    tts: cs-terms/trziste.mp3
   freq: 43.71620
-##  aware   ################################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  aware   ################################################################# t0:tts:missing
 - terms: 
   - term: aware
   - term: vědomý si (něčeho)
+    tts: cs-terms/vedomy si.mp3
   - term: znající
+    tts: cs-terms/znajici.mp3
   freq: 43.69880
-##  evolution   ############################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  evolution   ############################################################# t0:tts:missing
 - terms: 
   - term: evolution
   - term: evoluce
+    tts: cs-terms/evoluce.mp3
   - term: vývoj
+    tts: cs-terms/vyvoj.mp3
   freq: 43.64230
-##  objectives   ############################################################ t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  objectives   ############################################################ t0:tts:missing
 - terms: 
   - term: objectives
   - term: cíle
+    tts: cs-terms/cile.mp3
   - term: záměry
+    tts: cs-terms/zamery.mp3
   freq: 43.58030
-##  remains   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  remains   ############################################################### t0:tts:missing
 - terms: 
   - term: remains
   - term: pozůstatky
+    tts: cs-terms/pozustatky.mp3
   - term: ostatky
+    tts: cs-terms/ostatky.mp3
   freq: 43.46180
-##  concerned   ############################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  concerned   ############################################################# t0:tts:missing
 - terms: 
   - term: concerned
   - term: znepokojený
+    tts: cs-terms/znepokojeny.mp3
   - term: starostlivý
+    tts: cs-terms/starostlivy.mp3
   freq: 43.34190
 ##  euro   ################################################################## t0:tts:missing|t1:tts:missing
 - terms: 
