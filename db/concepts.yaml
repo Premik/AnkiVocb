@@ -26420,59 +26420,73 @@ concepts:
   - term: volby
     tts: cs-terms/volby.mp3
   freq: 62.44980
-##  protocol   ############################################################## t0:tts:missing|t1:tts:missing
+##  protocol   ############################################################## t0:tts:missing
 - terms: 
   - term: protocol
   - term: protokol
+    tts: cs-terms/protokol.mp3
   freq: 53.21480
-##  editorial   ############################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  editorial   ############################################################# t0:tts:missing
 - terms: 
   - term: editorial
   - term: úvodník
+    tts: cs-terms/uvodnik.mp3
   - term: redakční
+    tts: cs-terms/redakcni.mp3
   freq: 53.10810
-##  equity   ################################################################ t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  equity   ################################################################ t0:tts:missing
 - terms: 
   - term: equity
   - term: spravedlnost
+    tts: cs-terms/spravedlnost.mp3
   - term: "(vlastní) kapitál"
+    tts: cs-terms/kapital.mp3
   freq: 52.97970
-##  bytes   ################################################################# t0:tts:missing|t1:tts:missing
+##  bytes   ################################################################# t0:tts:missing
 - terms: 
   - term: bytes
   - term: bajty
+    tts: cs-terms/bajty.mp3
   freq: 52.45220
-##  null   ################################################################## t0:tts:missing|t1:tts:missing
+##  null   ################################################################## t0:tts:missing
 - terms: 
   - term: "null"
   - term: nulový
+    tts: cs-terms/nulovy.mp3
   freq: 52.26640
-##  consulting   ############################################################ t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  consulting   ############################################################ t0:tts:missing
 - terms: 
   - term: consulting
   - term: poradenství
+    tts: cs-terms/poradenstvi.mp3
   - term: konzultace
+    tts: cs-terms/konzultace.mp3
   freq: 52.13630
-##  lingerie   ############################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  lingerie   ############################################################## t0:tts:missing
 - terms: 
   - term: lingerie
   - term: spodní prádlo
+    tts: cs-terms/spodni pradlo.mp3
   - term: dámské prádlo
+    tts: cs-terms/damske pradlo.mp3
   freq: 50.92450
-##  jazz   ################################################################## t0:tts:missing|t1:tts:missing
+##  jazz   ################################################################## t0:tts:missing
 - terms: 
   - term: jazz
   - term: jazz
+    tts: cs-terms/jazz.mp3
   freq: 50.87500
-##  boxes   ################################################################# t0:tts:missing|t1:tts:missing
+##  boxes   ################################################################# t0:tts:missing
 - terms: 
   - term: boxes
   - term: krabice
+    tts: cs-terms/krabice.mp3
   freq: 43.84740
-##  fourth   ################################################################ t0:tts:missing|t1:tts:missing
+##  fourth   ################################################################ t0:tts:missing
 - terms: 
   - term: fourth
   - term: čtvrtý
+    tts: cs-terms/ctvrty.mp3
   freq: 43.80610
 ##  advisor   ############################################################### t0:tts:missing|t1:tts:missing
 - terms: 
