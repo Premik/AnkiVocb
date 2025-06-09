@@ -32420,304 +32420,354 @@ concepts:
   - term: tygr
     tts: cs-terms/tygr.mp3
   freq: 23.40160
-##  sensor   ################################################################ t0:tts:missing
 - terms: 
   - term: sensor
+    tts: en-terms/sensor.mp3
   - term: čidlo
     tts: cs-terms/cidlo.mp3
   - term: senzor
     tts: cs-terms/senzor.mp3
   freq: 23.39530
-##  exposed   ############################################################### t0:tts:missing
 - terms: 
   - term: exposed
+    tts: en-terms/exposed.mp3
   - term: odhalený
     tts: cs-terms/odhaleny.mp3
   - term: vystavený
     tts: cs-terms/vystaveny.mp3
   freq: 23.39040
-##  deputy   ################################################################ t0:tts:missing
 - terms: 
   - term: deputy
+    tts: en-terms/deputy.mp3
   - term: zástupce
     tts: cs-terms/zastupce.mp3
   - term: náměstek
     tts: cs-terms/namestek.mp3
   freq: 23.37510
-##  indicators   ############################################################ t0:tts:missing
 - terms: 
   - term: indicators
+    tts: en-terms/indicators.mp3
   - term: indikátory
     tts: cs-terms/indikatory.mp3
   - term: ukazatele
     tts: cs-terms/ukazatele.mp3
   freq: 23.35900
-##  emissions   ############################################################# t0:tts:missing
 - terms: 
   - term: emissions
+    tts: en-terms/emissions.mp3
   - term: emise
     tts: cs-terms/emise.mp3
   - term: zplodiny
     tts: cs-terms/zplodiny.mp3
   freq: 23.32550
-##  complaint   ############################################################# t0:tts:missing
 - terms: 
   - term: complaint
+    tts: en-terms/complaint.mp3
   - term: stížnost
     tts: cs-terms/stiznost.mp3
   - term: reklamace
     tts: cs-terms/reklamace.mp3
   freq: 23.29960
-##  boost   ################################################################# t0:tts:missing
 - terms: 
   - term: boost
+    tts: en-terms/boost.mp3
   - term: zvýšit
     tts: cs-terms/zvysit.mp3
   - term: posílit
     tts: cs-terms/posilit.mp3
   freq: 23.25200
-##  scholarship   ########################################################### t0:tts:missing
 - terms: 
   - term: scholarship
+    tts: en-terms/scholarship.mp3
   - term: stipendium
     tts: cs-terms/stipendium.mp3
   - term: učenost
     tts: cs-terms/ucenost.mp3
   freq: 23.24000
-##  governance   ############################################################ t0:tts:missing
 - terms: 
   - term: governance
+    tts: en-terms/governance.mp3
   - term: správa (veřejných věcí)
     tts: cs-terms/sprava.mp3
   - term: vládnutí
     tts: cs-terms/vladnuti.mp3
   freq: 23.23320
-##  mill   ################################################################## t0:tts:missing
 - terms: 
   - term: mill
+    tts: en-terms/mill.mp3
   - term: mlýn
     tts: cs-terms/mlyn.mp3
   freq: 23.22380
-##  supplements   ########################################################### t0:tts:missing
 - terms: 
   - term: supplements
+    tts: en-terms/supplements.mp3
   - term: doplňky
     tts: cs-terms/doplnky.mp3
   freq: 23.22050
-##  chronic   ############################################################### t0:tts:missing
 - terms: 
   - term: chronic
+    tts: en-terms/chronic.mp3
   - term: chronický
     tts: cs-terms/chronicky.mp3
   - term: dlouhodobý
     tts: cs-terms/dlouhodoby.mp3
   freq: 23.21010
-##  moral   ################################################################# t0:tts:missing
 - terms: 
   - term: moral
+    tts: en-terms/moral.mp3
   - term: morálka
     tts: cs-terms/moralka.mp3
   freq: 23.19850
-##  den   ################################################################### t0:tts:missing
 - terms: 
   - term: den
+    tts: en-terms/den.mp3
   - term: brloh
     tts: cs-terms/brloh.mp3
   - term: doupě
     tts: cs-terms/doupe.mp3
   freq: 23.19430
-##  catering   ############################################################## t0:tts:missing
 - terms: 
   - term: catering
+    tts: en-terms/catering.mp3
   - term: "(poskytování) občerstvení"
     tts: cs-terms/obcerstveni.mp3
   - term: stravování
     tts: cs-terms/stravovani.mp3
   freq: 23.18950
-##  ourselves   ############################################################# t0:tts:missing
 - terms: 
   - term: ourselves
+    tts: en-terms/ourselves.mp3
   - term: sebe
     tts: cs-terms/sebe.mp3
   - term: "(sami) sobě"
     tts: cs-terms/sobe.mp3
   freq: 23.09350
-##  bread   ################################################################# t0:tts:missing
 - terms: 
   - term: bread
+    tts: en-terms/bread.mp3
   - term: chléb
     tts: cs-terms/chleb.mp3
   freq: 23.08250
-##  tobacco   ############################################################### t0:tts:missing
 - terms: 
   - term: tobacco
+    tts: en-terms/tobacco.mp3
   - term: tabák
     tts: cs-terms/tabak.mp3
   freq: 23.08040
-##  wooden   ################################################################ t0:tts:missing
 - terms: 
   - term: wooden
+    tts: en-terms/wooden.mp3
   - term: dřevěný
     tts: cs-terms/dreveny.mp3
   freq: 23.06410
-##  incident   ############################################################## t0:tts:missing|t2:tts:missing
 - terms: 
   - term: incident
+    tts: en-terms/incident.mp3
   - term: incident
     tts: cs-terms/incident.mp3
   - term: událost (nepříjemná)
+    tts: cs-terms/udalost.mp3
   freq: 23.04520
-##  conversation   ########################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: conversation
+    tts: en-terms/conversation.mp3
   - term: rozhovor
+    tts: cs-terms/rozhovor.mp3
   - term: konverzace
+    tts: cs-terms/konverzace.mp3
   freq: 23.00050
-##  decrease   ############################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: decrease
+    tts: en-terms/decrease.mp3
   - term: snížit
+    tts: cs-terms/snizit.mp3
   freq: 22.99500
-##  chest   ################################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: chest
+    tts: en-terms/chest.mp3
   - term: hrudník
+    tts: cs-terms/hrudnik.mp3
   - term: truhla
+    tts: cs-terms/truhla.mp3
   freq: 22.98220
-##  pension   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: pension
+    tts: en-terms/pension.mp3
   - term: důchod
+    tts: cs-terms/duchod.mp3
   - term: penze
+    tts: cs-terms/penze.mp3
   freq: 22.98140
-##  emerging   ############################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: emerging
+    tts: en-terms/emerging.mp3
   - term: vznikající
+    tts: cs-terms/vznikajici.mp3
   - term: objevující se
+    tts: cs-terms/objevujici se.mp3
   freq: 22.96120
-##  worship   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: worship
+    tts: en-terms/worship.mp3
   - term: uctívat
+    tts: cs-terms/uctivat.mp3
   - term: zbožňovat
+    tts: cs-terms/zboznovat.mp3
   freq: 22.95880
-##  capability   ############################################################ t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: capability
+    tts: en-terms/capability.mp3
   - term: schopnost
+    tts: cs-terms/schopnost.mp3
   - term: způsobilost
+    tts: cs-terms/zpusobilost.mp3
   freq: 22.93910
-##  precision   ############################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: precision
+    tts: en-terms/precision.mp3
   - term: přesnost
+    tts: cs-terms/presnost.mp3
   - term: preciznost
+    tts: cs-terms/preciznost.mp3
   freq: 22.89560
-##  reserves   ############################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: reserves
+    tts: en-terms/reserves.mp3
   - term: rezervy
+    tts: cs-terms/rezervy.mp3
   - term: zásoby
+    tts: cs-terms/zasoby.mp3
   freq: 22.88060
-##  reproduction   ########################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: reproduction
+    tts: en-terms/reproduction.mp3
   - term: rozmnožování
+    tts: cs-terms/rozmnozovani.mp3
   - term: reprodukce
+    tts: cs-terms/reprodukce.mp3
   freq: 22.85810
-##  minority   ############################################################## t0:tts:missing|t1:tts:missing
 - terms: 
   - term: minority
+    tts: en-terms/minority.mp3
   - term: menšina
+    tts: cs-terms/mensina.mp3
   freq: 22.84680
-##  ingredients   ########################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: ingredients
+    tts: en-terms/ingredients.mp3
   - term: suroviny
+    tts: cs-terms/suroviny.mp3
   - term: přísady
+    tts: cs-terms/prisady.mp3
   freq: 22.81500
-##  sole   ################################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: sole
+    tts: en-terms/sole.mp3
   - term: výhradní
+    tts: cs-terms/vyhradni.mp3
   - term: jediný
+    tts: cs-terms/jediny.mp3
   freq: 22.78730
-##  recorder   ############################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: recorder
+    tts: en-terms/recorder.mp3
   - term: záznamník
+    tts: cs-terms/zaznamnik.mp3
   - term: flétna
+    tts: cs-terms/fletna.mp3
   freq: 22.77420
-##  passion   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: passion
+    tts: en-terms/passion.mp3
   - term: vášeň
+    tts: cs-terms/vasen.mp3
   - term: zápal
+    tts: cs-terms/zapal.mp3
   freq: 22.73430
-##  rehabilitation   ######################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: rehabilitation
+    tts: en-terms/rehabilitation.mp3
   - term: rehabilitace
+    tts: cs-terms/rehabilitace.mp3
   - term: náprava
+    tts: cs-terms/naprava.mp3
   freq: 22.73410
-##  defence   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: defence
+    tts: en-terms/defence.mp3
   - term: obrana
+    tts: cs-terms/obrana.mp3
   - term: obhajoba
+    tts: cs-terms/obhajoba.mp3
   freq: 22.70990
-##  patches   ############################################################### t0:tts:missing|t1:tts:missing
 - terms: 
   - term: patches
+    tts: en-terms/patches.mp3
   - term: záplaty
+    tts: cs-terms/zaplaty.mp3
   freq: 22.70620
-##  trembl   ################################################################ t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: trembl
+    tts: en-terms/trembl.mp3
   - term: třást se
+    tts: cs-terms/trast se.mp3
   - term: chvět se
+    tts: cs-terms/chvet se.mp3
   freq: 22.65930
-##  divided   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: divided
+    tts: en-terms/divided.mp3
   - term: rozdělený
+    tts: cs-terms/rozdeleny.mp3
   - term: nejednotný
+    tts: cs-terms/nejednotny.mp3
   freq: 22.65370
-##  reception   ############################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: reception
+    tts: en-terms/reception.mp3
   - term: recepce
+    tts: cs-terms/recepce.mp3
   - term: příjem
+    tts: cs-terms/prijem.mp3
   freq: 22.64360
-##  odds   ################################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: odds
+    tts: en-terms/odds.mp3
   - term: kurzy
+    tts: cs-terms/kurzy.mp3
   - term: šance (na něco)
+    tts: cs-terms/sance.mp3
   freq: 22.58460
-##  correctly   ############################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: correctly
+    tts: en-terms/correctly.mp3
   - term: správně
+    tts: cs-terms/spravne.mp3
   - term: korektně
+    tts: cs-terms/korektne.mp3
   freq: 22.58340
-##  insider   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: insider
+    tts: en-terms/insider.mp3
   - term: zasvěcenec
+    tts: cs-terms/zasvecenec.mp3
   - term: člověk zevnitř
+    tts: cs-terms/clovek zevnitr.mp3
   freq: 22.57330
-##  doll   ################################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: doll
+    tts: en-terms/doll.mp3
   - term: panenka
+    tts: cs-terms/panenka.mp3
   - term: loutka
+    tts: cs-terms/loutka.mp3
   freq: 20.48520
-##  weapon   ################################################################ t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
   - term: weapon
+    tts: en-terms/weapon.mp3
   - term: zbraň
+    tts: cs-terms/zbran.mp3
   - term: zbroj
+    tts: cs-terms/zbroj.mp3
   freq: 16.53490
 
