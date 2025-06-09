@@ -17,11 +17,12 @@ import static vocb.Ansi.*
 public class CsTSSAppender {
 
 	//String[] voices = ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural", "cs-CZ-Jakub"]
-	String[] voices = [
-		"cs-CZ-AntoninNeural",
-		"cs-CZ-VlastaNeural"
-	]
-	//String[] voices = ["cs-CZ-Jakub"]
+//	String[] voices = [
+//		"cs-CZ-AntoninNeural",
+//		"cs-CZ-VlastaNeural"
+//	]
+	String[] voices = ["zh-CN-YunfanMultilingualNeural"]
+	//zh-CN-YunfanMultilingualNeural
 	//asiat
 	int voiceCounter = 0
 

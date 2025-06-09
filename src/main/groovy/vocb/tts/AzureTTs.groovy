@@ -45,7 +45,7 @@ public class AzureTTs {
 	public String SSMLWrap(String text, String voice=azEnv.cfg.azure.tts.voice) {
 		"""\
 		<speak version='1.0' xml:lang='en-US'>
-		   <voice xml:lang='cs' name='$voice'>
+		   <voice xml:lang='cs-CZ' name='$voice'>
 		   	$text
 		   </voice>
 		</speak>""".stripIndent()
@@ -63,11 +63,14 @@ public class AzureTTs {
 
 	static void main(String... args) {
 		AzureTTs bs = new AzureTTs().with{
-//			listVoices().each {
-//				println it
-//			}
+			listVoices().each {
+				if (it.Locale.contains("cs")) {
+					println it
+				}
+			}
 			//println Helper.jsonToString(listVoices())
-			println  synth("Testovací text.", "/tmp/work/1.mp3", "cs-CZ-AntoninNeural")
+			//cs-CZ
+			println  synth("Testovací text.", "/tmp/work/1.mp3", "zh-CN-YunfanMultilingualNeural")
 
 
 
