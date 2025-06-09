@@ -31,8 +31,8 @@ public class CsTSSAppender {
 		voices[voiceCounter%(voices.length)]
 	}
 
-	LocalTTS ttsCz = new LocalTTS()
-	//Object ttsCz = new AzureTTs()
+	//LocalTTS ttsCz = new LocalTTS()
+	Object ttsCz = new AzureTTs()
 	Manager dbMan = new Manager()
 	int limit = 10
 	WordNormalizer wn = new WordNormalizer()
