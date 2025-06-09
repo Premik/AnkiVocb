@@ -26340,30 +26340,37 @@ concepts:
   - term: programové vybavení (software)
     tts: cs-terms/programove vybaveni.mp3
   freq: 629.99790
-##  project   ############################################################### t0:tts:missing|t2:tts:missing
+##  project   ############################################################### t0:tts:missing
 - terms: 
   - term: project
   - term: projekt
     tts: cs-terms/projekt.mp3
   - term: promítat
+    tts: cs-terms/promitat.mp3
   freq: 400.02190
-##  digital   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  digital   ############################################################### t0:tts:missing
 - terms: 
   - term: digital
   - term: číslicový
+    tts: cs-terms/cislicovy.mp3
   - term: digitální
+    tts: cs-terms/digitalni.mp3
   freq: 344.05450
-##  poker   ################################################################# t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  poker   ################################################################# t0:tts:missing
 - terms: 
   - term: poker
   - term: pohrabáč
+    tts: cs-terms/pohrabac.mp3
   - term: poker
+    tts: cs-terms/poker.mp3
   freq: 219.43460
-##  stories   ############################################################### t0:tts:missing|t1:tts:missing|t2:tts:missing
+##  stories   ############################################################### t0:tts:missing
 - terms: 
   - term: stories
   - term: příběhy
+    tts: cs-terms/pribehy.mp3
   - term: patra (obchodního domu)
+    tts: cs-terms/patra.mp3
   freq: 196.39500
 ##  auto   ################################################################## t0:tts:missing|t1:tts:missing|t2:tts:missing
 - terms: 
