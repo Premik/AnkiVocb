@@ -26670,7 +26670,7 @@ concepts:
   - term: pole
     tts: cs-terms/pole.mp3
   - term: řada
-    tts: cs-terms/rada.mp3
+    tts: cs-terms/rada2.mp3
   freq: 42.76310
 - terms: 
   - term: accurate
@@ -26732,7 +26732,7 @@ concepts:
   - term: ulička
     tts: cs-terms/ulicka.mp3
   - term: dráha
-    tts: cs-terms/draha.mp3
+    tts: cs-terms/draha2.mp3
   freq: 42.30560
 - terms: 
   - term: compensation
@@ -26996,7 +26996,7 @@ concepts:
   - term: neighborhood
     tts: en-terms/neighborhood.mp3
   - term: čtvrť
-    tts: cs-terms/ctvrt.mp3
+    tts: cs-terms/ctvrt2.mp3
   - term: sousedství
     tts: cs-terms/sousedstvi.mp3
   freq: 40.88830
@@ -28190,7 +28190,7 @@ concepts:
   - term: salary
     tts: en-terms/salary.mp3
   - term: plat
-    tts: cs-terms/plat.mp3
+    tts: cs-terms/plat2.mp3
   freq: 35.97240
 - terms: 
   - term: guard
@@ -28232,9 +28232,9 @@ concepts:
   - term: newly
     tts: en-terms/newly.mp3
   - term: nově
-    tts: cs-terms/nove.mp3
+    tts: cs-terms/nove2.mp3
   - term: čerstvě
-    tts: cs-terms/cerstve.mp3
+    tts: cs-terms/cerstve2.mp3
   freq: 35.88070
 - terms: 
   - term: avatar
@@ -28400,7 +28400,7 @@ concepts:
   - term: significantly
     tts: en-terms/significantly.mp3
   - term: významně
-    tts: cs-terms/vyznamne.mp3
+    tts: cs-terms/vyznamne2.mp3
   - term: značně
     tts: cs-terms/znacne.mp3
   freq: 35.13010
@@ -28788,9 +28788,9 @@ concepts:
   - term: wow
     tts: en-terms/wow.mp3
   - term: páni
-    tts: cs-terms/pani.mp3
+    tts: cs-terms/pani2.mp3
   - term: jé
-    tts: cs-terms/je.mp3
+    tts: cs-terms/je2.mp3
   freq: 33.63030
 - terms: 
   - term: flexible
@@ -28988,15 +28988,13 @@ concepts:
   - term: plazma
     tts: cs-terms/plazma.mp3
   freq: 32.87110
-##  earnings   ############################################################## 4 terms. Up to 3 supported only|t0:tts:missing
 - terms: 
   - term: earnings
+    tts: en-terms/earnings.mp3
   - term: příjmy
     tts: cs-terms/prijmy.mp3
   - term: výdělky
     tts: cs-terms/vydelky.mp3
-  - term: zisk
-    tts: cs-terms/zisk.mp3
   freq: 32.79350
 - terms: 
   - term: landscape
@@ -29338,7 +29336,7 @@ concepts:
   - term: typically
     tts: en-terms/typically.mp3
   - term: typicky
-    tts: cs-terms/typicky.mp3
+    tts: cs-terms/typicky2.mp3
   - term: obvykle
     tts: cs-terms/obvykle.mp3
   freq: 31.73300
@@ -29596,7 +29594,7 @@ concepts:
   - term: successfully
     tts: en-terms/successfully.mp3
   - term: úspěšně
-    tts: cs-terms/uspesne.mp3
+    tts: cs-terms/uspesne2.mp3
   freq: 30.65030
 - terms: 
   - term: pursuant
@@ -30456,7 +30454,7 @@ concepts:
   - term: strongly
     tts: en-terms/strongly.mp3
   - term: silně
-    tts: cs-terms/silne.mp3
+    tts: cs-terms/silne2.mp3
   - term: důrazně
     tts: cs-terms/durazne.mp3
   freq: 27.94150
@@ -30822,7 +30820,7 @@ concepts:
   - term: definitely
     tts: en-terms/definitely.mp3
   - term: určitě
-    tts: cs-terms/urcite.mp3
+    tts: cs-terms/urcite2.mp3
   - term: rozhodně
     tts: cs-terms/rozhodne.mp3
   freq: 27.07290
@@ -30886,7 +30884,7 @@ concepts:
   - term: necessarily
     tts: en-terms/necessarily.mp3
   - term: nutně
-    tts: cs-terms/nutne.mp3
+    tts: cs-terms/nutne2.mp3
   - term: nezbytně
     tts: cs-terms/nezbytne.mp3
   freq: 26.98040
@@ -31736,7 +31734,7 @@ concepts:
   - term: sublime
     tts: en-terms/sublime.mp3
   - term: vznešený
-    tts: cs-terms/vzneseny.mp3
+    tts: cs-terms/vzneseny2.mp3
   - term: velebný
     tts: cs-terms/velebny.mp3
   freq: 24.82070
@@ -32742,7 +32740,7 @@ concepts:
   - term: correctly
     tts: en-terms/correctly.mp3
   - term: správně
-    tts: cs-terms/spravne.mp3
+    tts: cs-terms/spravne2.mp3
   - term: korektně
     tts: cs-terms/korektne.mp3
   freq: 22.58340
