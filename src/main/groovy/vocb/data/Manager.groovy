@@ -377,11 +377,8 @@ public class Manager {
 				//println tGrp.keySet()
 			}
 		}
-		println "${'-'*80}"
+		/*println "${'-'*80}"
 		println "Clashes"
-
-
-
 		//println groupConceptsByMedia(false, true, true)["ocean.mp3"]
 		groupConceptsByMedia(false, true, true).each {CharSequence mediaLink, Set<Concept> cs->
 			List<Term> termsWithTts = cs.collectMany {
@@ -395,7 +392,7 @@ public class Manager {
 			if (termsWithTts.any {it.lang == 'cs'} && termsWithTts.any {it.lang == 'en'}  ) {
 				println "${cs.collect {it.firstTerm} }  $mediaLink: ${termsWithTts}. $cs"
 			}
-		}
+		}*/
 
 		println "Media clashes"
 
